@@ -1,0 +1,97 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.757
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Jp.Co.Nrs.LMQ.BLC", "Jp.Co.Nrs.LMQ.BLC\Jp.Co.Nrs.LMQ.BLC.vbproj", "{5433E072-DAD5-4A55-B495-A06007EE9EF6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{690885A8-D41A-4A46-A511-FE65099DE06F} = {690885A8-D41A-4A46-A511-FE65099DE06F}
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Jp.Co.Nrs.LMQ.BLF", "Jp.Co.Nrs.LMQ.BLF\Jp.Co.Nrs.LMQ.BLF.vbproj", "{15946997-5FFE-443F-B733-27F4120F69CB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5433E072-DAD5-4A55-B495-A06007EE9EF6} = {5433E072-DAD5-4A55-B495-A06007EE9EF6}
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Jp.Co.Nrs.LMQ.DAC", "Jp.Co.Nrs.LMQ.DAC\Jp.Co.Nrs.LMQ.DAC.vbproj", "{690885A8-D41A-4A46-A511-FE65099DE06F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A0DDA575-25FC-494B-996B-003374968B14} = {A0DDA575-25FC-494B-996B-003374968B14}
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Jp.Co.Nrs.LMQ.DSL", "Jp.Co.Nrs.LMQ.DSL\Jp.Co.Nrs.LMQ.DSL.vbproj", "{A0DDA575-25FC-494B-996B-003374968B14}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Jp.Co.Nrs.LMQ.GUI", "Jp.Co.Nrs.LMQ.GUI\Jp.Co.Nrs.LMQ.GUI.vbproj", "{0E983CFE-C96B-4A4E-BC87-4B9B3695ACA2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{15946997-5FFE-443F-B733-27F4120F69CB} = {15946997-5FFE-443F-B733-27F4120F69CB}
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Jp.Co.Nrs.LM.WSI", "http://localhost:3333", "{59BC6C95-3D4A-486C-B312-F5BCA623D717}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.7.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_3333"
+		Debug.AspNetCompiler.PhysicalPath = "..\Jp.Co.Nrs.LM.WSI\Jp.Co.Nrs.LM.WSI\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_3333\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_3333"
+		Release.AspNetCompiler.PhysicalPath = "..\Jp.Co.Nrs.LM.WSI\Jp.Co.Nrs.LM.WSI\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_3333\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\Jp.Co.Nrs.LM.WSI\Jp.Co.Nrs.LM.WSI\"
+	EndProjectSection
+	ProjectSection(ProjectDependencies) = postProject
+		{B48F50B1-FAD7-47A5-B855-65BD8C40C23D} = {B48F50B1-FAD7-47A5-B855-65BD8C40C23D}
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Jp.Co.Nrs.LM.Launcher", "..\Launcher\Jp.Co.Nrs.LM.Launcher\Jp.Co.Nrs.LM.Launcher\Jp.Co.Nrs.LM.Launcher.vbproj", "{B48F50B1-FAD7-47A5-B855-65BD8C40C23D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0E983CFE-C96B-4A4E-BC87-4B9B3695ACA2} = {0E983CFE-C96B-4A4E-BC87-4B9B3695ACA2}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5433E072-DAD5-4A55-B495-A06007EE9EF6}.Debug|x86.ActiveCfg = Debug|x86
+		{5433E072-DAD5-4A55-B495-A06007EE9EF6}.Debug|x86.Build.0 = Debug|x86
+		{5433E072-DAD5-4A55-B495-A06007EE9EF6}.Release|x86.ActiveCfg = Release|x86
+		{5433E072-DAD5-4A55-B495-A06007EE9EF6}.Release|x86.Build.0 = Release|x86
+		{15946997-5FFE-443F-B733-27F4120F69CB}.Debug|x86.ActiveCfg = Debug|x86
+		{15946997-5FFE-443F-B733-27F4120F69CB}.Debug|x86.Build.0 = Debug|x86
+		{15946997-5FFE-443F-B733-27F4120F69CB}.Release|x86.ActiveCfg = Release|x86
+		{15946997-5FFE-443F-B733-27F4120F69CB}.Release|x86.Build.0 = Release|x86
+		{690885A8-D41A-4A46-A511-FE65099DE06F}.Debug|x86.ActiveCfg = Debug|x86
+		{690885A8-D41A-4A46-A511-FE65099DE06F}.Debug|x86.Build.0 = Debug|x86
+		{690885A8-D41A-4A46-A511-FE65099DE06F}.Release|x86.ActiveCfg = Release|x86
+		{690885A8-D41A-4A46-A511-FE65099DE06F}.Release|x86.Build.0 = Release|x86
+		{A0DDA575-25FC-494B-996B-003374968B14}.Debug|x86.ActiveCfg = Debug|x86
+		{A0DDA575-25FC-494B-996B-003374968B14}.Debug|x86.Build.0 = Debug|x86
+		{A0DDA575-25FC-494B-996B-003374968B14}.Release|x86.ActiveCfg = Release|x86
+		{A0DDA575-25FC-494B-996B-003374968B14}.Release|x86.Build.0 = Release|x86
+		{0E983CFE-C96B-4A4E-BC87-4B9B3695ACA2}.Debug|x86.ActiveCfg = Debug|x86
+		{0E983CFE-C96B-4A4E-BC87-4B9B3695ACA2}.Debug|x86.Build.0 = Debug|x86
+		{0E983CFE-C96B-4A4E-BC87-4B9B3695ACA2}.Release|x86.ActiveCfg = Release|x86
+		{0E983CFE-C96B-4A4E-BC87-4B9B3695ACA2}.Release|x86.Build.0 = Release|x86
+		{59BC6C95-3D4A-486C-B312-F5BCA623D717}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{59BC6C95-3D4A-486C-B312-F5BCA623D717}.Debug|x86.Build.0 = Debug|Any CPU
+		{59BC6C95-3D4A-486C-B312-F5BCA623D717}.Release|x86.ActiveCfg = Debug|Any CPU
+		{B48F50B1-FAD7-47A5-B855-65BD8C40C23D}.Debug|x86.ActiveCfg = Debug|x86
+		{B48F50B1-FAD7-47A5-B855-65BD8C40C23D}.Debug|x86.Build.0 = Debug|x86
+		{B48F50B1-FAD7-47A5-B855-65BD8C40C23D}.Release|x86.ActiveCfg = Release|x86
+		{B48F50B1-FAD7-47A5-B855-65BD8C40C23D}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {00189A9F-2D39-4752-81F4-701BB81FEB20}
+	EndGlobalSection
+EndGlobal

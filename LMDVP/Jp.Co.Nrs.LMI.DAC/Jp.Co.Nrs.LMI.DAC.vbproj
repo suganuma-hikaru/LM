@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{534E97BD-512E-460D-88DB-7A6E0E4E5A78}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Jp.Co.Nrs.LM.DAC</RootNamespace>
+    <AssemblyName>Jp.Co.Nrs.LMI.DAC</AssemblyName>
+    <MyType>Windows</MyType>
+    <OptionStrict>On</OptionStrict>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>_MYTYPE ="Windows"</DefineConstants>
+    <DocumentationFile>Jp.Co.Nrs.LMI.DAC.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Jp.Co.Nrs.LMI.DAC.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>Full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Jp.Co.Nrs.Com.Library, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.Com.Library.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Jp.Co.Nrs.LM.Library, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.LM.Library.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LMI\LMI511DAC.vb" />
+    <Compile Include="LMI\LMI512DAC.vb" />
+    <Compile Include="LMI\LMI517DAC.vb" />
+    <Compile Include="LMI\LMI516DAC.vb" />
+    <Compile Include="LMI\LMI515DAC.vb" />
+    <Compile Include="LMI\LMI514DAC.vb" />
+    <Compile Include="LMI\LMI460DAC.vb" />
+    <Compile Include="LMI\LMI470DAC.vb" />
+    <Compile Include="LMI\LMI513DAC.vb" />
+    <Compile Include="LMI\LMI730DAC.vb" />
+    <Compile Include="LMI\LMI020DAC.vb" />
+    <Compile Include="LMI\LMI030DAC.vb" />
+    <Compile Include="LMI\LMI040DAC.vb" />
+    <Compile Include="LMI\LMI050DAC.vb" />
+    <Compile Include="LMI\LMI060DAC.vb" />
+    <Compile Include="LMI\LMI070DAC.vb" />
+    <Compile Include="LMI\LMI110DAC.vb" />
+    <Compile Include="LMI\LMI120DAC.vb" />
+    <Compile Include="LMI\LMI130DAC.vb" />
+    <Compile Include="LMI\LMI140DAC.vb" />
+    <Compile Include="LMI\LMI150DAC.vb" />
+    <Compile Include="LMI\LMI180DAC.vb" />
+    <Compile Include="LMI\LMI190DAC.vb" />
+    <Compile Include="LMI\LMI210DAC.vb" />
+    <Compile Include="LMI\LMI220DAC.vb" />
+    <Compile Include="LMI\LMI260DAC.vb" />
+    <Compile Include="LMI\LMI320DAC.vb" />
+    <Compile Include="LMI\LMI330DAC.vb" />
+    <Compile Include="LMI\LMI360DAC.vb" />
+    <Compile Include="LMI\LMI400DAC.vb" />
+    <Compile Include="LMI\LMI410DAC.vb" />
+    <Compile Include="LMI\LMI420DAC.vb" />
+    <Compile Include="LMI\LMI430DAC.vb" />
+    <Compile Include="LMI\LMI440DAC.vb" />
+    <Compile Include="LMI\LMI450DAC.vb" />
+    <Compile Include="LMI\LMI480DAC.vb" />
+    <Compile Include="LMI\LMI490DAC.vb" />
+    <Compile Include="LMI\LMI500DAC.vb" />
+    <Compile Include="LMI\LMI510DAC.vb" />
+    <Compile Include="LMI\LMI520DAC.vb" />
+    <Compile Include="LMI\LMI530DAC.vb" />
+    <Compile Include="LMI\LMI540DAC.vb" />
+    <Compile Include="LMI\LMI541DAC.vb" />
+    <Compile Include="LMI\LMI550DAC.vb" />
+    <Compile Include="LMI\LMI560DAC.vb" />
+    <Compile Include="LMI\LMI570DAC.vb" />
+    <Compile Include="LMI\LMI580DAC.vb" />
+    <Compile Include="LMI\LMI590DAC.vb" />
+    <Compile Include="LMI\LMI591DAC.vb" />
+    <Compile Include="LMI\LMI592DAC.vb" />
+    <Compile Include="LMI\LMI600DAC.vb" />
+    <Compile Include="LMI\LMI601DAC.vb" />
+    <Compile Include="LMI\LMI610DAC.vb" />
+    <Compile Include="LMI\LMI620DAC.vb" />
+    <Compile Include="LMI\LMI630DAC.vb" />
+    <Compile Include="LMI\LMI640DAC.vb" />
+    <Compile Include="LMI\LMI650DAC.vb" />
+    <Compile Include="LMI\LMI660DAC.vb" />
+    <Compile Include="LMI\LMI661DAC.vb" />
+    <Compile Include="LMI\LMI662DAC.vb" />
+    <Compile Include="LMI\LMI670DAC.vb" />
+    <Compile Include="LMI\LMI671DAC.vb" />
+    <Compile Include="LMI\LMI672DAC.vb" />
+    <Compile Include="LMI\LMI675DAC.vb" />
+    <Compile Include="LMI\LMI680DAC.vb" />
+    <Compile Include="LMI\LMI690DAC.vb" />
+    <Compile Include="LMI\LMI820DAC.vb" />
+    <Compile Include="LMI\LMI850DAC.vb" />
+    <Compile Include="LMI\LMI880DAC.vb" />
+    <Compile Include="LMI\LMI890DAC.vb" />
+    <Compile Include="LMI\LMI930DAC.vb" />
+    <Compile Include="LMI\LMI950DAC.vb" />
+    <Compile Include="LMI\LMI960DAC.vb" />
+    <Compile Include="LMI\LMI961DAC.vb" />
+    <Compile Include="LMI\LMI970DAC.vb" />
+    <Compile Include="LMI\LMI980DAC.vb" />
+    <Compile Include="LMI\LMI991DAC.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>$(SolutionDir)..\..\tool\CopyToSrcBin.bat $(ProjectDir)bin</PostBuildEvent>
+  </PropertyGroup>
+</Project>

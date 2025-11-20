@@ -1,0 +1,258 @@
+﻿' ==========================================================================
+'  システム名       :  LM
+'  サブシステム名   :  LMC     : 出荷
+'  プログラムID     :  LMC910  : エスライン CSV出力
+'  作  成  者       :  daikoku
+' ==========================================================================
+Imports Jp.Co.Nrs.Com.Const
+Imports Jp.Co.Nrs.LM.Base
+Imports Jp.Co.Nrs.LM.DSL
+Imports Jp.Co.Nrs.LM.GUI.Win
+Imports Jp.Co.Nrs.LM.Const
+Imports Jp.Co.Nrs.LM.GUI.Win.ReportDesigner
+Imports System.Text
+Imports System.IO
+
+''' <summary>
+''' LMC910ハンドラクラス
+''' </summary>
+''' <remarks>
+''' </remarks>
+''' <histry>
+''' </histry>
+Public Class LMC910H
+    Inherits Jp.Co.Nrs.LM.Base.GUI.LMBaseGUIHandler
+
+#Region "Field"
+
+    ''' <summary>
+    ''' Validate共通クラスを格納するフィールド
+    ''' </summary>
+    ''' <remarks></remarks>
+    Private _LMCconV As LMCControlV
+
+    ''' <summary>
+    ''' Handler共通クラスを格納するフィールド
+    ''' </summary>
+    ''' <remarks></remarks>
+    Private _LMCconH As LMCControlH
+
+    ''' <summary>
+    ''' G共通クラスを格納するフィールド
+    ''' </summary>
+    ''' <remarks></remarks>
+    Private _LMCconG As LMCControlG
+
+    ''' <summary>
+    ''' 画面間データを保存するフィールド
+    ''' </summary>
+    ''' <remarks></remarks>
+    Private _Prm As LMFormData
+
+    ''' <summary>
+    ''' 画面間データを保存するフィールド
+    ''' </summary>
+    ''' <remarks></remarks>
+    Private _PrmDs As DataSet
+
+#End Region 'Field
+
+#Region "初期処理"
+
+    ''' <summary>
+    ''' ハンドラクラスの初期処理メソッド
+    ''' </summary>
+    ''' <remarks>画面遷移部品よりこのメソッドが呼ばれます。</remarks>
+    Public Sub Main(ByVal prm As LMFormData)
+
+        'カーソルを砂時計にする
+        Cursor.Current = Cursors.WaitCursor
+
+        Me._Prm = prm
+
+        '画面間データを取得する
+        Me._PrmDs = prm.ParamDataSet()
+
+        'CSV出力処理
+        Me.MakeCSV(Me._PrmDs)
+
+        '出荷(大)の更新
+        Me.UpdateSLineCsv(Me._PrmDs)
+
+    End Sub
+
+#End Region '初期処理
+
+#Region "Method"
+
+    ''' <summary>
+    ''' CSV作成
+    ''' </summary>
+    ''' <param name="prmDs">DataSet</param>
+    ''' <remarks>DACのMakeCsvメソッド呼出</remarks>
+    Private Sub MakeCsv(ByVal prmDs As DataSet)
+
+         Dim setDs As DataSet = prmDs.Copy()
+        Dim setOutDt As DataTable = setDs.Tables("LMC910OUT")
+        setOutDt.Clear()
+        '並び替えをする
+        Dim outDr As DataRow() = prmDs.Tables("LMC910OUT").Select(Nothing, "OUTKA_PLAN_DATE")
+
+        Dim max As Integer = outDr.Length - 1
+        Dim strWk As String = String.Empty
+
+        For i As Integer = 0 To max
+
+            '編集がある場合は下記で処理する
+            ''出荷予定日編集(YYYY/MM/DD)
+            'If String.IsNullOrEmpty(outDr(i).Item("OUTKA_PLAN_DATE").ToString) = False Then
+
+            '    outDr(i).Item("OUTKA_PLAN_DATE") = Left(CStr(Convert.ToDateTime((Convert.ToInt32(outDr(i).Item("OUTKA_PLAN_DATE").ToString)).ToString("0000/00/00"))), 10)
+            'End If
+
+
+            setOutDt.ImportRow(outDr(i))
+        Next
+
+        'CSV出力処理
+        Dim setData As StringBuilder = New StringBuilder()
+        max = setOutDt.Rows.Count - 1
+        For i As Integer = 0 To max
+            With setOutDt.Rows(i)
+                setData.Append(SetDblQuotation(.Item("OUTKA_PLAN_DATE").ToString()))
+                setData.Append(",")
+                setData.Append(SetDblQuotation(.Item("着地コード").ToString()))
+                setData.Append(",")
+                setData.Append(SetDblQuotation(.Item("ADD1").ToString()))
+                setData.Append(",")
+                setData.Append(SetDblQuotation(.Item("ADDR2").ToString()))
+                setData.Append(",")
+                setData.Append(SetDblQuotation(.Item("ADDR3").ToString()))
+                setData.Append(",")
+                setData.Append(SetDblQuotation(.Item("届け先名１").ToString()))
+                setData.Append(",")
+                setData.Append(SetDblQuotation(.Item("届け先名２").ToString()))
+                setData.Append(",")
+                setData.Append(SetDblQuotation(.Item("届け先電話番号").ToString()))
+                setData.Append(",")
+                setData.Append(SetDblQuotation(.Item("荷送人住所１").ToString()))
+                setData.Append(",")
+                setData.Append(SetDblQuotation(.Item("荷送人住所２").ToString()))
+                setData.Append(",")
+                setData.Append(SetDblQuotation(.Item("荷送人住所３").ToString()))
+                setData.Append(",")
+                setData.Append(SetDblQuotation(.Item("荷送人名１").ToString()))
+                setData.Append(",")
+                setData.Append(SetDblQuotation(.Item("荷送人名２").ToString()))
+                setData.Append(",")
+                setData.Append(SetDblQuotation(.Item("荷送人電話").ToString()))
+                setData.Append(",")
+                setData.Append(SetDblQuotation(.Item("荷送人コード").ToString()))
+                setData.Append(",")
+                setData.Append(SetDblQuotation(.Item("支払人コード").ToString()))
+                setData.Append(",")
+                setData.Append(SetDblQuotation(.Item("記事欄１").ToString()))
+                setData.Append(",")
+                setData.Append(SetDblQuotation(.Item("記事欄２").ToString()))
+                setData.Append(",")
+                setData.Append(SetDblQuotation(.Item("記事欄３").ToString()))
+                setData.Append(",")
+                setData.Append(SetDblQuotation(.Item("記事欄４").ToString()))
+                setData.Append(",")
+                setData.Append(SetDblQuotation(.Item("記事欄５").ToString()))
+                setData.Append(",")
+                setData.Append(SetDblQuotation(.Item("NM").ToString()))
+                setData.Append(",")
+                setData.Append(SetDblQuotation(.Item("容積").ToString()))
+                setData.Append(",")
+                setData.Append(SetDblQuotation(.Item("SIZE").ToString()))
+                setData.Append(",")
+                setData.Append(SetDblQuotation(.Item("オ数").ToString()))
+
+                setData.Append(vbNewLine)
+            End With
+        Next
+
+        '保存先のCSVファイルのパス
+        Dim csvPath As String = String.Concat(prmDs.Tables("LMC910OUT").Rows(0).Item("FILEPATH").ToString, _
+                                              prmDs.Tables("LMC910OUT").Rows(0).Item("FILENAME").ToString, _
+                                              prmDs.Tables("LMC910OUT").Rows(0).Item("SYS_DATE").ToString, _
+                                               "-", _
+                                              Left(prmDs.Tables("LMC910OUT").Rows(0).Item("SYS_TIME").ToString, 6), _
+                                              ".csv")
+
+        'CSVファイルに書き込むときに使うEncoding
+        Dim enc As System.Text.Encoding = System.Text.Encoding.GetEncoding("Shift_JIS")
+
+        'ファイルを開く
+        System.IO.Directory.CreateDirectory(prmDs.Tables("LMC910OUT").Rows(0).Item("FILEPATH").ToString)
+        Dim sr As StreamWriter = New StreamWriter(csvPath, False, enc)
+
+        '値の設定
+        sr.Write(setData.ToString())
+
+        'ファイルを閉じる
+        sr.Close()
+
+    End Sub
+
+    ''' <summary>
+    ''' 文字分割
+    ''' </summary>
+    ''' <param name="inStr">分割対象文字</param>
+    ''' <param name="inByte">分割単位バイト数</param>
+    ''' <param name="inCnt">分割する数</param>
+    ''' <remarks>DACのMakeCsvメソッド呼出</remarks>
+    Private Function stringCut(ByVal inStr As String, ByVal inByte As Integer, ByVal inCnt As Integer) As String()
+
+        Dim newCnt As Integer = inCnt - 1
+        Dim newByte As Integer = inByte - 1
+        Dim oldStr(newCnt) As String
+        Dim newStr(newCnt) As String
+        Dim byteCnt As Integer = 1
+
+        For i As Integer = 0 To newCnt
+            For j As Integer = 0 To newByte
+                oldStr(i) = String.Concat(oldStr(i), Mid(inStr, byteCnt, 1))
+                If System.Text.Encoding.GetEncoding("Shift_JIS").GetByteCount(oldStr(i)) <= newByte + 1 Then
+                    newStr(i) = oldStr(i)
+                    byteCnt = byteCnt + 1
+                Else
+                    Exit For
+                End If
+            Next
+        Next
+
+        Return newStr
+
+    End Function
+
+    ''' <summary>
+    ''' ダブルコーテーション付加
+    ''' </summary>
+    ''' <param name="val"></param>
+    ''' <returns></returns>
+    ''' <remarks></remarks>
+    Private Function SetDblQuotation(ByVal val As String) As String
+
+        Return String.Concat("""", val, """")
+
+    End Function
+
+    ''' <summary>
+    ''' 更新処理
+    ''' </summary>
+    ''' <param name="ds">このハンドラクラスに紐づくフォーム</param>
+    ''' <remarks></remarks>
+    Private Function UpdateSLineCsv(ByVal ds As DataSet) As DataSet
+
+        '==== WSAクラス呼出（変更処理） ====
+        Dim rtnDs As DataSet = MyBase.CallWSA("LMC910BLF", "UpdateSLineCsv", ds)
+
+        Return rtnDs
+
+    End Function
+
+#End Region 'Method
+
+End Class

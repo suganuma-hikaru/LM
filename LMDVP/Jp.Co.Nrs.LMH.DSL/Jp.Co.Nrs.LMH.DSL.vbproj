@@ -1,0 +1,745 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D093DA51-527D-42C9-9443-A8763A603BC8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Jp.Co.Nrs.LM.DSL</RootNamespace>
+    <AssemblyName>Jp.Co.Nrs.LMH.DSL</AssemblyName>
+    <MyType>Windows</MyType>
+    <OptionStrict>On</OptionStrict>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>_MYTYPE ="Windows"</DefineConstants>
+    <DocumentationFile>Jp.Co.Nrs.LMH.DSL.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Jp.Co.Nrs.LMH.DSL.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>Full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\WINDOWS\assembly\GAC_32\System.Data\2.0.0.0__b77a5c561934e089\System.Data.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\WINDOWS\assembly\GAC_MSIL\System.Xml\2.0.0.0__b77a5c561934e089\System.Xml.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LMH\LMH010DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMH010DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMH\LMH020DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMH020DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMH\LMH030DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMH030DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMH\LMH040DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMH040DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMH\LMH060DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMH060DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMH\LMH070DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMH070DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMH\LMH080DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMH080DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMH\LMH090DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMH090DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMH\LMH500DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMH500DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMH\LMH502DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMH502DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMH\LMH503DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMH503DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMH\LMH510DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMH510DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMH\LMH540DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMH540DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMH\LMH550DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMH550DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMH\LMH551DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMH551DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMH\LMH552DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMH552DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMH\LMH560DS.Designer.vb">
+      <DependentUpon>LMH560DS.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="LMH\LMH561DS.Designer.vb">
+      <DependentUpon>LMH561DS.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="LMH\LMH562DS.Designer.vb">
+      <DependentUpon>LMH562DS.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="LMH\LMH563DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMH563DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMH\LMH564DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMH564DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMH\LMH570DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMH570DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMH\LMH571DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMH571DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMH\LMH572DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMH572DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMH\LMH573DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMH573DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMH\LMH580DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMH580DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMH\LMH581DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMH581DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMH\LMH582DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMH582DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMH\LMH583DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMH583DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMH\LMH584DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMH584DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMH\LMH585DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMH585DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMH\LMH587DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMH587DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMH\LMH588DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMH588DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMH\LMH589DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMH589DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMH\LMH590DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMH590DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMH\LMH600DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMH600DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMH\LMH800DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMH800DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMH\LMH810DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMH810DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMH\LMH820DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMH820DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMH\LMH830DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMH830DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMH\LMH999DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMH999DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LMH\LMH010DS.xsc">
+      <DependentUpon>LMH010DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH010DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMH010DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMH\LMH010DS.xss">
+      <DependentUpon>LMH010DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH020DS.xsc">
+      <DependentUpon>LMH020DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH020DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMH020DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMH\LMH020DS.xss">
+      <DependentUpon>LMH020DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH030DS.xsc">
+      <DependentUpon>LMH030DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH030DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMH030DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMH\LMH030DS.xss">
+      <DependentUpon>LMH030DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH040DS.xsc">
+      <DependentUpon>LMH040DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH040DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMH040DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMH\LMH040DS.xss">
+      <DependentUpon>LMH040DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH060DS.xsc">
+      <DependentUpon>LMH060DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH060DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMH060DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMH\LMH060DS.xss">
+      <DependentUpon>LMH060DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH070DS.xsc">
+      <DependentUpon>LMH070DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH070DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMH070DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMH\LMH070DS.xss">
+      <DependentUpon>LMH070DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH080DS.xsc">
+      <DependentUpon>LMH080DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH080DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMH080DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMH\LMH080DS.xss">
+      <DependentUpon>LMH080DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH090DS.xsc">
+      <DependentUpon>LMH090DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH090DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMH090DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMH\LMH090DS.xss">
+      <DependentUpon>LMH090DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH500DS.xsc">
+      <DependentUpon>LMH500DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH500DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMH500DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMH\LMH500DS.xss">
+      <DependentUpon>LMH500DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH502DS.xsc">
+      <DependentUpon>LMH502DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH502DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMH502DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMH\LMH502DS.xss">
+      <DependentUpon>LMH502DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH503DS.xsc">
+      <DependentUpon>LMH503DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH503DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMH503DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMH\LMH503DS.xss">
+      <DependentUpon>LMH503DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH510DS.xsc">
+      <DependentUpon>LMH510DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH510DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMH510DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMH\LMH510DS.xss">
+      <DependentUpon>LMH510DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH540DS.xsc">
+      <DependentUpon>LMH540DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH540DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMH540DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMH\LMH540DS.xss">
+      <DependentUpon>LMH540DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH550DS.xsc">
+      <DependentUpon>LMH550DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH550DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMH550DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMH\LMH550DS.xss">
+      <DependentUpon>LMH550DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH551DS.xsc">
+      <DependentUpon>LMH551DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH551DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMH551DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMH\LMH551DS.xss">
+      <DependentUpon>LMH551DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH552DS.xsc">
+      <DependentUpon>LMH552DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH552DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMH552DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMH\LMH552DS.xss">
+      <DependentUpon>LMH552DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH560DS.xsc">
+      <DependentUpon>LMH560DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH560DS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMH560DS.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="LMH\LMH560DS.xss">
+      <DependentUpon>LMH560DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH561DS.xsc">
+      <DependentUpon>LMH561DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH561DS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMH561DS.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="LMH\LMH561DS.xss">
+      <DependentUpon>LMH561DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH562DS.xsc">
+      <DependentUpon>LMH562DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH562DS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMH562DS.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="LMH\LMH562DS.xss">
+      <DependentUpon>LMH562DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH563DS.xsc">
+      <DependentUpon>LMH563DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH563DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMH563DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMH\LMH563DS.xss">
+      <DependentUpon>LMH563DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH564DS.xsc">
+      <DependentUpon>LMH564DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH564DS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMH564DS.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="LMH\LMH564DS.xss">
+      <DependentUpon>LMH564DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH570DS.xsc">
+      <DependentUpon>LMH570DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH570DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMH570DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMH\LMH570DS.xss">
+      <DependentUpon>LMH570DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH571DS.xsc">
+      <DependentUpon>LMH571DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH571DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMH571DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMH\LMH571DS.xss">
+      <DependentUpon>LMH571DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH572DS.xsc">
+      <DependentUpon>LMH572DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH572DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMH572DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMH\LMH572DS.xss">
+      <DependentUpon>LMH572DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH573DS.xsc">
+      <DependentUpon>LMH573DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH573DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMH573DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMH\LMH573DS.xss">
+      <DependentUpon>LMH573DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH580DS.xsc">
+      <DependentUpon>LMH580DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH580DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMH580DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMH\LMH580DS.xss">
+      <DependentUpon>LMH580DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH581DS.xsc">
+      <DependentUpon>LMH581DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH581DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMH581DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMH\LMH581DS.xss">
+      <DependentUpon>LMH581DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH582DS.xsc">
+      <DependentUpon>LMH582DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH582DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMH582DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMH\LMH582DS.xss">
+      <DependentUpon>LMH582DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH583DS.xsc">
+      <DependentUpon>LMH583DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH583DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMH583DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMH\LMH583DS.xss">
+      <DependentUpon>LMH583DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH584DS.xsc">
+      <DependentUpon>LMH584DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH584DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMH584DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMH\LMH584DS.xss">
+      <DependentUpon>LMH584DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH585DS.xsc">
+      <DependentUpon>LMH585DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH585DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMH585DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMH\LMH585DS.xss">
+      <DependentUpon>LMH585DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH587DS.xsc">
+      <DependentUpon>LMH587DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH587DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMH587DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMH\LMH587DS.xss">
+      <DependentUpon>LMH587DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH588DS.xsc">
+      <DependentUpon>LMH588DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH588DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMH588DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMH\LMH588DS.xss">
+      <DependentUpon>LMH588DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH589DS.xsc">
+      <DependentUpon>LMH589DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH589DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMH589DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMH\LMH589DS.xss">
+      <DependentUpon>LMH589DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH590DS.xsc">
+      <DependentUpon>LMH590DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH590DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMH590DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMH\LMH590DS.xss">
+      <DependentUpon>LMH590DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH600DS.xsc">
+      <DependentUpon>LMH600DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH600DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMH600DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMH\LMH600DS.xss">
+      <DependentUpon>LMH600DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH800DS.xsc">
+      <DependentUpon>LMH800DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH800DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMH800DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMH\LMH800DS.xss">
+      <DependentUpon>LMH800DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH810DS.xsc">
+      <DependentUpon>LMH810DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH810DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMH810DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMH\LMH810DS.xss">
+      <DependentUpon>LMH810DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH820DS.xsc">
+      <DependentUpon>LMH820DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH820DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMH820DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMH\LMH820DS.xss">
+      <DependentUpon>LMH820DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH830DS.xsc">
+      <DependentUpon>LMH830DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH830DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMH830DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMH\LMH830DS.xss">
+      <DependentUpon>LMH830DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH999DS.xsc">
+      <DependentUpon>LMH999DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMH\LMH999DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMH999DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMH\LMH999DS.xss">
+      <DependentUpon>LMH999DS.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>$(SolutionDir)..\..\tool\CopyToSrcBin.bat $(ProjectDir)bin</PostBuildEvent>
+  </PropertyGroup>
+</Project>

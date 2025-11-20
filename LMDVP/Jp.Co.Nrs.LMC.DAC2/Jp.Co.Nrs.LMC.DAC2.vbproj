@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{356DF428-ACF1-4DC6-9332-90AC694CB127}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Jp.Co.Nrs.LM.DAC</RootNamespace>
+    <AssemblyName>Jp.Co.Nrs.LMC.DAC2</AssemblyName>
+    <MyType>Windows</MyType>
+    <OptionStrict>On</OptionStrict>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>_MYTYPE ="Windows"</DefineConstants>
+    <DocumentationFile>Jp.Co.Nrs.LMC.DAC2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Jp.Co.Nrs.LMC.DAC2.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>Full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Jp.Co.Nrs.Com.Library, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.Com.Library.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Jp.Co.Nrs.LM.Library, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.LM.Library.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Jp.Co.Nrs.Win.Library">
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.Win.Library.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LMC\LMC642DAC.vb" />
+    <Compile Include="LMC\LMC641DAC.vb" />
+    <Compile Include="LMC\LMC600DAC.vb" />
+    <Compile Include="LMC\LMC601DAC.vb" />
+    <Compile Include="LMC\LMC610DAC.vb" />
+    <Compile Include="LMC\LMC614DAC.vb" />
+    <Compile Include="LMC\LMC643DAC.vb" />
+    <Compile Include="LMC\LMC650DAC.vb" />
+    <Compile Include="LMC\LMC651DAC.vb" />
+    <Compile Include="LMC\LMC690DAC.vb" />
+    <Compile Include="LMC\LMC720DAC.vb" />
+    <Compile Include="LMC\LMC721DAC.vb" />
+    <Compile Include="LMC\LMC730DAC.vb" />
+    <Compile Include="LMC\LMC742DAC.vb" />
+    <Compile Include="LMC\LMC787DAC.vb" />
+    <Compile Include="LMC\LMC789DAC.vb" />
+    <Compile Include="LMC\LMC790DAC.vb" />
+    <Compile Include="LMC\LMC791DAC.vb" />
+    <Compile Include="LMC\LMC792DAC.vb" />
+    <Compile Include="LMC\LMC794DAC.vb" />
+    <Compile Include="LMC\LMC796DAC.vb" />
+    <Compile Include="LMC\LMC800DAC.vb" />
+    <Compile Include="LMC\LMC810DAC.vb" />
+    <Compile Include="LMC\LMC812DAC.vb" />
+    <Compile Include="LMC\LMC820DAC.vb" />
+    <Compile Include="LMC\LMC830DAC.vb" />
+    <Compile Include="LMC\LMC840DAC.vb" />
+    <Compile Include="LMC\LMC850DAC.vb" />
+    <Compile Include="LMC\LMC860DAC.vb" />
+    <Compile Include="LMC\LMC870DAC.vb" />
+    <Compile Include="LMC\LMC880DAC.vb" />
+    <Compile Include="LMC\LMC890DAC.vb" />
+    <Compile Include="LMC\LMC891DAC.vb" />
+    <Compile Include="LMC\LMC900DAC.vb" />
+    <Compile Include="LMC\LMC901DAC.vb" />
+    <Compile Include="LMC\LMC903DAC.vb" />
+    <Compile Include="LMC\LMC910DAC.vb" />
+    <Compile Include="LMC\LMC920DAC.vb" />
+    <Compile Include="LMC\LMC930DAC.vb" />
+    <Compile Include="LMC\LMC940DAC.vb" />
+    <Compile Include="LMC\LMC950DAC.vb" />
+    <Compile Include="LMC\LMC960DAC.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>$(SolutionDir)..\..\tool\CopyToSrcBin.bat $(ProjectDir)bin</PostBuildEvent>
+  </PropertyGroup>
+</Project>

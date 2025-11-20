@@ -1,0 +1,981 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{780A80A7-55BC-40E3-9684-6939D6D0838E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Jp.Co.Nrs.LM.GUI</RootNamespace>
+    <AssemblyName>Jp.Co.Nrs.LMI.GUI</AssemblyName>
+    <MyType>Windows</MyType>
+    <OptionStrict>On</OptionStrict>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <SignAssembly>false</SignAssembly>
+    <DelaySign>false</DelaySign>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>_MYTYPE ="WindowsForms"</DefineConstants>
+    <DocumentationFile>Jp.Co.Nrs.LMI.GUI.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Jp.Co.Nrs.LMI.GUI.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>Full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.RDVIEWER55JLib">
+      <HintPath>..\..\..\bin\AxInterop.RDVIEWER55JLib.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ExcelCreator.Shared.v10, Version=10.0.5270.1214, Culture=neutral, PublicKeyToken=411a8845f4d5d1b9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\ExcelCreator.Shared.v10.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ExcelCreator.Xlsx.Core.v10, Version=10.0.5270.1214, Culture=neutral, PublicKeyToken=afb069e70259a56a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\ExcelCreator.Xlsx.Core.v10.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ExcelCreator.Xlsx.Creator.v10, Version=10.0.5270.1214, Culture=neutral, PublicKeyToken=a1afcfd03b061a55, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\ExcelCreator.Xlsx.Creator.v10.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ExcelCreator.Xlsx.View.v10, Version=10.0.5270.1214, Culture=neutral, PublicKeyToken=c551c97308384f23, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\ExcelCreator.Xlsx.View.v10.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FarPoint.PDF, Version=12.0.4509.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\FarPoint.PDF.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FarPoint.Win, Version=12.0.4509.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\FarPoint.Win.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FarPoint.Win.Chart, Version=12.0.4509.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\FarPoint.Win.Chart.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FarPoint.Win.SpreadJ, Version=12.0.4509.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\FarPoint.Win.SpreadJ.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GrapeCity.CalcEngine, Version=12.0.4509.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\GrapeCity.CalcEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GrapeCity.Spreadsheet, Version=12.0.4509.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\GrapeCity.Spreadsheet.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GrapeCity.Spreadsheet.Win, Version=12.0.4509.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\GrapeCity.Spreadsheet.Win.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GrapeCity.Win.Editors.v100, Version=10.0.4002.2012, Culture=neutral, PublicKeyToken=0ce01a33ce55ca12, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\GrapeCity.Win.Editors.v100.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GrapeCity.Win.PluginInputMan, Version=12.0.4509.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\GrapeCity.Win.PluginInputMan.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GrapeCity.Win.PlusPak.v100, Version=10.0.4002.2012, Culture=neutral, PublicKeyToken=63a9ba12b6923243, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\GrapeCity.Win.PlusPak.v100.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Jp.Co.Nrs.Com.Library, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.Com.Library.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Jp.Co.Nrs.GLZ.DSL">
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.GLZ.DSL.dll</HintPath>
+    </Reference>
+    <Reference Include="Jp.Co.Nrs.LM.GUI">
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.LM.GUI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Jp.Co.Nrs.LM.Library">
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.LM.Library.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Jp.Co.Nrs.LMF.DSL">
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.LMF.DSL.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Jp.Co.Nrs.LMF.GUI">
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.LMF.GUI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Jp.Co.Nrs.LMH.BLF, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.LMH.BLF.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Jp.Co.Nrs.LMH.DSL, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.LMH.DSL.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Jp.Co.Nrs.LMH.GUI, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.LMH.GUI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Jp.Co.Nrs.LMI.DSL, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.LMI.DSL.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Jp.Co.Nrs.LMZ.DSL">
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.LMZ.DSL.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Jp.Co.Nrs.LMZ.GUI">
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.LMZ.GUI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Jp.Co.Nrs.Win.Library">
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.Win.Library.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\bin\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="RDEPS_JobManagerAPI">
+      <HintPath>..\..\..\bin\RDEPS_JobManagerAPI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LMI\LMI010\LMI010C.vb" />
+    <Compile Include="LMI\LMI010\LMI010F.Designer.vb">
+      <DependentUpon>LMI010F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI010\LMI010F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMI\LMI010\LMI010G.vb" />
+    <Compile Include="LMI\LMI010\LMI010H.vb" />
+    <Compile Include="LMI\LMI010\LMI010V.vb" />
+    <Compile Include="LMI\LMI020\LMI020C.vb" />
+    <Compile Include="LMI\LMI020\LMI020F.Designer.vb">
+      <DependentUpon>LMI020F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI020\LMI020F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMI\LMI020\LMI020G.vb" />
+    <Compile Include="LMI\LMI020\LMI020H.vb" />
+    <Compile Include="LMI\LMI020\LMI020V.vb" />
+    <Compile Include="LMI\LMI030\LMI030C.vb" />
+    <Compile Include="LMI\LMI030\LMI030F.Designer.vb">
+      <DependentUpon>LMI030F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI030\LMI030F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMI\LMI030\LMI030G.vb" />
+    <Compile Include="LMI\LMI030\LMI030H.vb" />
+    <Compile Include="LMI\LMI030\LMI030V.vb" />
+    <Compile Include="LMI\LMI040\LMI040C.vb" />
+    <Compile Include="LMI\LMI040\LMI040F.Designer.vb">
+      <DependentUpon>LMI040F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI040\LMI040F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMI\LMI040\LMI040G.vb" />
+    <Compile Include="LMI\LMI040\LMI040H.vb" />
+    <Compile Include="LMI\LMI040\LMI040V.vb" />
+    <Compile Include="LMI\LMI050\LMI050C.vb" />
+    <Compile Include="LMI\LMI050\LMI050F.Designer.vb">
+      <DependentUpon>LMI050F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI050\LMI050F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMI\LMI050\LMI050G.vb" />
+    <Compile Include="LMI\LMI050\LMI050H.vb" />
+    <Compile Include="LMI\LMI050\LMI050V.vb" />
+    <Compile Include="LMI\LMI060\LMI060C.vb" />
+    <Compile Include="LMI\LMI060\LMI060F.Designer.vb">
+      <DependentUpon>LMI060F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI060\LMI060F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMI\LMI060\LMI060G.vb" />
+    <Compile Include="LMI\LMI060\LMI060H.vb" />
+    <Compile Include="LMI\LMI060\LMI060V.vb" />
+    <Compile Include="LMI\LMI070\LMI070C.vb" />
+    <Compile Include="LMI\LMI070\LMI070F.Designer.vb">
+      <DependentUpon>LMI070F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI070\LMI070F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMI\LMI070\LMI070G.vb" />
+    <Compile Include="LMI\LMI070\LMI070H.vb" />
+    <Compile Include="LMI\LMI070\LMI070V.vb" />
+    <Compile Include="LMI\LMI110\LMI110C.vb" />
+    <Compile Include="LMI\LMI110\LMI110F.Designer.vb">
+      <DependentUpon>LMI110F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI110\LMI110F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMI\LMI110\LMI110G.vb" />
+    <Compile Include="LMI\LMI110\LMI110H.vb" />
+    <Compile Include="LMI\LMI110\LMI110V.vb" />
+    <Compile Include="LMI\LMI120\LMI120C.vb" />
+    <Compile Include="LMI\LMI120\LMI120F.Designer.vb">
+      <DependentUpon>LMI120F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI120\LMI120F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMI\LMI120\LMI120G.vb" />
+    <Compile Include="LMI\LMI120\LMI120H.vb" />
+    <Compile Include="LMI\LMI120\LMI120V.vb" />
+    <Compile Include="LMI\LMI130\LMI130C.vb" />
+    <Compile Include="LMI\LMI130\LMI130F.Designer.vb">
+      <DependentUpon>LMI130F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI130\LMI130F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMI\LMI130\LMI130G.vb" />
+    <Compile Include="LMI\LMI130\LMI130H.vb" />
+    <Compile Include="LMI\LMI130\LMI130V.vb" />
+    <Compile Include="LMI\LMI140\LMI140C.vb" />
+    <Compile Include="LMI\LMI140\LMI140F.Designer.vb">
+      <DependentUpon>LMI140F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI140\LMI140F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMI\LMI140\LMI140G.vb" />
+    <Compile Include="LMI\LMI140\LMI140H.vb" />
+    <Compile Include="LMI\LMI140\LMI140V.vb" />
+    <Compile Include="LMI\LMI150\LMI150C.vb" />
+    <Compile Include="LMI\LMI150\LMI150F.Designer.vb">
+      <DependentUpon>LMI150F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI150\LMI150F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMI\LMI150\LMI150G.vb" />
+    <Compile Include="LMI\LMI150\LMI150H.vb" />
+    <Compile Include="LMI\LMI150\LMI150V.vb" />
+    <Compile Include="LMI\LMI160\LMI160C.vb" />
+    <Compile Include="LMI\LMI160\LMI160F.Designer.vb">
+      <DependentUpon>LMI160F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI160\LMI160F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMI\LMI160\LMI160G.vb" />
+    <Compile Include="LMI\LMI160\LMI160H.vb" />
+    <Compile Include="LMI\LMI160\LMI160V.vb" />
+    <Compile Include="LMI\LMI170\LMI170C.vb" />
+    <Compile Include="LMI\LMI170\LMI170F.Designer.vb">
+      <DependentUpon>LMI170F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI170\LMI170F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMI\LMI170\LMI170G.vb" />
+    <Compile Include="LMI\LMI170\LMI170H.vb" />
+    <Compile Include="LMI\LMI170\LMI170V.vb" />
+    <Compile Include="LMI\LMI180\LMI180C.vb" />
+    <Compile Include="LMI\LMI180\LMI180F.Designer.vb">
+      <DependentUpon>LMI180F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI180\LMI180F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMI\LMI180\LMI180G.vb" />
+    <Compile Include="LMI\LMI180\LMI180H.vb" />
+    <Compile Include="LMI\LMI180\LMI180V.vb" />
+    <Compile Include="LMI\LMI190\LMI190C.vb" />
+    <Compile Include="LMI\LMI190\LMI190F.Designer.vb">
+      <DependentUpon>LMI190F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI190\LMI190F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMI\LMI190\LMI190G.vb" />
+    <Compile Include="LMI\LMI190\LMI190H.vb" />
+    <Compile Include="LMI\LMI190\LMI190V.vb" />
+    <Compile Include="LMI\LMI210\LMI210C.vb" />
+    <Compile Include="LMI\LMI210\LMI210F.Designer.vb">
+      <DependentUpon>LMI210F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI210\LMI210F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMI\LMI210\LMI210G.vb" />
+    <Compile Include="LMI\LMI210\LMI210H.vb" />
+    <Compile Include="LMI\LMI210\LMI210V.vb" />
+    <Compile Include="LMI\LMI220\LMI220C.vb" />
+    <Compile Include="LMI\LMI220\LMI220F.Designer.vb">
+      <DependentUpon>LMI220F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI220\LMI220F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMI\LMI220\LMI220G.vb" />
+    <Compile Include="LMI\LMI220\LMI220H.vb" />
+    <Compile Include="LMI\LMI220\LMI220V.vb" />
+    <Compile Include="LMI\LMI250\LMI250C.vb" />
+    <Compile Include="LMI\LMI250\LMI250F.Designer.vb">
+      <DependentUpon>LMI250F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI250\LMI250F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMI\LMI250\LMI250G.vb" />
+    <Compile Include="LMI\LMI250\LMI250H.vb" />
+    <Compile Include="LMI\LMI250\LMI250V.vb" />
+    <Compile Include="LMI\LMI260\LMI260C.vb" />
+    <Compile Include="LMI\LMI260\LMI260F.Designer.vb">
+      <DependentUpon>LMI260F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI260\LMI260F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMI\LMI260\LMI260G.vb" />
+    <Compile Include="LMI\LMI260\LMI260H.vb" />
+    <Compile Include="LMI\LMI260\LMI260V.vb" />
+    <Compile Include="LMI\LMI280\LMI280C.vb" />
+    <Compile Include="LMI\LMI280\LMI280F.Designer.vb">
+      <DependentUpon>LMI280F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI280\LMI280F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMI\LMI280\LMI280G.vb" />
+    <Compile Include="LMI\LMI280\LMI280H.vb" />
+    <Compile Include="LMI\LMI280\LMI280V.vb" />
+    <Compile Include="LMI\LMI320\LMI320C.vb" />
+    <Compile Include="LMI\LMI320\LMI320F.Designer.vb">
+      <DependentUpon>LMI320F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI320\LMI320F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMI\LMI320\LMI320G.vb" />
+    <Compile Include="LMI\LMI320\LMI320H.vb" />
+    <Compile Include="LMI\LMI320\LMI320V.vb" />
+    <Compile Include="LMI\LMI330\LMI330C.vb" />
+    <Compile Include="LMI\LMI330\LMI330F.Designer.vb">
+      <DependentUpon>LMI330F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI330\LMI330F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMI\LMI330\LMI330G.vb" />
+    <Compile Include="LMI\LMI330\LMI330H.vb" />
+    <Compile Include="LMI\LMI330\LMI330V.vb" />
+    <Compile Include="LMI\LMI350\LMI350C.vb" />
+    <Compile Include="LMI\LMI350\LMI350F.Designer.vb">
+      <DependentUpon>LMI350F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI350\LMI350F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMI\LMI350\LMI350G.vb" />
+    <Compile Include="LMI\LMI350\LMI350H.vb" />
+    <Compile Include="LMI\LMI350\LMI350V.vb" />
+    <Compile Include="LMI\LMI360\LMI360C.vb" />
+    <Compile Include="LMI\LMI360\LMI360F.Designer.vb">
+      <DependentUpon>LMI360F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI360\LMI360F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMI\LMI360\LMI360G.vb" />
+    <Compile Include="LMI\LMI360\LMI360H.vb" />
+    <Compile Include="LMI\LMI360\LMI360V.vb" />
+    <Compile Include="LMI\LMI380\LMI380C.vb" />
+    <Compile Include="LMI\LMI380\LMI380F.Designer.vb">
+      <DependentUpon>LMI380F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI380\LMI380F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMI\LMI380\LMI380G.vb" />
+    <Compile Include="LMI\LMI380\LMI380H.vb" />
+    <Compile Include="LMI\LMI380\LMI380V.vb" />
+    <Compile Include="LMI\LMI400\LMI400C.vb" />
+    <Compile Include="LMI\LMI400\LMI400F.Designer.vb">
+      <DependentUpon>LMI400F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI400\LMI400F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMI\LMI400\LMI400G.vb" />
+    <Compile Include="LMI\LMI400\LMI400H.vb" />
+    <Compile Include="LMI\LMI400\LMI400V.vb" />
+    <Compile Include="LMI\LMI410\LMI410C.vb" />
+    <Compile Include="LMI\LMI410\LMI410F.Designer.vb">
+      <DependentUpon>LMI410F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI410\LMI410F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMI\LMI410\LMI410G.vb" />
+    <Compile Include="LMI\LMI410\LMI410H.vb" />
+    <Compile Include="LMI\LMI410\LMI410V.vb" />
+    <Compile Include="LMI\LMI420\LMI420C.vb" />
+    <Compile Include="LMI\LMI420\LMI420F.Designer.vb">
+      <DependentUpon>LMI420F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI420\LMI420F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMI\LMI420\LMI420G.vb" />
+    <Compile Include="LMI\LMI420\LMI420H.vb" />
+    <Compile Include="LMI\LMI420\LMI420V.vb" />
+    <Compile Include="LMI\LMI430\LMI430C.vb" />
+    <Compile Include="LMI\LMI430\LMI430F.Designer.vb">
+      <DependentUpon>LMI430F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI430\LMI430F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMI\LMI430\LMI430G.vb" />
+    <Compile Include="LMI\LMI430\LMI430H.vb" />
+    <Compile Include="LMI\LMI430\LMI430V.vb" />
+    <Compile Include="LMI\LMI440\LMI440C.vb" />
+    <Compile Include="LMI\LMI440\LMI440F.Designer.vb">
+      <DependentUpon>LMI440F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI440\LMI440F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMI\LMI440\LMI440G.vb" />
+    <Compile Include="LMI\LMI440\LMI440H.vb" />
+    <Compile Include="LMI\LMI440\LMI440V.vb" />
+    <Compile Include="LMI\LMI450\LMI450C.vb" />
+    <Compile Include="LMI\LMI450\LMI450F.Designer.vb">
+      <DependentUpon>LMI450F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI450\LMI450F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMI\LMI450\LMI450G.vb" />
+    <Compile Include="LMI\LMI450\LMI450H.vb" />
+    <Compile Include="LMI\LMI450\LMI450V.vb" />
+    <Compile Include="LMI\LMI460\LMI460C.vb" />
+    <Compile Include="LMI\LMI460\LMI460F.Designer.vb">
+      <DependentUpon>LMI460F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI460\LMI460F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMI\LMI460\LMI460G.vb" />
+    <Compile Include="LMI\LMI460\LMI460H.vb" />
+    <Compile Include="LMI\LMI460\LMI460V.vb" />
+    <Compile Include="LMI\LMI470\LMI470C.vb" />
+    <Compile Include="LMI\LMI470\LMI470F.Designer.vb">
+      <DependentUpon>LMI470F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI470\LMI470F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMI\LMI470\LMI470G.vb" />
+    <Compile Include="LMI\LMI470\LMI470H.vb" />
+    <Compile Include="LMI\LMI470\LMI470V.vb" />
+    <Compile Include="LMI\LMI480\LMI480C.vb" />
+    <Compile Include="LMI\LMI480\LMI480F.Designer.vb">
+      <DependentUpon>LMI480F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI480\LMI480F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMI\LMI480\LMI480G.vb" />
+    <Compile Include="LMI\LMI480\LMI480H.vb" />
+    <Compile Include="LMI\LMI480\LMI480V.vb" />
+    <Compile Include="LMI\LMI490\LMI490C.vb" />
+    <Compile Include="LMI\LMI490\LMI490F.designer.vb">
+      <DependentUpon>LMI490F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI490\LMI490F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMI\LMI490\LMI490G.vb" />
+    <Compile Include="LMI\LMI490\LMI490H.vb" />
+    <Compile Include="LMI\LMI490\LMI490V.vb" />
+    <Compile Include="LMI\LMI511\LMI511C.vb" />
+    <Compile Include="LMI\LMI511\LMI511F.Designer.vb">
+      <DependentUpon>LMI511F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI511\LMI511F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMI\LMI511\LMI511G.vb" />
+    <Compile Include="LMI\LMI511\LMI511H.vb" />
+    <Compile Include="LMI\LMI511\LMI511V.vb" />
+    <Compile Include="LMI\LMI513\LMI513C.vb" />
+    <Compile Include="LMI\LMI513\LMI513G.vb" />
+    <Compile Include="LMI\LMI513\LMI513H.vb" />
+    <Compile Include="LMI\LMI513\LMI513V.vb" />
+    <Compile Include="LMI\LMI513\LMI513F.Designer.vb">
+      <DependentUpon>LMI513F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI513\LMI513F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMI\LMI530\LMI530C.vb" />
+    <Compile Include="LMI\LMI530\LMI530F.Designer.vb">
+      <DependentUpon>LMI530F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI530\LMI530F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMI\LMI530\LMI530G.vb" />
+    <Compile Include="LMI\LMI530\LMI530H.vb" />
+    <Compile Include="LMI\LMI530\LMI530V.vb" />
+    <Compile Include="LMI\LMI540\LMI540C.vb" />
+    <Compile Include="LMI\LMI540\LMI540F.Designer.vb">
+      <DependentUpon>LMI540F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI540\LMI540F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMI\LMI540\LMI540G.vb" />
+    <Compile Include="LMI\LMI540\LMI540H.vb" />
+    <Compile Include="LMI\LMI540\LMI540V.vb" />
+    <Compile Include="LMI\LMI550\LMI550C.vb" />
+    <Compile Include="LMI\LMI550\LMI550F.Designer.vb">
+      <DependentUpon>LMI550F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI550\LMI550F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMI\LMI550\LMI550G.vb" />
+    <Compile Include="LMI\LMI550\LMI550H.vb" />
+    <Compile Include="LMI\LMI550\LMI550V.vb" />
+    <Compile Include="LMI\LMI560\LMI560C.vb" />
+    <Compile Include="LMI\LMI560\LMI560F.Designer.vb">
+      <DependentUpon>LMI560F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI560\LMI560F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMI\LMI560\LMI560G.vb" />
+    <Compile Include="LMI\LMI560\LMI560H.vb" />
+    <Compile Include="LMI\LMI560\LMI560V.vb" />
+    <Compile Include="LMI\LMI570\LMI570C.vb" />
+    <Compile Include="LMI\LMI570\LMI570F.Designer.vb">
+      <DependentUpon>LMI570F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI570\LMI570F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMI\LMI570\LMI570G.vb" />
+    <Compile Include="LMI\LMI570\LMI570H.vb" />
+    <Compile Include="LMI\LMI570\LMI570V.vb" />
+    <Compile Include="LMI\LMI580\LMI580C.vb" />
+    <Compile Include="LMI\LMI580\LMI580H.vb" />
+    <Compile Include="LMI\LMI730\LMI730C.vb" />
+    <Compile Include="LMI\LMI730\LMI730F.Designer.vb">
+      <DependentUpon>LMI730F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI730\LMI730F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMI\LMI730\LMI730G.vb" />
+    <Compile Include="LMI\LMI730\LMI730H.vb" />
+    <Compile Include="LMI\LMI730\LMI730V.vb" />
+    <Compile Include="LMI\LMI500\LMI500C.vb" />
+    <Compile Include="LMI\LMI500\LMI500H.vb" />
+    <Compile Include="LMI\LMI501\LMI501C.vb" />
+    <Compile Include="LMI\LMI501\LMI501H.vb" />
+    <Compile Include="LMI\LMI502\LMI502C.vb" />
+    <Compile Include="LMI\LMI502\LMI502H.vb" />
+    <Compile Include="LMI\LMI820\LMI820C.vb" />
+    <Compile Include="LMI\LMI820\LMI820F.Designer.vb">
+      <DependentUpon>LMI820F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI820\LMI820F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMI\LMI820\LMI820H.vb" />
+    <Compile Include="LMI\LMI850\LMI850C.vb" />
+    <Compile Include="LMI\LMI850\LMI850F.Designer.vb">
+      <DependentUpon>LMI850F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI850\LMI850F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMI\LMI850\LMI850H.vb" />
+    <Compile Include="LMI\LMI880\LMI880C.vb" />
+    <Compile Include="LMI\LMI880\LMI880F.Designer.vb">
+      <DependentUpon>LMI880F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI880\LMI880F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMI\LMI880\LMI880H.vb" />
+    <Compile Include="LMI\LMI890\LMI890C.vb" />
+    <Compile Include="LMI\LMI890\LMI890H.vb" />
+    <Compile Include="LMI\LMI900\LMI900C.vb" />
+    <Compile Include="LMI\LMI900\LMI900H.vb" />
+    <Compile Include="LMI\LMI930\LMI930C.vb" />
+    <Compile Include="LMI\LMI930\LMI930F.Designer.vb">
+      <DependentUpon>LMI930F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI930\LMI930F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMI\LMI930\LMI930H.vb" />
+    <Compile Include="LMI\LMI940\LMI940C.vb" />
+    <Compile Include="LMI\LMI940\LMI940H.vb" />
+    <Compile Include="LMI\LMI950\LMI950C.vb" />
+    <Compile Include="LMI\LMI950\LMI950F.Designer.vb">
+      <DependentUpon>LMI950F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI950\LMI950F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMI\LMI950\LMI950G.vb" />
+    <Compile Include="LMI\LMI950\LMI950H.vb" />
+    <Compile Include="LMI\LMI950\LMI950V.vb" />
+    <Compile Include="LMI\LMI960\LMI960C.vb" />
+    <Compile Include="LMI\LMI960\LMI960F.Designer.vb">
+      <DependentUpon>LMI960F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI960\LMI960F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMI\LMI960\LMI960G.vb" />
+    <Compile Include="LMI\LMI960\LMI960H.vb" />
+    <Compile Include="LMI\LMI960\LMI960V.vb" />
+    <Compile Include="LMI\LMI961\LMI961C.vb" />
+    <Compile Include="LMI\LMI961\LMI961F.Designer.vb">
+      <DependentUpon>LMI961F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI961\LMI961F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMI\LMI961\LMI961G.vb" />
+    <Compile Include="LMI\LMI961\LMI961H.vb" />
+    <Compile Include="LMI\LMI961\LMI961V.vb" />
+    <Compile Include="LMI\LMI963\LMI963C.vb" />
+    <Compile Include="LMI\LMI963\LMI963G.vb" />
+    <Compile Include="LMI\LMI963\LMI963H.vb" />
+    <Compile Include="LMI\LMI963\LMI963V.vb" />
+    <Compile Include="LMI\LMI962\LMI962C.vb" />
+    <Compile Include="LMI\LMI962\LMI962F.Designer.vb">
+      <DependentUpon>LMI962F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI962\LMI962F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMI\LMI962\LMI962G.vb" />
+    <Compile Include="LMI\LMI962\LMI962H.vb" />
+    <Compile Include="LMI\LMI962\LMI962V.vb" />
+    <Compile Include="LMI\LMI963\LMI963F.Designer.vb">
+      <DependentUpon>LMI963F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI963\LMI963F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMI\LMI970\LMI970C.vb" />
+    <Compile Include="LMI\LMI970\LMI970F.Designer.vb">
+      <DependentUpon>LMI970F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI970\LMI970F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMI\LMI970\LMI970G.vb" />
+    <Compile Include="LMI\LMI970\LMI970H.vb" />
+    <Compile Include="LMI\LMI970\LMI970V.vb" />
+    <Compile Include="LMI\LMI990\LMI990C.vb" />
+    <Compile Include="LMI\LMI990\LMI990F.Designer.vb">
+      <DependentUpon>LMI990F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI990\LMI990F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMI\LMI990\LMI990G.vb" />
+    <Compile Include="LMI\LMI990\LMI990H.vb" />
+    <Compile Include="LMI\LMI990\LMI990V.vb" />
+    <Compile Include="LMI\LMIControlC.vb" />
+    <Compile Include="LMI\LMIControlG.vb" />
+    <Compile Include="LMI\LMIControlH.vb" />
+    <Compile Include="LMI\LMIControlV.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="LMI\LMI010\LMI010F.resx">
+      <DependentUpon>LMI010F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMI\LMI020\LMI020F.resx">
+      <DependentUpon>LMI020F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMI\LMI030\LMI030F.resx">
+      <DependentUpon>LMI030F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMI\LMI040\LMI040F.resx">
+      <DependentUpon>LMI040F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMI\LMI050\LMI050F.resx">
+      <DependentUpon>LMI050F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMI\LMI060\LMI060F.resx">
+      <DependentUpon>LMI060F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMI\LMI070\LMI070F.resx">
+      <DependentUpon>LMI070F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMI\LMI110\LMI110F.resx">
+      <DependentUpon>LMI110F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMI\LMI120\LMI120F.resx">
+      <DependentUpon>LMI120F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMI\LMI130\LMI130F.resx">
+      <DependentUpon>LMI130F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMI\LMI140\LMI140F.resx">
+      <DependentUpon>LMI140F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMI\LMI150\LMI150F.resx">
+      <DependentUpon>LMI150F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMI\LMI160\LMI160F.resx">
+      <DependentUpon>LMI160F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMI\LMI170\LMI170F.resx">
+      <DependentUpon>LMI170F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMI\LMI180\LMI180F.resx">
+      <DependentUpon>LMI180F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMI\LMI190\LMI190F.resx">
+      <DependentUpon>LMI190F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMI\LMI210\LMI210F.resx">
+      <DependentUpon>LMI210F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMI\LMI220\LMI220F.resx">
+      <DependentUpon>LMI220F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMI\LMI250\LMI250F.resx">
+      <DependentUpon>LMI250F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMI\LMI260\LMI260F.resx">
+      <DependentUpon>LMI260F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMI\LMI280\LMI280F.resx">
+      <DependentUpon>LMI280F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMI\LMI320\LMI320F.resx">
+      <DependentUpon>LMI320F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMI\LMI330\LMI330F.resx">
+      <DependentUpon>LMI330F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMI\LMI350\LMI350F.resx">
+      <DependentUpon>LMI350F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMI\LMI360\LMI360F.resx">
+      <DependentUpon>LMI360F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMI\LMI380\LMI380F.resx">
+      <DependentUpon>LMI380F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMI\LMI400\LMI400F.resx">
+      <DependentUpon>LMI400F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMI\LMI410\LMI410F.resx">
+      <DependentUpon>LMI410F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMI\LMI420\LMI420F.resx">
+      <DependentUpon>LMI420F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMI\LMI430\LMI430F.resx">
+      <DependentUpon>LMI430F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMI\LMI440\LMI440F.resx">
+      <DependentUpon>LMI440F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMI\LMI450\LMI450F.resx">
+      <DependentUpon>LMI450F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMI\LMI460\LMI460F.resx">
+      <DependentUpon>LMI460F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMI\LMI470\LMI470F.resx">
+      <DependentUpon>LMI470F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMI\LMI480\LMI480F.resx">
+      <DependentUpon>LMI480F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMI\LMI490\LMI490F.resx">
+      <DependentUpon>LMI490F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMI\LMI511\LMI511F.resx">
+      <DependentUpon>LMI511F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMI\LMI513\LMI513F.resx">
+      <DependentUpon>LMI513F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMI\LMI530\LMI530F.resx">
+      <DependentUpon>LMI530F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMI\LMI540\LMI540F.resx">
+      <DependentUpon>LMI540F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMI\LMI550\LMI550F.resx">
+      <DependentUpon>LMI550F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMI\LMI560\LMI560F.resx">
+      <DependentUpon>LMI560F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMI\LMI570\LMI570F.resx">
+      <DependentUpon>LMI570F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMI\LMI730\LMI730F.resx">
+      <DependentUpon>LMI730F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMI\LMI820\LMI820F.resx">
+      <DependentUpon>LMI820F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMI\LMI850\LMI850F.resx">
+      <DependentUpon>LMI850F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMI\LMI880\LMI880F.resx">
+      <DependentUpon>LMI880F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMI\LMI930\LMI930F.resx">
+      <DependentUpon>LMI930F.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LMI\LMI410\vssver2.scc" />
+    <None Include="LMI\LMI420\vssver2.scc" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="LMI\LMI950\LMI950F.resx">
+      <DependentUpon>LMI950F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMI\LMI960\LMI960F.resx">
+      <DependentUpon>LMI960F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMI\LMI961\LMI961F.resx">
+      <DependentUpon>LMI961F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMI\LMI962\LMI962F.resx">
+      <DependentUpon>LMI962F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMI\LMI963\LMI963F.resx">
+      <DependentUpon>LMI963F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMI\LMI970\LMI970F.resx">
+      <DependentUpon>LMI970F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMI\LMI990\LMI990F.resx">
+      <DependentUpon>LMI990F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>$(SolutionDir)..\..\tool\CopyToSrcBin.bat $(ProjectDir)bin</PostBuildEvent>
+  </PropertyGroup>
+</Project>

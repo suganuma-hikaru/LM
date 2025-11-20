@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5FD3D8C3-2FE2-4BB4-92F0-7223C1A980DA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Jp.Co.Nrs.LM.BLC</RootNamespace>
+    <AssemblyName>Jp.Co.Nrs.LMH.BLC</AssemblyName>
+    <MyType>Windows</MyType>
+    <OptionStrict>On</OptionStrict>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>_MYTYPE ="Windows"</DefineConstants>
+    <DocumentationFile>Jp.Co.Nrs.LMH.BLC.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Jp.Co.Nrs.LMH.BLC.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>Full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Jp.Co.Nrs.Com.Library, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.Com.Library.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Jp.Co.Nrs.LM.Library, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.LM.Library.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Jp.Co.Nrs.LMB.DAC">
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.LMB.DAC.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Jp.Co.Nrs.LMC.DAC">
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.LMC.DAC.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Jp.Co.Nrs.LMC.DSL">
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.LMC.DSL.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Jp.Co.Nrs.LMH.DAC, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.LMH.DAC.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Jp.Co.Nrs.LMH.DSL">
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.LMH.DSL.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Jp.Co.Nrs.Win.Library">
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.Win.Library.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RDEPS_JobManagerAPI, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\RDEPS_JobManagerAPI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LMH\LMH010BLC.vb" />
+    <Compile Include="LMH\LMH010BLC101.vb" />
+    <Compile Include="LMH\LMH010BLC102.vb" />
+    <Compile Include="LMH\LMH010BLC103.vb" />
+    <Compile Include="LMH\LMH010BLC104.vb" />
+    <Compile Include="LMH\LMH010BLC113.vb" />
+    <Compile Include="LMH\LMH010BLC116.vb" />
+    <Compile Include="LMH\LMH010BLC122.vb" />
+    <Compile Include="LMH\LMH010BLC151.vb" />
+    <Compile Include="LMH\LMH010BLC157.vb" />
+    <Compile Include="LMH\LMH010BLC164.vb" />
+    <Compile Include="LMH\LMH010BLC166.vb" />
+    <Compile Include="LMH\LMH010BLC201.vb" />
+    <Compile Include="LMH\LMH010BLC202.vb" />
+    <Compile Include="LMH\LMH010BLC203.vb" />
+    <Compile Include="LMH\LMH010BLC205.vb" />
+    <Compile Include="LMH\LMH010BLC209.vb" />
+    <Compile Include="LMH\LMH010BLC220.vb" />
+    <Compile Include="LMH\LMH010BLC403.vb" />
+    <Compile Include="LMH\LMH010BLC404.vb" />
+    <Compile Include="LMH\LMH010BLC405.vb" />
+    <Compile Include="LMH\LMH010BLC501.vb" />
+    <Compile Include="LMH\LMH010BLC502.vb" />
+    <Compile Include="LMH\LMH010BLC601.vb" />
+    <Compile Include="LMH\LMH010BLC611.vb" />
+    <Compile Include="LMH\LMH010BLC612.vb" />
+    <Compile Include="LMH\LMH020BLC.vb" />
+    <Compile Include="LMH\LMH030BLC.vb" />
+    <Compile Include="LMH\LMH030BLC000.vb" />
+    <Compile Include="LMH\LMH030BLC001.vb" />
+    <Compile Include="LMH\LMH030BLC101.vb" />
+    <Compile Include="LMH\LMH030BLC102.vb" />
+    <Compile Include="LMH\LMH030BLC103.vb" />
+    <Compile Include="LMH\LMH030BLC104.vb" />
+    <Compile Include="LMH\LMH030BLC105.vb" />
+    <Compile Include="LMH\LMH030BLC106.vb" />
+    <Compile Include="LMH\LMH030BLC107.vb" />
+    <Compile Include="LMH\LMH030BLC108.vb" />
+    <Compile Include="LMH\LMH030BLC109.vb" />
+    <Compile Include="LMH\LMH030BLC110.vb" />
+    <Compile Include="LMH\LMH030BLC111.vb" />
+    <Compile Include="LMH\LMH030BLC113.vb" />
+    <Compile Include="LMH\LMH030BLC114.vb" />
+    <Compile Include="LMH\LMH030BLC115.vb" />
+    <Compile Include="LMH\LMH030BLC116.vb" />
+    <Compile Include="LMH\LMH030BLC117.vb" />
+    <Compile Include="LMH\LMH030BLC118.vb" />
+    <Compile Include="LMH\LMH030BLC119.vb" />
+    <Compile Include="LMH\LMH030BLC120.vb" />
+    <Compile Include="LMH\LMH030BLC121.vb" />
+    <Compile Include="LMH\LMH030BLC122.vb" />
+    <Compile Include="LMH\LMH030BLC130.vb" />
+    <Compile Include="LMH\LMH030BLC131.vb" />
+    <Compile Include="LMH\LMH030BLC132.vb" />
+    <Compile Include="LMH\LMH030BLC133.vb" />
+    <Compile Include="LMH\LMH030BLC151.vb" />
+    <Compile Include="LMH\LMH030BLC152.vb" />
+    <Compile Include="LMH\LMH030BLC155.vb" />
+    <Compile Include="LMH\LMH030BLC156.vb" />
+    <Compile Include="LMH\LMH030BLC157.vb" />
+    <Compile Include="LMH\LMH030BLC158.vb" />
+    <Compile Include="LMH\LMH030BLC159.vb" />
+    <Compile Include="LMH\LMH030BLC160.vb" />
+    <Compile Include="LMH\LMH030BLC161.vb" />
+    <Compile Include="LMH\LMH030BLC163.vb" />
+    <Compile Include="LMH\LMH030BLC167.vb" />
+    <Compile Include="LMH\LMH030BLC201.vb" />
+    <Compile Include="LMH\LMH030BLC202.vb" />
+    <Compile Include="LMH\LMH030BLC203.vb" />
+    <Compile Include="LMH\LMH030BLC204.vb" />
+    <Compile Include="LMH\LMH030BLC205.vb" />
+    <Compile Include="LMH\LMH030BLC206.vb" />
+    <Compile Include="LMH\LMH030BLC207.vb" />
+    <Compile Include="LMH\LMH030BLC208.vb" />
+    <Compile Include="LMH\LMH030BLC210.vb" />
+    <Compile Include="LMH\LMH030BLC211.vb" />
+    <Compile Include="LMH\LMH030BLC220.vb" />
+    <Compile Include="LMH\LMH030BLC301.vb" />
+    <Compile Include="LMH\LMH030BLC401.vb" />
+    <Compile Include="LMH\LMH030BLC403.vb" />
+    <Compile Include="LMH\LMH030BLC404.vb" />
+    <Compile Include="LMH\LMH030BLC405.vb" />
+    <Compile Include="LMH\LMH030BLC406.vb" />
+    <Compile Include="LMH\LMH030BLC407.vb" />
+    <Compile Include="LMH\LMH030BLC501.vb" />
+    <Compile Include="LMH\LMH030BLC502.vb" />
+    <Compile Include="LMH\LMH030BLC504.vb" />
+    <Compile Include="LMH\LMH030BLC505.vb" />
+    <Compile Include="LMH\LMH030BLC506.vb" />
+    <Compile Include="LMH\LMH030BLC551.vb" />
+    <Compile Include="LMH\LMH030BLC601.vb" />
+    <Compile Include="LMH\LMH030BLC611.vb" />
+    <Compile Include="LMH\LMH030BLC612.vb" />
+    <Compile Include="LMH\LMH030BLC701.vb" />
+    <Compile Include="LMH\LMH030BLC911.vb" />
+    <Compile Include="LMH\LMH040BLC.vb" />
+    <Compile Include="LMH\LMH050BLC.vb" />
+    <Compile Include="LMH\LMH060BLC.vb" />
+    <Compile Include="LMH\LMH070BLC.vb" />
+    <Compile Include="LMH\LMH080BLC.vb" />
+    <Compile Include="LMH\LMH090BLC.vb" />
+    <Compile Include="LMH\LMH500BLC.vb" />
+    <Compile Include="LMH\LMH502BLC.vb" />
+    <Compile Include="LMH\LMH503BLC.vb" />
+    <Compile Include="LMH\LMH510BLC.vb" />
+    <Compile Include="LMH\LMH540BLC.vb" />
+    <Compile Include="LMH\LMH550BLC.vb" />
+    <Compile Include="LMH\LMH551BLC.vb" />
+    <Compile Include="LMH\LMH552BLC.vb" />
+    <Compile Include="LMH\LMH560BLC.vb" />
+    <Compile Include="LMH\LMH561BLC.vb" />
+    <Compile Include="LMH\LMH562BLC.vb" />
+    <Compile Include="LMH\LMH563BLC.vb" />
+    <Compile Include="LMH\LMH564BLC.vb" />
+    <Compile Include="LMH\LMH570BLC.vb" />
+    <Compile Include="LMH\LMH571BLC.vb" />
+    <Compile Include="LMH\LMH572BLC.vb" />
+    <Compile Include="LMH\LMH573BLC.vb" />
+    <Compile Include="LMH\LMH580BLC.vb" />
+    <Compile Include="LMH\LMH581BLC.vb" />
+    <Compile Include="LMH\LMH582BLC.vb" />
+    <Compile Include="LMH\LMH583BLC.vb" />
+    <Compile Include="LMH\LMH584BLC.vb" />
+    <Compile Include="LMH\LMH585BLC.vb" />
+    <Compile Include="LMH\LMH587BLC.vb" />
+    <Compile Include="LMH\LMH588BLC.vb" />
+    <Compile Include="LMH\LMH589BLC.vb" />
+    <Compile Include="LMH\LMH590BLC.vb" />
+    <Compile Include="LMH\LMH600BLC.vb" />
+    <Compile Include="LMH\LMH800BLC.vb" />
+    <Compile Include="LMH\LMH810BLC.vb" />
+    <Compile Include="LMH\LMH820BLC.vb" />
+    <Compile Include="LMH\LMH830BLC.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>$(SolutionDir)..\..\tool\CopyToSrcBin.bat $(ProjectDir)bin</PostBuildEvent>
+  </PropertyGroup>
+</Project>

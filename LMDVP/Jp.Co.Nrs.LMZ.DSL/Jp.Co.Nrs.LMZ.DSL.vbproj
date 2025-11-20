@@ -1,0 +1,627 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0660F833-38BD-4B7E-9620-A7C2F2640343}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Jp.Co.Nrs.LM.DSL</RootNamespace>
+    <AssemblyName>Jp.Co.Nrs.LMZ.DSL</AssemblyName>
+    <MyType>Windows</MyType>
+    <OptionStrict>On</OptionStrict>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>_MYTYPE ="Windows"</DefineConstants>
+    <DocumentationFile>Jp.Co.Nrs.LMZ.DSL.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Jp.Co.Nrs.LMZ.DSL.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>Full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\WINDOWS\assembly\GAC_32\System.Data\2.0.0.0__b77a5c561934e089\System.Data.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\WINDOWS\assembly\GAC_MSIL\System.Xml\2.0.0.0__b77a5c561934e089\System.Xml.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LMZ\LMZ010DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMZ010DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMZ\LMZ020DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMZ020DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMZ\LMZ021DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMZ021DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMZ\LMZ040DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMZ040DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMZ\LMZ050DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMZ050DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMZ\LMZ060DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMZ060DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMZ\LMZ070DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMZ070DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMZ\LMZ080DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMZ080DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMZ\LMZ090DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMZ090DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMZ\LMZ100DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMZ100DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMZ\LMZ120DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMZ120DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMZ\LMZ160DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMZ160DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMZ\LMZ170DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMZ170DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMZ\LMZ190DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMZ190DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMZ\LMZ200DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMZ200DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMZ\LMZ210DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMZ210DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMZ\LMZ220DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMZ220DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMZ\LMZ230DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMZ230DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMZ\LMZ240DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMZ240DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMZ\LMZ250DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMZ250DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMZ\LMZ260DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMZ260DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMZ\LMZ270DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMZ270DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMZ\LMZ280DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMZ280DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMZ\LMZ290DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMZ290DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMZ\LMZ300DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMZ300DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMZ\LMZ310DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMZ310DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMZ\LMZ320DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMZ320DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMZ\LMZ330DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMZ330DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMZ\LMZ340DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMZ340DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMZ\LMZ350DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMZ350DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMZ\LMZ360DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMZ360DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMZ\LMZ370DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMZ370DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMZ\LMZ380DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMZ380DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMZ\LMZ390DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMZ390DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LMZ\LMZ010DS.xsc">
+      <DependentUpon>LMZ010DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ010DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMZ010DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMZ\LMZ010DS.xss">
+      <DependentUpon>LMZ010DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ020DS.xsc">
+      <DependentUpon>LMZ020DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ020DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMZ020DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMZ\LMZ020DS.xss">
+      <DependentUpon>LMZ020DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ021DS.xsc">
+      <DependentUpon>LMZ021DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ021DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMZ021DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMZ\LMZ021DS.xss">
+      <DependentUpon>LMZ021DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ040DS.xsc">
+      <DependentUpon>LMZ040DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ040DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMZ040DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMZ\LMZ040DS.xss">
+      <DependentUpon>LMZ040DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ050DS.xsc">
+      <DependentUpon>LMZ050DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ050DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMZ050DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMZ\LMZ050DS.xss">
+      <DependentUpon>LMZ050DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ060DS.xsc">
+      <DependentUpon>LMZ060DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ060DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMZ060DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMZ\LMZ060DS.xss">
+      <DependentUpon>LMZ060DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ070DS.xsc">
+      <DependentUpon>LMZ070DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ070DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMZ070DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMZ\LMZ070DS.xss">
+      <DependentUpon>LMZ070DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ080DS.xsc">
+      <DependentUpon>LMZ080DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ080DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMZ080DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMZ\LMZ080DS.xss">
+      <DependentUpon>LMZ080DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ090DS.xsc">
+      <DependentUpon>LMZ090DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ090DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMZ090DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMZ\LMZ090DS.xss">
+      <DependentUpon>LMZ090DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ100DS.xsc">
+      <DependentUpon>LMZ100DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ100DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMZ100DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMZ\LMZ100DS.xss">
+      <DependentUpon>LMZ100DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ120DS.xsc">
+      <DependentUpon>LMZ120DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ120DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMZ120DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMZ\LMZ120DS.xss">
+      <DependentUpon>LMZ120DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ160DS.xsc">
+      <DependentUpon>LMZ160DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ160DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMZ160DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMZ\LMZ160DS.xss">
+      <DependentUpon>LMZ160DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ170DS.xsc">
+      <DependentUpon>LMZ170DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ170DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMZ170DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMZ\LMZ170DS.xss">
+      <DependentUpon>LMZ170DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ190DS.xsc">
+      <DependentUpon>LMZ190DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ190DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMZ190DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMZ\LMZ190DS.xss">
+      <DependentUpon>LMZ190DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ200DS.xsc">
+      <DependentUpon>LMZ200DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ200DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMZ200DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMZ\LMZ200DS.xss">
+      <DependentUpon>LMZ200DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ210DS.xsc">
+      <DependentUpon>LMZ210DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ210DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMZ210DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMZ\LMZ210DS.xss">
+      <DependentUpon>LMZ210DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ220DS.xsc">
+      <DependentUpon>LMZ220DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ220DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMZ220DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMZ\LMZ220DS.xss">
+      <DependentUpon>LMZ220DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ230DS.xsc">
+      <DependentUpon>LMZ230DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ230DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMZ230DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMZ\LMZ230DS.xss">
+      <DependentUpon>LMZ230DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ240DS.xsc">
+      <DependentUpon>LMZ240DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ240DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMZ240DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMZ\LMZ240DS.xss">
+      <DependentUpon>LMZ240DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ250DS.xsc">
+      <DependentUpon>LMZ250DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ250DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMZ250DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMZ\LMZ250DS.xss">
+      <DependentUpon>LMZ250DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ260DS.xsc">
+      <DependentUpon>LMZ260DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ260DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMZ260DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMZ\LMZ260DS.xss">
+      <DependentUpon>LMZ260DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ270DS.xsc">
+      <DependentUpon>LMZ270DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ270DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMZ270DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMZ\LMZ270DS.xss">
+      <DependentUpon>LMZ270DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ280DS.xsc">
+      <DependentUpon>LMZ280DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ280DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMZ280DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMZ\LMZ280DS.xss">
+      <DependentUpon>LMZ280DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ290DS.xsc">
+      <DependentUpon>LMZ290DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ290DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMZ290DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMZ\LMZ290DS.xss">
+      <DependentUpon>LMZ290DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ300DS.xsc">
+      <DependentUpon>LMZ300DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ300DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMZ300DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMZ\LMZ300DS.xss">
+      <DependentUpon>LMZ300DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ310DS.xsc">
+      <DependentUpon>LMZ310DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ310DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMZ310DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMZ\LMZ310DS.xss">
+      <DependentUpon>LMZ310DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ320DS.xsc">
+      <DependentUpon>LMZ320DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ320DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMZ320DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMZ\LMZ320DS.xss">
+      <DependentUpon>LMZ320DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ330DS.xsc">
+      <DependentUpon>LMZ330DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ330DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMZ330DS.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="LMZ\LMZ330DS.xss">
+      <DependentUpon>LMZ330DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ340DS.xsc">
+      <DependentUpon>LMZ340DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ340DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMZ340DS.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="LMZ\LMZ340DS.xss">
+      <DependentUpon>LMZ340DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ350DS.xsc">
+      <DependentUpon>LMZ350DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ350DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMZ350DS.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="LMZ\LMZ350DS.xss">
+      <DependentUpon>LMZ350DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ360DS.xsc">
+      <DependentUpon>LMZ360DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ360DS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMZ360DS.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="LMZ\LMZ360DS.xss">
+      <DependentUpon>LMZ360DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ370DS.xsc">
+      <DependentUpon>LMZ370DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ370DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMZ370DS.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="LMZ\LMZ370DS.xss">
+      <DependentUpon>LMZ370DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ380DS.xsc">
+      <DependentUpon>LMZ380DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ380DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMZ380DS.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="LMZ\LMZ380DS.xss">
+      <DependentUpon>LMZ380DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ390DS.xsc">
+      <DependentUpon>LMZ390DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMZ\LMZ390DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMZ390DS.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="LMZ\LMZ390DS.xss">
+      <DependentUpon>LMZ390DS.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>$(SolutionDir)..\..\tool\CopyToSrcBin.bat $(ProjectDir)bin</PostBuildEvent>
+  </PropertyGroup>
+</Project>

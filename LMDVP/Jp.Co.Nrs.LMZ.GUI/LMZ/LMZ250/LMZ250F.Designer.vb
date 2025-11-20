@@ -1,0 +1,203 @@
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class LMZ250F
+    Inherits Jp.Co.Nrs.LM.GUI.Win.LMFormPopL
+
+    'Form は、コンポーネント一覧に後処理を実行するために dispose をオーバーライドします。
+    <System.Diagnostics.DebuggerNonUserCode()> _
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        If disposing AndAlso components IsNot Nothing Then
+            components.Dispose()
+        End If
+        MyBase.Dispose(disposing)
+    End Sub
+
+    'Windows フォーム デザイナで必要です。
+    Private components As System.ComponentModel.IContainer
+
+    'メモ: 以下のプロシージャは Windows フォーム デザイナで必要です。
+    'Windows フォーム デザイナを使用して変更できます。  
+    'コード エディタを使って変更しないでください。
+    <System.Diagnostics.DebuggerStepThrough()> _
+    Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(LMZ250F))
+        Me.sprDetail = New Jp.Co.Nrs.LM.GUI.Win.Spread.LMSpreadSearch
+        Me.LmTitleLabel2 = New Jp.Co.Nrs.LM.GUI.Win.LMTitleLabel
+        Me.cmbNrsBrCd = New Jp.Co.Nrs.LM.GUI.Win.InputMan.LMComboNrsBr
+        Me.optMyUnsoco = New Jp.Co.Nrs.LM.GUI.Win.LMOptionButton
+        Me.optAll = New Jp.Co.Nrs.LM.GUI.Win.LMOptionButton
+        Me.pnlViewAria.SuspendLayout()
+        CType(Me.sprDetail, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
+        '
+        'pnlViewAria
+        '
+        Me.pnlViewAria.Controls.Add(Me.optMyUnsoco)
+        Me.pnlViewAria.Controls.Add(Me.optAll)
+        Me.pnlViewAria.Controls.Add(Me.cmbNrsBrCd)
+        Me.pnlViewAria.Controls.Add(Me.LmTitleLabel2)
+        Me.pnlViewAria.Controls.Add(Me.sprDetail)
+        '
+        'FunctionKey
+        '
+        Me.FunctionKey.Location = New System.Drawing.Point(450, 1)
+        '
+        'sprDetail
+        '
+        Me.sprDetail.AccessibleDescription = ""
+        Me.sprDetail.AllowUserZoom = False
+        Me.sprDetail.BackColor = System.Drawing.Color.FromArgb(CType(CType(236, Byte), Integer), CType(CType(233, Byte), Integer), CType(CType(216, Byte), Integer))
+        Me.sprDetail.BackColorDef = System.Drawing.Color.FromArgb(CType(CType(236, Byte), Integer), CType(CType(233, Byte), Integer), CType(CType(216, Byte), Integer))
+        Me.sprDetail.BorderStyleDef = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.sprDetail.CellClickEventArgs = Nothing
+        Me.sprDetail.CheckToCheckBox = True
+        Me.sprDetail.ClipboardOptions = FarPoint.Win.Spread.ClipboardOptions.NoHeaders
+        Me.sprDetail.ColumnSplitBoxPolicy = FarPoint.Win.Spread.SplitBoxPolicy.Never
+        Me.sprDetail.EditModeReplace = True
+        Me.sprDetail.Font = New System.Drawing.Font("ＭＳ ゴシック", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.sprDetail.FontDef = New System.Drawing.Font("ＭＳ ゴシック", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.sprDetail.ForeColorDef = System.Drawing.Color.Empty
+        Me.sprDetail.HeightDef = 446
+        Me.sprDetail.KeyboardCheckBoxOn = False
+        Me.sprDetail.Location = New System.Drawing.Point(12, 36)
+        Me.sprDetail.Name = "sprDetail"
+        Me.sprDetail.RowSplitBoxPolicy = FarPoint.Win.Spread.SplitBoxPolicy.Never
+        Me.sprDetail.SetViewportTopRow(0, 0, 1)
+        Me.sprDetail.SetActiveViewport(0, -1, 0)
+        '
+        '
+        '
+        Reset()
+        'SheetName = "Sheet1"
+        'RowCount = 1
+        Me.sprDetail.SetViewportTopRow(0, 0, 1)
+        Me.sprDetail.SetActiveViewport(0, -1, 0)
+        Me.sprDetail.Size = New System.Drawing.Size(770, 446)
+        Me.sprDetail.SortColumn = True
+        Me.sprDetail.SpanColumnLock = True
+        Me.sprDetail.SpreadDoubleClicked = False
+        Me.sprDetail.TabIndex = 5
+        Me.sprDetail.TabStripPolicy = FarPoint.Win.Spread.TabStripPolicy.Never
+        Me.sprDetail.TextValue = Nothing
+        Me.sprDetail.WidthDef = 770
+        '
+        'LmTitleLabel2
+        '
+        Me.LmTitleLabel2.AutoSize = True
+        Me.LmTitleLabel2.AutoSizeDef = True
+        Me.LmTitleLabel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(236, Byte), Integer), CType(CType(233, Byte), Integer), CType(CType(216, Byte), Integer))
+        Me.LmTitleLabel2.BackColorDef = System.Drawing.Color.FromArgb(CType(CType(236, Byte), Integer), CType(CType(233, Byte), Integer), CType(CType(216, Byte), Integer))
+        Me.LmTitleLabel2.BorderStyleDef = System.Windows.Forms.BorderStyle.None
+        Me.LmTitleLabel2.EnableStatus = False
+        Me.LmTitleLabel2.Font = New System.Drawing.Font("ＭＳ ゴシック", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.LmTitleLabel2.FontDef = New System.Drawing.Font("ＭＳ ゴシック", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.LmTitleLabel2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.LmTitleLabel2.ForeColorDef = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.LmTitleLabel2.HeightDef = 13
+        Me.LmTitleLabel2.Location = New System.Drawing.Point(15, 15)
+        Me.LmTitleLabel2.Name = "LmTitleLabel2"
+        Me.LmTitleLabel2.Size = New System.Drawing.Size(49, 13)
+        Me.LmTitleLabel2.TabIndex = 243
+        Me.LmTitleLabel2.Text = "営業所"
+        Me.LmTitleLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.LmTitleLabel2.TextValue = "営業所"
+        Me.LmTitleLabel2.WidthDef = 49
+        '
+        'cmbNrsBrCd
+        '
+        Me.cmbNrsBrCd.BackColor = System.Drawing.Color.FromArgb(CType(CType(236, Byte), Integer), CType(CType(233, Byte), Integer), CType(CType(216, Byte), Integer))
+        Me.cmbNrsBrCd.BackColorDef = System.Drawing.Color.FromArgb(CType(CType(236, Byte), Integer), CType(CType(233, Byte), Integer), CType(CType(216, Byte), Integer))
+        Me.cmbNrsBrCd.BorderStyleDef = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.cmbNrsBrCd.ContentAlignment = System.Drawing.ContentAlignment.MiddleLeft
+        Me.cmbNrsBrCd.DataSource = Nothing
+        Me.cmbNrsBrCd.DisplayMember = Nothing
+        Me.cmbNrsBrCd.Font = New System.Drawing.Font("ＭＳ ゴシック", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.cmbNrsBrCd.FontDef = New System.Drawing.Font("ＭＳ ゴシック", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.cmbNrsBrCd.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.cmbNrsBrCd.ForeColorDef = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.cmbNrsBrCd.HeightDef = 18
+        Me.cmbNrsBrCd.HissuLabelBackColor = System.Drawing.Color.FromArgb(CType(CType(236, Byte), Integer), CType(CType(233, Byte), Integer), CType(CType(216, Byte), Integer))
+        Me.cmbNrsBrCd.HissuLabelVisible = True
+        Me.cmbNrsBrCd.InsertWildCard = True
+        Me.cmbNrsBrCd.IsForbiddenWordsCheck = False
+        Me.cmbNrsBrCd.IsHissuCheck = True
+        Me.cmbNrsBrCd.ItemName = ""
+        Me.cmbNrsBrCd.Location = New System.Drawing.Point(67, 13)
+        Me.cmbNrsBrCd.Name = "cmbNrsBrCd"
+        Me.cmbNrsBrCd.ReadOnly = True
+        Me.cmbNrsBrCd.SelectedIndex = -1
+        Me.cmbNrsBrCd.SelectedItem = Nothing
+        Me.cmbNrsBrCd.SelectedText = ""
+        Me.cmbNrsBrCd.SelectedValue = ""
+        Me.cmbNrsBrCd.Size = New System.Drawing.Size(300, 18)
+        Me.cmbNrsBrCd.TabIndex = 598
+        Me.cmbNrsBrCd.TabStop = False
+        Me.cmbNrsBrCd.TabStopSetting = False
+        Me.cmbNrsBrCd.TextValue = ""
+        Me.cmbNrsBrCd.ValueMember = Nothing
+        Me.cmbNrsBrCd.WidthDef = 300
+        '
+        'optMyUnsoco
+        '
+        Me.optMyUnsoco.AutoSize = True
+        Me.optMyUnsoco.BackColor = System.Drawing.Color.FromArgb(CType(CType(236, Byte), Integer), CType(CType(233, Byte), Integer), CType(CType(216, Byte), Integer))
+        Me.optMyUnsoco.BackColorDef = System.Drawing.Color.FromArgb(CType(CType(236, Byte), Integer), CType(CType(233, Byte), Integer), CType(CType(216, Byte), Integer))
+        Me.optMyUnsoco.BorderStyleDef = System.Windows.Forms.BorderStyle.None
+        Me.optMyUnsoco.EnableStatus = True
+        Me.optMyUnsoco.Font = New System.Drawing.Font("ＭＳ ゴシック", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.optMyUnsoco.FontDef = New System.Drawing.Font("ＭＳ ゴシック", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.optMyUnsoco.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optMyUnsoco.ForeColorDef = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optMyUnsoco.HeightDef = 17
+        Me.optMyUnsoco.Location = New System.Drawing.Point(450, 15)
+        Me.optMyUnsoco.Name = "optMyUnsoco"
+        Me.optMyUnsoco.Size = New System.Drawing.Size(109, 17)
+        Me.optMyUnsoco.TabIndex = 202
+        Me.optMyUnsoco.TabStopSetting = False
+        Me.optMyUnsoco.Text = "マイ運送会社"
+        Me.optMyUnsoco.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.optMyUnsoco.TextValue = "マイ運送会社"
+        Me.optMyUnsoco.UseVisualStyleBackColor = True
+        Me.optMyUnsoco.WidthDef = 109
+        '
+        'optAll
+        '
+        Me.optAll.AutoSize = True
+        Me.optAll.BackColor = System.Drawing.Color.FromArgb(CType(CType(236, Byte), Integer), CType(CType(233, Byte), Integer), CType(CType(216, Byte), Integer))
+        Me.optAll.BackColorDef = System.Drawing.Color.FromArgb(CType(CType(236, Byte), Integer), CType(CType(233, Byte), Integer), CType(CType(216, Byte), Integer))
+        Me.optAll.BorderStyleDef = System.Windows.Forms.BorderStyle.None
+        Me.optAll.Checked = True
+        Me.optAll.EnableStatus = True
+        Me.optAll.Font = New System.Drawing.Font("ＭＳ ゴシック", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.optAll.FontDef = New System.Drawing.Font("ＭＳ ゴシック", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
+        Me.optAll.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optAll.ForeColorDef = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.optAll.HeightDef = 17
+        Me.optAll.Location = New System.Drawing.Point(387, 15)
+        Me.optAll.Name = "optAll"
+        Me.optAll.Size = New System.Drawing.Size(53, 17)
+        Me.optAll.TabIndex = 201
+        Me.optAll.TabStop = True
+        Me.optAll.TabStopSetting = True
+        Me.optAll.Text = "全件"
+        Me.optAll.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.optAll.TextValue = "全件"
+        Me.optAll.UseVisualStyleBackColor = True
+        Me.optAll.WidthDef = 53
+        '
+        'LMZ250F
+        '
+        Me.ClientSize = New System.Drawing.Size(794, 568)
+        Me.Name = "LMZ250F"
+        Me.pnlViewAria.ResumeLayout(False)
+        Me.pnlViewAria.PerformLayout()
+        CType(Me.sprDetail, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResumeLayout(False)
+
+    End Sub
+    Friend WithEvents sprDetail As Jp.Co.Nrs.LM.GUI.Win.Spread.LMSpreadSearch
+    Friend WithEvents LmTitleLabel2 As Jp.Co.Nrs.LM.GUI.Win.LMTitleLabel
+    Friend WithEvents cmbNrsBrCd As Jp.Co.Nrs.LM.GUI.Win.InputMan.LMComboNrsBr
+    Friend WithEvents optMyUnsoco As Jp.Co.Nrs.LM.GUI.Win.LMOptionButton
+    Friend WithEvents optAll As Jp.Co.Nrs.LM.GUI.Win.LMOptionButton
+
+End Class

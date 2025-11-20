@@ -1,0 +1,422 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{72507588-6BB1-4CA7-AD26-49C305B2BE3D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Jp.Co.Nrs.LM.GUI</RootNamespace>
+    <AssemblyName>Jp.Co.Nrs.LMC.GUI</AssemblyName>
+    <MyType>Windows</MyType>
+    <OptionStrict>On</OptionStrict>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <SignAssembly>false</SignAssembly>
+    <DelaySign>false</DelaySign>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>_MYTYPE ="WindowsForms"</DefineConstants>
+    <DocumentationFile>Jp.Co.Nrs.LMC.GUI.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Jp.Co.Nrs.LMC.GUI.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>Full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.RDVIEWER55JLib">
+      <HintPath>..\..\..\bin\AxInterop.RDVIEWER55JLib.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ExcelCreator.Shared.v10, Version=10.0.5270.1214, Culture=neutral, PublicKeyToken=411a8845f4d5d1b9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\ExcelCreator.Shared.v10.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ExcelCreator.Xlsx.Core.v10, Version=10.0.5270.1214, Culture=neutral, PublicKeyToken=afb069e70259a56a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\ExcelCreator.Xlsx.Core.v10.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ExcelCreator.Xlsx.Creator.v10, Version=10.0.5270.1214, Culture=neutral, PublicKeyToken=a1afcfd03b061a55, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\ExcelCreator.Xlsx.Creator.v10.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ExcelCreator.Xlsx.View.v10, Version=10.0.5270.1214, Culture=neutral, PublicKeyToken=c551c97308384f23, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\ExcelCreator.Xlsx.View.v10.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FarPoint.PDF, Version=12.0.4509.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\FarPoint.PDF.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FarPoint.Win, Version=12.0.4509.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\FarPoint.Win.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FarPoint.Win.Chart, Version=12.0.4509.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\FarPoint.Win.Chart.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FarPoint.Win.SpreadJ, Version=12.0.4509.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\FarPoint.Win.SpreadJ.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GrapeCity.CalcEngine, Version=12.0.4509.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\GrapeCity.CalcEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GrapeCity.Spreadsheet, Version=12.0.4509.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\GrapeCity.Spreadsheet.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GrapeCity.Spreadsheet.Win, Version=12.0.4509.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\GrapeCity.Spreadsheet.Win.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GrapeCity.Win.Editors.v100, Version=10.0.4002.2012, Culture=neutral, PublicKeyToken=0ce01a33ce55ca12, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\GrapeCity.Win.Editors.v100.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GrapeCity.Win.PluginInputMan, Version=12.0.4509.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\GrapeCity.Win.PluginInputMan.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GrapeCity.Win.PlusPak.v100, Version=10.0.4002.2012, Culture=neutral, PublicKeyToken=63a9ba12b6923243, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\GrapeCity.Win.PlusPak.v100.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Jp.Co.Nrs.Com.Library, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.Com.Library.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Jp.Co.Nrs.LM.GUI">
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.LM.GUI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Jp.Co.Nrs.LM.Library">
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.LM.Library.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Jp.Co.Nrs.LMC.DSL">
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.LMC.DSL.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Jp.Co.Nrs.LMD.DSL, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.LMD.DSL.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Jp.Co.Nrs.LMF.GUI">
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.LMF.GUI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Jp.Co.Nrs.LMM.DSL">
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.LMM.DSL.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Jp.Co.Nrs.LMQ.DSL, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.LMQ.DSL.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Jp.Co.Nrs.LMQ.GUI, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.LMQ.GUI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Jp.Co.Nrs.LMR.DSL">
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.LMR.DSL.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Jp.Co.Nrs.LMU.DSL">
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.LMU.DSL.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Jp.Co.Nrs.LMZ.DSL">
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.LMZ.DSL.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Jp.Co.Nrs.LMZ.GUI">
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.LMZ.GUI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Jp.Co.Nrs.Win.Library">
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.Win.Library.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\bin\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="RDEPS_JobManagerAPI">
+      <HintPath>..\..\..\bin\RDEPS_JobManagerAPI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LMC\LMC010\LMC010C.vb" />
+    <Compile Include="LMC\LMC010\LMC010F.Designer.vb">
+      <DependentUpon>LMC010F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMC\LMC010\LMC010F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMC\LMC010\LMC010G.vb" />
+    <Compile Include="LMC\LMC010\LMC010H.vb" />
+    <Compile Include="LMC\LMC010\LMC010V.vb" />
+    <Compile Include="LMC\LMC020\LMC020C.vb" />
+    <Compile Include="LMC\LMC020\LMC020F.Designer.vb">
+      <DependentUpon>LMC020F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMC\LMC020\LMC020F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMC\LMC020\LMC020G.vb" />
+    <Compile Include="LMC\LMC020\LMC020H.vb" />
+    <Compile Include="LMC\LMC020\LMC020V.vb" />
+    <Compile Include="LMC\LMC030\LMC030C.vb" />
+    <Compile Include="LMC\LMC030\LMC030F.Designer.vb">
+      <DependentUpon>LMC030F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMC\LMC030\LMC030F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMC\LMC030\LMC030G.vb" />
+    <Compile Include="LMC\LMC030\LMC030H.vb" />
+    <Compile Include="LMC\LMC030\LMC030V.vb" />
+    <Compile Include="LMC\LMC040\LMC040C.vb" />
+    <Compile Include="LMC\LMC040\LMC040F.Designer.vb">
+      <DependentUpon>LMC040F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMC\LMC040\LMC040F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMC\LMC040\LMC040G.vb" />
+    <Compile Include="LMC\LMC040\LMC040H.vb" />
+    <Compile Include="LMC\LMC040\LMC040V.vb" />
+    <Compile Include="LMC\LMC050\LMC050C.vb" />
+    <Compile Include="LMC\LMC050\LMC050F.Designer.vb">
+      <DependentUpon>LMC050F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMC\LMC050\LMC050F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMC\LMC050\LMC050G.vb" />
+    <Compile Include="LMC\LMC050\LMC050H.vb" />
+    <Compile Include="LMC\LMC050\LMC050V.vb" />
+    <Compile Include="LMC\LMC800\LMC800F.Designer.vb">
+      <DependentUpon>LMC800F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMC\LMC800\LMC800F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMC\LMC800\LMC800H.vb" />
+    <Compile Include="LMC\LMC810\LMC810F.Designer.vb">
+      <DependentUpon>LMC810F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMC\LMC810\LMC810F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMC\LMC810\LMC810H.vb" />
+    <Compile Include="LMC\LMC820\LMC820F.Designer.vb">
+      <DependentUpon>LMC820F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMC\LMC820\LMC820F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMC\LMC820\LMC820H.vb" />
+    <Compile Include="LMC\LMC830\LMC830C.vb" />
+    <Compile Include="LMC\LMC830\LMC830H.vb" />
+    <Compile Include="LMC\LMC840\LMC840F.Designer.vb">
+      <DependentUpon>LMC840F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMC\LMC840\LMC840F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMC\LMC840\LMC840H.vb" />
+    <Compile Include="LMC\LMC850\LMC850F.Designer.vb">
+      <DependentUpon>LMC850F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMC\LMC850\LMC850F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMC\LMC850\LMC850H.vb" />
+    <Compile Include="LMC\LMC890\LMC890F.Designer.vb">
+      <DependentUpon>LMC890F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMC\LMC890\LMC890F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMC\LMC890\LMC890H.vb" />
+    <Compile Include="LMC\LMC900\LMC900F.Designer.vb">
+      <DependentUpon>LMC900F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMC\LMC900\LMC900F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMC\LMC900\LMC900H.vb" />
+    <Compile Include="LMC\LMC903\LMC903H.vb" />
+    <Compile Include="LMC\LMC910\LMC910F.Designer.vb">
+      <DependentUpon>LMC910F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMC\LMC910\LMC910F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMC\LMC910\LMC910H.vb" />
+    <Compile Include="LMC\LMC920\LMC920F.Designer.vb">
+      <DependentUpon>LMC920F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMC\LMC920\LMC920F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMC\LMC920\LMC920H.vb" />
+    <Compile Include="LMC\LMC930\LMC930C.vb" />
+    <Compile Include="LMC\LMC930\LMC930H.vb" />
+    <Compile Include="LMC\LMC940\LMC940H.vb" />
+    <Compile Include="LMC\LMC950\LMC950H.vb" />
+    <Compile Include="LMC\LMC960\LMC960H.vb" />
+    <Compile Include="LMC\LMCControlG.vb" />
+    <Compile Include="LMC\LMCControlH.vb" />
+    <Compile Include="LMC\LMCControlV.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="LMC\LMC010\LMC010F.resx">
+      <DependentUpon>LMC010F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMC\LMC020\LMC020F.resx">
+      <DependentUpon>LMC020F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMC\LMC030\LMC030F.resx">
+      <DependentUpon>LMC030F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMC\LMC040\LMC040F.resx">
+      <DependentUpon>LMC040F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMC\LMC050\LMC050F.resx">
+      <DependentUpon>LMC050F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMC\LMC800\LMC800F.resx">
+      <DependentUpon>LMC800F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMC\LMC810\LMC810F.resx">
+      <DependentUpon>LMC810F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMC\LMC820\LMC820F.resx">
+      <DependentUpon>LMC820F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMC\LMC840\LMC840F.resx">
+      <DependentUpon>LMC840F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMC\LMC850\LMC850F.resx">
+      <DependentUpon>LMC850F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMC\LMC890\LMC890F.resx">
+      <DependentUpon>LMC890F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMC\LMC900\LMC900F.resx">
+      <DependentUpon>LMC900F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMC\LMC910\LMC910F.resx">
+      <DependentUpon>LMC910F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMC\LMC920\LMC920F.resx">
+      <DependentUpon>LMC920F.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>$(SolutionDir)..\..\tool\CopyToSrcBin.bat $(ProjectDir)bin</PostBuildEvent>
+  </PropertyGroup>
+</Project>

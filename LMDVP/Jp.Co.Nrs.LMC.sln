@@ -1,0 +1,107 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.757
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Jp.Co.Nrs.LM.Launcher", "..\Launcher\Jp.Co.Nrs.LM.Launcher\Jp.Co.Nrs.LM.Launcher\Jp.Co.Nrs.LM.Launcher.vbproj", "{B48F50B1-FAD7-47A5-B855-65BD8C40C23D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{72507588-6BB1-4CA7-AD26-49C305B2BE3D} = {72507588-6BB1-4CA7-AD26-49C305B2BE3D}
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Jp.Co.Nrs.LM.WSI", "http://localhost:3333", "{59BC6C95-3D4A-486C-B312-F5BCA623D717}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.7.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_3333"
+		Debug.AspNetCompiler.PhysicalPath = "..\Jp.Co.Nrs.LM.WSI\Jp.Co.Nrs.LM.WSI\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_3333\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_3333"
+		Release.AspNetCompiler.PhysicalPath = "..\Jp.Co.Nrs.LM.WSI\Jp.Co.Nrs.LM.WSI\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_3333\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\Jp.Co.Nrs.LM.WSI\Jp.Co.Nrs.LM.WSI\"
+	EndProjectSection
+	ProjectSection(ProjectDependencies) = postProject
+		{B48F50B1-FAD7-47A5-B855-65BD8C40C23D} = {B48F50B1-FAD7-47A5-B855-65BD8C40C23D}
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Jp.Co.Nrs.LMC.BLC", "Jp.Co.Nrs.LMC.BLC\Jp.Co.Nrs.LMC.BLC.vbproj", "{5DEA1083-C935-420A-9850-19A228642372}"
+	ProjectSection(ProjectDependencies) = postProject
+		{356DF428-ACF1-4DC6-9332-90AC694CB127} = {356DF428-ACF1-4DC6-9332-90AC694CB127}
+		{BE6C8AFC-07AB-4BD5-A412-9DE937F39106} = {BE6C8AFC-07AB-4BD5-A412-9DE937F39106}
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Jp.Co.Nrs.LMC.BLF", "Jp.Co.Nrs.LMC.BLF\Jp.Co.Nrs.LMC.BLF.vbproj", "{CFCE8229-FF37-4BE0-92DB-8F12F0DDD7B4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5DEA1083-C935-420A-9850-19A228642372} = {5DEA1083-C935-420A-9850-19A228642372}
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Jp.Co.Nrs.LMC.DAC", "Jp.Co.Nrs.LMC.DAC\Jp.Co.Nrs.LMC.DAC.vbproj", "{BE6C8AFC-07AB-4BD5-A412-9DE937F39106}"
+	ProjectSection(ProjectDependencies) = postProject
+		{15352809-E980-438C-8E86-C84B002BFDEB} = {15352809-E980-438C-8E86-C84B002BFDEB}
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Jp.Co.Nrs.LMC.DSL", "Jp.Co.Nrs.LMC.DSL\Jp.Co.Nrs.LMC.DSL.vbproj", "{15352809-E980-438C-8E86-C84B002BFDEB}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Jp.Co.Nrs.LMC.GUI", "Jp.Co.Nrs.LMC.GUI\Jp.Co.Nrs.LMC.GUI.vbproj", "{72507588-6BB1-4CA7-AD26-49C305B2BE3D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CFCE8229-FF37-4BE0-92DB-8F12F0DDD7B4} = {CFCE8229-FF37-4BE0-92DB-8F12F0DDD7B4}
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Jp.Co.Nrs.LMC.DAC2", "Jp.Co.Nrs.LMC.DAC2\Jp.Co.Nrs.LMC.DAC2.vbproj", "{356DF428-ACF1-4DC6-9332-90AC694CB127}"
+	ProjectSection(ProjectDependencies) = postProject
+		{15352809-E980-438C-8E86-C84B002BFDEB} = {15352809-E980-438C-8E86-C84B002BFDEB}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B48F50B1-FAD7-47A5-B855-65BD8C40C23D}.Debug|x86.ActiveCfg = Debug|x86
+		{B48F50B1-FAD7-47A5-B855-65BD8C40C23D}.Debug|x86.Build.0 = Debug|x86
+		{B48F50B1-FAD7-47A5-B855-65BD8C40C23D}.Release|x86.ActiveCfg = Release|x86
+		{B48F50B1-FAD7-47A5-B855-65BD8C40C23D}.Release|x86.Build.0 = Release|x86
+		{59BC6C95-3D4A-486C-B312-F5BCA623D717}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{59BC6C95-3D4A-486C-B312-F5BCA623D717}.Debug|x86.Build.0 = Debug|Any CPU
+		{59BC6C95-3D4A-486C-B312-F5BCA623D717}.Release|x86.ActiveCfg = Debug|Any CPU
+		{5DEA1083-C935-420A-9850-19A228642372}.Debug|x86.ActiveCfg = Debug|x86
+		{5DEA1083-C935-420A-9850-19A228642372}.Debug|x86.Build.0 = Debug|x86
+		{5DEA1083-C935-420A-9850-19A228642372}.Release|x86.ActiveCfg = Release|x86
+		{5DEA1083-C935-420A-9850-19A228642372}.Release|x86.Build.0 = Release|x86
+		{CFCE8229-FF37-4BE0-92DB-8F12F0DDD7B4}.Debug|x86.ActiveCfg = Debug|x86
+		{CFCE8229-FF37-4BE0-92DB-8F12F0DDD7B4}.Debug|x86.Build.0 = Debug|x86
+		{CFCE8229-FF37-4BE0-92DB-8F12F0DDD7B4}.Release|x86.ActiveCfg = Release|x86
+		{CFCE8229-FF37-4BE0-92DB-8F12F0DDD7B4}.Release|x86.Build.0 = Release|x86
+		{BE6C8AFC-07AB-4BD5-A412-9DE937F39106}.Debug|x86.ActiveCfg = Debug|x86
+		{BE6C8AFC-07AB-4BD5-A412-9DE937F39106}.Debug|x86.Build.0 = Debug|x86
+		{BE6C8AFC-07AB-4BD5-A412-9DE937F39106}.Release|x86.ActiveCfg = Release|x86
+		{BE6C8AFC-07AB-4BD5-A412-9DE937F39106}.Release|x86.Build.0 = Release|x86
+		{15352809-E980-438C-8E86-C84B002BFDEB}.Debug|x86.ActiveCfg = Debug|x86
+		{15352809-E980-438C-8E86-C84B002BFDEB}.Debug|x86.Build.0 = Debug|x86
+		{15352809-E980-438C-8E86-C84B002BFDEB}.Release|x86.ActiveCfg = Release|x86
+		{15352809-E980-438C-8E86-C84B002BFDEB}.Release|x86.Build.0 = Release|x86
+		{72507588-6BB1-4CA7-AD26-49C305B2BE3D}.Debug|x86.ActiveCfg = Debug|x86
+		{72507588-6BB1-4CA7-AD26-49C305B2BE3D}.Debug|x86.Build.0 = Debug|x86
+		{72507588-6BB1-4CA7-AD26-49C305B2BE3D}.Release|x86.ActiveCfg = Release|x86
+		{72507588-6BB1-4CA7-AD26-49C305B2BE3D}.Release|x86.Build.0 = Release|x86
+		{356DF428-ACF1-4DC6-9332-90AC694CB127}.Debug|x86.ActiveCfg = Debug|x86
+		{356DF428-ACF1-4DC6-9332-90AC694CB127}.Debug|x86.Build.0 = Debug|x86
+		{356DF428-ACF1-4DC6-9332-90AC694CB127}.Release|x86.ActiveCfg = Release|x86
+		{356DF428-ACF1-4DC6-9332-90AC694CB127}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A42A32D7-F0E5-43B7-8D7C-A92D64B08D26}
+	EndGlobalSection
+EndGlobal

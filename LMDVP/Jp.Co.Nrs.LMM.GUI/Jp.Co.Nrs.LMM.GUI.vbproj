@@ -1,0 +1,686 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{54E8866B-B107-4CDF-80A5-42EAD400BEF9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Jp.Co.Nrs.LM.GUI</RootNamespace>
+    <AssemblyName>Jp.Co.Nrs.LMM.GUI</AssemblyName>
+    <MyType>Windows</MyType>
+    <OptionStrict>On</OptionStrict>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <SignAssembly>false</SignAssembly>
+    <DelaySign>false</DelaySign>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>_MYTYPE ="WindowsForms"</DefineConstants>
+    <DocumentationFile>Jp.Co.Nrs.LMM.GUI.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Jp.Co.Nrs.LMM.GUI.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>Full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.RDVIEWER55JLib">
+      <HintPath>..\..\..\bin\AxInterop.RDVIEWER55JLib.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ExcelCreator.Shared.v10, Version=10.0.5270.1214, Culture=neutral, PublicKeyToken=411a8845f4d5d1b9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\ExcelCreator.Shared.v10.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ExcelCreator.Xlsx.Core.v10, Version=10.0.5270.1214, Culture=neutral, PublicKeyToken=afb069e70259a56a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\ExcelCreator.Xlsx.Core.v10.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ExcelCreator.Xlsx.Creator.v10, Version=10.0.5270.1214, Culture=neutral, PublicKeyToken=a1afcfd03b061a55, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\ExcelCreator.Xlsx.Creator.v10.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ExcelCreator.Xlsx.View.v10, Version=10.0.5270.1214, Culture=neutral, PublicKeyToken=c551c97308384f23, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\ExcelCreator.Xlsx.View.v10.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FarPoint.PDF, Version=12.0.4509.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\FarPoint.PDF.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FarPoint.Win, Version=12.0.4509.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\FarPoint.Win.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FarPoint.Win.Chart, Version=12.0.4509.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\FarPoint.Win.Chart.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FarPoint.Win.SpreadJ, Version=12.0.4509.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\FarPoint.Win.SpreadJ.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GrapeCity.CalcEngine, Version=12.0.4509.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\GrapeCity.CalcEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GrapeCity.Spreadsheet, Version=12.0.4509.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\GrapeCity.Spreadsheet.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GrapeCity.Spreadsheet.Win, Version=12.0.4509.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\GrapeCity.Spreadsheet.Win.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GrapeCity.Win.Editors.v100, Version=10.0.4002.2012, Culture=neutral, PublicKeyToken=0ce01a33ce55ca12, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\GrapeCity.Win.Editors.v100.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GrapeCity.Win.PluginInputMan, Version=12.0.4509.2012, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\GrapeCity.Win.PluginInputMan.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GrapeCity.Win.PlusPak.v100, Version=10.0.4002.2012, Culture=neutral, PublicKeyToken=63a9ba12b6923243, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\GrapeCity.Win.PlusPak.v100.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Jp.Co.Nrs.Com.Library, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.Com.Library.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Jp.Co.Nrs.LM.GUI">
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.LM.GUI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Jp.Co.Nrs.LM.Library">
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.LM.Library.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Jp.Co.Nrs.LMM.DSL">
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.LMM.DSL.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Jp.Co.Nrs.LMZ.DSL">
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.LMZ.DSL.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Jp.Co.Nrs.LMZ.GUI">
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.LMZ.GUI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Jp.Co.Nrs.Win.Library">
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.Win.Library.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\bin\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="RDEPS_JobManagerAPI">
+      <HintPath>..\..\..\bin\RDEPS_JobManagerAPI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LMM\LMM010\LMM010C.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LMM\LMM010\LMM010F.Designer.vb">
+      <DependentUpon>LMM010F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMM\LMM010\LMM010F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMM\LMM010\LMM010G.vb" />
+    <Compile Include="LMM\LMM010\LMM010H.vb" />
+    <Compile Include="LMM\LMM010\LMM010V.vb" />
+    <Compile Include="LMM\LMM020\LMM020C.vb" />
+    <Compile Include="LMM\LMM020\LMM020F.Designer.vb">
+      <DependentUpon>LMM020F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMM\LMM020\LMM020F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMM\LMM020\LMM020G.vb" />
+    <Compile Include="LMM\LMM020\LMM020H.vb" />
+    <Compile Include="LMM\LMM020\LMM020V.vb" />
+    <Compile Include="LMM\LMM030\LMM030C.vb" />
+    <Compile Include="LMM\LMM030\LMM030F.Designer.vb">
+      <DependentUpon>LMM030F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMM\LMM030\LMM030F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMM\LMM030\LMM030G.vb" />
+    <Compile Include="LMM\LMM030\LMM030H.vb" />
+    <Compile Include="LMM\LMM030\LMM030V.vb" />
+    <Compile Include="LMM\LMM040\LMM040C.vb" />
+    <Compile Include="LMM\LMM040\LMM040F.Designer.vb">
+      <DependentUpon>LMM040F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMM\LMM040\LMM040F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMM\LMM040\LMM040G.vb" />
+    <Compile Include="LMM\LMM040\LMM040H.vb" />
+    <Compile Include="LMM\LMM040\LMM040V.vb" />
+    <Compile Include="LMM\LMM050\LMM050C.vb" />
+    <Compile Include="LMM\LMM050\LMM050F.Designer.vb">
+      <DependentUpon>LMM050F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMM\LMM050\LMM050F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMM\LMM050\LMM050G.vb" />
+    <Compile Include="LMM\LMM050\LMM050H.vb" />
+    <Compile Include="LMM\LMM050\LMM050V.vb" />
+    <Compile Include="LMM\LMM060\LMM060C.vb" />
+    <Compile Include="LMM\LMM060\LMM060F.Designer.vb">
+      <DependentUpon>LMM060F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMM\LMM060\LMM060F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMM\LMM060\LMM060G.vb" />
+    <Compile Include="LMM\LMM060\LMM060H.vb" />
+    <Compile Include="LMM\LMM060\LMM060V.vb" />
+    <Compile Include="LMM\LMM070\LMM070C.vb" />
+    <Compile Include="LMM\LMM070\LMM070F.Designer.vb">
+      <DependentUpon>LMM070F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMM\LMM070\LMM070F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMM\LMM070\LMM070G.vb" />
+    <Compile Include="LMM\LMM070\LMM070H.vb" />
+    <Compile Include="LMM\LMM070\LMM070V.vb" />
+    <Compile Include="LMM\LMM080\LMM080C.vb" />
+    <Compile Include="LMM\LMM080\LMM080F.Designer.vb">
+      <DependentUpon>LMM080F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMM\LMM080\LMM080F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMM\LMM080\LMM080G.vb" />
+    <Compile Include="LMM\LMM080\LMM080H.vb" />
+    <Compile Include="LMM\LMM080\LMM080V.vb" />
+    <Compile Include="LMM\LMM090\LMM090C.vb" />
+    <Compile Include="LMM\LMM090\LMM090F.Designer.vb">
+      <DependentUpon>LMM090F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMM\LMM090\LMM090F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMM\LMM090\LMM090G.vb" />
+    <Compile Include="LMM\LMM090\LMM090H.vb" />
+    <Compile Include="LMM\LMM090\LMM090V.vb" />
+    <Compile Include="LMM\LMM100\LMM100C.vb" />
+    <Compile Include="LMM\LMM100\LMM100F.Designer.vb">
+      <DependentUpon>LMM100F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMM\LMM100\LMM100F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMM\LMM100\LMM100G.vb" />
+    <Compile Include="LMM\LMM100\LMM100H.vb" />
+    <Compile Include="LMM\LMM100\LMM100V.vb" />
+    <Compile Include="LMM\LMM110\LMM110C.vb" />
+    <Compile Include="LMM\LMM110\LMM110F.Designer.vb">
+      <DependentUpon>LMM110F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMM\LMM110\LMM110F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMM\LMM110\LMM110G.vb" />
+    <Compile Include="LMM\LMM110\LMM110H.vb" />
+    <Compile Include="LMM\LMM110\LMM110V.vb" />
+    <Compile Include="LMM\LMM120\LMM120C.vb" />
+    <Compile Include="LMM\LMM120\LMM120F.Designer.vb">
+      <DependentUpon>LMM120F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMM\LMM120\LMM120F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMM\LMM120\LMM120G.vb" />
+    <Compile Include="LMM\LMM120\LMM120H.vb" />
+    <Compile Include="LMM\LMM120\LMM121H.vb" />
+    <Compile Include="LMM\LMM120\LMM120V.vb" />
+    <Compile Include="LMM\LMM130\LMM130C.vb" />
+    <Compile Include="LMM\LMM130\LMM130F.Designer.vb">
+      <DependentUpon>LMM130F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMM\LMM130\LMM130F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMM\LMM130\LMM130G.vb" />
+    <Compile Include="LMM\LMM130\LMM130H.vb" />
+    <Compile Include="LMM\LMM130\LMM130V.vb" />
+    <Compile Include="LMM\LMM140\LMM140C.vb" />
+    <Compile Include="LMM\LMM140\LMM140F.Designer.vb">
+      <DependentUpon>LMM140F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMM\LMM140\LMM140F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMM\LMM140\LMM140G.vb" />
+    <Compile Include="LMM\LMM140\LMM140H.vb" />
+    <Compile Include="LMM\LMM140\LMM140V.vb" />
+    <Compile Include="LMM\LMM150\LMM150C.vb" />
+    <Compile Include="LMM\LMM150\LMM150F.Designer.vb">
+      <DependentUpon>LMM150F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMM\LMM150\LMM150F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMM\LMM150\LMM150G.vb" />
+    <Compile Include="LMM\LMM150\LMM150H.vb" />
+    <Compile Include="LMM\LMM150\LMM150V.vb" />
+    <Compile Include="LMM\LMM160\LMM160C.vb" />
+    <Compile Include="LMM\LMM160\LMM160F.Designer.vb">
+      <DependentUpon>LMM160F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMM\LMM160\LMM160F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMM\LMM160\LMM160G.vb" />
+    <Compile Include="LMM\LMM160\LMM160H.vb" />
+    <Compile Include="LMM\LMM160\LMM160V.vb" />
+    <Compile Include="LMM\LMM170\LMM170C.vb" />
+    <Compile Include="LMM\LMM170\LMM170F.Designer.vb">
+      <DependentUpon>LMM170F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMM\LMM170\LMM170F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMM\LMM170\LMM170G.vb" />
+    <Compile Include="LMM\LMM170\LMM170H.vb" />
+    <Compile Include="LMM\LMM170\LMM170V.vb" />
+    <Compile Include="LMM\LMM180\LMM180C.vb" />
+    <Compile Include="LMM\LMM180\LMM180F.Designer.vb">
+      <DependentUpon>LMM180F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMM\LMM180\LMM180F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMM\LMM180\LMM180G.vb" />
+    <Compile Include="LMM\LMM180\LMM180H.vb" />
+    <Compile Include="LMM\LMM180\LMM180V.vb" />
+    <Compile Include="LMM\LMM190\LMM190C.vb" />
+    <Compile Include="LMM\LMM190\LMM190F.Designer.vb">
+      <DependentUpon>LMM190F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMM\LMM190\LMM190F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMM\LMM190\LMM190G.vb" />
+    <Compile Include="LMM\LMM190\LMM190H.vb" />
+    <Compile Include="LMM\LMM190\LMM190V.vb" />
+    <Compile Include="LMM\LMM200\LMM200C.vb" />
+    <Compile Include="LMM\LMM200\LMM200F.Designer.vb">
+      <DependentUpon>LMM200F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMM\LMM200\LMM200F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMM\LMM200\LMM200G.vb" />
+    <Compile Include="LMM\LMM200\LMM200H.vb" />
+    <Compile Include="LMM\LMM200\LMM200V.vb" />
+    <Compile Include="LMM\LMM210\LMM210C.vb" />
+    <Compile Include="LMM\LMM210\LMM210F.Designer.vb">
+      <DependentUpon>LMM210F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMM\LMM210\LMM210F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMM\LMM210\LMM210G.vb" />
+    <Compile Include="LMM\LMM210\LMM210H.vb" />
+    <Compile Include="LMM\LMM210\LMM210V.vb" />
+    <Compile Include="LMM\LMM220\LMM220C.vb" />
+    <Compile Include="LMM\LMM220\LMM220F.Designer.vb">
+      <DependentUpon>LMM220F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMM\LMM220\LMM220F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMM\LMM220\LMM220G.vb" />
+    <Compile Include="LMM\LMM220\LMM220H.vb" />
+    <Compile Include="LMM\LMM220\LMM220V.vb" />
+    <Compile Include="LMM\LMM230\LMM230C.vb" />
+    <Compile Include="LMM\LMM230\LMM230F.Designer.vb">
+      <DependentUpon>LMM230F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMM\LMM230\LMM230F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMM\LMM230\LMM230G.vb" />
+    <Compile Include="LMM\LMM230\LMM230H.vb" />
+    <Compile Include="LMM\LMM230\LMM230V.vb" />
+    <Compile Include="LMM\LMM240\LMM240C.vb" />
+    <Compile Include="LMM\LMM240\LMM240F.Designer.vb">
+      <DependentUpon>LMM240F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMM\LMM240\LMM240F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMM\LMM240\LMM240G.vb" />
+    <Compile Include="LMM\LMM240\LMM240H.vb" />
+    <Compile Include="LMM\LMM240\LMM240V.vb" />
+    <Compile Include="LMM\LMM260\LMM260C.vb" />
+    <Compile Include="LMM\LMM260\LMM260F.Designer.vb">
+      <DependentUpon>LMM260F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMM\LMM260\LMM260F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMM\LMM260\LMM260G.vb" />
+    <Compile Include="LMM\LMM260\LMM260H.vb" />
+    <Compile Include="LMM\LMM260\LMM260V.vb" />
+    <Compile Include="LMM\LMM280\LMM280C.vb" />
+    <Compile Include="LMM\LMM280\LMM280F.Designer.vb">
+      <DependentUpon>LMM280F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMM\LMM280\LMM280F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMM\LMM280\LMM280G.vb" />
+    <Compile Include="LMM\LMM280\LMM280H.vb" />
+    <Compile Include="LMM\LMM280\LMM280V.vb" />
+    <Compile Include="LMM\LMM290\LMM290C.vb" />
+    <Compile Include="LMM\LMM290\LMM290F.Designer.vb">
+      <DependentUpon>LMM290F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMM\LMM290\LMM290F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMM\LMM290\LMM290G.vb" />
+    <Compile Include="LMM\LMM290\LMM290H.vb" />
+    <Compile Include="LMM\LMM290\LMM290V.vb" />
+    <Compile Include="LMM\LMM320\LMM320C.vb" />
+    <Compile Include="LMM\LMM320\LMM320F.Designer.vb">
+      <DependentUpon>LMM320F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMM\LMM320\LMM320F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMM\LMM320\LMM320G.vb" />
+    <Compile Include="LMM\LMM320\LMM320H.vb" />
+    <Compile Include="LMM\LMM320\LMM320V.vb" />
+    <Compile Include="LMM\LMM350\LMM350C.vb" />
+    <Compile Include="LMM\LMM350\LMM350F.Designer.vb">
+      <DependentUpon>LMM350F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMM\LMM350\LMM350F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMM\LMM350\LMM350G.vb" />
+    <Compile Include="LMM\LMM350\LMM350H.vb" />
+    <Compile Include="LMM\LMM350\LMM350V.vb" />
+    <Compile Include="LMM\LMM360\LMM360C.vb" />
+    <Compile Include="LMM\LMM360\LMM360F.Designer.vb">
+      <DependentUpon>LMM360F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMM\LMM360\LMM360F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMM\LMM360\LMM360G.vb" />
+    <Compile Include="LMM\LMM360\LMM360H.vb" />
+    <Compile Include="LMM\LMM360\LMM360V.vb" />
+    <Compile Include="LMM\LMM370\LMM370C.vb" />
+    <Compile Include="LMM\LMM370\LMM370F.Designer.vb">
+      <DependentUpon>LMM370F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMM\LMM370\LMM370F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMM\LMM370\LMM370G.vb" />
+    <Compile Include="LMM\LMM370\LMM370H.vb" />
+    <Compile Include="LMM\LMM370\LMM370V.vb" />
+    <Compile Include="LMM\LMM400\LMM400C.vb" />
+    <Compile Include="LMM\LMM400\LMM400F.Designer.vb">
+      <DependentUpon>LMM400F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMM\LMM400\LMM400F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMM\LMM400\LMM400G.vb" />
+    <Compile Include="LMM\LMM400\LMM400H.vb" />
+    <Compile Include="LMM\LMM400\LMM400V.vb" />
+    <Compile Include="LMM\LMM530\LMM530C.vb" />
+    <Compile Include="LMM\LMM530\LMM530F.Designer.vb">
+      <DependentUpon>LMM530F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMM\LMM530\LMM530F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMM\LMM530\LMM530G.vb" />
+    <Compile Include="LMM\LMM530\LMM530H.vb" />
+    <Compile Include="LMM\LMM530\LMM530V.vb" />
+    <Compile Include="LMM\LMM540\LMM540C.vb" />
+    <Compile Include="LMM\LMM540\LMM540F.Designer.vb">
+      <DependentUpon>LMM540F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMM\LMM540\LMM540F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMM\LMM540\LMM540G.vb" />
+    <Compile Include="LMM\LMM540\LMM540H.vb" />
+    <Compile Include="LMM\LMM540\LMM540V.vb" />
+    <Compile Include="LMM\LMM550\LMM550C.vb" />
+    <Compile Include="LMM\LMM550\LMM550F.Designer.vb">
+      <DependentUpon>LMM550F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LMM\LMM550\LMM550F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMM\LMM550\LMM550G.vb" />
+    <Compile Include="LMM\LMM550\LMM550H.vb" />
+    <Compile Include="LMM\LMM550\LMM550V.vb" />
+    <Compile Include="LMM\LMMControlC.vb" />
+    <Compile Include="LMM\LMMControlG.vb" />
+    <Compile Include="LMM\LMMControlH.vb" />
+    <Compile Include="LMM\LMMControlV.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="LMM\LMM010\LMM010F.resx">
+      <DependentUpon>LMM010F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMM\LMM020\LMM020F.resx">
+      <DependentUpon>LMM020F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMM\LMM030\LMM030F.resx">
+      <DependentUpon>LMM030F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMM\LMM040\LMM040F.resx">
+      <DependentUpon>LMM040F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMM\LMM050\LMM050F.resx">
+      <DependentUpon>LMM050F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMM\LMM060\LMM060F.resx">
+      <DependentUpon>LMM060F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMM\LMM070\LMM070F.resx">
+      <DependentUpon>LMM070F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMM\LMM080\LMM080F.resx">
+      <DependentUpon>LMM080F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMM\LMM090\LMM090F.resx">
+      <DependentUpon>LMM090F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMM\LMM100\LMM100F.resx">
+      <DependentUpon>LMM100F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMM\LMM110\LMM110F.resx">
+      <DependentUpon>LMM110F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMM\LMM120\LMM120F.resx">
+      <DependentUpon>LMM120F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMM\LMM130\LMM130F.resx">
+      <DependentUpon>LMM130F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMM\LMM140\LMM140F.resx">
+      <DependentUpon>LMM140F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMM\LMM150\LMM150F.resx">
+      <DependentUpon>LMM150F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMM\LMM160\LMM160F.resx">
+      <DependentUpon>LMM160F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMM\LMM170\LMM170F.resx">
+      <DependentUpon>LMM170F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMM\LMM180\LMM180F.resx">
+      <DependentUpon>LMM180F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMM\LMM190\LMM190F.resx">
+      <DependentUpon>LMM190F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMM\LMM200\LMM200F.resx">
+      <DependentUpon>LMM200F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMM\LMM210\LMM210F.resx">
+      <DependentUpon>LMM210F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMM\LMM220\LMM220F.resx">
+      <DependentUpon>LMM220F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMM\LMM230\LMM230F.resx">
+      <DependentUpon>LMM230F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMM\LMM240\LMM240F.resx">
+      <DependentUpon>LMM240F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMM\LMM260\LMM260F.resx">
+      <DependentUpon>LMM260F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMM\LMM280\LMM280F.resx">
+      <DependentUpon>LMM280F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMM\LMM290\LMM290F.resx">
+      <DependentUpon>LMM290F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMM\LMM320\LMM320F.resx">
+      <DependentUpon>LMM320F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMM\LMM350\LMM350F.resx">
+      <DependentUpon>LMM350F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMM\LMM360\LMM360F.resx">
+      <DependentUpon>LMM360F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMM\LMM370\LMM370F.resx">
+      <DependentUpon>LMM370F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMM\LMM400\LMM400F.resx">
+      <DependentUpon>LMM400F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMM\LMM530\LMM530F.resx">
+      <DependentUpon>LMM530F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMM\LMM540\LMM540F.resx">
+      <DependentUpon>LMM540F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMM\LMM550\LMM550F.resx">
+      <DependentUpon>LMM550F.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>$(SolutionDir)..\..\tool\CopyToSrcBin.bat $(ProjectDir)bin</PostBuildEvent>
+  </PropertyGroup>
+</Project>

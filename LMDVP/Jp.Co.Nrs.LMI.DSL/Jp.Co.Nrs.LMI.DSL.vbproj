@@ -1,0 +1,1413 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0954BED2-3BA6-4598-A74F-BEDFE3D56F46}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Jp.Co.Nrs.LM.DSL</RootNamespace>
+    <AssemblyName>Jp.Co.Nrs.LMI.DSL</AssemblyName>
+    <MyType>Windows</MyType>
+    <OptionStrict>On</OptionStrict>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>_MYTYPE ="Windows"</DefineConstants>
+    <DocumentationFile>Jp.Co.Nrs.LMI.DSL.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Jp.Co.Nrs.LMI.DSL.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>Full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\WINDOWS\assembly\GAC_32\System.Data\2.0.0.0__b77a5c561934e089\System.Data.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\WINDOWS\assembly\GAC_MSIL\System.Xml\2.0.0.0__b77a5c561934e089\System.Xml.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LMI\LMI020DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI020DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI030DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI030DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI040DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI040DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI050DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI050DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI060DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI060DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI070DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI070DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI110DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI110DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI120DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI120DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI130DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI130DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI140DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI140DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI150DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI150DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI170DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI170DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI180DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI180DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI190DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI190DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI210DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI210DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI220DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI220DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI260DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI260DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI280DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI280DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI320DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI320DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI330DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI330DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI360DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI360DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI400DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI400DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI410DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI410DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI420DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI420DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI430DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI430DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI440DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI440DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI450DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI450DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI460DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI460DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI470DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI470DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI480DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI480DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI490DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI490DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI500DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI500DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI501DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI501DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI502DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI502DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI510DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI510DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI511DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI511DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI511DS.vb">
+      <DependentUpon>LMI511DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI512DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI512DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI514DS.vb">
+      <DependentUpon>LMI514DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI517DS.Designer.vb">
+      <DependentUpon>LMI517DS.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="LMI\LMI517DS.vb">
+      <DependentUpon>LMI517DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI516DS.Designer.vb">
+      <DependentUpon>LMI516DS.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="LMI\LMI516DS.vb">
+      <DependentUpon>LMI516DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI515DS.Designer.vb">
+      <DependentUpon>LMI515DS.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="LMI\LMI514DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI514DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI513DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI513DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI515DS.vb">
+      <DependentUpon>LMI515DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI520DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI520DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI520DS.vb">
+      <DependentUpon>LMI520DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI530DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI530DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI530DS.vb">
+      <DependentUpon>LMI530DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI540DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI540DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI550DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI550DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI560DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI560DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI570DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI570DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI580DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI580DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI590DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI590DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI591DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI591DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI592DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI592DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI600DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI600DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI601DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI601DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI610DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI610DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI620DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI620DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI630DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI630DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI640DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI640DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI650DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI650DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI660DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI660DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI670DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI670DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI675DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI675DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI680DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI680DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI690DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI690DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI730DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI730DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI730DS.vb">
+      <DependentUpon>LMI730DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI820DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI820DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI850DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI850DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI880DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI880DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI890DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI890DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI900DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI900DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI910DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI910DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI930DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI930DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI940DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI940DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI950DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI950DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI963DS.Designer.vb">
+      <DependentUpon>LMI963DS.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="LMI\LMI960DS.Designer.vb">
+      <DependentUpon>LMI960DS.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="LMI\LMI961DS.Designer.vb">
+      <DependentUpon>LMI961DS.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="LMI\LMI963DS.vb">
+      <DependentUpon>LMI963DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI970DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI970DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI980DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI980DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI990DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI990DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMI\LMI991DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMI991DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LMI\LMI020DS.xsc">
+      <DependentUpon>LMI020DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI020DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI020DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI020DS.xss">
+      <DependentUpon>LMI020DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI030DS.xsc">
+      <DependentUpon>LMI030DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI030DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI030DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI030DS.xss">
+      <DependentUpon>LMI030DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI040DS.xsc">
+      <DependentUpon>LMI040DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI040DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI040DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI040DS.xss">
+      <DependentUpon>LMI040DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI050DS.xsc">
+      <DependentUpon>LMI050DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI050DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI050DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI050DS.xss">
+      <DependentUpon>LMI050DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI060DS.xsc">
+      <DependentUpon>LMI060DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI060DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI060DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI060DS.xss">
+      <DependentUpon>LMI060DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI070DS.xsc">
+      <DependentUpon>LMI070DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI070DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI070DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI070DS.xss">
+      <DependentUpon>LMI070DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI110DS.xsc">
+      <DependentUpon>LMI110DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI110DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI110DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI110DS.xss">
+      <DependentUpon>LMI110DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI120DS.xsc">
+      <DependentUpon>LMI120DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI120DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI120DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI120DS.xss">
+      <DependentUpon>LMI120DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI130DS.xsc">
+      <DependentUpon>LMI130DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI130DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI130DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI130DS.xss">
+      <DependentUpon>LMI130DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI140DS.xsc">
+      <DependentUpon>LMI140DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI140DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI140DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI140DS.xss">
+      <DependentUpon>LMI140DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI150DS.xsc">
+      <DependentUpon>LMI150DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI150DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI150DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI150DS.xss">
+      <DependentUpon>LMI150DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI170DS.xsc">
+      <DependentUpon>LMI170DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI170DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI170DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI170DS.xss">
+      <DependentUpon>LMI170DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI180DS.xsc">
+      <DependentUpon>LMI180DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI180DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI180DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI180DS.xss">
+      <DependentUpon>LMI180DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI190DS.xsc">
+      <DependentUpon>LMI190DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI190DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI190DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI190DS.xss">
+      <DependentUpon>LMI190DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI210DS.xsc">
+      <DependentUpon>LMI210DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI210DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI210DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI210DS.xss">
+      <DependentUpon>LMI210DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI220DS.xsc">
+      <DependentUpon>LMI220DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI220DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI220DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI220DS.xss">
+      <DependentUpon>LMI220DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI260DS.xsc">
+      <DependentUpon>LMI260DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI260DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI260DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI260DS.xss">
+      <DependentUpon>LMI260DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI280DS.xsc">
+      <DependentUpon>LMI280DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI280DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI280DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI280DS.xss">
+      <DependentUpon>LMI280DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI320DS.xsc">
+      <DependentUpon>LMI320DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI320DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI320DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI320DS.xss">
+      <DependentUpon>LMI320DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI330DS.xsc">
+      <DependentUpon>LMI330DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI330DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI330DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI330DS.xss">
+      <DependentUpon>LMI330DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI360DS.xsc">
+      <DependentUpon>LMI360DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI360DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI360DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI360DS.xss">
+      <DependentUpon>LMI360DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI400DS.xsc">
+      <DependentUpon>LMI400DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI400DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI400DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI400DS.xss">
+      <DependentUpon>LMI400DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI410DS.xsc">
+      <DependentUpon>LMI410DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI410DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI410DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI410DS.xss">
+      <DependentUpon>LMI410DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI420DS.xsc">
+      <DependentUpon>LMI420DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI420DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI420DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI420DS.xss">
+      <DependentUpon>LMI420DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI430DS.xsc">
+      <DependentUpon>LMI430DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI430DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI430DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI430DS.xss">
+      <DependentUpon>LMI430DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI440DS.xsc">
+      <DependentUpon>LMI440DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI440DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI440DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI440DS.xss">
+      <DependentUpon>LMI440DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI450DS.xsc">
+      <DependentUpon>LMI450DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI450DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI450DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI450DS.xss">
+      <DependentUpon>LMI450DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI460DS.xsc">
+      <DependentUpon>LMI460DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI460DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI460DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI460DS.xss">
+      <DependentUpon>LMI460DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI470DS.xsc">
+      <DependentUpon>LMI470DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI470DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI470DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI470DS.xss">
+      <DependentUpon>LMI470DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI480DS.xsc">
+      <DependentUpon>LMI480DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI480DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI480DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI480DS.xss">
+      <DependentUpon>LMI480DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI490DS.xsc">
+      <DependentUpon>LMI490DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI490DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI490DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI490DS.xss">
+      <DependentUpon>LMI490DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI500DS.xsc">
+      <DependentUpon>LMI500DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI500DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI500DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI500DS.xss">
+      <DependentUpon>LMI500DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI501DS.xsc">
+      <DependentUpon>LMI501DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI501DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI501DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI501DS.xss">
+      <DependentUpon>LMI501DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI502DS.xsc">
+      <DependentUpon>LMI502DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI502DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI502DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI502DS.xss">
+      <DependentUpon>LMI502DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI510DS.xsc">
+      <DependentUpon>LMI510DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI510DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI510DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI510DS.xss">
+      <DependentUpon>LMI510DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI511DS.xsc">
+      <DependentUpon>LMI511DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI511DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI511DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI511DS.xss">
+      <DependentUpon>LMI511DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI512DS.xsc">
+      <DependentUpon>LMI512DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI512DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI512DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI512DS.xss">
+      <DependentUpon>LMI512DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI517DS.xsc">
+      <DependentUpon>LMI517DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI517DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI517DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI517DS.xss">
+      <DependentUpon>LMI517DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI516DS.xsc">
+      <DependentUpon>LMI516DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI516DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI516DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI516DS.xss">
+      <DependentUpon>LMI516DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI515DS.xsc">
+      <DependentUpon>LMI515DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI515DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI515DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI515DS.xss">
+      <DependentUpon>LMI515DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI514DS.xsc">
+      <DependentUpon>LMI514DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI514DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI514DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI514DS.xss">
+      <DependentUpon>LMI514DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI513DS.xsc">
+      <DependentUpon>LMI513DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI513DS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI513DS.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="LMI\LMI513DS.xss">
+      <DependentUpon>LMI513DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI520DS.xsc">
+      <DependentUpon>LMI520DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI520DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI520DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI520DS.xss">
+      <DependentUpon>LMI520DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI530DS.xsc">
+      <DependentUpon>LMI530DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI530DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI530DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI530DS.xss">
+      <DependentUpon>LMI530DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI540DS.xsc">
+      <DependentUpon>LMI540DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI540DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI540DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI540DS.xss">
+      <DependentUpon>LMI540DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI550DS.xsc">
+      <DependentUpon>LMI550DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI550DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI550DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI550DS.xss">
+      <DependentUpon>LMI550DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI560DS.xsc">
+      <DependentUpon>LMI560DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI560DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI560DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI560DS.xss">
+      <DependentUpon>LMI560DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI570DS.xsc">
+      <DependentUpon>LMI570DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI570DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI570DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI570DS.xss">
+      <DependentUpon>LMI570DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI580DS.xsc">
+      <DependentUpon>LMI580DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI580DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI580DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI580DS.xss">
+      <DependentUpon>LMI580DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI590DS.xsc">
+      <DependentUpon>LMI590DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI590DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI590DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI590DS.xss">
+      <DependentUpon>LMI590DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI591DS.xsc">
+      <DependentUpon>LMI591DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI591DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI591DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI591DS.xss">
+      <DependentUpon>LMI591DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI592DS.xsc">
+      <DependentUpon>LMI592DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI592DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI592DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI592DS.xss">
+      <DependentUpon>LMI592DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI600DS.xsc">
+      <DependentUpon>LMI600DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI600DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI600DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI600DS.xss">
+      <DependentUpon>LMI600DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI601DS.xsc">
+      <DependentUpon>LMI601DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI601DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI601DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI601DS.xss">
+      <DependentUpon>LMI601DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI610DS.xsc">
+      <DependentUpon>LMI610DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI610DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI610DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI610DS.xss">
+      <DependentUpon>LMI610DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI620DS.xsc">
+      <DependentUpon>LMI620DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI620DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI620DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI620DS.xss">
+      <DependentUpon>LMI620DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI630DS.xsc">
+      <DependentUpon>LMI630DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI630DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI630DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI630DS.xss">
+      <DependentUpon>LMI630DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI640DS.xsc">
+      <DependentUpon>LMI640DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI640DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI640DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI640DS.xss">
+      <DependentUpon>LMI640DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI650DS.xsc">
+      <DependentUpon>LMI650DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI650DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI650DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI650DS.xss">
+      <DependentUpon>LMI650DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI660DS.xsc">
+      <DependentUpon>LMI660DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI660DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI660DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI660DS.xss">
+      <DependentUpon>LMI660DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI670DS.xsc">
+      <DependentUpon>LMI670DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI670DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI670DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI670DS.xss">
+      <DependentUpon>LMI670DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI675DS.xsc">
+      <DependentUpon>LMI675DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI675DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI675DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI675DS.xss">
+      <DependentUpon>LMI675DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI680DS.xsc">
+      <DependentUpon>LMI680DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI680DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI680DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI680DS.xss">
+      <DependentUpon>LMI680DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI690DS.xsc">
+      <DependentUpon>LMI690DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI690DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI690DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI690DS.xss">
+      <DependentUpon>LMI690DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI730DS.xsc">
+      <DependentUpon>LMI730DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI730DS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI730DS.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="LMI\LMI730DS.xss">
+      <DependentUpon>LMI730DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI820DS.xsc">
+      <DependentUpon>LMI820DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI820DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI820DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI820DS.xss">
+      <DependentUpon>LMI820DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI850DS.xsc">
+      <DependentUpon>LMI850DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI850DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI850DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI850DS.xss">
+      <DependentUpon>LMI850DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI880DS.xsc">
+      <DependentUpon>LMI880DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI880DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI880DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI880DS.xss">
+      <DependentUpon>LMI880DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI890DS.xsc">
+      <DependentUpon>LMI890DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI890DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI890DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI890DS.xss">
+      <DependentUpon>LMI890DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI900DS.xsc">
+      <DependentUpon>LMI900DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI900DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI900DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI900DS.xss">
+      <DependentUpon>LMI900DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI910DS.xsc">
+      <DependentUpon>LMI910DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI910DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI910DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI910DS.xss">
+      <DependentUpon>LMI910DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI930DS.xsc">
+      <DependentUpon>LMI930DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI930DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI930DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI930DS.xss">
+      <DependentUpon>LMI930DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI940DS.xsc">
+      <DependentUpon>LMI940DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI940DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI940DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI940DS.xss">
+      <DependentUpon>LMI940DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI950DS.xsc">
+      <DependentUpon>LMI950DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI950DS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI950DS.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="LMI\LMI950DS.xss">
+      <DependentUpon>LMI950DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI963DS.xsc">
+      <DependentUpon>LMI963DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI963DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI963DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI963DS.xss">
+      <DependentUpon>LMI963DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI960DS.xsc">
+      <DependentUpon>LMI960DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI960DS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI960DS.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="LMI\LMI960DS.xss">
+      <DependentUpon>LMI960DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI961DS.xsc">
+      <DependentUpon>LMI961DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI961DS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI961DS.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="LMI\LMI961DS.xss">
+      <DependentUpon>LMI961DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI970DS.xsc">
+      <DependentUpon>LMI970DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI970DS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI970DS.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="LMI\LMI970DS.xss">
+      <DependentUpon>LMI970DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI980DS.xsc">
+      <DependentUpon>LMI980DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI980DS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI980DS.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="LMI\LMI980DS.xss">
+      <DependentUpon>LMI980DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI990DS.xsc">
+      <DependentUpon>LMI990DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI990DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI990DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI990DS.xss">
+      <DependentUpon>LMI990DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI991DS.xsc">
+      <DependentUpon>LMI991DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMI\LMI991DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMI991DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMI\LMI991DS.xss">
+      <DependentUpon>LMI991DS.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>$(SolutionDir)..\..\tool\CopyToSrcBin.bat $(ProjectDir)bin</PostBuildEvent>
+  </PropertyGroup>
+</Project>

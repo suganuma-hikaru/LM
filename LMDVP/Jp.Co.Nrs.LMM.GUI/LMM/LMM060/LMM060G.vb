@@ -1,0 +1,1617 @@
+﻿' ==========================================================================
+'  システム名     : LM　　　: 倉庫システム
+'  サブシステム名 : LMS     : マスタ
+'  プログラムID   : LMM060G : 運賃マスタメンテナンス
+'  作  成  者     : [kishi]
+' ==========================================================================
+Imports FarPoint.Win.Spread
+Imports Jp.Co.Nrs.Win.Utility.Spread
+Imports Jp.Co.Nrs.Win.Utility
+Imports Jp.Co.Nrs.Com.Const
+Imports Jp.Co.Nrs.LM.Base
+Imports Jp.Co.Nrs.LM.Const
+Imports Jp.Co.Nrs.LM.Base.GUI
+Imports Jp.Co.Nrs.LM.GUI.Win.InputMan
+Imports Jp.Co.Nrs.LM.GUI.Win.Spread
+Imports Jp.Co.Nrs.LM.Utility.Spread
+Imports GrapeCity.Win.Editors
+Imports Jp.Co.Nrs.LM.DSL
+Imports Jp.Co.Nrs.LM.Utility '2017/09/25 追加 李
+Imports Jp.Co.Nrs.Win.Base   '2017/09/25 追加 李
+
+''' <summary>
+''' LMM060Gamenクラス
+''' </summary>
+''' <remarks>画面構築を行う</remarks>
+''' <histry>
+''' 
+''' </histry>
+Public Class LMM060G
+    Inherits Jp.Co.Nrs.LM.Base.GUI.LMBaseGUIGamen
+
+#Region "Field"
+
+    ''' <summary>
+    ''' このクラスが紐付くフォームクラス
+    ''' </summary>
+    ''' <remarks></remarks>
+    Private _Frm As LMM060F
+
+    ''' <summary>
+    ''' 画面クラスを格納するフィールド
+    ''' </summary>
+    ''' <remarks></remarks>
+    Private _ControlG As LMMControlG
+
+    ''' <summary>
+    ''' Validate共通クラスを格納するフィールド
+    ''' </summary>
+    ''' <remarks></remarks>
+    Private _ControlV As LMMControlV
+
+    ''' <summary>
+    ''' カウントの保持
+    ''' </summary>
+    ''' <remarks></remarks>    
+    Private _BeCnt As Integer = 0
+
+    ''' <summary>
+    ''' カウントの保持
+    ''' </summary>
+    ''' <remarks></remarks>    
+    Private _AfCnt As Integer = 0
+
+#End Region 'Field
+
+#Region "Constructor"
+
+    ''' <summary>
+    ''' コンストラクタ
+    ''' </summary>
+    ''' <param name="handlerClass">このクラスを生成したハンドラクラス</param>
+    ''' <param name="frm">このクラスが設定するコントロールを持つフォームクラス</param>
+    ''' <remarks>フォームラスとハンドラクラスをこのクラスに紐付けます。編集不可</remarks>
+    Friend Sub New(ByRef handlerClass As LMBaseGUIHandler, ByRef frm As LMM060F, ByVal g As LMMControlG)
+
+        '親クラスのコンストラクタを呼びます。
+        MyBase.new()
+
+        '呼び出し元のハンドラクラスをこのフォームに紐付けます。
+        Me.MyHandler = handlerClass
+
+        '画面構築をするフォームをこのクラスに紐付けます。
+        Me.MyForm = frm
+
+        Me._Frm = frm
+
+        Me._ControlG = g
+
+        'Gamen共通クラスの設定
+        _ControlG = New LMMControlG(handlerClass, DirectCast(frm, Form))
+
+        'Validate共通クラスの設定
+        _ControlV = New LMMControlV(handlerClass, DirectCast(frm, Form), _ControlG)
+
+    End Sub
+
+#End Region 'Constructor
+
+#Region "Method"
+
+#Region "FunctionKey"
+
+    ''' <summary>
+    ''' ファンクションキーの設定
+    ''' </summary>
+    ''' <remarks></remarks>
+    Friend Sub SetFunctionKey()
+
+        Dim unLock As Boolean = True
+        Dim lock As Boolean = False
+
+        With Me._Frm.FunctionKey
+
+            'ファンクションキータイプの指定
+            .SetFKeysType(LMImFunctionKey.FkeyTypes.LIST)
+
+            .Enabled = True
+            'ファンクションキー個別設定
+            .F1ButtonName = LMMControlC.FUNCTION_F1_SHINKI
+            .F2ButtonName = LMMControlC.FUNCTION_F2_HENSHU
+            .F3ButtonName = LMMControlC.FUNCTION_F3_FUKUSHA
+            .F4ButtonName = LMMControlC.FUNCTION_F4_SAKUJO_HUKKATU
+            .F5ButtonName = LMMControlC.FUNCTION_F5_REQUEST
+            .F6ButtonName = LMMControlC.FUNCTION_F6_APPROVAL
+            .F7ButtonName = LMMControlC.FUNCTION_F7_INPUTXLS
+            .F8ButtonName = LMMControlC.FUNCTION_F8_OUTPUTXLS
+            .F9ButtonName = LMMControlC.FUNCTION_F9_KENSAKU
+            .F10ButtonName = LMMControlC.FUNCTION_F10_MST_SANSHO
+            .F11ButtonName = LMMControlC.FUNCTION_F11_HOZON
+            .F12ButtonName = LMMControlC.FUNCTION_F12_TOJIRU
+
+            'ロック制御変数
+            Dim edit As Boolean = Me._Frm.lblSituation.DispMode.Equals(DispMode.EDIT) '編集モード時使用可能
+            Dim view As Boolean = Me._Frm.lblSituation.DispMode.Equals(DispMode.VIEW) '参照モード時使用可能
+            Dim init As Boolean = Me._Frm.lblSituation.DispMode.Equals(DispMode.INIT) '初期モード時使用可能
+            Dim auth30 As Boolean = "30".Equals(LMUserInfoManager.GetAuthoLv)         '権限レベルがセンター長なら使用可能
+
+            '常に使用不可キー
+            .F5ButtonEnabled = lock
+            .F6ButtonEnabled = lock
+            .F9ButtonEnabled = unLock
+            .F12ButtonEnabled = unLock
+            '画面入力モードによるロック制御
+            .F1ButtonEnabled = view OrElse init
+            .F2ButtonEnabled = view
+            .F3ButtonEnabled = view
+            .F4ButtonEnabled = view
+            .F7ButtonEnabled = view
+            .F8ButtonEnabled = view
+            .F10ButtonEnabled = edit
+            .F11ButtonEnabled = edit
+            '承認系
+            .F5ButtonEnabled = view
+            .F6ButtonEnabled = view AndAlso auth30
+            '承認系(ボタン)
+            Me._Frm.btnRemand.Enabled = view AndAlso auth30
+            Me._Frm.btnRemand.Visible = auth30
+
+            '2015.10.15 英語化対応START
+            'タイトルテキスト・フォント設定の切り替え
+            .TitleSwitching(Me._Frm)
+            '2015.10.15 英語化対応END
+
+        End With
+
+    End Sub
+
+#End Region 'FunctionKey
+
+#Region "Mode&Status"
+
+    ''' <summary>
+    ''' Dispモードとレコードステータスの設定
+    ''' </summary>
+    ''' <remarks></remarks>
+    Friend Sub SetModeAndStatus(ByVal dispMode As String, ByVal recStatus As String)
+
+        With Me._Frm
+            .lblSituation.DispMode = dispMode
+            .lblSituation.RecordStatus = recStatus
+        End With
+
+    End Sub
+
+#End Region
+
+#Region "Form"
+
+#Region "設定・制御"
+
+    ''' <summary>
+    ''' タブインデックスの設定
+    ''' </summary>
+    ''' <remarks></remarks>
+    Friend Sub SetTabIndex()
+
+        With Me._Frm
+
+            .sprDetail.TabIndex = LMM060C.CtlTabIndex.UNCHIN_TARIFF_HD
+            '編集部
+            .cmbNrsBrCd.TabIndex = LMM060C.CtlTabIndex.NRS_BR_CD
+            .txtUnchinTariffCd.TabIndex = LMM060C.CtlTabIndex.UNCHIN_TARIFF_CD
+            .imdStrDate.TabIndex = LMM060C.CtlTabIndex.STR_DATE
+            .cmbDataTp.TabIndex = LMM060C.CtlTabIndex.DATA_TP
+            .cmbTableTp.TabIndex = LMM060C.CtlTabIndex.TABLE_TP
+            .txtUnchinTariffRem.TabIndex = LMM060C.CtlTabIndex.UNCHIN_TARIFF_REM
+            .txtUnchinTariffCd2.TabIndex = LMM060C.CtlTabIndex.UNCHIN_TARIFF_CD2
+            '運賃タリフ(距離刻み/運賃)スプレッド
+            .btnRowAdd.TabIndex = LMM060C.CtlTabIndex.BTN_ADD
+            .btnRowDel.TabIndex = LMM060C.CtlTabIndex.BTN_DEL
+            .btnColAdd.TabIndex = LMM060C.CtlTabIndex.BTN_COL_ADD
+            .btnColDel.TabIndex = LMM060C.CtlTabIndex.BTN_COL_DEL
+            .btnLock.TabIndex = LMM060C.CtlTabIndex.BTN_LOCK
+            .btnUnLock.TabIndex = LMM060C.CtlTabIndex.BTN_UNLOCK
+            .sprDetail2.TabIndex = LMM060C.CtlTabIndex.UNCHIN_TARIFF_DTL
+
+        End With
+
+    End Sub
+
+    ''' <summary>
+    ''' 画面コントロールの個別設定
+    ''' </summary>
+    ''' <remarks></remarks>
+    Friend Sub SetControl()
+
+        '編集部の項目をクリア
+        Call Me.ClearControl(Me._Frm)
+
+    End Sub
+
+    ''' <summary>
+    ''' フォーカスの設定(項目チェック・保存エラー時を除く)
+    ''' </summary>
+    ''' <remarks></remarks>
+    Friend Sub SetFoucus()
+
+        With Me._Frm
+
+            Select Case .lblSituation.DispMode
+                Case DispMode.INIT _
+                , DispMode.VIEW
+                    .sprDetail.Focus()
+
+                Case DispMode.EDIT
+                    '新規、複写時⇒運賃タリフコード
+                    '編集時　　　⇒データタイプ or 備考
+                    Select Case .lblSituation.RecordStatus
+                        Case RecordStatus.NEW_REC _
+                           , RecordStatus.COPY_REC
+                            .txtUnchinTariffCd.Focus()
+                        Case RecordStatus.NOMAL_REC
+                            If (LMMControlC.FLG_OFF).Equals(.cmbDataTp.SelectedValue) = True Then
+                                .cmbDataTp.Focus()
+                            Else
+                                .txtUnchinTariffRem.Focus()
+                            End If
+
+                    End Select
+
+            End Select
+
+        End With
+
+    End Sub
+
+    ''' <summary>
+    ''' ロックを解除する
+    ''' </summary>
+    ''' <remarks></remarks>
+    Friend Sub UnLockedForm()
+
+        Call Me.SetFunctionKey()
+        Call Me.SetControlsStatus()
+
+    End Sub
+
+    ''' <summary>
+    ''' 項目のクリア処理を行う
+    ''' </summary>
+    ''' <remarks></remarks>
+    Friend Sub ClearControl(ByVal ctl As Control)
+
+        '数値項目以外のクリアを行う
+        Call Me._ControlG.ClearControl(ctl)
+
+    End Sub
+
+    ''' <summary>
+    ''' SPREADデータをコントロールに設定
+    ''' </summary>
+    ''' <remarks></remarks>
+    Friend Sub SetControlSpreadData(ByVal row As Integer)
+
+        With Me._Frm
+
+            Dim spr As FarPoint.Win.Spread.SheetView = .sprDetail.ActiveSheet
+
+            .cmbNrsBrCd.SelectedValue = Me._ControlG.GetCellValue(spr.Cells(row, LMM060G.sprDetailDef.NRS_BR_CD.ColNo))
+            .txtUnchinTariffCd.TextValue = Me._ControlG.GetCellValue(spr.Cells(row, LMM060G.sprDetailDef.UNCHIN_TARIFF_CD.ColNo))            
+            .imdStrDate.TextValue = DateFormatUtility.DeleteSlash(Me._ControlG.GetCellValue(spr.Cells(row, LMM060G.sprDetailDef.STR_DATE.ColNo)))
+            .cmbDataTp.SelectedValue = Me._ControlG.GetCellValue(spr.Cells(row, LMM060G.sprDetailDef.DATA_TP.ColNo))
+            .cmbTableTp.SelectedValue = Me._ControlG.GetCellValue(spr.Cells(row, LMM060G.sprDetailDef.TABLE_TP.ColNo))
+            .txtUnchinTariffRem.TextValue = Me._ControlG.GetCellValue(spr.Cells(row, LMM060G.sprDetailDef.UNCHIN_TARIFF_REM.ColNo))
+            .txtUnchinTariffCd2.TextValue = Me._ControlG.GetCellValue(spr.Cells(row, LMM060G.sprDetailDef.UNCHIN_TARIFF_CD2.ColNo))
+            '共通項目
+            .lblCrtUser.TextValue = Me._ControlG.GetCellValue(spr.Cells(row, LMM060G.sprDetailDef.SYS_ENT_USER_NM.ColNo))
+            .lblCrtDate.TextValue = DateFormatUtility.EditSlash(Me._ControlG.GetCellValue(spr.Cells(row, LMM060G.sprDetailDef.SYS_ENT_DATE.ColNo)))
+            .lblUpdUser.TextValue = Me._ControlG.GetCellValue(spr.Cells(row, LMM060G.sprDetailDef.SYS_UPD_USER_NM.ColNo))
+            .lblUpdDate.TextValue = DateFormatUtility.EditSlash(Me._ControlG.GetCellValue(spr.Cells(row, LMM060G.sprDetailDef.SYS_UPD_DATE.ColNo)))
+            '承認項目
+            .lblApprovalUser.TextValue = Me._ControlG.GetCellValue(spr.Cells(row, LMM060G.sprDetailDef.APPROVAL_USER.ColNo))
+            .lblApprovalDate.TextValue = DateFormatUtility.EditSlash(Me._ControlG.GetCellValue(spr.Cells(row, LMM060G.sprDetailDef.APPROVAL_DATE.ColNo)))
+            '隠し項目                           
+            .lblUpdTime.TextValue = Me._ControlG.GetCellValue(spr.Cells(row, LMM060G.sprDetailDef.SYS_UPD_TIME.ColNo))
+            .lblSysDelFlg.TextValue = Me._ControlG.GetCellValue(spr.Cells(row, LMM060G.sprDetailDef.SYS_DEL_FLG.ColNo))
+            .lblApprovalCd.TextValue = Me._ControlG.GetCellValue(spr.Cells(row, LMM060G.sprDetailDef.APPROVAL_CD.ColNo))
+
+        End With
+
+    End Sub
+
+    ''' <summary>
+    ''' Excel取り込みデータを編集部と運賃タリフ(距離刻み/運賃)Spreadに設定
+    ''' </summary>
+    ''' <remarks></remarks>
+    Friend Sub SetExcelUnchinData(ByVal ds As DataSet, ByVal eventShubetsu As LMM060C.EventShubetsu)
+
+        Dim dt As DataTable = ds.Tables(LMM060C.TABLE_NM_KYORI)
+        Dim dr As DataRow = Nothing
+        Dim nrsBrCd As String = String.Empty
+
+        Dim max As Integer = dt.Rows.Count - 1
+
+        For i As Integer = 0 To max
+
+            dr = dt.Rows(i)
+
+            '編集部(ヘッダー情報)にDataSetのデータタイプ＝00の情報を設定
+
+            If (dr("DATA_TP").ToString).Equals(LMM060C.DATA_TP_KBN_00) = True Then
+                With Me._Frm
+                    .cmbNrsBrCd.SelectedValue = dr("NRS_BR_CD")
+                    .txtUnchinTariffCd.TextValue = dr("UNCHIN_TARIFF_CD").ToString
+                    .imdStrDate.TextValue = dr("STR_DATE").ToString
+                    .cmbDataTp.SelectedValue = dr("DATA_TP")
+                    .cmbTableTp.SelectedValue = dr("TABLE_TP")
+                    .txtUnchinTariffRem.TextValue = dr("UNCHIN_TARIFF_REM").ToString
+                    .txtUnchinTariffCd2.TextValue = dr("UNCHIN_TARIFF_CD2").ToString
+                    '共通項目
+                    .lblCrtUser.TextValue = dr("SYS_ENT_USER").ToString
+                    .lblCrtDate.TextValue = dr("SYS_ENT_DATE").ToString
+                    .lblUpdDate.TextValue = dr("SYS_UPD_DATE").ToString
+                    .lblUpdUser.TextValue = dr("SYS_UPD_USER").ToString
+                    '隠し項目                           
+                    .lblUpdTime.TextValue = dr("SYS_UPD_TIME").ToString
+                    .lblSysDelFlg.TextValue = dr("SYS_DEL_FLG").ToString
+                    'Key項目の設定
+                    nrsBrCd = dr("NRS_BR_CD").ToString
+                End With
+            Else
+                With Me._Frm
+                    '隠し項目(データタイプ='00'以外)                           
+                    .lblExcelDt.TextValue = dr("DATA_TP").ToString
+                End With
+            End If
+
+        Next
+
+        Call Me.SetSpread2(dt, eventShubetsu, nrsBrCd, , )
+
+    End Sub
+
+#Region "内部メソッド"
+
+    ''' <summary>
+    ''' 日付を表示するコントロールの書式設定
+    ''' </summary>
+    ''' <remarks></remarks>
+    Private Sub SetDateControl()
+
+        With Me._Frm
+            Me._ControlG.SetDateFormat(.imdStrDate, LMMControlC.DATE_FORMAT.YYYY_MM_DD)
+        End With
+
+    End Sub
+
+    ''' <summary>
+    ''' コントロールの入力制御
+    ''' </summary>
+    ''' <remarks></remarks>
+    Private Sub SetControlsStatus()
+
+        Dim lock As Boolean = True
+        Dim unLock As Boolean = False
+
+        With Me._Frm
+
+            '画面項目を全ロックする（承認の差し戻しボタンは影響を受けないようにする）
+            Dim remandEnabled As Boolean = Me._Frm.btnRemand.Enabled
+
+            Call Me._ControlG.SetLockControl(Me._Frm, lock)
+
+            Me._Frm.btnRemand.Enabled = remandEnabled
+
+
+            Select Case Me._Frm.lblSituation.DispMode
+                Case DispMode.INIT
+                    '編集部の項目をクリア
+                    Call Me.ClearControl(Me._Frm)
+                    '現在の列数のクリア
+                    _BeCnt = 0
+                    '運賃タリフ明細(距離刻み/運賃)の初期化処理
+                    Call Me.InitUnchinTariffDTLSpread()
+
+                Case DispMode.VIEW
+                    '現在の列数のクリア
+                    _BeCnt = 0
+
+                Case DispMode.EDIT
+
+                    '行追加/行削除/列挿入/列削除/ロック/アンロックボタン活性化
+                    Call Me._ControlG.LockButton(.btnRowAdd, unLock)
+                    Call Me._ControlG.LockButton(.btnRowDel, unLock)
+                    Call Me._ControlG.LockButton(.btnColAdd, unLock)
+                    Call Me._ControlG.LockButton(.btnColDel, unLock)
+                    Call Me._ControlG.LockButton(.btnLock, unLock)
+                    Call Me._ControlG.LockButton(.btnUnLock, unLock)
+
+                    '編集部の項目のロック解除
+                    Call Me._ControlG.SetLockControl(Me._Frm, unLock)
+                    '常にロック項目ロック制御
+                    Call Me._ControlG.LockComb(.cmbNrsBrCd, lock)
+
+                    Select Case Me._Frm.lblSituation.RecordStatus
+                        Case RecordStatus.NEW_REC
+                            '新規時項目のクリアを行う
+                            Call Me.ClearControlNew()
+
+                        Case RecordStatus.NOMAL_REC
+                            '編集時ロック制御を行う
+                            Call Me.LockControlEdit()
+
+                        Case RecordStatus.COPY_REC
+                            '複写時キー項目のクリアを行う
+                            Call Me.ClearControlFukusha()
+
+                            '運賃タリフ明細情報Spreadの隠し項目である"更新区分"の設定
+                            Dim RowCnt As Integer = .sprDetail2.ActiveSheet.Rows.Count - 1
+                            For i As Integer = 1 To RowCnt
+                                Dim unchinCdEda As String = _ControlG.SetMaeZeroData(Convert.ToString(i - 1), 3)
+                                '運賃タリフコード枝番："000"から連番で設定
+                                .sprDetail2.SetCellValue(i, sprDetailDef2.UNCHIN_TARIFF_CD_EDA.ColNo, unchinCdEda)
+                                '更新区分："0"を設定
+                                .sprDetail2.SetCellValue(i, sprDetailDef2.UPD_FLG.ColNo, "0")
+                                '削除フラグ："0"を設定
+                                .sprDetail2.SetCellValue(i, sprDetailDef2.SYS_DEL_FLG_T.ColNo, "0")
+                            Next
+
+                    End Select
+            End Select
+
+        End With
+
+    End Sub
+
+    ''' <summary>
+    ''' 新規時項目クリア処理
+    ''' </summary>
+    ''' <remarks></remarks>
+    Private Sub ClearControlNew()
+
+        With Me._Frm
+
+            '編集部の項目をクリア
+            Call Me.ClearControl(Me._Frm)
+            '現在の列数のクリア
+            _BeCnt = 0
+            '運賃タリフ明細(距離刻み/運賃)の初期化処理
+            Call Me.InitUnchinTariffDTLSpread()
+            '初期値を設定
+            .cmbNrsBrCd.SelectedValue = LMUserInfoManager.GetNrsBrCd
+            .cmbDataTp.SelectedValue = LMMControlC.FLG_ON             '01(運賃)
+            .cmbTableTp.SelectedValue = LMMControlC.FLG_OFF           '00(重量・距離)
+
+        End With
+
+    End Sub
+
+    ''' <summary>
+    ''' 編集時ロック制御
+    ''' </summary>
+    ''' <remarks></remarks>
+    Private Sub LockControlEdit()
+
+        Dim lock As Boolean = True
+
+        With Me._Frm
+
+            Call Me._ControlG.LockText(.txtUnchinTariffCd, lock)        '運賃タリフコード
+            Call Me._ControlG.LockDate(.imdStrDate, lock)               '適用開始日
+            Call Me._ControlG.LockComb(.cmbTableTp, lock)               '計算種別
+
+            'データタイプ＝"00"'(距離刻み)以外のデータを編集した場合、データタイプをロック
+            If (LMMControlC.FLG_OFF).Equals(.cmbDataTp.SelectedValue) = False Then
+                Call Me._ControlG.LockComb(.cmbDataTp, lock)            'データタイプ
+            End If
+
+        End With
+
+    End Sub
+
+    ''' <summary>
+    ''' 複写時キー項目のクリア処理
+    ''' </summary>
+    ''' <remarks></remarks>
+    Private Sub ClearControlFukusha()
+
+        Dim lock As Boolean = True
+
+        With Me._Frm
+
+            '複写時のロック項目
+            Call Me._ControlG.LockComb(.cmbTableTp, lock)        '計算種別
+
+            '複写しない項目は空を設定
+            .txtUnchinTariffCd.TextValue = String.Empty
+            .imdStrDate.TextValue = String.Empty
+
+            .lblCrtDate.TextValue = String.Empty
+            .lblCrtUser.TextValue = String.Empty
+            .lblUpdUser.TextValue = String.Empty
+            .lblUpdDate.TextValue = String.Empty
+            .lblUpdTime.TextValue = String.Empty
+
+            '承認項目クリア
+            .lblApprovalDate.TextValue = String.Empty
+            .lblApprovalUser.TextValue = String.Empty
+            .lblApprovalCd.TextValue = String.Empty
+
+        End With
+
+    End Sub
+
+    ''' <summary>
+    ''' スプレッド(下部)_距離刻みのクリア処理を行う
+    ''' </summary>
+    ''' <param name="lockFlg">クリア処理を行う場合True</param>
+    ''' <remarks></remarks>
+    Friend Sub ClearSpreadControl(ByVal lockFlg As Boolean)
+
+        With Me._Frm
+
+            'ラベルスタイルの設定
+            Dim lbl As StyleInfo = LMSpreadUtility.GetLabelCell(.sprDetail2)
+
+            Dim spr As LMSpread = Me._Frm.sprDetail2
+            Dim sNumber2 As StyleInfo = LMSpreadUtility.GetNumberCell(.sprDetail2, 0.0, 999999999.999, lockFlg, 3, True, ",")
+            Dim sLabel As StyleInfo = LMSpreadUtility.GetLabelCell(.sprDetail2, CellHorizontalAlignment.Left)
+            Dim visColCnt As Integer = 5 + _BeCnt
+
+            '新規・初期の場合のみ、距離刻み行の初期設定を行う
+            If RecordStatus.NEW_REC.Equals(Me._Frm.lblSituation.RecordStatus) = True _
+             OrElse RecordStatus.INIT.Equals(Me._Frm.lblSituation.RecordStatus) = True Then
+
+                With spr
+                    '① 距離刻み行の「距離」の初期設定
+                    Dim vis As Boolean = False
+                    For i As Integer = 0 To 90
+                        If LMM060C.SprColumnIndex2.KYORI_1 <= i And i <= LMM060C.SprColumnIndex2.KYORI_70 Then
+                            'セルスタイル設定
+                            .SetCellStyle(1, i, sNumber2)
+                            'セルに値を設定
+                            .SetCellValue(1, i, 0.ToString())
+                        End If
+                    Next
+                    '② 距離刻み行の「運賃タリフコード枝番・更新区分・削除フラグ」の初期設定
+                    'セルスタイル設定
+                    .SetCellStyle(1, LMM060G.sprDetailDef2.UNCHIN_TARIFF_CD_EDA.ColNo, sLabel)
+                    .SetCellStyle(1, LMM060G.sprDetailDef2.UPD_FLG.ColNo, sLabel)
+                    .SetCellStyle(1, LMM060G.sprDetailDef2.SYS_DEL_FLG_T.ColNo, sLabel)
+                    'セルに値を設定
+                    .SetCellValue(1, LMM060G.sprDetailDef2.UNCHIN_TARIFF_CD_EDA.ColNo, "000")
+                    .SetCellValue(1, LMM060G.sprDetailDef2.UPD_FLG.ColNo, LMM060C.FLG.OFF)
+                    .SetCellValue(1, LMM060G.sprDetailDef2.SYS_DEL_FLG_T.ColNo, LMM060C.FLG.OFF)
+                End With
+
+            End If
+
+        End With
+
+    End Sub
+
+    ''' <summary>
+    ''' スプレッド(下部)のロック処理/ロック解除処理を行う
+    ''' </summary>
+    ''' <param name="lockFlg">ロック処理を行う場合True</param>
+    ''' <remarks></remarks>
+    Friend Sub SetLockBottomSpreadControl(ByVal lockFlg As Boolean)
+
+        With Me._Frm
+
+            'ラベルスタイルの設定
+            Dim lbl As StyleInfo = LMSpreadUtility.GetLabelCell(.sprDetail2)
+
+            Dim spr As LMSpread = Me._Frm.sprDetail2
+            Dim sLabel As StyleInfo = LMSpreadUtility.GetLabelCell(.sprDetail2, CellHorizontalAlignment.Left)
+            Dim sChk As StyleInfo = LMSpreadUtility.GetCheckBoxCell(.sprDetail2, lockFlg)
+            Dim sNumber1 As StyleInfo = LMSpreadUtility.GetNumberCell(.sprDetail2, 0, 999999999, lockFlg, 0, True, ",")
+            Dim sNumber2 As StyleInfo = LMSpreadUtility.GetNumberCell(.sprDetail2, 0.0, 999999999.999, lockFlg, 3, True, ",")
+            Dim sCmbS As StyleInfo = LMSpreadUtility.GetComboCellKbn(.sprDetail2, LMKbnConst.KBN_S012, lockFlg)
+            Dim sCmbT As StyleInfo = LMSpreadUtility.GetComboCellKbn(.sprDetail2, LMKbnConst.KBN_T010, lockFlg)
+
+            Dim max As Integer = .sprDetail2.ActiveSheet.Rows.Count - 1
+
+            For i As Integer = 1 To max
+
+                .sprDetail2.SetCellStyle(i, sprDetailDef2.KYORI_1.ColNo, sNumber2)
+                .sprDetail2.SetCellStyle(i, sprDetailDef2.KYORI_2.ColNo, sNumber2)
+                .sprDetail2.SetCellStyle(i, sprDetailDef2.KYORI_3.ColNo, sNumber2)
+                .sprDetail2.SetCellStyle(i, sprDetailDef2.KYORI_4.ColNo, sNumber2)
+                .sprDetail2.SetCellStyle(i, sprDetailDef2.KYORI_5.ColNo, sNumber2)
+
+                If i <> 1 Then
+                    .sprDetail2.SetCellStyle(i, sprDetailDef2.DEF.ColNo, sChk)
+                    .sprDetail2.SetCellStyle(i, sprDetailDef2.WT_LV.ColNo, sNumber1)
+                    .sprDetail2.SetCellStyle(i, sprDetailDef2.CAR_TP.ColNo, sCmbS)
+                    .sprDetail2.SetCellStyle(i, sprDetailDef2.NB.ColNo, sNumber1)
+                    .sprDetail2.SetCellStyle(i, sprDetailDef2.QT.ColNo, sNumber1)
+                    .sprDetail2.SetCellStyle(i, sprDetailDef2.T_SIZE.ColNo, sCmbT)
+                    .sprDetail2.SetCellStyle(i, sprDetailDef2.CITY_EXTC_A.ColNo, sNumber1)
+                    .sprDetail2.SetCellStyle(i, sprDetailDef2.CITY_EXTC_B.ColNo, sNumber1)
+                    .sprDetail2.SetCellStyle(i, sprDetailDef2.WINT_EXTC_A.ColNo, sNumber1)
+                    .sprDetail2.SetCellStyle(i, sprDetailDef2.WINT_EXTC_B.ColNo, sNumber1)
+                    .sprDetail2.SetCellStyle(i, sprDetailDef2.RELY_EXTC.ColNo, sNumber1)
+                    .sprDetail2.SetCellStyle(i, sprDetailDef2.INSU.ColNo, sNumber1)
+                    'START YANAI 要望番号377
+                    '.sprDetail2.SetCellStyle(i, sprDetailDef2.FRRY_EXTC_10KG.ColNo, sNumber1)
+                    'END YANAI 要望番号377
+                    .sprDetail2.SetCellStyle(i, sprDetailDef2.FRRY_EXTC_PART.ColNo, sNumber1)
+                End If
+            Next
+
+        End With
+
+    End Sub
+
+#End Region
+
+#End Region
+
+#End Region
+
+#Region "Spread"
+
+    ''' <summary>
+    ''' スプレッド列定義体(上部)
+    ''' </summary>
+    ''' <remarks>SpreadColProperty型のフィールドのみで定義すること</remarks>
+    Public Class sprDetailDef
+
+        'スプレッド(タイトル列)の設定
+        Public Shared DEF As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex.DEF, " ", 20, True)
+        Public Shared SYS_DEL_NM As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex.SYS_DEL_NM, "状態", 60, True)
+        Public Shared APPROVAL_CD As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex.APPROVAL_CD, "承認状況", 60, False)
+        Public Shared APPROVAL_NM As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex.APPROVAL_NM, "承認状況", 60, True)
+        Public Shared APPROVAL_USER As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex.APPROVAL_USER, "承認者", 60, False)
+        Public Shared APPROVAL_DATE As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex.APPROVAL_DATE, "承認日", 60, False)
+        Public Shared APPROVAL_TIME As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex.APPROVAL_TIME, "承認時間", 60, False)
+        Public Shared NRS_BR_CD As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex.NRS_BR_CD, "営業所コード", 60, False)     '営業所コード(隠し項目)
+        Public Shared NRS_BR_NM As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex.NRS_BR_NM, "営業所", 275, True)           '営業所名
+        Public Shared UNCHIN_TARIFF_CD As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex.UNCHIN_TARIFF_CD, "運賃タリフコード", 150, True)
+        Public Shared DATA_TP_NM As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex.DATA_TP_NM, "データタイプ", 100, True)
+        Public Shared TABLE_TP_NM As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex.TABLE_TP_NM, "計算種別", 200, True)
+        Public Shared STR_DATE As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex.STR_DATE, "適用開始日", 100, True)
+
+        '隠し項目
+        Public Shared UNCHIN_TARIFF_CD2 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex.UNCHIN_TARIFF_CD2, "2次タリフコード", 80, False)
+        Public Shared UNCHIN_TARIFF_REM As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex.UNCHIN_TARIFF_REM, "運賃タリフコードリマーク", 60, False)
+        Public Shared DATA_TP As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex.DATA_TP, "データタイプ", 60, False)
+        Public Shared TABLE_TP As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex.TABLE_TP, "テーブルタイプ", 60, False)
+        Public Shared SYS_ENT_DATE As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex.SYS_ENT_DATE, "作成日", 60, False)
+        Public Shared SYS_ENT_USER_NM As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex.SYS_ENT_USER_NM, "作成者", 60, False)
+        Public Shared SYS_UPD_DATE As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex.SYS_UPD_DATE, "更新日", 60, False)
+        Public Shared SYS_UPD_USER_NM As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex.SYS_UPD_USER_NM, "更新者", 60, False)
+        Public Shared SYS_UPD_TIME As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex.SYS_UPD_TIME, "更新時刻", 60, False)
+        Public Shared SYS_DEL_FLG As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex.SYS_DEL_FLG, "削除フラグ", 60, False)
+
+    End Class
+
+    ''' <summary>
+    ''' スプレッド列定義体(下部)
+    ''' </summary>
+    ''' <remarks>SpreadColProperty型のフィールドのみで定義すること</remarks>
+    Public Class sprDetailDef2
+
+        'スプレッド(タイトル列)の設定
+
+        Public Shared DEF As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.DEF, " ", 20, True)
+        Public Shared WT_LV As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.WT_LV, "重量", 100, True)
+        Public Shared CAR_TP As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.CAR_TP, "車種", 80, True)
+        Public Shared NB As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.NB, "個数", 100, True)
+        Public Shared QT As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.QT, "数量", 100, True)
+        Public Shared T_SIZE As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.T_SIZE, "宅急便ｻｲｽﾞ", 80, True)
+        Public Shared KYORI_1 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_1, "", 100, True)
+        Public Shared KYORI_2 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_2, "", 100, True)
+        Public Shared KYORI_3 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_3, "", 100, True)
+        Public Shared KYORI_4 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_4, "", 100, True)
+        Public Shared KYORI_5 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_5, "", 100, True)
+        Public Shared KYORI_6 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_6, "", 100, False)
+        Public Shared KYORI_7 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_7, "", 100, False)
+        Public Shared KYORI_8 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_8, "", 100, False)
+        Public Shared KYORI_9 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_9, "", 100, False)
+        Public Shared KYORI_10 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_10, "", 100, False)
+        Public Shared KYORI_11 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_11, "", 100, False)
+        Public Shared KYORI_12 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_12, "", 100, False)
+        Public Shared KYORI_13 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_13, "", 100, False)
+        Public Shared KYORI_14 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_14, "", 100, False)
+        Public Shared KYORI_15 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_15, "", 100, False)
+        Public Shared KYORI_16 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_16, "", 100, False)
+        Public Shared KYORI_17 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_17, "", 100, False)
+        Public Shared KYORI_18 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_18, "", 100, False)
+        Public Shared KYORI_19 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_19, "", 100, False)
+        Public Shared KYORI_20 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_20, "", 100, False)
+        Public Shared KYORI_21 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_21, "", 100, False)
+        Public Shared KYORI_22 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_22, "", 100, False)
+        Public Shared KYORI_23 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_23, "", 100, False)
+        Public Shared KYORI_24 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_24, "", 100, False)
+        Public Shared KYORI_25 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_25, "", 100, False)
+        Public Shared KYORI_26 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_26, "", 100, False)
+        Public Shared KYORI_27 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_27, "", 100, False)
+        Public Shared KYORI_28 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_28, "", 100, False)
+        Public Shared KYORI_29 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_29, "", 100, False)
+        Public Shared KYORI_30 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_30, "", 100, False)
+        Public Shared KYORI_31 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_31, "", 100, False)
+        Public Shared KYORI_32 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_32, "", 100, False)
+        Public Shared KYORI_33 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_33, "", 100, False)
+        Public Shared KYORI_34 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_34, "", 100, False)
+        Public Shared KYORI_35 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_35, "", 100, False)
+        Public Shared KYORI_36 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_36, "", 100, False)
+        Public Shared KYORI_37 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_37, "", 100, False)
+        Public Shared KYORI_38 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_38, "", 100, False)
+        Public Shared KYORI_39 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_39, "", 100, False)
+        Public Shared KYORI_40 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_40, "", 100, False)
+        Public Shared KYORI_41 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_41, "", 100, False)
+        Public Shared KYORI_42 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_42, "", 100, False)
+        Public Shared KYORI_43 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_43, "", 100, False)
+        Public Shared KYORI_44 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_44, "", 100, False)
+        Public Shared KYORI_45 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_45, "", 100, False)
+        Public Shared KYORI_46 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_46, "", 100, False)
+        Public Shared KYORI_47 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_47, "", 100, False)
+        Public Shared KYORI_48 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_48, "", 100, False)
+        Public Shared KYORI_49 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_49, "", 100, False)
+        Public Shared KYORI_50 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_50, "", 100, False)
+        Public Shared KYORI_51 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_51, "", 100, False)
+        Public Shared KYORI_52 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_52, "", 100, False)
+        Public Shared KYORI_53 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_53, "", 100, False)
+        Public Shared KYORI_54 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_54, "", 100, False)
+        Public Shared KYORI_55 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_55, "", 100, False)
+        Public Shared KYORI_56 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_56, "", 100, False)
+        Public Shared KYORI_57 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_57, "", 100, False)
+        Public Shared KYORI_58 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_58, "", 100, False)
+        Public Shared KYORI_59 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_59, "", 100, False)
+        Public Shared KYORI_60 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_60, "", 100, False)
+        Public Shared KYORI_61 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_61, "", 100, False)
+        Public Shared KYORI_62 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_62, "", 100, False)
+        Public Shared KYORI_63 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_63, "", 100, False)
+        Public Shared KYORI_64 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_64, "", 100, False)
+        Public Shared KYORI_65 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_65, "", 100, False)
+        Public Shared KYORI_66 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_66, "", 100, False)
+        Public Shared KYORI_67 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_67, "", 100, False)
+        Public Shared KYORI_68 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_68, "", 100, False)
+        Public Shared KYORI_69 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_69, "", 100, False)
+        Public Shared KYORI_70 As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.KYORI_70, "", 100, False)
+        Public Shared CITY_EXTC_A As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.CITY_EXTC_A, "都市割増A", 100, True)
+        Public Shared CITY_EXTC_B As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.CITY_EXTC_B, "都市割増B", 100, True)
+        Public Shared WINT_EXTC_A As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.WINT_EXTC_A, "冬期割増A", 100, True)
+        Public Shared WINT_EXTC_B As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.WINT_EXTC_B, "冬期割増B", 100, True)
+        Public Shared RELY_EXTC As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.RELY_EXTC, "中継料", 100, True)
+        Public Shared INSU As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.INSU, "保険料", 100, True)
+        'START YANAI 要望番号377
+        'Public Shared FRRY_EXTC_10KG As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.FRRY_EXTC_10KG, "10㎏あたりの" & vbCrLf & "航送料", 100, True)
+        'END YANAI 要望番号377
+
+        '隠し項目
+        Public Shared FRRY_EXTC_PART As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.FRRY_EXTC_PART, "1件あたりの" & vbCrLf & "航送料", 100, False)
+        Public Shared UNCHIN_TARIFF_CD_EDA As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.UNCHIN_TARIFF_CD_EDA, "運賃タリフコード枝番", 100, False)
+        Public Shared UPD_FLG As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.UPD_FLG, "更新区分", 100, False)
+        Public Shared SYS_DEL_FLG_T As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.SYS_DEL_FLG_T, "削除フラグ", 100, False)
+        Public Shared SYS_UPD_DATE As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.SYS_UPD_DATE, "更新日", 100, False)
+        Public Shared SYS_UPD_TIME As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.SYS_UPD_TIME, "更新時刻", 100, False)
+        Public Shared RECNO As SpreadColProperty = New SpreadColProperty(LMM060C.SprColumnIndex2.RECNO, "RECNO", 30, False)
+
+    End Class
+
+    ''' <summary>
+    ''' スプレッドの初期設定
+    ''' </summary>
+    ''' <remarks></remarks>
+    Friend Sub InitSpread()
+
+        If (DispMode.INIT).Equals(Me._Frm.lblSituation.DispMode) = True Then
+            '運賃タリフSpreadの初期化処理
+            Call Me.InitUnchinTariffHDSpread()
+        End If
+
+        '運賃タリフ明細(距離刻み/運賃)の初期化処理
+        Call Me.InitUnchinTariffDTLSpread()
+
+    End Sub
+
+    ''' <summary>
+    ''' 運賃タリフスプレッドの初期設定
+    ''' </summary>
+    ''' <remarks></remarks>
+    Private Sub InitUnchinTariffHDSpread()        
+
+        '運賃タリフSpreadの初期値設定
+        Dim sprDetail As LMSpread = Me._Frm.sprDetail
+        Dim dr As DataRow
+        With sprDetail
+
+            'スプレッドの行をクリア
+            .CrearSpread()
+
+            '列数設定
+            .ActiveSheet.ColumnCount = 23
+
+            '2015.10.15 英語化対応START
+            'スプレッドの列設定（列名、列幅、列の表示・非表示）
+            '.SetColProperty(New sprDetailDef)
+            .SetColProperty(New LMM060G.sprDetailDef(), False)
+            '2015.10.15 英語化対応END
+
+            '列固定位置を設定します。
+            .ActiveSheet.FrozenColumnCount = sprDetailDef.DEF.ColNo + 1
+
+            '検索行の設定を行う
+            Dim lbl As StyleInfo = LMSpreadUtility.GetLabelCell(sprDetail)
+
+            '**** 表示列 ****
+            .SetCellStyle(0, sprDetailDef.DEF.ColNo, lbl)
+            .SetCellStyle(0, sprDetailDef.SYS_DEL_NM.ColNo, LMSpreadUtility.GetComboCellKbn(sprDetail, "S051", False))
+            .SetCellStyle(0, sprDetailDef.APPROVAL_NM.ColNo, LMSpreadUtility.GetComboCellKbn(sprDetail, "A009", False))
+            .SetCellStyle(0, sprDetailDef.NRS_BR_CD.ColNo, lbl)
+            'M_NRS_BR 【事業所M】のLOCK_FLGが"01"場合はコンボボックスはロックする
+            dr = MyBase.GetLMCachedDataTable(LMConst.CacheTBL.NRS_BR).Select(String.Concat("NRS_BR_CD='" & LMUserInfoManager.GetNrsBrCd) & "'")(0)
+
+            If Not dr.Item("LOCK_FLG").ToString.Equals("") Then
+                .SetCellStyle(0, sprDetailDef.NRS_BR_NM.ColNo, LMSpreadUtility.GetComboCellMaster(sprDetail, LMConst.CacheTBL.NRS_BR, "NRS_BR_CD", "NRS_BR_NM", True))
+            Else
+                .SetCellStyle(0, sprDetailDef.NRS_BR_NM.ColNo, LMSpreadUtility.GetComboCellMaster(sprDetail, LMConst.CacheTBL.NRS_BR, "NRS_BR_CD", "NRS_BR_NM", False))
+            End If
+             .SetCellStyle(0, sprDetailDef.UNCHIN_TARIFF_CD.ColNo, LMSpreadUtility.GetTextCell(sprDetail, InputControl.ALL_HANKAKU, 10, False))
+            .SetCellStyle(0, sprDetailDef.DATA_TP_NM.ColNo, LMSpreadUtility.GetComboCellKbn(sprDetail, LMKbnConst.KBN_U010, False))
+            .SetCellStyle(0, sprDetailDef.TABLE_TP_NM.ColNo, LMSpreadUtility.GetComboCellKbn(sprDetail, LMKbnConst.KBN_U011, False))
+            .SetCellStyle(0, sprDetailDef.STR_DATE.ColNo, lbl)
+
+            '**** 隠し列 ****
+            .SetCellStyle(0, sprDetailDef.UNCHIN_TARIFF_CD2.ColNo, lbl)
+            .SetCellStyle(0, sprDetailDef.UNCHIN_TARIFF_REM.ColNo, lbl)
+            .SetCellStyle(0, sprDetailDef.DATA_TP.ColNo, lbl)
+            .SetCellStyle(0, sprDetailDef.TABLE_TP.ColNo, lbl)
+            .SetCellStyle(0, sprDetailDef.SYS_ENT_DATE.ColNo, lbl)
+            .SetCellStyle(0, sprDetailDef.SYS_ENT_USER_NM.ColNo, lbl)
+            .SetCellStyle(0, sprDetailDef.SYS_UPD_DATE.ColNo, lbl)
+            .SetCellStyle(0, sprDetailDef.SYS_UPD_USER_NM.ColNo, lbl)
+            .SetCellStyle(0, sprDetailDef.SYS_UPD_TIME.ColNo, lbl)
+            .SetCellStyle(0, sprDetailDef.SYS_DEL_FLG.ColNo, lbl)
+
+            '初期値設定
+            Call Me._ControlG.ClearControl(sprDetail)
+            .SetCellValue(0, sprDetailDef.SYS_DEL_NM.ColNo, LMConst.FLG.OFF)
+            .SetCellValue(0, sprDetailDef.NRS_BR_NM.ColNo, LMUserInfoManager.GetNrsBrCd.ToString())
+            .SetCellValue(0, sprDetailDef.DATA_TP_NM.ColNo, LMM060C.DATA_TP_KBN_01)
+
+        End With
+
+    End Sub
+
+    ''' <summary>
+    ''' 運賃タリフ明細(距離刻み/運賃)スプレッドの初期設定
+    ''' </summary>
+    ''' <remarks></remarks>
+    Friend Sub InitUnchinTariffDTLSpread(Optional ByVal EventShubetsu As Integer = 0)
+
+        '2017/09/25 追加 李↓
+        '多言語対応用ユーティリティ
+        Dim lgm As New lmLangMGR(MessageManager.MessageLanguage)
+        '2017/09/25 追加 李↑
+
+        '運賃タリフ明細(距離刻み/運賃)Spreadの初期値設定
+        Dim sprDetail2 As LMSpread = Me._Frm.sprDetail2
+
+
+        With sprDetail2
+
+            If _BeCnt = 0 Then
+                'スプレッドの行をクリア
+                .CrearSpread()
+                '列数設定
+                'START YANAI 要望番号377
+                '.ActiveSheet.ColumnCount = 90
+                .ActiveSheet.ColumnCount = 89
+                'END YANAI 要望番号377
+                '2015.10.15 英語化対応START
+                .SetColProperty(New LMM060G.sprDetailDef2(), False)
+
+
+                '2017/09/25 修正 李↓
+                '.SetColProperty(New sprDetailDef2(), "距離(km)", 6, 5)
+                .SetColProperty(New sprDetailDef2(), lgm.Selector({"距離(km)", "Distance(km)", "거리(km)", "Distance(km)"}), 6, 5)
+                '2017/09/25 修正 李↑
+
+
+                '2015.10.15 英語化対応END
+                '距離刻みの値クリア
+                Call Me.ClearSpreadControl(True)
+            Else
+
+                .CrearSpread()
+
+                '2015.10.15 英語化対応START
+                .SetColProperty(New LMM060G.sprDetailDef2(), False)
+
+
+                '2017/09/25 修正 李↓
+                '.SetColProperty(New sprDetailDef2(), "距離(km)", 6, (_BeCnt))
+                .SetColProperty(New sprDetailDef2(), lgm.Selector({"距離(km)", "Distance(km)", "거리(km)", "Distance(km)"}), 6, (_BeCnt))
+                '2017/09/25 修正 李↑
+
+
+                '2015.10.15 英語化対応END
+            End If
+
+            Dim vis As Boolean = False
+            Dim visColCnt As Integer = 0
+
+            If _BeCnt = 0 Then
+                visColCnt = 5
+                Me._Frm.lblDefAddCnt.TextValue = visColCnt.ToString
+            Else
+                visColCnt = _BeCnt
+            End If
+
+            For i As Integer = 0 To 90
+                If LMM060C.SprColumnIndex2.KYORI_1 <= i And i <= LMM060C.SprColumnIndex2.KYORI_70 Then
+                    If i <= LMM060C.SprColumnIndex2.T_SIZE + visColCnt Then
+                        .ActiveSheet.Columns(i).Visible = True
+                    Else
+                        .ActiveSheet.Columns(i).Visible = False
+                    End If
+
+                End If
+
+            Next
+
+            '行番号の再設定
+            .ReRowNumber()
+
+        End With
+
+    End Sub
+
+    ''' <summary>
+    ''' 初期値を設定します
+    ''' </summary>
+    ''' <param name="frm"></param>
+    ''' <remarks></remarks>
+    Friend Sub SetInitValue(ByVal frm As LMM060F)
+
+        With frm.sprDetail
+
+        End With
+
+    End Sub
+
+    ''' <summary>
+    ''' スプレッドにデータを設定(明細)
+    ''' </summary>
+    ''' <remarks></remarks>
+    Friend Sub SetSpread(ByVal dt As DataTable)
+
+        Dim spr As LMSpreadSearch = Me._Frm.sprDetail
+        Dim spr2 As LMSpread = Me._Frm.sprDetail2
+        Dim dtOut As New DataSet
+
+        With spr
+
+            .SuspendLayout()
+            '行数設定
+            Dim lngcnt As Integer = dt.Rows.Count
+            If lngcnt = 0 Then
+                .ResumeLayout(True)
+                Exit Sub
+            End If
+
+            .ActiveSheet.AddRows(.ActiveSheet.Rows.Count, lngcnt)
+
+            'セルに設定するスタイルの取得
+            Dim sDEF As StyleInfo = LMSpreadUtility.GetCheckBoxCell(spr, False)
+            Dim sLabel As StyleInfo = LMSpreadUtility.GetLabelCell(spr, CellHorizontalAlignment.Left)
+            Dim sDate As StyleInfo = LMSpreadUtility.GetDateTimeCell(spr, True)
+
+            sDEF.HorizontalAlignment = CellHorizontalAlignment.Center
+
+            Dim dr As DataRow = Nothing
+
+            '値設定
+            For i As Integer = 1 To lngcnt
+
+                dr = dt.Rows(i - 1)
+
+                ''セルスタイル設定
+                .SetCellStyle(i, LMM060G.sprDetailDef.DEF.ColNo, sDEF)
+                .SetCellStyle(i, LMM060G.sprDetailDef.SYS_DEL_NM.ColNo, sLabel)
+                .SetCellStyle(i, LMM060G.sprDetailDef.APPROVAL_CD.ColNo, sLabel)
+                .SetCellStyle(i, LMM060G.sprDetailDef.APPROVAL_NM.ColNo, sLabel)
+                .SetCellStyle(i, LMM060G.sprDetailDef.APPROVAL_USER.ColNo, sLabel)
+                .SetCellStyle(i, LMM060G.sprDetailDef.APPROVAL_DATE.ColNo, sLabel)
+                .SetCellStyle(i, LMM060G.sprDetailDef.APPROVAL_TIME.ColNo, sLabel)
+                .SetCellStyle(i, LMM060G.sprDetailDef.NRS_BR_CD.ColNo, sLabel)
+                .SetCellStyle(i, LMM060G.sprDetailDef.NRS_BR_NM.ColNo, sLabel)
+                .SetCellStyle(i, LMM060G.sprDetailDef.UNCHIN_TARIFF_CD.ColNo, sLabel)
+                .SetCellStyle(i, LMM060G.sprDetailDef.DATA_TP_NM.ColNo, sLabel)
+                .SetCellStyle(i, LMM060G.sprDetailDef.TABLE_TP_NM.ColNo, sLabel)
+                .SetCellStyle(i, LMM060G.sprDetailDef.STR_DATE.ColNo, sDate)
+                '隠し項目
+                .SetCellStyle(i, LMM060G.sprDetailDef.UNCHIN_TARIFF_CD2.ColNo, sLabel)
+                .SetCellStyle(i, LMM060G.sprDetailDef.UNCHIN_TARIFF_REM.ColNo, sLabel)
+                .SetCellStyle(i, LMM060G.sprDetailDef.DATA_TP.ColNo, sLabel)
+                .SetCellStyle(i, LMM060G.sprDetailDef.TABLE_TP.ColNo, sLabel)
+                .SetCellStyle(i, LMM060G.sprDetailDef.SYS_ENT_DATE.ColNo, sLabel)
+                .SetCellStyle(i, LMM060G.sprDetailDef.SYS_ENT_USER_NM.ColNo, sLabel)
+                .SetCellStyle(i, LMM060G.sprDetailDef.SYS_UPD_DATE.ColNo, sLabel)
+                .SetCellStyle(i, LMM060G.sprDetailDef.SYS_UPD_USER_NM.ColNo, sLabel)
+                .SetCellStyle(i, LMM060G.sprDetailDef.SYS_UPD_TIME.ColNo, sLabel)
+                .SetCellStyle(i, LMM060G.sprDetailDef.SYS_DEL_FLG.ColNo, sLabel)
+
+                'セルに値を設定
+                .SetCellValue(i, LMM060G.sprDetailDef.DEF.ColNo, LMConst.FLG.OFF)
+                .SetCellValue(i, LMM060G.sprDetailDef.SYS_DEL_NM.ColNo, dr.Item("SYS_DEL_NM").ToString())
+                .SetCellValue(i, LMM060G.sprDetailDef.APPROVAL_CD.ColNo, dr.Item("APPROVAL_CD").ToString())
+                .SetCellValue(i, LMM060G.sprDetailDef.APPROVAL_NM.ColNo, dr.Item("APPROVAL_NM").ToString())
+                .SetCellValue(i, LMM060G.sprDetailDef.APPROVAL_USER.ColNo, dr.Item("APPROVAL_USER").ToString())
+                .SetCellValue(i, LMM060G.sprDetailDef.APPROVAL_DATE.ColNo, dr.Item("APPROVAL_DATE").ToString())
+                .SetCellValue(i, LMM060G.sprDetailDef.APPROVAL_TIME.ColNo, dr.Item("APPROVAL_TIME").ToString())
+                .SetCellValue(i, LMM060G.sprDetailDef.NRS_BR_CD.ColNo, dr.Item("NRS_BR_CD").ToString())
+                .SetCellValue(i, LMM060G.sprDetailDef.NRS_BR_NM.ColNo, dr.Item("NRS_BR_NM").ToString())
+                .SetCellValue(i, LMM060G.sprDetailDef.UNCHIN_TARIFF_CD.ColNo, dr.Item("UNCHIN_TARIFF_CD").ToString())
+                .SetCellValue(i, LMM060G.sprDetailDef.DATA_TP_NM.ColNo, dr.Item("DATA_TP_NM").ToString())
+                .SetCellValue(i, LMM060G.sprDetailDef.TABLE_TP_NM.ColNo, dr.Item("TABLE_TP_NM").ToString())
+                .SetCellValue(i, LMM060G.sprDetailDef.STR_DATE.ColNo, DateFormatUtility.EditSlash(dr.Item("STR_DATE").ToString()))
+                .SetCellValue(i, LMM060G.sprDetailDef.UNCHIN_TARIFF_CD2.ColNo, dr.Item("UNCHIN_TARIFF_CD2").ToString())
+                .SetCellValue(i, LMM060G.sprDetailDef.UNCHIN_TARIFF_REM.ColNo, dr.Item("UNCHIN_TARIFF_REM").ToString())
+                .SetCellValue(i, LMM060G.sprDetailDef.DATA_TP.ColNo, dr.Item("DATA_TP").ToString())
+                .SetCellValue(i, LMM060G.sprDetailDef.TABLE_TP.ColNo, dr.Item("TABLE_TP").ToString())
+                .SetCellValue(i, LMM060G.sprDetailDef.SYS_ENT_DATE.ColNo, dr.Item("SYS_ENT_DATE").ToString())
+                .SetCellValue(i, LMM060G.sprDetailDef.SYS_ENT_USER_NM.ColNo, dr.Item("SYS_ENT_USER_NM").ToString())
+                .SetCellValue(i, LMM060G.sprDetailDef.SYS_UPD_DATE.ColNo, dr.Item("SYS_UPD_DATE").ToString())
+                .SetCellValue(i, LMM060G.sprDetailDef.SYS_UPD_USER_NM.ColNo, dr.Item("SYS_UPD_USER_NM").ToString())
+                .SetCellValue(i, LMM060G.sprDetailDef.SYS_UPD_TIME.ColNo, dr.Item("SYS_UPD_TIME").ToString())
+                .SetCellValue(i, LMM060G.sprDetailDef.SYS_DEL_FLG.ColNo, dr.Item("SYS_DEL_FLG").ToString())
+
+            Next
+
+            .ResumeLayout(True)
+
+        End With
+
+
+    End Sub
+
+    ''' <summary>
+    ''' スプレッドにデータを設定_SPREADダブルクリック時(明細)
+    ''' </summary>
+    ''' <remarks></remarks>
+    Friend Sub SetSpread2(ByVal dt As DataTable, ByVal eventShubetsu As LMM060C.EventShubetsu, Optional ByVal NrsBrcd As String = "", Optional ByVal TariffCd As String = "", _
+                          Optional ByVal DataTp As String = "", Optional ByVal StrDate As String = "", Optional ByVal TableTp As String = "")
+
+        Dim spr2 As LMSpread = Me._Frm.sprDetail2
+        Dim dtOut As New DataSet
+        Dim sort As String = String.Empty
+        Dim sql As String = String.Empty
+        Dim copydt As New DataTable
+
+        '重量のデータ型変換
+        copydt = dt.Copy
+        copydt.Columns.Add("WT_LV_NUM", Type.GetType("System.Decimal"), "Convert(WT_LV,'System.Decimal')")
+
+        'イベント種別によってソートと抽出条件を変える
+        '①ダブルクリック時
+        If eventShubetsu.Equals(LMM060C.EventShubetsu.DCLICK) = True Then
+            sql = String.Concat("NRS_BR_CD = '", NrsBrcd, "' " _
+                                          , "AND UNCHIN_TARIFF_CD = '", TariffCd, "' " _
+                                          , "AND STR_DATE = '", StrDate, "' " _
+                                          , "AND (DATA_TP = '", DataTp, "' " _
+                                          , "OR  DATA_TP = '", LMM060C.TABLE_TP_KBN_00, "') " _
+                                          )
+            Select Case TableTp
+                Case LMM060C.TABLE_TP_KBN_00, LMM060C.TABLE_TP_KBN_02, LMM060C.TABLE_TP_KBN_03, _
+                     LMM060C.TABLE_TP_KBN_04, LMM060C.TABLE_TP_KBN_05, LMM060C.TABLE_TP_KBN_07
+                    sort = "NRS_BR_CD ASC,UNCHIN_TARIFF_CD ASC,DATA_TP ASC,TABLE_TP ASC,WT_LV_NUM ASC,CAR_TP ASC,UNCHIN_TARIFF_CD_EDA ASC"
+                Case LMM060C.TABLE_TP_KBN_01, LMM060C.TABLE_TP_KBN_06
+                    sort = "NRS_BR_CD ASC,UNCHIN_TARIFF_CD ASC,DATA_TP ASC,TABLE_TP ASC,CAR_TP ASC,WT_LV_NUM ASC,UNCHIN_TARIFF_CD_EDA ASC"
+            End Select
+            '②列挿入・列削除・行追加・行削除時
+        ElseIf eventShubetsu.Equals(LMM060C.EventShubetsu.COLADD) = True _
+            OrElse eventShubetsu.Equals(LMM060C.EventShubetsu.COLDEL) = True _
+            OrElse eventShubetsu.Equals(LMM060C.EventShubetsu.DEL_T) = True _
+            OrElse eventShubetsu.Equals(LMM060C.EventShubetsu.INS_T) = True Then
+            sql = String.Concat("NRS_BR_CD = '", NrsBrcd, "'")
+            '③その他
+        Else
+            sql = String.Concat("NRS_BR_CD = '", NrsBrcd, "'")
+            Select Case TableTp
+                Case LMM060C.TABLE_TP_KBN_00, LMM060C.TABLE_TP_KBN_02, LMM060C.TABLE_TP_KBN_03, _
+                     LMM060C.TABLE_TP_KBN_04, LMM060C.TABLE_TP_KBN_05, LMM060C.TABLE_TP_KBN_07
+                    sort = "NRS_BR_CD ASC,DATA_TP ASC,TABLE_TP ASC,WT_LV_NUM ASC,CAR_TP ASC,UNCHIN_TARIFF_CD_EDA ASC"
+                Case LMM060C.TABLE_TP_KBN_01, LMM060C.TABLE_TP_KBN_06
+                    sort = "NRS_BR_CD ASC,DATA_TP ASC,TABLE_TP ASC,CAR_TP ASC,WT_LV_NUM ASC,UNCHIN_TARIFF_CD_EDA ASC"
+            End Select
+        End If
+
+        Dim tmpDatarow2() As DataRow = copydt.Select(sql, sort)
+
+        With spr2
+
+            .SuspendLayout()
+
+            '行数設定
+            Dim lngcnt As Integer = tmpDatarow2.Length
+            If lngcnt = 0 Then
+                .ResumeLayout(True)
+                Exit Sub
+            End If
+
+            'イベント種別によって追加列数の初期化を行う
+            If eventShubetsu.Equals(LMM060C.EventShubetsu.COLADD) = True _
+               OrElse eventShubetsu.Equals(LMM060C.EventShubetsu.COLDEL) = True Then
+                _BeCnt = CType(Me._Frm.lblAddCnt.TextValue, Integer)
+            Else
+                _BeCnt = 0
+            End If
+
+            'セルに設定するスタイルの取得
+            Dim sDEF As StyleInfo = LMSpreadUtility.GetCheckBoxCell(spr2, True)
+            Dim sLabel As StyleInfo = LMSpreadUtility.GetLabelCell(spr2, CellHorizontalAlignment.Left)
+            Dim sChk As StyleInfo = LMSpreadUtility.GetCheckBoxCell(spr2, True)
+            Dim sNumber1 As StyleInfo = LMSpreadUtility.GetNumberCell(spr2, 0, 999999999, True, 0, True, ",")
+            Dim sNumber2 As StyleInfo = LMSpreadUtility.GetNumberCell(spr2, 0.0, 999999999.999, True, 3, True, ",")
+            Dim sCmbS As StyleInfo = LMSpreadUtility.GetComboCellKbn(spr2, LMKbnConst.KBN_S012, True)
+            Dim sCmbT As StyleInfo = LMSpreadUtility.GetComboCellKbn(spr2, LMKbnConst.KBN_T010, True)
+
+            sDEF.HorizontalAlignment = CellHorizontalAlignment.Center
+
+            Dim dr As DataRow = Nothing
+
+            'イベント種別によって追加列数のカウントを行う
+            If eventShubetsu.Equals(LMM060C.EventShubetsu.COLADD) = True _
+               OrElse eventShubetsu.Equals(LMM060C.EventShubetsu.COLDEL) = True Then
+            ElseIf eventShubetsu.Equals(LMM060C.EventShubetsu.DCLICK) = True _
+                OrElse eventShubetsu.Equals(LMM060C.EventShubetsu.EXCELINPUT) = True Then
+                For t As Integer = 1 To 70
+                    If String.IsNullOrEmpty(tmpDatarow2(0).Item("KYORI_" & t).ToString()) = False _
+                       AndAlso CType("0", Integer).Equals(CType(tmpDatarow2(0).Item("KYORI_" & t), Integer)) = False _
+                       AndAlso CType("0.000", Integer).Equals(CType(tmpDatarow2(0).Item("KYORI_" & t), Integer)) = False Then
+                        '_BeCnt = _BeCnt + 1
+                        _BeCnt = t
+                    End If
+                Next
+                '距離刻みが全て0の場合はデフォルトで５列表示
+                If _BeCnt = 0 Then
+                    _BeCnt = _BeCnt + 5
+                End If
+            Else
+                For i As Integer = 0 To 90
+                    If LMM060C.SprColumnIndex2.KYORI_1 <= i And i <= LMM060C.SprColumnIndex2.KYORI_70 Then
+                        If .ActiveSheet.Columns(i).Visible = True Then
+                            _BeCnt = _BeCnt + 1
+                        End If
+                    End If
+                Next
+            End If
+
+            '運賃タリフ明細(距離刻み/運賃)の初期化処理
+            Call Me.InitUnchinTariffDTLSpread()
+
+            ''取得データが1件の場合、データタイプ="00"(距離刻み)なのでSpreadに行追加はしない
+            'If lngcnt <> 1 Then
+            '    .ActiveSheet.AddRows(.ActiveSheet.Rows.Count, lngcnt - 1)
+            'End If
+
+            Dim rowCnt As Integer = 0
+            For i As Integer = 1 To lngcnt
+
+                dr = tmpDatarow2(i - 1)
+
+                '削除データでない場合のみ、各レコードのSYS_DEL_FLGによって表示・非表示を行う。
+                If (RecordStatus.DELETE_REC).Equals(Me._Frm.lblSituation.RecordStatus) = False Then
+                    'SYS_DEL_FLGが'1'のものは表示しない
+                    If LMConst.FLG.ON.Equals(dr.Item("SYS_DEL_FLG").ToString()) = True Then
+                        Continue For
+                    End If
+                End If
+
+                '距離刻みのデータ(データタイプ='00')の場合、行追加なし
+                If (LMM060C.DATA_TP_KBN_00).Equals(dr.Item("DATA_TP").ToString()) = True Then
+                    '設定する行数を設定
+                    rowCnt = 1
+                Else
+                    '設定する行数を設定
+                    rowCnt = .ActiveSheet.Rows.Count
+                    '行追加
+                    .ActiveSheet.AddRows(rowCnt, 1)
+                End If
+
+                If rowCnt = 1 Then
+
+                    'セルスタイル設定
+                    .SetCellStyle(rowCnt, LMM060G.sprDetailDef2.UNCHIN_TARIFF_CD_EDA.ColNo, sLabel)
+                    .SetCellStyle(rowCnt, LMM060G.sprDetailDef2.UPD_FLG.ColNo, sLabel)
+                    .SetCellStyle(rowCnt, LMM060G.sprDetailDef2.SYS_DEL_FLG_T.ColNo, sLabel)
+                    .SetCellStyle(rowCnt, LMM060G.sprDetailDef2.SYS_UPD_DATE.ColNo, sLabel)
+                    .SetCellStyle(rowCnt, LMM060G.sprDetailDef2.SYS_UPD_TIME.ColNo, sLabel)
+                    .SetCellStyle(rowCnt, LMM060G.sprDetailDef2.RECNO.ColNo, sLabel)
+                    'セルに値を設定
+                    For t As Integer = 1 To _BeCnt
+                        .SetCellStyle(rowCnt, (5 + t), sNumber2)
+                        .SetCellValue(rowCnt, (5 + t), dr.Item("KYORI_" & t).ToString())
+                    Next
+                    .SetCellValue(rowCnt, LMM060G.sprDetailDef2.UNCHIN_TARIFF_CD_EDA.ColNo, dr.Item("UNCHIN_TARIFF_CD_EDA").ToString())
+                    'Excelから取り込んだデータの場合、更新区分="0"(新規)を設定
+                    If eventShubetsu.Equals(LMM060C.EventShubetsu.EXCELINPUT) = True Then
+                        .SetCellValue(rowCnt, LMM060G.sprDetailDef2.UPD_FLG.ColNo, LMM060C.FLG.OFF)
+                    Else
+                        .SetCellValue(rowCnt, LMM060G.sprDetailDef2.UPD_FLG.ColNo, dr.Item("UPD_FLG").ToString())
+                    End If
+                    .SetCellValue(rowCnt, LMM060G.sprDetailDef2.SYS_DEL_FLG_T.ColNo, dr.Item("SYS_DEL_FLG").ToString())
+                    .SetCellValue(rowCnt, LMM060G.sprDetailDef2.SYS_UPD_DATE.ColNo, dr.Item("SYS_UPD_DATE").ToString())
+                    .SetCellValue(rowCnt, LMM060G.sprDetailDef2.SYS_UPD_TIME.ColNo, dr.Item("SYS_UPD_TIME").ToString())
+                    .SetCellValue(rowCnt, LMM060G.sprDetailDef2.RECNO.ColNo, Me.SetZeroData(rowCnt.ToString(), LMM060C.MAEZERO))
+
+                End If
+
+                If rowCnt <> 1 Then
+
+                    'セルスタイル設定
+                    .SetCellStyle(rowCnt, LMM060G.sprDetailDef2.DEF.ColNo, sDEF)
+                    .SetCellStyle(rowCnt, LMM060G.sprDetailDef2.WT_LV.ColNo, sNumber1)
+                    .SetCellStyle(rowCnt, LMM060G.sprDetailDef2.CAR_TP.ColNo, sCmbS)
+                    .SetCellStyle(rowCnt, LMM060G.sprDetailDef2.NB.ColNo, sNumber1)
+                    .SetCellStyle(rowCnt, LMM060G.sprDetailDef2.QT.ColNo, sNumber1)
+                    .SetCellStyle(rowCnt, LMM060G.sprDetailDef2.T_SIZE.ColNo, sCmbT)
+                    For t As Integer = 1 To _BeCnt
+                        .SetCellStyle(rowCnt, (5 + t), sNumber2)
+                    Next
+                    .SetCellStyle(rowCnt, LMM060G.sprDetailDef2.CITY_EXTC_A.ColNo, sNumber1)
+                    .SetCellStyle(rowCnt, LMM060G.sprDetailDef2.CITY_EXTC_B.ColNo, sNumber1)
+                    .SetCellStyle(rowCnt, LMM060G.sprDetailDef2.WINT_EXTC_A.ColNo, sNumber1)
+                    .SetCellStyle(rowCnt, LMM060G.sprDetailDef2.WINT_EXTC_B.ColNo, sNumber1)
+                    .SetCellStyle(rowCnt, LMM060G.sprDetailDef2.RELY_EXTC.ColNo, sNumber1)
+                    .SetCellStyle(rowCnt, LMM060G.sprDetailDef2.INSU.ColNo, sNumber1)
+                    'START YANAI 要望番号377
+                    '.SetCellStyle(rowCnt, LMM060G.sprDetailDef2.FRRY_EXTC_10KG.ColNo, sNumber1)
+                    'END YANAI 要望番号377
+                    .SetCellStyle(rowCnt, LMM060G.sprDetailDef2.FRRY_EXTC_PART.ColNo, sNumber1)
+                    .SetCellStyle(rowCnt, LMM060G.sprDetailDef2.UNCHIN_TARIFF_CD_EDA.ColNo, sLabel)
+                    .SetCellStyle(rowCnt, LMM060G.sprDetailDef2.UPD_FLG.ColNo, sLabel)
+                    .SetCellStyle(rowCnt, LMM060G.sprDetailDef2.SYS_DEL_FLG_T.ColNo, sLabel)
+                    .SetCellStyle(rowCnt, LMM060G.sprDetailDef2.SYS_UPD_DATE.ColNo, sLabel)
+                    .SetCellStyle(rowCnt, LMM060G.sprDetailDef2.SYS_UPD_TIME.ColNo, sLabel)
+                    .SetCellStyle(rowCnt, LMM060G.sprDetailDef2.RECNO.ColNo, sLabel)
+
+                    'セルに値を設定
+                    .SetCellValue(rowCnt, LMM060G.sprDetailDef2.DEF.ColNo, LMConst.FLG.OFF)
+
+                    '重量
+                    If (LMM060C.TABLE_TP_KBN_00).Equals(Me._Frm.cmbTableTp.SelectedValue) = True _
+                       OrElse (LMM060C.TABLE_TP_KBN_03).Equals(Me._Frm.cmbTableTp.SelectedValue) = True _
+                       OrElse (LMM060C.TABLE_TP_KBN_07).Equals(Me._Frm.cmbTableTp.SelectedValue) = True Then
+                        .SetCellValue(rowCnt, LMM060G.sprDetailDef2.WT_LV.ColNo, dr.Item("WT_LV").ToString())
+                    Else
+                        .SetCellValue(rowCnt, LMM060G.sprDetailDef2.WT_LV.ColNo, 0.ToString())
+                    End If
+
+                    '車種
+                    If (LMM060C.TABLE_TP_KBN_01).Equals(Me._Frm.cmbTableTp.SelectedValue) = True Then
+                        .SetCellValue(rowCnt, LMM060G.sprDetailDef2.CAR_TP.ColNo, dr.Item("CAR_TP").ToString())
+                    End If
+
+                    '数量
+                    If (LMM060C.TABLE_TP_KBN_02).Equals(Me._Frm.cmbTableTp.SelectedValue) = True _
+                       OrElse (LMM060C.TABLE_TP_KBN_05).Equals(Me._Frm.cmbTableTp.SelectedValue) = True Then
+                        .SetCellValue(rowCnt, LMM060G.sprDetailDef2.NB.ColNo, dr.Item("WT_LV").ToString())
+                    Else
+                        .SetCellValue(rowCnt, LMM060G.sprDetailDef2.NB.ColNo, 0.ToString())
+                    End If
+
+                    '個数
+                    If (LMM060C.TABLE_TP_KBN_04).Equals(Me._Frm.cmbTableTp.SelectedValue) = True Then
+                        .SetCellValue(rowCnt, LMM060G.sprDetailDef2.QT.ColNo, dr.Item("WT_LV").ToString())
+                    Else
+                        .SetCellValue(rowCnt, LMM060G.sprDetailDef2.QT.ColNo, 0.ToString())
+                    End If
+
+                    '宅急便サイズ
+                    If (LMM060C.TABLE_TP_KBN_06).Equals(Me._Frm.cmbTableTp.SelectedValue) = True Then
+                        .SetCellValue(rowCnt, LMM060G.sprDetailDef2.T_SIZE.ColNo, dr.Item("CAR_TP").ToString())
+                    End If
+                    For t As Integer = 1 To _BeCnt
+                        .SetCellValue(rowCnt, (5 + t), dr.Item("KYORI_" & t).ToString())
+                    Next
+                    .SetCellValue(rowCnt, LMM060G.sprDetailDef2.CITY_EXTC_A.ColNo, dr.Item("CITY_EXTC_A").ToString())
+                    .SetCellValue(rowCnt, LMM060G.sprDetailDef2.CITY_EXTC_B.ColNo, dr.Item("CITY_EXTC_B").ToString())
+                    .SetCellValue(rowCnt, LMM060G.sprDetailDef2.WINT_EXTC_A.ColNo, dr.Item("WINT_EXTC_A").ToString())
+                    .SetCellValue(rowCnt, LMM060G.sprDetailDef2.WINT_EXTC_B.ColNo, dr.Item("WINT_EXTC_B").ToString())
+                    .SetCellValue(rowCnt, LMM060G.sprDetailDef2.RELY_EXTC.ColNo, dr.Item("RELY_EXTC").ToString())
+                    .SetCellValue(rowCnt, LMM060G.sprDetailDef2.INSU.ColNo, dr.Item("INSU").ToString())
+                    'START YANAI 要望番号377
+                    '.SetCellValue(rowCnt, LMM060G.sprDetailDef2.FRRY_EXTC_10KG.ColNo, dr.Item("FRRY_EXTC_10KG").ToString())
+                    'END YANAI 要望番号377
+                    .SetCellValue(rowCnt, LMM060G.sprDetailDef2.FRRY_EXTC_PART.ColNo, dr.Item("FRRY_EXTC_PART").ToString())
+                    .SetCellValue(rowCnt, LMM060G.sprDetailDef2.UNCHIN_TARIFF_CD_EDA.ColNo, dr.Item("UNCHIN_TARIFF_CD_EDA").ToString())
+                    'Excelから取り込んだデータの場合、更新区分="0"(新規)を設定
+                    If eventShubetsu.Equals(LMM060C.EventShubetsu.EXCELINPUT) = True Then
+                        .SetCellValue(rowCnt, LMM060G.sprDetailDef2.UPD_FLG.ColNo, LMM060C.FLG.OFF)
+                    Else
+                        .SetCellValue(rowCnt, LMM060G.sprDetailDef2.UPD_FLG.ColNo, dr.Item("UPD_FLG").ToString())
+                    End If
+                    .SetCellValue(rowCnt, LMM060G.sprDetailDef2.SYS_DEL_FLG_T.ColNo, dr.Item("SYS_DEL_FLG").ToString())
+                    .SetCellValue(rowCnt, LMM060G.sprDetailDef2.SYS_UPD_DATE.ColNo, dr.Item("SYS_UPD_DATE").ToString())
+                    .SetCellValue(rowCnt, LMM060G.sprDetailDef2.SYS_UPD_TIME.ColNo, dr.Item("SYS_UPD_TIME").ToString())
+                    .SetCellValue(rowCnt, LMM060G.sprDetailDef2.RECNO.ColNo, Me.SetZeroData(rowCnt.ToString(), LMM060C.MAEZERO))
+
+                End If
+
+            Next
+
+            '前の列数の保持
+            _AfCnt = _BeCnt
+
+            '列挿入・列削除後の列数を保持
+            Me._Frm.lblDefAddCnt.TextValue = _BeCnt.ToString
+
+            '行番号の再設定
+            .ReRowNumber()
+
+            .ResumeLayout(True)
+
+        End With
+
+    End Sub
+
+    ''' <summary>
+    ''' 前ゼロ設定
+    ''' </summary>
+    ''' <param name="value">値</param>
+    ''' <param name="keta">前につけるゼロ</param>
+    ''' <returns>設定値</returns>
+    ''' <remarks></remarks>
+    Friend Function SetZeroData(ByVal value As String, ByVal keta As String) As String
+
+        SetZeroData = String.Concat(keta, value)
+
+        Dim ketasu As Integer = keta.Length
+
+        Return SetZeroData.Substring(SetZeroData.Length - ketasu, ketasu)
+
+    End Function
+
+    ''' <summary>
+    ''' 並び替え処理(Detail)
+    ''' </summary>
+    ''' <remarks></remarks>
+    Friend Sub sprDetailSortColumnCommand()
+
+        Me.sprSortColumnCommand(Me._Frm.sprDetail2, LMM060G.sprDetailDef2.RECNO.ColNo)
+
+    End Sub
+
+    ''' <summary>
+    ''' 並び替え処理
+    ''' </summary>
+    ''' <param name="spr">スプレッドシート</param>
+    ''' <param name="colNo">ソート列</param>
+    ''' <remarks></remarks>
+    Private Sub sprSortColumnCommand(ByVal spr As LMSpread, ByVal colNo As Integer)
+
+        spr.ActiveSheet.SortRows(colNo, True, False)
+
+    End Sub
+
+#Region "Spread(ADD/DEL)"
+
+    ''' <summary>
+    ''' MAX運賃タリフコード枝番の値を設定
+    ''' </summary>
+    ''' <param name="ds">DataSet</param>
+    ''' <remarks></remarks>
+    Friend Function SetUnchinCdEdaDataSet(ByVal ds As DataSet, ByVal eventShubetsu As LMM060C.EventShubetsu) As Boolean
+
+        '新規/複写の場合
+        If ds Is Nothing Then
+            ds = New LMM060DS()
+        End If
+
+        With Me._Frm
+
+            '新規/複写の場合
+            Dim max As Integer = ds.Tables(LMM060C.TABLE_NM_UNCHIN_TARRIF_MAXEDA).Rows.Count
+            Dim insMRows As DataRow = ds.Tables(LMM060C.TABLE_NM_UNCHIN_TARRIF_MAXEDA).NewRow
+
+            '複写の場合
+            If (RecordStatus.COPY_REC).Equals(.lblSituation.RecordStatus) = True Then
+                Dim RowCnt As Integer = Me._Frm.sprDetail2.ActiveSheet.Rows.Count - 1
+                If 1 < RowCnt Then
+                    .lblMaxEda.TextValue = Me._Frm.sprDetail2.ActiveSheet.Cells(RowCnt, LMM060G.sprDetailDef2.UNCHIN_TARIFF_CD_EDA.ColNo).Text
+                End If
+            End If
+
+            '運賃タリフコード枝番の最大値を求める
+            Dim oldMaxUnchinCd As String = String.Empty
+            If (0).Equals(max) = True Then
+                If String.IsNullOrEmpty(.lblMaxEda.TextValue) = True Then
+                    oldMaxUnchinCd = "0"
+                Else
+                    oldMaxUnchinCd = .lblMaxEda.TextValue
+                End If
+            Else
+                If ("").Equals(ds.Tables(LMM060C.TABLE_NM_UNCHIN_TARRIF_MAXEDA).Rows(max - 1).Item("UNCHIN_TARIFF_MAXEDA").ToString()) = True Then
+                    oldMaxUnchinCd = "0"
+                Else
+                    oldMaxUnchinCd = ds.Tables(LMM060C.TABLE_NM_UNCHIN_TARRIF_MAXEDA).Rows(max - 1).Item("UNCHIN_TARIFF_MAXEDA").ToString()
+                End If
+            End If
+
+            Dim newMaxUnchinCd As String = String.Empty
+            '現在のMAX運賃タリフコード枝番がMAX値を超えている場合は採番後の桁数を4桁にする
+            If ("999").Equals(oldMaxUnchinCd) = False Then
+                newMaxUnchinCd = _ControlG.SetMaeZeroData(Convert.ToString(Convert.ToInt32(oldMaxUnchinCd) + 1), 3)
+            Else
+                newMaxUnchinCd = _ControlG.SetMaeZeroData(Convert.ToString(Convert.ToInt32(oldMaxUnchinCd) + 1), 4)
+            End If
+
+            '枝番の限界値、チェック
+            If Me._ControlV.IsMaxChk(Convert.ToInt32(newMaxUnchinCd), 999, "運賃タリフコード枝番") = False Then
+                '処理終了アクション
+                Return False
+            End If
+
+            '運賃タリフコード枝番の更新
+            insMRows("UNCHIN_TARIFF_MAXEDA") = newMaxUnchinCd
+
+            'データセットに追加
+            ds.Tables(LMM060C.TABLE_NM_UNCHIN_TARRIF_MAXEDA).Rows.Add(insMRows)
+
+            '画面のMAX運賃タリフコード枝番に設定
+            .lblMaxEda.TextValue = newMaxUnchinCd
+
+        End With
+
+        Return True
+
+    End Function
+
+#End Region
+
+#End Region 'Spread
+
+#Region "その他画面制御"
+
+    ''' <summary>
+    ''' 運賃明細Spreadのロック制御
+    ''' </summary>
+    ''' <param name="actionType">アクションタイプ</param>
+    ''' <remarks>運賃明細Spread列の活性化・非活性化の制御を行う。</remarks>
+    Friend Sub ChangeLockControl1(ByVal actionType As LMM060C.EventShubetsu)
+
+        Dim lock As Boolean = True
+        Dim unLock As Boolean = False
+        Dim WtLv As String = String.Empty
+        Dim CarTp As String = String.Empty
+        Dim NB As String = String.Empty
+        Dim QT As String = String.Empty
+        Dim Tsize As String = String.Empty
+
+        With Me._Frm
+
+            'スプレッド(下部)の重量・車種・個数・数量・宅急便サイズを全てロックする。
+            Me.SetLockBottomSpreadControl(True)
+
+            '参照モードの場合、スルー
+            If DispMode.VIEW.Equals(Me._Frm.lblSituation.DispMode) = True Then
+                Exit Sub
+            End If
+
+            '①計算種別が"00"(重量・距離)/"03"(重量建て)/"07"(重量・県)の場合、重量をロック解除
+            If .cmbTableTp.SelectedValue.ToString() = LMM060C.TABLE_TP_KBN_00 _
+               OrElse .cmbTableTp.SelectedValue.ToString() = LMM060C.TABLE_TP_KBN_03 _
+                OrElse .cmbTableTp.SelectedValue.ToString() = LMM060C.TABLE_TP_KBN_07 Then
+                WtLv = LMConst.FLG.ON
+            End If
+
+            '②計算種別が"01"(車種・距離)の場合、車種をロック解除
+            If .cmbTableTp.SelectedValue.ToString() = LMM060C.TABLE_TP_KBN_01 Then
+                CarTp = LMConst.FLG.ON
+            End If
+
+            '③計算種別が"02"(個数建て)/"05"(個数/・県)の場合、個数をロック解除
+            If .cmbTableTp.SelectedValue.ToString() = LMM060C.TABLE_TP_KBN_02 _
+                OrElse .cmbTableTp.SelectedValue.ToString() = LMM060C.TABLE_TP_KBN_05 Then
+                NB = LMConst.FLG.ON
+            End If
+
+            '④計算種別が"04"(数量建て)の場合、数量をロック解除
+            If .cmbTableTp.SelectedValue.ToString() = LMM060C.TABLE_TP_KBN_04 Then                
+                QT = LMConst.FLG.ON
+            End If
+
+            '⑤計算種別が"06"(宅急便サイズ・県)の場合、数量をロック解除
+            If .cmbTableTp.SelectedValue.ToString() = LMM060C.TABLE_TP_KBN_06 Then
+                Tsize = LMConst.FLG.ON
+            End If
+
+            'セルに設定するスタイルの取得
+            Dim sDEF As StyleInfo = LMSpreadUtility.GetCheckBoxCell(.sprDetail2, unLock)
+            Dim sLabel As StyleInfo = LMSpreadUtility.GetLabelCell(.sprDetail2, CellHorizontalAlignment.Left)
+            Dim sChk As StyleInfo = LMSpreadUtility.GetCheckBoxCell(.sprDetail2, unLock)
+            Dim sNumber1 As StyleInfo = LMSpreadUtility.GetNumberCell(.sprDetail2, 0, 999999999, unLock, 0, True, ",")
+            Dim sNumber2 As StyleInfo = LMSpreadUtility.GetNumberCell(.sprDetail2, 0.0, 999999999.999, unLock, 3, True, ",")
+            Dim sCmbS As StyleInfo = LMSpreadUtility.GetComboCellKbn(.sprDetail2, LMKbnConst.KBN_S012, unLock)
+            Dim sCmbT As StyleInfo = LMSpreadUtility.GetComboCellKbn(.sprDetail2, LMKbnConst.KBN_T010, unLock)
+
+            Dim colmax As Integer = _AfCnt
+            Dim max As Integer = .sprDetail2.ActiveSheet.Rows.Count
+            Dim UpdFlg As String = String.Empty
+
+            '①新規モードで行削除ボタン押下時 or ②Excel取込ボタン押下時、運賃明細Spreadの明細行の有無によって計算種別のロック制御を行う。
+            If (RecordStatus.NEW_REC.Equals(Me._Frm.lblSituation.RecordStatus) = True _
+               AndAlso actionType.Equals(LMM060C.EventShubetsu.DEL_T) = True) _
+               OrElse actionType.Equals(LMM060C.EventShubetsu.EXCELINPUT) = True Then
+                If max = 2 Then
+                    Call Me._ControlG.LockComb(.cmbTableTp, unLock)      '運賃明細Spreadの明細行がない場合、計算種別のロック解除。
+                Else
+                    Call Me._ControlG.LockComb(.cmbTableTp, lock)        '運賃明細Spreadの明細行がある場合、計算種別のロック。
+                End If
+            End If
+
+            For i As Integer = 3 To max
+
+                '①正常モード以外の場合 or ②正常モードかつデータタイプ="00"(距離刻み)の場合 or ③行追加ボタン押下の場合 or ④行削除ボタン押下の場合 or ⑤列削除ボタン押下の場合 or ⑥列挿入ボタン押下の場合、
+                '重量・車種・個数・数量・宅急便サイズのロック制御をする
+                If RecordStatus.NOMAL_REC.Equals(Me._Frm.lblSituation.RecordStatus) = False _
+                   OrElse (RecordStatus.NOMAL_REC.Equals(Me._Frm.lblSituation.RecordStatus) = True _
+                   AndAlso (LMM060C.DATA_TP_KBN_00).Equals(.cmbDataTp.SelectedValue.ToString())) = True _
+                   OrElse actionType.Equals(LMM060C.EventShubetsu.INS_T) = True _
+                   OrElse actionType.Equals(LMM060C.EventShubetsu.DEL_T) = True _
+                   OrElse actionType.Equals(LMM060C.EventShubetsu.COLADD) = True _
+                   OrElse actionType.Equals(LMM060C.EventShubetsu.COLDEL) = True Then
+
+                    UpdFlg = _ControlG.GetCellValue(.sprDetail2.ActiveSheet.Cells((i - 1), LMM060C.SprColumnIndex2.UPD_FLG))
+                    '対象行の更新区分＝'0'(新規)レコードの場合のみロック解除
+                    If LMM060C.FLG.OFF.Equals(UpdFlg) = True Then
+                        If (LMConst.FLG.ON).Equals(WtLv) = True Then
+                            .sprDetail2.SetCellStyle((i - 1), sprDetailDef2.WT_LV.ColNo, sNumber1)
+                        End If
+                        If (LMConst.FLG.ON).Equals(CarTp) = True Then
+                            .sprDetail2.SetCellStyle((i - 1), sprDetailDef2.CAR_TP.ColNo, sCmbS)
+                        End If
+                        If (LMConst.FLG.ON).Equals(NB) = True Then
+                            .sprDetail2.SetCellStyle((i - 1), sprDetailDef2.NB.ColNo, sNumber1)
+                        End If
+                        If (LMConst.FLG.ON).Equals(QT) = True Then
+                            .sprDetail2.SetCellStyle((i - 1), sprDetailDef2.QT.ColNo, sNumber1)
+                        End If
+                        If (LMConst.FLG.ON).Equals(Tsize) = True Then
+                            .sprDetail2.SetCellStyle((i - 1), sprDetailDef2.T_SIZE.ColNo, sCmbT)
+                        End If
+                    End If
+                End If
+
+                .sprDetail2.SetCellStyle((i - 1), sprDetailDef2.DEF.ColNo, sDEF)
+                .sprDetail2.SetCellStyle((i - 1), sprDetailDef2.KYORI_1.ColNo, sNumber2)
+                .sprDetail2.SetCellStyle((i - 1), sprDetailDef2.KYORI_2.ColNo, sNumber2)
+                .sprDetail2.SetCellStyle((i - 1), sprDetailDef2.KYORI_3.ColNo, sNumber2)
+                .sprDetail2.SetCellStyle((i - 1), sprDetailDef2.KYORI_4.ColNo, sNumber2)
+                .sprDetail2.SetCellStyle((i - 1), sprDetailDef2.KYORI_5.ColNo, sNumber2)
+                If colmax <> 0 Then
+                    For t As Integer = 1 To colmax
+                        .sprDetail2.SetCellStyle((i - 1), (10 + t), sNumber2)
+                    Next
+                End If
+                .sprDetail2.SetCellStyle((i - 1), sprDetailDef2.CITY_EXTC_A.ColNo, sNumber1)
+                .sprDetail2.SetCellStyle((i - 1), sprDetailDef2.CITY_EXTC_B.ColNo, sNumber1)
+                .sprDetail2.SetCellStyle((i - 1), sprDetailDef2.WINT_EXTC_A.ColNo, sNumber1)
+                .sprDetail2.SetCellStyle((i - 1), sprDetailDef2.WINT_EXTC_B.ColNo, sNumber1)
+                .sprDetail2.SetCellStyle((i - 1), sprDetailDef2.RELY_EXTC.ColNo, sNumber1)
+                .sprDetail2.SetCellStyle((i - 1), sprDetailDef2.INSU.ColNo, sNumber1)
+                'START YANAI 要望番号377
+                '.sprDetail2.SetCellStyle((i - 1), sprDetailDef2.FRRY_EXTC_10KG.ColNo, sNumber1)
+                'END YANAI 要望番号377
+                .sprDetail2.SetCellStyle((i - 1), sprDetailDef2.FRRY_EXTC_PART.ColNo, sNumber1)
+
+            Next
+
+            Exit Sub
+
+        End With
+
+    End Sub
+
+#End Region
+
+#End Region
+
+End Class

@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{75C83065-EF65-4F10-9666-E660D1B65834}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Jp.Co.Nrs.LM.BLC</RootNamespace>
+    <AssemblyName>Jp.Co.Nrs.LMI.BLC</AssemblyName>
+    <MyType>Windows</MyType>
+    <OptionStrict>On</OptionStrict>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>_MYTYPE ="Windows"</DefineConstants>
+    <DocumentationFile>Jp.Co.Nrs.LMI.BLC.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Jp.Co.Nrs.LMI.BLC.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>Full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Jp.Co.Nrs.Com.Library, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.Com.Library.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Jp.Co.Nrs.LM.Library, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.LM.Library.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Jp.Co.Nrs.LMI.DAC">
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.LMI.DAC.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Jp.Co.Nrs.LMI.DSL">
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.LMI.DSL.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Jp.Co.Nrs.Win.Library">
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.Win.Library.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RDEPS_JobManagerAPI, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\RDEPS_JobManagerAPI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LMI\LMI511BLC.vb" />
+    <Compile Include="LMI\LMI512BLC.vb" />
+    <Compile Include="LMI\LMI517BLC.vb" />
+    <Compile Include="LMI\LMI516BLC.vb" />
+    <Compile Include="LMI\LMI515BLC.vb" />
+    <Compile Include="LMI\LMI514BLC.vb" />
+    <Compile Include="LMI\LMI020BLC.vb" />
+    <Compile Include="LMI\LMI030BLC.vb" />
+    <Compile Include="LMI\LMI040BLC.vb" />
+    <Compile Include="LMI\LMI050BLC.vb" />
+    <Compile Include="LMI\LMI060BLC.vb" />
+    <Compile Include="LMI\LMI070BLC.vb" />
+    <Compile Include="LMI\LMI110BLC.vb" />
+    <Compile Include="LMI\LMI120BLC.vb" />
+    <Compile Include="LMI\LMI130BLC.vb" />
+    <Compile Include="LMI\LMI140BLC.vb" />
+    <Compile Include="LMI\LMI150BLC.vb" />
+    <Compile Include="LMI\LMI180BLC.vb" />
+    <Compile Include="LMI\LMI190BLC.vb" />
+    <Compile Include="LMI\LMI210BLC.vb" />
+    <Compile Include="LMI\LMI220BLC.vb" />
+    <Compile Include="LMI\LMI260BLC.vb" />
+    <Compile Include="LMI\LMI320BLC.vb" />
+    <Compile Include="LMI\LMI330BLC.vb" />
+    <Compile Include="LMI\LMI360BLC.vb" />
+    <Compile Include="LMI\LMI400BLC.vb" />
+    <Compile Include="LMI\LMI410BLC.vb" />
+    <Compile Include="LMI\LMI420BLC.vb" />
+    <Compile Include="LMI\LMI430BLC.vb" />
+    <Compile Include="LMI\LMI440BLC.vb" />
+    <Compile Include="LMI\LMI450BLC.vb" />
+    <Compile Include="LMI\LMI460BLC.vb" />
+    <Compile Include="LMI\LMI470BLC.vb" />
+    <Compile Include="LMI\LMI480BLC.vb" />
+    <Compile Include="LMI\LMI490BLC.vb" />
+    <Compile Include="LMI\LMI500BLC.vb" />
+    <Compile Include="LMI\LMI510BLC.vb" />
+    <Compile Include="LMI\LMI513BLC.vb" />
+    <Compile Include="LMI\LMI520BLC.vb" />
+    <Compile Include="LMI\LMI530BLC.vb" />
+    <Compile Include="LMI\LMI540BLC.vb" />
+    <Compile Include="LMI\LMI541BLC.vb" />
+    <Compile Include="LMI\LMI550BLC.vb" />
+    <Compile Include="LMI\LMI560BLC.vb" />
+    <Compile Include="LMI\LMI570BLC.vb" />
+    <Compile Include="LMI\LMI580BLC.vb" />
+    <Compile Include="LMI\LMI590BLC.vb" />
+    <Compile Include="LMI\LMI591BLC.vb" />
+    <Compile Include="LMI\LMI592BLC.vb" />
+    <Compile Include="LMI\LMI600BLC.vb" />
+    <Compile Include="LMI\LMI601BLC.vb" />
+    <Compile Include="LMI\LMI610BLC.vb" />
+    <Compile Include="LMI\LMI620BLC.vb" />
+    <Compile Include="LMI\LMI630BLC.vb" />
+    <Compile Include="LMI\LMI640BLC.vb" />
+    <Compile Include="LMI\LMI650BLC.vb" />
+    <Compile Include="LMI\LMI660BLC.vb" />
+    <Compile Include="LMI\LMI661BLC.vb" />
+    <Compile Include="LMI\LMI662BLC.vb" />
+    <Compile Include="LMI\LMI670BLC.vb" />
+    <Compile Include="LMI\LMI671BLC.vb" />
+    <Compile Include="LMI\LMI672BLC.vb" />
+    <Compile Include="LMI\LMI675BLC.vb" />
+    <Compile Include="LMI\LMI680BLC.vb" />
+    <Compile Include="LMI\LMI690BLC.vb" />
+    <Compile Include="LMI\LMI730BLC.vb" />
+    <Compile Include="LMI\LMI820BLC.vb" />
+    <Compile Include="LMI\LMI850BLC.vb" />
+    <Compile Include="LMI\LMI880BLC.vb" />
+    <Compile Include="LMI\LMI890BLC.vb" />
+    <Compile Include="LMI\LMI930BLC.vb" />
+    <Compile Include="LMI\LMI950BLC.vb" />
+    <Compile Include="LMI\LMI960BLC.vb" />
+    <Compile Include="LMI\LMI961BLC.vb" />
+    <Compile Include="LMI\LMI970BLC.vb" />
+    <Compile Include="LMI\LMI980BLC.vb" />
+    <Compile Include="LMI\LMI991BLC.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>$(SolutionDir)..\..\tool\CopyToSrcBin.bat $(ProjectDir)bin</PostBuildEvent>
+  </PropertyGroup>
+</Project>

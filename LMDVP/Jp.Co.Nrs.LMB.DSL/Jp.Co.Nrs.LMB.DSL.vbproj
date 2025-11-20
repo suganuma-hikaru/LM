@@ -1,0 +1,427 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0E8827D7-EFB5-4EAD-A946-89EAFC0B1E1A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Jp.Co.Nrs.LM.DSL</RootNamespace>
+    <AssemblyName>Jp.Co.Nrs.LMB.DSL</AssemblyName>
+    <MyType>Windows</MyType>
+    <OptionStrict>On</OptionStrict>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>_MYTYPE ="Windows"</DefineConstants>
+    <DocumentationFile>Jp.Co.Nrs.LMB.DSL.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Jp.Co.Nrs.LMB.DSL.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>Full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\WINDOWS\assembly\GAC_32\System.Data\2.0.0.0__b77a5c561934e089\System.Data.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\WINDOWS\assembly\GAC_MSIL\System.Xml\2.0.0.0__b77a5c561934e089\System.Xml.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LMB\LMB010DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMB010DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMB\LMB020DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMB020DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMB\LMB030DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMB030DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMB\LMB040DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMB040DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMB\LMB050DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMB050DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMB\LMB060DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMB060DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMB\LMB070DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMB070DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMB\LMB080DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMB080DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMB\LMB090DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMB090DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMB\LMB500DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMB500DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMB\LMB501DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMB501DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMB\LMB510DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMB510DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMB\LMB520DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMB520DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMB\LMB529DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMB529DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMB\LMB530DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMB530DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMB\LMB540DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMB540DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMB\LMB550DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMB550DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMB\LMB560DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMB560DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMB\LMB570DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMB570DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMB\LMB800DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMB800DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMB\LMB810DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMB810DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LMB\LMB010DS.xsc">
+      <DependentUpon>LMB010DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMB\LMB010DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMB010DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMB\LMB010DS.xss">
+      <DependentUpon>LMB010DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMB\LMB020DS.xsc">
+      <DependentUpon>LMB020DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMB\LMB020DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMB020DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMB\LMB020DS.xss">
+      <DependentUpon>LMB020DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMB\LMB030DS.xsc">
+      <DependentUpon>LMB030DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMB\LMB030DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMB030DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMB\LMB030DS.xss">
+      <DependentUpon>LMB030DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMB\LMB040DS.xsc">
+      <DependentUpon>LMB040DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMB\LMB040DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMB040DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMB\LMB040DS.xss">
+      <DependentUpon>LMB040DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMB\LMB050DS.xsc">
+      <DependentUpon>LMB050DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMB\LMB050DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMB050DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMB\LMB050DS.xss">
+      <DependentUpon>LMB050DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMB\LMB060DS.xsc">
+      <DependentUpon>LMB060DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMB\LMB060DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMB060DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMB\LMB060DS.xss">
+      <DependentUpon>LMB060DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMB\LMB070DS.xsc">
+      <DependentUpon>LMB070DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMB\LMB070DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMB070DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMB\LMB070DS.xss">
+      <DependentUpon>LMB070DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMB\LMB080DS.xsc">
+      <DependentUpon>LMB080DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMB\LMB080DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMB080DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMB\LMB080DS.xss">
+      <DependentUpon>LMB080DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMB\LMB090DS.xsc">
+      <DependentUpon>LMB090DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMB\LMB090DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMB090DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMB\LMB090DS.xss">
+      <DependentUpon>LMB090DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMB\LMB500DS.xsc">
+      <DependentUpon>LMB500DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMB\LMB500DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMB500DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMB\LMB500DS.xss">
+      <DependentUpon>LMB500DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMB\LMB501DS.xsc">
+      <DependentUpon>LMB501DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMB\LMB501DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMB501DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMB\LMB501DS.xss">
+      <DependentUpon>LMB501DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMB\LMB510DS.xsc">
+      <DependentUpon>LMB510DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMB\LMB510DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMB510DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMB\LMB510DS.xss">
+      <DependentUpon>LMB510DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMB\LMB520DS.xsc">
+      <DependentUpon>LMB520DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMB\LMB520DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMB520DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMB\LMB520DS.xss">
+      <DependentUpon>LMB520DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMB\LMB529DS.xsc">
+      <DependentUpon>LMB529DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMB\LMB529DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMB529DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMB\LMB529DS.xss">
+      <DependentUpon>LMB529DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMB\LMB530DS.xsc">
+      <DependentUpon>LMB530DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMB\LMB530DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMB530DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMB\LMB530DS.xss">
+      <DependentUpon>LMB530DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMB\LMB540DS.xsc">
+      <DependentUpon>LMB540DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMB\LMB540DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMB540DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMB\LMB540DS.xss">
+      <DependentUpon>LMB540DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMB\LMB550DS.xsc">
+      <DependentUpon>LMB550DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMB\LMB550DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMB550DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMB\LMB550DS.xss">
+      <DependentUpon>LMB550DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMB\LMB560DS.xsc">
+      <DependentUpon>LMB560DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMB\LMB560DS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMB560DS.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="LMB\LMB560DS.xss">
+      <DependentUpon>LMB560DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMB\LMB570DS.xsc">
+      <DependentUpon>LMB570DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMB\LMB570DS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMB570DS.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="LMB\LMB570DS.xss">
+      <DependentUpon>LMB570DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMB\LMB800DS.xsc">
+      <DependentUpon>LMB800DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMB\LMB800DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMB800DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMB\LMB800DS.xss">
+      <DependentUpon>LMB800DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMB\LMB810DS.xsc">
+      <DependentUpon>LMB810DS.xsd</DependentUpon>
+    </None>
+    <None Include="LMB\LMB810DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMB810DS.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMB\LMB810DS.xss">
+      <DependentUpon>LMB810DS.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>$(SolutionDir)..\..\tool\CopyToSrcBin.bat $(ProjectDir)bin</PostBuildEvent>
+  </PropertyGroup>
+</Project>

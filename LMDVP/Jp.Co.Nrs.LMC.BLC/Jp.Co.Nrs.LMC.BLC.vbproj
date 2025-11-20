@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5DEA1083-C935-420A-9850-19A228642372}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Jp.Co.Nrs.LM.BLC</RootNamespace>
+    <AssemblyName>Jp.Co.Nrs.LMC.BLC</AssemblyName>
+    <MyType>Windows</MyType>
+    <OptionStrict>On</OptionStrict>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>_MYTYPE ="Windows"</DefineConstants>
+    <DocumentationFile>Jp.Co.Nrs.LMC.BLC.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Jp.Co.Nrs.LMC.BLC.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>Full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CreateKoguma10QRString">
+      <HintPath>..\..\..\bin\CreateKoguma10QRString.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Jp.Co.Nrs.Com.Library, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.Com.Library.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Jp.Co.Nrs.LM.Library, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.LM.Library.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Jp.Co.Nrs.LMC.DAC">
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.LMC.DAC.dll</HintPath>
+    </Reference>
+    <Reference Include="Jp.Co.Nrs.LMC.DAC2">
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.LMC.DAC2.dll</HintPath>
+    </Reference>
+    <Reference Include="Jp.Co.Nrs.LMC.DSL">
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.LMC.DSL.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Jp.Co.Nrs.Win.Library">
+      <HintPath>..\..\..\bin\Jp.Co.Nrs.Win.Library.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RDEPS_JobManagerAPI, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\RDEPS_JobManagerAPI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LMC\LMC010BLC.vb" />
+    <Compile Include="LMC\LMC020BLC.vb" />
+    <Compile Include="LMC\LMC030BLC.vb" />
+    <Compile Include="LMC\LMC040BLC.vb" />
+    <Compile Include="LMC\LMC500BLC.vb" />
+    <Compile Include="LMC\LMC642BLC.vb" />
+    <Compile Include="LMC\LMC641BLC.vb" />
+    <Compile Include="LMC\LMC520BLC.vb" />
+    <Compile Include="LMC\LMC531BLC.vb" />
+    <Compile Include="LMC\LMC540BLC.vb" />
+    <Compile Include="LMC\LMC541BLC.vb" />
+    <Compile Include="LMC\LMC543BLC.vb" />
+    <Compile Include="LMC\LMC550BLC.vb" />
+    <Compile Include="LMC\LMC560BLC.vb" />
+    <Compile Include="LMC\LMC590BLC.vb" />
+    <Compile Include="LMC\LMC600BLC.vb" />
+    <Compile Include="LMC\LMC601BLC.vb" />
+    <Compile Include="LMC\LMC610BLC.vb" />
+    <Compile Include="LMC\LMC614BLC.vb" />
+    <Compile Include="LMC\LMC650BLC.vb" />
+    <Compile Include="LMC\LMC651BLC.vb" />
+    <Compile Include="LMC\LMC690BLC.vb" />
+    <Compile Include="LMC\LMC720BLC.vb" />
+    <Compile Include="LMC\LMC721BLC.vb" />
+    <Compile Include="LMC\LMC730BLC.vb" />
+    <Compile Include="LMC\LMC789BLC.vb" />
+    <Compile Include="LMC\LMC790BLC.vb" />
+    <Compile Include="LMC\LMC791BLC.vb" />
+    <Compile Include="LMC\LMC792BLC.vb" />
+    <Compile Include="LMC\LMC794BLC.vb" />
+    <Compile Include="LMC\LMC796BLC.vb" />
+    <Compile Include="LMC\LMC800BLC.vb" />
+    <Compile Include="LMC\LMC810BLC.vb" />
+    <Compile Include="LMC\LMC820BLC.vb" />
+    <Compile Include="LMC\LMC830BLC.vb" />
+    <Compile Include="LMC\LMC840BLC.vb" />
+    <Compile Include="LMC\LMC850BLC.vb" />
+    <Compile Include="LMC\LMC860BLC.vb" />
+    <Compile Include="LMC\LMC870BLC.vb" />
+    <Compile Include="LMC\LMC890BLC.vb" />
+    <Compile Include="LMC\LMC900BLC.vb" />
+    <Compile Include="LMC\LMC901BLC.vb" />
+    <Compile Include="LMC\LMC903BLC.vb" />
+    <Compile Include="LMC\LMC910BLC.vb" />
+    <Compile Include="LMC\LMC920BLC.vb" />
+    <Compile Include="LMC\LMC930BLC.vb" />
+    <Compile Include="LMC\LMC940BLC.vb" />
+    <Compile Include="LMC\LMC950BLC.vb" />
+    <Compile Include="LMC\LMC960BLC.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>$(SolutionDir)..\..\tool\CopyToSrcBin.bat $(ProjectDir)bin</PostBuildEvent>
+  </PropertyGroup>
+</Project>
