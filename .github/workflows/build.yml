@@ -47,7 +47,7 @@ jobs:
           dotnet tool update dotnet-sonarscanner --tool-path ${{ runner.temp }}\scanner
 
       - name: Build and analyze
-        shell: powershell
+        shell: pwsh
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
@@ -61,8 +61,10 @@ jobs:
             /d:sonar.token="$env:SONAR_TOKEN" `
             /d:sonar.scanner.skipJreProvisioning=true
 
-          # MSBuild でビルド（.NET Framework Webサイト対応）
-          msbuild "D:\a\LM\LM\LMDVP\Jp.Co.Nrs.LM.sln" /p:Configuration=Release /t:Rebuild
+          $msbuildPath = (& "C:\Program Files (x86)\Microsoft Visual Studio\Installer\vswhere.exe" -latest -products * -requires Microsoft.Component.MSBuild -find MSBuild\**\Bin\MSBuild.exe)
+          Write-Host "MSBuild path: $msbuildPath"
+
+          & $msbuildPath "D:\a\LM\LM\LMDVP\Jp.Co.Nrs.LM.sln" /p:Configuration=Release /t:Rebuild
 
           & "${{ runner.temp }}\scanner\dotnet-sonarscanner" end `
             /d:sonar.token="$env:SONAR_TOKEN"
