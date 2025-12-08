@@ -1,4 +1,4 @@
-name: SonarCloud Analysis
+name: SonarQube
 
 on:
   push:
@@ -18,25 +18,20 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Set up .NET 7
-        uses: actions/setup-dotnet@v4
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
         with:
-          dotnet-version: "7.0.x"
+          java-version: 17
+          distribution: 'zulu'
 
-      # 🔍 デバッグステップ（重要）
-      - name: Locate solution file for debugging
-        shell: pwsh
-        run: |
-          Get-ChildItem -Recurse -Filter *.sln | ForEach-Object { Write-Host $_.FullName }
-
-      - name: Cache SonarCloud packages
+      - name: Cache SonarQube Cloud packages
         uses: actions/cache@v4
         with:
           path: ~\sonar\cache
           key: ${{ runner.os }}-sonar
           restore-keys: ${{ runner.os }}-sonar
 
-      - name: Cache SonarCloud scanner
+      - name: Cache SonarQube Cloud scanner
         id: cache-sonar-scanner
         uses: actions/cache@v4
         with:
@@ -44,15 +39,15 @@ jobs:
           key: ${{ runner.os }}-sonar-scanner
           restore-keys: ${{ runner.os }}-sonar-scanner
 
-      - name: Install SonarCloud scanner
+      - name: Install SonarQube Cloud scanner
         if: steps.cache-sonar-scanner.outputs.cache-hit != 'true'
-        shell: pwsh
+        shell: powershell
         run: |
-          New-Item -Path "${{ runner.temp }}\scanner" -ItemType Directory -Force
-          dotnet tool update dotnet-sonarscanner --tool-path "${{ runner.temp }}\scanner"
+          New-Item -Path ${{ runner.temp }}\scanner -ItemType Directory -Force
+          dotnet tool update dotnet-sonarscanner --tool-path ${{ runner.temp }}\scanner
 
       - name: Build and analyze
-        shell: pwsh
+        shell: powershell
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
@@ -66,8 +61,8 @@ jobs:
             /d:sonar.token="$env:SONAR_TOKEN" `
             /d:sonar.scanner.skipJreProvisioning=true
 
-          dotnet restore "D:/a/LM/LM/LMDVP/Jp.Co.Nrs.LM.sln"
-          dotnet build "D:/a/LM/LM/LMDVP/Jp.Co.Nrs.LM.sln" --no-restore
+          # MSBuild でビルド（.NET Framework Webサイト対応）
+          msbuild "D:\a\LM\LM\LMDVP\Jp.Co.Nrs.LM.sln" /p:Configuration=Release /t:Rebuild
 
           & "${{ runner.temp }}\scanner\dotnet-sonarscanner" end `
             /d:sonar.token="$env:SONAR_TOKEN"
