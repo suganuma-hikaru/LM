@@ -16,12 +16,21 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # SonarCloud は浅い clone を非推奨
+          fetch-depth: 0
 
       - name: Set up .NET 7
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: "7.0.x"
+
+      # 🔍 デバッグステップ（重要）
+      - name: Print folder structure for debugging
+        shell: pwsh
+        run: |
+          Write-Host "=== Current directory ==="
+          Get-Location
+          Write-Host "`n=== Files and folders (recursive) ==="
+          Get-ChildItem -Recurse
 
       - name: Cache SonarCloud packages
         uses: actions/cache@v4
@@ -58,10 +67,10 @@ jobs:
             /d:sonar.token="$env:SONAR_TOKEN" `
             /d:sonar.scanner.skipJreProvisioning=true
 
-          # Restore and build specific solution
-          dotnet restore "LM/LMDVP/Jp.Co.Nrs.LM.sln"
-          dotnet build "LM/LMDVP/Jp.Co.Nrs.LM.sln" --no-restore
+          # ⚠️ 現時点ではパスが不明なので、正しい .sln 位置がわかるまで一時的にコメントアウト
+          # dotnet restore "<正しい .sln のパス>"
+          # dotnet build "<正しい .sln のパス>" --no-restore
 
-          # SonarCloud analysis end
+          # SonarCloud analysis end（パスが確定したら build するため、今は一時無効）
           & "${{ runner.temp }}\scanner\dotnet-sonarscanner" end `
             /d:sonar.token="$env:SONAR_TOKEN"
