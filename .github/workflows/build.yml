@@ -56,7 +56,6 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
-          # SonarCloud analysis start
           & "${{ runner.temp }}\scanner\dotnet-sonarscanner" begin `
             /k:"suganuma-hikaru_LM" `
             /o:"suganuma-hikaru" `
@@ -64,10 +63,8 @@ jobs:
             /d:sonar.token="$env:SONAR_TOKEN" `
             /d:sonar.scanner.skipJreProvisioning=true
 
-          # ⚠️ 現時点ではパスが不明なので、正しい .sln 位置がわかるまで一時的にコメントアウト
-          # dotnet restore "<正しい .sln のパス>"
-          # dotnet build "<正しい .sln のパス>" --no-restore
+          dotnet restore "LM/LM/LMDVP/Jp.Co.Nrs.LM.sln"
+          dotnet build "LM/LM/LMDVP/Jp.Co.Nrs.LM.sln" --no-restore
 
-          # SonarCloud analysis end（パスが確定したら build するため、今は一時無効）
           & "${{ runner.temp }}\scanner\dotnet-sonarscanner" end `
             /d:sonar.token="$env:SONAR_TOKEN"
