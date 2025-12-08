@@ -56,6 +56,9 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
+          Write-Host "Current directory:"
+          Get-Location
+
           & "${{ runner.temp }}\scanner\dotnet-sonarscanner" begin `
             /k:"suganuma-hikaru_LM" `
             /o:"suganuma-hikaru" `
@@ -63,8 +66,8 @@ jobs:
             /d:sonar.token="$env:SONAR_TOKEN" `
             /d:sonar.scanner.skipJreProvisioning=true
 
-          dotnet restore "LM/LM/LMDVP/Jp.Co.Nrs.LM.sln"
-          dotnet build "LM/LM/LMDVP/Jp.Co.Nrs.LM.sln" --no-restore
+          dotnet restore "D:/a/LM/LM/LMDVP/Jp.Co.Nrs.LM.sln"
+          dotnet build "D:/a/LM/LM/LMDVP/Jp.Co.Nrs.LM.sln" --no-restore
 
           & "${{ runner.temp }}\scanner\dotnet-sonarscanner" end `
             /d:sonar.token="$env:SONAR_TOKEN"
