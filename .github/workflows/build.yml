@@ -24,10 +24,10 @@ jobs:
           dotnet-version: "7.0.x"
 
       # 🔍 デバッグステップ（重要）
-- name: Locate solution file for debugging
-  shell: pwsh
-  run: |
-    Get-ChildItem -Recurse -Filter *.sln | ForEach-Object { Write-Host $_.FullName }
+      - name: Locate solution file for debugging
+        shell: pwsh
+        run: |
+          Get-ChildItem -Recurse -Filter *.sln | ForEach-Object { Write-Host $_.FullName }
 
       - name: Cache SonarCloud packages
         uses: actions/cache@v4
