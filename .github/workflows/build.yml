@@ -46,15 +46,23 @@ jobs:
           New-Item -Path ${{ runner.temp }}\scanner -ItemType Directory -Force
           dotnet tool update dotnet-sonarscanner --tool-path ${{ runner.temp }}\scanner
 
-      - name: Copy external DLLs
+      # ← ここで DLL を LMDVP 配下のすべての bin\Release にコピー
+      - name: Copy external DLLs to all output dirs
         shell: pwsh
         run: |
-          $sourceDir = "${{ github.workspace }}\..\bin"
-          $targetDir = "${{ github.workspace }}\LMDVP\Jp.Co.Nrs.LMI.DAC\bin\Release"
+          $sourceDir = "${{ github.workspace }}\LM\bin"
+          $targetRoot = "${{ github.workspace }}\LMDVP"
 
-          if (!(Test-Path $targetDir)) { New-Item -ItemType Directory -Force -Path $targetDir }
+          Write-Host "Copying external DLLs from $sourceDir to all bin\Release directories under $targetRoot"
 
-          Copy-Item -Path "$sourceDir\*.dll" -Destination $targetDir -Force
+          Get-ChildItem -Path $targetRoot -Recurse -Directory |
+            ForEach-Object {
+              $binDir = Join-Path $_.FullName "bin\Release"
+              if (Test-Path $binDir) {
+                Copy-Item "$sourceDir\*.dll" -Destination $binDir -Force
+                Write-Host "Copied DLLs to $binDir"
+              }
+            }
 
       - name: Build and analyze
         shell: pwsh
@@ -71,9 +79,11 @@ jobs:
             /d:sonar.token="$env:SONAR_TOKEN" `
             /d:sonar.scanner.skipJreProvisioning=true
 
+          # MSBuild のパスを取得
           $msbuildPath = (& "C:\Program Files (x86)\Microsoft Visual Studio\Installer\vswhere.exe" -latest -products * -requires Microsoft.Component.MSBuild -find MSBuild\**\Bin\MSBuild.exe)
           Write-Host "MSBuild path: $msbuildPath"
 
+          # ソリューションをビルド
           & $msbuildPath "D:\a\LM\LM\LMDVP\Jp.Co.Nrs.LM.sln" /p:Configuration=Release /t:Rebuild
 
           & "${{ runner.temp }}\scanner\dotnet-sonarscanner" end `
