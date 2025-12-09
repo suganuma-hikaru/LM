@@ -1,0 +1,887 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.GLTI.GUI
+</name>
+</assembly>
+<members>
+<member name="M:Jp.Co.Nrs.GL.GUI.Controllers.GLTI0100Controller.#ctor">
+ <summary>
+ 通常用コンストラクタ
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.Controllers.GLTI0100Controller.GLTI0100SetListJson(Jp.Co.Nrs.GL.GUI.GLTI0100Models)">
+ <summary>
+ pqGridを使用する配列のJson化・初期化設定
+ </summary>
+ <param name="outMdl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.Controllers.GLTI0100Controller.GLTI0100SetJsonList(Jp.Co.Nrs.GL.GUI.GLTI0100Models)">
+ <summary>
+ JsonをListに戻す処理
+ </summary>
+ <param name="outMdl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.Controllers.GLTI0200Controller.#ctor">
+ <summary>
+ 通常用コンストラクタ
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.Controllers.GLTI0200Controller.GLTI0200SetListJson(Jp.Co.Nrs.GL.GUI.GLTI0200Models)">
+ <summary>
+ pqGridを使用する配列のJson化・初期化設定
+ </summary>
+ <param name="outMdl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.Controllers.GLTI0300Controller.#ctor">
+ <summary>
+ 通常用コンストラクタ
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.Controllers.GLTI0300Controller.GLTI0300SetListJson(Jp.Co.Nrs.GL.GUI.GLTI0300Models)">
+ <summary>
+ pqGridを使用する配列のJson化・初期化設定
+ </summary>
+ <param name="outMdl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.Controllers.GLTI0300Controller.GLTI0300SetJsonList(Jp.Co.Nrs.GL.GUI.GLTI0300Models)">
+ <summary>
+ JsonをListに戻す処理
+ </summary>
+ <param name="outMdl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0100WS.#ctor(Jp.Co.Nrs.GL.GUI.Controllers.GLTI0100Controller)">
+ <summary>
+ 指定された区分名を格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0100WS.SetEventNm(Jp.Co.Nrs.GL.GUI.GLTI0100Models@,System.String)">
+ <summary>
+ イベント名設定
+ </summary>
+ <param name="outMdl"></param>
+ <param name="eventNm"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0100WS.SetInitCommon(Jp.Co.Nrs.GL.GUI.GLTI0100Models@)">
+ <summary>
+ 初期共通設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0100WS.SetMsgListToOutModel(Jp.Co.Nrs.GL.GUI.GLTI0100Models@)">
+ <summary>
+ 使用メッセージリストをoutMdlに設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0100WS.SetInitControl(Jp.Co.Nrs.GL.GUI.GLTI0100Models@)">
+ <summary>
+ コントロール設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0100WS.SetTempMdlKey(Jp.Co.Nrs.GL.GUI.GLTI0100Models@)">
+ <summary>
+ TempMdlKey設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0100WS.SetInitData(Jp.Co.Nrs.GL.GUI.GLTI0100Models@,System.String)">
+ <summary>
+ 初期値設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0100WS.SetInitSearchData(Jp.Co.Nrs.GL.GUI.GLTI0100Models@,System.String)">
+ <summary>
+ 初期値設定(GLA0208遷移)
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0100WS.GetDefaultPrincipal(Jp.Co.Nrs.GL.GUI.GLTI0100Models@)">
+ <summary>
+ Principal初期値取得処理
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0100WS.CreateViewModelGLTI0100(Jp.Co.Nrs.GL.GUI.GLTI0100Models)">
+ <summary>
+ ビューの作成
+ </summary>
+ <param name="mdl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0100WS.SetSearchConditions(System.Data.DataSet,Jp.Co.Nrs.GL.GUI.GLTI0100Models@,System.String)">
+ <summary>
+ 検索条件設定
+ </summary>
+ <param name="ds"></param>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0100WS.SetResultListInfo(System.Data.DataSet,Jp.Co.Nrs.GL.GUI.GLTI0100Models@,System.Int32,System.Int32)">
+ <summary>
+ 検索結果設定
+ </summary>
+ <param name="ds"></param>
+ <param name="outMdl"></param>
+ <param name="resultCnt"></param>
+ <param name="dispLimitCnt"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0100WS.SetStockReportConditions(System.Data.DataSet,Jp.Co.Nrs.GL.GUI.GLTI0100Models@)">
+ <summary>
+ Stock Report条件設定
+ </summary>
+ <param name="ds"></param>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0100WS.SetGoConditions(System.Data.DataSet,Jp.Co.Nrs.GL.GUI.GLTI0100Models@)">
+ <summary>
+ Go条件設定
+ </summary>
+ <param name="ds"></param>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0100WS.SetDemurCalcCoditionsAllTank(System.Data.DataSet,Jp.Co.Nrs.GL.GUI.GLTI0100Models@)">
+ <summary>
+ DemurCalc条件設定(All tanks)
+ </summary>
+ <param name="ds"></param>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0100WS.SetDemurCalcCoditionsIndTank(System.Data.DataSet,Jp.Co.Nrs.GL.GUI.GLTI0100Models@)">
+ <summary>
+ DemurCalc条件設定(Individual tank)
+ </summary>
+ <param name="ds"></param>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0100WS.SetConfirmConditions(System.Data.DataSet,Jp.Co.Nrs.GL.GUI.GLTI0100Models@)">
+ <summary>
+ Confirm条件設定
+ </summary>
+ <param name="ds"></param>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0100WS.SetOkConditions(System.Data.DataSet,Jp.Co.Nrs.GL.GUI.GLTI0100Models@)">
+ <summary>
+ OK条件設定
+ </summary>
+ <param name="ds"></param>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0100WS.SetUpdEventKbn(System.String)">
+ <summary>
+ 更新イベント区分取得
+ </summary>
+ <param name="eventCd"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0100WS.SetHaitaConditions(System.Data.DataSet,Jp.Co.Nrs.GL.GUI.GLTI0100Models@)">
+ <summary>
+ 排他条件設定
+ </summary>
+ <param name="ds"></param>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0100WS.SaveTmpFileCopy(System.Web.HttpPostedFileWrapper,System.String,System.String)">
+ <summary>
+ ファイルコピー処理
+ </summary>
+ <param name="inFile"></param>
+ <param name="savePath"></param>
+ <param name="tempMdlKey"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0100WS.UpdateFileData(Jp.Co.Nrs.GL.GUI.GLTI0100Models@)">
+ <summary>
+ 取込ファイル更新処理
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0100WS.SetExcelDataTable(Jp.Co.Nrs.GL.GUI.GLTI0100Models@)">
+ <summary>
+ 取込ファイル内容設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0100WS.CreateExcelDataTable">
+ <summary>
+ 取込ファイル用データテーブルの作成
+ </summary>
+ <returns>DataTable</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0100WS.CreateErrorDataTable">
+ <summary>
+ エラーファイル用データテーブルの作成
+ </summary>
+ <returns>DataTable</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0100WS.UpdateFileInfo(Jp.Co.Nrs.GL.GUI.GLTI0100Models@,System.Data.DataTable@,System.Data.DataSet@,System.Data.DataSet@,System.Data.DataTable@)">
+ <summary>
+ 取込処理
+ </summary>
+ <param name="outMdl"></param>
+ <param name="exlDt"></param>
+ <param name="impDtTankUp"></param>
+ <param name="impDtDemCalc"></param>
+ <param name="errDt"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0100WS.SetErrFileImporRowData(System.Data.DataRow@,System.Data.DataTable@,System.String,System.String[])">
+ <summary>
+ エラー内容設定
+ </summary>
+ <param name="exlDr"></param>
+ <param name="errDt"></param>
+ <param name="errCd"></param>
+ <param name="itemNm"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0100WS.SetOkDataInfo(System.Data.DataRow@,System.Data.DataSet@,System.Data.DataSet@)">
+ <summary>
+ 取込可能データ設定
+ </summary>
+ <param name="exlDr"></param>
+ <param name="impDtTankUp"></param>
+ <param name="impDtDemCalc"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0100WS.UpdateDemCalc(System.Data.DataSet@,Jp.Co.Nrs.GL.GUI.GLTI0100Models@)">
+ <summary>
+ デマレージ計算処理
+ </summary>
+ <param name="impDtDemCalc"></param>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0100WS.ExportErrorFile(Jp.Co.Nrs.GL.GUI.GLTI0100Models@,System.Data.DataTable)">
+ <summary>
+ エラーファイル出力
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0100WS.IsErrStockReportDataCheck(Jp.Co.Nrs.GL.GUI.GLTI0100Models@,Jp.Co.Nrs.GL.GUI.GLTI0100Models)">
+ <summary>
+ Stock Report処理チェック
+ </summary>
+ <param name="outMdl"></param>
+ <param name="inMdl"></param>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0100WS.IsErrStockReportMultiCheck(Jp.Co.Nrs.GL.GUI.GLTI0100Models@,Jp.Co.Nrs.GL.GUI.GLTI0100Models,System.String,System.String)">
+ <summary>
+Stock Report処理関連項目チェック
+ </summary>
+ <param name="outMdl"></param>
+ <param name="inMdl"></param>
+ <param name="errDivArea"></param>
+ <param name="navArea"></param>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0100WS.IsErrGoDataAuthorityCheck(Jp.Co.Nrs.GL.GUI.GLTI0100Models@,Jp.Co.Nrs.GL.GUI.GLTI0100Models)">
+ <summary>
+ Go処理権限チェック
+ </summary>
+ <param name="outMdl"></param>
+ <param name="inMdl"></param>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0100WS.IsErrGoDataCheck(Jp.Co.Nrs.GL.GUI.GLTI0100Models@,Jp.Co.Nrs.GL.GUI.GLTI0100Models)">
+ <summary>
+ Go処理チェック
+ </summary>
+ <param name="outMdl"></param>
+ <param name="inMdl"></param>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0100WS.IsErrGoSingleCheck(Jp.Co.Nrs.GL.GUI.GLTI0100Models@,Jp.Co.Nrs.GL.GUI.GLTI0100Models,System.String,System.String)">
+ <summary>
+ Go処理単項目チェック
+ </summary>
+ <param name="outMdl"></param>
+ <param name="inMdl"></param>
+ <param name="errDivArea"></param>
+ <param name="navArea"></param>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0100WS.IsErrGoMultiCheck(Jp.Co.Nrs.GL.GUI.GLTI0100Models@,Jp.Co.Nrs.GL.GUI.GLTI0100Models,System.String,System.String)">
+ <summary>
+ Go処理関連項目チェック
+ </summary>
+ <param name="outMdl"></param>
+ <param name="inMdl"></param>
+ <param name="errDivArea"></param>
+ <param name="navArea"></param>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0100WS.IsErrSearchDataCheck(Jp.Co.Nrs.GL.GUI.GLTI0100Models@,Jp.Co.Nrs.GL.GUI.GLTI0100Models,System.String)">
+ <summary>
+ 検索処理チェック
+ </summary>
+ <param name="outMdl"></param>
+ <param name="inMdl"></param>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0100WS.IsErrSearchSingleCheck(Jp.Co.Nrs.GL.GUI.GLTI0100Models@,Jp.Co.Nrs.GL.GUI.GLTI0100Models,System.String,System.String,System.String)">
+ <summary>
+ 検索処理単項目チェック
+ </summary>
+ <param name="outMdl"></param>
+ <param name="inMdl"></param>
+ <param name="errDivArea"></param>
+ <param name="navArea"></param>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0100WS.IsErrSearchMultiCheck(Jp.Co.Nrs.GL.GUI.GLTI0100Models@,Jp.Co.Nrs.GL.GUI.GLTI0100Models,System.String,System.String)">
+ <summary>
+ 検索処理関連項目チェック
+ </summary>
+ <param name="outMdl"></param>
+ <param name="inMdl"></param>
+ <param name="errDivArea"></param>
+ <param name="navArea"></param>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0100WS.IsErrConfirmDataCheck(Jp.Co.Nrs.GL.GUI.GLTI0100Models@,Jp.Co.Nrs.GL.GUI.GLTI0100Models)">
+ <summary>
+ Confirm処理チェック
+ </summary>
+ <param name="outMdl"></param>
+ <param name="inMdl"></param>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0100WS.IsErrConfirmSingleCheck(Jp.Co.Nrs.GL.GUI.GLTI0100Models@,Jp.Co.Nrs.GL.GUI.GLTI0100Models,System.String,System.String)">
+ <summary>
+ Confirm処理単項目チェック
+ </summary>
+ <param name="outMdl"></param>
+ <param name="inMdl"></param>
+ <param name="errDivArea"></param>
+ <param name="navArea"></param>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0100WS.IsErrConfirmMultiCheck(Jp.Co.Nrs.GL.GUI.GLTI0100Models@,Jp.Co.Nrs.GL.GUI.GLTI0100Models,System.String,System.String)">
+ <summary>
+ Confirm処理関連項目チェック
+ </summary>
+ <param name="outMdl"></param>
+ <param name="inMdl"></param>
+ <param name="errDivArea"></param>
+ <param name="navArea"></param>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0100WS.IsErrOkDataCheck(Jp.Co.Nrs.GL.GUI.GLTI0100Models@,Jp.Co.Nrs.GL.GUI.GLTI0100Models)">
+ <summary>
+ OK処理チェック
+ </summary>
+ <param name="outMdl"></param>
+ <param name="inMdl"></param>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0100WS.IsErrOkSingleCheck(Jp.Co.Nrs.GL.GUI.GLTI0100Models@,Jp.Co.Nrs.GL.GUI.GLTI0100Models,System.String,System.String)">
+ <summary>
+ OK処理単項目チェック
+ </summary>
+ <param name="outMdl"></param>
+ <param name="inMdl"></param>
+ <param name="errDivArea"></param>
+ <param name="navArea"></param>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0100WS.IsErrFileImportDataCheck(System.Web.HttpPostedFileWrapper,Jp.Co.Nrs.GL.GUI.GLTI0100Models@)">
+ <summary>
+ File Import処理チェック
+ </summary>
+ <param name="inFile"></param>
+ <param name="outMdl"></param>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0100WS.IsExistsSheetName(System.String)">
+ <summary>
+ シートの存在チェック
+ </summary>
+ <param name="exlPath"></param>
+ <returns>existFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0100WS.IsErrFileImportRowDataCheck(System.Data.DataRow@,System.Data.DataTable@)">
+ <summary>
+ File Import処理取込内容チェック
+ </summary>
+ <param name="exlDr"></param>
+ <param name="errDt"></param>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0200WS.#ctor(Jp.Co.Nrs.GL.GUI.Controllers.GLTI0200Controller)">
+ <summary>
+ 指定された区分名を格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0200WS.SetInitCommon(Jp.Co.Nrs.GL.GUI.GLTI0200Models@)">
+ <summary>
+ 初期共通設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0200WS.SetParam(Jp.Co.Nrs.GL.GUI.GLTI0200Models@,System.String,System.String,System.String)">
+ <summary>
+ パラメータ設定
+ </summary>
+ <param name="outMdl"></param>
+ <param name="dispMode"></param>
+ <param name="recSts"></param>
+ <param name="eventKbn"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0200WS.SetMsgListToOutModel(Jp.Co.Nrs.GL.GUI.GLTI0200Models@)">
+ <summary>
+ 使用メッセージリストをoutMdlに設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0200WS.SetInitControl(Jp.Co.Nrs.GL.GUI.GLTI0200Models@)">
+ <summary>
+ コントロール設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0200WS.GetComboMoveTypeKbn(Jp.Co.Nrs.GL.GUI.GLTI0200Models@)">
+ <summary>
+ Move TypeのCombo設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0200WS.SetTempMdlKey(Jp.Co.Nrs.GL.GUI.GLTI0200Models@)">
+ <summary>
+ TempMdlKey設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0200WS.CreateViewModelGLTI0200(Jp.Co.Nrs.GL.GUI.GLTI0200Models)">
+ <summary>
+ ビューの作成
+ </summary>
+ <param name="mdl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0200WS.SetEventNm(Jp.Co.Nrs.GL.GUI.GLTI0200Models@,System.String)">
+ <summary>
+ イベント名設定
+ </summary>
+ <param name="outMdl"></param>
+ <param name="eventNm"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0200WS.SetDatasetSearchCondition(System.Data.DataSet,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 取得条件設定
+ </summary>
+ <param name="ds"></param>
+ <param name="key"></param>
+ <param name="keySub"></param>
+ <param name="eventKbn"></param>
+ <param name="recSts"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0200WS.SetDataToOutModelAll(System.Data.DataSet,Jp.Co.Nrs.GL.GUI.GLTI0200Models@)">
+ <summary>
+ 対象結果をモデルに設定
+ </summary>
+ <param name="ds"></param>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0200WS.SetDispPpMTCmbCtl(Jp.Co.Nrs.GL.GUI.GLTI0200Models@)">
+ <summary>
+ Principal/MoveTypeの入力制御設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0200WS.SetSubLeaseItemFirst(Jp.Co.Nrs.GL.GUI.GLTI0200Models@)">
+ <summary>
+ Sub Lease初期表示設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0200WS.SetDatasetHaita(System.Data.DataSet,Jp.Co.Nrs.GL.GUI.GLTI0200Models@)">
+ <summary>
+ 排他条件設定
+ </summary>
+ <param name="ds"></param>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0200WS.SetDatasetSave(System.Data.DataSet,Jp.Co.Nrs.GL.GUI.GLTI0200Models@)">
+ <summary>
+ Save項目設定
+ </summary>
+ <param name="ds"></param>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0200WS.SetOutDatasetSave(Jp.Co.Nrs.GL.GUI.GLTI0200Models@,System.Data.DataRow@,System.String)">
+ <summary>
+ Save項目設定
+ </summary>
+ <param name="outMdl"></param>
+ <param name="dRow"></param>
+ <param name="eventKbn"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0200WS.SetDatasetDelete(System.Data.DataSet,Jp.Co.Nrs.GL.GUI.GLTI0200Models@)">
+ <summary>
+ 削除条件設定
+ </summary>
+ <param name="ds"></param>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0200WS.SetDatasetKey(System.Data.DataSet,Jp.Co.Nrs.GL.GUI.GLTI0200Models@)">
+ <summary>
+ Key条件設定
+ </summary>
+ <param name="ds"></param>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0200WS.IsErrEditMultiCheck(Jp.Co.Nrs.GL.GUI.GLTI0200Models@)">
+ <summary>
+ Editボタン押下時関連項目チェック
+ </summary>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0200WS.IsErrSavetDataCheck(Jp.Co.Nrs.GL.GUI.GLTI0200Models@,Jp.Co.Nrs.GL.GUI.GLTI0200Models)">
+ <summary>
+ 保存処理チェック
+ </summary>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0200WS.IsErrSaveSingleBasisCheck(Jp.Co.Nrs.GL.GUI.GLTI0200Models@,Jp.Co.Nrs.GL.GUI.GLTI0200Models)">
+ <summary>
+ 単項目チェック(Basis)
+ </summary>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0200WS.IsErrSaveSingleOnOffHireCheck(Jp.Co.Nrs.GL.GUI.GLTI0200Models@,Jp.Co.Nrs.GL.GUI.GLTI0200Models)">
+ <summary>
+ 単項目チェック(On/Off Hire)
+ </summary>
+ <param name="outMdl"></param>
+ <param name="inMdl"></param>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0200WS.IsErrSaveSingleShipmentCheck(Jp.Co.Nrs.GL.GUI.GLTI0200Models@,Jp.Co.Nrs.GL.GUI.GLTI0200Models)">
+ <summary>
+ 単項目チェック(Shipment)
+ </summary>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0200WS.IsErrSaveSingleSubLeaseCheck(Jp.Co.Nrs.GL.GUI.GLTI0200Models@,Jp.Co.Nrs.GL.GUI.GLTI0200Models)">
+ <summary>
+ 単項目チェック(Sub Lease)
+ </summary>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0200WS.IsErrSaveMultiCheck(Jp.Co.Nrs.GL.GUI.GLTI0200Models@,Jp.Co.Nrs.GL.GUI.GLTI0200Models)">
+ <summary>
+ 関連項目チェック
+ </summary>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0200WS.IsErrDeletetDataCheck(Jp.Co.Nrs.GL.GUI.GLTI0200Models@,Jp.Co.Nrs.GL.GUI.GLTI0200Models)">
+ <summary>
+ 削除処理チェック
+ </summary>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0200WS.IsErrDeleteMultiCheck(Jp.Co.Nrs.GL.GUI.GLTI0200Models@,Jp.Co.Nrs.GL.GUI.GLTI0200Models)">
+ <summary>
+ 関連項目チェック
+ </summary>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0200WS.IsErrConfirmDataCheck(Jp.Co.Nrs.GL.GUI.GLTI0200Models@,Jp.Co.Nrs.GL.GUI.GLTI0200Models)">
+ <summary>
+ Confirm処理チェック
+ </summary>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0200WS.IsErrConfirmMultiCheck(Jp.Co.Nrs.GL.GUI.GLTI0200Models@,Jp.Co.Nrs.GL.GUI.GLTI0200Models)">
+ <summary>
+ 関連項目チェック
+ </summary>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0200WS.IsErrCancelDataCheck(Jp.Co.Nrs.GL.GUI.GLTI0200Models@,Jp.Co.Nrs.GL.GUI.GLTI0200Models)">
+ <summary>
+ Cancel処理チェック
+ </summary>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0200WS.IsErrCancelMultiCheck(Jp.Co.Nrs.GL.GUI.GLTI0200Models@,Jp.Co.Nrs.GL.GUI.GLTI0200Models)">
+ <summary>
+ 関連項目チェック
+ </summary>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0200WS.IsErrRollBackDataCheck(Jp.Co.Nrs.GL.GUI.GLTI0200Models@)">
+ <summary>
+ 単項目チェック(Move Dates)
+ </summary>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0200WS.IsErrNewTestDataCheck(Jp.Co.Nrs.GL.GUI.GLTI0200Models@)">
+ <summary>
+ New Test処理チェック
+ </summary>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0300WS.#ctor(Jp.Co.Nrs.GL.GUI.Controllers.GLTI0300Controller)">
+ <summary>
+ 指定された区分名を格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0300WS.SetEventNm(Jp.Co.Nrs.GL.GUI.GLTI0300Models@,System.String)">
+ <summary>
+ イベント名設定
+ </summary>
+ <param name="outMdl"></param>
+ <param name="eventNm"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0300WS.SetInitCommon(Jp.Co.Nrs.GL.GUI.GLTI0300Models@)">
+ <summary>
+ 初期共通設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0300WS.SetMsgListToOutModel(Jp.Co.Nrs.GL.GUI.GLTI0300Models@)">
+ <summary>
+ 使用メッセージリストをoutMdlに設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0300WS.SetInitControl(Jp.Co.Nrs.GL.GUI.GLTI0300Models@)">
+ <summary>
+ コントロール設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0300WS.SetTempMdlKey(Jp.Co.Nrs.GL.GUI.GLTI0300Models@)">
+ <summary>
+ TempMdlKey設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0300WS.CreateViewModelGLTI0300(Jp.Co.Nrs.GL.GUI.GLTI0300Models)">
+ <summary>
+ ビューの作成
+ </summary>
+ <param name="mdl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0300WS.SetParam(Jp.Co.Nrs.GL.GUI.GLTI0300Models@,System.Data.DataSet,System.String,System.String,System.String)">
+ <summary>
+ パラメータ設定(初期表示)
+ </summary>
+ <param name="outMdl"></param>
+ <param name="ds"></param>
+ <param name="jobNo"></param>
+ <param name="contSeq"></param>
+ <param name="contStage"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0300WS.SetReminderInfo(System.Data.DataSet,Jp.Co.Nrs.GL.GUI.GLTI0300Models@)">
+ <summary>
+ Reminder情報設定
+ </summary>
+ <param name="ds"></param>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0300WS.SetInitData(Jp.Co.Nrs.GL.GUI.GLTI0300Models@)">
+ <summary>
+ 初期値設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0300WS.SetDelParam(Jp.Co.Nrs.GL.GUI.GLTI0300Models@,System.Data.DataSet)">
+ <summary>
+ パラメータ設定(削除)
+ </summary>
+ <param name="outMdl"></param>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0300WS.SetSaveParam(Jp.Co.Nrs.GL.GUI.GLTI0300Models@,System.Data.DataSet)">
+ <summary>
+ パラメータ設定(保存)
+ </summary>
+ <param name="outMdl"></param>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0300WS.SetDetailInfo(Jp.Co.Nrs.GL.GUI.GLTI0300Models@)">
+ <summary>
+ Detail設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0300WS.SetDetailDataInfo(Jp.Co.Nrs.GL.GUI.GLTI0300Models@)">
+ <summary>
+ Detail情報取得
+ </summary>
+ <param name="outMdl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0300WS.SetClearDetail(Jp.Co.Nrs.GL.GUI.GLTI0300Models@)">
+ <summary>
+ Detailクリア処理
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0300WS.IsErrEdittDataCheck(Jp.Co.Nrs.GL.GUI.GLTI0300Models@,Jp.Co.Nrs.GL.GUI.GLTI0300Models)">
+ <summary>
+ Edit処理チェック
+ </summary>
+ <param name="outMdl"></param>
+ <param name="inMdl"></param>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0300WS.IsErrEditMultiCheck(Jp.Co.Nrs.GL.GUI.GLTI0300Models@,Jp.Co.Nrs.GL.GUI.GLTI0300Models,System.String,System.String)">
+ <summary>
+ Edit関連項目チェック
+ </summary>
+ <param name="outMdl"></param>
+ <param name="inMdl"></param>
+ <param name="errDivArea"></param>
+ <param name="navArea"></param>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0300WS.IsErrSaveCheck(Jp.Co.Nrs.GL.GUI.GLTI0300Models@,Jp.Co.Nrs.GL.GUI.GLTI0300Models)">
+ <summary>
+ Save処理チェック
+ </summary>
+ <param name="outMdl"></param>
+ <param name="inMdl"></param>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0300WS.IsErrSaveSingleCheck(Jp.Co.Nrs.GL.GUI.GLTI0300Models@,Jp.Co.Nrs.GL.GUI.GLTI0300Models,System.String,System.String)">
+ <summary>
+ Save単項目チェック
+ </summary>
+ <param name="outMdl"></param>
+ <param name="inMdl"></param>
+ <param name="errDivArea"></param>
+ <param name="navArea"></param>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0300WS.IsErrPastDateCheck(System.String,System.String)">
+ <summary>
+ 過去日付チェック
+ </summary>
+ <param name="chkDate"></param>
+ <param name="nowDate"></param>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLTI0300WS.IsErrUserMstCheck(System.String,System.String)">
+ <summary>
+ ユーザーマスタ存在チェック
+ </summary>
+ <param name="userId"></param>
+ <param name="mailChkFlg"></param>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

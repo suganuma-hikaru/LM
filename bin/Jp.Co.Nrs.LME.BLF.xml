@@ -1,0 +1,313 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.LME.BLF
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.LM.BLF.LME010BLF">
+ <summary>
+ LME010BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LME010BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LME010BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 初期検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LME010BLF.UpdateKakutei(System.Data.DataSet)">
+ <summary>
+ 確定処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LME010BLF.UpdateKaijo(System.Data.DataSet)">
+ <summary>
+ 確定解除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LME010BLF.UpdateKanryo(System.Data.DataSet)">
+ <summary>
+ 完了処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LME010BLF.UpdateHozon(System.Data.DataSet)">
+ <summary>
+ 保存処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LME010BLF.UpdateHenko(System.Data.DataSet)">
+ <summary>
+ 一括変更処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LME010BLF.DeleteData(System.Data.DataSet)">
+ <summary>
+ 削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LME010BLF.PrintAction(System.Data.DataSet)">
+ <summary>
+ 印刷処理
+ </summary>
+ <param name="lme500ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LME020BLF">
+ <summary>
+ LME020BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LME020BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LME020BLF.SelectData(System.Data.DataSet)">
+ <summary>
+ 検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LME020BLF.InsertSaveAction(System.Data.DataSet)">
+ <summary>
+ 新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LME020BLF.UpdateSaveAction(System.Data.DataSet)">
+ <summary>
+ 更新登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LME020BLF.DeleteSaveAction(System.Data.DataSet)">
+ <summary>
+ 削除登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LME020BLF.ChkSeiqDateSagyo(System.Data.DataSet)">
+ <summary>
+ 作業料取込チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LME020BLF.SaveComData(System.Data.DataSet,System.String)">
+ <summary>
+ 保存処理共通
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LME020BLF.ScopeStartEnd(System.Data.DataSet,System.String,System.Boolean)">
+ <summary>
+ トランザクション
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionStr">メソッド名</param>
+ <param name="selectFlg">再検索フラグ</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LME020BLF.BlcAccess(System.Data.DataSet,System.String)">
+ <summary>
+ BLCクラスアクセス
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LME030BLF">
+ <summary>
+ LME030BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LME030BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LME030BLF.SelectKensakuData(System.Data.DataSet)">
+ <summary>
+ 検索対象データの検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks>BLCのSelectDataメソッドに飛ぶ</remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LME040BLF">
+ <summary>
+ LME040BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LME040BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LME040BLF.SelectData(System.Data.DataSet)">
+ <summary>
+ 対象データの検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks>BLCのSelectDataメソッドに飛ぶ</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LME040BLF.HozonData(System.Data.DataSet)">
+ <summary>
+ 保存処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks>BLCのSelectDataメソッドに飛ぶ</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LME040BLF.PrintData(System.Data.DataSet)">
+ <summary>
+ 印刷処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LME040BLF.DoPrint(System.Data.DataSet,System.String)">
+ <summary>
+ 印刷処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="printType">印刷種別</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LME040BLF.SetDataSetLME520InData(System.Data.DataSet)">
+ <summary>
+ LME520DSを生成
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LME040BLF.SetDataSetLME520InData(System.Data.DataSet,System.Data.DataSet,System.String)">
+ <summary>
+ 印刷時に使用するDataSetを生成
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="inDs">DataSet</param>
+ <param name="tblNm">テーブル名</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LME040BLF.DeleteData(System.Data.DataSet)">
+ <summary>
+ 削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks>BLCのSelectDataメソッドに飛ぶ</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LME040BLF.CancelTabletData(System.Data.DataSet)">
+ <summary>
+ タブレットデータのキャンセル処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LME050BLF">
+ <summary>
+ LME050BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LME050BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LME050BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LME800BLF">
+ <summary>
+ LME800BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LME800BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LME800BLF.WHSagyoShiji(System.Data.DataSet)">
+ <summary>
+ 現場作業指示
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks>BLCの庫内作業指示メソッドに飛ぶ</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LME800BLF.WHSagyoShijiCancel(System.Data.DataSet)">
+ <summary>
+ 現場作業指示取消
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

@@ -1,0 +1,299 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.Nw.BLC.NWZ
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.Nw.BLC.NWZ.My.Resources.Resources">
+<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.Nw.BLC.NWZ.My.Resources.Resources.ResourceManager">
+<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.Nw.BLC.NWZ.My.Resources.Resources.Culture">
+<summary>
+  すべてについて、現在のスレッドの CurrentUICulture プロパティをオーバーライドします
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.BLC.NWZ.NWZ150BLC._Logger">
+ <summary>
+ ロガー
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLC.NWZ.NWZ150BLC.InsertArSalesForceData(System.Data.DataSet)">
+ <summary>
+ SAP出力処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLC.NWZ.NWZ150BLC.SetXmltoSapDataAR(System.Data.DataSet,Jp.Co.Nrs.SAP.Call.Library.SAPCallDS)">
+ <summary>
+ SAP連携請求データ編集
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLC.NWZ.NWZ150BLC.EditsapDataRevHead(System.Data.DataSet,System.Data.DataSet)">
+ <summary>
+ sap請求ヘッダ編集
+ </summary>
+ <param name="ds">INPUTパラメタ（データセット）</param>
+ <remarks>SAP請求ヘッダレコードを編集する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLC.NWZ.NWZ150BLC.EditSapDataRevItem(System.Data.DataSet,System.Data.DataSet)">
+ <summary>
+ sap請求明細編集
+ </summary>
+ <param name="ds">INPUTパラメタ（データセット）</param>
+ <remarks>SAP請求明細レコードを編集する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLC.NWZ.NWZ150BLC.InsertApSalesForceData(System.Data.DataSet)">
+ <summary>
+ SAP出力処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLC.NWZ.NWZ150BLC.SetXmltoSapDataAP(System.Data.DataSet,Jp.Co.Nrs.SAP.Call.Library.SAPCallDS)">
+ <summary>
+ SAP連携支払データ編集
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLC.NWZ.NWZ150BLC.EditsapDataCostHead(System.Data.DataSet,System.Data.DataSet)">
+ <summary>
+ sap支払ヘッダ編集
+ </summary>
+ <param name="ds">INPUTパラメタ（データセット）</param>
+ <remarks>SAP支払ヘッダレコードを編集する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLC.NWZ.NWZ150BLC.EditSapDataCostItem(System.Data.DataSet,System.Data.DataSet)">
+ <summary>
+ sap支払明細編集
+ </summary>
+ <param name="ds">INPUTパラメタ（データセット）</param>
+ <remarks>SAP支払明細レコードを編集する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLC.NWZ.NWZ150BLC.getJDEConn(System.Data.DataSet)">
+ <summary>
+ JDE接続先取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLC.NWZ.NWZ150BLC.SelectJDEDate(System.Data.DataSet)">
+ <summary>
+ JDEの場の日付取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLC.NWZ.NWZ150BLC.getB_COMPAR(System.Data.DataSet)">
+ <summary>
+ 会社番号AR取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLC.NWZ.NWZ150BLC.getB_COMPAP(System.Data.DataSet)">
+ <summary>
+ 会社番号AP取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLC.NWZ.NWZ150BLC.CreateRevJDEData(System.Data.DataSet)">
+ <summary>
+ JDE連携請求データ編集
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLC.NWZ.NWZ150BLC.CreateCostJDEData(System.Data.DataSet)">
+ <summary>
+ JDE連携支払データ編集
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLC.NWZ.NWZ150BLC.CreateRevJDEDataTHA(System.Data.DataSet)">
+ <summary>
+ JDE連携請求データ編集 (タイ版)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLC.NWZ.NWZ150BLC.CreateCostJDEDataTHA(System.Data.DataSet)">
+ <summary>
+ JDE連携支払データ編集 (タイ版)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLC.NWZ.NWZ150BLC.setBatchNo(System.Data.DataSet)">
+ <summary>
+ バッチ番号設定
+ </summary>
+ <param name="ds">INPUTパラメタ（データセット）</param>
+ <remarks>トランザクション内一意のバッチ番号をシステム日付／時刻をもとに設定する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLC.NWZ.NWZ150BLC.EditF03JDEData(System.Data.DataSet,System.Data.DataSet)">
+ <summary>
+ JDE売りヘッダF03編集
+ </summary>
+ <param name="ds">INPUTパラメタ（データセット）</param>
+ <remarks>JDE売りヘッダF03ﾚｺｰﾄﾞを編集する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLC.NWZ.NWZ150BLC.EditF04JDEData(System.Data.DataSet,System.Data.DataSet)">
+ <summary>
+ JDE買いヘッダF04編集
+ </summary>
+ <param name="ds">INPUTパラメタ（データセット）</param>
+ <remarks>JDE買いヘッダF04ﾚｺｰﾄﾞを編集する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLC.NWZ.NWZ150BLC.EditF09JDEDataAR(System.Data.DataSet,System.Data.DataSet)">
+ <summary>
+ JDE売り明細F09編集
+ </summary>
+ <param name="ds">INPUTパラメタ（データセット）</param>
+ <remarks>JDE売り明細F09ﾚｺｰﾄﾞを編集する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLC.NWZ.NWZ150BLC.EditF09JDEDataAP(System.Data.DataSet,System.Data.DataSet)">
+ <summary>
+ JDE売り明細F09編集
+ </summary>
+ <param name="ds">INPUTパラメタ（データセット）</param>
+ <remarks>JDE売り明細F09ﾚｺｰﾄﾞを編集する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLC.NWZ.NWZ150BLC.EditF03JDEDataTHA(System.Data.DataSet,System.Data.DataSet)">
+ <summary>
+ JDE売りヘッダF03編集 (タイ版)
+ </summary>
+ <param name="ds">INPUTパラメタ（データセット）</param>
+ <remarks>JDE売りヘッダF03ﾚｺｰﾄﾞを編集する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLC.NWZ.NWZ150BLC.EditF04JDEDataTHA(System.Data.DataSet,System.Data.DataSet)">
+ <summary>
+ JDE買いヘッダF04編集 (タイ版)
+ </summary>
+ <param name="ds">INPUTパラメタ（データセット）</param>
+ <remarks>JDE買いヘッダF04ﾚｺｰﾄﾞを編集する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLC.NWZ.NWZ150BLC.EditF09JDEDataARTHA(System.Data.DataSet,System.Data.DataSet)">
+ <summary>
+ JDE売り明細F09編集 (タイ版)
+ </summary>
+ <param name="ds">INPUTパラメタ（データセット）</param>
+ <remarks>JDE売り明細F09ﾚｺｰﾄﾞを編集する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLC.NWZ.NWZ150BLC.EditF09JDEDataAPTHA(System.Data.DataSet,System.Data.DataSet)">
+ <summary>
+ JDE買い明細F09編集 (タイ版)
+ </summary>
+ <param name="ds">INPUTパラメタ（データセット）</param>
+ <remarks>JDE買い明細F09ﾚｺｰﾄﾞを編集する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLC.NWZ.NWZ150BLC.ChkRevListHaita(System.Data.DataSet,Jp.Co.Nrs.Nw.DAC.NWZ.NWZ150DAC)">
+ <summary>
+ 排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="dac">DACクラス</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLC.NWZ.NWZ150BLC.GetBiggerDate(System.String,System.String)">
+ <summary>
+ 未来日取得
+ </summary>
+ <param name="inStrDate1">比較対象年月日1</param>
+ <param name="inStrDate2">比較対象年月日2</param>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLC.NWZ.NWZ150BLC.CombineString(System.String,System.String,System.String,System.Int32)">
+ <summary>
+ 文字列結合
+ </summary>
+ <param name="inStr1">文字列1</param>
+ <param name="inStr2">文字列2</param>
+ <param name="inStr3">文字列3</param>
+ <param name="intLimitByte">最大文字数</param>
+ <returns>String</returns>
+ <remarks>
+          1) 引き渡された文字列1～3を結合する。
+             文字列3が空白の場合、文字列1のみを返却する。
+          2) 返却文字列が 最大文字数 を超える場合、最大文字数までを返却する。
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLC.NWZ.NWZ150BLC.GetBiggerDateTHA(System.String,System.String)">
+ <summary>
+ 未来日取得 (タイ版)     *** ADD 依頼№5773対応 ****
+ </summary>
+ <param name="inStrDate">比較対象年月日（yyyyMMdd）</param>
+ <param name="JDEDateG">JDEの場の日付（yyyyMMdd）</param>
+ <returns>String</returns>
+ <remarks>
+          1) 引き渡された日付を比較し、先日付を返却する。
+          2) 同一年月の場合、比較対象年月日 を返却する。
+ </remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.BLC.NWZ.NWZ160BLC._Logger">
+ <summary>
+ ロガー
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.BLC.NWZ.NWZ160BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLC.NWZ.NWZ160BLC.InsertPitTouchData(System.Data.DataSet)">
+ =====================================================================
+ <summary>ピットタッチ打刻データ書き込み</summary>
+ =====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLC.NWZ.NWZ160BLC.GetMsgFromDb(System.Data.DataSet)">
+ =====================================================================
+ <summary>メッセージ取得処理</summary>
+ =====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLC.NWZ.NWZ160BLC.GetUserIdByCardNo(System.Data.DataSet)">
+ <summary>カードNOでユーザID取得</summary>
+ <param name="ds">データセット</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLC.NWZ.NWZ800BLC.InsertJDERec(System.Data.DataSet)">
+ <summary>
+ JDE出力処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

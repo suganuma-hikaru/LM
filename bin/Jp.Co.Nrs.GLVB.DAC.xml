@@ -1,0 +1,2707 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.GLVB.DAC
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.GL.DAC.My.Resources.Resources">
+<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.GL.DAC.My.Resources.Resources.ResourceManager">
+<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.GL.DAC.My.Resources.Resources.Culture">
+<summary>
+  すべてについて、現在のスレッドの CurrentUICulture プロパティをオーバーライドします
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1000DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1000DAC._RowSub">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1000DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1000DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1000DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1000DAC.SearchInkaDataL(System.Data.DataSet)">
+ <summary>
+ データ取得処理取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>入荷データL取得</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1000DAC.SearchInkaDataM(System.Data.DataSet)">
+ <summary>
+ データ取得処理取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>入荷データM取得</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1000DAC.GetWebInkaNoMMaxSeq(System.Data.DataSet)">
+ <summary>
+ データ取得処理取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>入荷管理番号M最大値取得処理</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1000DAC.ReGetInkaAuth(System.Data.DataSet)">
+ <summary>
+ 入荷権限取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>入荷権限取得</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1000DAC.SelectSokoCd(System.Data.DataSet)">
+ <summary>
+ 入荷権限取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>入荷権限取得</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1000DAC.InsertInkaData_L(System.Data.DataSet)">
+ <summary>
+ INKA_L登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_BASIS登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1000DAC.InsertInkaDataM(System.Data.DataSet)">
+ <summary>
+ INKA_M登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>VB_INKA_M登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1000DAC.InsertInkaDataCoa(System.Data.DataSet)">
+ <summary>
+ VB_COA登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>VB_COA登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1000DAC.UpdateInkaDataM(System.Data.DataSet)">
+ <summary>
+ INKA_M更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>C_COVER更新処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1000DAC.UpdateInkaL(System.Data.DataSet)">
+ <summary>
+ INKA_L更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>C_BASIS更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1000DAC.UpdateDeleteInkaMSeqDelFlg(System.Data.DataSet)">
+ <summary>
+ INKA_M論理削除処理(該当SEQのみ)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>INKA_M論理削除SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1000DAC.UpdateCoa(System.Data.DataSet)">
+ <summary>
+ VB_COA登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>VB_COA登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1000DAC.DeleteInkaL(System.Data.DataSet)">
+ <summary>
+ 削除処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1000DAC.DeleteInkaM(System.Data.DataSet)">
+ <summary>
+ 削除処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1000DAC.SelectInkaData(System.Data.DataSet)">
+ <summary>
+ データ取得処理(入荷指示取消)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>入荷データ取得</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1000DAC.SearchTareWtGData(System.Data.DataSet)">
+ <summary>
+ データ取得処理(検索処理（風袋重量取得SQL）)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>検索処理（風袋重量取得SQL）</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1000DAC.SetParameter(System.Data.DataRow)">
+ <summary>
+ パラメータ設定
+ </summary>
+ <param name="conditionRow">入荷情報L、MのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1000DAC.SetParameterM(System.Data.DataRow)">
+ <summary>
+ パラメータ設定
+ </summary>
+ <param name="conditionRow">入荷情報L、MのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1000DAC.SetGetWebInkaNoMMaxSeqParameter(System.Data.DataRow)">
+ <summary>
+ 共通パラメータ設定
+ </summary>
+ <param name="conditionRow">最大値取得のDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1000DAC.SetInkaLDataParameter(System.Data.DataSet)">
+ <summary>
+ VB_INKA_L共通パラメータ設定
+ </summary>
+ <param name="ds">データセット</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1000DAC.SetInkaMDataParameter(System.Data.DataRow)">
+ <summary>
+ VB_INKA_M共通パラメータ設定
+ </summary>
+ <param name="drow">データセット</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1000DAC.SetInkaCoaDataParameter(System.Data.DataRow)">
+ <summary>
+ VB_COAパラメータ設定
+ </summary>
+ <param name="drow">データセット</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1000DAC.SetParameterTareWtG(System.Data.DataRow)">
+ <summary>
+ パラメータ設定(風袋重量取得)
+ </summary>
+ <param name="conditionRow">入荷情報MのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1000DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1010DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1010DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1010DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1010DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1010DAC.SetSQLSelectWhereAfterImportCustNrs">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1010DAC.SetSQLSelectWhereAfterImportOther">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1010DAC.SetSQLSelectWhereBeforeImportCustNrs">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1010DAC.SetSQLSelectWhereBeforeImportOther">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1010DAC.SetSQLSelectOrderBy">
+ <summary>
+ 並び順・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1010DAC.SetSQLSelectDetailWhereAfterImportCustNrs">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1010DAC.SetSQLSelectDetailWhereAfterImportOther">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1010DAC.SetSQLSelectDetailWhereBeforeImportCustNrs">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1010DAC.SetSQLSelectDetailWhereBeforeImportOther">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1010DAC.CheckResultCountOrder(System.Data.DataSet)">
+ <summary>
+ 取得行数チェック オーダー単位
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1010DAC.CheckResultCountDetail(System.Data.DataSet)">
+ <summary>
+ 取得行数チェック 明細単位
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1010DAC.SearchInkaOrder(System.Data.DataSet)">
+ <summary>
+ 入荷情報取得処理 オーダー単位
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>入荷情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1010DAC.SearchInkaDetails(System.Data.DataSet)">
+ <summary>
+ 入荷情報取得処理 明細単位
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>入荷情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1010DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1010DAC.SetSortNm(System.String,System.String)">
+ <summary>
+ ソートキー名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1020DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1020DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1020DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1020DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1020DAC.SearchCheckCnt(System.Data.DataSet)">
+ <summary>
+ 検索処理 件数チェック
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1020DAC.Search(System.Data.DataSet)">
+ <summary>
+ 検索処理
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1020DAC.SetSQLSelectWhereJA(System.Data.DataSet)">
+ <summary>
+ 検索条件設定（JA）
+ </summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1020DAC.SetSQLSelectWhereEN(System.Data.DataSet)">
+ <summary>
+ 検索条件設定（EN）
+ </summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1020DAC.SetSQLSelectOrder(System.Data.DataSet)">
+ <summary>
+ ソート設定
+ </summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1020DAC.SetOrderItem(System.Text.StringBuilder@,System.String,System.String)">
+ <summary>
+ ソート順設定
+ </summary>
+ <param name="andstr"></param>
+ <param name="orderBy"></param>
+ <param name="key"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1020DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1030DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1030DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1030DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1030DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1030DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1030DAC.SelectItemData(System.Data.DataSet)">
+ <summary>
+ 初期表示
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1030DAC.UpdateMFile(System.Data.DataSet)">
+ <summary>
+ 更新処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1030DAC.SelectMailAddressData(System.Data.DataSet)">
+ <summary>
+ 荷主担当者アドレス取得
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1100DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1100DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1100DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1100DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1100DAC.SelectItemData(System.Data.DataSet)">
+ <summary>
+ 初期表示処理（出荷履歴画面から遷移）
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1100DAC.SelectMaxSeq(System.Data.DataSet)">
+ <summary>
+ MAX_SEQ取得処理
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1100DAC.SearchCheckCnt(System.Data.DataSet)">
+ <summary>
+ 検索処理 件数チェック
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1100DAC.SetSQLSelectWhereZaiko(System.Data.DataSet)">
+ <summary>
+ 在庫検索条件設定
+ </summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1100DAC.SetSQLSelectWhereWeb(System.Data.DataSet)">
+ <summary>
+ 在庫検索条件設定
+ </summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1100DAC.SetSQLSelectWhereZaikoSub(System.Data.DataSet)">
+ <summary>
+ 在庫検索条件設定
+ </summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1100DAC.SetSQLSelectOrder(System.Data.DataSet)">
+ <summary>
+ ソート設定
+ </summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1100DAC.Search(System.Data.DataSet)">
+ <summary>
+ 検索処理
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1100DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1100DAC.DeleteOutkaL_Order(System.Data.DataSet)">
+ <summary>
+ 削除処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1100DAC.DeleteOutkaM_Order(System.Data.DataSet)">
+ <summary>
+ 削除処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1100DAC.DeleteCoa_Order(System.Data.DataSet)">
+ <summary>
+ 削除処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1100DAC.ZaikoChk(System.Data.DataSet)">
+ <summary>
+ 在庫チェック
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1100DAC.SetSQLSelectWhereZaikoChkZaiko(System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 在庫検索条件設定
+ </summary>
+ <param name="nrsBrCd"></param>
+ <param name="custCdL"></param>
+ <param name="custCdm"></param>
+ <param name="custCdS"></param>
+ <param name="custCdSS"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1100DAC.SetSQLSelectWhereZaikoChkWeb(System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 在庫検索条件設定
+ </summary>
+ <param name="nrsBrCd"></param>
+ <param name="custCdL"></param>
+ <param name="custCdm"></param>
+ <param name="custCdS"></param>
+ <param name="custCdSS"></param>
+ <param name="webOutkaNoL"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1100DAC.SelectItemData_GLVB1110(System.Data.DataSet)">
+ <summary>
+ GLVB1110 初期表示処理（出荷履歴画面から遷移）
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1100DAC.DestChk(System.Data.DataSet)">
+ <summary>
+ 納入先マスタ存在チェック
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1100DAC.SagyoChk(System.Data.DataSet)">
+ <summary>
+ 作業マスタ存在チェック
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1100DAC.SelectMCustData(System.Data.DataSet)">
+ <summary>
+ 荷主マスタ取得
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1100DAC.SelectMDestData(System.Data.DataSet)">
+ <summary>
+ 届先マスタ取得
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1100DAC.InsertOutkaL(System.Data.DataSet)">
+ <summary>
+ 入荷データ（大） 登録
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1100DAC.UpdateOutkaL(System.Data.DataSet)">
+ <summary>
+ 入荷データ（大） 更新
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1100DAC.InsertOutkaM(System.Data.DataSet)">
+ <summary>
+ 入荷データ（中） 登録
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1100DAC.UpdateOutkaM(System.Data.DataSet)">
+ <summary>
+ 入荷データ（中） 更新
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1100DAC.DeleteOutkaM(System.Data.DataSet)">
+ <summary>
+ 入荷データ（中） 削除
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1100DAC.InsertCoa(System.Data.DataSet)">
+ <summary>
+ 分析表添付 登録
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1100DAC.UpdateCoa(System.Data.DataSet)">
+ <summary>
+ 分析表添付 更新
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1100DAC.DeleteCoa(System.Data.DataSet)">
+ <summary>
+ 分析表添付 削除
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1100DAC.isOutkaStateChk(System.Data.DataSet)">
+ <summary>
+ 出荷作業進捗区分チェック
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1100DAC.SelectOutkaData(System.Data.DataSet)">
+ <summary>
+ データ取得処理(出荷指示取消)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>出荷データ取得</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1100DAC.SetParameter(System.Data.DataRow)">
+ <summary>
+ パラメータ設定
+ </summary>
+ <param name="conditionRow">出荷情報L、MのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1140DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1140DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1140DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1140DAC._PrmChk">
+ <summary>
+ パラメータチェック用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1140DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1140DAC.SearchOrdCheckCnt(System.Data.DataSet)">
+ <summary>
+ 検索処理 件数チェック（オーダー単位）
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1140DAC.SearchDtlCheckCnt(System.Data.DataSet)">
+ <summary>
+ 検索処理 件数チェック（明細単位）
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1140DAC.SetSQLSelectWhereSoko(System.Data.DataSet,System.Boolean)">
+ <summary>
+ 倉庫データ検索条件設定（オーダー単位）
+ </summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1140DAC.ReplaceSQLSelectWhereSoko1(System.Data.DataSet)">
+ <summary>
+ 検索条件置き換え１
+ </summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1140DAC.ReplaceSQLSelectWhereSoko2(System.Data.DataSet)">
+ <summary>
+ 検索条件置き換え２
+ </summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1140DAC.ReplaceSQLSelectWhereSoko3(System.Data.DataSet)">
+ <summary>
+ 検索条件置き換え３
+ </summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1140DAC.ReplaceSQLSelectWhereSoko4(System.Data.DataSet)">
+ <summary>
+ 検索条件置き換え４
+ </summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1140DAC.ReplaceSQLSelectCust(System.Data.DataSet)">
+ <summary>
+ 荷主コード置き換え
+ </summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1140DAC.SetSQLSelectWhereWeb(System.Data.DataSet)">
+ <summary>
+ 顧客WEB検索条件設定
+ </summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1140DAC.ReplaceSQLSelectWhereSokoDtl1(System.Data.DataSet)">
+ <summary>
+ 検索条件置き換え１
+ </summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1140DAC.ReplaceSQLSelectWhereSokoDtl3(System.Data.DataSet)">
+ <summary>
+ 検索条件置き換え３
+ </summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1140DAC.ReplaceSQLSelectWhereSokoDtl4(System.Data.DataSet)">
+ <summary>
+ 検索条件置き換え４
+ </summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1140DAC.SetSQLSelectOrder(System.Data.DataSet)">
+ <summary>
+ ソート設定
+ </summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1140DAC.SetOrderItem(System.Text.StringBuilder@,System.String,System.String)">
+ <summary>
+ ソート順設定
+ </summary>
+ <param name="andstr"></param>
+ <param name="orderBy"></param>
+ <param name="key"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1140DAC.SearchOrd(System.Data.DataSet)">
+ <summary>
+ 検索処理（オーダー単位）
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1140DAC.SearchDtl(System.Data.DataSet)">
+ <summary>
+ 検索処理（明細単位）
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1140DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1140DAC.CheckParamList(System.String)">
+ <summary>
+ パラメータチェック処理
+ </summary>
+ <param name="param"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1150DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1150DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1150DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1150DAC._PrmChk">
+ <summary>
+ パラメータチェック用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1150DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1150DAC.Search(System.Data.DataSet)">
+ <summary>
+ 検索処理（オーダー単位）
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1150DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1200DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1200DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1200DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1200DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1200DAC.CheckResultCount(System.Data.DataSet)">
+ <summary>
+ 取得行数チェック
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1200DAC.SearchStock(System.Data.DataSet)">
+ <summary>
+ 在庫情報取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>在庫情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1200DAC.SetSQLSelectWhere1">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1200DAC.SetSQLSelectWhere2">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1200DAC.SetSQLSelectOrderBy">
+ <summary>
+ 並び順・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1200DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1200DAC.SetSortNm(System.String,System.String)">
+ <summary>
+ ソートキー名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1210DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1210DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1210DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1210DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1210DAC.CheckResultCount(System.Data.DataSet)">
+ <summary>
+ 取得行数チェック
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1210DAC.SearchStock(System.Data.DataSet)">
+ <summary>
+ 在庫情報取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>在庫情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1210DAC.SetSQLSelectWhere1">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1210DAC.SetSQLSelectWhere2">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1210DAC.SetSQLSelectOrderBy">
+ <summary>
+ 並び順・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1210DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1210DAC.SetSortNm(System.String,System.String)">
+ <summary>
+ ソートキー名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1220DAC.TABLE_NM.GLVB1220IN">
+ <summary>
+ 入力テーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1220DAC.TABLE_NM.GLVB1220OUT">
+ <summary>
+ 出力テーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1220DAC.FUNCTION_NM.Search">
+ <summary>
+ 出力テーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1220DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1220DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1220DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1220DAC._PrmChk">
+ <summary>
+ パラメータチェック用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1220DAC.SEARCH_SELECT_SQL">
+ <summary>
+ 検索
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1220DAC.Search(System.Data.DataSet)">
+ <summary>
+ 検索処理
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1220DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1300DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1300DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1300DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1300DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1300DAC.CheckResultCount(System.Data.DataSet)">
+ <summary>
+ 取得行数チェック
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1300DAC.SearchGoods(System.Data.DataSet)">
+ <summary>
+ 商品情報取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>商品情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1300DAC.Reserve(System.Data.DataSet)">
+ <summary>
+ 予約情報登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>予約情報登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1300DAC.SetSQLSelectWhere1">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1300DAC.SetSQLSelectWhere2">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1300DAC.SetGlvbReserveGoodsDataInsParameter(System.Data.DataRow)">
+ <summary>
+ VB_RESERVE_GOODS登録共通パラメータ
+ </summary>
+ <param name="conditionRow">VB_RESERVE_GOODSのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1300DAC.SetSysCommonParameter">
+ <summary>
+ システム共通共通パラメータ(削除フラグを除く）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1300DAC.SetSysDelFlgOnParameter">
+ <summary>
+ 削除フラグ オン パラメータ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1300DAC.SetSysDelFlgOffParameter">
+ <summary>
+ 削除フラグ オフ パラメータ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1300DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1310DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1310DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1310DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1310DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1310DAC.CheckResultCount(System.Data.DataSet)">
+ <summary>
+ 取得行数チェック
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1310DAC.SearchReserve(System.Data.DataSet)">
+ <summary>
+ 予約情報取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>予約情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1310DAC.Cancel(System.Data.DataSet)">
+ <summary>
+ 予約取消処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>予約取消SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1310DAC.SetSQLSelectWhere">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1310DAC.SetGlvbReserveGoodsDataInsParameter(System.Data.DataRow)">
+ <summary>
+ VB_RESERVE_GOODS登録共通パラメータ
+ </summary>
+ <param name="conditionRow">VB_RESERVE_GOODSのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1310DAC.SetSysUpdateParameter">
+ <summary>
+ システム共通更新パラメータ(削除フラグを除く）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1310DAC.SetSysDelFlgOnParameter">
+ <summary>
+ 削除フラグ オン パラメータ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1310DAC.SetSysDelFlgOffParameter">
+ <summary>
+ 削除フラグ オフ パラメータ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1310DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1400DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1400DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1400DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1400DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1400DAC.CheckResultCountHane(System.Data.DataSet)">
+ <summary>
+ 取得行数チェック(ハネウェル)
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1400DAC.CheckResultCountStand(System.Data.DataSet)">
+ <summary>
+ 取得行数チェック(標準)
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1400DAC.SearchCylinderHane(System.Data.DataSet)">
+ <summary>
+ シリンダー情報取得処理(ハネウェル)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>シリンダー情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1400DAC.SearchCylinderStand(System.Data.DataSet)">
+ <summary>
+ シリンダー情報取得処理(標準)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>シリンダー情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1400DAC.SetSQLSelectWhereHane">
+ <summary>
+ 条件文・パラメータ設定モジュール(ハネウェル)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1400DAC.SetSQLSelectWhereStand">
+ <summary>
+ 条件文・パラメータ設定モジュール(標準)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1400DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1410DAC.TABLE_NM.GLVB1410IN">
+ <summary>
+ 入力テーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1410DAC.TABLE_NM.GLVB1410OUT">
+ <summary>
+ 出力テーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1410DAC.FUNCTION_NM.Search">
+ <summary>
+ 出力テーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1410DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1410DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1410DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1410DAC._PrmChk">
+ <summary>
+ パラメータチェック用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1410DAC.SEARCH_SELECT_SQL">
+ <summary>
+ 検索
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1410DAC.Search(System.Data.DataSet)">
+ <summary>
+ 検索処理
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1410DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.GL.DAC.GLVB1420DAC.TABLE_NM">
+ <summary>
+ テーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1420DAC.TABLE_NM.GLVB1420IN">
+ <summary>
+ 入力テーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1420DAC.TABLE_NM.GLVB1420OUT">
+ <summary>
+ 出力テーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1420DAC.TABLE_NM.GLVB1420IN_NO_ZIP_CYLINDER">
+ <summary>
+ 入力テーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1420DAC.TABLE_NM.GLVB1420OUT_NO_ZIP_CYLINDER">
+ <summary>
+ 出力テーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.GL.DAC.GLVB1420DAC.FUNCTION_NM">
+ <summary>
+ 関数名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1420DAC.FUNCTION_NM.SEARCH_HANE">
+ <summary>
+ シリンダー情報取得(ハネウェル)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1420DAC.FUNCTION_NM.SEARCH_STD">
+ <summary>
+ シリンダー情報取得(標準)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1420DAC.FUNCTION_NM.SEARCH_LIST_HANE">
+ <summary>
+ シリンダー情報取得(ハネウェル)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1420DAC.FUNCTION_NM.SEARCH_LIST_STD">
+ <summary>
+ シリンダー情報取得(標準)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1420DAC.SQL_SELECT_DATA_SET">
+ <summary>
+ SET句
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1420DAC.SQL_SELECT_DATA_SELECT">
+ <summary>
+ SELECT句
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1420DAC.SQL_SELECT_DATA_GROUP_BY_ZIP">
+ <summary>
+ GROUPBY句(ZIP)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1420DAC.SQL_SELECT_DATA_GET_LOC_HEADER">
+ <summary>
+ XY座標取得ヘッダ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1420DAC.SQL_SELECT_DATA_COUNT_HEADER">
+ <summary>
+ 件数取得ヘッダ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1420DAC.SQL_SELECT_DATA_GET_LOC_FOOTER">
+ <summary>
+ XY座標取得フッタ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1420DAC.SQL_SELECT_DATA_FROM1_STAND">
+ <summary>
+ FROM句(標準)①
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1420DAC.SQL_SELECT_DATA_FROM2_STAND">
+ <summary>
+ FROM句(標準)②
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1420DAC.SQL_SELECT_DATA_FROM1_HANE">
+ <summary>
+ FROM句(ハネウェル)①
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1420DAC.SQL_SELECT_DATA_FROM2_HANE">
+ <summary>
+ FROM句(ハネウェル)②
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1420DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1420DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1420DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1420DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1420DAC.SearchCylinderHane(System.Data.DataSet)">
+ <summary>
+ シリンダー情報取得処理(ハネウェル)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>シリンダー情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1420DAC.SearchCylinderStand(System.Data.DataSet)">
+ <summary>
+ シリンダー情報取得処理(標準)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>シリンダー情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1420DAC.SearchCylinderListHane(System.Data.DataSet)">
+ <summary>
+ シリンダー情報取得処理(ハネウェル)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>シリンダー情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1420DAC.SearchCylinderListStand(System.Data.DataSet)">
+ <summary>
+ シリンダー情報取得処理(標準)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>シリンダー情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1420DAC.SetSQLSelectWhereHane(System.Data.DataTable)">
+ <summary>
+ 条件文・パラメータ設定モジュール(ハネウェル)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1420DAC.SetSQLSelectWhereStand(System.Data.DataTable)">
+ <summary>
+ 条件文・パラメータ設定モジュール(標準)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1420DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1430DAC.TABLE_NM.GLVB1430IN">
+ <summary>
+ 入力テーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1430DAC.TABLE_NM.GLVB1430OUT">
+ <summary>
+ 出力テーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1430DAC.FUNCTION_NM.SEARCH_HANE">
+ <summary>
+ シリンダー情報取得処理（ハネウェル）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1430DAC.FUNCTION_NM.SEARCH_STD">
+ <summary>
+ シリンダー情報取得処理（標準）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1430DAC.SELECT_SQL_HEADER">
+ <summary>
+ SELECT句(SELECT)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1430DAC.SELECT_COUNT">
+ <summary>
+ SELECT句(COUNT)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1430DAC.SQL_SELECT_DATA_STAND">
+ <summary>
+ SELECT句(標準)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1430DAC.SQL_SELECT_DATA_FROM1_STAND">
+ <summary>
+ FROM句(標準)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1430DAC.SQL_SELECT_DATA_FROM2_STAND">
+ <summary>
+ GROUPBY句(標準)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1430DAC.SQL_SELECT_DATA_HANE">
+ <summary>
+ SELECT句(ハネウェル)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1430DAC.SQL_SELECT_DATA_FROM1_HANE_JP">
+ <summary>
+ SELECT句(ハネウェル)①日本語
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1430DAC.SQL_SELECT_DATA_FROM1_HANE_EN">
+ <summary>
+ SELECT句(ハネウェル)①英語
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1430DAC.SQL_SELECT_DATA_FROM2_HANE_JP">
+ <summary>
+ SELECT句(ハネウェル)②日本語
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1430DAC.SQL_SELECT_DATA_FROM2_HANE_EN">
+ <summary>
+ SELECT句(ハネウェル)②英語
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1430DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1430DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1430DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1430DAC._PrmChk">
+ <summary>
+ パラメータチェック用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1430DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1430DAC.SearchCylinderHane(System.Data.DataSet)">
+ <summary>
+ シリンダー情報取得処理(ハネウェル)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>シリンダー情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1430DAC.SearchCylinderStand(System.Data.DataSet)">
+ <summary>
+ シリンダー情報取得処理(標準)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>シリンダー情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1430DAC.SetSQLSelectWhereHane">
+ <summary>
+ 条件文・パラメータ設定モジュール(ハネウェル)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1430DAC.SetSQLSelectWhereStand">
+ <summary>
+ 条件文・パラメータ設定モジュール(標準)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1430DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1500DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1500DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1500DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1500DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1500DAC.SetSQLWhere">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1500DAC.SetSQLSelectOrderBy">
+ <summary>
+ 並び順・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1500DAC.CheckResultCount(System.Data.DataSet)">
+ <summary>
+ 取得行数チェック
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1500DAC.SearchOutkaReport(System.Data.DataSet)">
+ <summary>
+ 出荷報告書検索処理 オーダー単位
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>出荷報告書情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1500DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1500DAC.SetSortNm(System.String,System.String)">
+ <summary>
+ ソートキー名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1510DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1510DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1510DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1510DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1510DAC.SQL_SELECT_INIT_DATA_OUT">
+ <summary>
+ 詳細画面初期表示用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1510DAC.SQL_WEB_ORDER_HED_EXIST_CHK">
+ <summary>
+ WK_WEB_ORDER_HED存在チェック
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1510DAC.SQL_EXIST_WK_WEB_ORDER_HED">
+ <summary>
+ WEBオーダーヘッダー(WK_WEB_ORDER_HED）排他チェック用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1510DAC.SQL_EXIST_C_OUTKA_L">
+ <summary>
+ 出荷(大)(C_OUTKA_L）排他チェック用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1510DAC.SQL_INSERT_WK_WEB_ORDER_HED">
+ <summary>
+ WEBオーダーヘッダー(WK_WEB_ORDER_HED）追加SQL
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1510DAC.SQL_UPDATE_C_OUTKA_L">
+ <summary>
+ 出荷(大)(C_OUTKA_L）追加SQL
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1510DAC.SQL_UPDATE_C_OUTKA_M">
+ <summary>
+ 出荷(中)(C_OUTKA_M）追加・確定SQL
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1510DAC.SQL_UPDATE_WK_WEB_ORDER_HED_CONFIRM">
+ <summary>
+ WEBオーダーヘッダー(WK_WEB_ORDER_HED）確定SQL
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1510DAC.SQL_UPDATE_WK_WEB_ORDER_HED_CHANGE">
+ <summary>
+ WEBオーダーヘッダー(WK_WEB_ORDER_HED）変更SQL PROCESS_ID=3:CHANGE
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1510DAC.InitDisplayData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>出荷/オーダー情報取得</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1510DAC.InsertWebOrderHedConfirm(System.Data.DataSet)">
+ <summary>
+ WEBオーダーヘッダー(WK_WEB_ORDER_HED）追加処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>WEBオーダーヘッダー(WK_WEB_ORDER_HED）テーブル追加SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1510DAC.UpdateWebOrderHedConfirm(System.Data.DataSet)">
+ <summary>
+ WEBオーダーヘッダー(WK_WEB_ORDER_HED）更新処理(確定)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>WEBオーダーヘッダー(WK_WEB_ORDER_HED）テーブル更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1510DAC.UpdateWebOrderHedChange(System.Data.DataSet)">
+ <summary>
+ WEBオーダーヘッダー(WK_WEB_ORDER_HED）更新処理(変更)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>WEBオーダーヘッダー(WK_WEB_ORDER_HED）テーブル更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1510DAC.UpdateCOutkaHed(System.Data.DataSet)">
+ <summary>
+ 出荷(大)(C_OUTKA_L）更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>出荷(大)(C_OUTKA_L）テーブル更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1510DAC.UpdateCOutkaDtl(System.Data.DataSet)">
+ <summary>
+ 出荷(中)(C_OUTKA_M）更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>出荷(中)(C_OUTKA_M）テーブル更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1510DAC.WebOrderHedChk(System.Data.DataSet)">
+ <summary>
+ WK_WEB_ORDER_HED存在チェック
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1510DAC.SetSaveParameter(System.Data.DataRow)">
+ <summary>
+ WEBオーダーヘッダー・明細更新パラメータ設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1510DAC.SetInParameter">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1510DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1610DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1610DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1610DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1610DAC._SortKey">
+ <summary>
+ ソートKey
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.GL.DAC.GLVB1610DAC.PROCESS_KBN">
+ <summary>
+ PROCESS ID
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.GL.DAC.GLVB1610DAC.SAMPLE_FLG">
+ <summary>
+ サンプル品フラグ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1610DAC.SQL_SELECT_INIT_DATA">
+ <summary>
+ 初期表示用Select文
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1610DAC.SQL_SELECT_HEADER">
+ <summary>
+ 履歴表示用Select文
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1610DAC.SQL_SELECT_HAITA_CHK_DATA">
+ <summary>
+ 排他チェック用Select文
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1610DAC.SQL_UPDATE_BYKAGT_SAVE">
+ <summary>
+ Save処理用Update文
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1610DAC.SQL_UPDATE_BYKAGT_RESEND_SEIHIN">
+ <summary>
+ Resend処理用Update文
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1610DAC.SQL_UPDATE_BYKAGT_RESEND_SAMPLE">
+ <summary>
+ Resend処理用Update文
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1610DAC.SQL_INSERT_RIREKI_DATA">
+ <summary>
+ 履歴データ登録処理用Insert文
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1610DAC.SelectInitData(System.Data.DataSet)">
+ <summary>出荷報告情報取得</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1610DAC.UpdateH_SENDOUTEDI_BYKAGT(System.Data.DataSet)">
+ <summary>
+ Save/Resend更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1610DAC.InsertH_SENDOUTEDI_BYKAGT_HISTORY(System.Data.DataSet)">
+ <summary>
+ 履歴データ登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1610DAC.SelectRirekiData(System.Data.DataSet)">
+ <summary>履歴データ取得処理</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1610DAC.SelectMHoliday(System.Data.DataSet)">
+ <summary>休日マスタ取得処理</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1610DAC.isHaitaChk(System.Data.DataSet)">
+ <summary>排他制御処理</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1610DAC.SetInParameter">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1610DAC.SetSaveParameter">
+ <summary>
+ Save処理用パラメータ設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1610DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1610DAC.EditEDITimeFormat(System.String)">
+ <summary>
+ EDIで使用する時間フォーマット
+ </summary>
+ <param name="aTime"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1610DAC.EditEDIDateFormatWithSlash(System.String)">
+ <summary>
+ EDIで使用する日付フォーマット
+ </summary>
+ <param name="aDate"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1600DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1600DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1600DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1600DAC._PrmChk">
+ <summary>
+ パラメータチェック用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1600DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1600DAC.SQL_SELECT_DATA_OUT">
+ <summary>
+ C_OUTKA_Lデータ(出荷単位）抽出用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1600DAC.SQL_SELECT_DATA_RESEND">
+ <summary>
+ C_OUTKA_Lデータ(再送日）抽出用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1600DAC.SQL_SELECT_DATA_CNT">
+ <summary>
+ C_OUTKA_Lデータ  件数カウント用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1600DAC.SQL_SELECT_SUB_TAIL">
+ <summary>
+ SQL部品（SUB サブクエリ）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1600DAC.SQL_SELECT_MAIN_TAIL">
+ <summary>
+ SQL部品（MAIN PAGE絞込み・並び順）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB1600DAC.SQL_TAIL_CNT">
+ <summary>
+ データ抽出用カウント用最後（ページング、SEQ No.順ソートなし）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1600DAC.SelectOutkaData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>出荷情報取得</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1600DAC.SelectOutkaCount(System.Data.DataSet)">
+ ==========================================================================
+ <summary>データ件数カウント</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1600DAC.SetConditionMasterSQL">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1600DAC.SetConditionMainSQL">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1600DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1600DAC.SetSQLSelectOrder(System.Data.DataSet)">
+ <summary>
+ ソート設定
+ </summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1600DAC.SetOrderItem(System.Text.StringBuilder@,System.String,System.String)">
+ <summary>
+ ソート順設定
+ </summary>
+ <param name="andstr"></param>
+ <param name="orderBy"></param>
+ <param name="key"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB1600DAC.ReplaceConditionSQL">
+ <summary>
+ 検索条件置換
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB2000DAC.SELECT_USER_COMP_DETAILS_DATA">
+ <summary>
+ ユーザ情報取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB2000DAC.SELECT_SET">
+ <summary>
+ 速度改善SET句
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB2000DAC.SELECT_TANK_DATA">
+ <summary>
+ コンテナ情報取得(ユーザ限定)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB2000DAC.SELECT_TANK_DATA_ALL">
+ <summary>
+ コンテナ情報取得(全件)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB2000DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB2000DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB2000DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB2000DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB2000DAC.SearchUserCompDetailsData(System.Data.DataSet)">
+ <summary>
+ ユーザー情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>ユーザー情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB2000DAC.SearchTankData(System.Data.DataSet)">
+ <summary>
+ コンテナ情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>コンテナ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB2000DAC.SetSQLSelectTankDataParameter">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB2000DAC.SearchAllTankData(System.Data.DataSet)">
+ <summary>
+ 全コンテナ情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>全コンテナ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB2000DAC.SetSQLSelectAllTankDataParameter">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB2100DAC.SELECT_SET">
+ <summary>
+ 速度改善SET句
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB2100DAC.SELECT_CARGO_DATA">
+ <summary>
+ Cargo情報取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB2100DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB2100DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB2100DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB2100DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB2100DAC.SearchCargoData(System.Data.DataSet)">
+ <summary>
+ Cargo情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>コンテナ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB2100DAC.SetSQLSelectCargoDataParameter">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB2200DAC.TABLE_NM.GLVB2200IN">
+ <summary>
+ 入力テーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB2200DAC.TABLE_NM.GLVB2200OUT">
+ <summary>
+ 出力テーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB2200DAC.TABLE_NM.GLVB2200CNT">
+ <summary>
+ 件数テーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB2200DAC.FUNCTION_NM.SEARCH">
+ <summary>
+ シリンダー情報取得処理（ハネウェル）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB2200DAC.SELECT_SET">
+ <summary>
+ 速度改善SET句
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB2200DAC.SQL_SELECT_DATA">
+ <summary>
+ 共通　C_SHIP データ抽出用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB2200DAC.SQL_LEFTJOIN_CONT">
+ <summary>
+ ContainerNo.用条件　 LEFTJOIN
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB2200DAC.SQL_LEFTJOIN">
+ <summary>
+ 共通　 LEFTJOIN句
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB2200DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB2200DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB2200DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB2200DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB2200DAC.SearchJobData(System.Data.DataSet)">
+ <summary>
+ Bookingデータ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB2200DAC.SetSQLSelectJobDataParameter">
+ <summary>
+ 条件文・パラメータ設定モジュール　WHERE文
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB2210DAC.TABLE_NM.GLVB2210IN">
+ <summary>
+ 入力テーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB2210DAC.TABLE_NM.GLVB2210OUT">
+ <summary>
+ 出力テーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB2210DAC.FUNCTION_NM.SEARCH">
+ <summary>
+ シリンダー情報取得処理（ハネウェル）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB2210DAC.SQL_SELECT_DATA">
+ <summary>
+ 共通　C_SHIP データ抽出用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB2210DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB2210DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB2210DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB2210DAC._PrmChk">
+ <summary>
+ パラメータチェック用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB2210DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB2210DAC.SearchJobData(System.Data.DataSet)">
+ <summary>
+ シリンダー情報取得処理(ハネウェル)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>シリンダー情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB2210DAC.SetSQLSelectDataParameter">
+ <summary>
+ 条件文・パラメータ設定モジュール　WHERE文
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB2210DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.GL.DAC.GLVB2300DAC.TABLE_NM">
+ <summary>
+ テーブル名
+ </summary>
+ <remarks>テーブル名</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB2300DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB2300DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB2300DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB2300DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB2300DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB2300DAC.CheckResultCount(System.Data.DataSet)">
+ <summary>
+ 取得行数チェック
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB2300DAC.SearchDataList(System.Data.DataSet)">
+ <summary>
+ 登録済み画像リスト取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>登録済み画像リスト取得処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB2300DAC.SetSQLSelectParam">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB5000DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB5000DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB5000DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB5000DAC._PrmChk">
+ <summary>
+ パラメータチェック用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB5000DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB5000DAC.PrintDeliveryConfirmationSlip(System.Data.DataSet)">
+ <summary>
+ 出荷確認票
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB5000DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB5010DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB5010DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB5010DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVB5010DAC._PrmChk">
+ <summary>
+ パラメータチェック用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB5010DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB5010DAC.PrintShipingInstructions(System.Data.DataSet)">
+ <summary>
+ 出荷指示書
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVB5010DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

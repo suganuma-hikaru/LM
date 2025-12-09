@@ -1,0 +1,4935 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.LMF.BLC
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMF010BLC">
+ <summary>
+ LMF010BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF010BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF010BLC.ACTION_ID_HAITA">
+ <summary>
+ 運送(大)排他チェックアクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF010BLC.TABLE_NM_ITEM">
+ <summary>
+ データセットテーブル名(ITEMテーブル)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF010BLC.TABLE_NM_ERR">
+ <summary>
+ データセットテーブル名(ERRテーブル)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF010BLC.TABLE_NM_UNSO_L">
+ <summary>
+ データセットテーブル名(UNSO_Lテーブル)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF010BLC.TABLE_NM_UNCHIN">
+ <summary>
+ データセットテーブル名(UNCHINテーブル)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF010BLC.TABLE_NM_G_HED">
+ <summary>
+ データセットテーブル名(G_HEDテーブル)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF010BLC.TABLE_NM_G_HED_CHK">
+ <summary>
+ データセットテーブル名(G_HED_CHKテーブル)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF010BLC.SHUSEI_TRIP">
+ <summary>
+ 修正項目(運行番号)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF010BLC.MOTO_DATA_NYUKA">
+ <summary>
+ 元データ区分(入荷)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF010BLC.CALC_SHUKKA">
+ <summary>
+ 運賃計算締め基準(出荷日)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF010BLC.CALC_NYUKA">
+ <summary>
+ 運賃計算締め基準(納入日)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF010BLC.TORIKOMI">
+ <summary>
+ 経理取込
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF010BLC.IKKATU">
+ <summary>
+ 一括変更
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF010BLC.GUIDANCE_KBN">
+ <summary>
+ ガイダンス区分(00)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF010BLC.ACTION_ID_INSERT_SHIHARAI">
+ <summary>
+ (支払)運賃の新規登録アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF010BLC.ACTION_ID_DELETE_SHIHARAI">
+ <summary>
+ (支払)運賃の削除登録アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF010BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ 運送(大)検索対象データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF010BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 運送(大)検索対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF010BLC.SelectUnchinData(System.Data.DataSet)">
+ <summary>
+ 運賃レコードを取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF010BLC.UnsoLShiharaiEdit(System.Data.DataSet)">
+ <summary>
+ 運送会社修正に伴う支払運賃タリフ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF010BLC.SelectUncodataTariff(System.Data.DataSet)">
+ <summary>
+ 運行レコードの支払運賃タリフ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF010BLC.SelectGheaderData(System.Data.DataSet)">
+ <summary>
+ 最終請求日を取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>請求日</returns>
+ <remarks>取得できない場合は"00000000"を返却</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF010BLC.ChkHaitaData(System.Data.DataSet)">
+ <summary>
+ 排他チェック検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF010BLC.SelectCombData(System.Data.DataSet)">
+ <summary>
+ コンボ用のデータ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF010BLC.ChkCancelData(System.Data.DataSet)">
+ <summary>
+ 対象運行データキャンセルチェックアクション
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF010BLC.SaveAction(System.Data.DataSet)">
+ <summary>
+ 登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF010BLC.RemovedAction(System.Data.DataSet)">
+ <summary>
+ 解除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF010BLC.UpdateUnsoLLData(System.Data.DataSet)">
+ <summary>
+ 運行レコード更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF010BLC.SetShiharaiData(System.Data.DataSet)">
+ <summary>
+ (支払)運賃の更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF010BLC.UpdateShiharaiData(System.Data.DataSet)">
+ <summary>
+ (支払)運賃の更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF010BLC.ChkSeiqDate(System.Data.DataSet)">
+ <summary>
+ 最終請求日のチェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>最終請求日</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF010BLC.ChkSeiqDate(System.Data.DataSet,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 最終請求日のチェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="inDate">納入日</param>
+ <param name="outDate">出荷日</param>
+ <param name="calcKbn">締め基準</param>
+ <param name="chkDate">請求日</param>
+ <param name="moto">元データ区分</param>
+ <param name="rowNo">スプレッドの行番号</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF010BLC.ChkDate(System.Data.DataSet,System.String,System.String,System.String)">
+ <summary>
+ 日付チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="value1">比較対象日</param>
+ <param name="value2">最終締め日</param>
+ <param name="rowNo">スプレッドの行番号</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF010BLC.SelectLLCountData(System.Data.DataSet)">
+ <summary>
+ 運送(特大)テーブル存在チェック
+ </summary>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF010BLC.ServerChkJudgeStore(System.Data.DataSet,System.String)">
+ <summary>
+ DACでメッセージが設定されているかを判定
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF010BLC.ServerChkJudge(System.Data.DataSet,System.String)">
+ <summary>
+ DACでメッセージが設定されているかを判定
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF010BLC.SelectHaitaData(System.Data.DataSet)">
+ <summary>
+ 排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF010BLC.SelectCancelData(System.Data.DataSet)">
+ <summary>
+ キャンセルチェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF010BLC.SetErrData(System.Data.DataSet,System.String)">
+ <summary>
+ 更新処理をして正しく更新されたかを判定
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF010BLC.SetErrData(System.Data.DataSet)">
+ <summary>
+ エラー行番号を設定
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF010BLC.DacAccess(System.Data.DataSet,System.String)">
+ <summary>
+ DACクラスアクセス
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMF020BLC">
+ <summary>
+ LMF020BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF020BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF020BLC.TABLE_NM_IN">
+ <summary>
+ データセットテーブル名(INテーブル)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF020BLC.TABLE_NM_UNSO_L">
+ <summary>
+ F_UNSO_Lテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF020BLC.TABLE_NM_UNSO_M">
+ <summary>
+ F_UNSO_Mテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF020BLC.TABLE_NM_UNCHIN">
+ <summary>
+ F_UNCHINテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF020BLC.TABLE_NM_G_HED">
+ <summary>
+ データセットテーブル名(G_HEDテーブル)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF020BLC.TABLE_NM_INFO">
+ <summary>
+ UNCHIN_INFOテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF020BLC.TABLE_NM_G_HED_CHK">
+ <summary>
+ データセットテーブル名(G_HED_CHKテーブル)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF020BLC.ACTION_ID_SELECT_L">
+ <summary>
+ 運送(大)のデータ抽出アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF020BLC.ACTION_ID_SELECT_M">
+ <summary>
+ 運送(中)のデータ抽出アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF020BLC.ACTION_ID_SELECT_UNCHIN">
+ <summary>
+ 運賃のデータ抽出アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF020BLC.ACTION_ID_SELECT_INFO">
+ <summary>
+ (請求)料金情報のデータ抽出アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF020BLC.ACTION_ID_SELECT_SHIHARAI">
+ <summary>
+ (支払)料金情報のデータ抽出アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF020BLC.ACTION_ID_SELECT_NEW">
+ <summary>
+ 運送(大)新規のデータ抽出アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF020BLC.ACTION_ID_SELECT_HAITA">
+ <summary>
+ 排他チェック用のデータ抽出アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF020BLC.ACTION_ID_INSERT_L">
+ <summary>
+ 運送(大)の新規登録アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF020BLC.ACTION_ID_INSERT_M">
+ <summary>
+ 運送(中)の新規登録アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF020BLC.ACTION_ID_INSERT_UNCHIN">
+ <summary>
+ (請求)運賃の新規登録アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF020BLC.ACTION_ID_INSERT_SHIHARAI">
+ <summary>
+ (支払)運賃の新規登録アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF020BLC.ACTION_ID_UPDATE_L">
+ <summary>
+ 運送(大)の更新登録アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF020BLC.ACTION_ID_UPDATE_UNCHIN">
+ <summary>
+ (請求)運賃の更新登録アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF020BLC.ACTION_ID_UPDATE_SHIHARAI">
+ <summary>
+ (支払)運賃の更新登録アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF020BLC.ACTION_ID_UPDATE_PAY_UNCHIN">
+ <summary>
+ 支払運賃の更新登録アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF020BLC.ACTION_ID_INSERT_DEST_M">
+ <summary>
+ 届先マスタ更新登録アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF020BLC.ACTION_ID_UPDAT_OUTKA_L">
+ <summary>
+ 出荷データL更新登録アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF020BLC.ACTION_ID_DELETE_L">
+ <summary>
+ 運送(大)の削除登録アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF020BLC.ACTION_ID_DELETE_M">
+ <summary>
+ 運送(中)の削除登録アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF020BLC.ACTION_ID_DELETE_UNCHIN">
+ <summary>
+ (請求)運賃の削除登録アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF020BLC.ACTION_ID_DELETE_SHIHARAI">
+ <summary>
+ (支払)運賃の削除登録アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF020BLC.ACTION_ID_DELETE_PAYUNCHIN">
+ <summary>
+ 支払運賃の削除登録アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF020BLC.MAEZERO">
+ <summary>
+ 前ゼロ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF020BLC.MOTO_DATA_NYUKA">
+ <summary>
+ 元データ区分(入荷)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF020BLC.CALC_SHUKKA">
+ <summary>
+ 運賃計算締め基準(出荷日)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF020BLC.CALC_NYUKA">
+ <summary>
+ 運賃計算締め基準(納入日)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF020BLC.TORIKOMI">
+ <summary>
+ 経理取込
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF020BLC.EDIT">
+ <summary>
+ 編集
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF020BLC.SAVE">
+ <summary>
+ 保存
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMF020BLC.AUTO_DENP_KBN">
+ <summary>
+ 自動採番送り状区分(O010)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF020BLC.AUTO_DENP_KBN.MEITETSU_TRANSPORT">
+ <summary>
+ 名鉄運輸
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF020BLC.AUTO_DENP_KBN.SEINO_TRANSPORTATION_CHIBA">
+ <summary>
+ 西濃運輸千葉(標準)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF020BLC.AUTO_DENP_KBN.TTOLL_EXPRESS_OSAKA">
+ <summary>
+ トールエクスプレス(大阪)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF020BLC.AUTO_DENP_KBN.TTOLL_EXPRESS_GUNMA">
+ <summary>
+ トールエクスプレス(群馬)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF020BLC.AUTO_DENP_KBN.SEINO_TRANSPORTATION_TOKE">
+ <summary>
+ 西濃運輸土気(標準)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF020BLC.AUTO_DENP_KBN.TTOLL_EXPRESS_CHIBA">
+ <summary>
+ JPロジスティクス[元トールエクスプレス](千葉)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF020BLC.AUTO_DENP_KBN.TTOLL_EXPRESS_TOKE">
+ <summary>
+ JPロジスティクス[元トールエクスプレス](土気)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF020BLC.AUTO_DENP_KBN.SEINO_TRANSPORTATION_SODEGAURA">
+ <summary>
+ 西濃運輸(袖ヶ浦)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF020BLC.AUTO_DENP_KBN.SEINO_TRANSPORTATION_OSAKA">
+ <summary>
+ 西濃運輸(大阪)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF020BLC.SelectInitData(System.Data.DataSet)">
+ <summary>
+ 初期検索の値取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF020BLC.SelectNewData(System.Data.DataSet)">
+ <summary>
+ 新規検索の値取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF020BLC.ChkHaitaData(System.Data.DataSet)">
+ <summary>
+ 排他チェック検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF020BLC.SelectGheaderData(System.Data.DataSet)">
+ <summary>
+ 最終請求日を取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>請求日</returns>
+ <remarks>取得できない場合は"00000000"を返却</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF020BLC.InsertSaveAction(System.Data.DataSet)">
+ <summary>
+ 新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF020BLC.InsertData(System.Data.DataSet)">
+ <summary>
+ 新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF020BLC.UpdateSaveAction(System.Data.DataSet)">
+ <summary>
+ 更新登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF020BLC.UpdateData(System.Data.DataSet)">
+ <summary>
+ 更新登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF020BLC.DeleteAction(System.Data.DataSet)">
+ <summary>
+ 削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF020BLC.DeleteData(System.Data.DataSet)">
+ <summary>
+ 削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF020BLC.SetUnsoMData(System.Data.DataSet)">
+ <summary>
+ 運送(中)の更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF020BLC.SetUnchinData(System.Data.DataSet)">
+ <summary>
+ (請求)運賃の更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF020BLC.SetShiharaiData(System.Data.DataSet)">
+ <summary>
+ (支払)運賃の更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF020BLC.SetPayUnchinData(System.Data.DataSet)">
+ <summary>
+ 支払運賃の更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF020BLC.ChkUnchinSeiqDate(System.Data.DataSet)">
+ <summary>
+ 運賃情報の締め日チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF020BLC.ChkSeiqDate(System.Data.DataSet,System.String)">
+ <summary>
+ 最終請求日のチェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="msg">置換文字</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF020BLC.ChkSeiqDate(System.Data.DataSet,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 最終請求日のチェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="inDate">納入日</param>
+ <param name="outDate">出荷日</param>
+ <param name="calcKbn">締め基準</param>
+ <param name="chkDate">請求日</param>
+ <param name="moto">元データ区分</param>
+ <param name="msg">置換文字</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF020BLC.ChkDate(System.Data.DataSet,System.String,System.String,System.String)">
+ <summary>
+ 日付チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="value1">比較対象日</param>
+ <param name="value2">最終締め日</param>
+ <param name="msg">置換文字</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF020BLC.ServerChkJudge(System.Data.DataSet,System.String)">
+ <summary>
+ DACでメッセージが設定されているかを判定
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF020BLC.DacAccess(System.Data.DataSet,System.String)">
+ <summary>
+ DACクラスアクセス
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF020BLC.GetUnsoNoL(System.Data.DataSet)">
+ <summary>
+ UNSO_NO_Lを取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>InkaNoL</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF020BLC.GetMeiTetsuDenpNoL">
+ <summary>
+ MEITETSU_DENP_NOを取得
+ </summary>
+ <returns>MEITETSU_DENP_NO</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF020BLC.GetTollDenpNoL(System.Data.DataSet)">
+ <summary>
+ TOLL_DENP_NOを取得(大阪トール)
+ </summary>
+ <returns>TOLL_DENP_NO</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF020BLC.GetGunmaTollDenpNoL(System.Data.DataSet)">
+ <summary>
+ TOLL_DENP_NOを取得(群馬トール)
+ </summary>
+ <returns>TOLL_DENP_NO</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF020BLC.GetChibaTollDenpNoL(System.Data.DataSet)">
+ <summary>
+ 送り状番号生成(千葉JPロジスティクス[元トールエクスプレス])
+ </summary>
+ <returns>送り状番号</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF020BLC.GetTokeTollDenpNoL(System.Data.DataSet)">
+ <summary>
+ 送り状番号生成(土気JPロジスティクス[元トールエクスプレス])
+ </summary>
+ <returns>送り状番号</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF020BLC.GetAutoDenpNo(System.String,System.Data.DataSet)">
+ <summary>
+ 自動採番送り状番号取得
+ </summary>
+ <param name="autoDenpKbn">自動送り状番号区分</param>
+ <param name="ds">自動送り状番号区分</param>
+ <returns>自動送り状番号</returns>
+ <remarks>
+ LMC010BLC,LMC020BLC,LMF020BLCに同メソッドあり
+ ToDo:共通ライブラリ化を検討
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF020BLC.SetValueData(System.Data.DataSet,System.String,System.String[],System.String[],System.String)">
+ <summary>
+ 全ての行にValueの値を設定
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="tblNm">テーブル名</param>
+ <param name="colNm">列名</param>
+ <param name="value">設定したい値</param>
+ <param name="eda">枝番の列名</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMF030BLC">
+ <summary>
+ LMF030BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF030BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF030BLC._Dac830">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF030BLC.ACTION_ID_SELECT_LL">
+ <summary>
+ 運送(特大)のデータ抽出アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF030BLC.ACTION_ID_SELECT_L">
+ <summary>
+ 運送(大)のデータ抽出アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF030BLC.ACTION_ID_SELECT_SENDUNSOEDI_LM">
+ <summary>
+ 運送会社用EDI送信のデータ抽出アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF030BLC.ACTION_ID_SELECT_PRE_SENDUNSOEDI_LM">
+ <summary>
+ 運送会社用EDI送信のデータ(過去分)抽出アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF030BLC.ACTION_ID_INSERT_SENDUNSOEDI_LM">
+ <summary>
+ 運送会社用EDI送信データ(LM)の新規登録アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF030BLC.ACTION_ID_INSERT_DELFLG_SENDUNSOEDI_LM">
+ <summary>
+ 運送会社用EDI送信データ(LM)の新規登録(過去データ赤)アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF030BLC.ACTION_ID_PRE_UPDATE_SENDUNSOEDI_LM">
+ <summary>
+ 運送会社用EDI送信データ(LM)の更新処理アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF030BLC.ACTION_ID_SELECT_XNG_ROJITYPE">
+ <summary>
+ 運送会社用EDI送信のデータ抽出アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF030BLC.ACTION_ID_INSERT_TEHAIINFO_TBL">
+ <summary>
+ 手配情報TBLの新規登録アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF030BLC.ACTION_ID_UPDATE_TEHAIINFO_TBL">
+ <summary>
+ 手配情報TBLの新規登録アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF030BLC.ACTION_ID_SELECT_TEHAIINFO_TBL">
+ <summary>
+ 手配情報TBLの抽出件数アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF030BLC.ACTION_ID_SELECT_SHIHARAI">
+ <summary>
+ 支払運賃のデータ抽出アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF030BLC.ACTION_ID_INSERT_LL">
+ <summary>
+ 運送(特大)の新規登録アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF030BLC.ACTION_ID_UPDATE_LL">
+ <summary>
+ 運送(特大)の更新登録アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF030BLC.ACTION_ID_UPDATE_DEFAULT_L">
+ <summary>
+ 運送(大)の更新登録アクション(運行初期値更新)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF030BLC.ACTION_ID_UPDATE_L">
+ <summary>
+ 運送(大)の更新登録アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF030BLC.ACTION_ID_DELETE_LL">
+ <summary>
+ 運送(特大)の削除登録アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF030BLC.ACTION_ID_UPDATE_L_KEISAN">
+ <summary>
+ 運送(大)の更新登録アクション（計算時）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF030BLC.ACTION_ID_UPDATE_SHIHARAI_KEISAN">
+ <summary>
+ 支払運賃の更新登録アクション（計算時）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF030BLC.ACTION_ID_UPDATE_LL_KEISAN">
+ <summary>
+ 運送(特大)の更新登録アクション（計算時）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF030BLC.ACTION_ID_UPDATE_SHIHARAI">
+ <summary>
+ 支払運賃の更新登録アクション（保存時）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF030BLC.TABLE_NM_IN">
+ <summary>
+ INテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF030BLC.TABLE_NM_UNSO_LL">
+ <summary>
+ F_UNSO_LLテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF030BLC.TABLE_NM_UNSO_L">
+ <summary>
+ F_UNSO_Lテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF030BLC.HAISO_SHUKA">
+ <summary>
+ 配送区分(集荷)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF030BLC.HAISO_THUKEI">
+ <summary>
+ 配送区分(中継)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF030BLC.HAISO_HAIKA">
+ <summary>
+ 配送区分(配荷)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF030BLC.TYUKEI_HAISO_FLG_OFF">
+ <summary>
+ 中継配送無
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF030BLC.SelectInitData(System.Data.DataSet)">
+ <summary>
+ 初期検索の値取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF030BLC.SelectNewData(System.Data.DataSet)">
+ <summary>
+ 新規検索の値取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF030BLC.ChkHaitaData(System.Data.DataSet)">
+ <summary>
+ 排他チェック検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF030BLC.SelectUnsoLData(System.Data.DataSet)">
+ <summary>
+ 運送(大)レコード存在チェック用検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF030BLC.SelectDriverData(System.Data.DataSet)">
+ <summary>
+ 乗務員の値取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF030BLC.SelectShiharaiData(System.Data.DataSet)">
+ <summary>
+ 支払データの取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF030BLC.ShiharaisakiSaveAction(System.Data.DataSet)">
+ <summary>
+  (支払)運賃の更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF030BLC.SelectCarData(System.Data.DataSet)">
+ <summary>
+ 車輌マスタデータ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF030BLC.InsertSaveAction(System.Data.DataSet)">
+ <summary>
+ 新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF030BLC.UpdateSaveAction(System.Data.DataSet)">
+ <summary>
+ 更新登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF030BLC.encrypt(System.String,System.String@,System.String@)">
+ <summary>
+ 暗号化ロジック
+ </summary>
+ <param name="strInput">string</param>
+ <returns>string</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF030BLC.DeleteAction(System.Data.DataSet)">
+ <summary>
+ 削除登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF030BLC.InsertTehaiAction(System.Data.DataSet)">
+ <summary>
+ 手配作成
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF030BLC.KeisanSaveAction(System.Data.DataSet)">
+ <summary>
+ 計算時の更新登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF030BLC.SetDataUnsoSijiInData(System.Data.DataSet,System.Data.DataSet,System.String,System.String)">
+ <summary>
+ 運送指示処理時に使用するDataSetを生成
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="inDs">DataSet</param>
+ <param name="tblNm">テーブル名</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF030BLC.SetDataUnsoLMEditData(System.Data.DataSet,System.Data.DataSet,System.String,System.String)">
+ <summary>
+ 各種専用項目をLMF830OUT_LMに設定
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="outDs">DataSet</param>
+ <param name="tblNm">テーブル名</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF030BLC.SetCompareLMEditData(System.Data.DataSet,System.String)">
+ <summary>
+ LMF830OUT_LMとLMF830OUT_LM_PREに設定
+ </summary>
+ <param name="outDs">DataSet</param>
+ <param name="tblNm">テーブル名</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF030BLC.SelectHaitaUnsoLLData(System.Data.DataSet)">
+ <summary>
+ 運送(特大)の排他検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF030BLC.SelectHaitaUnsoLData(System.Data.DataSet)">
+ <summary>
+ 運送(大)の排他検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF030BLC.ServerChkJudge(System.Data.DataSet,System.String)">
+ <summary>
+ DACでメッセージが設定されているかを判定
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF030BLC.DacAccess(System.Data.DataSet,System.String)">
+ <summary>
+ DACクラスアクセス
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF030BLC.DacAccess830(System.Data.DataSet,System.String)">
+ <summary>
+ DACクラスアクセス
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF030BLC.GetTripNo(System.Data.DataSet)">
+ <summary>
+ TRIP_NOを取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>TripNo</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF030BLC.SelectNewUnsoLData(System.Data.DataSet)">
+ <summary>
+ 運行新規時の運送(大)レコード検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF030BLC.SelectNewUnsoLLData(System.Data.DataSet)">
+ <summary>
+ 運行新規時の運送(特大)レコード検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF030BLC.SetTripNo(System.Data.DataSet,System.String)">
+ <summary>
+ 運行番号設定処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="tripNo">運行番号</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF030BLC.SetTripColNm(System.String)">
+ <summary>
+ 配送区分による設定先列名を取得
+ </summary>
+ <param name="haisoKbn">配送区分</param>
+ <returns>列名</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMF040BLC">
+ <summary>
+ LMF040BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF040BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF040BLC.ACTION_ID_UPDATE_UNSO">
+ <summary>
+ 運送の更新処理アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF040BLC.ACTION_ID_UPDATE_UNSOM">
+ <summary>
+ 運送(中)の更新処理アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF040BLC.ACTION_ID_UPDATE_UNCHIN">
+ <summary>
+ 運賃の更新処理アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF040BLC.ACTION_ID_DATA">
+ <summary>
+ 運賃検索対象データ検索アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF040BLC.TABLE_NM_IN">
+ <summary>
+ データセットテーブル名(INテーブル)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF040BLC.TABLE_NM_OUT">
+ <summary>
+ データセットテーブル名(OUTテーブル)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF040BLC.TABLE_NM_UNCHIN">
+ <summary>
+ データセットテーブル名(UNCHINテーブル)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF040BLC.TABLE_NM_G_HED">
+ <summary>
+ データセットテーブル名(G_HEDテーブル)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF040BLC.TABLE_NM_G_HED_CHK">
+ <summary>
+ データセットテーブル名(G_HED_CHKテーブル)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF040BLC.MOTO_DATA_NYUKA">
+ <summary>
+ 元データ区分(入荷)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF040BLC.CALC_SHUKKA">
+ <summary>
+ 運賃計算締め基準(出荷日)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF040BLC.CALC_NYUKA">
+ <summary>
+ 運賃計算締め基準(納入日)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF040BLC.TORIKOMI">
+ <summary>
+ 経理取込
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF040BLC.FIX_CANCELL">
+ <summary>
+ 確定解除
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF040BLC.GROUP">
+ <summary>
+ まとめ指示
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF040BLC.GROUP_CANCELL">
+ <summary>
+ まとめ解除
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF040BLC.IKKATU">
+ <summary>
+ 一括変更
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF040BLC.ORDER_BY_CUSTTRIP">
+ <summary>
+ 並び順(荷主 , 運行番号)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF040BLC.ORDER_BY_DEST">
+ <summary>
+ 並び順(届先コード)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF040BLC.ORDER_BY_DESTJIS">
+ <summary>
+ 並び順(届先JIS)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF040BLC.ORDER_BY_DIC">
+ <summary>
+ 並び順(日立物流用)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF040BLC.ORDER_BY_AXSALTA">
+ <summary>
+ アクサルタ同送用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF040BLC.FLG_ON">
+ <summary>
+ フラグ(ON)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF040BLC.GUIDANCE_KBN">
+ <summary>
+ ガイダンス区分(00)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF040BLC.NRS_BR_CD_10">
+ <summary>
+ 営業所コード(千葉)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF040BLC.NRS_BR_CD_30">
+ <summary>
+ 営業所コード(群馬)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF040BLC.NRS_BR_CD_50">
+ <summary>
+ 営業所コード(埼玉)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF040BLC.NRS_BR_CD_55">
+ <summary>
+ 営業所コード(春日部)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF040BLC.DIC_MATOME_01">
+ <summary>
+ 日立物流まとめ荷主(千葉)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF040BLC.DIC_MATOME_02">
+ <summary>
+ 日立物流まとめ荷主(群馬)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF040BLC.DIC_MATOME_03">
+ <summary>
+ 日立物流まとめ荷主(埼玉)①
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF040BLC.DIC_MATOME_04">
+ <summary>
+ 日立物流まとめ荷主(埼玉)②
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF040BLC.DIC_MATOME_05">
+ <summary>
+ 日立物流まとめ荷主(埼玉)②
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF040BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ 運賃検索対象データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF040BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 運賃検索対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF040BLC.SelectListGroupData(System.Data.DataSet)">
+ <summary>
+ 運賃検索対象データ検索(まとめ)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF040BLC.SelectChkApproval(System.Data.DataSet)">
+ <summary>
+ 運賃タリフの承認チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF040BLC.SelectGheaderData(System.Data.DataSet)">
+ <summary>
+ 最終請求日を取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>請求日</returns>
+ <remarks>取得できない場合は"00000000"を返却</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF040BLC.SelectInitUnchinData(System.Data.DataSet)">
+ <summary>
+ 運賃情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF040BLC.SelectUnchinData(System.Data.DataSet)">
+ <summary>
+ 運賃情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF040BLC.SetFixData(System.Data.DataSet)">
+ <summary>
+ 確定処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF040BLC.SetFixCancellData(System.Data.DataSet)">
+ <summary>
+ 確定解除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF040BLC.SetGroupData(System.Data.DataSet)">
+ <summary>
+ まとめ指示
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF040BLC.SetGroupCancellData(System.Data.DataSet)">
+ <summary>
+ まとめ解除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF040BLC.SaveUnchinItemData(System.Data.DataSet)">
+ <summary>
+ 一括変更(通常)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF040BLC.SaveUnchinSeiqtoItemData(System.Data.DataSet)">
+ <summary>
+ 一括変更(請求先)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF040BLC.SaveUnchinTariffData(System.Data.DataSet)">
+ <summary>
+ 一括変更(タリフ)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF040BLC.UpdUnchinData(System.Data.DataSet)">
+ <summary>
+ 運賃更新処理(再計算時)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF040BLC.UpdateData(System.Data.DataSet,System.Boolean,System.Boolean)">
+ <summary>
+ 更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="updateFlg">運送(大)の更新フラグ　True：更新する</param>
+ <param name="chkErrFlg">チェックフラグ　True:通常のエラーチェック　False:一括更新のエラーチェック</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF040BLC.UpdateDataAction(System.Data.DataSet,System.String,System.Boolean)">
+ <summary>
+ 更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <param name="chkErrFlg">チェックフラグ　True:通常のエラーチェック　False:一括更新のエラーチェック</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF040BLC.SetComSaveDataAction(System.Data.DataSet,System.Boolean,System.String,System.Boolean,System.String)">
+ <summary>
+ 更新共通
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="chkFlg">最終請求日のチェックフラグ　True：チェックを行う</param>
+ <param name="msg">置換文字</param>
+ <param name="chkErrFlg">チェックフラグ　True:通常のエラーチェック　False:一括更新のエラーチェック</param>
+ <param name="seiqtoCd">請求先コード(一括変更_請求先のみ使用)　初期値 = ''</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF040BLC.ChkSeiqDate(System.Data.DataSet,System.Data.DataRow,System.String,System.String,System.Boolean)">
+ <summary>
+ 最終請求日のチェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="dr">DataRow</param>
+ <param name="seiqtoCd">請求先コード(一括更新_請求先のみ使用)</param>
+ <param name="msg">置換文字</param>
+ <param name="chkErrFlg">チェックフラグ　True:通常のエラーチェック　False:一括更新のエラーチェック</param>
+ <returns>最終請求日</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF040BLC.ChkSeiqDate(System.Data.DataSet,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Boolean)">
+ <summary>
+ 最終請求日のチェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="inDate">納入日</param>
+ <param name="outDate">出荷日</param>
+ <param name="calcKbn">締め基準</param>
+ <param name="chkDate">請求日</param>
+ <param name="moto">元データ区分</param>
+ <param name="msg">置換文字</param>
+ <param name="chkErrFlg">チェックフラグ　True:通常のエラーチェック　False:一括更新のエラーチェック</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF040BLC.ChkDate(System.Data.DataSet,System.String,System.String,System.String,System.String,System.Boolean)">
+ <summary>
+ 日付チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="value1">比較対象日</param>
+ <param name="value2">最終締め日</param>
+ <param name="msg">置換文字</param>
+ <param name="rowNo">スプレッドの行番号</param>
+ <param name="chkErrFlg">チェックフラグ　True:通常のエラーチェック　False:一括更新のエラーチェック</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF040BLC.ServerChkJudge(System.Data.DataSet,System.String)">
+ <summary>
+ DACでメッセージが設定されているかを判定
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF040BLC.ServerChkJudgeStore(System.Data.DataSet,System.String)">
+ <summary>
+ DACでメッセージが設定されているかを判定
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF040BLC.DacAccess(System.Data.DataSet,System.String)">
+ <summary>
+ DACクラスアクセス
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF040BLC.DeleteNotGroupData(System.Data.DataSet)">
+ <summary>
+ 不要レコードの削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF040BLC.GetUnsoDate(System.Data.DataRow)">
+ <summary>
+ まとめ条件の日付を取得
+ </summary>
+ <param name="dr">DataRow</param>
+ <returns>運送日</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF040BLC.GetTripNo(System.Data.DataRow,System.String)">
+ <summary>
+ 運行番号を取得
+ </summary>
+ <param name="dr">DataRow</param>
+ <param name="tyukeiFlg">中継配送フラグ</param>
+ <returns>運行番号</returns>
+ <remarks>
+ 1行目：運行番号 or 運行番号(集荷)
+ 2行目：Nothing  or 運行番号(中継)
+ 3行目：Nothing  or 運行番号(配荷)
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF040BLC.IsValueChk(System.String[])">
+ <summary>
+ 値があるかを判定
+ </summary>
+ <param name="value">値</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF040BLC.ChkTripNo(System.String[],System.String,System.String[],System.String)">
+ <summary>
+ 運行番号の判定
+ </summary>
+ <param name="value1">値1</param>
+ <param name="tyukeiFlg1">中継配送フラグ1</param>
+ <param name="value2">値2</param>
+ <param name="tyukeiFlg2">中継配送フラグ2</param>
+ <returns>値が同じ場合、True　全て違う場合、False</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF040BLC.SetSelectErrMes(System.Int32)">
+ <summary>
+ 検索処理のエラーメッセージを設定
+ </summary>
+ <param name="count">件数</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF040BLC.SetConnectionRecordErr(System.Data.DataSet,System.String)">
+ <summary>
+ 紐付いているレコードをエラー帳票に設定
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="rowNo">[画面] スプレッドのエラー行番号</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMF050BLC">
+ <summary>
+ LMF050BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF050BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF050BLC.G_HED">
+ <summary>
+ データセットテーブル名(G_KAGAMI_HEDテーブル)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF050BLC.TABLE_NM_OUT">
+ <summary>
+ データセットテーブル名(OUTテーブル)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF050BLC.TABLE_NM_G_HED_CHK">
+ <summary>
+ データセットテーブル名(G_HED_CHKテーブル)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF050BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ 運賃マスタ更新対象データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF050BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 運賃マスタ更新対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF050BLC.UpdateUnchinM(System.Data.DataSet)">
+ <summary>
+ 運賃マスタ更新(保存)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF050BLC.UpdateUnchinKakuteiM(System.Data.DataSet)">
+ <summary>
+ 運賃マスタ更新(確定)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF050BLC.UpdateUnchinKakuteiKijoM(System.Data.DataSet)">
+ <summary>
+ 運賃マスタ更新(確定解除)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF050BLC.CheckHaitaUnchinM(System.Data.DataSet)">
+ <summary>
+ 運賃テーブル排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF050BLC.HedChcik(System.Data.DataSet)">
+ <summary>
+ 請求鑑ヘッダチェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF050BLC.KagamiHantei(System.Data.DataSet,System.String,System.String,System.String,System.String)">
+ <summary>
+ 経理取込判定処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="kijun">判定用の基準</param>
+ <param name="hantei">運賃締め基準</param>
+ <param name="arr">納入日</param>
+ <param name="shuka">出荷日</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF050BLC.SetHedChkData(System.Data.DataSet,System.String)">
+ <summary>
+ 新黒存在チェック用データセット作成
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMF060BLC">
+ <summary>
+ LMF200BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF060BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF060BLC.TABLE_NM_IN">
+ <summary>
+ データセットテーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF060BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 運送Lテーブルデータ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMF070BLC">
+ <summary>
+ LMF070BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF070BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF070BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 運賃マスタ更新対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMF080BLC">
+ <summary>
+ LMF080BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF080BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF080BLC.ACTION_ID_UPDATE_UNSO">
+ <summary>
+ 運送の更新処理アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF080BLC.ACTION_ID_UPDATE_UNCHIN">
+ <summary>
+ 運賃の更新処理アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF080BLC.ACTION_ID_DATA">
+ <summary>
+ 運賃検索対象データ検索アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF080BLC.ANBUN_DATA">
+ <summary>
+ 按分対象データ検索アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF080BLC.TABLE_NM_IN">
+ <summary>
+ データセットテーブル名(INテーブル)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF080BLC.TABLE_NM_OUT">
+ <summary>
+ データセットテーブル名(OUTテーブル)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF080BLC.TABLE_NM_UNCHIN">
+ <summary>
+ データセットテーブル名(UNCHINテーブル)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF080BLC.TABLE_NM_G_HED">
+ <summary>
+ データセットテーブル名(G_HEDテーブル)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF080BLC.TABLE_NM_OUT_ANBUN">
+ <summary>
+ OUT_ANBUNテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF080BLC.MOTO_DATA_NYUKA">
+ <summary>
+ 元データ区分(入荷)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF080BLC.CALC_SHUKKA">
+ <summary>
+ 運賃計算締め基準(出荷日)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF080BLC.CALC_NYUKA">
+ <summary>
+ 運賃計算締め基準(納入日)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF080BLC.TORIKOMI">
+ <summary>
+ 経理取込
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF080BLC.FIX_CANCELL">
+ <summary>
+ 確定解除
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF080BLC.GROUP">
+ <summary>
+ まとめ指示
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF080BLC.GROUP_CANCELL">
+ <summary>
+ まとめ解除
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF080BLC.IKKATU">
+ <summary>
+ 一括変更
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF080BLC.MATOME_CUSTTRIP">
+ <summary>
+ まとめ条件(荷主 , 運行番号)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF080BLC.MATOME_DEST">
+ <summary>
+ まとめ条件(届先コード , 運行番号)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF080BLC.MATOME_DESTJIS">
+ <summary>
+ まとめ条件(届先JIS , 運行番号)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF080BLC.MATOME_DESTAD">
+ <summary>
+ まとめ条件(届先住所 , 運行番号)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF080BLC.FLG_ON">
+ <summary>
+ フラグ(ON)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF080BLC.GUIDANCE_KBN">
+ <summary>
+ ガイダンス区分(00)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF080BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ 運賃検索対象データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF080BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 運賃検索対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF080BLC.SelectListGroupData(System.Data.DataSet)">
+ <summary>
+ 運賃検索対象データ検索(まとめ)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF080BLC.SelectGheaderData(System.Data.DataSet)">
+ <summary>
+ 最終請求日を取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>請求日</returns>
+ <remarks>取得できない場合は"00000000"を返却</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF080BLC.SelectInitUnchinData(System.Data.DataSet)">
+ <summary>
+ 運賃情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF080BLC.SelectUnchinData(System.Data.DataSet)">
+ <summary>
+ 運賃情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF080BLC.SetFixData(System.Data.DataSet)">
+ <summary>
+ 確定処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF080BLC.SetFixCancellData(System.Data.DataSet)">
+ <summary>
+ 確定解除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF080BLC.SetUnchinData(System.Data.DataSet,System.Boolean)">
+ <summary>
+ 按分処理☆☆確定時の按分処理は必要ないということなので、実際は按分してません
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF080BLC.SetCancelUnchinData(System.Data.DataSet)">
+ <summary>
+ 確定キャンセル処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF080BLC.SetGroupData(System.Data.DataSet)">
+ <summary>
+ まとめ指示
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF080BLC.SetGroupCancellData(System.Data.DataSet)">
+ <summary>
+ まとめ解除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF080BLC.SaveUnchinItemData(System.Data.DataSet)">
+ <summary>
+ 一括変更(通常)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF080BLC.SaveUnchinSeiqtoItemData(System.Data.DataSet)">
+ <summary>
+ 一括変更(支払先)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF080BLC.SaveUnchinTariffData(System.Data.DataSet)">
+ <summary>
+ 一括変更(タリフ)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF080BLC.UpdUnchinData(System.Data.DataSet)">
+ <summary>
+ 運賃更新処理(再計算時)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF080BLC.UpdateData(System.Data.DataSet,System.Boolean,System.Boolean)">
+ <summary>
+ 更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="updateFlg">運送(大)の更新フラグ　True：更新する</param>
+ <param name="chkErrFlg">チェックフラグ　True:通常のエラーチェック　False:一括更新のエラーチェック</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF080BLC.UpdateDataAction(System.Data.DataSet,System.String,System.Boolean)">
+ <summary>
+ 更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <param name="chkErrFlg">チェックフラグ　True:通常のエラーチェック　False:一括更新のエラーチェック</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF080BLC.SetComSaveDataAction(System.Data.DataSet,System.Boolean,System.String,System.Boolean,System.String)">
+ <summary>
+ 更新共通
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="chkFlg">最終請求日のチェックフラグ　True：チェックを行う</param>
+ <param name="msg">置換文字</param>
+ <param name="chkErrFlg">チェックフラグ　True:通常のエラーチェック　False:一括更新のエラーチェック</param>
+ <param name="seiqtoCd">請求先コード(一括変更_請求先のみ使用)　初期値 = ''</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF080BLC.ServerChkJudge(System.Data.DataSet,System.String)">
+ <summary>
+ DACでメッセージが設定されているかを判定
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF080BLC.ServerChkJudgeStore(System.Data.DataSet,System.String)">
+ <summary>
+ DACでメッセージが設定されているかを判定
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF080BLC.DacAccess(System.Data.DataSet,System.String)">
+ <summary>
+ DACクラスアクセス
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF080BLC.DeleteNotGroupData(System.Data.DataSet)">
+ <summary>
+ 不要レコードの削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF080BLC.GetUnsoDate(System.Data.DataRow)">
+ <summary>
+ まとめ条件の日付を取得
+ </summary>
+ <param name="dr">DataRow</param>
+ <returns>運送日</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF080BLC.GetTripNo(System.Data.DataRow)">
+ <summary>
+ 運行番号を取得
+ </summary>
+ <param name="dr">DataRow</param>
+ <returns>運行番号</returns>
+ <remarks>
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF080BLC.IsValueChk(System.String[])">
+ <summary>
+ 値があるかを判定
+ </summary>
+ <param name="value">値</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF080BLC.ChkTripNo(System.String[],System.String[])">
+ <summary>
+ 運行番号の判定
+ </summary>
+ <param name="value1">値1</param>
+ <param name="value2">値2</param>
+ <returns>値が同じ場合、True　全て違う場合、False</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF080BLC.SetSelectErrMes(System.Int32)">
+ <summary>
+ 検索処理のエラーメッセージを設定
+ </summary>
+ <param name="count">件数</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF080BLC.SetConnectionRecordErr(System.Data.DataSet,System.String)">
+ <summary>
+ 紐付いているレコードをエラー帳票に設定
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="rowNo">[画面] スプレッドのエラー行番号</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF080BLC.ToHalfAdjust(System.Double,System.Int32)">
+ <summary>
+ 四捨五入
+ </summary>
+ <param name="dValue">Double</param>
+ <param name="iDigits">Integer</param>
+ <returns>計算結果</returns>
+ <remarks>四捨五入を行う。</remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMF090BLC">
+ <summary>
+ LMF090BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF090BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF090BLC.G_HED">
+ <summary>
+ データセットテーブル名(G_KAGAMI_HEDテーブル)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF090BLC.TABLE_NM_OUT">
+ <summary>
+ データセットテーブル名(OUTテーブル)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF090BLC.TABLE_NM_OUT_ANBUN">
+ <summary>
+ OUT_ANBUNテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF090BLC.TABLE_NM_IN_SHIHARAI">
+ <summary>
+ IN_SHIHARAIテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF090BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ 運賃マスタ更新対象データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF090BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 運賃マスタ更新対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF090BLC.UpdateUnchinM(System.Data.DataSet)">
+ <summary>
+ 運賃マスタ更新(保存)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF090BLC.UpdateUnchinKakuteiM(System.Data.DataSet)">
+ <summary>
+ 運賃マスタ更新(確定)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF090BLC.UpdateUnchinKakuteiKijoM(System.Data.DataSet)">
+ <summary>
+ 運賃マスタ更新(確定解除)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF090BLC.SetUnchinData(System.Data.DataSet)">
+ <summary>
+ 按分処理☆☆確定時の按分処理は必要ないということなので、実際は按分してません
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF090BLC.SetCancelUnchinData(System.Data.DataSet)">
+ <summary>
+ 確定キャンセル処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF090BLC.CheckHaitaUnchinM(System.Data.DataSet)">
+ <summary>
+ 運賃テーブル排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF090BLC.HedChcik(System.Data.DataSet)">
+ <summary>
+ 請求鑑ヘッダチェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF090BLC.KagamiHantei(System.Data.DataSet,System.String,System.String,System.String,System.String)">
+ <summary>
+ 経理取込判定処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="kijun">判定用の基準</param>
+ <param name="hantei">運賃締め基準</param>
+ <param name="arr">納入日</param>
+ <param name="shuka">出荷日</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF090BLC.ToHalfAdjust(System.Double,System.Int32)">
+ <summary>
+ 四捨五入
+ </summary>
+ <param name="dValue">Double</param>
+ <param name="iDigits">Integer</param>
+ <returns>計算結果</returns>
+ <remarks>四捨五入を行う。</remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMF100BLC">
+ <summary>
+ LMF100BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF100BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF100BLC.ComboData(System.Data.DataSet)">
+ <summary>
+ 都道府県名データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMF200BLC">
+ <summary>
+ LMF200BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF200BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF200BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ 運送Lテーブルデータ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF200BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 運送Lテーブルデータ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMF210BLC">
+ <summary>
+ LMF210BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF210BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF210BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ 運賃マスタ更新対象データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF210BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 運賃マスタ更新対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMF510BLC">
+ <summary>
+ LMF510BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF510BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF510BLC.DoPrint(System.Data.DataSet)">
+ <summary>
+ 印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF510BLC.EditPrintDataSet(System.String,System.Data.DataSet)">
+ <summary>
+ データセットの編集を行う。
+ </summary>
+ <param name="prtId"></param>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF510BLC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+　出力対象帳票パターン取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF510BLC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 印刷データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMF520BLC">
+ <summary>
+ LMF520BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF520BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF520BLC.DoPrint(System.Data.DataSet)">
+ <summary>
+ 印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF520BLC.EditPrintDataSet(System.String,System.Data.DataSet)">
+ <summary>
+ データセットの編集を行う。
+ </summary>
+ <param name="prtId"></param>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF520BLC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+　出力対象帳票パターン取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF520BLC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 印刷データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMF530BLC">
+ <summary>
+ LMF530BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF530BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF530BLC.DoPrint(System.Data.DataSet)">
+ <summary>
+ 印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF530BLC.EditPrintDataSet(System.String,System.Data.DataSet)">
+ <summary>
+ データセットの編集を行う。
+ </summary>
+ <param name="prtId"></param>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF530BLC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+　出力対象帳票パターン取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF530BLC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 印刷データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMF534BLC">
+ <summary>
+ LMF534BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF534BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF534BLC.DoPrint(System.Data.DataSet)">
+ <summary>
+ 印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF534BLC.EditPrintDataSet(System.String,System.Data.DataSet)">
+ <summary>
+ データセットの編集を行う。
+ </summary>
+ <param name="prtId"></param>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF534BLC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+　出力対象帳票パターン取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF534BLC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 印刷データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMF540BLC">
+ <summary>
+ LMF540BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF540BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF540BLC.DoPrint(System.Data.DataSet)">
+ <summary>
+ 印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF540BLC.DoPrintJikou(System.Data.DataSet)">
+ <summary>
+ 印刷実行
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF540BLC.EditPrintDataSet(System.String,System.Data.DataSet)">
+ <summary>
+ データセットの編集を行う。
+ </summary>
+ <param name="prtId"></param>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF540BLC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+　出力対象帳票パターン取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF540BLC.getKyoriRow(System.Data.DataSet)">
+ <summary>
+ 距離の特定
+ </summary>
+ <param name="ds">起動元機能からのパラメータ</param>
+ <returns>True：正常 ／ False：異常（距離列取得エラー）</returns>
+ <remarks>[inDataTable]適用距離 / [運賃タリフマスタ]距離行を元に、距離対象列を取得</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF540BLC.getJuryouRow(System.Data.DataSet)">
+ <summary>
+ 重量の特定
+ </summary>
+ <param name="ds">起動元機能からのパラメータ</param>
+ <returns>True：正常 ／ False：異常（距離列取得エラー）</returns>
+ <remarks>[inDataTable]適用距離 / [運賃タリフマスタ]距離行を元に、距離対象列を取得</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF540BLC.GetWarimasi(System.Data.DataSet)">
+ <summary>
+ 割増の区分を取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF540BLC.DateOutSet(System.Data.DataSet)">
+ <summary>
+ OUTの情報につめる
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMF550BLC">
+ <summary>
+ LMF550BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF550BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF550BLC.DoPrint(System.Data.DataSet)">
+ <summary>
+ 印刷処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF550BLC.EditPrintDataSet(System.String,System.Data.DataSet)">
+ <summary>
+ データセットの編集を行う。
+ </summary>
+ <param name="rptId"></param>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF550BLC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+　出力対象帳票パターン取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF550BLC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 印刷データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF550BLC.CSV_OUT(System.Data.DataSet,System.Data.DataRow,System.Data.DataSet,System.Int32)">
+ <summary>
+ 帳票CSV出力
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMF560BLC">
+ <summary>
+ LMF560BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF560BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF560BLC.DoPrint(System.Data.DataSet)">
+ <summary>
+ 印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF560BLC.EditPrintDataSet(System.String,System.Data.DataSet)">
+ <summary>
+ データセットの編集を行う。
+ </summary>
+ <param name="prtId"></param>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF560BLC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+　出力対象帳票パターン取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF560BLC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 印刷データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMF570BLC">
+ <summary>
+ LMF570BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF570BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF570BLC.DoPrint(System.Data.DataSet)">
+ <summary>
+ 印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF570BLC.EditPrintDataSet(System.String,System.Data.DataSet)">
+ <summary>
+ データセットの編集を行う。
+ </summary>
+ <param name="prtId"></param>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF570BLC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+　出力対象帳票パターン取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF570BLC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 印刷データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMF580BLC">
+ <summary>
+ LMF580BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF580BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF580BLC.DoPrint(System.Data.DataSet)">
+ <summary>
+ 印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF580BLC.EditPrintDataSet(System.String,System.Data.DataSet)">
+ <summary>
+ データセットの編集を行う。
+ </summary>
+ <param name="prtId"></param>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF580BLC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+　出力対象帳票パターン取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF580BLC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 印刷データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMF581BLC">
+ <summary>
+ LMF581BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF581BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF581BLC.DoPrint(System.Data.DataSet)">
+ <summary>
+ 印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF581BLC.EditPrintDataSet(System.String,System.Data.DataSet)">
+ <summary>
+ データセットの編集を行う。
+ </summary>
+ <param name="prtId"></param>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF581BLC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+　出力対象帳票パターン取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF581BLC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 印刷データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMF590BLC">
+ <summary>
+ LMF590BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF590BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF590BLC.DoPrint(System.Data.DataSet)">
+ <summary>
+ 印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF590BLC.EditPrintDataSet(System.String,System.Data.DataSet)">
+ <summary>
+ データセットの編集を行う。
+ </summary>
+ <param name="prtId"></param>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF590BLC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+　出力対象帳票パターン取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF590BLC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 印刷データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMF600BLC">
+ <summary>
+ LMF600BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF600BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF600BLC.DoPrint(System.Data.DataSet)">
+ <summary>
+ 印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF600BLC.EditPrintDataSet(System.String,System.Data.DataSet)">
+ <summary>
+ データセットの編集を行う。
+ </summary>
+ <param name="prtId"></param>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF600BLC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+　出力対象帳票パターン取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF600BLC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 印刷データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMF610BLC">
+ <summary>
+ LMF610BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF610BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF610BLC.DoPrint(System.Data.DataSet)">
+ <summary>
+ 印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF610BLC.EditPrintDataSet(System.String,System.Data.DataSet)">
+ <summary>
+ データセットの編集を行う。
+ </summary>
+ <param name="prtId"></param>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF610BLC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+　出力対象帳票パターン取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF610BLC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 印刷データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMF620BLC">
+ <summary>
+ LMF620BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF620BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF620BLC.DoPrint(System.Data.DataSet)">
+ <summary>
+ 印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF620BLC.EditPrintDataSet(System.String,System.Data.DataSet)">
+ <summary>
+ データセットの編集を行う。
+ </summary>
+ <param name="prtId"></param>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF620BLC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+　出力対象帳票パターン取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF620BLC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 印刷データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMF630BLC">
+ <summary>
+ LMF630BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF630BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF630BLC.DoPrint(System.Data.DataSet)">
+ <summary>
+ 印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF630BLC.EditPrintDataSet(System.String,System.Data.DataSet)">
+ <summary>
+ データセットの編集を行う。
+ </summary>
+ <param name="prtId"></param>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF630BLC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+ 出力対象帳票パターン取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF630BLC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 印刷データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMF650BLC">
+ <summary>
+ LMF650BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF650BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF650BLC.DoPrint(System.Data.DataSet)">
+ <summary>
+ 印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF650BLC.EditPrintDataSet(System.String,System.Data.DataSet)">
+ <summary>
+ データセットの編集を行う。
+ </summary>
+ <param name="prtId"></param>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF650BLC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+　出力対象帳票パターン取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF650BLC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 印刷データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMF670BLC">
+ <summary>
+ LMF670BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF670BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF670BLC.DoPrint(System.Data.DataSet)">
+ <summary>
+ 印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF670BLC.EditPrintDataSet(System.String,System.Data.DataSet)">
+ <summary>
+ データセットの編集を行う。
+ </summary>
+ <param name="prtId"></param>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF670BLC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+　出力対象帳票パターン取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF670BLC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 印刷データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMF680BLC">
+ <summary>
+ LMF680BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF680BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF680BLC.DoPrint(System.Data.DataSet)">
+ <summary>
+ 印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF680BLC.EditPrintDataSet(System.String,System.Data.DataSet)">
+ <summary>
+ データセットの編集を行う。
+ </summary>
+ <param name="prtId"></param>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF680BLC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+ 出力対象帳票パターン取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF680BLC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 印刷データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMF690BLC">
+ <summary>
+ LMF690BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF690BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF690BLC.DoPrint(System.Data.DataSet)">
+ <summary>
+ 印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF690BLC.EditPrintDataSet(System.String,System.Data.DataSet)">
+ <summary>
+ データセットの編集を行う。
+ </summary>
+ <param name="prtId"></param>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF690BLC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+ 出力対象帳票パターン取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF690BLC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 印刷データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF690BLC.DelUnsoHokenData(System.Data.DataSet)">
+ <summary>
+ 削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF690BLC.InsUnsoHokenData(System.Data.DataSet)">
+ <summary>
+ 削除追加処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF690BLC.DelInsData(System.Data.DataSet)">
+ <summary>
+ 新規追加登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF690BLC.UpdatUnsoHoken(System.Data.DataSet)">
+ <summary>
+ 削除登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>SQL_FROM_OUTKA
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF690BLC.DeletelUnsoHokenData(System.Data.DataSet)">
+ <summary>
+ 運送保険レコードの更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF690BLC.InsertUnsoHokenData(System.Data.DataSet)">
+ <summary>
+ 運送保険レコードの追加処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF690BLC.ServerChkJudge(System.Data.DataSet,System.String)">
+ <summary>
+ DACでメッセージが設定されているかを判定
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF690BLC.ServerChkJudge690(System.Data.DataSet,System.String)">
+ <summary>
+ DACでメッセージが設定されているかを判定
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF690BLC.DacAccess(System.Data.DataSet,System.String)">
+ <summary>
+ DACクラスアクセス
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMF700BLC">
+ <summary>
+ LMF700BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF700BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF700BLC.DoPrint(System.Data.DataSet)">
+ <summary>
+ 印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF700BLC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+ 出力対象帳票パターン取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF700BLC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 印刷データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMF710BLC">
+ <summary>
+ LMF710BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF710BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF710BLC.DoPrint(System.Data.DataSet)">
+ <summary>
+ 印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF710BLC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+ 出力対象帳票パターン取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF710BLC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 印刷データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMF800BLC">
+ <summary>
+ LMF800BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.DacAccess(System.Data.DataSet,System.String)">
+ <summary>
+ DACクラスアクセス
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.SetMsgInfo(System.String,System.String,System.String)">
+ <summary>
+ メッセージセット
+ </summary>
+ <param name="status">ｽﾃｰﾀｽ</param>
+ <param name="id">ﾒｯｾｰｼﾞID</param>
+ <param name="prm">ﾒｯｾｰｼﾞﾊﾟﾗﾒｰﾀ</param>
+ <returns>False：パラーメータエラー</returns>
+ <remarks>メッセージをプライベート変数に格納する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.SetResultMsg(System.Data.DataTable)">
+ <summary>
+ 返却用DataTableにﾒｯｾｰｼﾞを設定
+ </summary>
+ <param name="dt">返却用DataTable</param>
+ <remarks>起動元機能からのパラメータ内容を確認する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.CreateUnchinData(System.Data.DataSet)">
+ <summary>
+ 運賃データ生成メイン
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.SetNomal(System.Data.DataSet)">
+ <summary>
+ 一般運賃生成
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True：正常 ／ False：異常（データ生成失敗）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.SetYoko(System.Data.DataSet)">
+ <summary>
+ 横持ち運賃生成
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True：正常 ／ False：異常（データ生成失敗）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.SetNyukaTyaku(System.Data.DataSet)">
+ <summary>
+ 入荷着払い運賃生成
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True：正常 ／ False：異常（データ生成失敗）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.InitItemUnchinCreate(System.Data.DataSet)">
+ <summary>
+ 初期化
+ </summary>
+ <remarks>各種属性情報を初期化する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.GetUnsoDate(System.Data.DataRow,System.Data.DataRow)">
+ <summary>
+ "適用日" 取得
+ </summary>
+ <param name="unsoLDr">DataRow</param>
+ <param name="outDr">DataRow</param>
+ <returns>適用日</returns>
+ <remarks>運賃計算パラメータ項目「適用日」を求める。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.SetCreateRecCount(System.Data.DataSet,System.String)">
+ <summary>
+ 一般運賃データ生成単位取得
+ </summary>
+ <param name="ds">DataRow</param>
+ <param name="refKbn">String</param>
+ <remarks>一般運賃の生成単位（レコード数）を設定する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.SetYokoCreateCount(System.Data.DataSet)">
+ <summary>
+ 横持ち運賃データ生成単位取得
+ </summary>
+ <param name="ds">DataRow</param>
+ <remarks>横持ち運賃の生成単位（レコード数）を設定する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.ToHalfAdjust(System.Double,System.Int32)">
+ <summary>
+ 四捨五入
+ </summary>
+ <param name="dValue">Double</param>
+ <param name="iDigits">Integer</param>
+ <returns>計算結果</returns>
+ <remarks>四捨五入を行う。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.ToRoundUp(System.Double,System.Int32)">
+ <summary>
+ 切り上げ
+ </summary>
+ <param name="dValue">Double</param>
+ <param name="iDigits">Integer</param>
+ <returns>計算結果</returns>
+ <remarks>切り上げを行う。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.DivideUnchinSpecificCust(System.Data.DataSet)">
+ <summary>
+ 請求先運賃配分（特定荷主処理）
+ </summary>
+ <param name="ds">起動元機能からのパラメータ(unsoL)</param>
+ <remarks>請求先単位に運賃を配分する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.SetYokoMinUnchin(System.Data.DataSet)">
+ <summary>
+ 最低保証料設定処理 （横持ち）
+ </summary>
+ <param name="ds">起動元機能からのパラメータ(unsoL)</param>
+ <remarks>横持ち時、最低保証料が設定されている場合は運賃に適用する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.GetUnsoHokenryo(System.Data.DataSet)">
+ <summary>
+ 運送保険料取得
+ </summary>
+ <param name="ds">起動元機能からのパラメータ</param>
+ <returns>True：特定荷主 ／ False：特定荷主以外</returns>
+ <remarks>対象運送の荷主を元に、「運賃レコード分割用荷主」であるか否かを判断する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.ClearParamToInput(System.Data.DataSet)">
+ <summary>
+ パラメタ初期化処理(開始時)
+ </summary>
+ <param name="ds">結果データセット</param>
+ <remarks>データセットを初期化する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.ClearParamToOutput(System.Data.DataSet)">
+ <summary>
+ パラメタ初期化処理(終了時)
+ </summary>
+ <param name="ds">結果データセット</param>
+ <remarks>データセットを初期化する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.SetKyoriForKenType(System.Data.DataSet)">
+ <summary>
+ タリフ－県タイプ適用判断
+ </summary>
+ <param name="ds">結果データセット</param>
+ <remarks>適用タリフのテーブルタイプが県属性の場合、JISの先頭２桁を適用</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.GetPkgNb(System.Data.DataRow)">
+ <summary>
+ (貨物毎)商品個数算出
+ </summary>
+ <param name="unsoMDr">運送Ｍ DataRow</param>
+ <return>計算結果商品個数</return>
+ <remark>商品単位の個数を算出</remark>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.GetPkgWt(System.Data.DataSet,System.Int32)">
+ <summary>
+ (貨物毎)商品重量算出
+ </summary>
+ <param name="ds">データセット</param>
+ <param name="index">処理対象Mの行番号</param>
+ <return>計算結果商品重量</return>
+ <remark>商品単位の重量を算出</remark>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.GetPkgWt_OLD(System.Data.DataRow)">
+ <summary>
+ (貨物毎)商品重量算出
+ </summary>
+ <param name="unsoMDr">運送Ｍ DataRow</param>
+ <return>計算結果商品重量</return>
+ <remark>商品単位の重量を算出</remark>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.SetKyoriValue(System.Data.DataRow,System.Data.DataRow)">
+ <summary>
+ （一般運賃計算用）適用距離判断
+ </summary>
+ <param name="outDr">OutDataRow</param>
+ <param name="unchinDr">UnchinDataRow</param>
+ <return>適用距離</return>
+ <remark>一般運賃計算用パラメータ"適用距離"を判断する</remark>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.CommonMethod(System.Data.DataSet)">
+ <summary>
+ 共通処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True：正常 ／ False：異常（データ取得不備）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.GetUnsoLInfo(System.Data.DataSet)">
+ <summary>
+ 運送Ｌ情報取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True：正常 ／ False：異常（データ取得不備）</returns>
+ <remarks>In情報として利用するため最新情報を取得</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.GetUnsoMInfo(System.Data.DataSet,System.String)">
+ <summary>
+ 運送Ｍ情報取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="kbn">String</param>
+ <returns>True：正常 ／ False：異常（データ取得不備）</returns>
+ <remarks>In情報として利用するため最新情報を取得</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.GetUnchinAttribute(System.Data.DataSet)">
+ <summary>
+ 運賃構成情報取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True：正常 ／ False：異常（データ取得不備）</returns>
+ <remarks>運賃レコード構成に必要な情報を収集する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.GetTableTypeFromTariff(System.Data.DataSet)">
+ <summary>
+ テーブルタイプ 取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True：正常 ／ False：異常（データ取得不備）</returns>
+ <remarks>最新タリフより適用 "テーブルタイプ" を取得する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.GetYokoTariffHd(System.Data.DataSet)">
+ <summary>
+ 横持ちタリフヘッダ 情報取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True：正常 ／ False：異常（データ取得不備）</returns>
+ <remarks>横持ちタリフヘッダ情報を取得する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.GetRevUnitUnsoM(System.Data.DataSet)">
+ <summary>
+ 運送Ｍ情報取得（請求先単位）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True：正常 ／ False：異常（データ取得不備）</returns>
+ <remarks>運送Ｍ情報を請求先単位に集約する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.ChkInParam(System.Data.DataSet)">
+ <summary>
+ 入力パラメータ整合チェック（メイン）
+ </summary>
+ <param name="ds">起動元機能からのパラメータ</param>
+ <returns>True：正常 ／ False：異常（パラーメータエラー）</returns>
+ <remarks>起動元機能からのパラメータ内容を確認する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.ChkInDataOnClient(System.Data.DataTable)">
+ <summary>
+ 入力パラメータ整合チェック（属性）
+ </summary>
+ <param name="unsoLDt">起動元機能からのパラメータ(unsoL)</param>
+ <returns>True：正常 ／ False：異常（パラーメータエラー）</returns>
+ <remarks>起動元機能からのパラメータ内容を確認する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.ChkInDataOnServer(System.Data.DataSet)">
+ <summary>
+ 入力パラメータ整合チェック（Databaseチェック）
+ </summary>
+ <param name="ds">起動元機能からのパラメータ</param>
+ <returns>True：正常 ／ False：異常（パラーメータエラー）</returns>
+ <remarks>起動元機能からのパラメータ内容を確認する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.ChkSpecificCust(System.Data.DataSet)">
+ <summary>
+ 特定荷主判断チェック
+ </summary>
+ <param name="ds">起動元機能からのパラメータ</param>
+ <returns>True：特定荷主 ／ False：特定荷主以外</returns>
+ <remarks>対象運送の荷主を元に、「運賃レコード分割用荷主」であるか否かを判断する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.SetInitForm(System.Data.DataSet)">
+ <summary>
+ [レコード構成] 初期値
+ </summary>
+ <param name="ds">起動元機能からのパラメータ</param>
+ <remarks>初期値として運賃レコードを構成する（一定の処理まで確認後、Delete-Insertされる）</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.SetNomalUnchinForm(System.Data.DataSet,System.Int32,System.String)">
+ <summary>
+ [レコード構成] 一般用
+ </summary>
+ <param name="ds">起動元機能からのパラメータ</param>
+ <param name="index">運送Ｍの参照インデックス</param>
+ <param name="createLv">運賃生成レベル</param>
+ <remarks>「運賃属性」以外の運賃レコードを構成する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.SetYokoUnchinForm(System.Data.DataSet,System.Int32)">
+ <summary>
+ [レコード構成] 横持ち用
+ </summary>
+ <param name="ds">起動元機能からのパラメータ</param>
+ <param name="index">明細行</param>
+ <remarks>「運賃属性」以外の運賃レコードを構成する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.SetUnchinInfo(System.Data.DataSet,System.Int32)">
+ <summary>
+ [レコード構成] 一般/横持ち共用 (運賃設定)
+ </summary>
+ <param name="ds">起動元機能からのパラメータ</param>
+ <param name="index">明細行</param>
+ <remarks>「運賃属性」を設定する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.SetNyukaTyakuUnchinForm(System.Data.DataSet)">
+ <summary>
+ [レコード構成] 入荷着払い用
+ </summary>
+ <param name="ds">起動元機能からのパラメータ</param>
+ <remarks>「入荷着払い」時の運賃レコードを構成する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.SetSpecificCustForm(System.Data.DataSet)">
+ <summary>
+ [レコード構成] 特定荷主（請求先毎）
+ </summary>
+ <param name="ds">起動元機能からのパラメータ</param>
+ <remarks>「特定荷主」時における運賃レコードを構成する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.SetSpecificCustParam(System.Data.DataRow,System.Data.DataRow,System.Data.DataTable)">
+ <summary>
+ [レコード構成] 特定荷主（請求先毎）パラメータセット
+ </summary>
+ <param name="unchinDr">既生成の運賃レコード</param>
+ <param name="revUnitDr">請求先単位の運賃情報基礎値</param>
+ <param name="resultDt">結果用運賃データテーブル</param>
+ <remarks>請求先単位の運賃レコードを構成し返却する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.GetUnchinRec(System.Data.DataSet,System.Int32)">
+ <summary>
+ 運賃取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="index">運賃明細対象行</param>
+ <remarks>運賃計算プログラムへのパラメータを設定する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.GetYokoUnchin(System.Data.DataSet,System.Int32)">
+ <summary>
+ 横持ち運賃取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks>運賃計算プログラムへのパラメータを設定する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.CalcUnchin(System.Data.DataSet)">
+ <summary>
+ 運賃計算メイン
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.FormUnchinRec(System.Data.DataSet)">
+ <summary>
+ 一般運賃計算メイン
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.GetUnchin(System.Data.DataSet,System.Int32)">
+ <summary>
+ 一般運賃計算
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True：運賃計算継続 ／ False：運賃計算終了</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.FormYokoUnchinRec(System.Data.DataSet)">
+ <summary>
+ 横持ち運賃計算メイン
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True：正常 ／ False：異常（パラーメータエラー）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.IsDataExists(System.Data.DataSet,System.String,System.String,System.String)">
+ <summary>
+ 対象マスタ存在チェック（一般）
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="table">DataTable名</param>
+ <param name="setErrorType">エラー判定用</param>
+ <param name="judgeKbn">結果ステータス判定用</param>
+ <returns>true:正常 false:エラー</returns>
+ <remarks>DB参照したレコードが存在するか否かを判断する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.ChkInParamOnCalc(System.Data.DataRow)">
+ <summary>
+ 入力パラメータ整合チェック（メイン）
+ </summary>
+ <param name="dr">起動元機能からのパラメータ</param>
+ <returns>True：正常 ／ False：異常（パラーメータエラー）</returns>
+ <remarks>起動元機能からのパラメータ内容を確認する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.ChkSecondTariff(System.Data.DataSet)">
+ <summary>
+ ２次タリフ存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>true:２次タリフ有 false:２次タリフ無</returns>
+ <remarks>２次タリフが存在する否かを判断する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.InitItemUnchinCalc(System.Data.DataSet)">
+ <summary>
+ [初期化] Main
+ </summary>
+ <remarks>当該プログラム名で使用する項目の初期化を行う</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.InitInparam(System.Data.DataSet)">
+ <summary>
+ [初期化] Inparam
+ </summary>
+ <remarks>当該プログラム名で使用する項目の初期化を行う</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.InitOutparam(System.Data.DataSet)">
+ <summary>
+ [初期化] Outparam
+ </summary>
+ <remarks>当該プログラム名で使用する項目の初期化を行う</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.SetInDataTable(System.Data.DataSet)">
+ <summary>
+ InParam情報の設定 ( afterGetTariff )
+ </summary>
+ <remarks>呼出元より設定されないパラメータを設定する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.SetInDataToExtcUncnin(System.Data.DataSet)">
+ <summary>
+ InParam情報の設定 ( beforeExtcUnchin )
+ </summary>
+ <remarks>呼出元より設定されないパラメータを設定する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.SetInDataToSecondTariff(System.Data.DataSet)">
+ <summary>
+ InParam情報の設定 ( ２次タリフ参照用 )
+ </summary>
+ <remarks>２次タリフ参照用にInTableを再構成する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.ResultSetFromCalcUnchin(System.Data.DataSet)">
+ <summary>
+ 運賃計算結果ステータス格納
+ </summary>
+ <remarks>CalcUnchinメソッドの最終結果を設定する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.GetKyoriRow(System.Data.DataSet)">
+ <summary>
+ 距離列特定
+ </summary>
+ <param name="ds">起動元機能からのパラメータ</param>
+ <returns>True：正常 ／ False：異常（距離列取得エラー）</returns>
+ <remarks>[inDataTable]適用距離 / [運賃タリフマスタ]距離行を元に、距離対象列を取得</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.GetWeightLine(System.Data.DataSet)">
+ <summary>
+ 重量行特定
+ </summary>
+ <param name="ds">起動元機能からのパラメータ</param>
+ <returns>True：正常 ／ False：異常（距離列取得エラー）</returns>
+ <remarks>[inDataTable]重量段階 / [運賃タリフマスタ]重量段階を元に、重量対象行を取得</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.SetYokoDetailParam(System.Data.DataSet)">
+ <summary>
+ 横持ち運賃タリフ明細マスタ参照
+ </summary>
+ <param name="ds">起動元機能からのパラメータ</param>
+ <remarks>横持ち運賃タリフ明細の参照用パラメータセット</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.SetMessageParamIsExists(System.String)">
+ <summary>
+ マスタ参照データ取得エラー（置換文字）
+ </summary>
+ <param name="table">取得エラーとなったデータテーブル</param>
+ <returns>エラーメッセージに設定する文言（E078）</returns>
+ <remarks>ＤＢ結果取得エラー時のメッセージ設定文字を設定</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.SetUnchin(System.Data.DataSet)">
+ <summary>
+ 一般運賃設定
+ </summary>
+ <param name="ds"></param>
+ <remarks>戻りDataTableに運賃を設定</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.SetExtcUnchin(System.Data.DataSet)">
+ <summary>
+ 割増運賃設定
+ </summary>
+ <param name="ds"></param>
+ <remarks>戻りDataTableに運賃を設定</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.GetExtcShuhai(System.Data.DataSet)">
+ <summary>
+ 集配料・保険料計算
+ </summary>
+ <param name="ds"></param>
+ <returns>計算結果割増運賃</returns>
+ <remarks>集配料・保険料計算を行う</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.GetExtcWinter(System.Data.DataSet)">
+ <summary>
+ 冬期割増運賃計算
+ </summary>
+ <param name="ds"></param>
+ <returns>計算結果割増運賃</returns>
+ <remarks>冬期割増運賃計算を行う</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.GetExtcCity(System.Data.DataSet)">
+ <summary>
+ 都市割増運賃計算
+ </summary>
+ <param name="ds"></param>
+ <returns>計算結果割増運賃</returns>
+ <remarks>都市割増運賃計算を行う</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.GetExtcToll(System.Data.DataSet)">
+ <summary>
+ 航送料割増運賃計算
+ </summary>
+ <param name="ds"></param>
+ <returns>計算結果割増運賃</returns>
+ <remarks>航送料割増運賃計算を行う</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.GetExtcRely(System.Data.DataSet)">
+ <summary>
+ 中継料割増運賃計算
+ </summary>
+ <param name="ds"></param>
+ <returns>計算結果割増運賃</returns>
+ <remarks>中継料割増運賃計算を行う</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.CalcNomalTatene(System.Data.DataSet,System.Double)">
+ <summary>
+ 一般運賃 建値計算処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="unchin">タリフより取得した運賃</param>
+ <returns>建値計算後運賃</returns>
+ <remarks>一般運賃時の建値計算（テーブルタイプ毎）</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.SetYokoUnchin(System.Data.DataSet)">
+ <summary>
+ 横持ち運賃算出・設定処理
+ </summary>
+ <param name="ds">起動元機能からのパラメータ</param>
+ <remarks>横持ち運賃タリフ明細の参照用パラメータセット</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.AdjustFraction(System.Data.DataSet)">
+ <summary>
+ 端数調整処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks>算出後運賃の端数調整処理</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.GetKyoriBaseFromTariff(System.Data.DataSet)">
+ <summary>
+ 通常タリフ距離情報 取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True：正常 ／ False：異常（データ取得不備）</returns>
+ <remarks>最新タリフより適用 "距離" 情報を取得する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.GetWtFromTariff(System.Data.DataSet)">
+ <summary>
+ 通常タリフ重量情報 取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True：正常 ／ False：異常（データ取得不備）</returns>
+ <remarks>最新タリフより適用 "重量" 情報を取得する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.GetExtcUnchin(System.Data.DataSet)">
+ <summary>
+ 割増運賃情報 取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True：正常 ／ False：異常（データ取得不備）</returns>
+ <remarks>割増運賃Ｍより金額を取得する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.GetBaseFromYokoTariff(System.Data.DataSet)">
+ <summary>
+ 横持ちタリフ基本情報 取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True：正常 ／ False：異常（データ取得不備）</returns>
+ <remarks>最新横持ちタリフより基本情報を取得する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF800BLC.GetDetailFromYokoTariff(System.Data.DataSet)">
+ <summary>
+ 横持ちタリフ明細情報 取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True：正常 ／ False：異常（データ取得不備）</returns>
+ <remarks>最新横持ちタリフより明細情報を取得する</remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMF810BLC">
+ <summary>
+ LMF810BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.DacAccess(System.Data.DataSet,System.String)">
+ <summary>
+ DACクラスアクセス
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.SetMsgInfo(System.String,System.String,System.String)">
+ <summary>
+ メッセージセット
+ </summary>
+ <param name="status">ｽﾃｰﾀｽ</param>
+ <param name="id">ﾒｯｾｰｼﾞID</param>
+ <param name="prm">ﾒｯｾｰｼﾞﾊﾟﾗﾒｰﾀ</param>
+ <returns>False：パラーメータエラー</returns>
+ <remarks>メッセージをプライベート変数に格納する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.SetResultMsg(System.Data.DataTable)">
+ <summary>
+ 返却用DataTableにﾒｯｾｰｼﾞを設定
+ </summary>
+ <param name="dt">返却用DataTable</param>
+ <remarks>起動元機能からのパラメータ内容を確認する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.CreateUnchinData(System.Data.DataSet)">
+ <summary>
+ 運賃データ生成メイン
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.SetNomal(System.Data.DataSet)">
+ <summary>
+ 一般運賃生成
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True：正常 ／ False：異常（データ生成失敗）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.SetYoko(System.Data.DataSet)">
+ <summary>
+ 横持ち運賃生成
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True：正常 ／ False：異常（データ生成失敗）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.SetNyukaTyaku(System.Data.DataSet)">
+ <summary>
+ 入荷着払い運賃生成
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True：正常 ／ False：異常（データ生成失敗）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.InitItemUnchinCreate(System.Data.DataSet)">
+ <summary>
+ 初期化
+ </summary>
+ <remarks>各種属性情報を初期化する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.GetUnsoDate(System.Data.DataRow,System.Data.DataRow)">
+ <summary>
+ "適用日" 取得
+ </summary>
+ <param name="unsoLDr">DataRow</param>
+ <param name="outDr">DataRow</param>
+ <returns>適用日</returns>
+ <remarks>運賃計算パラメータ項目「適用日」を求める。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.SetCreateRecCount(System.Data.DataSet,System.String)">
+ <summary>
+ 一般運賃データ生成単位取得
+ </summary>
+ <param name="ds">DataRow</param>
+ <param name="refKbn">String</param>
+ <remarks>一般運賃の生成単位（レコード数）を設定する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.SetYokoCreateCount(System.Data.DataSet)">
+ <summary>
+ 横持ち運賃データ生成単位取得
+ </summary>
+ <param name="ds">DataRow</param>
+ <remarks>横持ち運賃の生成単位（レコード数）を設定する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.ToHalfAdjust(System.Double,System.Int32)">
+ <summary>
+ 四捨五入
+ </summary>
+ <param name="dValue">Double</param>
+ <param name="iDigits">Integer</param>
+ <returns>計算結果</returns>
+ <remarks>四捨五入を行う。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.ToRoundUp(System.Double,System.Int32)">
+ <summary>
+ 切り上げ
+ </summary>
+ <param name="dValue">Double</param>
+ <param name="iDigits">Integer</param>
+ <returns>計算結果</returns>
+ <remarks>切り上げを行う。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.SetYokoMinUnchin(System.Data.DataSet)">
+ <summary>
+ 最低保証料設定処理 （横持ち）
+ </summary>
+ <param name="ds">起動元機能からのパラメータ(unsoL)</param>
+ <remarks>横持ち時、最低保証料が設定されている場合は運賃に適用する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.ClearParamToInput(System.Data.DataSet)">
+ <summary>
+ パラメタ初期化処理(開始時)
+ </summary>
+ <param name="ds">結果データセット</param>
+ <remarks>データセットを初期化する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.ClearParamToOutput(System.Data.DataSet)">
+ <summary>
+ パラメタ初期化処理(終了時)
+ </summary>
+ <param name="ds">結果データセット</param>
+ <remarks>データセットを初期化する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.SetKyoriForKenType(System.Data.DataSet)">
+ <summary>
+ タリフ－県タイプ適用判断
+ </summary>
+ <param name="ds">結果データセット</param>
+ <remarks>適用タリフのテーブルタイプが県属性の場合、JISの先頭２桁を適用</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.GetPkgNb(System.Data.DataRow)">
+ <summary>
+ (貨物毎)商品個数算出
+ </summary>
+ <param name="unsoMDr">運送Ｍ DataRow</param>
+ <return>計算結果商品個数</return>
+ <remark>商品単位の個数を算出</remark>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.GetPkgWt(System.Data.DataSet,System.Int32)">
+ <summary>
+ (貨物毎)商品重量算出
+ </summary>
+ <return>計算結果商品重量</return>
+ <remark>商品単位の重量を算出</remark>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.GetPkgWt_OLD(System.Data.DataRow)">
+ <summary>
+ (貨物毎)商品重量算出
+ </summary>
+ <param name="unsoMDr">運送Ｍ DataRow</param>
+ <return>計算結果商品重量</return>
+ <remark>商品単位の重量を算出</remark>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.SetKyoriValue(System.Data.DataRow,System.Data.DataRow)">
+ <summary>
+ （一般運賃計算用）適用距離判断
+ </summary>
+ <param name="outDr">OutDataRow</param>
+ <param name="unchinDr">UnchinDataRow</param>
+ <return>適用距離</return>
+ <remark>一般運賃計算用パラメータ"適用距離"を判断する</remark>
+ 
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.CommonMethod(System.Data.DataSet)">
+ <summary>
+ 共通処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True：正常 ／ False：異常（データ取得不備）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.GetUnsoLInfo(System.Data.DataSet)">
+ <summary>
+ 運送Ｌ情報取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True：正常 ／ False：異常（データ取得不備）</returns>
+ <remarks>In情報として利用するため最新情報を取得</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.GetUnsoMInfo(System.Data.DataSet,System.String)">
+ <summary>
+ 運送Ｍ情報取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="kbn">String</param>
+ <returns>True：正常 ／ False：異常（データ取得不備）</returns>
+ <remarks>In情報として利用するため最新情報を取得</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.GetUnchinAttribute(System.Data.DataSet)">
+ <summary>
+ 運賃構成情報取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True：正常 ／ False：異常（データ取得不備）</returns>
+ <remarks>運賃レコード構成に必要な情報を収集する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.GetTableTypeFromTariff(System.Data.DataSet)">
+ <summary>
+ テーブルタイプ 取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True：正常 ／ False：異常（データ取得不備）</returns>
+ <remarks>最新タリフより適用 "テーブルタイプ" を取得する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.GetYokoTariffHd(System.Data.DataSet)">
+ <summary>
+ 横持ちタリフヘッダ 情報取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True：正常 ／ False：異常（データ取得不備）</returns>
+ <remarks>横持ちタリフヘッダ情報を取得する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.GetRevUnitUnsoM(System.Data.DataSet)">
+ <summary>
+ 運送Ｍ情報取得（請求先単位）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True：正常 ／ False：異常（データ取得不備）</returns>
+ <remarks>運送Ｍ情報を請求先単位に集約する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.ChkInParam(System.Data.DataSet)">
+ <summary>
+ 入力パラメータ整合チェック（メイン）
+ </summary>
+ <param name="ds">起動元機能からのパラメータ</param>
+ <returns>True：正常 ／ False：異常（パラーメータエラー）</returns>
+ <remarks>起動元機能からのパラメータ内容を確認する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.ChkInDataOnClient(System.Data.DataTable)">
+ <summary>
+ 入力パラメータ整合チェック（属性）
+ </summary>
+ <param name="unsoLDt">起動元機能からのパラメータ(unsoL)</param>
+ <returns>True：正常 ／ False：異常（パラーメータエラー）</returns>
+ <remarks>起動元機能からのパラメータ内容を確認する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.ChkInDataOnServer(System.Data.DataSet)">
+ <summary>
+ 入力パラメータ整合チェック（Databaseチェック）
+ </summary>
+ <param name="ds">起動元機能からのパラメータ</param>
+ <returns>True：正常 ／ False：異常（パラーメータエラー）</returns>
+ <remarks>起動元機能からのパラメータ内容を確認する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.SetInitForm(System.Data.DataSet)">
+ <summary>
+ [レコード構成] 初期値
+ </summary>
+ <param name="ds">起動元機能からのパラメータ</param>
+ <remarks>初期値として運賃レコードを構成する（一定の処理まで確認後、Delete-Insertされる）</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.SetNomalUnchinForm(System.Data.DataSet,System.Int32,System.String)">
+ <summary>
+ [レコード構成] 一般用
+ </summary>
+ <param name="ds">起動元機能からのパラメータ</param>
+ <param name="index">運送Ｍの参照インデックス</param>
+ <param name="createLv">運賃生成レベル</param>
+ <remarks>「運賃属性」以外の運賃レコードを構成する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.SetYokoUnchinForm(System.Data.DataSet,System.Int32)">
+ <summary>
+ [レコード構成] 横持ち用
+ </summary>
+ <param name="ds">起動元機能からのパラメータ</param>
+ <param name="index">明細行</param>
+ <remarks>「運賃属性」以外の運賃レコードを構成する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.SetUnchinInfo(System.Data.DataSet,System.Int32)">
+ <summary>
+ [レコード構成] 一般/横持ち共用 (運賃設定)
+ </summary>
+ <param name="ds">起動元機能からのパラメータ</param>
+ <param name="index">明細行</param>
+ <remarks>「運賃属性」を設定する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.SetNyukaTyakuUnchinForm(System.Data.DataSet)">
+ <summary>
+ [レコード構成] 入荷着払い用
+ </summary>
+ <param name="ds">起動元機能からのパラメータ</param>
+ <remarks>「入荷着払い」時の運賃レコードを構成する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.GetUnchinRec(System.Data.DataSet,System.Int32)">
+ <summary>
+ 運賃取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="index">運賃明細対象行</param>
+ <remarks>運賃計算プログラムへのパラメータを設定する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.GetYokoUnchin(System.Data.DataSet,System.Int32)">
+ <summary>
+ 横持ち運賃取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks>運賃計算プログラムへのパラメータを設定する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.CalcUnchin(System.Data.DataSet)">
+ <summary>
+ 運賃計算メイン
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.FormUnchinRec(System.Data.DataSet)">
+ <summary>
+ 一般運賃計算メイン
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.GetUnchin(System.Data.DataSet,System.Int32)">
+ <summary>
+ 一般運賃計算
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True：運賃計算継続 ／ False：運賃計算終了</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.FormYokoUnchinRec(System.Data.DataSet)">
+ <summary>
+ 横持ち運賃計算メイン
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True：正常 ／ False：異常（パラーメータエラー）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.IsDataExists(System.Data.DataSet,System.String,System.String,System.String)">
+ <summary>
+ 対象マスタ存在チェック（一般）
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="table">DataTable名</param>
+ <param name="setErrorType">エラー判定用</param>
+ <param name="judgeKbn">結果ステータス判定用</param>
+ <returns>true:正常 false:エラー</returns>
+ <remarks>DB参照したレコードが存在するか否かを判断する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.ChkInParamOnCalc(System.Data.DataRow)">
+ <summary>
+ 入力パラメータ整合チェック（メイン）
+ </summary>
+ <param name="dr">起動元機能からのパラメータ</param>
+ <returns>True：正常 ／ False：異常（パラーメータエラー）</returns>
+ <remarks>起動元機能からのパラメータ内容を確認する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.ChkSecondTariff(System.Data.DataSet)">
+ <summary>
+ ２次タリフ存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>true:２次タリフ有 false:２次タリフ無</returns>
+ <remarks>２次タリフが存在する否かを判断する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.InitItemUnchinCalc(System.Data.DataSet)">
+ <summary>
+ [初期化] Main
+ </summary>
+ <remarks>当該プログラム名で使用する項目の初期化を行う</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.InitInparam(System.Data.DataSet)">
+ <summary>
+ [初期化] Inparam
+ </summary>
+ <remarks>当該プログラム名で使用する項目の初期化を行う</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.InitOutparam(System.Data.DataSet)">
+ <summary>
+ [初期化] Outparam
+ </summary>
+ <remarks>当該プログラム名で使用する項目の初期化を行う</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.SetInDataTable(System.Data.DataSet)">
+ <summary>
+ InParam情報の設定 ( afterGetTariff )
+ </summary>
+ <remarks>呼出元より設定されないパラメータを設定する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.SetInDataToExtcUncnin(System.Data.DataSet)">
+ <summary>
+ InParam情報の設定 ( beforeExtcUnchin )
+ </summary>
+ <remarks>呼出元より設定されないパラメータを設定する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.SetInDataToSecondTariff(System.Data.DataSet)">
+ <summary>
+ InParam情報の設定 ( ２次タリフ参照用 )
+ </summary>
+ <remarks>２次タリフ参照用にInTableを再構成する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.ResultSetFromCalcUnchin(System.Data.DataSet)">
+ <summary>
+ 運賃計算結果ステータス格納
+ </summary>
+ <remarks>CalcUnchinメソッドの最終結果を設定する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.GetKyoriRow(System.Data.DataSet)">
+ <summary>
+ 距離列特定
+ </summary>
+ <param name="ds">起動元機能からのパラメータ</param>
+ <returns>True：正常 ／ False：異常（距離列取得エラー）</returns>
+ <remarks>[inDataTable]適用距離 / [運賃タリフマスタ]距離行を元に、距離対象列を取得</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.GetWeightLine(System.Data.DataSet)">
+ <summary>
+ 重量行特定
+ </summary>
+ <param name="ds">起動元機能からのパラメータ</param>
+ <returns>True：正常 ／ False：異常（距離列取得エラー）</returns>
+ <remarks>[inDataTable]重量段階 / [運賃タリフマスタ]重量段階を元に、重量対象行を取得</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.GetJKRow(System.Data.DataSet,System.String)">
+ <summary>
+ 重量or個数列特定
+ </summary>
+ <param name="ds">起動元機能からのパラメータ</param>
+ <param name="tableTp">タリフ計算種別</param>
+ <returns>True：正常 ／ False：異常（距離列取得エラー）</returns>
+ <remarks>[inDataTable]適用重量or個数 / [運賃タリフマスタ]距離行を元に、重量or個数対象列を取得</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.GetJisLine(System.Data.DataSet,System.String)">
+ <summary>
+ JISコード行特定
+ </summary>
+ <param name="ds">起動元機能からのパラメータ</param>
+ <param name="tableTp">タリフ計算種別</param>
+ <returns>True：正常 ／ False：異常（距離列取得エラー）</returns>
+ <remarks>[inDataTable]JISコード / [運賃タリフマスタ]JISコードを元に、重量対象行を取得</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.SetYokoDetailParam(System.Data.DataSet)">
+ <summary>
+ 横持ち運賃タリフ明細マスタ参照
+ </summary>
+ <param name="ds">起動元機能からのパラメータ</param>
+ <remarks>横持ち運賃タリフ明細の参照用パラメータセット</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.SetMessageParamIsExists(System.String)">
+ <summary>
+ マスタ参照データ取得エラー（置換文字）
+ </summary>
+ <param name="table">取得エラーとなったデータテーブル</param>
+ <returns>エラーメッセージに設定する文言（E078）</returns>
+ <remarks>ＤＢ結果取得エラー時のメッセージ設定文字を設定</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.SetUnchin(System.Data.DataSet)">
+ <summary>
+ 一般運賃設定
+ </summary>
+ <param name="ds"></param>
+ <remarks>戻りDataTableに運賃を設定</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.SetExtcUnchin(System.Data.DataSet)">
+ <summary>
+ 割増運賃設定
+ </summary>
+ <param name="ds"></param>
+ <remarks>戻りDataTableに運賃を設定</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.GetExtcShuhai(System.Data.DataSet)">
+ <summary>
+ 集配料・保険料計算
+ </summary>
+ <param name="ds"></param>
+ <returns>計算結果割増運賃</returns>
+ <remarks>集配料・保険料計算を行う</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.GetExtcWinter(System.Data.DataSet)">
+ <summary>
+ 冬期割増運賃計算
+ </summary>
+ <param name="ds"></param>
+ <returns>計算結果割増運賃</returns>
+ <remarks>冬期割増運賃計算を行う</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.GetExtcCity(System.Data.DataSet)">
+ <summary>
+ 都市割増運賃計算
+ </summary>
+ <param name="ds"></param>
+ <returns>計算結果割増運賃</returns>
+ <remarks>都市割増運賃計算を行う</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.GetExtcToll(System.Data.DataSet)">
+ <summary>
+ 航送料割増運賃計算
+ </summary>
+ <param name="ds"></param>
+ <returns>計算結果割増運賃</returns>
+ <remarks>航送料割増運賃計算を行う</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.GetExtcRely(System.Data.DataSet)">
+ <summary>
+ 中継料割増運賃計算
+ </summary>
+ <param name="ds"></param>
+ <returns>計算結果割増運賃</returns>
+ <remarks>中継料割増運賃計算を行う</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.CalcNomalTatene(System.Data.DataSet,System.Double)">
+ <summary>
+ 一般運賃 建値計算処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="unchin">タリフより取得した運賃</param>
+ <returns>建値計算後運賃</returns>
+ <remarks>一般運賃時の建値計算（テーブルタイプ毎）</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.SetYokoUnchin(System.Data.DataSet)">
+ <summary>
+ 横持ち運賃算出・設定処理
+ </summary>
+ <param name="ds">起動元機能からのパラメータ</param>
+ <remarks>横持ち運賃タリフ明細の参照用パラメータセット</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.AdjustFraction(System.Data.DataSet)">
+ <summary>
+ 端数調整処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks>算出後運賃の端数調整処理</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.GetKyoriBaseFromTariff(System.Data.DataSet)">
+ <summary>
+ 通常タリフ距離情報 取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True：正常 ／ False：異常（データ取得不備）</returns>
+ <remarks>最新タリフより適用 "距離" 情報を取得する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.GetWtFromTariff(System.Data.DataSet)">
+ <summary>
+ 通常タリフ重量情報 取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True：正常 ／ False：異常（データ取得不備）</returns>
+ <remarks>最新タリフより適用 "重量" 情報を取得する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.GetExtcUnchin(System.Data.DataSet)">
+ <summary>
+ 割増運賃情報 取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True：正常 ／ False：異常（データ取得不備）</returns>
+ <remarks>割増運賃Ｍより金額を取得する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.GetBaseFromYokoTariff(System.Data.DataSet)">
+ <summary>
+ 横持ちタリフ基本情報 取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True：正常 ／ False：異常（データ取得不備）</returns>
+ <remarks>最新横持ちタリフより基本情報を取得する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.GetDetailFromYokoTariff(System.Data.DataSet)">
+ <summary>
+ 横持ちタリフ明細情報 取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True：正常 ／ False：異常（データ取得不備）</returns>
+ <remarks>最新横持ちタリフより明細情報を取得する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF810BLC.SelectCountShiharaiTariffByNrsBrCd(System.Data.DataSet)">
+ <summary>
+ 支払タリフ件数取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMF820BLC">
+ <summary>
+ LMF820BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF820BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF820BLC.SyasaiWatashi(System.Data.DataSet)">
+ <summary>
+ 車載受注渡しデータ取得処理メイン
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>BLCの車載受注渡し処理コントロール</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF820BLC.SelectSyasaiWatashi(System.Data.DataSet)">
+ <summary>
+ 車載受注渡しデータ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks>DACのSelectSyasaiWatashiメソッド呼出</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF820BLC.SyasaiJutyuWatashi(System.Data.DataSet)">
+ <summary>
+ 車載受注渡しデータ処理(追加処理 DAC呼び出し)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF820BLC.EditSelectDataSet(System.Data.DataSet)">
+ <summary>
+ DataSet編集処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF820BLC.ServerChkJudge(System.Data.DataSet,System.String)">
+ <summary>
+ DACでメッセージが設定されているかを判定
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF820BLC.DacAccess(System.Data.DataSet,System.String)">
+ <summary>
+ DACクラスアクセス
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF820BLC.SetDblQuotation(System.String)">
+ <summary>
+ ダブルコーテーション付加
+ </summary>
+ <param name="val"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF820BLC.SetByteCount(System.String)">
+ <summary>
+ ダブルコーテーション付加
+ </summary>
+ <param name="str"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF820BLC.LeftB(System.String,System.Int32)">
+ <summary>Left関数のバイト版。文字数をバイト数で指定して文字列を切捨て。</summary>
+ <param name="str">対象の文字列</param>
+ <param name="Length">切り抜く文字列のバイト数</param>
+ <returns>切捨てられた文字列</returns>
+ <remarks>最後の１バイトが全角文字の半分になる場合、その１バイトは無視される。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF820BLC.MidB(System.String,System.Int32,System.Int32)">
+ <summary>Mid関数のバイト版。文字数と位置をバイト数で指定して文字列を切り抜く。</summary>
+ <param name="str">対象の文字列</param>
+ <param name="Start">切り抜き開始位置。全角文字を分割するよう位置が指定された場合、戻り値の文字列の先頭は意味不明の半角文字となる。</param>
+ <param name="Length">切り抜く文字列のバイト数</param>
+ <returns>切り抜かれた文字列</returns>
+ <remarks>最後の１バイトが全角文字の半分になる場合、その１バイトは無視される。</remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMF850BLC">
+ <summary>
+ LMF850BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF850BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF850BLC.OkakenCsv(System.Data.DataSet)">
+ <summary>
+ CSVデータ取得処理メイン
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks>DACのOkakenCsvメソッド呼出</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF850BLC.SelectOkakenCsv(System.Data.DataSet)">
+ <summary>
+ データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks>DACのSelectOkakenCsvメソッド呼出</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF850BLC.ServerChkJudge(System.Data.DataSet,System.String)">
+ <summary>
+ DACでメッセージが設定されているかを判定
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF850BLC.DacAccess(System.Data.DataSet,System.String)">
+ <summary>
+ DACクラスアクセス
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF850BLC.SetDblQuotation(System.String)">
+ <summary>
+ ダブルコーテーション付加
+ </summary>
+ <param name="val"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMF860BLC">
+ <summary>
+ LMF860BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMF860BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF860BLC.MeitetuCsv(System.Data.DataSet)">
+ <summary>
+ CSVデータ取得処理メイン
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks>DACのMeitetuCsvメソッド呼出</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF860BLC.SelectMeitetuCsv(System.Data.DataSet)">
+ <summary>
+ データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks>DACのSelectMeitetuCsvメソッド呼出</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF860BLC.ServerChkJudge(System.Data.DataSet,System.String)">
+ <summary>
+ DACでメッセージが設定されているかを判定
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMF860BLC.DacAccess(System.Data.DataSet,System.String)">
+ <summary>
+ DACクラスアクセス
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

@@ -1,0 +1,226 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.LMQ.DAC
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.LM.DAC.LMQ010DAC">
+ <summary>
+ LMQ010DACクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMQ010DAC.SQL_HAITA_CHK">
+ <summary>
+ 排他チェック処理(件数取得)用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMQ010DAC.SQL_SELECT_COUNT">
+ <summary>
+ カウント用（検索時、存在チェック時）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMQ010DAC.SQL_SELECT_DATA">
+ <summary>
+ M_SQL データ抽出用（検索時）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMQ010DAC.SQL_SELECT_FROM">
+ <summary>
+ FROM（検索時）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMQ010DAC.SQL_SELECT_ORDER_BY">
+ <summary>
+ ORDER BY（①システムフラグ、②パターンID）（検索時）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMQ010DAC.SQL_SELECT_FROM_CHECK">
+ <summary>
+ FROM（存在チェック時）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMQ010DAC.SQL_SELECT_WHERE_CHECK">
+ <summary>
+ WHERE（存在チェック時）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMQ010DAC.SQL_INSERT">
+ <summary>
+ INSERT（保存時）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMQ010DAC.SQL_UPDATE">
+ <summary>
+ UPDATE（保存時）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMQ010DAC.SQL_DELREV">
+ <summary>
+ UPDATE（削除・復活時）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMQ010DAC.SQL_EXCEL_UPDATE">
+ <summary>
+ UPDATE（EXCEL作成時）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMQ010DAC._ROW">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMQ010DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMQ010DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMQ010DAC._MstSchemaNm">
+ <summary>
+ マスタスキーマ名用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMQ010DAC._TrnSchemaNm">
+ <summary>
+ トランザクションスキーマ名用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMQ010DAC.HaitaChk(System.Data.DataSet)">
+ <summary>
+ SQLデータ排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>SQLデータ検索結果取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMQ010DAC.SetParamHaitaChk">
+ <summary>
+ パラメータ設定モジュール(排他チェック)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMQ010DAC.SelectData(System.Data.DataSet)">
+ <summary>
+ SQLデータ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>SQLデータ検索件数取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMQ010DAC.SelectListData(System.Data.DataSet)">
+ <summary>
+ データ抽出SQLの対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>データ抽出SQL検索結果取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMQ010DAC.SQLSelectWhere">
+ <summary>
+ 検索用SQL WHERE句作成
+ </summary>
+ <remarks>SQL検索用SQLの構築</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMQ010DAC.ExcelMake(System.Data.DataSet)">
+ <summary>
+ Excel出力データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>Excel出力データ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMQ010DAC.SelectMSQLData(System.Data.DataSet)">
+ <summary>
+ SQLデータ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>SQLデータ検索件数取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMQ010DAC.SaveData(System.Data.DataSet)">
+ <summary>
+ データ抽出SQLマスタ 更新（保存時）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMQ010DAC.DelRevSQL(System.Data.DataSet)">
+ <summary>
+ データ抽出SQLマスタ 更新（削除・復活時）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMQ010DAC.SaveExcelData(System.Data.DataSet)">
+ <summary>
+ データ抽出SQLマスタ 更新（Excel作成時）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMQ010DAC.SetInsertSQL(System.Data.DataTable,System.String)">
+ <summary>
+ SQL文・パラメータ設定モジュール(データ抽出SQL 新規追加）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMQ010DAC.SetUpdateSQL(System.Data.DataTable,System.String)">
+ <summary>
+ SQL文・パラメータ設定モジュール(データ抽出SQL 更新）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMQ010DAC.SetUpdateExcelSQL(System.Data.DataTable,System.String)">
+ <summary>
+ SQL文・パラメータ設定モジュール(データ抽出SQL 更新）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMQ010DAC.SetDelRevSQL(System.Data.DataTable,System.String)">
+ <summary>
+ SQL文・パラメータ設定モジュール(データ抽出SQL 削除・復活）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMQ010DAC.SetSysDateTime(System.Data.DataRow,System.Collections.ArrayList)">
+ <summary>
+ 抽出条件(日時)
+ </summary>
+ <param name="dr">DataRow</param>
+ <param name="prmList">パラメータ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMQ010DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

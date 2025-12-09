@@ -1,0 +1,165 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.MailTool.Library
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.MailTool.My.Resources.Resources">
+<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.MailTool.My.Resources.Resources.ResourceManager">
+<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.MailTool.My.Resources.Resources.Culture">
+<summary>
+  すべてについて、現在のスレッドの CurrentUICulture プロパティをオーバーライドします
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.MailTool.Utility.MailMGR">
+ <summary>
+ メール送信部品(本体)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MailTool.Utility.MailMGR.SendMail(Jp.Co.Nrs.MailTool.Utility.MailInfo)">
+ <summary>
+ メール送信部品（メール情報クラス利用）
+ </summary>
+ <param name="mailInfo">メール情報クラス</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MailTool.Utility.MailMGR.SendMail(System.String,System.Int32,System.String,System.String,System.String,System.Collections.ArrayList,System.Collections.ArrayList,System.Collections.ArrayList,System.String,System.String,System.Collections.ArrayList)">
+ <summary>
+ メール送信部品（smtp認証対応)
+ </summary>
+ <param name="pSmtpServer">SMTPサーバー</param>
+ <param name="pSmtpPort">SMTPポート番号</param>
+ <param name="pSmtpUserID">SMTPユーザID</param>
+ <param name="pSmtpPassword">SMTPパスワード</param>
+ <param name="pFrom">送信元</param>
+ <param name="pTo">To送信先(配列)</param>
+ <param name="pCc">CC送信先(配列)</param>
+ <param name="pBcc">BCC送信先(配列)</param>
+ <param name="pTitle">タイトル</param>
+ <param name="pSubject">本文</param>
+ <param name="pAttachFile">添付ファイルパス(配列)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MailTool.Utility.MailMGR.SendMail(System.String,System.String,System.Collections.ArrayList,System.Collections.ArrayList,System.Collections.ArrayList,System.String,System.String,System.Collections.ArrayList)">
+ <summary>
+ メール送信部品
+ </summary>
+ <param name="pSmtpServer">SMTPサーバー</param>
+ <param name="pFrom">送信元</param>
+ <param name="pTo">To送信先(配列)</param>
+ <param name="pCc">CC送信先(配列)</param>
+ <param name="pBcc">BCC送信先(配列)</param>
+ <param name="pTitle">タイトル</param>
+ <param name="pSubject">本文</param>
+ <param name="pAttachFile">添付ファイルパス(配列)</param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.MailTool.Utility.MailInfo">
+ <summary>
+ メール情報クラス
+ </summary>
+ <remarks>
+ メール情報を保持するクラス
+ </remarks>
+</member>
+<member name="P:Jp.Co.Nrs.MailTool.Utility.MailInfo.MailInfoArry">
+ <summary>
+ メール情報配列（配列）
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.MailTool.Utility.MailInfo.ServerName">
+ <summary>
+ サーバー名
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.MailTool.Utility.MailInfo.PortNo">
+ <summary>
+ ポート番号
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.MailTool.Utility.MailInfo.SmtpUserID">
+ <summary>
+ smtp認証ユーザID
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.MailTool.Utility.MailInfo.SmtpPassword">
+ <summary>
+ smtp認証パスワード
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.MailTool.Utility.MailInfo.MailFrom">
+ <summary>
+ メール送信元
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.MailTool.Utility.MailInfo.MailTo">
+ <summary>
+ メール送信先 TO（配列）
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.MailTool.Utility.MailInfo.MailCc">
+ <summary>
+ メール送信先 CC（配列）
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.MailTool.Utility.MailInfo.MailBcc">
+ <summary>
+ メール送信先 BCC（配列）
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.MailTool.Utility.MailInfo.AttachFile">
+ <summary>
+ 添付ファイル（配列）
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.MailTool.Utility.MailInfo.Title">
+ <summary>
+ メール件名
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.MailTool.Utility.MailInfo.Body">
+ <summary>
+ メール本文
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.MailTool.Utility.MailInfo.#ctor(System.String,System.Int32)">
+ <summary>
+ メール情報XMLファイルとメール区分から、本クラスのプロパティに設定します。
+ </summary>
+ <param name="fileMailInfo"></param>
+ <param name="pMailKbn"></param>
+</member>
+<member name="M:Jp.Co.Nrs.MailTool.Utility.MailInfo.ReadXML(System.String,System.Int32)">
+ <summary>
+ メール情報XMLファイルを配列に読み込みます
+ </summary>
+ <param name="fileMailInfo"></param>
+ <param name="pMailKbn"></param>
+ <returns></returns>
+</member>
+</members>
+</doc>

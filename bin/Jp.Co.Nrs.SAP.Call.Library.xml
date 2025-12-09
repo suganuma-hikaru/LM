@@ -1,0 +1,1319 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.SAP.Call.Library
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.SAP.Call.Library.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.SAP.Call.Library.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.ABMDB">
+ <summary>
+ ABM_DB
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.CALL_AP">
+ <summary>
+ 実施処理区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.TGT_CD">
+ <summary>
+ 検索対象マスタ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.RESULT_S">
+ <summary>
+ 処理結果区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.COMP_OUT">
+ <summary>
+ 会社区分 １：社外　２：社外（グループ内）　３：社内
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.LANG_JA">
+ <summary>
+ 対象言語
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.AC_ZN11">
+ <summary>
+ 対象ステータスグループ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.TGT_EXT">
+ <summary>
+ EXTENSION2対象
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.ACC_MNG_ADJ_CD">
+ <summary>
+ 管理会計調整勘定コード
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.GL_YA">
+ <summary>
+ GL伝票タイプ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.BALANCE_A">
+ <summary>
+ バランス区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.KBN_G_S24">
+ <summary>
+ 支払い手段区分
+ </summary>
+ <remarks></remarks>     
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.TAX_RATE0_AP">
+ <summary>
+ 税率区分
+ </summary>
+ <remarks></remarks>     
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.SEG_DATA_TYPE_1">
+ <summary>
+ セグメントデータ区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.FILE_TXT">
+ <summary>
+ ファイル拡張子
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.ACC_CD_111">
+ <summary>
+ ACC_CD判定用文面
+ </summary>
+ <remarks></remarks>     
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.NOTAX_P">
+ <summary>
+ NOTAX_FLG区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.ME_G02021">
+ <summary>
+ エラーメッセージ区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.SAP_CALL_API_USER">
+ <summary>
+  APIユーザ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.SAP_CALL_API_PASS">
+ <summary>
+ APIパス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.SAP_CALL_API_USER_EN">
+ <summary>
+  APIユーザ(EN)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.SAP_CALL_API_PASS_EN">
+ <summary>
+ APIパス(EN)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.SAP_CALL_LOG">
+ <summary>
+ ログ出力制御
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.SAP_CALL_EXCEPTION_LOG_PATH">
+ <summary>
+ Exception発生時にエラーファイルを配置するパス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.TABLE_NM_WK_CD_CNV">
+ <summary>
+ 日陸会社コード変換マスタ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.TABLE_NM_WK_ORG_CNV">
+ <summary>
+ 日陸組織階層マスタ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.TABLE_NM_WK_TAX_CNV">
+ <summary>
+ 日陸税変換マスタ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.TABLE_NM_WK_BP_CNV">
+ <summary>
+ 日陸BP変換マスタ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.TABLE_NM_WK_COMP_TYPE">
+ <summary>
+ 会社パターン確認用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.TABLE_NM_WK_BU_CNV">
+ <summary>
+ 日陸BU変換マスタ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.TABLE_NM_M_TAX_RATE">
+ <summary>
+ 税レート設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.TABLE_NM_M_MESS_LIST">
+ <summary>
+ メッセージ一覧取得用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.TABLE_NM_M_ACC_STS">
+ <summary>
+ ACC_CDステータスグループ確認用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.TABLE_NM_WK_ITEM_SUM">
+ <summary>
+ 税額行作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.TABLE_NM_M_PSTNG_DATE">
+ <summary>
+ 場の日付確認用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.TABLE_NM_M_CURR">
+ <summary>
+ 通貨コード情報用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.TABLE_NM_M_KBN">
+ <summary>
+ ABM区分マスタ用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.TABLE_NM_M_ORG">
+ <summary>
+ M_ORG用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.TABLE_NM_M_BP_WHT">
+ <summary>
+ 源泉徴収税用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.TABLE_NM_M_BP">
+ <summary>
+ M_BP用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.TABLE_NM_M_SEGMENT">
+ <summary>
+ M_SEGMENT用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.TABLE_NM_REV_HEAD">
+ <summary>
+ 請求ヘッダ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.TABLE_NM_REV_ITEM">
+ <summary>
+ 請求明細
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.TABLE_NM_COST_HEAD">
+ <summary>
+ 支払ヘッダ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.TABLE_NM_COST_ITEM">
+ <summary>
+ 支払明細
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.TABLE_NM_GL_HEAD">
+ <summary>
+ 一般（GL）ヘッダ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.TABLE_NM_GL_ITEM">
+ <summary>
+ 一般（GL）明細
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.TABLE_NM_RESULT">
+ <summary>
+ 返却結果
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.TABLE_NM_RESULT_SAP">
+ <summary>
+ 返却結果(SAP投入番号)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.TABLE_NM_TEMP_MSG">
+ <summary>
+ 一時メッセージ保存
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.TABLE_NM_GL">
+ <summary>
+ 伝票明細
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.TABLE_NM_PAYABLE">
+ <summary>
+ 伝票明細（債務）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.TABLE_NM_RECEIVABLE">
+ <summary>
+ 伝票明細（債権）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.TABLE_NM_TAX">
+ <summary>
+ 伝票明細（消費税）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.TABLE_NM_CURRENCYAMOUNT">
+ <summary>
+ 伝票明細（明細金額）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.TABLE_NM_CRITERIA">
+ <summary>
+ 伝票明細（売上）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.TABLE_NM_HEADER">
+ <summary>
+ 伝票ヘッダ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.TABLE_NM_EXT2">
+ <summary>
+ 伝票明細（拡張２）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Const.SapCallConst.TABLE_NM_WITHHOLDINGTAX">
+ <summary>
+  源泉徴収税
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.RESULTDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.GL_HEADDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.REV_ITEMDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.COST_ITEMDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.COST_HEADDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.WK_BP_CNVDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.GL_ITEMDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.REV_HEADDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.WK_TAX_CNVDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.WK_CD_CNVDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.WK_ORG_CNVDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.WK_COMP_TYPEDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.M_TAX_RATEDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.M_ACC_STSDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.M_MESS_LISTDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.WK_ITEM_SUMDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.M_PSTNG_DATEDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.WK_BU_CNVDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.M_CURRDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.M_KBNDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.M_ORGDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.RESULT_SAPDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.TEMP_MSGDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.M_BP_WHTDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.M_BPDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.M_SEGMENTDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.RESULTRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.GL_HEADRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.REV_ITEMRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.COST_ITEMRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.COST_HEADRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.WK_BP_CNVRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.GL_ITEMRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.REV_HEADRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.WK_TAX_CNVRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.WK_CD_CNVRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.WK_ORG_CNVRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.WK_COMP_TYPERow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.M_TAX_RATERow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.M_ACC_STSRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.M_MESS_LISTRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.WK_ITEM_SUMRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.M_PSTNG_DATERow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.WK_BU_CNVRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.M_CURRRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.M_KBNRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.M_ORGRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.RESULT_SAPRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.TEMP_MSGRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.M_BP_WHTRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.M_BPRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.M_SEGMENTRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.RESULTRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.GL_HEADRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.REV_ITEMRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.COST_ITEMRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.COST_HEADRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.WK_BP_CNVRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.GL_ITEMRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.REV_HEADRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.WK_TAX_CNVRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.WK_CD_CNVRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.WK_ORG_CNVRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.WK_COMP_TYPERowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.M_TAX_RATERowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.M_ACC_STSRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.M_MESS_LISTRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.WK_ITEM_SUMRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.M_PSTNG_DATERowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.WK_BU_CNVRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.M_CURRRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.M_KBNRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.M_ORGRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.RESULT_SAPRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.TEMP_MSGRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.M_BP_WHTRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.M_BPRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.SAP.Call.Library.SAPCallDS.M_SEGMENTRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.Logger">
+ <summary>
+ ログ出力
+ </summary>
+ <remarks></remarks>            
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.CallDS">
+ <summary>
+ データテーブル
+ </summary>
+ <remarks></remarks>                 
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.TempDs">
+ <summary>
+ データテーブル(一時セット用)
+ </summary>
+ <remarks></remarks>                 
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.EmpList">
+ <summary>
+ 空リスト
+ </summary>
+ <remarks></remarks>                 
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.pstngDate">
+ <summary>
+ 転記日付（返却用）
+ </summary>
+ <remarks></remarks>                 
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.checkResult">
+ <summary>
+ 入力チェックフラグ
+ </summary>
+ <remarks></remarks>                 
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.checkResultConvGL">
+ <summary>
+ 入力チェックフラグ(変換GLテーブル用)
+ </summary>
+ <remarks></remarks>                 
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.PostResult">
+ <summary>
+ 仮投入フラグ
+ </summary>
+ <remarks></remarks>                 
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.HonRecFlg">
+ <summary>
+ 本支店勘定フラグ
+ </summary>
+ <remarks></remarks>                 
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.ConvGLFlg">
+ <summary>
+ 連携処理実施フラグ(関連会社対応用)
+ </summary>
+ <remarks></remarks>                 
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.Result">
+ <summary>
+ 返却用フラグ
+ </summary>
+ <remarks></remarks>                 
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.CallUser">
+ <summary>
+ APIユーザ
+ </summary>
+ <remarks></remarks>             
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.CallPass">
+ <summary>
+ APIパス
+ </summary>
+ <remarks></remarks>           
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.CallUserEn">
+ <summary>
+ APIユーザ(EN)
+ </summary>
+ <remarks></remarks>             
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.CallPassEn">
+ <summary>
+ APIパス(EN)
+ </summary>
+ <remarks></remarks>           
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.OutPutLogFlg">
+ <summary>
+ ログ出力フラグ
+ </summary>
+ <remarks></remarks>           
+</member>
+<member name="F:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.ApiExceptionLogPath">
+ <summary>
+ Exception発生時にエラーファイルを配置するパス
+ </summary>
+ <remarks></remarks>           
+</member>
+<member name="M:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.GetCnvMstDataGL(Jp.Co.Nrs.Com.Base.Interface.IConnection,System.Data.DataSet@)">
+<summary>
+ マスタデータの取得(日陸会社コード変換マスタ)
+ </summary>
+ <param name="obj">接続情報</param>    
+ <param name="ds">追加対象のデータテーブル</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.CreateWhereStrGL(System.Data.DataTable,System.String)">
+<summary>
+ マスタデータ絞り込み用Where句作成(GL向け)
+ </summary>
+ <param name="dt">絞り込み作成元データテーブル</param>   
+ <param name="targetMst">対象マスタ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.ConvertDataSetGL(Jp.Co.Nrs.Com.Base.Interface.IConnection,System.Data.DataRow,System.Data.DataSet@,System.Data.DataSet@)">
+<summary>
+ API連携用データセットを作成
+ </summary>
+ <param name="ds"></param>
+ <remarks></remarks>     
+</member>
+<member name="M:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.CheckAPIDsForGL(Jp.Co.Nrs.Com.Base.Interface.IConnection,System.Data.DataRow,System.Data.DataSet,System.Data.DataSet@)">
+<summary>
+ 作成したデータセットに対し、チェックを実施
+ </summary>
+ <param name="ds">変換チェック対象のデータセット</param>
+ <remarks></remarks>     
+</member>
+<member name="M:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.GetCnvMstDataAP(Jp.Co.Nrs.Com.Base.Interface.IConnection,System.Data.DataSet@)">
+<summary>
+ マスタデータの取得(日陸会社コード変換マスタ)
+ </summary>
+ <param name="obj">接続情報</param>    
+ <param name="ds">追加対象のデータテーブル</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.CreateWhereStrAP(System.Data.DataTable,System.String)">
+<summary>
+ マスタデータ絞り込み用Where句作成(AP向け)
+ </summary>
+ <param name="dt">絞り込み作成元データテーブル</param>   
+ <param name="targetMst">対象マスタ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.CreateWhereStrAPBP(System.Data.DataSet)">
+<summary>
+ マスタデータ絞り込み用Where句作成(AP向け/BPコード変換)
+ </summary>
+ <param name="ds">取得元データテーブル</param>   
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.ConvertDataSetAP(Jp.Co.Nrs.Com.Base.Interface.IConnection,System.Data.DataRow,System.Data.DataSet@,System.Data.DataSet@)">
+<summary>
+ API連携用データセットを作成
+ </summary>
+ <param name="ds"></param>
+ <remarks></remarks>     
+</member>
+<member name="M:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.CheckAPIDsForAP(Jp.Co.Nrs.Com.Base.Interface.IConnection,System.Data.DataRow,System.Data.DataSet,System.Data.DataSet)">
+<summary>
+ 作成したデータセットに対し、チェックを実施
+ </summary>
+ <param name="ds">変換チェック対象のデータセット</param>
+ <remarks></remarks>     
+</member>
+<member name="M:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.InsertToTBMRecAP(Jp.Co.Nrs.Com.Base.Interface.IConnection,System.Data.DataRow)">
+<summary>
+ 社内取引記録テーブル投入 (AP)
+ </summary>              
+ <param name="obj">接続情報</param>    
+ <param name="drow">処理行</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.GetCnvMstDataAR(Jp.Co.Nrs.Com.Base.Interface.IConnection,System.Data.DataSet@)">
+<summary>
+ マスタデータの取得(日陸会社コード変換マスタ)
+ </summary>
+ <param name="obj">接続情報</param>    
+ <param name="ds">追加対象のデータテーブル</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.CreateWhereStrAR(System.Data.DataTable,System.String)">
+<summary>
+ マスタデータ絞り込み用Where句作成(AR向け)
+ </summary>
+ <param name="dt">絞り込み作成元データテーブル</param>   
+ <param name="targetMst">対象マスタ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.CreateWhereStrARBP(System.Data.DataSet)">
+<summary>
+ マスタデータ絞り込み用Where句作成(AR向け/BPコード変換)
+ </summary>
+ <param name="ds">取得元データテーブル</param>   
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.ConvertDataSetAR(Jp.Co.Nrs.Com.Base.Interface.IConnection,System.Data.DataRow,System.Data.DataSet@,System.Data.DataSet@)">
+<summary>
+ API連携用データセットを作成
+ </summary>
+ <param name="ds"></param>
+ <remarks></remarks>     
+</member>
+<member name="M:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.CheckAPIDsForAR(Jp.Co.Nrs.Com.Base.Interface.IConnection,System.Data.DataRow,System.Data.DataSet,System.Data.DataSet)">
+<summary>
+ 作成したデータセットに対し、チェックを実施
+ </summary>
+ <param name="ds">変換チェック対象のデータセット</param>
+ <remarks></remarks>     
+</member>
+<member name="M:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.InsertToTBMRecAR(Jp.Co.Nrs.Com.Base.Interface.IConnection,System.Data.DataRow)">
+<summary>
+ 社内取引記録テーブル投入 (AR)
+ </summary>              
+ <param name="obj">接続情報</param>    
+ <param name="drow">データ行</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.ConvertDataSetAP_GL(Jp.Co.Nrs.Com.Base.Interface.IConnection,System.Data.DataRow,System.Data.DataSet@,System.Data.DataSet@)">
+<summary>
+ API連携用データセットを作成
+ </summary>
+ <param name="ds"></param>
+ <remarks></remarks>                 s
+</member>
+<member name="M:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.CheckAPIDsForGL_AP(Jp.Co.Nrs.Com.Base.Interface.IConnection,System.Data.DataRow,System.Data.DataSet,System.Data.DataSet@)">
+<summary>
+ 作成したデータセットに対し、チェックを実施
+ </summary>
+ <param name="ds">変換チェック対象のデータセット</param>
+ <remarks></remarks>     
+</member>
+<member name="M:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.ConvertDataSetAR_GL(Jp.Co.Nrs.Com.Base.Interface.IConnection,System.Data.DataRow,System.Data.DataSet@,System.Data.DataSet@)">
+<summary>
+ API連携用データセットを作成
+ </summary>
+ <param name="ds"></param>
+ <remarks></remarks>     
+</member>
+<member name="M:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.CheckAPIDsForGL_AR(Jp.Co.Nrs.Com.Base.Interface.IConnection,System.Data.DataRow,System.Data.DataSet,System.Data.DataSet@)">
+<summary>
+ 作成したデータセットに対し、チェックを実施
+ </summary>
+ <param name="ds">変換チェック対象のデータセット</param>
+ <remarks></remarks>     
+</member>
+<member name="M:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.getCompTypeAP(Jp.Co.Nrs.Com.Base.Interface.IConnection,System.Data.DataRow@,System.Data.DataTable@)">
+<summary>
+ 会社パターンの取得（AP）
+ </summary>
+ <param name="obj">接続情報</param>      
+ <param name="dRow">検索対象のヘッダ行</param>
+ <param name="prmDt">追加対象のデータテーブル</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.getCompTypeAR(Jp.Co.Nrs.Com.Base.Interface.IConnection,System.Data.DataRow@,System.Data.DataTable@)">
+<summary>
+ 会社パターンの取得（AR）
+ </summary>
+ <param name="obj">接続情報</param>      
+ <param name="dRow">検索対象のヘッダ行</param>
+ <param name="prmDt">追加対象のデータテーブル</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.getTAXRate(Jp.Co.Nrs.Com.Base.Interface.IConnection,System.Data.DataRow@,System.Data.DataTable@,System.String@)">
+<summary>
+ マスタデータの取得(税レート、バランス区分)
+ </summary>
+ <param name="obj">接続情報</param>                 
+ <param name="dRow">検索対象の行</param>     
+ <param name="CompCd">検索対象の会社コード</param>
+ <param name="prmDt">追加対象のデータテーブル</param>
+ <remarks></remarks>                                                                                 
+</member>
+<member name="M:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.getMessage(Jp.Co.Nrs.Com.Base.Interface.IConnection,System.Data.DataTable@)">
+<summary>
+ マスタデータの取得(メッセージ)
+ </summary>
+ <param name="obj">接続情報</param>                 
+ <param name="dt">追加対象のデータテーブル</param>
+ <remarks></remarks>                                                                                 
+</member>
+<member name="M:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.getACCSts(Jp.Co.Nrs.Com.Base.Interface.IConnection,System.String,System.Data.DataRow,System.Data.DataTable,System.Data.DataTable@)">
+<summary>
+ マスタデータの取得(項目ステータスグループ)
+ </summary>
+ <param name="obj">接続情報</param>                 
+ <param name="dRow">検索対象の行</param>
+ <param name="prmDt">追加対象のデータテーブル</param>
+ <remarks></remarks>                                                                                 
+</member>
+<member name="M:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.getACCStsGL(Jp.Co.Nrs.Com.Base.Interface.IConnection,System.String,System.Data.DataTable,System.Data.DataTable@)">
+<summary>
+ マスタデータの取得(項目ステータスグループ)(性能改善)
+ </summary>
+ <param name="obj">接続情報</param>                 
+ <param name="prmDt">追加対象のデータテーブル</param>
+ <remarks></remarks>                                                                                 
+</member>
+<member name="M:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.GetWkCDCnv(Jp.Co.Nrs.Com.Base.Interface.IConnection,System.Data.DataTable,System.String)">
+<summary>
+ マスタデータの取得(日陸会社コード変換マスタ)
+ </summary>
+ <param name="obj">接続情報</param>    
+ <param name="dt">追加対象のデータテーブル</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.GetWkORGCnv(Jp.Co.Nrs.Com.Base.Interface.IConnection,System.Data.DataTable,System.String)">
+<summary>
+ マスタデータの取得(日陸組織階層変換マスタ)
+ </summary>
+ <param name="obj">接続情報</param>    
+ <param name="dt">追加対象のデータテーブル</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.GetWkTAXCnv(Jp.Co.Nrs.Com.Base.Interface.IConnection,System.Data.DataTable,System.String)">
+<summary>
+ マスタデータの取得(日陸税コード変換マスタ)
+ </summary>
+ <param name="obj">接続情報</param>    
+ <param name="dt">追加対象のデータテーブル</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.GetWkBPCnv(Jp.Co.Nrs.Com.Base.Interface.IConnection,System.Data.DataTable,System.String)">
+<summary>
+ マスタデータの取得(日陸BP→原／利変換マスタ)
+ </summary>
+ <param name="obj">接続情報</param>    
+ <param name="dt">追加対象のデータテーブル</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.GetWkBUCnv(Jp.Co.Nrs.Com.Base.Interface.IConnection,System.Data.DataTable,System.String)">
+<summary>
+ マスタデータの取得(日陸税コード変換マスタ)
+ </summary>
+ <param name="obj">接続情報</param>    
+ <param name="dt">追加対象のデータテーブル</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.getBP_WHT(Jp.Co.Nrs.Com.Base.Interface.IConnection,System.String,System.String,System.Data.DataTable,System.Data.DataTable@,System.String)">
+<summary>
+ 源泉徴収税一覧の取得（タイIF対応）
+ </summary>
+ <param name="obj">接続情報</param>                 
+ <param name="tgtComp">検索対象の会社コード</param>
+ <param name="tgtBp">検索対象のBPコード</param>
+ <param name="CdDt">会社コードコンバート用のデータテーブル</param>
+ <param name="prmDt">追加対象のデータテーブル</param>
+ <param name="CallPtn">呼び出し元パターン</param>
+ <remarks></remarks>                                                                                 
+</member>
+<member name="M:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.getMBP_FC(Jp.Co.Nrs.Com.Base.Interface.IConnection,System.String,System.Data.DataTable,System.Data.DataTable@,System.String)">
+<summary>
+ BPマスタの取得(NRS_COMP_CDから)
+ </summary>
+ <param name="obj">接続情報</param>                 
+ <param name="tgtComp">検索対象の会社コード</param>
+ <param name="CdDt">会社コードコンバート用のデータテーブル</param>
+ <param name="prmDt">追加対象のデータテーブル</param>
+ <param name="CallPtn">呼び出し元パターン</param>
+ <remarks></remarks>                                                                                 
+</member>
+<member name="M:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.getpstngDate(Jp.Co.Nrs.Com.Base.Interface.IConnection,System.Data.DataRow,System.Data.DataTable,System.Data.DataTable@,System.String)">
+<summary>
+ 場の日付の取得
+ </summary>
+ <param name="obj">接続情報</param>                 
+ <param name="dRow">検索対象の行</param>
+ <param name="prmDt">追加対象のデータテーブル</param>
+ <param name="CallPtn">呼び出し元パターン</param>
+ <remarks></remarks>                                                                                 
+</member>
+<member name="M:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.getACCStsChk(Jp.Co.Nrs.Com.Base.Interface.IConnection,System.String,System.Data.DataRow,System.Data.DataTable@)">
+<summary>
+ マスタデータの取得(項目ステータスグループ)（入力チェック用）
+ </summary>
+ <param name="obj">接続情報</param>                 
+ <param name="dRow">検索対象の行</param>
+ <param name="prmDt">追加対象のデータテーブル</param>
+ <remarks></remarks>                                                                                 
+</member>
+<member name="M:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.getACCStsChkGL(Jp.Co.Nrs.Com.Base.Interface.IConnection,System.String,System.Data.DataTable@)">
+<summary>
+ マスタデータの取得(項目ステータスグループ)（入力チェック用）(性能改善)
+ </summary>
+ <param name="obj">接続情報</param>                 
+ <param name="dRow">検索対象の行</param>
+ <param name="prmDt">追加対象のデータテーブル</param>
+ <remarks></remarks>                                                                                 
+</member>
+<member name="M:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.getTgtCURR(Jp.Co.Nrs.Com.Base.Interface.IConnection,System.String,System.Data.DataTable@)">
+<summary>
+ マスタデータの取得(通貨コード情報)
+ </summary>
+ <param name="obj">接続情報</param>           
+ <param name="CarrCd">通貨コード</param>
+ <param name="prmDt">追加対象のデータテーブル</param>
+ <remarks></remarks>                                                                                 
+</member>
+<member name="M:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.getCURR(Jp.Co.Nrs.Com.Base.Interface.IConnection,System.Data.DataTable@)">
+<summary>
+ マスタデータの取得(通貨コード情報)（性能改善）
+ </summary>
+ <param name="obj">接続情報</param>           
+ <param name="prmDt">追加対象のデータテーブル</param>
+ <remarks></remarks>                                                                                 
+</member>
+<member name="M:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.getABMKBN(Jp.Co.Nrs.Com.Base.Interface.IConnection,System.Data.DataTable@,System.String,System.String)">
+<summary>
+ 区分マスタデータの取得(ABM_DB)
+ </summary>
+ <param name="obj">接続情報</param>           
+ <param name="prmDt">追加対象のデータテーブル</param>
+ <param name="kbnGroupCd">区分グループコード</param>
+ <param name="kbnCd">区分コード</param>
+ <remarks></remarks>                                                                                 
+</member>
+<member name="M:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.GetMOrg(Jp.Co.Nrs.Com.Base.Interface.IConnection,System.Data.DataTable,System.String,System.String)">
+<summary>
+ マスタデータの取得(日陸組織階層変換マスタ)
+ </summary>
+ <param name="obj">接続情報</param>    
+ <param name="prmDt">追加対象のデータテーブル</param>  
+ <param name="DeptCd">DEPT_CD引き当て</param>    
+ <param name="NrsCompBp">NRS_COMP_BP引き当て</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.GetMOrgBp(Jp.Co.Nrs.Com.Base.Interface.IConnection,System.Data.DataTable,System.String,System.String)">
+<summary>
+ マスタデータの取得(日陸組織階層変換マスタ)
+ </summary>
+ <param name="obj">接続情報</param>    
+ <param name="prmDt">追加対象のデータテーブル</param>  
+ <param name="DeptBp">DEPT_BP引き当て</param>    
+ <param name="NrsCompBp">NRS_COMP_BP引き当て</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.GetMOrgGL(Jp.Co.Nrs.Com.Base.Interface.IConnection,System.Data.DataTable)">
+<summary>
+ マスタデータの取得(日陸組織階層変換マスタ)（性能改善）
+ </summary>
+ <param name="obj">接続情報</param>    
+ <param name="prmDt">追加対象のデータテーブル</param>  
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.GetMSegment(Jp.Co.Nrs.Com.Base.Interface.IConnection,System.Data.DataTable,System.String,System.String)">
+<summary>
+ マスタデータの取得(セグメントマスタ)
+ </summary>
+ <param name="obj">接続情報</param>    
+ <param name="prmDt">追加対象のデータテーブル</param>  
+ <param name="DataTypeCd">データタイプ</param>    
+ <param name="CnctSegCd">セグメントコード</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.InitAllFlg">
+<summary>
+　変数とフラグを初期化
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.SetCallMessage(System.Data.DataSet@,System.String,System.String,System.String,System.Collections.Generic.List{System.Collections.Generic.List{System.String}})">
+<summary>
+ 返却するメッセージを投入
+ </summary>
+ <param name="ds">変換チェック対象のデータセット</param> 
+ <param name="M_Type">処理タイプ</param> 
+ <param name="M_Code">メッセージコード</param>
+ <remarks></remarks>     
+</member>
+<member name="M:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.SetCallMessageTemp(System.Data.DataSet,System.String,System.String,System.String,System.Collections.Generic.List{System.Collections.Generic.List{System.String}})">
+<summary>
+ 返却するメッセージを投入(一時テーブル)
+ </summary>
+ <param name="M_Type">処理タイプ</param> 
+ <param name="M_Code">メッセージコード</param>
+ <remarks></remarks>     
+</member>
+<member name="M:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.SetCallMessageStr(System.Data.DataSet@,System.String,System.String,System.String,System.String)">
+<summary>
+ 返却するメッセージを投入
+ </summary>
+ <param name="ds">変換チェック対象のデータセット</param> 
+ <param name="M_Type">処理タイプ</param>     
+ <param name="ItemNo">行番号</param> 
+ <param name="SetStrJa">文面（日本語）</param> 
+ <param name="SetStrEn">文面（英語）</param> 
+ <remarks></remarks>     
+</member>
+<member name="M:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.SetCallMessageTempStr(System.Data.DataSet@,System.String,System.String,System.String,System.String)">
+<summary>
+ 返却するメッセージを投入(一時テーブル・変換無し)
+ </summary>
+ <param name="ds">変換チェック対象のデータセット</param> 
+ <param name="M_Type">処理タイプ</param>     
+ <param name="ItemNo">行番号</param> 
+ <param name="SetStrJa">文面（日本語）</param> 
+ <param name="SetStrEn">文面（英語）</param> 
+ <remarks></remarks>     
+</member>
+<member name="M:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.TrimDataSet(System.Data.DataSet@,System.String)">
+<summary>
+　トリミング対象を指定
+ </summary>
+ <param name="ds">対象のデータセット</param>    
+ <param name="callPtn">呼び出し元のパターン</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.TrimChkItem(System.String,System.Int32)">
+<summary>
+　項目の文字数チェック・トリミング
+ </summary>
+ <param name="TrimTgt">判定文字列</param>    
+ <param name="tgtMax">文字列最大値</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.OutPutDataTableLog(System.Data.DataTable,System.String)">
+<summary>
+ データテーブルの中身をログに出力
+ </summary>
+ <param name="dt">出力対象のデータテーブル</param> 
+ <param name="FuncNm">呼び出し元名</param> 
+ <remarks></remarks>     
+</member>
+<member name="M:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.CreateDataTableTxt(System.Data.DataTable,System.String)">
+<summary>
+ データテーブルをテキスト化
+ </summary>
+ <param name="dt">出力対象のデータテーブル</param> 
+ <param name="FuncNm">呼び出し元名</param> 
+ <remarks></remarks>     
+</member>
+<member name="M:Jp.Co.Nrs.SAP.Call.Library.Utility.SapCallUtility.OutPutExcFile(System.Data.DataSet,System.String,System.String)">
+<summary>
+ データテーブルの中身をログに出力
+ </summary>
+ <param name="ds">出力対象のデータセット</param> 
+ <param name="outputKbn">対象とするデータ区分</param> 
+ <remarks></remarks>     
+</member>
+</members>
+</doc>

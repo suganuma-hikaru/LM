@@ -1,0 +1,235 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.CSG.DAC
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.CS.DAC.CSG010DAC.TABLE_NM">
+ <summary>
+ テーブル名
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSG010DAC.FUNCTION_NM.SELECT_DATA_CNT">
+ <summary>
+ 検索結果データ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSG010DAC.FUNCTION_NM.SELECT_DATA">
+ <summary>
+ 検索結果データ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSG010DAC.FUNCTION_NM.GET_NEW_QR_CD">
+ <summary>
+ QRコード採番
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSG010DAC.SELECT_SQL_HEADER">
+ <summary>
+ 検索
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSG010DAC.UPDATE_M_TANK_SQL">
+ <summary>
+ 保存 M_TANK UPDATE
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSG010DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSG010DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSG010DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSG010DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSG010DAC.CheckResultCount(System.Data.DataSet)">
+ <summary>
+ 取得行数チェック
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSG010DAC.SelectResultList(System.Data.DataSet)">
+ <summary>
+ 検索結果取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>検索結果取得取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSG010DAC.SetSQLSelectWhere(System.Data.DataRow)">
+ <summary>
+ 検索条件設定
+ </summary>
+ <param name="conditionRow">検索条件行</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSG010DAC.GetNewQRCd(System.Data.DataSet)">
+ <summary>
+ QRコード採番
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="T:Jp.Co.Nrs.CS.DAC.CSG510DAC.TABLE_NM">
+ <summary>
+ テーブル名
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSG510DAC.FUNCTION_NM.SELECT_DATA_CNT">
+ <summary>
+ 取得行数チェック
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSG510DAC.FUNCTION_NM.SELECT_DATA">
+ <summary>
+ 検索結果データ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSG510DAC.FUNCTION_NM.SELECT_CUR_QRCODE">
+ <summary>
+ QRコード現在値取得処理
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSG510DAC.FUNCTION_NM.UPDATE_M_TANK">
+ <summary>
+ 容器マスタデータ更新
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSG510DAC.SELECT_SQL_HEADER">
+ <summary>
+ 検索
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSG510DAC.SELECT_CURRENT_VALUE_QRCODE_SQL">
+ <summary>
+ QRコード最大値取得
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSG510DAC.UPDATE_M_TANK_SQL">
+ <summary>
+ 保存 M_TANK UPDATE
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSG510DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSG510DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSG510DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSG510DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSG510DAC.CheckResultCount(System.Data.DataSet)">
+ <summary>
+ 取得行数チェック
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSG510DAC.SelectResultList(System.Data.DataSet)">
+ <summary>
+ 検索結果取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>検索結果取得取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSG510DAC.SelectCurrentValueQRCode(System.Data.DataSet)">
+ <summary>
+ QRコード現在値取得処理
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSG510DAC.SetSQLSelectWhere(System.Data.DataRow)">
+ <summary>
+ 検索条件設定
+ </summary>
+ <param name="conditionRow">検索条件行</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSG510DAC.UpdateMTank(System.Data.DataSet)">
+ <summary>
+ M_TANK更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSG510DAC.SetMTankInsUpdParameter">
+ <summary>
+ M_TANK更新パラメータ
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSG510DAC.SetInsUpdSysCommonParameter">
+ <summary>
+ 登録・更新システム共通パラメータ
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSG510DAC.SetMTankExclusiveKeyParameter">
+ <summary>
+ M_TANK排他キーパラメータ
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSG710DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSG710DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSG710DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSG710DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSG710DAC.SetSQLSelectWhere">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

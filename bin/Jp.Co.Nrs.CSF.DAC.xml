@@ -1,0 +1,1073 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.CSF.DAC
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.CS.DAC.CSF010DAC.TABLE_NM">
+ <summary>
+ テーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF010DAC.FUNCTION_NM.SELECT_DATA">
+ <summary>
+ 検索結果データ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF010DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF010DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF010DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF010DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF010DAC.SelectResultList(System.Data.DataSet)">
+ <summary>
+ 検索結果取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>検索結果取得取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF010DAC.SetSQLSelectWhere(System.Data.DataRow)">
+ <summary>
+ 検索条件設定
+ </summary>
+ <param name="conditionRow">検索条件行</param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.DAC.CSF030DAC.TABLE_NM">
+ <summary>
+ テーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF030DAC.FUNCTION_NM.SELECT_DATA">
+ <summary>
+ 検索結果データ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF030DAC.FUNCTION_NM.UPDATE_F_TEST_ORD_HEAD">
+ <summary>
+ 定検ヘッダ更新
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF030DAC.FUNCTION_NM.UPDATE_F_TEST_ORD_DTL">
+ <summary>
+ 定検明細更新
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF030DAC.FUNCTION_NM.INSERT_E_INOUT_ORD_HEAD">
+ <summary>
+ 入出荷検品ヘッダ登録
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF030DAC.FUNCTION_NM.INSERT_E_INOUT_ORD_DTL">
+ <summary>
+ 入出荷検品明細登録
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF030DAC.FUNCTION_NM.INSERT_D_LOGISTICS_DTL">
+ <summary>
+ 物流明細登録
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF030DAC.FUNCTION_NM.UPDATE_D_LOGISTICS_DTL">
+ <summary>
+ 物流明細更新
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF030DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF030DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF030DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF030DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF030DAC.SelectResultList(System.Data.DataSet)">
+ <summary>
+ 検索結果取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>検索結果取得取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF030DAC.UpdateFTestOrdHead(System.Data.DataSet)">
+ <summary>
+ 定検ヘッダ更新(更新)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>明細がすべて完了の場合、ヘッダも完了に更新(完了以外が存在する場合は更新空振り)</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF030DAC.UpdateFTestOrdDtl(System.Data.DataSet)">
+ <summary>
+ 定検明細更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF030DAC.InsertEInOutOrdHead(System.Data.DataSet)">
+ <summary>
+ 入出荷検品ヘッダ 登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF030DAC.InsertEInOutOrdDtl(System.Data.DataSet)">
+ <summary>
+ 入出荷検品明細 登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF030DAC.UpdateDLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 物流明細 更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF030DAC.InsertDLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 物流明細 登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF030DAC.SetParamUpdateFtestOrdHead(System.Data.DataRow)">
+ <summary>
+ 定検ヘッダ パラメータ設定
+ </summary>
+ <param name="row"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF030DAC.SetParamUpdateFTestOrdDtl(System.Data.DataRow)">
+ <summary>
+ 定検明細 パラメータ設定
+ </summary>
+ <param name="row"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF030DAC.SetParamInsertEInoutOrdHead(System.Data.DataRow)">
+ <summary>
+ 入出荷検品 パラメータ設定
+ </summary>
+ <param name="row"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF030DAC.SetParamInsertEInoutOrdDtl(System.Data.DataRow)">
+ <summary>
+ 入出荷明細 パラメータ設定
+ </summary>
+ <param name="row"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF030DAC.SetParamUpdateDLogisticsDtl(System.Data.DataRow)">
+ <summary>
+ 物流明細更新 パラメータ設定
+ </summary>
+ <param name="row"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF030DAC.SetParamInsertDLogisticsDtl(System.Data.DataRow)">
+ <summary>
+ 物流明細登録 パラメータ設定
+ </summary>
+ <param name="row"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF030DAC.SetParamSysEntCommonData">
+ <summary>
+ システム共通共通パラメータ(削除フラグを除く）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF030DAC.SetParamSysUpdCommonData">
+ <summary>
+ システム共通共通パラメータ(削除フラグを除く）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF030DAC.SetSQLSelectWhere(System.Data.DataRow)">
+ <summary>
+ 検索条件設定
+ </summary>
+ <param name="conditionRow">検索条件行</param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.DAC.CSF020DAC.TABLE_NM">
+ <summary>
+ テーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF020DAC.FUNCTION_NM.SELECT_HEAD_DATA">
+ <summary>
+ 定検ヘッダデータ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF020DAC.FUNCTION_NM.SELECT_DTL_DATA">
+ <summary>
+ 定検明細データ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF020DAC.FUNCTION_NM.SELECT_INOUT_ORD_DATA">
+ <summary>
+ 入出荷検品データ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF020DAC.FUNCTION_NM.INSERT_F_TEST_ORD_HEAD">
+ <summary>
+ 定検ヘッダ登録
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF020DAC.FUNCTION_NM.INSERT_F_TEST_ORD_DTL">
+ <summary>
+ 定検明細登録
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF020DAC.FUNCTION_NM.INSERT_E_INOUT_ORD_HEAD">
+ <summary>
+ 入出荷検品ヘッダ登録
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF020DAC.FUNCTION_NM.INSERT_E_INOUT_ORD_DTL">
+ <summary>
+ 入出荷検品明細登録
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF020DAC.FUNCTION_NM.UPDATE_F_TEST_ORD_HEAD">
+ <summary>
+ 定検ヘッダ更新
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF020DAC.FUNCTION_NM.UPDATE_F_TEST_ORD_DTL">
+ <summary>
+ 定検明細更新
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF020DAC.FUNCTION_NM.UPDATE_F_TEST_ORD_DTL_NEW_TO_OLD">
+ <summary>
+ 定検明細更新(最新⇒過去)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF020DAC.FUNCTION_NM.UPDATE_F_TEST_ORD_DTL_OLD_TO_NEW">
+ <summary>
+ 定検明細更新(過去⇒最新)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF020DAC.FUNCTION_NM.UPDATE_F_TEST_ORD_HEAD_ORDER">
+ <summary>
+ 定検ヘッダ更新(検査指示)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF020DAC.FUNCTION_NM.UPDATE_F_TEST_ORD_HEAD_CONFIRM">
+ <summary>
+ 定検ヘッダ更新(日程確定)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF020DAC.FUNCTION_NM.UPDATE_F_TEST_ORD_HEAD_RESCHEDULE">
+ <summary>
+ 定検ヘッダ更新(日程変更)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF020DAC.FUNCTION_NM.UPDATE_D_LOGISTICS_DTL">
+ <summary>
+ 物流明細更新
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF020DAC.FUNCTION_NM.DELETE_F_TEST_ORD_HEAD">
+ <summary>
+ 定検ヘッダ削除
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF020DAC.FUNCTION_NM.DELETE_F_TEST_ORD_DTL">
+ <summary>
+ 定検明細削除
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF020DAC.FUNCTION_NM.DELETE_E_INOUT_ORD_HEAD">
+ <summary>
+ 入出荷検品ヘッダ削除
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF020DAC.FUNCTION_NM.DELETE_E_INOUT_ORD_DTL">
+ <summary>
+ 入出荷検品明細削除
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF020DAC.FUNCTION_NM.ROLLBACK_F_TEST_ORD_HEAD_ORDER">
+ <summary>
+ 定検ヘッダロールバック(日程確定待ち⇒作成中)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF020DAC.FUNCTION_NM.ROLLBACK_F_TEST_ORD_HEAD_CONFIRM">
+ <summary>
+ 定検ヘッダロールバック(検査待ち⇒日程確定待ち)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF020DAC.FUNCTION_NM.HAITA_CHK">
+ <summary>
+ 排他制御
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF020DAC.FUNCTION_NM.SELECT_CHECKED_INOUT_DATA">
+ <summary>
+ 検品済みデータ件数取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF020DAC.FUNCTION_NM.SELECT_BEF_TEST_DATA">
+ <summary>
+ 前回定検データ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF020DAC.FUNCTION_NM.SELECT_M_FILE_DATA">
+ <summary>
+ DLファイルデータ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF020DAC.FUNCTION_NM.INSERT_D_LOGISTICS_DTL">
+ <summary>
+ 物流明細登録
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF020DAC.FUNCTION_NM.DELETE_D_LOGISTICS_DTL">
+ <summary>
+ 物流明細削除
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF020DAC.FUNCTION_NM.SELECT_NEXT_PROCESS_DATA">
+ <summary>
+ 次工程チェックデータ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF020DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF020DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF020DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF020DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF020DAC.SelectHeadData(System.Data.DataSet)">
+ <summary>
+ 検索結果取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>検索結果取得取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF020DAC.SelectDtlData(System.Data.DataSet)">
+ <summary>
+ 検索結果取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>検索結果取得取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF020DAC.SelectInOutOrdData(System.Data.DataSet)">
+ <summary>
+ 検索結果取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>検索結果取得取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF020DAC.SelectBefTestData(System.Data.DataSet)">
+ <summary>
+ 前回定検データ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>検索結果取得取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF020DAC.SelecLastCheckDateData(System.Data.DataSet)">
+ <summary>
+ 前回検品日付データ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>検索結果取得取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF020DAC.SelectNextProcessData(System.Data.DataSet)">
+ <summary>
+ 次工程チェックデータ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>検索結果取得取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF020DAC.SelectCheckedInOutData(System.Data.DataSet)">
+ <summary>
+ 検品済みデータ件数取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>検索結果取得取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF020DAC.SelectMFileData(System.Data.DataSet)">
+ <summary>
+ MFILEdデータ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>検索結果取得取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF020DAC.InsertFTestOrdHead(System.Data.DataSet)">
+ <summary>
+ F_TEST_ORD_HEAD更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF020DAC.InsertFTestOrdDtl(System.Data.DataSet)">
+ <summary>
+ F_TEST_ORD_DTL更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF020DAC.InsertEInOutOrdHead(System.Data.DataSet)">
+ <summary>
+ E_INOUT_ORD_HEAD更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF020DAC.InsertEInOutOrdDtl(System.Data.DataSet)">
+ <summary>
+ E_INOUT_ORD_DTL登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF020DAC.InsertDLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ D_LOGISTICS_DTL登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF020DAC.UpdateFTestOrdHead(System.Data.DataSet)">
+ <summary>
+ 定検ヘッダ更新(保存)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF020DAC.UpdateFTestOrdHeadOrder(System.Data.DataSet)">
+ <summary>
+ 定検ヘッダ更新(依頼)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF020DAC.UpdateFTestOrdHeadConfirm(System.Data.DataSet)">
+ <summary>
+ 定検ヘッダ更新(日程確定)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF020DAC.UpdateFTestOrdHeadReschedule(System.Data.DataSet)">
+ <summary>
+ 定検ヘッダ更新(日程変更)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF020DAC.UpdateFTestOrdDtl(System.Data.DataSet)">
+ <summary>
+ 定検明細更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF020DAC.UpdateFTestOrdDtlNewToOld(System.Data.DataSet)">
+ <summary>
+ 定検明細更新(過去化)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF020DAC.UpdateFTestOrdDtlOldToNew(System.Data.DataSet)">
+ <summary>
+ 定検明細更新(最新化)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF020DAC.UpdateDLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 物流明細更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF020DAC.RollBackFTestOrdHeadOrder(System.Data.DataSet)">
+ <summary>
+ F_TEST_ORD_HEAD(日程確定待ち⇒作成中)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF020DAC.RollBackFTestOrdHeadConfirm(System.Data.DataSet)">
+ <summary>
+ F_TEST_ORD_HEAD(検査待ち⇒日程確定待ち)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF020DAC.DeleteFTestOrdHead(System.Data.DataSet)">
+ <summary>
+ 定検ヘッダ削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF020DAC.DeleteFTestOrdDtl(System.Data.DataSet)">
+ <summary>
+ 定検明細削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF020DAC.DeleteEInOutOrdHead(System.Data.DataSet)">
+ <summary>
+ 入出荷検品ヘッダ削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF020DAC.DeleteEInOutOrdDtl(System.Data.DataSet)">
+ <summary>
+ 入出荷検品明細削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF020DAC.DeleteDLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 物流明細削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF020DAC.SetParamSelectData(System.Data.DataRow)">
+ <summary>
+ パラメータ設定
+ </summary>
+ <param name="row"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF020DAC.SetParamSelectBefTestData(System.Data.DataRow)">
+ <summary>
+ パラメータ設定
+ </summary>
+ <param name="row"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF020DAC.SetParamSelectMFileData(System.Data.DataRow)">
+ <summary>
+ パラメータ設定
+ </summary>
+ <param name="row"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF020DAC.SetParamInsertFtestOrdHead(System.Data.DataRow)">
+ <summary>
+ パラメータ設定
+ </summary>
+ <param name="row"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF020DAC.SetParamInsertFTestOrdDtl(System.Data.DataRow)">
+ <summary>
+ パラメータ設定
+ </summary>
+ <param name="row"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF020DAC.SetParamInsertEInoutOrdHead(System.Data.DataRow)">
+ <summary>
+ パラメータ設定
+ </summary>
+ <param name="row"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF020DAC.SetParamInsertEInoutOrdDtl(System.Data.DataRow)">
+ <summary>
+ パラメータ設定
+ </summary>
+ <param name="row"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF020DAC.SetParamInsertDLogisticsDtl(System.Data.DataRow)">
+ <summary>
+ パラメータ設定
+ </summary>
+ <param name="row"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF020DAC.SetParamUpdateFtestOrdHead(System.Data.DataRow)">
+ <summary>
+ パラメータ設定
+ </summary>
+ <param name="row"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF020DAC.SetParamUpdateFTestOrdDtl(System.Data.DataRow)">
+ <summary>
+ パラメータ設定
+ </summary>
+ <param name="row"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF020DAC.SetParamUpdateFTestOrdDtlNewToOld(System.Data.DataRow)">
+ <summary>
+ パラメータ設定
+ </summary>
+ <param name="row"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF020DAC.SetParamUpdateFTestOrdDtlOldToNew(System.Data.DataRow)">
+ <summary>
+ パラメータ設定
+ </summary>
+ <param name="row"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF020DAC.SetParamUpdateFTestOrdHeadOrder(System.Data.DataRow)">
+ <summary>
+ パラメータ設定
+ </summary>
+ <param name="row"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF020DAC.SetParamUpdateFTestOrdHeadConfirm(System.Data.DataRow)">
+ <summary>
+ パラメータ設定
+ </summary>
+ <param name="row"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF020DAC.SetParamUpdateFTestOrdHeadReschedule(System.Data.DataRow)">
+ <summary>
+ パラメータ設定
+ </summary>
+ <param name="row"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF020DAC.SetParamSysEntCommonData">
+ <summary>
+ システム共通共通パラメータ(削除フラグを除く）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF020DAC.SetParamSysUpdCommonData">
+ <summary>
+ システム共通共通パラメータ(削除フラグを除く）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.DAC.CSF040DAC.TABLE_NM">
+ <summary>
+ テーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF040DAC.FUNCTION_NM.SELECT_DATA">
+ <summary>
+ 定検明細データ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF040DAC.FUNCTION_NM.SELECT_IN_COMPLETE_COUNT">
+ <summary>
+ 定検明細データ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF040DAC.FUNCTION_NM.UPDATE_F_TEST_ORD_HEAD">
+ <summary>
+ 定検ヘッダ更新
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF040DAC.FUNCTION_NM.UPDATE_F_TEST_ORD_DTL">
+ <summary>
+ 定検明細更新
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF040DAC.FUNCTION_NM.UPDATE_F_TEST_ORD_DTL_RESULT">
+ <summary>
+ 定検明細更新(結果報告)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF040DAC.FUNCTION_NM.UPDATE_D_LOGISTICS_DTL">
+ <summary>
+ 物流明細更新
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF040DAC.FUNCTION_NM.HAITA_CHK">
+ <summary>
+ 排他制御
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF040DAC.FUNCTION_NM.ROLLBACK_F_TEST_ORD_HEAD">
+ <summary>
+ 定検ヘッダ更新
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF040DAC.FUNCTION_NM.ROLLBACK_F_TEST_ORD_DTL">
+ <summary>
+ 定検明細更新
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF040DAC.FUNCTION_NM.ROLLBACK_D_LOGISTICS_DTL">
+ <summary>
+ 物流明細更新
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF040DAC.FUNCTION_NM.SELECT_NEXT_PROCESS_DATA">
+ <summary>
+ 次工程チェックデータ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF040DAC.FUNCTION_NM.SELECT_NEXT_INOUT_DATA">
+ <summary>
+ 未来入出荷検品チェックデータ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF040DAC.FUNCTION_NM.SELECT_MAIL_INFO_RES_DATA">
+ <summary>
+ 通知メール送信情報取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF040DAC.FUNCTION_NM.SELECT_F_TEST_ORD_HEAD_COUNT">
+ <summary>
+ 定検ヘッダ有無情報取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF040DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF040DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSF040DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF040DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF040DAC.SelectData(System.Data.DataSet)">
+ <summary>
+ 検索結果取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>検索結果取得取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF040DAC.SelectInCompleteCount(System.Data.DataSet)">
+ <summary>
+ 検品済みデータ件数取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>検索結果取得取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF040DAC.SelectNextProcessData(System.Data.DataSet)">
+ <summary>
+ 次工程チェックデータ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>検索結果取得取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF040DAC.SelectNextInOutData(System.Data.DataSet)">
+ <summary>
+ 未来の入出荷検品チェックデータ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>検索結果取得取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF040DAC.SelectMailInfoTestResultData(System.Data.DataSet)">
+ <summary>
+ 通知メール送信情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>通知メール送信情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF040DAC.SelectFTestOrdHeadCount(System.Data.DataSet)">
+ <summary>
+ 定検ヘッダ有無情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>検索結果取得取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF040DAC.UpdateFTestOrdHead(System.Data.DataSet)">
+ <summary>
+ 定検ヘッダ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF040DAC.UpdateFTestOrdDtl(System.Data.DataSet)">
+ <summary>
+ 定検明細更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF040DAC.UpdateFTestOrdDtlResult(System.Data.DataSet)">
+ <summary>
+ 結果報告
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF040DAC.UpdateDLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 結果報告
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF040DAC.RollBackFTestOrdHead(System.Data.DataSet)">
+ <summary>
+ "ロールバック(定検ヘッダ)"
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF040DAC.RollBackFTestOrdDtl(System.Data.DataSet)">
+ <summary>
+ "ロールバック(定検明細)"
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF040DAC.RollBackDLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 結果報告
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF040DAC.SetParamSelectData(System.Data.DataRow)">
+ <summary>
+ パラメータ設定
+ </summary>
+ <param name="row"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF040DAC.SetParamUpdateFtestOrdHead(System.Data.DataRow)">
+ <summary>
+ パラメータ設定
+ </summary>
+ <param name="row"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF040DAC.SetParamUpdateFTestOrdDtl(System.Data.DataRow)">
+ <summary>
+ パラメータ設定
+ </summary>
+ <param name="row"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF040DAC.SetParamUpdateFTestOrdDtlResult(System.Data.DataRow)">
+ <summary>
+ パラメータ設定
+ </summary>
+ <param name="row"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF040DAC.SetParamUpdateDLogisticsDtl(System.Data.DataRow)">
+ <summary>
+ パラメータ設定
+ </summary>
+ <param name="row"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF040DAC.SetParamUpdateFTestOrdHeadRollBack(System.Data.DataRow)">
+ <summary>
+ パラメータ設定
+ </summary>
+ <param name="row"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF040DAC.SetParamUpdateFTestOrdDtlRollBack(System.Data.DataRow)">
+ <summary>
+ パラメータ設定
+ </summary>
+ <param name="row"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF040DAC.SetParamUpdateDLogisticsDtlRollBack(System.Data.DataRow)">
+ <summary>
+ パラメータ設定
+ </summary>
+ <param name="row"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSF040DAC.SetParamSysUpdCommonData">
+ <summary>
+ システム共通共通パラメータ(削除フラグを除く）
+ </summary>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

@@ -1,0 +1,660 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.GLA.GUI
+</name>
+</assembly>
+<members>
+<member name="M:Jp.Co.Nrs.GL.GUI.Controllers.GLA0250Controller.#ctor">
+ <summary>
+ 通常用コンストラクタ
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.Controllers.GLA0299Controller.#ctor">
+ <summary>
+ 通常用コンストラクタ
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.Controllers.GLA0200Controller.#ctor">
+ <summary>
+ 通常用コンストラクタ
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.Controllers.GLA0200Controller.SetListJson(Jp.Co.Nrs.GL.GUI.GLA0200Models)">
+ <summary>
+ pqGridを使用する配列のJson化・初期化設定
+ </summary>
+ <param name="outMdl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0205WS.#ctor(Jp.Co.Nrs.GL.GUI.Controllers.GLA0200Controller)">
+ <summary>
+ 指定された区分名を格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0205WS.SetInitControl(Jp.Co.Nrs.GL.GUI.GLA0200Models@)">
+ <summary>
+ コントロール設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0205WS.SetMsgListToOutModel(Jp.Co.Nrs.GL.GUI.GLA0200Models@)">
+ <summary>
+ 使用メッセージリストをoutMdlに設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0205WS.SetInitData(Jp.Co.Nrs.GL.GUI.GLA0200Models@)">
+ <summary>
+ 初期値設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0205WS.CreateViewModelGLA0202(Jp.Co.Nrs.GL.GUI.GLA0200Models)">
+ <summary>
+ ビューの作成
+ </summary>
+ <param name="mdl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0205WS.SetDatasetSearchCondition(Jp.Co.Nrs.GL.GUI.GLA0200Models,System.Data.DataSet@)">
+ <summary>
+ 検索条件をデータセットに設定
+ </summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0205WS.SetDataToOutModel(System.Data.DataSet,Jp.Co.Nrs.GL.GUI.GLA0200Models@)">
+ <summary>
+ 検索結果を返却モデルに設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0205WS.SetDocCutCntGraphDataToOutModel(System.Data.DataSet,Jp.Co.Nrs.GL.GUI.GLA0200Models@)">
+ <summary>
+ DOC CUT件数グラフを返却モデルに設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0205WS.SetEtdAtdCntGraphDataToOutModel(System.Data.DataSet,Jp.Co.Nrs.GL.GUI.GLA0200Models@)">
+ <summary>
+ ETD ATD件数グラフを返却モデルに設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0205WS.SetTodayDataModel(System.Data.DataSet,Jp.Co.Nrs.GL.GUI.GLA0200Models@)">
+ <summary>
+ 依頼件数(Untreated,Reject)を返却モデルに設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0205WS.SetHyphenDate(System.String)">
+ <summary>
+ 日付項目にハイフンを設定(Morris対応のため)
+ </summary>
+ <param name="val"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0202WS.#ctor(Jp.Co.Nrs.GL.GUI.Controllers.GLA0200Controller)">
+ <summary>
+ 指定された区分名を格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0202WS.SetInitControl(Jp.Co.Nrs.GL.GUI.GLA0200Models@)">
+ <summary>
+ コントロール設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0202WS.SetMsgListToOutModel(Jp.Co.Nrs.GL.GUI.GLA0200Models@)">
+ <summary>
+ 使用メッセージリストをoutMdlに設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0202WS.SetInitData(Jp.Co.Nrs.GL.GUI.GLA0200Models@)">
+ <summary>
+ 初期値設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0202WS.CreateViewModelGLA0202(Jp.Co.Nrs.GL.GUI.GLA0200Models)">
+ <summary>
+ ビューの作成
+ </summary>
+ <param name="mdl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0202WS.SetDatasetSearchCondition(Jp.Co.Nrs.GL.GUI.GLA0200Models,System.Data.DataSet@)">
+ <summary>
+ 検索条件をデータセットに設定
+ </summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0202WS.SetDataToOutModel(System.Data.DataSet,Jp.Co.Nrs.GL.GUI.GLA0200Models@)">
+ <summary>
+ 検索結果を返却モデルに設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0202WS.SetInCntGraphDataToOutModel(System.Data.DataSet,Jp.Co.Nrs.GL.GUI.GLA0200Models@)">
+ <summary>
+ 搬入件数グラフを返却モデルに設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0202WS.SetOutCntGraphDataToOutModel(System.Data.DataSet,Jp.Co.Nrs.GL.GUI.GLA0200Models@)">
+ <summary>
+ 搬出件数グラフを返却モデルに設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0202WS.SetIraiCnt1DataToOutModel(System.Data.DataSet,Jp.Co.Nrs.GL.GUI.GLA0200Models@)">
+ <summary>
+ 依頼件数(Draft)を返却モデルに設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0202WS.SetIraiList1DataToOutModel(System.Data.DataSet,Jp.Co.Nrs.GL.GUI.GLA0200Models@)">
+ <summary>
+ 依頼リスト(Draft)グラフを返却モデルに設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0202WS.SetIraiCnt2DataToOutModel(System.Data.DataSet,Jp.Co.Nrs.GL.GUI.GLA0200Models@)">
+ <summary>
+ 依頼件数(Untreated,Reject)を返却モデルに設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0202WS.SetIraiList2DataToOutModel(System.Data.DataSet,Jp.Co.Nrs.GL.GUI.GLA0200Models@)">
+ <summary>
+ 依頼リスト(Untreated,Reject)グラフを返却モデルに設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0202WS.SetHyphenDate(System.String)">
+ <summary>
+ 日付項目にハイフンを設定(Morris対応のため)
+ </summary>
+ <param name="val"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0203WS.#ctor(Jp.Co.Nrs.GL.GUI.Controllers.GLA0200Controller)">
+ <summary>
+ 指定された区分名を格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0203WS.SetInitControl(Jp.Co.Nrs.GL.GUI.GLA0200Models@)">
+ <summary>
+ コントロール設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0203WS.SetMsgListToOutModel(Jp.Co.Nrs.GL.GUI.GLA0200Models@)">
+ <summary>
+ 使用メッセージリストをoutMdlに設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0203WS.SetInitData(Jp.Co.Nrs.GL.GUI.GLA0200Models@)">
+ <summary>
+ 初期値設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0203WS.CreateViewModelGLA0202(Jp.Co.Nrs.GL.GUI.GLA0200Models)">
+ <summary>
+ ビューの作成
+ </summary>
+ <param name="mdl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0203WS.SetDatasetSearchCondition(Jp.Co.Nrs.GL.GUI.GLA0200Models,System.Data.DataSet@)">
+ <summary>
+ 検索条件をデータセットに設定
+ </summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0203WS.SetDataToOutModel(System.Data.DataSet,Jp.Co.Nrs.GL.GUI.GLA0200Models@)">
+ <summary>
+ 検索結果を返却モデルに設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0203WS.SetEstimateDataToOutModel(System.Data.DataSet,Jp.Co.Nrs.GL.GUI.GLA0200Models@)">
+ <summary>
+ Estimateデータを返却モデルに設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0203WS.SetBookingDataToOutModel(System.Data.DataSet,Jp.Co.Nrs.GL.GUI.GLA0200Models@)">
+ <summary>
+ Bookingデータを返却モデルに設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0203WS.SetInvoiceDataToOutModel(System.Data.DataSet,Jp.Co.Nrs.GL.GUI.GLA0200Models@)">
+ <summary>
+ Invoiceデータを返却モデルに設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0203WS.SetPaymentDataToOutModel(System.Data.DataSet,Jp.Co.Nrs.GL.GUI.GLA0200Models@)">
+ <summary>
+ Paymentデータを返却モデルに設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0204WS.#ctor(Jp.Co.Nrs.GL.GUI.Controllers.GLA0200Controller)">
+ <summary>
+ 指定された区分名を格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0204WS.SetInitControl(Jp.Co.Nrs.GL.GUI.GLA0200Models@)">
+ <summary>
+ コントロール設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0204WS.SetMsgListToOutModel(Jp.Co.Nrs.GL.GUI.GLA0200Models@)">
+ <summary>
+ 使用メッセージリストをoutMdlに設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0204WS.SetInitData(Jp.Co.Nrs.GL.GUI.GLA0200Models@)">
+ <summary>
+ 初期値設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0204WS.CreateViewModelGLA0202(Jp.Co.Nrs.GL.GUI.GLA0200Models)">
+ <summary>
+ ビューの作成
+ </summary>
+ <param name="mdl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0204WS.SetDatasetSearchCondition(Jp.Co.Nrs.GL.GUI.GLA0200Models,System.Data.DataSet@)">
+ <summary>
+ 検索条件をデータセットに設定
+ </summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0204WS.SetDataToOutModel(System.Data.DataSet,Jp.Co.Nrs.GL.GUI.GLA0200Models@)">
+ <summary>
+ 検索結果を返却モデルに設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0204WS.SetArrangeCoverDataToOutModel(System.Data.DataSet,Jp.Co.Nrs.GL.GUI.GLA0200Models@)">
+ <summary>
+ Cover(Arrange)データを返却モデルに設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0204WS.SetArrangeCoverCntDataToMessage(System.Data.DataSet,Jp.Co.Nrs.GL.GUI.GLA0200Models@)">
+ <summary>
+ Cover(Arrange)対象件数をメッセージに設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0204WS.SetFwdCoverLimitDataToOutModel(System.Data.DataSet,Jp.Co.Nrs.GL.GUI.GLA0200Models@)">
+ <summary>
+ Cover(FWD)期限管理対象データを返却モデルに設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0204WS.SetFwdCoverStatusDataToOutModel(System.Data.DataSet,Jp.Co.Nrs.GL.GUI.GLA0200Models@)">
+ <summary>
+ Cover(FWD)手配状況対象データを返却モデルに設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0204WS.SetCoverDataToOutModel(System.Data.DataSet,Jp.Co.Nrs.GL.GUI.GLA0200Models@)">
+ <summary>
+ カバーデータを返却モデルに設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0204WS.SetMessageDataToOutModel(System.Data.DataSet,Jp.Co.Nrs.GL.GUI.GLA0200Models@)">
+ <summary>
+ メッセージデータを返却モデルに設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0206WS.#ctor(Jp.Co.Nrs.GL.GUI.Controllers.GLA0200Controller)">
+ <summary>
+ 指定された区分名を格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0206WS.SetInitControl(Jp.Co.Nrs.GL.GUI.GLA0200Models@)">
+ <summary>
+ コントロール設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0206WS.SetMsgListToOutModel(Jp.Co.Nrs.GL.GUI.GLA0200Models@)">
+ <summary>
+ 使用メッセージリストをoutMdlに設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0206WS.SetInitData(Jp.Co.Nrs.GL.GUI.GLA0200Models@)">
+ <summary>
+ 初期値設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0206WS.CreateViewModelGLA0202(Jp.Co.Nrs.GL.GUI.GLA0200Models)">
+ <summary>
+ ビューの作成
+ </summary>
+ <param name="mdl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0207WS.#ctor(Jp.Co.Nrs.GL.GUI.Controllers.GLA0200Controller)">
+ <summary>
+ 指定された区分名を格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0207WS.SetInitControl(Jp.Co.Nrs.GL.GUI.GLA0200Models@)">
+ <summary>
+ コントロール設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0207WS.SetMsgListToOutModel(Jp.Co.Nrs.GL.GUI.GLA0200Models@)">
+ <summary>
+ 使用メッセージリストをoutMdlに設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0207WS.SetInitData(Jp.Co.Nrs.GL.GUI.GLA0200Models@)">
+ <summary>
+ 初期値設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0208WS.#ctor(Jp.Co.Nrs.GL.GUI.Controllers.GLA0200Controller)">
+ <summary>
+ 指定された区分名を格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0208WS.SetInitControl(Jp.Co.Nrs.GL.GUI.GLA0200Models@)">
+ <summary>
+ コントロール設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0208WS.SetMsgListToOutModel(Jp.Co.Nrs.GL.GUI.GLA0200Models@)">
+ <summary>
+ 使用メッセージリストをoutMdlに設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0208WS.SetInitData(Jp.Co.Nrs.GL.GUI.GLA0200Models@)">
+ <summary>
+ 初期値設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0250WS.#ctor(Jp.Co.Nrs.GL.GUI.Controllers.GLA0250Controller)">
+ <summary>
+ 指定された区分名を格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0250WS.Main">
+ <summary>
+ 初期表示処理
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0250WS.SetTempKey(Jp.Co.Nrs.GL.GUI.GLA0250Models@)">
+ <summary>
+ Temp Keyの設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0200WS.#ctor(Jp.Co.Nrs.GL.GUI.Controllers.GLA0200Controller)">
+ <summary>
+ 指定された区分名を格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0200WS.SetInitControl(Jp.Co.Nrs.GL.GUI.GLA0200Models@)">
+ <summary>
+ コントロール設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0200WS.SetTempKey(Jp.Co.Nrs.GL.GUI.GLA0200Models@)">
+ <summary>
+ Temp Keyの設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0200WS.GetLoginAutho(Jp.Co.Nrs.GL.GUI.GLA0200Models@)">
+ <summary>
+ ログイン権限の取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0200WS.CreateViewModelGLA0200(Jp.Co.Nrs.GL.GUI.GLA0200Models)">
+ <summary>
+ ビューの作成
+ </summary>
+ <param name="mdl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0200WS.GetDispTodayScheduleKbn">
+ <summary>
+ 今日の予定表示制御区分取得処理
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0200WS.GetNrsDryFlg(Jp.Co.Nrs.GL.GUI.GLA0200Models)">
+ <summary>
+ NRS DRY 判定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0200WS.GetDispTodayScheduleKbnBookingMemo">
+ <summary>
+ 今日の予定表示制御区分取得処理（Bookingメモ用Dashboard表示ユーザー用管理画面項目）
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0200WS.GetDispTodayScheduleKbnGLA0207">
+ <summary>
+ 今日の予定表示制御区分取得処理（Depot Out/ETD/ETA/CY Cut Off用Dashboard表示ユーザー用管理画面項目）
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0200WS.GetDispTodayScheduleKbnGLA0208">
+ <summary>
+ 今日の予定表示制御区分取得処理（Bookingメモ用Dashboard表示ユーザー2用管理画面項目（アロケート））
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0200WS.SetSearchConditionsGLVK0100(Jp.Co.Nrs.GL.GUI.GLA0200Models@,Jp.Co.Nrs.GL.GUI.GLVK0100Models@)">
+ <summary>
+ GLVK0100依頼 遷移先モデルへ条件を作成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0200WS.SetSearchConditionsGLVK0300(Jp.Co.Nrs.GL.GUI.GLA0200Models@,Jp.Co.Nrs.GL.GUI.GLVK0300Models@)">
+ <summary>
+ GLVK0300依頼 遷移先モデルへ条件を作成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0200WS.SavePanelSort(Jp.Co.Nrs.GL.GUI.GLA0200Models)">
+ <summary>
+ パネルソート保存処理
+ </summary>
+ <param name="inMdl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0200WS.GetPanelSort(Jp.Co.Nrs.GL.GUI.GLA0200Models)">
+ <summary>
+ パネルソート取得処理
+ </summary>
+ <param name="outMdl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0200WS.AddPanelSort(System.Data.DataSet,System.String,System.Int32@)">
+ <summary>
+ パネルソート用レコード追加
+ </summary>
+ <param name="ds"></param>
+ <param name="panelCd"></param>
+ <param name="maxIndex"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0201WS.#ctor(Jp.Co.Nrs.GL.GUI.Controllers.GLA0200Controller)">
+ <summary>
+ 指定された区分名を格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0201WS.SetInitControl(Jp.Co.Nrs.GL.GUI.GLA0200Models@)">
+ <summary>
+ コントロール設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0201WS.SetMsgListToOutModel(Jp.Co.Nrs.GL.GUI.GLA0200Models@)">
+ <summary>
+ 使用メッセージリストをoutMdlに設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0201WS.SetInitData(Jp.Co.Nrs.GL.GUI.GLA0200Models@)">
+ <summary>
+ 初期値設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0201WS.CreateViewModelGLA0201(Jp.Co.Nrs.GL.GUI.GLA0200Models)">
+ <summary>
+ ビューの作成
+ </summary>
+ <param name="mdl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0201WS.SetDatasetSearchCondition(Jp.Co.Nrs.GL.GUI.GLA0200Models,System.Data.DataSet@)">
+ <summary>
+ 検索条件をデータセットに設定
+ </summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0201WS.SetDataToOutModel(System.Data.DataSet,Jp.Co.Nrs.GL.GUI.GLA0200Models@)">
+ <summary>
+ 検索結果を返却モデルに設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0201WS.SetInCntGraphDataToOutModel(System.Data.DataSet,Jp.Co.Nrs.GL.GUI.GLA0200Models@)">
+ <summary>
+ 搬入件数グラフを返却モデルに設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0201WS.SetOutCntGraphDataToOutModel(System.Data.DataSet,Jp.Co.Nrs.GL.GUI.GLA0200Models@)">
+ <summary>
+ 搬出件数グラフを返却モデルに設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0201WS.SetTodayPlanDataToOutModel(System.Data.DataSet,Jp.Co.Nrs.GL.GUI.GLA0200Models@)">
+ <summary>
+ 今日の予定返却モデルに設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0201WS.SetIraiCntDataToOutModel(System.Data.DataSet,Jp.Co.Nrs.GL.GUI.GLA0200Models@)">
+ <summary>
+ 依頼件数を返却モデルに設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0201WS.SetIraiListDataToOutModel(System.Data.DataSet,Jp.Co.Nrs.GL.GUI.GLA0200Models@)">
+ <summary>
+ 依頼リストグラフを返却モデルに設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLA0201WS.SetHyphenDate(System.String)">
+ <summary>
+ 日付項目にハイフンを設定(Morris対応のため)
+ </summary>
+ <param name="val"></param>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

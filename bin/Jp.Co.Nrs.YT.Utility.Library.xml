@@ -1,0 +1,431 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.YT.Utility.Library
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.YT.My.Resources.Resources">
+<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.YT.My.Resources.Resources.ResourceManager">
+<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.YT.My.Resources.Resources.Culture">
+<summary>
+  すべてについて、現在のスレッドの CurrentUICulture プロパティをオーバーライドします
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.YT.Const.NumberMasterConst">
+ <summary>
+ ナンバーマスタ番号定数定義クラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.YT.Const.NumberMasterConst.NumberKbn">
+ <summary>
+ シーケンス名
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.YT.Const.NumberMasterConst.NumberKbn.MSG_NO">
+ <summary>
+ メッセージNo
+ </summary>
+</member>
+<member name="T:Jp.Co.Nrs.YT.Utility.DateUtility">
+ <summary>
+ 日付変換ユーティリティクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Utility.DateUtility.DateParse(System.String,System.String)">
+ <summary>
+ String型の日付文字列をDateTime型に変換します。
+ </summary>
+ <param name="inStr">日付文字列</param>
+ <param name="optStr">日付文字列</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Utility.DateUtility.DateParse(System.String,System.String,System.TimeZoneInfo,System.TimeZoneInfo)">
+ <summary>
+ String型の日付文字列をDateTime型に変換します。
+ </summary>
+ <param name="inStr">日付文字列</param>
+ <param name="optStr">日付文字列</param>
+ <param name="fromTimeZone">変換元のタイムゾーン</param>
+ <param name="toTimeZone">変換先のタイムゾーン</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Utility.DateUtility.DateParse(System.String,System.TimeZoneInfo,System.TimeZoneInfo)">
+ <summary>
+ String型の日付文字列をDateTime型に変換します。
+ </summary>
+ <param name="inStr">日付文字列</param>
+ <param name="fromTimeZone">変換元のタイムゾーン</param>
+ <param name="toTimeZone">変換先のタイムゾーン</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Utility.DateUtility.DBDateFormat(System.Nullable{System.DateTime},Jp.Co.Nrs.YT.Utility.DateUtility.DateFormatType,System.String)">
+ <summary>
+ DateTime型をString型の日付文字列に変換します。区切り記号を含みません。
+ </summary>
+ <param name="inDt"></param>
+ <param name="fmtType"></param>
+ <param name="lang"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Utility.DateUtility.ViewDateFormat(System.Nullable{System.DateTime},Jp.Co.Nrs.YT.Utility.DateUtility.DateFormatType,System.String)">
+ <summary>
+ DateTime型をString型の日付文字列に変換します。区切り記号を含みます。
+ </summary>
+ <param name="inDt">日付</param>
+ <param name="fmtType">日付書式</param>
+ <param name="lang">言語</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Utility.DateUtility.GetFormatString(System.String,Jp.Co.Nrs.YT.Utility.DateUtility.DateFormatType,System.Boolean)">
+ <summary>
+ キーの値を元に日付書式文字列を取得します。
+ </summary>
+ <param name="lang">言語</param>
+ <param name="fmtType">日付書式</param>
+ <param name="delimiter">True :区切り記号あり | False:区切り記号なし</param>
+ <returns></returns>
+ <remarks>隠蔽する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Utility.DateUtility.AddCoron(System.String)">
+ <summary>
+ 引数の文字列をコロン編集します。（６桁、４桁の場合）
+ </summary>
+ <param name="inStr">日付文字列</param>
+ <remarks>
+ ==============
+ in : HHmmss
+ out: HH:mm:ss
+ ==============
+ in : HHmm
+ out: HH:mm
+ ==============
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Utility.DateUtility.GetGregorianDate(System.String)">
+ <summary>
+ グレゴリオ暦を取得します
+ </summary>
+ <param name="value">「000001」～「199365」の範囲で指定します。</param>
+ <returns>エラー、範囲外の値は空を返します</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Utility.DateUtility.GetJulianDate(System.String)">
+ <summary>
+ ユリウス暦を取得します(日付として妥当な値のみ)
+ </summary>
+ <param name="value">
+ 8桁(yyyyMMdd) or 10桁(yyyy/MM/dd)
+ 1900/01/01～2099/12/31の範囲で指定します。
+ </param>
+ <returns>エラー、範囲外の値は空を返します</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.YT.Utility.DateUtility.DateFormatType">
+ <summary>
+ 書式列挙型定義
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.YT.Utility.DateUtility.DateFormatType.Date">
+ <summary>'yyyyMMdd'</summary>
+</member>
+<member name="F:Jp.Co.Nrs.YT.Utility.DateUtility.DateFormatType.Month">
+ <summary>'yyyyMM'</summary>
+</member>
+<member name="F:Jp.Co.Nrs.YT.Utility.DateUtility.DateFormatType.MonthDate">
+ <summary>'MMdd'</summary>
+</member>
+<member name="F:Jp.Co.Nrs.YT.Utility.DateUtility.DateFormatType.DateMinute">
+ <summary>'yyyyMMddHHmm'</summary>
+</member>
+<member name="F:Jp.Co.Nrs.YT.Utility.DateUtility.DateFormatType.DateSecond">
+ <summary>'yyyyMMddHHmmss'</summary>
+</member>
+<member name="F:Jp.Co.Nrs.YT.Utility.DateUtility.DateFormatType.DateMilliSecond">
+ <summary>'yyyyMMddHHmmssfff'</summary>
+</member>
+<member name="F:Jp.Co.Nrs.YT.Utility.DateUtility.DateFormatType.Minute">
+ <summary>'HHmm'</summary>
+</member>
+<member name="F:Jp.Co.Nrs.YT.Utility.DateUtility.DateFormatType.Second">
+ <summary>'HHmmss'</summary>
+</member>
+<member name="F:Jp.Co.Nrs.YT.Utility.DateUtility.DateFormatType.MilliSecond">
+ <summary>'HHmmssfff'</summary>
+</member>
+<member name="T:Jp.Co.Nrs.YT.Utility.DateUtility.DateFormatInfo">
+ <summary>
+ 日付書式クラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.YT.Utility.DateUtility.DateFormatInfo.FormatString">
+ <summary>日付書式の文字列</summary>
+</member>
+<member name="P:Jp.Co.Nrs.YT.Utility.DateUtility.DateFormatInfo.Language">
+ <summary>日付書式の言語</summary>
+</member>
+<member name="P:Jp.Co.Nrs.YT.Utility.DateUtility.DateFormatInfo.FormatType">
+ <summary>日付書式のタイプ</summary>
+</member>
+<member name="P:Jp.Co.Nrs.YT.Utility.DateUtility.DateFormatInfo.Delimiter">
+ <summary>区切り記号</summary>
+ <remarks>
+ True : 区切りあり
+ False: 区切りなし
+ </remarks>
+</member>
+<member name="P:Jp.Co.Nrs.YT.Utility.DateUtility.DateFormatInfo.ParseIngnore">
+ <summary>DateParse関数除外フラグ</summary>
+ <remarks>
+ True : DateParse関数を除外する日付書式
+ False: DateParse関数を除外しない日付書式（省略可）
+ </remarks>
+</member>
+<member name="F:Jp.Co.Nrs.YT.Utility.DateUtility.FormatList">
+ <summary>
+ 日付書式リスト
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Utility.DateUtility.ConvertToJAorEN(System.String)">
+ <summary>
+ 引数の言語を日本語または英語に変換します。
+ </summary>
+ <param name="lang"></param>
+ <remarks>
+ "ja"の場合     : "ja" を返却
+ "ja"以外の場合 : "en" を返却
+ </remarks>
+</member>
+<member name="P:Jp.Co.Nrs.YT.Utility.DateUtility.JST">
+ <summary>
+ 日本標準時(JST)
+ </summary>
+ <returns>TimeZoneInfo</returns>
+ <remarks>Japan Standard Time</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.YT.Utility.DateUtility.UTC">
+ <summary>
+ 協定世界時(UTC)
+ </summary>
+ <returns>TimeZoneInfo</returns>
+ <remarks>Coordinated Universal Time</remarks>
+</member>
+<member name="T:Jp.Co.Nrs.YT.Utility.YTStrUtility">
+ <summary>
+ 文字列変換ユーティリティクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Utility.YTStrUtility.FormatEmptyToNumericZero(System.String)">
+ <summary>
+ 数値項目に空白が存在していた場合、"0"を設定する。
+ </summary>
+ <param name="value">変換対象文字列</param>
+ <returns>
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Utility.YTStrUtility.DeleteComma(System.String)">
+ <summary>
+ String型のカンマを除去する
+ </summary>
+ <param name="valueStr"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Utility.YTStrUtility.GetCommaStr(System.String,System.Int32)">
+ <summary>
+ カンマ編集および小数点以下表示
+ </summary>
+ <param name="value"></param>
+ <param name="point"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Utility.YTStrUtility.FormatEmptyIsnull(System.String)">
+ <summary>
+ NULLの場合、空白。NULL以外の場合、引数を返却
+ </summary>
+ <param name="value">変換対象文字列</param>
+ <returns>
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Utility.YTStrUtility.FormatEmptyIsZero(System.String)">
+ <summary>
+ "0"の場合、空白。"0"以外の場合、引数を返却
+ </summary>
+ <param name="value">変換対象文字列</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Utility.YTStrUtility.FormatNumValue(System.String)">
+ <summary>
+ 数値項目の設定値変換
+ </summary>
+ <param name="valueStr"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Utility.YTStrUtility.DeleteSlash(System.String)">
+ <summary>
+ String型の/を除去する
+ </summary>
+ <param name="valueStr"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Utility.YTStrUtility.GetSwitchStr(System.String)">
+ <summary>
+ 言語切替をし、文字列で変換する
+ </summary>
+ <param name="key"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Utility.YTStrUtility.GetBooleToString(System.Boolean)">
+ <summary>
+ Trueの場合、"1"。Falseの場合、"0"を返却
+ </summary>
+ <param name="value">変換対象文字列</param>
+ <returns>
+ </returns>
+ <remarks>0:False/1:True</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Utility.YTStrUtility.GetBooleToStringKbn(System.Boolean)">
+ <summary>
+ Trueの場合、"00001"。Falseの場合、"00000"を返却
+ </summary>
+ <param name="value">変換対象文字列</param>
+ <returns>
+ </returns>
+ <remarks>00000:False/00001:True</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Utility.YTStrUtility.GetStringToBoole(System.String)">
+ <summary>
+ "1"の場合、True。"0"の場合、Falseを返却
+ </summary>
+ <param name="value">変換対象文字列</param>
+ <returns>
+ </returns>
+ <remarks>0:False/1:True</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Utility.YTStrUtility.GetStringKbnToBoole(System.String)">
+ <summary>
+ "00001"の場合、True。"00000"の場合、Falseを返却
+ </summary>
+ <param name="value">変換対象文字列</param>
+ <returns>
+ </returns>
+ <remarks>00000:False/00001:True</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Utility.YTStrUtility.ReplaceTagetString(System.String,System.Collections.Generic.List{System.String})">
+ <summary>
+ 対象文字列の置換文字列を置換し、返却する。
+ </summary>
+ <param name="tagetStr">置換対象文字列</param>
+ <param name="replaceParams">置き換え文字</param>
+ <returns></returns>
+ <remarks>置換したい箇所に[%9]を設定し、
+           %後は、1からの連番を設定</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Utility.YTStrUtility.DeleteCarriageReturn_LineFeedCode(System.String)">
+ <summary>
+ 不要な改行コード(Cr or Lf)を削除します(元々のCrLfコードは削除しません)
+ </summary>
+ <param name="value">検索文字列</param>
+ <returns>整形した文字列</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Utility.YTStrUtility.AddZero(System.String,System.Int32)">
+ <summary>
+ 対象文字列に、前ゼロ埋め処理を行い返却
+ </summary>
+ <param name="value">対象文字列</param>
+ <param name="length">桁数</param>
+ <returns>前ゼロつき対象文字列</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Utility.YTStrUtility.SplitByLength(System.String,System.Int32[])">
+ <summary>
+ 文字列を指定された長さの配列順に分割する
+ </summary>
+ <param name="srcStr">対象文字列</param>
+ <param name="lengthArray">分割する長さの配列</param>
+ <returns>分割結果</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Utility.YTStrUtility.GetStringSendDatas(System.String)">
+ <summary>
+ 明細送信データ(String)をString配列に分解
+ </summary>
+ <param name="values">対象データ
+ Stringのフォーマット 項目を"囲み、","で区分、;で改行
+ 1行目         |2行目         |3行目         |
+ "","","","","";"","","","","";"","","","","";
+ </param>
+ <returns>
+ rows(cols())で返却
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.YT.Utility.NumberMasterUtility">
+ <summary>
+ ナンバーマスタ番号取得部品
+ </summary>
+ <remarks>自動採番を行います</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.YT.Utility.NumberMasterUtility.SEQUENCE_SELECT">
+ <summary>
+ シーケンス取得用SQL文
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Utility.NumberMasterUtility.GetAutoCode(Jp.Co.Nrs.YT.Const.NumberMasterConst.NumberKbn,Jp.Co.Nrs.Com.Base.Interface.IConnection,System.String)">
+ <summary>
+ 新規コードを取得します
+ </summary>
+ <param name="numKbn">ナンバー区分</param>
+ <param name="obj">BLFクラス</param>
+ <param name="optionCd">オプション</param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Utility.NumberMasterUtility.SelectSequence(System.Data.SqlClient.SqlConnection,Jp.Co.Nrs.YT.Const.NumberMasterConst.NumberKbn)">
+ <summary>
+ シーケンス読み込み
+ </summary>
+ <param name="conn"></param>
+ <param name="numKbn"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Utility.NumberMasterUtility.EditCode(System.Data.SqlClient.SqlConnection,Jp.Co.Nrs.YT.Const.NumberMasterConst.NumberKbn,System.String,System.String)">
+ <summary>
+ 取得ナンバー編集
+ </summary>
+ <param name="conn">DBコネクション</param>
+ <param name="code">取得コード</param>
+ <param name="optionCd">オプション</param>
+ <returns>編集したコード</returns>
+ <remarks>先頭に部署記号を付与します</remarks>
+</member>
+</members>
+</doc>

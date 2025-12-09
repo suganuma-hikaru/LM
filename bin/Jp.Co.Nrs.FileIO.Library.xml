@@ -1,0 +1,260 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.FileIO.Library
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.FileIO.My.Resources.Resources">
+<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.FileIO.My.Resources.Resources.ResourceManager">
+<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.FileIO.My.Resources.Resources.Culture">
+<summary>
+  すべてについて、現在のスレッドの CurrentUICulture プロパティをオーバーライドします
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.FileIO.FileDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.FileIO.FileDS.FILEDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.FileIO.FileDS.FILERow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.FileIO.FileDS.FILERowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.FileIO.FileMove">
+ <summary>
+ ファイル操作
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.FileIO.FileMove.MoveFile(System.String,System.String)">
+ <summary>
+ ファイル移動
+ </summary>
+ <param name="orgFilePath"></param>
+ <param name="destFilePath"></param>
+ <returns>2022.11.07 マスタ連携WEB化対応</returns>
+</member>
+<member name="T:Jp.Co.Nrs.FileIO.FileExecuter">
+ <summary>
+ ファイル実行
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.FileIO.FileExecuter.ExecuteFile(System.String)">
+ <summary>
+ ファイルを実行
+ </summary>
+ <param name="filePath">実行ファイルパス</param>
+ <returns>実行結果</returns>
+</member>
+<member name="M:Jp.Co.Nrs.FileIO.FileIOServiceAccessor.MoveFile(System.String,System.String)">
+ <summary>
+ ファイルを移動
+ </summary>
+ <param name="orgFilePath"></param>
+ <param name="destFilePath"></param>
+ <returns>2022.11.07 マスタ連携WEB化対応</returns>
+</member>
+<member name="M:Jp.Co.Nrs.FileIO.FileIOServiceAccessor.GetFileNameList(System.String)">
+ <summary>
+ ファイル名リストの取得
+ </summary>
+ <param name="folderPath"></param>
+ <returns>2022.11.07 マスタ連携WEB化対応</returns>
+</member>
+<member name="T:Jp.Co.Nrs.FileIO.FileIOServiceCaller">
+ <summary>
+ FileIOServiceのコーラ
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.FileIO.FileIOServiceCaller.CallWSA(System.String,System.String,System.Data.DataSet)">
+ <summary>
+ WSA呼び出し
+ </summary>
+ <param name="facadeName"></param>
+ <param name="methodName"></param>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.FileIO.FileIOServiceCaller.GetReturnParam(Jp.Co.Nrs.Com.Base.ServiceData)">
+ <summary>
+ 戻り値取得
+ </summary>
+ <param name="sd"></param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.FileIO.FileIOServiceExecuter">
+ <summary>
+ FileIOServiceへのエグゼキュータ
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.FileIO.FileIOServiceExecuter.ExecuteFile(System.String)">
+ <summary>
+ ファイルを実行
+ </summary>
+ <param name="filePath"></param>
+ <returns></returns>
+</member>
+<member name="T:Jp.Co.Nrs.FileIO.FileIOServiceReader">
+ <summary>
+ FileIOServiceからのリーダ
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.FileIO.FileIOServiceReader.ReadBinaryFile(System.String)">
+ <summary>
+ バイナリ読み込み
+ </summary>
+ <param name="filePath"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.FileIO.FileIOServiceReader.ReadTextFile(System.String,System.String)">
+ <summary>
+ テキスト読み込み
+ </summary>
+ <param name="filePath"></param>
+ <param name="fileEncoding"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.FileIO.FileIOServiceReader.CopyFileServiceToLocal(System.String,System.String)">
+ <summary>
+ ファイルコピー
+ </summary>
+ <param name="fromPath"></param>
+ <param name="toPath"></param>
+</member>
+<member name="T:Jp.Co.Nrs.FileIO.FileIOServiceWriter">
+ <summary>
+ FileIOServiceへのライタ
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.FileIO.FileIOServiceWriter.WriteBinaryFile(System.String,System.Byte[])">
+ <summary>
+ バイナリ書き込み
+ </summary>
+ <param name="filePath"></param>
+ <param name="rawData"></param>
+</member>
+<member name="M:Jp.Co.Nrs.FileIO.FileIOServiceWriter.WriteTextFile(System.String,System.String,System.String)">
+ <summary>
+ テキスト書き込み
+ </summary>
+ <param name="filePath"></param>
+ <param name="textData"></param>
+ <param name="fileEncoding"></param>
+</member>
+<member name="M:Jp.Co.Nrs.FileIO.FileIOServiceWriter.CopyFileLocalToService(System.String,System.String)">
+ <summary>
+ ファイルコピー
+ </summary>
+ <param name="fromPath"></param>
+ <param name="toPath"></param>
+</member>
+<member name="T:Jp.Co.Nrs.FileIO.FileReader">
+ <summary>
+ ファイルリーダ
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.FileIO.FileReader.ReadBinaryFile(System.String)">
+ <summary>
+ バイナリ読み込み
+ </summary>
+ <param name="filePath"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.FileIO.FileReader.ReadTextFile(System.String,System.String)">
+ <summary>
+ テキスト読み込み
+ </summary>
+ <param name="filePath"></param>
+ <param name="fileEncoding"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.FileIO.FileReader.CopyFile(System.String,System.String)">
+ <summary>
+ ファイルコピー
+ </summary>
+ <param name="fromPath">サーバパス</param>
+ <param name="toPath">ローカルパス</param>
+</member>
+<member name="T:Jp.Co.Nrs.FileIO.FileWriter">
+ <summary>
+ ファイルライタ
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.FileIO.FileWriter.WriteBinaryFile(System.String,System.Byte[])">
+ <summary>
+ バイナリ書き込み
+ </summary>
+ <param name="filePath"></param>
+ <param name="rawData"></param>
+</member>
+<member name="M:Jp.Co.Nrs.FileIO.FileWriter.WriteTextFile(System.String,System.String,System.String)">
+ <summary>
+ テキスト書き込み
+ </summary>
+ <param name="filePath"></param>
+ <param name="textData"></param>
+ <param name="fileEncoding"></param>
+</member>
+<member name="M:Jp.Co.Nrs.FileIO.FileWriter.CopyFile(System.String,System.String)">
+ <summary>
+ ファイルコピー
+ </summary>
+ <param name="fromPath">ローカルパス</param>
+ <param name="toPath">サーバパス</param>
+</member>
+<member name="T:Jp.Co.Nrs.FileIO.Folder">
+ <summary>
+ フォルダ操作
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.FileIO.Folder.GetFileNameList(System.String)">
+ <summary>
+ ファイル名リスト取得
+ </summary>
+ <param name="folderPath"></param>
+ <returns>2022.11.07 マスタ連携WEB化対応</returns>
+</member>
+<member name="T:Jp.Co.Nrs.FileIO.DataSetCreator">
+ <summary>
+ DataSet作成
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.FileIO.DataSetCreator.CreateFileDS(System.String,System.Byte[])">
+ <summary>
+ FileDS作成
+ </summary>
+ <param name="filePath"></param>
+ <param name="rawData"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.FileIO.DataSetCreator.CreateFileDS(System.String,System.String)">
+ <summary>
+ FileDS作成
+ </summary>
+ <param name="orgFilePath"></param>
+ <param name="destFilePath"></param>
+ <returns></returns>
+</member>
+</members>
+</doc>

@@ -1,0 +1,266 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.CSH.GUI
+</name>
+</assembly>
+<members>
+<member name="M:Jp.Co.Nrs.CS.GUI.Controllers.CSH010Controller.#ctor">
+ <summary>
+ 通常用コンストラクタ
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.Controllers.CSH010Controller.SetListJson(Jp.Co.Nrs.CS.GUI.CSH010Models)">
+ <summary>
+ pqGridを使用する配列のJson化・初期化設定
+ </summary>
+ <param name="outMdl"></param>
+ <returns>outMdl</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.Controllers.CSH010Controller.SetJsonList(Jp.Co.Nrs.CS.GUI.CSH010Models)">
+ <summary>
+ jsonをListに変換する
+ </summary>
+ <param name="outMdl"></param>
+ <returns>outMdl</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSH010WS.#ctor(Jp.Co.Nrs.CS.GUI.Controllers.CSH010Controller)">
+ <summary>
+ 指定された区分名を格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSH010WS.SetInitControl(Jp.Co.Nrs.CS.GUI.CSH010Models@)">
+ <summary>
+ コントロール設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSH010WS.SetTempMdlKey(Jp.Co.Nrs.CS.GUI.CSH010Models@)">
+ <summary>
+ テンポラリーキー設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSH010WS.SetInitCommon(Jp.Co.Nrs.CS.GUI.CSH010Models@)">
+ <summary>
+ 初期共通設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSH010WS.GetSCompCd">
+ <summary>
+ システム利用会社取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSH010WS.CreateViewModel(Jp.Co.Nrs.CS.GUI.CSH010Models)">
+ <summary>
+ ビューモデルの生成
+ </summary>
+ <param name="inMdl"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSH010WS.SetMsgListToOutModel(Jp.Co.Nrs.CS.GUI.CSH010Models@)">
+ <summary>
+ 使用メッセージリストをoutMdlに設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSH010WS.SetDatasetNowCondition(System.Data.DataSet@,System.String)">
+ <summary>
+ 初期表示設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSH010WS.CreateDatasetForMasterCheck(Jp.Co.Nrs.CS.GUI.CSH010Models)">
+ <summary>
+ マスタチェック用データセットの生成
+ </summary>
+ <param name="mdl"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSH010WS.SetDatasetInputSalesPlan(System.Data.DataSet@,Jp.Co.Nrs.CS.GUI.CSH010Models,System.String,System.String)">
+ <summary>
+ 販売計画登録のためにデータをデータセットに設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSH010WS.SetDatasetInputRetentionPeriod(System.Data.DataSet@,Jp.Co.Nrs.CS.GUI.CSH010Models,System.String)">
+ <summary>
+ 滞留期間登録のためにデータをデータセットに設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSH010WS.SetDatasetInputRetentionPeriodInput(System.Data.DataSet@,Jp.Co.Nrs.CS.GUI.CSH010Models,System.String,System.String)">
+ <summary>
+ 滞留期間入力登録のためにデータをデータセットに設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSH010WS.SetDatasetInputProcessResult(Jp.Co.Nrs.CS.GUI.CSH010Models,System.Data.DataSet@,System.String,System.String)">
+ <summary>
+ 処理結果登録のためにデータをデータセットに設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSH010WS.SetDatasetInputStoredProcedure(Jp.Co.Nrs.CS.GUI.CSH010Models,System.Data.DataSet@,System.String)">
+ <summary>
+ ストアド呼び出しのためにデータをデータセットに設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSH010WS.SetDatasetInputInRetentionPeriod(Jp.Co.Nrs.CS.GUI.CSH010Models,System.Data.DataSet@,System.String)">
+ <summary>
+ 滞留期間更新のためにデータをデータセットに設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSH010WS.SetDatasetPrintCondition(System.Data.DataSet@,System.String,Jp.Co.Nrs.CS.GUI.CSH010Models,System.String)">
+ <summary>
+ 印刷条件をデータセットに設定
+ </summary>
+ <param name="inMdl">Model</param>
+ <param name="ds">Dataset</param>
+ <param name="printDtNm"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSH010WS.SetInitConditionToOutModel(Jp.Co.Nrs.CS.GUI.CSH010Models@,System.String)">
+ <summary>
+ 検索条件モデル初期値設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSH010WS.SetModels(Jp.Co.Nrs.CS.GUI.CSH010Models,System.Data.DataSet@)">
+ <summary>
+ 初期表示用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSH010WS.SetSalesPlanData(Jp.Co.Nrs.CS.GUI.CSH010Models,System.Data.DataSet)">
+ <summary>
+ 販売計画情報設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSH010WS.SetDataToOutRetentionPeriodModel(Jp.Co.Nrs.CS.GUI.CSH010Models,System.Data.DataSet)">
+ <summary>
+ 滞留期間情報設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSH010WS.SetDataToOutProcessResultModel(Jp.Co.Nrs.CS.GUI.CSH010Models,System.Data.DataSet)">
+ <summary>
+ 処理結果情報設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSH010WS.IsErrUploadFileCheck(System.Web.HttpPostedFileWrapper,Jp.Co.Nrs.CS.GUI.CSH010Models@)">
+ <summary>
+ アップロードファイル形式チェック
+ </summary>
+ <param name="inFile"></param>
+ <param name="outMdl"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSH010WS.TempSaveUploadFile(System.Web.HttpPostedFileWrapper)">
+ <summary>
+ アップロードファイル一時保存
+ </summary>
+ <param name="inFile"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSH010WS.LoadUploadFile(Jp.Co.Nrs.CS.GUI.CSH010Models,System.String)">
+ <summary>
+ アップロードファイル読み込み処理
+ </summary>
+ <param name="Mdl"></param>
+ <param name="FilePath"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSH010WS.CheckCellValue(AdvanceSoftware.ExcelCreator.Xlsx.Cell)">
+ <summary>
+ セル値チェック
+ </summary>
+ <param name="cell"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSH010WS.CreateDatasetPrintCondition(System.String,Jp.Co.Nrs.CS.GUI.CSH010Models,System.Data.DataSet@,System.String@,System.String@)">
+ <summary>
+ 印刷条件設定作成
+ </summary>
+ <param name="inMdl">Model</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSH010WS.CreateDatasetDownloadCondition(System.String,Jp.Co.Nrs.CS.GUI.CSH010Models,System.Data.DataSet@,System.String@,System.String@)">
+ <summary>
+ テンプレートダウンロード条件設定作成
+ </summary>
+ <param name="inMdl">Model</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSH010WS.IsErrUploadFileDataCheck(Jp.Co.Nrs.CS.GUI.CSH010Models@,Jp.Co.Nrs.CS.GUI.CSH010Models)">
+ <summary>
+ 入力チェック（取り込みデータ用）
+ </summary>
+ <param name="outMdl"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSH010WS.IsErrSaveDataCheck(Jp.Co.Nrs.CS.GUI.CSH010Models@,Jp.Co.Nrs.CS.GUI.CSH010Models)">
+ <summary>
+ 入力項目チェック(処理実行)
+ </summary>
+ <param name="outMdl"></param>
+ <param name="inMdl"></param>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSH010WS.IsErrSaveSingleCheck(Jp.Co.Nrs.CS.GUI.CSH010Models@,Jp.Co.Nrs.CS.GUI.CSH010Models)">
+ <summary>
+ 単項目チェック(入力項目チェック(処理実行))
+ </summary>
+ <param name="outMdl"></param>
+ <param name="inMdl"></param>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSH010WS.IsErrUpdatePeriodDataCheck(Jp.Co.Nrs.CS.GUI.CSH010Models@,Jp.Co.Nrs.CS.GUI.CSH010Models)">
+ <summary>
+ 入力項目チェック(滞留期間更新)
+ </summary>
+ <param name="outMdl"></param>
+ <param name="inMdl"></param>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSH010WS.IsErrUpdatePeriodSingleCheck(Jp.Co.Nrs.CS.GUI.CSH010Models@,Jp.Co.Nrs.CS.GUI.CSH010Models)">
+ <summary>
+ 単項目チェック(入力項目チェック(滞留期間更新))
+ </summary>
+ <param name="outMdl"></param>
+ <param name="inMdl"></param>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSH010WS.IsErrUpdatePeriodMultiCheck(Jp.Co.Nrs.CS.GUI.CSH010Models@,Jp.Co.Nrs.CS.GUI.CSH010Models)">
+ <summary>
+ 滞留期間更新関連項目チェック
+ </summary>
+ <param name="outMdl"></param>
+ <param name="inMdl"></param>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSH010WS.IsSalesPlanCheckErr(Jp.Co.Nrs.CS.GUI.CSH010Models)">
+ <summary>
+ 販売計画リスト有無チェック
+ </summary>
+ <param name="inMdl"></param>
+ <returns></returns>
+</member>
+</members>
+</doc>

@@ -1,0 +1,6637 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.NF.BLC
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.NF.BLC.My.Resources.Resources">
+<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.NF.BLC.My.Resources.Resources.ResourceManager">
+<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.NF.BLC.My.Resources.Resources.Culture">
+<summary>
+  すべてについて、現在のスレッドの CurrentUICulture プロパティをオーバーライドします
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFA020BLC.DeleteB_LockDataBase(System.Data.DataSet)">
+ <summary>
+ ロックテーブル(B_LOCK)削除（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFA020BLC.DeleteC_LockDataBase(System.Data.DataSet)">
+ <summary>
+ ロックテーブル(C_LOCK)削除（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFA020BLC.DeleteD_LockDataBase(System.Data.DataSet)">
+ <summary>
+ ロックテーブル(D_LOCK)削除（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFA020BLC.getYokiData(System.Data.DataSet)">
+ <summary>
+ 容器期限切れデータ取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFB010BLC.SelectEstListData(System.Data.DataSet)">
+ <summary>
+ 見積一覧検索(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFB010BLC.SelectEstListCount(System.Data.DataSet)">
+ <summary>
+ 見積一覧検索件数取得(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.NF.BLC.NFB020BLC">
+ <histry>
+ 2006/07/25 HORINO   新規作成
+ 2006/08/07 HORINO   PG作成
+ 2006/11/06 鈴木　希 追加    :成約作成日の更新
+ </histry>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFB020BLC.SelectBasisItemData(System.Data.DataSet)">
+ <summary>
+ 見積基本データ取得(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFB020BLC.SelectCargoItemData(System.Data.DataSet)">
+ <summary>
+ 見積貨物データ取得(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFB020BLC.SelectBillItemItemData(System.Data.DataSet)">
+ <summary>
+ 見積請求データ取得(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFB020BLC.SelectPayItemItemData(System.Data.DataSet)">
+ <summary>
+ 見積下払データ取得(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFB020BLC.InsertBasisItemData(System.Data.DataSet)">
+ <summary>
+ 見積基本テーブル新規登録(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFB020BLC.InsertCargoItemData(System.Data.DataSet)">
+ <summary>
+ 見積貨物テーブル新規登録(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFB020BLC.InsertBillItemItemData(System.Data.DataSet)">
+ <summary>
+ 見積請求テーブル新規登録(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFB020BLC.InsertPayItemItemData(System.Data.DataSet)">
+ <summary>
+ 見積下払テーブル新規登録(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFB020BLC.UpdateBasisItemData(System.Data.DataSet)">
+ <summary>
+ 見積基本テーブル更新(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFB020BLC.UpdateCargoItemData(System.Data.DataSet)">
+ <summary>
+ 見積貨物テーブル更新(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFB020BLC.UpdateBillItemItemData(System.Data.DataSet)">
+ <summary>
+ 見積請求テーブル更新(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFB020BLC.UpdatePayItemItemData(System.Data.DataSet)">
+ <summary>
+ 見積下払テーブル更新(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFB020BLC.UpdateEstStatus(System.Data.DataSet)">
+ <summary>
+ 見積ステータス更新（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFB020BLC.UpdateAgrDate(System.Data.DataSet)">
+ <summary>
+ 最終成約日の更新(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFB020BLC.CheckExistsEstItemData(System.Data.DataSet)">
+ <summary>
+ 見積詳細存在チェック(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFB020BLC.CheckHaitaEstItemData(System.Data.DataSet)">
+ <summary>
+ 見積基本排他チェック(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFB020BLC.SelectLockData(System.Data.DataSet)">
+ <summary>
+ 見積ロックテーブル取得(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFB020BLC.InsertLockItemData(System.Data.DataSet)">
+ <summary>
+ 見積ロックテーブル新規登録(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFB020BLC.DeleteLockItemData(System.Data.DataSet)">
+ <summary>
+ ロックテーブルデータを削除します。
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFB020BLC.GetBillSeqAndMaxPaySeq(System.Data.DataSet)">
+ <summary>
+ 請求SEQと紐付くMAX下払SEQを取得します。
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFB020BLC.SelectMaxEstNoEda(System.Data.DataSet)">
+ <summary>
+ MAX見積番号枝番取得（BLC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>MAX見積番号枝番取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFB500BLC.SelectEntReportData(System.Data.DataSet)">
+ <summary>
+ 見積データ取得(BLC)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.NF.BLC.NFC010BLC">
+ <summary>
+ NFC010BLCクラス
+ </summary>
+ <remarks>
+ </remarks>
+ <histry>
+ 2006/07/25 岸 奈緒美 新規作成
+ </histry>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFC010BLC.SelectCount(System.Data.DataSet)">
+****************************************************************
+ <summary>件数取得(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFC010BLC.SelectListData(System.Data.DataSet)">
+****************************************************************
+ <summary>一覧検索(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="T:Jp.Co.Nrs.NF.BLC.NFC020BLC">
+ <summary>
+ NFC020BLCクラス
+ </summary>
+ <remarks>
+ </remarks>
+ <histry>
+ 2006/09/06 鈴木　希 新規作成
+ 2006/11/06 鈴木　希 修正　　：見積基本テーブルの更新を削除
+ </histry>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFC020BLC.SelectBasisItemData(System.Data.DataSet)">
+ <summary>
+ 成約基本データ検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFC020BLC.SelectSearchItemData(System.Data.DataSet)">
+ <summary>
+ 成約検索データ検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFC020BLC.SelectExportItemData(System.Data.DataSet)">
+ <summary>
+ 成約輸出データ検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFC020BLC.SelectImportItemData(System.Data.DataSet)">
+ <summary>
+ 成約輸入データ検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFC020BLC.SelectCargoItemData(System.Data.DataSet)">
+ <summary>
+ 成約貨物データ検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFC020BLC.SelectContItemData(System.Data.DataSet)">
+ <summary>
+ 成約コンテナデータ検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFC020BLC.SelectContLegItemData(System.Data.DataSet)">
+ <summary>
+ 成約コンテナ配送データ検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFC020BLC.SelectTruckItemData(System.Data.DataSet)">
+ <summary>
+ 成約トラックデータ検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFC020BLC.SelectTruckLegItemData(System.Data.DataSet)">
+ <summary>
+ 成約トラック配送データ検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFC020BLC.SelectBillItemData(System.Data.DataSet)">
+ <summary>
+ 成約請求アイテムデータ検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFC020BLC.SelectPayItemData(System.Data.DataSet)">
+ <summary>
+ 成約下払アイテムデータ検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFC020BLC.SelectCoverItemData(System.Data.DataSet)">
+ <summary>
+ カバーデータ検索　No.1742大野追加
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFC020BLC.SaveBasisItemData(System.Data.DataSet)">
+ <summary>
+ 成約基本データ保存
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFC020BLC.SaveSearchItemData(System.Data.DataSet)">
+ <summary>
+ 成約検索データ保存
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFC020BLC.SaveExportItemData(System.Data.DataSet)">
+ <summary>
+ 成約輸出データ保存
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFC020BLC.SaveImportItemData(System.Data.DataSet)">
+ <summary>
+ 成約輸入データ保存
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFC020BLC.SaveCargoItemData(System.Data.DataSet)">
+ <summary>
+ 成約貨物データ保存
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFC020BLC.SaveContItemData(System.Data.DataSet)">
+ <summary>
+ 成約コンテナデータ保存
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFC020BLC.SaveContLegItemData(System.Data.DataSet)">
+ <summary>
+ 成約コンテナ配送データ保存
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFC020BLC.SaveTruckItemData(System.Data.DataSet)">
+ <summary>
+ 成約トラックデータ保存
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFC020BLC.SaveTruckLegItemData(System.Data.DataSet)">
+ <summary>
+ 成約トラック配送データ保存
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFC020BLC.SaveBillItemData(System.Data.DataSet)">
+ <summary>
+ 成約請求アイテムデータ保存
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFC020BLC.SavePayItemData(System.Data.DataSet)">
+ <summary>
+ 成約下払アイテムデータ保存
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFC020BLC.SaveCoverItemData(System.Data.DataSet)">
+ <summary>
+ カバーデータ保存  '依頼書No.1742大野追加
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFC020BLC.UpdateBasisSysDelFlg(System.Data.DataSet)">
+ <summary>
+ 成約基本データ論理削除
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFC020BLC.UpdateSearchSysDelFlg(System.Data.DataSet)">
+ <summary>
+ 成約検索データ論理削除
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFC020BLC.UpdateExportSysDelFlg(System.Data.DataSet)">
+ <summary>
+ 成約輸出データ論理削除
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFC020BLC.UpdateImportSysDelFlg(System.Data.DataSet)">
+ <summary>
+ 成約輸入データ論理削除
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFC020BLC.UpdateCargoSysDelFlg(System.Data.DataSet)">
+ <summary>
+ 成約貨物データ論理削除
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFC020BLC.UpdateContSysDelFlg(System.Data.DataSet)">
+ <summary>
+ 成約コンテナデータ論理削除
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFC020BLC.UpdateContLegSysDelFlg(System.Data.DataSet)">
+ <summary>
+ 成約コンテナ配送データ論理削除
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFC020BLC.UpdateTruckSysDelFlg(System.Data.DataSet)">
+ <summary>
+ 成約トラックデータ論理削除
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFC020BLC.UpdateTruckLegSysDelFlg(System.Data.DataSet)">
+ <summary>
+ 成約トラック配送データ論理削除
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFC020BLC.UpdateBillSysDelFlg(System.Data.DataSet)">
+ <summary>
+ 成約請求アイテムデータ論理削除
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFC020BLC.UpdatePaySysDelFlg(System.Data.DataSet)">
+ <summary>
+ 成約下払アイテムデータ論理削除
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFC020BLC.CheckHaitaAgrItemData(System.Data.DataSet)">
+ <summary>
+ 成約基本排他チェック(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFC020BLC.SelectLockItemData(System.Data.DataSet)">
+ <summary>
+ 成約ロックテーブル取得(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFC020BLC.InsertLockItemData(System.Data.DataSet)">
+ <summary>
+ 成約ロックテーブル新規登録(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFC020BLC.DeleteLockItemData(System.Data.DataSet)">
+ <summary>
+ ロックテーブルデータを削除します。
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFC020BLC.SelectMaxAgrNoEda(System.Data.DataSet)">
+ <summary>
+ MAX成約番号枝番を取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFC020BLC.SelectMaxCargoSeq(System.Data.DataSet)">
+ <summary>
+ MAX成約貨物SEQを取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFC020BLC.SelectMaxContSeq(System.Data.DataSet)">
+ <summary>
+ MAX成約コンテナSEQを取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFC020BLC.SelectMaxTruckSeq(System.Data.DataSet)">
+ <summary>
+ 成約MAXトラックSEQを取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFC020BLC.SelectMaxCoverSeq(System.Data.DataSet)">
+ <summary>
+ 成約MAXカバーSEQを取得  依頼書No.1742大野追加
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFC020BLC.SelectBillSeqAndMaxPaySeq(System.Data.DataSet)">
+ <summary>
+ 請求SEQ単位にMAX下払SEQを取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFC020BLC.SelectBillProhibitData(System.Data.DataSet)">
+****************************************************************
+ <summary>使用禁止消費税率チェック(請求)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFC020BLC.SelectPayProhibitData(System.Data.DataSet)">
+****************************************************************
+ <summary>使用禁止消費税率チェック(支払)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFC020BLC.SelectContainerProhibitData(System.Data.DataSet)">
+****************************************************************
+ <summary>使用禁止消費税率チェック(コンテナ配送)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFC020BLC.SelectTruckProhibitData(System.Data.DataSet)">
+****************************************************************
+ <summary>使用禁止消費税率チェック(トラック配送)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="T:Jp.Co.Nrs.NF.BLC.NFC511BLC">
+ <summary>
+ NFC511BLCクラス
+ </summary>
+ <remarks>
+ </remarks>
+ <histry>
+ 
+ </histry>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFC511BLC.SelectBasisData(System.Data.DataSet)">
+ <summary>
+ 引継ぎ書(基本)データ検索  
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.NF.BLC.NFC512BLC">
+ <summary>
+ NFC513BLCクラス
+ </summary>
+ <remarks>
+ </remarks>
+ <histry>
+ 
+ </histry>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFC512BLC.SelectContData(System.Data.DataSet)">
+ <summary>
+ 引継ぎ書(トラック)データ検索  SelectContLegData
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.NF.BLC.NFC513BLC">
+ <summary>
+ NFC512BLCクラス
+ </summary>
+ <remarks>
+ </remarks>
+ <histry>
+ 
+ </histry>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFC513BLC.SelectTruckData(System.Data.DataSet)">
+ <summary>
+ 引継ぎ書(コンテナ)データ検索  SelectContLegData
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.NF.BLC.NFC514BLC">
+ <summary>
+ NFC514BLCクラス
+ </summary>
+ <remarks>
+ </remarks>
+ <histry>
+ 
+ </histry>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFC514BLC.SelectBillData(System.Data.DataSet)">
+ <summary>
+ 引継ぎ書(請求)データ検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD010BLC.SelectCount(System.Data.DataSet)">
+****************************************************************
+ <summary>受注 件数取得(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD010BLC.SelectListData(System.Data.DataSet)">
+****************************************************************
+ <summary>受注 一覧検索(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD010BLC.ChkData(System.Data.DataSet)">
+****************************************************************
+ <summary>受注 存在チェック・排他処理(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD010BLC.LockData(System.Data.DataSet)">
+****************************************************************
+ <summary>受注 排他チェック(BLC)</summary>
+ <param name="ds"></param>
+ <returns></returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD010BLC.ChkDataNew(System.Data.DataSet)">
+****************************************************************
+ <summary>受注 存在(重複)チェック・新規チェック(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD010BLC.UpdateData(System.Data.DataSet)">
+****************************************************************
+ <summary>受注 更新(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD010BLC.InsertData(System.Data.DataSet)">
+****************************************************************
+ <summary>受注 追加(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="T:Jp.Co.Nrs.NF.BLC.NFD020BLC">
+ <summary>
+ NFD020BLCクラス
+ </summary>
+ <remarks>
+ </remarks>
+ <histry>
+ 2006/11/13 HORINO 新規作成
+ </histry>
+</member>
+<member name="T:Jp.Co.Nrs.NF.BLC.NFD020BLC.PRINT_ID">
+ <summary>
+ 帳票ID
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFD020BLC.PRINT_ID.NFD500">
+ <summary>
+ 空コンテナ搬出依頼書（輸入）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFD020BLC.PRINT_ID.NFD510">
+ <summary>
+ 空コンテナ船積業務依頼書（輸出）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFD020BLC.PRINT_ID.NFD520D">
+ <summary>
+ 通関依頼書（輸入DRY）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFD020BLC.PRINT_ID.NFD520T">
+ <summary>
+ 通関依頼書（輸入TANK）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFD020BLC.PRINT_ID.NFD530D">
+ <summary>
+ 通関依頼書（輸出ＤＲＹ）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFD020BLC.PRINT_ID.NFD530T">
+ <summary>
+ 通関依頼書（輸出TANK）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFD020BLC.PRINT_ID.NFD540T">
+ <summary>
+ コンテナ運送依頼書(輸入TANK）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFD020BLC.PRINT_ID.NFD540D">
+ <summary>
+ コンテナ運送依頼書(輸入DRY）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFD020BLC.PRINT_ID.NFD550D">
+ <summary>
+ コンテナ運送依頼書(輸出DRY）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFD020BLC.PRINT_ID.NFD550T">
+ <summary>
+ コンテナ運送依頼書(輸出TANK）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFD020BLC.PRINT_ID.NFD560">
+ <summary>
+ コンテナ運送依頼書(国内）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFD020BLC.PRINT_ID.NFD570">
+ <summary>
+ トラック運送依頼書
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFD020BLC.PRINT_ID.NFD580">
+ <summary>
+ 納品書/受領書
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFD020BLC.PRINT_ID.NFD600">
+ <summary>
+ 消防軽微変更届出依頼書
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFD020BLC.PRINT_ID.NFD610">
+ <summary>
+ 危険物事前連絡表
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFD020BLC.PRINT_ID.NFD620">
+ <summary>
+ 危険物明細書
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFD020BLC.PRINT_ID.NFD630">
+ <summary>
+ D/R
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFD020BLC.PRINT_ID.NFD640">
+ <summary>
+ CLP
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFD020BLC.PRINT_ID.NFD650">
+ <summary>
+ コンテナ貨物搬入票
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFD020BLC.PRINT_ID.NFD690">
+ <summary>
+ EDIｺﾝﾃﾅ運送依頼書（輸入/輸出/国内）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFD020BLC.PRINT_ID.NFD720">
+ <summary>
+ 申告計算書
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFD020BLC.PRINT_ID.NFD730">
+ <summary>
+ ロームEDIｺコンテナデータ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFD020BLC.PRINT_ID.NFD740">
+ <summary>
+ ロームEDI申告計算書データ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFD020BLC.PRINT_ID.NFD750">
+ <summary>
+ ロームEDI基本・輸出データ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.CreateNewOrderData(System.Data.DataSet)">
+ <summary>
+ 新規受注データ作成
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SelectBasisItemData(System.Data.DataSet)">
+ <summary>
+ 受注基本データ検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SelectBasisItemDataNotHaita(System.Data.DataSet)">
+ <summary>
+ 受注基本データ検索（排他チェックなし）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SelectExportItemData(System.Data.DataSet)">
+ <summary>
+ 受注輸出データ検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SelectExportBookingItemData(System.Data.DataSet)">
+ <summary>
+ 受注輸出Bookingデータ検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks>2015.07.14依頼書番号1801-28</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SelectImportItemData(System.Data.DataSet)">
+ <summary>
+ 受注輸入データ検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SelectCargoItemData(System.Data.DataSet)">
+ <summary>
+ 受注貨物データ検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SelectCargoDetlItemData(System.Data.DataSet)">
+ <summary>
+ 受注貨物詳細データ検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SelectContItemData(System.Data.DataSet)">
+ <summary>
+ 受注コンテナデータ検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SelectContLegItemData(System.Data.DataSet)">
+ <summary>
+ 受注コンテナ配送データ検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SelectContCargoItemData(System.Data.DataSet)">
+ <summary>
+ 受注コンテナ貨物データ検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SelectTruckItemData(System.Data.DataSet)">
+ <summary>
+ 受注トラックデータ検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SelectTruckLegItemData(System.Data.DataSet)">
+ <summary>
+ 受注トラック配送データ検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SelectTruckCargoItemData(System.Data.DataSet)">
+ <summary>
+ 受注トラック貨物データ検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SelectBillItemItemData(System.Data.DataSet)">
+ <summary>
+ 受注請求アイテムデータ検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SelectPayItemItemData(System.Data.DataSet)">
+ <summary>
+ 受注下払アイテムデータ検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SelectBookingItemData(System.Data.DataSet)">
+ <summary>
+ 受注船積書類アイテムデータ検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SelectDeclareItemData(System.Data.DataSet)">
+ <summary>
+ 受注申告計算アイテムデータ検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SelectDeclareCargoItemData(System.Data.DataSet)">
+ <summary>
+ 受注申告計算貨物アイテムデータ検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SelectOldBookingItemData(System.Data.DataSet)">
+ <summary>
+ 受注船積書類過去データ検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SelectCustomsInfoData(System.Data.DataSet)">
+ <summary>
+ 許可情報検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SelectShpOrdNoData(System.Data.DataSet)">
+ <summary>
+ 荷主番号情報検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SelectInvoiceData(System.Data.DataSet)">
+ <summary>
+ Invoice情報検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SelectPackingData(System.Data.DataSet)">
+ <summary>
+ 梱包情報検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SelectPackageData(System.Data.DataSet)">
+ <summary>
+ パッケージ情報検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SelectCheckBillHeaderData(System.Data.DataSet)">
+ <summary>
+ DOC_SEQチェック用　請求ヘッダーデータ検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SelectInventryItemData(System.Data.DataSet)">
+ <summary>
+ コンテナインベントリデータ検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SelectInventryDepotItemData(System.Data.DataSet)">
+ <summary>
+ コンテナインベントリデータ検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SelectRelationInfoData(System.Data.DataSet)">
+ <summary>
+ コンテナ輸出紐付テーブルデータ検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SaveBasisItemData(System.Data.DataSet)">
+ <summary>
+ 受注基本データ保存
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SaveSearchItemData(System.Data.DataSet)">
+ <summary>
+ 受注検索データ保存
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SaveExportItemData(System.Data.DataSet)">
+ <summary>
+ 受注輸出データ保存
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SaveExportBookingItemData(System.Data.DataSet)">
+ <summary>
+ 受注輸出Bookingデータ保存
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SaveShipOrdItemData(System.Data.DataSet)">
+ <summary>
+ 荷主注文番号データ保存
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SaveImportItemData(System.Data.DataSet)">
+ <summary>
+ 受注輸入データ保存
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SaveCargoItemData(System.Data.DataSet)">
+ <summary>
+ 受注貨物データ保存
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SaveCargoDetlItemData(System.Data.DataSet)">
+ <summary>
+ 受注貨物詳細データ保存
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SaveInvoiceItemData(System.Data.DataSet)">
+ <summary>
+ 受注INVOICEデータ保存
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SaveContItemData(System.Data.DataSet)">
+ <summary>
+ 受注コンテナデータ保存
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SaveContLegItemData(System.Data.DataSet)">
+ <summary>
+ 受注コンテナ配送データ保存
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SaveContCargoItemData(System.Data.DataSet)">
+ <summary>
+ 受注コンテナ貨物データ保存
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SaveTruckItemData(System.Data.DataSet)">
+ <summary>
+ 受注トラックデータ保存
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SaveTruckLegItemData(System.Data.DataSet)">
+ <summary>
+ 受注トラック配送データ保存
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SaveTruckCargoItemData(System.Data.DataSet)">
+ <summary>
+ 受注トラック貨物データ保存
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SaveBookingItemData(System.Data.DataSet)">
+ <summary>
+ 受注船積書類データ保存
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SaveDeclareItemData(System.Data.DataSet)">
+ <summary>
+ 受注申告計算書データ保存
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SaveDeclareCargoItemData(System.Data.DataSet)">
+ <summary>
+ 受注申告計算書貨物データ保存
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SaveBillItemData(System.Data.DataSet)">
+ <summary>
+ 受注請求アイテムデータ保存
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SavePayItemData(System.Data.DataSet)">
+ <summary>
+ 受注下払アイテムデータ保存
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SaveCustomsData(System.Data.DataSet)">
+ <summary>
+ 　許可情報テーブルデータ保存 ADD 2008/06/23
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SaveInventryItemData(System.Data.DataSet)">
+ <summary>
+ 受注コンテナインベントリデータ保存
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SaveInventryDepotItemData(System.Data.DataSet)">
+ <summary>
+ 受注コンテナデポインベントリデータ保存
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SaveUpdInventryItemData(System.Data.DataSet)">
+ <summary>
+ 受注コンテナインベントリUP_KBNデータ保存
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.UpdateBasisSysInfo(System.Data.DataSet)">
+ <summary>
+ 受注基本テーブルの更新情報を更新する。
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.UpdateGoodsItemData(System.Data.DataSet)">
+ <summary>
+ 商品マスタテーブルの更新情報を更新する。
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SavePackingItemData(System.Data.DataSet)">
+ <summary>
+ 梱包データ保存
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SavePackageItemData(System.Data.DataSet)">
+ <summary>
+ パッケージデータ保存
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.updateDsData(System.Data.DataSet)">
+ <summary>
+ KIDSデータ書込
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.getClassCd(System.String,System.Data.DataSet)">
+ <summary>
+ KIDSデータ書込(CLASSのコンバート)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.getOrdNo(System.String,System.Data.DataSet)">
+ <summary>
+ KIDSデータ書込（依頼番号頭文字のコンバート）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.getTestKbn(System.String)">
+ <summary>
+ KIDSデータ書込（定期検査区分置きかえ）
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.ControlExportRelation(System.Data.DataSet)">
+ <summary>
+ コンテナ追加時、（輸出⇒輸出）コンテナ輸出紐付テーブルを更新する
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.UpdatePrintField(System.Data.DataSet)">
+ <summary>
+ 印刷時のデータ更新を行います。
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SetDateCompletion(System.Data.DataSet)">
+ <summary>
+完了時の日付設定処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SetDateCompletionIMP(System.Data.DataSet)">
+ <summary>
+完了時の日付設定処理輸入のみ
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SetDateCompletionOLT(System.Data.DataSet)">
+ <summary>
+完了時の日付設定処理OLTのみ
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SetDateCompletionTRN(System.Data.DataSet)">
+ <summary>
+完了時の日付設定処理運送のみ
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SetDateCompletionEXP(System.Data.DataSet)">
+ <summary>
+完了時の日付設定処理輸出のみ
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SetDateIncompletion(System.Data.DataSet)">
+ <summary>
+ 完了キャンセル時の日付設定処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.UpdateBasisSysDelFlg(System.Data.DataSet)">
+ <summary>
+ 受注基本データ論理削除
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.UpdateSearchSysDelFlg(System.Data.DataSet)">
+ <summary>
+ 受注検索データ論理削除
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.UpdateExportSysDelFlg(System.Data.DataSet)">
+ <summary>
+ 受注輸出データ論理削除
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.UpdateImportSysDelFlg(System.Data.DataSet)">
+ <summary>
+ 受注輸入データ論理削除
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.UpdateCargoSysDelFlg(System.Data.DataSet)">
+ <summary>
+ 受注貨物データ論理削除
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.UpdateContSysDelFlg(System.Data.DataSet)">
+ <summary>
+ 受注コンテナデータ論理削除
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.UpdateContLegSysDelFlg(System.Data.DataSet)">
+ <summary>
+ 受注コンテナ配送データ論理削除
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.UpdateContCargoSysDelFlg(System.Data.DataSet)">
+ <summary>
+ 受注コンテナ貨物データ論理削除
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.UpdateTruckSysDelFlg(System.Data.DataSet)">
+ <summary>
+ 受注トラックデータ論理削除
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.UpdateTruckLegSysDelFlg(System.Data.DataSet)">
+ <summary>
+ 受注トラック配送データ論理削除
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.UpdateTruckCargoSysDelFlg(System.Data.DataSet)">
+ <summary>
+ 受注トラック貨物データ論理削除
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.UpdateBillSysDelFlg(System.Data.DataSet)">
+ <summary>
+ 受注請求アイテムデータ論理削除
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.UpdatePaySysDelFlg(System.Data.DataSet)">
+ <summary>
+ 受注下払アイテムデータ論理削除
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.UpdateBookingSysDelFlg(System.Data.DataSet)">
+ <summary>
+ 受注船積書類データ論理削除
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.UpdateDeclareSysDelFlg(System.Data.DataSet)">
+ <summary>
+ 受注申告計算書データ論理削除
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.UpdateDeclareCargoSysDelFlg(System.Data.DataSet)">
+ <summary>
+ 受注申告計算書貨物データ論理削除
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.UpdateInvoiceDelFlg(System.Data.DataSet)">
+ <summary>
+ ＩＮＶＯＩＣＥデータ論理削除   ADD   3PL 2007/11/22
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.UpdatePackingSysDelFlg(System.Data.DataSet)">
+ <summary>
+ 梱包データ論理削除   ADD　3PL2 20080318
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.UpdatePackageSysDelFlg(System.Data.DataSet)">
+ <summary>
+ パッケージデータ論理削除   ADD　3PL2 20080318
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.checkDsData(System.Data.DataSet)">
+ <summary>
+ デポ書込時の入力チェック 　2008/12/05追加
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.DeleteCustomsData(System.Data.DataSet)">
+ <summary>
+ 許可情報削除処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.DeleteShpOrdNoData(System.Data.DataSet)">
+ <summary>
+ 荷主番号情報削除処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.CheckHaitaOrdItemData(System.Data.DataSet)">
+ <summary>
+ 受注基本排他チェック(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.CheckHaitaShipOrdItemData(System.Data.DataSet)">
+ <summary>
+ 荷主注文番号排他チェック(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SelectLockItemData(System.Data.DataSet)">
+ <summary>
+ 受注ロックテーブル取得(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.InsertLockItemData(System.Data.DataSet)">
+ <summary>
+ 受注ロックテーブル新規登録(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.DeleteLockItemData(System.Data.DataSet)">
+ <summary>
+ ロックテーブルデータを削除します。
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.GetNextPgPara(System.Data.DataSet)">
+ <summary>
+ 画面遷移時パラメータ取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.GetContData(System.Data.DataSet)">
+ <summary>
+ コンテナパラメータ取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SelectBillProhibitData(System.Data.DataSet)">
+****************************************************************
+ <summary>使用禁止消費税率チェック(請求)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SelectPayProhibitData(System.Data.DataSet)">
+****************************************************************
+ <summary>使用禁止消費税率チェック(支払)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SelectContainerProhibitData(System.Data.DataSet)">
+****************************************************************
+ <summary>使用禁止消費税率チェック(コンテナ配送)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SelectTruckProhibitData(System.Data.DataSet)">
+****************************************************************
+ <summary>使用禁止消費税率チェック(トラック配送)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.IsExistCheckCustoms(System.Data.DataSet)">
+ <summary>
+ 許可テーブル存在チェック
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.IsExistCheckYoki(System.Data.DataSet)">
+ <summary>
+ 容器テーブル存在チェック
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SelectMaxCargoSeq(System.Data.DataSet)">
+ <summary>
+ MAX受注貨物SEQを取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SelectMaxCargoDetlSeq(System.Data.DataSet)">
+ <summary>
+ MAX受注貨物詳細SEQを取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SelectMaxContSeq(System.Data.DataSet)">
+ <summary>
+ MAX受注コンテナSEQを取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SelectMaxTruckSeq(System.Data.DataSet)">
+ <summary>
+ MAX受注トラックSEQを取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SelectBillSeqAndMaxPaySeq(System.Data.DataSet)">
+ <summary>
+ 請求SEQ単位にMAX下払SEQを取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SelectMaxDocSeq(System.Data.DataSet)">
+ <summary>
+ MAX受注船積書類SEQを取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SelectMaxCustomsSeq(System.Data.DataSet)">
+ <summary>
+ MAX受注申告計算SEQを取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SelectMaxInvoiceSeq(System.Data.DataSet)">
+ <summary>
+ MAXINVOICE_SEQを取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SelectMaxPackingSeq(System.Data.DataSet)">
+ <summary>
+ MAXPACK_SEQを取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SelectMaxPackageSeq(System.Data.DataSet)">
+ <summary>
+ MAXPKG_SEQを取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SelectMaxContDepotSeq(System.Data.DataSet)">
+ <summary>
+ MAXコンテナデポSEQを取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.SelectChassisInfo(System.Data.DataSet)">
+ <summary>
+ コンボ用シャーシマスタ情報を取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.IsExistCheckDsOrder(System.Data.DataSet)">
+ <summary>
+ デポ書込時（搬入）、依頼データ重複チェック
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.IsExistCheckDsOrderOut(System.Data.DataSet)">
+ <summary>
+ デポ書込時(搬出)、依頼データ重複チェック
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.IsExistCheckDsInout(System.Data.DataSet)">
+ <summary>
+ デポ書込時、在庫タンク取得・存在チェック
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.selectDSOrdNo(System.Data.DataSet)">
+ <summary>
+ デポ参照：依頼データの取得検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.selectGLOrdNo(System.Data.DataSet)">
+ <summary>
+ デポオーダ（NKCT）参照：依頼番号の取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.checkGLDepotCd(System.Data.DataSet)">
+ <summary>
+ デポオーダ（NKCT）依頼：デポコードの存在チェック
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.checkGLDataIn(System.Data.DataSet)">
+ <summary>
+ デポオーダ（NKCT）搬入依頼：依頼データ重複チェック
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD020BLC.checkGLDataOut(System.Data.DataSet)">
+ <summary>
+ デポオーダ（NKCT）搬出依頼：搬入依頼データ存在チェック
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.NF.BLC.NFD160BLC">
+ <summary>
+ NFD160BLCクラス
+ </summary>
+ <remarks>
+ </remarks>
+ <histry>
+ 2007/01/26 鈴木　希 新規作成
+ </histry>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD160BLC.SelectCargoItemData(System.Data.DataSet)">
+ <summary>
+ 成約貨物データ検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD230BLC.SelectAcidData(System.Data.DataSet)">
+ <summary>
+ 成約貨物データ検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD240BLC.SelectDataCount(System.Data.DataSet)">
+ <summary>
+ データ情報検索件数取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD240BLC.SelectDataList(System.Data.DataSet)">
+ <summary>
+ データ情報取得(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD240BLC.chkDataListHaita(System.Data.DataSet)">
+ <summary>
+ 排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD240BLC.InsertData(System.Data.DataSet)">
+ <summary>
+ データ新規登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD240BLC.UpdateData(System.Data.DataSet)">
+ <summary>
+ データ更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD240BLC.DeleteData(System.Data.DataSet)">
+ <summary>
+ データ論理削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD240BLC.DeleteListData(System.Data.DataSet)">
+ <summary>
+ データ論理削除処理
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>データセット</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD300BLC.SelectDataCount(System.Data.DataSet)">
+ <summary>
+ データ情報検索件数取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD300BLC.SelectDataList(System.Data.DataSet)">
+ <summary>
+ データ情報取得(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD300BLC.chkDataListHaita(System.Data.DataSet)">
+ <summary>
+ 排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD300BLC.InsertData(System.Data.DataSet)">
+ <summary>
+ データ新規登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD300BLC.UpdateData(System.Data.DataSet)">
+ <summary>
+ データ更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD300BLC.DeleteData(System.Data.DataSet)">
+ <summary>
+ データ論理削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD300BLC.DeleteListData(System.Data.DataSet)">
+ <summary>
+ データ論理削除処理
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>データセット</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD500BLC.SelectImportKrakonData(System.Data.DataSet)">
+ <summary>
+ 空コンテナ搬出依頼書(輸入)データ取得(BLC)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD510BLC.SelectExportKrakonData(System.Data.DataSet)">
+ <summary>
+ 空コンテナ搬出依頼書(輸出)データ取得(BLC)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD520BLC.SelectImpDryTukanData(System.Data.DataSet)">
+ <summary>
+ 通関依頼書(輸入DRY)データ取得(BLC)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD530BLC.SelectExpDryTukanData(System.Data.DataSet)">
+ <summary>
+ 通関依頼書(輸入DRY)データ取得(BLC)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD540BLC.SelectContUnsouIraiData(System.Data.DataSet)">
+ <summary>
+ データ取得(BLC)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD550BLC.SelectContUnsouIraiData(System.Data.DataSet)">
+ <summary>
+ データ取得(BLC)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD560BLC.SelectContUntinData(System.Data.DataSet)">
+ <summary>
+ 見積データ取得(BLC)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD570BLC.SelectTruckUnsoData(System.Data.DataSet)">
+ <summary>
+ トラックデータ取得(BLC)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD580BLC.SelectNohinsyoData(System.Data.DataSet)">
+ <summary>
+ データ取得(BLC)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD600BLC.SelectSyobouKeibiData(System.Data.DataSet)">
+ <summary>
+ 消防軽微変更届出依頼書データ取得(BLC)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD610BLC.SelectJizenRenrakuData(System.Data.DataSet)">
+ <summary>
+ 危険物事前連絡票データ取得(BLC)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD620BLC.SelectKikenMeisaiData(System.Data.DataSet)">
+ <summary>
+ 危険物明細書データ取得(BLC)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD630BLC.SelectListData(System.Data.DataSet)">
+****************************************************************
+ <summary>D/R検索(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD640BLC.SelectListData(System.Data.DataSet)">
+****************************************************************
+ <summary>ＣＬＰ検索(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD650BLC.SelectHannyuhyoData(System.Data.DataSet)">
+ <summary>
+ データ取得(BLC)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD660BLC.SelectBkgMemoData(System.Data.DataSet)">
+ <summary>
+ データ取得(BLC)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD670BLC.SelectSiData(System.Data.DataSet)">
+ <summary>
+ データ取得(BLC)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.NF.BLC.NFD720BLC">
+ <summary>
+ NFD720BLC
+ </summary>
+ <remarks>
+ </remarks>
+ <histry>
+ 2006/09/28 NEW JASNET
+ </histry>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD720BLC.SelectDeclareInvoiceReportData(System.Data.DataSet)">
+ <summary>
+ 申告計算書データ取得(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD740BLC.SelectLoadCntData(System.Data.DataSet)">
+ <summary>
+ 見積データ取得(BLC)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD750BLC.SelectLoadInvData(System.Data.DataSet)">
+ <summary>
+ PACKING DESCRIPTIONデータ取得(BLC)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD760BLC.SelectLoadInvData(System.Data.DataSet)">
+ <summary>
+ 見積データ取得(BLC)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD770BLC.SelectPdItemData(System.Data.DataSet)">
+ <summary>
+ PDデータ取得(BLC)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD780BLC.SelectPDContData(System.Data.DataSet)">
+ <summary>
+ PACKING DESCRIPTIONデータ取得(BLC)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD790BLC.SelectReportData(System.Data.DataSet)">
+ <summary>
+ CARGO MANIFEST用データ取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD800BLC.SelectReportData(System.Data.DataSet)">
+ <summary>
+ CARGO MANIFEST用データ取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFD810BLC.DATA_TABLE_WK_EDI_SEARCH_IN">
+ <summary>
+ EDIワーク検索用上りテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFD810BLC.DATA_TABLE_WK_EDI_SEARCH_OUT">
+ <summary>
+ EDIワーク検索用下りテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFD810BLC.DATA_TABLE_WK_EDI_IN">
+ <summary>
+ EDIワーク登録用テーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFD810BLC.Z_KBN">
+ <summary>
+ EDI出力判定用コード用テーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD810BLC.RegistWkEDIAtSave(System.Data.DataSet)">
+ <summary>
+ 輸送EDI_WK処理（保存）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD810BLC.RegistEdiWKRecordAtSave(System.Data.DataSet)">
+ <summary>
+ 保存時のWKEDIレコード登録を行う
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD810BLC.RegistWkEDIatPrint(System.Data.DataSet)">
+ <summary>
+ 輸送EDI_WK処理（印刷）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD810BLC.RegistEdiWKRecordAtPrintAsView(System.Data.DataSet)">
+ <summary>
+ 印刷時の参照モードでの印刷時のWKEDIレコード登録を行う
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD810BLC.RegistEdiWKRecordAtPrintAsEdit(System.Data.DataSet)">
+ <summary>
+ 印刷時の編集モードでのWKEDIレコード登録を行う
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD810BLC.RegistWkEDIatOrderCancel(System.Data.DataSet)">
+ <summary>
+ 輸送EDI_WK処理（受注キャンセル）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD810BLC.RegistEdiWKRecordAtOrderCancel(System.Data.DataSet)">
+ <summary>
+ 受注キャンセル時のWKEDIレコード登録を行う
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD810BLC.InsertWkEdiCancel(System.Data.DataSet,System.Data.DataRow)">
+ <summary>
+ キャンセルレコード発行
+ </summary>
+ <param name="wkRecords">キャンセルレコード発行判定用レコード群</param>
+ <param name="contLegRow">コンテナ情報データ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD810BLC.RegistNewRecord(System.Data.DataRow,System.Data.DataRow,System.Collections.ArrayList,System.Data.DataRow,System.String)">
+ <summary>
+ 新規・変更レコード発行
+ </summary>
+ <param name="contRow">コンテナ情報データ</param>
+ <param name="legRow">コンテナ配送情報データ</param>
+ <param name="jishaArry">キャンセルレコード発行</param>
+ <param name="dRow">発行判定用データ</param>
+ <param name="gyomuKbn">業務区分</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD810BLC.SelectContAndContLegFromDB(System.Data.DataSet)">
+ <summary>
+ DBからのコンテナとコンテナ配送レコードの取得
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD810BLC.GetDomesticCD(System.Data.DataSet)">
+ <summary>
+ EDI出力判定用コード取得
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.NF.BLC.NFD820BLC">
+ <summary>
+ NFD820BLC
+ </summary>
+ <remarks>
+ </remarks>
+ <histry>
+ 2006/09/28 NEW JASNET
+ 2006/12/26 須藤 変更　冷凍温度のカンマ編集を行わないように変更
+ </histry>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD820BLC.MakeCSVCarriageEDI(System.Data.DataSet)">
+ <summary>
+ 輸送EDI CSVファイル作成
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD820BLC.ExportCSV(System.Data.DataRow,System.String)">
+ <summary>
+ 輸送CSVファイルの作成
+ </summary>
+ <param name="row">DataRow</param>
+ <param name="dtFileName">String</param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.NF.BLC.NFD830BLC">
+ <summary>
+ NFD830BLC
+ </summary>
+ <remarks>
+ </remarks>
+ <histry>
+ 2006/09/28 NEW JASNET
+ </histry>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD830BLC.CheckRohmEDIContainer(System.Data.DataSet)">
+ <summary>
+ ロームEDIコンテナチェック(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD830BLC.UpdateRohmEDIContainer(System.Data.DataSet)">
+ <summary>
+ ロームEDIコンテナ更新(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.NF.BLC.NFD840BLC">
+ <summary>
+ NFD840BLC
+ </summary>
+ <remarks>
+ </remarks>
+ <histry>
+ 2006/09/28 NEW JASNET
+ </histry>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD840BLC.CheckRohmEDIDeclare(System.Data.DataSet)">
+ <summary>
+ ロームEDI申告計算書データチェック(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD840BLC.UpdateRohmEDIDeclare(System.Data.DataSet)">
+ <summary>
+ ロームEDI申告計算書更新(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.NF.BLC.NFD850BLC">
+ <summary>
+ NFD850BLC
+ </summary>
+ <remarks>
+ </remarks>
+ <histry>
+ 2006/09/28 NEW JASNET
+ </histry>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD850BLC.RohmEDIBasis(System.Data.DataSet)">
+ <summary>
+ ロームEDI基本(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD860BLC.chkEstListHaita(System.Data.DataSet)">
+ <summary>
+ 排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD860BLC.chkExistNyukaDate(System.Data.DataSet)">
+ <summary>
+ 入荷データ作成有無（二重登録）チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD860BLC.CheckNisugata(System.Data.DataSet)">
+ <summary>
+ 荷姿チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD860BLC.selectCargo(System.Data.DataSet)">
+ <summary>
+ データ抽出処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD860BLC.InsertB_INKA_L(System.Data.DataSet)">
+ <summary>
+ 入荷データ（大）新規登録(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD860BLC.InsertB_INKA_M(System.Data.DataSet)">
+ <summary>
+ 入荷データ（中）新規登録(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD860BLC.InsertB_INKA_S(System.Data.DataSet)">
+ <summary>
+ 入荷データ（小）新規登録(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD860BLC.UpdateD_CARGO(System.Data.DataSet)">
+ <summary>
+ 貨物テーブル更新処理（ステージ更新）(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD860BLC.UpdateD_BASIS(System.Data.DataSet)">
+ <summary>
+ 受注基本テーブル更新処理（更新日／時刻）(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFD900BLC.PrintCoverData(System.Data.DataSet)">
+ <summary>
+ 見積データ取得(BLC)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE010BLC.SelectCount(System.Data.DataSet)">
+****************************************************************
+ <summary>請求_検索_未確定 データ件数取得(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE010BLC.SelectListData(System.Data.DataSet)">
+****************************************************************
+ <summary>請求_検索_未確定 一覧検索(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE010BLC.ChkData(System.Data.DataSet)">
+****************************************************************
+ <summary>請求_検索_未確定 排他処理(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE010BLC.UpdateData(System.Data.DataSet)">
+****************************************************************
+ <summary>請求_検索_未確定 データ更新処理(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE010BLC.MaxBillEda(System.Data.DataSet)">
+****************************************************************
+ <summary>請求_検索_未確定 請求書SEQ 新番取得(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE010BLC.SelectExportDate(System.Data.DataSet)">
+****************************************************************
+ <summary>請求_検索_未確定 輸出情報取得(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE010BLC.SelectImportDate(System.Data.DataSet)">
+****************************************************************
+ <summary>請求_検索_未確定 輸入情報取得(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE010BLC.SelectInvoiceDate(System.Data.DataSet)">
+****************************************************************
+ <summary>請求_検索_未確定 輸入情報(INVOICE_NO紐付け請求)取得(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE010BLC.SelectInternalDate(System.Data.DataSet)">
+****************************************************************
+ <summary>請求_検索_未確定 国内情報設定(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE010BLC.SelsetGoodsMinDate(System.Data.DataSet)">
+****************************************************************
+ <summary>請求_検索_未確定 Min商品情報取得(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE010BLC.SelsetCustomsDate(System.Data.DataSet)">
+****************************************************************
+ <summary>請求_検索_未確定 許可情報取得(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE010BLC.InsertData(System.Data.DataSet)">
+****************************************************************
+ <summary>請求_検索_未確定 新規追加処理(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE010BLC.CheckHaitaOrdData(System.Data.DataSet)">
+ <summary>
+ 受注基本排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE010BLC.GetDBasisData(System.Data.DataSet)">
+ <summary>
+ 受注基本データ取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE010BLC.SelectLockData(System.Data.DataSet)">
+ <summary>
+ 受注ロックテーブル取得(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE010BLC.InsertLockData(System.Data.DataSet)">
+ <summary>
+ 受注ロックテーブル新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE010BLC.DeleteLockItemData(System.Data.DataSet)">
+ <summary>
+ ロックテーブルデータを削除します。
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE010BLC.UpdateDbasisData(System.Data.DataSet)">
+ <summary>
+ 受注基本テーブル更新(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE020BLC.SelectCount(System.Data.DataSet)">
+****************************************************************
+ <summary>請求 件数取得(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE020BLC.SelectListData(System.Data.DataSet)">
+****************************************************************
+ <summary>請求 一覧検索(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE020BLC.ChkData(System.Data.DataSet)">
+****************************************************************
+ <summary>請求 存在チェック・排他処理(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE020BLC.LockData(System.Data.DataSet)">
+****************************************************************
+ <summary>請求 排他チェック(BLC)</summary>
+ <param name="ds"></param>
+ <returns></returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE020BLC.ChkDataNew(System.Data.DataSet)">
+****************************************************************
+ <summary>請求 存在(重複)チェック・新規チェック(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE020BLC.UpdateData(System.Data.DataSet)">
+****************************************************************
+ <summary>請求 更新(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE020BLC.InsertData(System.Data.DataSet)">
+****************************************************************
+ <summary>請求 追加(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE030BLC.SelectBillItemData(System.Data.DataSet)">
+ <summary>
+ 請求書データ検索(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE030BLC.SelectMaxSeq(System.Data.DataSet)">
+ <summary>
+ 請求SEQ最大値を取得(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE030BLC.SelectContData(System.Data.DataSet)">
+ <summary>
+  コンテナテーブルデータ検索(BLC) ADD 2008/06/13
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE030BLC.SelectContLegData(System.Data.DataSet)">
+ <summary>
+  コンテナ配送テーブルデータ検索(BLC) ADD 2008/06/19
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE030BLC.SelectTruckData(System.Data.DataSet)">
+ <summary>
+  トラックテーブルデータ検索(BLC) ADD 2008/06/19
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE030BLC.SelectTruckLegData(System.Data.DataSet)">
+ <summary>
+  トラック配送テーブルデータ検索(BLC) ADD 2008/06/13
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE030BLC.SelectDBookingData(System.Data.DataSet)">
+ <summary>
+ D_BOOKINGデータ検索(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE030BLC.GetBillSeqMax(System.Data.DataSet)">
+ <summary>
+ 請求SEQ MAXを取得します。
+ 【再請求】
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE030BLC.GetBillEdaMax(System.Data.DataSet)">
+ <summary>
+ 請求枝番MAXを取得します。
+ 【再請求】
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE030BLC.GetBillSeqAndMaxPaySeq(System.Data.DataSet)">
+ <summary>
+ 請求SEQと紐付くMAX下払SEQを取得します。
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE030BLC.InsertBillHeaderData(System.Data.DataSet)">
+ <summary>
+ 請求ヘッダーテーブル新規登録(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE030BLC.InsertBillItemData(System.Data.DataSet)">
+ <summary>
+ 請求アイテムテーブル新規登録(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE030BLC.InsertPayItemData(System.Data.DataSet)">
+ <summary>
+ 支払アイテムテーブル新規登録(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE030BLC.UpdateDbasisData(System.Data.DataSet)">
+ <summary>
+ 受注基本テーブル更新(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE030BLC.UpdateBillHeaderData(System.Data.DataSet)">
+ <summary>
+ 請求ヘッダーテーブル更新(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE030BLC.UpdateBillItemData(System.Data.DataSet)">
+ <summary>
+ 請求アイテムテーブル更新(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE030BLC.UpdatePayItemData(System.Data.DataSet)">
+ <summary>
+ 支払アイテムテーブル更新(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE030BLC.InsertReBillHeaderData(System.Data.DataSet)">
+ <summary>
+ 請求ヘッダーテーブル新規登録
+ 【再請求】
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE030BLC.InsertReBillItemData(System.Data.DataSet)">
+ <summary>
+ 請求アイテムテーブル新規登録
+ 【再請求/請求書発行後の編集処理】
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE030BLC.InsertRePayItemData(System.Data.DataSet)">
+ <summary>
+ 支払アイテムテーブル新規登録
+ 【再請求】
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE030BLC.UpdateReDBasisData(System.Data.DataSet)">
+ <summary>
+ 受注基本テーブル更新
+ 【再請求】
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE030BLC.UpdateReBillHeaderData(System.Data.DataSet)">
+ <summary>
+ 請求ヘッダーテーブル更新
+ 【再請求】
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE030BLC.UpdateReBillItemData(System.Data.DataSet)">
+ <summary>
+ 請求アイテムテーブル更新
+ 【再請求】
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE030BLC.UpdateEditBillHeaderData(System.Data.DataSet)">
+ <summary>
+ 請求ヘッダーテーブル更新20070725追加
+ 【請求書発行後の編集処理】
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE030BLC.UpdateEditBillItemData(System.Data.DataSet)">
+ <summary>
+ 請求アイテムテーブル更新20070725追加
+ 【請求書発行後の編集処理】
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE030BLC.UpdateRePayItemData(System.Data.DataSet)">
+ <summary>
+ 支払アイテムテーブル更新
+ 【再請求】
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE030BLC.GetOtherBillItemForBillStatusCheck(System.Data.DataSet)">
+ <summary>
+ 同一受注番号のほかの請求アイテムの中で、
+ 請求ステータスが"00","01","02","03"のデータが存在するか？
+ 【印刷前チェック】
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE030BLC.UpdatePrintDBasisData(System.Data.DataSet)">
+ <summary>
+ 受注基本テーブル更新
+ 【印刷処理】
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE030BLC.UpdatePrintDSearchData(System.Data.DataSet)">
+ <summary>
+ 受注検索テーブル更新
+ 【印刷処理】
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE030BLC.UpdatePrintBillHeaderData(System.Data.DataSet)">
+ <summary>
+ 請求ヘッダーテーブル更新
+ 【印刷処理】
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE030BLC.UpdatePrintBillItemData(System.Data.DataSet)">
+ <summary>
+ 請求アイテムテーブル更新
+ 【印刷処理】
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE030BLC.CheckHaitaOrdData(System.Data.DataSet)">
+ <summary>
+ 受注基本排他チェック
+ 【受注請求のみ】
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE030BLC.SelectLockData(System.Data.DataSet)">
+ <summary>
+ 受注ロックテーブル取得(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE030BLC.CheckHaitaSearchData(System.Data.DataSet)">
+ <summary>
+ 受注検索排他チェック
+ 【受注請求のみ】
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE030BLC.CheckHaitaBillHeaderData(System.Data.DataSet)">
+ <summary>
+ 請求ヘッダー排他チェック
+ 【受注請求/一般請求】
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE030BLC.CheckHaitaBillItemData(System.Data.DataSet)">
+ <summary>
+ 請求アイテム排他チェック
+ 【受注請求/一般請求】
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE030BLC.CheckHaitaPayItemData(System.Data.DataSet)">
+ <summary>
+ 支払アイテム排他チェック
+ 【受注請求/一般請求】
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE030BLC.CheckExistsData(System.Data.DataSet)">
+ <summary>
+ 受注番号でデータ存在チェック(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE030BLC.InsertLockItemData(System.Data.DataSet)">
+ <summary>
+ 受注ロックテーブル新規登録
+ 【受注請求のみ】
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE030BLC.DeleteLockItemData(System.Data.DataSet)">
+ <summary>
+ ロックテーブルデータを削除します。
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE030BLC.CheckSyogakuCheck(System.Data.DataSet)">
+ <summary>
+ 少額ワーニングチェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE030BLC.SelectBillProhibitData(System.Data.DataSet)">
+****************************************************************
+ <summary>使用禁止消費税率チェック(請求)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE030BLC.SelectPayProhibitData(System.Data.DataSet)">
+****************************************************************
+ <summary>使用禁止消費税率チェック(支払)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE060BLC.SqExport(System.Data.DataSet)">
+ <summary>
+ NFE600BLC : 請求EXPORT（共通）(BLC)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks>
+ SQ_KBN_CD⇒ 02:近鉄エクスプレス 03:フィルメニッヒ 04:ロームアンドハース(輸出) 05:ロームアンドハース(輸入) 10:ハネウェル
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE070BLC.SqImport(System.Data.DataSet)">
+ <summary>
+ NFE070BLC : 請求IMPORT（共通）(BLC)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks>
+ SQ_KBN_CD⇒ 01:再保管請求データ取込(LMS)
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE500BLC.SelectSeikyuData(System.Data.DataSet)">
+ <summary>
+ 受注請求書データ取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE500BLC.SelectSeikyuDataTukan(System.Data.DataSet)">
+ <summary>
+ 受注請求書（税関用）データ取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE510BLC.SelectIppanSeikyuData(System.Data.DataSet)">
+ <summary>
+ 一般請求データ取得(BLC)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE510BLC.SelectIppanSeikyuEngData(System.Data.DataSet)">
+ <summary>
+ 一般請求データ（ライザ英文用）取得(BLC)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE520BLC.SelectListData(System.Data.DataSet)">
+****************************************************************
+ <summary>請求一覧検索(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE530BLC.SelectReportData(System.Data.DataSet)">
+ <summary>
+ 受注請求書データ取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE540BLC.SelectReportData(System.Data.DataSet)">
+ <summary>
+ 領収書データ取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE700BLC.SelectBillItemData(System.Data.DataSet)">
+ <summary>
+ 請求書データ検索(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE700BLC.SelectMaxSeq(System.Data.DataSet)">
+ <summary>
+ 請求SEQ最大値を取得(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE700BLC.CheckExistsData(System.Data.DataSet)">
+ <summary>
+ 受注番号でデータ存在チェック(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE700BLC.InsertBillHeaderData(System.Data.DataSet)">
+ <summary>
+ 請求ヘッダーテーブル新規登録(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFE700BLC.InsertBillItemData(System.Data.DataSet)">
+ <summary>
+ 請求アイテムテーブル新規登録(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFF010BLC.SelectPaymentListData(System.Data.DataSet)">
+ <summary>
+ 支払検索(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFF010BLC.SelectPaymentListCount(System.Data.DataSet)">
+ <summary>
+ 支払一覧検索件数取得(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFF010BLC.UpdatePrintHeadData(System.Data.DataSet)">
+ <summary>
+ 支払ヘッダーテーブル更新
+ 【印刷処理】
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFF010BLC.UpdatePrintMeiData(System.Data.DataSet)">
+ <summary>
+ 支払明細テーブル更新
+ 【印刷処理】
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFF010BLC.CheckHeaderHaitaDateTime(System.Data.DataSet)">
+ <summary>
+ 下払ヘッダー　排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFF010BLC.CheckHaitaPayHeadOnInData(System.Data.DataSet)">
+ <summary>
+ 下払ヘッダー　排他チェック(INデータベース)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFF010BLC.BulkUpdateBillNo(System.Data.DataSet)">
+ <summary>
+ 下払ヘッダー　更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFF020BLC.SelectPaymentNewRecItemDataCount(System.Data.DataSet)">
+ <summary>
+ 支払編集(BLC)件数取得(新規)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFF020BLC.SelectPaymentNewRecItemData(System.Data.DataSet)">
+ <summary>
+ 支払編集(BLC)(新規)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFF020BLC.SelectPaymentItemDataCount(System.Data.DataSet)">
+ <summary>
+ 支払編集件数取得(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFF020BLC.SelectPaymentItemData(System.Data.DataSet)">
+ <summary>
+ 支払編集(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFF020BLC.SelectPaymentHeaderData(System.Data.DataSet)">
+ <summary>
+ 支払編集②(ヘッダーのみ検索)(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFF020BLC.InsertPayHeaderData(System.Data.DataSet)">
+ <summary>
+ 支払ヘッダー 新規登録(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFF020BLC.UpdatePayHeaderData(System.Data.DataSet)">
+ <summary>
+ 支払ヘッダー 更新(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFF020BLC.UpdatePayItemData(System.Data.DataSet)">
+ <summary>
+ 支払明細 更新(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFF020BLC.FormatPayHeaderData(System.Data.DataSet)">
+ <summary>
+ 支払ヘッダー 初期化(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFF020BLC.FormatPayItemData(System.Data.DataSet)">
+ <summary>
+ 支払明細 初期化(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFF020BLC.DeletePayHeaderData(System.Data.DataSet)">
+ <summary>
+ 支払ヘッダー 削除(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFF020BLC.DeletePayItemData(System.Data.DataSet)">
+ <summary>
+ 支払明細 削除(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFF020BLC.ModoshiPayHeaderData(System.Data.DataSet)">
+ <summary>
+ 支払ヘッダー　差戻し(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFF020BLC.ModoshiPayItemData(System.Data.DataSet)">
+ <summary>
+ 支払明細　差戻し(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFF020BLC.ApprovalPayHeaderData(System.Data.DataSet)">
+ <summary>
+ 支払ヘッダー　承認(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFF020BLC.ApprovalPayItemData(System.Data.DataSet)">
+ <summary>
+ 支払明細　承認(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFF020BLC.CheckHeaderHaitaDateTime(System.Data.DataSet)">
+ <summary>
+ 下払ヘッダー　排他チェック(排他[A/B])
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFF020BLC.CheckMeisaiHaitaDateTime(System.Data.DataSet)">
+ <summary>
+ 下払明細　排他チェック(排他[A])
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFF020BLC.SelectLockData(System.Data.DataSet)">
+ <summary>
+ 受注ロックテーブル取得(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFF020BLC.InsertLockItemData(System.Data.DataSet)">
+ <summary>
+ 受注ロックテーブル新規登録(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFF020BLC.CheckHaitaData(System.Data.DataSet)">
+ <summary>
+ 受注基本排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFF020BLC.UpdatePrintHeadData(System.Data.DataSet)">
+ <summary>
+ 支払ヘッダーテーブル更新
+ 【印刷処理】
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFF020BLC.UpdatePrintMeiData(System.Data.DataSet)">
+ <summary>
+ 支払明細テーブル更新
+ 【印刷処理】
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFF020BLC.UpdateBasisData(System.Data.DataSet)">
+ <summary>
+ 受注基本テーブル更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFF020BLC.DeleteLockItemData(System.Data.DataSet)">
+ <summary>
+ ロックテーブルデータを削除します。
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFF020BLC.InsertMessageData(System.Data.DataSet)">
+ <summary>
+ 業務メッセージテーブル新規登録
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFF020BLC.SelectSumPayAmt(System.Data.DataSet)">
+ <summary>
+ 紐付く下払金額の集計
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFF020BLC.UpdateBillItemData(System.Data.DataSet)">
+ <summary>
+ 請求明細 更新(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFF020BLC.SelectJdeKmkComboData(System.Data.DataSet)">
+ <summary>
+ 検索用コンボ作成(M_JDEKMK)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFF020BLC.SelectPayProhibitData(System.Data.DataSet)">
+****************************************************************
+ <summary>使用禁止消費税率チェック(支払)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFF030BLC.SelectYusoNinushiData(System.Data.DataSet)">
+ <summary>
+ 輸送データ取込(対象荷主取得)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFF500BLC.SelectReportData(System.Data.DataSet)">
+ <summary>
+ データ取得(BLC)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFF800BLC.TBL_NM_IN">
+ <summary>
+ INデータテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFF800BLC.TBL_NM_YUSO_OUT">
+ <summary>
+ 輸送下払データテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFF800BLC.TBL_NM_ORD_NO">
+ <summary>
+ 受注番号管理テーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFF800BLC.TBL_NM_ORD_NO_REC">
+ <summary>
+ 受注番号件数管理テーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFF800BLC.TBL_NM_NF_PAY">
+ <summary>
+ 受注下払データテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFF800BLC.TBL_NM_NF_PAY_HED">
+ <summary>
+ 受注下払HEDデータテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFF800BLC.TBL_NM_T_ERR_LIST">
+ <summary>
+ エラーリストデータテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFF800BLC.TBL_NM_ERR_MSG">
+ <summary>
+ エラーMSGデータテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFF800BLC.GUIDANCE_KBN">
+ <summary>
+ エラーストレージガイダンス区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFF800BLC.Step1(System.Data.DataSet)">
+ <summary>
+ [STEP1]:輸送データ抽出
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFF800BLC.Step2(System.Data.DataSet)">
+ <summary>
+ [STEP2]:受注番号纏め処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFF800BLC.InputValCheck(System.Data.DataRow,System.Data.DataTable@)">
+ <summary>
+ ロック対象データ纏め時のチェック
+ </summary>
+ <param name="dr"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFF800BLC.Step3(System.Data.DataSet)">
+ <summary>
+ [STEP3]:受注ロックテーブル存在チェック(排他チェック)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFF800BLC.Step4(System.Data.DataSet)">
+ <summary>
+ [STEP4]:受注ロックテーブル新規登録
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFF800BLC.Step5(System.Data.DataSet)">
+ <summary>
+ [STEP5]:NF受注下払データ取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFF800BLC.Step6(System.Data.DataSet)">
+ <summary>
+ [STEP6]:NF下払HEDデータ取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFF800BLC.SetUpDatePaiItemData(System.Data.DataRow@,System.Data.DataRow,System.String)">
+ <summary>
+ 下払データ更新行データ設定
+ </summary>
+ <param name="setRow">設定先DataRow</param>
+ <param name="getRow">設定元DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFG020BLC.SelectData(System.Data.DataSet)">
+****************************************************************
+ <summary>経理月_編集 検索(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFG020BLC.LockData(System.Data.DataSet)">
+****************************************************************
+ <summary>経理月_編集 排他チェック(BLC)</summary>
+ <param name="ds"></param>
+ <returns></returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFG020BLC.UpdateKeiri(System.Data.DataSet)">
+****************************************************************
+ <summary>経理月_編集 経理月データ更新処理(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFG020BLC.UpdateExRate(System.Data.DataSet)">
+****************************************************************
+ <summary>経理月_編集 ExRateデータ更新処理(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFH010BLC.SelectPermitCount(System.Data.DataSet)">
+ <summary>
+ 許可情報テーブル件数取得(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFH010BLC.SelectPermitListData(System.Data.DataSet)">
+ <summary>
+ 許可情報テーブル一覧検索(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFH010BLC.TukanSqPrint(System.Data.DataSet)">
+ <summary>
+ 請求書印刷（通関用）(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFH010BLC.ChkOrdData(System.Data.DataSet)">
+****************************************************************
+ <summary>許可情報 受注番号存在ﾁｪｯｸ(BLC) - 容器情報入力用</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFH020BLC.SelectPermitCount(System.Data.DataSet)">
+ <summary>
+ 許可情報テーブル件数取得(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFH020BLC.SelectPermitListData(System.Data.DataSet)">
+ <summary>
+ 許可情報テーブル一覧検索(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFH020BLC.ChkData(System.Data.DataSet)">
+****************************************************************
+ <summary>許可情報_編集 存在ﾁｪｯｸ・排他ﾁｪｯｸ(BLC) - 保存・削除兼用</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFH020BLC.ChkOrdData(System.Data.DataSet)">
+****************************************************************
+ <summary>許可情報_編集 受注番号存在ﾁｪｯｸ(BLC) - 保存用</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFH020BLC.ChkNewOrdData(System.Data.DataSet)">
+****************************************************************
+ <summary>許可情報_編集 受注番号存在ﾁｪｯｸ(BLC) - 新規登録用</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFH020BLC.UpdateData(System.Data.DataSet)">
+****************************************************************
+ <summary>許可情報_編集 データ更新処理(BLC) - 保存用</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFH020BLC.DeleteData(System.Data.DataSet)">
+****************************************************************
+ <summary>許可情報_編集 データ更新処理(BLC) - 削除用</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFH020BLC.InsertData(System.Data.DataSet)">
+****************************************************************
+ <summary>許可情報_編集 データ更新処理(BLC) - 新規登録用</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFH020BLC.SelectCount(System.Data.DataSet)">
+ <summary>
+ 受注番号の存在チェック
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFH500BLC.SelectListData(System.Data.DataSet)">
+****************************************************************
+ <summary>通関業務取扱台帳(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFH510BLC.SelectListData(System.Data.DataSet)">
+****************************************************************
+ <summary>通関業務取扱明細簿(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFH520BLC.SelectTsukanDaichoData(System.Data.DataSet)">
+ <summary>
+ 通関取扱台帳データ取得(BLC)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.NF.BLC.NFH800BLC">
+ <summary>
+ NFH800BLC
+ </summary>
+ <remarks>
+ </remarks>
+ <histry>
+ 2006/09/28 NEW JASNET
+ </histry>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFH800BLC.ImportNACCS(System.Data.DataSet)">
+ <summary>
+ NACCS取込(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFH800BLC.GetFileSeq(System.String,System.Data.DataTable)">
+ <summary>
+ ファイルの処理順(BLC)
+ </summary>
+ <param name="fileName">String</param>
+ <param name="fileKindTbl">DataTable</param>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFH800BLC.GetFileType(System.String,System.Data.DataTable)">
+ <summary>
+ ファイルType取得(BLC)　１：変更分ファイル　0：通常
+ </summary>
+ <param name="fileName">String</param>
+ <param name="fileKindTbl">DataTable</param>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFH800BLC.GetReportType(System.String,System.Data.DataTable)">
+ <summary>
+ 申告種別区分取得(BLC) 18：その他の申告・申請・届
+ </summary>
+ <param name="fileName">ファイル名</param>
+ <param name="fileKindTbl">DataTable</param>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFH800BLC.GetSaveType(System.String,System.Data.DataTable)">
+ <summary>
+ 前回受注保存区分(BLC) (0：削除 1：保存)
+ </summary>
+ <param name="fileName">ファイル名</param>
+ <param name="fileKindTbl">DataTable</param>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFH800BLC.ChangeWareki(System.String)">
+ <summary>
+ 和暦をyyyyMMddに変更(BLC)
+ </summary>
+ <param name="dat">String</param>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFH800BLC.GetLogMessage(System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ ログ作成(BLC)
+ </summary>
+ <param name="messageID">String</param>
+ <param name="nameFile">String</param>
+ <param name="nameItem">String</param>
+ <param name="valueItem">String</param>
+ <param name="param2">String</param>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFH800BLC.IsDateCheckErr(System.String,System.String)">
+ <summary>
+ 日付チェック(BLC)
+ </summary>
+ <param name="strDate">String</param>
+ <param name="strFormat">String</param>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFH800BLC.IsDateCheckErr(System.String)">
+ <summary>
+ 日付チェック(BLC)
+ </summary>
+ <param name="strDate">String</param>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFH800BLC.Validate(System.Data.DataSet,System.String,Jp.Co.Nrs.NF.DAC.NFH800DAC,System.String,System.String)">
+ <summary>
+ 項目チェック(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="nameFile">String</param>
+ <param name="dac">NFH800DAC</param>
+ <param name="nameTable">String</param>
+ <returns>Boolean</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFH800BLC.SetDeclareAmtData(System.Data.DataSet)">
+ <summary>
+ 取扱料金設定処理(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFH800BLC.CheckExistZ_KBN(System.Data.DataSet,Jp.Co.Nrs.NF.DAC.NFH800DAC,System.String,System.String,System.String)">
+ <summary>
+ 区分M存在チェック(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="dac">NFH800DAC</param>
+ <param name="cdKbnGroup">String</param>
+ <param name="nameColunm">String</param>
+ <param name="valueColunm">String</param>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFH800BLC.ReadLine(System.IO.StreamReader,System.Data.DataSet,System.String,System.String,System.String,System.String)">
+ <summary>
+ NACCSファイルから、S_NACCSの情報を元に、データセットに格納　2008/08/19追加
+ </summary>
+ <param name="sr">StreamReader</param>
+ <param name="ds">DataSet</param>
+ <param name="nameTable">String</param>
+ <param name="nameFile">String</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFH800BLC.updateValue(System.String,System.String,System.Data.DataSet)">
+ <summary>
+ S_NACCSテーブルより更新値Retrun　2008/08/19追加
+ </summary>
+ <param name="shubetsuCd"></param>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFH800BLC.ReadSNaccs(System.IO.StreamReader,System.Data.DataSet)">
+ <summary>
+ NACCSファイルよりデータセットに転記　2008/08/19追加
+ </summary>
+ <param name="sr"></param>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFH800BLC.naccsValue(System.Data.DataSet,System.String,System.Int32)">
+ <summary>
+ データテーブルNACCSより更新値Return
+ 　2008/08/19追加
+ </summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFH800BLC.ReadSAC1030Line(System.IO.StreamReader,System.Data.DataSet,System.String,System.String)">
+ <summary>
+ SAC1030(保税運送)取り込み(BLC)
+ </summary>
+ <param name="sr">StreamReader</param>
+ <param name="ds">DataSet</param>
+ <param name="nameTable">String</param>
+ <param name="nameFile">String</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFH800BLC.ReadSAD0071Line(System.IO.StreamReader,System.Data.DataSet,System.String,System.String)">
+ <summary>
+ SAD0071(輸入2欄1枚)、SAD0081(輸入1欄1枚)取り込み(BLC)
+ </summary>
+ <param name="sr">StreamReader</param>
+ <param name="ds">DataSet</param>
+ <param name="nameTable">String</param>
+ <param name="nameFile">String</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFH800BLC.ReadSAE1081Line(System.IO.StreamReader,System.Data.DataSet,System.String,System.String)">
+ <summary>
+ SAE0181(輸出大額)、SAE0191(輸出小額)取り込み(BLC)
+ </summary>
+ <param name="sr">StreamReader</param>
+ <param name="ds">DataSet</param>
+ <param name="nameTable">String</param>
+ <param name="nameFile">String</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFH800BLC.ReadSAE0400Line(System.IO.StreamReader,System.Data.DataSet,System.String,System.String)">
+ <summary>
+ SAE0400(輸出変更)取り込み(BLC)
+ </summary>
+ <param name="sr">StreamReader</param>
+ <param name="ds">DataSet</param>
+ <param name="nameTable">String</param>
+ <param name="nameFile">String</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFH800BLC.SetImportFlg(System.Data.DataSet,System.String)">
+ <summary>
+ WK_NACCSテーブル取込済フラグ更新(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="nameTable">String</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFI010BLC.SelectContListData(System.Data.DataSet)">
+ <summary>
+ コンテナ運送一覧検索(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFI010BLC.SelectContListCount(System.Data.DataSet)">
+ <summary>
+ コンテナ運送一覧検索件数取得(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFI020BLC.SelectContHeaderData(System.Data.DataSet)">
+ <summary>
+ コンテナヘッダーデータ検索(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFI020BLC.SelectBillPayInfoData(System.Data.DataSet)">
+ <summary>
+ 請求-支払情報データ検索(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFI020BLC.SelectContLegSeqListData(System.Data.DataSet)">
+ <summary>
+ コンテナSEQリストデータ検索(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFI020BLC.SelectContInfoData(System.Data.DataSet)">
+ <summary>
+ コンテナ情報データ検索(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFI020BLC.SelectContCargoData(System.Data.DataSet)">
+ <summary>
+ コンテナ積載品データ検索(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFI020BLC.SelectD_SearchData(System.Data.DataSet)">
+ <summary>
+ 受注検索データ検索(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFI020BLC.GetBillSeqAndMaxPaySeq(System.Data.DataSet)">
+ <summary>
+ 請求SEQと紐付くMAX下払SEQを取得します。
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFI020BLC.CheckHaitaData(System.Data.DataSet)">
+ <summary>
+ 受注基本排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFI020BLC.SelectLockData(System.Data.DataSet)">
+ <summary>
+ 受注ロックテーブル取得(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFI020BLC.InsertLockItemData(System.Data.DataSet)">
+ <summary>
+ 受注ロックテーブル新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFI020BLC.DeleteLockItemData(System.Data.DataSet)">
+ <summary>
+ ロックテーブルデータを削除します。
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFI020BLC.UpdateDbasisData(System.Data.DataSet)">
+ <summary>
+ 受注基本テーブル更新(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFI020BLC.UpdateDContData(System.Data.DataSet)">
+ <summary>
+ コンテナテーブル更新(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFI020BLC.UpdateDContLegData(System.Data.DataSet)">
+ <summary>
+ コンテナ配送テーブル更新(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFI020BLC.InsertBillItemData(System.Data.DataSet)">
+ <summary>
+ 請求アイテムテーブル新規登録(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFI020BLC.InsertPayItemData(System.Data.DataSet)">
+ <summary>
+ 支払アイテムテーブル新規登録(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFI020BLC.UpdateBillItemData(System.Data.DataSet)">
+ <summary>
+ 請求アイテムテーブル更新(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFI020BLC.UpdatePayItemData(System.Data.DataSet)">
+ <summary>
+ 支払アイテムテーブル更新(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFI020BLC.UpdateCancelItemData(System.Data.DataSet)">
+ <summary>
+ D_CONT_LEG更新(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFI020BLC.SelectContainerProhibitData(System.Data.DataSet)">
+****************************************************************
+ <summary>使用禁止消費税率チェック(コンテナ配送)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFI030BLC.SelectTruckListData(System.Data.DataSet)">
+ <summary>
+ トラック運送一覧検索(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFI030BLC.SelectTruckListCount(System.Data.DataSet)">
+ <summary>
+ トラック運送一覧検索件数取得(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFI030BLC.HaitaPayItem(System.Data.DataSet)">
+ <summary>
+ 排他チェック（下払ITEM-TBL）明細（BLC）       '2016.6追加 YCCｶﾀﾋﾗ
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFI030BLC.SelectLockData(System.Data.DataSet)">
+ <summary>
+ 排他チェック（下払ITEM-TBL）明細（BLC）       '2016.6追加 YCCｶﾀﾋﾗ
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFI030BLC.InsertLockItemData(System.Data.DataSet)">
+ <summary>
+ 受注ロックテーブル新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFI030BLC.DeleteLockItemData(System.Data.DataSet)">
+ <summary>
+ ロックテーブルデータを削除します。
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFI030BLC.UpdatePayItem(System.Data.DataSet)">
+ <summary>
+ 下払作成処理（BLC）       '2016.6追加 YCCｶﾀﾋﾗ
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFI030BLC.InsertPayHeader(System.Data.DataSet)">
+ <summary>
+ 新規登録作成処理（下払HEADER-TBL）ヘッダー
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFI040BLC.SelectUnsoData(System.Data.DataSet)">
+ <summary>
+ トラック運送画面用のデータを取得します
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFI040BLC.UpdateUnsoData(System.Data.DataSet)">
+ <summary>
+ トラック運送画面のデータを更新します
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFI040BLC.UpdateUnsoCancelData(System.Data.DataSet)">
+ <summary>
+ トラック運送画面のデータを更新します
+ 運送完了キャンセル
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFI040BLC.SavePayItemData(System.Data.DataSet)">
+ <summary>
+ 受注下払アイテムデータ保存
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFI040BLC.SelectTruckProhibitData(System.Data.DataSet)">
+****************************************************************
+ <summary>使用禁止消費税率チェック(トラック配送)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFI050BLC.checkPrintData(System.Data.DataSet)">
+ <summary>
+ 印刷時入力チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFI500BLC.SelectTanzakuData(System.Data.DataSet)">
+ <summary>
+ 見積データ取得(BLC)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFI510BLC.SelectContSagyoYoteiData(System.Data.DataSet)">
+ <summary>
+ データ取得(BLC)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFI520BLC.SelectContCheckList(System.Data.DataSet)">
+ <summary>
+ データ取得(BLC)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFI530BLC.SelectTruckData(System.Data.DataSet)">
+ <summary>
+ 見積データ取得(BLC)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFJ010BLC.SelectCount(System.Data.DataSet)">
+****************************************************************
+ <summary>容器_検索 データ件数取得(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFJ010BLC.SelectListData(System.Data.DataSet)">
+****************************************************************
+ <summary>容器_検索 一覧検索(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFJ010BLC.UpdateChkData(System.Data.DataSet)">
+****************************************************************
+ <summary>容器_検索 存在ﾁｪｯｸ・排他ﾁｪｯｸ(BLC) - 用途外用</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFJ010BLC.DeleteChkData(System.Data.DataSet)">
+****************************************************************
+ <summary>容器_検索 存在ﾁｪｯｸ・排他ﾁｪｯｸ(BLC) - 削除用</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFJ010BLC.UpSaiYusyutsu(System.Data.DataSet)">
+****************************************************************
+ <summary>容器_検索 データ更新処理(BLC) - 再輸出届用 ADD 2008/06/03</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFJ010BLC.UpdateData(System.Data.DataSet)">
+****************************************************************
+ <summary>容器_検索 データ更新処理(BLC) - 用途外用</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFJ010BLC.DeleteData(System.Data.DataSet)">
+****************************************************************
+ <summary>容器_検索 データ更新処理(BLC) - 削除用</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFJ020BLC.SelectData(System.Data.DataSet)">
+****************************************************************
+ <summary>容器_編集 検索(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFJ020BLC.UpdateChkData(System.Data.DataSet)">
+****************************************************************
+ <summary>容器_編集 存在ﾁｪｯｸ・排他ﾁｪｯｸ(BLC) - 保存用</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFJ020BLC.DeleteChkData(System.Data.DataSet)">
+****************************************************************
+ <summary>容器_編集 存在ﾁｪｯｸ・排他ﾁｪｯｸ(BLC) - 削除用</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFJ020BLC.UpdateData(System.Data.DataSet)">
+****************************************************************
+ <summary>容器_編集 データ更新処理(BLC) - 保存用</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFJ020BLC.DeleteData(System.Data.DataSet)">
+****************************************************************
+ <summary>容器_編集 データ更新処理(BLC) - 削除用</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFJ020BLC.SelectOrdSData(System.Data.DataSet)">
+****************************************************************
+ <summary>受注データ取得スタート(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFJ020BLC.SelectOrdEData(System.Data.DataSet)">
+****************************************************************
+ <summary>受注データ取得エンド(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFJ030BLC.SelectData(System.Data.DataSet)">
+****************************************************************
+ <summary>容器_まとめ_入力 初期検索(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFJ030BLC.SelectCheckData(System.Data.DataSet)">
+****************************************************************
+ <summary>容器_まとめ_入力 検索(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFJ030BLC.L_ChkData(System.Data.DataSet)">
+****************************************************************
+ <summary>容器_まとめ_入力 存在ﾁｪｯｸ・排他ﾁｪｯｸ(BLC) - START･END更新用</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFJ030BLC.S_ChkData(System.Data.DataSet)">
+****************************************************************
+ <summary>容器_まとめ_入力 存在ﾁｪｯｸ・排他ﾁｪｯｸ(BLC) - START･END更新用</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFJ030BLC.OldChkData(System.Data.DataSet)">
+****************************************************************
+ <summary>容器_まとめ_入力 存在ﾁｪｯｸ・排他ﾁｪｯｸ(BLC) - START･END更新用</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFJ030BLC.OrdChkData(System.Data.DataSet)">
+****************************************************************
+ <summary>容器_まとめ_入力 存在ﾁｪｯｸ・排他ﾁｪｯｸ(BLC) - START･END更新用</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFJ030BLC.StartUpdateData(System.Data.DataSet)">
+****************************************************************
+ <summary>容器_まとめ_入力 データ更新処理(BLC) - START更新用</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFJ030BLC.OldUpdateData(System.Data.DataSet)">
+****************************************************************
+ <summary>容器_まとめ_入力 データ更新処理(BLC) - START更新用</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFJ030BLC.EndUpdateData(System.Data.DataSet)">
+****************************************************************
+ <summary>容器_まとめ_入力 データ更新処理(BLC) - END更新用</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFJ030BLC.StartInserData(System.Data.DataSet)">
+****************************************************************
+ <summary>容器_まとめ_入力 データ追加処理(BLC) - START新規追加用</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFJ030BLC.SelectOrdData(System.Data.DataSet)">
+****************************************************************
+ <summary>容器_まとめ_入力 受注データ取得(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFJ500BLC.SelectListData(System.Data.DataSet)">
+****************************************************************
+ <summary>請求一覧検索(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK010BLC.SelectCount(System.Data.DataSet)">
+****************************************************************
+ <summary>データ件数取得(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK010BLC.SelectListData(System.Data.DataSet)">
+****************************************************************
+ <summary>一覧検索(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="T:Jp.Co.Nrs.NF.BLC.NFK020BLC">
+ <summary>
+ NFD160BLCクラス
+ </summary>
+ <remarks>
+ </remarks>
+ <histry>
+ 2012/09/25 Sugimoto    新規作成
+ </histry>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK020BLC.SelectTankItem(System.Data.DataSet)">
+ <summary>
+ 成約貨物データ検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK020BLC.SelectInventryItemData(System.Data.DataSet)">
+ <summary>
+ コンテナインベントリデータ検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK020BLC.SelectInventryDepotItemData(System.Data.DataSet)">
+ <summary>
+ コンテナインベントリデポデータ検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.NF.BLC.NFK030BLC">
+ <summary>
+ NFK030BLCクラス
+ </summary>
+ <remarks>
+ </remarks>
+ <histry>
+ 2012/11/14 Kim 新規作成
+ </histry>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK030BLC.SelectKakuteiData(System.Data.DataSet)">
+ <summary>
+ 確定データ取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK030BLC.GetNFOrdNo(System.Data.DataSet)">
+ <summary>
+ ナンバーマスタから受注番号取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK030BLC.IsOnHireHaitaCheck(System.Data.DataSet)">
+ <summary>
+ 排他チェック（On Hire）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK030BLC.IsEditHaitaCheck(System.Data.DataSet)">
+ <summary>
+ 排他チェック（On Hire）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK030BLC.IsOffHireHaitaCheck(System.Data.DataSet)">
+ <summary>
+ 排他チェック（On Hire）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK030BLC.IsTorikeshiHaitaCheck(System.Data.DataSet)">
+ <summary>
+ 排他チェック（On Hire）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK030BLC.IsHozonHaitaCheck(System.Data.DataSet)">
+ <summary>
+ 排他チェック（保存）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK030BLC.IsHozonHaitaCheck_New(System.Data.DataSet)">
+ <summary>
+ 排他チェック（保存_新規）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK030BLC.IsHozonHaitaCheck_Edit(System.Data.DataSet)">
+ <summary>
+ 排他チェック（保存_編集）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK030BLC.UpdateKInventrySaishin(System.Data.DataSet)">
+ <summary>
+ インベントリテーブル（K_INVENTRY）の最新レコードを更新
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK030BLC.InsertKInventrySaishin(System.Data.DataSet)">
+ <summary>
+ 最新レコード：保存-新規(K_INVENTRY)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK030BLC.InsertKInventryDepot(System.Data.DataSet)">
+ <summary>
+ 最新レコード：保存-新規(K_INVENTRY_DEPOT) 
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK030BLC.UpdateKInventryBeforeForHozon(System.Data.DataSet)">
+ <summary>
+ 前回レコード：保存-新規_前回レコード(K_INVENTRY) 
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK030BLC.UpdateKInventryForHozon(System.Data.DataSet)">
+ <summary>
+ 保存-編集(K_INVENTRY)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK030BLC.UpdateKInventryDepotForHozon(System.Data.DataSet)">
+ <summary>
+ 保存-編集(K_INVENTRY_DEPOT) 
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK500BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ SelectData処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK510BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ SelectData処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK520BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ SelectData処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK520BLC.EditDataPerContainer(System.Data.DataSet)">
+ <summary>
+ EditDataPerContainer処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK520BLC.EditDataPerShipment(System.Data.DataSet)">
+ <summary>
+ EditDataPerShipment処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK520BLC.EditOutData(System.Data.DataSet)">
+ <summary>
+ EditOutData処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK520BLC.ToRound(System.Decimal,System.Int32)">
+ <summary>
+ 四捨五入
+ </summary>
+ <param name="decValue"></param>
+ <param name="iDigits"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK530BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ SelectData処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK530BLC.EditSumRow(System.Data.DataSet)">
+ <summary>
+ EditSumRow処理（合計行作成）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK530BLC.ToRound(System.Decimal,System.Int32)">
+ <summary>
+ 四捨五入
+ </summary>
+ <param name="decValue"></param>
+ <param name="iDigits"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFK800BLC.STAGE_ON_HIRE">
+ <summary>
+ On Hire
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFK800BLC.STAGE_NYUKO_MACHI">
+ <summary>
+ 入港待
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFK800BLC.STAGE_IN_DEPOTIN">
+ <summary>
+ 輸入-デポイン
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFK800BLC.STAGE_HANSHUTU_YOTEI">
+ <summary>
+ 搬出予定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFK800BLC.STAGE_DEPOT_OUT">
+ <summary>
+ デポアウト
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFK800BLC.STAGE_OUT_DEPOTIN">
+ <summary>
+ 輸出-デポイン
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFK800BLC.STAGE_SHUKO_ZUMI">
+ <summary>
+ 出港済
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFK800BLC.STAGE_OFF_HIRE">
+ <summary>
+ Off Hire
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFK800BLC.EVENT_KBN_DEPOTIN">
+ <summary>
+ デポイン
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFK800BLC.EVENT_KBN_DEPOTOUT">
+ <summary>
+ デポアウト
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFK800BLC.EVENT_KBN_SHUKO_ZUMI">
+ <summary>
+ 出港済
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK800BLC.UpdateData(System.Data.DataSet)">
+ <summary>
+ メイン処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK800BLC.CheckStageDate(System.Data.DataSet,System.Data.DataRow,System.String,System.String,System.String)">
+ <summary>
+ 日付チェック(コンテナデポ直前レコードの日付チェック)
+ </summary>
+ <param name="rtnDs"></param>
+ <param name="dr"></param>
+ <param name="manageKbn"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK800BLC.SetInDataForSearch(System.Data.DataTable@,System.Data.DataRow)">
+ <summary>
+ データ取得用INデータ設定
+ </summary>
+ <param name="selectInTbl"></param>
+ <param name="inDr"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK800BLC.GetIndDataRow(System.Data.DataSet,System.String,System.Boolean)">
+ <summary>
+ 条件によるデポデータ取得
+ </summary>
+ <param name="rtnDs"></param>
+ <param name="confKbn"></param>
+ <param name="maxSeqFlg"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK800BLC.getEventKbnNm(System.String)">
+ <summary>
+ イベント名取得
+ </summary>
+ <param name="eventKbn"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK800BLC.getStageKbnNm(System.String)">
+ <summary>
+ ステージ名称取得
+ </summary>
+ <param name="stageKbn"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK800BLC.RunUpdateStage(System.Data.DataSet@,System.Data.DataTable@,System.Data.DataTable@)">
+ <summary>
+ ステージ更新処理（起動元区分 = 0：インベントリ検索画面 の処理）
+ </summary>
+ <param name="rtnDs"></param>
+ <param name="selectInTbl"></param>
+ <param name="upInsTbl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK800BLC.IsStageUpdateChk(System.Data.DataSet@,System.Data.DataTable@,System.Data.DataRow[]@,System.String@,System.String)">
+ <summary>
+ ステージ更新処理時の共通チェック・最大ＳＥＱ取得
+ </summary>
+ <param name="rtnDs"></param>
+ <param name="selectInTbl"></param>
+ <param name="drs"></param>
+ <param name="maxDepotSeq"></param>
+ <param name="eventKbn"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK800BLC.SetupInsTblForInsert(System.Data.DataTable@,System.Data.DataTable,System.Data.DataRow[],System.String,System.String)">
+ <summary>
+ （インベントリ）処理区分＝デポイン・アウト時のINデータ設定
+ </summary>
+ <param name="upInsTbl"></param>
+ <param name="selectInTbl"></param>
+ <param name="drs"></param>
+ <param name="maxDepotSeq"></param>
+ <param name="eventKbn"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK800BLC.RunKakutei(System.Data.DataSet@,System.Data.DataTable@,System.Data.DataTable@)">
+ <summary>
+ 確定処理
+ </summary>
+ <param name="rtnDs"></param>
+ <param name="selectInTbl"></param>
+ <param name="upInsTbl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK800BLC.IsKakuteiChk(System.Data.DataSet@,System.Data.DataRow[]@)">
+ <summary>
+ 確定処理時の共通チェック
+ </summary>
+ <param name="rtnDs"></param>
+ <param name="drs"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK800BLC.RunCancel(System.Data.DataSet@,System.Data.DataTable@,System.Data.DataTable@)">
+ <summary>
+ キャンセル処理
+ </summary>
+ <param name="rtnDs"></param>
+ <param name="selectInTbl"></param>
+ <param name="upInsTbl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK800BLC.IsCancelChk(System.Data.DataSet@,System.Data.DataRow[]@)">
+ <summary>
+ キャンセル処理時の共通チェック
+ </summary>
+ <param name="rtnDs"></param>
+ <param name="drs"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK800BLC.ChkHaita(System.Data.DataSet)">
+ <summary>
+ 排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK800BLC.GetNewContDepotSeq(System.Data.DataSet)">
+ <summary>
+ 最大コンテナＳＥＱ取得
+ </summary>
+ <param name="ds2"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK800BLC.CheckBillDate(System.Data.DataSet,System.Data.DataRow,System.String,System.String)">
+ <summary>
+ 請求日チェック
+ </summary>
+ <param name="ds2"></param>
+ <param name="dr"></param>
+ <param name="manageKbn"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK800BLC.SelectInventryDepot(System.Data.DataSet)">
+ <summary>
+ データ抽出処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK800BLC.UpdateStage(System.Data.DataSet)">
+ <summary>
+ ステージ更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK800BLC.InsertDepot(System.Data.DataSet)">
+ <summary>
+ デポInsert処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK800BLC.UpdateDepot(System.Data.DataSet)">
+ <summary>
+ デポUpdate処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK800BLC.UpdateBASISDate(System.Data.DataSet)">
+ <summary>
+ BASISupdate処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK800BLC.GetInvFlag(System.String)">
+ <summary>
+ デポによる請求有無フラグ値を取得する
+ </summary>
+ <param name="depotCd"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK800BLC.GetNewImpRecSeq(System.Data.DataSet)">
+ <summary>
+ 最大IMP_REC_SEQ取得
+ </summary>
+ <param name="ds2"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.NF.BLC.NFK810BLC">
+ <summary>
+ NFK810BLCクラス
+ </summary>
+ <remarks>
+ </remarks>
+ <histry>
+ 2012/09/21 SUGA 新規作成
+ </histry>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK810BLC.SelectDepotBillCalcData(System.Data.DataSet)">
+ <summary>
+ デポ費用計算可能チェック
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK810BLC.SelectDepotInPlnData(System.Data.DataSet)">
+ <summary>
+ 請求期間内デポIN確定チェック
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK810BLC.SelectDepotBillCalcJissekiData(System.Data.DataSet)">
+ <summary>
+ デポ費用過去計算実績チェック
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK810BLC.SelectBillHeaderData(System.Data.DataSet)">
+ <summary>
+ 請求ヘッダ作成済データ存在チェック
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK810BLC.CreateDepotBillData(System.Data.DataSet)">
+ <summary>
+ デポ費用計算処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK810BLC.setRowSelectAgrYobi(System.Int32,System.Data.DataTable,System.Data.DataTable)">
+ <summary>
+ 計算パターン別に成約予備データを取得する
+ </summary>
+ <param name="i"></param>
+ <param name="inCalcPtnTblFromGUI"></param>
+ <param name="tblSelectAgrYobi"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK810BLC.SetInParameterToSelectDs(System.Int32,System.Data.DataTable,System.Data.DataTable,System.Data.DataTable)">
+ <summary>
+ 抽出用INパラメタ編集処理
+ </summary>
+ <param name="i"></param>
+ <param name="inCalcPtnTblFromGUI"></param>
+ <param name="inTblFromGUI"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK810BLC.SetInParameterToSelectAgrYobiDs(System.Data.DataSet,System.Data.DataTable)">
+ <summary>
+ 抽出用INパラメタ編集処理（成約予備データ抽出）
+ </summary>
+ <param name="selectAgrYobiDs"></param>
+ <param name="inTblFromGUI"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK810BLC.EditBillItemDataStorage(System.Data.DataSet,System.Data.DataSet,System.String,System.String,System.Data.DataRow)">
+ <summary>
+ 請求データ編集①-保管料(請求SEQは仮設定)
+ </summary>
+ <param name="editDs"></param>
+ <param name="selectDs"></param>
+ <param name="inCalcStartDate"></param>
+ <param name="inCalcEndDate"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK810BLC.EditBillItemDataHandling(System.Data.DataSet,System.Data.DataSet,System.Data.DataRow)">
+ <summary>
+ 請求データ編集①-荷役料(請求SEQは仮設定)
+ </summary>
+ <param name="editDs"></param>
+ <param name="selectDs"></param>
+ <param name="selectAgrYobiRow"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK810BLC.EditBillRowCom(System.Data.DataRow,System.Data.DataRow,System.Data.DataRow,System.String,System.String)">
+ <summary>
+ 請求データ編集①-保管/荷役料 共通
+ </summary>
+ <param name="editBillRow"></param>
+ <param name="outRow"></param>
+ <param name="outAgrNoIn">成約番号(Depot In)</param>
+ <param name="outAgrNoOut">成約番号(Depot Out)</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK810BLC.CulcBillAmt(System.Data.DataRow,System.Data.DataRow)">
+ <summary>
+ 請求金額算出
+ </summary>
+ <param name="outRow"></param>
+ <param name="editRow"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK810BLC.EditBillItemDataBillSeq(System.Data.DataSet,System.Data.DataSet)">
+ <summary>
+ 請求データ編集②-請求SEQ設定
+ </summary>
+ <param name="ds"></param>
+ <param name="editDs"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK810BLC.DeleteDepotBillData(System.Data.DataSet)">
+ <summary>
+ デポ費用削除処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK810BLC.EditInForDel(System.Data.DataSet)">
+ <summary>
+ 削除後更新年月設定
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK810BLC.ToRound(System.Decimal,System.Int32)">
+ <summary>
+ 四捨五入
+ </summary>
+ <param name="decValue"></param>
+ <param name="iDigits"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK810BLC.SelectBasisLockData(System.Data.DataSet)">
+ <summary>
+ D_LOCK存在チェック、および D_BASIS取得(重複を除く受注番号を取得する)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK810BLC.UpdateCalcCtlTbl(System.Data.DataSet)">
+ <summary>
+ デポ費用計算制御 DB更新処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK810BLC.SetSelectErrList(System.Data.DataSet)">
+ <summary>
+ チェックエラーリスト作成
+ </summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK810BLC.SetSelectErrBillList(System.Data.DataSet)">
+ <summary>
+ チェックエラーリスト作成(請求ヘッダ作成済チェック用)
+ </summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFK810BLC.GetLockUserName(System.Data.DataSet)">
+ <summary>
+ ロックユーザ名取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFL900BLC.SelectCSVData(System.Data.DataSet)">
+ <summary>
+ 見積データ取得(BLC)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFL910BLC.SelectCSVData(System.Data.DataSet)">
+ <summary>
+ 見積データ取得(BLC)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFL920BLC.SelectCSVData(System.Data.DataSet)">
+ <summary>
+ 見積データ取得(BLC)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFL930BLC.SelectCSVData(System.Data.DataSet)">
+ <summary>
+ 見積データ取得(BLC)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFL940BLC.SelectCSVData(System.Data.DataSet)">
+ <summary>
+ 通関件数_申告種別取得(BLC)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFL950BLC.SelectCSVData(System.Data.DataSet)">
+ <summary>
+ 通関件数_申告種別・扱い荷主毎取得(BLC)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFL960BLC.SelectCSVData(System.Data.DataSet)">
+ <summary>
+ コンテナ扱い基数_荷主別取得(BLC)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFL970BLC.SelectCSVData(System.Data.DataSet)">
+ <summary>
+ コンテナ扱い基数_荷主別取得(BLC)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM010BLC.SelectCompCount(System.Data.DataSet)">
+ <summary>
+ 会社マスタ件数取得(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM010BLC.SelectCompListData(System.Data.DataSet)">
+ <summary>
+ 会社マスタ一覧検索(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM020BLC.SelectCompItemData(System.Data.DataSet)">
+ <summary>
+ 会社マスタ明細検索(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM020BLC.CheckExistsCompItemData(System.Data.DataSet)">
+ <summary>
+ 会社マスタ存在チェック(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM020BLC.InsertCompItemData(System.Data.DataSet)">
+ <summary>
+ 会社マスタ新規登録(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM020BLC.CheckHaitaCompItemData(System.Data.DataSet)">
+ <summary>
+ 会社マスタ排他チェック(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM020BLC.UpdateCompItemData(System.Data.DataSet)">
+ <summary>
+ 会社マスタ更新(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM020BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 会社マスタデータの検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM020BLC.SelectCompPayData(System.Data.DataSet)">
+ <summary>
+ 会社マスタ明細検索(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM020BLC.InsertCompPayData(System.Data.DataSet)">
+ <summary>
+ 会社マスタ新規登録(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM020BLC.UpdateCompPayData(System.Data.DataSet)">
+ <summary>
+ 会社マスタ更新(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM030BLC.SelectGoodsCount(System.Data.DataSet)">
+ <summary>
+ 商品マスタ件数取得(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM030BLC.SelectGoodsListData(System.Data.DataSet)">
+ <summary>
+ 商品マスタ一覧検索(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM040BLC.SelectGoodsItemData(System.Data.DataSet)">
+ <summary>
+ 商品マスタ明細検索(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM040BLC.CheckExistsGoodsItemData(System.Data.DataSet)">
+ <summary>
+ 商品マスタ存在チェック(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM040BLC.InsertGoodsItemData(System.Data.DataSet)">
+ <summary>
+ 商品マスタ新規登録(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM040BLC.CheckHaitaGoodsItemData(System.Data.DataSet)">
+ <summary>
+ 商品マスタ排他チェック(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM040BLC.UpdateGoodsItemData(System.Data.DataSet)">
+ <summary>
+ 商品マスタ更新(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM050BLC.SelectCount(System.Data.DataSet)">
+****************************************************************
+ <summary>諸料金マスタ データ件数取得(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM050BLC.SelectListData(System.Data.DataSet)">
+****************************************************************
+ <summary>諸料金マスタ 一覧検索(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM050BLC.ChkData(System.Data.DataSet)">
+****************************************************************
+ <summary>諸料金マスタ 存在チェック・排他処理(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM050BLC.LockData(System.Data.DataSet)">
+****************************************************************
+ <summary>諸料金マスタ 排他チェック(BLC)</summary>
+ <param name="ds"></param>
+ <returns></returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM050BLC.ChkDataNew(System.Data.DataSet)">
+****************************************************************
+ <summary>諸料金マスタ 存在(重複)チェック・新規チェック(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM050BLC.UpdateData(System.Data.DataSet)">
+****************************************************************
+ <summary>諸料金マスタ データ更新処理(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM050BLC.InsertData(System.Data.DataSet)">
+****************************************************************
+ <summary>諸料金マスタ データ追加処理(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM060BLC.SelectCount(System.Data.DataSet)">
+****************************************************************
+ <summary>コンテナマスタ 件数取得(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM060BLC.SelectListData(System.Data.DataSet)">
+****************************************************************
+ <summary>コンテナマスタ 一覧検索(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM060BLC.ChkData(System.Data.DataSet)">
+****************************************************************
+ <summary>コンテナマスタ 存在チェック・排他処理(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM060BLC.LockData(System.Data.DataSet)">
+****************************************************************
+ <summary>コンテナマスタ 排他チェック(BLC)</summary>
+ <param name="ds"></param>
+ <returns></returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM060BLC.ChkDataNew(System.Data.DataSet)">
+****************************************************************
+ <summary>コンテナマスタ 存在(重複)チェック・新規チェック(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM060BLC.UpdateData(System.Data.DataSet)">
+****************************************************************
+ <summary>コンテナマスタ 更新(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM060BLC.InsertData(System.Data.DataSet)">
+****************************************************************
+ <summary>コンテナマスタ 追加(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM070BLC.SelectCityListData(System.Data.DataSet)">
+ <summary>
+ 都市マスタ一覧検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM070BLC.SelectCityCount(System.Data.DataSet)">
+ <summary>
+ 都市マスタ件数取得(BLC)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM070BLC.ExistCityItemData(System.Data.DataSet)">
+ <summary>
+ 存在チェック用のSQLをCALLします
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM070BLC.InsertCityItemData(System.Data.DataSet)">
+ <summary>
+ 保存処理(新規)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM070BLC.UpdateCityItemData(System.Data.DataSet)">
+ <summary>
+ 保存処理(保存)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM070BLC.CheckHaitaCityData(System.Data.DataSet)">
+ <summary>
+ 排他チェック処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM090BLC.SelectCount(System.Data.DataSet)">
+ <summary>
+ 件数取得(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM090BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 一覧検索(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM090BLC.ChkData(System.Data.DataSet)">
+ <summary>
+ 存在チェック・排他処理(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM090BLC.ChkDataNew(System.Data.DataSet)">
+ <summary>
+ 存在チェック・新規チェック(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM090BLC.UpdateData(System.Data.DataSet)">
+ <summary>
+ 更新(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM090BLC.InsertData(System.Data.DataSet)">
+ <summary>
+ 追加(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM100BLC.SelectUserCount(System.Data.DataSet)">
+ <summary>
+ ユーザーマスタ検索件数取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM100BLC.SelectUserListData(System.Data.DataSet)">
+ <summary>
+ ユーザーマスタ一覧検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM100BLC.CheckHaitaUserItemData(System.Data.DataSet)">
+ <summary>
+ ユーザーマスタ排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM100BLC.CheckExistUserItemData(System.Data.DataSet)">
+ <summary>
+ ユーザーマスタ存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM100BLC.InsertUserItemData(System.Data.DataSet)">
+ <summary>
+ ユーザーマスタ新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM100BLC.UpdateUserItemData(System.Data.DataSet)">
+ <summary>
+ ユーザーマスタ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM110BLC.SelectCount(System.Data.DataSet)">
+****************************************************************
+ <summary>隔離マスタ データ件数取得(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM110BLC.SelectListData(System.Data.DataSet)">
+****************************************************************
+ <summary>隔離マスタ 一覧検索(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM110BLC.ChkData(System.Data.DataSet)">
+****************************************************************
+ <summary>隔離マスタ 存在チェック・排他処理(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM110BLC.LockData(System.Data.DataSet)">
+****************************************************************
+ <summary>隔離マスタ 排他チェック(BLC)</summary>
+ <param name="ds"></param>
+ <returns></returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM110BLC.ChkDataNew(System.Data.DataSet)">
+****************************************************************
+ <summary>隔離マスタ 存在(重複)チェック・新規チェック(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM110BLC.UpdateData(System.Data.DataSet)">
+****************************************************************
+ <summary>隔離マスタ データ更新処理(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM110BLC.InsertData(System.Data.DataSet)">
+****************************************************************
+ <summary>隔離マスタ データ追加処理(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM130BLC.SelectKmkListData(System.Data.DataSet)">
+ <summary>
+ 科目マスタ一覧検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM130BLC.SelectKmkCount(System.Data.DataSet)">
+ <summary>
+ 科目マスタ件数取得(BLC)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM130BLC.CheckExistKmkItemData(System.Data.DataSet)">
+ <summary>
+ 存在チェック用のSQLをCALLします
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM130BLC.InsertKmkItemData(System.Data.DataSet)">
+ <summary>
+ 保存処理(新規)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM130BLC.UpdateKmkItemData(System.Data.DataSet)">
+ <summary>
+ 保存処理(保存)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM130BLC.CheckHaitaKmkItemData(System.Data.DataSet)">
+ <summary>
+ 排他チェック処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM140BLC.SelectGroupCompListData(System.Data.DataSet)">
+ <summary>
+ 統合会社部門マスタ一覧検索(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM150BLC.SelectListData(System.Data.DataSet)">
+****************************************************************
+ <summary>統合部門マスタ 一覧検索(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM150BLC.ChkData(System.Data.DataSet)">
+****************************************************************
+ <summary>統合部門マスタ 存在チェック・排他処理(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM150BLC.LockData(System.Data.DataSet)">
+****************************************************************
+ <summary>統合会社・統合部門マスタ 排他チェック(BLC)</summary>
+ <param name="ds"></param>
+ <returns></returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM150BLC.UpdateData(System.Data.DataSet)">
+****************************************************************
+ <summary>統合会社・統合部門マスタ データ更新処理(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM150BLC.InsertData(System.Data.DataSet)">
+****************************************************************
+ <summary>統合部門マスタ データ追加処理(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM160BLC.SelectCoverListData(System.Data.DataSet)">
+ <summary>
+ カバーマスタ一覧検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM160BLC.SelectCoverCount(System.Data.DataSet)">
+ <summary>
+ カバーマスタ件数取得(BLC)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM160BLC.ExistCoverItemData(System.Data.DataSet)">
+ <summary>
+ 存在チェック用のSQLをCALLします
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM160BLC.InsertCoverItemData(System.Data.DataSet)">
+ <summary>
+ 保存処理(新規)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM160BLC.UpdateCoverItemData(System.Data.DataSet)">
+ <summary>
+ 保存処理(保存)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM160BLC.CheckHaitaCoverData(System.Data.DataSet)">
+ <summary>
+ 排他チェック処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.NF.BLC.NFM170BLC.TestDataKbn">
+ <summary>
+ TESTデータ設定区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.NF.BLC.NFM170BLC.Pattern">
+ <summary>
+ 更新パターン
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM170BLC.SelectTankData(System.Data.DataSet)">
+ <summary>
+ タンクマスタ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM170BLC.ChkTankHaita(System.Data.DataSet)">
+ <summary>
+ 排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM170BLC.SelectContData(System.Data.DataSet)">
+ <summary>
+ C_CONT検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM170BLC.ChkTankHaita(System.Data.DataSet,System.String,System.String,System.String,System.String)">
+ <summary>
+ 排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM170BLC.InsertTankItemData(System.Data.DataSet)">
+ <summary>
+ 新規登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM170BLC.TankVersionUpItemData(System.Data.DataSet)">
+ <summary>
+ バージョンアップ処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM170BLC.UpdateTankItemData(System.Data.DataSet)">
+ <summary>
+ 更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM170BLC.DeleteContStndData(System.Data.DataSet)">
+ <summary>
+ 削除処理    ADD 要望番号:515
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM170BLC.InsertTankContStndData(System.Data.DataSet)">
+ <summary>
+ 追加処理    ADD 要望番号:515
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM170BLC.ChkCompData(System.String)">
+ <summary>
+ 会社マスタ存在チェック
+ </summary>
+ <param name="compCd">会社コード</param>
+ <returns>データセット</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM170BLC.ChkCompData2(System.String)">
+ <summary>
+ 会社マスタ存在チェック  ADD 要望番号:515 MessageIDだけ違うだけ
+ </summary>
+ <param name="compCd">会社コード</param>
+ <returns>データセット</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM170BLC.ChkContStndData(System.String)">
+ <summary>
+ コンテナ取得法規マスタ存在チェック ADD 要望番号:515
+ </summary>
+ <param name="certKbn">承認検査機関区分</param>
+ <returns>データセット</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM170BLC.ChkTankData(System.String)">
+ <summary>
+ タンクマスタCont Noチェック
+ </summary>
+ <param name="contNo">コンテナ番号</param>
+ <returns>データセット</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM170BLC.SetTestData(System.Data.DataSet)">
+ <summary>
+ M_TEST更新データ作成
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>データセット</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM170BLC.SetTestDataPattern1(System.Data.DataSet,Jp.Co.Nrs.NF.BLC.NFM170BLC.Pattern)">
+ <summary>
+ 更新パターン1のデータ作成
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>データセット</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM170BLC.SetTestDataPattern2(System.Data.DataSet,Jp.Co.Nrs.NF.BLC.NFM170BLC.Pattern)">
+ <summary>
+ 更新パターン2のデータ作成
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>データセット</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM170BLC.SetTestDataPattern3(System.Data.DataSet,Jp.Co.Nrs.NF.BLC.NFM170BLC.Pattern)">
+ <summary>
+ 更新パターン3のデータ作成
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>データセット</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM170BLC.SetTestDataPattern41(System.Data.DataSet,Jp.Co.Nrs.NF.BLC.NFM170BLC.Pattern)">
+ <summary>
+ 更新パターン4-1のデータ作成
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>データセット</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM170BLC.SetTestDataPattern42(System.Data.DataSet,Jp.Co.Nrs.NF.BLC.NFM170BLC.Pattern)">
+ <summary>
+ 更新パターン4-2のデータ作成
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>データセット</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM170BLC.CreateParameterInitDate(System.Data.DataSet,Jp.Co.Nrs.NF.BLC.NFM170BLC.Pattern,Jp.Co.Nrs.NF.BLC.NFM170BLC.TestDataKbn,System.String)">
+ <summary>
+ M_TEST更新レコード作成
+ </summary>
+ <param name="ds">データセット</param>
+ <param name="ptn">更新パターン</param>
+ <param name="kbn">テスト区分</param>
+ <param name="colNm">列名</param>
+ <returns>データロウ</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM170BLC.SetUpFlg(Jp.Co.Nrs.NF.BLC.NFM170BLC.Pattern,Jp.Co.Nrs.NF.BLC.NFM170BLC.TestDataKbn)">
+ <summary>
+ 最新フラグの設定
+ </summary>
+ <param name="ptn">更新パターン</param>
+ <param name="kbn">テスト区分</param>
+ <returns>最新フラグ</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM170BLC.SetTestKbn(Jp.Co.Nrs.NF.BLC.NFM170BLC.TestDataKbn)">
+ <summary>
+ テスト区分を設定
+ </summary>
+ <param name="kbn">区分</param>
+ <returns>テスト区分</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM170BLC.SetTestDate(System.Data.DataRow,Jp.Co.Nrs.NF.BLC.NFM170BLC.TestDataKbn)">
+ <summary>
+ 定期検査日を設定
+ </summary>
+ <param name="dr">データロウ</param>
+ <param name="kbn">テスト区分</param>
+ <returns>定期検査日</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM170BLC.SetBeaeDate(System.Data.DataRow,Jp.Co.Nrs.NF.BLC.NFM170BLC.TestDataKbn,Jp.Co.Nrs.NF.BLC.NFM170BLC.Pattern,System.String)">
+ <summary>
+ 基準日の設定
+ </summary>
+ <param name="dr">データロウ</param>
+ <param name="kbn">テスト区分</param>
+ <param name="ptn">更新パターン</param>
+ <param name="colNm">列名</param>
+ <returns>基準日</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM170BLC.SetBeaeDateLast25(System.Data.DataTable,System.Data.DataRow,Jp.Co.Nrs.NF.BLC.NFM170BLC.Pattern)">
+ <summary>
+ Last25の基準日の列名を設定
+ </summary>
+ <param name="dt">データテーブル</param>
+ <param name="dr">データロウ</param>
+ <param name="ptn">更新パターン</param>
+ <returns>列名</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM170BLC.Last25judgBaseFlg(System.String,System.String,System.String)">
+ <summary>
+ Last25の基準日を設定
+ </summary>
+ <param name="date25">Last25</param>
+ <param name="hikakuchi">比較値</param>
+ <param name="standardDate">標準基準日</param>
+ <returns>基準日</returns>
+ <remarks>
+ True:通常通り、False:3ヶ月より前
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM170BLC.SetAddMonthData(Jp.Co.Nrs.NF.BLC.NFM170BLC.TestDataKbn,System.String)">
+ <summary>
+ 次回検査日のプラス分を設定
+ </summary>
+ <param name="kbn">テスト区分</param>
+ <param name="colNm">列名</param>
+ <returns>数字</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM170BLC.SetNextTestKbn(System.String)">
+ <summary>
+ 次回テスト区分を設定
+ </summary>
+ <param name="testKbn">テスト区分</param>
+ <returns>次回テスト区分</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM170BLC.SetNextDate(System.String,System.Int32)">
+ <summary>
+ 次回検査日を設定
+ </summary>
+ <param name="value">値</param>
+ <param name="addDate">+○ヶ月</param>
+ <returns>次回検査日</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM170BLC.GetKoushinPattern(System.Data.DataSet)">
+ <summary>
+ M_TEST更新パターンを設定
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>パターン</returns>
+ <remarks>
+ プログラム詳細参照(M_TEST更新仕様)
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM170BLC.GetDateValue(System.String)">
+ <summary>
+ DataTime型に変換して返却します。
+ </summary>
+ <param name="value">日付型に変換する文字列</param>
+ <returns>
+ DataTime型に変換した文字列
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM170BLC.EditSlash(System.String)">
+ <summary>
+ 数字8桁の場合のみスラッシュ編集を行います。
+ </summary>
+ <param name="value">スラッシュ編集する日付</param>
+ <returns>スラッシュ編者された文字列を返却</returns>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFM180BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFM180BLC.ON_HIRE_CONF_KBN_ACTUAL">
+ <summary>
+ On Hire 確定フラグ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFM180BLC.LBR_KBN_BEING_ARRANGET_MARUKAN">
+ <summary>
+ 準備事由区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFM180BLC.REV_NO_KBN_ACT">
+ <summary>
+ キー番号区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFM180BLC.REV_TYPE_KBN_OTHER">
+ <summary>
+ 請求タイプ区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFM180BLC.REV_STS_KBN_DRAFT">
+ <summary>
+ 請求タイプ区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFM180BLC.PRINT_SRT_DEF">
+ <summary>
+ 印順
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFM180BLC.UP_KBN_FUTURE">
+ <summary>
+ 最新フラグ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFM180BLC.G001_YES">
+ <summary>
+ 該当非該当フラグ:Yes/該当
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFM180BLC.TABLE_NM_G_JOB_JNL">
+ <summary>
+ データセットテーブル名
+ </summary>
+ <remarks>2015.05.28 Ri Add 契約管理強化第3弾</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFM180BLC.RV_TP_CHANGED">
+ <summary>
+ 改定タイプ区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFM180BLC.JOB_TP_LEASE">
+ <summary>
+ JOBタイプ区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFM180BLC.CONT_TYPE_VAL3">
+ <summary>
+ コンテナタイプVALUE
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM180BLC.SelectInitData(System.Data.DataSet)">
+ <summary>
+ 情報取得
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>データセット</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM180BLC.DacAccess(System.Data.DataSet,System.String)">
+ <summary>
+ DACクラスアクセス
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFM180BLC.ActionResult(System.Data.DataSet,System.String)">
+ <summary>
+ DACクラスアクセス（結果リターン）
+ </summary>
+ <param name="ds"></param>
+ <param name="actionId"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFN010BLC.SelectMiseikyuListData(System.Data.DataSet)">
+ <summary>
+ 未請求一覧検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFN020BLC.UpdatePrint(System.Data.DataSet)">
+ <summary>
+ 印刷時の更新処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFN020BLC.SelectE_BillHeaderCount(System.Data.DataSet)">
+ <summary>
+ 請求ヘッダーデータの重複チェックを行います。
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFN020BLC.IncertBillData(System.Data.DataSet)">
+ <summary>
+ 請求データIncert
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFN020BLC.SelectBillData(System.Data.DataSet)">
+ <summary>
+ 請求データ取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFN500BLC.SelectFuriData(System.Data.DataSet)">
+ <summary>
+ 未請求一覧検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFQ010BLC.SelectTakusoCount(System.Data.DataSet)">
+ <summary>
+ 託送依頼件数取得(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFQ010BLC.SelectTakusoListData(System.Data.DataSet)">
+ <summary>
+ 託送依頼検索(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.NF.BLC.NFQ020BLC">
+ <summary>
+ NFQ020BLCクラス
+ </summary>
+ <remarks>
+ </remarks>
+ <histry>
+ 
+ </histry>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFQ020BLC.SelectTakusoItemData(System.Data.DataSet)">
+ <summary>
+ 託送依頼データ検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFQ020BLC.CheckExistsTaksoItemData(System.Data.DataSet)">
+ <summary>
+ 託送依頼データチェック(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFQ020BLC.InsertTaksoItemData(System.Data.DataSet)">
+ <summary>
+ 託送依頼データ新規登録(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFQ020BLC.DelTaksoItemData(System.Data.DataSet)">
+ <summary>
+ 託送依頼データ削除(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFQ020BLC.CheckHaitaTaksoItemData(System.Data.DataSet)">
+ <summary>
+ 託送依頼データ排他チェック(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFQ020BLC.UpdateTaksoItemData(System.Data.DataSet)">
+ <summary>
+ 託送依頼データ更新(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFQ500BLC.SelectTaksoList(System.Data.DataSet)">
+ <summary>
+ データ取得(BLC)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFR010BLC.SelectCount(System.Data.DataSet)">
+****************************************************************
+ <summary>請求_検索_未確定 データ件数取得(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFR010BLC.SelectListData(System.Data.DataSet)">
+****************************************************************
+ <summary>請求_検索_未確定 一覧検索(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFR010BLC.GetPayOffStatus(System.Data.DataSet)">
+****************************************************************
+ <summary>精算</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFR500BLC.SelectReportData(System.Data.DataSet)">
+ <summary>
+ 領収書データ取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.NF.BLC.NFR800BLC">
+ <summary>
+ NFR800BLCクラス
+ </summary>
+ <remarks>
+ </remarks>
+ <histry>
+ 2012/08/10 SUGA 新規作成
+ </histry>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFR800BLC.SelectPastCulcChkData(System.Data.DataSet)">
+ <summary>
+ 過去デマレージ計算チェック
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFR800BLC.SelectLockItemData(System.Data.DataSet)">
+ <summary>
+ 排他チェック
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFR800BLC.CreateDemurData(System.Data.DataSet)">
+ <summary>
+ デマレージ計算処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFR800BLC.SetDemurDate(System.Data.DataSet)">
+ <summary>
+ 経過日数取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFR800BLC.ChkDemurDataCreate(System.Data.DataSet)">
+ <summary>
+ デマデータ作成妥当性チェック
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFR800BLC.EditBillItemData(System.Data.DataSet)">
+ <summary>
+ 請求アイテムテーブル編集処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFR800BLC.EditPayItemData(System.Data.DataSet)">
+ <summary>
+ 下払アイテムテーブル編集処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFR800BLC.GetLockUserName(System.Data.DataSet)">
+ <summary>
+ ロックユーザ名取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFR800BLC.CulcBillAmt(System.Data.DataRow,System.Data.DataRow)">
+ <summary>
+ 請求金額算出
+ </summary>
+ <param name="outRow"></param>
+ <param name="editRow"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFR800BLC.ToRound(System.Decimal,System.Int32)">
+ <summary>
+ 四捨五入
+ </summary>
+ <param name="decValue"></param>
+ <param name="iDigits"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFR800BLC.ToRoundUp(System.Double)">
+ <summary>
+ 少数第一位を切り上げして整数値を返す
+ </summary>
+ <param name="decValue"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFX010BLC.KEY_TYPE_CTR">
+ <summary>
+ キー種別区分（アタッチファイル種別区分：F012）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFX010BLC.FILE_TYPE_AGREEMENT">
+ <summary>
+ ファイル区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.NF.BLC.NFX010BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFX010BLC.ImportData(System.Data.DataSet)">
+ <summary>
+ 文書取込処理
+ </summary>
+ <param name="ds">DataSet</param>
+</member>
+<member name="T:Jp.Co.Nrs.NF.BLC.NFZ100BLC">
+ <summary>
+ NFZ100BLCクラス
+ </summary>
+ <remarks>
+ </remarks>
+ <histry>
+ 2006/08/25 鈴木　希 作成
+ </histry>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFZ100BLC.InsertMessageData(System.Data.DataSet)">
+ <summary>
+ 業務メッセージテーブル新規登録
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFZ110BLC.SelectCount(System.Data.DataSet)">
+****************************************************************
+ <summary>メッセージ一覧 データ件数取得(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFZ110BLC.SelectListData(System.Data.DataSet)">
+****************************************************************
+ <summary>メッセージ一覧 一覧検索(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFZ110BLC.ChkData(System.Data.DataSet)">
+****************************************************************
+ <summary>メッセージ一覧 存在チェック・排他処理(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFZ110BLC.LockData(System.Data.DataSet)">
+****************************************************************
+ <summary>メッセージ一覧 排他チェック(BLC)</summary>
+ <param name="ds"></param>
+ <returns></returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFZ110BLC.ChkDataNew(System.Data.DataSet)">
+****************************************************************
+ <summary>メッセージ一覧 存在(重複)チェック・新規チェック(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFZ110BLC.UpdateData(System.Data.DataSet)">
+****************************************************************
+ <summary>メッセージ一覧 データ更新処理(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFZ130BLC.SelectF0101Count(System.Data.DataSet)">
+ <summary>
+ 住所録マスタ検索件数取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.NF.BLC.NFZ130BLC.SelectF0101ListData(System.Data.DataSet)">
+ <summary>
+ 住所録マスタ一覧検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

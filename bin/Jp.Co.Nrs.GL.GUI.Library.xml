@@ -1,0 +1,3156 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.GL.GUI.Library
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.GL.DownloadController">
+ <summary>
+ ダウンロード用コントローラ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DownloadController._SvDate">
+ <summary>
+ サーバー日付
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DownloadController._SvTime">
+ <summary>
+ サーバー時刻
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DownloadController._ListMdl">
+ <summary>
+ ダウンロードするファイルリストModel
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DownloadController._ListMdlDivide">
+ <summary>
+ ダウンロードするファイルリストModel（W/Terms and conditions対応）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DownloadController._UserID">
+ <summary>
+ ユーザID
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DownloadController._PGID">
+ <summary>
+ PG ID
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DownloadController._DownloadFileName">
+ <summary>
+ ダウンロードするファイル名称
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DownloadController.mergesPdf">
+ <summary>
+ PDFをマージするか
+ </summary>
+ <remarks>True:マージする</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DownloadController.EXTENTION_PDF">
+ <summary>
+ ファイル拡張子（ＰＤＦ）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DownloadController.EXTENTION_ZIP">
+ <summary>
+ ファイル拡張子（ＺＩＰ）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DownloadController.Report">
+ <summary>
+ 帳票ファイルをダウンロードする
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DownloadController.ReportDivide">
+ <summary>
+ 帳票ファイルをダウンロードする（W/Terms and conditions対応）
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DownloadController.SetFileContents(System.Collections.Generic.List{Jp.Co.Nrs.GL.DownloadFileInfo})">
+ <summary>
+ ファイルコンテンツを設定する
+ </summary>
+ <param name="downloadFileInfoList"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DownloadController.SetFileContentsDivide(System.Collections.Generic.List{System.Collections.Generic.List{Jp.Co.Nrs.GL.DownloadFileInfo}})">
+ <summary>
+ ファイルコンテンツを設定する（W/Terms and conditions対応）
+ </summary>
+ <param name="downloadFileInfoList"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DownloadController.MergeFile(System.Collections.Generic.List{Jp.Co.Nrs.GL.DownloadFileInfo})">
+ <summary>
+ PDFファイルを結合する
+ </summary>
+ <param name="downloadFileInfoList"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DownloadController.CompressFile(System.Collections.Generic.List{Jp.Co.Nrs.GL.DownloadFileInfo},System.Byte[])">
+ <summary>
+ ファイルを圧縮する
+ </summary>
+ <param name="downloadFileInfoList"></param>
+ <param name="pdf"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DownloadController.CompressFileDivide(System.Collections.Generic.List{Jp.Co.Nrs.GL.DownloadFileInfo},System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.Byte[]})">
+ <summary>
+ ファイルを圧縮する（W/Terms and conditions対応）
+ </summary>
+ <param name="downloadFileInfoList"></param>
+ <param name="pdf"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DownloadController.GetTimeStamp">
+ <summary>
+ 現在時刻を取得する
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DownloadController.GetDownloadFileInfo">
+ <summary>
+ TempDataからダウンロードファイル情報を取得する
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DownloadController.GetDownloadFileInfoDivide">
+ <summary>
+ TempDataからダウンロードファイル情報を取得する（W/Terms and conditions対応）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DownloadController.SetDownloadFileName">
+ <summary>
+ ダウンロードファイル名を設定する
+ </summary>
+ <remarks>拡張子を含まないファイル名を設定</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.ErrorController.NotFound">
+ <summary>
+ 404 NotFoundPage
+ </summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.Controllers.WebOutUserController">
+ <summary>
+ 顧客WEB認証用コントローラ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.Controllers.WebOutUserController._iwsUserWS">
+ <summary>
+ 顧客WEB認証用ワーカーサービス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Controllers.WebOutUserController.#ctor">
+ <summary>
+ 通常用コンストラクタ
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Controllers.WebOutUserController.Login(Jp.Co.Nrs.GL.LoginModel)">
+ <summary>
+ GET: WebOutUser/Login
+ </summary>
+ <param name="model"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Controllers.WebOutUserController.Login(Jp.Co.Nrs.GL.LoginModel,System.String)">
+ <summary>
+ POST: WebOutUser/Login
+ </summary>
+ <param name="model"></param>
+ <param name="btnSignIn"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Controllers.WebOutUserController.ForgetPassword">
+ <summary>
+ GET: WebOutUser/ForgetPassword
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Controllers.WebOutUserController.ForgetPassword(Jp.Co.Nrs.GL.ForgetPasswordModel)">
+ <summary>
+ POST: WebOutUser/ForgetPassword
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Controllers.WebOutUserController.ChangePassword">
+ <summary>
+ GET: WebOutUser/ChangePassword
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Controllers.WebOutUserController.ChangePassword(Jp.Co.Nrs.GL.ChangePasswordModel)">
+ <summary>
+ POST: WebOutUser/ChangePassword
+ </summary>
+ <param name="model"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Controllers.WebOutUserController.Locale">
+ <summary>
+ GET: WebOutUser/Locale
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Controllers.WebOutUserController.Locale(Jp.Co.Nrs.GL.LoginModel)">
+ <summary>
+ POST: /WebOutUser/Locale
+ </summary>
+ <param name="model"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Controllers.WebOutUserController.LocaleSkip">
+ <summary>
+ LocaleSkip
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Controllers.WebOutUserController.Tracking">
+ <summary>
+ トラッキング画面表示
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Controllers.WebOutUserController.Tracking(Jp.Co.Nrs.GL.TrackingModel)">
+ <summary>
+ トラッキング実行
+ </summary>
+ <param name="inputModel"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Controllers.WebOutUserController.SetDataSetInData(Jp.Co.Nrs.GL.LoginModel)">
+ <summary>
+ データセット設定
+ </summary>
+ <param name="model"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Controllers.WebOutUserController.SetLoginModelToCookie(Jp.Co.Nrs.GL.LoginModel)">
+ <summary>
+ ログインモデルにロケール情報Cookieを格納
+ </summary>
+ <param name="model"></param>
+ <returns>
+ 言語・タイムゾーンCookieが
+ いずれかが存在しない : False を返却
+ 上記以外　　　　     : True  を返却
+ </returns>
+ <remarks>いずれかが存在しない場合はログインモデルに仮の値を格納</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Controllers.WebOutUserController.SetUserInfoToLoginModel(Jp.Co.Nrs.GL.LoginModel)">
+ <summary>
+ ユーザインフォにログインモデルを格納
+ </summary>
+ <param name="model">LoginModel</param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Controllers.WebOutUserController.GetIniPasswordKbn">
+ <summary>
+ セッションのUserInfoからIniPasswordKbnを取得する
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Controllers.WebOutUserController.GetIniKiyakuKbn">
+ <summary>
+ セッションのUserInfoからIniPasswordKbnを取得する
+ </summary>
+ <returns></returns>
+</member>
+<member name="T:Jp.Co.Nrs.GL.Controllers.UserController">
+ <summary>
+ 認証画面用コントローラ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.Controllers.UserController._iwsUserWS">
+ <summary>
+ 認証画面用ワーカーサービス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Controllers.UserController.#ctor">
+ <summary>
+ 通常用コンストラクタ
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Controllers.UserController.Login(System.String,System.String)">
+ <summary>
+ GET: User/Login
+ </summary>
+ <param name="ReturnUrl"></param>
+ <param name="AuthMode"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Controllers.UserController.Login(Jp.Co.Nrs.GL.LoginModel)">
+ <summary>
+ POST: User/Login
+ </summary>
+ <param name="model"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Controllers.UserController.LoginDB(Jp.Co.Nrs.GL.LoginModel)">
+ <summary>
+ GET: User/LoginDB
+ </summary>
+ <param name="model"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Controllers.UserController.LoginDB(Jp.Co.Nrs.GL.LoginModel,System.String)">
+ <summary>
+ POST: /User/LoginDB
+ </summary>
+ <param name="model"></param>
+ <param name="btnSignIn"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Controllers.UserController.ChangePassword">
+ <summary>
+ GET: User/ChangePassword
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Controllers.UserController.ChangePassword(Jp.Co.Nrs.GL.ChangePasswordModel)">
+ <summary>
+ POST: User/ChangePassword
+ </summary>
+ <param name="model"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Controllers.UserController.LoginDBSkip">
+ <summary>
+ GET: /User/LoginDBSkip
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Controllers.UserController.LoginDBSkip(Jp.Co.Nrs.GL.LoginModel)">
+ <summary>
+ POST: /User/LoginDBSkip
+ </summary>
+ <param name="model"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Controllers.UserController.Locale">
+ <summary>
+ GET: User/Locale
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Controllers.UserController.Locale(Jp.Co.Nrs.GL.LoginModel)">
+ <summary>
+ POST: /User/Locale
+ </summary>
+ <param name="model"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Controllers.UserController.LocaleSkip">
+ <summary>
+ ロケール設定スキップ
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Controllers.UserController.SetDataSetInData(Jp.Co.Nrs.GL.LoginModel)">
+ <summary>
+ データセット設定
+ </summary>
+ <param name="model"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Controllers.UserController.SetLoginModelToCookie(Jp.Co.Nrs.GL.LoginModel)">
+ <summary>
+ ログインモデルにロケール情報Cookieを格納
+ </summary>
+ <param name="model"></param>
+ <returns>
+ </returns>
+ <remarks>いずれかが存在しない場合はログインモデルに仮の値を格納</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Controllers.UserController.SetUserInfoToLoginModel(Jp.Co.Nrs.GL.LoginModel)">
+ <summary>
+ ユーザインフォにログインモデルを格納
+ </summary>
+ <param name="model">LoginModel</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Controllers.UserController.GetIniPasswordKbn">
+ <summary>
+ セッションのUserInfoからIniPasswordKbnを取得する
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.GL.WebOutUserWS">
+ <summary>
+ 顧客Webログイン用ワーカーサービス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.WebOutUserWS.#ctor(Jp.Co.Nrs.GL.Controllers.WebOutUserController)">
+ <summary>
+ コンストラクタ
+ </summary>
+ <param name="controller"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.WebOutUserWS.SelectWebOutLoginInfo(Jp.Co.Nrs.GL.LoginModel@)">
+ <summary>
+ ログイン処理(外部WEBログイン)
+ </summary>
+ <param name="model"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.WebOutUserWS.ForgetPasswordWebOut(Jp.Co.Nrs.GL.ForgetPasswordModel)">
+ <summary>
+ パスワード確認(外部WEBログインユーザ)
+ </summary>
+ <param name="model"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.WebOutUserWS.ChangePasswordWebOut(Jp.Co.Nrs.GL.ChangePasswordModel)">
+ <summary>
+ パスワード変更(外部WEBログインユーザ)
+ </summary>
+ <param name="model"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.WebOutUserWS.InitTimeZoneList(Jp.Co.Nrs.GL.LoginModel)">
+ <summary>
+ タイムゾーンリストボックス初期化
+ </summary>
+ <param name="model"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.WebOutUserWS.ChangeLocaleWebOut(Jp.Co.Nrs.GL.LoginModel)">
+ <summary>
+ ロケール更新(外部WEBログインユーザ)
+ </summary>
+ <param name="model"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.WebOutUserWS.InitTracking">
+ <summary>
+ トラッキング画面の初期化
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.WebOutUserWS.GetTrackingData(Jp.Co.Nrs.GL.TrackingModel)">
+ <summary>
+ トラッキングデータ取得
+ </summary>
+ <param name="model"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.WebOutUserWS.ChangeIniKiyakuWebOut(Jp.Co.Nrs.GL.LoginModel)">
+ <summary>
+ 初回規約表示フラグ更新(外部WEBログインユーザ)
+ </summary>
+ <param name="model"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.WebOutUserWS.SetDataSetInData(Jp.Co.Nrs.GL.LoginModel)">
+ <summary>
+ データセット設定
+ </summary>
+ <param name="model"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.WebOutUserWS.SetWebOutUserDataSetInData(Jp.Co.Nrs.GL.LoginModel)">
+ <summary>
+ データセット設定
+ </summary>
+ <param name="model"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.WebOutUserWS.SetWebOutUserSession(System.Data.DataSet)">
+ <summary>
+ 外部WEBユーザ情報をセッションに設定する
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.WebOutUserWS.SetTrackingData(System.Data.DataSet,Jp.Co.Nrs.GL.TrackingModel)">
+ <summary>
+ トラッキングデータの設定
+ </summary>
+ <param name="ds"></param>
+ <param name="model"></param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.GL.UserWS">
+ <summary>
+ ログイン用ワーカーサービス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.UserWS.#ctor(Jp.Co.Nrs.GL.Controllers.UserController)">
+ <summary>
+ 指定された区分名を格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.UserWS.SelectLoginInfo(Jp.Co.Nrs.GL.LoginModel@,System.Boolean)">
+ <summary>
+ ログイン処理
+ </summary>
+ <param name="model"></param>
+ <param name="adCheck">
+ True  : ADFS認証
+ False : FORM認証
+ </param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.UserWS.ChangePassword(Jp.Co.Nrs.GL.ChangePasswordModel)">
+ <summary>
+ 
+ </summary>
+ <param name="model"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.UserWS.InitTimeZoneList(Jp.Co.Nrs.GL.LoginModel)">
+ <summary>
+ タイムゾーンリストボックス初期化
+ </summary>
+ <param name="model"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.UserWS.ChangeLocale(Jp.Co.Nrs.GL.LoginModel)">
+ <summary>
+ ロケール更新
+ </summary>
+ <param name="model"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.UserWS.SetDataSetInData(Jp.Co.Nrs.GL.LoginModel)">
+ <summary>
+ データセット設定
+ </summary>
+ <param name="model"></param>
+ <returns></returns>
+</member>
+<member name="T:Jp.Co.Nrs.GL.Const.DispMode">
+ <summary>
+ 画面表示モード定数列挙体
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.GL.Const.RecordStatus">
+ <summary>
+ レコード状態定数列挙体
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.Const.RecordStatus.ESTPRC_CHG_REC">
+ <summary>
+ 見積額変更データ
+ </summary>
+ <remarks>ラベルに"****"が設定されます</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.Const.RecordStatus.TRACK_EST_REC">
+ <summary>
+ 慣例見積作成データ
+ </summary>
+ <remarks>ラベルに""****""が設定されます</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.Const.RecordStatus.HIKAKU_EST_REC">
+ <summary>
+ 比較見積作成データ
+ </summary>
+ <remarks>ラベルに""****""が設定されます</remarks>
+</member>
+<member name="T:Jp.Co.Nrs.GL.Base.GLBaseController">
+ <summary>
+ 拡張GUI層中核コントローラクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GLBaseController.SetValidateMessage(System.Web.Mvc.ModelStateDictionary,Jp.Co.Nrs.GL.Base.GLBaseModel@)">
+ <summary>
+ 
+ </summary>
+ <param name="validMsg"></param>
+ <param name="mdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GLBaseController.TransferSession(Jp.Co.Nrs.GL.Base.GLBaseController,Jp.Co.Nrs.GL.Base.GLBaseController@)">
+ <summary>
+ セッションの格納情報をコピー
+ </summary>
+ <param name="copyFromCtr"></param>
+ <param name="copyToCtr"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GLBaseController.SetCacheabilityNoCache">
+ <summary>
+ "キャッシュなし" を設定する
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GLBaseController.SetDownloadFileInfo(System.Collections.Generic.List{Jp.Co.Nrs.GL.DownloadFileInfo},System.String,System.String,System.Boolean)">
+ <summary>
+ ファイル情報を受け取り、TempDataに格納
+ </summary>
+ <param name="mdl"></param>
+ <param name="userId"></param>
+ <param name="pgId"></param>
+ <param name="mergesPdf">PDFをマージするか（True:マージする）</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GLBaseController.SetDownloadFileInfo(System.Collections.Generic.List{System.Collections.Generic.List{Jp.Co.Nrs.GL.DownloadFileInfo}},System.String,System.String,System.Boolean)">
+ <summary>
+ ファイル情報を受け取り、TempDataに格納（W/Terms and conditions対応）
+ </summary>
+ <param name="mdl"></param>
+ <param name="userId"></param>
+ <param name="pgId"></param>
+ <param name="mergesPdf"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GLBaseController.SetReportFileInfo(System.Data.DataSet,System.String,System.Collections.Generic.List{Jp.Co.Nrs.GL.DownloadFileInfo})">
+ <summary>
+ ファイル情報を作成
+ </summary>
+ <param name="ds"></param>
+ <param name="tableName"></param>
+ <param name="downloadFileInfoList"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GLBaseController.SetReportFileInfoDivide(System.Data.DataSet,System.String,System.Collections.Generic.List{Jp.Co.Nrs.GL.DownloadFileInfo})">
+ <summary>
+ ファイル情報を作成（W/Terms and conditions対応）
+ </summary>
+ <param name="ds"></param>
+ <param name="tableName"></param>
+ <param name="downloadFileInfoList"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GLBaseController.Json(Jp.Co.Nrs.GL.Base.GLBaseModel)">
+ <summary>
+ 指定されたオブジェクトをJSON（JavaScript Object Notation）形式にシリアル化する System.Web.MVC.JsonResult オブジェクトを作成します。
+ </summary>
+ <param name="mdl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GLBaseController.SaveGridLayout(Jp.Co.Nrs.GL.GLGridModel)">
+ <summary>
+ グリッド情報保存
+ </summary>
+ <param name="inMdl">入力モデル</param>
+ <returns>ビューモデル</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GLBaseController.GetGridLayout(Jp.Co.Nrs.GL.GLGridModel)">
+ <summary>
+ グリッド情報取得
+ </summary>
+ <param name="inMdl">入力モデル</param>
+ <returns>ビューモデル</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GLBaseController.DeleteGridLayout(Jp.Co.Nrs.GL.GLGridModel)">
+ <summary>
+ グリッド情報削除
+ </summary>
+ <param name="inMdl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.GL.Base.GLBaseModel">
+ <summary>
+ 拡張GUI層中核モデルクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.Base.GLBaseModel.GridMdlList">
+ <summary>
+ グリッドモデルリスト
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GLBaseModel.IsErrorMessageExist">
+ <summary>
+ エラーメッセージの有無を判定して返却する
+ </summary>
+ <returns>エラーメッセージの有無</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GLBaseModel.IsMessageExist">
+ <summary>
+ メッセージの有無を判定して返却する（BL）
+ </summary>
+ <returns>
+ true：メッセージが存在する
+ false：メッセージが存在しない</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GLBaseModel.GetMessageLevel">
+ <summary>
+ メッセージレベルを取得する。
+ </summary>
+ <returns>メッセージレベル</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GLBaseModel.GetSRscData(System.String,System.String)">
+ <summary>
+ リソースマスタのキー指定でHTML エンコードされた文字列を返却します。
+ </summary>
+ <param name="resourceId">Resource Key</param>
+ <param name="lang">Language</param>
+ <returns>Resource Value</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GLBaseModel.DateParse(System.String,System.String)">
+ <summary>
+ String型の日付文字列をDateTime型に変換します。
+ </summary>
+ <param name="inStr">String</param>
+ <param name="optStr">String</param>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GLBaseModel.DateParse(System.String,System.String,System.TimeZoneInfo,System.TimeZoneInfo)">
+ <summary>
+ String型の日付文字列をDateTime型に変換します。
+ </summary>
+ <param name="inStr">String</param>
+ <param name="optStr">String</param>
+ <param name="fromTimeZone">変換元のタイムゾーン</param>
+ <param name="toTimeZone">変換先のタイムゾーン</param>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GLBaseModel.DateParse(System.String,System.TimeZoneInfo,System.TimeZoneInfo)">
+ <summary>
+ String型の日付文字列をDateTime型に変換します。
+ </summary>
+ <param name="inStr">String</param>
+ <param name="fromTimeZone">変換元のタイムゾーン</param>
+ <param name="toTimeZone">変換先のタイムゾーン</param>
+ <returns>DateTime</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GLBaseModel.DBDateFormat(System.Nullable{System.DateTime},Jp.Co.Nrs.GL.Utility.DateUtility.DateFormatType)">
+ <summary>
+ DateTime型をString型の日付文字列に変換します。区切り記号を含みません。
+ </summary>
+ <param name="inDt">DateTime</param>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GLBaseModel.ViewDateFormat(System.Nullable{System.DateTime},Jp.Co.Nrs.GL.Utility.DateUtility.DateFormatType)">
+ <summary>
+ DateTime型をString型の日付文字列に変換します。区切り記号を含みます。
+ </summary>
+ <param name="inDt">DateTime</param>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GLBaseModel.AddCoron(System.String)">
+ <summary>
+ 引数の文字列をコロン編集します。（６桁、４桁の場合）
+ </summary>
+ <param name="inStr"></param>
+ <remarks>
+ ==============
+ in : HHmmss
+ out: HH:mm:ss
+ ==============
+ in : HHmm
+ out: HH:mm
+ ==============
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GLBaseModel.GetGregorianDate(System.String)">
+ <summary>
+ グレゴリオ暦を取得します
+ </summary>
+ <param name="value">「000001」～「199365」の範囲で指定します。</param>
+ <returns>エラー、範囲外の値は空を返します</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GLBaseModel.GetJulianDate(System.String)">
+ <summary>
+ ユリウス暦を取得します(日付として妥当な値のみ)
+ </summary>
+ <param name="value">
+ 8桁(yyyyMMdd) or 10桁(yyyy/MM/dd)
+ 1900/01/01～2099/12/31の範囲で指定します。
+ </param>
+ <returns>エラー、範囲外の値は空を返します</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GLBaseModel.GetGridModel(System.String)">
+ <summary>
+ グリッド名が一致するグリッドモデルを取得する
+ </summary>
+ <param name="gridName"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GLBaseModel.SetGridModel(Jp.Co.Nrs.GL.GLGridModel)">
+ <summary>
+ グリッド名が一致するグリッドモデルに設定する
+ </summary>
+ <param name="gridModel"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GLBaseModel.DeleteGridModel(Jp.Co.Nrs.GL.GLGridModel)">
+ <summary>
+ グリッド名が一致するグリッドモデルを削除する
+ </summary>
+ <param name="gridModel"></param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService">
+ <summary>
+ 拡張GUI層中核クラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService._controller">
+ <summary>
+ 指定された区分名を格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.WSA_SERVICE">
+ <summary>
+ WSAクラスの共通サービス名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.cachedDataLockObj">
+ <summary>
+ キャッシュ排他用ロックオブジェクト
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.glCachedKbnMasterDataSet">
+ <summary>
+ 区分マスタキャッシュデータを格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.glCachedCurrMasterDataSet">
+ <summary>
+ 通貨マスタキャッシュデータを格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService._GLCachedWebKenHaisoMasterDataSet">
+ <summary>
+ MST_DB..M_WEB_KEN_HAISOキャッシュデータ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService._GLCachedLMHolMasterDataSet">
+ <summary>
+ LM_MST..M_HOLキャッシュデータ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GLServiceData">
+ <summary>
+ 送受信データの取得・設定を行うプロパティ
+ </summary>
+ <value>送受信データ</value>
+ <returns>送受信データ</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GLCachedWebKenHaisoMasterDataSet">
+ <summary>
+ MST_DB..M_WEB_KEN_HAISOキャッシュデータを格納するプロパティ
+ </summary>
+ <value>MST_DB..M_WEB_KEN_HAISOキャッシュデータ</value>
+ <returns>MST_DB..M_WEB_KEN_HAISOキャッシュデータ</returns>
+ <remarks>(for GL)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GLCachedLMHolMasterDataSet">
+ <summary>
+ LM_MST..M_HOLキャッシュデータを格納するプロパティ
+ </summary>
+ <value>LM_MST..M_HOLキャッシュデータ</value>
+ <returns>LM_MST..M_HOLキャッシュデータ</returns>
+ <remarks>(for GL)</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.CreateServiceData">
+ <summary>
+ サーバーとの送受信に使用するServiceDataクラスを生成します。
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.CallWSA(Jp.Co.Nrs.Com.Base.BaseWSA,System.String,System.Data.DataSet,System.Boolean)">
+ <summary>
+ WEBサービスを呼び出します
+ </summary>
+ <param name="bWSA">WSAクラス</param>
+ <param name="methodName">呼出メソッド</param>
+ <param name="ds">WEBサービス送信データ</param>
+ <param name="isReadOnly"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.CallWSA(Jp.Co.Nrs.Com.Base.BaseWSA,System.Data.DataSet,System.Boolean)">
+ <summary>
+ WEBサービスを呼び出します（QueName,SetTargetFacadeNameの設定必須）
+ </summary>
+ <param name="bWSA">WSAクラス</param>
+ <param name="ds">WEBサービス送信データ</param>
+ <param name="isReadOnly"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.SetRequestParam(Jp.Co.Nrs.Com.Base.ServiceData,System.Data.DataSet)">
+ <summary>
+ ServiceDataに送信する値を設定します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetReturnParam(Jp.Co.Nrs.Com.Base.ServiceData)">
+ <summary>
+ ServiceDataから受信した値を取得します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetGLReturnParam(Jp.Co.Nrs.Com.Base.ServiceData)">
+ <summary>
+ ServiceDataから受信した値を転記する。(for GL)
+ </summary>
+ <param name="sd"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.SetFormId(System.String,Jp.Co.Nrs.GL.Base.GLBaseModel)">
+ <summary>
+ 画面IDより渡されたモデルのID,NMに値を設定する。
+ </summary>
+ <param name="gamenId"></param>
+ <param name="mdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.InitCommonModel(Jp.Co.Nrs.GL.Base.GLBaseModel,Jp.Co.Nrs.GL.Base.GLBaseController)">
+ <summary>
+ 共通項目をセッションデータから設定する
+ </summary>
+ <param name="mdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetUserID">
+ <summary>
+ ログインユーザーのユーザーIDを取得する。
+ </summary>
+ <returns>ログインユーザーのユーザーID</returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetUserName">
+ <summary>
+ ログインユーザーのユーザー名を取得する。
+ </summary>
+ <returns>ログインユーザーのユーザー名</returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.RoundOff(System.Double,System.Int32)">
+ <summary>
+ 指定した精度の数値に四捨五入します
+ </summary>
+ <param name="value">丸め対象の倍精度浮動小数点数</param>
+ <param name="digits">戻り値の有効桁数の精度</param>
+ <returns>digits に等しい精度の数値に四捨五入された数値</returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.RoundOff(System.Decimal,System.Int32)">
+ <summary>
+ 指定した精度の数値に四捨五入します
+ </summary>
+ <param name="value">丸め対象の倍精度浮動小数点数</param>
+ <param name="digits">戻り値の有効桁数の精度(0～28の範囲で設定可)</param>
+ <returns>digits に等しい精度の数値に四捨五入された数値</returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetLocalDateTime">
+ <summary>
+ ローカル日付(YYYYMMDD)とローカル時刻(HHMMSSsss)を取得する。
+ </summary>
+ <returns>日時配列（0:日付(YYYYMMDD)、1:時刻(HHMMSSmmm)）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.Initialize4Api(System.String)">
+ <summary>
+ APIのための初期処理
+ </summary>
+ <param name="userId"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.SetUserSession(System.Data.DataSet)">
+ <summary>
+ ユーザ情報をセッションに設定
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetMessageWord(System.String,System.String[])">
+ <summary>
+ 引数に指定されたIDのメッセージを取得します。
+ </summary>
+ <param name="messageID"></param>
+ <param name="replaceMessages"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetSetMessage(System.String,System.String[])">
+ <summary>
+ 指定されたメッセージIDの文言を統一の形式で整形する。
+ </summary>
+ <param name="msgID"></param>
+ <param name="replaceMessages"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetDispMessage(System.String,System.String[])">
+ <summary>
+ 指定されたメッセージIDの文言を統一の形式で整形する。 ※IsMessageExistで判定はできません。
+ </summary>
+ <param name="msgID"></param>
+ <param name="replaceMessages"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetSetMessage">
+ <summary>
+ ポップアップ以外の方法でメッセージ表示する。
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.SetMessageArea(Jp.Co.Nrs.GL.Base.GLBaseModel,System.String,System.String,System.String,System.String[])">
+ <summary>
+ メッセージをBaseModelに設定する
+ </summary>
+ <param name="outMdl"></param>
+ <param name="area"></param>
+ <param name="msgId"></param>
+ <param name="navArea"></param>
+ <param name="replaceString"></param>
+ <remarks>
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.SetMessageDialog(Jp.Co.Nrs.GL.Base.GLBaseModel,System.String,System.String,System.String,System.String[])">
+ <summary>
+ ダイアログメッセージをBaseModelに設定する
+ </summary>
+ <param name="outMdl"></param>
+ <param name="area"></param>
+ <param name="msgId"></param>
+ <param name="navArea"></param>
+ <param name="replaceString"></param>
+ <remarks>
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.SetBLMessageArea(Jp.Co.Nrs.GL.Base.GLBaseModel,System.String,System.String,System.String,System.String)">
+ <summary>
+ メッセージをBaseModelに設定する
+ </summary>
+ <param name="outMdl"></param>
+ <param name="area"></param>
+ <param name="msgId"></param>
+ <param name="navArea"></param>
+ <remarks>
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.SetBLMessageArea(Jp.Co.Nrs.GL.Base.GLBaseModel)">
+ <summary>
+ メッセージをBaseModelに設定する
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.CreateMessageFromCache(System.Data.DataSet,System.String,System.String[],System.String,System.String)">
+ <summary>
+ メッセージ文言を構築するメソッド
+ </summary>
+ <param name="ds"></param>
+ <param name="messageID">メッセージID</param>
+ <param name="messageParams"></param>
+ <param name="messageArea"></param>
+ <param name="naviArea"></param>
+ <returns></returns>
+ <remarks>BaseWorkerServiceの同名メソッドをオーバーライド</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.ReplaceMessageString(System.Data.DataRow,System.String[])">
+ <summary>
+ 置換済みのメッセージデータが格納されたDataRowを取得する。
+ </summary>
+ <param name="msgDataRow">メッセージデータの格納されたDataRow</param>
+ <param name="messageParams"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetBusinessEntity">
+ <summary>
+ 画面情報DataSetを取得する。
+ </summary>
+ <returns>画面情報DataSet</returns>
+ <remarks>隠蔽する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.SetBusinessEntity(System.Data.DataSet)">
+ <summary>
+ 画面情報DataSetをセットする。
+ </summary>
+ <param name="ds">画面情報DataSet</param>
+ <remarks>隠蔽する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.Login(System.Data.DataSet)">
+ <summary>
+ ログイン処理
+ </summary>
+ <param name="ds">UserInfoDataSet</param>
+ <remarks>隠蔽する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.LoginWebOut(System.Data.DataSet)">
+ <summary>
+ ログイン処理(外部WEBログインユーザ)
+ </summary>
+ <param name="ds">UserInfoDataSet</param>
+ <remarks>隠蔽する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetUserInfo(Jp.Co.Nrs.GL.UserInfoDS@)">
+ <summary>
+ ユーザーインフォ取得
+ </summary>
+ <param name="ds">UserInfoDataSet</param>
+ <remarks>隠蔽する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetWebOutUserInfo(Jp.Co.Nrs.GL.WebOutUserInfoDS@)">
+ <summary>
+ ユーザーインフォ取得(外部WEBログインユーザ)
+ </summary>
+ <param name="ds">UserInfoDS</param>
+ <remarks>隠蔽する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.UpdatePasswordDate(Jp.Co.Nrs.GL.UserInfoDS@)">
+ <summary>
+ パスワード期限更新
+ </summary>
+ <param name="ds">UserInfoDS</param>
+ <returns>DataSet</returns>
+ <remarks>隠蔽する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.UpdatePasswordDateWebOut(Jp.Co.Nrs.GL.WebOutUserInfoDS@)">
+ <summary>
+ パスワード期限更新(外部WEBログインユーザ)
+ </summary>
+ <param name="ds">WebOutUserInfoDS</param>
+ <returns>DataSet</returns>
+ <remarks>隠蔽する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.ChangePassword(Jp.Co.Nrs.GL.UserInfoDS@)">
+ <summary>
+ パスワード変更
+ </summary>
+ <param name="ds">UserInfoDS</param>
+ <returns>DataSet</returns>
+ <remarks>隠蔽する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.ChangePasswordWebOut(Jp.Co.Nrs.GL.WebOutUserInfoDS@)">
+ <summary>
+ パスワード変更(外部WEBログインユーザ)
+ </summary>
+ <param name="ds">WebOutUserInfoDS</param>
+ <returns>DataSet</returns>
+ <remarks>隠蔽する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.InitPasswordWebOut(Jp.Co.Nrs.GL.WebOutUserInfoDS)">
+ <summary>
+ パスワード初期化(外部WEBログインユーザ)
+ </summary>
+ <param name="ds">WebOutUserInfoDS</param>
+ <returns>DataSet</returns>
+ <remarks>隠蔽する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.SendForgetPasswordMail(Jp.Co.Nrs.GL.WebOutUserInfoDS)">
+ <summary>
+ パスワード確認時のメール送信（外部WEBログインユーザ）
+ </summary>
+ <param name="ds">WebOutUserInfoDS</param>
+ <returns>DataSet</returns>
+ <remarks>隠蔽する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.ChangeLocale(Jp.Co.Nrs.GL.UserInfoDS@)">
+ <summary>
+ ロケール変更
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.ChangeLocaleWebOut(Jp.Co.Nrs.GL.WebOutUserInfoDS@)">
+ <summary>
+ ロケール変更(外部WEBログインユーザ)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetTrackingData(Jp.Co.Nrs.GL.WebOutUserInfoDS)">
+ <summary>
+ トラッキングデータ取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.ChangeIniKiyakuWebOut(Jp.Co.Nrs.GL.WebOutUserInfoDS@)">
+ <summary>
+ 初回規約表示フラグ更新(外部WEBログインユーザ)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.SetSystemInfoToMdl(System.Data.DataSet,Jp.Co.Nrs.GL.Base.GLBaseModel)">
+ <summary>
+ システム情報をモデルに格納します。
+ </summary>
+ <param name="ds"></param>
+ <param name="mdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetGLCachedDataTable(Jp.Co.Nrs.GL.Const.GLConst.GLCachedDataSet)">
+ <summary>
+ キャッシュデータの格納されたデータテーブルのコピーを取得します。
+ </summary>
+ <param name="table"></param>
+ <returns>キャッシュデータの格納されたデータテーブルのコピー</returns>
+ <remarks>(for GL)</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.RefreshCachedCurrDataTable">
+ <summary>
+ 通貨マスタキャッシュを更新
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetWhereString(System.Collections.Generic.List{System.String[]})">
+ <summary>
+ DataTable抽出条件文を作成します。　{column, value}形式のリスト
+ </summary>
+ <param name="whereList">検索するカラムと値を含む配列のリスト</param>
+ <returns> s(0): カラム
+ </returns>s(1): 値
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetKbnComboDic(System.String,System.String,System.String,System.Boolean)">
+ <summary>
+ 区分コンボ用データを返却します。（キャッシュテーブルより取得します。）
+ </summary>
+ <param name="grpCode">区分グループコード</param>
+ <param name="lang">言語(未指定の場合はログインユーザの言語を取得)</param>
+ <param name="whereString"></param>
+ <param name="hasBlankItem">空の項目を追加するか否か</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetKbnCOMDataTable(System.String,System.String,System.String)">
+ <summary>
+ (COM)区分データテーブルを返却します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetKbnDataTable(System.String,System.String,System.String,System.String)">
+ <summary>
+ 区分データテーブルを返却します。（キャッシュテーブルより取得します。）
+ </summary>
+ <param name="grpCode">区分グループコード</param>
+ <param name="code">区分コード</param>
+ <param name="lang">言語(未指定の場合はログインユーザの言語を取得)</param>
+ <param name="whereString"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetKbnDataTableNoCache(System.String,System.String,System.String,System.String)">
+ <summary>
+ 区分データテーブルを返却します。（キャッシュ未使用）
+ </summary>
+ <param name="grpCode">区分グループコード</param>
+ <param name="code">区分コード</param>
+ <param name="lang">言語(未指定の場合はログインユーザの言語を取得)</param>
+ <param name="whereString"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetKbnLMDataTable(System.String,System.String,System.String)">
+ <summary>
+ (LM)区分データテーブルを返却します。
+ </summary>
+ <param name="grpCode">区分グループコード</param>
+ <param name="code">区分コード</param>
+ <param name="whereString">その他条件</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.SetComboDataArrg(System.String,System.String)">
+ <summary>
+ 手配マスタデータを設定します。
+ </summary>
+ <param name="arrgKbn"></param>
+ <param name="whereString"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.SetComboDataOffice(System.String,System.String)">
+ <summary>
+ OFFICEマスタデータを設定します。
+ </summary>
+ <param name="officeCd"></param>
+ <param name="whereString"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.SetComboDataPrt(System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 帳票マスタデータを設定します。
+ </summary>
+ <param name="officeCd">OFFICEコード</param>
+ <param name="businessKbn">BUSINESS区分</param>
+ <param name="guiId">画面ID</param>
+ <param name="lang">帳票言語(未指定の場合はログインユーザの言語を取得)</param>
+ <param name="whereString"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.SetComboDataPrt(System.Collections.Generic.List{System.String},System.String,System.String,System.String)">
+ <summary>
+ 帳票マスタデータを設定します。
+ </summary>
+ <param name="officeCdList"></param>
+ <param name="businessKbn"></param>
+ <param name="guiId"></param>
+ <param name="whereString"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetMPrtCntData(System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 帳票制御マスタのキー指定でRowを返却します。
+ </summary>
+ <param name="officeCd">OFFICEコード</param>
+ <param name="businessKbn">BUSINESS区分</param>
+ <param name="guiId">画面ID</param>
+ <param name="prtId">帳票ID</param>
+ <param name="lang">帳票言語(未指定の場合はログインユーザの言語を取得)</param>
+ <param name="whereString"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.SetComboDataFileCnt(System.String,System.Boolean,System.String)">
+ <summary>
+ 添付ファイル制御マスタデータを設定します。
+ </summary>
+ <param name="pgId"></param>
+ <param name="isEditable"></param>
+ <param name="whereString"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.SetComboDataLawNF(System.String,System.String)">
+ <summary>
+ (NF)適用法規マスタデータを設定します。
+ </summary>
+ <param name="lawsCd"></param>
+ <param name="whereString"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.SetComboDataLawMST(System.String,System.String)">
+ <summary>
+ (MST)適用法規マスタデータを設定します。
+ </summary>
+ <param name="lawsCd"></param>
+ <param name="whereString"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetSRscData(System.String,System.String)">
+ <summary>
+ リソースマスタのキー指定でStringを返却します。（キャッシュテーブルより取得します。）
+ </summary>
+ <param name="resourceId"></param>
+ <param name="whereString">未使用</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetMCompCOMDataTable(System.String,System.String)">
+ <summary>
+ (COM)会社データテーブルを返却します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetMGoodsNFDataTable(System.String,System.String)">
+ <summary>
+ (NF)商品データテーブルを返却します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetSUserDataTable(System.String,System.String)">
+ <summary>
+ ユーザデータテーブルを返却します。
+ </summary>
+ <param name="userId">ユーザID</param>
+ <param name="whereString"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetSWebOutUserDataTable(System.String,System.String)">
+ <summary>
+ 外部WEBユーザデータテーブルを返却します。
+ </summary>
+ <param name="userId">ユーザID</param>
+ <param name="whereString"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetMCompDataTable(System.String,System.String)">
+ <summary>
+ 会社データテーブルを返却します。
+ </summary>
+ <param name="compCd">会社コード</param>
+ <param name="whereString"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetMGoodsDataTable(System.String,System.String)">
+ <summary>
+ 商品データテーブルを返却します。
+ </summary>
+ <param name="goodsCd">商品コード</param>
+ <param name="whereString"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetMCountryDataTable(System.String,System.String)">
+ <summary>
+ 国データテーブルを返却します。
+ </summary>
+ <param name="countryCd">国コード</param>
+ <param name="whereString"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetMCityDataTable(System.String,System.String)">
+ <summary>
+ 都市データテーブルを返却します。
+ </summary>
+ <param name="cityCd">都市コード</param>
+ <param name="whereString"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetMCitySubDataTable(System.String,System.String,System.String,System.String)">
+ <summary>
+ 都市サブデータテーブルを返却します。
+ </summary>
+ <param name="cityCd">都市コード</param>
+ <param name="nrsCompKbn">日陸会社区分</param>
+ <param name="businessKbn">BUSINESS区分</param>
+ <param name="whereString"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetMRegionDataTable(System.String,System.String,System.String)">
+ <summary>
+ 地域データテーブルを返却します。
+ </summary>
+ <param name="regionCd">地域コード</param>
+ <param name="nrsCompKbn">会社区分</param>
+ <param name="whereString"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetMTankCOMDataTable(System.String,System.String,System.String,System.String)">
+ <summary>
+ (COM)タンクデータテーブルを返却します。
+ </summary>
+ <param name="contTypeKbn">コンテナ種別</param>
+ <param name="contNo">コンテナ番号</param>
+ <param name="contNoSub">コンテナ番号枝</param>
+ <param name="whereString"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetMJdeAccountDataTable(System.String,System.String)">
+ <summary>
+ 請求支払データテーブルを返却します。
+ </summary>
+ <param name="accCd">アカウントコード</param>
+ <param name="whereString"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetMCurrDataTable(System.String,System.String,System.String,System.String)">
+ <summary>
+ 通貨データテーブルを返却します。（キャッシュテーブルより取得します。）
+ </summary>
+ <param name="baseCurrCd">基準通貨コード</param>
+ <param name="currCd">通貨コード</param>
+ <param name="currMonth">適用月</param>
+ <param name="whereString"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetMCostDataTable(System.String,System.String)">
+ <summary>
+ コストデータテーブルを返却します。
+ </summary>
+ <param name="costCd">コストコード</param>
+ <param name="whereString"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetMGuidelineDataTable(System.String,System.String)">
+ <summary>
+ 取扱指針データテーブルを返却します。
+ </summary>
+ <param name="guidelineCd">取扱指針コード</param>
+ <param name="whereString"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetMHolLMDataTable(System.String,System.String)">
+ <summary>
+ LM_MST..M_HOLからデータを取得（キャッシュから取得）
+ </summary>
+ <param name="hol"></param>
+ <param name="whereString"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetMChargeDataTable(System.String,System.String)">
+ <summary>
+ 諸料金データテーブルを返却します。
+ </summary>
+ <param name="chargeCd">諸料金コード</param>
+ <param name="whereString"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetMArrgDataTable(System.String,System.String)">
+ <summary>
+ 手配データテーブルを返却します。
+ </summary>
+ <param name="arrgCd">手配コード</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetMOfficeDataTable(System.String,System.String)">
+ <summary>
+ OFFICEデータテーブルを返却します。
+ </summary>
+ <param name="officeCd">OFFICEコード</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetMOfficeGroupDataTable(System.String,System.String)">
+ <summary>
+ オフィスグループデータテーブルを返却します。
+ </summary>
+ <param name="groupCd">GROUP_CD</param>
+ <param name="whereString">その他検索条件</param>
+ <returns>オフィスグループデータテーブル</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetMOpeDateDataTable(System.String,System.String)">
+ <summary>
+ 稼働日制御データデータテーブルを返却します。
+ </summary>
+ <param name="pgId">PG_ID</param>
+ <param name="whereString">その他検索条件</param>
+ <returns>稼働日制御データデータテーブル</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetMImdgDataTable(System.String,System.String,System.String)">
+ <summary>
+ IMDGデータテーブルを返却します。
+ </summary>
+ <param name="unNo">UNナンバー</param>
+ <param name="pgKbn">PG区分</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetMTestCOMDataTable(System.Int32,System.String)">
+ <summary>
+ (COM)検定データテーブルを返却します。
+ </summary>
+ <param name="testNo">定期検査番号</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetMPrtCntDataTable(System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 帳票制御データテーブルを返却します。
+ </summary>
+ <param name="officeCd">OFFICEコード</param>
+ <param name="businessKbn">BUSINESS区分</param>
+ <param name="guiId">画面ID</param>
+ <param name="prtId">帳票ID</param>
+ <param name="whereString"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetMLawDataTable(System.String,System.String,System.String)">
+ <summary>
+ 適用法規データテーブルを返却します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetMNrsBrLMDataTable(System.String,System.String)">
+ <summary>
+ M_NRS_BR_LMデータテーブルを返却します。
+ </summary>
+ <param name="nrsBrCd"></param>
+ <param name="whereString"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetMContcostDataTable(System.String,System.String,System.String,System.String)">
+ <summary>
+ コンテナコストデータテーブルを返却します。
+ </summary>
+ <param name="nrsCompKbn">日陸会社区分</param>
+ <param name="orig">発地</param>
+ <param name="dest">着地</param>
+ <param name="whereString"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetMBankDataTable(System.String,System.String)">
+ <summary>
+ 銀行データテーブルを返却します。
+ </summary>
+ <param name="bankCd">銀行コード</param>
+ <param name="whereString"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetMBuDataTable(System.String,System.String)">
+ <summary>
+ BUデータテーブルを返却します。
+ </summary>
+ <param name="buCd">BUコード</param>
+ <param name="whereString"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetMJdeKmkDataTable(System.String,System.String,System.String)">
+ <summary>
+ JDE科目データテーブルを返却します。
+ </summary>
+ <param name="buCd">BUコード</param>
+ <param name="kmkCd">FWD科目コード</param>
+ <param name="whereString"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetMKmkDataTable(System.String,System.String,System.String)">
+ <summary>
+ 科目データテーブルを返却します。
+ </summary>
+ <param name="kmkCd">科目コード</param>
+ <param name="nrsCompKbn">日陸会社区分</param>
+ <param name="whereString"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetMTaxDataTable(System.String,System.String)">
+ <summary>
+ 税データテーブルを返却します。
+ </summary>
+ <param name="taxCd">税コード</param>
+ <param name="whereString"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetMTaxDispDataTable(System.String,System.String,System.String,System.String)">
+ <summary>
+ 税表示データテーブルを返却します。
+ </summary>
+ <param name="taxCd">税コード</param>
+ <param name="dispKbn">表示形式</param>
+ <param name="kbnLang">メッセージ言語</param>
+ <param name="whereString"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetMTaxDetailDataTable(System.String,System.String,System.String)">
+ <summary>
+ 税明細データテーブルを返却します。
+ </summary>
+ <param name="countryCd">国コード</param>
+ <param name="dispKbn">表示区分</param>
+ <param name="whereString">
+ M_TAX_MAIN 条件追加時は"MAIN.カラム名"、
+ M_TAX_DISP 条件追加時は"DISP.カラム名"
+ </param>
+ <returns>M_TAX_DISPのレイアウトでDataTableを返却します。</returns>
+ <remarks>
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetMFileCOMDataTable(System.Int32,System.String)">
+ <summary>
+ (COM)添付ファイルデータテーブルを返却します。
+ </summary>
+ <param name="fileNo">添付ファイル番号</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetSBkgChangeGLDataTable(System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ (GL)ブッキング変更通知データテーブルを返却します。
+ </summary>
+ <param name="TblNm">テーブル名</param>
+ <param name="ColNm">カラム名</param>
+ <param name="ArgKbn">手配区分</param>
+ <param name="OrigDestKbn">Orig/Dest区分</param>
+ <param name="whereString"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetMPrtHeaderDataTable(System.String,System.String,System.String)">
+ <summary>
+ 帳票ヘッダーデータテーブルを返却します。
+ </summary>
+ <param name="officeCd">OFFICEコード</param>
+ <param name="userId">ユーザID</param>
+ <param name="whereString"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetMCoverDataTable(System.String,System.String)">
+ <summary>
+カバーデータテーブルを返却します。
+ </summary>
+ <param name="CoverCd">カバーコード</param>
+ <param name="whereString"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetMCommentDataTable(System.Int32,System.String)">
+ <summary>
+ コメントデータテーブルを返却します。
+ </summary>
+ <param name="CommentSeq">コメントSEQ</param>
+ <param name="whereString"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetMWebCustDataTable(System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 外部用荷主データテーブルを返却します。
+ </summary>
+ <param name="nrsBrNo">LMS営業所CD</param>
+ <param name="compCdL">会社コードL</param>
+ <param name="compCdM">会社コードM</param>
+ <param name="compCdS">会社コードS</param>
+ <param name="compCdSs">会社コードSS</param>
+ <param name="whereString">その他条件</param>
+ <returns>外部用荷主データテーブル</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetMWebCustDataTable(System.String,System.String)">
+ <summary>
+ 外部用荷主データテーブルを返却します。
+ </summary>
+ <param name="webCustKey">条件連結文字列</param>
+ <param name="whereString">その他条件</param>
+ <returns>外部用荷主データテーブル</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetMWebKenHaisoDataTable(System.String,System.String,System.String)">
+ <summary>
+ MST_DB..M_WEB_KEN_HAISOからデータを取得（キャッシュから取得）
+ </summary>
+ <param name="nrsBrCd"></param>
+ <param name="kenCd"></param>
+ <param name="whereString"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetSMailTplDataTable(System.String,System.Int32,System.String,System.String)">
+ <summary>
+ メール送信文言データテーブルを返却します。
+ </summary>
+ <param name="TplCd">テンプレートコード</param>
+ <param name="TplSeq">テンプレートSEQ</param>
+ <param name="TplLang">テンプレート言語</param>
+ <param name="whereString"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetSRscConvDataTable(System.String,System.String,System.String)">
+ <summary>
+ リソース変換データテーブルを返却します。
+ </summary>
+ <param name="TableNm">テーブル名(物理名)</param>
+ <param name="ColNm">カラム名(物理名)</param>
+ <param name="whereString"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetZSystemDataTable(System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ システムログ情報テーブルを返却します。
+ </summary>
+ <param name="procKey">処理キー</param>
+ <param name="procKeyKbn">処理キー区分</param>
+ <param name="arrgKbn">手配分類</param>
+ <param name="pgId">プログラムID</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetZSystemJoinWebOutUserDataTable(System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ システムログ情報テーブルを返却します。
+ </summary>
+ <param name="procKey">処理キー</param>
+ <param name="procKeyKbn">処理キー区分</param>
+ <param name="arrgKbn">手配分類</param>
+ <param name="pgId">プログラムID</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetSPrtLogDataTable(System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 帳票ログ情報テーブルを返却します。
+ </summary>
+ <param name="prtId">帳票ID</param>
+ <param name="keyTypeKbn">KEY No.種類</param>
+ <param name="keyNo">KEY_NO</param>
+ <param name="exePgid">印刷指示画面ID</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetIntegrateMSegmentDataTable(System.String,System.String,System.String,System.String)">
+ <summary>
+ セグメントデータテーブル（統合）を取得
+ </summary>
+ <param name="dataTypeCd">データタイプコード</param>
+ <param name="cnctSegCd">CNCTセグメントコード</param>
+ <param name="kbnLang">言語</param>
+ <param name="whereString">検索文字列</param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetIntegrateMAccDataTable(System.String,System.String,System.String)">
+ <summary>
+ ACCデータテーブル（統合）を取得
+ </summary>
+ <param name="nrsCd">NRS_CD</param>
+ <param name="accCd">ACC_CD</param>
+ <param name="whereString">検索文字列</param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetComboDic(System.Data.DataTable,System.String,System.String)">
+ <summary>
+ 指定のキー／値で作成したコンボ用Dictionaryデータを返却します。
+ </summary>
+ <param name="dt">DataTable</param>
+ <param name="keyColumn">キー項目名</param>
+ <param name="valueColumn">値項目名</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetKbnDataTableComboDic(System.Data.DataTable,System.String,System.String,System.String,System.Boolean)">
+ <summary>
+ コンボボックス生成処理
+ </summary>
+ <param name="dt"></param>
+ <param name="kbnGroupCd">区分グループコード</param>
+ <param name="lang">言語(未指定の場合はログインユーザの言語を取得)</param>
+ <param name="whereString"></param>
+ <param name="hasBlankItem">空の項目を追加するか否か</param>
+ <remarks1>依頼番号：034447 GLIS速度改善に伴う共通部品の追加</remarks1>
+ <remarks2>依頼番号：035074 空の項目を追加するか否かのパラメータ・判定処理追加</remarks2>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetKbnDataTableComboDicEx(System.Data.DataTable,System.String,System.String,System.String,System.Boolean,System.String,System.String)">
+ <summary>
+ コンボボックス生成処理
+ </summary>
+ <param name="dt"></param>
+ <param name="kbnGroupCd">区分グループコード</param>
+ <param name="lang">言語(未指定の場合はログインユーザの言語を取得)</param>
+ <param name="whereString"></param>
+ <param name="hasBlankItem">空の項目を追加するか否か</param>
+ <remarks>依頼番号：034447 GLIS速度改善対応で追加したメソッドのバリエーションとして「GetKbnDataTableComboDicEx」を新規作成</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetComboDicToJson(System.Collections.Generic.Dictionary{System.String,System.String})">
+ <summary>
+ コンボ用DictionaryデータをJsonに返却します。
+ </summary>
+ <param name="dic"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.SaveGridLayout(Jp.Co.Nrs.GL.GLGridModel)">
+ <summary>
+ グリッド情報を保存
+ </summary>
+ <param name="inMdl">入力モデル</param>
+ <returns>ビューモデル</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.GetGridLayout(System.String,System.String)">
+ <summary>
+ グリッド情報を取得し、グリッドモデルに格納する
+ </summary>
+ <param name="pgId">PGID</param>
+ <param name="gridName">グリッド名</param>
+ <returns>グリッドモデルリスト</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.GUI.GLBaseWorkerService.DeleteGridLayout(System.String,System.String)">
+ <summary>
+ グリッド情報を削除する
+ </summary>
+ <param name="pgId"></param>
+ <param name="gridName"></param>
+ <returns></returns>
+</member>
+<member name="T:Jp.Co.Nrs.GL.Utility.GLValidateUtility">
+ <summary>
+ 拡張入力チェック用ユーティリティクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.GL.CheckAgreementModel">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.GL.ClaimType.employeeNo">
+ <summary>
+ 社員番号
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.ClaimType.userLastNm">
+ <summary>
+ ユーザー名(姓)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.ClaimType.userFirstNm">
+ <summary>
+ ユーザー名(名)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.ClaimType.userLastEnm">
+ <summary>
+ ユーザー名(英語)(姓)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.ClaimType.userFirstEnm">
+ <summary>
+ ユーザー名(英語)(名)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.ClaimType.eMail">
+ <summary>
+ メールアドレス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.ClaimType.adAccount">
+ <summary>
+ ADアカウント
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.ClaimType.deptId">
+ <summary>
+ 部署ID
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.GL.ClaimUserInfo">
+ <summary>
+ クレームログインユーザ情報モデル
+ </summary>
+ <remarks>
+ 　ＳＳＯでログインしたユーザ情報を保持します。
+ </remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.ClaimUserInfo.SessionKey">
+ <summary>
+ Session Key
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.ClaimUserInfo.ReturnUrl">
+ <summary>
+ ユーザが指定したURL
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.ClaimUserInfo.EmployeeNo">
+ <summary>
+ 社員番号（ＤＢ認証のユーザＩＤ）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.ClaimUserInfo.UserLastNm">
+ <summary>
+ ユーザー名(姓)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.ClaimUserInfo.UserFirstNm">
+ <summary>
+ ユーザー名(名)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.ClaimUserInfo.UserLastEnm">
+ <summary>
+ ユーザー名(英語)(姓)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.ClaimUserInfo.UserFirstEnm">
+ <summary>
+ ユーザー名(英語)(名)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.ClaimUserInfo.EMail">
+ <summary>
+ メールアドレス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.ClaimUserInfo.AdAccount">
+ <summary>
+ ADアカウント
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.ClaimUserInfo.DeptId">
+ <summary>
+ 部署ID
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.GL.DownloadFileInfo">
+ <summary>
+ ダウンロードファイル情報モデル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DownloadFileInfo.CONTENT_TYPE_EXL">
+ <summary>
+ ファイルコンテンツタイプ（Ｅｘｃｅｌ）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DownloadFileInfo.CONTENT_TYPE_PDF">
+ <summary>
+ ファイルコンテンツタイプ（ＰＤＦ）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DownloadFileInfo.CONTENT_TYPE_ZIP">
+ <summary>
+ ファイルコンテンツタイプ（ＺＩＰ）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DownloadFileInfo.CONTENT_TYPE_NA">
+ <summary>
+ ファイルコンテンツタイプ（該当なし）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.DownloadFileInfo.FilePath">
+ <summary>
+ ファイルパス
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.DownloadFileInfo.ContentType">
+ <summary>
+ コンテンツタイプ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.DownloadFileInfo.Bytes">
+ <summary>
+ ファイルをバイナリで保持
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.DownloadFileInfo.Extention">
+ <summary>
+ ファイル拡張子
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.GL.GLComModel">
+ <summary>
+ GL共通モデル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GLComModel.#ctor">
+ <summary>
+ コンストラクタ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.GLComModel.gLComReject">
+ <summary>
+ 差し戻し情報(GL共通)
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.GL.GLComReject">
+ <summary>
+ 差し戻し情報(GL共通)
+ </summary>
+ <remarks>List</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.GLComReject.txtRejectComment">
+ <summary>
+ 差し戻し理由(テキストエリア)
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.GL.ChangePasswordModel">
+ <summary>
+ パスワード変更画面モデル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.ChangePasswordModel.IniPasswordKbn">
+ <summary>
+ 初期パスワード区分 00001:初期
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.ChangePasswordModel.UserId">
+ <summary>
+ ユーザＩＤ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.ChangePasswordModel.CurrentPassword">
+ <summary>
+ 現在のパスワード
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.ChangePasswordModel.NewPassword1">
+ <summary>
+ 新しいパスワード1
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.ChangePasswordModel.NewPassword2">
+ <summary>
+ 新しいパスワード2
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.ChangePasswordModel.ReturnUrl">
+ <summary>
+ リダイレクトＵＲＬ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.ChangePasswordModel.Lang_ISO639_1">
+ <summary>
+ 言語（ISO-639_1基準)
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.GL.GLGridModel">
+ <summary>
+ グリッド情報モデル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.GLGridModel.PgId">
+ <summary>
+ PGID
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.GLGridModel.GridName">
+ <summary>
+ グリッド名
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.GLGridModel.ColName">
+ <summary>
+ カラム名
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.GLGridModel.ColWidth">
+ <summary>
+ カラム幅
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.GL.ForgetPasswordModel">
+ <summary>
+ パスワード確認画面モデル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.ForgetPasswordModel.UserId">
+ <summary>
+ ユーザＩＤ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.ForgetPasswordModel.EmailAddress">
+ <summary>
+ Eメールアドレス
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.ForgetPasswordModel.Lang_ISO639_1">
+ <summary>
+ 言語（ISO-639_1基準)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.ForgetPasswordModel.Exists">
+ <summary>
+ ユーザ情報が存在するかどうか
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.ForgetPasswordModel.IsSent">
+ <summary>
+ メール送信済みかどうか
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.GL.LoginModel">
+ <summary>
+ ログイン画面モデル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.LoginModel.UserId">
+ <summary>
+ ユーザＩＤ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.LoginModel.Password">
+ <summary>
+ パスワード
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.LoginModel.Lang_ISO639_1">
+ <summary>
+ 言語（ISO-639_1基準)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.LoginModel.Lang_ISO639_1_List">
+ <summary>
+ 言語リスト（ISO-639_1基準）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.LoginModel.TimeZoneInfoId">
+ <summary>
+ タイムゾーンＩＤ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.LoginModel.dicTimeZone">
+ <summary>
+ タイムゾーンリスト
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.LoginModel.ReturnUrl">
+ <summary>
+ リダイレクトＵＲＬ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.LoginModel.Remarks">
+ <summary>
+ 備考
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.LoginModel.InitSelectList">
+ <summary>
+  各コンボボックスの選択肢初期値を設定する。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.GL.TrackingModel">
+ <summary>
+ トラッキングモデル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.TrackingModel.TempKey">
+ <summary>
+ テンポラリキー
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.TrackingModel.Lang_ISO639_1">
+ <summary>
+ 言語（ISO-639_1基準)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.TrackingModel.CategoryDictionary">
+ <summary>
+ Categoryドロップダウンリスト用辞書
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.TrackingModel.Conditions">
+ <summary>
+ 検索条件
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.TrackingModel.Tracking">
+ <summary>
+ トラッキング情報
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.TrackingModel.ContainerInfoList">
+ <summary>
+ トラッキング履歴
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.TrackingModel.ContainerInfoListJson">
+ <summary>
+ JSON形式のトラッキング履歴
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.GL.TrackingCondtions">
+ <summary>
+ トラッキング検索条件
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.TrackingCondtions.BLNumber">
+ <summary>
+ BL Number
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.TrackingCondtions.CategoryCd">
+ <summary>
+ Category
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.TrackingCondtions.CategoryNumber">
+ <summary>
+ Number
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.GL.TrackingInfo">
+ <summary>
+ トラッキング情報
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.TrackingInfo.JobNo">
+ <summary>
+ Job no
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.TrackingInfo.BLNo">
+ <summary>
+ BL no
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.TrackingInfo.Origin">
+ <summary>
+ Origin
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.TrackingInfo.Destination">
+ <summary>
+ Destination
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.TrackingInfo.PoL">
+ <summary>
+ Port of loading(PoL)
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.TrackingInfo.PoD">
+ <summary>
+ Port of discharge(PoD)
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.TrackingInfo.NumberOfContainers">
+ <summary>
+ Number of containers
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.TrackingInfo.VesselName">
+ <summary>
+ Vessel name
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.TrackingInfo.VesselName2">
+ <summary>
+ 2nd Vessel name
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.TrackingInfo.PoLDepartureDate">
+ <summary>
+ PoL Departure(日付)
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.TrackingInfo.PoLDepartureKbn">
+ <summary>
+ PoL Departure(区分)
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.TrackingInfo.PoDArrivalDate">
+ <summary>
+ PoD Arrival(日付)
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.TrackingInfo.PoDArrivalKbn">
+ <summary>
+ PoD Arrival(区分)
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.TrackingInfo.DestinationCYRamp">
+ <summary>
+ Destination CY/Ramp
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.TrackingInfo.ITNo">
+ <summary>
+ IT no
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.GL.ContainerInfo">
+ <summary>
+ トラッキング履歴
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.ContainerInfo.ContainerNo">
+ <summary>
+ Container no
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.ContainerInfo.Size">
+ <summary>
+ Size
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.ContainerInfo.Type">
+ <summary>
+ Type
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.ContainerInfo.LoadingDate">
+ <summary>
+ Loading Date
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.ContainerInfo.ArrivalCY">
+ <summary>
+ Arrival CY
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.ContainerInfo.DepotIn">
+ <summary>
+ Depot in
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.GL.UserArrgInfo">
+ <summary>
+ ログインユーザ手配情報モデル
+ </summary>
+ <remarks>
+ 　ログインしたユーザ手配情報を保持します。
+ </remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.UserArrgInfo.ArrgGroupKbn">
+ <summary>
+ 手配グループ区分
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.GL.SystemInfo">
+ <summary>
+ システム情報モデル
+ </summary>
+ <remarks>
+ 　システム情報を保持します。
+ </remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.SystemInfo.SessionKey">
+ <summary>
+ Session Key
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.SystemInfo.ApplicationVersion">
+ <summary>
+ アプリケーションバージョン
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.GL.WebOutHiddenMenu">
+ <summary>
+ 外部用WEB隠しメニューモデル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.WebOutHiddenMenu.UserGroupCd">
+ <summary>
+ ユーザグループコード
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.WebOutHiddenMenu.HiddenPgid">
+ <summary>
+ 隠しPGID
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.WebOutHiddenMenu.Remark">
+ <summary>
+ 備考
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.GL.WebOutUserCompDetailsInfo">
+ <summary>
+ 外部用WEBログインユーザ会社明細情報モデル
+ </summary>
+ <remarks>
+ 　外部用WEBからログインしたユーザ会社明細情報を保持します。
+ </remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.WebOutUserCompDetailsInfo.UserId">
+ <summary>
+ ユーザＩＤ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.WebOutUserCompDetailsInfo.AprKbn">
+ <summary>
+ 業務アプリケーション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.WebOutUserCompDetailsInfo.NrsBrCd">
+ <summary>
+ LMS営業所CD
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.WebOutUserCompDetailsInfo.CompCdL">
+ <summary>
+ 会社コードL
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.WebOutUserCompDetailsInfo.CompCdM">
+ <summary>
+ 会社コードM
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.WebOutUserCompDetailsInfo.CompCdS">
+ <summary>
+ 会社コードS
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.WebOutUserCompDetailsInfo.CompCdSs">
+ <summary>
+ 会社コードSS
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.WebOutUserCompDetailsInfo.CompNm">
+ <summary>
+ 会社名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.WebOutUserCompDetailsInfo.CompEnm">
+ <summary>
+ 会社英名
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.WebOutUserCompDetailsInfo.InkaAuth">
+ <summary>
+ 入荷指示権限
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.WebOutUserCompDetailsInfo.OutkaAuth">
+ <summary>
+ 出荷指示権限
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.WebOutUserCompDetailsInfo.InkaHistoryAuth">
+ <summary>
+ 入荷履歴検索可権限
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.WebOutUserCompDetailsInfo.OutkaHistoryAuth">
+ <summary>
+ 出荷履歴検索可権限
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.WebOutUserCompDetailsInfo.ZaikoAuth">
+ <summary>
+ 在庫検索権限
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.GL.WebOutUserCompDetailsInfo.InoutCcEmail">
+ <summary>
+ 入出荷指示連絡CC用メールアドレス
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.WebOutUserCompDetailsInfo.NrsTantoEmail">
+ <summary>
+ 日陸担当者メールアドレス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.WebOutUserCompDetailsInfo.Remark">
+ <summary>
+ 備考
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.WebOutUserCompDetailsInfo.SearchText">
+ <summary>
+ 検索用KEYWORD
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.GL.WebOutUserDetailsInfo">
+ <summary>
+ 外部用WEBログインユーザ明細情報モデル
+ </summary>
+ <remarks>
+ 　外部用WEBからログインしたユーザ明細情報を保持します。
+ </remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.WebOutUserDetailsInfo.UserId">
+ <summary>
+ ユーザＩＤ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.WebOutUserDetailsInfo.AprKbn">
+ <summary>
+ 業務アプリケーション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.WebOutUserDetailsInfo.KoUserAuthKbn">
+ <summary>
+ 顧客WEBユーザーマスタ編集権限
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.WebOutUserDetailsInfo.KoDestAuthKbn">
+ <summary>
+ 顧客WEB届先マスタ編集権限
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.WebOutUserDetailsInfo.KoCustAuthKbn">
+ <summary>
+ 顧客WEB荷主マスタ編集権限
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.WebOutUserDetailsInfo.TaAuthKbn">
+ <summary>
+ タンクWEB権限
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.WebOutUserDetailsInfo.TaCompGrpCd">
+ <summary>
+ タンク所属会社CD
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.WebOutUserDetailsInfo.BookingYn">
+ <summary>
+ Booking作成有無
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.WebOutUserDetailsInfo.DeclarYn">
+ <summary>
+ 通関許可書有無
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.WebOutUserDetailsInfo.SiYn">
+ <summary>
+ S/I有無
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.WebOutUserDetailsInfo.BlYn">
+ <summary>
+ B/L有無
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.WebOutUserDetailsInfo.AnYn">
+ <summary>
+ A/N有無
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.WebOutUserDetailsInfo.IvYn">
+ <summary>
+ I/V有無
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.WebOutUserDetailsInfo.SearchText">
+ <summary>
+ 検索用KEYWORD
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.GL.UserInfo">
+ <summary>
+ ログインユーザ情報モデル
+ </summary>
+ <remarks>
+ 　ログインしたユーザ情報を保持します。
+   ユーザに関する手配・所属情報も保持します。
+ 　パスワードはセキュリティのため保持しません。
+ </remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.UserInfo.SessionKey">
+ <summary>
+ Session Key
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.UserInfo.IsWebOutUser">
+ <summary>
+ 外部WEBログインユーザか否か(True: 外部WEBログインユーザ) 
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.UserInfo.UserId">
+ <summary>
+ ユーザＩＤ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.UserInfo.UserLNm">
+ <summary>
+ ユーザ名称
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.UserInfo.UserENm">
+ <summary>
+ ユーザ英語名称
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.UserInfo.CompNm">
+ <summary>
+ 会社名称
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.UserInfo.CompENm">
+ <summary>
+ 会社英語名称
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.UserInfo.EMail">
+ <summary>
+ Eメール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.UserInfo.Tel">
+ <summary>
+ TEL
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.UserInfo.PasswordDate">
+ <summary>
+ パスワード有効期限
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.UserInfo.AdId">
+ <summary>
+ AD ログインID
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.UserInfo.IniPasswordKbn">
+ <summary>
+ 初期パスワード区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.UserInfo.IniKiyakuKbn">
+ <summary>
+ 初回規約表示区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.UserInfo.UserGroupKbn">
+ <summary>
+ユーザグループ区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.UserInfo.UserGroupCd">
+ <summary>
+ ユーザグループコード(外部WEB用)
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.UserInfo.NvoHoApprovalKbn">
+ <summary>
+NVO HO Approval区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.UserInfo.PrinterKbn">
+ <summary>
+ プリンター区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.UserInfo.JdeId">
+ <summary>
+ JDEユーザID
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.UserInfo.UserLang">
+ <summary>
+ ユーザ言語
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.UserInfo.TimeZone">
+ <summary>
+ ユーザタイムゾーン
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.UserInfo.SearchText">
+ <summary>
+ 検索文字
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.UserInfo.UserArrgInfoList">
+ <summary>
+ ユーザ手配情報リスト
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.UserInfo.UseOfficeInfoList">
+ <summary>
+ ユーザオフィス情報リスト
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.UserInfo.WebOutUserDetailsInfoList">
+ <summary>
+ 外部用WEBログインユーザ明細情報リスト
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.UserInfo.WebOutUserCompDetailsInfoList">
+ <summary>
+ 外部用WEBログインユーザ会社明細情報リスト
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.UserInfo.WebOutHiddenMenuList">
+ <summary>
+ 外部用WEB隠しメニューリスト
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.UserInfo.Lang_ISO639_1">
+ <summary>
+ 言語（ISO-639_1基準)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.UserInfo.LoginDateTime">
+ <summary>
+ ログイン日時
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.UserInfo.ConDB">
+ <summary>
+ ＤＢコネクション情報
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.UserInfo.UserTimeZone">
+ <summary>
+ タイムゾーンインフォ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.UserInfo.TimeZoneInfoId">
+ <summary>
+ タイムゾーンＩＤ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.UserInfo.Remarks">
+ <summary>
+ 備考
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.GL.UserOfficeInfo">
+ <summary>
+ ログインユーザオフィス情報モデル
+ </summary>
+</member>
+<member name="P:Jp.Co.Nrs.GL.UserOfficeInfo.SapoutAuthKbn">
+ <summary>
+ SAP連携の実行権限
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.GL.UserOfficeInfo.GroupCd">
+ <summary>
+ オフィスグループコード
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.GL.UserOfficeInfo.RevTaxCd">
+ <summary>
+ 請求税コード
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.GL.UserOfficeInfo.CostTaxCd">
+ <summary>
+ 支払税コード
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.GL.UserOfficeInfo.AddPrtFlgKbn">
+ <summary>
+ 住所印刷有無区分
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.GL.UserOfficeInfo.DefaultCurr">
+ <summary>
+ デフォルト通貨
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.GL.UserOfficeInfo.DryNvoKbn">
+ <summary>
+ Dry NVO 区分
+ </summary>
+ <returns></returns>
+</member>
+</members>
+</doc>

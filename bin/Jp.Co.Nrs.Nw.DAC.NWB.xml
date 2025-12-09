@@ -1,0 +1,262 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.Nw.DAC.NWB
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.Nw.DAC.NWB.My.Resources.Resources">
+<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.Nw.DAC.NWB.My.Resources.Resources.ResourceManager">
+<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.Nw.DAC.NWB.My.Resources.Resources.Culture">
+<summary>
+  すべてについて、現在のスレッドの CurrentUICulture プロパティをオーバーライドします
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWB.NWB010DAC.SelectNFData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>データ抽出</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWB.NWB010DAC.SelectNFCount(System.Data.DataSet)">
+ ==========================================================================
+ <summary>データ件数カウント</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWB.NWB050DAC.SetConditionSQL(System.Data.DataRow,System.Text.StringBuilder,System.Collections.ArrayList,System.String)">
+****************************************************************
+ <summary>SQL文条件(WHERE句)設定(DAC)</summary>
+ <param name="conditionRow"></param>
+ <param name="editSql"></param>
+ <param name="prmList"></param>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWB.NWB050DAC.SetConditionSQLForYoteiIn(System.Data.DataRow,System.Text.StringBuilder,System.Collections.ArrayList,System.String)">
+****************************************************************
+ <summary>SQL文条件(WHERE句)設定(DAC)</summary>
+ <param name="conditionRow"></param>
+ <param name="editSql"></param>
+ <param name="prmList"></param>
+****************************************************************
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWB.NWB060DAC.UpDateBlockData(System.Data.DataSet)">
+ <summary>
+ 充填状況更新
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWB.NWB060DAC.UpDateDBasisData(System.Data.DataSet@)">
+ <summary>
+ D_BASISのタイムスタンプ更新
+ </summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWB.NWB060DAC.UpDateKInvData(System.Data.DataSet@)">
+ <summary>
+ K_INVENTRYのタイムスタンプ更新
+ </summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWB.NWB060DAC.UpDateDCont(System.Data.DataSet@)">
+ <summary>
+ D_CONT更新
+ </summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWB.NWB060DAC.UpDateKInventryDepot(System.Data.DataSet@)">
+ <summary>
+ K_INVENTRY_DEPOT更新
+ </summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWB.NWB060DAC.SelectLockItemData(System.Data.DataSet)">
+ <summary>
+ 受注ロックテーブルのチェック
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWB.NWB060DAC.CheckHaitaBasisData(System.Data.DataSet)">
+ <summary>
+ 受注基本テーブルチェック
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWB.NWB060DAC.CheckHaitaInvData(System.Data.DataSet)">
+ <summary>
+ インベントリーテーブルチェック
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWB.NWB070DAC.SELECT_KINVENTRY_DATA">
+ <summary>
+ K_INVENTRYデータ取得SQL
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWB.NWB070DAC.INSERT_K_INVENTRY">
+ <summary>
+ K_INVENTRYのデータを新規登録するSQL（保存時）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWB.NWB070DAC.SelectKInventryData(System.Data.DataSet)">
+ <summary>
+ データ取得 K_INVENTRYレコード
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWB.NWB070DAC.SelectDBasisData(System.Data.DataSet)">
+ <summary>
+ データ取得 D_BASISレコード
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWB.NWB070DAC.UpdateKInventrySaishin(System.Data.DataSet)">
+ <summary>
+ インベントリテーブル（K_INVENTRY）の最新レコードを更新
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWB.NWB070DAC.InsertKInventrySaishin(System.Data.DataSet)">
+ <summary>
+ 最新レコード：保存-新規(K_INVENTRY)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>新規登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWB.NWB070DAC.InsertDBasisSaishin(System.Data.DataSet)">
+ <summary>
+ 最新レコード：保存-新規(D_BASIS)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>新規登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWB.NWB070DAC.InsertDExportSaishin(System.Data.DataSet)">
+ <summary>
+ 最新レコード：保存-新規(D_EXPORT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>新規登録SQLの構築・発行</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWB.NWB080DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWB.NWB080DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWB.NWB080DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWB.NWB080DAC._SortKey">
+ <summary>
+ ソートKey
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWB.NWB080DAC.SQL_SELECT_DATA">
+ <summary>
+ K_INVENTORY データ抽出用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWB.NWB080DAC.SQL_SELECT_CNT">
+ <summary>
+ データ抽出用カウント用最初 　　　　2016/01/14 YK
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWB.NWB080DAC.SQL_TAIL">
+ <summary>
+ データ抽出用WHERE句（ページング、SEQ No.順ソート）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWB.NWB080DAC.SQL_TAIL_CNT">
+ <summary>
+ データ抽出用カウント用最後（ページング、SEQ No.順ソートなし）2016/01/14 YK
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWB.NWB080DAC.SelectListData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>文書管理データ取得</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWB.NWB080DAC.SelectListCount(System.Data.DataSet)">
+ ==========================================================================
+ <summary>データ件数カウント</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWB.NWB080DAC.SetConditionMasterSQL">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWB.NWB080DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWB.NWB080DAC.GetOrderBySQL">
+ <summary>
+ ソート順設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWB.NWB080DAC.SetPageValue(System.String,System.Data.DataRow)">
+ <summary>
+ ページ設定
+ </summary>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

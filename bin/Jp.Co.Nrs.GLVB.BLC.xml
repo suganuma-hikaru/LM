@@ -1,0 +1,794 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.GLVB.BLC
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.GL.BLC.My.Resources.Resources">
+<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.GL.BLC.My.Resources.Resources.ResourceManager">
+<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.GL.BLC.My.Resources.Resources.Culture">
+<summary>
+  すべてについて、現在のスレッドの CurrentUICulture プロパティをオーバーライドします
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVB1000BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1000BLC.SearchInkaData(System.Data.DataSet)">
+ <summary>
+ 初期表示情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1000BLC.ReSearchInkaData(System.Data.DataSet)">
+ <summary>
+ 初期表示情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1000BLC.SelectZSystem(System.Data.DataSet)">
+ <summary>
+ Z_SYSTEM取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1000BLC.InsertInkaData(System.Data.DataSet)">
+ <summary>
+ 登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1000BLC.InsertInkaM(System.Data.DataSet)">
+ <summary>
+ INKA_M登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1000BLC.CallDacSelectedData(System.Data.DataSet,System.String,System.String,System.String,System.String)">
+ <summary>
+ 指定条件でデータを抽出し、DACを呼び出す。
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="tblNm">データ抽出テーブル名</param>
+ <param name="sql">データ抽出条件</param>
+ <param name="sortKey">データ抽出時のソートキー</param>
+ <param name="dacMethodNm">呼び出すDACメソッド名</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1000BLC.UpdateInkaData(System.Data.DataSet)">
+ <summary>
+ 更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1000BLC.UpdateInkaL(System.Data.DataSet)">
+ <summary>
+ INKA_L更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1000BLC.UpdateInkaM(System.Data.DataSet)">
+ <summary>
+ INKA_M更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1000BLC.Delete(System.Data.DataSet)">
+ <summary>
+ 削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1000BLC.isHaitaChk(System.Data.DataSet)">
+ <summary>
+ 排他処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1000BLC.ReGetInkaAuth(System.Data.DataSet)">
+ <summary>
+ 入荷権限取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1000BLC.SendMailCustomer(System.Data.DataSet)">
+ <summary>
+ メール送信処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1000BLC.SendMailNrsTanto(System.Data.DataSet)">
+ <summary>
+ メール送信処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1000BLC.GetMaimTpl(System.String,System.String)">
+ <summary>
+ メールテンプレート取得
+ </summary>
+ <param name="tplCd"></param>
+ <param name="tplKbn"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1000BLC.SelectInkaData(System.Data.DataSet)">
+ <summary>
+ 検索処理（入荷指示取消）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1000BLC.SearchTareWtGData(System.Data.DataSet)">
+ <summary>
+ 検索処理（風袋重量取得SQL）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVB1010BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1010BLC.SearchInka(System.Data.DataSet)">
+ <summary>
+ 入荷履歴情報取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVB1020BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1020BLC.Search(System.Data.DataSet)">
+ <summary>
+ 検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVB1030BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1030BLC.SelectItemData(System.Data.DataSet)">
+ <summary>
+ 初期表示
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1030BLC.isHaitaChk(System.Data.DataSet)">
+ <summary>
+ 排他処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1030BLC.UpdateMFile(System.Data.DataSet)">
+ <summary>
+ 更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1030BLC.SelectMailAddressData(System.Data.DataSet)">
+ <summary>
+ 荷主担当者アドレス取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1030BLC.SendMail(System.Data.DataSet)">
+ <summary>
+ メール送信処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1030BLC.GetMaimTpl(System.String,System.String)">
+ <summary>
+ メールテンプレート取得
+ </summary>
+ <param name="tplCd"></param>
+ <param name="tplKbn"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVB1100BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1100BLC.SelectItemData(System.Data.DataSet)">
+ <summary>
+ 初期表示（出荷履歴画面から遷移）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1100BLC.Search(System.Data.DataSet)">
+ <summary>
+ 検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1100BLC.Delete(System.Data.DataSet)">
+ <summary>
+ 削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1100BLC.isHaitaChk(System.Data.DataSet)">
+ <summary>
+ 排他処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1100BLC.ZaikoChk(System.Data.DataSet)">
+ <summary>
+ 在庫チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1100BLC.DestChk(System.Data.DataSet)">
+ <summary>
+ 納入先マスタ存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1100BLC.SagyoChk(System.Data.DataSet)">
+ <summary>
+ 作業マスタ存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1100BLC.Confirm(System.Data.DataSet)">
+ <summary>
+ 確定処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1100BLC.isOutkaStateChk(System.Data.DataSet)">
+ <summary>
+ 出荷作業進捗区分チェック処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1100BLC.SendMailCustomer(System.Data.DataSet)">
+ <summary>
+ メール送信処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1100BLC.SendMailNrsTanto(System.Data.DataSet)">
+ <summary>
+ メール送信処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1100BLC.GetMaimTpl(System.String,System.String)">
+ <summary>
+ メールテンプレート取得
+ </summary>
+ <param name="tplCd"></param>
+ <param name="tplKbn"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1100BLC.SelectOutkaData(System.Data.DataSet)">
+ <summary>
+ 検索処理（出荷指示取消）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1100BLC.SelectZSystem(System.Data.DataSet)">
+ <summary>
+ Z_SYSTEM取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVB1140BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1140BLC.Search(System.Data.DataSet)">
+ <summary>
+ 検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVB1150BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1150BLC.Search(System.Data.DataSet)">
+ <summary>
+ 検索処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVB1200BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1200BLC.SearchStock(System.Data.DataSet)">
+ <summary>
+ 在庫情報取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVB1210BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1210BLC.SearchStock(System.Data.DataSet)">
+ <summary>
+ 在庫情報取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVB1220BLC.FUNCTION_NM.Search">
+ <summary>
+ 検索処理
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVB1220BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1220BLC.Search(System.Data.DataSet)">
+ <summary>
+ 検索処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVB1300BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1300BLC.SearchGoods(System.Data.DataSet)">
+ <summary>
+ 商品情報取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1300BLC.Reserve(System.Data.DataSet)">
+ <summary>
+ 予約情報登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1300BLC.SendMail(System.Data.DataSet)">
+ <summary>
+ メール送信処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1300BLC.GetMaimTpl(System.String,System.String)">
+ <summary>
+ メールテンプレート取得
+ </summary>
+ <param name="tplCd"></param>
+ <param name="tplKbn"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVB1310BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1310BLC.SearchReserve(System.Data.DataSet)">
+ <summary>
+ 予約情報取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1310BLC.Cancel(System.Data.DataSet)">
+ <summary>
+ 予約取消
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1310BLC.isHaitaChk(System.Data.DataSet)">
+ <summary>
+ 排他制御
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1310BLC.SendMail(System.Data.DataSet)">
+ <summary>
+ メール送信処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1310BLC.GetMaimTpl(System.String,System.String)">
+ <summary>
+ メールテンプレート取得
+ </summary>
+ <param name="tplCd"></param>
+ <param name="tplKbn"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVB1400BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1400BLC.SearchCylinder(System.Data.DataSet)">
+ <summary>
+ シリンダー情報取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVB1410BLC.FUNCTION_NM.Search">
+ <summary>
+ 検索処理
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVB1410BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1410BLC.Search(System.Data.DataSet)">
+ <summary>
+ 検索処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVB1420BLC.FUNCTION_NM.SEARCH_CYLINDER">
+ <summary>
+ 検索処理
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVB1420BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1420BLC.SearchCylinder(System.Data.DataSet)">
+ <summary>
+ シリンダー情報取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1420BLC.GetNoLZipCylinderList(System.Data.DataSet)">
+ <summary>
+ 存在しない郵便番号のシリンダー情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVB1430BLC.FUNCTION_NM.SEARCH">
+ <summary>
+ 検索処理
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVB1430BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1430BLC.SearchCylinder(System.Data.DataSet)">
+ <summary>
+ シリンダー情報取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVB1500BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1500BLC.SearchOutkaReport(System.Data.DataSet)">
+ <summary>
+ 出荷報告書取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVB1510BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1510BLC.InitDisplayData(System.Data.DataSet)">
+ <summary>
+ 初期表示情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1510BLC.InsertWebOrderConfirm(System.Data.DataSet)">
+ <summary>
+ Confirm/初回登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1510BLC.UpdateWebOrderConfirm(System.Data.DataSet)">
+ <summary>
+ Confirm/更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1510BLC.UpdateWebOrderChange(System.Data.DataSet)">
+ <summary>
+ Change/更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1510BLC.isHaitaChkFirst(System.Data.DataSet)">
+ <summary>
+ 排他制御
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1510BLC.isHaitaChk(System.Data.DataSet)">
+ <summary>
+ 排他制御
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1510BLC.WebOrderHedChk(System.Data.DataSet)">
+ <summary>
+ WK_WEB_ORDER_HED存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVB1610BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1610BLC.Search(System.Data.DataSet)">
+ <summary>
+ 検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1610BLC.UpdateHoukokuData(System.Data.DataSet)">
+ <summary>
+ Save/Resend処理
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1610BLC.GetBussinessDay(System.Data.DataSet,System.String,System.Int32)">
+ <summary>
+ 営業日取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1610BLC.isHaitaChk(System.Data.DataSet)">
+ <summary>
+ 排他処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVB1600BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1600BLC.Search(System.Data.DataSet)">
+ <summary>
+ 検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB1900BLC.SendMail(System.Data.DataSet)">
+ <summary>
+ 送信処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVB2000BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB2000BLC.SearchTankData(System.Data.DataSet)">
+ <summary>
+ コンテナ情報取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVB2100BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB2100BLC.SearchCargoData(System.Data.DataSet)">
+ <summary>
+ Cargo情報取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVB2200BLC.FUNCTION_NM.SEARCH">
+ <summary>
+ 検索処理
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVB2200BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB2200BLC.SearchJobData(System.Data.DataSet)">
+ <summary>
+ Job情報取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVB2210BLC.FUNCTION_NM.SEARCH">
+ <summary>
+ 検索処理
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVB2210BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB2210BLC.SearchJobData(System.Data.DataSet)">
+ <summary>
+ シリンダー情報取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVB2300BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB2300BLC.SearchDataList(System.Data.DataSet)">
+ <summary>
+ 登録済み画像リスト取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVB5000BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB5000BLC.PrintDeliveryConfirmationSlip(System.Data.DataSet)">
+ <summary>
+ 出荷確認票
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVB5010BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVB5010BLC.PrintShipingInstructions(System.Data.DataSet)">
+ <summary>
+ 出荷確認票
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

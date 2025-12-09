@@ -1,0 +1,2583 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.MVC5Black.Library
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.MVCBlack.My.Resources.Resources">
+<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.MVCBlack.My.Resources.Resources.ResourceManager">
+<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.MVCBlack.My.Resources.Resources.Culture">
+<summary>
+  すべてについて、現在のスレッドの CurrentUICulture プロパティをオーバーライドします
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.MVCBlack.Base.BaseController">
+ <summary>
+ コントローラーの親クラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Base.BaseController.DefaultErrorViewName">
+ <summary>
+ デフォルトエラービュー名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Base.BaseController.TempErrorViewName">
+ <summary>
+ 一時的に設定するエラービュー名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Base.BaseController._Log">
+ <summary>
+ メッセージクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseController.OnActionExecuting(System.Web.Mvc.ActionExecutingContext)">
+ <summary>
+ 処理開始イベント
+ </summary>
+ <param name="filterContext"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseController.OnResultExecuted(System.Web.Mvc.ResultExecutedContext)">
+ <summary>
+ 処理終了イベント
+ </summary>
+ <param name="filterContext"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseController.OnException(System.Web.Mvc.ExceptionContext)">
+ <summary>
+ 例外発生時イベント
+ </summary>
+ <param name="filterContext"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseController.ExceptionHandler(System.Web.Mvc.ExceptionContext)">
+ <summary>
+ 各個別コントローラーで必要な例外処理を記述してください
+ </summary>
+ <param name="filterContext">System.Web.Mvc.HandleErrorAttributeクラスを使用するためのコンテキスト</param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.MVCBlack.Base.BaseModel">
+ <summary>
+ モデルの親クラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseModel.GetPropertyName``1(System.Linq.Expressions.Expression{System.Func{``0}})">
+ <summary>
+ ラムダ式を利用してプロパティ名を取得します
+ </summary>
+ <typeparam name="T">型パラメーター</typeparam>
+ <param name="expression">ラムダ式</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseMvcUtil.GetPropertyName``1(System.Linq.Expressions.Expression{System.Func{``0}})">
+ <summary>
+ ラムダ式を利用してプロパティ名を取得します
+ </summary>
+ <typeparam name="T">型パラメーター</typeparam>
+ <param name="expression">ラムダ式</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.MVCBlack.Base.BaseViewMasterPage">
+ <summary>
+ マスターページの親クラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.MVCBlack.Base.BaseViewMasterPage`1">
+ <summary>
+ マスターページ（モデル関連付けあり）の親クラス
+ </summary>
+ <typeparam name="TModel"></typeparam>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.MVCBlack.Base.BaseViewPage">
+ <summary>
+ ビューの親クラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.MVCBlack.Base.BaseViewPage`1">
+ <summary>
+ ビュー（モデル関連付けあり）の親クラス
+ </summary>
+ <typeparam name="TModel"></typeparam>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseViewPage`1.GetFileDate(System.String)">
+ <summary>
+ スクリプトファイルのURLにスクリプトファイルのタイムスタンプをパラメータとして付与します。
+ </summary>
+ <param name="scriptURL">スクリプトファイルURL</param>
+ <returns>タイムスタンプ付きスクリプトファイルURL</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.MVCBlack.Base.BaseViewUserControl">
+ <summary>
+ 部分ビューの親クラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.MVCBlack.Base.BaseViewUserControll`1">
+ <summary>
+ 部分ビュー（モデル関連付けあり）の親クラス
+ </summary>
+ <typeparam name="TModel"></typeparam>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService">
+ <summary>
+ ワーカーサービスクラスの親クラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService._LockedControls">
+ <summary>
+ 現在ロック中のコントロールを格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService._GTCachedCompMasterDataSet">
+ <summary>
+ 会社マスタキャッシュデータを格納するフィールド
+ </summary>
+ <remarks>(for GT)</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService._GTCachedCityMasterDataSet">
+ <summary>
+ 都市マスタキャッシュデータを格納するフィールド
+ </summary>
+ <remarks>(for GT)</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService._GTCachedCurrMasterDataSet">
+ <summary>
+ 通貨マスタキャッシュデータを格納するフィールド
+ </summary>
+ <remarks>(for GT)</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService._GTCachedImdgMasterDataSet">
+ <summary>
+ 積載品(IMDG)マスタキャッシュデータを格納するフィールド
+ </summary>
+ <remarks>(for GT)</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService._GTCachedRegionMasterDataSet">
+ <summary>
+ 地域マスタキャッシュデータを格納するフィールド
+ </summary>
+ <remarks>(for GT)</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService._GTCachedUserMasterDataSet">
+ <summary>
+ ユーザーマスタキャッシュデータを格納するフィールド
+ </summary>
+ <remarks>(for GT)</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService._GTCachedKbnMasterDataSet">
+ <summary>
+ 区分マスタキャッシュデータを格納するフィールド
+ </summary>
+ <remarks>(for GT)</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService._GTCachedCostMasterDataSet">
+ <summary>
+ コストマスタキャッシュデータを格納するフィールド
+ </summary>
+ <remarks>(for GT)</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService._GTCachedContCostMasterDataSet">
+ <summary>
+ コンテナコストマスタキャッシュデータを格納するフィールド
+ </summary>
+ <remarks>(for GT)</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService._IPAdress">
+ <summary>
+ クライアントのIPアドレスを格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService._TerminalID">
+ <summary>
+ クライアントの端末名を格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService._PGID">
+ <summary>
+ このインスタンスの画面IDを格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.CreatedTime">
+ <summary>
+ このクラスのインスタンスが生成された時間を取得・設定するプロパティ
+ </summary>
+ <value>このクラスのインスタンスが生成された時間</value>
+ <returns>このクラスのインスタンスが生成された時間</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.MessageDataEntity">
+ <summary>
+ 出力用メッセージの格納されたデータセットを取得します。
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.GTCachedCompMasterDataSet">
+ <summary>
+ 会社マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for GT)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.GTCachedCityMasterDataSet">
+ <summary>
+ 都市マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for GT)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.GTCachedCurrMasterDataSet">
+ <summary>
+ 通貨マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for GT)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.GTCachedImdgMasterDataSet">
+ <summary>
+ 積載品(IMDG)マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for GT)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.GTCachedRegionMasterDataSet">
+ <summary>
+ 地域マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for GT)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.GTCachedUserMasterDataSet">
+ <summary>
+ ユーザーマスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for GT)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.GTCachedKbnMasterDataSet">
+ <summary>
+ 区分マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for GT)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.GTCachedCostMasterDataSet">
+ <summary>
+ コストマスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for GT)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.GTCachedContCostMasterDataSet">
+ <summary>
+ コンテナコストマスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for GT)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.GLCachedMessageMasterDataSet">
+ <summary>
+ メッセージマスタキャッシュデータを格納するプロパティ
+ </summary>
+ <value>メッセージマスタキャッシュデータ</value>
+ <returns>メッセージマスタキャッシュデータ</returns>
+ <remarks>(for GL)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.ConnectionString">
+ <summary>
+ DB接続文字列の取得・設定を行うプロパティ
+ </summary>
+ <value>全メッセージデータ</value>
+ <returns>全メッセージデータのコピー</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.RootPGID">
+ <summary>
+ このインスタンスの呼び出し元PGIDを取得・設定するプロパティ
+ </summary>
+ <value>このインスタンスの呼び出し元PGID</value>
+ <returns>このインスタンスの呼び出し元PGID</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.Init">
+ <summary>
+ 初期化メソッド。
+ </summary>
+ <remarks>このクラスでは端末名およびIPアドレスの取得を行う</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.CallNextService(Jp.Co.Nrs.Com.Base.BaseWSA,System.String,System.Data.DataSet)">
+ <summary>
+ 引数に指定されたWSAクラスから、WSA層の処理の基点となるメソッドをメソッドを呼び出す。
+ </summary>
+ <param name="bWSA">WSA層に存在するクラス</param>
+ <param name="methodName">呼び出すメソッド名</param>
+ <param name="ds">画面情報を格納したDataSet</param>
+ <returns>呼び出すメソッドが返す画面出力用情報</returns>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.CallNextService(Jp.Co.Nrs.Com.Base.BaseWSA,System.String,System.Data.DataSet,System.Boolean)">
+ <summary>
+ 引数に指定されたWSAクラスから、WSA層の処理の基点となるメソッドをメソッドを呼び出す。
+ </summary>
+ <param name="bWSA">WSA層に存在するクラス</param>
+ <param name="methodName">呼び出すメソッド名</param>
+ <param name="ds">画面情報を格納したDataSet</param>
+ <param name="isReadOnly"></param>
+ <returns>呼び出すメソッドが返す画面出力用情報</returns>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.CreateServiceData">
+ <summary>
+ サーバーとの送受信に使用するServiceDataクラスを生成します。
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.SetRequestParam(Jp.Co.Nrs.Com.Base.ServiceData,System.Data.DataSet)">
+ <summary>
+ ServiceDataに送信する値を転記する。
+ </summary>
+ <param name="sd"></param>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.GetReturnParam(Jp.Co.Nrs.Com.Base.ServiceData)">
+ <summary>
+  ServiceDataから受信した値を転記する。
+ </summary>
+ <param name="sd"></param>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.GetRIReturnParam(Jp.Co.Nrs.Com.Base.ServiceData)">
+ <summary>
+ ServiceDataから受信した値を転記する。(for RI)
+ </summary>
+ <remarks>(for RI) 必要なので、消さないこと　SUGA</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.GetGTReturnParam(Jp.Co.Nrs.Com.Base.ServiceData)">
+ <summary>
+ ServiceDataから受信した値を転記する。(for GT)
+ </summary>
+ <param name="sd"></param>
+ <remarks>(for GT)</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.GetTerminalID">
+ <summary>
+ ログインユーザーのログイン端末名を取得する
+ </summary>
+ <returns>ログインユーザーのログイン端末名</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.IPAdress">
+ <summary>
+ 現在ServiceDataに登録されているログインユーザーのIPアドレスを取得する。
+ </summary>
+ <returns>ログインユーザーのIPアドレス</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.GetPGID">
+ <summary>
+ PGIDを取得する。
+ </summary>
+ <returns>PGID</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.SetPGID(System.String)">
+ <summary>
+ PGIDを設定する
+ </summary>
+ <param name="value">PGID</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.GetResultCount">
+ <summary>
+ 処理結果件数を取得する。
+ </summary>
+ <returns>処理結果件数</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.SetTargetFacadeName(System.String)">
+ <summary>
+ 呼び出すBLF名をセットします。
+ </summary>
+ <param name="value">処理識別文字列</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.SetQueName(System.String)">
+ <summary>
+ QuqNameをセットします。
+ </summary>
+ <param name="value">処理識別文字列</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.ShowMessage">
+ <summary>
+ メッセージを表示します。
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.ShowPopUpMessage">
+ <summary>
+ メッセージをポップアップ表示する。
+ </summary>
+ <returns>メッセージ文言（日本語）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.ShowPopUpMessage(System.String)">
+ <summary>
+ メッセージをポップアップ表示する。
+ </summary>
+ <param name="messageLanguageType"></param>
+ <returns>
+ 0:日本語
+ 1:英語
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.ShowNonPopUpMessage">
+ <summary>
+ ポップアップ以外の方法でメッセージ表示する。
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.ShowMessage(System.String,System.String,System.String,System.String)">
+ <summary>
+ メッセージを表示する(Public ⇒ Private)
+ </summary>
+ <param name="buttonCount">ボタンの数</param>
+ <param name="messageID">メッセージID</param>
+ <param name="messageLevel">メッセージレベル</param>
+ <param name="messageString">メッセージ文言</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.GetMessageValue(System.Data.DataSet,System.String)">
+ <summary>
+ 指定した項目のデータをキャッシュから取得します。(Public ⇒ Private)
+ </summary>
+ <param name="ds"></param>
+ <param name="column"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.GetMsgBoxStyle(System.String,System.String)">
+ <summary>
+ メッセージウィンドウのスタイルを取得します。
+ </summary>
+ <param name="buttonCount"></param>
+ <param name="level"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.GetMsgButton(System.String)">
+ <summary>
+ メッセージウィンドウのボタンを取得します。
+ </summary>
+ <param name="buttonCount"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.GetMsgIcon(Microsoft.VisualBasic.MsgBoxStyle,System.String)">
+ <summary>
+ メッセージウィンドウのアイコンを取得します。
+ </summary>
+ <param name="buttonStyle"></param>
+ <param name="level"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.GetMsgTitle(System.String)">
+ <summary>
+ メッセージウィンドウのタイトルを取得します。
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.CreateMessageFromCache(System.Data.DataSet,System.String,System.String[],System.String,System.String)">
+ <summary>
+ メッセージ文言を構築するメソッド  ※[MessageManagerから移動後、コメント化。ServiceManagerに同名あります。]
+ </summary>
+ <param name="ds"></param>
+ <param name="messageID">メッセージID</param>
+ <param name="messageParams"></param>
+ <param name="messageArea"></param>
+ <param name="naviArea"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.ReplaceMessageString(System.Data.DataRow,System.String[])">
+ <summary>
+ 置換済みのメッセージデータが格納されたDataRowを取得する。
+ </summary>
+ <param name="msgDataRow">メッセージデータの格納されたDataRow</param>
+ <param name="messageParams"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.ClearMessageData">
+ <summary>
+ 出力メッセージ情報をクリアする。
+ </summary>
+ <remarks>メッセージ表示後はメッセージ情報は必要なくなるのでクリアする。キャッシュしているメッセージ一覧の情報を削除するのではないことに注意すること。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.CacheSystemData">
+ <summary>
+ システムデータをキャッシュを行う。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.CacheSystemData(System.String)">
+ <summary>
+ システムデータをキャッシュを行う。（多言語対応）
+ </summary>
+ <param name="lang_ISO639_1">言語(ISO-639-1基準)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.CacheMasterData">
+ <summary>
+ 指定されたマスターデータのキャッシュを行う。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.GTCacheMasterData">
+ <summary>
+ WINS(GT)マスターデータのキャッシュを行う。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.GTCacheMasterData(System.String)">
+ <summary>
+ [GT]指定されたマスターデータのキャッシュを行う。
+ </summary>
+ <param name="tableName">キャッシュしたいマスタデータ名</param>
+ <remarks>(for GT)</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.Login(System.Data.DataSet)">
+ <summary>
+ ログイン認証を行う
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.GetSystemDate">
+ <summary>
+ 現在ServiceDataに登録されているシステム日付(YYYYMMDD)を取得する。
+ </summary>
+ <returns></returns>
+ <remarks>引数無しのメソッドはここで一旦隠蔽する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.GetSystemTime">
+ <summary>
+ 現在ServiceDataに登録されているシステム時刻(HHMMSSmmm)を取得する。
+ </summary>
+ <returns></returns>
+ <remarks>引数無しのメソッドはここで一旦隠蔽する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.GetSystemDateTime">
+ <summary>
+ システム日付(YYYYMMDD)とシステム時刻(HHMMSSsss)を取得する。
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.OnThreadException(System.Object,System.Threading.ThreadExceptionEventArgs)">
+ <summary>
+ 例外トラップ
+ </summary>
+ <param name="sender"></param>
+ <param name="t"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.OutPutException(System.Exception)">
+ <summary>
+ 例外を出力します
+ </summary>
+ <param name="ex">出力する例外</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.SetSystemErrorMessage(System.String)">
+ <summary>
+ システムエラー発生時用のメッセージを登録します。
+ </summary>
+ <param name="msg"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.IsInformationMessageExist">
+ <summary>
+ 通知メッセージの有無を判定して返却する
+ </summary>
+ <returns>通知メッセージの有無</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.IsQuestionMessageExist">
+ <summary>
+ 確認メッセージの有無を判定して返却する
+ </summary>
+ <returns>確認メッセージの有無</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.IsWarningMessageExist">
+ <summary>
+ ワーニングメッセージの有無を判定して返却する
+ </summary>
+ <returns>ワーニングメッセージの有無</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.IsErrorMessageExist">
+ <summary>
+ エラーメッセージの有無を判定して返却する
+ </summary>
+ <returns>エラーメッセージの有無</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.IsSystemErrorMessageExist">
+ <summary>
+ システムエラーメッセージの有無を判定して返却する
+ </summary>
+ <returns>システムエラーメッセージの有無</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.CreateSystemErrorMessage(System.String)">
+ <summary>
+ システムエラー発生時用のメッセージを作成します。
+ </summary>
+ <param name="msg"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.GetMessagePopUpType">
+ <summary>
+ メッセージのポップアップフラグを取得する。
+ </summary>
+ <returns>
+ True：ポップアップ表示
+ </returns>
+ <remarks>_ServiceDataオブジェクトに格納されているポップアップフラグを取得する。
+ 取得値がNullでなければ値をデバッグする。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.GetMessageButtonCount">
+ <summary>
+ メッセージのボタン数を取得する。
+ </summary>
+ <returns>メッセージのボタン数</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.SetMessage(System.String,System.String[],System.String,System.String)">
+ <summary>
+ メッセージ情報を設定する。
+ </summary>
+ <param name="messageID">メッセージID</param>
+ <param name="replaceMessages">置換対象文字列の配列</param>
+ <param name="messageArea"></param>
+ <param name="naviArea"></param>
+ <remarks>引数のメッセージＩＤを元にメッセージ文言を作成し、ServiceDataクラスにメッセージ情報を設定する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.GetPropertyName``1(System.Linq.Expressions.Expression{System.Func{``0}})">
+ <summary>
+ ラムダ式を利用してプロパティ名を取得します
+ </summary>
+ <typeparam name="T">型パラメーター</typeparam>
+ <param name="expression">ラムダ式</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.CallWSA(System.String,System.String,System.Data.DataSet)">
+ <summary>
+ WEBサービスを呼び出します（QueName,SetTargetFacadeNameの設定必須）
+ </summary>
+ <param name="facadeName"></param>
+ <param name="methodName"></param>
+ <param name="ds">WEBサービス送信データ</param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.CallWSA(System.String,System.String,System.Data.DataSet,System.Boolean)">
+ <summary>
+ WEBサービスを呼び出します（QueName,SetTargetFacadeNameの設定必須）
+ </summary>
+ <param name="facadeName"></param>
+ <param name="methodName"></param>
+ <param name="ds">WEBサービス送信データ</param>
+ <param name="isReadOnly"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.CallNextService(System.String,System.String,System.Data.DataSet)">
+ <summary>
+ 引数に指定されたWSAクラスから、WSA層の処理の基点となるメソッドをメソッドを呼び出す。
+ </summary>
+ <param name="facadeName"></param>
+ <param name="methodName">呼び出すメソッド名</param>
+ <param name="ds">画面情報を格納したDataSet</param>
+ <returns>呼び出すメソッドが返す画面出力用情報</returns>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.BaseWorkerService.CallNextService(System.String,System.String,System.Data.DataSet,System.Boolean)">
+ <summary>
+ 引数に指定されたWSAクラスから、WSA層の処理の基点となるメソッドをメソッドを呼び出す。
+ </summary>
+ <param name="facadeName"></param>
+ <param name="methodName">呼び出すメソッド名</param>
+ <param name="ds">画面情報を格納したDataSet</param>
+ <param name="isReadOnly"></param>
+ <returns>呼び出すメソッドが返す画面出力用情報</returns>
+</member>
+<member name="T:Jp.Co.Nrs.MVCBlack.Base.ConfigManager">
+ <summary>
+ システム情報制御クラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Base.ConfigManager.SYSTEM_NAME">
+ <summary>
+ Config項目定数（システム名）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.ConfigManager.CreateConfigDataSet(System.String)">
+ <summary>
+ システム情報ファイルを読み込み、システム情報データを作成します。
+ </summary>
+ <param name="configFilePath"></param>
+ <returns>システム情報ファイルの内容を格納したDataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.ConfigManager.GetConfigValue(System.String)">
+ <summary>
+ 指定した項目のデータをキャッシュから取得します。
+ </summary>
+ <param name="column"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.MVCBlack.Base.ConfigMGR">
+ <summary>
+ web.configに定義された情報を取得します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.ConfigMGR.GetAppSettingsValue(System.String)">
+ <summary>
+ web.configのappSettingsセクションより、引数に指定されたキーの値を取得します。
+ </summary>
+ <param name="key">検索キー</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.MVCBlack.Base.ConnectionManager">
+ <summary>
+ データベース接続制御クラス
+ </summary>
+</member>
+<member name="T:Jp.Co.Nrs.MVCBlack.Base.ConnectionManager.ConfigColumn">
+ <summary>
+ Config項目定数
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Base.ConnectionManager.ConfigColumn.DATA_SOURCE">
+ <summary>
+ Config項目定数（DB接続文字列-Data Source）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Base.ConnectionManager.ConfigColumn.INITIAL_CATALOG">
+ <summary>
+ Config項目定数（DB接続文字列-Initial Catalog）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Base.ConnectionManager.ConfigColumn.PERSIST_SECURITY_INFO">
+ <summary>
+ Config項目定数（DB接続文字列-Security Info）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Base.ConnectionManager.ConfigColumn.USER_ID">
+ <summary>
+ Config項目定数（DB接続文字列-User ID）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Base.ConnectionManager.ConfigColumn.PASSWORD">
+ <summary>
+ Config項目定数（DB接続文字列-Password）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Base.ConnectionManager.ConfigColumn.TIMEOUT">
+ <summary>
+ Config項目定数（DB接続タイムアウト時間）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.MVCBlack.Base.ConnectionManager.ConnectionPrefix">
+ <summary>
+ DB接続文字列　接頭辞
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Base.ConnectionManager.ConnectionPrefix.DATA_SOURCE">
+ <summary>
+ DB接続文字列　接頭辞 （Data Source）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Base.ConnectionManager.ConnectionPrefix.INITIAL_CATALOG">
+ <summary>
+ DB接続文字列　接頭辞 （Initial Catalog）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Base.ConnectionManager.ConnectionPrefix.PERSIST_SECURITY_INFO">
+ <summary>
+ DB接続文字列　接頭辞 （Security Info）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Base.ConnectionManager.ConnectionPrefix.USER_ID">
+ <summary>
+ DB接続文字列　接頭辞 （User ID）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Base.ConnectionManager.ConnectionPrefix.PASSWORD">
+ <summary>
+ DB接続文字列　接頭辞 （Password）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Base.ConnectionManager.CONNECTION_SUFFIX">
+ <summary>
+ DB接続文字列 接尾辞
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Base.ConnectionManager.DEFAULT_TIME_OUT">
+ <summary>
+ DB接続タイムアウト
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.ConnectionManager.GetSqlTarnsactionScope(System.Transactions.TransactionScopeOption,System.Transactions.IsolationLevel,System.String)">
+ <summary>
+ TarnsactionScopeオブジェクトを取得する。
+ </summary>
+ <param name="scopeOption">トランザクションスコープを作成するためのオプション</param>
+ <param name="isolationLevel">接続のトランザクション ロック動作</param>
+ <param name="scopeTimeout">タイムアウト値(100ナノ秒単位)</param>
+ <returns>TarnsactionScopeオブジェクト</returns>
+ <remarks>デフォルトの設定値は
+ 　TransactionScopeOption：Required
+ 　TransactionOptions.IsolationLevel：ReadCommitted
+ 　TransactionOptions.TimeSpan：300000000x100ナノ秒（３０秒）</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.ConnectionManager.GetSqlConnection(System.String)">
+ <summary>
+ SqlConnectionオブジェクトを生成する。
+ </summary>
+ <param name="connectionString">DB接続文字列</param>
+ <returns>SqlConnectionオブジェクト</returns>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.ConnectionManager.GetSqlConnection(System.Boolean)">
+ <summary>
+ システム情報よりDB接続文字列を取得し、SqlConnectionオブジェクトを生成する。
+ </summary>
+ <param name="isReadOnly"></param>
+ <returns>SqlConnectionオブジェクト</returns>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.ConnectionManager.OpenSqlConnection(System.Data.SqlClient.SqlConnection)">
+ <summary>
+ 引数のSqlConnectionオブジェクトをオープンする。
+ </summary>
+ <param name="conn"></param>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.ConnectionManager.GetConnectionString(System.Boolean)">
+ <summary>
+ システム情報よりDB接続文字列の値を取得する。
+ </summary>
+ <param name="isReadOnly"></param>
+ <returns>DB接続文字列</returns>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.ConnectionManager.GetConnectionString(System.String,System.Boolean)">
+ <summary>
+ データソースの値を指定してDB接続文字列の値を取得する。
+ </summary>
+ <param name="dataSourceString"></param>
+ <param name="isReadOnly"></param>
+ <returns>DB接続文字列</returns>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.ConnectionManager.GetDataSourceString">
+ <summary>
+ システム情報よりデータソースの値を取得する。
+ </summary>
+ <returns>データソースの値</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.MVCBlack.Base.IBaseInputModel">
+ <summary>
+ 入力モデル用インターフェース
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.MVCBlack.Base.IBaseViewModel">
+ <summary>
+ ビューモデル用インターフェース
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.MVCBlack.Base.MessageManager">
+ <summary>
+ メッセージ管理クラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Base.MessageManager.POPUP_ON">
+ <summary>
+ ポップアップ定数（ポップアップ）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Base.MessageManager.POPUP_OFF">
+ <summary>
+ ポップアップ定数（ポップアップ以外）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Base.MessageManager.MESSAGE_LEVEL_S">
+ <summary>
+ Config項目定数（システムエラーレベル）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Base.MessageManager.MESSAGE_LEVEL_E">
+ <summary>
+ Config項目定数（エラーレベル）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Base.MessageManager.MESSAGE_LEVEL_W">
+ <summary>
+ Config項目定数（警告ーレベル）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Base.MessageManager.MESSAGE_LEVEL_Q">
+ <summary>
+ Config項目定数（確認レベル）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Base.MessageManager.MESSAGE_LEVEL_I">
+ <summary>
+ Config項目定数（通知レベル）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Base.MessageManager.MESSAGE_TITLE_S">
+ <summary>
+ Config項目定数（システムエラー時タイトル）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Base.MessageManager.MESSAGE_TITLE_E">
+ <summary>
+ Config項目定数（エラー時タイトル）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Base.MessageManager.MESSAGE_TITLE_W">
+ <summary>
+ Config項目定数（警告時タイトル）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Base.MessageManager.MESSAGE_TITLE_Q">
+ <summary>
+ Config項目定数（確認時タイトル）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Base.MessageManager.MESSAGE_TITLE_I">
+ <summary>
+ Config項目定数（通知時タイトル）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.MVCBlack.Base.MessageManager.MessageDataTable">
+ <summary>
+ メッセージキャッシュテーブル定数
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Base.MessageManager.MessageDataTable.MESSAGE_ID">
+ <summary>
+ メッセージID
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Base.MessageManager.MessageDataTable.MESSAGE_LEVEL">
+ <summary>
+ メッセージレベル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Base.MessageManager.MessageDataTable.MESSAGE_LANG">
+ <summary>
+ メッセージ言語
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Base.MessageManager.MessageDataTable.MESSAGE_STRING">
+ <summary>
+ メッセージ内容(JP)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Base.MessageManager.MessageDataTable.MESSAGE_STRING_EN">
+ <summary>
+ メッセージ内容(EN)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Base.MessageManager.MessageDataTable.MESSAGE_STRING_KO">
+ <summary>
+ メッセージ内容(KO)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Base.MessageManager.MessageDataTable.MESSAGE_STRING_CN">
+ <summary>
+ メッセージ内容(CN)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Base.MessageManager.MessageDataTable.MESSAGE_DISP_FLG">
+ <summary>
+ メッセージボックス表示フラグ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Base.MessageManager.MessageDataTable.BUTTON_CNT">
+ <summary>
+ ボタン数
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Base.MessageManager.MessageDataTable.MESSAGE_AREA">
+ <summary>
+ メッセージエリア
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Base.MessageManager.MessageDataTable.NAVI_AREA">
+ <summary>
+ ナビエリア
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Base.MessageManager._MsgLanguage">
+ <summary>
+ メッセージ言語区分を格納します。
+ </summary>
+ <remarks>
+ 0:日本語
+ 1:英語
+ </remarks>
+</member>
+<member name="P:Jp.Co.Nrs.MVCBlack.Base.MessageManager.MessageLanguage">
+ <summary>
+ メッセージ言語区分を取得、格納します
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.MessageManager.CreateMessageFromCache(System.Data.DataSet,System.String,System.String[])">
+ <summary>
+ メッセージ文言を構築するメソッド
+ </summary>
+ <param name="ds"></param>
+ <param name="messageID">メッセージID</param>
+ <param name="messageParams"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.MessageManager.ReplaceMessageString(System.Data.DataRow,System.String[])">
+ <summary>
+ 置換済みのメッセージデータが格納されたDataRowを取得する。
+ </summary>
+ <param name="msgDataRow">メッセージデータの格納されたDataRow</param>
+ <param name="messageParams"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.MessageManager.ShowMessage(System.String,System.String,System.String,System.String)">
+ <summary>
+ メッセージを表示する
+ </summary>
+ <param name="buttonCount">ボタンの数</param>
+ <param name="messageID">メッセージID</param>
+ <param name="messageLevel">メッセージレベル</param>
+ <param name="messageString">メッセージ文言</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.MessageManager.GetMsgBoxStyle(System.String,System.String)">
+ <summary>
+ メッセージウィンドウのスタイルを取得します。
+ </summary>
+ <param name="buttonCount"></param>
+ <param name="level"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.MessageManager.GetMsgButton(System.String)">
+ <summary>
+ メッセージウィンドウのボタンを取得します。
+ </summary>
+ <param name="buttonCount"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.MessageManager.GetMsgIcon(Microsoft.VisualBasic.MsgBoxStyle,System.String)">
+ <summary>
+ メッセージウィンドウのアイコンを取得します。
+ </summary>
+ <param name="buttonStyle"></param>
+ <param name="level"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.MessageManager.GetMsgTitle(System.String)">
+ <summary>
+ メッセージウィンドウのタイトルを取得します。
+ </summary>
+ <param name="level"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.MessageManager.GetMessageValue(System.Data.DataSet,System.String)">
+ <summary>
+ 指定した項目のデータをキャッシュから取得します。
+ </summary>
+ <param name="ds"></param>
+ <param name="column"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Base.MvcWSA.GetWebServiceURL">
+ <summary>
+ Web.configよりWebサービスのURLを取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="T:Jp.Co.Nrs.MVCBlack.Base.UserData">
+ <summary>
+ 画面間データ格納クラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Base.UserData._MsgLanguage">
+ <summary>
+ メッセージ言語区分を格納します。
+ </summary>
+ <remarks>
+ 0:日本語
+ 1:英語
+ </remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Base.UserData._DownLoadJSFiles">
+ <summary>
+ JSファイルのダウンロード元を格納します。
+ </summary>
+ <remarks>
+ japan
+ china
+ </remarks>
+</member>
+<member name="P:Jp.Co.Nrs.MVCBlack.Base.UserData.UserID">
+ <summary>
+ ユーザーID
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.MVCBlack.Base.UserData.UserName">
+ <summary>
+ ユーザー名
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.MVCBlack.Base.UserData.MessageLanguage">
+ <summary>
+ メッセージ言語区分を取得、格納します
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.MVCBlack.Base.UserData.DownLoadJSFiles">
+ <summary>
+ メッセージ言語区分を取得、格納します
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.WinWSA.GetWebServiceURL">
+ <summary>
+ App.configよりWebサービスのURLを取得します。
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.MVCBlack.Const.DispMode">
+ <summary>
+ 画面表示モード定数列挙体
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.MVCBlack.Const.GUIConst">
+ <summary>
+ 画面項目用定数クラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Const.GUIConst.COMMON_SYSTEM_PREFIX">
+ <summary>
+ セッションのシステム接頭辞
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Const.GUIConst.CATEGORY_NAME">
+ <summary>
+ GUIエディター用のプロパティカテゴリ文言
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Const.GUIConst.SYSTEM_QUERY_KEY0">
+ <summary>
+ GUIエディター用のプロパティカテゴリ文言
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Const.GUIConst.HIDDEN_ID_POP_RETURN">
+ <summary>
+ ポップアップ画面戻り値格納用隠しフィールドID
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Const.GUIConst.HIDDEN_ID_DIALOG_SUBMIT_ID">
+ <summary>
+ ダイアログ画面戻り値格納用隠しフィールドID
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Const.GUIConst.HIDDEN_ID_DIALOG_RETURN">
+ <summary>
+ ダイアログ画面戻り値格納用隠しフィールドID
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Const.GUIConst.HIDDEN_ID_POP_QUERY_PARAM">
+ <summary>
+ ポップアップクエリーパラメー格納用隠しフィールドID
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.MVCBlack.Const.GUIConst.BrowserSetting">
+ <summary>
+ ブラウザ設定 定数
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Const.GUIConst.BrowserSetting.ViewMax_QueryString">
+ <summary>
+ ページ最大化表示のクエリ文字列
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Const.GUIConst.BrowserSetting.Continue_True">
+ <summary>
+ 処理続行を表すクエリ文字列
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Const.GUIConst.BrowserSetting.PageSizeMax">
+ <summary>
+ 最大化表示
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Const.GUIConst.BrowserSetting.RequestName">
+ <summary>
+ Request名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Const.GUIConst.BrowserSetting.csNmMaxPageSize">
+ <summary>
+ クライアントスクリプト名　[MaxPageSize]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Const.GUIConst.BrowserSetting.csNmPopUpPageSize">
+ <summary>
+ クライアントスクリプト名　[PopUpPageSize]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Const.GUIConst.BrowserSetting.csNmOpen">
+ <summary>
+ クライアントスクリプト名　[PageOpen]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Const.GUIConst.BrowserSetting.csNmClose">
+ <summary>
+ クライアントスクリプト名　[PageClose]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Const.GUIConst.BrowserSetting.SpreadDoubleCliskScript">
+ <summary>
+ スプレッドのダブルクリックイベント ClientScript名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Const.GUIConst.BrowserSetting.MainPageContentPlaceHolder">
+ <summary>
+ メインページのContentPlaceHolder名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Const.GUIConst.BrowserSetting.PopPageContentPlaceHolder">
+ <summary>
+ PopUpページのContentPlaceHolder名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Const.GUIConst.BrowserSetting.HtmlNewLine">
+ <summary>
+ HTML改行タグ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.MVCBlack.Const.GUIConst.ImExpression">
+ <summary>
+ InputMan用ValidatorのCharacterSetプロパティ 定数
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Const.GUIConst.ImExpression.HANKAKU">
+ <summary>
+ 半角
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Const.GUIConst.ImExpression.EISU">
+ <summary>
+ 英数字
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Const.GUIConst.FONT_DEF_TYPE">
+ <summary>
+ フォント種類
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Const.GUIConst.FONT_DEF_SIZE">
+ <summary>
+ フォントサイズ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Const.GUIConst.FONT_DEF_CHARSET">
+ <summary>
+ フォントセット
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Const.GUIConst.FORE_COLOR_SYSTEM_RED">
+ <summary>
+ システム前景色（R）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Const.GUIConst.FORE_COLOR_SYSTEM_GREEN">
+ <summary>
+ システム前景色（G）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Const.GUIConst.FORE_COLOR_SYSTEM_BLUE">
+ <summary>
+ システム前景色（B）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Const.GUIConst.BACK_COLOR_SYSTEM_RED">
+ <summary>
+ システム背景色（R）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Const.GUIConst.BACK_COLOR_SYSTEM_GREEN">
+ <summary>
+ システム背景色（G）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Const.GUIConst.BACK_COLOR_SYSTEM_BLUE">
+ <summary>
+ システム背景色（B）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Const.GUIConst.FORE_COLOR_ATTENTION_RED">
+ <summary>
+ システム警告色（R）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Const.GUIConst.FORE_COLOR_ATTENTION_GREEN">
+ <summary>
+ システム警告色（G）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Const.GUIConst.FORE_COLOR_ATTENTION_BLUE">
+ <summary>
+ システム警告色（B）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Const.GUIConst.BACK_COLOR_ATTENTION_RED">
+ <summary>
+ システム警告背景色（R）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Const.GUIConst.BACK_COLOR_ATTENTION_GREEN">
+ <summary>
+ システム警告背景色（G）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Const.GUIConst.BACK_COLOR_ATTENTION_BLUE">
+ <summary>
+ システム警告背景色（B）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Const.GUIConst.SYSTEM_COLOR_BULUE_RED">
+ <summary>
+ システム新規色（R）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Const.GUIConst.SYSTEM_COLOR_BULUE_GREEN">
+ <summary>
+ システム新規色（G）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Const.GUIConst.SYSTEM_COLOR_BULUE_BLUE">
+ <summary>
+ システム前景色（B）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Const.GUIConst.BACK_COLOR_INPUT_RED">
+ <summary>
+ 入力項目背景色（R）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Const.GUIConst.BACK_COLOR_INPUT_GREEN">
+ <summary>
+ 入力項目背景色（G）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Const.GUIConst.BACK_COLOR_INPUT_BLUE">
+ <summary>
+ 入力項目背景色（B）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Const.GUIConst.SPREAD_COLOR_INPUT_BACK_RED">
+ <summary>
+ スプレッド入力項目背景色（R）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Const.GUIConst.SPREAD_COLOR_INPUT_BACK_GREEN">
+ <summary>
+ スプレッド入力項目背景色（G）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Const.GUIConst.SPREAD_COLOR_INPUT_BACK_BLUE">
+ <summary>
+ スプレッド入力項目背景色（B）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Const.GUIConst.SPREAD_COLOR_SELECT_FORE_RED">
+ <summary>
+ スプレッド選択時前景色（R）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Const.GUIConst.SPREAD_COLOR_SELECT_FORE_GREEN">
+ <summary>
+ スプレッド選択時前景色（G）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Const.GUIConst.SPREAD_COLOR_SELECT_FORE_BLUE">
+ <summary>
+ スプレッド選択時前景色（B）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Const.GUIConst.SPREAD_COLOR_SELECT_BACK_RED">
+ <summary>
+ スプレッド選択時背景色（R）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Const.GUIConst.SPREAD_COLOR_SELECT_BACK_GREEN">
+ <summary>
+ スプレッド選択時背景色（G）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Const.GUIConst.SPREAD_COLOR_SELECT_BACK_BLUE">
+ <summary>
+ スプレッド選択時背景色（B）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.MVCBlack.Const.RecordStatus">
+ <summary>
+ レコード状態定数列挙体
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.MVCBlack.Const.MessageLevel">
+ <summary>
+ メッセージレベル定数
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Const.MessageLevel.LEVEL_INFORMATION">
+ <summary>
+ 通知メッセージレベル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Const.MessageLevel.LEVEL_QUESTION">
+ <summary>
+ 確認メッセージレベル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Const.MessageLevel.LEVEL_WARNING">
+ <summary>
+ 警告メッセージレベル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Const.MessageLevel.LEVEL_ERROR">
+ <summary>
+ エラーメッセージレベル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Const.MessageLevel.LEVEL_SYSTEM_ERROR">
+ <summary>
+ システムエラーメッセージレベル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.MVCBlack.Html.CommonButtonExtensions">
+ <summary>
+ button要素出力用共通カスタムヘルパー
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Html.CommonButtonExtensions.CommonButton(System.Web.Mvc.HtmlHelper,System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">
+ <summary>
+ button要素を出力します
+ </summary>
+ <param name="helper">ヘルパークラス</param>
+ <param name="id">要素のID</param>
+ <param name="text">要素の表示文言</param>
+ <param name="htmlAttributes">任意の属性ディクショナリ</param>
+ <returns>button要素のタグ</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Html.CommonButtonExtensions.CreateButtonTag(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">
+ <summary>
+ button要素生成内部メソッド
+ </summary>
+ <param name="id">ボタンID</param>
+ <param name="text">ボタン表示文言</param>
+ <param name="htmlAttributes">任意の属性ディクショナリ</param>
+ <returns>button要素のタグ</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.MVCBlack.Html.CommonExtensionsConst">
+ <summary>
+ 共通カスタムヘルパー用定数定義クラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Html.CommonExtensionsConst.ElemDiv">
+ <summary>
+ div要素用定数
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Html.CommonExtensionsConst.ElemButton">
+ <summary>
+ button要素用定数
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Html.CommonExtensionsConst.ElemBr">
+ <summary>
+ br要素用定数
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Html.CommonExtensionsConst.ElemInput">
+ <summary>
+ input要素用定数
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Html.CommonExtensionsConst.ElemLabel">
+ <summary>
+ label要素用定数
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Html.CommonExtensionsConst.ElemUl">
+ <summary>
+ ul要素用定数
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Html.CommonExtensionsConst.ElemLi">
+ <summary>
+ li要素用定数
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Html.CommonExtensionsConst.ElemImg">
+ <summary>
+ img要素用定数
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Html.CommonExtensionsConst.ElemSpan">
+ <summary>
+ span要素用定数
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Html.CommonExtensionsConst.ElemSelect">
+ <summary>
+ select要素用定数
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Html.CommonExtensionsConst.ElemOption">
+ <summary>
+ option要素用定数
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Html.CommonExtensionsConst.ElemTextarea">
+ <summary>
+ textarea要素用定数
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Html.CommonExtensionsConst.CssClass">
+ <summary>
+ class属性用定数
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Html.CommonExtensionsConst.Value">
+ <summary>
+ value属性用定数
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Html.CommonExtensionsConst.Checked">
+ <summary>
+ checked属性用定数
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Html.CommonExtensionsConst.Type">
+ <summary>
+ type属性用定数
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Html.CommonExtensionsConst.For">
+ <summary>
+ for属性用定数
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Html.CommonExtensionsConst.Name">
+ <summary>
+ name属性用定数
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Html.CommonExtensionsConst.Id">
+ <summary>
+ id属性用定数
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Html.CommonExtensionsConst.Alt">
+ <summary>
+ alt属性用定数
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Html.CommonExtensionsConst.Src">
+ <summary>
+ src属性用定数
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Html.CommonExtensionsConst.Selected">
+ <summary>
+ selected属性用定数
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Html.CommonExtensionsConst.Size">
+ <summary>
+ size属性用定数
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Html.CommonExtensionsConst.Multiple">
+ <summary>
+ multiple属性用定数
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Html.CommonExtensionsConst.Disabled">
+ <summary>
+ disabled属性用定数
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Html.CommonExtensionsConst.Button">
+ <summary>
+ input要素のtype属性用定数(button)
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Html.CommonExtensionsConst.CheckBox">
+ <summary>
+ input要素のtype属性用定数(checkbox)
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Html.CommonExtensionsConst.Hidden">
+ <summary>
+ input要素のtype属性用定数(hidden)
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Html.CommonExtensionsConst.Password">
+ <summary>
+ input要素のtype属性用定数(password)
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Html.CommonExtensionsConst.Radio">
+ <summary>
+ input要素のtype属性用定数(radio)
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Html.CommonExtensionsConst.Text">
+ <summary>
+ input要素のtype属性用定数(text)
+ </summary>
+</member>
+<member name="T:Jp.Co.Nrs.MVCBlack.Html.CommonExtensionsUtil">
+ <summary>
+ 共通カスタムヘルパー用ユーティリティクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Html.CommonExtensionsUtil.DataAttrValOrder">
+ <summary>
+ クライアント入力チェック用属性名(order)
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Html.CommonExtensionsUtil.DataValMessage">
+ <summary>
+ クライアント入力チェック用属性名(msg)
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Html.CommonExtensionsUtil.DataValParams">
+ <summary>
+ クライアント入力チェック用属性名(param)
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Html.CommonExtensionsUtil.DataValDepends">
+ <summary>
+ クライアント入力チェック用属性名(depends)
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Html.CommonExtensionsUtil.CreateTagBuilderCore(System.String,System.String,System.String)">
+ <summary>
+ タグ作成用内部メソッド
+ </summary>
+ <param name="tagName">タグ名</param>
+ <param name="id">要素のID属性値</param>
+ <param name="name">要素のname属性値</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Html.CommonExtensionsUtil.AddClientValidationAttributes(System.Web.Mvc.HtmlHelper,System.String,System.Web.Mvc.TagBuilder)">
+ <summary>
+ クライアント入力チェック設定用属性付与メソッド
+ </summary>
+ <param name="helper">ヘルパークラス</param>
+ <param name="propertyName">プロパティ名</param>
+ <param name="tagBuilder">タグ生成用オブジェクト</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Html.CommonExtensionsUtil.SetCommonAttributes(System.Web.Mvc.HtmlHelper,System.Collections.Generic.Dictionary{System.String,System.Object},System.String,System.Web.Mvc.TagBuilder)">
+ <summary>
+ クライアント入力チェック設定用の属性および任意の追加属性を付与する
+ </summary>
+ <param name="helper">ヘルパークラス</param>
+ <param name="htmlAttributes">任意の属性ディクショナリ</param>
+ <param name="propertyName">プロパティ名</param>
+ <param name="tagBuilder">タグ生成用オブジェクト</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Html.CommonExtensionsUtil.GetModelStateValue``1(System.Web.Mvc.HtmlHelper,System.String)">
+ <summary>
+ Value値取得メソッド
+ </summary>
+ <typeparam name="T">任意の型</typeparam>
+ <param name="helper">ヘルパークラス</param>
+ <param name="propertyName">プロパティ名</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Html.CommonExtensionsUtil.GetTabString(System.Int32)">
+ <summary>
+ 指定した数だけタブ文字を連結して返却します
+ </summary>
+ <param name="length">連結する数</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Html.CommonExtensionsUtil.FormatValue(System.Object)">
+ <summary>
+ 引数をString型に変換します
+ </summary>
+ <param name="value">変換対象となる値</param>
+ <returns></returns>
+ <remarks>値がNothingだった場合は空の文字列に変換します</remarks>
+</member>
+<member name="T:Jp.Co.Nrs.MVCBlack.Html.CommonInputExtensions">
+ <summary>
+ input要素出力用共通カスタムヘルパー
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Html.CommonInputExtensions.CommonInputButton(System.Web.Mvc.HtmlHelper,System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">
+ <summary>
+ input要素（type=button）を出力します
+ </summary>
+ <param name="helper">ヘルパークラス</param>
+ <param name="id">要素のID</param>
+ <param name="value">要素の入力値</param>
+ <param name="htmlAttributes">任意の属性ディクショナリ</param>
+ <returns> input要素（type=button）のタグ</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Html.CommonInputExtensions.CommonCheckBoxFor``1(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Nullable{System.Boolean}}},System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">
+ <summary>
+  input要素（type=checkbox）を出力します（Null許容型対応版）
+ </summary>
+ <typeparam name="TModel">モデルクラス</typeparam>
+ <param name="helper">ヘルパークラス</param>
+ <param name="expression">ラムダ式</param>
+ <param name="labelText">ラベル表示文言</param>
+ <param name="htmlAttributes">任意の属性ディクショナリ</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Html.CommonInputExtensions.CommonCheckBoxFor``1(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">
+ <summary>
+  input要素（type=checkbox）を出力します
+ </summary>
+ <typeparam name="TModel">モデルクラス</typeparam>
+ <param name="helper">ヘルパークラス</param>
+ <param name="expression">ラムダ式</param>
+ <param name="labelText">ラベル表示文言</param>
+ <param name="htmlAttributes">任意の属性ディクショナリ</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Html.CommonInputExtensions.CommonHiddenFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Collections.Generic.Dictionary{System.String,System.Object})">
+ <summary>
+ input要素（type=hidden）を出力します
+ </summary>
+ <typeparam name="TModel">モデルクラス</typeparam>
+ <typeparam name="TProperty">対象となるプロパティの型</typeparam>
+ <param name="helper">ヘルパークラス</param>
+ <param name="expression">ラムダ式</param>
+ <param name="htmlAttributes">任意の属性ディクショナリ</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Html.CommonInputExtensions.CommonPasswordFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Collections.Generic.Dictionary{System.String,System.Object})">
+ <summary>
+ input要素（type=password）を出力します
+ </summary>
+ <typeparam name="TModel">モデルクラス</typeparam>
+ <typeparam name="TProperty">対象となるプロパティの型</typeparam>
+ <param name="helper">ヘルパークラス</param>
+ <param name="expression">ラムダ式</param>
+ <param name="htmlAttributes">任意の属性ディクショナリ</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Html.CommonInputExtensions.CommonRadioButtonFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">
+ <summary>
+ input要素（type=radio）を出力します
+ </summary>
+ <typeparam name="TModel">モデルクラス</typeparam>
+ <typeparam name="TProperty">対象となるプロパティの型</typeparam>
+ <param name="helper">ヘルパークラス</param>
+ <param name="expression">ラムダ式</param>
+ <param name="value">value属性値</param>
+ <param name="labelText">ラベルの表示文言</param>
+ <param name="htmlAttributes">任意の属性ディクショナリ</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Html.CommonInputExtensions.CommonTextBoxFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Collections.Generic.Dictionary{System.String,System.Object})">
+ <summary>
+ input要素（type=text）を出力します
+ </summary>
+ <typeparam name="TModel">モデルクラス</typeparam>
+ <typeparam name="TProperty">対象となるプロパティの型</typeparam>
+ <param name="helper">ヘルパークラス</param>
+ <param name="expression">ラムダ式</param>
+ <param name="htmlAttributes">任意の属性ディクショナリ</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Html.CommonInputExtensions.CommonCheckBoxForCore``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">
+ <summary>
+ チェックボックス共通メソッド
+ </summary>
+ <typeparam name="TModel">モデルクラス</typeparam>
+ <typeparam name="TProperty">対象となるプロパティの型</typeparam>
+ <param name="helper">ヘルパークラス</param>
+ <param name="expression">ラムダ式</param>
+ <param name="labelText">ラベルの表示文言</param>
+ <param name="htmlAttributes">任意の属性ディクショナリ</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Html.CommonInputExtensions.CreateInputTag(System.Web.Mvc.HtmlHelper,System.String,System.String,System.String,System.String,System.Boolean,System.Collections.Generic.Dictionary{System.String,System.Object})">
+ <summary>
+ input要素共通メソッド
+ </summary>
+ <param name="helper">ヘルパークラス</param>
+ <param name="inputType">input要素のtype</param>
+ <param name="id">要素のID</param>
+ <param name="name">要素のname</param>
+ <param name="value">value属性の値</param>
+ <param name="isAddCheckedAttribute">check属性の出力有無</param>
+ <param name="htmlAttributes">任意の属性ディクショナリ</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Html.CommonInputExtensions.CreateLabelTag(System.String,System.String)">
+ <summary>
+ Label要素生成メソッド
+ </summary>
+ <param name="text">ラベルの文言</param>
+ <param name="id">input要素のid（for属性の値）</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Html.CommonInputExtensions.CreateHiddenTagForCheckBox(System.String)">
+ <summary>
+ checkbox要素に追加するhidden要素の生成メソッド
+ </summary>
+ <param name="name">要素のname名</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.MVCBlack.Html.CommonSelectExtensions">
+ <summary>
+ select要素出力用共通カスタムヘルパー
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Html.CommonSelectExtensions.CommonDropDownListFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Collections.Generic.IList{System.Web.Mvc.SelectListItem},System.Collections.Generic.Dictionary{System.String,System.Object})">
+ <summary>
+ select要素を出力します
+ </summary>
+ <typeparam name="TModel">モデルクラス</typeparam>
+ <typeparam name="TProperty">対象となるプロパティの型</typeparam>
+ <param name="helper">ヘルパークラス</param>
+ <param name="expression">ラムダ式</param>
+ <param name="selectList">ドロップダウンに表示するリスト</param>
+ <param name="htmlAttributes">任意の属性ディクショナリ</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Html.CommonSelectExtensions.SetSelectListWithDefaultSelected(System.Collections.Generic.IEnumerable{System.Web.Mvc.SelectListItem},System.Object)">
+ <summary>
+ 初期表示に選択状態の設定
+ </summary>
+ <param name="selectList">選択肢リスト</param>
+ <param name="defaultSelectedValue">初期選択する値</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Html.CommonSelectExtensions.CreateSelectTag``1(System.Web.Mvc.HtmlHelper{``0},System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.IList{System.Web.Mvc.SelectListItem},System.String)">
+ <summary>
+ select要素生成メソッド
+ </summary>
+ <typeparam name="TModel">モデルクラス</typeparam>
+ <param name="helper">カスタムヘルパー</param>
+ <param name="htmlAttributes">任意の属性ディクショナリ</param>
+ <param name="selectList">選択肢リスト</param>
+ <param name="name">要素のname</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Html.CommonSelectExtensions.GetOptionsString(System.Collections.Generic.IList{System.Web.Mvc.SelectListItem})">
+ <summary>
+ option要素を生成し、文字列として返却する
+ </summary>
+ <param name="selectList">選択肢リスト</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Html.CommonSelectExtensions.CreateOptionTag(System.Web.Mvc.SelectListItem)">
+ <summary>
+ option要素タグ生成
+ </summary>
+ <param name="item">選択肢</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.MVCBlack.Html.CommonTextAreaExtensions">
+ <summary>
+ textarea要素出力用共通カスタムヘルパー
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Html.CommonTextAreaExtensions.Rows">
+ <summary>
+ textarea要素のrow属性用定数
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Html.CommonTextAreaExtensions.Cols">
+ <summary>
+ textarea要素のcols属性用定数
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Html.CommonTextAreaExtensions.TextAreaRows">
+ <summary>
+ textarea要素のrows属性の初期値
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Html.CommonTextAreaExtensions.TextAreaColumns">
+ <summary>
+ textarea要素のcols属性の初期値
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Html.CommonTextAreaExtensions.CommonTextAreaFor``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Collections.Generic.Dictionary{System.String,System.Object})">
+ <summary>
+ textarea要素を出力します
+ </summary>
+ <typeparam name="TModel">モデルクラス</typeparam>
+ <typeparam name="TProperty">対象となるプロパティの型</typeparam>
+ <param name="helper">ヘルパークラス</param>
+ <param name="expression">ラムダ式</param>
+ <param name="htmlAttributes">任意の属性ディクショナリ</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Html.CommonTextAreaExtensions.CreateTextAreaTag``1(System.Web.Mvc.HtmlHelper{``0},System.Collections.Generic.Dictionary{System.String,System.Object},System.String,System.String)">
+ <summary>
+ textarea要素生成メソッド
+ </summary>
+ <typeparam name="TModel">モデルクラス</typeparam>
+ <param name="helper">ヘルパークラス</param>
+ <param name="htmlAttributes">任意の属性ディクショナリ</param>
+ <param name="name">要素のname</param>
+ <param name="value">テキスト</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.MVCBlack.Html.CommonValidationOptionsExtensions">
+ <summary>
+ クライアント入力チェックのオプション出力ヘルパー
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Html.CommonValidationOptionsExtensions.BaseCheckOption">
+ <summary>
+ 入力チェックオプション用のタグであることを識別するクラス名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Html.CommonValidationOptionsExtensions.DataValSubmitHandler">
+ <summary>
+ クライアント入力チェックオプション用の属性名（submithandler）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Html.CommonValidationOptionsExtensions.DataValInvalidHandler">
+ <summary>
+ クライアント入力チェックオプション用の属性名（invalidhandler）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Html.CommonValidationOptionsExtensions.DataValShowErrors">
+ <summary>
+ クライアント入力チェックオプション用の属性名（showerrors）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Html.CommonValidationOptionsExtensions.DataValErrorPlacement">
+ <summary>
+ クライアント入力チェックオプション用の属性名（errorplacement）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Html.CommonValidationOptionsExtensions.DataValGroups">
+ <summary>
+ クライアント入力チェックオプション用の属性名（groups）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Html.CommonValidationOptionsExtensions.CommonValidationOptions(System.Web.Mvc.HtmlHelper,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ クライアント入力チェックのオプション
+ </summary>
+ <param name="helper">ヘルパークラス</param>
+ <param name="submitHandler">SubmitHandlerオプション用コールバック関数名</param>
+ <param name="invalidHandler">InvalidHandlerオプション用コールバック関数名</param>
+ <param name="showErrors">ShowErrorsオプション用コールバック関数名</param>
+ <param name="errorPlacement">ErrorPlacementオプション用コールバック関数名</param>
+ <param name="groups">Groupsオプション用コールバック関数名</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.MVCBlack.Utility.CommonClientValidationList">
+ <summary>
+ クライアント入力チェック設定リスト作成用クラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Utility.CommonClientValidationList.IsNullTarget">
+ <summary>
+ target値未設定エラーメッセージ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Utility.CommonClientValidationList.IsNullErrorMessage">
+ <summary>
+ errorMessage値未設定エラーメッセージ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Utility.CommonClientValidationList.IsNullValidationRuleName">
+ <summary>
+ validationRuleName値未設定エラーメッセージ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Utility.CommonClientValidationList.IsNullOptionParams">
+ <summary>
+ param値未設定エラーメッセージ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Utility.CommonClientValidationList.IsEqualsValidationRuleName">
+ <summary>
+ 重複定義エラーメッセージ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.MVCBlack.Utility.CommonClientValidationList.List">
+ <summary>
+ 入力チェック設定を格納したリストを取得します
+ </summary>
+ <returns>入力チェック設定を格納したリスト</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Utility.CommonClientValidationList.#ctor">
+ <summary>
+ コンストラクタ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Utility.CommonClientValidationList.Add``1(System.Linq.Expressions.Expression{System.Func{System.Object,``0}},System.String,System.String,System.Collections.Generic.List{System.String},System.String)">
+ <summary>
+ クライアント入力チェックの設定をリストに追加する
+ </summary>
+ <typeparam name="TModel">モデルクラス</typeparam>
+ <param name="target">検証対象のプロパティ</param>
+ <param name="validationRuleName">検証名</param>
+ <param name="errorMessage">エラーメッセージ</param>
+ <param name="optionParams">検証に使用するパラメータ</param>
+ <param name="depends">検証を行うかどうかを判定するプレ関数</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Utility.CommonClientValidationList.Add``1(System.Linq.Expressions.Expression{System.Func{System.Object,``0}},System.Enum,System.String,System.Collections.Generic.List{System.String},System.String)">
+ <summary>
+ クライアント入力チェックの設定をリストに追加する
+ </summary>
+ <typeparam name="TModel">モデルクラス</typeparam>
+ <param name="target">検証対象のプロパティ</param>
+ <param name="validationRuleName">検証名</param>
+ <param name="errorMessage">エラーメッセージ</param>
+ <param name="optionParams">検証に使用するパラメータ</param>
+ <param name="depends">検証を行うかどうかを判定するプレ関数</param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.MVCBlack.Utility.CommonMvcConst">
+ <summary>
+ MVC共通部品用定数定義クラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.MVCBlack.Utility.CommonMvcConst.CodePageSJlS">
+ <summary>
+ エンコーディング用定数（932:Shift-jis）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.MVCBlack.Utility.CommonValidationInfo">
+ <summary>
+ クライアント入力チェックの設定を格納するクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.MVCBlack.Utility.CommonValidationInfo.Order">
+ <summary>
+ 実行順を取得します
+ </summary>
+ <value>検証の実行順</value>
+ <returns>検証の実行順</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.MVCBlack.Utility.CommonValidationInfo.Target">
+ <summary>
+ 検証対象の項目名を取得します
+ </summary>
+ <value>検証対象の項目名</value>
+ <returns>検証対象の項目名</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.MVCBlack.Utility.CommonValidationInfo.ValidationRuleName">
+ <summary>
+ 検証ルール名を取得します
+ </summary>
+ <value>検証ルール名</value>
+ <returns>検証ルール名</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.MVCBlack.Utility.CommonValidationInfo.ErrorMessage">
+ <summary>
+ エラーメッセージを取得します
+ </summary>
+ <value>エラーメッセージ</value>
+ <returns>エラーメッセージ</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.MVCBlack.Utility.CommonValidationInfo.Param">
+ <summary>
+ パラメータを取得します
+ </summary>
+ <value>パラメータ</value>
+ <returns>パラメータ</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.MVCBlack.Utility.CommonValidationInfo.Depends">
+ <summary>
+ プレ関数名を取得します
+ </summary>
+ <value>プレ関数名</value>
+ <returns>プレ関数名</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Utility.CommonValidationInfo.#ctor(System.Int32,System.String,System.String,System.String,System.Collections.Generic.List{System.String},System.String)">
+ <summary>
+ 引数で取得した値をクライアント入力チェックの設定として格納します
+ </summary>
+ <param name="order">検証順</param>
+ <param name="target">検証対象の項目</param>
+ <param name="validationRuleName">検証ルール名</param>
+ <param name="errorMessege">エラーメッセージ</param>
+ <param name="optionParams">パラメーター</param>
+ <param name="depends">プレ関数名</param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.MVCBlack.Utility.HtmlFormatterUtility">
+ <summary>
+ HTML表示用ユーティリティ
+ </summary>
+ <remarks>
+ HTMLHelperで実装できない、もしくは、HTMLHelperで利用する表示編集用部品
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Utility.HtmlFormatterUtility.GetFileDate(System.String)">
+ <summary>
+ スクリプトファイルのURLにスクリプトファイルのタイムスタンプをパラメータとして付与します。
+ </summary>
+ <param name="scriptURL">スクリプトファイルURL</param>
+ <returns>タイムスタンプ付きスクリプトファイルURL</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.MVCBlack.Utility.ModelFormatterUtility">
+ <summary>
+ Model用ユーティリティクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Utility.ModelFormatterUtility.DeepCopy``1(``0)">
+ <summary>
+ BaseModelを(値)コピーします
+ </summary>
+ <param name="target">コピー元Model</param>
+ <returns>値コピー後Model</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.MVCBlack.Utility.MVCBlackValidateUtility">
+ <summary>
+ 拡張入力チェック用ユーティリティクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Utility.MVCBlackValidateUtility.IsZenkauCheckErr(System.String)">
+ <summary>
+ 全角チェック
+ </summary>
+ <param name="value">チェック対象文字列</param>
+ <returns>
+ True：エラーあり
+ Falase：エラーなし
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Utility.MVCBlackValidateUtility.IsHankakuCheckErr(System.String)">
+ <summary>
+ 半角チェック
+ </summary>
+ <param name="value">チェック対象文字列</param>
+ <returns>
+ True：エラーあり
+ Falase：エラーなし
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Utility.MVCBlackValidateUtility.IsForbiddenWordsCheckErr(System.String,System.String)">
+ <summary>
+ 禁止文字チェック
+ </summary>
+ <param name="value">チェック対象文字列</param>
+ <param name="exCharacters">チェック除外文字列</param>
+ <returns>
+ True：エラーあり
+ Falase：エラーなし
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Utility.MVCBlackValidateUtility.IsEidaiSujiCheckErr(System.String)">
+ <summary>
+ 英大文字/数字チェック
+ </summary>
+ <param name="value">チェック対象文字列</param>
+ <returns>
+ True：エラーあり
+ Falase：エラーなし
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Utility.MVCBlackValidateUtility.IsEidaiCheckErr(System.String)">
+ <summary>
+ 英大文字チェック
+ </summary>
+ <param name="value">チェック対象文字列</param>
+ <returns>
+ True：エラーあり
+ Falase：エラーなし
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Utility.MVCBlackValidateUtility.IsEisuCheckErr(System.String,System.String)">
+ <summary>
+ 英数字チェック
+ </summary>
+ <param name="value">チェック対象文字列</param>
+ <param name="exCharacters">チェック対象外文字列</param>
+ <returns>
+ True：エラーあり
+ Falase：エラーなし
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Utility.MVCBlackValidateUtility.IsSujiCheckErr(System.String)">
+ <summary>
+ 数字チェック
+ </summary>
+ <param name="value">チェック対象文字列</param>
+ <returns>
+ True：エラーあり
+ Falase：エラーなし
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Utility.MVCBlackValidateUtility.IsNumericCheckErr(System.String)">
+ <summary>
+ 数値チェック
+ </summary>
+ <param name="value">チェック対象文字列</param>
+ <returns>
+ True：エラーあり
+ Falase：エラーなし
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Utility.MVCBlackValidateUtility.IsMiddleSpaceCheckErr(System.String)">
+ <summary>
+ 中間スペースチェック
+ </summary>
+ <param name="value">チェック対象文字列</param>
+ <returns>
+ True：エラーあり
+ Falase：エラーなし
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Utility.MVCBlackValidateUtility.IsByteCheckErr(System.String,System.Int32)">
+ <summary>
+ バイトチェック
+ </summary>
+ <param name="value">チェック対象文字列</param>
+ <returns>
+ True：エラーあり
+ Falase：エラーなし
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Utility.MVCBlackValidateUtility.IsFullByteCheckErr(System.String,System.Int32)">
+ <summary>
+ フルバイトチェック
+ </summary>
+ <param name="value">チェック対象文字列</param>
+ <returns>
+ True：エラーあり
+ Falase：エラーなし
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Utility.MVCBlackValidateUtility.IsFullMojisuCheckErr(System.String,System.Int32)">
+ <summary>
+ フル文字数チェック
+ </summary>
+ <param name="value">チェック対象文字列</param>
+ <param name="fullLen"></param>
+ <returns>
+ True：エラーあり
+ Falase：エラーなし
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Utility.MVCBlackValidateUtility.IsMojisuCheckErr(System.String,System.Int32)">
+ <summary>
+ 文字数チェック
+ </summary>
+ <param name="value">チェック対象文字列</param>
+ <param name="maxLen"></param>
+ <returns>
+ True：エラーあり
+ Falase：エラーなし
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Utility.MVCBlackValidateUtility.IsRangeCheckErr(System.Decimal,System.Decimal,System.Decimal)">
+ <summary>
+ 数値項目の範囲チェック
+ </summary>
+ <param name="value">チェック対象数値項目</param>
+ <param name="maxData">許容最大値</param>
+ <param name="minData">許容最小値</param>
+ <returns>
+ True：エラーあり
+ Falase：エラーなし
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Utility.MVCBlackValidateUtility.IsFormatCheckTankNo(System.String)">
+ <summary>
+ タンク番号フォーマットチェック(XXXX 999999-9)
+ </summary>
+ <param name="value">チェック対象文字列</param>
+ <returns>
+ True：エラーあり
+ Falase：エラーなし
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Utility.MVCBlackValidateUtility.IsTankNoCheck(System.String)">
+ <summary>
+ タンク番号チェックディジットチェック(XXXX 999999-9)
+ </summary>
+ <param name="value">チェック対象文字列</param>
+ <returns>
+ -1  ：タンクNoフォーマットエラー
+ 0～9：正しいチェックディジットを返します。
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.MVCBlack.Utility.MVCBlackValidateUtility.IsTankNoCheck_IBCs(System.String)">
+ <summary>
+ IBCタンク番号チェックディジットチェック(XXXX9X99999)
+ </summary>
+ <param name="value">チェック対象文字列</param>
+ <returns>
+ True：エラーあり
+ Falase：エラーなし
+ </returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

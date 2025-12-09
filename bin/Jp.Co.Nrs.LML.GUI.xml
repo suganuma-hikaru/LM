@@ -1,0 +1,1601 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.LML.GUI
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.LM.GUI.LML010C">
+ <summary>
+ LML010定数定義クラス
+ </summary>
+ <remarks></remarks>
+ <histry>
+ 
+ </histry>
+</member>
+<member name="T:Jp.Co.Nrs.LM.GUI.LML010C.EventShubetsu">
+ <summary>
+ イベント種別
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.GUI.LML010F">
+ <summary>
+ LML010フォームクラス
+ </summary>
+ <remarks></remarks>
+ <histry>
+ 
+ </histry>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LML010F._Handler">
+ <summary>
+ このフォームを作成したハンドラクラスを格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LML010F.#ctor(Jp.Co.Nrs.LM.GUI.LML010H)">
+ <summary>
+ コンストラクタ
+ </summary>
+ <param name="handlerClass">このフォームを生成したハンドラクラス</param>
+ <remarks>呼び出し元のハンドラクラスをこのフォームに紐付けます。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LML010F.Function9_Press(System.Object,System.Windows.Forms.KeyEventArgs)">
+ <summary>
+ ファンクション９ボタン押下時およびファンクションキー９押下時のイベントです。
+ </summary>
+ <param name="sender">イベント発生オブジェクト</param>
+ <param name="e">イベント詳細情報</param>
+ <remarks>各イベントに対応するハンドラクラスのメソッドを呼び出してください。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LML010F.Function11_Press(System.Object,System.Windows.Forms.KeyEventArgs)">
+ <summary>
+ ファンクション１１ボタン押下時およびファンクションキー１１押下時のイベントです。
+ </summary>
+ <param name="sender">イベント発生オブジェクト</param>
+ <param name="e">イベント詳細情報</param>
+ <remarks>各イベントに対応するハンドラクラスのメソッドを呼び出してください。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LML010F.Function12_Press(System.Object,System.Windows.Forms.KeyEventArgs)">
+ <summary>
+ ファンクション１２ボタン押下時およびファンクションキー１２押下時のイベントです。
+ </summary>
+ <param name="sender">イベント発生オブジェクト</param>
+ <param name="e">イベント詳細情報</param>
+ <remarks>各イベントに対応するハンドラクラスのメソッドを呼び出してください。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LML010F.Form_Closing(System.Object,System.Windows.Forms.FormClosingEventArgs)">
+ <summary>
+ フォームが閉じる前に発生するイベントです。
+ </summary>
+ <param name="sender">イベント発生元オブジェクト</param>
+ <param name="e">イベント詳細</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LML010F.Form_FormClosed(System.Object,System.Windows.Forms.FormClosedEventArgs)">
+ <summary>
+ フォームが閉じた後に発生するイベントです。
+ </summary>
+ <param name="sender">イベント発生元オブジェクト</param>
+ <param name="e">イベント詳細</param>
+ <remarks>Navigateクラスのインスタンス管理から登録解除します。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LML010F.Cmbseqflg_Load(System.Object,System.EventArgs)">
+ <summary>
+ 荷主コンボボックス選択時イベント
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.GUI.LML010G">
+ <summary>
+ LML010Gamenクラス
+ </summary>
+ <remarks>画面構築を行う</remarks>
+ <histry>
+ 
+ </histry>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LML010G._Frm">
+ <summary>
+ このクラスが紐付くフォームクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LML010G._LMIConG">
+ <summary>
+ GAMEN共通クラスを格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LML010G.#ctor(Jp.Co.Nrs.LM.Base.GUI.LMBaseGUIHandler@,Jp.Co.Nrs.LM.GUI.LML010F@,Jp.Co.Nrs.LM.GUI.LMLControlG)">
+ <summary>
+ コンストラクタ
+ </summary>
+ <param name="handlerClass">このクラスを生成したハンドラクラス</param>
+ <param name="frm">このクラスが設定するコントロールを持つフォームクラス</param>
+ <remarks>フォームラスとハンドラクラスをこのクラスに紐付けます。編集不可</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LML010G.SetFunctionKey(System.Boolean)">
+ <summary>
+ ファンクションキーの設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LML010G.SetTabIndex">
+ <summary>
+ タブインデックスの設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LML010G.SetControlsStatus(System.Boolean)">
+ <summary>
+ コントロールの入力制御
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LML010G.SetFoucus(System.String)">
+ <summary>
+ フォーカスの設定(項目チェック・保存エラー時を除く)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LML010G.SetComboBoxShori(System.String)">
+ <summary>
+ 画面名の設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LML010G.ClearComboBoxShori">
+ <summary>
+ コンボボックスの画面名をクリア
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.GUI.LML010H">
+ <summary>
+ LML010ハンドラクラス
+ </summary>
+ <remarks>
+ </remarks>
+ <histry>
+ </histry>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LML010H._V">
+ <summary>
+ 入力チェックで使用するValidateクラスを格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LML010H._G">
+ <summary>
+ Gamenクラスを格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LML010H.Main(Jp.Co.Nrs.LM.Base.LMFormData)">
+ <summary>
+ ハンドラクラスの初期処理メソッド
+ </summary>
+ <remarks>画面遷移部品よりこのメソッドが呼ばれます。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LML010H.SelectionEvent(Jp.Co.Nrs.LM.GUI.LML010F)">
+ <summary>
+ 画面の遷移イベント
+ </summary>
+ <param name="frm"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LML010H.ChangeCombobBox(Jp.Co.Nrs.LM.GUI.LML010F)">
+ <summary>
+ コンボボックスチェンジイベント
+ </summary>
+ <param name="frm"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LML010H.CloseForm(Jp.Co.Nrs.LM.GUI.LML010F)">
+ <summary>
+ 画面の終了
+ </summary>
+ <param name="frm"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LML010H.FunctionKey9Press(Jp.Co.Nrs.LM.GUI.LML010F@,System.Windows.Forms.KeyEventArgs)">
+ <summary>
+ F9押下時処理呼び出し
+ </summary>
+ <param name="frm">このハンドラクラスに紐づくフォーム</param>
+ <param name="e">ファンクションキーイベント</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LML010H.FunctionKey12Press(Jp.Co.Nrs.LM.GUI.LML010F@,System.Windows.Forms.KeyEventArgs)">
+ <summary>
+ F12押下時処理呼び出し(終了処理)
+ </summary>
+ <param name="frm">このハンドラクラスに紐づくフォーム</param>
+ <param name="e">ファンクションキーイベント</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LML010H.ClosingForm(Jp.Co.Nrs.LM.GUI.LML010F@,System.Windows.Forms.FormClosingEventArgs)">
+ <summary>
+ フォームが閉じる前に発生するイベント
+ </summary>
+ <param name="frm">このハンドラクラスに紐づくフォーム</param>
+ <param name="e">ウィンドウクローズイベント</param>
+ <remarks>F12キーイベント、「閉じる」ボタン押下イベントと共有</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LML010H.ChangeCombo(Jp.Co.Nrs.LM.GUI.LML010F@,System.EventArgs)">
+ <summary>
+ コンボボックスチェンジイベント
+ </summary>
+ <param name="frm"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LML010H.GetShori(System.String)">
+ <summary>
+ 画面ID取得
+ </summary>
+ <param name="kbncd"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LML010H.StartAction(System.Windows.Forms.Form)">
+ <summary>
+ 処理開始アクション
+ </summary>
+ <param name="frm">フォーム</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LML010H.EndAction(System.Windows.Forms.Form)">
+ <summary>
+ 終了アクション
+ </summary>
+ <param name="frm">フォーム</param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.GUI.LML010V">
+ <summary>
+ LML010Validateクラス
+ </summary>
+ <remarks>入力チェックを行う</remarks>
+ <histry>
+ </histry>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LML010V._Frm">
+ <summary>
+ このValidateクラスが紐付くフォームクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LML010V.#ctor(Jp.Co.Nrs.LM.Base.GUI.LMBaseGUIHandler@,Jp.Co.Nrs.LM.GUI.LML010F@)">
+ <summary>
+ コンストラクタ
+ </summary>
+ <param name="frm">このクラスがチェックするコントロールを持つフォームクラス</param>
+ <param name="handlerClass">このクラスを生成したハンドラクラス</param>
+ <remarks>フォームラスとハンドラクラスをこのクラスに紐付けます。編集不可</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LML010V.IsAuthorityChk(Jp.Co.Nrs.LM.GUI.LML010C.EventShubetsu)">
+ <summary>
+ 権限チェック
+ </summary>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LML010V.IsInputCheck">
+ <summary>
+ 入力チェックメソッドの雛形です。
+ </summary>
+ <returns>
+ True ：入力エラーなし
+ false：入力エラーあり
+ </returns>
+ <remarks>チェックを行うプロパティをTrueに設定し、チェック用メソッドを呼び出します。</remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.GUI.LMLControlC">
+ <summary>
+ LMLControl定数定義クラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.GUI.LMLControlC.CustMsgType">
+ <summary>
+ 荷主M存在チェック(置換文字)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMLControlC.FLG_OFF">
+ <summary>
+ フラグ(有)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMLControlC.FUNCTION_CREATE">
+ <summary>
+ 作　成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMLControlC.FUNCTION_POP">
+ <summary>
+ マスタ参照
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMLControlC.FUNCTION_CLOSE">
+ <summary>
+ 閉じる
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMLControlC.MASTEROPEN">
+ <summary>
+ マスタ参照ボタンイベント
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMLControlC.ENTER">
+ <summary>
+ Enterイベント
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMLControlC.MES_AREA">
+ <summary>
+ lblMsgAria
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMLControlC.BLF">
+ <summary>
+ BLF
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMLControlC.DATE_YYYYMMDD">
+ <summary>
+ yyyyMMdd
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMLControlC.DATE_SLASH_YYYYMMDD">
+ <summary>
+ yyyy/MM/dd
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMLControlC.ZENKAKU_SPACE">
+ <summary>
+ "　"
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMLControlC.FUNCTION_EXEL">
+ <summary>
+ Excel
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMLControlC.FUNCTION_KENSAKU">
+ <summary>
+ 検　索
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMLControlC.FUNCTION_CHECK">
+ <summary>
+ チェック
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMLControlC.FUNCTION_TORIKOMI">
+ <summary>
+ 取　込
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMLControlC.FUNCTION_SHUKEI">
+ <summary>
+ 集　計
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMLControlC.FUNCTION_SHOGO">
+ <summary>
+ 照合
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMLControlC.FUNCTION_ADD">
+ <summary>
+ 追加
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMLControlC.FUNCTION_CLEAR">
+ <summary>
+ クリア
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMLControlC.FUNCTION_PRINT">
+ <summary>
+ 印刷
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMLControlC.FUNCTION_NIFUDAPRINT">
+ <summary>
+ 荷札印刷
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMLControlC.FUNCTION_KONPOPRINT">
+ <summary>
+ 梱包明細印刷
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMLControlC.FUNCTION_GOODSM">
+ <summary>
+ 商品Ｍ反映
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMLControlC.FUNCTION_DEL">
+ <summary>
+ 削除
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMLControlC.FUNCTION_HOKOKU">
+ <summary>
+ 報告
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMLControlC.FUNCTION_HOZON">
+ <summary>
+ 保存
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMLControlC.FUNCTION_SHOSAI">
+ <summary>
+ 詳細表示
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMLControlC.FUNCTION_JIKKO">
+ <summary>
+ 実行
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMLControlC.FUNCTION_GETDATA">
+ <summary>
+ データ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMLControlC.FUNCTION_EDIT">
+ <summary>
+ 編集
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMLControlC.FUNCTION_SUZUSHO">
+ <summary>
+ 鈴商
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMLControlC.FUNCTION_HENKHAKU">
+ <summary>
+ 返却
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMLControlC.FUNCTION_SHUKKA">
+ <summary>
+ 出荷
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMLControlC.FUNCTION_HENKHAKU_SHUKKA">
+ <summary>
+ 返却／出荷
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMLControlC.FUNCTION_GETLOG">
+ <summary>
+ 取得ログ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMLControlC.FUNCTION_HAIKI">
+ <summary>
+ 廃棄
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMLControlC.FUNCTION_HAIKI_KAIJO">
+ <summary>
+ 廃棄解除
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMLControlC.FUNCTION_TEIKIKENSA_KANRI">
+ <summary>
+ 定期検査管理
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMLControlC.FUNCTION_PRINT_EXEL">
+ <summary>
+ Excel
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMLControlC.FUNCTION_SINKI">
+ <summary>
+ 新規
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMLControlC.FUNCTION_DEL_REV">
+ <summary>
+ 削除・復活
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMLControlC.FUNCTION_IMPORT_DATA">
+ <summary>
+ 取込更新
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.GUI.LMLControlC.CLERA_DATA">
+ <summary>
+ クリア処理対象コントロール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.GUI.LMLControlG">
+ <summary>
+ LMLControl画面クラス
+ </summary>
+ <remarks></remarks>
+ <histry>
+ </histry>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlG.#ctor(System.Windows.Forms.Form)">
+ <summary>
+ コンストラクタ
+ </summary>
+ <param name="frm">フォームクラス</param>
+ <remarks>フォームラスとハンドラクラスをこのクラスに紐付けます。編集不可</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlG.SetLockInputMan(Jp.Co.Nrs.LM.GUI.Win.Interface.ILMEditableControl,System.Boolean,System.Boolean)">
+ <summary>
+ ロック切り替え処理
+ </summary>
+ <param name="ctl">コントロール(InputManのみ)</param>
+ <param name="lock">ロックフラグ　True:ロック　False:ロック解除</param>
+ <param name="clearFlg">クリアフラグ 初期値 = True</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlG.CreateComboBox(Jp.Co.Nrs.LM.GUI.Win.InputMan.LMImCombo,System.String,System.String[],System.String[],System.String,System.String)">
+ <summary>
+ マスタコンボボックス作成
+ </summary>I
+ <param name="cmb">コンボボックスコントロール</param>
+ <param name="cacheTbl">cacheテーブル名</param>
+ <param name="cdNm">項目名</param>
+ <param name="itemNm">Display項目名</param>
+ <param name="sql">検索条件</param>
+ <param name="sort">ソート</param>
+ <remarks>symbolには必ず2個設定してください。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlG.SetCombData(System.Data.DataRow,System.String[])">
+ <summary>
+ コンボに設定する文字を作成
+ </summary>
+ <param name="dr">DataRow</param>
+ <param name="str">文字型配列</param>
+ <returns>設定文字</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlG.ComboBoxItemAdd(Jp.Co.Nrs.LM.GUI.Win.InputMan.LMImCombo,System.String,System.String)">
+ <summary>
+ コンボに行を追加　
+ </summary>
+ <param name="cmb">コントロール</param>
+ <param name="cd">Value値</param>
+ <param name="item">Text値</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlG.SetDateFormat(Jp.Co.Nrs.LM.GUI.Win.InputMan.LMImDate,System.Boolean)">
+ <summary>
+ 日付コントロールの書式設定
+ </summary>
+ <param name="ctl">コントロール</param>
+ <param name="holidayFlg">休日マスタ反映フラグ 初期値 = True</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlG.ClearControl(System.Windows.Forms.Control)">
+ <summary>
+クリア処理を行う
+ </summary>
+ <param name="ctl">クリア対象項目</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlG.EditConcatData(System.String,System.String,System.String)">
+ <summary>
+ 2つの値を連結して設定
+ </summary>
+ <param name="value1">値1</param>
+ <param name="value2">値2</param>
+ <returns>編集後の値</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlG.GetTarget``1(System.Collections.ArrayList,System.Windows.Forms.Control)">
+ <summary>
+ 画面上のコントロールから指定した型のクラスかその継承クラスを取得する
+ </summary>
+ <param name="arr">取得したコントロールを格納するArrayList</param>
+ <param name="ownControl">コントロール取得元となるコントロール</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlG.SetBackColor(System.Windows.Forms.Control)">
+ <summary>
+ 背景色の初期化
+ </summary>
+ <param name="ctl">制御対象項目</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlG.SelectTantouListDataRow(System.String)">
+ <summary>
+ ユーザーマスタ(キャッシュテーブル)からデータを抽出する条件を取得
+ </summary>
+ <param name="userCd">ユーザーコード</param>
+ <returns>データロウ配列</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlG.SelectTantouString(System.String)">
+ <summary>
+ ユーザーマスタ(キャッシュテーブル)からデータを抽出する条件を取得
+ </summary>
+ <param name="userCd">ユーザーコード</param>
+ <returns>検索条件</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlG.SelectSemiEDIListDatalow(System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ セミEDI情報設定マスタ(キャッシュテーブル)からデータを抽出する条件を取得
+ </summary>
+ <param name="brCd">営業所コード</param>
+ <param name="WhCd">倉庫コード</param>
+ <param name="custCdL">荷主コードL</param>
+ <param name="custCdM">荷主コードM</param>
+ <returns>データロウ配列</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlG.SelectSemiEDIString(System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ セミEDI情報設定マスタ(キャッシュテーブル)からデータを抽出する条件を取得
+ </summary>
+ <param name="brCd">営業所コード</param>
+ <param name="WhCd">倉庫コード</param>
+ <param name="custCdL">荷主コードL</param>
+ <param name="custCdM">荷主コードM</param>
+ <returns>検索条件</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlG.SelectKbnListDataRow(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 区分マスタ(キャッシュテーブル)からデータを抽出する条件を取得
+ </summary>
+ <param name="kbnCd">区分コード</param>
+ <param name="groupCd">区分グループコード</param>
+ <param name="kbnNm1">区分名1</param>
+ <param name="kbnNm2">区分名2</param>
+ <param name="kbnNm3">区分名3</param>
+ <param name="kbnNm4">区分名4</param>
+ <param name="kbnNm5">区分名5</param>
+ <returns>データロウ配列</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlG.SelectKbnString(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 区分マスタ(キャッシュテーブル)からデータを抽出する条件を取得
+ </summary>
+ <param name="kbnCd">区分コード</param>
+ <param name="groupCd">区分グループコード</param>
+ <param name="kbnNm1">区分名1</param>
+ <param name="kbnNm2">区分名2</param>
+ <param name="kbnNm3">区分名3</param>
+ <param name="kbnNm4">区分名4</param>
+ <param name="kbnNm5">区分名5</param>
+ <returns>検索条件</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlG.SelectCustListDataRow(System.String,System.String,System.String,System.String)">
+ <summary>
+ 荷主マスタ(キャッシュテーブル)からデータを抽出する条件を取得
+ </summary>
+ <param name="custLCd">荷主(大)コード</param>
+ <param name="custMCd">荷主(中)コード</param>
+ <param name="custSCd">荷主(小)コード</param>
+ <param name="custSSCd">荷主(極小)コード</param>
+ <returns>データロウ配列</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlG.SelectCustListDataRowByNrsBrCd(System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 荷主マスタ(キャッシュテーブル)からデータを抽出する条件を取得
+ </summary>
+ <param name="custLCd">荷主(大)コード</param>
+ <param name="custMCd">荷主(中)コード</param>
+ <param name="custSCd">荷主(小)コード</param>
+ <param name="custSSCd">荷主(極小)コード</param>
+ <returns>データロウ配列</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlG.SelectCustString(System.String,System.String,System.String,System.String)">
+ <summary>
+ 荷主マスタ(キャッシュテーブル)からデータを抽出する条件を取得
+ </summary>
+ <param name="custLCd">荷主(大)コード</param>
+ <param name="custMCd">荷主(中)コード</param>
+ <param name="custSCd">荷主(小)コード</param>
+ <param name="custSSCd">荷主(極小)コード</param>
+ <returns>検索条件</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlG.SelectCustString(System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 荷主マスタ(キャッシュテーブル)からデータを抽出する条件を取得
+ </summary>
+ <param name="custLCd">荷主(大)コード</param>
+ <param name="custMCd">荷主(中)コード</param>
+ <param name="custSCd">荷主(小)コード</param>
+ <param name="custSSCd">荷主(極小)コード</param>
+ <returns>検索条件</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlG.GetCellValue(FarPoint.Win.Spread.Cell)">
+ <summary>
+ セルから値を取得
+ </summary>
+ <param name="aCell">セル</param>
+ <returns>取得した値</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlG.FormatNumValue(System.String)">
+ <summary>
+ NULLの場合、ゼロを設定
+ </summary>
+ <param name="value">値</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlG.SelectKbnListDataRow(System.String,System.String)">
+ <summary>
+ 区分マスタ(キャッシュテーブル)からデータを抽出する条件を取得
+ </summary>
+ <param name="kbnCd">区分コード</param>
+ <param name="groupCd">区分グループコード</param>
+ <returns>データロウ配列</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlG.SelectKbnString(System.String,System.String)">
+ <summary>
+ 区分マスタ(キャッシュテーブル)からデータを抽出する条件を取得
+ </summary>
+ <param name="kbnCd">区分コード</param>
+ <param name="groupCd">区分グループコード</param>
+ <returns>検索条件</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlG.SelectDestListDataRow(System.String,System.String)">
+ <summary>
+ 届先マスタ(キャッシュテーブル)からデータを抽出する条件を取得
+ </summary>
+ <param name="custLCd">荷主(大)コード</param>
+ <param name="destCd">届先コード</param>
+ <returns>データロウ配列</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.GUI.LMLControlH">
+ <summary>
+ LMLControlハンドラクラス
+ </summary>
+ <remarks></remarks>
+ <histry>
+ </histry>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMLControlH._ControlV">
+ <summary>
+ 共通クラス(V)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMLControlH._ControlG">
+ <summary>
+ 共通クラス(G)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMLControlH._Pgid">
+ <summary>
+ PGID
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlH.#ctor(System.Windows.Forms.Form@,System.String)">
+ <summary>
+ コンストラクタ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlH.SetMessageC001(System.Windows.Forms.Form,System.String)">
+ <summary>
+ 確認メッセージの表示
+ </summary>
+ <param name="frm">フォーム</param>
+ <param name="msg">置換文字</param>
+ <returns>OKの場合:True　Cancelの場合:False</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlH.SetMessageG002(System.Windows.Forms.Form,System.String,System.String)">
+ <summary>
+ 処理終了メッセージを表示
+ </summary>
+ <param name="frm">フォーム</param>
+ <param name="msg1">置換文字1</param>
+ <param name="msg2">置換文字2</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlH.StartAction(System.Windows.Forms.Form)">
+ <summary>
+ 処理開始アクション
+ </summary>
+ <param name="frm">フォーム</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlH.EndAction(System.Windows.Forms.Form,System.String)">
+ <summary>
+ 終了アクション
+ </summary>
+ <param name="frm">フォーム</param>
+ <param name="id">ガイダンスメッセージID</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlH.FailureSelect(System.Windows.Forms.Form)">
+ <summary>
+ 検索失敗時共通処理
+ </summary>
+ <param name="frm">フォーム</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlH.ConfirmMsg(System.Windows.Forms.Form,System.String,System.String)">
+ <summary>
+ 処理続行確認
+ </summary>
+ <param name="frm">フォーム</param>
+ <param name="msg">メッセージ置換文字列(処理名)</param>
+ <param name="_CntSelect">検索結果件数</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlH.CallWSAAction(System.Windows.Forms.Form,System.String,System.String,System.Data.DataSet,System.Int32,System.Int32)">
+ <summary>
+ WSAクラス呼出
+ </summary>
+ <param name="frm">フォーム</param>
+ <param name="BLF">BLFファイル名</param>
+ <param name="actionId">メソッド名</param>
+ <param name="rtDs">データセット</param>
+ <returns>WSA呼出後のデータセット</returns>
+ <returns2>取得エラー時=Nothing。取得成功時=rtnDSを設定。取得0件の時もrtnDSを設定しているのは、呼び元画面にてSpreadクリアの判定に使用するため。</returns2>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlH.GetCheckList(FarPoint.Win.Spread.SheetView,System.Int32)">
+ <summary>
+ スプレッド明細行のチェックリスト(RowIndex)取得
+ </summary>
+ <param name="activeSheet">スプレッドシート</param>
+ <param name="defNo">レコードチェックボックスのカラム№</param>
+ <returns>チェックリスト</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlH.GetList(FarPoint.Win.Spread.SheetView,System.Int32)">
+ <summary>
+ スプレッド明細行のリスト(RowIndex)取得
+ </summary>
+ <param name="activeSheet">スプレッドシート</param>
+ <param name="defNo">レコードチェックボックスのカラム№</param>
+ <returns>チェックリスト</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlH.GetSpredList(FarPoint.Win.Spread.SheetView,System.Int32)">
+ <summary>
+ スプレッド明細行の全量(対象のColum)取得
+ </summary>
+ <param name="activeSheet">スプレッドシート</param>
+ <param name="defNo">レコードチェックボックスのカラム№</param>
+ <returns>チェックリスト</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlH.GetSpredDelFirstList(FarPoint.Win.Spread.SheetView,System.Int32)">
+ <summary>
+ スプレッド明細行の全量(対象のColum)取得
+ </summary>
+ <param name="activeSheet">スプレッドシート</param>
+ <param name="defNo">レコードチェックボックスのカラム№</param>
+ <returns>チェックリスト</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlH.GetCheckColumValue(FarPoint.Win.Spread.SheetView,System.Int32,System.Int32)">
+ <summary>
+ スプレッド対象の値を取得
+ </summary>
+ <param name="activeSheet">スプレッドシート</param>
+ <param name="defNo">レコードチェックボックスのカラム№</param>
+ <param name="i">対象のカラム№</param>
+ <returns>チェックリスト</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlH.NextFocusedControl(System.Windows.Forms.Form,System.Boolean)">
+ <summary>
+ 次コントロールにフォーカス移動
+ </summary>
+ <param name="frm">フォーム</param>
+ <param name="eventFlg">Enterボタンの場合、True</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlH.FormShow(System.Data.DataSet,System.String,System.String)">
+ <summary>
+ 別PG起動処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="id">画面ID</param>
+ <param name="recType">レコードタイプ 初期値 = ""</param>
+ <returns>パラメータクラス</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlH.SetGMessage(System.Windows.Forms.Form,System.String)">
+ <summary>
+ ガイダンスメッセージを表示
+ </summary>
+ <param name="frm">フォーム</param>
+ <param name="id">メッセージID</param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.GUI.LMLControlV">
+ <summary>
+ LMDControlValidateクラス
+ </summary>
+ <remarks>入力チェックを行う</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.#ctor(Jp.Co.Nrs.LM.Base.GUI.LMBaseGUIHandler@,System.Windows.Forms.Form@)">
+ <summary>
+ コンストラクタ
+ </summary>
+ <param name="frm">フォームクラス</param>
+ <param name="handlerClass">このクラスを生成したハンドラクラス</param>
+ <remarks>フォームラスとハンドラクラスをこのクラスに紐付けます。編集不可</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.IsSelectChk(System.Int32)">
+ <summary>
+ 未選択チェック
+ </summary>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.IsSelectInsChk(System.Int32)">
+ <summary>
+ 未選択チェック（行追加時）
+ </summary>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.IsAllDeleteChk(System.Int32,System.Int32)">
+ <summary>
+ 全削除チェック
+ </summary>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.IsSelectOneChk(System.Int32)">
+ <summary>
+ 単一行選択チェック
+ </summary>
+ <param name="chkCnt">チェック行カウント</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.IsFromToChk(System.String,System.String)">
+ <summary>
+ 過去日チェック
+ </summary>
+ <param name="dateFrom">From日</param>
+ <param name="dateTo">To日</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.IsFromToChk2(System.String,System.String)">
+ <summary>
+ 過去日チェック(同日もエラー)
+ </summary>
+ <param name="dateFrom">From日</param>
+ <param name="dateTo">To日</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.SprSelectList(System.Int32,Jp.Co.Nrs.LM.GUI.Win.Spread.LMSpreadSearch@)">
+ <summary>
+ スプレッドでチェックの付いたRowIndexを取得（LMSpreadSearch)
+ </summary>
+ <param name="defNo">チェックボックスセルのカラム№</param>
+ <param name="sprDetail">対象スプレッド</param>
+ <returns>リスト</returns>
+ <remarks>チェックのある行のRowIndexをリストに入れて戻す</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.SprSelectList(System.Int32,Jp.Co.Nrs.LM.GUI.Win.Spread.LMSpread@)">
+ <summary>
+ スプレッドでチェックの付いたRowIndexを取得（LMSpread)
+ </summary>
+ <param name="defNo">チェックボックスセルのカラム№</param>
+ <param name="sprDetail">対象スプレッド</param>
+ <returns>リスト</returns>
+ <remarks>チェックのある行のRowIndexをリストに入れて戻す</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.IsExistMst(System.String,System.String)">
+ <summary>
+ マスタ存在チェック
+ </summary>
+ <param name="tbl">キャッシューテーブル名</param>
+ <param name="whereStr">条件分</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.IsFocusChk(System.String,Jp.Co.Nrs.LM.GUI.Win.InputMan.LMImTextBox[],System.String[],System.Windows.Forms.Control[])">
+ <summary>
+ フォーカス位置チェック
+ </summary>
+ <param name="actionType">アクションタイプ</param>
+ <param name="ctl">コントロール配列</param>
+ <param name="msg">置換文字配列</param>
+ <param name="lblCtl">ラベルコントロール配列</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.IsFoucsReadOnlyChk(Jp.Co.Nrs.LM.GUI.Win.InputMan.LMImTextBox[],System.Int32)">
+ <summary>
+ フォーカス位置が参照可能判定
+ </summary>
+ <param name="ctl">コントロール</param>
+ <param name="max">ループ変数</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks>メインのコントロールでの判定</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.IsFoucsForbiddenWordsChk(Jp.Co.Nrs.LM.GUI.Win.InputMan.LMImTextBox[],System.String[],System.Int32)">
+ <summary>
+ フォーカス位置の禁止文字チェック
+ </summary>
+ <param name="ctl">コントロール配列</param>
+ <param name="msg">置換文字配列</param>
+ <param name="max">ループ変数</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.IsFoucsForbiddenWordsChk(Jp.Co.Nrs.LM.GUI.Win.InputMan.LMImTextBox,System.String)">
+ <summary>
+ フォーカス位置の禁止文字チェック
+ </summary>
+ <param name="ctl">コントロール</param>
+ <param name="msg">置換文字</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.IsFoucsValueChk(Jp.Co.Nrs.LM.GUI.Win.InputMan.LMImTextBox[],System.Int32,System.Windows.Forms.Control[],System.Boolean)">
+ <summary>
+ 値が入っているかを判定
+ </summary>
+ <param name="ctl">コントロール配列</param>
+ <param name="max">ループ変数</param>
+ <param name="lblCtl">ラベルコントロール配列</param>
+ <param name="rtnFLg">Enterの場合：False　マスタ参照の場合：True</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.IsFoucsValueChk(Jp.Co.Nrs.LM.GUI.Win.InputMan.LMImTextBox[],System.Int32)">
+ <summary>
+ 値が入っているかを判定
+ </summary>
+ <param name="ctl">コントロール配列</param>
+ <param name="max">ループ変数</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.IsFoucsValueChk(Jp.Co.Nrs.LM.GUI.Win.InputMan.LMImTextBox)">
+ <summary>
+ 値が入っているかを判定
+ </summary>
+ <param name="ctl">コントロール</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.IsKinsiByteChk(Jp.Co.Nrs.LM.GUI.Win.InputMan.LMImTextBox,System.String,System.Int32)">
+ <summary>
+ 禁止文字、バイトチェック(InputMan)
+ </summary>
+ <param name="ctl">コントロール</param>
+ <param name="msg">置換文字</param>
+ <param name="keta">桁数</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.IsKinsiByteChk(Jp.Co.Nrs.LM.Utility.Spread.LMValidatableCells,System.Int32,System.Int32,System.String,System.Int32)">
+ <summary>
+ 禁止文字、バイトチェック(Spread)
+ </summary>
+ <param name="vCell">バリデータセル</param>
+ <param name="rowNo">行番号</param>
+ <param name="colNo">列番号</param>
+ <param name="msg">置換文字</param>
+ <param name="keta">桁数</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.IsInputDateFullByteChk(Jp.Co.Nrs.LM.GUI.Win.InputMan.LMImDate,System.String)">
+ <summary>
+ 日付のフルバイトチェック
+ </summary>
+ <param name="ctl">コントロール</param>
+ <param name="str">置換文字</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.IsAuthorityChk(System.Boolean)">
+ <summary>
+ 権限チェックのエラーメッセージ設定
+ </summary>
+ <param name="kengenFlg">チェック結果</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.TrimSpaceSprTextvalue(Jp.Co.Nrs.LM.GUI.Win.Spread.LMSpread)">
+ <summary>
+ スプレッドの値をTrim
+ </summary>
+ <param name="spr">スプレッド</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.TrimSpaceSprTextvalue(Jp.Co.Nrs.LM.GUI.Win.Spread.LMSpread,System.Int32)">
+ <summary>
+ スプレッドの値をTrim
+ </summary>
+ <param name="spr">スプレッド</param>
+ <param name="rowNo">行番号</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.SelectSokoListDataRow(System.String)">
+ <summary>
+ 倉庫マスタ(キャッシュテーブル)からデータを抽出する条件を取得
+ </summary>
+ <param name="whCd">倉庫コード</param>
+ <returns>データロウ配列</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.SelectSokoString(System.String)">
+ <summary>
+ 倉庫マスタ(キャッシュテーブル)からデータを抽出する条件を取得
+ </summary>
+ <param name="whCd">倉庫コード</param>
+ <returns>検索条件</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.SelectCustListDataRow(System.String,System.String,System.String,System.String)">
+ <summary>
+ 荷主マスタ(キャッシュテーブル)からデータを抽出する条件を取得
+ </summary>
+ <param name="custLCd">荷主(大)コード</param>
+ <param name="custMCd">荷主(中)コード</param>
+ <param name="custSCd">荷主(小)コード</param>
+ <param name="custSSCd">荷主(極小)コード</param>
+ <returns>データロウ配列</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.SelectCustString(System.String,System.String,System.String,System.String)">
+ <summary>
+ 荷主マスタ(キャッシュテーブル)からデータを抽出する条件を取得
+ </summary>
+ <param name="custLCd">荷主(大)コード</param>
+ <param name="custMCd">荷主(中)コード</param>
+ <param name="custSCd">荷主(小)コード</param>
+ <param name="custSSCd">荷主(極小)コード</param>
+ <returns>検索条件</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.SelectSagyoListDataRow(System.String,System.String,System.String)">
+ <summary>
+ 作業項目マスタ(キャッシュテーブル)からデータを抽出する条件を取得
+ </summary>
+ <param name="sagyoCd">作業コード</param>
+ <returns>データロウ配列</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.SelectSagyoString(System.String,System.String,System.String)">
+ <summary>
+ 作業項目マスタ(キャッシュテーブル)からデータを抽出する条件を取得
+ </summary>
+ <param name="sagyoCd">作業コード</param>
+ <returns>検索条件</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.SelectUnsocoListDataRow(System.String,System.String)">
+ <summary>
+ 運送会社マスタ(キャッシュテーブル)からデータを抽出する条件を取得
+ </summary>
+ <param name="unsoCd">運送会社コード</param>
+ <param name="unsoShitenCd">運送会社支店コード</param>
+ <returns>データロウ配列</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.SelectUnsocoString(System.String,System.String)">
+ <summary>
+ 運送会社マスタ(キャッシュテーブル)からデータを抽出する条件を取得
+ </summary>
+ <param name="unsoCd">運送会社コード</param>
+ <param name="unsoShitenCd">運送会社支店コード</param>
+ <returns>検索条件</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.SelectUnchinTariffListDataRow(System.String,System.String,System.String)">
+ <summary>
+ 運賃タリフマスタ(キャッシュテーブル)からデータを抽出する条件を取得
+ </summary>
+ <param name="tariffCd">運賃タリフコード</param>
+ <param name="tariffCdEda">運賃タリフコード枝番</param>
+ <param name="startDate">適用開始日</param>
+ <returns>データロウ配列</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.SelectUnchinTariffString(System.String,System.String,System.String)">
+ <summary>
+ 運賃タリフマスタ(キャッシュテーブル)からデータを抽出する条件を取得
+ </summary>
+ <param name="tariffCd">運賃タリフコード</param>
+ <param name="tariffCdEda">運賃タリフコード枝番</param>
+ <param name="startDate">適用開始日</param>
+ <returns>検索条件</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.SelectYokoTariffListDataRow(System.String,System.String)">
+ <summary>
+ 横持ちタリフマスタ(キャッシュテーブル)からデータを抽出する条件を取得
+ </summary>
+ <param name="brCd">営業所コード</param>
+ <param name="tariffCd">横持ちタリフコード</param>
+ <returns>データロウ配列</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.SelectYokoTariffString(System.String,System.String)">
+ <summary>
+ 横持ちタリフマスタ(キャッシュテーブル)からデータを抽出する条件を取得
+ </summary>
+ <param name="brCd">営業所コード</param>
+ <param name="tariffCd">横持ちタリフコード</param>
+ <returns>検索条件</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.SelectSeiqtoListDataRow(System.String,System.String)">
+ <summary>
+ 請求先タリフマスタ(キャッシュテーブル)からデータを抽出する条件を取得
+ </summary>
+ <param name="brCd">営業所コード</param>
+ <param name="seqtoCd">請求先コード</param>
+ <returns>データロウ配列</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.SelectSeiqtoString(System.String,System.String)">
+ <summary>
+ 請求先タリフマスタ(キャッシュテーブル)からデータを抽出する条件を取得
+ </summary>
+ <param name="brCd">営業所コード</param>
+ <param name="seqtoCd">請求先コード</param>
+ <returns>検索条件</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.SelectDestListDataRow(System.String,System.String,System.String)">
+ <summary>
+ 届先タリフマスタ(キャッシュテーブル)からデータを抽出する条件を取得
+ </summary>
+ <param name="brCd">営業所コード</param>
+ <param name="custLCd">荷主(大)コード</param>
+ <param name="destCd">届先コード</param>
+ <returns>データロウ配列</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.SelectDestString(System.String,System.String,System.String)">
+ <summary>
+ 届先タリフマスタ(キャッシュテーブル)からデータを抽出する条件を取得
+ </summary>
+ <param name="brCd">営業所コード</param>
+ <param name="custLCd">荷主(大)コード</param>
+ <param name="destCd">届先コード</param>
+ <returns>検索条件</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.SelectTouSituListDataRow(System.String,System.String,System.String,System.String)">
+ <summary>
+ 棟・室マスタ(キャッシュテーブル)からデータを抽出する条件を取得
+ </summary>
+ <param name="brCd">営業所コード</param>
+ <param name="whCd">倉庫コード</param>
+ <param name="touNo">棟コード</param>
+ <param name="situNo">室コード</param>
+ <returns>データロウ配列</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.SelectToShitsuListDataRow(System.String,System.String,System.String,System.String)">
+ <summary>
+ 棟・室マスタ(キャッシュテーブル)からデータを抽出する条件を取得
+ </summary>
+ <param name="brCd">営業所コード</param>
+ <param name="whCd">倉庫コード</param>
+ <param name="touNo">棟コード</param>
+ <param name="situNo">室コード</param>
+ <returns>データロウ配列</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.SelectToShitsuString(System.String,System.String,System.String,System.String)">
+ <summary>
+ 棟・室マスタ(キャッシュテーブル)からデータを抽出する条件を取得
+ </summary>
+ <param name="brCd">営業所コード</param>
+ <param name="whCd">倉庫コード</param>
+ <param name="touNo">棟コード</param>
+ <param name="situNo">室コード</param>
+ <returns>検索条件</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.SelectZoneListDataRow(System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ ZONEマスタ(キャッシュテーブル)からデータを抽出する条件を取得
+ </summary>
+ <param name="brCd">営業所コード</param>
+ <param name="whCd">倉庫コード</param>
+ <param name="touNo">棟コード</param>
+ <param name="situNo">室コード</param>
+ <param name="zoneCd">ZONEコード</param>
+ <returns>データロウ配列</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.SelectZoneString(System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ ZONEマスタ(キャッシュテーブル)からデータを抽出する条件を取得
+ </summary>
+ <param name="brCd">営業所コード</param>
+ <param name="whCd">倉庫コード</param>
+ <param name="touNo">棟コード</param>
+ <param name="situNo">室コード</param>
+ <param name="zoneCd">ZONEコード</param>
+ <returns>検索条件</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.SelectgoodsListDataRow(System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 商品マスタ(キャッシュテーブル)からデータを抽出する条件を取得
+ </summary>
+ <param name="goods">商品key</param>
+ <returns>データロウ配列</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.SelectgoodsListDataRow(System.String,System.String)">
+ <summary>
+ 商品マスタ(キャッシュテーブル)からデータを抽出する条件を取得
+ </summary>
+ <param name="goods">商品key</param>
+ <returns>データロウ配列</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.SelectgoodsString(System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 商品マスタ(キャッシュテーブル)からデータを抽出する条件を取得
+ </summary>
+ <param name="goods">商品key</param>
+ <returns>検索条件</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.SelectToShitsuZoneListDataRow(System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 棟・室・ZONEマスタ(キャッシュテーブル)からデータを抽出する条件を取得
+ </summary>
+ <param name="brCd">営業所コード</param>
+ <param name="whCd">倉庫コード</param>
+ <param name="touNo">棟コード</param>
+ <param name="situNo">室コード</param>
+ <param name="zoneCd">ZONEコード</param>
+ <returns>データロウ配列</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.SelectToShitsuZoneString(System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 棟・室・ZONEマスタ(キャッシュテーブル)からデータを抽出する条件を取得
+ </summary>
+ <param name="brCd">営業所コード</param>
+ <param name="whCd">倉庫コード</param>
+ <param name="touNo">棟コード</param>
+ <param name="situNo">室コード</param>
+ <param name="zoneCd">ZONEコード</param>
+ <returns>検索条件</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.SelectCustDetailsListDataRow(System.String)">
+ <summary>
+ 荷主明細マスタ(キャッシュテーブル)からデータを抽出する条件を取得
+ </summary>
+ <param name="custCd">荷主コード</param>
+ <returns>データロウ配列</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.SelectCustDetailsString(System.String)">
+ <summary>
+ 荷主明細マスタ(キャッシュテーブル)からデータを抽出する条件を取得
+ </summary>
+ <param name="custCd">荷主コード</param>
+ <returns>検索条件</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.SetErrMessage(System.String)">
+ <summary>
+ メッセージ設定
+ </summary>
+ <param name="id">メッセージID</param>
+ <returns>False</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.SetErrMessage(System.String,System.String[])">
+ <summary>
+ メッセージ設定
+ </summary>
+ <param name="id">メッセージID</param>
+ <param name="msg">置換文字</param>
+ <returns>False</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.SetFocusErrMessage">
+ <summary>
+ フォーカス位置エラーのメッセージ設定
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.SetMstErrMessage(System.String,System.String)">
+ <summary>
+ マスタ存在チェックエラーのメッセージ設定
+ </summary>
+ <param name="value1">置換文字1</param>
+ <param name="value2">置換文字2</param>
+ <returns>False</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.SetFocusErrMessage(System.Boolean)">
+ <summary>
+ フォーカス位置エラーのメッセージ設定
+ </summary>
+ <param name="chk">判定フラグ</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.SetErrorControl(System.Windows.Forms.Control,Jp.Co.Nrs.LM.GUI.Win.LMTab,System.Windows.Forms.TabPage)">
+ <summary>
+ エラー項目の背景色とフォーカスを設定する
+ </summary>
+ <param name="ctl">エラーコントロール</param>
+ <param name="tab">タブ　初期値 = Nothing</param>
+ <param name="tabPage">タブページ　初期値 = Nothing</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.SetErrorControl(System.Windows.Forms.Control[],System.Windows.Forms.Control,Jp.Co.Nrs.LM.GUI.Win.LMTab,System.Windows.Forms.TabPage)">
+ <summary>
+ エラー項目の背景色とフォーカスを設定する
+ </summary>
+ <param name="errorCtl">エラーコントロール</param>
+ <param name="focusCtl">フォーカス設定コントロール</param>
+ <param name="tab">タブ　初期値 = Nothing</param>
+ <param name="tabPage">タブページ　初期値 = Nothing</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.SetErrorControl(Jp.Co.Nrs.LM.GUI.Win.Spread.LMSpread,System.Int32,System.Int32,Jp.Co.Nrs.LM.GUI.Win.LMTab,System.Windows.Forms.TabPage)">
+ <summary>
+ エラーコントロール設定(明細用)
+ </summary>
+ <param name="spr">スプレッド</param>
+ <param name="rowNo">行番号</param>
+ <param name="colNo">列番号</param>
+ <param name="tab">タブ　初期値 = Nothing</param>
+ <param name="tabPage">タブページ　初期値 = Nothing</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.SetErrorControl(Jp.Co.Nrs.LM.GUI.Win.Spread.LMSpread,System.Int32[],System.Int32[],Jp.Co.Nrs.LM.GUI.Win.LMTab,System.Windows.Forms.TabPage)">
+ <summary>
+ エラーコントロール設定(明細用(複数セルにエラー色可能))
+ </summary>
+ <param name="spr">スプレッド</param>
+ <param name="rowNo">行番号</param>
+ <param name="colNo">列番号</param>
+ <param name="tab">タブ　初期値 = Nothing</param>
+ <param name="tabPage">タブページ　初期値 = Nothing</param>
+ <remarks>row(0),col(0)に設定したセルにフォーカスを設定する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.GetCellValue(FarPoint.Win.Spread.Cell)">
+ <summary>
+ セルから値を取得
+ </summary>
+ <param name="aCell">セル</param>
+ <returns>取得した値</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.GetCellValueNotTrim(FarPoint.Win.Spread.Cell)">
+ <summary>
+ セルから値を取得
+ </summary>
+ <param name="aCell">セル</param>
+ <returns>取得した値</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.SetRepMsgData(System.String)">
+ <summary>
+ vbCrLf,"　"を空文字に変換
+ </summary>
+ <param name="value">値</param>
+ <returns>値</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.IsCalcOver(System.String,System.String,System.String)">
+ <summary>
+ 計算結果チェック
+ </summary>
+ <param name="value">値</param>
+ <param name="minData">最小値</param>
+ <param name="maxData">最大値</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.IsOverMaxChkeck(System.Decimal,System.Decimal)">
+ <summary>
+ 最大限界値チェック
+ </summary>
+ <param name="value">判定値</param>
+ <param name="maxLength">最大</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.IsOverMinChkeck(System.Decimal,System.Decimal)">
+ <summary>
+ 最小限界値チェック
+ </summary>
+ <param name="value">判定値</param>
+ <param name="bottom">最小</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMLControlV.ClearControl(System.Windows.Forms.Control)">
+ <summary>
+ 値クリア
+ </summary>
+ <param name="ctl">コントロール</param>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

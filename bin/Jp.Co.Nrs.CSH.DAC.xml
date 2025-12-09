@@ -1,0 +1,261 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.CSH.DAC
+</name>
+</assembly>
+<members>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSH710DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSH710DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSH710DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSH710DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSH710DAC.PrintTankPlanList(System.Data.DataSet)">
+ <summary>
+ 帳票出力データ取得（容器計画）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>帳票出力データ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSH710DAC.PrintSalesPlanList(System.Data.DataSet)">
+ <summary>
+ 販売計画情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>滞留期間情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSH710DAC.PrintRetentionPeriodList(System.Data.DataSet)">
+ <summary>
+ 滞留期間情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>滞留期間情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSH710DAC.PrintFileInfo(System.Data.DataSet)">
+ <summary>
+ テンプレートファイルデータ取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>テンプレートファイルデータ処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSH710DAC.PrintItemInfo(System.Data.DataSet)">
+ <summary>
+ 製品マスタデータ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>製品マスタデータ処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSH710DAC.PrintDestInfo(System.Data.DataSet)">
+ <summary>
+ 納品先マスタデータ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>納品先マスタデータ処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSH710DAC.SetSQLSetParamTankPlan">
+ <summary>
+ 処理キー
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSH710DAC.SetSQLSetParamSalesPlan">
+ <summary>
+ 販売計画
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSH710DAC.SetSQLSetParamRetentionPeriod">
+ <summary>
+ 滞留期間
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSH710DAC.SetSQLSetParamTempFile">
+ <summary>
+ テンプレートファイル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSH710DAC.SetSQLSetParamItemData">
+ <summary>
+ 製品マスタ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSH710DAC.SetSQLSetParamDestData">
+ <summary>
+ 納品先マスタ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.DAC.CSH010DAC.TABLE_NM">
+ <summary>
+ テーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.DAC.CSH010DAC.FUNCTION_NM.SAVE.RENTENTION_PERIOD">
+ <summary>
+ 滞留期間
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSH010DAC._Row">
+ <summary>
+ 条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSH010DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSH010DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSH010DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSH010DAC.StartDacActionRowOrd(System.Data.DataTable,System.Int32)">
+ <summary>
+ SQL関連変数初期化(行数指定)
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSH010DAC.RetentionPeriodData(System.Data.DataSet)">
+ <summary>
+ 滞留期間情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>滞留期間情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSH010DAC.ProcessResultData(System.Data.DataSet)">
+ <summary>
+ 処理結果情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>処理結果情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSH010DAC.SaveSalesPlan(System.Data.DataSet)">
+ <summary>
+ 販売計画
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>販売計画取込処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSH010DAC.SaveRetentionPeriodInput(System.Data.DataSet)">
+ <summary>
+ 滞留期間入力
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>滞留期間実行処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSH010DAC.SaveProcessResult(System.Data.DataSet)">
+ <summary>
+ 処理結果
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>処理結果SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSH010DAC.SaveRetentionPeriod(System.Data.DataSet)">
+ <summary>
+ 滞留期間
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>滞留期間更新処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSH010DAC.ExecStoredProcedure(System.Data.DataSet)">
+ <summary>
+ ストアド実行処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSH010DAC.SetSQLSetParamCommon">
+ <summary>
+ 取得条件設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSH010DAC.SetSQLSetParamSalesPlan">
+ <summary>
+ 販売計画
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSH010DAC.SetSQLSetParamInputRetentionPeriod(System.Data.DataRow)">
+ <summary>
+ 滞留期間更新
+ </summary>
+ <param name="conditionRow"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSH010DAC.SetSQLSetParamSaveRetentionPeriodInput">
+ <summary>
+ 滞留期間入力
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSH010DAC.SetSQLSetParamProcessResult">
+ <summary>
+ 処理結果
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSH010DAC.SetSQLSetParamSaveRetentionPeriod">
+ <summary>
+ 滞留期間
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSH010DAC.SetSysCommonParameter">
+ <summary>
+ システム共通共通パラメータ(削除フラグを除く）
+ </summary>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

@@ -1,0 +1,449 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.GLTI.DAC
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.GL.DAC.My.Resources.Resources">
+<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.GL.DAC.My.Resources.Resources.ResourceManager">
+<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.GL.DAC.My.Resources.Resources.Culture">
+<summary>
+  すべてについて、現在のスレッドの CurrentUICulture プロパティをオーバーライドします
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLTI0100DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLTI0100DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLTI0100DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLTI0100DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLTI0100DAC.SearchResultList(System.Data.DataSet)">
+ <summary>
+ Tank Inventory取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>取得処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLTI0100DAC.SearchContInfo(System.Data.DataSet)">
+ <summary>
+ Container取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>取得処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLTI0100DAC.SetSQLSelectWhere(System.Data.DataSet)">
+ <summary>
+ Tank Inventory取得条件設定
+ </summary>
+ <remarks>取得処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLTI0100DAC.SetWhereStage">
+ <summary>
+ Stage条件設定
+ </summary>
+ <remarks>取得処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLTI0100DAC.GetAgentOfficeParameterCreate(System.Data.DataSet,System.Collections.Generic.List{System.String})">
+ <summary>
+ ログイン情報に紐づくOfficeを検索条件へ設定する
+ </summary>
+ <param name="ds"></param>
+ <param name="agentConditionLst"></param>
+ <returns>whereOffice</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLTI0100DAC.GetAgentOfficeParameter(System.Data.DataSet,System.Collections.Generic.List{System.String})">
+ <summary>
+ ログイン情報に紐づくOfficeを検索条件へ設定する
+ </summary>
+ <param name="ds"></param>
+ <param name="agentConditionLst"></param>
+ <returns>whereStr</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLTI0100DAC.SetContNoFormat(System.String)">
+ <summary>
+ 検索条件コンテナ番号フォーマット変換
+ </summary>
+ <param name="contNo"></param>
+ <returns></returns>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLTI0300DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLTI0300DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLTI0300DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLTI0300DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLTI0300DAC.SearchContNo(System.Data.DataSet)">
+ <summary>
+ ContNo取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLTI0300DAC.SearchData(System.Data.DataSet)">
+ <summary>
+ Reminder情報取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>取得処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLTI0300DAC.SearchMaxSeqData(System.Data.DataSet)">
+ <summary>
+ MaxSeq情報取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>取得処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLTI0300DAC.IsHaitaChkContRem(System.Data.DataSet)">
+ <summary>
+ 排他制御処理(C_CONT_REMINDER)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>取得処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLTI0300DAC.IsDuplicationChkContRem(System.Data.DataSet)">
+ <summary>
+ 重複チェック処理(C_CONT_REMINDER)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>取得処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLTI0300DAC.DeleteContRemData(System.Data.DataSet)">
+ <summary>
+ 削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>取得処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLTI0300DAC.InsertContRemData(System.Data.DataSet)">
+ <summary>
+ 登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>取得処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLTI0300DAC.UpdateContRemData(System.Data.DataSet)">
+ <summary>
+ 更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>取得処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLTI0300DAC.SetParamItem">
+ <summary>
+ 登録・更新パラメータ設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLTI0200DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLTI0200DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLTI0200DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLTI0200DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLTI0200DAC.SearchData(System.Data.DataSet)">
+ <summary>
+ タンク情報取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>取得処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLTI0200DAC.SearchDataTank(System.Data.DataSet)">
+ <summary>
+ タンク情報取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>取得処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLTI0200DAC.SearchDataCont(System.Data.DataSet)">
+ <summary>
+ タンク情報取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>取得処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLTI0200DAC.IsHaitaChkCont(System.Data.DataSet)">
+ <summary>
+ 排他制御処理(C_CONT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>取得処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLTI0200DAC.IsHaitaChkBasis(System.Data.DataSet)">
+ <summary>
+ 排他制御処理(C_BASIS)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>取得処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLTI0200DAC.IsHaitaChkLastCont(System.Data.DataSet)">
+ <summary>
+ 排他制御処理(C_CONT)(前回)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>取得処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLTI0200DAC.IsHaitaChkLastBasis(System.Data.DataSet)">
+ <summary>
+ 排他制御処理(C_BASIS)(前回)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>取得処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLTI0200DAC.UpdateContDataNew(System.Data.DataSet)">
+ <summary>
+ 更新処理(レコードステータス:New)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>取得処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLTI0200DAC.InsertContData(System.Data.DataSet)">
+ <summary>
+ 登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>取得処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLTI0200DAC.UpdateContData(System.Data.DataSet)">
+ <summary>
+ 更新処理(レコードステータス:Nomal)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>取得処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLTI0200DAC.UpdateBasisData(System.Data.DataSet)">
+ <summary>
+ 更新処理(B_BASIS)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>取得処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLTI0200DAC.DeleteContData(System.Data.DataSet)">
+ <summary>
+ 削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>取得処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLTI0200DAC.UpdateLastContData(System.Data.DataSet)">
+ <summary>
+ 前回JOB更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>取得処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLTI0200DAC.UpdateConfirmContData(System.Data.DataSet)">
+ <summary>
+ Confirm処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>取得処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLTI0200DAC.UpdateRemarkData(System.Data.DataSet)">
+ <summary>
+ OK処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>取得処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLTI0200DAC.UpdateCancelContData(System.Data.DataSet)">
+ <summary>
+ Cancel処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>取得処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLTI0200DAC.UpdateRollBackContData(System.Data.DataSet)">
+ <summary>
+ RollBack処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>取得処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLTI0200DAC.UpdateBkgContFromTankMaster(System.Data.DataSet)">
+ <summary>
+ C_CONT更新(コンテナ追加時)(新規登録コンテナを対象としてタンクマスタの値で更新)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>C_CONT更新処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLTI0200DAC.SetInsertContParamOnHire">
+ <summary>
+ 登録パラメータ設定処理(On Hire)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLTI0200DAC.SetInsertContParamOffHire">
+ <summary>
+ 登録パラメータ設定処理(Off Hire)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLTI0200DAC.SetInsertContParamSubLease">
+ <summary>
+ 登録パラメータ設定処理(Sub lease)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLTI0200DAC.SetUpdateContParamHire">
+ <summary>
+ 更新パラメータ設定処理(On Hire、Off Hire)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLTI0200DAC.SetUpdateContParamSubLease">
+ <summary>
+ 更新パラメータ設定処理(Sub lease)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLTI0200DAC.SetUpdateContParamInventryItem">
+ <summary>
+ 更新パラメータ設定処理(Inventry Item)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLTI5010DAC.SQL_ORDER_BY">
+ <summary>
+ 並び順
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLTI5010DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLTI5010DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLTI5010DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLTI5010DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLTI5010DAC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 在庫表取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>在庫表取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLTI5010DAC.SetSQLSelectWhere">
+ <summary>
+ 条件文・パラメータ設定モジュール★修正する★
+ </summary>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

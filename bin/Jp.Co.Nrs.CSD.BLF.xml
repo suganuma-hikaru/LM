@@ -1,0 +1,467 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.CSD.BLF
+</name>
+</assembly>
+<members>
+<member name="F:Jp.Co.Nrs.CS.BLF.CSD010BLF.FUNCTION_NM.SELECT_DATA">
+ <summary>
+ 初期表示取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLF.CSD010BLF.FUNCTION_NM.HAITA_CHK">
+ <summary>
+ 排他チェック
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLF.CSD010BLF.FUNCTION_NM.HAITA_CHK_MAIL">
+ <summary>
+ 排他チェック（メール用）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLF.CSD010BLF.FUNCTION_NM.SAVE_UPD">
+ <summary>
+ 保存(更新)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLF.CSD010BLF.FUNCTION_NM.MAIL_SEND_CHECK_REMINDER">
+ <summary>
+ 確認催促指示メール送信
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLF.CSD010BLF.FUNCTION_NM.MAIL_SEND_CONF_RETURN">
+ <summary>
+ 返却可否確認メール送信
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLF.CSD010BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLF.CSD010BLF.SearchResultList(System.Data.DataSet)">
+ <summary>
+ 検索結果取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLF.CSD010BLF.isHaitaChk(System.Data.DataSet)">
+ <summary>
+ 排他制御
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLF.CSD010BLF.isHaitaChkMail(System.Data.DataSet)">
+ <summary>
+ 排他制御（メール用）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLF.CSD010BLF.UpdateReturnOkNg(System.Data.DataSet)">
+ <summary>
+ 返却可否更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLF.CSD010BLF.UpdateMailSendCheckReminderData(System.Data.DataSet)">
+ <summary>
+ 確認催促指示メール送信処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLF.CSD010BLF.UpdateMailSendConfReturnData(System.Data.DataSet)">
+ <summary>
+ 返却可否確認メール送信処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLF.CSD040BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLF.CSD040BLF.GetOrderData(System.Data.DataSet)">
+ <summary>
+ 全データ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLF.CSD040BLF.GetBasicOrderData(System.Data.DataSet)">
+ <summary>
+ 基本データ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLF.CSD040BLF.Save(System.Data.DataSet)">
+ <summary>
+ 依頼情報登録・更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLF.CSD040BLF.UpStageData(System.Data.DataSet)">
+ <summary>
+ ステージ更新時処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLF.CSD040BLF.BackStageData(System.Data.DataSet)">
+ <summary>
+ ステージ更新時処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLF.CSD040BLF.IsHaitaOrd(System.Data.DataSet)">
+ <summary>
+ 排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLF.CSD130BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLF.CSD130BLF.GetOrderData(System.Data.DataSet)">
+ <summary>
+ 全データ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLF.CSD130BLF.GetBasicOrderData(System.Data.DataSet)">
+ <summary>
+ 基本データ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLF.CSD130BLF.Save(System.Data.DataSet)">
+ <summary>
+ 依頼情報登録・更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLF.CSD130BLF.UpStageData(System.Data.DataSet)">
+ <summary>
+ ステージ更新時処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLF.CSD130BLF.UpInfoData(System.Data.DataSet)">
+ <summary>
+ ステージ更新時処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLF.CSD130BLF.BackStageData(System.Data.DataSet)">
+ <summary>
+ ステージ更新時処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLF.CSD130BLF.IsHaitaOrd(System.Data.DataSet)">
+ <summary>
+ 排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLF.CSD120BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLF.CSD120BLF.GetOrderData(System.Data.DataSet)">
+ <summary>
+ 全データ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLF.CSD120BLF.GetBasicOrderData(System.Data.DataSet)">
+ <summary>
+ 基本データ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLF.CSD120BLF.Save(System.Data.DataSet)">
+ <summary>
+ 依頼情報登録・更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLF.CSD120BLF.UpStageData(System.Data.DataSet)">
+ <summary>
+ ステージ更新時処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLF.CSD120BLF.UpInfoData(System.Data.DataSet)">
+ <summary>
+ ステージ更新時処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLF.CSD120BLF.BackStageData(System.Data.DataSet)">
+ <summary>
+ ステージ更新時処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLF.CSD120BLF.IsHaitaOrd(System.Data.DataSet)">
+ <summary>
+ 排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLF.CSD120BLF.BookingCancel(System.Data.DataSet)">
+ <summary>
+ ブッキングキャンセル処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLF.CSD020BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLF.CSD020BLF.GetOrderData(System.Data.DataSet)">
+ <summary>
+ 全データ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLF.CSD020BLF.GetBasicOrderData(System.Data.DataSet)">
+ <summary>
+ 基本データ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLF.CSD020BLF.Save(System.Data.DataSet)">
+ <summary>
+ 依頼情報登録・更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLF.CSD020BLF.UpStageData(System.Data.DataSet)">
+ <summary>
+ ステージ更新時処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLF.CSD020BLF.BackStageData(System.Data.DataSet)">
+ <summary>
+ ステージ更新時処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLF.CSD020BLF.IsHaitaOrd(System.Data.DataSet)">
+ <summary>
+ 排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLF.CSD030BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLF.CSD030BLF.SearchResultList(System.Data.DataSet)">
+ <summary>
+ 検索結果取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLF.CSD110BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLF.CSD110BLF.SearchResultList(System.Data.DataSet)">
+ <summary>
+ 検索結果取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLF.CSD210BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLF.CSD210BLF.SearchResultList(System.Data.DataSet)">
+ <summary>
+ 検索結果取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLF.CSD220BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLF.CSD220BLF.SelectData(System.Data.DataSet)">
+ <summary>
+ データ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLF.CSD220BLF.InsertSaveData(System.Data.DataSet)">
+ <summary>
+ 保存(新規)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLF.CSD220BLF.UpdateSaveData(System.Data.DataSet)">
+ <summary>
+ 保存(更新)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLF.CSD220BLF.DeleteData(System.Data.DataSet)">
+ <summary>
+ 削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLF.CSD220BLF.OrderData(System.Data.DataSet)">
+ <summary>
+ 依頼
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLF.CSD220BLF.RecieveData(System.Data.DataSet)">
+ <summary>
+ 受諾
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLF.CSD220BLF.NoRecieveData(System.Data.DataSet)">
+ <summary>
+ 不可
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLF.CSD220BLF.RollBackData(System.Data.DataSet)">
+ <summary>
+ 取戻
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLF.CSD220BLF.isHaitaChk(System.Data.DataSet)">
+ <summary>
+ 排他制御(Edit時)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLF.CSD710BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLF.CSD710BLF.PrintProductList(System.Data.DataSet)">
+ <summary>
+ Product List印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLF.CSD720BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLF.CSD720BLF.PrintInvoice(System.Data.DataSet)">
+ <summary>
+ Invoice印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLF.CSD730BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLF.CSD730BLF.PrintPackingList(System.Data.DataSet)">
+ <summary>
+ Packing List印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLF.CSD740BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLF.CSD740BLF.PrintTankList(System.Data.DataSet)">
+ <summary>
+ Tank List印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

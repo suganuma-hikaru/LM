@@ -1,0 +1,2471 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.KD.BLC
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.KD.BLC.My.Resources.Resources">
+<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.KD.BLC.My.Resources.Resources.ResourceManager">
+<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.KD.BLC.My.Resources.Resources.Culture">
+<summary>
+  すべてについて、現在のスレッドの CurrentUICulture プロパティをオーバーライドします
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDA010BLC.SelectLoginInfo(System.Data.DataSet)">
+ =====================================================================
+ <summary>ユーザー情報取得</summary>
+ =====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDB010BLC.SelectOrderList(System.Data.DataSet)">
+ ====================================================================
+ <summary>依頼一覧検索結果取得</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+ ====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDB020BLC.CheckExistence(System.Data.DataSet)">
+ ====================================================================
+ <summary>依頼基本存在／排他チェック</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDB020BLC.CheckExistenceInout(System.Data.DataSet)">
+ ====================================================================
+ <summary>依頼基本排他チェック／入出場基本存在チェック</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDB020BLC.CGOCheck(System.Data.DataSet)">
+ ====================================================================
+ <summary>積載品存在チェック</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDB020BLC.SelectOrderData(System.Data.DataSet)">
+ ====================================================================
+ <summary>依頼編集データ検索</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+ ====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDB020BLC.SaveOrderData(System.Data.DataSet)">
+ ====================================================================
+ <summary>依頼編集データ保存</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+ ====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDB020BLC.ReviseOrderData(System.Data.DataSet)">
+ ====================================================================
+ <summary>依頼データ初期化</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+ ====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDB020BLC.ConfirmOrderData(System.Data.DataSet)">
+ ====================================================================
+ <summary>依頼編集データ確定</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+ ====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDB020BLC.DeleteOrderData(System.Data.DataSet)">
+ ====================================================================
+ <summary>依頼編集データ削除</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+ ====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDB020BLC.PrintOrderData(System.Data.DataSet)">
+ ====================================================================
+ <summary>依頼編集印刷日更新</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+ ====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDB020BLC.SelectInOutStatus(System.Data.DataSet)">
+ ====================================================================
+ <summary>入出場作成</summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks>入出場基本情報テーブルで入出ステータス確認</remarks>
+ ====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDB020BLC.SendMailData(System.Data.DataSet)">
+ ====================================================================
+ <summary>メール送信</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDB500BLC.SelectDepotOrderPrint(System.Data.DataSet)">
+ ====================================================================
+ <summary>デポオーダー書</summary>
+ <param name="ds">DataSet</param>
+ <returns></returns>
+ <remarks></remarks>
+ ====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC010BLC.SelectCinoutListData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>入出場_検索一覧検索</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC010BLC.OutOrderRepeatChick(System.Data.DataSet)">
+ ==========================================================================
+ <summary>入出場_重複出場チェック</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC010BLC.PrintIRData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>入出場_IR印刷</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC010BLC.UpdateOutOrderPrintDate(System.Data.DataSet)">
+ ==========================================================================
+ <summary>デポアウト依頼書印刷日更新</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC020BLC.InoutStatusCheckDepotIn(System.Data.DataSet)">
+ ==========================================================================
+ <summary>入出場ステータスチェック(入場確定)</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC020BLC.WorkStatusCheckImportCancel(System.Data.DataSet)">
+ ==========================================================================
+ <summary>作業ステータスチェック(入場取り込みキャンセル)</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC020BLC.CinoutZaikoCheck(System.Data.DataSet)">
+ ==========================================================================
+ <summary>入出場在庫チェック</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC020BLC.InvCompTestWorkCheck(System.Data.DataSet)">
+ ==========================================================================
+ <summary>請求日あり定検作業完了チェック</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC020BLC.WorkStatusCheckDepotOut(System.Data.DataSet)">
+ ==========================================================================
+ <summary>作業ステータスチェック(DeoptOut)</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC020BLC.CheckWorkBasisWorkComp(System.Data.DataSet)">
+ ==========================================================================
+ <summary>入出場_定検行追加(作業チェック)</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC020BLC.CGOCheck(System.Data.DataSet)">
+ ====================================================================
+ <summary>積載品存在チェック</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC020BLC.SelectInoutItemData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>入出場明細検索(初期ロード)</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC020BLC.SetKeyTable(System.Data.DataSet)">
+ ==========================================================================
+ <summary>入出場明細検索(再描画)</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC020BLC.SelectLoadInoutItemData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>入出場明細検索(再描画)</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC020BLC.CancelImportData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>入出場_入場取り込みキャンセル</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC020BLC.CancelExportData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>入出場_出場取り込みキャンセル</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC020BLC.PrintOutOrderData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>入出場_搬出依頼書印刷</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC020BLC.PrintEIRData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>入出場_EIR印刷</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC020BLC.PrintIRData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>入出場_IR印刷</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC020BLC.SaveInoutDataInsert(System.Data.DataSet)">
+ ==========================================================================
+ <summary>入出場_入出場入場情報保存(新規)</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC020BLC.SaveInoutOutData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>入出場_入出場出場情報保存(新規)</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC020BLC.SaveInoutDataUpdata(System.Data.DataSet)">
+ ==========================================================================
+ <summary>入出場_入出場情報保存(正常)</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC020BLC.ConfirmDepotInNomal(System.Data.DataSet)">
+ ==========================================================================
+ <summary>入出場_入場確定(通常)</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC020BLC.ConfirmDepotInJyounai(System.Data.DataSet)">
+ ==========================================================================
+ <summary>入出場_入場確定(場内出場)</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC020BLC.CancelConfirmDepotIn(System.Data.DataSet)">
+ ==========================================================================
+ <summary>入出場_入場確定キャンセル</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC020BLC.ConfirmDamageSurvey(System.Data.DataSet)">
+ ==========================================================================
+ <summary>入出場_ダメージサーベイ確定</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC020BLC.CancelConfirmDamageSurvey(System.Data.DataSet)">
+ ==========================================================================
+ <summary>入出場_ダメージサーベイキャンセル</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC020BLC.ConfirmDepotOut(System.Data.DataSet)">
+ ==========================================================================
+ <summary>入出場_出場確定</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC020BLC.CancelConfirmDepotOut(System.Data.DataSet)">
+ ==========================================================================
+ <summary>入出場_出場確定キャンセル</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC020BLC.AddTestData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>入出場_定検行追加</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC020BLC.DelTestData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>入出場_定検行削除</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC020BLC.AddPhotoData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>入出場_画像行追加</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC020BLC.DelPhotoData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>入出場_画像行削除</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC020BLC.CheckExistGmenItemData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>入出場_編集存在チェック</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC020BLC.CheckExistenceCIBInfo(System.Data.DataSet)">
+ ==========================================================================
+ <summary>排他チェック</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC020BLC.CheckETADate(System.String)">
+ ==========================================================================
+ <summary>
+ ETAの未来日チェック
+ </summary>
+ <param name="etaDate">ETA</param>
+ <returns>True:正常、False:エラー</returns>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC020BLC.SendMailData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>メール送信メソッド</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC020BLC.SendRemarkMail(System.Data.DataSet)">
+ ==========================================================================
+ <summary>Remark設定通知メソッド</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC020BLC.SendDepotInMail(System.Data.DataSet)">
+ ==========================================================================
+ <summary>デポ搬入確定・契約終了通知メールメソッド</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC020BLC.SendDepotOutMail(System.Data.DataSet)">
+ ==========================================================================
+ <summary>デポ搬出確定・契約開始通知メールメソッド</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC020BLC.OutputLogTransmissionError(System.String,Jp.Co.Nrs.KD.Utility.MailKbn,System.String,System.Collections.ArrayList,System.String,System.Collections.ArrayList,System.Collections.ArrayList,System.Collections.ArrayList,System.Collections.ArrayList,System.Collections.ArrayList,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ メール送信エラーログ出力
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC020BLC.SelectCheckData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>関連チェックのデータを取得</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC020BLC.CheckJyounai(System.Data.DataSet)">
+ ==========================================================================
+ <summary>Direct interchangeのチェック</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC020BLC.SelectWorkData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>作業明細検索(再描画)</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC030BLC.SelectCinoutIrCompareData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>入出場_IR検索一覧検索</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC030BLC.SelectCinoutIrListData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>入出場_IR検索一覧検索</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC030BLC.UpdateCinoutIr(System.Data.DataSet)">
+ ==========================================================================
+ <summary>入出場_IR更新</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC030BLC.SendMailData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>メール送信メソッド</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC030BLC.CheckExistenceIRInfo(System.Data.DataSet)">
+ ==========================================================================
+ <summary>排他チェック</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC030BLC.OutputLogTransmissionError(System.String,Jp.Co.Nrs.KD.Utility.MailKbn,System.String,System.Collections.ArrayList,System.String,System.Collections.ArrayList,System.Collections.ArrayList,System.Collections.ArrayList,System.Collections.ArrayList,System.Collections.ArrayList,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ メール送信エラーログ出力
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC570BLC.SelectEirData(System.Data.DataSet)">
+ =====================================================================
+ <summary>IR情報取得</summary>
+ =====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC550BLC.SelectEirData(System.Data.DataSet)">
+ =====================================================================
+ <summary>IR情報取得</summary>
+ =====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC500BLC.SelectEirData(System.Data.DataSet)">
+ =====================================================================
+ <summary>IR情報取得</summary>
+ =====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC510BLC.CinoutZaikoListData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>入出場_在庫表一覧検索</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC520BLC.SelectDepotInScheduleData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>入場予定表検索</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC530BLC.SelectDepotOutScheduleData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>出場予定表検索</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC540BLC.SelectDepotTestScheduleData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>定検予定表検索</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDC560BLC.SelectEirData(System.Data.DataSet)">
+ =====================================================================
+ <summary>IR情報取得</summary>
+ =====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD010BLC.SelectWorkInfo(System.Data.DataSet)">
+ ==========================================================================
+ <summary>作業情報データ抽出</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.SelectInOutData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>入出場データ抽出</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.SelectWorkData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>作業データ抽出</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.CheckImportCheck(System.Data.DataSet)">
+ ==========================================================================
+ <summary>TIPS・WINS取込チェック</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.CheckExistenceWorkBasisImpFlg(System.Data.DataSet)">
+ ==========================================================================
+ <summary>TIPS・WINS取込チェック</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.CheckExistenceWorkData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>排他チェック</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.CGOCheck(System.Data.DataSet)">
+ ====================================================================
+ <summary>積載品存在チェック</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.UpdateEstimateConfirm(System.Data.DataSet)">
+ ==========================================================================
+ <summary>見積確定処理</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.CheckEstApprovalNone(System.Data.DataSet)">
+ ==============================================================================================
+ <summary>
+ 見積承認不要チェック（K10173:KIDS見積承認不要パターンによる判定）
+ 見積確定処理の作業ステータス設定判定に使用
+ </summary>
+ <param name="ds"></param>
+ <returns>チェック結果：True=承認不要／False=承認必要</returns>
+ <remarks>2019/09/19 ADD №7679 インターテックNRS化_見積承認フロー・条件変更対応</remarks>
+ ==============================================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.CheckEstApprovalNone2(System.Data.DataSet)">
+ ==============================================================================================
+ <summary>
+ 見積承認不要チェック（固定金額による判定）
+ 見積確定処理の作業ステータス設定判定に使用
+ </summary>
+ <param name="ds"></param>
+ <returns>チェック結果：True=承認必要／False=承認不要</returns>
+ <remarks>2020/12/01 見積承認フロー・条件変更対応</remarks>
+ ==============================================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.DeleteWorkData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>削除処理</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.FailureApproval(System.Data.DataSet)">
+ ==========================================================================
+ <summary>失注処理</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.Sample(System.Data.DataSet)">
+ ==========================================================================
+ <summary>Sample処理</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.SampleCancel(System.Data.DataSet)">
+ ==========================================================================
+ <summary>Sampleキャンセル処理</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.UpdateApproved(System.Data.DataSet)">
+ ==========================================================================
+ <summary>見積承認処理</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.UpdateReject(System.Data.DataSet)">
+ ==========================================================================
+ <summary>差戻処理</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.UpdatePending(System.Data.DataSet)">
+ ==========================================================================
+ <summary>保留処理</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.UpdateRepairInstraction(System.Data.DataSet)">
+ ==========================================================================
+ <summary>修理指示書印刷処理</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.UpdateGrindingInstraction(System.Data.DataSet)">
+ ==========================================================================
+ <summary>研磨指示書印刷処理</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.UpdateRemodelingInstraction(System.Data.DataSet)">
+ ==========================================================================
+ <summary>改造指示書印刷処理</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.UpdateMaintenanceInstraction(System.Data.DataSet)">
+ ==========================================================================
+ <summary>メンテナンス指示書印刷処理</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.UpdateEstimatePrint(System.Data.DataSet)">
+ ==========================================================================
+ <summary>見積印刷処理</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.UpdateCleaningInstruction(System.Data.DataSet)">
+ ==========================================================================
+ <summary>洗浄指示書印刷処理</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.UpdateInvoice(System.Data.DataSet)">
+ ==========================================================================
+ <summary>請求書印刷処理</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.InsertRevise(System.Data.DataSet)">
+ ==========================================================================
+ <summary>再見積処理</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.SelectWorkPlanHours(System.Data.DataSet)">
+ ==========================================================================
+ <summary>作業スケジュール取得</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.UpdateCleaningConfirm(System.Data.DataSet)">
+ ==========================================================================
+ <summary>作業完了処理（Cleaning）</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.UpdateRepairConfirm(System.Data.DataSet)">
+ ==========================================================================
+ <summary>作業完了処理（Repair）</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.UpdateGrindingConfirm(System.Data.DataSet)">
+ ==========================================================================
+ <summary>作業完了処理（Grinding）</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.UpdateRemodelingConfirm(System.Data.DataSet)">
+ ==========================================================================
+ <summary>作業完了処理（Remodeling）</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.UpdateMaintenanceConfirm(System.Data.DataSet)">
+ ==========================================================================
+ <summary>作業完了処理（Maintenance）</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.UpdateTestConfirm(System.Data.DataSet)">
+ ==========================================================================
+ <summary>作業完了処理（Test）</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.UpdateHeatingConfirm(System.Data.DataSet)">
+ ==========================================================================
+ <summary>作業完了処理（Heating）</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.UpdateCleaningCancel(System.Data.DataSet)">
+ ==========================================================================
+ <summary>作業キャンセル処理（Cleaning）</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.UpdateRepairCancel(System.Data.DataSet)">
+ ==========================================================================
+ <summary>作業キャンセル処理（Repair）</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.UpdateGrindingCancel(System.Data.DataSet)">
+ ==========================================================================
+ <summary>作業キャンセル処理（Grinding）</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.UpdateRemodelingCancel(System.Data.DataSet)">
+ ==========================================================================
+ <summary>作業キャンセル処理（Remodeling）</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.UpdateMaintenanceCancel(System.Data.DataSet)">
+ ==========================================================================
+ <summary>作業キャンセル処理（Maintenance）</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.UpdateTestCancel(System.Data.DataSet)">
+ ==========================================================================
+ <summary>作業キャンセル処理（Test）</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.UpdateHeatingCancel(System.Data.DataSet)">
+ ==========================================================================
+ <summary>作業キャンセル処理（Heating）</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.InsertWorkData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>保存処理（新規）</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.UpdateWorkData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>保存処理（更新）</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.SelectWorkBasisForCLN(System.Data.DataSet)">
+ ==========================================================================
+ <summary>保存処理（洗浄DBデータ抽出）</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.InsertCleanBasic(System.Data.DataSet)">
+ ==========================================================================
+ <summary>保存処理（新規・洗浄基本テーブル）</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.InsertMfile(System.Data.DataSet)">
+ ==========================================================================
+ <summary>保存処理（新規・COM_DB M_FILE）</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.SelectCleanDataExist(System.Data.DataSet)">
+ ==========================================================================
+ <summary>保存処理（更新・洗浄基本テーブル(存在チェック)）</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.SelectCleanDataDelExist(System.Data.DataSet)">
+ ==========================================================================
+ <summary>保存処理（更新・洗浄基本テーブル(存在チェック)）</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.UpdateCleanBasic(System.Data.DataSet)">
+ ==========================================================================
+ <summary>保存処理（更新・洗浄基本テーブル(過去データ論理削除)）</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.UpdateCleanBasic_Eda(System.Data.DataSet)">
+ ==========================================================================
+ <summary>Revise処理（WORK_NO_EDAの更新）</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.DeleteCleanData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>保存処理（更新・洗浄基本テーブル(過去データ物理削除)）</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.SelectCleanBasisResult(System.Data.DataSet)">
+ ==========================================================================
+ <summary>洗浄実績結果取得</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.SelectMasterCharge(System.Data.DataSet)">
+ ==========================================================================
+ <summary>諸料金情報抽出</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.SelectInoutIr(System.Data.DataSet)">
+ ==========================================================================
+ <summary>入出場IR情報取得</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.SelectMasterSetHead(System.Data.DataSet)">
+ ==========================================================================
+ <summary>見積セット情報取得</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.UpdateChangeEntryNo(System.Data.DataSet)">
+ ==========================================================================
+ <summary>入出場番号変更処理</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.SelectMasterComp(System.Data.DataSet)">
+ ==========================================================================
+ <summary>会社情報取得</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.SendMail(System.Data.DataSet)">
+ ==========================================================================
+ <summary>メール送信</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.SendMailAdmin(System.Data.DataSet)">
+ ==========================================================================
+ <summary>メール送信 KIDS管理者</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.GetUserInfo(System.String,Jp.Co.Nrs.KD.DAC.KDD020DAC)">
+ ==========================================================================
+ <summary>ユーザ情報取得</summary>
+ <param name="userCd">ユーザコード</param>
+ <param name="dac">DACインスタンス</param>
+ <returns>ユーザマスタから取得した情報</returns>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.OutputLogTransmissionError(System.String,Jp.Co.Nrs.KD.Utility.MailKbn,System.String,System.Collections.ArrayList,System.String,System.Collections.ArrayList,System.Collections.ArrayList,System.Collections.ArrayList,System.Collections.ArrayList,System.Collections.ArrayList,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ メール送信エラーログ出力
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.CheckCancel(System.Data.DataSet)">
+ ==========================================================================
+ <summary>作業キャンセルチェック</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD020BLC.CheckConfirm(System.Data.DataSet)">
+ ==========================================================================
+ <summary>作業確定チェック</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.SelectInOutData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>入出場データ抽出</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.SelectWorkData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>作業データ抽出</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.CheckImportCheck(System.Data.DataSet)">
+ ==========================================================================
+ <summary>TIPS・WINS取込チェック</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.CheckExistenceWorkBasisImpFlg(System.Data.DataSet)">
+ ==========================================================================
+ <summary>TIPS・WINS取込チェック</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.CheckExistenceWorkData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>排他チェック</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.CGOCheck(System.Data.DataSet)">
+ ====================================================================
+ <summary>積載品存在チェック</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.UpdateEstimateConfirm(System.Data.DataSet)">
+ ==========================================================================
+ <summary>見積確定処理</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.CheckEstApprovalNone(System.Data.DataSet)">
+ ==============================================================================================
+ <summary>
+ 見積承認不要チェック（K10173:KIDS見積承認不要パターンによる判定）
+ 見積確定処理の作業ステータス設定判定に使用
+ </summary>
+ <param name="ds"></param>
+ <returns>チェック結果：True=承認不要／False=承認必要</returns>
+ <remarks>2019/09/19 ADD №7679 インターテックNRS化_見積承認フロー・条件変更対応</remarks>
+ ==============================================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.CheckEstApprovalNone2(System.Data.DataSet)">
+ ==============================================================================================
+ <summary>
+ 見積承認不要チェック（固定金額による判定）
+ 見積確定処理の作業ステータス設定判定に使用
+ </summary>
+ <param name="ds"></param>
+ <returns>チェック結果：True=承認必要／False=承認不要</returns>
+ <remarks>2020/12/01 見積承認フロー・条件変更対応</remarks>
+ ==============================================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.DeleteWorkData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>削除処理</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.FailureApproval(System.Data.DataSet)">
+ ==========================================================================
+ <summary>失注処理</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.Sample(System.Data.DataSet)">
+ ==========================================================================
+ <summary>Sample処理</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.SampleCancel(System.Data.DataSet)">
+ ==========================================================================
+ <summary>Sampleキャンセル処理</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.UpdateApproved(System.Data.DataSet)">
+ ==========================================================================
+ <summary>見積承認処理</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.UpdateReject(System.Data.DataSet)">
+ ==========================================================================
+ <summary>差戻処理</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.UpdatePending(System.Data.DataSet)">
+ ==========================================================================
+ <summary>保留処理</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.SendEstToSales(System.Data.DataSet)">
+ ==========================================================================
+ <summary>営業確認依頼処理</summary>
+ <param name="ds"></param>
+ <remarks>営業担当者に見積り確認依頼メールを送信する</remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.GetMailAddress(System.String,Jp.Co.Nrs.KD.DAC.KDD021DAC)">
+ ==========================================================================
+ <summary>メールアドレス取得（ユーザIDより）</summary>
+ <param name="userId">ユーザID</param>
+ <param name="dac">DACインスタンス</param>
+ <returns>メールアドレス</returns>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.GetCompInfo(System.String,Jp.Co.Nrs.KD.DAC.KDD021DAC)">
+ ==========================================================================
+ <summary>会社情報取得</summary>
+ <param name="compCd">会社コード</param>
+ <param name="dac">DACインスタンス</param>
+ <returns>会社マスタから取得した情報</returns>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.SalesConfirmed(System.Data.DataSet)">
+ ==========================================================================
+ <summary>営業確認済み処理</summary>
+ <param name="ds"></param>
+ <remarks>営業確認ステータスを営業確認済に更新する</remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.UpdateRepairInstraction(System.Data.DataSet)">
+ ==========================================================================
+ <summary>修理指示書印刷処理</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.UpdateGrindingInstraction(System.Data.DataSet)">
+ ==========================================================================
+ <summary>研磨指示書印刷処理</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.UpdateRemodelingInstraction(System.Data.DataSet)">
+ ==========================================================================
+ <summary>改造指示書印刷処理</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.UpdateMaintenanceInstraction(System.Data.DataSet)">
+ ==========================================================================
+ <summary>メンテナンス指示書印刷処理</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.UpdateEstimatePrint(System.Data.DataSet)">
+ ==========================================================================
+ <summary>見積印刷処理</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.UpdateCleaningInstruction(System.Data.DataSet)">
+ ==========================================================================
+ <summary>洗浄指示書印刷処理</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.UpdateInvoice(System.Data.DataSet)">
+ ==========================================================================
+ <summary>請求書印刷処理</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.InsertRevise(System.Data.DataSet)">
+ ==========================================================================
+ <summary>再見積処理</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.SelectWorkPlanHours(System.Data.DataSet)">
+ ==========================================================================
+ <summary>作業スケジュール取得</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.UpdateCleaningConfirm(System.Data.DataSet)">
+ ==========================================================================
+ <summary>作業完了処理（Cleaning）</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.UpdateRepairConfirm(System.Data.DataSet)">
+ ==========================================================================
+ <summary>作業完了処理（Repair）</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.UpdateGrindingConfirm(System.Data.DataSet)">
+ ==========================================================================
+ <summary>作業完了処理（Grinding）</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.UpdateRemodelingConfirm(System.Data.DataSet)">
+ ==========================================================================
+ <summary>作業完了処理（Remodeling）</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.UpdateMaintenanceConfirm(System.Data.DataSet)">
+ ==========================================================================
+ <summary>作業完了処理（Maintenance）</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.UpdateTestConfirm(System.Data.DataSet)">
+ ==========================================================================
+ <summary>作業完了処理（Test）</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.UpdateHeatingConfirm(System.Data.DataSet)">
+ ==========================================================================
+ <summary>作業完了処理（Heating）</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.UpdateCleaningCancel(System.Data.DataSet)">
+ ==========================================================================
+ <summary>作業キャンセル処理（Cleaning）</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.UpdateRepairCancel(System.Data.DataSet)">
+ ==========================================================================
+ <summary>作業キャンセル処理（Repair）</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.UpdateGrindingCancel(System.Data.DataSet)">
+ ==========================================================================
+ <summary>作業キャンセル処理（Grinding）</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.UpdateRemodelingCancel(System.Data.DataSet)">
+ ==========================================================================
+ <summary>作業キャンセル処理（Remodeling）</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.UpdateMaintenanceCancel(System.Data.DataSet)">
+ ==========================================================================
+ <summary>作業キャンセル処理（Maintenance）</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.UpdateTestCancel(System.Data.DataSet)">
+ ==========================================================================
+ <summary>作業キャンセル処理（Test）</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.UpdateHeatingCancel(System.Data.DataSet)">
+ ==========================================================================
+ <summary>作業キャンセル処理（Heating）</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.InsertWorkData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>保存処理（新規）</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.UpdateWorkData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>保存処理（更新）</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.SelectWorkBasisForCLN(System.Data.DataSet)">
+ ==========================================================================
+ <summary>保存処理（洗浄DBデータ抽出）</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.InsertCleanBasic(System.Data.DataSet)">
+ ==========================================================================
+ <summary>保存処理（新規・洗浄基本テーブル）</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.InsertMfile(System.Data.DataSet)">
+ ==========================================================================
+ <summary>保存処理（新規・COM_DB M_FILE）</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.SelectCleanDataExist(System.Data.DataSet)">
+ ==========================================================================
+ <summary>保存処理（更新・洗浄基本テーブル(存在チェック)）</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.SelectCleanDataDelExist(System.Data.DataSet)">
+ ==========================================================================
+ <summary>保存処理（更新・洗浄基本テーブル(存在チェック)）</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.UpdateCleanBasic(System.Data.DataSet)">
+ ==========================================================================
+ <summary>保存処理（更新・洗浄基本テーブル(過去データ論理削除)）</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.UpdateCleanBasic_Eda(System.Data.DataSet)">
+ ==========================================================================
+ <summary>Revise処理（WORK_NO_EDAの更新）</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.DeleteCleanData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>保存処理（更新・洗浄基本テーブル(過去データ物理削除)）</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.SelectCleanBasisResult(System.Data.DataSet)">
+ ==========================================================================
+ <summary>洗浄実績結果取得</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.SelectMasterCharge(System.Data.DataSet)">
+ ==========================================================================
+ <summary>諸料金情報抽出</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.SelectInoutIr(System.Data.DataSet)">
+ ==========================================================================
+ <summary>入出場IR情報取得</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.SelectMasterSetHead(System.Data.DataSet)">
+ ==========================================================================
+ <summary>見積セット情報取得</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.UpdateChangeEntryNo(System.Data.DataSet)">
+ ==========================================================================
+ <summary>入出場番号変更処理</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.SelectMasterComp(System.Data.DataSet)">
+ ==========================================================================
+ <summary>会社情報取得</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.SendMail(System.Data.DataSet)">
+ ==========================================================================
+ <summary>メール送信</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.SendMailAdmin(System.Data.DataSet)">
+ ==========================================================================
+ <summary>メール送信 KIDS管理者</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.GetUserInfo(System.String,Jp.Co.Nrs.KD.DAC.KDD021DAC)">
+ ==========================================================================
+ <summary>ユーザ情報取得</summary>
+ <param name="userCd">ユーザコード</param>
+ <param name="dac">DACインスタンス</param>
+ <returns>ユーザマスタから取得した情報</returns>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.OutputLogTransmissionError(System.String,Jp.Co.Nrs.KD.Utility.MailKbn,System.String,System.Collections.ArrayList,System.String,System.Collections.ArrayList,System.Collections.ArrayList,System.Collections.ArrayList,System.Collections.ArrayList,System.Collections.ArrayList,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ メール送信エラーログ出力
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.CheckCancel(System.Data.DataSet)">
+ ==========================================================================
+ <summary>作業キャンセルチェック</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.CheckConfirm(System.Data.DataSet)">
+ ==========================================================================
+ <summary>作業確定チェック</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.LinkStorageLiftCharge(System.Data.DataSet)">
+ =====================================================================
+ <summary>保管料・リフト料紐づけ</summary>
+ =====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.UnlinkStorageLiftCharge(System.Data.DataSet)">
+ =====================================================================
+ <summary>保管料・リフト料紐づけ解除</summary>
+ =====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.UnlinkStorageLiftChargeForRevise(System.Data.DataSet)">
+ =====================================================================
+ <summary>保管料・リフト料紐づけ解除（再見積用）</summary>
+ =====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.UpdateWorkDataExchange(System.Data.DataSet)">
+ ==========================================================================
+ <summary>Exchange処理（D_WORK_DTL更新）</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.ChangeLanguage(System.Data.DataSet)">
+ ==========================================================================
+ <summary>言語切替処理（D_WORK_BASIS更新）</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDD021BLC.SetInvMailStatus(System.Data.DataSet,Jp.Co.Nrs.KD.DAC.KDD021DAC)">
+ <summary>
+ 請求書メール送信区分の設定
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDE010BLC.SelectLocationInfo(System.Data.DataSet)">
+ ==========================================================================
+ <summary>置場情報データ抽出</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDE010BLC.UpdateLocationChange(System.Data.DataSet)">
+ ==========================================================================
+ <summary>置場情報データ更新</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDF010BLC.SelectPhotoInfo(System.Data.DataSet)">
+ ==========================================================================
+ <summary>画像情報データ抽出</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDG010BLC.SelectGmenListData(System.Data.DataSet)">
+ =====================================================================
+ <summary> 免税コンテナ管理一覧検索</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+ =====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDG010BLC.SelectNextBookingData(System.Data.DataSet)">
+ <summary>
+ 次のBookingデータの取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks>2019/07/11 ADD 依頼№6547</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDG020BLC.SelectEntryInfo(System.Data.DataSet)">
+ ==========================================================================
+ <summary>免税コンテナー情報抽出</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDG020BLC.SelectMasterComp(System.Data.DataSet)">
+ ==========================================================================
+ <summary>会社マスタ情報抽出</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDG020BLC.SelectMasterUser(System.Data.DataSet)">
+ ==========================================================================
+ <summary>USERマスタ情報抽出</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDG020BLC.CheckExistenceMenconInfo(System.Data.DataSet)">
+ ==========================================================================
+ <summary>存在チェック</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDG020BLC.CheckTANKMenconInfo(System.Data.DataSet)">
+ ==========================================================================
+ <summary>TANK 重腹チェック</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDG020BLC.CheckTANKMenconInfoUpdate(System.Data.DataSet)">
+ ==========================================================================
+ <summary>更新時TANK 重複チェック</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDG020BLC.UpdMarukanInfo(System.Data.DataSet)">
+ ==========================================================================
+ <summary>丸関情報更新</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDG020BLC.UpdKanrigaiInfo(System.Data.DataSet)">
+ ==========================================================================
+ <summary>管理外処理情報更新</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDG020BLC.UpdReviseInfo(System.Data.DataSet)">
+ ==========================================================================
+ <summary>Revise処理情報更新</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDG020BLC.SelectKanrihenko(System.Data.DataSet)">
+ ==========================================================================
+ <summary>管理者変更通知印刷</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDG020BLC.InsertMenConInfo(System.Data.DataSet)">
+ ==========================================================================
+ <summary>保存(新規モード)</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDG020BLC.UpdateMenConInfo(System.Data.DataSet)">
+ ==========================================================================
+ <summary>保存(正常モード)</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDG020BLC.InsDelayInfo(System.Data.DataSet)">
+ ==========================================================================
+ <summary>期間延長</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDG020BLC.UpdDelInfo(System.Data.DataSet)">
+ ==========================================================================
+ <summary>履歴削除</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDG500BLC.SelectGmenOrderListData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>帳票情報抽出</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDG510BLC.SelectGmenSinseiListData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>帳票情報抽出</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDH010BLC.SelectEntryNo(System.Data.DataSet)">
+ =====================================================================
+ <summary>入場番号取得</summary>
+ =====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDH010BLC.SelectInvListData(System.Data.DataSet)">
+ =====================================================================
+ <summary>請求データ取得</summary>
+ =====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDH010BLC.BillDataImport(System.Data.DataSet)">
+ =====================================================================
+ <summary>Bill data import</summary>
+ =====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDH010BLC.SelectHaitaData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>排他データ取得</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDH010BLC.setImportResultMsg(System.Data.DataSet)">
+ ==========================================================================
+ <summary>Import処理結果メッセージ出力処理</summary>
+ <param name="ds"></param>
+ <remarks>Import処理結果メッセージを表示する</remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDH010BLC.UpdatePrintDate(System.Data.DataSet)">
+ =====================================================================
+ <summary>印刷日更新</summary>
+ =====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDH010BLC.UpdateInvDate(System.Data.DataSet)">
+ =====================================================================
+ <summary>請求日更新</summary>
+ =====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDH010BLC.CheckExistData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>該当データ存在チェック</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDH010BLC.SapOutput(System.Data.DataSet)">
+ =====================================================================
+ <summary>SAP出力</summary>
+ =====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDH010BLC.SapCancel(System.Data.DataSet)">
+ =====================================================================
+ <summary>SAP取消</summary>
+ =====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDH010BLC.UpdateEstimatePrint(System.Data.DataSet)">
+ ==========================================================================
+ <summary>見積印刷処理</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDH010BLC.UpdateInvoice(System.Data.DataSet)">
+ ==========================================================================
+ <summary>請求書印刷処理</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDH010BLC.CheckExistenceWorkData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>排他チェック</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDH010BLC.SendInvToSales(System.Data.DataSet)">
+ ==========================================================================
+ <summary>請求書送信処理</summary>
+ <param name="ds"></param>
+ <remarks>顧客に請求書メールを送信する</remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDH010BLC.OutputLogTransmissionError(System.String,Jp.Co.Nrs.KD.Utility.MailKbn,System.String,System.Collections.ArrayList,System.String,System.Collections.ArrayList,System.Collections.ArrayList,System.Collections.ArrayList,System.Collections.ArrayList,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ メール送信エラーログ出力
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDH010BLC.GetMailAddress(System.String,Jp.Co.Nrs.KD.DAC.KDH010DAC)">
+ ==========================================================================
+ <summary>メールアドレス取得（ユーザIDより）</summary>
+ <param name="userId">ユーザID</param>
+ <param name="dac"></param>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDH010BLC.GetKokyakuEmpMailAddress(System.String,Jp.Co.Nrs.KD.DAC.KDH010DAC)">
+ ==========================================================================
+ <summary>顧客メールアドレス取得（会社コードより）</summary>
+ <param name="compCd">会社コード</param>
+ <param name="dac"></param>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDH010BLC.GetEigyoEmpMailAddress(System.String,Jp.Co.Nrs.KD.DAC.KDH010DAC)">
+ ==========================================================================
+ <summary>営業担当者メールアドレス取得（会社コードより）</summary>
+ <param name="compCd">会社コード</param>
+ <param name="dac"></param>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDH010BLC.GetCompInfo(System.String,Jp.Co.Nrs.KD.DAC.KDH010DAC)">
+ ==========================================================================
+ <summary>会社情報取得</summary>
+ <param name="compCd">会社コード</param>
+ <param name="dac">DACインスタンス</param>
+ <returns>会社マスタから取得した情報</returns>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDH010BLC.UpdateSendData(System.Data.DataSet)">
+ =====================================================================
+ <summary>請求書送信ステータス更新</summary>
+ =====================================================================
+</member>
+<member name="T:Jp.Co.Nrs.KD.BLC.KDH010BLC.Abrzapi010InsertData">
+ <summary>
+ 請求書情報連携API項目(登録)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.KD.BLC.KDH010BLC.Abrzapi010DeleteData">
+ <summary>
+ 請求書情報連携API項目(削除)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.KD.BLC.KDH010BLC.ResABRZAPI010">
+ <summary>
+ レスポンスABRZAPI010
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.KD.BLC.KDH010BLC.ResABRZAPI010.Messages">
+ <summary>
+ メッセージリスト
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDH010BLC.APIDataSend(System.Data.DataSet)">
+ ==========================================================================
+ <summary>API請求書情報連携処理</summary>
+ <param name="ds"></param>
+ <remarks>APIに請求書情報を登録する</remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDH010BLC.APIDataDelete(System.Data.DataSet)">
+ ==========================================================================
+ <summary>API請求書情報連携削除</summary>
+ <param name="ds"></param>
+ <remarks>APIに請求書情報を削除する</remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDH010BLC.SetReqABRZAPI010(System.Data.DataRow,System.Data.DataTable,Jp.Co.Nrs.KD.DAC.KDH010DAC)">
+ <summary>
+ リクエスト設定 ABRZAPI010
+ </summary>
+ <param name="dr">DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDH010BLC.SetDelABRZAPI010(System.Data.DataRow,System.String)">
+ <summary>
+ リクエスト設定 ABRZAPI010
+ </summary>
+ <param name="dr">DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDH020BLC.SelectInvListData(System.Data.DataSet)">
+ =====================================================================
+ <summary>請求データ取得</summary>
+ =====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDH020BLC.ReImport(System.Data.DataSet)">
+ =====================================================================
+ <summary>Re import</summary>
+ =====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDH020BLC.SelectHaitaData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>排他データ取得(Re import用)</summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDH020BLC.setImportResultMsg(System.Data.DataSet)">
+ ==========================================================================
+ <summary>Import処理結果メッセージ出力処理</summary>
+ <param name="ds"></param>
+ <remarks>Import処理結果メッセージを表示する</remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDH020BLC.UpdatePrintDate(System.Data.DataSet)">
+ =====================================================================
+ <summary>印刷日更新</summary>
+ =====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDH020BLC.UpdateRevise(System.Data.DataSet)">
+ =====================================================================
+ <summary>Revise処理</summary>
+ =====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDH020BLC.DeleteInvData(System.Data.DataSet)">
+ =====================================================================
+ <summary>DeleteInvData</summary>
+ =====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDH501BLC.SelectInvHokanLiftData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>請求書（保管リフト)検索</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDH500BLC.SelectInvHokanLiftData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>請求書（保管リフト)検索</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDH510BLC.SelectSeikyuListData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>帳票情報抽出</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDI010BLC.CsvPrint(System.Data.DataSet)">
+ ==========================================================================
+ <summary>稼働報告</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDI010BLC.CsvPrint2(System.Data.DataSet)">
+ ==========================================================================
+ <summary>稼働報告</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDI010BLC.CsvPrint3(System.Data.DataSet)">
+ ==========================================================================
+ <summary>稼働報告</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDI500BLC.CsvReportPrint(System.Data.DataSet)">
+ ==========================================================================
+ <summary>稼働報告</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDI510BLC.CsvReportPrint(System.Data.DataSet)">
+ ==========================================================================
+ <summary>稼働報告</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDI520BLC.CsvReportPrint(System.Data.DataSet)">
+ ==========================================================================
+ <summary>請求明細</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDJ010BLC.SelectCleaningList(System.Data.DataSet)">
+ ====================================================================
+ <summary>洗浄実績一覧検索結果取得</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+ ====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDJ020BLC.CheckExistence(System.Data.DataSet)">
+ ====================================================================
+ <summary>洗浄実績存在／排他チェック</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDJ020BLC.SelectCleaningData(System.Data.DataSet)">
+ ====================================================================
+ <summary>洗浄実績編集データ検索</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+ ====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDJ020BLC.SaveCleanData(System.Data.DataSet)">
+ ====================================================================
+ <summary>洗浄実績編集データ保存</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+ ====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDJ020BLC.CancelCompleteCleanData(System.Data.DataSet)">
+ ====================================================================
+ <summary>洗浄基本データ未完了</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+ ====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDJ020BLC.CompleteCleanData(System.Data.DataSet)">
+ ====================================================================
+ <summary>洗浄基本データ完了</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+ ====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDJ020BLC.DeleteCleanData(System.Data.DataSet)">
+ ====================================================================
+ <summary>洗浄基本編集データ削除</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+ ====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDJ020BLC.DelCleanData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>洗浄明細行削除</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDJ030BLC.SelectDataCount(System.Data.DataSet)">
+ <summary>
+ データ情報検索件数取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDJ030BLC.SelectDataList(System.Data.DataSet)">
+ <summary>
+ データ情報取得(BLC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDJ030BLC.chkDataListHaita(System.Data.DataSet)">
+ <summary>
+ 排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDJ030BLC.InsertData(System.Data.DataSet)">
+ <summary>
+ データ新規登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDJ030BLC.UpdateData(System.Data.DataSet)">
+ <summary>
+ データ更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDJ030BLC.DeleteData(System.Data.DataSet)">
+ <summary>
+ データ論理削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDJ030BLC.DeleteListData(System.Data.DataSet)">
+ <summary>
+ データ論理削除処理
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>データセット</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDK020BLC.CasSearch(System.Data.DataSet)">
+ ==========================================================================
+ <summary>CAS情報抽出</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDL010BLC.CheckExistenceOutOrder(System.Data.DataSet)">
+ ====================================================================
+ <summary>出場依頼存在チェック</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDL010BLC.CheckExistenceWorkBasis(System.Data.DataSet)">
+ ====================================================================
+ <summary>作業情報存在チェック</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDL010BLC.CheckExistenceIrComplete(System.Data.DataSet)">
+ ====================================================================
+ <summary>IR(入場)情報(完了)チェック</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDL010BLC.CheckExistenceIrCancel(System.Data.DataSet)">
+ ====================================================================
+ <summary>IR(入場)情報(ｷｬﾝｾﾙ)チェック</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDL010BLC.CheckExistenceOutOrderComplete(System.Data.DataSet)">
+ ====================================================================
+ <summary>出場オーダー情報チェック</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDL010BLC.CheckExistenceOutOrderCancel(System.Data.DataSet)">
+ ====================================================================
+ <summary>出場オーダー(ｷｬﾝｾﾙ)情報チェック</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDL010BLC.UpdateOutOrder(System.Data.DataSet)">
+ ====================================================================
+ <summary>出場依頼データ更新</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+ ====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDL010BLC.UpdateWorkStatus(System.Data.DataSet)">
+ ====================================================================
+ <summary>作業情報ステータス・完了日更新</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+ ====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDM090BLC.SelectCasItemData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>CAS情報抽出</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDM090BLC.CheckHaitaCasData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>排他チェック</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDM090BLC.InsertCasItemData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>CAS情報登録</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDM090BLC.UpdateCasItemData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>CAS情報更新</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDM090BLC.DelResetCasData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>CAS情報削除・リセット</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDM080BLC.SelectCasListData(System.Data.DataSet)">
+ =====================================================================
+ <summary>会社マスタ情報取得</summary>
+ =====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDM010BLC.SelectCompListData(System.Data.DataSet)">
+ =====================================================================
+ <summary>会社マスタ情報取得</summary>
+ =====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDM020BLC.SelectCompItemData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>会社マスタ明細検索</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDM020BLC.SelectBankMasterData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>銀行マスタデータ取得</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDM020BLC.ExistCompItemData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>存在チェック用のSQLをCALLします</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDM020BLC.InsertCompItemData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>保存処理(新規)</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDM020BLC.UpdateCompItemData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>保存処理(保存)</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDM020BLC.UpdateCompFromIntegration(System.Data.DataSet)">
+ ==========================================================================
+ <summary>更新処理(統合会社マスタから連携))</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDM020BLC.CheckHaitaCompData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>排他チェック処理</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDM020BLC.SelectCompCount(System.Data.DataSet)">
+ ==========================================================================
+ <summary>会社マスタ件数取得</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDM020BLC.SelectCompSubCode(System.Data.DataSet)">
+ <summary>
+ 会社コードの枝番採番
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDM030BLC.SelectEstSetList(System.Data.DataSet)">
+ ==========================================================================
+ <summary>見積セットマスター一覧検索</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDM040BLC.SelectEstSetMaster(System.Data.DataSet)">
+ ==========================================================================
+ <summary>マスタ情報抽出</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDM040BLC.CheckExistenceEstSetInfo(System.Data.DataSet)">
+ ==========================================================================
+ <summary>排他チェック（見積セットマスタ情報）</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDM040BLC.CheckExistenceEstSetNew(System.Data.DataSet)">
+ ==========================================================================
+ <summary>存在チェック（見積セットマスタ情報）</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDM040BLC.CheckHaitaEstSetHeadData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>見積セットマスタヘッダ排他チェック</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDM040BLC.CheckExistEstSetData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>見積セットマスタヘッダ存在チェック</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDM040BLC.InsertEstSetMaster(System.Data.DataSet)">
+ ==========================================================================
+ <summary>見積セットマスタ新規登録(BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDM040BLC.UpdateEstSetMaster(System.Data.DataSet)">
+ ==========================================================================
+ <summary>見積セットマスタ更新[Update](BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDM040BLC.DeleteResetEstSetMaster(System.Data.DataSet)">
+ ==========================================================================
+ <summary>見積セットマスタ更新[DeleteReset](BLC)</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDM040BLC.SelectChargeInfo(System.Data.DataSet)">
+ ==========================================================================
+ <summary>諸料金マスタ情報抽出</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDM040BLC.SelectMatInfo(System.Data.DataSet)">
+ ==========================================================================
+ <summary>部材マスタ情報抽出</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDM050BLC.SelectChargeList(System.Data.DataSet)">
+ ==========================================================================
+ <summary>諸料金マスター一覧検索</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDM060BLC.SelectMaseterInfo(System.Data.DataSet)">
+ ==========================================================================
+ <summary>マスタ情報抽出</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDM060BLC.SelectChargeInfo(System.Data.DataSet)">
+ ==========================================================================
+ <summary>諸料金情報抽出</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDM060BLC.CheckExistenceChargeInfo(System.Data.DataSet)">
+ ==========================================================================
+ <summary>排他チェック</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDM060BLC.InsertChargeInfo(System.Data.DataSet)">
+ ==========================================================================
+ <summary>諸料金情報登録</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDM060BLC.UpdateChargeInfo(System.Data.DataSet)">
+ ==========================================================================
+ <summary>諸料金情報更新</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDM060BLC.DelResetChargeInfo(System.Data.DataSet)">
+ ==========================================================================
+ <summary>諸料金情報削除・リセット</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDM070BLC.SelectMatListData(System.Data.DataSet)">
+ =====================================================================
+ <summary>部材マスタ情報取得</summary>
+ =====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDM110BLC.SelectUserInfo(System.Data.DataSet)">
+ ==========================================================================
+ <summary>ユーザ情報抽出</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDM110BLC.CheckExistUserInfo(System.Data.DataSet)">
+ ==========================================================================
+ <summary>排他チェック</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDM110BLC.InsertUserInfo(System.Data.DataSet)">
+ ==========================================================================
+ <summary>ユーザ情報登録</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDM110BLC.UpdateUserInfo(System.Data.DataSet)">
+ ==========================================================================
+ <summary>ユーザ情報更新</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDM110BLC.DeleteUserInfo(System.Data.DataSet)">
+ ==========================================================================
+ <summary>ユーザ情報削除</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDM120BLC.CheckExistence(System.Data.DataSet)">
+ ====================================================================
+ <summary>経理月編集存在／排他チェック</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDM120BLC.SelectAccountingData(System.Data.DataSet)">
+ ====================================================================
+ <summary>経理月編集データ検索</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+ ====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDM120BLC.UpdateAccountingData(System.Data.DataSet)">
+ ====================================================================
+ <summary>経理月編集データ更新</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+ ====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDM140BLC.SelectCargoInfo(System.Data.DataSet)">
+ ==========================================================================
+ <summary>積載品情報抽出</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDM140BLC.CheckExistCargoInfo(System.Data.DataSet)">
+ ==========================================================================
+ <summary>排他チェック</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDM140BLC.UpdateCargoInfo(System.Data.DataSet)">
+ ==========================================================================
+ <summary>積載品情報更新</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDZ010BLC.FindData(System.Data.DataSet)">
+ ====================================================================
+ <summary>会社マスタ一覧検索結果取得</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+ ====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDZ080BLC.SelectCleaningList(System.Data.DataSet)">
+ ====================================================================
+ <summary>洗浄実績一覧検索結果取得</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+ ====================================================================
+</member>
+<member name="F:Jp.Co.Nrs.KD.BLC.KDZ090BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDZ090BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ 件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDZ090BLC.FindData(System.Data.DataSet)">
+ <summary>
+ 検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDZ100BLC.SelectAbmComp(System.Data.DataSet)">
+ ====================================================================
+ <summary>統合会社マスタ検索POP画面</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+ ====================================================================
+</member>
+<member name="F:Jp.Co.Nrs.KD.BLC.KDZ110BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDZ110BLC.SelectBpCnt(System.Data.DataSet)">
+ <summary>
+ 件数検索
+ </summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDZ110BLC.SelectBpData(System.Data.DataSet)">
+ <summary>
+ 検索処理
+ </summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.KD.BLC.KDZ110BLC.SelectKbn(System.Data.DataSet)">
+ <summary>
+ 統合区分取得
+ </summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

@@ -1,0 +1,548 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.YT.Library
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.YT.My.Resources.Resources">
+<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.YT.My.Resources.Resources.ResourceManager">
+<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.YT.My.Resources.Resources.Culture">
+<summary>
+  すべてについて、現在のスレッドの CurrentUICulture プロパティをオーバーライドします
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.YT.Base.BLC.YTBaseBLC">
+ <summary>
+ 拡張BLC層中核クラス
+ </summary>
+</member>
+<member name="P:Jp.Co.Nrs.YT.Base.BLC.YTBaseBLC.Connection">
+ <summary>
+ コネクションオブジェクトの取得・設定を行うプロパティ。
+ </summary>
+ <value>SqlConnectionオブジェクト</value>
+ <returns>SqlConnectionオブジェクト</returns>
+</member>
+<member name="P:Jp.Co.Nrs.YT.Base.BLC.YTBaseBLC.CachedConfigDataSet">
+ <summary>
+ コンフィグ情報キャッシュの取得・設定を行うプロパティ
+ </summary>
+ <value>コンフィグ情報</value>
+ <returns>コンフィグ情報</returns>
+</member>
+<member name="P:Jp.Co.Nrs.YT.Base.BLC.YTBaseBLC.YTServiceData">
+ <summary>
+ 送受信データの取得・設定を行うプロパティ
+ </summary>
+ <value>送受信データ</value>
+ <returns>送受信データ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.YT.Base.BLC.YTBaseBLC.UserTimeZone">
+ <summary>
+ ログインユーザのタイムゾーンを取得するプロパティ
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.BLC.YTBaseBLC.SetMessage(System.String)">
+ <summary>
+ メッセージＩＤ・メッセージレベル・メッセージ文言をServiceDataに設定する。
+ </summary>
+ <param name="messageID">メッセージID</param>
+ <remarks>引数のメッセージＩＤを元にメッセージ文言を作成し、ServiceDataクラスにメッセージＩＤ・メッセージレベル・メッセージ文言を設定する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.BLC.YTBaseBLC.SetMessage(System.String,System.String[])">
+ <summary>
+ メッセージ情報をServiceDataに設定する。
+ </summary>
+ <param name="messageID">メッセージID</param>
+ <param name="replaceMessages">置換対象文字列の配列</param>
+ <remarks>引数のメッセージＩＤを元にメッセージ文言を作成し、ServiceDataクラスにメッセージ情報を設定する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.BLC.YTBaseBLC.SetMessage(System.String,System.String[],System.String,System.String)">
+ <summary>
+ メッセージ情報をServiceDataに設定する。
+ </summary>
+ <param name="messageID">メッセージID</param>
+ <param name="replaceMessages">置換対象文字列の配列</param>
+ <param name="messageArea">メッセージエリア名</param>
+ <param name="naviArea">ナビエリア名</param>
+ <remarks>引数のメッセージＩＤを元にメッセージ文言を作成し、ServiceDataクラスにメッセージ情報を設定する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.BLC.YTBaseBLC.SelectMessageData(System.Data.DataSet)">
+ <summary>
+ メッセージマスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.BLC.YTBaseBLC.SelectKbnData(System.Data.DataSet)">
+ <summary>
+ 区分マスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.BLC.YTBaseBLC.SelectMailTplData(System.Data.DataSet)">
+ <summary>
+ メールテンプレートマスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.BLC.YTBaseBLC.GetUserInfo(System.Data.DataSet)">
+ <summary>
+ ユーザーインフォ取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.BLC.YTBaseBLC.GetSRscData(System.String,System.String,System.String)">
+ <summary>
+ リソース取得（BLC）
+ </summary>
+ <param name="resourceId">RESOURCE_ID</param>
+ <param name="lang">RESOURCE_LANG(未指定の場合はログインユーザの言語を取得)</param>
+ <param name="whereString">未使用</param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.BLC.YTBaseBLC.GetKbnDataTable(System.String,System.String,System.String)">
+ <summary>
+ 区分データテーブル情報取得（BLC）
+ </summary>
+ <param name="grpCode">区分分類コード</param>
+ <param name="code">区分コード</param>
+ <param name="whereString"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.BLC.YTBaseBLC.GetMailTplDataTable(System.String,System.Int32,System.String)">
+ <summary>
+ メール送信文言データテーブル取得（BLC）
+ </summary>
+ <param name="tplCd">テンプレートコード</param>
+ <param name="tplSeq">テンプレートSEQ</param>
+ <param name="whereString"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.BLC.YTBaseBLC.RoundOff(System.Double,System.Int32)">
+ <summary>
+ 指定した精度の数値に四捨五入します
+ </summary>
+ <param name="value">丸め対象の倍精度浮動小数点数</param>
+ <param name="digits">戻り値の有効桁数の精度</param>
+ <returns>digits に等しい精度の数値に四捨五入された数値</returns>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.BLC.YTBaseBLC.RoundOff(System.Decimal,System.Int32)">
+ <summary>
+ 指定した精度の数値に四捨五入します
+ </summary>
+ <param name="value">丸め対象の倍精度浮動小数点数</param>
+ <param name="digits">戻り値の有効桁数の精度(0～28の範囲で設定可)</param>
+ <returns>digits に等しい精度の数値に四捨五入された数値</returns>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.BLC.YTBaseBLC.IsRangeCheckErr(System.Decimal,System.Decimal,System.Decimal)">
+ <summary>
+ 数値項目の範囲チェック
+ </summary>
+ <param name="value">チェック対象数値項目</param>
+ <param name="maxData">許容最大値</param>
+ <param name="minData">許容最小値</param>
+ <returns>True：エラーあり, Falase：エラーなし</returns>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.BLC.YTBaseBLC.IsEnableEmail(System.String)">
+ <summary>
+ 有効なドメインであるかを判定し、メールアドレスを返却する
+ </summary>
+ <param name="email">メールアドレス</param>
+ <returns>メールアドレス</returns>
+ <remarks>比較対象の既定値はYTConfig.xmlに定義する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.BLC.YTBaseBLC.GetLocalDate">
+ <summary>
+ 現在ServiceDataに登録されているシステム日付からローカルの日付(YYYYMMDD)を取得する。
+ </summary>
+ <returns></returns>
+ <remarks>ロケール設定で選択したタイムゾーンを使用する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.BLC.YTBaseBLC.GetLocalTime">
+ <summary>
+ 現在ServiceDataに登録されているシステム時刻からローカルの時刻(HHMMSSmmm)を取得する。
+ </summary>
+ <returns></returns>
+ <remarks>ロケール設定で選択したタイムゾーンを使用する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.BLC.YTBaseBLC.GetSystemDatetime">
+ <summary>
+ 現在ServiceDataに登録されているシステム日時からDateTimeを取得する。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.BLC.YTBaseBLC.EditConcatData(System.String,System.String,System.String)">
+ <summary>
+ 2つの値を連結して設定
+ </summary>
+ <param name="value1">値1</param>
+ <param name="value2">値2</param>
+ <param name="str"></param>
+ <returns>編集後の値</returns>
+</member>
+<member name="T:Jp.Co.Nrs.YT.Base.BLF.YTBaseBLF">
+ <summary>
+ 拡張BLF層中核クラス
+ </summary>
+</member>
+<member name="P:Jp.Co.Nrs.YT.Base.BLF.YTBaseBLF.YTServiceData">
+ <summary>
+ 送受信データの取得・設定を行うプロパティ
+ </summary>
+ <value>送受信データ</value>
+ <returns>送受信データ</returns>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.BLF.YTBaseBLF.GetLocalDate">
+ <summary>
+ 現在ServiceDataに登録されているシステム日付からローカルの日付(YYYYMMDD)を取得する。
+ </summary>
+ <returns></returns>
+ <remarks>ロケール設定で選択したタイムゾーンを使用する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.BLF.YTBaseBLF.GetLocalTime">
+ <summary>
+ 現在ServiceDataに登録されているシステム時刻からローカルの時刻(HHMMSSmmm)を取得する。
+ </summary>
+ <returns></returns>
+ <remarks>ロケール設定で選択したタイムゾーンを使用する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.BLF.YTBaseBLF.GetSystemDatetime">
+ <summary>
+ 現在ServiceDataに登録されているシステム日時からDateTimeを取得する。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.BLF.YTBaseBLF.SetMessage(System.String,System.String[],System.String,System.String)">
+ <summary>
+ メッセージＩＤ・メッセージレベル・メッセージ文言をServiceDataに設定する。
+ </summary>
+ <param name="messageID">メッセージID</param>
+ <remarks>引数のメッセージＩＤを元にメッセージ文言を作成し、ServiceDataクラスにメッセージＩＤ・メッセージレベル・メッセージ文言を設定する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.BLF.YTBaseBLF.IsErrorMessageExist">
+ <summary>
+ エラーメッセージの有無を判定して返却する
+ </summary>
+ <returns>エラーメッセージの有無</returns>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.BLF.YTBaseBLF.SelectKbnData(System.Data.DataSet)">
+ <summary>
+ 区分マスタ情報を取得します。
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.BLF.YTBaseBLF.SelectMailTplData(System.Data.DataSet)">
+ <summary>
+ メールテンプレートマスタ情報を取得します。（BLF）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.BLF.YTBaseBLF.CacheSystemData(System.Data.DataSet)">
+ <summary>
+ キャッシュされているシステム構成情報を取得する
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>コンフィグデータキャッシュとメッセージデータキャッシュを返却する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.BLF.YTBaseBLF.GetMessageDataSet">
+ <summary>
+ メッセージデータを取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.BLF.YTBaseBLF.GetMasterDataSet(System.Data.DataSet)">
+ <summary>
+ マスタ情報取得（BLF）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.BLF.YTBaseBLF.GetUserInfo(System.Data.DataSet)">
+ <summary>
+ 
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.BLF.YTBaseBLF.GetSRscData(System.String,System.String,System.String)">
+ <summary>
+ リソースを取得します。（BLF）
+ </summary>
+ <param name="resourceId">RESOURCE_ID</param>
+ <param name="lang">RESOURCE_LANG(未指定の場合はログインユーザの言語を取得)</param>
+ <param name="whereString">未使用</param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.BLF.YTBaseBLF.GetKbnDataTable(System.String,System.String,System.String)">
+ <summary>
+ 区分データテーブル情報を取得します。（BLF）
+ </summary>
+ <param name="grpCode">区分分類コード</param>
+ <param name="code">区分コード</param>
+ <param name="whereString"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.BLF.YTBaseBLF.GetMailTplDataTable(System.String,System.Int32,System.String)">
+ <summary>
+ メール送信文言データテーブル取得（BLC）
+ </summary>
+ <param name="tplCd">テンプレートコード</param>
+ <param name="tplSeq">テンプレートSEQ</param>
+ <param name="whereString"></param>
+ <returns></returns>
+</member>
+<member name="T:Jp.Co.Nrs.YT.Base.DAC.YTBaseDAC">
+ <summary>
+ 拡張DAC層中核クラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.YT.Base.DAC.YTBaseDAC.SELECT_M_TAB_MESSAGE">
+ <summary>
+ メッセージマスタ取得用SQL文
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.YT.Base.DAC.YTBaseDAC.SP_YLB0100_00">
+ <summary>
+ ストアド実行 SP_YLB0100_00
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.DAC.YTBaseDAC.CreateSqlCommand(System.String,System.Data.SqlClient.SqlConnection)">
+ <summary>
+ コネクションオブジェクトに関連付けられたDBサーバーに対して
+ 有効なSqlCommandオブジェクトのインスタンスを取得する。
+ </summary>
+ <param name="strSql">SQL文</param>
+ <param name="con">SQLコネクション</param>
+ <returns>SqlCommandオブジェクト</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.DAC.YTBaseDAC.GetLocalDate">
+ <summary>
+ 現在ServiceDataに登録されているシステム日付からローカルの日付(YYYYMMDD)を取得する。
+ </summary>
+ <returns></returns>
+ <remarks>ロケール設定で選択したタイムゾーンを使用する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.DAC.YTBaseDAC.GetLocalTime">
+ <summary>
+ 現在ServiceDataに登録されているシステム時刻からローカルの時刻(HHMMSSmmm)を取得する。
+ </summary>
+ <returns></returns>
+ <remarks>ロケール設定で選択したタイムゾーンを使用する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.DAC.YTBaseDAC.GetSystemDatetime">
+ <summary>
+ 現在ServiceDataに登録されているシステム日時からDateTimeを取得する。
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.DAC.YTBaseDAC.SetMessage(System.String,System.String[])">
+ <summary>
+ メッセージＩＤ・メッセージレベル・メッセージ文言をServiceDataに設定する。
+ </summary>
+ <param name="messageID">メッセージID</param>
+ <param name="replaceMessages"></param>
+ <remarks>引数のメッセージＩＤを元にメッセージ文言を作成し、ServiceDataクラスにメッセージＩＤ・メッセージレベル・メッセージ文言を設定する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.DAC.YTBaseDAC.SetMessage(System.String,System.String[],System.String,System.String)">
+ <summary>
+ メッセージＩＤ・メッセージレベル・メッセージ文言・メッセージ表示エリア・ナビエリアをServiceDataに設定する。
+ </summary>
+ <param name="messageID">メッセージID</param>
+ <param name="replaceMessages"></param>
+ <param name="messageArea"></param>
+ <param name="naviArea"></param>
+ <remarks>引数のメッセージＩＤを元にメッセージ文言を作成し、
+ ServiceDataクラスにメッセージＩＤ・メッセージレベル・メッセージ文言・メッセージ表示エリア・ナビエリアを設定する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.DAC.YTBaseDAC.SelectS_MessageData(System.Data.DataSet)">
+ <summary>
+ メッセージマスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>メッセージマスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.DAC.YTBaseDAC.SelectKbnData(System.Data.DataSet)">
+ <summary>
+ 区分マスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.DAC.YTBaseDAC.SelectMailTplData(System.Data.DataSet)">
+ <summary>
+ メールテンプレートマスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.DAC.YTBaseDAC.GetUserDataSet(System.Data.DataSet)">
+ <summary>
+ ストアドからユーザ情報を取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+</member>
+<member name="T:Jp.Co.Nrs.YT.Base.YTServiceData">
+ <summary>
+ 拡張されたクライアント⇔サーバー間で授受する全データを格納したクラス
+ </summary>
+</member>
+<member name="P:Jp.Co.Nrs.YT.Base.YTServiceData.TerminalID">
+ <summary>
+ 端末IDを格納するプロパティ
+ </summary>
+ <value>端末ID</value>
+ <returns>端末ID</returns>
+</member>
+<member name="P:Jp.Co.Nrs.YT.Base.YTServiceData.UserID">
+ <summary>
+ ユーザーIDを格納するプロパティ
+ </summary>
+ <value>ユーザーID</value>
+ <returns>ユーザーID</returns>
+</member>
+<member name="P:Jp.Co.Nrs.YT.Base.YTServiceData.LogOperationMode">
+ <summary>
+ ログモードを格納するプロパティ
+ </summary>
+ <value>ユーザーID</value>
+ <returns>ユーザーID</returns>
+</member>
+<member name="T:Jp.Co.Nrs.YT.MTabKbnDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.YT.MTabKbnDS.M_TAB_KBNDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.YT.MTabKbnDS.M_TAB_KBNRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.YT.MTabKbnDS.M_TAB_KBNRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.YT.MTabMailTplDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.YT.MTabMailTplDS.M_TAB_MAIL_TPLDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.YT.MTabMailTplDS.M_TAB_MAIL_TPLRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.YT.MTabMailTplDS.M_TAB_MAIL_TPLRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.YT.SRscDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.YT.SRscDS.S_RESOURCE_CONVDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.YT.SRscDS.S_RESOURCE_CONVRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.YT.SRscDS.S_RESOURCE_CONVRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.YT.UserInfoDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.YT.UserInfoDS.SP_YLB0100_00_INDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.YT.UserInfoDS.SP_YLB0100_00_OUTDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.YT.UserInfoDS.SP_YLB0100_00_INRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.YT.UserInfoDS.SP_YLB0100_00_OUTRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.YT.UserInfoDS.SP_YLB0100_00_INRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.YT.UserInfoDS.SP_YLB0100_00_OUTRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.YT.SessionTimeoutException">
+ <summary>
+ セッションタイムアウト
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.YT.SessionTimeoutException.#ctor">
+ <summary>
+ コンストラクタ
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.YT.SessionTimeoutException.#ctor(System.String)">
+ <summary>
+ コンストラクタ
+ </summary>
+ <param name="message"></param>
+</member>
+</members>
+</doc>

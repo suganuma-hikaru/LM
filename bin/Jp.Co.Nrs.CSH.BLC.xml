@@ -1,0 +1,111 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.CSH.BLC
+</name>
+</assembly>
+<members>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSH710BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSH710BLC.PrintTankPlanList(System.Data.DataSet)">
+ <summary>
+ Product List印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSH710BLC.DownloadTankPlanList(System.Data.DataSet)">
+ <summary>
+ Tank Plan Listダウンロード
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSH710BLC.CreateExcel(System.Data.DataSet)">
+ <summary>
+ エクセルのセルの位置とデータのバインド
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSH710BLC.CreateExcelTemplateWithMasterData(System.Data.DataSet)">
+ <summary>
+ エクセルのセルの位置とマスタデータのバインド
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSH710BLC.IsLackOfTanks(System.Data.DataRow)">
+ <summary>
+ 容器不足の判定
+ </summary>
+ <param name="dr">処理行のデータ</param>
+ <returns>True:容器不足、False:容器不足でない</returns>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSH010BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSH010BLC.GetBasicData(System.Data.DataSet)">
+ <summary>
+ 初期表示情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSH010BLC.ExecuteProcess(System.Data.DataSet)">
+ <summary>
+ 滞留期間登録処理(保存処理)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSH010BLC.ExecStoredProcedure(System.Data.DataSet)">
+ <summary>
+ ストアド実行処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSH010BLC.IsMasterChk(System.Data.DataSet)">
+ <summary>
+ マスタチェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSH010BLC.IsMasterChkItem(System.Data.DataSet)">
+ <summary>
+ 製品チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSH010BLC.IsMasterChkDest(System.Data.DataSet)">
+ <summary>
+ 納品先チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSH010BLC.UpdateRetentionPeriod(System.Data.DataSet)">
+ <summary>
+ 滞留期間更新処理(再検索処理)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSH010BLC.SaveRetentionPeriodNotExist(System.Data.DataSet)">
+ <summary>
+ 取込後処理(再検索処理)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

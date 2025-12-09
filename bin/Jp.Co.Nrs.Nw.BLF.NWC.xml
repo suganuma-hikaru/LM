@@ -1,0 +1,389 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.Nw.BLF.NWC
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.Nw.BLF.NWC.My.Resources.Resources">
+<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.Nw.BLF.NWC.My.Resources.Resources.ResourceManager">
+<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.Nw.BLF.NWC.My.Resources.Resources.Culture">
+<summary>
+  すべてについて、現在のスレッドの CurrentUICulture プロパティをオーバーライドします
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLF.NWC.NWC080BLF.SelectCustData(System.Data.DataSet)">
+ <summary>
+ 荷主検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLF.NWC.NWC030BLF.SelectInOutData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>入出場明細検索</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="F:Jp.Co.Nrs.Nw.BLF.NWC.NWC040BLF.IN_TABLE_NAME">
+ <summary>
+ INテーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.BLF.NWC.NWC040BLF.OUT_TABLE_NAME">
+ <summary>
+ OUTテーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLF.NWC.NWC040BLF.SelectPhotoData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>写真名取得</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLF.NWC.NWC040BLF.SelectDamagePhotoData(System.Data.DataSet)">
+ <summary>
+ 破損品写真検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLF.NWC.NWC040BLF.ClearUploadFolder(System.String)">
+ <summary>
+ アップロードフォルダクリア
+ </summary>
+ <param name="folderPath"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.BLF.NWC.NWC050BLF.IN_TABLE_NAME">
+ <summary>
+ INテーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.BLF.NWC.NWC050BLF.OUT_TABLE_NAME_LMS">
+ <summary>
+ OUT(M_FILE)テーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.BLF.NWC.NWC050BLF.OUT_TABLE_NAME_KIDS">
+ <summary>
+ OUT(F_PHOTO)テーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.BLF.NWC.NWC050BLF.ImageFileExtensions">
+ <summary>
+ 画像ファイル拡張子
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLF.NWC.NWC050BLF.SelectPhotoData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>画像データ取得</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLF.NWC.NWC050BLF.UpPhotoData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>画像データアップロード</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLF.NWC.NWC050BLF.DeletePhotoData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>画像データ削除（F_PHOTOの論理削除のみ。画像ファイルは削除しない）</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLF.NWC.NWC050BLF.SelectDamagePhotoData(System.Data.DataSet)">
+ <summary>
+ 破損品写真取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLF.NWC.NWC050BLF.DeleteDamagePhotoData(System.Data.DataSet)">
+ <summary>
+ 破損品写真削除
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLF.NWC.NWC050BLF.ResizePixels(System.String,System.String,System.Int64,System.Int64)">
+ =========================================================================================
+ <summary>画像ピクセルを区分マスタ(KBN_GROUP_CD ='F64')のVALUE2×VALUE3の値にリサイズ</summary>
+ <param name="fromPath">String</param>
+ <param name="ToPath">String</param>
+ <param name="widthSize">integer</param>''' 
+ <param name="heightSize">integer</param>'''
+ <remarks></remarks>
+ =========================================================================================
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLF.NWC.NWC050BLF.CompressionCheck(System.String,System.String,System.String,System.Int64,System.Int64,System.Boolean)">
+ =========================================================================================
+ <summary>画像ファイルサイズを区分マスタ(KBN_GROUP_CD ='F64')のVALUE1の値をベースに圧縮</summary>
+ <param name="fromPath">String</param>
+ <param name="ToPath">String</param>
+ <param name="imgEnc">String</param>''' 
+ <param name="compSize">integer</param>'''
+ <remarks></remarks>
+ =========================================================================================
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLF.NWC.NWC050BLF.ConvertPathSeparateWinToUnix(System.String)">
+ <summary>
+ win形式のパスをlinux形式に変換
+ </summary>
+ <param name="path"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Nw.BLF.NWC.NWC070BLF.UPLOAD_TYPE">
+ <summary>
+ アップロードタイプ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.BLF.NWC.NWC070BLF.UPLOAD_TYPE.UNCOMPRESSION">
+ <summary>
+ 非圧縮
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.BLF.NWC.NWC070BLF.UPLOAD_TYPE.COMPRESSION">
+ <summary>
+ 圧縮
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Nw.BLF.NWC.NWC070BLF.TEMPLATE_TYPE">
+ <summary>
+ メールテンプレートタイプ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.BLF.NWC.NWC070BLF.TEMPLATE_TYPE.SUBJECT">
+ <summary>
+ 件名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.BLF.NWC.NWC070BLF.TEMPLATE_TYPE.BODY">
+ <summary>
+ 本文
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.BLF.NWC.NWC070BLF.TEMPLATE_TYPE.SIGNATURE">
+ <summary>
+ 署名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.BLF.NWC.NWC070BLF.MAX_KEY_NO_SEQ">
+ <summary>
+ MAXシーケンス番号
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.BLF.NWC.NWC070BLF.DAMEGE_PHOTO_FILENAME_PREFIX">
+ <summary>
+ 破損品写真ファイル名接頭文字
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.BLF.NWC.NWC070BLF.COMBINE_GOODS_NAME_MAX_LENGTH">
+ <summary>
+ 破損品写真ファイル名内の商品名最大文字長
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.BLF.NWC.NWC070BLF.FILE_TYPE_SUB_KBN_COLUMN_NAME_PREFIX">
+ <summary>
+ ファイルタイプサブ区分カラム名接頭文字
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.BLF.NWC.NWC070BLF.FILE_TYPE_SUB_KBN_COLUMN_MAX_COUNT">
+ <summary>
+ ファイルタイプサブ区分設定可能カラム数
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.BLF.NWC.NWC070BLF.FILE_TYPE_SUB_KBN_SEPARATOR">
+ <summary>
+ ファイルタイプサブ区分セパレータ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.BLF.NWC.NWC070BLF.ImageFileExtensions">
+ <summary>
+ 画像ファイル拡張子
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Nw.BLF.NWC.NWC070BLF.MailBodyItemIndex">
+ <summary>
+ メール本文用アイテムINDEX
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.BLF.NWC.NWC070BLF.MailBodyItemIndex.CustName">
+ <summary>
+ 荷主名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.BLF.NWC.NWC070BLF.MailBodyItemIndex.PhotoName">
+ <summary>
+ 写真名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.BLF.NWC.NWC070BLF.MailBodyItemIndex.PhotoType">
+ <summary>
+ 写真種別
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.BLF.NWC.NWC070BLF.MailBodyItemIndex.InkaNo">
+ <summary>
+ 入荷管理番号
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.BLF.NWC.NWC070BLF.MailBodyItemIndex.SaveFolderPath">
+ <summary>
+ 保存フォルダパス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.BLF.NWC.NWC070BLF.MAIL_SUBJECT_SUFFIX_FORMAT">
+ <summary>
+ メール件名接尾文字フォーマット
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLF.NWC.NWC070BLF.UpPhotoData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>KIDSアップロード</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLF.NWC.NWC070BLF.UpDamagePhotoData(System.Data.DataSet)">
+ <summary>
+ 破損写真アップロード
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLF.NWC.NWC070BLF.StringToArray(System.String,System.String)">
+ <summary>
+ 文字列分割
+ </summary>
+ <param name="text"></param>
+ <param name="separator"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLF.NWC.NWC070BLF.AddInsertRow(System.Data.DataSet,System.String,System.String,System.Int32@)">
+ <summary>
+ 登録行追加
+ </summary>
+ <param name="ds"></param>
+ <param name="keyNo"></param>
+ <param name="saveFolderPath"></param>
+ <param name="maxSeq"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLF.NWC.NWC070BLF.CreateFileTypeKbnSubCoulmnName(System.Int32)">
+ <summary>
+ ファイルタイプサブ区分接頭文字生成
+ </summary>
+ <param name="count"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLF.NWC.NWC070BLF.CreateSaveFolderRelativePath(System.String,System.String,System.String)">
+ <summary>
+ 保存フォルダパス生成(ルート配下の相対パス)
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLF.NWC.NWC070BLF.CreateSaveFolderName">
+ <summary>
+ 保存フォルダ名生成
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLF.NWC.NWC070BLF.CreateSaveFileName(System.Int32,System.String,System.String)">
+ <summary>
+ 保存ファイル名生成
+ </summary>
+ <param name="fileCount"></param>
+ <param name="fileExtension"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLF.NWC.NWC070BLF.RemoveFileNameInvalidChar(System.String)">
+ <summary>
+ ファイル名に利用できない文字を削除する。
+ </summary>
+ <param name="fileName"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLF.NWC.NWC070BLF.GetMailInfo(System.Data.DataSet,System.String,System.String)">
+ <summary>
+ メール送信用情報取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLF.NWC.NWC070BLF.GetGoodsName(System.Data.DataSet)">
+ <summary>
+ 商品名取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.BLF.NWC.NWC090BLF.SelectGoodsData(System.Data.DataSet)">
+ <summary>
+ 商品検索画面
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

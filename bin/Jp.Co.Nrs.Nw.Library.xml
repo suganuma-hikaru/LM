@@ -1,0 +1,1033 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.Nw.Library
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.Nw.My.Resources.Resources">
+<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.Nw.My.Resources.Resources.ResourceManager">
+<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.Nw.My.Resources.Resources.Culture">
+<summary>
+  すべてについて、現在のスレッドの CurrentUICulture プロパティをオーバーライドします
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.Nw.Base.NwBaseBLC">
+ <summary>
+ BLC層中核クラス
+ </summary>
+ <remarks>DACへコネクションを引き渡すため
+ コネクション格納用のフィールドを持つ。
+ </remarks>
+ <histry>
+ 2006/07/21      須藤      新規
+ </histry>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.Base.NwBaseBLC.SelectMessageData(System.Data.DataSet)">
+ <summary>
+ メッセージマスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.Base.NwBaseBLC.SetMessage(System.String)">
+ <summary>
+ メッセージＩＤ・メッセージレベル・メッセージ文言をServiceDataに設定する。
+ </summary>
+ <param name="messageID">メッセージID</param>
+ <remarks>引数のメッセージＩＤを元にメッセージ文言を作成し、 
+ ServiceDataクラスにメッセージＩＤ・メッセージレベル・メッセージ文言を設定する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.Base.NwBaseBLC.SetMessage(System.String,System.String[])">
+ <summary>
+ メッセージ情報をServiceDataに設定する。
+ </summary>
+ <param name="messageID">メッセージID</param>
+ <param name="replaceMessages">置換対象文字列の配列</param>
+ <remarks>引数のメッセージＩＤを元にメッセージ文言を作成し、
+ ServiceDataクラスにメッセージ情報を設定する。</remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Nw.Base.NwBaseBLF">
+ <summary>
+ BLF層中核クラス
+ </summary>
+ <remarks></remarks>
+ <histry>
+ 2006/07/21      須藤      新規
+ 2006/07/28      須藤      修正
+                             ・システム情報取得メソッドを作成
+                             ・SqlConnectionオブジェクト取得メソッドを外だし
+                             ・DBサーバーの時間取得メソッドを外だし
+                             ・CreanUpServiceDataForClientをオーバーライド可能に変更
+ 2006/09/14      須藤      修正
+                             ・トランザクション開始時に一旦コネクションを閉じるように修正
+ </histry>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.Base.NwBaseBLF.GetMessageDataSet(System.Data.DataSet)">
+ <summary>
+ メッセージデータを取得する
+ </summary>
+ <remarks>
+  </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.Base.NwBaseBLF.IsErrorMessageExist">
+ <summary>
+ メッセージの有無を判定して返却する
+ </summary>
+ <returns>
+ True ：メッセージが存在する
+ False：メッセージが存在しない
+ </returns>
+ <remarks>MessageIdの頭1桁が "E" か "S" の時、Trueを返します。</remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Nw.Base.NwBaseDAC">
+ <summary>
+ DAC層中核クラス
+ </summary>
+ <remarks>DBサーバーよりデータの取得を行うためのメソッドを提供する。</remarks>
+ <histry>
+ 2006/07/21      須藤      新規
+ 2006/10/24      須藤      修正　取得データにRTrimをかけるように修正
+ </histry>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Base.NwBaseDAC.KbnSchemaDs">
+ <summary>
+ 区分マスタ(KBN_GROUP_CD = D003：スキーマ名称蓄積用データセット)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Nw.Base.NwBaseDAC.DBKbn">
+ <summary>
+ Database区分定義体
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Base.NwBaseDAC.DBKbn.MST">
+ <summary>
+ マスタ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Base.NwBaseDAC.DBKbn.TRN">
+ <summary>
+ トラン
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Base.NwBaseDAC.DBKbn.ARC">
+ <summary>
+ アーカイブ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Base.NwBaseDAC.S_MESSAGE_SELECT">
+ <summary>
+ メッセージマスタ取得用SQL文
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.Base.NwBaseDAC.SetMessage(System.String,System.String[])">
+ <summary>
+ メッセージＩＤ・メッセージレベル・メッセージ文言をServiceDataに設定する。
+ </summary>
+ <param name="messageID">メッセージID</param>
+ <remarks>引数のメッセージＩＤを元にメッセージ文言を作成し、
+ ServiceDataクラスにメッセージＩＤ・メッセージレベル・メッセージ文言を設定する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.Base.NwBaseDAC.SQLStringAddParam(System.Data.SqlClient.SqlCommand)">
+ <summary>
+ ＠paramを実際の値に置き換えます。
+ </summary>
+ <param name="cmd"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.Base.NwBaseDAC.GetDatabaseName(System.String,Jp.Co.Nrs.Nw.Base.NwBaseDAC.DBKbn)">
+ <summary>
+ 区分マスタ(LM_MST)(GROUP_CD=D003)のデータベース名称を取得します。
+ </summary>
+ <param name="nrsBrCd">営業所コード</param>
+ <param name="kbn">Database種別（区分マスタKBN_NM3～5の列番号）</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.Base.NwBaseDAC.SelectKbnSchemaData(System.Data.DataSet)">
+ <summary>
+ 区分マスタ(ＤＢスキーマ名称)情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>区分マスタ(ＤＢスキーマ名称)情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.Base.NwBaseDAC.SelectS_MESSAGEData(System.Data.DataSet)">
+ <summary>
+ メッセージマスタ情報取得（DAC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Base.NwBaseForm._PrintUpdDate">
+ =====================================================================
+ <summary>印刷用最新更新日付格納用フィールド（日付）</summary>
+ <remarks></remarks>
+ =====================================================================
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Base.NwBaseForm._PrintUpdTime">
+ =====================================================================
+ <summary>印刷用最新更新日付格納用フィールド（時間）</summary>
+ <remarks></remarks>
+ =====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.Nw.Base.NwBaseForm.MbtnTab01_Click(System.Object,System.EventArgs)">
+ <summary>
+ オーバーライドすることにより、Ｔａｂ１のクリックイベントを取得することができます。
+ </summary>
+ <param name="sender">イベントの発生したPageオブジェクト</param>
+ <param name="e">イベントデータのインスタンス</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.Base.NwBaseForm.MbtnTab02_Click(System.Object,System.EventArgs)">
+ <summary>
+ オーバーライドすることにより、Ｔａｂ２のクリックイベントを取得することができます。
+ </summary>
+ <param name="sender">イベントの発生したPageオブジェクト</param>
+ <param name="e">イベントデータのインスタンス</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.Base.NwBaseForm.MBtnAction01_Click(System.Object,System.EventArgs)">
+ <summary>
+ オーバーライドすることにより、Ｆ１のクリックイベントを取得することができます。
+ </summary>
+ <param name="sender">イベントの発生したPageオブジェクト</param>
+ <param name="e">イベントデータのインスタンス</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.Base.NwBaseForm.MBtnAction02_Click(System.Object,System.EventArgs)">
+ <summary>
+ オーバーライドすることにより、Ｆ２のクリックイベントを取得することができます。
+ </summary>
+ <param name="sender">イベントの発生したPageオブジェクト</param>
+ <param name="e">イベントデータのインスタンス</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.Base.NwBaseForm.MBtnAction03_Click(System.Object,System.EventArgs)">
+ <summary>
+ オーバーライドすることにより、Ｆ３のクリックイベントを取得することができます。
+ </summary>
+ <param name="sender">イベントの発生したPageオブジェクト</param>
+ <param name="e">イベントデータのインスタンス</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.Base.NwBaseForm.MBtnAction04_Click(System.Object,System.EventArgs)">
+ <summary>
+ オーバーライドすることにより、Ｆ４のクリックイベントを取得することができます。
+ </summary>
+ <param name="sender">イベントの発生したPageオブジェクト</param>
+ <param name="e">イベントデータのインスタンス</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.Base.NwBaseForm.MBtnAction05_Click(System.Object,System.EventArgs)">
+ <summary>
+ オーバーライドすることにより、Ｆ５のクリックイベントを取得することができます。
+ </summary>
+ <param name="sender">イベントの発生したPageオブジェクト</param>
+ <param name="e">イベントデータのインスタンス</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.Base.NwBaseForm.MBtnAction06_Click(System.Object,System.EventArgs)">
+ <summary>
+ オーバーライドすることにより、Ｆ６のクリックイベントを取得することができます。
+ </summary>
+ <param name="sender">イベントの発生したPageオブジェクト</param>
+ <param name="e">イベントデータのインスタンス</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.Base.NwBaseForm.MBtnAction07_Click(System.Object,System.EventArgs)">
+ <summary>
+ オーバーライドすることにより、Ｆ７のクリックイベントを取得することができます。
+ </summary>
+ <param name="sender">イベントの発生したPageオブジェクト</param>
+ <param name="e">イベントデータのインスタンス</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.Base.NwBaseForm.MBtnAction08_Click(System.Object,System.EventArgs)">
+ <summary>
+ オーバーライドすることにより、Ｆ８のクリックイベントを取得することができます。
+ </summary>
+ <param name="sender">イベントの発生したPageオブジェクト</param>
+ <param name="e">イベントデータのインスタンス</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.Base.NwBaseForm.MBtnAction09_Click(System.Object,System.EventArgs)">
+ <summary>
+ オーバーライドすることにより、Ｆ９のクリックイベントを取得することができます。
+ </summary>
+ <param name="sender">イベントの発生したPageオブジェクト</param>
+ <param name="e">イベントデータのインスタンス</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.Base.NwBaseForm.MBtnAction10_Click(System.Object,System.EventArgs)">
+ <summary>
+ オーバーライドすることにより、Ｆ１０のクリックイベントを取得することができます。
+ </summary>
+ <param name="sender">イベントの発生したPageオブジェクト</param>
+ <param name="e">イベントデータのインスタンス</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.Base.NwBaseForm.MBtnAction11_Click(System.Object,System.EventArgs)">
+ <summary>
+ オーバーライドすることにより、Ｆ１１のクリックイベントを取得することができます。
+ </summary>
+ <param name="sender">イベントの発生したPageオブジェクト</param>
+ <param name="e">イベントデータのインスタンス</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.Base.NwBaseForm.MBtnAction12_Click(System.Object,System.EventArgs)">
+ <summary>
+ オーバーライドすることにより、Ｆ１２のクリックイベントを取得することができます。
+ </summary>
+ <param name="sender">イベントの発生したPageオブジェクト</param>
+ <param name="e">イベントデータのインスタンス</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.Base.NwBaseForm.CreateSearchDataTable(System.Data.DataTable)">
+ <summary>
+ 受けとったクエリパラメータを検索DataTableに追加します。
+ </summary>
+ <param name="searchTbl">
+ 検索条件を含むDataTable
+ </param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Nw.Base.NwBaseHandler">
+ <summary>
+ GUI層中核クラス
+ </summary>
+ <remarks>クライアント処理用のメソッドを提供する</remarks>
+ <histry>
+ 2006/07/21      須藤      新規
+ 2006/09/15      須藤      修正　呼び出しBLFを格納するフィールド、メソッドを追加
+ 　　　　　　　　　　　　　　　　呼び出し元画面IDを取得・設定できるプロパティを追加
+ 2006/09/26      須藤      修正　サーバーシステムエラー時はインスタンス登録を解除する
+ 2006/10/23      須藤      修正　システム日付・時刻を取得するメソッドを隠蔽
+ </histry>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.Base.NwBaseHandler.CreateSearchDataTable(System.Data.DataTable)">
+ <summary>
+ 受けとったクエリパラメータを検索DataTableに追加します。
+ </summary>
+ <param name="searchTbl">
+ 検索条件を含むDataTable
+ </param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Nw.ZKbnDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.Nw.ZKbnDS.Z_KBNDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.Nw.ZKbnDS.Z_KBNRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.Nw.ZKbnDS.Z_KBNRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Const.NwConst.COM_DB">
+ <summary>
+ COM_DB接続用の接頭辞
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Const.NwConst.DS_DB">
+ <summary>
+ DS_DB接続用の接頭辞
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Const.NwConst.RE_DB">
+ <summary>
+ RE_DB接続用の接頭辞
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Const.NwConst.LM_MST">
+ <summary>
+ LM_MST接続用の接頭辞
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Const.NwConst.JF_DB">
+ <summary>
+ JF_DB接続用の接頭辞
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Const.NwConst.KBN_S003">
+ <summary>
+ NFS 所属部署区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Nw.Const.NwConst.NW_SYSTEM_ID">
+ <summary>
+ システムID(S072[COM])
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Const.NwConst.NW_SYSTEM_ID.KIDS">
+ <summary>
+ KIDS
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Const.NwConst.NW_SYSTEM_ID.LMS">
+ <summary>
+ LMS
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Nw.Const.NwConst.KEY_TYPE_KBN">
+ <summary>
+ キータイプ区分(F012[COM])
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Const.NwConst.KEY_TYPE_KBN.INKA_NO">
+ <summary>
+ 入荷管理番号
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Const.NwConst.KEY_TYPE_KBN.GOODS_CD_NRS">
+ <summary>
+ 商品キー
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Nw.Const.NwKbnConst">
+ <summary>
+ 区分マスタの区分分類コードの定数体
+ </summary>
+ <remarks>区分追加により修正を行うこと</remarks>
+ <histry>
+ 2014/02/05 新規
+ </histry>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Const.NwKbnConst.KBN_D003">
+ <summary>
+ DB参照先　(LM_MST..Z_KBN)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Const.NwKbnConst.KBN_S031">
+ <summary>
+ 事務所コード
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.Utility.JulianDateUtility.GetGregorianDate(System.String)">
+ <summary>
+ グレゴリオ暦を取得します
+ </summary>
+ <param name="value">「000001」～「199365」の範囲で指定します。</param>
+ <returns>エラー、範囲外の値は空を返します</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.Utility.JulianDateUtility.GetJulianDate(System.String)">
+ <summary>
+ ユリウス暦を取得します(日付として妥当な値のみ)
+ </summary>
+ <param name="value">
+ 8桁(yyyyMMdd) or 10桁(yyyy/MM/dd)
+ 1900/01/01～2099/12/31の範囲で指定します。
+ </param>
+ <returns>エラー、範囲外の値は空を返します</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Nw.Utility.SendType">
+ <summary>
+ 送信先種類
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Utility.SendType.TO_USER">
+ <summary>
+ ToユーザーID
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Utility.SendType.CC_USER">
+ <summary>
+ CCユーザーID
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Utility.SendType.BCC_USER">
+ <summary>
+ BCCユーザーID
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Nw.Utility.MailKbn">
+ <summary>
+ メール送信種類区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Utility.MailKbn.EST_SHINSEI_REJECT">
+ <summary>
+ 見積申請情報の否認処理
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Utility.MailKbn.CONT_REMINDER">
+ <summary>
+ コンテナ指定ステージ処理
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Utility.MailKbn.INVOICE_NOT_PRINT">
+ <summary>
+ 未処理Invoiceの注意喚起
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Nw.Utility.MailUtility">
+ <summary>
+ メールユーティリティクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.Utility.MailUtility.SendMail(Jp.Co.Nrs.Com.Base.BaseBLC,Jp.Co.Nrs.Nw.Utility.MailKbn,System.String,System.Collections.ArrayList,System.Collections.ArrayList,System.Collections.ArrayList,System.String,System.Collections.ArrayList,System.Collections.ArrayList)">
+ <summary>
+ メール送信
+ </summary>
+ <param name="blc">BLCクラス</param>
+ <param name="mailKbn">メール送信種類区分</param>
+ <param name="fromUserID">送信元ユーザーＩＤ</param>
+ <param name="toUserID">送信先ユーザーＩＤ</param>
+ <param name="ccUserID">CC送信先ユーザーＩＤ</param>
+ <param name="bccUserID">BCC送信先ユーザーＩＤ</param>
+ <param name="title">件名 置換文字列</param>
+ <param name="item">本文アイテム 置換文字列（５つまで指定可能）</param>
+ <param name="attachFile">添付ファイルパスリスト</param>
+ <returns>True：成功、False:失敗</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.Utility.MailUtility.ReadXML(System.Int32)">
+ <summary>
+ メール情報XMLファイルを配列に読み込みます
+ </summary>
+ <remarks>
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.Utility.MailUtility.SelectUserInfoFrom(Jp.Co.Nrs.Com.Base.Interface.IConnection,System.String)">
+ <summary>
+ FROMユーザIDより事務所名、ユーザ名、メールアドレスを取得します
+ </summary>
+ <param name="pBLC"></param>
+ <param name="pUserID"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.Utility.MailUtility.SelectUserInfo(Jp.Co.Nrs.Com.Base.Interface.IConnection,System.Collections.ArrayList,Jp.Co.Nrs.Nw.Utility.SendType)">
+ <summary>
+ ユーザIDより事務所名、ユーザ名、メールアドレスを取得します
+ </summary>
+ <param name="pBLC"></param>
+ <param name="pUserID"></param>
+ <param name="sType"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.Utility.MailUtility.EditBody(System.Collections.ArrayList,System.Collections.ArrayList)">
+ <summary>
+ 本文編集
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.Utility.MailUtility.SendMailDebug(System.String,System.String,System.Collections.ArrayList,System.String,System.String,System.String)">
+ <summary>
+ メールデバック用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Nw.Utility.NwNumberMasterUtility">
+ <summary>
+ ナンバーマスタ番号取得部品
+ </summary>
+ <remarks>自動採番を行います</remarks>
+ <histry>
+ 
+ </histry>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Utility.NwNumberMasterUtility.NUMBER_SELECT">
+ <summary>
+ ナンバーマスタ取得用SQL文
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Utility.NwNumberMasterUtility.NUMBER_UPDATE">
+ <summary>
+ ナンバーマスタ更新SQL文
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Utility.NwNumberMasterUtility.KUBUN_SELECT">
+ <summary>
+ NFS 区分マスタ取得SQL文
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Nw.Utility.NwNumberMasterUtility.NumberKbn">
+ <summary>
+ ナンバー区分定義体
+ </summary>
+ <remarks>公開用</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Utility.NwNumberMasterUtility.NumberKbn.ORD_NO">
+ <summary>
+ [ナンバー区分]受注番号
+ </summary>
+ <remarks>受注番号は部署区分を必要とします</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.Utility.NwNumberMasterUtility.GetAutoCode(Jp.Co.Nrs.Nw.Utility.NwNumberMasterUtility.NumberKbn,Jp.Co.Nrs.Com.Base.Interface.IConnection,System.String)">
+ <summary>
+ 新規コードを取得します
+ </summary>
+ <param name="deptKbn">デポ部署区分</param>
+ <param name="NoKbn">ナンバー区分</param>
+ <param name="obj">BLFクラス</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.Utility.NwNumberMasterUtility.CheckDeptKbn(Jp.Co.Nrs.Nw.Utility.NwNumberMasterUtility.NumberKbn,System.String)">
+ <summary>
+ 所属部署区分の必須チェック
+ </summary>
+ <param name="NoKbn"></param>
+ <param name="DeptKbn"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.Utility.NwNumberMasterUtility.SelectNumberMaster(System.Data.SqlClient.SqlConnection,System.String)">
+ <summary>
+ ナンバーマスタ読み込み
+ </summary>
+ <param name="conn"></param>
+ <param name="deptKbn"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.Utility.NwNumberMasterUtility.UpdateNumberMaster(System.Data.SqlClient.SqlConnection,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ ナンバーマスタ更新
+ </summary>
+ <param name="conn"></param>
+ <param name="now_val"></param>
+ <param name="sysDate"></param>
+ <param name="sysTime"></param>
+ <param name="pgId"></param>
+ <param name="userId"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.Utility.NwNumberMasterUtility.SetNumberMKeysArray(Jp.Co.Nrs.Nw.Utility.NwNumberMasterUtility.NumberKbn)">
+ <summary>
+ ナンバーマスタのキー設定
+ </summary>
+ <param name="NoKbn"></param>
+ <remarks>NumberKbnの後ろに「  」を付与します</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.Utility.NwNumberMasterUtility.EditCode(System.Data.SqlClient.SqlConnection,System.String,System.String)">
+ <summary>
+ 取得ナンバー編集
+ </summary>
+ <param name="conn">DBコネクション</param>
+ <param name="code">取得コード</param>
+ <returns>編集したコード</returns>
+ <remarks>先頭に部署記号を付与します</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.Utility.NwNumberMasterUtility.GetDeptMark(System.Data.SqlClient.SqlConnection,System.String)">
+ <summary>
+ 部署記号取得
+ </summary>
+ <returns>部署記号</returns>
+ <remarks>部署区分が区分マスタに存在するか否かチェックします</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Utility.NWReportDesignerUtility.COM_DB">
+ <summary>
+ COM_DB接続用の接頭辞
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Nw.Utility.NWReportDesignerUtility.OutPutMode">
+ <summary>
+ 出力形式
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Utility.NWReportDesignerUtility.OutPutMode.PDF">
+ <summary>
+ 出力形式:PDFファイル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Utility.NWReportDesignerUtility.OutPutMode.XLS">
+ <summary>
+ 出力形式:Excelファイル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Nw.Utility.NWReportDesignerUtility.KbnConst">
+ <summary>
+ 区分マスタの区分分類コードの定数体
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Utility.NWReportDesignerUtility.KbnConst.KBN_R004">
+ <summary>
+RDサーバ情報
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Utility.NWReportDesignerUtility.KbnConst.KBN_R005">
+ <summary>
+帳票CSV出力フォルダ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Utility.NWReportDesignerUtility.KbnConst.KBN_R006">
+ <summary>
+RDフォームファイル格納パス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Nw.Utility.NWReportDesignerUtility.CacheTBL">
+ <summary>
+ キャッシュテーブル名の定数体
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Utility.NWReportDesignerUtility.CacheTBL.KBN">
+ <summary>
+ 区分マスタ情報
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Nw.Utility.NWReportDesignerUtility.ReturnTBL">
+ <summary>
+ NWSxxxOUT 返却DataTable内の列名の定数体
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Utility.NWReportDesignerUtility.ReturnTBL.DOWNLOAD_FILE">
+ <summary>
+ NWSxxxOUT 出力ファイル列名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Utility.NWReportDesignerUtility._PtnId">
+ <summary>
+ 帳票種類ID
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Utility.NWReportDesignerUtility._RptId">
+ <summary>
+ レポートファイル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Utility.NWReportDesignerUtility._outPutCsvPath">
+ <summary>
+ 出力するファイルの場所(local)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Utility.NWReportDesignerUtility._outPutPdfPath">
+ <summary>
+ 出力するファイルの場所(local)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Utility.NWReportDesignerUtility._outPutFileName">
+ <summary>
+ 出力するPDFファイルの完全パス(local) Z_KBN:R005 :KBN_NM3/5(PDF) - KBN_NM4/6(XLS)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Utility.NWReportDesignerUtility._fileNameYMD">
+ <summary>
+ 出力ファイルに付加する年月日時分秒
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Utility.NWReportDesignerUtility._outputMode">
+ <summary>
+ 文書の出力形式
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Utility.NWReportDesignerUtility._KbnDt">
+ <summary>
+ 区分マスタデータテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Utility.NWReportDesignerUtility._SvDate">
+ <summary>
+ サーバー日付
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Utility.NWReportDesignerUtility._SvTime">
+ <summary>
+ サーバー時刻
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Utility.NWReportDesignerUtility._RdHost">
+ <summary>
+ Job Manager がインストールされているサーバのホスト名、またはIP アドレス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Utility.NWReportDesignerUtility._RdPort">
+ <summary>
+ Job Manager のサービスポート番号
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Utility.NWReportDesignerUtility._CsvFolderPath">
+ <summary>
+ 帳票CSV出力フォルダ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Utility.NWReportDesignerUtility._RdBaseFolder">
+ <summary>
+ RDベースフォルダ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Utility.NWReportDesignerUtility._RdFormFolder">
+ <summary>
+ RDフォームフォルダ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Utility.NWReportDesignerUtility._Encoding">
+ <summary>
+ 帳票を要求するCSV ファイルの文字エンコーディング情報
+ </summary>
+ <remarks>
+ Encoding文字列は Java でサポートするcharset であり、
+ 次のような値を指定することができます。
+ “Shift_JIS”、“UTF-8”、“UTF-16LE”、“UTF-16BE” など
+ </remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Utility.NWReportDesignerUtility._JobID">
+ <summary>
+ JobManager に登録されたJob の固有なID
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Utility.NWReportDesignerUtility._CsvFileName">
+ <summary>
+ 帳票の出力を要求するCSV ファイル名
+ </summary>
+ <remarks>
+ CSV ファイルはヘッダ部分とフッタ部分で構成されていなければなりません。
+ </remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Utility.NWReportDesignerUtility._LogInUserID">
+ <summary>
+ ログインユーザーID
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Utility.NWReportDesignerUtility._PGID">
+ <summary>
+ PG ID
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.Utility.NWReportDesignerUtility.CallDataSet(System.Data.DataTable,System.String)">
+ <summary>
+ 同一レイアウトの新しいデータセットを返します
+ </summary>
+ <param name="dt">DataTable</param>
+ <returns>DataSet</returns>
+ <remarks>同一レイアウトの新しいデータセットを返します</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.Utility.NWReportDesignerUtility.StartPrint(Jp.Co.Nrs.Com.Base.BaseBLC,System.String,System.Data.DataTable@,Jp.Co.Nrs.Nw.Utility.NWReportDesignerUtility.OutPutMode)">
+ <summary>
+ RD印刷処理を行います。
+ </summary>
+ <param name="blc"></param>
+ <param name="rptId"></param>
+ <param name="outDataTable"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.Utility.NWReportDesignerUtility.PrintRD(Jp.Co.Nrs.Com.Base.BaseBLC,System.String,System.Data.DataTable)">
+ <summary>
+ 印刷処理
+ </summary>
+ <param name="rptId">レポートファイル名</param>
+ <param name="outDataTable">出力DataTable</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.Utility.NWReportDesignerUtility.SetHeaderTab">
+ <summary>
+ ヘッダメタデータ作成
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.Utility.NWReportDesignerUtility.CreateCSVForRD(System.String)">
+ <summary>
+ CSVファイルを出力します。
+ </summary>
+ <param name="prtString"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.Utility.NWReportDesignerUtility.SetQuot(System.String)">
+ <summary>
+ ダブルクォーテーションで囲み返却します。
+ </summary>
+ <param name="para"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.Utility.NWReportDesignerUtility.GetTimeStamp(Jp.Co.Nrs.Com.Base.Interface.IConnection)">
+ <summary>
+ サーバー時刻を取得します。
+ </summary>
+ <param name="obj"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.Utility.NWReportDesignerUtility.GetKbnMasterData(Jp.Co.Nrs.Com.Base.Interface.IConnection)">
+ <summary>
+ 区分マスタデータの取得を行います。
+ </summary>
+ <param name="obj"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.Utility.NWReportDesignerUtility.GetRDServerInfo">
+ <summary>
+ 区分マスタからRD Server情報を取得します。営業所を見る
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.Utility.NWReportDesignerUtility.GetOutputFolderPath">
+ <summary>
+ 出力先フォルダのパスを取得します。
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.Utility.NWReportDesignerUtility.GetRDBaseFormInfo">
+ <summary>
+ RD Base/Form Folder を取得します。
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.Utility.NWReportDesignerUtility.GetServiceData(Jp.Co.Nrs.Com.Base.BaseBLC)">
+ <summary>
+ ServiceDataの情報を取得します。
+ </summary>
+ <param name="obj"></param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Utility.NwZipUtility._desktopDir">
+ <summary>
+ デスクトップのパス名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Utility.NwZipUtility._unzipDir">
+ <summary>
+ 解凍先パス名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Utility.NwZipUtility._zipPath">
+ <summary>
+ 圧縮ファイルパス名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Utility.NwZipUtility._fileName">
+ <summary>
+ 圧縮ファイル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Utility.NwZipUtility._zipFilePath">
+ <summary>
+ 圧縮するファイルのパス名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Utility.NwZipUtility._fileNameWithoutEx">
+ <summary>
+ 拡張子なしのファイル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Utility.NwZipUtility._totalEntriesToProcess">
+ <summary>
+ 個数
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.Utility.NwZipUtility.fileNames">
+ <summary>
+ 解凍したファイルのパスを格納
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.Utility.NwZipUtility.fUnZip(System.String,System.String,System.String[]@)">
+ <summary>
+ ZIPファイルを解凍します。
+ </summary>
+ <param name="zipFilePath">ZIPファイルパス</param>
+ <param name="unZipPath">展開先パス</param>
+ <param name="rtnFileName">ファイル名(展開先パス含む)</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.Utility.NwZipUtility.fZip(System.String[],System.String,System.String)">
+ <summary>
+  ファイルを圧縮します。
+ </summary>
+ <param name="filePath">圧縮元ファイルパス</param>
+ <param name="zipFileName">ZIPファイル名</param>
+ <param name="zipPath">ZIPファイル保存先パス</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

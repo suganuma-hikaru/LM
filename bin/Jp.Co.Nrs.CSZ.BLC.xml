@@ -1,0 +1,732 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.CSZ.BLC
+</name>
+</assembly>
+<members>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ050BLC.FUNCTION_NM.SELECT_DATA">
+ <summary>
+ データ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ050BLC.FUNCTION_NM.INSERT_DATA">
+ <summary>
+ データ登録
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ050BLC.FUNCTION_NM.MASTER_CHK">
+ <summary>
+ マスタチェック
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.BLC.CSZ050BLC.FUNCTION_NM.SEND_MAIL">
+ <summary>
+ メール送信
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ050BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSZ050BLC.SelectDataList(System.Data.DataSet)">
+ <summary>
+ 検索結果情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSZ050BLC.InsertChat(System.Data.DataSet)">
+ <summary>
+ 登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSZ050BLC.SendMail(System.Data.DataSet)">
+ <summary>
+ メール送信処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSZ050BLC.InSChatMsg(System.Data.DataSet)">
+ <summary>
+ 登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSZ050BLC.InsertChatEdit(System.Data.DataSet)">
+ <summary>
+ チャットデータ蝶番
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSZ050BLC.SetSendMailData(System.Data.DataSet)">
+ <summary>
+ メール送信編集処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSZ050BLC.GetMaimTpl(System.String,System.String)">
+ <summary>
+ メールテンプレート取得
+ </summary>
+ <param name="tplCd"></param>
+ <param name="tplKbn"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSZ050BLC.IsMasterChk(System.Data.DataSet)">
+ <summary>
+ マスタチェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSZ050BLC.IsMasterChkUser(System.Data.DataSet)">
+ <summary>
+ ユーザチェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSZ050BLC.SendMailProc(System.Data.DataSet)">
+ <summary>
+メッセージ送信処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSZ050BLC.CreateEWSToolSendMailDataSet">
+ <summary>
+ EWSTool SendMail用DataSet作成
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ070BLC.FUNCTION_NM.SELECT_DATA">
+ <summary>
+ 検索結果データ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ070BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSZ070BLC.SelectResultList(System.Data.DataSet)">
+ <summary>
+ 検索結果情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ020BLC.FUNCTION_NM.SELECT_DATA">
+ <summary>
+ 検索結果データ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ020BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSZ020BLC.SelectResultList(System.Data.DataSet)">
+ <summary>
+ 検索結果情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ030BLC.FUNCTION_NM.SELECT_DATA">
+ <summary>
+ 検索結果データ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ030BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSZ030BLC.SelectResultList(System.Data.DataSet)">
+ <summary>
+ 検索結果情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ080BLC.FUNCTION_NM.SELECT_DATA">
+ <summary>
+ 検索結果データ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ080BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSZ080BLC.SelectResultList(System.Data.DataSet)">
+ <summary>
+ 検索結果情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_KEY.LOGISTICS_ORD_NO">
+ <summary>
+ 物流依頼管理番号
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_KEY.TEST_ORD_NO">
+ <summary>
+ 定期検査依頼番号
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_KEY.TANK_NO">
+ <summary>
+ 容器番号
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_KEY.LOGISTICS_DTL_NO">
+ <summary>
+ 物流依頼明細番号
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_KEY.TEST_ORD_DTL_NO">
+ <summary>
+ 定期検査明細番号
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_KEY.LOAD_ORD_NO">
+ <summary>
+ 充填依頼番号
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_KEY.LOAD_ORD_DTL_NO">
+ <summary>
+ 充填依頼明細番号
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_KEY.INOUT_ORD_NO">
+ <summary>
+ 入出荷管理番号
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_KEY.TRANS_ORD_NO">
+ <summary>
+ 保管移送管理番号
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_KEY.ITEM_NO">
+ <summary>
+ 製品管理番号
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_KEY.DEST_CD">
+ <summary>
+ 納品先管理番号
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_KEY.STORAGE_LOC_CD">
+ <summary>
+ 保管場所管理番号
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_KEY.USER_ID">
+ <summary>
+ ユーザID
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_PROC.EVENT_SAVE">
+ <summary>
+ 保存
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_PROC.EVENT_DELETE">
+ <summary>
+ 削除
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_PROC.EVENT_RESET">
+ <summary>
+ 復活
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_PROC.EVENT_ROLLBACK">
+ <summary>
+ ロールバック
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_PROC.EVENT_OUTSIDE_CHECK_COMPLETE">
+ <summary>
+ 外観チェック完了
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_PROC.EVENT_REPAIRE_COMPLETE">
+ <summary>
+ 修理完了
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_PROC.EVENT_SEND_MAIL_CUSTOMER_OUTSIDE">
+ <summary>
+ 顧客宛メール作成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_PROC.EVENT_CUSTOMER_CONFIRM_COMPLETE">
+ <summary>
+ 顧客確認完了
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_PROC.EVENT_SALES_CONFIRM_COMPLETE">
+ <summary>
+ 営業確認完了
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_PROC.EVENT_WASH_COMPLETE">
+ <summary>
+ 洗浄完了
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_PROC.EVENT_LOAD_ORDER">
+ <summary>
+ 充填依頼
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_PROC.EVENT_LOAD_COMPLETE">
+ <summary>
+ 充填完了
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_PROC.EVENT_LOAD_COMPLET_CANCEL">
+ <summary>
+ 充填完了キャンセル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_PROC.EVENT_SEND_MAIL_RETURN_TANK">
+ <summary>
+ 返却可否メール送信
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_PROC.EVENT_RETURN_YN_UPDATE">
+ <summary>
+ 返却可否更新
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_PROC.EVENT_VESSEL_ORDER">
+ <summary>
+ 本船手配
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_PROC.EVENT_BOOKING_COMPLETE">
+ <summary>
+ ブッキング完了
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_PROC.EVENT_ETD_COMPLETE">
+ <summary>
+ ETD完了
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_PROC.EVENT_ETD_CANCEL">
+ <summary>
+ ETDキャンセル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_PROC.EVENT_ETA_COMPLETE">
+ <summary>
+ ETA完了
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_PROC.EVENT_ETA_CANCEL">
+ <summary>
+ ETAキャンセル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_PROC.EVENT_SHIPPING_ORDER">
+ <summary>
+ 出荷依頼
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_PROC.EVENT_SHIPPING_INSTRUCT">
+ <summary>
+ 出荷指示
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_PROC.EVENT_BL_CONFIRM_COMPLETE">
+ <summary>
+ BLドラフト確認完了
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_PROC.EVENT_CUST_CLEARANCE_EXP_COMPLETE">
+ <summary>
+ 通関許可完了（輸出）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_PROC.EVENT_CUST_CLEARANCE_IMP_COMPLETE">
+ <summary>
+ 通関許可完了（輸入）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_PROC.EVENT_DELIVERY_COMPLETE">
+ <summary>
+ 納品完了
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_PROC.EVENT_TRANS_ORDER">
+ <summary>
+ 移動依頼
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_PROC.EVENT_TRANS_ORDER_YES">
+ <summary>
+ 移動受諾
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_PROC.EVENT_TRANS_ORDER_NO">
+ <summary>
+ 移動不可
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_PROC.EVENT_TEST_INSTRUCT">
+ <summary>
+ 検査指示
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_PROC.EVENT_TEST_PLAN_DATE_ANS">
+ <summary>
+ 検査候補日回答
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_PROC.EVENT_TEST_ARRANGE_ORDER">
+ <summary>
+ 検査手配依頼
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_PROC.EVENT_TEST_DATE_ANS">
+ <summary>
+ 検査日程回答
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_PROC.EVENT_TEST_RESULT_NOTICE">
+ <summary>
+ 検査結果報告
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_PROC.EVENT_INSP_COMPLETE">
+ <summary>
+ 検品完了
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_PROC.EVENT_COMPLETE_CANCEL">
+ <summary>
+ 完了キャンセル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_PROC.EVENT_SURVEY_INSTRUCT">
+ <summary>
+ 調査指示
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_PROC.EVENT_SURVEY_NONE">
+ <summary>
+ 調査不要
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_PROC.EVENT_INIT_PASSWORD">
+ <summary>
+ パスワード初期化
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_PROC.EVENT_SAP_REGISTRATION">
+ <summary>
+ SAP登録完了
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_PROC.EVENT_DISPOSE">
+ <summary>
+ 廃棄
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_PROC.EVENT_REGAIN">
+ <summary>
+ 取戻
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_PROC.EVENT_QR_ALLOCATION">
+ <summary>
+ 容器QR割当
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_PROC.EVENT_REPAIRE_IMPOSSIBLE">
+ <summary>
+ 修理不可
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_PROC.EVENT_IMAGE_SAVE">
+ <summary>
+ 画像登録
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_PROC.EVENT_IMAGE_DELETE">
+ <summary>
+ 画像削除
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_PROC.EVENT_TEST_ARRANGE_TANK">
+ <summary>
+ 検査手配依頼
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_PROC.EVENT_IMAGE_UPDATE">
+ <summary>
+ 画像更新
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_PROC.EVENT_BOOKING_CANCEL">
+ <summary>
+ ブッキングキャンセル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_PROC.EVENT_RESCHEDULE">
+ <summary>
+ 日程変更
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_PROC.EVENT_CHECK_COMPLETE">
+ <summary>
+ チェック完了
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ999BLC.Z_SYSTEM_PROC.EVENT_WASH_COMPLETE_REPAIR">
+ <summary>
+ 洗浄完了（外部修理：要）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ010BLC.FUNCTION_NM.SELECT_DATA">
+ <summary>
+ 検索結果データ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ010BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSZ010BLC.SelectResultList(System.Data.DataSet)">
+ <summary>
+ 検索結果情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ040BLC.FUNCTION_NM.SELECT_DATA">
+ <summary>
+ 検索結果データ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ040BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSZ040BLC.GetInitMailSenderData(System.Data.DataSet)">
+ <summary>
+初期値宛先取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSZ040BLC.GetReturnOrderInfo(System.Data.DataSet)">
+ <summary>
+返却容器確認メール情報取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSZ040BLC.GetReturnTankInfo(System.Data.DataSet)">
+ <summary>
+容器情報取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSZ040BLC.GetReturnOutsideChkInfo(System.Data.DataSet)">
+ <summary>
+外観チェック情報取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSZ040BLC.InsertMessage(System.Data.DataSet)">
+ <summary>
+メッセージ登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSZ040BLC.SendMailProc(System.Data.DataSet)">
+ <summary>
+メッセージ送信処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSZ040BLC.CreateEWSToolSendMailDataSet">
+ <summary>
+ EWSTool SendMail用DataSet作成
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSZ040BLC.GetNextMsgNo">
+ <summary>
+ 新規メッセージNo取得
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ060BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSZ060BLC.SearchDataList(System.Data.DataSet)">
+ <summary>
+ 添付ファイルマスタ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSZ060BLC.InsertFileData(System.Data.DataSet)">
+ <summary>
+ 添付ファイルマスタ登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSZ060BLC.UpdateDeleteFileData(System.Data.DataSet)">
+ <summary>
+ 添付ファイルマスタ論理削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSZ060BLC.ChkHaita(System.Data.DataSet)">
+ <summary>
+ 排他チェック
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>データセット</returns>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ090BLC.FUNCTION_NM.SELECT_DATA">
+ <summary>
+ 検索結果データ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSZ090BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSZ090BLC.SelectResultList(System.Data.DataSet)">
+ <summary>
+ 検索結果情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

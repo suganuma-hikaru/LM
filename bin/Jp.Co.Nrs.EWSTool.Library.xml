@@ -1,0 +1,865 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.EWSTool.Library
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.EWSTool.Base.CommonConstants">
+ <summary>
+ 共通利用する定数群クラス
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Base.CommonConstants.#ctor">
+ <summary>
+ コンストラクタ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.EWSTool.Base.CommonConstants.SeparateCharacter">
+ <summary>
+ 区切り文字
+ </summary>
+ <remarks>メール宛先や添付ファイルが複数存在する場合の区切り文字に利用する。</remarks>
+</member>
+<member name="T:Jp.Co.Nrs.EWSTool.Base.ProcessParameter">
+ <summary>
+ 処理パラメータ名を表す定数群クラス
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Base.ProcessParameter.#ctor">
+ <summary>
+ コンストラクタ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.EWSTool.Base.ProcessParameter.SendMailIN">
+ <summary>
+ メール送信
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.EWSTool.Base.ProcessParameter.GetMailOUT">
+ <summary>
+ メール受信
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.EWSTool.Base.ProcessParameter.SetAppointmentIN">
+ <summary>
+ 予定登録
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.EWSTool.Base.ProcessParameter.GetAppointmentOUT">
+ <summary>
+ 予定取得
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.EWSTool.Base.ProcessParameter.UpdateAppointmentIN">
+ <summary>
+ 予定更新
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.EWSTool.Base.ProcessParameter.DeleteAppointmentIN">
+ <summary>
+ 予定削除
+ </summary>
+</member>
+<member name="T:Jp.Co.Nrs.EWSTool.Base.EmailImportance">
+ <summary>
+ メールの重要度を表す定数群クラス
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Base.EmailImportance.#ctor">
+ <summary>
+ コンストラクタ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.EWSTool.Base.EmailImportance.Low">
+ <summary>
+ 重要度：低
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.EWSTool.Base.EmailImportance.Normal">
+ <summary>
+ 重要度：通常
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.EWSTool.Base.EmailImportance.High">
+ <summary>
+ 重要度：高
+ </summary>
+</member>
+<member name="T:Jp.Co.Nrs.EWSTool.Base.EmailColumn">
+ <summary>
+ メールの項目名を表す定数群クラス
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Base.EmailColumn.#ctor">
+ <summary>
+ コンストラクタ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.EWSTool.Base.EmailColumn.DateTimeSent">
+ <summary>
+ 送信日
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.EWSTool.Base.EmailColumn.DateTimeReceived">
+ <summary>
+ 受信日
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.EWSTool.Base.EmailColumn.Subject">
+ <summary>
+ 件名
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.EWSTool.Base.EmailColumn.TextBody">
+ <summary>
+ 本文(テキスト)
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.EWSTool.Base.EmailColumn.ToRecipients">
+ <summary>
+ 宛先To
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.EWSTool.Base.EmailColumn.CcRecipients">
+ <summary>
+ 宛先Cc
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.EWSTool.Base.EmailColumn.BccRecipients">
+ <summary>
+ 宛先Bcc
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.EWSTool.Base.EmailColumn.Attachments">
+ <summary>
+ 添付ファイル
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.EWSTool.Base.EmailColumn.Importance">
+ <summary>
+ 重要度
+ </summary>
+</member>
+<member name="T:Jp.Co.Nrs.EWSTool.Base.AppointmentColumn">
+ <summary>
+ 予定の項目名を表す定数群クラス
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Base.AppointmentColumn.#ctor">
+ <summary>
+ コンストラクタ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.EWSTool.Base.AppointmentColumn.Id">
+ <summary>
+ ID
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.EWSTool.Base.AppointmentColumn.Subject">
+ <summary>
+ イベント名
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.EWSTool.Base.AppointmentColumn.Location">
+ <summary>
+ 場所
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.EWSTool.Base.AppointmentColumn.RequiredAttendees">
+ <summary>
+ 必須出席者
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.EWSTool.Base.AppointmentColumn.OptionalAttendees">
+ <summary>
+ 任意出席者
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.EWSTool.Base.AppointmentColumn.Start">
+ <summary>
+ 開始日
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.EWSTool.Base.AppointmentColumn.End">
+ <summary>
+ 終了日
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.EWSTool.Base.AppointmentColumn.TextBody">
+ <summary>
+ 本文(テキスト)
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.EWSTool.Base.AppointmentColumn.Attachments">
+ <summary>
+ 添付ファイル
+ </summary>
+</member>
+<member name="T:Jp.Co.Nrs.EWSTool.Base.FilterOperator">
+ <summary>
+ 検索条件の論理式を表すクラス
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Base.FilterOperator.#ctor">
+ <summary>
+ コンストラクタ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.EWSTool.Base.FilterOperator.And">
+ <summary>
+ AND条件
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.EWSTool.Base.FilterOperator.Or">
+ <summary>
+ OR条件
+ </summary>
+</member>
+<member name="T:Jp.Co.Nrs.EWSTool.Base.ExchangeManager">
+ <summary>
+ EWSTool操作クラス
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.EWSTool.Base.ExchangeManager.service">
+ <summary>
+ Exchange WebServices
+ </summary>
+</member>
+<member name="P:Jp.Co.Nrs.EWSTool.Base.ExchangeManager.TargetUserMailAddress">
+ <summary>
+ 対象ユーザーID
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Base.ExchangeManager.#ctor(System.String)">
+ <summary>
+ コンストラクタ。Exchangeへの認証情報を指定する。
+ </summary>
+ <param name="targetUserMailAddress"></param>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Base.ExchangeManager.SendMail(System.Data.DataSet,System.String)">
+ <summary>
+ メールを送信し、送信済みアイテムフォルダに保存する。
+ ※引数のtargetUserMailAddressは未使用です。
+ </summary>
+ <param name="dataSet">メールDataSet</param>
+ <param name="targetUserMailAddress">対象ユーザーのメールアドレス</param>
+ <returns>送信処理件数</returns>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Base.ExchangeManager.SendMail(System.Data.DataSet)">
+ <summary>
+ メールを送信し、送信済みアイテムフォルダに保存する。
+ </summary>
+ <param name="dataSet">メールDataSet</param>
+ <returns>送信処理件数</returns>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Base.ExchangeManager.GetMail(System.Int32,System.String,Jp.Co.Nrs.EWSTool.Base.SearchFilterFactory)">
+ <summary>
+ メールを取得する。
+ ※引数のtargetUserMailAddressは未使用です。
+ </summary>
+ <param name="maxMailCount">メール取得最大件数</param>
+ <param name="targetUserMailAddress">対象ユーザーのメールアドレス</param>
+ <param name="searchFactory">検索条件(省略可能)</param>
+ <returns>取得結果を返す。</returns>
+ <remarks>検索対象はInboxフォルダ</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Base.ExchangeManager.GetMail(System.Int32,Jp.Co.Nrs.EWSTool.Base.SearchFilterFactory)">
+ <summary>
+ メールを取得する。
+ </summary>
+ <param name="maxMailCount">メール取得最大件数</param>
+ <param name="searchFactory">検索条件(省略可能)</param>
+ <returns>取得結果を返す。</returns>
+ <remarks>検索対象はInboxフォルダ</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Base.ExchangeManager.SetAppointment(System.Data.DataSet,System.String)">
+ <summary>
+ 予定を新規登録する。
+ </summary>
+ <param name="dataSet">予定DataSet</param>
+ <param name="targetUserMailAddress">対象ユーザーのメールアドレス</param>
+ <returns>予定登録処理件数</returns>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Base.ExchangeManager.SetAppointment(System.Data.DataSet)">
+ <summary>
+ 予定を新規登録する。
+ </summary>
+ <param name="dataSet">予定DataSet</param>
+ <returns>予定登録処理件数</returns>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Base.ExchangeManager.GetAppointment(System.Int32,System.String,Jp.Co.Nrs.EWSTool.Base.SearchFilterFactory)">
+ <summary>
+ 予定を取得する。
+ ※引数のtargetUserMailAddressは未使用です。
+ </summary>
+ <param name="maxAppointCount">予定最大件数</param>
+ <param name="targetUserMailAddress">対象ユーザーのメールアドレス</param>
+ <param name="searchFactory">検索条件(省略可能)</param>
+ <returns>取得結果</returns>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Base.ExchangeManager.GetAppointment(System.Int32,Jp.Co.Nrs.EWSTool.Base.SearchFilterFactory)">
+ <summary>
+ 予定を取得する。
+ </summary>
+ <param name="maxAppointCount">予定最大件数</param>
+ <param name="searchFactory">検索条件(省略可能)</param>
+ <returns>取得結果</returns>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Base.ExchangeManager.UpdateAppointment(System.Data.DataSet)">
+ <summary>
+ 予定を更新する。
+ </summary>
+ <param name="dataSet">予定更新内容DataSet</param>
+ <returns>更新処理件数</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Base.ExchangeManager.DeleteAppointment(System.Data.DataSet)">
+ <summary>
+ 予定を削除する。
+ </summary>
+ <param name="dataSet">予定削除対象DataSet</param>
+ <returns>削除処理件数</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Base.ExchangeManager.GetAttachment(System.String,System.String,System.String)">
+ <summary>
+ 添付ファイルを取得する。
+ </summary>
+ <param name="mailId">対象メールID</param>
+ <param name="attachmentId">対象添付ファイルID</param>
+ <param name="outputPath">出力先フォルダパス</param>
+ <returns>一時保存ファイルパス</returns>
+ <remarks>
+ 指定された出力先フォルダパスに対して、以下の
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Base.ExchangeManager.GetAttachmentBinary(System.String,System.String)">
+ <summary>
+ 添付ファイルを取得する。
+ </summary>
+ <param name="mailId">対象メールID</param>
+ <param name="attachmentId">対象添付ファイルID</param>
+ <returns>バイナリデータ</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Base.ExchangeManager.CreateMessage(System.Data.DataRow)">
+ <summary>
+ データからEmailMessageを作成する
+ </summary>
+ <param name="row"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Base.ExchangeManager.CreateAppointment(System.Data.DataRow)">
+ <summary>
+ データからAppointmentを作成する
+ </summary>
+ <param name="row"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.EWSTool.Base.SearchFilterFactory">
+ <summary>
+ 検索条件を生成するクラス
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Base.SearchFilterFactory.#ctor(System.String)">
+ <summary>
+ コンストラクタ
+ </summary>
+ <param name="logicalOperator">論理式(And/Or)</param>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Base.SearchFilterFactory.GetSearchFilterCollection">
+ <summary>
+ 登録した検索条件を取得する。
+ </summary>
+ <returns>検索条件</returns>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Base.SearchFilterFactory.AddConditionContainsSubstringSubject(System.String)">
+ <summary>
+ 「件名/イベント名に比較文字列を含む」検索条件を追加する。
+ </summary>
+ <param name="compareValue">検索値</param>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Base.SearchFilterFactory.AddConditionContainsSubstringBody(System.String)">
+ <summary>
+ 「本文に比較文字列を含む」検索条件を追加する。
+ </summary>
+ <param name="compareValue">検索値</param>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Base.SearchFilterFactory.AddConditionIsEqualsToSubject(System.String)">
+ <summary>
+ 「件名/イベント名が比較文字列と完全一致する」検索条件を追加する。
+ </summary>
+ <param name="compareValue">検索値</param>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Base.SearchFilterFactory.AddConditionIsEqualsToBody(System.String)">
+ <summary>
+ 「本文が比較文字列と完全一致する」検索条件を追加する。
+ </summary>
+ <param name="compareValue">検索値</param>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Base.SearchFilterFactory.AddConditionIsNotEqualToSubject(System.String)">
+ <summary>
+ 「件名/イベント名が比較文字列と一致しない」検索条件を追加する。
+ </summary>
+ <param name="compareValue">検索値</param>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Base.SearchFilterFactory.AddConditionIsNotEqualToBody(System.String)">
+ <summary>
+ 「本文が比較文字列と一致しない」検索条件を追加する。
+ </summary>
+ <param name="compareValue">検索値</param>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Base.SearchFilterFactory.AddConditionIsGreaterThanDateTimeSent(System.DateTime)">
+ <summary>
+ 「メール送信日が比較時刻より大きい」検索条件を追加する。
+ </summary>
+ <param name="compareValue">検索値</param>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Base.SearchFilterFactory.AddConditionIsGreaterThanDateTimeReceived(System.DateTime)">
+ <summary>
+ 「メール受信日が比較時刻より大きい」検索条件を追加する。
+ </summary>
+ <param name="compareValue">検索値</param>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Base.SearchFilterFactory.AddConditionIsGreaterThanStart(System.DateTime)">
+ <summary>
+ 「予定開始日が比較時刻より大きい」検索条件を追加する。
+ </summary>
+ <param name="compareValue">検索値</param>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Base.SearchFilterFactory.AddConditionIsGreaterThanEnd(System.DateTime)">
+ <summary>
+ 「予定開終了日が比較時刻より大きい」検索条件を追加する。
+ </summary>
+ <param name="compareValue">検索値</param>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Base.SearchFilterFactory.AddConditionIsGreaterThanOrEqualToDateTimeSent(System.DateTime)">
+ <summary>
+ 「メール送信日が比較時刻以上」検索条件を追加する。
+ </summary>
+ <param name="compareValue">検索値</param>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Base.SearchFilterFactory.AddConditionIsGreaterThanOrEqualToDateTimeReceived(System.DateTime)">
+ <summary>
+ 「メール受信日が比較時刻以上」検索条件を追加する。
+ </summary>
+ <param name="compareValue">検索値</param>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Base.SearchFilterFactory.AddConditionIsGreaterThanOrEqualToStart(System.DateTime)">
+ <summary>
+ 「予定開始日が比較時刻以上」検索条件を追加する。
+ </summary>
+ <param name="compareValue">検索値</param>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Base.SearchFilterFactory.AddConditionIsGreaterThanOrEqualToEnd(System.DateTime)">
+ <summary>
+ 「予定終了日が比較時刻以上」検索条件を追加する。
+ </summary>
+ <param name="compareValue">検索値</param>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Base.SearchFilterFactory.AddConditionIsLessThanDateTimeSent(System.DateTime)">
+ <summary>
+ 「メール送信日が比較時刻より小さい」検索条件を追加する。
+ </summary>
+ <param name="compareValue">検索値</param>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Base.SearchFilterFactory.AddConditionIsLessThanDateTimeReceived(System.DateTime)">
+ <summary>
+ 「メール受信日が比較時刻より小さい」検索条件を追加する。
+ </summary>
+ <param name="compareValue">検索値</param>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Base.SearchFilterFactory.AddConditionIsLessThanStart(System.DateTime)">
+ <summary>
+ 「予定開始日が比較時刻より小さい」検索条件を追加する。
+ </summary>
+ <param name="compareValue">検索値</param>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Base.SearchFilterFactory.AddConditionIsLessThanEnd(System.DateTime)">
+ <summary>
+ 「予定終了日が比較時刻より小さい」検索条件を追加する。
+ </summary>
+ <param name="compareValue">検索値</param>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Base.SearchFilterFactory.AddConditionIsLessThanOrEqualToDateTimeSent(System.DateTime)">
+ <summary>
+ 「メール送信日が比較時刻以下」検索条件を追加する。
+ </summary>
+ <param name="compareValue">検索値</param>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Base.SearchFilterFactory.AddConditionIsLessThanOrEqualToDateTimeReceived(System.DateTime)">
+ <summary>
+ 「メール受信日が比較時刻以下」検索条件を追加する。
+ </summary>
+ <param name="compareValue">検索値</param>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Base.SearchFilterFactory.AddConditionIsLessThanOrEqualToStart(System.DateTime)">
+ <summary>
+ 「予定開始日が比較時刻以下」検索条件を追加する。
+ </summary>
+ <param name="compareValue">検索値</param>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Base.SearchFilterFactory.AddConditionIsLessThanOrEqualToEnd(System.DateTime)">
+ <summary>
+ 「予定終了日が比較時刻以下」検索条件を追加する。
+ </summary>
+ <param name="compareValue">検索値</param>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Base.SearchFilterFactory.AddSearchCondition(Jp.Co.Nrs.EWSTool.Base.SearchFilterFactory,System.String,System.String)">
+ <summary>
+ 検索条件を設定する。
+ </summary>
+ <param name="factory">検索条件インスタンス</param>
+ <param name="conditionValue">検索条件内容</param>
+ <param name="searchValue">検索条件値</param>
+</member>
+<member name="T:Jp.Co.Nrs.EWSTool.Entity.AppointmentEntity">
+ <summary>
+ 予定エンティティクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.EWSTool.Entity.AppointmentEntity.Id">
+ <summary>
+ 予定を一意に識別するID
+ </summary>
+ <remarks>予定を一意に識別するID 繰り返し予定は区別せず同一IDとなる</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.EWSTool.Entity.AppointmentEntity.Subject">
+ <summary>
+ イベント名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.EWSTool.Entity.AppointmentEntity.Location">
+ <summary>
+ 場所
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.EWSTool.Entity.AppointmentEntity.RequiredAttendees">
+ <summary>
+ 必須出席者
+ </summary>
+ <remarks>メールアドレス形式 複数の場合はセミコロンで区切る</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.EWSTool.Entity.AppointmentEntity.OptionalAttendees">
+ <summary>
+ 任意出席者
+ </summary>
+ <remarks>メールアドレス形式 複数の場合はセミコロンで区切る</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.EWSTool.Entity.AppointmentEntity.Start">
+ <summary>
+ 開始日 yyyy/MM/dd HH:mm:ss
+ </summary>
+ <remarks>繰り返し指定した予定の場合は、予定登録した際の開始日を表す。</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.EWSTool.Entity.AppointmentEntity.End">
+ <summary>
+ 終了日 yyyy/MM/dd HH:mm:ss
+ </summary>
+ <remarks>繰り返し指定した予定の場合は、予定登録した際の開始日を表す。</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.EWSTool.Entity.AppointmentEntity.TextBody">
+ <summary>
+ 本文(テキスト)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.EWSTool.Entity.AppointmentEntity.Attachments">
+ <summary>
+ 添付ファイル
+ </summary>
+ <remarks>複数の場合はセミコロンで区切る</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.EWSTool.Entity.AppointmentEntity.IsRecurrence">
+ <summary>
+ 繰り返し予定有無
+ </summary>
+ <remarks>有：true, 無：false</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.EWSTool.Entity.AppointmentEntity.RecurrencePattern">
+ <summary>
+ 繰り返しパターン
+ </summary>
+ <remarks>日：DailyPattern, 週：WeeklyPattern, 月：MonthlyPattern, 年：YearlyPattern, その他：空</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.EWSTool.Entity.AppointmentEntity.RecurrenceStartDate">
+ <summary>
+ 繰り返し開始日 yyyy/MM/dd HH:mm:ss
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.EWSTool.Entity.AppointmentEntity.RecurrenceEndDate">
+ <summary>
+ 繰り返し終了日 yyyy/MM/dd HH:mm:ss
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.EWSTool.Entity.AppointmentEntity.NumberOfOccurrences">
+ <summary>
+ 繰り返し回数
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.EWSTool.Entity.AppointmentEntity.Interval">
+ <summary>
+ 繰り返し間隔
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.EWSTool.Entity.AppointmentEntity.FirstDayOfWeek">
+ <summary>
+ 繰り返し開始曜日
+ </summary>
+ <remarks>Sunday, Monday, ・・・</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.EWSTool.Entity.AppointmentEntity.DaysOfTheWeek">
+ <summary>
+ 繰り返し曜日
+ </summary>
+ <remarks>Sunday, Monday, ・・・ 複数の場合はセミコロンで区切る</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.EWSTool.Entity.AppointmentEntity.DayOfMonth">
+ <summary>
+ 繰り返し日
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.EWSTool.Entity.AppointmentEntity.Month">
+ <summary>
+ 繰り返し月
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Entity.AppointmentEntity.#ctor">
+ <summary>
+ コンストラクタ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.EWSTool.Entity.MailItemEntity">
+ <summary>
+ メールエンティティクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.EWSTool.Entity.MailItemEntity.Id">
+ <summary>
+ メールを一意に識別するID
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.EWSTool.Entity.MailItemEntity.SenderName">
+ <summary>
+ 差出人名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.EWSTool.Entity.MailItemEntity.SenderAddress">
+ <summary>
+ 差出人アドレス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.EWSTool.Entity.MailItemEntity.DateTimeSent">
+ <summary>
+ メール送信日 yyyy/MM/dd HH:mm:ss
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.EWSTool.Entity.MailItemEntity.DateTimeReceived">
+ <summary>
+ メール受信日 yyyy/MM/dd HH:mm:ss
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.EWSTool.Entity.MailItemEntity.Subject">
+ <summary>
+ 件名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.EWSTool.Entity.MailItemEntity.TextBody">
+ <summary>
+ 本文 テキスト
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.EWSTool.Entity.MailItemEntity.ToRecipients">
+ <summary>
+ 宛先To
+ </summary>
+ <remarks>メールアドレス形式 複数の場合はセミコロンで区切る </remarks>
+</member>
+<member name="P:Jp.Co.Nrs.EWSTool.Entity.MailItemEntity.CcRecipients">
+ <summary>
+ 宛先Cc
+ </summary>
+ <remarks>メールアドレス形式 複数の場合はセミコロンで区切る</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.EWSTool.Entity.MailItemEntity.BccRecipients">
+ <summary>
+ 宛先Bcc
+ </summary>
+ <remarks>メールアドレス形式 複数の場合はセミコロンで区切る</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.EWSTool.Entity.MailItemEntity.Attachments">
+ <summary>
+ 添付ファイル
+ </summary>
+ <remarks>複数の場合はセミコロンで区切る</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.EWSTool.Entity.MailItemEntity.AttachmentIds">
+ <summary>
+ 添付ファイルID
+ </summary>
+ <remarks>複数の場合はセミコロンで区切る</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.EWSTool.Entity.MailItemEntity.Importance">
+ <summary>
+ 重要度
+ </summary>
+ <remarks>Low, Normal, High</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Entity.MailItemEntity.#ctor">
+ <summary>
+ コンストラクタ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.EWSTool.Utility.CommonUtility">
+ <summary>
+ 共通処理ユーティリティクラス
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Utility.CommonUtility.#ctor">
+ <summary>
+ コンストラクタ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Utility.CommonUtility.ConvertToTable``1(``0,System.String)">
+ <summary>
+ IListを実装したオブジェクトをDataTableに変換する。
+ </summary>
+ <typeparam name="T"></typeparam>
+ <param name="list"></param>
+ <param name="tableName"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Utility.CommonUtility.ConvertToDataTable``1(``0,System.String)">
+ <summary>
+ IListを実装したオブジェクトをDataTableに変換する。
+ </summary>
+ <typeparam name="T">IListを実装した型</typeparam>
+ <param name="list">IListを実装したオブジェクト</param>
+ <param name="tableName">テーブル名</param>
+ <returns>変換後のDataTable</returns>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Utility.CommonUtility.ConvertToSingleAddress(Microsoft.Exchange.WebServices.Data.EmailAddressCollection)">
+ <summary>
+ 宛先のメールアドレスを区切り文字で区切り、文字列に変換する。
+ </summary>
+ <param name="addressCol">宛先</param>
+ <returns>区切り文字で区切ったメールアドレス</returns>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Utility.CommonUtility.ConvertToSingleAttendee(Microsoft.Exchange.WebServices.Data.AttendeeCollection)">
+ <summary>
+ 出席者のメールアドレスを区切り文字で区切り、文字列に変換する。
+ </summary>
+ <param name="attendeeCol">出席者</param>
+ <returns>区切り文字で区切ったメールアドレス</returns>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Utility.CommonUtility.ConvertToSingleFileName(Microsoft.Exchange.WebServices.Data.AttachmentCollection)">
+ <summary>
+ 添付ファイル名を区切り文字で区切り、文字列に変換する。
+ </summary>
+ <param name="attachmentCol">添付ファイル</param>
+ <returns>区切り文字で区切った添付ファイル名</returns>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Utility.CommonUtility.ConvertToSingleID(Microsoft.Exchange.WebServices.Data.AttachmentCollection)">
+ <summary>
+ 添付ファイル名を区切り文字で区切り、文字列に変換する。
+ </summary>
+ <param name="attachmentCol">添付ファイル</param>
+ <returns>区切り文字で区切った添付ファイル名</returns>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Utility.CommonUtility.SetMailRecipientCollection(Microsoft.Exchange.WebServices.Data.EmailAddressCollection,System.Object)">
+ <summary>
+ 指定した宛先に区切り文字で区切った文字列を追加する。
+ </summary>
+ <param name="addressCol">宛先</param>
+ <param name="dataRow">区切り文字で区切った文字列</param>
+ <remarks>メール宛先の登録に使用する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Utility.CommonUtility.SetAppointAttendeesCollection(Microsoft.Exchange.WebServices.Data.AttendeeCollection,System.Object)">
+ <summary>
+ 指定した出席者に区切り文字で区切った文字列を追加する。
+ </summary>
+ <param name="appointmentCol">出席者</param>
+ <param name="dataRow">区切り文字で区切った文字列</param>
+ <remarks>予定出席者の登録に使用する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Utility.CommonUtility.SetMailAttachmentCollection(Microsoft.Exchange.WebServices.Data.AttachmentCollection,System.Object)">
+ <summary>
+ 添付ファイルを追加する。
+ </summary>
+ <param name="addressCol">添付ファイルパス</param>
+ <param name="dataRow">区切り文字で区切った文字列</param>
+ <remarks>添付ファイルの登録に使用する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.EWSTool.Utility.CommonUtility.CreateSecureString(System.String)">
+ <summary>
+ 指定した文字列をSecureStringに変換する。
+ </summary>
+ <param name="plainText"></param>
+ <returns></returns>
+</member>
+<member name="T:Jp.Co.Nrs.EWSTool.Utility.Config">
+ <summary>
+ WebConfigのユーティル
+ </summary>
+</member>
+<member name="P:Jp.Co.Nrs.EWSTool.Utility.Config.ExchangeWebServiceUrl">
+ <summary>
+ サービスURL
+ </summary>
+</member>
+<member name="P:Jp.Co.Nrs.EWSTool.Utility.Config.ExchangeWebServiceUrl2">
+ <summary>
+ サービスURL2
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.EWSTool.Utility.Config.UserEmailAddress">
+ <summary>
+ 接続ユーザアカウント（メールアドレス）
+ </summary>
+</member>
+<member name="P:Jp.Co.Nrs.EWSTool.Utility.Config.UserPassword">
+ <summary>
+ 接続ユーザパスワード
+ </summary>
+</member>
+<member name="P:Jp.Co.Nrs.EWSTool.Utility.Config.AttachmentTemporaryPath">
+ <summary>
+ 一時ディレクトリ（添付ファイル用）
+ </summary>
+</member>
+</members>
+</doc>

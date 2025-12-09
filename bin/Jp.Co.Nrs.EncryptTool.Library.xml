@@ -1,0 +1,66 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.EncryptTool.Library
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.EncryptTool.My.Resources.Resources">
+<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.EncryptTool.My.Resources.Resources.ResourceManager">
+<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.EncryptTool.My.Resources.Resources.Culture">
+<summary>
+  すべてについて、現在のスレッドの CurrentUICulture プロパティをオーバーライドします
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.EncryptTool.Utility.TripleDesMGR">
+ <summary>
+ 3Des暗号化・複合化クラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.EncryptTool.Utility.TripleDesMGR.Encript(System.String)">
+ <summary>
+ 暗号化（データベースパスワード用）
+ </summary>
+ <param name="strInput">暗号化する文字列</param>
+ <returns>string</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.EncryptTool.Utility.TripleDesMGR.Encript(System.String,System.String@)">
+ <summary>
+ 暗号化
+ </summary>
+ <param name="strInput">暗号化する文字列</param>
+ <param name="keyVal">暗号化キー</param>
+ <returns>string</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.EncryptTool.Utility.TripleDesMGR.Decript(System.String)">
+ <summary>
+ 復号化（データベースパスワード用）
+ </summary>
+ <param name="strInput">複合化する文字列</param>
+ <returns>string</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.EncryptTool.Utility.TripleDesMGR.Decript(System.String,System.String@)">
+ <summary>
+ 復号化
+ </summary>
+ <param name="strInput">複合化する文字列</param>
+ <param name="keyVal">複合化キー</param>
+ <returns>string</returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

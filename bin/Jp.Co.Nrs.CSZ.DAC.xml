@@ -1,0 +1,693 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.CSZ.DAC
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.CS.DAC.CSZ050DAC.TABLE_NM">
+ <summary>
+ テーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSZ050DAC.FUNCTION_NM.SELECT_DATA">
+ <summary>
+ 検索結果データ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSZ050DAC.FUNCTION_NM.INSERT_DATA">
+ <summary>
+ データ登録
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSZ050DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSZ050DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSZ050DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSZ050DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSZ050DAC.SelectDataList(System.Data.DataSet)">
+ <summary>
+ 取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>取得取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSZ050DAC.InSChatMsg(System.Data.DataSet)">
+ <summary>
+ 登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>C_CONT更新処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSZ050DAC.SetSQLSelectParam">
+ <summary>
+ 取得条件設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSZ050DAC.SetSQLSetParamInsertSChatMsg">
+ <summary>
+ 登録条件設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSZ050DAC.SetSysCommonParameter">
+ <summary>
+ システム共通共通パラメータ(削除フラグを除く）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.DAC.CSZ010DAC.TABLE_NM">
+ <summary>
+ テーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.DAC.CSZ010DAC.PG_ID">
+ <summary>
+ PGID
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSZ010DAC.FUNCTION_NM.SELECT_DATA">
+ <summary>
+ 検索結果データ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSZ010DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSZ010DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSZ010DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSZ010DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSZ010DAC.SelectResultList(System.Data.DataSet)">
+ <summary>
+ 検索結果取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>検索結果取得取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSZ010DAC.SetSQLSetWhere(System.Data.DataTable,System.String)">
+ <summary>
+ 取得容器設定
+ </summary>
+ <param name="setTank">取得除外容器</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSZ010DAC.SetSQLSelectWhere(System.Data.DataRow)">
+ <summary>
+ 検索条件設定
+ </summary>
+ <param name="conditionRow">検索条件行</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSZ010DAC.SetSqlReplaceJoinCondition(System.String)">
+ <summary>
+ 結合条件設定
+ </summary>
+ <param name="pcId">PG_ID</param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.DAC.CSZ070DAC.TABLE_NM">
+ <summary>
+ テーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSZ070DAC.FUNCTION_NM.SELECT_DATA">
+ <summary>
+ 検索結果データ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSZ070DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSZ070DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSZ070DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSZ070DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSZ070DAC.CheckResultCount(System.Data.DataSet)">
+ <summary>
+ 取得行数チェック
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSZ070DAC.SelectResultList(System.Data.DataSet)">
+ <summary>
+ 検索結果取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>検索結果取得取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSZ070DAC.SetConditionSCompCdSqlForUserMst(System.Data.DataSet)">
+ <summary>
+ デフォルト条件パラメータ設定
+ </summary>
+ <param name="ds"></param>
+ <remarks>
+ ログインユーザの担当会社コードを抽出条件に付与する。
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSZ070DAC.SetSQLSelectWhere(System.Data.DataRow)">
+ <summary>
+ 検索条件設定
+ </summary>
+ <param name="conditionRow">検索条件行</param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.DAC.CSZ020DAC.TABLE_NM">
+ <summary>
+ テーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSZ020DAC.FUNCTION_NM.SELECT_DATA">
+ <summary>
+ 検索結果データ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSZ020DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSZ020DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSZ020DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSZ020DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSZ020DAC.CheckResultCount(System.Data.DataSet)">
+ <summary>
+ 取得行数チェック
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSZ020DAC.SelectResultList(System.Data.DataSet)">
+ <summary>
+ 検索結果取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>検索結果取得取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSZ020DAC.SetSQLSelectWhere(System.Data.DataRow)">
+ <summary>
+ 検索条件設定
+ </summary>
+ <param name="conditionRow">検索条件行</param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.DAC.CSZ030DAC.TABLE_NM">
+ <summary>
+ テーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSZ030DAC.FUNCTION_NM.SELECT_DATA">
+ <summary>
+ 検索結果データ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSZ030DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSZ030DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSZ030DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSZ030DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSZ030DAC.CheckResultCount(System.Data.DataSet)">
+ <summary>
+ 取得行数チェック
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSZ030DAC.SelectResultList(System.Data.DataSet)">
+ <summary>
+ 検索結果取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>検索結果取得取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSZ030DAC.SetSQLSelectWhere(System.Data.DataRow)">
+ <summary>
+ 検索条件設定
+ </summary>
+ <param name="conditionRow">検索条件行</param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.DAC.CSZ040DAC.TABLE_NM">
+ <summary>
+ テーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.DAC.CSZ040DAC.FUNCTION_NM">
+ <summary>
+ 関数名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSZ040DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSZ040DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSZ040DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSZ040DAC.SetSysDelFlgOffParameter">
+ <summary>
+ 削除フラグ オフ パラメータ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSZ040DAC.SetSysCommonParameter">
+ <summary>
+ システム共通共通パラメータ(削除フラグを除く）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSZ040DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSZ040DAC.SelectInitDestChargeResultList(System.Data.DataSet)">
+ <summary>
+ 初期値宛先取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>検索結果取得取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSZ040DAC.SelectMailAddressResultList(System.Data.DataSet)">
+ <summary>
+ 初期値宛先取得処理（メール通知宛先M）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>検索結果取得取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSZ040DAC.SetSQLSelectInitDestChargeResultWhere(System.Data.DataRow)">
+ <summary>
+ 検索条件設定
+ </summary>
+ <param name="conditionRow">検索条件行</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSZ040DAC.SelectMailAddressResultWhere(System.Data.DataRow)">
+ <summary>
+ 検索条件設定（メール通知宛先M）
+ </summary>
+ <param name="conditionRow">検索条件行</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSZ040DAC.SelectReturnOrderInfo(System.Data.DataSet)">
+ <summary>
+ 返却容器確認メール情報取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>検索結果取得取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSZ040DAC.SelectReturnTankInfo(System.Data.DataSet)">
+ <summary>
+ 容器情報取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>検索結果取得取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSZ040DAC.SelectReturnOutsideChkInfo(System.Data.DataSet)">
+ <summary>
+ 外観チェック情報取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>検索結果取得取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSZ040DAC.InsertMessage(System.Data.DataSet)">
+ <summary>
+ S_JOB_MSG登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>メッセージ通知編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSZ040DAC.InsertMessageDtl(System.Data.DataSet)">
+ <summary>
+ S_JOB_MSG_DTL登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>メッセージ通知編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSZ040DAC.SetDataInsUpdParameter(System.Data.DataRow)">
+ <summary>
+ 登録・更新共通パラメータ(S_JOB_MSG)
+ </summary>
+ <param name="conditionRow">DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSZ040DAC.SetDataInsUpdDtlParameter(System.Data.DataRow)">
+ <summary>
+ 登録・更新共通パラメータ(S_JOB_MSG_DTL)
+ </summary>
+ <param name="conditionRow">DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSZ060DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSZ060DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSZ060DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSZ060DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSZ060DAC.CheckResultCount(System.Data.DataSet)">
+ <summary>
+ 取得行数チェック
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSZ060DAC.SearchDataList(System.Data.DataSet)">
+ <summary>
+ 添付ファイルマスタ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>添付ファイルマスタ取得処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSZ060DAC.InsertFileData(System.Data.DataSet)">
+ <summary>
+ 添付ファイルマスタ登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>添付ファイルマスタ登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSZ060DAC.UpdateDeleteFileData(System.Data.DataSet)">
+ <summary>
+ 添付ファイルマスタ論理削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>添付ファイルマスタ論理削除SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSZ060DAC.SetSQLSelectWhere">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSZ060DAC.SetSQLUpdateDeleteWhere(System.Data.DataRow,System.Collections.ArrayList)">
+ <summary>
+ 条件文・パラメータ設定モジュール(添付ファイル論理削除更新(M_FILE))
+ </summary>
+ <param name="dr">DataRow</param>
+ <param name="prmList">パラメータ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSZ060DAC.SetSQLFileUpdDateTimeWhere">
+ <summary>
+ 条件文・パラメータ設定モジュール(添付ファイルマスタ排他確認用)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSZ060DAC.SetFileInsertParameter(System.Data.DataRow)">
+ <summary>
+ 添付ファイルマスタ新規登録時のパラメータ設定
+ </summary>
+ <param name="drow">データテーブル</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSZ060DAC.ChkHaita(System.Data.DataSet)">
+ <summary>
+ 添付ファイルマスタ 更新日・更新時刻の取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>添付ファイルマスタ 更新日・更新時刻取得SQLの構築・発行</remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.DAC.CSZ080DAC.TABLE_NM">
+ <summary>
+ テーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSZ080DAC.FUNCTION_NM.SELECT_DATA">
+ <summary>
+ 検索結果データ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSZ080DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSZ080DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSZ080DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSZ080DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSZ080DAC.CheckResultCount(System.Data.DataSet)">
+ <summary>
+ 取得行数チェック
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSZ080DAC.SelectResultList(System.Data.DataSet)">
+ <summary>
+ 検索結果取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>検索結果取得取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSZ080DAC.SetSQLSelectWhere(System.Data.DataRow)">
+ <summary>
+ 検索条件設定
+ </summary>
+ <param name="conditionRow">検索条件行</param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.DAC.CSZ090DAC.TABLE_NM">
+ <summary>
+ テーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSZ090DAC.FUNCTION_NM.SELECT_DATA">
+ <summary>
+ 検索結果データ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSZ090DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSZ090DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.DAC.CSZ090DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSZ090DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSZ090DAC.CheckResultCount(System.Data.DataSet)">
+ <summary>
+ 取得行数チェック
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSZ090DAC.SelectResultList(System.Data.DataSet)">
+ <summary>
+ 検索結果取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>検索結果取得取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSZ090DAC.SetSQLSelectWhere(System.Data.DataRow)">
+ <summary>
+ 検索条件設定
+ </summary>
+ <param name="conditionRow">検索条件行</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.DAC.CSZ999DAC.SetConditionSCompCdSql(System.Data.DataSet,System.String)">
+ <summary>
+ システム利用会社コードによるデータ抽出制限処理
+ </summary>
+ <param name="ds"></param>
+ <param name="addConditionTblPrefix"></param>
+ <remarks>
+ システム利用会社コード抽出対象のテーブル別名を引数に設定。
+ ログインユーザの担当会社コードを抽出条件に付与する。
+ ※検索画面、編集画面の主テーブル選択時に付与
+ </remarks>
+</member>
+</members>
+</doc>

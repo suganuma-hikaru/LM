@@ -1,0 +1,242 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.YTF.DAC
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.YT.DAC.YTF0100DAC.TABLE_NM">
+ <summary>
+ テーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.YT.DAC.YTF0100DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.YT.DAC.YTF0100DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.YT.DAC.YTF0100DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.DAC.YTF0100DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.DAC.YTF0100DAC.UpdateInvalidFlg(System.Data.DataSet)">
+ <summary>
+ 無効フラグ更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks>SelectTyuiData登録処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.DAC.YTF0100DAC.SetTyuiDataUpdateParameter">
+ <summary>
+ データ更新用パラメータ設定(無効フラグ更新)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.DAC.YTF0100DAC.SetDataUpdateParameter">
+ <summary>
+ データ更新用パラメータ設定(共通)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.YT.DAC.YTF0200DAC.TABLE_NM">
+ <summary>
+ テーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.YT.DAC.YTF0200DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.YT.DAC.YTF0200DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.YT.DAC.YTF0200DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.DAC.YTF0200DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.DAC.YTF0200DAC.SetParameter">
+ <summary>
+ 初期表示用パラメータ設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.DAC.YTF0200DAC.SetSyokumuKbnParameter">
+ <summary>
+ 職務区分取得用パラメータ設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.YT.DAC.YTF0300DAC.TABLE_NM">
+ <summary>
+ テーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.YT.DAC.YTF0300DAC.FUNCTION_NM.SELECT_TYUI_DATA">
+ <summary>
+ 書類ヘッダデータ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.YT.DAC.YTF0300DAC.FUNCTION_NM.INSERT_TYUI_DATA">
+ <summary>
+ 書類データ登録
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.YT.DAC.YTF0300DAC.FUNCTION_NM.UPDATE_TYUI_DATA">
+ <summary>
+ 書類データ更新
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.YT.DAC.YTF0300DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.YT.DAC.YTF0300DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.YT.DAC.YTF0300DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.YT.DAC.YTF0300DAC._PrmChk">
+ <summary>
+ パラメータチェック用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.DAC.YTF0300DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.DAC.YTF0300DAC.SelectTyuiData(System.Data.DataSet)">
+ <summary>
+ M_TYUI取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>M_TYUI取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.DAC.YTF0300DAC.CheckResultHinmeiCount(System.Data.DataSet)">
+ <summary>
+ 取得行数チェック(品目POP)
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.YT.DAC.YTF0300DAC.CheckResultTrsCount(System.Data.DataSet)">
+ <summary>
+ 取得行数チェック(取引先POP)
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.YT.DAC.YTF0300DAC.InsertTyuiData(System.Data.DataSet)">
+ <summary>
+ M_TYUI 登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>SelectTyuiData登録処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.DAC.YTF0300DAC.UpdateTyuiData(System.Data.DataSet)">
+ <summary>
+ M_TYUI 登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>SelectTyuiData登録処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.DAC.YTF0300DAC.SetSQLSelectHinmeiWhere">
+ <summary>
+ 条件文・パラメータ設定モジュール(品名POP)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.DAC.YTF0300DAC.SetSQLSelectTrsWhere">
+ <summary>
+ 条件文・パラメータ設定モジュール(取引先POP)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.DAC.YTF0300DAC.SetDataParameter">
+ <summary>
+ パラメータ設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.DAC.YTF0300DAC.SetDataInsertParameter">
+ <summary>
+ データ登録用パラメータ設定(INSERT)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.DAC.YTF0300DAC.SetDataUpdateParameter">
+ <summary>
+ データ登録用パラメータ設定(UPDATE)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.DAC.YTF0300DAC.SetTyuiDataUpdateParameter">
+ <summary>
+ M_TYUI用パラメータ設定(UPDATE)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.DAC.YTF0300DAC.SetTyuiDataInsertParameter">
+ <summary>
+ M_TYUI用パラメータ設定(INSERT)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.DAC.YTF0300DAC.SetParameter">
+ <summary>
+ 初期表示用パラメータ設定
+ </summary>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

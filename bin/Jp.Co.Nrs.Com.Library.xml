@@ -1,0 +1,4721 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.Com.Library
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.Com.My.Resources.Resources">
+<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.Com.My.Resources.Resources.ResourceManager">
+<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.Com.My.Resources.Resources.Culture">
+<summary>
+  すべてについて、現在のスレッドの CurrentUICulture プロパティをオーバーライドします
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.Com.Base.BaseBLC">
+ <summary>
+ BLC層中核クラス
+ </summary>
+ <remarks>DACへコネクションを引き渡すため
+ コネクション格納用のフィールドを持つ。
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseBLC.StartBLC(System.String,Jp.Co.Nrs.Com.Base.ServiceData)">
+ <summary>
+ BLC層のクラスにおいて、処理の起点となるメソッド。
+ このインスタンスに定義されているメソッド群から引数に渡されたメソッドを呼び出す。
+ </summary>
+ <param name="methodName">呼び出したいメソッド名</param>
+ <param name="serviceDataObj">各層間受け渡し情報</param>
+ <returns>呼び出すメソッドが返す画面出力用情報</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseBLC.CallNextService(Jp.Co.Nrs.Com.Base.BaseBLC,System.String,System.Data.DataSet)">
+ <summary>
+ 引数に渡されたBLCクラスから、BLC層の処理の基点となるメソッドをメソッドを呼び出す。
+ </summary>
+ <param name="bBLC">引数に指定されたメソッドを持つBLC層のクラス</param>
+ <param name="methodName">呼び出すメソッド名</param>
+ <param name="ds">画面情報を格納したDataSet</param>
+ <returns>呼び出すメソッドが返す画面出力用情報</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseBLC.CallNextService(Jp.Co.Nrs.Com.Base.BaseDAC,System.String,System.Data.DataSet)">
+ <summary>
+ 引数に渡されたDACクラスから、DAC層の処理の基点となるメソッドをメソッドを呼び出す。
+ </summary>
+ <param name="bDAC">引数に指定されたメソッドを持つDAC層のクラス</param>
+ <param name="methodName">呼び出すメソッド名</param>
+ <param name="ds">画面情報を格納したDataSet</param>
+ <returns>呼び出すメソッドが返す画面出力用情報</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseBLC.CallBLC(Jp.Co.Nrs.Com.Base.BaseBLC,System.String,System.Data.DataSet)">
+ <summary>
+ 引数に渡されたBLCクラスから、引数に指定されたメソッドを呼び出す。
+ </summary>
+ <param name="bBLC">引数に指定されたメソッドを持つBLC層のクラス</param>
+ <param name="methodName">呼び出すメソッド名</param>
+ <param name="ds">画面情報を格納したDataSet</param>
+ <returns>呼び出すメソッドが返す画面出力用情報</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseBLC.CallDAC(Jp.Co.Nrs.Com.Base.BaseDAC,System.String,System.Data.DataSet)">
+ <summary>
+ 引数に渡されたDACクラスから、引数に指定されたメソッドを呼び出す。
+ </summary>
+ <param name="bDAC">引数に指定されたメソッドを持つDAC層のクラス</param>
+ <param name="methodName">呼び出すメソッド名</param>
+ <param name="ds">画面情報を格納したDataSet</param>
+ <returns>呼び出すメソッドが返す画面出力用情報</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseBLC.SetMessage(System.String,System.String[])">
+ <summary>
+ メッセージＩＤ・メッセージレベル・メッセージ文言をServiceDataに設定する。
+ </summary>
+ <param name="messageID">メッセージID</param>
+ <remarks>引数のメッセージＩＤを元にメッセージ文言を作成し、
+ ServiceDataクラスにメッセージＩＤ・メッセージレベル・メッセージ文言を設定する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseBLC.SetMessage(System.String,System.String[],System.String,System.String)">
+ <summary>
+ メッセージＩＤ・メッセージレベル・メッセージ文言・メッセージ表示エリア・ナビエリアをServiceDataに設定する。
+ </summary>
+ <param name="messageID">メッセージID</param>
+ <remarks>引数のメッセージＩＤを元にメッセージ文言を作成し、
+ ServiceDataクラスにメッセージＩＤ・メッセージレベル・メッセージ文言・メッセージ表示エリア・ナビエリアを設定する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseBLC.SelectMessageData(System.Data.DataSet)">
+ <summary>
+ メッセージマスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseBLC.SelectUserData(System.Data.DataSet)">
+ <summary>
+ ユーザーマスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseBLC.CheckUserInfo(System.Data.DataSet)">
+ <summary>
+ ユーザーチェック（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseBLC.GetLimitCount">
+ <summary>
+ しきい値を取得します。
+ </summary>
+ <returns>しきい値</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseBLC.GetMaxResultCount">
+ <summary>
+ 表示最大件数を取得します。
+ </summary>
+ <returns>表示最大件数</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Com.Base.BaseBLF">
+ <summary>
+ BLF層中核クラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.BaseBLF.ConnectionString">
+ <summary>
+ DB接続文字列を格納するプロパティ
+ </summary>
+ <value>IPアドレス</value>
+ <returns>IPアドレス</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseBLF.StartBLF(System.String,Jp.Co.Nrs.Com.Base.ServiceData)">
+ <summary>
+ BLF層のクラスにおいて、処理の起点となるメソッド。
+ このインスタンスに定義されているメソッド群から引数に渡されたメソッドを呼び出す。
+ </summary>
+ <param name="methodName">呼び出したいメソッド名</param>
+ <param name="serviceDataObj">各層間受け渡し情報</param>
+ <returns>呼び出すメソッドが返す画面出力用情報</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseBLF.GetMessageDataSet(System.Data.DataSet)">
+ <summary>
+ メッセージデータを取得する
+ </summary>
+ <remarks>実際のデータ取得は下位フレームワークへ委譲
+  </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseBLF.GetMasterDataSet(System.Data.DataSet)">
+ <summary>
+ マスターデータを取得する
+ </summary>
+ <remarks>実際のデータ取得は下位フレームワークへ委譲
+  </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseBLF.IsErrorMessageExist">
+ <summary>
+ メッセージの有無を判定して返却する
+ </summary>
+ <returns>
+ True ：メッセージが存在する
+ False：メッセージが存在しない
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseBLF.GetSqlConnection(System.Boolean)">
+ <summary>
+ SqlConnectionオブジェクトを取得する
+ </summary>
+ <param name="isReadOnly"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseBLF.SetSystemTimeStamp">
+ <summary>
+ DBサーバーの時間をServiceDataに設定する
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseBLF.CallNextService(Jp.Co.Nrs.Com.Base.BaseBLC,System.String,System.Data.DataSet)">
+ <summary>
+ 引数に渡されたBLCクラスから、BLC層の処理の基点となるメソッドをメソッドを呼び出す。
+ </summary>
+ <param name="bBLC">引数に指定されたメソッドを持つBLC層のクラス</param>
+ <param name="methodName">呼び出すメソッド名</param>
+ <param name="ds">画面情報を格納したDataSet</param>
+ <returns>呼び出すメソッドが返す画面出力用情報</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseBLF.BeginTransaction(System.Transactions.TransactionScopeOption,System.Transactions.IsolationLevel,System.String)">
+ <summary>
+ TransactionScopeオブジェクトを取得する。
+ </summary>
+ <param name="scopeOption">トランザクションスコープを作成するためのオプション</param>
+ <param name="isolationLevel">タイムアウト値</param>
+ <param name="scopeTimeout">接続のトランザクション ロック動作</param>
+ <returns>TransactionScopeオブジェクト</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseBLF.CommitTransaction(System.Transactions.TransactionScope@)">
+ <summary>
+ トランザクションを確定する。
+ </summary>
+ <param name="tScope">TransactionScopeオブジェクト</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseBLF.GetQueName">
+ <summary>
+ QuqNameを取得します。
+ </summary>
+ <returns>処理識別文字列</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseBLF.CallBLC(Jp.Co.Nrs.Com.Base.BaseBLC,System.String,System.Data.DataSet)">
+ <summary>
+ 引数に渡されたBLCクラスから、引数に指定されたメソッドを呼び出す。
+ </summary>
+ <param name="bBLC">引数に指定されたメソッドを持つBLC層のクラス</param>
+ <param name="methodName">呼び出すメソッド名</param>
+ <param name="ds">画面情報を格納したDataSet</param>
+ <returns>呼び出すメソッドが返す画面出力用情報</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseBLF.CacheSystemData(System.Data.DataSet)">
+ <summary>
+ キャッシュされているシステム構成情報を取得する
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>コンフィグデータキャッシュとメッセージデータキャッシュを返却する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseBLF.GetForceOparation">
+ <summary>
+ 強制処理フラグを取得します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseBLF.CreanUpServiceDataForClient">
+ <summary>
+ ServiceDataに対して、クライアントで必要なデータのみにクリーンアップします。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Com.Base.BaseDAC">
+ <summary>
+ DAC層中核クラス
+ </summary>
+ <remarks>DBサーバーよりデータの取得を行うためのメソッドを提供する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseDAC.StartDAC(System.String,Jp.Co.Nrs.Com.Base.ServiceData)">
+ <summary>
+ DAC層のクラスにおいて、処理の起点となるメソッド。
+ このインスタンスに定義されているメソッド群から引数に渡されたメソッドを呼び出す。
+ </summary>
+ <param name="methodName">呼び出したいメソッド名</param>
+ <param name="serviceDataObj">各層間受け渡し情報</param>
+ <returns>呼び出すメソッドが返す画面出力用情報</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseDAC.CreateSqlCommand(System.String)">
+ <summary>
+ コネクションオブジェクトに関連付けられたDBサーバーに対して
+ 有効なSqlCommandオブジェクトのインスタンスを取得する。
+ </summary>
+ <param name="strSql">SQL文</param>
+ <returns>SqlCommandオブジェクト</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseDAC.GetSqlParameter(System.String,System.Object,Jp.Co.Nrs.Com.Const.DBDataType)">
+ <summary>
+ SQL文のパラメータを置換するためのSqlParameterオブジェクトを生成する。
+ </summary>
+ <param name="paramName">置換対象パラメータ名</param>
+ <param name="paramValue">置換する値</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseDAC.GetSelectResult(System.Data.SqlClient.SqlCommand)">
+ <summary>
+ SELECT文を発行します。
+ </summary>
+ <param name="cmd">SELECT文</param>
+ <returns>SELECTされた行を格納したSqlDataReader オブジェクト</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseDAC.GetInsertResult(System.Data.SqlClient.SqlCommand)">
+ <summary>
+ INSRET文を発行します。
+ </summary>
+ <param name="cmd">INSRET文</param>
+ <returns>INSRETした行数</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseDAC.GetUpdateResult(System.Data.SqlClient.SqlCommand)">
+ <summary>
+ UPDATE文を発行します。
+ </summary>
+ <param name="cmd">UPDATE文</param>
+ <returns>UPDATEした行数</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseDAC.GetDeleteResult(System.Data.SqlClient.SqlCommand)">
+ <summary>
+ DELETE文を発行します。
+ </summary>
+ <param name="cmd">DELETE文</param>
+ <returns>DELETEした行数</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseDAC.SetResultCount(System.Int32)">
+ <summary>
+ 処理結果件数を設定します。
+ </summary>
+ <param name="value">処理結果件数</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseDAC.GetOutPutParam(System.Data.SqlClient.SqlCommand,System.String)">
+ <summary>
+ 出力パラメータを取得します。
+ </summary>
+ <param name="cmd">ストアドプロシージャー</param>
+ <param name="prm">出力パラメータ名称</param>
+ <returns>出力パラメータ値</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseDAC.SetSelectResultToDataSet(System.Collections.Hashtable,System.Data.DataSet,System.Data.SqlClient.SqlDataReader,System.String)">
+ <summary>
+ SELECT文の取得結果をデータセットに設定して返却します。
+ </summary>
+ <param name="map"></param>
+ <param name="ds"></param>
+ <param name="reader"></param>
+ <param name="tableName"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseDAC.GetSqlConnectionOra(System.String)">
+ <summary>
+ SqlConnectionオブジェクトを生成する。
+ </summary>
+ <param name="connectionString">DB接続文字列</param>
+ <returns>SqlConnectionオブジェクト</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseDAC.OpenSqlConnectionOra(System.Data.SqlClient.SqlConnection@)">
+ <summary>
+ 引数のSqlConnectionオブジェクトをオープンする。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseDAC.BeginTransactionOra(Oracle.ManagedDataAccess.Client.OracleConnection,System.Data.IsolationLevel)">
+ <summary>
+ TransactionScopeオブジェクトを取得する。
+ </summary>
+ <param name="conOra">OracleConnection</param>
+ <param name="isolationLevel">トランザクション分離レベル</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseDAC.CommitTransactionOra(Oracle.ManagedDataAccess.Client.OracleTransaction@)">
+ <summary>
+ トランザクションを確定する。
+ </summary>
+ <param name="txn">トランザクションオブジェクト</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseDAC.RollbackTransactionOra(Oracle.ManagedDataAccess.Client.OracleTransaction@)">
+ <summary>
+ トランザクションをロールバックする。
+ </summary>
+ <param name="txn">トランザクションオブジェクト</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseDAC.CreateSqlCommandOra(System.String,Oracle.ManagedDataAccess.Client.OracleConnection)">
+ <summary>
+ コネクションオブジェクトに関連付けられたDBサーバーに対して
+ 有効なSqlCommandオブジェクトのインスタンスを取得する。
+ </summary>
+ <param name="strSql">SQL文</param>
+ <returns>SqlCommandオブジェクト</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseDAC.GetSqlParameterOra(System.String,System.Object,Jp.Co.Nrs.Com.Const.DBDataTypeOra)">
+ <summary>
+ SQL文のパラメータを置換するためのSqlParameterオブジェクトを生成する。
+ </summary>
+ <param name="paramName">置換対象パラメータ名</param>
+ <param name="paramValue">置換する値</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseDAC.GetSelectResultOra(Oracle.ManagedDataAccess.Client.OracleCommand)">
+ <summary>
+ SELECT文を発行します。
+ </summary>
+ <param name="cmdOra">SELECT文</param>
+ <returns>SELECTされた行を格納したSqlDataReader オブジェクト</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseDAC.GetInsertResultOra(Oracle.ManagedDataAccess.Client.OracleCommand)">
+ <summary>
+ INSRET文を発行します。
+ </summary>
+ <param name="cmdOra">INSRET文</param>
+ <returns>INSRETした行数</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseDAC.GetUpdateResultOra(Oracle.ManagedDataAccess.Client.OracleCommand)">
+ <summary>
+ UPDATE文を発行します。
+ </summary>
+ <param name="cmdOra">UPDATE文</param>
+ <returns>UPDATEした行数</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseDAC.GetDeleteResultOra(Oracle.ManagedDataAccess.Client.OracleCommand)">
+ <summary>
+ DELETE文を発行します。
+ </summary>
+ <param name="cmdOra">DELETE文</param>
+ <returns>DELETEした行数</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseDAC.SetSelectResultToDataSetOra(System.Collections.Hashtable,System.Data.DataSet,Oracle.ManagedDataAccess.Client.OracleDataReader,System.String)">
+ <summary>
+ SELECT文の取得結果をデータセットに設定して返却します。
+ </summary>
+ <param name="map"></param>
+ <param name="ds"></param>
+ <param name="reader"></param>
+ <param name="tableName"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Com.Base.BaseWSA">
+ <summary>
+ WSA層中核クラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseWSA.StartWSA(System.String,Jp.Co.Nrs.Com.Base.ServiceData)">
+ <summary>
+ WSA層のクラスにおいて、処理の起点となるメソッド。
+ このインスタンスに定義されているメソッド群から引数に渡されたメソッドを呼び出す。
+ </summary>
+ <param name="methodName">呼び出したいメソッド名</param>
+ <param name="cliantServiceData"></param>
+ <returns>呼び出すメソッドが返す画面出力用情報</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseWSA.TransferProperty``2(``0@,``1@)">
+ <summary>
+ 送受信データクラスのプロパテイの転記を行う。
+ </summary>
+ <param name="fromObj">転記元オブジェクト</param>
+ <param name="toObj">転記先オブジェクト</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseWSA.GetTargetFacadeName(System.String)">
+ <summary>
+ 呼び出すBLF名を取得します。
+ </summary>
+ <param name="targetFacadeName"></param>
+ <returns>呼び出すBLF名</returns>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseWSA.CreateBFDataSet(System.String)">
+ <summary>
+ システム情報ファイルを読み込み、システム情報データを作成します。
+ </summary>
+ <param name="ConfigFilePath"></param>
+ <returns>システム情報ファイルの内容を格納したDataSet</returns>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseWSA.GetConfigDataSet">
+ <summary>
+ コンフィグデータを取得する
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Com.Base.BaseWSI">
+ <summary>
+ WSI層中核クラス
+ </summary>
+ <remarks>
+ <para>Baseプロジェクトの主要クラスの中で唯一ServicManagterクラスを継承できないため単体でServicManagterクラスと同一の機能を実装する。</para>
+ <para>BaseBLFプロジェクトクラスとのアクセスを行う。</para>
+ </remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.BaseWSI.Logger">
+ <summary>
+ ログ出力用クラスの取得・設定を行うプロパティ
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseWSI.StartWSI(Jp.Co.Nrs.Com.Base.ServiceData)">
+ <summary>
+ <para>WSI層のクラスにおいて、処理の起点となるメソッド。</para>
+ <para>このインスタンスに定義されているメソッド群から引数に渡されたメソッドを呼び出す。</para>
+ </summary>
+ <param name="serviceDataObj">各層間受け渡し情報</param>
+ <returns>呼び出すメソッドが返す画面出力用情報</returns>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseWSI.GetTargetFacadeName(System.String)">
+ <summary>
+ 呼び出すBLF名を取得します。
+ </summary>
+ <param name="targetFacadeName"></param>
+ <returns>呼び出すBLF名</returns>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseWSI.CreateBFDataSet(System.String)">
+ <summary>
+ システム情報ファイルを読み込み、システム情報データを作成します。
+ </summary>
+ <param name="ConfigFilePath"></param>
+ <returns>システム情報ファイルの内容を格納したDataSet</returns>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseWSI.OutPutException(Jp.Co.Nrs.Com.Base.ServiceData,System.Exception)">
+ <summary>
+ 例外を出力します
+ </summary>
+ <param name="serviceDataObj"></param>
+ <param name="ex">出力する例外</param>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseWSI.SetSystemErrorMessage(Jp.Co.Nrs.Com.Base.ServiceData,System.String)">
+ <summary>
+ システムエラー発生時用のメッセージを登録します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseWSI.CreateSystemErrorMessage(Jp.Co.Nrs.Com.Base.ServiceData,System.String)">
+ <summary>
+ システムエラー発生時用のメッセージを作成します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.BaseWSI.GetConfigDataSet">
+ <summary>
+ コンフィグデータを取得する
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Com.Base.ConfigMGR">
+ <summary>
+ システム情報制御クラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.ConfigMGR.SYSTEM_NAME">
+ <summary>
+ Config項目定数（システム名）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.ConfigMGR.CreateConfigDataSet(System.String)">
+ <summary>
+ システム情報ファイルを読み込み、システム情報データを作成します。
+ </summary>
+ <returns>システム情報ファイルの内容を格納したDataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.ConfigMGR.GetConfigValue(System.String)">
+ <summary>
+ 指定した項目のデータをキャッシュから取得します。
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Com.Base.ConnectionMGR">
+ <summary>
+ データベース接続制御クラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Com.Base.ConnectionMGR.ConfigColumn">
+ <summary>
+ Config項目定数
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.ConnectionMGR.ConfigColumn.DATA_SOURCE">
+ <summary>
+ Config項目定数（DB接続文字列-Data Source）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.ConnectionMGR.ConfigColumn.INITIAL_CATALOG">
+ <summary>
+ Config項目定数（DB接続文字列-Initial Catalog）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.ConnectionMGR.ConfigColumn.PERSIST_SECURITY_INFO">
+ <summary>
+ Config項目定数（DB接続文字列-Security Info）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.ConnectionMGR.ConfigColumn.USER_ID">
+ <summary>
+ Config項目定数（DB接続文字列-User ID）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.ConnectionMGR.ConfigColumn.PASSWORD">
+ <summary>
+ Config項目定数（DB接続文字列-Password）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.ConnectionMGR.ConfigColumn.TIMEOUT">
+ <summary>
+ Config項目定数（DB接続タイムアウト時間）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.ConnectionMGR.ConfigColumn.POOLING">
+ <summary>
+ Config項目定数（DB接続文字列-Pooling）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.ConnectionMGR.ConfigColumn.ENLIST">
+ <summary>
+ Config項目定数（DB接続文字列-Enlist）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Com.Base.ConnectionMGR.ConnectionPrefix">
+ <summary>
+ DB接続文字列　接頭辞
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.ConnectionMGR.ConnectionPrefix.DATA_SOURCE">
+ <summary>
+ DB接続文字列　接頭辞 （Data Source）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.ConnectionMGR.ConnectionPrefix.INITIAL_CATALOG">
+ <summary>
+ DB接続文字列　接頭辞 （Initial Catalog）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.ConnectionMGR.ConnectionPrefix.PERSIST_SECURITY_INFO">
+ <summary>
+ DB接続文字列　接頭辞 （Security Info）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.ConnectionMGR.ConnectionPrefix.USER_ID">
+ <summary>
+ DB接続文字列　接頭辞 （User ID）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.ConnectionMGR.ConnectionPrefix.PASSWORD">
+ <summary>
+ DB接続文字列　接頭辞 （Password）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.ConnectionMGR.ConnectionPrefix.POOLING">
+ <summary>
+ Oracle接続　接頭辞 （Pooling）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.ConnectionMGR.ConnectionPrefix.ENLIST">
+ <summary>
+ Oracle接続　接頭辞 （Enlist）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.ConnectionMGR.CONNECTION_SUFFIX">
+ <summary>
+ DB接続文字列 接尾辞
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.ConnectionMGR.DEFAULT_TIME_OUT">
+ <summary>
+ DB接続タイムアウト
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Com.Base.ConnectionMGR.ConnectionDb">
+ <summary>
+ 接続DBの一覧
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.ConnectionMGR.ConnectionDb.NF">
+ <summary>
+ フォワーディングシステム[NF_DB](SQL Server)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.ConnectionMGR.ConnectionDb.DS">
+ <summary>
+ KIDSデポシステム[DS_DB](SQL Server)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.ConnectionMGR.ConnectionDb.GT">
+ <summary>
+ WINSシステム[GT_DB](SQL Server)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.ConnectionMGR.ConnectionDb.JDE">
+ <summary>
+ JDEシステム[JDE](Oracle)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.ConnectionMGR.ConnectionDb.LMS">
+ <summary>
+ 倉庫システム[LMS](SQL Server)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.ConnectionMGR.ConnectionDb.YUSO">
+ <summary>
+ 輸送システム[本番：NRS /テスト：DEMO_NRS](SQL Server)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.ConnectionMGR.ConnectionDb.CHISSO">
+ <summary>
+ チッソ[CHISSO](Oracle)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.ConnectionMGR.ConnectionDb.RE">
+ <summary>
+ TIPSシステム[RE_DB](SQL Server)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.ConnectionMGR.ConnectionDb.RI">
+ <summary>
+ RINGシステム[RI_DB](SQL Server)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.ConnectionMGR.ConnectionDb.SH">
+ <summary>
+ Share シェア[COM_DB](SQL Server)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.ConnectionMGR.ConnectionDb.ADPS">
+ <summary>
+ ADPS(Oracle)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.ConnectionMGR.ConnectionDb.JDECRP">
+ <summary>
+ JDEシステム[JDE](SQL Server)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Com.Base.ConnectionMGR.ConnectionDbType">
+ <summary>
+ 接続DBの種類一覧
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.ConnectionMGR.ConnectionDbType.SQL">
+ <summary>
+ SQL Server
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.ConnectionMGR.ConnectionDbType.ORACLE">
+ <summary>
+ Oracle Server
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.ConnectionMGR.UNDERBAR">
+ <summary>
+ DB接続文字列
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.ConnectionMGR.GetSqlTarnsactionScope(System.Transactions.TransactionScopeOption,System.Transactions.IsolationLevel,System.String)">
+ <summary>
+ TarnsactionScopeオブジェクトを取得する。
+ </summary>
+ <param name="scopeOption">トランザクションスコープを作成するためのオプション</param>
+ <param name="isolationLevel">接続のトランザクション ロック動作</param>
+ <param name="scopeTimeout">タイムアウト値(100ナノ秒単位)</param>
+ <returns>TarnsactionScopeオブジェクト</returns>
+ <remarks>デフォルトの設定値は
+ 　TransactionScopeOption：Required
+ 　TransactionOptions.IsolationLevel：ReadCommitted
+ 　TransactionOptions.TimeSpan：300000000x100ナノ秒（３０秒）</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.ConnectionMGR.GetSqlConnection(System.String)">
+ <summary>
+ SqlConnectionオブジェクトを生成する。
+ </summary>
+ <param name="connectionString">DB接続文字列</param>
+ <returns>SqlConnectionオブジェクト</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.ConnectionMGR.GetSqlConnection(System.Boolean)">
+ <summary>
+ システム情報よりDB接続文字列を取得し、SqlConnectionオブジェクトを生成する。
+ </summary>
+ <param name="isReadOnly"></param>
+ <returns>SqlConnectionオブジェクト</returns>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.ConnectionMGR.OpenSqlConnection(System.Data.SqlClient.SqlConnection@)">
+ <summary>
+ 引数のSqlConnectionオブジェクトをオープンする。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.ConnectionMGR.TryOpenSqlConnection(System.Data.SqlClient.SqlConnection,System.Int32,System.Int32,System.Int32)">
+ <summary>
+ 
+ </summary>
+ <param name="conn"></param>
+ <param name="maxRetryCount"></param>
+ <param name="currentRetryCount"></param>
+ <param name="waitTime"></param>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.ConnectionMGR.GetConnectionString(System.Boolean)">
+ <summary>
+ システム情報よりDB接続文字列の値を取得する。
+ </summary>
+ <param name="isReadOnly"></param>
+ <returns>DB接続文字列</returns>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.ConnectionMGR.GetConnectionString(System.String,System.Boolean)">
+ <summary>
+ データソースの値を指定してDB接続文字列の値を取得する。
+ </summary>
+ <param name="dataSourceString"></param>
+ <param name="isReadOnly"></param>
+ <returns>DB接続文字列</returns>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.ConnectionMGR.GetConnectionString_DirectConnection(Jp.Co.Nrs.Com.Base.ConnectionMGR.ConnectionDb)">
+ <summary>
+ システム情報よりDB接続文字列の値を取得する。(主接続以外のじか接続用)
+ </summary>
+ <param name="connectDb"></param>
+ <returns>接続文字列</returns>
+ <remarks>主接続以外に必要な場合に使用します。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.ConnectionMGR.GetConnectionString_DirectConnection(Jp.Co.Nrs.Com.Base.ConnectionMGR.ConnectionDb,System.Boolean)">
+ <summary>
+ システム情報よりDB接続文字列の値を取得する。(主接続以外のじか接続用)
+ </summary>
+ <param name="connectDb"></param>
+ <param name="isReadOnly"></param>
+ <returns>接続文字列</returns>
+ <remarks>主接続以外に必要な場合に使用します。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.ConnectionMGR.GetConnectionString_DirectConnection(System.String,System.String,Jp.Co.Nrs.Com.Base.ConnectionMGR.ConnectionDbType)">
+ <summary>
+ データソースの値を指定してDB接続文字列の値を取得する。(主接続以外のじか接続用)
+ </summary>
+ <param name="dataSourceString"></param>
+ <param name="dbName"></param>
+ <param name="dbType"></param>
+ <returns>DB接続文字列</returns>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.ConnectionMGR.GetConnectionString_DirectConnection(System.String,System.String,Jp.Co.Nrs.Com.Base.ConnectionMGR.ConnectionDbType,System.Boolean)">
+ <summary>
+ データソースの値を指定してDB接続文字列の値を取得する。(主接続以外のじか接続用)
+ </summary>
+ <param name="dataSourceString"></param>
+ <param name="dbName"></param>
+ <param name="dbType"></param>
+ <param name="isReadOnly"></param>
+ <returns>DB接続文字列</returns>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.ConnectionMGR.GetDataSourceString">
+ <summary>
+ システム情報よりデータソースの値を取得する。
+ </summary>
+ <returns>データソースの値</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.ConnectionMGR.GetDataSourceString_DirectConnection(System.String)">
+ <summary>
+ システム情報よりデータソースの値を取得する。(メイン接続以外の直接続用)
+ </summary>
+ <returns>データソースの値</returns>
+ <remarks>メイン接続以外に必要な場合に使用します。</remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Com.Base.FacadeProxyWrapper">
+ <summary>
+ BL呼び出し処理をラップします。
+ </summary>
+ <remarks>クライアント処理用のメソッドを提供する</remarks>
+ <histry>
+ 2008/05/12      須藤      新規
+ </histry>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.FacadeProxyWrapper.RunFacade(Jp.Co.Nrs.Com.Base.BaseWSA,System.String,Jp.Co.Nrs.Com.Base.ServiceData)">
+ <summary>
+ 引数に指定されたWSAクラスから、WSA層の処理の基点となるメソッドをメソッドを呼び出す。
+ </summary>
+ <param name="methodName">呼び出すメソッド名</param>
+ <param name="sd">画面情報を格納したDataSet</param>
+ <returns>呼び出すメソッドが返す画面出力用情報</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Com.Base.MessageMGR">
+ <summary>
+ メッセージ管理クラス
+ </summary>
+ <remarks></remarks>
+ <histry>
+ 2006/07/21      須藤      新規
+ </histry>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.MessageMGR.POPUP_ON">
+ <summary>
+ ポップアップ定数（ポップアップ）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.MessageMGR.POPUP_OFF">
+ <summary>
+ ポップアップ定数（ポップアップ以外）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.MessageMGR.MESSAGE_LEVEL_S">
+ <summary>
+ Config項目定数（システムエラーレベル）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.MessageMGR.MESSAGE_LEVEL_E">
+ <summary>
+ Config項目定数（エラーレベル）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.MessageMGR.MESSAGE_LEVEL_W">
+ <summary>
+ Config項目定数（警告ーレベル）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.MessageMGR.MESSAGE_LEVEL_Q">
+ <summary>
+ Config項目定数（確認レベル）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.MessageMGR.MESSAGE_LEVEL_I">
+ <summary>
+ Config項目定数（通知レベル）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.MessageMGR.MESSAGE_TITLE_S">
+ <summary>
+ Config項目定数（システムエラー時タイトル）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.MessageMGR.MESSAGE_TITLE_E">
+ <summary>
+ Config項目定数（エラー時タイトル）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.MessageMGR.MESSAGE_TITLE_W">
+ <summary>
+ Config項目定数（警告時タイトル）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.MessageMGR.MESSAGE_TITLE_Q">
+ <summary>
+ Config項目定数（確認時タイトル）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.MessageMGR.MESSAGE_TITLE_I">
+ <summary>
+ Config項目定数（通知時タイトル）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Com.Base.MessageMGR.MessageDataTable">
+ <summary>
+ メッセージキャッシュテーブル定数
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.MessageMGR.MessageDataTable.MESSAGE_ID">
+ <summary>
+ メッセージID
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.MessageMGR.MessageDataTable.MESSAGE_LEVEL">
+ <summary>
+ メッセージレベル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.MessageMGR.MessageDataTable.MESSAGE_LANG">
+ <summary>
+ メッセージ言語
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.MessageMGR.MessageDataTable.MESSAGE_STRING">
+ <summary>
+ メッセージ内容(JP)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.MessageMGR.MessageDataTable.MESSAGE_STRING_EN">
+ <summary>
+ メッセージ内容(EN)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.MessageMGR.MessageDataTable.MESSAGE_STRING_KO">
+ <summary>
+ メッセージ内容(KO)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.MessageMGR.MessageDataTable.MESSAGE_STRING_CN">
+ <summary>
+ メッセージ内容(EN)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.MessageMGR.MessageDataTable.MESSAGE_DISP_FLG">
+ <summary>
+ メッセージボックス表示フラグ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.MessageMGR.MessageDataTable.BUTTON_CNT">
+ <summary>
+ ボタン数
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.MessageMGR.MessageDataTable.MESSAGE_AREA">
+ <summary>
+ メッセージエリア
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.MessageMGR.MessageDataTable.NAVI_AREA">
+ <summary>
+ ナビエリア
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Com.Base.MessageMGR.MessageLevel">
+ <summary>
+ メッセージレベル定数
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.MessageMGR.MessageLevel.LEVEL_INFORMATION">
+ <summary>
+ 通知メッセージレベル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.MessageMGR.MessageLevel.LEVEL_QUESTION">
+ <summary>
+ 確認メッセージレベル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.MessageMGR.MessageLevel.LEVEL_WARNING">
+ <summary>
+ 警告メッセージレベル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.MessageMGR.MessageLevel.LEVEL_ERROR">
+ <summary>
+ エラーメッセージレベル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.MessageMGR.MessageLevel.LEVEL_SYSTEM_ERROR">
+ <summary>
+ システムエラーメッセージレベル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.MessageMGR.LEVEL_SYSTEM_ERROR">
+ <summary>
+ システムエラー（業務続は不可能）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.MessageMGR.LEVEL_ERROR">
+ <summary>
+ 通常エラー（業務続行可能）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.MessageMGR.LEVEL_WARNING">
+ <summary>
+ 警告レベル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.MessageMGR.LEVEL_QUESTION">
+ <summary>
+ 確認レベル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.MessageMGR.LEVEL_INFORMATION">
+ <summary>
+ 通知レベル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Com.Base.MessageMGR.MessageStoreDataTable">
+ <summary>
+ メッセージ蓄積テーブル定数
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.MessageMGR.MessageStoreDataTable.PG_ID">
+ <summary>
+ プログラムID
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.MessageMGR.MessageStoreDataTable.GUIDANCE_TITLE">
+ <summary>
+ エラー表題
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.MessageMGR.MessageStoreDataTable.ERR_ROWNO">
+ <summary>
+ 処理エラー行番号
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.MessageMGR.MessageStoreDataTable.VARIABLE_COL">
+ <summary>
+ 可変項目
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.MessageMGR.MessageStoreDataTable.MESSAGE_ID">
+ <summary>
+ メッセージID
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.MessageMGR.MessageStoreDataTable.MESSAGE_STRING">
+ <summary>
+ メッセージ内容(JP)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Com.Base.ServiceData">
+ <summary>
+ クライアント⇔サーバー間で授受する全データを格納したクラス
+ </summary>
+ <histry>
+ 2006/07/21      須藤      新規
+ 2006/09/15      須藤      修正
+ 　　　　　　　　　　　　　・呼出BLFを格納するフィールド、プロパティを追加
+ </histry>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.ServiceData.AppVersion">
+ <summary>
+ アプリケーションのヴァージョン情報を格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.Lang_ISO639_1">
+ <summary>
+ 言語（ISO-639-1準拠）を格納するプロパティ
+ </summary>
+ <returns>Lang_ISO639_1</returns>
+ <remarks>GL以降は本プロパティを利用する。</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.TimeZoneInfoId">
+ <summary>
+ TimeZoneInfoを格納するプロパティ
+ </summary>
+ <returns>TimeZoneInfoId</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.ConfigDataEntity">
+ <summary>
+ システム情報を格納するプロパティ
+ </summary>
+ <returns>システム情報</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.MessageDataEntity">
+ <summary>
+ メッセージキャッシュデータを格納するプロパティ
+ </summary>
+ <returns>マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.MessageStoreDataEntity">
+ <summary>
+ メッセージ蓄積データを格納するプロパティ
+ </summary>
+ <returns>メッセージ蓄積データ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.UserInfoEntity">
+ <summary>
+ ユーザー情報を格納するプロパティ
+ </summary>
+ <returns>ユーザー情報</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.NFMenuMasterDataEntity">
+ <summary>
+ メニューマスターキャッシュデータを格納するプロパティ(for NF)
+ </summary>
+ <returns>メニューマスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.NFKbnMasterDataEntity">
+ <summary>
+ 区分マスターキャッシュデータを格納するプロパティ(for NF)
+ </summary>
+ <returns>区分マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.NFCommentMasterDataEntity">
+ <summary>
+ コメントマスターキャッシュデータを格納するプロパティ(for NF)
+ </summary>
+ <returns>コメントマスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.NFCityMasterDataEntity">
+ <summary>
+ 都市マスターキャッシュデータを格納するプロパティ(for NF)
+ </summary>
+ <value>都市マスターキャッシュデータ</value>
+ <returns>都市マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.NFGuidelineMasterDataEntity">
+ <summary>
+ 取扱指針マスターキャッシュデータを格納するプロパティ(for NF)
+ </summary>
+ <value>取扱指針マスターキャッシュデータ</value>
+ <returns>取扱指針マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.NFTaxMasterDataEntity">
+ <summary>
+ 税率マスターキャッシュデータを格納するプロパティ(for NF)
+ </summary>
+ <returns>税率マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.NFLawMasterDataEntity">
+ <summary>
+ 適用法規マスターキャッシュデータを格納するプロパティ(for NF)
+ </summary>
+ <returns>適用法規マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.NFKmkMasterDataEntity">
+ <summary>
+ 科目マスターキャッシュデータを格納するプロパティ(for NF)
+ </summary>
+ <returns>科目マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.NFUserMasterDataEntity">
+ <summary>
+ ユーザーマスターキャッシュデータを格納するプロパティ(for NF)
+ </summary>
+ <returns>ユーザーマスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.NFJdeKmkMasterDataEntity">
+ <summary>
+ JDE科目マスターキャッシュデータを格納するプロパティ(for NF)
+ </summary>
+ <returns>JDE科目マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.NFBankMasterDataEntity">
+ <summary>
+ 銀行マスターキャッシュデータを格納するプロパティ(for NF)
+ </summary>
+ <returns>銀行マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.NFImdgMasterDataEntity">
+ <summary>
+ 積載品マスターキャッシュデータを格納するプロパティ(for NF)
+ </summary>
+ <returns>積載品マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.NFJdeKmkBillInfoDataEntity">
+ <summary>
+ 売上JDE科目マスターキャッシュデータを格納するプロパティ(for NF)
+ </summary>
+ <returns>売上JDE科目マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.NFJdeKmkPayInfoDataEntity">
+ <summary>
+ 支払JDE科目マスターキャッシュデータを格納するプロパティ(for NF)
+ </summary>
+ <returns>支払JDE科目マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.NFCompMasterDataEntity">
+ <summary>
+ 会社マスターキャッシュデータを格納するプロパティ(for NF)
+ </summary>
+ <returns>会社マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.NFCompPayMasterDataEntity">
+ <summary>
+ 会社支払方法マスタキャッシュデータを格納するプロパティ(for NF)
+ </summary>
+ <returns>会社支払方法マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.NFYocUnchinTariffMasterDataEntity">
+ <summary>
+ 横浜ドレー運賃マスタキャッシュデータを格納するプロパティ(for NF)
+ </summary>
+ <returns>横浜ドレー運賃マスタキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.NFGoodsMasterDataEntity">
+ <summary>
+ 商品マスターキャッシュデータを格納するプロパティ(for NF)
+ </summary>
+ <returns>商品マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.NFChargeMasterDataEntity">
+ <summary>
+ 諸料金マスターキャッシュデータを格納するプロパティ(for NF)
+ </summary>
+ <returns>諸料金マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.NFGroupCompMasterDataEntity">
+ <summary>
+ 会社コードコンバートマスターキャッシュデータを格納するプロパティ(for NF)
+ </summary>
+ <returns>諸料金マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.NFEdiMasterDataEntity">
+ <summary>
+ EDIコードコンバートマスターキャッシュデータを格納するプロパティ(for NF)
+ </summary>
+ <returns>EDIマスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.NFCoverMasterDataEntity">
+ <summary>
+ カバーマスターキャッシュデータを格納するプロパティ(for NF)
+ </summary>
+ <returns>カバーマスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.DSKbnMasterDataEntity">
+ <summary>
+ 区分マスターキャッシュデータを格納するプロパティ(for DS)
+ </summary>
+ <returns>区分マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.DSTaxMasterDataEntity">
+ <summary>
+ 税率マスターキャッシュデータを格納するプロパティ(for DS)
+ </summary>
+ <returns>税率マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.DSChargeItemMasterDataEntity">
+ <summary>
+ 諸料金アイテムマスターキャッシュデータを格納するプロパティ(for DS)
+ </summary>
+ <returns>諸料金アイテムマスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.DSUserMasterDataEntity">
+ <summary>
+ ユーザーマスターキャッシュデータを格納するプロパティ(for DS)
+ </summary>
+ <returns>ユーザーマスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.DSCompMasterDataEntity">
+ <summary>
+ 会社マスターキャッシュデータを格納するプロパティ(for DS)
+ </summary>
+ <returns>会社マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.KDMenuMasterDataEntity">
+ <summary>
+ メニューマスターキャッシュデータを格納するプロパティ(for KD)
+ </summary>
+ <returns>メニューマスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.KDKbnMasterDataEntity">
+ <summary>
+ 区分マスターキャッシュデータを格納するプロパティ(for KD)
+ </summary>
+ <returns>区分マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.KDTaxMasterDataEntity">
+ <summary>
+ 税率マスターキャッシュデータを格納するプロパティ(for KD)
+ </summary>
+ <returns>税率マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.KDKmkMasterDataEntity">
+ <summary>
+ 科目マスターキャッシュデータを格納するプロパティ(for KD)
+ </summary>
+ <returns>科目マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.KDUserMasterDataEntity">
+ <summary>
+ ユーザーマスターキャッシュデータを格納するプロパティ(for KD)
+ </summary>
+ <returns>ユーザーマスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.KDBankMasterDataEntity">
+ <summary>
+ 銀行マスターキャッシュデータを格納するプロパティ(for KD)
+ </summary>
+ <returns>銀行マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.KDCompMasterDataEntity">
+ <summary>
+ 会社マスターキャッシュデータを格納するプロパティ(for KD)
+ </summary>
+ <returns>会社マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.KDChargeMasterDataEntity">
+ <summary>
+ 諸料金マスターキャッシュデータを格納するプロパティ(for KD)
+ </summary>
+ <returns>諸料金マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.KDChargeItemMasterDataEntity">
+ <summary>
+ 諸料金アイテムマスターキャッシュデータを格納するプロパティ(for KD)
+ </summary>
+ <returns>諸料金アイテムマスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.KDMatMasterDataEntity">
+ <summary>
+ 部材マスターキャッシュデータを格納するプロパティ(for KD)
+ </summary>
+ <returns>部材マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.KDMSetHeadMasterDataEntity">
+ <summary>
+ 見積セットヘッダーマスターキャッシュデータを格納するプロパティ(for KD)
+ </summary>
+ <returns>見積セットヘッダーマスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.KDSGroupCompMasterDataEntity">
+ <summary>
+ 会社コードコンバートマスターキャッシュデータを格納するプロパティ(for KD)
+ </summary>
+ <returns>会社コードコンバートマスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.KDNumberMasterDataEntity">
+ <summary>
+ 番号マスターキャッシュデータを格納するプロパティ(for KD)
+ </summary>
+ <returns>番号マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.KDAuthMasterDataEntity">
+ <summary>
+ 承認者マスターキャッシュデータを格納するプロパティ(for KD)
+ </summary>
+ <returns>承認者マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.JFMenuMasterDataEntity">
+ <summary>
+ メニューマスターキャッシュデータを格納するプロパティ(for JF)
+ </summary>
+ <returns>メニューマスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.JFKbnMasterDataEntity">
+ <summary>
+ 区分マスターキャッシュデータを格納するプロパティ(for JF)
+ </summary>
+ <returns>区分マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.JFUserMasterDataEntity">
+ <summary>
+ ユーザーマスターキャッシュデータを格納するプロパティ(for JF)
+ </summary>
+ <returns>ユーザーマスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.JFCompMasterDataEntity">
+ <summary>
+ 会社マスターキャッシュデータを格納するプロパティ(for JF)
+ </summary>
+ <returns>会社マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.JFNumberMasterDataEntity">
+ <summary>
+ 番号マスターキャッシュデータを格納するプロパティ(for JF)
+ </summary>
+ <returns>番号マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.JFAccMasterDataEntity">
+ <summary>
+ 勘定科目マスターキャッシュデータを格納するプロパティ(for JF)
+ </summary>
+ <returns>勘定科目マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.JFBuMasterDataEntity">
+ <summary>
+ BUマスターキャッシュデータを格納するプロパティ(for JF)
+ </summary>
+ <returns>BUマスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.JFBrMasterDataEntity">
+ <summary>
+ 営業所マスターキャッシュデータを格納するプロパティ(for JF)
+ </summary>
+ <returns>営業所マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.JFTaxMasterDataEntity">
+ <summary>
+ 消費税マスターキャッシュデータを格納するプロパティ(for JF)
+ </summary>
+ <returns>消費税マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.JFAccCnvMasterDataEntity">
+ <summary>
+ JDE科目変換マスターキャッシュデータを格納するプロパティ(for JF)
+ </summary>
+ <returns>JDE科目変換マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.JFExchMasterDataEntity">
+ <summary>
+ 為替レートマスターキャッシュデータを格納するプロパティ(for JF)
+ </summary>
+ <returns>為替レートマスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.JFF0101MasterDataEntity">
+ <summary>
+ JDE住所録マスターキャッシュデータを格納するプロパティ(for JF)
+ </summary>
+ <returns>JDE住所録マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.JFCalcuratorDataEntity">
+ <summary>
+ 電卓キャッシュデータを格納するプロパティ(for JF)
+ </summary>
+ <returns>JDE住所録マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.GTCompMasterDataEntity">
+ <summary>
+ 会社マスターキャッシュデータを格納するプロパティ(for GT)
+ </summary>
+ <returns>会社マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.GTBankMasterDataEntity">
+ <summary>
+ 銀行マスターキャッシュデータを格納するプロパティ(for GT)
+ </summary>
+ <returns>銀行マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.GTCityMasterDataEntity">
+ <summary>
+ 都市マスターキャッシュデータを格納するプロパティ(for GT)
+ </summary>
+ <returns>都市マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.GTCurrMasterDataEntity">
+ <summary>
+ 通貨マスターキャッシュデータを格納するプロパティ(for GT)
+ </summary>
+ <returns>通貨マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.GTTankMasterDataEntity">
+ <summary>
+ タンクマスターキャッシュデータを格納するプロパティ(for GT)
+ </summary>
+ <returns>タンクマスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.GTTaxMasterDataEntity">
+ <summary>
+ 税率マスターキャッシュデータを格納するプロパティ(for GT)
+ </summary>
+ <returns>税率マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.GTTestMasterDataEntity">
+ <summary>
+ 定期検査マスターキャッシュデータを格納するプロパティ(for GT)
+ </summary>
+ <returns>定期検査マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.GTImdgMasterDataEntity">
+ <summary>
+ 積載品(IMDG)マスターキャッシュデータを格納するプロパティ(for GT)
+ </summary>
+ <returns>積載品(IMDG)マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.GTRegionMasterDataEntity">
+ <summary>
+ 地域マスターキャッシュデータを格納するプロパティ(for GT)
+ </summary>
+ <returns>地域マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.GTUserMasterDataEntity">
+ <summary>
+ ユーザーマスターキャッシュデータを格納するプロパティ(for GT)
+ </summary>
+ <returns>ユーザーマスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.GTKbnMasterDataEntity">
+ <summary>
+ 区分マスターキャッシュデータを格納するプロパティ(for GT)
+ </summary>
+ <returns>区分マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.GTCommentMasterDataEntity">
+ <summary>
+ コメントマスターキャッシュデータを格納するプロパティ(for GT)
+ </summary>
+ <returns>コメントマスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.GTCostMasterDataEntity">
+ <summary>
+ コストマスターキャッシュデータを格納するプロパティ(for GT)
+ </summary>
+ <returns>コストマスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.GTContCostMasterDataEntity">
+ <summary>
+ コンテナコストマスターキャッシュデータを格納するプロパティ(for GT)
+ </summary>
+ <returns>コンテナコストマスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.GTJdeCdMasterDataEntity">
+ <summary>
+ JDEコードマスターキャッシュデータを格納するプロパティ(for GT)
+ </summary>
+ <returns>JDEコードマスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.GTNumberMasterDataEntity">
+ <summary>
+ 番号マスターキャッシュデータを格納するプロパティ(for GT)
+ </summary>
+ <returns>番号マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.GTMenuMasterDataEntity">
+ <summary>
+ メニューマスターキャッシュデータを格納するプロパティ(for GT)
+ </summary>
+ <returns>メニューマスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMKbnMasterDataEntity">
+ <summary>
+ 区分マスタキャッシュデータを格納するプロパティ(for LM)
+ </summary>
+ <returns>区分マスタキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMUserMasterDataEntity">
+ <summary>
+ ユーザー情報キャッシュデータを格納するプロパティ(for LM)
+ </summary>
+ <returns>ユーザー情報キャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMMenuMasterDataEntity">
+ <summary>
+ メニューマスタキャッシュデータを格納するプロパティ(for LM)
+ </summary>
+ <returns>メニューマスタキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMNrsBrMasterDataEntity">
+ <summary>
+ 営業所情報キャッシュデータを格納するプロパティ(for LM)
+ </summary>
+ <returns>営業所情報キャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMSokoMasterDataEntity">
+ <summary>
+ 倉庫情報キャッシュデータを格納するプロパティ(for LM)
+ </summary>
+ <returns>倉庫情報キャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMTouSituDataEntity">
+ <summary>
+ 棟・室情報キャッシュデータを格納するプロパティ(for LM)
+ </summary>
+ <returns>棟・室情報キャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMTouSituZoneDataEntity">
+ <summary>
+ 棟・室・ゾーン情報キャッシュデータを格納するプロパティ(for LM)
+ </summary>
+ <returns>棟・室・ゾーン情報キャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMTouSituShoboGrpDataEntity">
+ <summary>
+ 棟室情報および棟室マスタ消防情報キャッシュデータを格納するプロパティ(for LM)
+ </summary>
+ <returns>棟室情報および棟室マスタ消防情報キャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMSeiqToMasterDataEntity">
+ <summary>
+ 請求先マスタキャッシュデータを格納するプロパティ(for LM)
+ </summary>
+ <returns>請求先マスタキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMCustMasterDataEntity">
+ <summary>
+ 荷主マスタキャッシュデータを格納するプロパティ(for LM)
+ </summary>
+ <returns>荷主マスタキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMTankaMasterDataEntity">
+ <summary>
+ 単価マスタキャッシュデータを格納するプロパティ(for LM)
+ </summary>
+ <returns>単価マスタキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMTankaGroupMasterDataEntity">
+ <summary>
+ 単価マスタ(Group)キャッシュデータを格納するプロパティ(for LM)
+ </summary>
+ <returns>単価マスタ(Group)キャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMHolidayMasterDataEntity">
+ <summary>
+ 休日マスターキャッシュデータを格納するプロパティ(for LM)
+ </summary>
+ <returns>休日マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMJisMasterDataEntity">
+ <summary>
+ JISマスタキャッシュデータを格納するプロパティ(for LM)
+ </summary>
+ <returns>JISマスタキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMKenMasterDataEntity">
+ <summary>
+ 県マスタキャッシュデータを格納するプロパティ(for LM)
+ </summary>
+ <returns>県マスタキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMKyoriMasterDataEntity">
+ <summary>
+ 距離マスタキャッシュデータを格納するプロパティ(for LM)
+ </summary>
+ <returns>距離マスタキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMKyoriGroupMasterDataEntity">
+ <summary>
+ 距離マスタ(Group)キャッシュデータを格納するプロパティ(for LM)
+ </summary>
+ <returns>距離マスタ(Group)キャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMCoaMasterDataEntity">
+ <summary>
+ 分析票管理マスタキャッシュデータを格納するプロパティ(for LM)
+ </summary>
+ <returns>分析票管理マスタキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMSagyoMasterDataEntity">
+ <summary>
+ 作業項目マスタキャッシュデータを格納するプロパティ(for LM)
+ </summary>
+ <returns>作業項目マスタキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMShoboMasterDataEntity">
+ <summary>
+ 消防マスタキャッシュデータを格納するプロパティ(for LM)
+ </summary>
+ <returns>消防マスタキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMTaxMasterDataEntity">
+ <summary>
+ 税率マスタキャッシュデータを格納するプロパティ(for LM)
+ </summary>
+ <returns>税率マスタキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMOkurijoMasterDataEntity">
+ <summary>
+ 送り状パタンマスタキャッシュデータを格納するプロパティ(for LM)
+ </summary>
+ <returns>送り状パタンマスタキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMRptMasterDataEntity">
+ <summary>
+ 帳票パタンマスタキャッシュデータを格納するプロパティ(for LM)
+ </summary>
+ <returns>帳票パタンマスタキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMCustFuriInfoMasterDataEntity">
+ <summary>
+ 荷主振替情報マスタキャッシュデータを格納するプロパティ(for LM)
+ </summary>
+ <returns>荷主振替情報マスタキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMCustGoodsFuriMasterDataEntity">
+ <summary>
+ 荷主商品振替マスタキャッシュデータを格納するプロパティ(for LM)
+ </summary>
+ <returns>荷主商品振替マスタキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMCustCondMasterDataEntity">
+ <summary>
+ 荷主別商品状態区分マスタキャッシュデータを格納するプロパティ(for LM)
+ </summary>
+ <returns>荷主別商品状態区分マスタキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMNrsBankMasterDataEntity">
+ <summary>
+ 名義・銀行マスタ情報キャッシュデータを格納するプロパティ(for LM)
+ </summary>
+ <returns>名義・銀行マスタキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMSeiqKmkMasterDataEntity">
+ <summary>
+ 請求項目マスタキャッシュデータを格納するプロパティ(for LM)
+ </summary>
+ <returns>請求項目マスタキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMTCustMasterDataEntity">
+ <summary>
+ 初期荷主情報(担当者別荷主情報)キャッシュデータを格納するプロパティ(for LM)
+ </summary>
+ <returns>初期荷主情報(担当者別荷主情報)キャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMDestGoodsMasterDataEntity">
+ <summary>
+ 届先商品名マスタキャッシュデータを格納するプロパティ(for LM)
+ </summary>
+ <returns>届先商品名マスタキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMFuriGoodsMasterDataEntity">
+ <summary>
+ 振替対象商品マスタキャッシュデータを格納するプロパティ(for LM)
+ </summary>
+ <returns>振替対象商品マスタキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMTouSituShoboDataEntity">
+ <summary>
+ 棟室消防情報キャッシュデータを格納するプロパティ(for LM)
+ </summary>
+ <returns>棟室消防情報キャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMKamokuMasterDataEntity">
+ <summary>
+ 倉庫経理科目コードマスタキャッシュデータを格納するプロパティ(for LM)
+ </summary>
+ <returns>倉庫経理科目コードマスタキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMAreaMasterDataEntity">
+ <summary>
+ 配送区域マスタキャッシュデータを格納するプロパティ(for LM)
+ </summary>
+ <returns>配送区域マスタキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMAreaGroupMasterDataEntity">
+ <summary>
+ 配送区域マスタ(Group)キャッシュデータを格納するプロパティ(for LM)
+ </summary>
+ <returns>配送区域マスタキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMDriverMasterDataEntity">
+ <summary>
+ 乗務員マスタキャッシュデータを格納するプロパティ(for LM)
+ </summary>
+ <returns>乗務員マスタキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMUnsocoMasterDataEntity">
+ <summary>
+ 運送会社マスタキャッシュデータを格納するプロパティ(for LM)
+ </summary>
+ <returns>運送会社マスタキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMVcleMasterDataEntity">
+ <summary>
+ 車輌マスタキャッシュデータを格納するプロパティ(for LM)
+ </summary>
+ <returns>車輌マスタキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMRemarkMasterDataEntity">
+ <summary>
+ 個人・用途別注意書テーブルキャッシュデータを格納するプロパティ(for LM)
+ </summary>
+ <returns>個人・用途別注意書テーブルキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMIntEdiMasterDataEntity">
+ <summary>
+ 社内ＥＤＩ通信設定ファイルテーブルキャッシュデータを格納するプロパティ(for LM)
+ </summary>
+ <returns>社内ＥＤＩ通信設定ファイルテーブルキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMExtcUnchinMasterDataEntity">
+ <summary>
+ 割増運賃マスタキャッシュデータを格納するプロパティ(for LM)
+ </summary>
+ <returns>割増運賃マスタキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMSyuhaiSetMasterDataEntity">
+ <summary>
+ 集配料設定ファイルキャッシュデータを格納するプロパティ(for LM)
+ </summary>
+ <returns>集配料設定ファイルキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMUnchinRecastMasterDataEntity">
+ <summary>
+ 運賃再計算方法設定マスタキャッシュデータを格納するプロパティ(for LM)
+ </summary>
+ <returns>運賃再計算方法設定マスタキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMUnchinTariffMasterDataEntity">
+ <summary>
+ 運賃タリフマスタキャッシュデータを格納するプロパティ(for LM)
+ </summary>
+ <returns>運賃タリフマスタキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMUnchinTariffRDataEntity">
+ <summary>
+ 運賃タリフ-Ｒマスタキャッシュデータを格納するプロパティ(for LM)
+ </summary>
+ <returns>運賃タリフ-Ｒマスタキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMUnchinTariffSetMasterDataEntity">
+ <summary>
+ 運賃タリフセットマスタキャッシュデータを格納するプロパティ(for LM)
+ </summary>
+ <returns>運賃タリフセットマスタキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMUnchinTariffSetGroupMasterDataEntity">
+ <summary>
+ 運賃タリフセット(Group)マスタキャッシュデータを格納するプロパティ(for LM)
+ </summary>
+ <returns>運賃タリフセット(Group)マスタキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMYokoTariffHdMasterDataEntity">
+ <summary>
+ 横持タリフヘッダキャッシュデータを格納するプロパティ(for LM)
+ </summary>
+ <returns>横持タリフヘッダキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMYokoTariffDtlMasterDataEntity">
+ <summary>
+ 横持タリフ明細キャッシュデータを格納するプロパティ(for LM)
+ </summary>
+ <returns>横持タリフ明細キャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMAreaJisDataEntity">
+ <summary>
+ エリア(JIS)キャッシュデータを格納するフィールド(for LM)
+ </summary>
+ <returns>エリア(JIS)キャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMEdiCustDataEntity">
+ <summary>
+ EDI対象荷主キャッシュデータを格納するフィールド(for LM)
+ </summary>
+ <returns>EDI対象荷主キャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMCustRptDataEntity">
+ <summary>
+ 荷主別帳票キャッシュデータを格納するフィールド(for LM)
+ </summary>
+ <returns>荷主別帳票キャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMUnsoCustRptDataEntity">
+ <summary>
+ 運送会社荷主別送り状情報キャッシュデータを格納するフィールド(for LM)
+ </summary>
+ <returns>運送会社荷主別送り状情報キャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMGoodsDetailsDataEntity">
+ <summary>
+ 商品明細キャッシュデータを格納するフィールド(for LM)
+ </summary>
+ <returns>商品明細キャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMDestDetailsDataEntity">
+ <summary>
+ 届先明細キャッシュデータを格納するフィールド(for LM)
+ </summary>
+ <returns>届先明細キャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMCustDetailsDataEntity">
+ <summary>
+ 荷主明細キャッシュデータを格納するフィールド(for LM)
+ </summary>
+ <returns>荷主明細キャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMSemiEdiInfoStateDataEntity">
+ <summary>
+ セミＥＤＩ設定情報キャッシュデータを格納するフィールド(for LM)
+ </summary>
+ <returns>セミＥＤＩ設定設定情報キャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMShiharaiTariffGroupDataEntity">
+ <summary>
+ 支払運賃タリフ(Group)情報キャッシュデータを格納するフィールド(for LM)
+ </summary>
+ <returns>支払運賃タリフ(Group)情報キャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMShiharaiTariffDataEntity">
+ <summary>
+ 支払運賃タリフ情報キャッシュデータを格納するフィールド(for LM)
+ </summary>
+ <returns>支払運賃タリフ(Group)情報キャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMExtcShiharaiDataEntity">
+ <summary>
+ 支払割増運賃情報キャッシュデータを格納するフィールド(for LM)
+ </summary>
+ <returns>支払割増運賃情報キャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMYokoTariffHdShiharaiDataEntity">
+ <summary>
+ 横持ちタリフヘッダ情報キャッシュデータを格納するフィールド(for LM)
+ </summary>
+ <returns>横持ちタリフヘッダ情報キャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMYokoTariffDtlShiharaiDataEntity">
+ <summary>
+ 支払横持ちタリフ明細情報キャッシュデータを格納するフィールド(for LM)
+ </summary>
+ <returns>支払横持ちタリフ明細情報キャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMShiharaitoDataEntity">
+ <summary>
+ 支払先情報キャッシュデータを格納するフィールド(for LM)
+ </summary>
+ <returns>支払横持ちタリフ明細情報キャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMUnchinTariffSetUnsocoMasterDataEntity">
+ <summary>
+ 運賃タリフセットマスタ(荷主・運送会社)キャッシュデータを格納するフィールド(for LM)
+ </summary>
+ <returns>運賃タリフセットマスタ(荷主・運送会社)キャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMHandyMenuMasterDataEntity">
+ <summary>
+ ハンディ用メニューマスタキャッシュデータを格納するフィールド(for LM)
+ </summary>
+ <returns>ハンディ用メニューマスタキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LMGamenMasterDataEntity">
+ <summary>
+ 画面切り替えマスタキャッシュデータを格納するプロパティ(for LM)
+ </summary>
+ <returns>画面切り替えマスタキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.RECompMasterDataEntity">
+ <summary>
+ 会社マスターキャッシュデータを格納するプロパティ(for RE)
+ </summary>
+ <returns>会社マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.RECurrMasterDataEntity">
+ <summary>
+ 通貨マスターキャッシュデータを格納するプロパティ(for RE)
+ </summary>
+ <returns>通貨マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.RETaxMasterDataEntity">
+ <summary>
+ 税マスターキャッシュデータを格納するプロパティ(for RE)
+ </summary>
+ <returns>税マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.REUserMasterDataEntity">
+ <summary>
+ ユーザーマスターキャッシュデータを格納するプロパティ(for RE)
+ </summary>
+ <returns>ユーザーマスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.REKbnMasterDataEntity">
+ <summary>
+ 区分マスターキャッシュデータを格納するプロパティ(for RE)
+ </summary>
+ <returns>区分マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.RECostMasterDataEntity">
+ <summary>
+ コストマスターキャッシュデータを格納するプロパティ(for RE)
+ </summary>
+ <returns>コストマスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.REActSet1MasterDataEntity">
+ <summary>
+ アクションセットマスターキャッシュデータを格納するプロパティ(for RE)
+ </summary>
+ <returns>アクションセットマスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.REActSet2MasterDataEntity">
+ <summary>
+ アクションセット明細マスターキャッシュデータを格納するプロパティ(for RE)
+ </summary>
+ <returns>アクションセット明細マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.REActSet3MasterDataEntity">
+ <summary>
+ アクションセット請求マスターキャッシュデータを格納するプロパティ(for RE)
+ </summary>
+ <returns>アクションセット請求マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.REAgrInfoMasterDataEntity">
+ <summary>
+ 契約書項目マスターキャッシュデータを格納するプロパティ(for RE)
+ </summary>
+ <returns>契約書項目マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.REInvYmMasterDataEntity">
+ <summary>
+ 請求書年月マスターキャッシュデータを格納するプロパティ(for RE)
+ </summary>
+ <returns>請求書年月マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.RERegionMasterDataEntity">
+ <summary>
+ 地域マスターキャッシュデータを格納するプロパティ(for RE)
+ </summary>
+ <returns>地域マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.REBankMasterDataEntity">
+ <summary>
+ 銀行マスターキャッシュデータを格納するプロパティ(for RE)
+ </summary>
+ <returns>銀行マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.REMenuMasterDataEntity">
+ <summary>
+ メニューマスターキャッシュデータを格納するプロパティ(for RE)
+ </summary>
+ <returns>メニューマスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.RENumberMasterDataEntity">
+ <summary>
+ 番号マスターキャッシュデータを格納するプロパティ(for RE)
+ </summary>
+ <returns>番号マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.RE_JFCompMasterDataEntity">
+ <summary>
+ 伝(JF)会社マスターキャッシュデータを格納するプロパティ(for RE)
+ </summary>
+ <returns>伝(JF)会社マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.RE_JFBuMasterDataEntity">
+ <summary>
+ 伝(JF)BUマスターキャッシュデータを格納するプロパティ(for RE)
+ </summary>
+ <returns>伝(JF)BUマスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.RE_JFBrMasterDataEntity">
+ <summary>
+ 伝(JF)営業所マスターキャッシュデータを格納するプロパティ(for RE)
+ </summary>
+ <returns>伝(JF)営業所マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.RE_DSChargeItemMasterDataEntity">
+ <summary>
+ KIDS(DS)諸料金アイテムマスタキャッシュデータを格納するプロパティ(for RE)
+ </summary>
+ <returns>KIDS(DS)諸料金アイテムマスタキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.REJdeCdMasterDataEntity">
+ <summary>
+ JDEコードマスタ情報キャッシュデータを格納するプロパティ(for RE)
+ </summary>
+ <returns>JDEコードマスタ情報キャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.SHMenuMasterDataEntity">
+ <summary>
+ メニューマスターキャッシュデータを格納するプロパティ(for SH)
+ </summary>
+ <returns>メニューマスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.SHUserMasterDataEntity">
+ <summary>
+ ユーザーマスターキャッシュデータを格納するプロパティ(for SH)
+ </summary>
+ <returns>ユーザーマスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.SHKbnMasterDataEntity">
+ <summary>
+ 区分マスターキャッシュデータを格納するプロパティ(for SH)
+ </summary>
+ <returns>区分マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.SH_JFCompMasterDataEntity">
+ <summary>
+ 伝(JF)会社マスターキャッシュデータを格納するプロパティ(for SH)
+ </summary>
+ <returns>伝(JF)会社マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.SH_JFBrMasterDataEntity">
+ <summary>
+ 伝(JF)営業所マスターキャッシュデータを格納するプロパティ(for SH)
+ </summary>
+ <returns>伝(JF)営業所マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.SHBankMasterDataEntity">
+ <summary>
+ 銀行マスターキャッシュデータを格納するプロパティ(for SH)
+ </summary>
+ <returns>銀行マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.SHCurrMasterDataEntity">
+ <summary>
+ 通貨マスターキャッシュデータを格納するプロパティ(for SH)
+ </summary>
+ <returns>通貨マスターキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.GLKbnMasterDataEntity">
+ <summary>
+ 区分マスタキャッシュデータを格納するプロパティ(for GL)
+ </summary>
+ <returns>区分マスタキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.GLRscMasterDataEntity">
+ <summary>
+ リソースマスタキャッシュデータを格納するプロパティ(for GL)
+ </summary>
+ <returns>リソースマスタキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.GLCurrMasterDataEntity">
+ <summary>
+ 通貨マスタキャッシュデータを格納するプロパティ(for GL)
+ </summary>
+ <returns>通貨マスタキャッシュデータ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.CacheTable">
+ <summary>
+ キャッシュするテーブルを格納したDataSetの配列
+ </summary>
+ <returns></returns>
+ <remarks>ServiceDataを生成する際に、各システムでキャッシュするテーブル数の配列を用意する</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.BusinessEntity">
+ <summary>
+ クライアント・サーバー間の送受信データの本体を格納するプロパティ
+ </summary>
+ <returns>クライアント・サーバー間の送受信データの本体</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.ConnectionString">
+ <summary>
+ DB接続文字列を格納するプロパティ
+ </summary>
+ <returns>IPアドレス</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.IPAdress">
+ <summary>
+ IPアドレスを格納するプロパティ
+ </summary>
+ <returns>IPアドレス</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.PGID">
+ <summary>
+ プログラムIDを格納するプロパティ
+ </summary>
+ <returns>プログラムID</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.TerminalID">
+ <summary>
+ 端末IDを格納するプロパティ
+ </summary>
+ <returns>端末ID</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.UserID">
+ <summary>
+ ユーザーIDを格納するプロパティ
+ </summary>
+ <returns>ユーザーID</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.SystemDate">
+ <summary>
+ システム日付を格納するプロパティ
+ </summary>
+ <returns>システム日付</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.SystemTime">
+ <summary>
+ システム時間を格納するプロパティ
+ </summary>
+ <returns>システム時間</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LogOperationMode">
+ <summary>
+ ログ出力モードの取得・設定を行うプロパティ
+ </summary>
+ <returns>初期値：0(WebService)</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LogLevel">
+ <summary>
+ ログレベルの取得・設定を行うプロパティ
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.ResultCount">
+ <summary>
+ 処理結果件数を格納するプロパティ
+ </summary>
+ <returns>処理結果件数</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.RtnMessageEntity">
+ <summary>
+ サーバーからの戻りメッセージを取得・格納するプロパティ
+ </summary>
+ <returns>サーバーからの戻りメッセージ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.TargetFacadeName">
+ <summary>
+ 呼び出すBLF名を格納するプロパティ
+ </summary>
+ <returns>呼び出すBLF名</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.QueName">
+ <summary>
+ QueNameを格納するプロパティ
+ </summary>
+ <returns>QueName</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.LimitCount">
+ <summary>
+ しきい値を格納するプロパティ
+ </summary>
+ <returns>しきい値</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.MaxResultCount">
+ <summary>
+ 表示最大件数を格納するプロパティ
+ </summary>
+ <returns>表示最大件数</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.ForceOparation">
+ <summary>
+ 強制処理フラグを格納するプロパティ
+ </summary>
+ <returns>強制処理フラグ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.UserName">
+ <summary>
+ ユーザー名を格納するプロパティ
+ </summary>
+ <returns>ユーザー名</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.DeptKbn">
+ <summary>
+ 所属部署区分を格納するプロパティ
+ </summary>
+ <returns>所属部署区分</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.AttachFilePath">
+ <summary>
+ メール添付ファイルパスを格納するプロパティ
+ </summary>
+ <returns>添付ファイルパス</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.CacheAll">
+ <summary>
+ マスタキャッシュフラグを格納するプロパティ
+ </summary>
+ <returns>マスタキャッシュフラグ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.SysId">
+ <summary>
+ System IDを格納するプロパティ
+ </summary>
+ <returns>System ID</returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.MessageLangType">
+ <summary>
+ 言語タイプを格納するプロパティ（GL以降は、Lang_ISO639_1を利用すること）
+ </summary>
+ <returns>Lang Type</returns>
+ <remarks>LM Label英語化</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.MessageID">
+ <summary>
+ メッセージID
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.ReplaceMessages">
+ <summary>
+ メッセージ置換文字列
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.MessageArea">
+ <summary>
+ メッセージエリア
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.NaviArea">
+ <summary>
+ ナビエリア
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceData.IsReplicaDB">
+ <summary>
+ レプリカDBに接続するか（Azureでレプリカがある場合のみ動作する）
+ </summary>
+ <returns></returns>
+</member>
+<member name="T:Jp.Co.Nrs.Com.Base.ServiceManager">
+ <summary>
+ 本フレームワークの中核となるクラス。
+ </summary>
+ <remarks>BaseGUIHandle、BaseWSA、BaseBLC、BaseBLF、BaseDACの親となる。
+ ログ出力用オブジェクト、サービス間送受信データ格納用のフィールドを持つ。
+ サービス間送受信データの個々の値にはこのクラスのメソッドを経由して
+ アクセスを行う。</remarks>
+ <histry>
+ 2006/07/21      須藤      新規
+ 2006/07/27      須藤      修正　システム情報を格納するフィールドを追加
+ 2006/07/27      須藤      修正　全メッセージを格納するフィールドを追加
+ 2006/10/23      須藤      修正　システム日付・時刻を取得するメソッドを継承可能に修正
+ 2018/05/10      坂本      修正　メッセージデータセットに言語を追加
+ </histry>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.ServiceManager._Connection">
+ <summary>
+ コネクションオブジェクトを格納するフィールド。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.ServiceManager._Logger">
+ <summary>
+ ログ出力用クラスを格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.ServiceManager._ServiceData">
+ <summary>
+ 送受信データを格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.ServiceManager._CachedConfigDataSet">
+ <summary>
+ システム情報をキャッシュするフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.ServiceManager._CachedMessageDataSet">
+ <summary>
+ 全メッセージデータをキャッシュするフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.ServiceManager._MessageStoreDataEntity">
+ <summary>
+ メッセージ蓄積データを格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Base.ServiceManager._AttachFilePath">
+ <summary>
+ メール添付ファイルパスを格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.ServiceManager.#ctor">
+ <summary>
+ コンストラクタ
+ </summary>
+ <remarks>コンストラクタ実行時にServiceDataクラスのインスタンスを生成する</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceManager.Lang_ISO639_1">
+ <summary>
+ 言語（ISO-639-1準拠）を格納するプロパティ
+ </summary>
+ <value>Lang_ISO639_1</value>
+ <returns>Lang_ISO639_1</returns>
+ <remarks>GL以降は本プロパティを利用する。</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceManager.TimeZoneInfoId">
+ <summary>
+ TimeZoneInfoを格納するプロパティ
+ </summary>
+ <value>TimeZoneInfoId</value>
+ <returns>TimeZoneInfoId</returns>
+ <remarks>TimeZoneInfoクラスを特定するＩＤ
+ </remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceManager.Connection">
+ <summary>
+ コネクションオブジェクトの取得・設定を行うプロパティ。
+ </summary>
+ <value>SqlConnectionオブジェクト</value>
+ <returns>SqlConnectionオブジェクト</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceManager.Logger">
+ <summary>
+ ログ出力用クラスの取得・設定を行うプロパティ
+ </summary>
+ <value>ログ出力用クラス</value>
+ <returns>ログ出力用クラス</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceManager.ServiceData">
+ <summary>
+ 送受信データの取得・設定を行うプロパティ
+ </summary>
+ <value>送受信データ</value>
+ <returns>送受信データ</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceManager.MessageDataEntity">
+ <summary>
+ 出力用メッセージの格納されたデータセットを取得します。
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceManager.CachedMessageDataSet">
+ <summary>
+ 全メッセージデータキャッシュの取得・設定を行うプロパティ
+ </summary>
+ <value>全メッセージデータ</value>
+ <returns>全メッセージデータのコピー</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceManager.MessageStoreDataEntity">
+ <summary>
+ メッセージ蓄積データの取得・設定を行うプロパティ
+ </summary>
+ <value>メッセージ蓄積データ</value>
+ <returns>メッセージ蓄積データのコピー</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceManager.CachedConfigDataSet">
+ <summary>
+ システム情報キャッシュの取得・設定を行うプロパティ
+ </summary>
+ <value>送受信データ</value>
+ <returns>送受信データのコピー</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceManager.ConfigFilePath">
+ <summary>
+ コンフィグデータの格納場所を取得するプロパティ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.ServiceManager.AttachFilePath">
+ <summary>
+ メール添付ファイルパスを格納するフィールド
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.ServiceManager.Init">
+ <summary>
+ 初期化メソッド。
+ </summary>
+ <remarks>
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.ServiceManager.GetBusinessEntity">
+ <summary>
+ 現在ServiceDataに登録されている画面情報DataSetを取得する。
+ </summary>
+ <returns>現在ServiceDataに登録されている画面情報DataSet</returns>
+ <remarks>_ServiceDataオブジェクトに格納されている画面情報DataSetを取得する。
+ 取得値がNullでなければ値をデバッグする。
+ Nullであればエラーログを出力したのち、例外をスローする。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.ServiceManager.SetBusinessEntity(System.Data.DataSet)">
+ <summary>
+ ServiceDataに画面情報DataSetをセットする。
+ </summary>
+ <param name="ds">画面情報DataSet</param>
+ <remarks>_ServiceDataオブジェクトに格納されている画面情報DataSetを取得する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.ServiceManager.GetPGID">
+ <summary>
+ 現在ServiceDataに登録されているPGIDを取得する。
+ </summary>
+ <returns>現在ServiceDataに登録されているPGID</returns>
+ <remarks>_ServiceDataオブジェクトに格納されているプログラムIDを取得する。
+ 取得値がNullでなければ値をデバッグする。
+ Nullであればエラーログを出力したのち、例外をスローする。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.ServiceManager.GetTerminalID">
+ <summary>
+ 現在ServiceDataに登録されているログインユーザーのログイン端末名を取得する。
+ </summary>
+ <returns>ログインユーザーのログイン端末名</returns>
+ <remarks>_ServiceDataオブジェクトに格納されている端末IDを取得する。
+ 取得値がNullでなければ値をデバッグする。
+ Nullであればエラーログを出力したのち、例外をスローする。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.ServiceManager.IPAdress">
+ <summary>
+ 現在ServiceDataに登録されているログインユーザーのIPアドレスを取得する。
+ </summary>
+ <returns>ログインユーザーのIPアドレス</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.ServiceManager.GetUserID">
+ <summary>
+ ログインユーザーのユーザーIDを取得する。
+ </summary>
+ <returns>ログインユーザーのユーザーID</returns>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.ServiceManager.GetUserName">
+ <summary>
+ ログインユーザーのユーザー名を取得する。
+ </summary>
+ <returns>ログインユーザーのユーザー名</returns>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.ServiceManager.GetSystemDate">
+ <summary>
+ 現在ServiceDataに登録されているシステム日付(YYYYMMDD)を取得する。
+ </summary>
+ <returns>システム日付</returns>
+ <remarks>_ServiceDataオブジェクトに格納されているシステム日付を取得する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.ServiceManager.GetSystemTime">
+ <summary>
+ 現在ServiceDataに登録されているシステム時刻(HHMMSSmmm)を取得する。
+ </summary>
+ <returns>システム時間</returns>
+ <remarks>_ServiceDataオブジェクトに格納されているシステム時刻を取得する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.ServiceManager.GetResultCount">
+ <summary>
+ 処理結果件数を取得する。
+ </summary>
+ <returns>処理結果件数</returns>
+ <remarks>
+ BaseHandlerのサブクラスでなければ
+ _ServiceDataオブジェクトに格納されている処理結果件数を取得する。
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.ServiceManager.SetMessage(System.String,System.String[])">
+ <summary>
+ メッセージ情報を設定する。
+ </summary>
+ <param name="messageID">メッセージID</param>
+ <param name="replaceMessages">置換対象文字列の配列</param>
+ <remarks>引数のメッセージＩＤを元にメッセージ文言を作成し、
+ ServiceDataクラスにメッセージ情報を設定する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.ServiceManager.SetMessageStore(System.String,System.String,System.String[],System.String,System.String,System.String)">
+ <summary>
+ メッセージ情報を蓄積します。
+ </summary>
+ <param name="guidanceTitle">ガイダンスタイトル</param>
+ <param name="messageID">メッセージID</param>
+ <param name="replaceMessages">置換対象文字列の配列</param>
+ <param name="rowNo">処理行番号</param>
+ <param name="variableColTitle">可変項目列名</param>
+ <param name="variableColvalue">可変項目内容</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.ServiceManager.GetInitMessageDataSet(System.String,System.String[])">
+ <summary>
+ メッセージデータキャッシュ用のデータセットを新規作成します。
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.ServiceManager.GetInitMessageStoreDataSet(System.String)">
+ <summary>
+ メッセージ蓄積用のデータセットを新規作成します。(Public ⇒ Private)
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.ServiceManager.GetMessageValue(System.Data.DataSet,System.String)">
+ <summary>
+ 指定した項目のデータをキャッシュから取得します。
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.ServiceManager.CreateMessageFromCache(System.Data.DataSet,System.String,System.String[])">
+ <summary>
+ メッセージ文言を構築するメソッド
+ </summary>
+ <param name="messageID">メッセージID</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.ServiceManager.ReplaceMessageString(System.String,System.String[])">
+ <summary>
+ 置換済みのメッセージを取得する。
+ </summary>
+ <param name="msg">置換済みのメッセージ</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.ServiceManager.CreateMessage(System.Data.DataSet,System.String,System.String[],System.String)">
+ <summary>
+ メッセージ文言を構築するメソッド
+ </summary>
+ <param name="messageID">メッセージID</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.ServiceManager.IsMessageExist">
+ <summary>
+ メッセージの有無を判定して返却する（BL）
+ </summary>
+ <returns>
+ true：メッセージが存在する
+ false：メッセージが存在しない</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.ServiceManager.IsMessageStoreExist">
+ <summary>
+ メッセージ蓄積の有無を判定して返却する
+ </summary>
+ <returns>
+ True ：メッセージが存在する
+ False：メッセージが存在しない
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.ServiceManager.IsMessageStoreExist(System.Int32)">
+ <summary>
+ メッセージ蓄積の有無を判定して返却する
+ </summary>
+ <param name="rowNo">エラー判定する行番号</param>
+ <returns>
+ True ：メッセージが存在する
+ False：メッセージが存在しない
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.ServiceManager.GetMessageLevel">
+ <summary>
+ メッセージレベルを取得する。
+ </summary>
+ <returns>メッセージレベル</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.ServiceManager.GetMessageID">
+ <summary>
+ メッセージIDを取得する。
+ </summary>
+ <returns>メッセージID</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.ServiceManager.GetMessageString">
+ <summary>
+ メッセージ文言を取得する。
+ </summary>
+ <returns>メッセージ文言（日本語）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.ServiceManager.GetMessageString(System.String)">
+ <summary>
+ メッセージ文言を取得する。
+ </summary>
+ <param name="messageLanguageType">
+ 0:日本語
+ 1:英語
+ </param>
+ <returns>選択した言語でメッセージ文言を取得します。</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.ServiceManager.GetMessageArea">
+ <summary>
+ メッセージエリアを取得する。
+ </summary>
+ <returns>メッセージエリア名</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.ServiceManager.GetNaviArea">
+ <summary>
+ ナビエリアを取得する。
+ </summary>
+ <returns>ナビエリア名</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.ServiceManager.GetUserInfoValue(System.String)">
+ <summary>
+ 指定した項目のデータをUserデータから取得します。
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.ServiceManager.GetUserInfoEntity">
+ <summary>
+ 現在ServiceDataに登録されている画面情報DataSetを取得する。
+ </summary>
+ <returns>現在ServiceDataに登録されている画面情報DataSet</returns>
+ <remarks>_ServiceDataオブジェクトに格納されている画面情報DataSetを取得する。
+ 取得値がNullでなければ値をデバッグする。
+ Nullであればエラーログを出力したのち、例外をスローする。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Base.TripleDesMGR.Decript(System.String,System.String@)">
+ <summary>
+ 復号化ロジック
+ </summary>
+ <param name="strInput">string</param>
+ <returns>string</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Com.Base.Interface.IConnection">
+ <summary>
+ コネクション格納クラス用インターフェース
+ </summary>
+ <remarks></remarks>
+ <histry>
+ 2006/07/21      須藤      新規
+ </histry>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Base.Interface.IConnection.Connection">
+ <summary>
+ コネクションを取得・設定します
+ </summary>
+ <value>コネクションオブジェクト</value>
+ <returns>コネクションオブジェクト</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Com.Utility.LangIdentifier">
+ <summary>
+ 言語に関する属性を保持するクラス
+ </summary>
+ <remarks>
+ 通常のクラスだが、LangMGRでのみ利用するため、Utilityに定義
+  LM用に作成したが、COM_DBにてDBカラムにLANGを保持するようになったため、本クラスは廃止予定
+ </remarks>
+ <histry>
+ 2017/02/21      吉田      新規
+ </histry>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Utility.LangIdentifier.#ctor(System.String)">
+ <summary>
+ コンストラクタ
+ </summary>
+ <remarks>
+ </remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Utility.LangIdentifier.ColLangIdentifier">
+ <summary>
+ 各テーブル類の多言語化対応カラム名識別子
+ </summary>
+ <remarks>
+ </remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Com.Utility.DateFormatUtility">
+ <summary>
+ 日付用ユーティリティクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Com.Utility.DateFormatUtility.Gengo">
+ <summary>
+ 元号を表す定義体
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Utility.DateFormatUtility.Gengo.Meiji">
+ <summary>
+ 明治
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Utility.DateFormatUtility.Gengo.Taisho">
+ <summary>
+ 大正
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Utility.DateFormatUtility.Gengo.Showa">
+ <summary>
+ 昭和
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Utility.DateFormatUtility.Gengo.Heisei">
+ <summary>
+ 平成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Utility.DateFormatUtility.Gengo.Reiwa">
+ <summary>
+ 令和
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Utility.DateFormatUtility.EditSlash(System.String)">
+ <summary>
+ 引数の文字列をスラッシュ編集します（数字8桁or6桁or4桁の場合のみ）
+ </summary>
+ <param name="value">編集対象の文字列</param>
+ <returns>スラッシュ編集された文字列 [yyyy/MM/dd・yyyy/MM・MM/dd]</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Utility.DateFormatUtility.EditSlashEUR(System.String)">
+ <summary>
+ 引数の文字列をスラッシュ編集します（数字8桁or6桁の場合のみ）
+ </summary>
+ <param name="value">編集対象の文字列</param>
+ <returns>スラッシュ編集された文字列 [dd/MMM/yyyy・MMM/yyyy]</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Utility.DateFormatUtility.DeleteSlash(System.String)">
+ <summary>
+ 引数の文字列からスラッシュを取り除きます(日付として妥当な値のみ)
+ </summary>
+ <param name="value">編集対象の文字列</param>
+ <returns>スラッシュを取り除いた文字列</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Utility.DateFormatUtility.DeleteSlashEUR(System.String)">
+ <summary>
+ 引数の文字列からスラッシュを取り除きます(日付として妥当な値のみ)
+ </summary>
+ <param name="value">編集対象の文字列 [dd/MMM/yyyy],[MMM/yyyy]</param>
+ <returns>yyyymmdd, yyyyMM</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Utility.DateFormatUtility.EditMonthddyyyy(System.String)">
+ <summary>
+ 引数の文字列を Month dd, yyyy、Month, yyyy形式 に編集します（数字8桁or6桁の場合のみ）
+ </summary>
+ <param name="value">編集対象の文字列</param>
+ <returns>スラッシュ編集された文字列</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Utility.DateFormatUtility.SeirekiToWareki(System.String)">
+ <summary>
+ 引数(yyyyMMdd)の文字列を西暦から和暦に変換します。
+ </summary>
+ <param name="pDate">yyyyMMdd(8桁)</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Utility.DateFormatUtility.WarekiToSeireki(System.String,Jp.Co.Nrs.Com.Utility.DateFormatUtility.Gengo)">
+ <summary>
+ 引数の文字列を和暦から西暦に変換します。
+ </summary>
+ <param name="value">ggyyMMdd</param>
+ <param name="gengo">元号</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Com.Utility.LangMGR">
+ <summary>
+ 言語に関するコントロールを行うクラス
+ </summary>
+ <remarks>
+  LM用に作成したが、COM_DBにてDBカラムにLANGを保持するようになったため、本クラスは廃止予定
+ </remarks>
+ <histry>
+ 2017/02/21      吉田      新規
+ </histry>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Utility.LangMGR.#ctor">
+ <summary>
+ コンストラクタ
+ </summary>
+ <remarks>
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Utility.LangMGR.#ctor(System.String)">
+ <summary>
+ コンストラクタ
+ </summary>
+ <param name="messageTypeString">メッセージタイプ</param>
+ <remarks>
+ </remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Utility.LangMGR.LangIdentifierList">
+ <summary>
+ 言語に関する属性を保持するリスト
+ </summary>
+ <remarks>
+ 0:日本語
+ 1:英語
+ 2:韓国語
+ 3:中国語
+ </remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Utility.LangMGR.LangIdentifierDic">
+ <summary>
+ 言語に関する属性を保持するディクショナリ
+ </summary>
+ <remarks>
+ 0:日本語
+ 1:英語
+ 2:韓国語
+ 3:中国語
+ </remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Utility.LangMGR.MessageLanguage">
+ <summary>
+ MessageManager.MessageLanguageを保持する
+ </summary>
+ <remarks>
+ 0:日本語
+ 1:英語
+ 2:韓国語
+ 3:中国語
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Utility.LangMGR.Selector(System.Int32,System.String[])">
+ <summary>
+ 言語選択メソッド
+ </summary>
+ <param name="messageType">メッセージタイプ</param>
+ <param name="messageList">言語配列</param>
+ <returns>
+ 言語配列から、メッセージタイプに該当する文字列を返却
+ 言語配列にメッセージタイプの要素が存在しない場合、英語を返却
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Utility.LangMGR.Selector(System.String,System.String[])">
+ <summary>
+ 言語選択メソッド
+ </summary>
+ <param name="messageTypeString">メッセージタイプ（String型）</param>
+ <param name="messageList">言語配列</param>
+ <returns>
+ Selector(messageType As Integer, messageList As String())のメッセージタイプが文字列型
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Utility.LangMGR.Selector(System.String[])">
+ <summary>
+ 言語選択メソッド
+ </summary>
+ <param name="messageList">言語配列</param>
+ <returns>
+ Selector(messageType As Integer, messageList As String())のメッセージタイプ無し
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Utility.LangMGR.AddColLangIdentifier(System.Int32,System.String)">
+ <summary>
+ カラムの言語識別子(_EN等)を付与する
+ </summary>
+ <param name="messageType">メッセージタイプ</param>
+ <param name="colName">カラム名</param>
+ <returns>
+ カラム名に、メッセージタイプに該当する識別子を付与して返却
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Utility.LangMGR.AddColLangIdentifier(System.String,System.String)">
+ <summary>
+ カラムの言語識別子(_EN等)を付与する
+ </summary>
+ <param name="messageTypeString">メッセージタイプ（String型）</param>
+ <param name="colName">カラム名</param>
+ <returns>
+ AddColLangIdentifier(messageType As Integer, colName As String)のメッセージタイプが文字列型
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Utility.LangMGR.AddColLangIdentifier(System.String)">
+ <summary>
+ カラムの言語識別子(_EN等)を付与する
+ </summary>
+ <param name="colName">カラム名</param>
+ <returns>
+ AddColLangIdentifier(messageType As Integer, colName As String)のメッセージタイプ無し
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Com.Utility.MailMGR">
+ <summary>
+ メール送信部品(本体)
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Utility.MailMGR.SendMail(System.String,System.String,System.Collections.ArrayList,System.Collections.ArrayList,System.Collections.ArrayList,System.String,System.String,System.Collections.ArrayList)">
+ <summary>
+ メール送信部品
+ </summary>
+ <param name="pSmtpServer">SMTPサーバー</param>
+ <param name="pFrom">送信元</param>
+ <param name="pTo">To送信先(配列)</param>
+ <param name="pCc">CC送信先(配列)</param>
+ <param name="pBcc">BCC送信先(配列)</param>
+ <param name="pTitle">タイトル</param>
+ <param name="pSubject">本文</param>
+ <param name="pAttachFile">添付ファイルパス(配列)</param>
+ <returns>True:成功 False:失敗</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Utility.MailMGR.SendMail(System.String,System.Int32,System.String,System.String,System.String,System.Collections.ArrayList,System.Collections.ArrayList,System.Collections.ArrayList,System.String,System.String,System.Collections.ArrayList)">
+ <summary>
+ メール送信部品（smtp認証対応)
+ </summary>
+ <param name="pSmtpServer">SMTPサーバー</param>
+ <param name="pSmtpPort">SMTPポート番号</param>
+ <param name="pSmtpUserID">SMTPユーザID</param>
+ <param name="pSmtpPassword">SMTPパスワード</param>
+ <param name="pFrom">送信元</param>
+ <param name="pTo">To送信先(配列)</param>
+ <param name="pCc">CC送信先(配列)</param>
+ <param name="pBcc">BCC送信先(配列)</param>
+ <param name="pTitle">タイトル</param>
+ <param name="pSubject">本文</param>
+ <param name="pAttachFile">添付ファイルパス(配列)</param>
+ <returns>True:成功 False:失敗</returns>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Utility.MailMGR.SendMail(System.String,System.Int32,System.String,System.String,System.String,System.Collections.ArrayList,System.Collections.ArrayList,System.Collections.ArrayList,System.Collections.ArrayList,System.String,System.String,System.Collections.ArrayList)">
+ <summary>
+ メール送信部品（smtp認証対応)
+ </summary>
+ <param name="pSmtpServer">SMTPサーバー</param>
+ <param name="pSmtpPort">SMTPポート番号</param>
+ <param name="pSmtpUserID">SMTPユーザID</param>
+ <param name="pSmtpPassword">SMTPパスワード</param>
+ <param name="pFrom">送信元</param>
+ <param name="pTo">To送信先(配列)</param>
+ <param name="pCc">CC送信先(配列)</param>
+ <param name="pBcc">BCC送信先(配列)</param>
+ <param name="replyTo">Reply-toリスト</param>
+ <param name="pTitle">タイトル</param>
+ <param name="pSubject">本文</param>
+ <param name="pAttachFile">添付ファイルパス(配列)</param>
+ <returns>True:成功 False:失敗</returns>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Utility.MailMGR.SendMailSub(System.String,System.Int32,System.String,System.String,System.String,System.Collections.ArrayList,System.Collections.ArrayList,System.Collections.ArrayList,System.String,System.String,System.Collections.ArrayList)">
+ <summary>
+ メール送信部品（smtp認証対応)
+ </summary>
+ <param name="pSmtpServer">SMTPサーバー</param>
+ <param name="pSmtpPort">SMTPポート番号</param>
+ <param name="pSmtpUserID">SMTPユーザID</param>
+ <param name="pSmtpPassword">SMTPパスワード</param>
+ <param name="pFrom">送信元</param>
+ <param name="pTo">To送信先(配列)</param>
+ <param name="pCc">CC送信先(配列)</param>
+ <param name="pBcc">BCC送信先(配列)</param>
+ <param name="pTitle">タイトル</param>
+ <param name="pSubject">本文</param>
+ <param name="pAttachFile">添付ファイルパス(配列)</param>
+</member>
+<member name="T:Jp.Co.Nrs.Com.Utility.TimeStampUtility">
+ <summary>
+ サーバー時間取得用ユーティリティクラス
+ </summary>
+ <remarks></remarks>
+ <histry>
+ 2006/07/21      須藤      新規
+ </histry>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Utility.TimeStampUtility.GetSystemTimeStamp(Jp.Co.Nrs.Com.Base.Interface.IConnection)">
+ <summary>
+ サーバーの時間を取得します。
+ </summary>
+ <param name="obj">コネクションを保持したクラス</param>
+ <returns>
+ １：サーバー日付（YYYYMMDD）
+ ２：サーバー時刻（HHMMSSsss）
+ の配列
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Com.Utility.ValidateUtility">
+ <summary>
+ 入力チェック用ユーティリティクラス
+ </summary>
+ <remarks></remarks>
+ <histry>
+ 2006/07/21      須藤      新規
+ 2006/08/14      須藤      修正　全角チェックを実装
+                         　　　　半角チェックを実装
+ 2006/09/14      須藤      修正　英数字チェックを実装（ただし現在は無効化）
+ 2006/09/19      須藤      修正　使用できない入力チェックプロパティを隠蔽
+ 2006/09/29      須藤      修正　英数字チェックにチェック除外文字列を指定できるように修正
+ 2006/09/29      須藤      修正　禁止文字チェックにチェック除外文字列を指定できるように修正
+ </histry>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Utility.ValidateUtility.NUMBERS">
+ <summary>
+ 数字チェック用定数
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Utility.ValidateUtility.ALPHABETS">
+ <summary>
+ 英字チェック用定数
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Utility.ValidateUtility.ALPHABETS_LARGE">
+ <summary>
+ 英字大文字チェック用定数
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Utility.ValidateUtility.FORBIDDEN_WORDS">
+ <summary>
+ 禁止文字チェック用定数
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Utility.ValidateUtility.IsHissuCheckErr(System.String)">
+ <summary>
+ 必須チェック
+ </summary>
+ <param name="value">チェック対象文字列</param>
+ <returns>
+ True：エラーあり
+ Falase：エラーなし
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Utility.ValidateUtility.IsZenkauCheckErr(System.String)">
+ <summary>
+ 全角チェック
+ </summary>
+ <param name="value">チェック対象文字列</param>
+ <returns>
+ True：エラーあり
+ Falase：エラーなし
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Utility.ValidateUtility.IsHankakuCheckErr(System.String)">
+ <summary>
+ 半角チェック
+ </summary>
+ <param name="value">チェック対象文字列</param>
+ <returns>
+ True：エラーあり
+ Falase：エラーなし
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Utility.ValidateUtility.IsForbiddenWordsCheckErr(System.String,System.String)">
+ <summary>
+ 禁止文字チェック
+ </summary>
+ <param name="value">チェック対象文字列</param>
+ <param name="exCharacters">チェック除外文字列</param>
+ <returns>
+ True：エラーあり
+ Falase：エラーなし
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Utility.ValidateUtility.IsEidaiSujiCheckErr(System.String)">
+ <summary>
+ 英大文字/数字チェック
+ </summary>
+ <param name="value">チェック対象文字列</param>
+ <returns>
+ True：エラーあり
+ Falase：エラーなし
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Utility.ValidateUtility.IsEisuCheckErr(System.String,System.String)">
+ <summary>
+ 英数字チェック
+ </summary>
+ <param name="value">チェック対象文字列</param>
+ <param name="exCharacters">チェック対象外文字列</param>
+ <returns>
+ True：エラーあり
+ Falase：エラーなし
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Utility.ValidateUtility.IsSujiCheckErr(System.String)">
+ <summary>
+ 数字チェック
+ </summary>
+ <param name="value">チェック対象文字列</param>
+ <returns>
+ True：エラーあり
+ Falase：エラーなし
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Utility.ValidateUtility.IsNumericCheckErr(System.String)">
+ <summary>
+ 数値チェック
+ </summary>
+ <param name="value">チェック対象文字列</param>
+ <returns>
+ True：エラーあり
+ Falase：エラーなし
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Utility.ValidateUtility.IsMiddleSpaceCheckErr(System.String)">
+ <summary>
+ 中間スペースチェック
+ </summary>
+ <param name="value">チェック対象文字列</param>
+ <returns>
+ True：エラーあり
+ Falase：エラーなし
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Utility.ValidateUtility.IsByteCheckErr(System.String,System.Int32)">
+ <summary>
+ バイトチェック
+ </summary>
+ <param name="value">チェック対象文字列</param>
+ <returns>
+ True：エラーあり
+ Falase：エラーなし
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Utility.ValidateUtility.IsFullByteCheckErr(System.String,System.Int32)">
+ <summary>
+ フルバイトチェック
+ </summary>
+ <param name="value">チェック対象文字列</param>
+ <returns>
+ True：エラーあり
+ Falase：エラーなし
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Utility.ValidateUtility.IsFormatCheckTankNo(System.String)">
+ <summary>
+ タンク番号フォーマットチェック(XXXX 999999-9)
+ </summary>
+ <param name="value">チェック対象文字列</param>
+ <returns>
+ True：エラーあり
+ Falase：エラーなし
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Utility.ValidateUtility.IsCheckDigitCheckTankNo(System.String)">
+ <summary>
+ タンク番号チェックディジットチェック(XXXX 999999-9)
+ </summary>
+ <param name="value">チェック対象文字列</param>
+ <returns>
+ Integer：正しいチェックディジットを返します。
+ -1：タンクNoフォーマットエラー
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Utility.ValidateUtility.IsTankNoCheck_IBCs(System.String)">
+ <summary>
+ タンク番号チェックディジットチェック(XXXX 999999-9)
+ </summary>
+ <param name="value">チェック対象文字列</param>
+ <returns>
+ Integer：正しいチェックディジットを返します。
+ -1：タンクNoフォーマットエラー
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Utility.ValidateUtility.IsFormatCheckTankNo_IBCs(System.String)">
+ <summary>
+ IBCsタンク番号フォーマットチェック(XXXX9X99999)
+ </summary>
+ <param name="value">チェック対象文字列</param>
+ <returns>
+ True：エラーあり
+ Falase：エラーなし
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Com.Utility.XMLManager">
+ <summary>
+ XMLファイル読み書き用ユーティリティクラス
+ </summary>
+ <remarks></remarks>
+ <histry>
+ 2006/07/21      須藤      新規
+ </histry>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Utility.XMLManager.ReadXMLByPath(System.String)">
+ <summary>
+ 指定された場所にあるXMLファイルを読み込みます。
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Com.Const.BaseConst">
+ <summary>
+ 共通定数定義クラス
+ </summary>
+ <remarks></remarks>
+ <histry>
+ 2006/07/21      須藤      新規
+ </histry>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Const.BaseConst.SYSTEM_MESSAGE_DATA_TABLE">
+ <summary>
+ メッセージデータ格納テーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Com.Const.BaseConst.FLG">
+ <summary>
+ 真偽２値を判定する定数
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Com.Const.CellImeMode">
+ <summary>
+ 使用可能ImeMode定数列挙体
+ </summary>
+ <remarks></remarks>
+ <histry>
+ 2006/07/21      須藤      新規
+ </histry>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Const.CellImeMode.AUTO">
+ <summary>
+ IME の状態は変更されません。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Const.CellImeMode.ACTIVE">
+ <summary>
+ 日本語入力をONにします。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Const.CellImeMode.INACTIVE">
+ <summary>
+ 日本語入力をOFFにします。変更可
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Const.CellImeMode.DISABLED">
+ <summary>
+ 日本語入力をOFFにします。変更不可
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Com.Const.DBDataType">
+ <summary>
+ DBデータ型定義クラス
+ </summary>
+ <remarks></remarks>
+ <histry>
+ 2006/07/21      須藤      新規
+ 2009/05/11      岩本　　　更新[NVARCHAR型追加(VARCHARと内容同じ)]
+ 2015/09/14      須賀　　　更新[NCHAR型追加(CHARと内容同じ)]
+ </histry>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Const.DBDataType.VARCHAR">
+ <summary>
+ VARCHAR型
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Const.DBDataType.NVARCHAR">
+ <summary>
+ NVARCHAR型
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Const.DBDataType.CHAR">
+ <summary>
+ CHAR型
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Const.DBDataType.NCHAR">
+ <summary>
+ NCHAR型
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Const.DBDataType.NUMERIC">
+ <summary>
+ NUMERIC型
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Const.DBDataType.XML">
+ <summary>
+ XML型
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Com.Const.DBDataTypeOra">
+ <summary>
+ Oracle DBデータ型定義クラス
+ </summary>
+ <remarks></remarks>
+ <histry>
+ 2009/08/07      岩本      新規
+ </histry>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Const.DBDataTypeOra.BLOB">
+ <summary>
+ BLOB型
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Const.DBDataTypeOra.NUMBER">
+ <summary>
+ NUMBER型
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Const.DBDataTypeOra.VARCHAR2">
+ <summary>
+ VARCHAR2型
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Const.DBDataTypeOra.CHAR">
+ <summary>
+ CHAR型
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Com.Const.DispMode">
+ <summary>
+ 画面表示モード定数列挙体
+ </summary>
+ <remarks></remarks>
+ <histry>
+ 2006/07/21      須藤      新規
+ </histry>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Const.DispMode.INIT">
+ <summary>
+ 初期化
+ </summary>
+ <remarks>ラベルをクリアします</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Const.DispMode.VIEW">
+ <summary>
+ 参照モード
+ </summary>
+ <remarks>ラベルに"参　照"が設定されます</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Const.DispMode.EDIT">
+ <summary>
+ 編集モード
+ </summary>
+ <remarks>ラベルに"編　集"が設定されます</remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Com.Const.InputControl">
+ <summary>
+ 入力可能文字種限定用定数列挙体
+ </summary>
+ <remarks></remarks>
+ <histry>
+ 2006/07/21      須藤      新規
+ </histry>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Const.InputControl.ALL_MIX">
+ <summary>
+ MIX項目
+ </summary>
+ <remarks>InputMan / Spread共用</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Const.InputControl.ALL_ZENKAKU">
+ <summary>
+ 全角のみ
+ </summary>
+ <remarks>InputMan / Spread共用</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Const.InputControl.ALL_HANKAKU">
+ <summary>
+ 半角のみ
+ </summary>
+ <remarks>InputMan / Spread共用</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Const.InputControl.HAN_ALPHA">
+ <summary>
+ アルファベットのみ
+ </summary>
+ <remarks>InputMan / Spread共用</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Const.InputControl.HAN_ALPHA_U">
+ <summary>
+ アルファベット(大文字)のみ
+ </summary>
+ <remarks>InputMan / Spread共用</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Const.InputControl.HAN_ALPHA_L">
+ <summary>
+ アルファベット(小文字)のみ
+ </summary>
+ <remarks>InputMan / Spread共用</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Const.InputControl.HAN_NUM_ALPHA">
+ <summary>
+ 数字＋アルファベットのみ
+ </summary>
+ <remarks>InputMan / Spread共用</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Const.InputControl.HAN_NUM_ALPHA_U">
+ <summary>
+ 数字＋アルファベット(大文字)のみ
+ </summary>
+ <remarks>InputMan / Spread共用</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Const.InputControl.HAN_NUM_ALPHA_L">
+ <summary>
+ 数字＋アルファベット(小文字)のみ
+ </summary>
+ <remarks>InputMan / Spread共用</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Const.InputControl.HAN_KANA">
+ <summary>
+ 半角カナのみ
+ </summary>
+ <remarks>InputMan / Spread共用</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Const.InputControl.HAN_NUMBER">
+ <summary>
+ 数字のみ
+ </summary>
+ <remarks>InputMan / Spread共用</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Const.InputControl.ALL_MIX_IME_OFF">
+ <summary>
+ MIX項目かつIMEModeOff
+ </summary>
+ <remarks>InputManで使用</remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Com.Const.LogLevel">
+ <summary>
+ ログレベル定数定義クラス
+ </summary>
+ <remarks></remarks>
+ <histry>
+ 2006/07/21      須藤      新規
+ </histry>
+</member>
+<member name="T:Jp.Co.Nrs.Com.Const.MessageType">
+ <summary>
+ メッセージタイプ定数定義クラス
+ </summary>
+ <remarks></remarks>
+ <histry>
+ 2008/01/15      岩本      新規
+ 2017/02/22      吉田      韓国語・中国語を追加
+ </histry>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Const.MessageType.MessageType_JP">
+ <summary>
+ 日本語メッセージを使用します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Const.MessageType.MessageType_EN">
+ <summary>
+ 英語メッセージ使用します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Const.MessageType.MessageType_KO">
+ <summary>
+ 韓国語メッセージを使用します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Const.MessageType.MessageType_CN">
+ <summary>
+ 中国語メッセージ使用します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Com.Const.NrsConst">
+ <summary>
+ 拡張共通定数定義クラス
+ </summary>
+ <remarks></remarks>
+ <histry>
+ 2006/07/21      須藤      新規
+ </histry>
+</member>
+<member name="T:Jp.Co.Nrs.Com.Const.NrsConst.Multi">
+ <summary>
+ 汎用文字集
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Const.NrsConst.Multi.Spliter">
+ <summary>
+ 区切り文字
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Const.NrsConst.Multi.PERCENT">
+ <summary>
+ パーセント記号文字
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Com.Const.NrsConst.SystemId">
+ <summary>
+ システムID
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Const.NrsConst.SystemId.WINS">
+ <summary>
+ WINS
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Const.NrsConst.SystemId.DEN">
+ <summary>
+ DEN
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Const.NrsConst.SystemId.KIDS">
+ <summary>
+ KIDS
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Const.NrsConst.SystemId.LMS">
+ <summary>
+ LMS
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Const.NrsConst.SystemId.NFS">
+ <summary>
+ NFS
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Const.NrsConst.SystemId.TIPS">
+ <summary>
+ TIPS
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Const.NrsConst.SystemId.RI">
+ <summary>
+ RING
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Const.NrsConst.SystemId.SH">
+ <summary>
+ Share (SH)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Com.Const.RecordStatus">
+ <summary>
+ レコード状態定数列挙体
+ </summary>
+ <remarks></remarks>
+ <histry>
+ 2006/07/21      須藤      新規
+ </histry>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Const.RecordStatus.INIT">
+ <summary>
+ 初期化
+ </summary>
+ <remarks>ラベルをクリアします</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Const.RecordStatus.NOMAL_REC">
+ <summary>
+ 正常データ
+ </summary>
+ <remarks>ラベルに"正　常"が設定されます</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Const.RecordStatus.DELETE_REC">
+ <summary>
+ 削除データ
+ </summary>
+ <remarks>ラベルに"削　除"が設定されます</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Const.RecordStatus.NEW_REC">
+ <summary>
+ 新規データ
+ </summary>
+ <remarks>ラベルに"新　規"が設定されます</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Const.RecordStatus.COPY_REC">
+ <summary>
+ 複写データ
+ </summary>
+ <remarks>ラベルに"複　写"が設定されます</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Const.RecordStatus.REVISE_REC">
+ <summary>
+ 改定データ
+ </summary>
+ <remarks>ラベルに"改　定"が設定されます</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Const.RecordStatus.NOMAL_REC_STR">
+ <summary>
+ （正常）文字列
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Const.RecordStatus.DELETE_REC_STR">
+ <summary>
+ （削除）文字列
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Com.Const.RecordStatus.RecordType">
+ <summary>
+ システム共通項目の削除フラグの状態用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Const.RecordStatus.RecordType.ALL">
+ <summary>
+ 全て
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Const.RecordStatus.RecordType.NORMAL">
+ <summary>
+ 正常
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Const.RecordStatus.RecordType.DELETE">
+ <summary>
+ 削除
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Com.Log.LogMGR">
+ <summary>
+ ログ出力制御クラス
+ </summary>
+ <remarks>ログ部品のインスタンスを生成します</remarks>
+ <histry>
+ 2006/07/21      須藤      新規
+ </histry>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Log.LogMGR.LOG_LEVEL">
+ <summary>
+ Config項目定数（ログレベル）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Log.LogMGR.CreateLogger">
+ <summary>
+ ログ部品のインスタンスを生成する
+ </summary>
+ <returns>NRSLogger</returns>
+ <remarks>GUI層用</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Log.LogMGR.CreateLogger(Jp.Co.Nrs.Com.Base.ServiceData)">
+ <summary>
+ ログ部品のインスタンスを生成する
+ </summary>
+ <param name="sd"></param>
+ <returns>NRSLogger</returns>
+ <remarks>WSA以降の層用</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Log.LogMGR.GetConfigLogLevel">
+ <summary>
+ 出力制御ログレベル取得を取得する
+ </summary>
+ <returns></returns>
+ <remarks>configファイルで指定された出力ログレベルを取得する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Log.LogMGR.CreateErrorlog(System.Exception)">
+ <summary>
+ 例外を出力します
+ </summary>
+ <param name="ex">出力する例外</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Com.Log.NRSLogger">
+ <summary>
+ ログ出力クラス
+ </summary>
+ <remarks>BLCをバッチから呼び出すため、Jp.Co.Nrs.LogToolを内部で呼び出す（継承するとインポートが必要となるため継承はしない）</remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Com.Log.NRSLogger.LOG_CATEGORY">
+ <summary>
+ ログカテゴリ
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Log.NRSLogger.LOG_CATEGORY.BusinessLog">
+ <summary>
+ 業務ログ
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Log.NRSLogger.LOG_CATEGORY.ApiLog">
+ <summary>
+ APIログ
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Log.NRSLogger.terminalID">
+ <summary>
+  端末IDを格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Com.Log.NRSLogger._NRSLogger">
+ <summary>
+ LogToolのNRSLoggerを定義
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Log.NRSLogger.#ctor">
+ <summary>
+ コンストラクタ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Log.NRSLogger.#ctor(Jp.Co.Nrs.Com.Base.ServiceData)">
+ <summary>
+ コンストラクタ
+ </summary>
+ <param name="sd">サービスデータ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Log.NRSLogger.#ctor(System.String,Jp.Co.Nrs.LogTool.Log.NRSLogger.OperationMode)">
+ <summary>
+ コンストラクタ
+ </summary>
+ <param name="UserID">UserID</param>
+ <param name="logOperationMode">オペレーションモード</param>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Log.NRSLogger.LogET">
+ <summary>
+ ログエンティティクラスを取得・設定します
+ </summary>
+ <value>LogEntryクラス</value>
+ <returns>LogEntryクラス</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Log.NRSLogger.UserID">
+ <summary>
+ UserId設定
+ </summary>
+ <value>ConfigLogLevel</value>
+ <returns>ConfigLogLevel</returns>
+ <remarks>NfConfigに設定された値です</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Com.Log.NRSLogger.ConfigLogLevel">
+ <summary>
+ 出力制御ログレベルを取得・設定します
+ </summary>
+ <value>ConfigLogLevel</value>
+ <returns>ConfigLogLevel</returns>
+ <remarks>NfConfigに設定された値です</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Log.NRSLogger.WriteLog(System.Int32,System.String,System.String,System.String)">
+ <summary>
+ ログ出力（ビジネスロジック用）
+ </summary>
+ <param name="logLevel">ログレベル</param>
+ <param name="classNm">クラス名</param>
+ <param name="methodNm">メソッド名</param>
+ <param name="logString">出力文字列</param>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Log.NRSLogger.WriteLog(System.Int32,System.String,System.String,System.String,System.String)">
+ <summary>
+ ログ出力（ビジネスロジック用）
+ </summary>
+ <param name="logLevel">ログレベル</param>
+ <param name="classNm">クラス名</param>
+ <param name="methodNm">メソッド名</param>
+ <param name="logString">出力文字列</param>
+ <param name="logCategory"></param>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Log.NRSLogger.WriteErrorLog(System.String,System.String,System.String,System.Exception)">
+ <summary>
+ エラーログ出力（フレームワーク用）
+ </summary>
+ <param name="classNm">クラス名</param>
+ <param name="methodNm">メソッド名</param>
+ <param name="logString">出力文字列</param>
+ <param name="ex"></param>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Log.NRSLogger.WriteErrorLogForGUI(System.String,System.String,System.String,System.Exception)">
+ <summary>
+ エラーログ出力（フレームワーク用）
+ </summary>
+ <param name="classNm">クラス名</param>
+ <param name="methodNm">メソッド名</param>
+ <param name="logString">出力文字列</param>
+ <param name="ex"></param>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Log.NRSLogger.WriteSysLog(System.String,System.String,System.String)">
+ <summary>
+ ログ出力（フレームワーク用）
+ </summary>
+ <param name="classNm">クラス名</param>
+ <param name="methodNm">メソッド名</param>
+ <param name="logString">出力文字列</param>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Log.NRSLogger.StartLog(System.String,System.String,System.String)">
+ <summary>
+ ログ出力(メソッド開始)
+ </summary>
+ <param name="classNm">クラス名</param>
+ <param name="methodNm">メソッド名</param>
+ <param name="logString">出力文字列(任意)</param>
+ <remarks>Public メソッド開始時に出力する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Log.NRSLogger.EndLog(System.String,System.String,System.String)">
+ <summary>
+ ログ出力(メソッド終了)
+ </summary>
+ <param name="classNm">クラス名</param>
+ <param name="methodNm">メソッド名</param>
+ <param name="logString">出力文字列(任意)</param>
+ <remarks>Public メソッド終了時に出力する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Log.NRSLogger.StartLogForGUI(System.String,System.String,System.String)">
+ <summary>
+ ログ出力(メソッド開始)
+ </summary>
+ <param name="classNm">クラス名</param>
+ <param name="methodNm">メソッド名</param>
+ <param name="logString">出力文字列(任意)</param>
+ <remarks>Public メソッド開始時に出力する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Log.NRSLogger.EndLogForGUI(System.String,System.String,System.String)">
+ <summary>
+ ログ出力(メソッド終了)
+ </summary>
+ <param name="classNm">クラス名</param>
+ <param name="methodNm">メソッド名</param>
+ <param name="logString">出力文字列(任意)</param>
+ <remarks>Public メソッド終了時に出力する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Log.NRSLogger.WriteSQLLog(System.String,System.String,System.Data.SqlClient.SqlCommand)">
+ <summary>
+ 引数のメッセージをログに出力します
+ </summary>
+ <param name="classNm"></param>
+ <param name="methodNm"></param>
+ <param name="cmd"></param>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Log.NRSLogger.WriteOraLog(System.String,System.String,Oracle.ManagedDataAccess.Client.OracleCommand)">
+ <summary>
+ 引数のメッセージをログに出力します
+ </summary>
+ <param name="classNm"></param>
+ <param name="methodNm"></param>
+ <param name="cmd"></param>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Log.NRSLogger.WriteBusinessLog(System.String,System.String,System.String)">
+ <summary>
+ 業務ログ出力
+ </summary>
+ <param name="classNm"></param>
+ <param name="methodNm"></param>
+ <param name="msg"></param>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Log.NRSLogger.WriteApiLog(System.String,System.String,System.String)">
+ <summary>
+ APIログ出力
+ </summary>
+ <param name="classNm"></param>
+ <param name="methodNm"></param>
+ <param name="msg"></param>
+</member>
+<member name="M:Jp.Co.Nrs.Com.Log.NRSLogger.WriteLog(System.String)">
+ <summary>
+ 引数のメッセージをログに出力します
+ </summary>
+ <param name="msg">ログの内容</param>
+</member>
+<member name="T:Jp.Co.Nrs.Com.WebServiceProxy.WebServiceInterFace">
+<remarks/>
+</member>
+<member name="M:Jp.Co.Nrs.Com.WebServiceProxy.WebServiceInterFace.#ctor">
+<remarks/>
+</member>
+<member name="E:Jp.Co.Nrs.Com.WebServiceProxy.WebServiceInterFace.StartWSICompleted">
+<remarks/>
+</member>
+<member name="M:Jp.Co.Nrs.Com.WebServiceProxy.WebServiceInterFace.StartWSI(Jp.Co.Nrs.Com.WebServiceProxy.ServiceData)">
+<remarks/>
+</member>
+<member name="M:Jp.Co.Nrs.Com.WebServiceProxy.WebServiceInterFace.StartWSIAsync(Jp.Co.Nrs.Com.WebServiceProxy.ServiceData)">
+<remarks/>
+</member>
+<member name="M:Jp.Co.Nrs.Com.WebServiceProxy.WebServiceInterFace.StartWSIAsync(Jp.Co.Nrs.Com.WebServiceProxy.ServiceData,System.Object)">
+<remarks/>
+</member>
+<member name="M:Jp.Co.Nrs.Com.WebServiceProxy.WebServiceInterFace.CancelAsync(System.Object)">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.ConfigDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.MessageDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.MessageStoreDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.UserInfoEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.NFMenuMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.NFKbnMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.NFCommentMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.NFCityMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.NFGuidelineMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.NFTaxMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.NFLawMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.NFKmkMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.NFUserMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.NFJdeKmkMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.NFBankMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.NFImdgMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.NFJdeKmkBillInfoDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.NFJdeKmkPayInfoDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.NFCompMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.NFCompPayMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.NFYocUnchinTariffMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.NFGoodsMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.NFChargeMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.NFGroupCompMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.NFEdiMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.NFCoverMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.DSKbnMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.DSTaxMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.DSChargeItemMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.DSUserMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.DSCompMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.KDMenuMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.KDKbnMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.KDTaxMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.KDKmkMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.KDUserMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.KDBankMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.KDCompMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.KDChargeMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.KDChargeItemMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.KDMatMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.KDMSetHeadMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.KDSGroupCompMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.KDNumberMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.KDAuthMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.JFMenuMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.JFKbnMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.JFUserMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.JFCompMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.JFNumberMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.JFAccMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.JFBuMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.JFBrMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.JFTaxMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.JFAccCnvMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.JFExchMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.JFF0101MasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.JFCalcuratorDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.GTCompMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.GTBankMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.GTCityMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.GTCurrMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.GTTankMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.GTTaxMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.GTTestMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.GTImdgMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.GTRegionMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.GTUserMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.GTKbnMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.GTCommentMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.GTCostMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.GTContCostMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.GTJdeCdMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.GTNumberMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.GTMenuMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMKbnMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMUserMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMMenuMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMNrsBrMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMSokoMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMTouSituDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMTouSituZoneDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMTouSituShoboGrpDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMSeiqToMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMCustMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMTankaMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMTankaGroupMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMHolidayMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMJisMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMKenMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMKyoriMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMKyoriGroupMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMCoaMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMSagyoMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMShoboMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMTaxMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMOkurijoMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMRptMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMCustFuriInfoMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMCustGoodsFuriMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMCustCondMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMNrsBankMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMSeiqKmkMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMTCustMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMDestGoodsMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMFuriGoodsMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMTouSituShoboDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMKamokuMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMAreaMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMAreaGroupMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMDriverMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMUnsocoMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMVcleMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMRemarkMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMIntEdiMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMExtcUnchinMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMSyuhaiSetMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMUnchinRecastMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMUnchinTariffMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMUnchinTariffRDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMUnchinTariffSetMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMUnchinTariffSetGroupMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMYokoTariffHdMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMYokoTariffDtlMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMAreaJisDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMEdiCustDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMCustRptDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMUnsoCustRptDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMGoodsDetailsDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMDestDetailsDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMCustDetailsDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMSemiEdiInfoStateDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMShiharaiTariffGroupDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMShiharaiTariffDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMExtcShiharaiDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMYokoTariffHdShiharaiDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMYokoTariffDtlShiharaiDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMShiharaitoDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMUnchinTariffSetUnsocoMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMHandyMenuMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LMGamenMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.RECompMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.RECurrMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.RETaxMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.REUserMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.REKbnMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.RECostMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.REActSet1MasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.REActSet2MasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.REActSet3MasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.REAgrInfoMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.REInvYmMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.RERegionMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.REBankMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.REMenuMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.RENumberMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.RE_JFCompMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.RE_JFBuMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.RE_JFBrMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.RE_DSChargeItemMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.REJdeCdMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.SHMenuMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.SHUserMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.SHKbnMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.SH_JFCompMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.SH_JFBrMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.SHBankMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.SHCurrMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.GLKbnMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.GLRscMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.GLCurrMasterDataEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.CacheTable">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.BusinessEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.ConnectionString">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.IPAdress">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.PGID">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.TerminalID">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.UserID">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.SystemDate">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.SystemTime">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LogOperationMode">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LogLevel">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.ResultCount">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.RtnMessageEntity">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.TargetFacadeName">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.QueName">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.LimitCount">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.MaxResultCount">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.ForceOparation">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.UserName">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.DeptKbn">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.AttachFilePath">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.CacheAll">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.SysId">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.MessageLangType">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.MessageID">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.ReplaceMessages">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.ServiceData.MessageArea">
+<remarks/>
+</member>
+<member name="T:Jp.Co.Nrs.Com.WebServiceProxy.StartWSICompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:Jp.Co.Nrs.Com.WebServiceProxy.StartWSICompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:Jp.Co.Nrs.Com.WebServiceProxy.StartWSICompletedEventArgs.Result">
+<remarks/>
+</member>
+</members>
+</doc>

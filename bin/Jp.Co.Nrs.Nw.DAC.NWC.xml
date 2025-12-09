@@ -1,0 +1,479 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.Nw.DAC.NWC
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.Nw.DAC.NWC.My.Resources.Resources">
+<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.Nw.DAC.NWC.My.Resources.Resources.ResourceManager">
+<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.Nw.DAC.NWC.My.Resources.Resources.Culture">
+<summary>
+  すべてについて、現在のスレッドの CurrentUICulture プロパティをオーバーライドします
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWC.NWC010DAC.SelectInvPopCount(System.Data.DataSet)">
+ ==========================================================================
+ <summary>データ件数カウント</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWC.NWC030DAC.SelectInOutData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>入出場_検索一覧検索結果取得</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWC.NWC030DAC.SetConditionSQL(System.Data.DataRow,System.Text.StringBuilder,System.Collections.ArrayList)">
+ ==========================================================================
+ <summary>条件文・パラメータ設定</summary>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWC.NWC040DAC.IN_TABLE_NAME">
+ <summary>
+ INテーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWC.NWC040DAC.OUT_TABLE_NAME">
+ <summary>
+ OUTテーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWC.NWC040DAC.MAP_SELECT_DAMAGE_PHOTO">
+ <summary>
+ 破損写真検索(SQL)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Nw.DAC.NWC.NWC040DAC.SQL_SELECT_DAMAGE_PHOTO">
+ <summary>
+ 破損写真検索(SQL)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWC.NWC040DAC.SelectPhotoData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>[写真名取得]</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWC.NWC040DAC.SelectSharePath(System.Data.DataSet)">
+ ==========================================================================
+ <summary>[共有フォルダ取得]</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWC.NWC040DAC.SelectDamagePhoto(System.Data.DataSet)">
+ <summary>
+ 破損写真検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWC.NWC040DAC.SelectUploadFolderPath(System.Data.DataSet)">
+ <summary>
+ 
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWC.NWC050DAC.IN_TABLE_NAME">
+ <summary>
+ INテーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWC.NWC050DAC.OUT_TABLE_NAME">
+ <summary>
+ OUT(M_FILE)テーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWC.NWC050DAC.SelectPhotoData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>[表示に必要な画像情報取得]</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWC.NWC050DAC.SelectPhotoUploadedData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>[更新に必要な画像情報取得]</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWC.NWC050DAC.SelectDamagePhotoData(System.Data.DataSet)">
+ <summary>
+ 破損品写真データ取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWC.NWC050DAC.DeletePhotoData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>★ [画像削除（明細）]</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWC.NWC050DAC.DeleteDamagePhotoData(System.Data.DataSet)">
+ <summary>
+ 破損品写真削除
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWC.NWC050DAC.SavePhotoData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>[画像保存]</summary>
+ <param name="ds">DataSet</param>]
+ <returns>DataSet</returns>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWC.NWC050DAC.InsertPhotoData(System.Data.DataRow)">
+ ==========================================================================
+ <summary>[画像登録]</summary>
+ <param name="row">row</param>]
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWC.NWC070DAC.TABLE_NAME.IN_TABLE">
+ <summary>
+ INテーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWC.NWC070DAC.TABLE_NAME.OUT_TABLE">
+ <summary>
+ OUTテーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWC.NWC070DAC.TABLE_NAME.OUT_MAIL">
+ <summary>
+ OUTテーブル名(メールアドレス)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWC.NWC070DAC.TABLE_NAME.OUT_MAIL_TAMPLATE">
+ <summary>
+ OUTテーブル名(メールテンプレート)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWC.NWC070DAC.TABLE_NAME.IN_M_FILE">
+ <summary>
+ IN(M_FILE)テーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWC.NWC070DAC.TABLE_NAME.OUT_GOODS">
+ <summary>
+ OUTテーブル名(商品情報)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Nw.DAC.NWC.NWC070DAC.KEY_TYPE_KBN">
+ <summary>
+ キータイプ区分
+ </summary>
+ <remarks>
+ [COM]Z_KBN.KNB_GROUP_CD:F012
+ </remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWC.NWC070DAC.KEY_TYPE_KBN.INKA_NO">
+ <summary>
+ 入荷管理番号
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWC.NWC070DAC.KEY_TYPE_KBN.GOODS_CD_NRS">
+ <summary>
+ 商品キー
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWC.NWC070DAC.KEY_TYPE_KBN.CUST_CD">
+ <summary>
+ 荷主コード
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWC.NWC070DAC.GetUploadPath(System.Data.DataSet)">
+ ==========================================================================
+ <summary>[アップロードパス取得]</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWC.NWC070DAC.GetMaxSeq(System.Data.DataSet)">
+ ==========================================================================
+ <summary>[最大SEQ番号取得]</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWC.NWC070DAC.GetDamagePhotoSaveRootFolder(System.Data.DataSet)">
+ <summary>
+ 破損品写真保存ルートフォルダパス取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWC.NWC070DAC.GetMaxFileNoSeq(System.Data.DataSet)">
+ <summary>
+ FILE_NO_SEQ最大値取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWC.NWC070DAC.GetMailSenderInfo(System.Data.DataSet)">
+ <summary>
+ メールアドレス取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWC.NWC070DAC.GetMailTemplate(System.Data.DataSet)">
+ <summary>
+ メールテンプレート取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWC.NWC070DAC.GetPhotoTypeName(System.Data.DataSet)">
+ <summary>
+ 写真種別名取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWC.NWC070DAC.GetGoodsInfo(System.Data.DataSet)">
+ <summary>
+ 商品名取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWC.NWC070DAC.SavePhotoData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>[画像保存]</summary>
+ <param name="ds">DataSet</param>]
+ <returns>DataSet</returns>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWC.NWC070DAC.InsertPhotoData(System.Data.DataRow)">
+ ==========================================================================
+ <summary>[画像登録]</summary>
+ <param name="row">row</param>]
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWC.NWC070DAC.SaveDamagePhotoData(System.Data.DataSet)">
+ <summary>
+ 破損品写真保存
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWC.NWC070DAC.InsertDamagePhotoData(System.Data.DataRow)">
+ <summary>
+ 破損品写真登録
+ </summary>
+ <param name="row"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWC.NWC070DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名を設定
+ </summary>
+ <param name="sql">SQL</param>
+ <param name="brCd">営業所コード</param>
+ <returns>SQL</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Nw.DAC.NWC.NWC080DAC.SQL_SELECT_CUST">
+ <summary>
+ 荷主検索(SQL)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Nw.DAC.NWC.NWC080DAC.PARAM_SELECT_CUST">
+ <summary>
+ 荷主検索(パラメータ)
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Nw.DAC.NWC.NWC080DAC.MAP_SELECT_CUST">
+ <summary>
+ 荷主検索(MAP)
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWC.NWC080DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWC.NWC080DAC.SelectCustData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>荷主選択画面</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWC.NWC080DAC.CreateSqlCommand(System.String,System.Collections.Generic.IEnumerable{System.Data.SqlClient.SqlParameter}@)">
+ <summary>
+ SQLコマンド作成
+ </summary>
+ <param name="sql"></param>
+ <param name="params"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWC.NWC080DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名を設定
+ </summary>
+ <param name="sql">SQL</param>
+ <param name="brCd">営業所コード</param>
+ <returns>SQL</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Nw.DAC.NWC.NWC090DAC.KEY_TYPE_KBN">
+ <summary>
+ キータイプ区分
+ </summary>
+ <remarks>
+ [COM]Z_KBN.KNB_GROUP_CD:F012
+ </remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWC.NWC090DAC.KEY_TYPE_KBN.INKA_NO">
+ <summary>
+ 入荷管理番号
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWC.NWC090DAC.KEY_TYPE_KBN.GOODS_CD_NRS">
+ <summary>
+ 商品キー
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWC.NWC090DAC.KEY_TYPE_KBN.CUST_CD">
+ <summary>
+ 荷主コード
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Nw.DAC.NWC.NWC090DAC.SQL_SELECT_GOODS_COMMON">
+ <summary>
+ 商品検索(共通部)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Nw.DAC.NWC.NWC090DAC.PARAM_SELECT_GOODS">
+ <summary>
+ 商品検索(パラメータ)
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Nw.DAC.NWC.NWC090DAC.MAP_SELECT_GOODS">
+ <summary>
+ 商品検索(結果変換マップ)
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Nw.DAC.NWC.NWC090DAC.SQL_SELECT_GOODS_BY_CODE_AND_NAME">
+ <summary>
+ 商品検索(商品名/商品コード)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Nw.DAC.NWC.NWC090DAC.SQL_SELECT_GOODS_BY_INKA_NO">
+ <summary>
+ 商品検索(入荷管理番号)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWC.NWC090DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWC.NWC090DAC._WorkDS">
+ <summary>
+ データセット
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWC.NWC090DAC.SelectGoodsData(System.Data.DataSet)">
+ <summary>
+ 荷主検索画面
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWC.NWC090DAC.CreateSqlCommand(System.String,System.Collections.Generic.IEnumerable{System.Data.SqlClient.SqlParameter}@)">
+ <summary>
+ SQLコマンド生成
+ </summary>
+ <param name="sql">SQL文</param>
+ <param name="params">SQLパラメータ</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWC.NWC090DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名を設定
+ </summary>
+ <param name="sql">SQL</param>
+ <param name="brCd">営業所コード</param>
+ <returns>SQL</returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

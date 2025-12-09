@@ -1,0 +1,773 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.YT.GUI.Library
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.YT.DownloadController">
+ <summary>
+ ダウンロード用コントローラ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.YT.DownloadController._SvDate">
+ <summary>
+ サーバー日付
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.YT.DownloadController._SvTime">
+ <summary>
+ サーバー時刻
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.YT.DownloadController._ListMdl">
+ <summary>
+ ダウンロードするファイルリストModel
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.YT.DownloadController._UserID">
+ <summary>
+ ユーザID
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.YT.DownloadController._PGID">
+ <summary>
+ PG ID
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.YT.DownloadController._DownloadFileName">
+ <summary>
+ ダウンロードするファイル名称
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.YT.DownloadController.mergesPdf">
+ <summary>
+ PDFをマージするか
+ </summary>
+ <remarks>True:マージする</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.YT.DownloadController.EXTENTION_PDF">
+ <summary>
+ ファイル拡張子（ＰＤＦ）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.YT.DownloadController.EXTENTION_ZIP">
+ <summary>
+ ファイル拡張子（ＺＩＰ）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.DownloadController.Report">
+ <summary>
+ 帳票ファイルをダウンロードする
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.DownloadController.SetFileContents(System.Collections.Generic.List{Jp.Co.Nrs.YT.DownloadFileInfo})">
+ <summary>
+ ファイルコンテンツを設定する
+ </summary>
+ <param name="downloadFileInfoList"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.DownloadController.MergeFile(System.Collections.Generic.List{Jp.Co.Nrs.YT.DownloadFileInfo})">
+ <summary>
+ PDFファイルを結合する
+ </summary>
+ <param name="downloadFileInfoList"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.DownloadController.CompressFile(System.Collections.Generic.List{Jp.Co.Nrs.YT.DownloadFileInfo},System.Byte[])">
+ <summary>
+ ファイルを圧縮する
+ </summary>
+ <param name="downloadFileInfoList"></param>
+ <param name="pdf"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.DownloadController.GetTimeStamp">
+ <summary>
+ 現在時刻を取得する
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.DownloadController.GetDownloadFileInfo">
+ <summary>
+ TempDataからダウンロードファイル情報を取得する
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.DownloadController.SetDownloadFileName">
+ <summary>
+ ダウンロードファイル名を設定する
+ </summary>
+ <remarks>拡張子を含まないファイル名を設定</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.ErrorController.NotFound">
+ <summary>
+ 404 NotFoundPage
+ </summary>
+ <returns></returns>
+</member>
+<member name="T:Jp.Co.Nrs.YT.Controllers.UserController">
+ <summary>
+ 認証画面用コントローラ
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.YT.Controllers.UserController.userWS">
+ <summary>
+ 認証画面用ワーカーサービス
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Controllers.UserController.#ctor">
+ <summary>
+ 通常用コンストラクタ
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Controllers.UserController.Login(System.String)">
+ <summary>
+ GET: User/Login
+ </summary>
+ <param name="ReturnUrl"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Controllers.UserController.Login(Jp.Co.Nrs.YT.LoginModel)">
+ <summary>
+ POST: User/Login
+ </summary>
+ <param name="model"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Controllers.UserController.Logout">
+ <summary>
+ ログアウト
+ </summary>
+ <returns></returns>
+</member>
+<member name="T:Jp.Co.Nrs.YT.UserWS">
+ <summary>
+ ログイン用ワーカーサービス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.UserWS.#ctor(Jp.Co.Nrs.YT.Controllers.UserController)">
+ <summary>
+ 指定された区分名を格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.UserWS.SelectLoginInfo(Jp.Co.Nrs.YT.LoginModel)">
+ <summary>
+ ログイン処理
+ </summary>
+ <param name="model"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.YT.UserWS.SetDataSetInData(Jp.Co.Nrs.YT.LoginModel)">
+ <summary>
+ データセット設定
+ </summary>
+ <param name="model"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.YT.UserWS.SetUserSession(System.Data.DataSet)">
+ <summary>
+ ユーザ情報をセッションに設定
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="T:Jp.Co.Nrs.YT.Base.YTBaseController">
+ <summary>
+ 拡張GUI層中核コントローラクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.YTBaseController.SetValidateMessage(System.Web.Mvc.ModelStateDictionary,Jp.Co.Nrs.YT.Base.YTBaseModel@)">
+ <summary>
+ 
+ </summary>
+ <param name="validMsg"></param>
+ <param name="mdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.YTBaseController.TransferSession(Jp.Co.Nrs.YT.Base.YTBaseController,Jp.Co.Nrs.YT.Base.YTBaseController@)">
+ <summary>
+ セッションの格納情報をコピー
+ </summary>
+ <param name="copyFromCtr"></param>
+ <param name="copyToCtr"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.YTBaseController.SetCacheabilityNoCache">
+ <summary>
+ "キャッシュなし" を設定する
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.YTBaseController.SetDownloadFileInfo(System.Collections.Generic.List{Jp.Co.Nrs.YT.DownloadFileInfo},System.String,System.String,System.Boolean)">
+ <summary>
+ ファイル情報を受け取り、TempDataに格納
+ </summary>
+ <param name="mdl"></param>
+ <param name="userId"></param>
+ <param name="pgId"></param>
+ <param name="mergesPdf">PDFをマージするか（True:マージする）</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.YTBaseController.Json(Jp.Co.Nrs.YT.Base.YTBaseModel)">
+ <summary>
+ 指定されたオブジェクトをJSON（JavaScript Object Notation）形式にシリアル化する System.Web.MVC.JsonResult オブジェクトを作成します。
+ </summary>
+ <param name="mdl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.YT.Base.YTBaseModel">
+ <summary>
+ 拡張GUI層中核モデルクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.YTBaseModel.IsErrorMessageExist">
+ <summary>
+ エラーメッセージの有無を判定して返却する
+ </summary>
+ <returns>エラーメッセージの有無</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.YTBaseModel.IsMessageExist">
+ <summary>
+ メッセージの有無を判定して返却する（BL）
+ </summary>
+ <returns>
+ true：メッセージが存在する
+ false：メッセージが存在しない</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.YTBaseModel.GetMessageLevel">
+ <summary>
+ メッセージレベルを取得する。
+ </summary>
+ <returns>メッセージレベル</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.YTBaseModel.GetSRscData(System.String,System.String)">
+ <summary>
+ リソースマスタのキー指定でHTML エンコードされた文字列を返却します。
+ </summary>
+ <param name="resourceId">Resource Key</param>
+ <param name="lang">Language</param>
+ <returns>Resource Value</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.YT.Base.GUI.YTBaseWorkerService">
+ <summary>
+ 拡張GUI層中核クラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.YT.Base.GUI.YTBaseWorkerService._controller">
+ <summary>
+ 指定された区分名を格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.YT.Base.GUI.YTBaseWorkerService.WSA_SERVICE">
+ <summary>
+ WSAクラスの共通サービス名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.YT.Base.GUI.YTBaseWorkerService.YTServiceData">
+ <summary>
+ 送受信データの取得・設定を行うプロパティ
+ </summary>
+ <value>送受信データ</value>
+ <returns>送受信データ</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.GUI.YTBaseWorkerService.CreateServiceData">
+ <summary>
+ サーバーとの送受信に使用するServiceDataクラスを生成します。
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.GUI.YTBaseWorkerService.CallWSA(Jp.Co.Nrs.Com.Base.BaseWSA,System.String,System.Data.DataSet)">
+ <summary>
+ WEBサービスを呼び出します
+ </summary>
+ <param name="bWSA">WSAクラス</param>
+ <param name="methodName">呼出メソッド</param>
+ <param name="ds">WEBサービス送信データ</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.GUI.YTBaseWorkerService.CallWSA(Jp.Co.Nrs.Com.Base.BaseWSA,System.Data.DataSet)">
+ <summary>
+ WEBサービスを呼び出します（QueName,SetTargetFacadeNameの設定必須）
+ </summary>
+ <param name="bWSA">WSAクラス</param>
+ <param name="ds">WEBサービス送信データ</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.GUI.YTBaseWorkerService.SetRequestParam(Jp.Co.Nrs.Com.Base.ServiceData,System.Data.DataSet)">
+ <summary>
+ ServiceDataに送信する値を設定します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.GUI.YTBaseWorkerService.GetReturnParam(Jp.Co.Nrs.Com.Base.ServiceData)">
+ <summary>
+ ServiceDataから受信した値を取得します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.GUI.YTBaseWorkerService.GetYTReturnParam(Jp.Co.Nrs.Com.Base.ServiceData)">
+ <summary>
+ ServiceDataから受信した値を転記する。(for YT)
+ </summary>
+ <param name="sd"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.GUI.YTBaseWorkerService.SetFormId(System.String,Jp.Co.Nrs.YT.Base.YTBaseModel)">
+ <summary>
+ 画面IDより渡されたモデルのID,NMに値を設定する。
+ </summary>
+ <param name="gamenId"></param>
+ <param name="mdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.GUI.YTBaseWorkerService.InitCommonModel(Jp.Co.Nrs.YT.Base.YTBaseModel,Jp.Co.Nrs.YT.Base.YTBaseController)">
+ <summary>
+ 共通項目をセッションデータから設定する
+ </summary>
+ <param name="mdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.GUI.YTBaseWorkerService.GetUserID">
+ <summary>
+ ログインユーザーのユーザーIDを取得する。
+ </summary>
+ <returns>ログインユーザーのユーザーID</returns>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.GUI.YTBaseWorkerService.GetUserName">
+ <summary>
+ ログインユーザーのユーザー名を取得する。
+ </summary>
+ <returns>ログインユーザーのユーザー名</returns>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.GUI.YTBaseWorkerService.RoundOff(System.Double,System.Int32)">
+ <summary>
+ 指定した精度の数値に四捨五入します
+ </summary>
+ <param name="value">丸め対象の倍精度浮動小数点数</param>
+ <param name="digits">戻り値の有効桁数の精度</param>
+ <returns>digits に等しい精度の数値に四捨五入された数値</returns>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.GUI.YTBaseWorkerService.RoundOff(System.Decimal,System.Int32)">
+ <summary>
+ 指定した精度の数値に四捨五入します
+ </summary>
+ <param name="value">丸め対象の倍精度浮動小数点数</param>
+ <param name="digits">戻り値の有効桁数の精度(0～28の範囲で設定可)</param>
+ <returns>digits に等しい精度の数値に四捨五入された数値</returns>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.GUI.YTBaseWorkerService.GetLocalDateTime">
+ <summary>
+ ローカル日付(YYYYMMDD)とローカル時刻(HHMMSSsss)を取得する。
+ </summary>
+ <returns>日時配列（0:日付(YYYYMMDD)、1:時刻(HHMMSSmmm)）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.GUI.YTBaseWorkerService.GetMessageWord(System.String,System.String[])">
+ <summary>
+ 引数に指定されたIDのメッセージを取得します。
+ </summary>
+ <param name="messageID"></param>
+ <param name="replaceMessages"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.GUI.YTBaseWorkerService.GetSetMessage(System.String,System.String[])">
+ <summary>
+ 指定されたメッセージIDの文言を統一の形式で整形する。
+ </summary>
+ <param name="msgID"></param>
+ <param name="replaceMessages"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.GUI.YTBaseWorkerService.GetDispMessage(System.String,System.String[])">
+ <summary>
+ 指定されたメッセージIDの文言を統一の形式で整形する。 ※IsMessageExistで判定はできません。
+ </summary>
+ <param name="msgID"></param>
+ <param name="replaceMessages"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.GUI.YTBaseWorkerService.GetSetMessage">
+ <summary>
+ ポップアップ以外の方法でメッセージ表示する。
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.GUI.YTBaseWorkerService.SetMessageArea(Jp.Co.Nrs.YT.Base.YTBaseModel,System.String,System.String,System.String,System.String[])">
+ <summary>
+ メッセージをBaseModelに設定する
+ </summary>
+ <param name="outMdl"></param>
+ <param name="area"></param>
+ <param name="msgId"></param>
+ <param name="navArea"></param>
+ <param name="replaceString"></param>
+ <remarks>
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.GUI.YTBaseWorkerService.SetMessageDialog(Jp.Co.Nrs.YT.Base.YTBaseModel,System.String,System.String,System.String,System.String[])">
+ <summary>
+ ダイアログメッセージをBaseModelに設定する
+ </summary>
+ <param name="outMdl"></param>
+ <param name="area"></param>
+ <param name="msgId"></param>
+ <param name="navArea"></param>
+ <param name="replaceString"></param>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.GUI.YTBaseWorkerService.SetBLMessageArea(Jp.Co.Nrs.YT.Base.YTBaseModel,System.String,System.String,System.String,System.String)">
+ <summary>
+ メッセージをBaseModelに設定する
+ </summary>
+ <param name="outMdl"></param>
+ <param name="area"></param>
+ <param name="msgId"></param>
+ <param name="navArea"></param>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.GUI.YTBaseWorkerService.SetBLMessageArea(Jp.Co.Nrs.YT.Base.YTBaseModel)">
+ <summary>
+ メッセージをBaseModelに設定する
+ </summary>
+ <param name="outMdl"></param>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.GUI.YTBaseWorkerService.CreateMessageFromCache(System.Data.DataSet,System.String,System.String[],System.String,System.String)">
+ <summary>
+ メッセージ文言を構築するメソッド
+ </summary>
+ <param name="ds"></param>
+ <param name="messageID">メッセージID</param>
+ <param name="messageParams"></param>
+ <param name="messageArea"></param>
+ <param name="naviArea"></param>
+ <returns></returns>
+ <remarks>BaseWorkerServiceの同名メソッドをオーバーライド</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.GUI.YTBaseWorkerService.ReplaceMessageString(System.Data.DataRow,System.String[])">
+ <summary>
+ 置換済みのメッセージデータが格納されたDataRowを取得する。
+ </summary>
+ <param name="msgDataRow">メッセージデータの格納されたDataRow</param>
+ <param name="messageParams"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.GUI.YTBaseWorkerService.GetBusinessEntity">
+ <summary>
+ 画面情報DataSetを取得する。
+ </summary>
+ <returns>画面情報DataSet</returns>
+ <remarks>隠蔽する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.GUI.YTBaseWorkerService.SetBusinessEntity(System.Data.DataSet)">
+ <summary>
+ 画面情報DataSetをセットする。
+ </summary>
+ <param name="ds">画面情報DataSet</param>
+ <remarks>隠蔽する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.GUI.YTBaseWorkerService.Login(System.Data.DataSet)">
+ <summary>
+ ログイン処理
+ </summary>
+ <param name="ds">UserInfoDataSet</param>
+ <remarks>隠蔽する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.GUI.YTBaseWorkerService.GetUserInfo(Jp.Co.Nrs.YT.UserInfoDS@)">
+ <summary>
+ ユーザーインフォ取得
+ </summary>
+ <param name="ds">UserInfoDataSet</param>
+ <remarks>隠蔽する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.GUI.YTBaseWorkerService.GetYTCachedDataTable(Jp.Co.Nrs.YT.Const.YTConst.YTCachedDataSet)">
+ <summary>
+ キャッシュデータの格納されたデータテーブルのコピーを取得します。(for YT)
+ </summary>
+ <param name="table"></param>
+ <returns>キャッシュデータの格納されたデータテーブルのコピー</returns>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.GUI.YTBaseWorkerService.GetSRscData(System.String,System.String)">
+ <summary>
+ リソースマスタのキー指定でStringを返却します。（キャッシュテーブルより取得します。）
+ </summary>
+ <param name="resourceId"></param>
+ <param name="whereString">未使用</param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.GUI.YTBaseWorkerService.GetComboDic(System.Data.DataTable,System.String,System.String)">
+ <summary>
+ 指定のキー／値で作成したコンボ用Dictionaryデータを返却します。
+ </summary>
+ <param name="dt">DataTable</param>
+ <param name="keyColumn">キー項目名</param>
+ <param name="valueColumn">値項目名</param>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.GUI.YTBaseWorkerService.GetComboDicToJson(System.Collections.Generic.Dictionary{System.String,System.String})">
+ <summary>
+ コンボ用DictionaryデータをJsonに返却します。
+ </summary>
+ <param name="dic"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.GUI.YTBaseWorkerService.GetKbnDataTable(System.String,System.String,System.String)">
+ <summary>
+ 区分データテーブルを返却します。
+ </summary>
+ <param name="grpCode">区分グループコード</param>
+ <param name="code">区分コード</param>
+ <param name="whereString">その他条件</param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.YT.Base.GUI.YTBaseWorkerService.GetMailTplDataTable(System.String,System.Int32,System.String)">
+ <summary>
+ メール送信文言データテーブル取得（BLC）
+ </summary>
+ <param name="tplCd">テンプレートコード</param>
+ <param name="tplSeq">テンプレートSEQ</param>
+ <param name="whereString"></param>
+ <returns></returns>
+</member>
+<member name="T:Jp.Co.Nrs.YT.Utility.YTValidateUtility">
+ <summary>
+ 拡張入力チェック用ユーティリティクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.YT.DownloadFileInfo">
+ <summary>
+ ダウンロードファイル情報モデル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.YT.DownloadFileInfo.CONTENT_TYPE_EXL">
+ <summary>
+ ファイルコンテンツタイプ（Ｅｘｃｅｌ）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.YT.DownloadFileInfo.CONTENT_TYPE_PDF">
+ <summary>
+ ファイルコンテンツタイプ（ＰＤＦ）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.YT.DownloadFileInfo.CONTENT_TYPE_ZIP">
+ <summary>
+ ファイルコンテンツタイプ（ＺＩＰ）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.YT.DownloadFileInfo.CONTENT_TYPE_NA">
+ <summary>
+ ファイルコンテンツタイプ（該当なし）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.YT.DownloadFileInfo.FilePath">
+ <summary>
+ ファイルパス
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.YT.DownloadFileInfo.ContentType">
+ <summary>
+ コンテンツタイプ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.YT.DownloadFileInfo.Bytes">
+ <summary>
+ ファイルをバイナリで保持
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.YT.DownloadFileInfo.Extention">
+ <summary>
+ ファイル拡張子
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.YT.YTComModel">
+ <summary>
+ YT共通モデル
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.YT.YTComModel.#ctor">
+ <summary>
+ コンストラクタ
+ </summary>
+</member>
+<member name="T:Jp.Co.Nrs.YT.LoginModel">
+ <summary>
+ ログイン画面モデル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.YT.LoginModel.EmployeeNo">
+ <summary>
+ 社員番号
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.YT.LoginModel.Password">
+ <summary>
+ パスワード
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.YT.LoginModel.Lang_ISO639_1">
+ <summary>
+ 言語（ISO-639_1基準)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.YT.LoginModel.TimeZoneInfoId">
+ <summary>
+ タイムゾーンＩＤ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.YT.LoginModel.ReturnUrl">
+ <summary>
+ リダイレクトＵＲＬ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.YT.UserInfo">
+ <summary>
+ ログインユーザ情報モデル
+ </summary>
+ <remarks>
+ 　ログインしたユーザ情報を保持します。
+   ユーザに関する手配・所属情報も保持します。
+ 　パスワードはセキュリティのため保持しません。
+ </remarks>
+</member>
+<member name="F:Jp.Co.Nrs.YT.UserInfo.SessionKey">
+ <summary>
+ Session Key
+ </summary>
+</member>
+<member name="P:Jp.Co.Nrs.YT.UserInfo.SyiNo">
+ <summary>
+ 社員番号
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.YT.UserInfo.SyiMei">
+ <summary>
+ 社員名
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.YT.UserInfo.EgsCd">
+ <summary>
+ 営業所コード
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.YT.UserInfo.EgsMei">
+ <summary>
+ 営業所名
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.YT.UserInfo.SgyBi">
+ <summary>
+ 作業日
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.YT.UserInfo.Syaban">
+ <summary>
+ 車両番号
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.YT.UserInfo.SyasyuKbn">
+ <summary>
+ 車種区分
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.YT.UserInfo.SyaryoMei">
+ <summary>
+ 車両名
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.YT.UserInfo.Lang_ISO639_1">
+ <summary>
+ 言語（ISO-639_1基準)
+ </summary>
+ <returns></returns>
+ <remarks>ja固定</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.YT.UserInfo.TimeZoneInfoId">
+ <summary>
+ タイムゾーンＩＤ
+ </summary>
+ <returns></returns>
+ <remarks>Tokyo Standard Time固定</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.YT.UserInfo.UserTimeZone">
+ <summary>
+ タイムゾーンインフォ
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.YT.UserInfo.LoginDateTime">
+ <summary>
+ ログイン日時
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.YT.UserInfo.ConDB">
+ <summary>
+ ＤＢコネクション情報
+ </summary>
+ <returns></returns>
+</member>
+</members>
+</doc>

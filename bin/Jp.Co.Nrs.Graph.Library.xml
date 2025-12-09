@@ -1,0 +1,205 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.Graph.Library
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.Graph.Library.My.Resources.Resources">
+<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.Graph.Library.My.Resources.Resources.ResourceManager">
+<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.Graph.Library.My.Resources.Resources.Culture">
+<summary>
+  すべてについて、現在のスレッドの CurrentUICulture プロパティをオーバーライドします
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member>
+<member name="F:Jp.Co.Nrs.Graph.Library.GraphUtil.EncKey">
+ <summary>
+ 復号化のキー
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.Graph.Library.GraphUtil.CreateB2CUser(System.String,System.String)">
+ <summary>
+ Azure AD B2Cのユーザを作成する
+ </summary>
+ <param name="emailAddress">作成するユーザのメールアドレス</param>
+ <param name="password">パスワード</param>
+ <returns>作成したAzure AD B2Cユーザ</returns>
+</member>
+<member name="M:Jp.Co.Nrs.Graph.Library.GraphUtil.CreateB2CUserFedaratedAD(System.String)">
+ <summary>
+ Azure ADのフェデレーションアカウントをAzure AD B2Cに作成する
+ </summary>
+ <param name="adAccount">Azure AD のアカウント</param>
+ <returns>作成したAzure AD B2Cユーザ</returns>
+</member>
+<member name="M:Jp.Co.Nrs.Graph.Library.GraphUtil.ChangePasswordB2CUser(System.String,System.String)">
+ <summary>
+ Azure AD B2Cのパスワードを変更する
+ </summary>
+ <param name="objectId">B2CのオブジェクトID</param>
+ <param name="password">新しいパスワード</param>
+ <returns>AD B2Cユーザ</returns>
+</member>
+<member name="M:Jp.Co.Nrs.Graph.Library.GraphUtil.InitializePasswordB2CUser(System.String,System.String)">
+ <summary>
+ Azure AD B2Cのパスワードを初期化する
+ </summary>
+ <param name="objectId">B2CのオブジェクトID</param>
+ <param name="password">新しいパスワード</param>
+ <returns>作成したAzure AD B2Cユーザ</returns>
+</member>
+<member name="M:Jp.Co.Nrs.Graph.Library.GraphUtil.DeleteB2CUser(System.String)">
+ <summary>
+ Azure AD B2Cのユーザを削除する
+ </summary>
+ <param name="objectId">作成するユーザのオブジェクトID</param>
+</member>
+<member name="M:Jp.Co.Nrs.Graph.Library.GraphUtil.SendMail(System.String,Microsoft.Graph.Message)">
+ <summary>
+ メール送信
+ </summary>
+ <param name="fromUserAdId">送信元ADのID（id or userPrincipalName）</param>
+ <param name="message">送信メッセージ</param>
+</member>
+<member name="M:Jp.Co.Nrs.Graph.Library.GraphUtil.GetAdUsers(System.String)">
+ <summary>
+ ADユーザを取得
+ </summary>
+ <param name="filter">フィルタ</param>
+ <returns>ADユーザ</returns>
+</member>
+<member name="M:Jp.Co.Nrs.Graph.Library.GraphUtil.GetUserGroup(System.String)">
+ <summary>
+ ユーザが所属するグループを取得
+ </summary>
+ <param name="userObjectId">ユーザオブジェクトID</param>
+ <returns>グループ</returns>
+</member>
+<member name="M:Jp.Co.Nrs.Graph.Library.GraphUtil.AddGroupMember(System.String,System.String)">
+ <summary>
+ グループにユーザを追加
+ </summary>
+ <param name="groupObjectId">グループオブジェクトID</param>
+ <param name="userObjectId">ユーザオブジェクトID</param>
+</member>
+<member name="M:Jp.Co.Nrs.Graph.Library.GraphUtil.DeleteGroupMember(System.String,System.String)">
+ <summary>
+ グループからユーザを削除
+ </summary>
+ <param name="groupObjectId">グループオブジェクトID</param>
+ <param name="userObjectId">ユーザオブジェクトID</param>
+</member>
+<member name="M:Jp.Co.Nrs.Graph.Library.GraphUtil.CreateB2CUserAsync(System.String,System.String)">
+ <summary>
+ Azure AD B2Cのユーザを作成する（非同期）
+ </summary>
+ <param name="emailAddress">作成するユーザのメールアドレス</param>
+ <param name="password">パスワード</param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.Graph.Library.GraphUtil.CreateB2CUserFedaratedADAsync(System.String,System.String)">
+ <summary>
+ Azure ADのフェデレーションアカウントをAzure AD B2Cに作成する（非同期）
+ </summary>
+ <param name="displayName">作成するユーザの表示名</param>
+ <param name="azureAdId">Azure AD アカウントのID</param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.Graph.Library.GraphUtil.ChangePasswordB2CUserAsync(System.String,System.String,System.Boolean)">
+ <summary>
+ Azure AD B2Cのパスワードを変更する（非同期）
+ </summary>
+ <param name="objectId">B2CのオブジェクトID</param>
+ <param name="password">新しいパスワード</param>
+ <param name="isFirstPassword">初期パスワードか否か</param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.Graph.Library.GraphUtil.DeleteB2CUserAsync(System.String)">
+ <summary>
+ Azure AD B2Cのユーザを削除する（非同期）
+ </summary>
+ <param name="userId">ユーザID</param>
+ <returns>結果</returns>
+</member>
+<member name="M:Jp.Co.Nrs.Graph.Library.GraphUtil.GetADUsersAsync(System.String)">
+ <summary>
+ Azure ADのユーザを取得する（非同期）
+ </summary>
+ <param name="filter">フィルタ</param>
+ <returns>結果</returns>
+</member>
+<member name="M:Jp.Co.Nrs.Graph.Library.GraphUtil.GetADUserAsync(System.String)">
+ <summary>
+ Azure ADのユーザを取得する（非同期）
+ </summary>
+ <param name="userId">ユーザID</param>
+ <returns>結果</returns>
+</member>
+<member name="M:Jp.Co.Nrs.Graph.Library.GraphUtil.GetUserMemberOfAsync(System.String)">
+ <summary>
+ Azure AD B2Cユーザが所属するグループ等を取得する（非同期）
+ </summary>
+ <param name="userId">ユーザID</param>
+ <returns>結果</returns>
+</member>
+<member name="M:Jp.Co.Nrs.Graph.Library.GraphUtil.AddGroupMemberAsync(System.String,System.String)">
+ <summary>
+ グループにユーザを追加（非同期）
+ </summary>
+ <param name="groupObjectId">グループオブジェクトID</param>
+ <param name="userObjectId">ユーザオブジェクトID</param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.Graph.Library.GraphUtil.DeleteGroupMemberAsync(System.String,System.String)">
+ <summary>
+ グループからユーザを削除（非同期）
+ </summary>
+ <param name="groupObjectId">グループオブジェクトID</param>
+ <param name="userObjectId">ユーザオブジェクトID</param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.Graph.Library.GraphUtil.SendMailAsync(System.String,Microsoft.Graph.Message)">
+ <summary>
+ メール送信（非同期）
+ </summary>
+ <param name="fromUserAdId">送信元ADのID</param>
+ <param name="sendMessage">送信メッセージ</param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.Graph.Library.GraphUtil.CreateAuthProvider">
+ <summary>
+ B2C用認証プロバイダを作成
+ </summary>
+ <returns>B2C用認証プロバイダ</returns>
+</member>
+<member name="M:Jp.Co.Nrs.Graph.Library.GraphUtil.CreateAuthProviderAD">
+ <summary>
+ AD用認証プロバイダを作成
+ </summary>
+ <returns>AD用認証プロバイダ</returns>
+</member>
+<member name="M:Jp.Co.Nrs.Graph.Library.GraphUtil.CreateAuthProviderADForMail">
+ <summary>
+ AD用認証プロバイダを作成（メール用）
+ </summary>
+ <returns>AD用認証プロバイダ</returns>
+</member>
+<member name="M:Jp.Co.Nrs.Graph.Library.GraphUtil.Decrypt(System.String)">
+ <summary>
+ 復号化処理
+ </summary>
+ <param name="sourceString">暗号化された文字列</param>
+ <returns></returns>
+</member>
+</members>
+</doc>

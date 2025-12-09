@@ -1,0 +1,4223 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.GL.Library
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.GL.My.Resources.Resources">
+<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.GL.My.Resources.Resources.ResourceManager">
+<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.GL.My.Resources.Resources.Culture">
+<summary>
+  すべてについて、現在のスレッドの CurrentUICulture プロパティをオーバーライドします
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC">
+ <summary>
+ 拡張BLC層中核クラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.Connection">
+ <summary>
+ バッチ用コネクションオブジェクトの取得・設定を行うプロパティ。
+ </summary>
+ <value>SqlConnectionオブジェクト</value>
+ <returns>SqlConnectionオブジェクト</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.CachedConfigDataSet">
+ <summary>
+ システム情報キャッシュの取得・設定を行うプロパティ
+ </summary>
+ <value>送受信データ</value>
+ <returns>送受信データのコピー</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GLServiceData">
+ <summary>
+ 送受信データの取得・設定を行うプロパティ
+ </summary>
+ <value>送受信データ</value>
+ <returns>送受信データ</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.UserTimeZone">
+ <summary>
+ ログインユーザのタイムゾーンを取得するプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SetMessage(System.String)">
+ <summary>
+ メッセージＩＤ・メッセージレベル・メッセージ文言をServiceDataに設定する。
+ </summary>
+ <param name="messageID">メッセージID</param>
+ <remarks>引数のメッセージＩＤを元にメッセージ文言を作成し、ServiceDataクラスにメッセージＩＤ・メッセージレベル・メッセージ文言を設定する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SetMessage(System.String,System.String[])">
+ <summary>
+ メッセージ情報をServiceDataに設定する。
+ </summary>
+ <param name="messageID">メッセージID</param>
+ <param name="replaceMessages">置換対象文字列の配列</param>
+ <remarks>引数のメッセージＩＤを元にメッセージ文言を作成し、ServiceDataクラスにメッセージ情報を設定する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SetMessage(System.String,System.String[],System.String,System.String)">
+ <summary>
+ メッセージ情報をServiceDataに設定する。
+ </summary>
+ <param name="messageID">メッセージID</param>
+ <param name="replaceMessages">置換対象文字列の配列</param>
+ <param name="messageArea">メッセージエリア名</param>
+ <param name="naviArea">ナビエリア名</param>
+ <remarks>引数のメッセージＩＤを元にメッセージ文言を作成し、ServiceDataクラスにメッセージ情報を設定する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectKbnCOMData(System.Data.DataSet)">
+ <summary>
+ (COM)区分マスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectKbnData(System.Data.DataSet)">
+ <summary>
+ 区分マスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectKbnLMData(System.Data.DataSet)">
+ <summary>
+ (LM)区分マスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectMessageData(System.Data.DataSet)">
+ <summary>
+ メッセージマスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectMArrgData(System.Data.DataSet)">
+ <summary>
+ 手配マスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectMOfficeData(System.Data.DataSet)">
+ <summary>
+ OFFICEマスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectMOfficeGroupData(System.Data.DataSet)">
+ <summary>
+ オフィスグループマスタ情報取得（BLC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectMOpeDateData(System.Data.DataSet)">
+ <summary>
+ 稼働日制御マスタ情報取得（BLC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectMPrtData(System.Data.DataSet)">
+ <summary>
+ 帳票マスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectMPrtCntData(System.Data.DataSet)">
+ <summary>
+ 帳票制御マスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetMPrtCntData(System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 帳票制御マスタ情報取得（BLC）
+ </summary>
+ <param name="officeCd">OFFICEコード</param>
+ <param name="businessKbn">BUSINESS区分</param>
+ <param name="guiId">画面ID</param>
+ <param name="prtId">帳票ID</param>
+ <param name="lang">帳票言語(未指定の場合はログインユーザの言語を取得)</param>
+ <param name="whereString"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectMFileCntData(System.Data.DataSet)">
+ <summary>
+ 添付ファイル制御マスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectMLawNFData(System.Data.DataSet)">
+ <summary>
+ (NF)適用法規マスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectMLawMSTData(System.Data.DataSet)">
+ <summary>
+ (NF)適用法規マスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectMNrsBrLMData(System.Data.DataSet)">
+ <summary>
+ (LM)M_NRS_BR情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetSRscData(System.String,System.String,System.String)">
+ <summary>
+ リソース取得（BLC）
+ </summary>
+ <param name="resourceId">RESOURCE_ID</param>
+ <param name="lang">RESOURCE_LANG(未指定の場合はログインユーザの言語を取得)</param>
+ <param name="whereString">未使用</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectMCompCOMData(System.Data.DataSet)">
+ <summary>
+ (COM)会社マスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectMGoodsNFData(System.Data.DataSet)">
+ <summary>
+ (NF)商品マスタ取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectSUserData(System.Data.DataSet)">
+ <summary>
+ ユーザマスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectSWebOutUserData(System.Data.DataSet)">
+ <summary>
+ 外部WEBユーザマスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectMCompData(System.Data.DataSet)">
+ <summary>
+ 会社マスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectMGoodsData(System.Data.DataSet)">
+ <summary>
+ 商品マスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectMCountryData(System.Data.DataSet)">
+ <summary>
+ 国マスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectMCityData(System.Data.DataSet)">
+ <summary>
+ 都市マスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectMCitySubData(System.Data.DataSet)">
+ <summary>
+ 都市サブマスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectMRegionData(System.Data.DataSet)">
+ <summary>
+ 地域マスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectMTankCOMData(System.Data.DataSet)">
+ <summary>
+ (COM)タンクマスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectMJdeAccountData(System.Data.DataSet)">
+ <summary>
+ 請求支払マスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectMCurrData(System.Data.DataSet)">
+ <summary>
+ 通貨マスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectMCostData(System.Data.DataSet)">
+ <summary>
+ コストマスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectMGuidelineData(System.Data.DataSet)">
+ <summary>
+ 取扱指針マスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectMHolLMData(System.Data.DataSet)">
+ <summary>
+ LM_MST..M_HOLデータ取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectMChargeData(System.Data.DataSet)">
+ <summary>
+ 諸料金マスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectMImdgData(System.Data.DataSet)">
+ <summary>
+ IMDGマスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectMTestCOMData(System.Data.DataSet)">
+ <summary>
+ (COM)検定マスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectMLawData(System.Data.DataSet)">
+ <summary>
+ 適用法規マスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectMContcostData(System.Data.DataSet)">
+ <summary>
+ コンテナコストマスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectMBankData(System.Data.DataSet)">
+ <summary>
+ 銀行マスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectMBuData(System.Data.DataSet)">
+ <summary>
+ BUマスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectMJdeKmkData(System.Data.DataSet)">
+ <summary>
+ JDE科目マスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectMKmkData(System.Data.DataSet)">
+ <summary>
+ 科目マスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectMTaxData(System.Data.DataSet)">
+ <summary>
+ 税マスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectMTaxDispData(System.Data.DataSet)">
+ <summary>
+ 税表示マスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectMTaxDetailData(System.Data.DataSet)">
+ <summary>
+ 税マスタ明細情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectMFileCOMData(System.Data.DataSet)">
+ <summary>
+ (COM)添付ファイルマスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectSBkgChangeGLData(System.Data.DataSet)">
+ <summary>
+ (GL)ブッキング変更通知テーブル情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectMPrtHeaderData(System.Data.DataSet)">
+ <summary>
+ 帳票ヘッダー情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectMCoverData(System.Data.DataSet)">
+ <summary>
+ カバーマスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectMCommentData(System.Data.DataSet)">
+ <summary>
+ コメントマスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectMWebCustData(System.Data.DataSet)">
+ <summary>
+ 外部用荷主マスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectMWebKenHaisoData(System.Data.DataSet)">
+ <summary>
+ MST_DB..M_WEB_KEN_HAISOデータ取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectSMailTplData(System.Data.DataSet)">
+ <summary>
+ メール送信文言マスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectSRscConvData(System.Data.DataSet)">
+ <summary>
+ リソース変換マスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectIntegrateMSegmentData(System.Data.DataSet)">
+ <summary>
+ セグメントマスタ（統合）情報取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectIntegrateMAccData(System.Data.DataSet)">
+ <summary>
+ ACCマスタ（統合）情報取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetUserInfo(System.Data.DataSet)">
+ <summary>
+ ユーザーインフォ取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetWebOutUserInfo(System.Data.DataSet)">
+ <summary>
+ 外部WEBユーザーインフォ取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetUserInfoDataSet(System.String,System.String)">
+ <summary>
+ ユーザーインフォ取得（BLC）
+ </summary>
+ <param name="userId">ユーザID</param>
+ <param name="whereString"></param>
+ <returns>DataSet</returns>
+ <remarks>
+ 引数のユーザIDに紐づく下記テーブルを持つDataSetを返却する。
+ MST_DB.S_USER
+ MST_DB.M_USER_ARRG
+ MST_DB.M_USER_OFFICE
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetWebOutUserInfoDataSet(System.String,System.String)">
+ <summary>
+ 外部WEBユーザーインフォ取得（BLC）
+ </summary>
+ <param name="userId">ユーザID</param>
+ <param name="whereString"></param>
+ <returns>DataSet</returns>
+ <remarks>
+ 引数のユーザIDに紐づく下記テーブルを持つDataSetを返却する。
+ MST_DB.S_WEB_OUT_USER
+ MST_DB.S_WEB_OUT_USER_DETAILS
+ MST_DB.S_WEB_OUT_USER_COMP_DETAILS
+ MST_DB.S_WEB_OUT_HIDDEN_MENU
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetKbnCOMDataTable(System.String,System.String,System.String)">
+ <summary>
+ (COM)区分データテーブル情報取得（BLC）
+ </summary>
+ <param name="grpCode">区分分類コード</param>
+ <param name="code">区分コード</param>
+ <param name="whereString"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetKbnDataTable(System.String,System.String,System.String,System.String)">
+ <summary>
+ 区分データテーブル情報取得（BLC）
+ </summary>
+ <param name="grpCode">区分分類コード</param>
+ <param name="code">区分コード</param>
+ <param name="lang">メッセージ言語(未指定の場合はログインユーザの言語を取得)</param>
+ <param name="whereString"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetKbnLMDataTable(System.String,System.String,System.String)">
+ <summary>
+ (LM)区分データテーブル情報取得（BLC）
+ </summary>
+ <param name="grpCode">区分分類コード</param>
+ <param name="code">区分コード</param>
+ <param name="whereString"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetSUserDataTable(System.String,System.String)">
+ <summary>
+ ユーザデータテーブル取得（BLC）
+ </summary>
+ <param name="userId">ユーザID</param>
+ <param name="whereString"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetSWebOutUserDataTable(System.String,System.String)">
+ <summary>
+ ユーザデータテーブル取得（BLC）
+ </summary>
+ <param name="userId">ユーザID</param>
+ <param name="whereString"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetMCompDataTable(System.String,System.String)">
+ <summary>
+ 会社データテーブル取得（BLC）
+ </summary>
+ <param name="compCd">会社コード</param>
+ <param name="whereString"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetMGoodsDataTable(System.String,System.String)">
+ <summary>
+ 商品データテーブル取得（BLC）
+ </summary>
+ <param name="goodsCd">商品コード</param>
+ <param name="whereString"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetMCountryDataTable(System.String,System.String)">
+ <summary>
+ 国データテーブル取得（BLC）
+ </summary>
+ <param name="countryCd">国コード</param>
+ <param name="whereString"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetMCityDataTable(System.String,System.String)">
+ <summary>
+ 都市データテーブル取得（BLC）
+ </summary>
+ <param name="cityCd">都市コード</param>
+ <param name="whereString"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetMCitySubDataTable(System.String,System.String,System.String,System.String)">
+ <summary>
+ 都市サブデータテーブル取得（BLC）
+ </summary>
+ <param name="cityCd">都市コード</param>
+ <param name="nrsCompKbn">日陸会社区分</param>
+ <param name="businessKbn">BUSINESS区分</param>
+ <param name="whereString"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetMRegionDataTable(System.String,System.String,System.String)">
+ <summary>
+ 地域データテーブル取得（BLC）
+ </summary>
+ <param name="regionCd">地域コード</param>
+ <param name="nrsCompKbn">日陸会社区分</param>
+ <param name="whereString"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetMTankCOMDataTable(System.String,System.String,System.String,System.String)">
+ <summary>
+ (COM)タンクデータテーブル取得（BLC）
+ </summary>
+ <param name="contTypeKbn">コンテナ種別</param>
+ <param name="contNo">コンテナ番号</param>
+ <param name="contNoSub">コンテナ番号枝</param>
+ <param name="whereString"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetMJdeAccountDataTable(System.String,System.String)">
+ <summary>
+ 請求支払データテーブル取得（BLC）
+ </summary>
+ <param name="accCd">アカウントコード</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetMCurrDataTable(System.String,System.String,System.String,System.String)">
+ <summary>
+ 通貨データテーブル取得（BLC）
+ </summary>
+ <param name="baseCurrCd">基準通貨コード</param>
+ <param name="currCd">通貨コード</param>
+ <param name="currMonth">適用月</param>
+ <param name="whereString"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetMCostDataTable(System.String,System.String)">
+ <summary>
+ コストデータテーブル取得（BLC）
+ </summary>
+ <param name="costCd">コストコード</param>
+ <param name="whereString"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetMGuidelineDataTable(System.String,System.String)">
+ <summary>
+ 取扱指針データテーブル取得（BLC）
+ </summary>
+ <param name="guidelineCd">取扱指針コード</param>
+ <param name="whereString"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetMChargeDataTable(System.String,System.String)">
+ <summary>
+ 諸料金データテーブル取得（BLC）
+ </summary>
+ <param name="chargeCd">諸料金コード</param>
+ <param name="whereString"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetMArrgDataTable(System.String,System.String)">
+ <summary>
+ 手配データテーブル取得（BLC）
+ </summary>
+ <param name="arrgCd">手配コード</param>
+ <param name="whereString"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetMOfficeDataTable(System.String,System.String)">
+ <summary>
+ OFFICEデータテーブル取得（BLC）
+ </summary>
+ <param name="officeCd">OFFICEコード</param>
+ <param name="whereString"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetMOfficeGroupDataTable(System.String,System.String)">
+ <summary>
+ オフィスグループデータテーブル取得（BLC）
+ </summary>
+ <param name="groupCd">GROUP_CD</param>
+ <param name="whereString">その他検索条件</param>
+ <returns>オフィスグループデータテーブル</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetMOpeDateDataTable(System.String,System.String)">
+ <summary>
+ 稼働日制御データテーブル取得（BLC）
+ </summary>
+ <param name="pgId">PG_ID</param>
+ <param name="whereString">その他検索条件</param>
+ <returns>稼働日制御データテーブル</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetMImdgDataTable(System.String,System.String,System.String)">
+ <summary>
+ IMDGデータテーブル取得（BLC）
+ </summary>
+ <param name="unNo">UNナンバー</param>
+ <param name="pgKbn">PG区分</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetMTestCOMDataTable(System.Int32,System.String)">
+ <summary>
+ (COM)検定データテーブル取得（BLC）
+ </summary>
+ <param name="testNo">定期検査番号</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetMPrtCntDataTable(System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 帳票制御データテーブル取得（BLC）
+ </summary>
+ <param name="officeCd">OFFICEコード</param>
+ <param name="businessKbn">BUSINESS区分</param>
+ <param name="guiId">画面ID</param>
+ <param name="prtId">帳票ID</param>
+ <param name="lang">帳票言語(未指定の場合はログインユーザの言語を取得)</param>
+ <param name="whereString"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetMLawDataTable(System.String,System.String,System.String)">
+ <summary>
+ 適用法規データテーブル取得（BLC）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetMNrsBrLMDataTable(System.String,System.String)">
+ <summary>
+ M_NRS_BR_LMデータテーブル取得（BLC）
+ </summary>
+ <param name="nrsBrCd"></param>
+ <param name="whereString"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetMContcostDataTable(System.String,System.String,System.String,System.String)">
+ <summary>
+ コンテナコストデータテーブル取得（BLC）
+ </summary>
+ <param name="nrsCompKbn">日陸会社区分</param>
+ <param name="orig">発地</param>
+ <param name="dest">着地</param>
+ <param name="whereString"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetMBankDataTable(System.String,System.String)">
+ <summary>
+ 銀行データテーブル取得（BLC）
+ </summary>
+ <param name="bankCd">銀行コード</param>
+ <param name="whereString"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetMBUDataTable(System.String,System.String)">
+ <summary>
+ BUデータテーブル取得（BLC）
+ </summary>
+ <param name="buCd">BUコード</param>
+ <param name="whereString"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetMJdeKmkDataTable(System.String,System.String,System.String)">
+ <summary>
+ JDE科目データテーブル取得（BLC）
+ </summary>
+ <param name="buCd">BUコード</param>
+ <param name="kmkCd">FWD科目コード</param>
+ <param name="whereString"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetMKmkDataTable(System.String,System.String,System.String)">
+ <summary>
+ 科目データテーブル取得（BLC）
+ </summary>
+ <param name="kmkCd">科目コード</param>
+ <param name="nrsCompKbn">日陸会社区分</param>
+ <param name="whereString"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetMTaxDataTable(System.String,System.String)">
+ <summary>
+ 税データテーブル取得（BLC）
+ </summary>
+ <param name="taxCd">税コード</param>
+ <param name="whereString"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetMTaxDispDataTable(System.String,System.String,System.String,System.String)">
+ <summary>
+ 税表示データテーブル取得（BLC）
+ </summary>
+ <param name="taxCd">税コード</param>
+ <param name="dispKbn">表示形式</param>
+ <param name="kbnLang">メッセージ言語</param>
+ <param name="whereString"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetMFileCOMDataTable(System.Int32,System.String)">
+ <summary>
+ (COM)添付ファイルデータテーブル取得（BLC）
+ </summary>
+ <param name="fileNo">添付ファイル番号</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetSBkgChangeGLDataTable(System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ (GL)ブッキング変更通知データテーブル取得（BLC）
+ </summary>
+ <param name="TblNm">テーブル名</param>
+ <param name="ColNm">カラム名</param>
+ <param name="ArgKbn">手配区分</param>
+ <param name="OrigDestKbn">Orig/Dest区分</param>
+ <param name="whereString"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetMPrtHeaderDataTable(System.String,System.String,System.String)">
+ <summary>
+ 帳票ヘッダーデータテーブル取得（BLC）
+ </summary>
+ <param name="officeCd">OFFICEコード</param>
+ <param name="userId">ユーザID</param>
+ <param name="whereString"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetMCoverDataTable(System.String,System.String)">
+ <summary>
+ カバーデータテーブル取得（BLC）
+ </summary>
+ <param name="CoverCd">カバーコード</param>
+ <param name="whereString"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetMCommentDataTable(System.Int32,System.String)">
+ <summary>
+ コメントデータテーブル取得（BLC）
+ </summary>
+ <param name="CommentSeq">コメントSEQ</param>
+ <param name="whereString"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetMWebCustDataTable(System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 外部用荷主データテーブル取得（BLC）
+ </summary>
+ <param name="nrsBrNo">LMS営業所CD</param>
+ <param name="compCdL">会社コードL</param>
+ <param name="compCdM">会社コードM</param>
+ <param name="compCdS">会社コードS</param>
+ <param name="compCdSs">会社コードSS</param>
+ <param name="whereString">その他条件</param>
+ <returns>外部用荷主データテーブル</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetMWebCustDataTable(System.String,System.String)">
+ <summary>
+ 外部用荷主データテーブル取得（BLC）
+ </summary>
+ <param name="webCustKey">条件連結文字列</param>
+ <param name="whereString">その他条件</param>
+ <returns>外部用荷主データテーブル</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetSMailTplDataTable(System.String,System.Int32,System.String,System.String)">
+ <summary>
+ メール送信文言データテーブル取得（BLC）
+ </summary>
+ <param name="TplCd">テンプレートコード</param>
+ <param name="TplSeq">テンプレートSEQ</param>
+ <param name="TplLang">テンプレート言語</param>
+ <param name="whereString"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetSRscConvDataTable(System.String,System.String,System.String)">
+ <summary>
+ リソース変換データテーブル取得（BLC）
+ </summary>
+ <param name="TableNm">テーブル名(物理名)</param>
+ <param name="ColNm">カラム名(物理名)</param>
+ <param name="whereString"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetSPrtLogKeySeq(System.String,System.String,System.String,System.String,System.Boolean)">
+ <summary>
+ 帳票ログキーシーケンス取得（BLC）
+ </summary>
+ <param name="prtId">帳票ID</param>
+ <param name="keyTypeKbn">KEY No.種類</param>
+ <param name="keyNo">KEY No.</param>
+ <param name="userId">ユーザID</param>
+ <param name="checkProcKbn">PROC_KBNをチェックするか否か</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetIntegrateMSegmentDataTable(System.String,System.String,System.String,System.String)">
+ <summary>
+ セグメントデータテーブル（統合）取得
+ </summary>
+ <param name="dataTypeCd">データタイプコード</param>
+ <param name="cnctSegCd">CNCTセグメントコード</param>
+ <param name="kbnLang">言語</param>
+ <param name="whereString">検索文字列</param>
+ <returns>セグメントデータテーブル（統合）</returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetIntegrateMAccDataTable(System.String,System.String,System.String)">
+ <summary>
+ ACCデータテーブル（統合）取得
+ </summary>
+ <param name="nrsCd">NRS_CD</param>
+ <param name="accCd">ACC_CD</param>
+ <param name="whereString">検索文字列</param>
+ <returns>ACCデータテーブル（統合）</returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.IsMatchDataSource(System.String)">
+ <summary>
+ 引数と保持しているDB接続のデータソースと一致するか
+ </summary>
+ <param name="dataSource"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetUserRemarks">
+ <summary>
+ UserInfoのRemarks取得
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.InsertZSystemData(System.Data.DataSet)">
+ <summary>
+ システム情報(Z_SYSTEM)登録（BLC）
+ </summary>
+ <param name="ds">DataSet ("Z_SYSTEM"テーブルが存在していること)</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectZSystemData(System.Data.DataSet)">
+ <summary>
+ システム情報(Z_SYSTEM)取得（BLC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectZSystemData(System.Data.DataSet,System.String,System.String,System.String,System.String)">
+ <summary>
+ システム情報(Z_SYSTEM)取得（BLC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="procKey">処理キー</param>
+ <param name="procKeyKbn">処理キー区分</param>
+ <param name="arrgKbn">手配分類</param>
+ <param name="pgId">プログラムID</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectZSystemJoinWebOutUserData(System.Data.DataSet)">
+ <summary>
+ システム情報(Z_SYSTEM)取得（BLC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectZSystemJoinWebOutUserData(System.Data.DataSet,System.String,System.String,System.String,System.String)">
+ <summary>
+ システム情報(Z_SYSTEM)取得（BLC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="procKey">処理キー</param>
+ <param name="procKeyKbn">処理キー区分</param>
+ <param name="arrgKbn">手配分類</param>
+ <param name="pgId">プログラムID</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.AddRowZSystem(System.String,System.String,System.String,System.String,System.String,System.String,System.Data.DataSet,System.Int32)">
+ <summary>
+ システム情報(Z_SYSTEM)行追加（BLC）
+ </summary>
+ <param name="pgId">プログラムID</param>
+ <param name="procKey">処理キー</param>
+ <param name="procKeyKbn">処理キー区分</param>
+ <param name="arrgKbn">手配分類</param>
+ <param name="procKbn">処理区分</param>
+ <param name="actRemark">アクション詳細</param>
+ <param name="ds">DataSet</param>
+ <param name="logKeySeq">LogKeySeq</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.InsertSPrtLogData(System.Data.DataSet)">
+ <summary>
+ 帳票ログ(S_PRT_LOG)登録（BLC）
+ </summary>
+ <param name="ds">DataSet ("S_PRT_LOG"テーブルが存在していること)</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectSPrtLogData(System.Data.DataSet)">
+ <summary>
+ 帳票ログ(S_PRT_LOG)取得（BLC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectSPrtLogData(System.Data.DataSet,System.String,System.String,System.String,System.String)">
+ <summary>
+ 帳票ログ(S_PRT_LOG)取得（BLC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="prtId">帳票ID</param>
+ <param name="keyTypeKbn">KEY No.種類</param>
+ <param name="keyNo">KEY_NO</param>
+ <param name="exePgid">印刷指示画面ID</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.AddRowSPrtLog(System.String,System.String,System.String,System.String,System.String,System.Data.DataSet)">
+ <summary>
+ 帳票ログ(S_PRT_LOG)行追加（BLC）
+ </summary>
+ <param name="prtId">帳票ID</param>
+ <param name="keyTypeKbn">KEY No.種類</param>
+ <param name="keyNo">KEY_NO</param>
+ <param name="exePgid">印刷指示画面ID</param>
+ <param name="prtRemark">備考</param>
+ <param name="ds">DataSet</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.IsMstDataExist(System.Data.DataTable)">
+ <summary>
+ マスタ存在チェック（BLC）
+ </summary>
+ <param name="dt">DataTable</param>
+ <returns>
+ DataTableのレコード有無を判定
+ 存在する   ：True
+ 存在しない ：False
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.IsMGoodsNFDataExist(System.String)">
+ <summary>
+ (NF)商品マスタ存在チェック（BLC）
+ </summary>
+ <param name="goodCd"></param>
+ <returns>商品コードの有無</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.IsMCompCOMDataExist(System.String)">
+ <summary>
+ (COM)会社マスタ存在チェック（BLC）
+ </summary>
+ <param name="compCd"></param>
+ <returns>会社コードの有無</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetXlsData(System.Data.DataSet)">
+ <summary>
+ XLS情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetEcKbnData(System.Data.DataSet)">
+ <summary>
+ 区分マスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.CheckUserInfo(System.Data.DataSet)">
+ <summary>
+ ユーザーチェック（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.UpdatePasswordDate(System.Data.DataSet)">
+ <summary>
+ パスワード期限更新
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.ChangePassword(System.Data.DataSet)">
+ <summary>
+ パスワード変更
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.ChangeLocale(System.Data.DataSet)">
+ <summary>
+ ロケール変更
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.CheckWebOutUserInfo(System.Data.DataSet)">
+ <summary>
+ 外部WEBユーザーチェック（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.UpdatePasswordDateWebOut(System.Data.DataSet)">
+ <summary>
+ 外部WEBユーザパスワード期限更新
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.ChangePasswordWebOut(System.Data.DataSet)">
+ <summary>
+ 外部WEBユーザパスワード変更
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.InitPasswordWebOut(System.Data.DataSet)">
+ <summary>
+ 外部WEBユーザパスワード初期化
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.ChangeLocaleWebOut(System.Data.DataSet)">
+ <summary>
+ 外部WEBユーザロケール変更
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SendForgetPasswordMail(System.Data.DataSet)">
+ <summary>
+ パスワード確認時のメール送信
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetTrackingData(System.Data.DataSet)">
+ <summary>
+ トラッキングデータ取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.ChangeIniKiyakuWebOut(System.Data.DataSet)">
+ <summary>
+ 初回規約表示フラグ更新(外部WEBログインユーザ)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectPartDataCnt(System.Data.DataSet,System.String,System.String)">
+ <summary>
+ 複数検索句の取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="table">TableName</param>
+ <param name="item">ItemName</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.RoundOff(System.Double,System.Int32)">
+ <summary>
+ 指定した精度の数値に四捨五入します
+ </summary>
+ <param name="value">丸め対象の倍精度浮動小数点数</param>
+ <param name="digits">戻り値の有効桁数の精度</param>
+ <returns>digits に等しい精度の数値に四捨五入された数値</returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.RoundOff(System.Decimal,System.Int32)">
+ <summary>
+ 指定した精度の数値に四捨五入します
+ </summary>
+ <param name="value">丸め対象の倍精度浮動小数点数</param>
+ <param name="digits">戻り値の有効桁数の精度(0～28の範囲で設定可)</param>
+ <returns>digits に等しい精度の数値に四捨五入された数値</returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.IsRangeCheckErr(System.Decimal,System.Decimal,System.Decimal)">
+ <summary>
+ 数値項目の範囲チェック
+ </summary>
+ <param name="value">チェック対象数値項目</param>
+ <param name="maxData">許容最大値</param>
+ <param name="minData">許容最小値</param>
+ <returns>
+ True：エラーあり
+ Falase：エラーなし
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.IsEnableEmail(System.String)">
+ <summary>
+ 有効なドメインであるかを判定し、メールアドレスを返却する
+ </summary>
+ <param name="email">メールアドレス</param>
+ <returns>メールアドレス</returns>
+ <remarks>比較対象の既定値はGLConfig.xmlに定義する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetLocalDate">
+ <summary>
+ 現在ServiceDataに登録されているシステム日付からローカルの日付(YYYYMMDD)を取得する。
+ </summary>
+ <returns></returns>
+ <remarks>ロケール設定で選択したタイムゾーンを使用する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetLocalTime">
+ <summary>
+ 現在ServiceDataに登録されているシステム時刻からローカルの時刻(HHMMSSmmm)を取得する。
+ </summary>
+ <returns></returns>
+ <remarks>ロケール設定で選択したタイムゾーンを使用する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetSystemDatetime">
+ <summary>
+ 現在ServiceDataに登録されているシステム日時からDateTimeを取得する。
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetMaimTpl(System.String,System.String)">
+ <summary>
+ メールテンプレート取得
+ </summary>
+ <param name="tplCd"></param>
+ <param name="tplKbn"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetActCargo">
+ <summary>
+ ActualCargoの取得タイプ
+ </summary>
+ <remarks>
+ OFFICIAL_PATTERN:正式版
+ EASY_PATTERN:簡易版
+ </remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetActCargo.OFFICIAL_PATTERN">
+ <summary>正式版</summary>
+</member>
+<member name="F:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetActCargo.EASY_PATTERN">
+ <summary>簡易版</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.HazardKbn">
+ <summary>
+ 危険品(Hazard)区分(K00006)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.HazardKbn.NONHAZA">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.HazardKbn.CLEAN">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.HazardKbn.HAZ_USA">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetActCargoData(System.Data.DataSet,System.String,Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.GetActCargo)">
+ <summary>
+  ActualCargoの編集を行う
+ </summary>
+ <param name="ds">データセット</param>
+ <param name="tblNm">データテーブル名</param>
+ <param name="ptn">表示パターン</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.EditConcatData(System.String,System.String,System.String)">
+ <summary>
+ 2つの値を連結して設定
+ </summary>
+ <param name="value1">値1</param>
+ <param name="value2">値2</param>
+ <param name="str"></param>
+ <returns>編集後の値</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.OutPuttCSV(System.Data.DataTable,System.String,System.Boolean)">
+ <summary>
+ 投入されたデータテーブルからCSVファイル作成（タブ区切り）(System.IO.StreamWriter)
+ </summary>
+ <param name="dt">CSVファイル化するデータテーブル</param>
+ <param name="outPutPath">出力先パス（拡張子込み）</param>
+ <param name="writeHeader">ヘッダ書き込みの有無（T/F）</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.OutPutcCSV(System.Data.DataTable,System.String,System.Boolean)">
+ <summary>
+ 投入されたデータテーブルからCSVファイル作成(カンマ区切り)(System.IO.StreamWriter)
+ </summary>
+ <param name="dt">CSVファイル化するデータテーブル</param>
+ <param name="outPutPath">出力先パス（拡張子込み）</param>
+ <param name="writeHeader">ヘッダ書き込みの有無（T/F）</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.EncloseDoubleQuotes(System.String)">
+ <summary>
+ 文字列をダブルクォートで囲む
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SelectGridColData(System.Data.DataSet)">
+ <summary>
+ グリッドレイアウト情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.SaveGridColData(System.Data.DataSet)">
+ <summary>
+ グリッドレイアウト情報の更新
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLC.GLBaseBLC.DeleteGridColData(System.Data.DataSet)">
+ <summary>
+ グリッドレイアウト情報の削除
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF">
+ <summary>
+ 拡張BLF層中核クラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.GLServiceData">
+ <summary>
+ 送受信データの取得・設定を行うプロパティ
+ </summary>
+ <value>送受信データ</value>
+ <returns>送受信データ</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.GetLocalDate">
+ <summary>
+ 現在ServiceDataに登録されているシステム日付からローカルの日付(YYYYMMDD)を取得する。
+ </summary>
+ <returns></returns>
+ <remarks>ロケール設定で選択したタイムゾーンを使用する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.GetLocalTime">
+ <summary>
+ 現在ServiceDataに登録されているシステム時刻からローカルの時刻(HHMMSSmmm)を取得する。
+ </summary>
+ <returns></returns>
+ <remarks>ロケール設定で選択したタイムゾーンを使用する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.GetSystemDatetime">
+ <summary>
+ 現在ServiceDataに登録されているシステム日時からDateTimeを取得する。
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.SetMessage(System.String,System.String[],System.String,System.String)">
+ <summary>
+ メッセージＩＤ・メッセージレベル・メッセージ文言をServiceDataに設定する。
+ </summary>
+ <param name="messageID">メッセージID</param>
+ <remarks>引数のメッセージＩＤを元にメッセージ文言を作成し、
+ ServiceDataクラスにメッセージＩＤ・メッセージレベル・メッセージ文言を設定する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.IsErrorMessageExist">
+ <summary>
+ エラーメッセージの有無を判定して返却する
+ </summary>
+ <returns>エラーメッセージの有無</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.DeleteSpreadColData(System.Data.DataSet)">
+ <summary>
+ スプレッドレイアウト情報の削除
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.SelectKbnCOMData(System.Data.DataSet)">
+ <summary>
+ (COM)区分マスタ情報を取得します。
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.SelectKbnData(System.Data.DataSet)">
+ <summary>
+ 区分マスタ情報を取得します。
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.SelectKbnLMData(System.Data.DataSet)">
+ <summary>
+ (LM)区分マスタ情報を取得します。
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.SelectMArrgData(System.Data.DataSet)">
+ <summary>
+ 手配マスタ情報を取得します。（BLF）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.SelectMOfficeData(System.Data.DataSet)">
+ <summary>
+ OFFICEマスタ情報を取得します。（BLF）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.SelectMOfficeGroupData(System.Data.DataSet)">
+ <summary>
+ オフィスグループマスタ情報を取得します。（BLF）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.SelectMOpeDateData(System.Data.DataSet)">
+ <summary>
+ 稼働日制御マスタ情報を取得します。（BLF）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.SelectMPrtData(System.Data.DataSet)">
+ <summary>
+ 帳票マスタ情報を取得します。（BLF）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.SelectMPrtCntData(System.Data.DataSet)">
+ <summary>
+ 帳票制御マスタ情報を取得します。（BLF）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.SelectMFileCntData(System.Data.DataSet)">
+ <summary>
+ 添付ファイル制御マスタ情報を取得します。（BLF）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.SelectMLawNFData(System.Data.DataSet)">
+ <summary>
+ (NF)適用法規マスタ情報を取得します。（BLF）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.SelectMLawMSTData(System.Data.DataSet)">
+ <summary>
+ (MST)適用法規マスタ情報を取得します。（BLF）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.SelectMNrsBrLMData(System.Data.DataSet)">
+ <summary>
+ (LM)M_NRS_BR情報を取得します。（BLF）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.GetSRscData(System.String,System.String,System.String)">
+ <summary>
+ リソースを取得します。（BLF）
+ </summary>
+ <param name="resourceId">RESOURCE_ID</param>
+ <param name="lang">RESOURCE_LANG(未指定の場合はログインユーザの言語を取得)</param>
+ <param name="whereString">未使用</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.SelectMCompCOMData(System.Data.DataSet)">
+ <summary>
+ (COM)会社マスタ情報を取得します。（BLF）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.SelectMGoodsNFData(System.Data.DataSet)">
+ <summary>
+ (NF)商品マスタ情報を取得します。（BLF）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.SelectSUserData(System.Data.DataSet)">
+ <summary>
+ ユーザマスタ情報を取得します。（BLF）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.SelectSWebOutUserData(System.Data.DataSet)">
+ <summary>
+ 外部WEBユーザマスタ情報を取得します。（BLF）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.SelectMCompData(System.Data.DataSet)">
+ <summary>
+ 会社マスタ情報を取得します。（BLF）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.SelectMGoodsData(System.Data.DataSet)">
+ <summary>
+ 商品マスタ情報を取得します。（BLF）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.SelectMCountryData(System.Data.DataSet)">
+ <summary>
+ 国マスタ情報を取得します。（BLF）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.SelectMCityData(System.Data.DataSet)">
+ <summary>
+ 都市マスタ情報を取得します。（BLF）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.SelectMCitySubData(System.Data.DataSet)">
+ <summary>
+ 都市サブマスタ情報を取得します。（BLF）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.SelectMRegionData(System.Data.DataSet)">
+ <summary>
+ 地域マスタ情報を取得します。（BLF）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.SelectMTankCOMData(System.Data.DataSet)">
+ <summary>
+ (COM)タンクマスタ情報を取得します。（BLF）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.SelectMJdeAccountData(System.Data.DataSet)">
+ <summary>
+ 請求支払マスタ情報を取得します。（BLF）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.SelectMCurrData(System.Data.DataSet)">
+ <summary>
+ 通貨マスタ情報を取得します。（BLF）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.SelectMCostData(System.Data.DataSet)">
+ <summary>
+ コストマスタ情報を取得します。（BLF）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.SelectMGuidelineData(System.Data.DataSet)">
+ <summary>
+ 取扱指針マスタ情報を取得します。（BLF）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.SelectMChargeData(System.Data.DataSet)">
+ <summary>
+ 諸料金マスタ情報を取得します。（BLF）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.SelectMImdgData(System.Data.DataSet)">
+ <summary>
+ IMDGマスタ情報を取得します。（BLF）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.SelectMTestCOMData(System.Data.DataSet)">
+ <summary>
+ (COM)検定マスタ情報を取得します。（BLF）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.SelectMLawData(System.Data.DataSet)">
+ <summary>
+ 適用法規マスタ情報を取得します。（BLF）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.SelectMContcostData(System.Data.DataSet)">
+ <summary>
+ コンテナコストマスタ情報を取得します。（BLF）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.SelectMBankData(System.Data.DataSet)">
+ <summary>
+ 銀行マスタ情報を取得します。（BLF）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.SelectMBuData(System.Data.DataSet)">
+ <summary>
+ BUマスタ情報を取得します。（BLF）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.SelectMJdeKmkData(System.Data.DataSet)">
+ <summary>
+ JDE科目マスタ情報を取得します。（BLF）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.SelectMKmkData(System.Data.DataSet)">
+ <summary>
+ 科目マスタ情報を取得します。（BLF）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.SelectMTaxData(System.Data.DataSet)">
+ <summary>
+ 税マスタ情報を取得します。（BLF）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.SelectMTaxDispData(System.Data.DataSet)">
+ <summary>
+ 税表示マスタ情報を取得します。（BLF）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.SelectMTaxDetailData(System.Data.DataSet)">
+ <summary>
+ 税マスタ明細情報を取得します。（BLF）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.SelectMFileCOMData(System.Data.DataSet)">
+ <summary>
+ (COM)添付ファイルマスタ情報を取得します。（BLF）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.SelectSBkgChangeGLData(System.Data.DataSet)">
+ <summary>
+ (GL)ブッキング変更通知テーブル情報を取得します。（BLF）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.SelectMPrtHeaderData(System.Data.DataSet)">
+ <summary>
+ 帳票ヘッダー情報を取得します。（BLF）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.SelectMCoverData(System.Data.DataSet)">
+ <summary>
+ カバーマスタ情報を取得します。（BLF）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.SelectMCommentData(System.Data.DataSet)">
+ <summary>
+ コメントマスタ情報を取得します。（BLF）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.SelectMWebCustData(System.Data.DataSet)">
+ <summary>
+ 外部用荷主マスタ情報を取得します。（BLF）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.SelectSMailTplData(System.Data.DataSet)">
+ <summary>
+ メール送信文言マスタ情報を取得します。（BLF）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.SelectSRscConvData(System.Data.DataSet)">
+ <summary>
+ リソース変換マスタ情報を取得します。（BLF）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.GetUserInfo(System.Data.DataSet)">
+ <summary>
+ ユーザーインフォ取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.GetWebOutUserInfo(System.Data.DataSet)">
+ <summary>
+ ユーザーインフォ取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.SelectZSystemData(System.Data.DataSet)">
+ <summary>
+ システムログ情報を取得します。（BLF）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.SelectZSystemJoinWebOutUserData(System.Data.DataSet)">
+ <summary>
+ システムログ情報を取得します。（BLF）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.SelectSPrtLogData(System.Data.DataSet)">
+ <summary>
+ 帳票ログ情報を取得します。（BLF）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.SelectIntegrateMSegmentData(System.Data.DataSet)">
+ <summary>
+ セグメントマスタ（統合）情報を取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.SelectIntegrateMAccData(System.Data.DataSet)">
+ <summary>
+ ACCマスタ（統合）情報を取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.IsMatchDataSource(System.String)">
+ <summary>
+ 引数と保持しているDB接続のデータソースと一致するか
+ </summary>
+ <param name="dataSource"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.GetKbnCOMDataTable(System.String,System.String,System.String)">
+ <summary>
+ (COM)区分データテーブル情報を取得します。（BLF）
+ </summary>
+ <param name="grpCode">区分分類コード</param>
+ <param name="code">区分コード</param>
+ <param name="whereString"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.GetKbnDataTable(System.String,System.String,System.String,System.String)">
+ <summary>
+ 区分データテーブル情報を取得します。（BLF）
+ </summary>
+ <param name="grpCode">区分分類コード</param>
+ <param name="code">区分コード</param>
+ <param name="lang">メッセージ言語</param>
+ <param name="whereString"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.GetKbnLMDataTable(System.String,System.String,System.String)">
+ <summary>
+ (LM)区分データテーブル情報を取得します。（BLF）
+ </summary>
+ <param name="grpCode">区分分類コード</param>
+ <param name="code">区分コード</param>
+ <param name="whereString"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.CacheSystemData(System.Data.DataSet)">
+ <summary>
+ キャッシュされているシステム構成情報を取得する
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>コンフィグデータキャッシュとメッセージデータキャッシュを返却する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.GetMessageDataSet">
+ <summary>
+ メッセージデータを取得します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.GetMasterDataSet(System.Data.DataSet)">
+ <summary>
+ マスタ情報取得（BLF）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.Login(System.Data.DataSet)">
+ <summary>
+ ログイン認証（BLF）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.UpdatePasswordDate(System.Data.DataSet)">
+ <summary>
+ パスワード期限更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.ChangePassword(System.Data.DataSet)">
+ <summary>
+ パスワード変更
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.ChangeLocale(System.Data.DataSet)">
+ <summary>
+ ロケール変更
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.LoginWebOut(System.Data.DataSet)">
+ <summary>
+ ログイン認証（BLF）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.UpdatePasswordDateWebOut(System.Data.DataSet)">
+ <summary>
+ パスワード期限更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.ChangePasswordWebOut(System.Data.DataSet)">
+ <summary>
+ パスワード変更
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.InitPasswordWebOut(System.Data.DataSet)">
+ <summary>
+ パスワード初期化
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.ChangeLocaleWebOut(System.Data.DataSet)">
+ <summary>
+ ロケール変更
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.SendForgetPasswordMail(System.Data.DataSet)">
+ <summary>
+ パスワード確認時のメール送信
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.GetTrackingData(System.Data.DataSet)">
+ <summary>
+ トラッキングデータ取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.ChangeIniKiyakuWebOut(System.Data.DataSet)">
+ <summary>
+ 初回規約表示フラグ更新(外部WEBログインユーザ)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.SelectGridColData(System.Data.DataSet)">
+ <summary>
+ グリッドレイアウト情報を取得します。（BLF）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.SaveGridColData(System.Data.DataSet)">
+ <summary>
+ グリッドレイアウト情報の更新
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.BLF.GLBaseBLF.DeleteGridColData(System.Data.DataSet)">
+ <summary>
+ グリッドレイアウト情報の削除
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC">
+ <summary>
+ 拡張DAC層中核クラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.S_WEB_OUT_USER_SELECT">
+ <summary>
+ 外部WEBユーザ情報
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.S_WEB_OUT_USER_DETAILS_SELECT">
+ <summary>
+ 外部WEBユーザ明細情報
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.S_WEB_OUT_USER_COMP_DETAILS_SELECT">
+ <summary>
+ 外部WEBユーザ会社明細情報
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.S_WEB_OUT_HIDDEN_MENU">
+ <summary>
+ 外部WEBユーザ隠しメニュー
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.S_MESSAGE_SELECT">
+ <summary>
+ メッセージマスタ取得用SQL文
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.TRACKING_SELECT">
+ <summary>
+ トラッキングデータ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.S_GRID_SELECT">
+ <summary>
+ グリッドレイアウト取得用SQL文
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.LMDBKbn">
+ <summary>
+ LMのDatabase区分定義体
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.LMDBKbn.MST">
+ <summary>
+ マスタ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.LMDBKbn.TRN">
+ <summary>
+ トラン
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.LMDBKbn.ARC">
+ <summary>
+ アーカイブ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SetInsertParameter(System.Data.DataRow,System.Collections.ArrayList)">
+ <summary>
+ 新規登録共通パラメータ設定
+ </summary>
+ <param name="dr">DataRow</param>
+ <param name="prmList">パラメータ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.CreateSqlCommand(System.String,System.Data.SqlClient.SqlConnection)">
+ <summary>
+ コネクションオブジェクトに関連付けられたDBサーバーに対して
+ 有効なSqlCommandオブジェクトのインスタンスを取得する。
+ </summary>
+ <param name="strSql">SQL文</param>
+ <param name="con">SQLコネクション</param>
+ <returns>SqlCommandオブジェクト</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.GetLocalDate">
+ <summary>
+ 現在ServiceDataに登録されているシステム日付からローカルの日付(YYYYMMDD)を取得する。
+ </summary>
+ <returns></returns>
+ <remarks>ロケール設定で選択したタイムゾーンを使用する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.GetLocalTime">
+ <summary>
+ 現在ServiceDataに登録されているシステム時刻からローカルの時刻(HHMMSSmmm)を取得する。
+ </summary>
+ <returns></returns>
+ <remarks>ロケール設定で選択したタイムゾーンを使用する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.GetSystemDatetime">
+ <summary>
+ 現在ServiceDataに登録されているシステム日時からDateTimeを取得する。
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SetMessage(System.String,System.String[])">
+ <summary>
+ メッセージＩＤ・メッセージレベル・メッセージ文言をServiceDataに設定する。
+ </summary>
+ <param name="messageID">メッセージID</param>
+ <param name="replaceMessages"></param>
+ <remarks>引数のメッセージＩＤを元にメッセージ文言を作成し、ServiceDataクラスにメッセージＩＤ・メッセージレベル・メッセージ文言を設定する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SetMessage(System.String,System.String[],System.String,System.String)">
+ <summary>
+ メッセージＩＤ・メッセージレベル・メッセージ文言・メッセージ表示エリア・ナビエリアをServiceDataに設定する。
+ </summary>
+ <param name="messageID">メッセージID</param>
+ <param name="replaceMessages"></param>
+ <param name="messageArea"></param>
+ <param name="naviArea"></param>
+ <remarks>引数のメッセージＩＤを元にメッセージ文言を作成し、
+ ServiceDataクラスにメッセージＩＤ・メッセージレベル・メッセージ文言・メッセージ表示エリア・ナビエリアを設定する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectKbnCOMData(System.Data.DataSet)">
+ <summary>
+ (COM)区分マスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>区分マスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectKbnData(System.Data.DataSet)">
+ <summary>
+ 区分マスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>区分マスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectKbnLMData(System.Data.DataSet)">
+ <summary>
+ (LM)区分マスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>区分マスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectS_MessageData(System.Data.DataSet)">
+ <summary>
+ メッセージマスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>メッセージマスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectMArrgData(System.Data.DataSet)">
+ <summary>
+ 手配マスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>手配マスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectMOfficeData(System.Data.DataSet)">
+ <summary>
+ OFFICEマスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>OFFICEマスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectMOfficeGroupData(System.Data.DataSet)">
+ <summary>
+ オフィスグループマスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>オフィスグループマスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectMOpeDateData(System.Data.DataSet)">
+ <summary>
+ 稼働日制御マスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>稼働日制御マスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectMPrtData(System.Data.DataSet)">
+ <summary>
+ 帳票マスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>帳票マスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectMPrtCntData(System.Data.DataSet)">
+ <summary>
+ 帳票制御マスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>帳票マスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectMFileCntData(System.Data.DataSet)">
+ <summary>
+ 添付ファイル制御マスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>添付ファイル制御マスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectMLawNFData(System.Data.DataSet)">
+ <summary>
+ (NF)適用法規マスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>(NF)適用法規マスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectMLawMSTData(System.Data.DataSet)">
+ <summary>
+ (MST)適用法規マスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>(NF)適用法規マスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectMNrsBrLMData(System.Data.DataSet)">
+ <summary>
+ (LM)M_NRS_BRマスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>(LM)M_NRS_BRマスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectMGoodsNFData(System.Data.DataSet)">
+ <summary>
+ (NF)商品マスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>(NF)商品マスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectMCompCOMData(System.Data.DataSet)">
+ <summary>
+ (COM)会社マスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>(COM)会社マスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectSUserData(System.Data.DataSet)">
+ <summary>
+ ユーザマスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>ユーザマスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectSWebOutUserData(System.Data.DataSet)">
+ <summary>
+ 外部WEBユーザマスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>外部WEBユーザマスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectMCompData(System.Data.DataSet)">
+ <summary>
+ 会社マスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>会社マスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectMGoodsData(System.Data.DataSet)">
+ <summary>
+ 商品マスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>商品マスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectMCountryData(System.Data.DataSet)">
+ <summary>
+ 国マスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>国マスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectMCityData(System.Data.DataSet)">
+ <summary>
+ 都市マスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>都市マスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectMCitySubData(System.Data.DataSet)">
+ <summary>
+ 都市サブマスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>都市サブマスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectMRegionData(System.Data.DataSet)">
+ <summary>
+ 地域マスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>地域マスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectMTankCOMData(System.Data.DataSet)">
+ <summary>
+ (COM)タンクマスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>(COM)タンクマスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectMJdeAccountData(System.Data.DataSet)">
+ <summary>
+ 請求支払マスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>請求支払マスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectMCurrData(System.Data.DataSet)">
+ <summary>
+ 通貨マスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>通貨マスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectMCostData(System.Data.DataSet)">
+ <summary>
+ コストマスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>コストマスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectMGuidelineData(System.Data.DataSet)">
+ <summary>
+ 取扱指針マスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>取扱指針マスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectMHolLMData(System.Data.DataSet)">
+ <summary>
+ LM_MST..M_HOLデータ取得（DAC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectMChargeData(System.Data.DataSet)">
+ <summary>
+ 諸料金マスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>諸料金マスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectMImdgData(System.Data.DataSet)">
+ <summary>
+ IMDGマスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>IMDGマスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectMTestCOMData(System.Data.DataSet)">
+ <summary>
+ (COM)検定マスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>(COM)検定マスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectMLawData(System.Data.DataSet)">
+ <summary>
+ 適用法規マスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>適用法規マスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectMContcostData(System.Data.DataSet)">
+ <summary>
+ コンテナコストマスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>コンテナコストマスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectMBankData(System.Data.DataSet)">
+ <summary>
+ 銀行マスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>銀行マスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectMBuData(System.Data.DataSet)">
+ <summary>
+ BUマスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>BUマスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectMJdeKmkData(System.Data.DataSet)">
+ <summary>
+ JDE科目マスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectMKmkData(System.Data.DataSet)">
+ <summary>
+ 科目マスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>科目マスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectMTaxData(System.Data.DataSet)">
+ <summary>
+ 税マスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>税マスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectMTaxDispData(System.Data.DataSet)">
+ <summary>
+ 税表示マスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>税表示マスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectMTaxDetailData(System.Data.DataSet)">
+ <summary>
+ 税マスタ明細情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>税マスタ明細情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectMFileCOMData(System.Data.DataSet)">
+ <summary>
+ (COM)添付ファイルマスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>添付ファイルマスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectSBkgChangeGLData(System.Data.DataSet)">
+ <summary>
+ (GL)ブッキング変更通知テーブル情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>ブッキング変更通知テーブル情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectMPrtHeaderData(System.Data.DataSet)">
+ <summary>
+ 帳票ヘッダー情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>帳票ヘッダー情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectMCoverData(System.Data.DataSet)">
+ <summary>
+ カバーマスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>カバーマスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectMCommentData(System.Data.DataSet)">
+ <summary>
+ コメントマスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>コメントマスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectMWebCustData(System.Data.DataSet)">
+ <summary>
+ 外部用荷主マスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>外部用荷主マスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectMWebKenHaisoData(System.Data.DataSet)">
+ <summary>
+ MST_DB..M_WEB_KEN_HAISOデータ取得（DAC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectSMailTplData(System.Data.DataSet)">
+ <summary>
+ メール送信文言マスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>メール送信文言マスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectSRscConvData(System.Data.DataSet)">
+ <summary>
+ リソース変換マスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>リソース変換マスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectSPrtLogKeySeq(System.Data.DataSet)">
+ <summary>
+ 帳票ログキーシーケンス取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>帳票ログキーシーケンス取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectIntegrateMSegmentData(System.Data.DataSet)">
+ <summary>
+ セグメントマスタ（統合）情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectIntegrateMAccData(System.Data.DataSet)">
+ <summary>
+ ACCマスタ（統合）情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.GetKbnCOMDataTable(System.String,System.String,System.String)">
+ <summary>
+ (COM)区分データテーブル情報取得（DAC）
+ </summary>
+ <param name="grpCode">区分分類コード</param>
+ <param name="code">区分コード</param>
+ <param name="whereString"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.GetKbnDataTable(System.String,System.String,System.String,System.String)">
+ <summary>
+ 区分データテーブル情報取得（DAC）
+ </summary>
+ <param name="grpCode">区分分類コード</param>
+ <param name="code">区分コード</param>
+ <param name="lang">メッセージ言語</param>
+ <param name="whereString"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.GetKbnLMDataTable(System.String,System.String,System.String)">
+ <summary>
+ (LM)区分データテーブル情報取得（DAC）(キャッシュから取得)
+ </summary>
+ <param name="grpCode">区分分類コード</param>
+ <param name="code">区分コード</param>
+ <param name="whereString"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.GetLMDatabaseName(System.String,Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.LMDBKbn)">
+ <summary>
+ LM_MSTの区分マスタ(GROUP_CD=D003)のデータベース名称を取得します。
+ </summary>
+ <param name="nrsBrCd">営業所コード</param>
+ <param name="kbn">Database種別（区分マスタKBN_NM3～5の列番号）</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.InsertZSystemData(System.Data.DataSet)">
+ <summary>
+ システム情報(Z_SYSTEM)登録
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>データセット</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectZSystemData(System.Data.DataSet)">
+ <summary>
+ システム情報(Z_SYSTEM)取得
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>データセット</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectZSystemJoinWebOutUserData(System.Data.DataSet)">
+ <summary>
+ システム情報(Z_SYSTEM)取得
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>データセット</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.InsertSPrtLogData(System.Data.DataSet)">
+ <summary>
+ 帳票ログ(S_PRT_LOG)登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectSPrtLogData(System.Data.DataSet)">
+ <summary>
+ 帳票ログ(S_PRT_LOG)取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.GetXlsData(System.Data.DataSet)">
+ <summary>
+ XLS情報取得（DAC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.GetUserDataSet(System.Data.DataSet)">
+ <summary>
+ USER_IDでS_USERデータを検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>ユーザーマスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.UpdatePasswordDate(System.Data.DataSet)">
+ <summary>
+ パスワード期限更新
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.ChangePassword(System.Data.DataSet)">
+ <summary>
+ パスワード変更
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.ChangeLocale(System.Data.DataSet)">
+ <summary>
+ ロケール変更
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.UpdateUserInfo(System.Data.DataSet,System.Boolean,System.Boolean)">
+ <summary>
+ ログイン情報更新
+ </summary>
+ <param name="ds">データセット</param>
+ <param name="isChangePassword">パスワードを変更するか否か</param>
+ <param name="isChangeLocale"></param>
+ <returns>UPDATE実施行数</returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.GetWebOutUserDataSet(System.Data.DataSet)">
+ <summary>
+ USER_IDで外部WEBログインユーザデータを取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.UpdatePasswordDateWebOut(System.Data.DataSet)">
+ <summary>
+ パスワード期限更新
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.ChangePasswordWebOut(System.Data.DataSet)">
+ <summary>
+ パスワード変更
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.InitPasswordWebOut(System.Data.DataSet)">
+ <summary>
+ パスワード初期化
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.ChangeLocaleWebOut(System.Data.DataSet)">
+ <summary>
+ ロケール変更
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.ChangeIniKiyakuWebOut(System.Data.DataSet)">
+ <summary>
+ 初回規約表示フラグ更新(外部WEBログインユーザ)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.UpdateWebOutUserInfo(System.Data.DataSet,System.Boolean,System.Boolean,System.Boolean)">
+ <summary>
+ ログイン情報更新
+ </summary>
+ <param name="ds">データセット</param>
+ <param name="isChangePassword">パスワードを変更するか否か</param>
+ <param name="isChangeLocale"></param>
+ <param name="isChangeIniKiyaku"></param>
+ <returns>UPDATE実施行数</returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.GetTrackingData(System.Data.DataSet)">
+ <summary>
+ トラッキングデータ取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SetTrackingConditionSQL">
+ <summary>
+ トラッキング用条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.GetSearchTextParameter(System.Data.DataSet,System.Collections.Generic.List{System.String},System.Collections.ArrayList)">
+ <summary>
+ 条件文・パラメータ設定モジュール(検索用)
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="column">検索項目</param>
+ <param name="sqlPrmAry">SQLパラメータ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.GetLoginOfficeArrgParameter(System.Data.DataSet,System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String})">
+ <summary>
+ ログイン情報に紐づくOffice,手配先を検索条件へ設定する
+ </summary>
+ <param name="ds"></param>
+ <param name="officeConditionLst"></param>
+ <param name="arrgConditionLst"></param>
+ <returns>whereStr</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.GetLoginOfficeParameter(System.Data.DataSet,System.Collections.Generic.List{System.String})">
+ <summary>
+ ログイン情報に紐づくOfficeを検索条件へ設定する
+ </summary>
+ <param name="ds"></param>
+ <param name="officeConditionLst"></param>
+ <returns>whereOffice</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.GetLoginArrgParameter(System.Data.DataSet,System.Collections.Generic.List{System.String})">
+ <summary>
+ ログイン情報に紐づく手配先を検索条件へ設定する
+ </summary>
+ <param name="ds"></param>
+ <param name="arrgConditionLst"></param>
+ <returns>whereArrg</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SelectGridColData(System.Data.DataSet)">
+ <summary>
+ グリッドレイアウト情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>グリッドレイアウト情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.SaveGridColData(System.Data.DataSet)">
+ <summary>
+ グリッドレイアウト情報の更新
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.Base.DAC.GLBaseDAC.DeleteGridColData(System.Data.DataSet)">
+ <summary>
+ グリッドレイアウト情報の削除
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.GL.Base.GLServiceData">
+ <summary>
+ 拡張されたクライアント⇔サーバー間で授受する全データを格納したクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.Base.GLServiceData.TerminalID">
+ <summary>
+ 端末IDを格納するプロパティ
+ </summary>
+ <value>端末ID</value>
+ <returns>端末ID</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.Base.GLServiceData.UserID">
+ <summary>
+ ユーザーIDを格納するプロパティ
+ </summary>
+ <value>ユーザーID</value>
+ <returns>ユーザーID</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.GL.Base.GLServiceData.LogOperationMode">
+ <summary>
+ ログモードを格納するプロパティ
+ </summary>
+ <value>ユーザーID</value>
+ <returns>ユーザーID</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MAccDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MAccDS.INTEGRATE_M_ACCDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MAccDS.INTEGRATE_M_ACCRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MAccDS.INTEGRATE_M_ACCRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MArrgDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MArrgDS.M_ARRGDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MArrgDS.M_ARRGRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MArrgDS.M_ARRGRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MBankDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MBankDS.M_BANKDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MBankDS.M_BANKRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MBankDS.M_BANKRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MBuDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MBuDS.M_BUDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MBuDS.M_BURow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MBuDS.M_BURowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MChargeDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MChargeDS.M_CHARGEDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MChargeDS.M_CHARGERow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MChargeDS.M_CHARGERowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MCityDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MCityDS.M_CITYDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MCityDS.M_CITY_SUBDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MCityDS.M_CITYRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MCityDS.M_CITY_SUBRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MCityDS.M_CITYRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MCityDS.M_CITY_SUBRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MCommentDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MCommentDS.M_COMMENTDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MCommentDS.M_COMMENTRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MCommentDS.M_COMMENTRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MCompDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MCompDS.M_COMP_COMDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MCompDS.M_COMPDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MCompDS.M_COMP_COMRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MCompDS.M_COMPRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MCompDS.M_COMP_COMRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MCompDS.M_COMPRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MContcostDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MContcostDS.M_CONTCOSTDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MContcostDS.M_CONTCOSTRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MContcostDS.M_CONTCOSTRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MCostDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MCostDS.M_COSTDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MCostDS.M_COSTRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MCostDS.M_COSTRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MCountryDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MCountryDS.M_COUNTRYDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MCountryDS.M_COUNTRYRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MCountryDS.M_COUNTRYRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MCoverDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MCoverDS.M_COVERDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MCoverDS.M_COVERRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MCoverDS.M_COVERRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MCurrDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MCurrDS.M_CURRDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MCurrDS.M_CURRRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MCurrDS.M_CURRRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MFileCntDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MFileCntDS.M_FILE_CNTDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MFileCntDS.M_FILE_CNTRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MFileCntDS.M_FILE_CNTRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MFileDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MFileDS.M_FILE_COMDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MFileDS.M_FILE_COMRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MFileDS.M_FILE_COMRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MGoodsDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MGoodsDS.M_GOODSDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MGoodsDS.M_GOODS_NFDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MGoodsDS.M_GOODSRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MGoodsDS.M_GOODS_NFRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MGoodsDS.M_GOODSRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MGoodsDS.M_GOODS_NFRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MGuidelineDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MGuidelineDS.M_GUIDELINEDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MGuidelineDS.M_GUIDELINERow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MGuidelineDS.M_GUIDELINERowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MHolDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MHolDS.M_HOL_LMDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MHolDS.M_HOL_LMRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MHolDS.M_HOL_LMRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MImdgDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MImdgDS.M_IMDGDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MImdgDS.M_IMDGRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MImdgDS.M_IMDGRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MJdeAccountDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MJdeAccountDS.M_JDE_ACCOUNTDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MJdeAccountDS.M_JDE_ACCOUNTRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MJdeAccountDS.M_JDE_ACCOUNTRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MJdeKmkDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MJdeKmkDS.M_JDEKMKDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MJdeKmkDS.M_JDEKMKRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MJdeKmkDS.M_JDEKMKRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MKmkDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MKmkDS.M_KMKDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MKmkDS.M_KMKRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MKmkDS.M_KMKRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MLawDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MLawDS.M_LAWDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MLawDS.M_LAW_NFDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MLawDS.M_LAW_MSTDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MLawDS.M_LAWRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MLawDS.M_LAW_NFRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MLawDS.M_LAW_MSTRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MLawDS.M_LAWRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MLawDS.M_LAW_NFRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MLawDS.M_LAW_MSTRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MNrsBrDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MNrsBrDS.M_NRS_BR_LMDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MNrsBrDS.M_NRS_BR_LMRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MNrsBrDS.M_NRS_BR_LMRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MOfficeDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MOfficeDS.M_OFFICEDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MOfficeDS.M_OFFICERow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MOfficeDS.M_OFFICERowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MOfficeGroupDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MOfficeGroupDS.M_OFFICE_GROUPDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MOfficeGroupDS.M_OFFICE_GROUPRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MOfficeGroupDS.M_OFFICE_GROUPRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MOpeDateDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MOpeDateDS.M_OPE_DATEDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MOpeDateDS.M_OPE_DATERow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MOpeDateDS.M_OPE_DATERowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MPrtCntDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MPrtCntDS.M_PRT_CNTDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MPrtCntDS.M_PRT_CNTRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MPrtCntDS.M_PRT_CNTRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MPrtDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MPrtDS.M_PRTDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MPrtDS.M_PRT_HEADERDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MPrtDS.M_PRTRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MPrtDS.M_PRT_HEADERRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MPrtDS.M_PRTRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MPrtDS.M_PRT_HEADERRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MRegionDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MRegionDS.M_REGIONDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MRegionDS.M_REGIONRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MRegionDS.M_REGIONRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MSegmentDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MSegmentDS.INTEGRATE_M_SEGMENTDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MSegmentDS.INTEGRATE_M_SEGMENTRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MSegmentDS.INTEGRATE_M_SEGMENTRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MTankDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MTankDS.M_TANK_COMDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MTankDS.M_TANK_COMRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MTankDS.M_TANK_COMRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MTaxDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MTaxDS.M_TAXDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MTaxDS.M_TAX_DISPDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MTaxDS.M_TAXRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MTaxDS.M_TAX_DISPRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MTaxDS.M_TAXRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MTaxDS.M_TAX_DISPRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MTestDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MTestDS.M_TEST_COMDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MTestDS.M_TEST_COMRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MTestDS.M_TEST_COMRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MWebCustDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MWebCustDS.M_WEB_CUSTDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MWebCustDS.M_WEB_CUSTRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MWebCustDS.M_WEB_CUSTRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MWebKenHaisoDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MWebKenHaisoDS.M_WEB_KEN_HAISODataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MWebKenHaisoDS.M_WEB_KEN_HAISORow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.MWebKenHaisoDS.M_WEB_KEN_HAISORowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.RdPrevInfoDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.RdPrevInfoDS.PREV_INFODataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.RdPrevInfoDS.PREV_INFORow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.RdPrevInfoDS.PREV_INFORowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.SBkgChangeDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.SBkgChangeDS.S_BKG_CHANGEDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.SBkgChangeDS.S_BKG_CHANGERow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.SBkgChangeDS.S_BKG_CHANGERowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.SearchTextDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.SearchTextDS.SEARCH_TEXT_TABLEDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.SearchTextDS.SEARCH_TEXT_TABLERow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.SearchTextDS.SEARCH_TEXT_TABLERowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.SGridDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.SGridDS.S_GRIDDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.SGridDS.S_GRIDRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.SGridDS.S_GRIDRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.SMailTplDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.SMailTplDS.S_MAIL_TPLDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.SMailTplDS.S_MAIL_TPLRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.SMailTplDS.S_MAIL_TPLRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.SPrtLogDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.SPrtLogDS.S_PRT_LOGDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.SPrtLogDS.S_PRT_LOGRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.SPrtLogDS.S_PRT_LOGRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.SRscDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.SRscDS.S_RESOURCE_CONVDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.SRscDS.S_RESOURCE_CONVRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.SRscDS.S_RESOURCE_CONVRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.SXlsDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.SXlsDS.S_XLSDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.SXlsDS.RTN_INFODataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.SXlsDS.S_XLSRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.SXlsDS.RTN_INFORow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.SXlsDS.S_XLSRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.SXlsDS.RTN_INFORowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.WebOutUserInfoDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.WebOutUserInfoDS.S_WEB_OUT_USERDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.WebOutUserInfoDS.S_WEB_OUT_USER_DETAILSDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.WebOutUserInfoDS.S_WEB_OUT_USER_COMP_DETAILSDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.WebOutUserInfoDS.S_WEB_OUT_HIDDEN_MENUDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.WebOutUserInfoDS.TRACKING_SEARCH_INDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.WebOutUserInfoDS.TRACKING_SEARCH_OUTDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.WebOutUserInfoDS.S_WEB_OUT_USERRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.WebOutUserInfoDS.S_WEB_OUT_USER_DETAILSRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.WebOutUserInfoDS.S_WEB_OUT_USER_COMP_DETAILSRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.WebOutUserInfoDS.S_WEB_OUT_HIDDEN_MENURow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.WebOutUserInfoDS.TRACKING_SEARCH_INRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.WebOutUserInfoDS.TRACKING_SEARCH_OUTRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.WebOutUserInfoDS.S_WEB_OUT_USERRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.WebOutUserInfoDS.S_WEB_OUT_USER_DETAILSRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.WebOutUserInfoDS.S_WEB_OUT_USER_COMP_DETAILSRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.WebOutUserInfoDS.S_WEB_OUT_HIDDEN_MENURowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.WebOutUserInfoDS.TRACKING_SEARCH_INRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.WebOutUserInfoDS.TRACKING_SEARCH_OUTRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.UserInfoDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.UserInfoDS.S_USERDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.UserInfoDS.M_USER_OFFICEDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.UserInfoDS.M_USER_ARRGDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.UserInfoDS.Z_SYSTEMDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.UserInfoDS.S_USERRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.UserInfoDS.M_USER_OFFICERow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.UserInfoDS.M_USER_ARRGRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.UserInfoDS.Z_SYSTEMRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.UserInfoDS.S_USERRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.UserInfoDS.M_USER_OFFICERowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.UserInfoDS.M_USER_ARRGRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.UserInfoDS.Z_SYSTEMRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.ZKbnDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.ZKbnDS.Z_KBNDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.ZKbnDS.Z_KBN_COMDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.ZKbnDS.Z_KBN_LMDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.ZKbnDS.Z_KBNRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.ZKbnDS.Z_KBN_COMRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.ZKbnDS.Z_KBN_LMRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.ZKbnDS.Z_KBNRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.ZKbnDS.Z_KBN_COMRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.ZKbnDS.Z_KBN_LMRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.ZSystemDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.ZSystemDS.Z_SYSTEMDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.ZSystemDS.Z_SYSTEMRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.ZSystemDS.Z_SYSTEMRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.GL.SessionTimeoutException">
+ <summary>
+ セッションタイムアウト
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.SessionTimeoutException.#ctor">
+ <summary>
+ コンストラクタ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.SessionTimeoutException.#ctor(System.String)">
+ <summary>
+ コンストラクタ
+ </summary>
+ <param name="message"></param>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

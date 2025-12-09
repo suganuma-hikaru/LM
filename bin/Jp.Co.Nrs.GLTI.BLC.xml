@@ -1,0 +1,258 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.GLTI.BLC
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.GL.BLC.My.Resources.Resources">
+<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.GL.BLC.My.Resources.Resources.ResourceManager">
+<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.GL.BLC.My.Resources.Resources.Culture">
+<summary>
+  すべてについて、現在のスレッドの CurrentUICulture プロパティをオーバーライドします
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLTI0100BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLTI0100BLC.SearchResultList(System.Data.DataSet)">
+ <summary>
+ Tank Inventory取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLTI0100BLC.SearchContInfo(System.Data.DataSet)">
+ <summary>
+ Container取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLTI0300BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLTI0300BLC.SearchContNo(System.Data.DataSet)">
+ <summary>
+ ContNo取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLTI0300BLC.SearchData(System.Data.DataSet)">
+ <summary>
+ Reminder情報取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLTI0300BLC.SearchMaxSeqData(System.Data.DataSet)">
+ <summary>
+ MaxSeq情報取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLTI0300BLC.IsHaitaChkContRem(System.Data.DataSet)">
+ <summary>
+ 排他処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLTI0300BLC.IsDuplicationChkContRem(System.Data.DataSet)">
+ <summary>
+ 重複チェック処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLTI0300BLC.DeleteContRemData(System.Data.DataSet)">
+ <summary>
+ 削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLTI0300BLC.InsertContRemData(System.Data.DataSet)">
+ <summary>
+ 登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLTI0300BLC.UpdateContRemData(System.Data.DataSet)">
+ <summary>
+ 更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLTI0200BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLTI0200BLC.SearchData(System.Data.DataSet)">
+ <summary>
+ タンク情報取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLTI0200BLC.SearchDataForMst(System.Data.DataSet)">
+ <summary>
+ タンク情報取得処理(マスタ画面用)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLTI0200BLC.IsHaitaChkCont(System.Data.DataSet)">
+ <summary>
+ 排他制御処理(C_CONT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLTI0200BLC.IsHaitaChkBasis(System.Data.DataSet)">
+ <summary>
+ 排他制御処理(C_BASIS)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLTI0200BLC.IsHaitaChkLastCont(System.Data.DataSet)">
+ <summary>
+ 排他制御処理(C_CONT)(前回)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLTI0200BLC.IsHaitaChkLastBasis(System.Data.DataSet)">
+ <summary>
+ 排他制御処理(C_BASIS)(前回)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLTI0200BLC.UpdateContData(System.Data.DataSet)">
+ <summary>
+ 更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLTI0200BLC.UpdateConfirmContData(System.Data.DataSet)">
+ <summary>
+ Confirm処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLTI0200BLC.UpdateRemarkData(System.Data.DataSet)">
+ <summary>
+ Remark更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLTI0200BLC.UpdateCancelContData(System.Data.DataSet)">
+ <summary>
+ Cancel処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLTI0200BLC.UpdateRollBackContData(System.Data.DataSet)">
+ <summary>
+ RollBack処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLTI0200BLC.UpdateBkgContFromTankMaster(System.Data.DataSet)">
+ <summary>
+ C_CONT更新(コンテナ追加時)(新規登録コンテナを対象としてタンクマスタの値で更新)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLTI0200BLC.DeleteContData(System.Data.DataSet)">
+ <summary>
+ 削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLTI0200BLC.GetNewJobNo(System.Data.DataSet)">
+ <summary>
+ 新規Job No採番処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLTI0200BLC.UpdateZSYSTEMData(System.Data.DataSet,System.String,System.String)">
+ <summary>
+ Z_SYSTEM処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="jobNo">jobNo</param>
+ <param name="procKbn">procKbn</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLTI0200BLC.setGLZ8900INDS(System.Data.DataSet@,System.String,System.String)">
+ <summary>
+ GLZ8900INの設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLTI5010BLC._Dac">
+ <summary>
+ 使用するクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLTI5010BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 在庫表
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLTI5010BLC.EditCsvData(System.Data.DataSet)">
+ <summary>
+ csv用データテーブル編集処理
+ </summary>
+ <param name="ds">Dataset</param>
+ <returns>Dataset</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLTI5010BLC.EditConcatData(System.String,System.String,System.String)">
+ <summary>
+ 2つの値を連結して設定
+ </summary>
+ <param name="value1">値1</param>
+ <param name="value2">値2</param>
+ <returns>編集後の値</returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

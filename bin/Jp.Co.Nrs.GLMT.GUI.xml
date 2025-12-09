@@ -1,0 +1,148 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.GLMT.GUI
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.GL.GUI.My.Resources.Resources">
+<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.GL.GUI.My.Resources.Resources.ResourceManager">
+<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.GL.GUI.My.Resources.Resources.Culture">
+<summary>
+  すべてについて、現在のスレッドの CurrentUICulture プロパティをオーバーライドします
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.Controllers.GLMT0100Controller.#ctor">
+ <summary>
+ 通常用コンストラクタ
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.Controllers.GLMT0100Controller.SetListJson(Jp.Co.Nrs.GL.GUI.GLMT0100Models)">
+ <summary>
+ pqGridを使用する配列のJson化・初期化設定
+ </summary>
+ <param name="outMdl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.Controllers.GLMT0100Controller.SetJsonList(Jp.Co.Nrs.GL.GUI.GLMT0100Models)">
+ <summary>
+ jsonをListに変換する
+ </summary>
+ <param name="outMdl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLMT0100WS.#ctor(Jp.Co.Nrs.GL.GUI.Controllers.GLMT0100Controller)">
+ <summary>
+ 指定された区分名を格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLMT0100WS.SetSearchConditions(System.Data.DataSet,Jp.Co.Nrs.GL.GUI.GLMT0100Models)">
+ <summary>
+ 検索条件設定
+ </summary>
+ <param name="ds"></param>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLMT0100WS.SetResultListInfo(System.Data.DataSet,Jp.Co.Nrs.GL.GUI.GLMT0100Models@,System.Int32,System.Int32)">
+ <summary>
+ 検索結果設定
+ </summary>
+ <param name="ds"></param>
+ <param name="outMdl"></param>
+ <param name="resultCnt"></param>
+ <param name="dispLimitCnt"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLMT0100WS.IsErrSearchDataCheck(Jp.Co.Nrs.GL.GUI.GLMT0100Models@,Jp.Co.Nrs.GL.GUI.GLMT0100Models)">
+ <summary>
+ 入力チェック
+ </summary>
+ <param name="outMdl"></param>
+ <param name="inMdl"></param>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLMT0100WS.SetInitCommon(Jp.Co.Nrs.GL.GUI.GLMT0100Models@)">
+ <summary>
+ 初期共通設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLMT0100WS.SetMsgListToOutModel(Jp.Co.Nrs.GL.GUI.GLMT0100Models@)">
+ <summary>
+ 使用メッセージリストをoutMdlに設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLMT0100WS.SetInitControl(Jp.Co.Nrs.GL.GUI.GLMT0100Models@)">
+ <summary>
+ コントロール設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLMT0100WS.SetTempMdlKey(Jp.Co.Nrs.GL.GUI.GLMT0100Models@)">
+ <summary>
+ TempMdlKey設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLMT0100WS.SetInitData(Jp.Co.Nrs.GL.GUI.GLMT0100Models@)">
+ <summary>
+ 初期値設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLMT0100WS.CreateViewModelGLMT0100(Jp.Co.Nrs.GL.GUI.GLMT0100Models)">
+ <summary>
+ ビューの作成
+ </summary>
+ <param name="mdl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLMT0100WS.SetEventNm(Jp.Co.Nrs.GL.GUI.GLMT0100Models@,System.String)">
+ <summary>
+ イベント名設定
+ </summary>
+ <param name="outMdl"></param>
+ <param name="eventNm"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLMT0100WS.GetCmbOffice(System.String)">
+ <summary>
+ Combo作成処理(オフィスマスタ)
+ </summary>
+ <param name="type">Comboの種類</param>
+ <returns>officeDic: comboの値</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLMT0100WS.GetDayBefAlc(Jp.Co.Nrs.GL.GUI.GLMT0100Models,Jp.Co.Nrs.GL.GUI.GLMT0100ResultListItem)">
+ <summary>
+ DAYS_BEFORE_ALLOCATION作成処理
+ </summary>
+ <param name="outMdl">共通処理使用用</param>
+ <param name="resMdl">検索結果1行</param>
+ <returns>値</returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

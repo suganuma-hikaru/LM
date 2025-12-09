@@ -1,0 +1,2784 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.GLI.DAC
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.GL.DAC.My.Resources.Resources">
+<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.GL.DAC.My.Resources.Resources.ResourceManager">
+<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.GL.DAC.My.Resources.Resources.Culture">
+<summary>
+  すべてについて、現在のスレッドの CurrentUICulture プロパティをオーバーライドします
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI0100DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI0100DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI0100DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0100DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0100DAC.isHaitaFlgOn(System.Data.DataSet)">
+ <summary>
+ 排他フラグON
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0100DAC.isHaitaFlgOff(System.Data.DataSet)">
+ <summary>
+ 排他フラグOFF
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0100DAC.SetSysCommonParameter">
+ <summary>
+ システム共通共通パラメータ(削除フラグを除く）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI0200DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI0200DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI0200DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0200DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0200DAC.CheckResultCount(System.Data.DataSet)">
+ <summary>
+ 取得行数チェック
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0200DAC.SearchData(System.Data.DataSet)">
+ <summary>
+ 検索処理
+ </summary>
+ <param name="ds"></param>
+ <remarks>初期表示時・検索実行時</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0200DAC.SetSearchCondition">
+ <summary>
+ 検索条件設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI0300DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI0300DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI0300DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0300DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0300DAC.SelectBasis(System.Data.DataSet)">
+ <summary>
+ Basis取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0300DAC.SelectImp(System.Data.DataSet)">
+ <summary>
+ Import Data(Grid)取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0300DAC.SelectCrr(System.Data.DataSet)">
+ <summary>
+ Correlative Data(Grid)取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0300DAC.SearchCrrMaxSeq(System.Data.DataSet)">
+ <summary>
+ 最大SEQ取得処理(COST)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0300DAC.SearchRevMaxSeq(System.Data.DataSet)">
+ <summary>
+ 最大SEQ取得処理(REV)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0300DAC.SelectCRevAutoRelation(System.Data.DataSet)">
+ <summary>
+ 請求明細作成(自動紐づけ)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0300DAC.SelectCCostAutoRelation(System.Data.DataSet)">
+ <summary>
+ 支払明細作成(自動紐づけ)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0300DAC.InsertFCostHeaderCreate(System.Data.DataSet)">
+ <summary>
+ F_COST_HEADER処理(Create)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0300DAC.InsertCrrNvoCreate(System.Data.DataSet)">
+ <summary>
+ CRR(NVO)登録処理(Create)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0300DAC.InsertCrrFwdCreate(System.Data.DataSet)">
+ <summary>
+ CRR(FWD)登録処理(Create)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0300DAC.InsertRevAutoRelation(System.Data.DataSet)">
+ <summary>
+ C_REV登録処理(自動紐づけ)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>C_REV登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0300DAC.InsertCostAutoRelation(System.Data.DataSet)">
+ <summary>
+ C_COST登録処理(自動紐づけ)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>C_COST登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0300DAC.UpdateHeader(System.Data.DataSet)">
+ <summary>
+ HEADER更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0300DAC.UpdateHeaderSysCom(System.Data.DataSet)">
+ <summary>
+ HEADER更新処理(システム共通項目)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0300DAC.UpdateImp(System.Data.DataSet)">
+ <summary>
+ Import Data更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0300DAC.UpdateRelationImp(System.Data.DataSet)">
+ <summary>
+ Import Data更新処理(自動紐づけ)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0300DAC.UpdateHeaderCreate(System.Data.DataSet)">
+ <summary>
+ HEADER更新処理(Create)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0300DAC.UpdateBasisCreate(System.Data.DataSet)">
+ <summary>
+ BASIS更新処理(Create)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0300DAC.UpdateImpCreate(System.Data.DataSet)">
+ <summary>
+ Import Data更新処理(Create)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0300DAC.UpdateCrrNvoCreate(System.Data.DataSet)">
+ <summary>
+ CRR(NVO)更新処理(Create)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0300DAC.UpdateCrrFwdCreate(System.Data.DataSet)">
+ <summary>
+ CRR(FWD)更新処理(Create)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0300DAC.UpdateImpJobNo(System.Data.DataSet)">
+ <summary>
+ Import Data更新処理(Job No)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>存在チェックで既存データに紐づきがないImport DataのJob Noをクリアする</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0300DAC.SearchOfficeAndNrs(System.Data.DataSet)">
+ <summary>
+ 組み合わせチェック(Control Office＆NRS Comp)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0300DAC.SearchMJdeAccuout1(System.Data.DataSet)">
+ <summary>
+ マスタ存在チェック(Payee Cd)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0300DAC.SearchMJdeAccuout2(System.Data.DataSet)">
+ <summary>
+ マスタ存在チェック(Payee Cd＆Curr)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0300DAC.SearchJobCont(System.Data.DataSet)">
+ <summary>
+ 存在チェック(SearchJobCont)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0300DAC.SearchJobContAutoRelation(System.Data.DataSet)">
+ <summary>
+ 存在チェック(SearchJobCont)(自動紐づけ)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0300DAC.SelectChkIsRelation(System.Data.DataSet)">
+ <summary>
+ 重複チェック(自動紐づけ)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0300DAC.SearchIOutHeader(System.Data.DataSet)">
+ <summary>
+ 不正確認(Invoiced Payee Cd＆Inv. No.)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0300DAC.isHaitaChkHeader(System.Data.DataSet)">
+ <summary>
+ 排他チェック（支払）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0300DAC.isHaitaChkBasis(System.Data.DataSet)">
+ <summary>
+ 排他チェック（支払）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0300DAC.UpdateHeaderSearchText(System.Data.DataSet)">
+ <summary>
+ HEADER更新処理(SEARCH_TEXT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0300DAC.UpdateImpSearchText(System.Data.DataSet)">
+ <summary>
+ IMP更新処理(SEARCH_TEXT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0300DAC.UpdateFCostHeaderSearchText(System.Data.DataSet)">
+ <summary>
+ F_COST_HEADER更新処理(SEARCH_TEXT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0300DAC.SetSQLSelectCrrWhere">
+ <summary>
+ 条件文・パラメータ設定モジュール（Crr）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0300DAC.SetSelectCostMaxSeqWhere">
+ <summary>
+ COST_MAX_SEQ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0300DAC.SetSelectRevMaxSeqWhere">
+ <summary>
+ REV_MAX_SEQ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0300DAC.SetSelectIsRelationWhere(System.Data.DataSet)">
+ <summary>
+ 自動紐づけ重複チェック 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0300DAC.SetSysDelFlgOffParameter">
+ <summary>
+ 削除フラグ オフ パラメータ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0300DAC.SetOrdNoParameter(System.String)">
+ <summary>
+ データ取得時の共通パラメータ設定
+ </summary>
+ <param name="OrdNo">Order No</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0300DAC.SetStatusKbnParameter(System.String)">
+ <summary>
+ ステータス変更時の共通パラメータ設定
+ </summary>
+ <param name="statusKbn">Status Kbn</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0300DAC.SetHeaderDataInsUpdParameter(System.Data.DataRow)">
+ <summary>
+ HEADER登録・更新共通パラメータ
+ </summary>
+ <param name="conditionRow">HEADERのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0300DAC.SetImpDataInsUpdParameter(System.Data.DataRow)">
+ <summary>
+ IMP登録・更新共通パラメータ
+ </summary>
+ <param name="conditionRow">IMPのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0300DAC.SetImpRelationDataInsUpdParameter(System.Data.DataRow)">
+ <summary>
+ IMP登録・更新共通パラメータ(自動紐づけ)
+ </summary>
+ <param name="conditionRow">IMPのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0300DAC.SetHeaderCreateDataInsUpdParameter(System.Data.DataRow)">
+ <summary>
+ HEADER登録・更新共通パラメータ(Create)
+ </summary>
+ <param name="conditionRow">HEADERのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0300DAC.SetFCostHeaderDataCreateInsParameter(System.Data.DataRow)">
+ <summary>
+ F_COST_HEADER登録パラメータ(Create)
+ </summary>
+ <param name="conditionRow">HEADERのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0300DAC.SetBasisCreateDataInsUpdParameter(System.Data.DataRow)">
+ <summary>
+ BASIS登録・更新共通パラメータ(Create)
+ </summary>
+ <param name="conditionRow">HEADERのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0300DAC.SetImpCreateDataInsUpdParameter(System.Data.DataRow)">
+ <summary>
+ IMP登録・更新共通パラメータ(Create)
+ </summary>
+ <param name="conditionRow">HEADERのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0300DAC.SetCrrNvoCreateDataInsParameter(System.Data.DataRow,System.Data.DataRow)">
+ <summary>
+ CRR(NVO)登録パラメータ(Create)
+ </summary>
+ <param name="conditionRow">HEADERのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0300DAC.SetCrrNvoCreateDataUpdParameter(System.Data.DataRow,System.Data.DataRow)">
+ <summary>
+ CRR(NVO)更新パラメータ(Create)
+ </summary>
+ <param name="conditionRow">HEADERのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0300DAC.SetCrrFwdCreateDataInsParameter(System.Data.DataRow,System.Data.DataRow)">
+ <summary>
+ CRR(FWD)登録パラメータ(Create)
+ </summary>
+ <param name="conditionRow">HEADERのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0300DAC.SetCrrFwdCreateDataUpdParameter(System.Data.DataRow,System.Data.DataRow)">
+ <summary>
+ CRR(FWD)更新パラメータ(Create)
+ </summary>
+ <param name="conditionRow">HEADERのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0300DAC.SetRevAutoRelationDataParameter(System.Data.DataRow)">
+ <summary>
+ C_REVパラメータ設定(自動紐づけ)
+ </summary>
+ <param name="drow">データセット</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0300DAC.SetCostAutoRelationDataParameter(System.Data.DataRow)">
+ <summary>
+ C_COSTパラメータ設定(自動紐づけ)
+ </summary>
+ <param name="drow">データセット</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0300DAC.SetSysCommonParameter">
+ <summary>
+ システム共通共通パラメータ(削除フラグを除く）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0300DAC.DeleteHeader(System.Data.DataSet)">
+ <summary>
+ Header削除処理(ヘッダーボタンイベント)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>ユーザマスタ編集</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI0400DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI0400DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI0400DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0400DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0400DAC.CheckResultCount(System.Data.DataSet)">
+ <summary>
+ 取得行数チェック
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0400DAC.SearchData(System.Data.DataSet)">
+ <summary>
+ 検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0400DAC.SearchDataCancel(System.Data.DataSet)">
+ <summary>
+ 検索処理(Cancel)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0400DAC.UpdateData(System.Data.DataSet)">
+ <summary>
+ Update(Date)処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0400DAC.UpdatePayment(System.Data.DataSet)">
+ <summary>
+ Update(Payment)処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0400DAC.UpdateIJdeUp(System.Data.DataSet)">
+ <summary>
+ Update(Payment)処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0400DAC.UpdateCost(System.Data.DataSet)">
+ <summary>
+ Update(Payment)処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0400DAC.UpdateBasis(System.Data.DataSet)">
+ <summary>
+ Update(Basis)処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0400DAC.UpdateRevHeader(System.Data.DataSet)">
+ <summary>
+ Update(E_REV_HEADER)処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0400DAC.UpdateIJdeUpRev(System.Data.DataSet)">
+ <summary>
+ Update(I_JDE_UP)処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0400DAC.UpdateRev(System.Data.DataSet)">
+ <summary>
+ Update(C_REV)処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0400DAC.UpdateBasisRev(System.Data.DataSet)">
+ <summary>
+ Update(Basis)(Rev)処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0400DAC.UpdatePurchase(System.Data.DataSet)">
+ <summary>
+ Update(T_PURCHASE_ANALYSIS)処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0400DAC.SearchAkaden(System.Data.DataSet)">
+ <summary>
+ 赤伝票チェック処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0400DAC.SelectPrintInvoiceRev(System.Data.DataSet)">
+ <summary>
+ C_REV取得処理(PrintInvoice)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0400DAC.SelectPrintInvoiceCost(System.Data.DataSet)">
+ <summary>
+ C_COST取得処理(PrintInvoice)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0400DAC.UpdatePrintInvoiceHeader(System.Data.DataSet)">
+ <summary>
+ HEADER更新処理(PrintInvoice)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0400DAC.UpdatePrintInvoiceBasis(System.Data.DataSet)">
+ <summary>
+ BASIS更新処理(PrintInvoice)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0400DAC.UpdatePrintInvoiceRev(System.Data.DataSet)">
+ <summary>
+ REV更新処理(PrintInvoice)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0400DAC.UpdatePrintInvoiceCost(System.Data.DataSet)">
+ <summary>
+ COST更新処理(PrintInvoice)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0400DAC.UpdatePrintInvoiceHeaderSearchText(System.Data.DataSet)">
+ <summary>
+ HEADER更新処理(SEARCH_TEXT)(PrintInvoice)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0400DAC.isHaitaChkPrintInvoiceHeader(System.Data.DataSet)">
+ <summary>
+ 排他チェック処理（E_REV_HEADER）
+ </summary>
+ <param name="ds">DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0400DAC.isHaitaChkPrintInvoiceBasis(System.Data.DataSet)">
+ <summary>
+ 排他チェック処理（C_BASIS）
+ </summary>
+ <param name="ds">DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0400DAC.isHaitaChkPrintInvoiceCost(System.Data.DataSet)">
+ <summary>
+ 排他チェック処理（C_COST）
+ </summary>
+ <param name="ds">DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0400DAC.SelectPrintPaymentCost(System.Data.DataSet)">
+ <summary>
+ 印刷(PrintPayment)データ取得
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0400DAC.UpdatePrintPaymentHeader(System.Data.DataSet)">
+ <summary>
+ HEADER更新処理(PrintPayment)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0400DAC.UpdatePrintPaymentCost(System.Data.DataSet)">
+ <summary>
+ COST更新処理(PrintPayment)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0400DAC.UpdatePrintPaymentBasis(System.Data.DataSet)">
+ <summary>
+ BASIS更新処理(PrintPayment)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0400DAC.UpdatePrintPaymentHeaderSearchText(System.Data.DataSet)">
+ <summary>
+ HEADER更新処理(SEARCH_TEXT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0400DAC.isHaitaChkPrintPaymentHeader(System.Data.DataSet)">
+ <summary>
+ 排他チェック(F_COST_HEADER)
+ </summary>
+ <param name="ds">DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0400DAC.SetSQLSelectWherePay">
+ <summary>
+ 条件文・パラメータ設定モジュール（支払）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0400DAC.SetSQLSelectWhereInv">
+ <summary>
+ 条件文・パラメータ設定モジュール（請求）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0400DAC.SetSQLSelectWhereAka">
+ <summary>
+ 条件文・パラメータ設定モジュール（赤伝票チェック）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0400DAC.SetPrintInvoiceHeaderUpdParameter(System.Data.DataRow)">
+ <summary>
+ HEADER更新パラメータ(PrintInvoice)
+ </summary>
+ <param name="conditionRow">HEADERのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0400DAC.SetPrintInvoiceBasisUpdParameter(System.Data.DataRow)">
+ <summary>
+ BASIS更新パラメータ(PrintInvoice)
+ </summary>
+ <param name="conditionRow">HEADERのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0400DAC.SetPrintInvoiceRevUpdParameter(System.Data.DataRow)">
+ <summary>
+ REV更新パラメータ(PrintInvoice)
+ </summary>
+ <param name="conditionRow">REVのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0400DAC.SetPrintInvoiceCostUpdParameter(System.Data.DataRow)">
+ <summary>
+ COST更新パラメータ(PrintInvoice)
+ </summary>
+ <param name="conditionRow">COSTのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0400DAC.SetPrintPaymentCostNoParameter(System.Data.DataRow,System.Boolean)">
+ <summary>
+ COST_NO更新パラメータ(PrintPayment)
+ </summary>
+ <param name="conditionRow">COSTのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0400DAC.SetPrintPaymentJobNoParameter(System.Data.DataRow,System.Boolean)">
+ <summary>
+ JOB_NO更新パラメータ(PrintInvoice)
+ </summary>
+ <param name="conditionRow">COSTのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0400DAC.SetPrintPaymentBasisDataUpdParameter(System.Data.DataRow)">
+ <summary>
+ BASIS更新パラメータ(PrintInvoice)
+ </summary>
+ <param name="conditionRow">DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0400DAC.isHaitaChkInv(System.Data.DataSet)">
+ <summary>
+ 排他チェック（請求）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0400DAC.isHaitaChkPay(System.Data.DataSet)">
+ <summary>
+ 排他チェック（支払）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0400DAC.SetSysCommonParameter">
+ <summary>
+ システム共通共通パラメータ(削除フラグを除く）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0400DAC.CheckUser(System.Data.DataSet)">
+ <summary>
+ 過渡期対応　利用ユーザーチェック
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI0600DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI0600DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI0600DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0600DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0600DAC.SelectInitData(System.Data.DataSet)">
+ <summary>
+ 初期表示処理
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0600DAC.isDoubleProcChk(System.Data.DataSet)">
+ <summary>
+ 二重処理チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0600DAC.SelectSearchData(System.Data.DataSet)">
+ <summary>
+ 検索処理
+ </summary>
+ <param name="ds"></param>
+ <remarks>初期表示時・検索実行時</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0600DAC.UpdateRevHeader(System.Data.DataSet)">
+ <summary>
+ E_REV_HEADER
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0600DAC.UpdateRev(System.Data.DataSet)">
+ <summary>
+ C_REV
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0600DAC.InsertRevHeader(System.Data.DataSet)">
+ <summary>
+ E_REV_HEADER
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0600DAC.InsertRev(System.Data.DataSet)">
+ <summary>
+ C_REV
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0600DAC.isHaitaChkRevHeader(System.Data.DataSet)">
+ <summary>
+ E_REV_HEADERによる排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0600DAC.SetDataInsertParameter">
+ <summary>
+ データ登録時の共通パラメータ設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0600DAC.SetDataUpdateParameter">
+ <summary>
+ データ更新時の共通パラメータ設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0600DAC.SetInsertCommonDataParameter(System.Data.DataSet)">
+ <summary>
+データ登録時の共通パラメータ設定
+ </summary>
+ <param name="ds">データセット</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0600DAC.SetInsertRevHeaderDataParameter(System.Data.DataRow)">
+ <summary>
+ E_REV_HEADER共通パラメータ設定
+ </summary>
+ <param name="drow">データセット</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI0600DAC.SetInsertRevDataParameter(System.Data.DataRow)">
+ <summary>
+ C_REV共通パラメータ設定
+ </summary>
+ <param name="drow">データセット</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI5010DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI5010DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI5010DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI5010DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI5010DAC.SelectFuriData(System.Data.DataSet)">
+ <summary>
+ 振替処理依頼書　取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>振替処理依頼書 取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI5010DAC.SetSQLSelectWhere">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI5100DAC.SQL_SELECT_GAISAN_NY">
+ <summary>
+ 概算（NY） SELECT
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI5100DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI5100DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI5100DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI5100DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI5100DAC.SelectGaisanNY(System.Data.DataSet)">
+ <summary>
+ 概算データ(NY)取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks> 概算データ(NY)取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI5100DAC.SetGaisanKeySQL(System.Data.DataRow,System.Collections.ArrayList)">
+ <summary>
+ 概算テーブルアクセス共通パラメタ設定
+ </summary>
+ <param name="prmList">SQLパラメタ格納配列</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI5100DAC.CreateSqlCommandJDE(System.String,System.Data.SqlClient.SqlConnection)">
+ <summary>
+ コネクションオブジェクトに関連付けられたDBサーバーに対して
+ 有効なSqlCommandオブジェクトのインスタンスを取得する。
+ </summary>
+ <param name="strSql">SQL文</param>
+ <returns>SqlCommandオブジェクト</returns>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI5110DAC.SQL_SELECT_GAISAN_SG">
+ <summary>
+ 概算（SG） SELECT
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI5110DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI5110DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI5110DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI5110DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI5110DAC.SelectGaisanSG(System.Data.DataSet)">
+ <summary>
+ 概算データ(SG)取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks> 概算データ(SG)取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI5110DAC.SetGaisanKeySQL(System.Data.DataRow,System.Collections.ArrayList)">
+ <summary>
+ 概算テーブルアクセス共通パラメタ設定
+ </summary>
+ <param name="prmList">SQLパラメタ格納配列</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI5110DAC.CreateSqlCommandJDE(System.String,System.Data.SqlClient.SqlConnection)">
+ <summary>
+ コネクションオブジェクトに関連付けられたDBサーバーに対して
+ 有効なSqlCommandオブジェクトのインスタンスを取得する。
+ </summary>
+ <param name="strSql">SQL文</param>
+ <returns>SqlCommandオブジェクト</returns>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8100DAC.SQL_SELECT_INV_NO">
+ <summary>
+ INV_NOを取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8100DAC.SQL_SELECT_KIDS">
+ <summary>
+ Kidsデータ抽出
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8100DAC.SQL_INSERT_HEADER">
+ <summary>
+ Insert(I_OUT_HEADER)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8100DAC.SQL_INSERT_DETL">
+ <summary>
+ Insert(I_OUT_DETL)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8100DAC.SQL_UPDATE_DETL">
+ <summary>
+ I_OUT_DETL支払情報紐付け更新
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8100DAC.SQL_UPDATE_KIDS">
+ <summary>
+ D_WORK_BASIS(KIDS請求ヘッダ)更新
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8100DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8100DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8100DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8100DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8100DAC.SelectKidsInvNo(System.Data.DataSet)">
+ <summary>
+ Kidsデータ抽出処理(INV_NO)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>Kidsデータ検索SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8100DAC.SelectKidsData(System.Data.DataSet)">
+ <summary>
+ Kidsデータ抽出処理（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>Kidsデータ検索SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8100DAC.InsertDataHeader(System.Data.DataSet)">
+ <summary>
+ 外部データヘッダ新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>外部データヘッダ新規登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8100DAC.InsertDataDetail(System.Data.DataSet)">
+ <summary>
+ 外部データ明細新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>外部データ明細新規登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8100DAC.UpdateDataDetail(System.Data.DataSet)">
+ <summary>
+ 外部データ明細支払情報紐付け更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>Kids請求ヘッダテーブルの更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8100DAC.UpdateKidsData(System.Data.DataSet)">
+ <summary>
+ Kids取込完了データ更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>Kids請求ヘッダテーブルの更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8100DAC.UpdateHeaderSearchText(System.Data.DataSet)">
+ <summary>
+ HEADER更新処理(SEARCH_TEXT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8100DAC.UpdateDetlSearchText(System.Data.DataSet)">
+ <summary>
+ DTL更新処理(SEARCH_TEXT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8100DAC.SetInsertHeaderParameter">
+ <summary>
+ パラメータ設定新規登録用(I_OUT_HEADER)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8100DAC.SetInsertDetlParameter">
+ <summary>
+ パラメータ設定新規登録用(I_OUT_DETL)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8100DAC.SetSystemInsertParameter">
+ <summary>
+ パラメータ設定新規登録用(システム共通項目)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8100DAC.SetSystemKidsUpdateParameter">
+ <summary>
+ パラメータ設定更新登録用(システム共通項目)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8400DAC.SQL_SELECT_JDE_DATE_SELECT">
+ <summary>
+ JDEの場の日付 SELECT
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8400DAC.SQL_SELECT_W_JDEOUT_PAY_KEY">
+ <summary>
+ JDE支払連携対象ｷｰ(WK) SELECT - 重複処理チェック用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8400DAC.SQL_SELECT_W_JDEOUT_PAY_DETL_FOR_HAITA_CHK">
+ <summary>
+ JDE支払連携対象明細 SELECT - 排他チェック用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8400DAC.SQL_SELECT_INFO_FOR_HAITA_CHK">
+ <summary>
+ Booking 支払/Booking 基本 SELECT - 排他チェック用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8400DAC.SQL_SELECT_F04_IF">
+ <summary>
+ JDE連携支払データ SELECT F04レベル集計データ抽出(IF)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8400DAC.SQL_SELECT_F09_IF">
+ <summary>
+ JDE連携支払データ SELECT F09レベル集計データ抽出(IF)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8400DAC.SQL_SELECT_F04_NRS_FWD">
+ <summary>
+ JDE連携支払データ SELECT F04レベル集計データ抽出(NRS_FWD)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8400DAC.SQL_SELECT_F09_NRS_FWD">
+ <summary>
+ JDE連携支払データ SELECT F09レベル集計データ抽出(NRS_FWD)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8400DAC.SQL_SELECT_F09_DRY_NVO">
+ <summary>
+ JDE連携支払データ SELECT F09レベル集計データ抽出(Dry Nvo)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8400DAC.SQL_SELECT_COST_PURCHASE">
+ <summary>
+ 購買分析テーブル(T_PURCHASE_ANALYSIS)登録用データ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8400DAC.SQL_INSERT_W_JDEOUT_PAY_KEY">
+ <summary>
+ JDE支払連携対象ｷｰ(WK) INSERT
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8400DAC.SQL_INSERT_W_JDEOUT_PAY_DETL_IF_NVO">
+ <summary>
+ JDE支払連携対象明細(WK) INSERT(IF_NVO)
+ </summary>
+ <remarks>Booking 支払ﾚｺｰﾄﾞ単位に金額項目を算出(ﾍｯﾀﾞCurr単位／PrincipalCurr単位)したﾚｺｰﾄﾞをWK明細にINSERTする</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8400DAC.SQL_INSERT_W_JDEOUT_PAY_DETL_IF_FWD">
+ <summary>
+ JDE支払連携対象明細(WK) INSERT(IF_FWD)
+ </summary>
+ <remarks>Booking 支払ﾚｺｰﾄﾞ単位に金額項目を算出(ﾍｯﾀﾞCurr単位／PrincipalCurr単位)したﾚｺｰﾄﾞをWK明細にINSERTする</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8400DAC.SQL_INSERT_W_JDEOUT_PAY_DETL_NRS_FWD">
+ <summary>
+ JDE支払連携対象明細(WK) INSERT(NRS_FWD)
+ </summary>
+ <remarks>Booking 支払ﾚｺｰﾄﾞ単位に金額項目を算出(ﾍｯﾀﾞCurr単位／PrincipalCurr単位)したﾚｺｰﾄﾞをWK明細にINSERTする</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8400DAC.SQL_INSERT_W_JDEOUT_PAY_DETL_DRY_NVO">
+ <summary>
+ JDE支払連携対象明細(WK) INSERT(Dry Nvo)
+ </summary>
+ <remarks>Booking 支払ﾚｺｰﾄﾞ単位に金額項目を算出(ﾍｯﾀﾞCurr単位／PrincipalCurr単位)したﾚｺｰﾄﾞをWK明細にINSERTする</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8400DAC.SQL_INSERT_JDE_UPDATE_LOG">
+ <summary>
+ JDE Update Log INSERT
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8400DAC.SQL_INSERT_COST_PURCHAS">
+ <summary>
+ 購買分析テーブル(T_PURCHASE_ANALYSIS) INSERT
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8400DAC.SQL_DELETE_W_JDEOUT_PAY_KEY">
+ <summary>
+ JDE支払連携対象ｷｰ(WK) DELETE
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8400DAC.SQL_DELETE_W_JDEOUT_PAY_DETL">
+ <summary>
+ JDE支払連携対象明細(WK) DELETE
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8400DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8400DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8400DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8400DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8400DAC.DeleteUserOperateKey(System.Data.DataSet)">
+ <summary>
+ JDE支払連携対象ｷｰ(WK)削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks> JDE支払連携対象ｷｰ(WK)ﾚｺｰﾄﾞ削除SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8400DAC.DeleteUserOperateDetail(System.Data.DataSet)">
+ <summary>
+ JDE支払連携対象明細(WK)削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks> JDE支払連携対象明細(WK)ﾚｺｰﾄﾞ削除SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8400DAC.SelectCostJDEProcessingData(System.Data.DataSet)">
+ <summary>
+ 処理中データ抽出（重複処理チェック用）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>処理中データ抽出SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8400DAC.InsertWKCostKey(System.Data.DataSet)">
+ <summary>
+ JDE支払連携対象ｷｰ(WK)ﾃｰﾌﾞﾙ新規追加
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>JDE支払連携対象ｷｰ(WK)ﾃｰﾌﾞﾙ新規登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8400DAC.SelectJDEDate(System.Data.DataSet)">
+ <summary>
+ JDEの場の日付取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>JDEの場の日付取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8400DAC.InsertWKCostDetailIfNvo(System.Data.DataSet)">
+ <summary>
+ JDE支払連携対象明細(WK)ﾃｰﾌﾞﾙ新規追加(IF_NVO)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>JDE支払連携対象明細(WK)ﾃｰﾌﾞﾙ新規登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8400DAC.InsertWKCostDetailIfFwd(System.Data.DataSet)">
+ <summary>
+ JDE支払連携対象明細(WK)ﾃｰﾌﾞﾙ新規追加(IF_FWD)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>JDE支払連携対象明細(WK)ﾃｰﾌﾞﾙ新規登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8400DAC.InsertWKCostDetailNrsFwd(System.Data.DataSet)">
+ <summary>
+ JDE支払連携対象明細(WK)ﾃｰﾌﾞﾙ新規追加(NRS_FWD)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>JDE支払連携対象明細(WK)ﾃｰﾌﾞﾙ新規登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8400DAC.InsertWKCostDetailDryNvo(System.Data.DataSet)">
+ <summary>
+ JDE支払連携対象明細(WK)ﾃｰﾌﾞﾙ新規追加(Dry Nvo)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>JDE支払連携対象明細(WK)ﾃｰﾌﾞﾙ新規登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8400DAC.SelectF04KeySumDataIf(System.Data.DataSet)">
+ <summary>
+ F04レベル集計データ抽出(IF)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>F04レベル集計データ抽出SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8400DAC.SelectF09KeySumDataIf(System.Data.DataSet)">
+ <summary>
+ F09レベル集計データ抽出(IF)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>F09レベル集計データ抽出SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8400DAC.SelectF04KeySumDataNrsFwd(System.Data.DataSet)">
+ <summary>
+ F04レベル集計データ抽出(NRS_FWD)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>F04レベル集計データ抽出SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8400DAC.SelectF09KeySumDataNrsFwd(System.Data.DataSet)">
+ <summary>
+ F09レベル集計データ抽出(NRS_FWD)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>F09レベル集計データ抽出SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8400DAC.SelectF09KeySumDataDryNvo(System.Data.DataSet)">
+ <summary>
+ F09レベル集計データ抽出(Dry Nvo)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>F09レベル集計データ抽出SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8400DAC.SelectWKDetailInfo(System.Data.DataSet)">
+ <summary>
+ 排他チェック用WK明細更新日／時刻抽出
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>排他チェック用WK明細更新日／時刻抽出SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8400DAC.SelectSysDateTimeInfo(System.Data.DataSet)">
+ <summary>
+ 排他チェック用更新日／時刻抽出
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>排他チェック用更新日／時刻抽出SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8400DAC.UpdateCostHeadStage(System.Data.DataSet)">
+ <summary>
+ 支払ヘッダステージ更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>支払ヘッダステージ更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8400DAC.UpdateCostDetailStage(System.Data.DataSet)">
+ <summary>
+ Booking 支払ステージ更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>Booking 支払ステージ更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8400DAC.UpdateBasis(System.Data.DataSet)">
+ <summary>
+ Booking 基本更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>Booking 基本更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8400DAC.InsertJDELog(System.Data.DataSet)">
+ <summary>
+ JDE Update Log登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>JDE Update Log登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8400DAC.SelectPurchase(System.Data.DataSet)">
+ <summary>
+ 購買分析テーブル(T_PURCHASE_ANALYSIS)登録用データ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>購買分析テーブル(T_PURCHASE_ANALYSIS)登録用データ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8400DAC.InsertPurchase(System.Data.DataSet)">
+ <summary>
+ 購買分析テーブル(T_PURCHASE_ANALYSIS)登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8400DAC.SetConditionDeleteWKKeySQL(System.Collections.ArrayList)">
+ <summary>
+ WKテーブル削除共通パラメタ設定
+ </summary>
+ <param name="prmList">SQLパラメタ格納配列</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8400DAC.SetConditionSelectWKKeySQL(System.Data.DataRow,System.Collections.ArrayList)">
+ <summary>
+ 処理中データ抽出用パラメタ設定
+ </summary>
+ <param name="conditionRow">条件設定行</param>
+ <param name="prmList">SQLパラメタ格納配列</param>
+ <remarks>JDE支払連携対象ｷｰ(WK)のｷｰに対するパラメタをリストに格納する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8400DAC.SetWKComParameter(System.String,System.Collections.ArrayList)">
+ <summary>
+ WKテーブル共通パラメタ設定
+ </summary>
+ <param name="prmList">パラメタ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8400DAC.SetGL_DateParameter(System.String,System.Collections.ArrayList)">
+ <summary>
+ WKテーブル共通パラメタ設定
+ </summary>
+ <param name="prmList">パラメタ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8400DAC.SetDataInsertParameter(System.Collections.ArrayList)">
+ <summary>
+ 新規登録の共通パラメタ設定
+ </summary>
+ <param name="prmList">パラメタ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8400DAC.SetSysdataParameter(System.Collections.ArrayList)">
+ <summary>
+ 更新時の共通パラメタ設定
+ </summary>
+ <param name="prmList">パラメタ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8400DAC.SetInsertWKKeyParameter(System.Data.DataRow,System.Collections.ArrayList)">
+ <summary>
+ JDE支払連携対象ｷｰ(WK)ﾃｰﾌﾞﾙの更新パラメタ設定
+ </summary>
+ <param name="conditionRow">データロウ</param>
+ <param name="prmList">パラメタ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8400DAC.SetConditionSelectJDEDateSQL(System.String,System.Collections.ArrayList)">
+ <summary>
+ JDEの場の日付取得用パラメタ設定
+ </summary>
+ <param name="prmList">SQLパラメタ格納配列</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8400DAC.SetConditionCCostKeySQL(System.Data.DataRow,System.Collections.ArrayList)">
+ <summary>
+ 排他チェック用更新日／時刻抽出パラメタ設定
+ </summary>
+ <param name="conditionRow">データロウ</param>
+ <param name="prmList">SQLパラメタ格納配列</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8400DAC.SetJDEAPDateParameter(System.String,System.Collections.ArrayList)">
+ <summary>
+ ＪＤＥの場の日付設定
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8400DAC.SetUpdateCostHeadParameter(System.Collections.ArrayList,System.String)">
+ <summary>
+ 支払ヘッダ更新パラメタ設定
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8400DAC.SetJDELogParameter(System.String,System.String,System.Data.DataRow,System.Collections.ArrayList)">
+ <summary>
+ JDE Update Log登録パラメタ設定
+ </summary>
+ <param name="prmList">パラメタ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8400DAC.SetSelectPurchaseParameter(System.String,System.String,System.Collections.ArrayList)">
+ <summary>
+ 購買分析テーブル(T_PURCHASE_ANALYSIS)登録用データ取得パラメタ設定
+ </summary>
+ <param name="prmList">パラメタ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8400DAC.SetInsertPurchaseParameter(System.Data.DataRow)">
+ <summary>
+ 購買分析テーブル(T_PURCHASE_ANALYSIS)登録用ラメタ設定
+ </summary>
+ <param name="conditionRow">COSTのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8400DAC.CreateSqlCommandJDE(System.String,System.Data.SqlClient.SqlConnection)">
+ <summary>
+ コネクションオブジェクトに関連付けられたDBサーバーに対して
+ 有効なSqlCommandオブジェクトのインスタンスを取得する。
+ </summary>
+ <param name="strSql">SQL文</param>
+ <returns>SqlCommandオブジェクト</returns>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8300DAC.SQL_SELECT_JDE_DATE_SELECT">
+ <summary>
+ JDEの場の日付 SELECT
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8300DAC.SQL_SELECT_W_JDEOUT_INV_KEY">
+ <summary>
+ JDE請求連携対象ｷｰ(WK) SELECT - 重複処理チェック用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8300DAC.SQL_SELECT_W_JDEOUT_INV_DETL_FOR_HAITA_CHK">
+ <summary>
+ JDE請求連携対象明細 SELECT - 排他チェック用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8300DAC.SQL_SELECT_INFO_FOR_HAITA_CHK">
+ <summary>
+ Booking 請求/Booking 基本 SELECT - 排他チェック用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8300DAC.SQL_SELECT_F03_IF">
+ <summary>
+ JDE連携請求データ SELECT F03レベル集計データ抽出(IF)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8300DAC.SQL_SELECT_F09_IF">
+ <summary>
+ JDE連携請求データ SELECT F09レベル集計データ抽出(IF)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8300DAC.SQL_SELECT_F03_NRS_FWD">
+ <summary>
+ JDE連携請求データ SELECT F03レベル集計データ抽出(NRS_FWD)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8300DAC.SQL_SELECT_F09_NRS_FWD">
+ <summary>
+ JDE連携請求データ SELECT F09レベル集計データ抽出(NRS_FWD)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8300DAC.SQL_SELECT_F03_DRY_NVO">
+ <summary>
+ JDE連携請求データ SELECT F03レベル集計データ抽出(DryNvo)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8300DAC.SQL_INSERT_W_JDEOUT_INV_KEY">
+ <summary>
+ JDE請求連携対象ｷｰ(WK) INSERT
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8300DAC.SQL_INSERT_W_JDEOUT_INV_DETL_IF_NVO">
+ <summary>
+ JDE請求連携対象明細(WK) INSERT(IF_NVO)
+ </summary>
+ <remarks>Booking 請求ﾚｺｰﾄﾞ単位に金額項目を算出(ﾍｯﾀﾞCurr単位／PrincipalCurr単位)したﾚｺｰﾄﾞをWK明細にINSERTする</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8300DAC.SQL_INSERT_W_JDEOUT_INV_DETL_IF_FWD">
+ <summary>
+ JDE請求連携対象明細(WK) INSERT(IF_FWD)
+ </summary>
+ <remarks>Booking 請求ﾚｺｰﾄﾞ単位に金額項目を算出(ﾍｯﾀﾞCurr単位／PrincipalCurr単位)したﾚｺｰﾄﾞをWK明細にINSERTする</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8300DAC.SQL_INSERT_W_JDEOUT_INV_DETL_NRS_FWD">
+ <summary>
+ JDE請求連携対象明細(WK) INSERT(NRS_FWD)
+ </summary>
+ <remarks>Booking 請求ﾚｺｰﾄﾞ単位に金額項目を算出(ﾍｯﾀﾞCurr単位／PrincipalCurr単位)したﾚｺｰﾄﾞをWK明細にINSERTする</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8300DAC.SQL_INSERT_W_JDEOUT_INV_DETL_DRY_NVO">
+ <summary>
+ JDE請求連携対象明細(WK) INSERT(Dry_NVO)
+ </summary>
+ <remarks>Booking 請求ﾚｺｰﾄﾞ単位に金額項目を算出(ﾍｯﾀﾞCurr単位／PrincipalCurr単位)したﾚｺｰﾄﾞをWK明細にINSERTする</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8300DAC.SQL_INSERT_JDE_UPDATE_LOG">
+ <summary>
+ JDE Update Log INSERT
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8300DAC.SQL_DELETE_W_JDEOUT_INV_KEY">
+ <summary>
+ JDE請求連携対象ｷｰ(WK) DELETE
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8300DAC.SQL_DELETE_W_JDEOUT_INV_DETL">
+ <summary>
+ JDE請求連携対象明細(WK) DELETE
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8300DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8300DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8300DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8300DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8300DAC.DeleteUserOperateKey(System.Data.DataSet)">
+ <summary>
+ JDE請求連携対象ｷｰ(WK)削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks> JDE請求連携対象ｷｰ(WK)ﾚｺｰﾄﾞ削除SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8300DAC.DeleteUserOperateDetail(System.Data.DataSet)">
+ <summary>
+ JDE請求連携対象明細(WK)削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks> JDE請求連携対象明細(WK)ﾚｺｰﾄﾞ削除SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8300DAC.SelectRevJDEProcessingData(System.Data.DataSet)">
+ <summary>
+ 処理中データ抽出（重複処理チェック用）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>処理中データ抽出SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8300DAC.InsertWKRevKey(System.Data.DataSet)">
+ <summary>
+ JDE請求連携対象ｷｰ(WK)ﾃｰﾌﾞﾙ新規追加
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>JDE請求連携対象ｷｰ(WK)ﾃｰﾌﾞﾙ新規登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8300DAC.SelectJDEDate(System.Data.DataSet)">
+ <summary>
+ JDEの場の日付取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>JDEの場の日付取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8300DAC.InsertWKRevDetailIfNvo(System.Data.DataSet)">
+ <summary>
+ JDE請求連携対象明細(WK)ﾃｰﾌﾞﾙ新規追加(IF_NVO)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>JDE請求連携対象明細(WK)ﾃｰﾌﾞﾙ新規登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8300DAC.InsertWKRevDetailIfFwd(System.Data.DataSet)">
+ <summary>
+ JDE請求連携対象明細(WK)ﾃｰﾌﾞﾙ新規追加(IF_FWD)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>JDE請求連携対象明細(WK)ﾃｰﾌﾞﾙ新規登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8300DAC.InsertWKRevDetailNrsFwd(System.Data.DataSet)">
+ <summary>
+ JDE請求連携対象明細(WK)ﾃｰﾌﾞﾙ新規追加(NRS_FWD)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>JDE請求連携対象明細(WK)ﾃｰﾌﾞﾙ新規登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8300DAC.InsertWKRevDetailDryNvo(System.Data.DataSet)">
+ <summary>
+ JDE請求連携対象明細(WK)ﾃｰﾌﾞﾙ新規追加(Dry_NVO)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>JDE請求連携対象明細(WK)ﾃｰﾌﾞﾙ新規登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8300DAC.SelectF03KeySumDataIf(System.Data.DataSet)">
+ <summary>
+ F03レベル集計データ抽出(IF)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>F03レベル集計データ抽出SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8300DAC.SelectF09KeySumDataIf(System.Data.DataSet)">
+ <summary>
+ F09レベル集計データ抽出(IF)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>F09レベル集計データ抽出SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8300DAC.SelectF03KeySumDataNrsFwd(System.Data.DataSet)">
+ <summary>
+ F03レベル集計データ抽出(NRS_FWD)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>F03レベル集計データ抽出SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8300DAC.SelectF09KeySumDataNrsFwd(System.Data.DataSet)">
+ <summary>
+ F09レベル集計データ抽出(NRS_FWD)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>F09レベル集計データ抽出SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8300DAC.SelectF03KeySumDataDryNvo(System.Data.DataSet)">
+ <summary>
+ F03レベル集計データ抽出(DryNvo)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>F03レベル集計データ抽出SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8300DAC.SelectWKDetailInfo(System.Data.DataSet)">
+ <summary>
+ 排他チェック用WK明細更新日／時刻抽出
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>排他チェック用WK明細更新日／時刻抽出SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8300DAC.SelectSysDateTimeInfo(System.Data.DataSet)">
+ <summary>
+ 排他チェック用更新日／時刻抽出
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>排他チェック用更新日／時刻抽出SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8300DAC.UpdateRevHeadStage(System.Data.DataSet)">
+ <summary>
+ 請求ヘッダステージ更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>請求ヘッダステージ更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8300DAC.UpdateRevDetailStage(System.Data.DataSet)">
+ <summary>
+ Booking 請求ステージ更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>Booking 請求ステージ更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8300DAC.UpdateBasis(System.Data.DataSet)">
+ <summary>
+ Booking 基本更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>Booking 基本更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8300DAC.InsertJDELog(System.Data.DataSet)">
+ <summary>
+ JDE Update Log登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>JDE Update Log登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8300DAC.SetConditionDeleteWKKeySQL(System.Collections.ArrayList)">
+ <summary>
+ WKテーブル削除共通パラメタ設定
+ </summary>
+ <param name="prmList">SQLパラメタ格納配列</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8300DAC.SetConditionSelectWKKeySQL(System.Data.DataRow,System.Collections.ArrayList)">
+ <summary>
+ 処理中データ抽出用パラメタ設定
+ </summary>
+ <param name="conditionRow">条件設定行</param>
+ <param name="prmList">SQLパラメタ格納配列</param>
+ <remarks>Booking ｺﾝﾃﾅのｷｰに対するパラメタをリストに格納する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8300DAC.SetWKComParameter(System.String,System.Collections.ArrayList)">
+ <summary>
+ WKテーブル共通パラメタ設定
+ </summary>
+ <param name="prmList">パラメタ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8300DAC.SetWKComParameter2(System.String,System.Collections.ArrayList)">
+ <summary>
+ WKテーブル共通パラメタ設定
+ </summary>
+ <param name="prmList">パラメタ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8300DAC.SetGL_DateParameter(System.String,System.Collections.ArrayList)">
+ <summary>
+ WKテーブル共通パラメタ設定
+ </summary>
+ <param name="prmList">パラメタ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8300DAC.SetDataInsertParameter(System.Collections.ArrayList)">
+ <summary>
+ 新規登録の共通パラメタ設定
+ </summary>
+ <param name="prmList">パラメタ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8300DAC.SetSysdataParameter(System.Collections.ArrayList)">
+ <summary>
+ 更新時の共通パラメタ設定
+ </summary>
+ <param name="prmList">パラメタ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8300DAC.SetInsertWKKeyParameter(System.Data.DataRow,System.Collections.ArrayList)">
+ <summary>
+ JDE請求連携対象ｷｰ(WK)ﾃｰﾌﾞﾙの更新パラメタ設定
+ </summary>
+ <param name="conditionRow">データロウ</param>
+ <param name="prmList">パラメタ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8300DAC.SetConditionSelectJDEDateSQL(System.String,System.Collections.ArrayList)">
+ <summary>
+ JDEの場の日付取得用パラメタ設定
+ </summary>
+ <param name="prmList">SQLパラメタ格納配列</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8300DAC.SetConditionCRevKeySQL(System.Data.DataRow,System.Collections.ArrayList)">
+ <summary>
+ 排他チェック用更新日／時刻抽出パラメタ設定
+ </summary>
+ <param name="conditionRow">データロウ</param>
+ <param name="prmList">SQLパラメタ格納配列</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8300DAC.SetJDELogParameter(System.String,System.String,System.Data.DataRow,System.Collections.ArrayList)">
+ <summary>
+ JDE Update Log登録パラメタ設定
+ </summary>
+ <param name="prmList">パラメタ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8300DAC.CreateSqlCommandJDE(System.String,System.Data.SqlClient.SqlConnection)">
+ <summary>
+ コネクションオブジェクトに関連付けられたDBサーバーに対して
+ 有効なSqlCommandオブジェクトのインスタンスを取得する。
+ </summary>
+ <param name="strSql">SQL文</param>
+ <returns>SqlCommandオブジェクト</returns>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8200DAC.SQL_SELECT_JDE_DATE_SELECT">
+ <summary>
+ JDEの場の日付 SELECT
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8200DAC.SQL_SELECT_I_GAISAN_SELECT_COST">
+ <summary>
+ 概算データ(I_GAISAN) SELECT SELECT句（未払）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8200DAC.SQL_SELECT_I_GAISAN_SELECT_REV">
+ <summary>
+ 概算データ(I_GAISAN) SELECT SELECT句（未収）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8200DAC.SQL_SELECT_GAISAN_NY">
+ <summary>
+ 概算（NY） SELECT
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8200DAC.SQL_SELECT_GAISAN_SG">
+ <summary>
+ 概算（SG） SELECT
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8200DAC.SQL_UPDATE_I_GAISAN_ACC_CD">
+ <summary>
+ 概算データ(I_GAISAN)：CostItemCode(JDE) UPDATE
+ </summary>
+ <remarks>CostItemCodo(JDE)をコンバートする</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8200DAC.SQL_UPDATE_I_GAISAN_SAP_ACC_CD">
+ <summary>
+ 概算データ(I_GAISAN_SAP)：CostItemCode(JDE) UPDATE
+ </summary>
+ <remarks>CostItemCodo(JDE)をコンバートする</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8200DAC.SQL_DELETE_I_GAISAN">
+ <summary>
+ 概算データ(I_GAISAN)対象年月 DELETE
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8200DAC.SQL_DELETE_I_GAISAN_SAP">
+ <summary>
+ 概算データ(I_GAISAN_SAP)対象年月 DELETE
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8200DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8200DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8200DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8200DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8200DAC.DeleteGaisan(System.Data.DataSet)">
+ <summary>
+ 概算データ(I_GAISAN)削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks> 概算データ(I_GAISAN)対象年月ﾚｺｰﾄﾞ削除SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8200DAC.SelectJDEDate(System.Data.DataSet)">
+ <summary>
+ JDEの場の日付取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>JDEの場の日付取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8200DAC.InsertGaisanIfNvo(System.Data.DataSet)">
+ <summary>
+ 概算データ(I_GAISAN)新規追加(IF_NVO)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>概算データ(I_GAISAN)新規登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8200DAC.InsertGaisanIfFwd(System.Data.DataSet)">
+ <summary>
+ 概算データ(I_GAISAN)新規追加(IF_FWD)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>概算データ(I_GAISAN)新規登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8200DAC.InsertGaisanNrsFwd(System.Data.DataSet)">
+ <summary>
+ 概算データ(I_GAISAN)新規追加(NRS_FWD)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>概算データ(I_GAISAN)新規登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8200DAC.UpdateGaisanForAccCdConvert(System.Data.DataSet)">
+ <summary>
+ 概算データ(I_GAISAN)更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>概算データ(I_GAISAN)-CostItemCode(JDE)コンバート処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8200DAC.SelectF09KeySumData(System.Data.DataSet)">
+ <summary>
+ F09レベル集計データ抽出
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>F09レベル集計データ抽出SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8200DAC.DeleteGaisanSap(System.Data.DataSet)">
+ <summary>
+ 概算データ(I_GAISAN_SAP)削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks> 概算データ(I_GAISAN_SAP)対象年月ﾚｺｰﾄﾞ削除SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8200DAC.InsertGaisanSapIfNvo(System.Data.DataSet)">
+ <summary>
+ 概算データ(I_GAISAN_SAP)新規追加(IF_NVO)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>概算データ(I_GAISAN_SAP)新規登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8200DAC.InsertGaisanSapIfFwd(System.Data.DataSet)">
+ <summary>
+ 概算データ(I_GAISAN_SAP)新規追加(IF_FWD)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>概算データ(I_GAISAN_SAP)新規登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8200DAC.UpdateGaisanSapForAccCdConvert(System.Data.DataSet)">
+ <summary>
+ 概算データ(I_GAISAN_SAP)更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>概算データ(I_GAISAN_SAP)-CostItemCode(JDE)コンバート処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8200DAC.InsertSelectGaisanSap(System.Data.DataSet)">
+ <summary>
+ 概算データ(I_GAISAN_SAP)新規追加(IF_FWD)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>概算データ(I_GAISAN_SAP)新規登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8200DAC.SelectGaisanSG(System.Data.DataSet)">
+ <summary>
+ 概算データ(SG)取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks> 概算データ(SG)取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8200DAC.SelectGaisanNY(System.Data.DataSet)">
+ <summary>
+ 概算データ(NY)取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks> 概算データ(NY)取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8200DAC.SetGaisanARConditionSQL(System.Data.DataRow,System.Text.StringBuilder,System.Collections.ArrayList)">
+ <summary>
+ 条件文・パラメタ設定（AR用）
+ </summary>
+ <param name="dr">条件設定行</param>
+ <param name="sbSql">編集SQL格納変数</param>
+ <param name="arrParam">SQLパラメータ格納配列</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8200DAC.SetGaisanAPConditionSQL(System.Data.DataRow,System.Text.StringBuilder,System.Collections.ArrayList)">
+ <summary>
+ 条件文・パラメタ設定（AP用）
+ </summary>
+ <param name="dr">条件設定行</param>
+ <param name="sbSql">編集SQL格納変数</param>
+ <param name="arrParam">SQLパラメータ格納配列</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8200DAC.SetGaisanKeySQL(System.Data.DataRow,System.Collections.ArrayList)">
+ <summary>
+ 概算テーブルアクセス共通パラメタ設定
+ </summary>
+ <param name="prmList">SQLパラメタ格納配列</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8200DAC.SetGaisanInsertParameter(System.Data.DataRow,System.Collections.ArrayList)">
+ <summary>
+ 概算テーブルInsert時パラメタ設定
+ </summary>
+ <param name="prmList">SQLパラメタ格納配列</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8200DAC.SetGaisanInsertParameterNvo(System.Collections.ArrayList)">
+ <summary>
+ 概算テーブルInsert時パラメタ設定(NVO用)
+ </summary>
+ <param name="prmList">SQLパラメタ格納配列</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8200DAC.SetGaisanInsertParameterFwd(System.Collections.ArrayList)">
+ <summary>
+ 概算テーブルInsert時パラメタ設定(FWD用)
+ </summary>
+ <param name="prmList">SQLパラメタ格納配列</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8200DAC.SetGaisanUpdateParameter(System.Data.DataRow,System.Collections.ArrayList)">
+ <summary>
+ 概算テーブルUpdate時パラメタ設定
+ </summary>
+ <param name="prmList">SQLパラメタ格納配列</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8200DAC.SetGaisanSelectParameter(System.Data.DataRow,System.Collections.ArrayList)">
+ <summary>
+ 概算テーブルSelect時パラメタ設定
+ </summary>
+ <param name="prmList">SQLパラメタ格納配列</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8200DAC.SetDataInsertParameter(System.Collections.ArrayList)">
+ <summary>
+ 新規登録の共通パラメタ設定
+ </summary>
+ <param name="prmList">パラメタ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8200DAC.SetSysdataParameter(System.Collections.ArrayList)">
+ <summary>
+ 更新時の共通パラメタ設定
+ </summary>
+ <param name="prmList">パラメタ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8200DAC.SetConditionSelectJDEDateSQL(System.String,System.Collections.ArrayList)">
+ <summary>
+ JDEの場の日付取得用パラメタ設定
+ </summary>
+ <param name="prmList">SQLパラメタ格納配列</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8200DAC.CreateSqlCommandJDE(System.String,System.Data.SqlClient.SqlConnection)">
+ <summary>
+ コネクションオブジェクトに関連付けられたDBサーバーに対して
+ 有効なSqlCommandオブジェクトのインスタンスを取得する。
+ </summary>
+ <param name="strSql">SQL文</param>
+ <returns>SqlCommandオブジェクト</returns>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8700DAC.SQL_SELECT_COST_EST">
+ <summary>
+ 支払紐づけデータ取得(Est紐付け)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8700DAC.SQL_SELECT_COST_RED_EST">
+ <summary>
+ 支払紐づけデータ取得（赤伝）(Est紐付け)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8700DAC.SQL_SELECT_COST_BKG">
+ <summary>
+ 支払紐づけデータ取得(Bkg紐付け)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8700DAC.SQL_SELECT_COST_RED_BKG">
+ <summary>
+ 支払紐づけデータ取得（赤伝）(Bkg紐付け)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8700DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8700DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8700DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8700DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8700DAC.SelectCostDataMain(System.Data.DataSet)">
+ <summary>
+ 支払紐づけデータ取得処理（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>支払紐づけデータ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8700DAC.InsertHeader(System.Data.DataSet)">
+ <summary>
+ HEADER登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8700DAC.InsertCost(System.Data.DataSet)">
+ <summary>
+ COST登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8700DAC.UpdateCost(System.Data.DataSet)">
+ <summary>
+ COST更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8700DAC.UpdateBasis(System.Data.DataSet)">
+ <summary>
+ BASIS更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8700DAC.UpdateHeaderSearchText(System.Data.DataSet)">
+ <summary>
+ HEADER更新処理(SEARCH_TEXT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8700DAC.SetSelectCostDataParameter(System.Data.DataRow)">
+ <summary>
+ 支払紐づけデータ取得 条件文・パラメータ設定モジュール
+ </summary>
+ <param name="conditionRow"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8700DAC.SetSysCommonParameter">
+ <summary>
+ システム共通共通パラメータ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8700DAC.SetBasisDataInsUpdParameter(System.Data.DataRow)">
+ <summary>
+ BASIS登録・更新共通パラメータ
+ </summary>
+ <param name="conditionRow">DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8700DAC.SetHeaderDataInsUpdParameter(System.Data.DataRow)">
+ <summary>
+ HEADER登録・更新共通パラメータ
+ </summary>
+ <param name="conditionRow">HEADERのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8700DAC.SetCostDataInsUpdParameter(System.Data.DataRow)">
+ <summary>
+ COST登録・更新共通パラメータ
+ </summary>
+ <param name="conditionRow">COSTのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8700DAC.SetHeaderSearchTextParameter(System.Data.DataRow)">
+ <summary>
+ HEADER(SearchText)更新時の共通パラメータ設定
+ </summary>
+ <param name="conditionRow">DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8700DAC.isHaitaChkBasis(System.Data.DataSet)">
+ <summary>
+ 排他チェック(C_BASIS)
+ </summary>
+ <param name="ds">DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8700DAC.isHaitaChkCost(System.Data.DataSet)">
+ <summary>
+ 排他チェック(C_COST)
+ </summary>
+ <param name="ds">DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8700DAC.isDiffChk(System.Data.DataSet)">
+ <summary>
+ 金額差異チェック
+ </summary>
+ <param name="ds">DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8500DAC.SQL_SELECT_YUSO">
+ <summary>
+ 輸送データ抽出
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8500DAC.SQL_SELECT_GLI8500C_COST">
+ <summary>
+ GL支払データを取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8500DAC.SQL_INSERT_HEADER">
+ <summary>
+ Insert(I_OUT_HEADER)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8500DAC.SQL_INSERT_DETL">
+ <summary>
+ Insert(I_OUT_DETL)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8500DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8500DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8500DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8500DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8500DAC.SelectYusoData(System.Data.DataSet)">
+ <summary>
+ 輸送データ抽出処理（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>輸送データ検索SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8500DAC.YUSONinushiWhere(System.Data.DataRow,System.Text.StringBuilder@,System.Collections.ArrayList@)">
+ <summary>
+ 輸送データ取得時WEHRE句設定(対象荷主取得)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8500DAC.SelectGLI8500C_COST(System.Data.DataSet)">
+ <summary>
+ GL支払データ抽出処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>GL支払データ検索SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8500DAC.InsertDataHeader(System.Data.DataSet)">
+ <summary>
+ 外部データヘッダ新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>外部データヘッダ新規登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8500DAC.InsertDataDetail(System.Data.DataSet)">
+ <summary>
+ 外部データ明細新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>外部データ明細新規登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8500DAC.UpdateHeaderSearchText(System.Data.DataSet)">
+ <summary>
+ HEADER更新処理(SEARCH_TEXT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8500DAC.UpdateDetlSearchText(System.Data.DataSet)">
+ <summary>
+ DTL更新処理(SEARCH_TEXT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8500DAC.SetInsertHeaderParameter">
+ <summary>
+ パラメータ設定新規登録用(I_OUT_HEADER)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8500DAC.SetInsertDetlParameter">
+ <summary>
+ パラメータ設定新規登録用(I_OUT_DETL)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8500DAC.SetSystemInsertParameter">
+ <summary>
+ パラメータ設定新規登録用(システム共通項目)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8500DAC.SetSystemUpdateParameter">
+ <summary>
+ パラメータ設定更新登録用(システム共通項目)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8800DAC.SQL_SELECT_GENKABASE_IF">
+ <summary>
+ 標準原価算出用実績抽出（IF）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8800DAC.SQL_SELECT_GENKABASE_NRS">
+ <summary>
+ 標準原価算出用実績抽出（NRS）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8800DAC.SQL_SELECT_MTANKA_DATA">
+ <summary>
+ 標準原価単価テーブル( COM_DB..M_STD_TANKA )取得
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8800DAC.SQL_SELECT_WK_STD_GENKA_OVERSEAS_DATA">
+ <summary>
+ 連携用データ取得
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8800DAC.SQL_INSERT_WK_STD_GENKA_OVERSEAS">
+ <summary>
+標準原価ワークテーブルINSERT
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8800DAC.SQL_DELETE_WKGENKA_OVERSEAS_DATA">
+ <summary>
+ WK_STD_GENKA_OVERSEAS削除
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8800DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8800DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLI8800DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8800DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8800DAC.SelectGenkaBaseNRS(System.Data.DataSet)">
+ <summary>
+標準原価実績抽出(NRS)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>標準原価実績抽出(NRS)SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8800DAC.SelectGenkaBaseIF(System.Data.DataSet)">
+ <summary>
+標準原価実績抽出(IF)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>標準原価実績抽出(NRS)SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8800DAC.SelectMTanka(System.Data.DataSet)">
+ <summary>
+ 標準原価単価抽出
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>標準原価単価抽出SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8800DAC.SelectWkStdGenkaOverseas(System.Data.DataSet)">
+ <summary>
+ 連携用データ抽出
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>連携用データ抽出SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8800DAC.InsertWkStdGenkaOverseas(System.Data.DataSet)">
+ <summary>
+ 連携用データ投入
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>連携用データ新規登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8800DAC.DeleteWkStdGenkaOverseas(System.Data.DataSet)">
+ <summary>
+ 連携用データ重複削除
+ </summary>
+ <param name="ds"></param>
+ <returns>DataSet</returns>
+ <remarks>連携用データ重複削除SQLの構築、発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8800DAC.SetInsertWkStdGenkaOverseasParameter">
+ <summary>
+ パラメータ設定新規登録用(WK_STD_GENKA_OVERSEAS)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLI8800DAC.SetSystemInsertParameter">
+ <summary>
+ パラメータ設定新規登録用(システム共通項目)
+ </summary>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

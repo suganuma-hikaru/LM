@@ -1,0 +1,999 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.GLI.GUI
+</name>
+</assembly>
+<members>
+<member name="M:Jp.Co.Nrs.GL.GUI.Controllers.GLI0100Controller.#ctor">
+ <summary>
+ 通常用コンストラクタ
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.Controllers.GLI0200Controller.#ctor">
+ <summary>
+ 通常用コンストラクタ
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.Controllers.GLI0200Controller.SetListJson(Jp.Co.Nrs.GL.GUI.GLI0200Models)">
+ <summary>
+ pqGridを使用する配列のJson化・初期化設定
+ </summary>
+ <param name="outMdl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.Controllers.GLI0200Controller.SetJsonList(Jp.Co.Nrs.GL.GUI.GLI0200Models)">
+ <summary>
+ jsonをListに変換する
+ </summary>
+ <param name="outMdl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.Controllers.GLI0300Controller.#ctor">
+ <summary>
+ 通常用コンストラクタ
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.Controllers.GLI0300Controller.SetListJson(Jp.Co.Nrs.GL.GUI.GLI0300Models)">
+ <summary>
+ pqGridを使用する配列のJson化・初期化設定
+ </summary>
+ <param name="outMdl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.Controllers.GLI0300Controller.SetJsonList(Jp.Co.Nrs.GL.GUI.GLI0300Models)">
+ <summary>
+ jsonをListに変換する
+ </summary>
+ <param name="outMdl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.Controllers.GLI0400Controller.#ctor">
+ <summary>
+ 通常用コンストラクタ
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.Controllers.GLI0400Controller.SetListJson(Jp.Co.Nrs.GL.GUI.GLI0400Models)">
+ <summary>
+ pqGridを使用する配列のJson化・初期化設定
+ </summary>
+ <param name="outMdl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.Controllers.GLI0400Controller.SetJsonList(Jp.Co.Nrs.GL.GUI.GLI0400Models)">
+ <summary>
+ jsonをListに変換する
+ </summary>
+ <param name="outMdl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.Controllers.GLI0600Controller.#ctor">
+ <summary>
+ 通常用コンストラクタ
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.Controllers.GLI0600Controller.SetListJson(Jp.Co.Nrs.GL.GUI.GLI0600Models)">
+ <summary>
+ pqGridを使用する配列のJson化・初期化設定
+ </summary>
+ <param name="outMdl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.Controllers.GLI0600Controller.SetJsonList(Jp.Co.Nrs.GL.GUI.GLI0600Models)">
+ <summary>
+ jsonをListに変換する
+ </summary>
+ <param name="outMdl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0000WS.#ctor(Jp.Co.Nrs.GL.Base.GLBaseController)">
+ <summary>
+ コンストラクタ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0000WS.SetStatusEdit(Jp.Co.Nrs.GL.Base.GLBaseModel)">
+ <summary>
+ Editボタン押下時共通項目設定
+ </summary>
+ <param name="outMdl">outMdl</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0000WS.SetStatusRefer(Jp.Co.Nrs.GL.Base.GLBaseModel,System.String)">
+ <summary>
+ 参照モード時共通項目設定
+ </summary>
+ <param name="outMdl">outMdl</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0000WS.IsAutghorityLevelCheck(Jp.Co.Nrs.GL.UserInfo@,System.String@)">
+ <summary>
+ 権限区分(Autghority level)チェック
+ </summary>
+ <returns>rtnFlg： true/権限あり False/権限なし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0000WS.IsAutghorityLevelAgentCheck(Jp.Co.Nrs.GL.UserInfo@)">
+ <summary>
+ 権限区分(Autghority level)Agentチェック
+ </summary>
+ <returns>rtnFlg： true/Agentである False/Agentでない</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0000WS.IsAccountingLevelCheck(Jp.Co.Nrs.GL.UserInfo@,System.String@)">
+ <summary>
+ 権限区分(Accounting level)チェック
+ </summary>
+ <returns>rtnFlg： true/権限あり False/権限なし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0000WS.IsAccountingLevelPrintInvoiceCheck(System.String)">
+ <summary>
+ 請求書印刷権限チェック
+ </summary>
+ <param name="dept">部署(NFS)</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0000WS.IsAutghorityLevelCheckCreatePayment(Jp.Co.Nrs.GL.GUI.GLI0100Models)">
+ <summary>
+ 権限チェック(支払作成)
+ </summary>
+ <param name="outMdl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0100WS.SetDatasetPrintCondition(Jp.Co.Nrs.GL.GUI.GLI0100Models,System.Data.DataSet@,System.String,System.String)">
+ <summary>
+ 印刷条件をデータセットに設定
+ </summary>
+ <param name="inMdl">Model</param>
+ <param name="ds">Dataset</param>
+ <param name="printDtNm"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0100WS.PrintInvoice(Jp.Co.Nrs.GL.GUI.GLI0100Models)">
+ <summary>
+ 通関用請求書印刷処理
+ </summary>
+ <param name="inMdl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0100WS.SetPrintInvoiceCondition(System.Data.DataSet@,Jp.Co.Nrs.GL.GUI.GLI0100Models)">
+ <summary>
+ 請求書印刷対象取得条件設定処理
+ </summary>
+ <param name="ds"></param>
+ <param name="outMdl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0100WS.SetDatasetPrintInvoiceCondition(Jp.Co.Nrs.GL.GUI.GLI0100Models,System.Data.DataRow,System.Data.DataSet@,System.String,System.String,System.Boolean)">
+ <summary>
+ 印刷条件をデータセットに設定
+ </summary>
+ <param name="inMdl">Model</param>
+ <param name="row">DataRow</param>
+ <param name="ds">Dataset</param>
+ <param name="printDtNm"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0100WS.SetInitControl(Jp.Co.Nrs.GL.GUI.GLI0100Models@)">
+ <summary>
+ コントロール設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0100WS.SetMsgListToOutModel(Jp.Co.Nrs.GL.GUI.GLI0100Models@)">
+ <summary>
+ 使用メッセージリストをoutMdlに設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0100WS.SetInitData(Jp.Co.Nrs.GL.GUI.GLI0100Models@)">
+ <summary>
+ 初期値設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0100WS.CreateViewModelGLI0100(Jp.Co.Nrs.GL.GUI.GLI0100Models)">
+ <summary>
+ ビューの作成
+ </summary>
+ <param name="mdl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0100WS.SetDatasetSBatCtr(Jp.Co.Nrs.GL.GUI.GLI0100Models@,System.Data.DataSet@)">
+ <summary>
+ モデルからデータセットへ変換
+ </summary>
+ <param name="inMdl"></param>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0100WS.IsExistMstUser(Jp.Co.Nrs.GL.GUI.GLI0100Models)">
+ <summary>
+ マスタ存在チェック処理
+ </summary>
+ <param name="inMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0100WS.isHaitaChk(Jp.Co.Nrs.GL.GUI.GLI0100Models)">
+ <summary>
+ 排他制御処理
+ </summary>
+ <param name="inMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0100WS.isHaitaFlgOn(Jp.Co.Nrs.GL.GUI.GLI0100Models)">
+ <summary>
+ 排他フラグON処理
+ </summary>
+ <param name="inMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0100WS.isHaitaFlgOff(Jp.Co.Nrs.GL.GUI.GLI0100Models)">
+ <summary>
+ 排他フラグOFF処理
+ </summary>
+ <param name="inMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0100WS.IsErrRunDataCheck(Jp.Co.Nrs.GL.GUI.GLI0100Models@,Jp.Co.Nrs.GL.GUI.GLI0100Models)">
+ <summary>
+ 処理チェック
+ </summary>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0100WS.IsErrSearchSingleCheck(Jp.Co.Nrs.GL.GUI.GLI0100Models@,Jp.Co.Nrs.GL.GUI.GLI0100Models)">
+ <summary>
+ 単項目チェック
+ </summary>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0100WS.IsErrCreatePaymentDataCheck(Jp.Co.Nrs.GL.GUI.GLI0100Models,Jp.Co.Nrs.GL.GUI.GLI0100Models)">
+ <summary>
+ Create Payment 入力チェック
+ </summary>
+ <param name="outMdl"></param>
+ <param name="inMdl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0100WS.IsErrPrintInvoiceDataCheck(Jp.Co.Nrs.GL.GUI.GLI0100Models@,Jp.Co.Nrs.GL.GUI.GLI0100Models)">
+ <summary>
+ 請求書印刷入力チェック
+ </summary>
+ <param name="outMdl"></param>
+ <param name="inMdl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0200WS.#ctor(Jp.Co.Nrs.GL.Base.GLBaseController)">
+ <summary>
+ コンストラクタ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0200WS.SearchData(Jp.Co.Nrs.GL.GUI.GLI0200Models)">
+ <summary>
+ 検索
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0200WS.CreateViewModelGLI0200(Jp.Co.Nrs.GL.GUI.GLI0200Models)">
+ <summary>
+ ビューの作成
+ </summary>
+ <param name="mdl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0200WS.SetEventNm(Jp.Co.Nrs.GL.GUI.GLI0200Models@,System.String)">
+ <summary>
+ イベント名設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0200WS.SetInitCommon(Jp.Co.Nrs.GL.GUI.GLI0200Models@)">
+ <summary>
+ 初期共通設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0200WS.SetMsgListToOutModel(Jp.Co.Nrs.GL.GUI.GLI0200Models@)">
+ <summary>
+ 使用メッセージリストをoutMdlに設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0200WS.SetInitControl(Jp.Co.Nrs.GL.GUI.GLI0200Models@)">
+ <summary>
+ コントロール設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0200WS.SetTempMdlKey(Jp.Co.Nrs.GL.GUI.GLI0200Models@)">
+ <summary>
+ TempMdlKey設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0200WS.SetInitData(Jp.Co.Nrs.GL.GUI.GLI0200Models@)">
+ <summary>
+ 初期値設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0200WS.SeachData(Jp.Co.Nrs.GL.GUI.GLI0200Models@,Jp.Co.Nrs.GL.GUI.GLI0200Models)">
+ <summary>
+ データ検索
+ </summary>
+ <param name="outmdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0200WS.SetDataSetSearchCondition(Jp.Co.Nrs.GL.GUI.GLI0200Models,System.Data.DataSet@)">
+ <summary>
+ Booking検索条件
+ </summary>
+ <param name="inMdl"></param>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0200WS.SetResultDataToOutModel(System.Data.DataSet,Jp.Co.Nrs.GL.GUI.GLI0200Models@,Jp.Co.Nrs.GL.GUI.GLI0200Models)">
+ <summary>
+ 検索結果を返却モデルに設定
+ </summary>
+ <param name="ds"></param>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0200WS.IsErrChk(Jp.Co.Nrs.GL.GUI.GLI0200Models@,Jp.Co.Nrs.GL.GUI.GLI0200Models,System.String)">
+ <summary>
+ 入力チェック
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0200WS.IsDateLargeSmallChk(System.String,System.String,Jp.Co.Nrs.GL.GUI.GLI0200Models)">
+ <summary>
+ 日付大小チェック
+ </summary>
+ <param name="large">大きい方の値</param>
+ <param name="small">小さい方の値</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0300WS.SetInitCommon(Jp.Co.Nrs.GL.GUI.GLI0300Models@)">
+ <summary>
+ 初期共通設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0300WS.SetDatasetKeyCondition(System.String,System.Data.DataSet@)">
+ <summary>
+ データセットにkey項目をセットする
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0300WS.SetEventNm(Jp.Co.Nrs.GL.GUI.GLI0300Models@,System.String)">
+ <summary>
+ イベント名設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0300WS.SetInitControl(Jp.Co.Nrs.GL.GUI.GLI0300Models@)">
+ <summary>
+ コントロール設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0300WS.SetMsgListToOutModel(Jp.Co.Nrs.GL.GUI.GLI0300Models@)">
+ <summary>
+ 使用メッセージリストをoutMdlに設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0300WS.SetInitData(Jp.Co.Nrs.GL.GUI.GLI0300Models@)">
+ <summary>
+ 初期値設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0300WS.CreateViewModelGLI0300(Jp.Co.Nrs.GL.GUI.GLI0300Models)">
+ <summary>
+ ビューの作成
+ </summary>
+ <param name="mdl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0300WS.SetDatasetIn(Jp.Co.Nrs.GL.GUI.GLI0300Models@,System.Data.DataSet@)">
+ <summary>
+ モデルからデータセットへ変換(TABLE_NM_IN)
+ </summary>
+ <param name="inMdl"></param>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0300WS.SetDatasetHeader(Jp.Co.Nrs.GL.GUI.GLI0300Models@,System.Data.DataSet@)">
+ <summary>
+ モデルからデータセットへ変換(TABLE_NM_HEAD)
+ </summary>
+ <param name="inMdl"></param>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0300WS.SetDatasetSelect(Jp.Co.Nrs.GL.GUI.GLI0300Models@,System.Data.DataSet@)">
+ <summary>
+ モデルからデータセットへ変換(TABLE_NM_DETL_SELECT)
+ </summary>
+ <param name="inMdl"></param>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0300WS.SetDatasetImp(Jp.Co.Nrs.GL.GUI.GLI0300Models@,System.Data.DataSet@)">
+ <summary>
+ モデルからデータセットへ変換(TABLE_NM_I_OUT_DETL)
+ </summary>
+ <param name="inMdl"></param>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0300WS.SetDataToOutModel(Jp.Co.Nrs.GL.GUI.GLI0300Models@,System.Data.DataSet@,System.String,System.String)">
+ <summary>
+ モデルの詰め替え処理
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0300WS.SetDataToOutModelHeader(Jp.Co.Nrs.GL.GUI.GLI0300Models@,System.Data.DataSet@)">
+ <summary>
+ モデルの詰め替え処理(Basis)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0300WS.SetDataToOutModelImp(System.Data.DataSet,Jp.Co.Nrs.GL.GUI.GLI0300Models@)">
+ <summary>
+ モデルの詰め替え処理(ImportData)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0300WS.SetDataToOutModelCrr(System.Data.DataSet,Jp.Co.Nrs.GL.GUI.GLI0300Models@)">
+ <summary>
+ モデルの詰め替え処理(CorrelativeData)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0300WS.EditDuplicateData(Jp.Co.Nrs.GL.GUI.GLI0300Models@)">
+ <summary>
+ 重複データの編集処理(JOB_NO・ContainerNo・コストコード)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0300WS.ReflectContSeq(Jp.Co.Nrs.GL.GUI.GLI0300Models,Jp.Co.Nrs.GL.GUI.GLI0300Models)">
+ <summary>
+ チェック済みCost SEQの反映
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0300WS.SetHimCostSeq(Jp.Co.Nrs.GL.GUI.GLI0300Models,Jp.Co.Nrs.GL.GUI.GLI0300Models)">
+ <summary>
+ Selection後Cost SEQの反映
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0300WS.IsHimCheck(Jp.Co.Nrs.GL.GUI.GLI0300Models@)">
+ <summary>
+ 明細紐付けチェック
+ </summary>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0300WS.isHaitaChkHeader(Jp.Co.Nrs.GL.GUI.GLI0300Models)">
+ <summary>
+ 排他制御処理(I_OUT_HEADER)
+ </summary>
+ <param name="inMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0300WS.IsErrSelectionDataCheck(Jp.Co.Nrs.GL.GUI.GLI0300Models@,Jp.Co.Nrs.GL.GUI.GLI0300Models)">
+ <summary>
+ Selection処理チェック
+ </summary>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0300WS.IsErrEditDataCheck(Jp.Co.Nrs.GL.GUI.GLI0300Models@,Jp.Co.Nrs.GL.GUI.GLI0300Models)">
+ <summary>
+ Edit処理チェック
+ </summary>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0300WS.IsErrDeleteDataCheck(Jp.Co.Nrs.GL.GUI.GLI0300Models@,Jp.Co.Nrs.GL.GUI.GLI0300Models)">
+ <summary>
+ Delete処理チェック
+ </summary>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0300WS.IsErrCreateDataCheck(Jp.Co.Nrs.GL.GUI.GLI0300Models@,Jp.Co.Nrs.GL.GUI.GLI0300Models)">
+ <summary>
+ Create処理チェック
+ </summary>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0300WS.IsErrSaveDataCheck(Jp.Co.Nrs.GL.GUI.GLI0300Models@,Jp.Co.Nrs.GL.GUI.GLI0300Models)">
+ <summary>
+ Save処理チェック
+ </summary>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0300WS.IsErrSetExRateDataCheck(Jp.Co.Nrs.GL.GUI.GLI0300Models@,Jp.Co.Nrs.GL.GUI.GLI0300Models)">
+ <summary>
+ Set Ex.Rate処理チェック
+ </summary>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0300WS.IsErrAutoRelationDataCheck(Jp.Co.Nrs.GL.GUI.GLI0300Models@,Jp.Co.Nrs.GL.GUI.GLI0300Models)">
+ <summary>
+ 自動紐づけ処理チェック
+ </summary>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0300WS.IsErrSelectionRelationCheck(Jp.Co.Nrs.GL.GUI.GLI0300Models@,Jp.Co.Nrs.GL.GUI.GLI0300Models)">
+ <summary>
+ Selection関連項目チェック
+ </summary>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0300WS.IsErrEditRelationCheck(Jp.Co.Nrs.GL.GUI.GLI0300Models@,Jp.Co.Nrs.GL.GUI.GLI0300Models)">
+ <summary>
+ Edit関連項目チェック
+ </summary>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0300WS.IsErrDeleteRelationCheck(Jp.Co.Nrs.GL.GUI.GLI0300Models@,Jp.Co.Nrs.GL.GUI.GLI0300Models)">
+ <summary>
+ Delete関連項目チェック
+ </summary>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0300WS.IsErrCreateRelationCheck(Jp.Co.Nrs.GL.GUI.GLI0300Models@,Jp.Co.Nrs.GL.GUI.GLI0300Models)">
+ <summary>
+ Create関連項目チェック
+ </summary>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0300WS.IsErrSaveSingleCheck(Jp.Co.Nrs.GL.GUI.GLI0300Models@,Jp.Co.Nrs.GL.GUI.GLI0300Models)">
+ <summary>
+ Save単項目チェック
+ </summary>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0300WS.IsErrSaveRelationCheck(Jp.Co.Nrs.GL.GUI.GLI0300Models@,Jp.Co.Nrs.GL.GUI.GLI0300Models)">
+ <summary>
+ Save関連項目チェック
+ </summary>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0300WS.IsErrSetExRateSingleCheck(Jp.Co.Nrs.GL.GUI.GLI0300Models@,Jp.Co.Nrs.GL.GUI.GLI0300Models)">
+ <summary>
+ Set Ex.Rate項目チェック
+ </summary>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0300WS.IsErrAutoRelationRelationCheck(Jp.Co.Nrs.GL.GUI.GLI0300Models@,Jp.Co.Nrs.GL.GUI.GLI0300Models)">
+ <summary>
+ 自動紐づけ関連項目チェック
+ </summary>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0400WS.SetCancelDataRev(System.Data.DataSet,Jp.Co.Nrs.GL.GUI.GLI0400Models)">
+ <summary>
+ JDE Cancel対象データ設定(請求)
+ </summary>
+ <param name="ds">Dataset</param>
+ <param name="outMdl">請求情報</param>
+ <returns>JDE Cancel対象データ</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0400WS.UpdateCancelDataRevAka(System.Data.DataSet,Jp.Co.Nrs.GL.GUI.GLI0400Models)">
+ <summary>
+ JDE Cancel対象データ設定(請求(赤伝))
+ </summary>
+ <param name="ds">Dataset</param>
+ <param name="outMdl">請求情報</param>
+ <returns>JDE Cancel対象データ</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0400WS.PrintInvoice(Jp.Co.Nrs.GL.GUI.GLI0400Models)">
+ <summary>
+ PrintInvoice処理
+ </summary>
+ <param name="inMdl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0400WS.SetDatasetPrintInvoiceCondition(Jp.Co.Nrs.GL.GUI.GLI0400Models,System.Data.DataRow,System.Data.DataSet@,System.String,System.String,System.Boolean)">
+ <summary>
+ 印刷条件をデータセットに設定
+ </summary>
+ <param name="inMdl">Model</param>
+ <param name="row">DataRow</param>
+ <param name="ds">Dataset</param>
+ <param name="printDtNm"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0400WS.PrintPayment(Jp.Co.Nrs.GL.GUI.GLI0400Models)">
+ <summary>
+ PrintPayment処理
+ </summary>
+ <param name="inMdl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0400WS.SetDatasetPrintPaymentCondition(Jp.Co.Nrs.GL.GUI.GLI0400ModelsCostList,System.Data.DataSet@)">
+ <summary>
+ 印刷(Print)条件をデータセットに設定
+ </summary>
+ <param name="mdlResult"></param>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0400WS.SetDatasetPrintPaymentUpdateCondition(Jp.Co.Nrs.GL.GUI.GLI0400Models,System.Data.DataSet@)">
+ <summary>
+ 印刷(Print)更新条件をデータセットに設定
+ </summary>
+ <param name="inMdl"></param>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0400WS.SetInitControl(Jp.Co.Nrs.GL.GUI.GLI0400Models@)">
+ <summary>
+ コントロール設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0400WS.SetMsgListToOutModel(Jp.Co.Nrs.GL.GUI.GLI0400Models@)">
+ <summary>
+ 使用メッセージリストをoutMdlに設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0400WS.SetInitData(Jp.Co.Nrs.GL.GUI.GLI0400Models@)">
+ <summary>
+ 初期値設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0400WS.CreateViewModelGLI0400(Jp.Co.Nrs.GL.GUI.GLI0400Models)">
+ <summary>
+ ビューの作成
+ </summary>
+ <param name="mdl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0400WS.SetDatasetSearchCondition(Jp.Co.Nrs.GL.GUI.GLI0400Models,System.Data.DataSet@)">
+ <summary>
+ 検索条件をデータセットに設定
+ </summary>
+ <param name="inMdl"></param>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0400WS.SetDatasetInv(Jp.Co.Nrs.GL.GUI.GLI0400Models@,System.Data.DataSet@)">
+ <summary>
+ モデルからデータセットへ変換(TABLE_NM_REV)
+ </summary>
+ <param name="inMdl"></param>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0400WS.SetDatasetPay(Jp.Co.Nrs.GL.GUI.GLI0400Models@,System.Data.DataSet@)">
+ <summary>
+ モデルからデータセットへ変換(TABLE_NM_PAY)
+ </summary>
+ <param name="inMdl"></param>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0400WS.SetDatasetInvoiceHeader(Jp.Co.Nrs.GL.GUI.GLI0400Models,System.Data.DataSet@,System.Int32@)">
+ <summary>
+ モデルからデータセットへ変換(TABLE_NM_OUT_INV)
+ </summary>
+ <param name="inMdl"></param>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0400WS.SetDataToOutModelPay(System.Data.DataSet,Jp.Co.Nrs.GL.GUI.GLI0400Models@,Jp.Co.Nrs.GL.GUI.GLI0400Models,System.Int32@,System.Int32)">
+ <summary>
+ 検索結果（支払）を返却モデルに設定
+ </summary>
+ <param name="outMdl"></param>
+ <param name="inMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0400WS.SetDataToOutModelInv(System.Data.DataSet,Jp.Co.Nrs.GL.GUI.GLI0400Models@,Jp.Co.Nrs.GL.GUI.GLI0400Models,System.Int32@,System.Int32)">
+ <summary>
+ 検索結果（請求）を返却モデルに設定
+ </summary>
+ <param name="outMdl"></param>
+ <param name="inMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0400WS.isAkadenChkInv(Jp.Co.Nrs.GL.GUI.GLI0400Models,System.Data.DataSet@)">
+ <summary>
+ 赤伝票チェック処理(請求)
+ </summary>
+ <param name="inMdl"></param>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0400WS.isHaitaChkInv(Jp.Co.Nrs.GL.GUI.GLI0400Models)">
+ <summary>
+ 排他制御処理(請求)
+ </summary>
+ <param name="inMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0400WS.isHaitaChkPay(Jp.Co.Nrs.GL.GUI.GLI0400Models)">
+ <summary>
+ 排他制御処理(支払)
+ </summary>
+ <param name="inMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0400WS.IsErrSelectDataCheck(Jp.Co.Nrs.GL.GUI.GLI0400Models@,Jp.Co.Nrs.GL.GUI.GLI0400Models)">
+ <summary>
+ 検索処理チェック
+ </summary>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0400WS.IsErrUpdateDataCheck(Jp.Co.Nrs.GL.GUI.GLI0400Models@,Jp.Co.Nrs.GL.GUI.GLI0400Models)">
+ <summary>
+ Update処理チェック
+ </summary>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0400WS.IsErrJdeExcemptDataCheck(Jp.Co.Nrs.GL.GUI.GLI0400Models@,Jp.Co.Nrs.GL.GUI.GLI0400Models)">
+ <summary>
+ JDE Excempt処理チェック
+ </summary>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0400WS.IsErrJdeOutDataCheck(Jp.Co.Nrs.GL.GUI.GLI0400Models@,Jp.Co.Nrs.GL.GUI.GLI0400Models)">
+ <summary>
+ JDE Out処理チェック
+ </summary>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0400WS.IsErrJdeCancelDataCheck(Jp.Co.Nrs.GL.GUI.GLI0400Models@,Jp.Co.Nrs.GL.GUI.GLI0400Models)">
+ <summary>
+ JDE Cancel処理チェック
+ </summary>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0400WS.IsErrSearchSingleCheck(Jp.Co.Nrs.GL.GUI.GLI0400Models@,Jp.Co.Nrs.GL.GUI.GLI0400Models)">
+ <summary>
+ 検索単項目チェック
+ </summary>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0400WS.IsErrSearchMultiCheck(Jp.Co.Nrs.GL.GUI.GLI0400Models@,Jp.Co.Nrs.GL.GUI.GLI0400Models)">
+ <summary>
+ 検索関連項目チェック
+ </summary>
+ <param name="outMdl"></param>
+ <param name="inMdl"></param>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0400WS.IsErrUpdateSingleCheck(Jp.Co.Nrs.GL.GUI.GLI0400Models@,Jp.Co.Nrs.GL.GUI.GLI0400Models)">
+ <summary>
+ Update単項目チェック
+ </summary>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0400WS.IsErrJdeExcemptSingleCheck(Jp.Co.Nrs.GL.GUI.GLI0400Models@,Jp.Co.Nrs.GL.GUI.GLI0400Models)">
+ <summary>
+ JDE Excempt単項目チェック
+ </summary>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0400WS.IsErrJdeOutSingleCheck(Jp.Co.Nrs.GL.GUI.GLI0400Models@,Jp.Co.Nrs.GL.GUI.GLI0400Models)">
+ <summary>
+ JDE Out単項目チェック
+ </summary>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0400WS.IsErrJdeCancelSingleCheck(Jp.Co.Nrs.GL.GUI.GLI0400Models@,Jp.Co.Nrs.GL.GUI.GLI0400Models)">
+ <summary>
+ JDE Cancel単項目チェック
+ </summary>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0400WS.IsErrPrintInvoiceCheck(Jp.Co.Nrs.GL.GUI.GLI0400Models@,Jp.Co.Nrs.GL.GUI.GLI0400Models)">
+ <summary>
+ PrintInvoice処理チェック
+ </summary>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0400WS.IsErrPrintInvoiceRelationCheck(Jp.Co.Nrs.GL.GUI.GLI0400Models@,Jp.Co.Nrs.GL.GUI.GLI0400Models)">
+ <summary>
+ PrintInvoice処理関連項目チェック
+ </summary>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0400WS.IsErrPrintPaymentCheck(Jp.Co.Nrs.GL.GUI.GLI0400Models@,Jp.Co.Nrs.GL.GUI.GLI0400Models)">
+ <summary>
+ PrintInvoice処理チェック
+ </summary>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0400WS.IsErrPrintPaymentRelationCheck(Jp.Co.Nrs.GL.GUI.GLI0400Models@,Jp.Co.Nrs.GL.GUI.GLI0400Models)">
+ <summary>
+ PrintPayment処理関連項目チェック
+ </summary>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0600WS.#ctor(Jp.Co.Nrs.GL.Base.GLBaseController)">
+ <summary>
+ 指定された区分名を格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0600WS.CreateViewModelGLI0600(Jp.Co.Nrs.GL.GUI.GLI0600Models)">
+ <summary>
+ ビューの作成
+ </summary>
+ <param name="mdl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0600WS.SetEventNm(Jp.Co.Nrs.GL.GUI.GLI0600Models@,System.String)">
+ <summary>
+ イベント名設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0600WS.SetInitCommon(Jp.Co.Nrs.GL.GUI.GLI0600Models@)">
+ <summary>
+ 初期共通設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0600WS.SetStatusRefer(Jp.Co.Nrs.GL.GUI.GLI0600Models)">
+ <summary>
+ 参照モード時共通項目設定
+ </summary>
+ <param name="outMdl">outMdl</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0600WS.SetStatusNew(Jp.Co.Nrs.GL.GUI.GLI0600Models)">
+ <summary>
+ 新規時項目設定
+ </summary>
+ <param name="outMdl">outMdl</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0600WS.SetMsgListToOutModel(Jp.Co.Nrs.GL.GUI.GLI0600Models@)">
+ <summary>
+ 使用メッセージリストをoutMdlに設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0600WS.SetInitControl(Jp.Co.Nrs.GL.GUI.GLI0600Models@)">
+ <summary>
+ コントロール設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0600WS.SetTempMdlKey(Jp.Co.Nrs.GL.GUI.GLI0600Models@)">
+ <summary>
+ TempMdlKey設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0600WS.SetDatasetInit(System.Data.DataSet@,System.String)">
+ <summary>
+ GLI0600INIT
+ </summary>
+ <remarks>初期値を設定する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0600WS.SetDataSetSearchCondition(Jp.Co.Nrs.GL.GUI.GLI0600Models,System.Data.DataSet@)">
+ <summary>
+ GLI0600IN
+ </summary>
+ <param name="inMdl"></param>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0600WS.SetDataSetChkDouble(Jp.Co.Nrs.GL.GUI.GLI0600Models,System.Data.DataSet@)">
+ <summary>
+ CHK_DOUBLE
+ </summary>
+ <param name="inMdl"></param>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0600WS.SetDatasetHaita(System.Data.DataSet@,Jp.Co.Nrs.GL.GUI.GLI0600Models)">
+ <summary>
+ GLI0600OUT(排他チェック,更新用)
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0600WS.SetDatasetConfirm(Jp.Co.Nrs.GL.GUI.GLI0600Models,System.Data.DataSet@)">
+ <summary>
+ GLI0600OUT(登録用)
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0600WS.SetResultDataToOutModelBooking(System.Data.DataSet,Jp.Co.Nrs.GL.GUI.GLI0600Models@,System.Boolean,System.Int32)">
+ <summary>
+ Booking検索結果
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0600WS.IsErrSearchChk(Jp.Co.Nrs.GL.GUI.GLI0600Models@,Jp.Co.Nrs.GL.GUI.GLI0600Models)">
+ <summary>
+ 検索時
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.GL.GUI.GLI0600WS.IsErrConfirmChk(Jp.Co.Nrs.GL.GUI.GLI0600Models@,Jp.Co.Nrs.GL.GUI.GLI0600Models)">
+ <summary>
+ 確定時
+ </summary>
+</member>
+</members>
+</doc>

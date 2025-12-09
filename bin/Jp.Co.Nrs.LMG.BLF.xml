@@ -1,0 +1,822 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.LMG.BLF
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMG010BLF">
+ <summary>
+ LMG010BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMG010BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG010BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG010BLF.SelectChkApprovalTanka(System.Data.DataSet)">
+ <summary>
+ 単価未承認チェック
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG010BLF.SelectChkVar(System.Data.DataSet)">
+ <summary>
+ 変動保管料チェック
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG010BLF.UpDateDel(System.Data.DataSet)">
+ <summary>
+ 前回計算取消処理（更新・削除）
+ </summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG010BLF.InsertWorkHead(System.Data.DataSet)">
+ <summary>
+ 実行処理（登録）
+ </summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG010BLF.CalcBatch(System.Data.DataSet)">
+ <summary>
+ バッチ呼出処理
+ </summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG010BLF.CheckHaitaMCust(System.Data.DataSet)">
+ <summary>
+ 荷主排他
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMG020BLF">
+ <summary>
+ LMG020BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMG020BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMG020BLF._Print500">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG020BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG020BLF.SelectSeiq(System.Data.DataSet)">
+ <summary>
+ 請求存在チェック
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG020BLF.Print(System.Data.DataSet)">
+ <summary>
+ 印刷処理
+ </summary>
+ <param name="ds">DataSet(更新用)</param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMG030BLF">
+ <summary>
+ LMG030BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMG030BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMG030BLF._Print500">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG030BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG030BLF.UpDateTable(System.Data.DataSet)">
+ <summary>
+ 保管荷役明細印刷テーブル更新処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG030BLF.IkkatuUpDateTable(System.Data.DataSet)">
+ <summary>
+ 保管荷役明細印刷テーブル一括変更処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG030BLF.Acquisithion(System.Data.DataSet)">
+ <summary>
+ 取込処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG030BLF.AcquisithionHaita(System.Data.DataSet)">
+ <summary>
+ 取込排他処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG030BLF.CheckHaita(System.Data.DataSet)">
+ <summary>
+ 排他処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG030BLF.Print(System.Data.DataSet)">
+ <summary>
+ 印刷処理
+ </summary>
+ <param name="ds">DataSet(更新用)</param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMG040BLF">
+ <summary>
+ LMG040BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMG040BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMG040BLF._Blc530">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG040BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 請求鑑ヘッダ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG040BLF.ExistData(System.Data.DataSet)">
+ <summary>
+ 請求鑑ヘッダ存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG040BLF.UpdateDelete(System.Data.DataSet)">
+ <summary>
+ 削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG040BLF.UpdateKakutei(System.Data.DataSet)">
+ <summary>
+ 確定処理(請求鑑ヘッダ更新)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG040BLF.UpdateClear(System.Data.DataSet)">
+ <summary>
+ 初期化処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG040BLF.SapOut(System.Data.DataSet)">
+ <summary>
+ SAP出力処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG040BLF.SapCancel(System.Data.DataSet)">
+ <summary>
+ SAP取消処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG040BLF.SetSapUpdDataSet(System.Data.DataRow,System.Int32)">
+ <summary>
+ SAP処理共通 LMG050BLC メソッド引数用 DataSet 作成
+ </summary>
+ <param name="dr">編集元 DataRow</param>
+ <param name="rowNo">複数行一括更新時の行番号(1起算)</param>
+ <returns>作成した DataSet</returns>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG040BLF.SkyuCsvSelect(System.Data.DataSet)">
+ <summary>
+ 請求データ出力用データ抽出処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG040BLF.SkyuCsvUpdate(System.Data.DataSet)">
+ <summary>
+ 請求データ出力用フラグ更新処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMG050BLF">
+ <summary>
+ LMG050BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMG050BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMG050BLF._Print530">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMG050BLF._Print520">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG050BLF.SelectContCurrCd(System.Data.DataSet)">
+ <summary>
+初期処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG050BLF.SelectData(System.Data.DataSet)">
+ <summary>
+ 請求鑑ヘッダ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG050BLF.SelectSeiqtoCustSetPrice(System.Data.DataSet)">
+ <summary>
+ セット料金の単価マスタが登録された荷主の主請求先(であるか否か) の検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG050BLF.SelectTorikomiDataTsmc(System.Data.DataSet)">
+ <summary>
+ TSMC請求明細よりの取込データの取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG050BLF.HaitaChk(System.Data.DataSet)">
+ <summary>
+ 請求鑑ヘッダ排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG050BLF.ChkNewData(System.Data.DataSet)">
+ <summary>
+ 新規データチェック処理(請求鑑ヘッダチェック)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG050BLF.setCurrList(System.Data.DataSet)">
+ <summary>
+ 請求通貨＋契約通貨　EX_RATE取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG050BLF.SelectSeiqtoData(System.Data.DataSet)">
+ <summary>
+ 最低保証額チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG050BLF.FukkatsuData(System.Data.DataSet)">
+ <summary>
+ 復活処理(請求鑑ヘッダ、請求鑑詳復活)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG050BLF.DeleteData(System.Data.DataSet)">
+ <summary>
+ 削除処理(請求鑑ヘッダ、請求鑑詳細論理削除)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG050BLF.GetInvFrom(System.Data.DataSet)">
+ <summary>
+ 請求開始日取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG050BLF.UpKakuteiHed(System.Data.DataSet)">
+ <summary>
+ 確定処理(請求鑑ヘッダ更新)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG050BLF.UpStageKagamiHed(System.Data.DataSet)">
+ <summary>
+ ステージアップ処理(請求鑑ヘッダ更新)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG050BLF.InsCopyKuro(System.Data.DataSet)">
+ <summary>
+ 初期化処理(請求鑑ヘッダ、請求鑑詳細新規登録)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG050BLF.InsertSetKuroData(System.Data.DataSet)">
+ <summary>
+ 新規登録内容を設定する
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG050BLF.SelectNextData(System.Data.DataSet)">
+ <summary>
+ 請求鑑ヘッダ検索処
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG050BLF.InsertAkaKuro(System.Data.DataSet)">
+ <summary>
+ 経理戻し処理(請求鑑ヘッダ、請求鑑詳細新規登録)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG050BLF.InsertSetAkaData(System.Data.DataSet)">
+ <summary>
+ 新規登録内容を設定する(赤データ))
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG050BLF.InsertSetSinKuroData(System.Data.DataSet)">
+ <summary>
+ 新規登録内容を設定する(新黒データ))
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG050BLF.SaveData(System.Data.DataSet)">
+ <summary>
+ 保存処理(請求鑑ヘッダ、請求鑑詳細新規登録/更新)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG050BLF.SetSkyuNo(System.Data.DataSet)">
+ <summary>
+ 新規登録処理の場合、請求書番号を採番する
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>TRUE:新規登録、FALSE:更新登録</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG050BLF.PrintCheck(System.Data.DataSet)">
+ <summary>
+ 印刷処理(請求明細チェックリスト)
+ </summary>
+ <param name="ds">DataSet(更新用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG050BLF.PrintSeiqto(System.Data.DataSet)">
+ <summary>
+ 印刷処理(請求明細)
+ </summary>
+ <param name="ds">DataSet(更新用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG050BLF.PrintIkkatsu(System.Data.DataSet)">
+ <summary>
+ 一括印刷
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG050BLF.IsMessageExisted(System.Boolean)">
+ <summary>
+ 一度でもエラーが発生していたら、エラーを返す
+ </summary>
+ <param name="msgExistsFlg"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG050BLF.PrintHokanNiyakuMeisai(System.Data.DataTable)">
+ <summary>
+ 保管料荷役料明細書印刷
+ </summary>
+ <param name="inDt"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG050BLF.PrintUnchinMeisai(System.Data.DataTable)">
+ <summary>
+ 運賃明細書印刷
+ </summary>
+ <param name="inDt"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG050BLF.PrintSagyoMeisai(System.Data.DataTable)">
+ <summary>
+ 作業料明細書印刷
+ </summary>
+ <param name="inDt"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG050BLF.SapOut(System.Data.DataSet)">
+ <summary>
+ SAP出力処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG050BLF.SapCancel(System.Data.DataSet)">
+ <summary>
+ SAP取消処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG050BLF.SelectComboSeihin(System.Data.DataSet)">
+ <summary>
+ 製品セグメント取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks>コンボボックスの選択肢として利用</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG050BLF.SelectComboChiiki(System.Data.DataSet)">
+ <summary>
+ 地域セグメント取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks>コンボボックスの選択肢として利用</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG050BLF.SelectDefSeg(System.Data.DataSet)">
+ <summary>
+ セグメント初期値取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks>行追加時の初期値として利用</remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMG060BLF">
+ <summary>
+ LMG060BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMG060BLF._Print510">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMG060BLF._Print520">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMG060BLF._Print530">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMG060BLF._Print590">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMG060BLF._Print630">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG060BLF.PrintSeikyu(System.Data.DataSet)">
+ <summary>
+ 印刷処理(運賃請求明細)
+ </summary>
+ <param name="ds">DataSet(更新用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG060BLF.PrintSeikyuTariff(System.Data.DataSet)">
+ <summary>
+ 印刷処理(運賃請求明細(タリフ))
+ </summary>
+ <param name="ds">DataSet(更新用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG060BLF.PrintCheck(System.Data.DataSet)">
+ <summary>
+ 印刷処理(運賃チェックリスト)
+ </summary>
+ <param name="ds">DataSet(更新用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG060BLF.PrintSeikyuInka(System.Data.DataSet)">
+ <summary>
+ 印刷処理(運賃請求明細(入荷))
+ </summary>
+ <param name="ds">DataSet(更新用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG060BLF.PrintSeikyuOutka(System.Data.DataSet)">
+ <summary>
+ 印刷処理(運賃請求明細(出荷))
+ </summary>
+ <param name="ds">DataSet(更新用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG060BLF.PrintSeikyuRenzoku(System.Data.DataSet)">
+ <summary>
+ 印刷処理(運賃請求明細(連続))
+ </summary>
+ <param name="ds">DataSet(更新用)</param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMG080BLF">
+ <summary>
+ LMG080BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMG080BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG080BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG080BLF.CheckHaita(System.Data.DataSet)">
+ <summary>
+ 排他処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG080BLF.ProcessResults(System.Data.DataSet)">
+ <summary>
+ 処理結果詳細
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG080BLF.CheckExecute(System.Data.DataSet)">
+ <summary>
+ 強制実行
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG080BLF.ForceDelete(System.Data.DataSet)">
+ <summary>
+ 強制削除
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMG900BLF">
+ <summary>
+ LMG900BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMG900BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG900BLF.GetInvFrom(System.Data.DataSet)">
+ <summary>
+ 請求鑑ヘッダ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG900BLF.ChkExistHokanIkoData(System.Data.DataSet)">
+ <summary>
+ 保管料移行データ存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG900BLF.SelectHokanTuboData(System.Data.DataSet)">
+ <summary>
+ 坪貸し料検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG900BLF.SelectHokanData(System.Data.DataSet)">
+ <summary>
+ 保管料検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG900BLF.ChkExistNiyakuIkoData(System.Data.DataSet)">
+ <summary>
+ 荷役料移行データ存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG900BLF.SelectNiyakuData(System.Data.DataSet)">
+ <summary>
+ 荷役料検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG900BLF.ChkUnchinData(System.Data.DataSet)">
+ <summary>
+ 運賃確定チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG900BLF.SelectUnchinData(System.Data.DataSet)">
+ <summary>
+ 運賃検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG900BLF.ChkSagyoData(System.Data.DataSet)">
+ <summary>
+ 作業料確定チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG900BLF.SelectSagyoData(System.Data.DataSet)">
+ <summary>
+ 作業料検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG900BLF.ChkYokomochiData(System.Data.DataSet)">
+ <summary>
+ 横持料確定チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG900BLF.SelectYokomochiData(System.Data.DataSet)">
+ <summary>
+ 横持料検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG900BLF.SelectTemplateData(System.Data.DataSet)">
+ <summary>
+ テンプレートマスタ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG900BLF.SelectSeiqtoData(System.Data.DataSet)">
+ <summary>
+ 請求先情報取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMG900BLF.SelectCustData(System.Data.DataSet)">
+ <summary>
+ 荷主マスタ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

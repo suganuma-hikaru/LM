@@ -1,0 +1,3966 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.LMM.BLC
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMM010BLC">
+ <summary>
+ LMM010BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMM010BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM010BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ ユーザーマスタ更新対象データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM010BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ ユーザーマスタ更新対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM010BLC.CheckExistUserM(System.Data.DataSet)">
+ <summary>
+ ユーザーマスタ存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM010BLC.CheckHaitaUserM(System.Data.DataSet)">
+ <summary>
+ ユーザーマスタ排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM010BLC.InsertSaveAction(System.Data.DataSet)">
+ <summary>
+ ユーザーマスタ新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM010BLC.InsertData(System.Data.DataSet)">
+ <summary>
+ 新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM010BLC.UpdateSaveAction(System.Data.DataSet)">
+ <summary>
+ 更新登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM010BLC.UpdateData(System.Data.DataSet)">
+ <summary>
+ 更新登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM010BLC.DeleteAction(System.Data.DataSet)">
+ <summary>
+ 削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM010BLC.DeleteData(System.Data.DataSet)">
+ <summary>
+ 削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM010BLC.ServerChkJudge(System.Data.DataSet,System.String)">
+ <summary>
+ DACでメッセージが設定されているかを判定
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM010BLC.DacAccess(System.Data.DataSet,System.String)">
+ <summary>
+ DACクラスアクセス
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM010BLC.InsertUserData(System.Data.DataSet)">
+ <summary>
+ ユーザー 新規
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM010BLC.UpdateUserData(System.Data.DataSet)">
+ <summary>
+ ユーザー 更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM010BLC.DelTcustData(System.Data.DataSet)">
+ <summary>
+ 担当者別荷主 物理削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM010BLC.InsertTcustData(System.Data.DataSet)">
+ <summary>
+ 担当者別荷主 新規
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM010BLC.DelTunsocoData(System.Data.DataSet)">
+ <summary>
+ 担当者別運送会社 物理削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM010BLC.InsertTunsocoData(System.Data.DataSet)">
+ <summary>
+ 担当者別運送会社 新規
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM010BLC.DelTtariffData(System.Data.DataSet)">
+ <summary>
+ 担当者別運賃タリフ 物理削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM010BLC.InsertTtariffData(System.Data.DataSet)">
+ <summary>
+ 担当者別運賃タリフ 新規
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMM020BLC">
+ <summary>
+ LMM020BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMM020BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM020BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ 分析票管理マスタ更新対象データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM020BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 分析票管理マスタ更新対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM020BLC.CheckExistCoaM(System.Data.DataSet)">
+ <summary>
+ 分析票管理マスタ存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM020BLC.CheckHaitaCoaM(System.Data.DataSet)">
+ <summary>
+ 分析票管理マスタ排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM020BLC.InsertCoaM(System.Data.DataSet)">
+ <summary>
+ 分析票管理マスタ新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM020BLC.UpdateCoaM(System.Data.DataSet)">
+ <summary>
+ 分析票管理マスタ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM020BLC.DeleteCoaM(System.Data.DataSet)">
+ <summary>
+ 分析票管理マスタ削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMM030BLC">
+ <summary>
+ LMM030BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMM030BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM030BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ 作業項目マスタ更新対象データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM030BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 作業項目マスタ更新対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM030BLC.SelectItemCurrCd(System.Data.DataSet)">
+ <summary>
+ 契約通貨コード初期値取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM030BLC.SelectSagyoSub(System.Data.DataSet)">
+ <summary>
+ 協力会社作業の名称取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM030BLC.SelectExistSagyoSub(System.Data.DataSet)">
+ <summary>
+ 協力会社作業の重複チェック
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM030BLC.CheckHaitaSagyoM(System.Data.DataSet)">
+ <summary>
+ 作業項目マスタ排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM030BLC.InsertSagyoM(System.Data.DataSet)">
+ <summary>
+ 作業項目マスタ新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM030BLC.UpdateSagyoM(System.Data.DataSet)">
+ <summary>
+ 作業項目マスタ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM030BLC.DeleteSagyoM(System.Data.DataSet)">
+ <summary>
+ 作業項目マスタ削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM030BLC.GetSagyoCd(System.Data.DataSet)">
+ <summary>
+ 作業コード(自動採番)を取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>sagyoCd</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMM040BLC">
+ <summary>
+ LMM040BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMM040BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMM040BLC.TABLE_NM_IN">
+ <summary>
+ INテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMM040BLC.TABLE_NM_OUT">
+ <summary>
+ OUTテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMM040BLC.TABLE_NM_OUT2">
+ <summary>
+ DEST_DETAILSテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMM040BLC.TABLE_NM_UNCHIN_TARIFF_SET_MAXCD">
+ <summary>
+ UNCHIN_TARIFF_SET_MAXCDテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMM040BLC.ZIP_M">
+ <summary>
+ 郵便番号マスタ(メッセージ用の名称)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMM040BLC.ZIP">
+ <summary>
+ 郵便番号(メッセージ用の名称)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMM040BLC.JIS">
+ <summary>
+ JISコード(メッセージ用の名称)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMM040BLC.UNCHIN_TARIFF_SET">
+ <summary>
+ 運賃タリフセットマスタ情報(メッセージ用の名称)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM040BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ 届先マスタ更新対象データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM040BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 届先マスタ更新対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM040BLC.SelectZipJisData(System.Data.DataSet)">
+ <summary>
+ 郵便番号マスタ情報データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM040BLC.CheckExistUserM(System.Data.DataSet)">
+ <summary>
+ 届先マスタ存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM040BLC.CheckHaitaUserM(System.Data.DataSet)">
+ <summary>
+ 届先マスタ排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM040BLC.ImportChk(System.Data.DataSet)">
+ <summary>
+ 一括登録チェック
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM040BLC.ImportExistChk(System.Data.DataSet)">
+ <summary>
+ 届先マスタの存在チェック（一括登録）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM040BLC.ImportInsertData(System.Data.DataSet)">
+ <summary>
+ 届先マスタ登録（一括登録）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM040BLC.ImportUpdateData(System.Data.DataSet)">
+ <summary>
+ 届先マスタ更新（一括登録）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM040BLC.InsertSaveAction(System.Data.DataSet)">
+ <summary>
+ 届先マスタ新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM040BLC.InsertData(System.Data.DataSet)">
+ <summary>
+ 新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM040BLC.UpdateSaveAction(System.Data.DataSet)">
+ <summary>
+ 更新登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM040BLC.UpdateData(System.Data.DataSet)">
+ <summary>
+ 更新登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM040BLC.DeleteAction(System.Data.DataSet)">
+ <summary>
+ 削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM040BLC.DeleteData(System.Data.DataSet)">
+ <summary>
+ 削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM040BLC.ServerChkJudge(System.Data.DataSet,System.String)">
+ <summary>
+ DACでメッセージが設定されているかを判定
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM040BLC.DacAccess(System.Data.DataSet,System.String)">
+ <summary>
+ DACクラスアクセス
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM040BLC.SelectMaxTariffSetMaxCdData(System.Data.DataSet)">
+ <summary>
+ 運賃セットマスタ MAXセットマスタコード取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM040BLC.InsertDestData(System.Data.DataSet)">
+ <summary>
+ 届先 新規
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM040BLC.UpdateDestData(System.Data.DataSet)">
+ <summary>
+ 届先 更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM040BLC.DelDestDetailsData(System.Data.DataSet)">
+ <summary>
+ 届先明細 物理削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM040BLC.InsertDestDetailsData(System.Data.DataSet)">
+ <summary>
+ 届先明細 新規
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM040BLC.CheckZipJisM(System.Data.DataSet)">
+ <summary>
+ 郵便マスタ存在チェック(郵便番号とJISコードで存在チェックをする)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM040BLC.SelectTariffSetCdData(System.Data.DataSet)">
+ <summary>
+ MAXセットマスタコードの採番
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM040BLC.SetZeroData(System.String,System.String)">
+ <summary>
+ 前ゼロ設定
+ </summary>
+ <param name="value">値</param>
+ <param name="keta">前につけるゼロ</param>
+ <returns>設定値</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM040BLC.IsMaxSetCdChk(System.Int32)">
+ <summary>
+ セットコード限界値チェック
+ </summary>
+ <param name="value">値</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMM050BLC">
+ <summary>
+ LMM050BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMM050BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM050BLC.SelectBusyo(System.Data.DataSet)">
+ <summary>
+ JDE非必須ユーザ確認
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM050BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ 請求先マスタ更新対象データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM050BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 請求先マスタ更新対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM050BLC.SelectVarStrage(System.Data.DataSet)">
+ <summary>
+ 変動保管料関連チェック用検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM050BLC.CheckExistSeikyusakiM(System.Data.DataSet)">
+ <summary>
+ 請求先マスタ存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM050BLC.CheckHaitaSeikyusakiM(System.Data.DataSet)">
+ <summary>
+ 請求先マスタ排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM050BLC.InsertSeikyusakiM(System.Data.DataSet)">
+ <summary>
+ 請求先マスタ新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM050BLC.UpdateSeikyusakiM(System.Data.DataSet)">
+ <summary>
+ 請求先マスタ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM050BLC.DeleteSeikyusakiM(System.Data.DataSet)">
+ <summary>
+ 請求先マスタ削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM050BLC.SelectComboSeiqCurrCd(System.Data.DataSet)">
+ <summary>
+請求通貨コンボ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks>請求通貨コンボ取得</remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMM060BLC">
+ <summary>
+ LMM060BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMM060BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM060BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ 運賃タリフマスタ更新対象データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM060BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 運賃タリフマスタ更新対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM060BLC.ExcelDataMake(System.Data.DataSet)">
+ <summary>
+ 運賃タリフマスタExcelデータ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM060BLC.CheckExistUnchinM(System.Data.DataSet)">
+ <summary>
+ 運賃タリフマスタ存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM060BLC.CheckHaitaUnchinM(System.Data.DataSet)">
+ <summary>
+ 運賃タリフマスタ排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM060BLC.InsertSaveAction(System.Data.DataSet)">
+ <summary>
+ 運賃タリフマスタ新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM060BLC.InsertData(System.Data.DataSet)">
+ <summary>
+ 新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM060BLC.UpdateSaveAction(System.Data.DataSet)">
+ <summary>
+ 更新登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM060BLC.UpdateData(System.Data.DataSet)">
+ <summary>
+ 更新登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM060BLC.DeleteAction(System.Data.DataSet)">
+ <summary>
+ 削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM060BLC.DeleteData(System.Data.DataSet)">
+ <summary>
+ 削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM060BLC.ServerChkJudge(System.Data.DataSet,System.String)">
+ <summary>
+ DACでメッセージが設定されているかを判定
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM060BLC.DacAccess(System.Data.DataSet,System.String)">
+ <summary>
+ DACクラスアクセス
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM060BLC.InsertUnchinData(System.Data.DataSet)">
+ <summary>
+ 運賃タリフ 新規
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM060BLC.UpdateUnchinData(System.Data.DataSet)">
+ <summary>
+ 運賃タリフ 更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM060BLC.DelUnchinData(System.Data.DataSet)">
+ <summary>
+ 運賃タリフ 物理削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM060BLC.ApprovalData(System.Data.DataSet)">
+ <summary>
+ 承認処理（申請、承認、差し戻し）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMM070BLC">
+ <summary>
+ LMM070BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMM070BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMM070BLC.OYA_JIS">
+ <summary>
+ 親レコード(JIS)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMM070BLC.JIS">
+ <summary>
+ JISレコード
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM070BLC.ComboData(System.Data.DataSet)">
+ <summary>
+ 都道府県名データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM070BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ 割増運賃マスタ更新対象データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM070BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 割増運賃マスタ更新対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM070BLC.CheckExistwarimashiM(System.Data.DataSet)">
+ <summary>
+ 割増運賃マスタ存在チェック(新規)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM070BLC.CheckExistwarimashiMGui(System.Data.DataSet)">
+ <summary>
+ レコード存在チェック(新規)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>すでに登録されている場合、エラー</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM070BLC.CheckExistwarimashiMOya(System.Data.DataSet)">
+ <summary>
+ 親レコード存在チェック(新規)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>親レコードが存在しない場合、1行追加</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM070BLC.CountChk(System.Data.DataSet)">
+ <summary>
+ 件数チェック(新規時)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>取得できている場合、False</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM070BLC.CheckExistDeleteM(System.Data.DataSet)">
+ <summary>
+ 割増運賃マスタ存在チェック(削除)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM070BLC.CheckExistOyaDelete(System.Data.DataSet)">
+ <summary>
+ 親レコード存在チェック(削除)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>親レコードの削除</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM070BLC.CountChkDelete(System.Data.DataSet)">
+ <summary>
+ 件数チェック(削除)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>取得できている場合、False</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM070BLC.CheckExistRivivalM(System.Data.DataSet)">
+ <summary>
+ 割増運賃マスタ存在チェック(復活)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM070BLC.CheckExistRivivalMOya(System.Data.DataSet)">
+ <summary>
+ 親レコード存在チェック(復活)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>親レコードが存在しない場合、1行追加</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM070BLC.CheckHaitawarimashiM(System.Data.DataSet)">
+ <summary>
+ 割増運賃マスタ排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM070BLC.InsertwarimashiM(System.Data.DataSet)">
+ <summary>
+ 割増運賃マスタ新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM070BLC.UpdatewarimashiM(System.Data.DataSet)">
+ <summary>
+ 割増運賃マスタ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM070BLC.DeletewarimashiM(System.Data.DataSet)">
+ <summary>
+ 割増運賃マスタ削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMM080BLC">
+ <summary>
+ LMM080BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMM080BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM080BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ 運送会社マスタ更新対象データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM080BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 運送会社マスタ更新対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM080BLC.CheckExistUnsocoM(System.Data.DataSet)">
+ <summary>
+ 運送会社マスタ存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM080BLC.CheckHaitaUnsocoM(System.Data.DataSet)">
+ <summary>
+ 運送会社マスタ排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM080BLC.InsertSaveAction(System.Data.DataSet)">
+ <summary>
+ 運送会社マスタ新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM080BLC.InsertData(System.Data.DataSet)">
+ <summary>
+ 新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM080BLC.UpdateSaveAction(System.Data.DataSet)">
+ <summary>
+ 更新登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM080BLC.UpdateData(System.Data.DataSet)">
+ <summary>
+ 更新登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM080BLC.DeleteAction(System.Data.DataSet)">
+ <summary>
+ 削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM080BLC.DeleteData(System.Data.DataSet)">
+ <summary>
+ 削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM080BLC.ServerChkJudge(System.Data.DataSet,System.String)">
+ <summary>
+ DACでメッセージが設定されているかを判定
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM080BLC.DacAccess(System.Data.DataSet,System.String)">
+ <summary>
+ DACクラスアクセス
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM080BLC.InsertUnsocoData(System.Data.DataSet)">
+ <summary>
+ 運送会社 新規
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM080BLC.UpdateUnsocoData(System.Data.DataSet)">
+ <summary>
+ 運送会社 更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM080BLC.DelCustRptData(System.Data.DataSet)">
+ <summary>
+ 運送会社荷主別送り状 物理削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM080BLC.InsertCustRptData(System.Data.DataSet)">
+ <summary>
+ 運送会社荷主別送り状 新規
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMM090BLC">
+ <summary>
+ LMM090BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMM090BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM090BLC.HaitaChk(System.Data.DataSet)">
+ <summary>
+ 排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM090BLC.ZaikoExistChk(System.Data.DataSet)">
+ <summary>
+ 在庫データ存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM090BLC.ChkUpdateData(System.Data.DataSet)">
+ <summary>
+ 更新対象レコードのチェックを行う
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM090BLC.DeleteData(System.Data.DataSet)">
+ <summary>
+ 荷主マスタ削除/復活処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM090BLC.SetOyaData(System.Data.DataSet)">
+ <summary>
+ 各更新用DataTableに、親データを追加
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM090BLC.ChkZaiT(System.Data.DataSet)">
+ <summary>
+ 在庫データ存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM090BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ 荷主マスタ検索処理(件数取得)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM090BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+初期検索を行う
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks>荷主マスタ、荷主別帳票マスタ、荷主明細マスタ、運賃タリフセットマスタ検索</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM090BLC.SelectVarStrage(System.Data.DataSet)">
+ <summary>
+ 変動保管料関連チェック用検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM090BLC.SelectComboItemCurrCd(System.Data.DataSet)">
+ <summary>
+契約通貨コンボ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks>契約通貨コンボ取得</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM090BLC.GetCustCd(System.Data.DataSet)">
+ <summary>
+ 新規採番コード取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM090BLC.ExistCustM(System.Data.DataSet)">
+ <summary>
+ 荷主マスタ重複チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM090BLC.InsertData(System.Data.DataSet)">
+ <summary>
+ 荷主マスタ、運賃タリフセットマスタ、荷主別帳票マスタ、荷主明細マスタ 新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM090BLC.UpdateSaveData(System.Data.DataSet)">
+ <summary>
+ 荷主マスタ、運賃タリフセットマスタ、荷主別帳票マスタ、荷主明細マスタ 更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM090BLC.SelectComboSeihin(System.Data.DataSet)">
+ <summary>
+ 製品セグメント取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks>コンボボックスの選択肢として利用</remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMM100BLC">
+ <summary>
+ LMM100BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMM100BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM100BLC.HaitaChk(System.Data.DataSet)">
+ <summary>
+ 商品マスタ排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM100BLC.ExistZaiko(System.Data.DataSet)">
+ <summary>
+ 在庫データ存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM100BLC.ExistCustZaiko(System.Data.DataSet)">
+ <summary>
+ 在庫データ存在チェック(荷主コードS・SS 編集可否判定用)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM100BLC.DeleteData(System.Data.DataSet)">
+ <summary>
+ 商品マスタ削除/復活処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM100BLC.ChkTankaMIkkatu(System.Data.DataSet)">
+ <summary>
+ 単価マスタ存在チェック(単価一括変更用)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM100BLC.UpdateIkkatu(System.Data.DataSet)">
+ <summary>
+ 商品マスタ一括更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM100BLC.UpdateNinushi(System.Data.DataSet)">
+ <summary>
+ 商品マスタの荷主一括更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM100BLC.ChkZaiT(System.Data.DataSet)">
+ <summary>
+ 在庫データ存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM100BLC.ExistGoodsMTaninusi(System.Data.DataSet)">
+ <summary>
+ 商品マスタ存在チェック(振替先に商品があるかのチェック)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM100BLC.InsertTaninusiMgoods(System.Data.DataSet)">
+ <summary>
+ 商品マスタ新規追加処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM100BLC.InsertTaninusiFuriGoods(System.Data.DataSet)">
+ <summary>
+ 振替対象商品マスタの新規追加処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM100BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ 商品マスタ検索処理(件数取得)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM100BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+商品マスタ検索処理(データ取得)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks>In句設定は2000件が上限のため、複数回にわたり検索処理を行う</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM100BLC.ChkTankaM(System.Data.DataSet)">
+ <summary>
+ 単価マスタチェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM100BLC.ExistGoodsM(System.Data.DataSet)">
+ <summary>
+ 商品マスタ重複チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM100BLC.ExistGoodsMCust(System.Data.DataSet)">
+ <summary>
+ 商品マスタ重複チェック(荷主コード、商品コード関連チェック)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM100BLC.MixKiwariChk(System.Data.DataSet)">
+ <summary>
+ 混在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM100BLC.GetGoodsMcust(System.Data.DataSet)">
+ <summary>
+ 荷主商品マスタ取得(荷主コード、荷主商品コードで取得)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM100BLC.TuboChk(System.Data.DataSet)">
+ <summary>
+ 坪貸請求先コード差異チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM100BLC.InsertData(System.Data.DataSet)">
+ <summary>
+ 商品マスタ/明細 新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM100BLC.UpdateSaveData(System.Data.DataSet)">
+ <summary>
+ 商品マスタ/明細 更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM100BLC.ConfirmKikenGoods(System.Data.DataSet)">
+ <summary>
+ 危険品情報確認処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM100BLC.UpdateGoodsVolume(System.Data.DataSet)">
+ <summary>
+ 容積一括更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM100BLC.XTrackChk_SKU(System.Data.DataSet)">
+ <summary>
+ X-Track用存在チェック（SKU）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM100BLC.XTrackChk_Gensan(System.Data.DataSet)">
+ <summary>
+ X-Track用存在チェック（原産国）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMM110BLC">
+ <summary>
+ LMM110BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMM110BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM110BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ 休日マスタ更新対象データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM110BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 休日マスタ更新対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM110BLC.SelectCopyData(System.Data.DataSet)">
+ <summary>
+ 休日マスタ更新対象データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM110BLC.SelectUpdData(System.Data.DataSet)">
+ <summary>
+ 休日マスタ更新対象データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM110BLC.SelectExistData(System.Data.DataSet)">
+ <summary>
+ 休日マスタ存在チェック(編集押下時)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM110BLC.SelectExistDataIn(System.Data.DataSet)">
+ <summary>
+ 休日マスタ存在チェック(新規登録時)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM110BLC.InsertHolM(System.Data.DataSet)">
+ <summary>
+ 休日マスタ新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM110BLC.UpdateHolM(System.Data.DataSet)">
+ <summary>
+ 休日マスタ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM110BLC.DeleteHolM(System.Data.DataSet)">
+ <summary>
+ 休日マスタ削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM110BLC.CopyHolM(System.Data.DataSet)">
+ <summary>
+ 休日マスタ複写
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMM120BLC">
+ <summary>
+ LMM120BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMM120BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM120BLC.HaitaChk(System.Data.DataSet)">
+ <summary>
+ 排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM120BLC.DeleteData(System.Data.DataSet)">
+ <summary>
+ 削除/復活処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM120BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ 単価マスタ検索処理(件数取得)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM120BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+単価マスタ検索処理(データ取得)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM120BLC.ExistTankaM(System.Data.DataSet)">
+ <summary>
+ 単価マスタ存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM120BLC.CheckTankaM_UP_GP_CD_1(System.Data.DataSet)">
+ <summary>
+ 単価マスタコード存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM120BLC.ChkStartDate(System.Data.DataSet)">
+ <summary>
+ 適用開始日チェック(新規登録時)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM120BLC.InsertData(System.Data.DataSet)">
+ <summary>
+ 単価マスタ 新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM120BLC.UpdateSaveData(System.Data.DataSet)">
+ <summary>
+ 単価マスタ 更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM120BLC.ApprovalData(System.Data.DataSet)">
+ <summary>
+ 承認処理（申請、承認、差し戻し）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM120BLC.SelectComboSeihin(System.Data.DataSet)">
+ <summary>
+ 製品セグメント取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks>コンボボックスの選択肢として利用</remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMM130BLC">
+ <summary>
+ LMM130BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMM130BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM130BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ 棟室マスタ更新対象データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM130BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 棟室マスタ更新対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM130BLC.SelectSokoJT(System.Data.DataSet)">
+ <summary>
+ 倉庫自社他社判定用データ取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM130BLC.CheckExistTouSituM(System.Data.DataSet)">
+ <summary>
+ 棟室マスタ存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM130BLC.CheckHaitaTouSituM(System.Data.DataSet)">
+ <summary>
+ 棟室マスタ排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM130BLC.InsertSaveAction(System.Data.DataSet)">
+ <summary>
+ 棟室マスタ新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM130BLC.InsertData(System.Data.DataSet)">
+ <summary>
+ 新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM130BLC.UpdateSaveAction(System.Data.DataSet)">
+ <summary>
+ 更新登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM130BLC.UpdateData(System.Data.DataSet)">
+ <summary>
+ 更新登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM130BLC.DeleteAction(System.Data.DataSet)">
+ <summary>
+ 削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM130BLC.DeleteData(System.Data.DataSet)">
+ <summary>
+ 削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM130BLC.ServerChkJudge(System.Data.DataSet,System.String)">
+ <summary>
+ DACでメッセージが設定されているかを判定
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM130BLC.DacAccess(System.Data.DataSet,System.String)">
+ <summary>
+ DACクラスアクセス
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM130BLC.InsertTouSituData(System.Data.DataSet)">
+ <summary>
+ 棟室マスタ 新規
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM130BLC.UpdateTouSituData(System.Data.DataSet)">
+ <summary>
+ 棟室マスタ 更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM130BLC.DelTouSituShoboData(System.Data.DataSet)">
+ <summary>
+ 棟室マスタ消防情報 物理削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM130BLC.DelTouSituExpData(System.Data.DataSet)">
+ <summary>
+ 申請外の商品保管許可ルールマスタ報 物理削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM130BLC.DelTouSituZoneChkData(System.Data.DataSet)">
+ <summary>
+ 棟室ゾーンチェックマスタ情報 物理削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM130BLC.InsertTouSituShoboData(System.Data.DataSet)">
+ <summary>
+ 棟室マスタ消防情報 新規
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM130BLC.InsertTouSituExpData(System.Data.DataSet)">
+ <summary>
+ 申請外の商品保管許可ルール情報 新規
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM130BLC.InsertTouSituZoneChkData(System.Data.DataSet)">
+ <summary>
+ 棟室ゾーンチェックマスタ情報 新規
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMM140BLC">
+ <summary>
+ LMM140BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMM140BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM140BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ ZONEマスタ更新対象データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM140BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ ZONEマスタ更新対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM140BLC.CheckExistZoneM(System.Data.DataSet)">
+ <summary>
+ ZONEマスタ存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM140BLC.CheckHaitaZoneM(System.Data.DataSet)">
+ <summary>
+ ZONEマスタ排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM140BLC.InsertZoneM(System.Data.DataSet)">
+ <summary>
+ ZONEマスタ新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM140BLC.InsertData(System.Data.DataSet)">
+ <summary>
+ 新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM140BLC.InsertZoneData(System.Data.DataSet)">
+ <summary>
+ ZONEマスタ 新規
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM140BLC.DelZoneShoboData(System.Data.DataSet)">
+ <summary>
+ ZONEマスタ消防情報 物理削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM140BLC.InsertZoneShoboData(System.Data.DataSet)">
+ <summary>
+ ZONEマスタ消防情報 新規
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM140BLC.DelTouSituZoneChkData(System.Data.DataSet)">
+ <summary>
+ 棟室ゾーンチェックマスタ情報 物理削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM140BLC.InsertTouSituZoneChkData(System.Data.DataSet)">
+ <summary>
+ 棟室ゾーンチェックマスタ情報 新規
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM140BLC.UpdateZoneM(System.Data.DataSet)">
+ <summary>
+ ZONEマスタ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM140BLC.UpdateData(System.Data.DataSet)">
+ <summary>
+ 更新登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM140BLC.UpdateZoneData(System.Data.DataSet)">
+ <summary>
+ ZONEマスタ 更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM140BLC.DeleteZoneM(System.Data.DataSet)">
+ <summary>
+ Zoneマスタ削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM140BLC.DeleteData(System.Data.DataSet)">
+ <summary>
+ 削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM140BLC.ServerChkJudge(System.Data.DataSet,System.String)">
+ <summary>
+ DACでメッセージが設定されているかを判定
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM140BLC.DacAccess(System.Data.DataSet,System.String)">
+ <summary>
+ DACクラスアクセス
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMM150BLC">
+ <summary>
+ LMM150BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMM150BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM150BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ 倉庫マスタ更新対象データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM150BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 倉庫マスタ更新対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM150BLC.CheckExistSokoM(System.Data.DataSet)">
+ <summary>
+ 倉庫マスタ存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM150BLC.CheckHaitaSokoM(System.Data.DataSet)">
+ <summary>
+ 倉庫マスタ排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM150BLC.InsertSokoM(System.Data.DataSet)">
+ <summary>
+ 倉庫マスタ新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM150BLC.UpdateSokoM(System.Data.DataSet)">
+ <summary>
+ 倉庫マスタ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM150BLC.DeleteSokoM(System.Data.DataSet)">
+ <summary>
+ 倉庫マスタ削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM150BLC.CheckJisWng(System.Data.DataSet)">
+ <summary>
+ JISコード整合性存在チェック
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMM160BLC">
+ <summary>
+ LMM160BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMM160BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM160BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ 届先商品マスタ更新対象データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM160BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 届先商品マスタ更新対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM160BLC.CheckExistDestgoodsM(System.Data.DataSet)">
+ <summary>
+ 届先商品マスタ存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM160BLC.CheckHaitaDestgoodsM(System.Data.DataSet)">
+ <summary>
+ 届先商品マスタ排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM160BLC.InsertDestgoodsM(System.Data.DataSet)">
+ <summary>
+ 届先商品マスタ新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM160BLC.UpdateDestgoodsM(System.Data.DataSet)">
+ <summary>
+ 届先製品マスタ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM160BLC.DeleteDestgoodsM(System.Data.DataSet)">
+ <summary>
+ 届先製品マスタ削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMM170BLC">
+ <summary>
+ LMM170BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMM170BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM170BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ 郵便番号マスタ更新対象データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM170BLC.ComboData(System.Data.DataSet)">
+ <summary>
+ 都道府県名データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM170BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 郵便番号マスタ更新対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM170BLC.CheckExistYubinM(System.Data.DataSet)">
+ <summary>
+ 郵便番号マスタ存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM170BLC.CheckHaitaYubinM(System.Data.DataSet)">
+ <summary>
+ 郵便番号マスタ排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM170BLC.InsertYubinM(System.Data.DataSet)">
+ <summary>
+ 郵便番号マスタ新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM170BLC.UpdateYubinM(System.Data.DataSet)">
+ <summary>
+ 郵便番号マスタ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM170BLC.DeleteYubinM(System.Data.DataSet)">
+ <summary>
+ 郵便番号マスタ削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMM180BLC">
+ <summary>
+ LMM180BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMM180BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM180BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ JISマスタ更新対象データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM180BLC.ComboData(System.Data.DataSet)">
+ <summary>
+ 都道府県名データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM180BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ JISマスタ更新対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM180BLC.CheckExistJisM(System.Data.DataSet)">
+ <summary>
+ JISマスタ存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM180BLC.CheckHaitaJisM(System.Data.DataSet)">
+ <summary>
+ JISマスタ排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM180BLC.InsertJisM(System.Data.DataSet)">
+ <summary>
+ JISマスタ新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM180BLC.UpdateJisM(System.Data.DataSet)">
+ <summary>
+ JISマスタ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM180BLC.DeleteJisM(System.Data.DataSet)">
+ <summary>
+ JISマスタ削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMM190BLC">
+ <summary>
+ LMM190BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMM190BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM190BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ 距離程マスタ更新対象データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM190BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 距離程マスタ更新対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM190BLC.CheckExistKyoriM(System.Data.DataSet)">
+ <summary>
+ 距離程マスタ存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM190BLC.CheckHaitaKyoriM(System.Data.DataSet)">
+ <summary>
+ 距離程マスタ排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM190BLC.InsertKyoriM(System.Data.DataSet)">
+ <summary>
+ 距離程マスタ新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM190BLC.UpdateKyoriM(System.Data.DataSet)">
+ <summary>
+ 距離程マスタ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM190BLC.DeleteKyoriM(System.Data.DataSet)">
+ <summary>
+ 距離程マスタ削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMM200BLC">
+ <summary>
+ LMM200BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMM200BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM200BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ 車輌マスタ更新対象データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM200BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 車輌マスタ更新対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM200BLC.CheckHaitaSyaryoM(System.Data.DataSet)">
+ <summary>
+ 車輌マスタ排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM200BLC.InsertSyaryoM(System.Data.DataSet)">
+ <summary>
+ 車輌マスタ新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM200BLC.UpdateSyaryoM(System.Data.DataSet)">
+ <summary>
+ 車輌マスタ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM200BLC.DeleteSyaryoM(System.Data.DataSet)">
+ <summary>
+ 車輌マスタ削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM200BLC.GetcarKey(System.Data.DataSet)">
+ <summary>
+ 車輌キー(自動採番)を取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>carKey</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMM210BLC">
+ <summary>
+ LMM210BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMM210BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM210BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ 乗務員マスタ更新対象データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM210BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 乗務員マスタ更新対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM210BLC.CheckExistDriverM(System.Data.DataSet)">
+ <summary>
+ 乗務員マスタ存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM210BLC.CheckHaitaDriverM(System.Data.DataSet)">
+ <summary>
+ 乗務員マスタ排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM210BLC.InsertDriverM(System.Data.DataSet)">
+ <summary>
+ 乗務員マスタ新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM210BLC.UpdateDriverM(System.Data.DataSet)">
+ <summary>
+ 乗務員マスタ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM210BLC.DeleteDriverM(System.Data.DataSet)">
+ <summary>
+ 乗務員マスタ削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMM220BLC">
+ <summary>
+ LMM220BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMM220BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM220BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ 商品状態区分マスタ更新対象データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM220BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 商品状態区分マスタ更新対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM220BLC.CheckExistShohinKbnM(System.Data.DataSet)">
+ <summary>
+ 商品状態区分マスタ存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM220BLC.CheckHaitaShohinKbnM(System.Data.DataSet)">
+ <summary>
+ 商品状態区分マスタ排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM220BLC.InsertShohinKbnM(System.Data.DataSet)">
+ <summary>
+ 商品状態区分マスタ新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM220BLC.UpdateShohinKbnM(System.Data.DataSet)">
+ <summary>
+ 商品状態区分マスタ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM220BLC.DeleteShohinKbnM(System.Data.DataSet)">
+ <summary>
+ 商品状態区分マスタ削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMM230BLC">
+ <summary>
+ LMM230BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMM230BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM230BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ エリアマスタ更新対象データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM230BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ エリアマスタ更新対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM230BLC.CheckExistAreaM(System.Data.DataSet)">
+ <summary>
+ エリアマスタ存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM230BLC.CheckHaitaAreaM(System.Data.DataSet)">
+ <summary>
+ エリアマスタ排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM230BLC.InsertSaveAction(System.Data.DataSet)">
+ <summary>
+ エリアマスタ新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM230BLC.InsertData(System.Data.DataSet)">
+ <summary>
+ 新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM230BLC.UpdateSaveAction(System.Data.DataSet)">
+ <summary>
+ 更新登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM230BLC.UpdateData(System.Data.DataSet)">
+ <summary>
+ 更新登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM230BLC.CheckExistJisAreaM(System.Data.DataSet)">
+ <summary>
+ エリアマスタ存在チェック(更新時、新規JISコード)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM230BLC.DeleteAction(System.Data.DataSet)">
+ <summary>
+ 削除/復活処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM230BLC.DeleteData(System.Data.DataSet)">
+ <summary>
+ 削除/復活処理(論理削除)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM230BLC.ServerChkJudge(System.Data.DataSet,System.String)">
+ <summary>
+ DACでメッセージが設定されているかを判定
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM230BLC.DacAccess(System.Data.DataSet,System.String)">
+ <summary>
+ DACクラスアクセス
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM230BLC.PhysicDeleteAreaData(System.Data.DataSet)">
+ <summary>
+ 物理削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM230BLC.InsertAreaData(System.Data.DataSet)">
+ <summary>
+ 新規
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM230BLC.UpdataAreaData(System.Data.DataSet)">
+ <summary>
+ 更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMM240BLC">
+ <summary>
+ LMM240BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMM240BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM240BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ 帳票パターンマスタ更新対象データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM240BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 帳票パターンマスタ更新対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM240BLC.CheckExistRptM(System.Data.DataSet)">
+ <summary>
+ 帳票パターンマスタ存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM240BLC.CheckHaitaRptM(System.Data.DataSet)">
+ <summary>
+ 帳票パターンマスタ排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM240BLC.InsertRptM(System.Data.DataSet)">
+ <summary>
+ 帳票パターンマスタ新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM240BLC.UpdateRptM(System.Data.DataSet)">
+ <summary>
+ 帳票パターンマスタ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM240BLC.DeleteRptM(System.Data.DataSet)">
+ <summary>
+ 帳票パターンマスタ削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM240BLC.ServerDacAccess(System.Data.DataSet,System.String)">
+ <summary>
+ DACアクセス
+ </summary>
+ <param name="ds">データセット</param>
+ <param name="methodNm">メソッド名</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMM260BLC">
+ <summary>
+ LMM260BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMM260BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM260BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ 注意書マスタ更新対象データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM260BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 注意書マスタ更新対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM260BLC.CountM(System.Data.DataSet)">
+ <summary>
+ 注意書マスタ存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM260BLC.CheckHaitaChuigakiM(System.Data.DataSet)">
+ <summary>
+ 注意書マスタ排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM260BLC.InsertChuigakiM(System.Data.DataSet)">
+ <summary>
+ 注意書マスタ新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM260BLC.UpdateChuigakiM(System.Data.DataSet)">
+ <summary>
+ 注意書マスタ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM260BLC.DeleteChuigakiM(System.Data.DataSet)">
+ <summary>
+ 注意書マスタ削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMM280BLC">
+ <summary>
+ LMM280BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMM280BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM280BLC.HaitaChk(System.Data.DataSet)">
+ <summary>
+ 排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM280BLC.DeleteData(System.Data.DataSet)">
+ <summary>
+ 横持ちタリフマスタ削除/復活処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM280BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ 横持ちタリフマスタ検索処理(件数取得)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM280BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+初期検索を行う
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks>横持ちタリフヘッダマスタ、横持ちタリフ明細マスタ検索</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM280BLC.ExistYokoTariffHedM(System.Data.DataSet)">
+ <summary>
+ 横持ちタリフヘッダマスタ存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM280BLC.InsertData(System.Data.DataSet)">
+ <summary>
+ 横持ちタリフヘッダマスタ、横持ちタリフ明細マスタ 新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM280BLC.UpdateSaveData(System.Data.DataSet)">
+ <summary>
+ 横持ちタリフヘッダマスタ、横持ちタリフ明細マスタ 更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMM290BLC">
+ <summary>
+ LMM290BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMM290BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM290BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ 振替対象商品マスタメンテ更新対象データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM290BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 振替対象商品マスタメンテ更新対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM290BLC.CheckExistFuriGoodsM(System.Data.DataSet)">
+ <summary>
+ 振替対象商品マスタメンテ存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM290BLC.CheckHaitaFuriGoodsM(System.Data.DataSet)">
+ <summary>
+ 振替対象商品マスタメンテ排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM290BLC.InsertFuriGoodsM(System.Data.DataSet)">
+ <summary>
+ 振替対象商品マスタメンテ新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM290BLC.UpdateFuriGoodsM(System.Data.DataSet)">
+ <summary>
+ 振替対象商品マスタメンテ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM290BLC.DeleteFuriGoodsM(System.Data.DataSet)">
+ <summary>
+ 振替対象商品マスタメンテ削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMM320BLC">
+ <summary>
+ LMM320BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMM320BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM320BLC.CheckExistSeikyukoumokuM(System.Data.DataSet)">
+ <summary>
+ 請求項目マスタ存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM320BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ 請求項目マスタ更新対象データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM320BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 請求項目マスタ更新対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM320BLC.CheckHaitaSeikyukoumokuM(System.Data.DataSet)">
+ <summary>
+ 請求項目マスタ排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM320BLC.InsertSeikyukoumokuM(System.Data.DataSet)">
+ <summary>
+ 請求項目マスタ新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM320BLC.UpdateSeikyukoumokuM(System.Data.DataSet)">
+ <summary>
+ 請求項目マスタ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM320BLC.DeleteSeikyukoumokuM(System.Data.DataSet)">
+ <summary>
+ 請求先マスタ削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM320BLC.CheckZipM(System.Data.DataSet)">
+ <summary>
+ 郵便マスタ存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMM350BLC">
+ <summary>
+ LMM350BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMM350BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM350BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ 初期出荷マスタ更新対象データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM350BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 初期出荷マスタ更新対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM350BLC.CheckExistShokiShukkaM(System.Data.DataSet)">
+ <summary>
+ 初期出荷マスタ存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM350BLC.CheckHaitaShokiShukkaM(System.Data.DataSet)">
+ <summary>
+ 初期出荷マスタ排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM350BLC.InsertShokiShukkaM(System.Data.DataSet)">
+ <summary>
+ 初期出荷マスタ新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM350BLC.UpdateShokiShukkaM(System.Data.DataSet)">
+ <summary>
+ 初期出荷マスタ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMM360BLC">
+ <summary>
+ LMM360BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMM360BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM360BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ 請求先テンプレートマスタ更新対象データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM360BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 請求先テンプレートマスタ更新対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM360BLC.CheckExistSeiqTemplateM(System.Data.DataSet)">
+ <summary>
+ 請求先テンプレートマスタ存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM360BLC.CheckCust_HOKAN(System.Data.DataSet)">
+ <summary>
+ 請求先テンプレートマスタ存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM360BLC.CheckCust_NIYAKU(System.Data.DataSet)">
+ <summary>
+ 請求先テンプレートマスタ存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM360BLC.CheckCust_UNCHIN(System.Data.DataSet)">
+ <summary>
+ 請求先テンプレートマスタ存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM360BLC.CheckCust_SAGYO(System.Data.DataSet)">
+ <summary>
+ 請求先テンプレートマスタ存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM360BLC.CheckCust_OYA(System.Data.DataSet)">
+ <summary>
+ 請求先テンプレートマスタ存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM360BLC.CheckHaitaSeiqTemplateM(System.Data.DataSet)">
+ <summary>
+ 請求先テンプレートマスタ排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM360BLC.InsertSeiqTemplateM(System.Data.DataSet)">
+ <summary>
+ 請求先テンプレートマスタ新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM360BLC.UpdateSeiqTemplateM(System.Data.DataSet)">
+ <summary>
+ 請求先テンプレートマスタ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM360BLC.DeleteSeiqTemplateM(System.Data.DataSet)">
+ <summary>
+ 請求先テンプレートマスタ削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMM400BLC">
+ <summary>
+ LMM400BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMM400BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM400BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ 西濃マスタ更新対象データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM400BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 西濃マスタ更新対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM400BLC.CheckExistSeinoM(System.Data.DataSet)">
+ <summary>
+ 西濃マスタ存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM400BLC.CheckAllItem(System.Data.DataSet)">
+ <summary>
+ 必須項目存在チェック 3/17 未使用
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM400BLC.CheckHaitaSeinoM(System.Data.DataSet)">
+ <summary>
+ 西濃マスタ排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM400BLC.InsertSeinoM(System.Data.DataSet)">
+ <summary>
+ 西濃マスタ新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM400BLC.UpdateSeinoM(System.Data.DataSet)">
+ <summary>
+ 西濃マスタ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM400BLC.DeleteSeinoM(System.Data.DataSet)">
+ <summary>
+ 西濃マスタ削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMM500BLC">
+ <summary>
+ LMM500BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMM500BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM500BLC.DoPrint(System.Data.DataSet)">
+ <summary>
+ 印刷処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM500BLC.EditPrintDataSet(System.String,System.Data.DataSet)">
+ <summary>
+ データセットの編集を行う。
+ </summary>
+ <param name="rptId"></param>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM500BLC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+　出力対象帳票パターン取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM500BLC.SelectTouNo(System.Data.DataSet)">
+ <summary>
+　棟番号取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM500BLC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 印刷データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMM510BLC">
+ <summary>
+ LMM510BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMM510BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM510BLC.DoPrint(System.Data.DataSet)">
+ <summary>
+ 印刷処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM510BLC.EditPrintDataSet(System.String,System.Data.DataSet)">
+ <summary>
+ データセットの編集を行う。
+ </summary>
+ <param name="rptId"></param>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM510BLC.EditPrintDataSetDetails(System.Data.DataSet)">
+ <summary>
+ データセットの編集(DETAILS)。
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM510BLC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+　出力対象帳票パターン取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM510BLC.SelectTouNo(System.Data.DataSet)">
+ <summary>
+　棟番号取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM510BLC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 印刷データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM510BLC.SelectDetailsData(System.Data.DataSet)">
+ <summary>
+ DETAILSデータ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMM520BLC">
+ <summary>
+ LMM520BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMM520BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM520BLC.DoPrint(System.Data.DataSet)">
+ <summary>
+ 印刷処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM520BLC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 印刷データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMM530BLC">
+ <summary>
+ LMM530BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMM530BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM530BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ イエローカード管理マスタ更新対象データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM530BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ イエローカード管理マスタ更新対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM530BLC.CheckExistYCardM(System.Data.DataSet)">
+ <summary>
+ イエローカード管理マスタ存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM530BLC.CheckHaitaYCardM(System.Data.DataSet)">
+ <summary>
+ イエローカード管理マスタ排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM530BLC.InsertYCardM(System.Data.DataSet)">
+ <summary>
+ イエローカード管理マスタ新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM530BLC.UpdateYCardM(System.Data.DataSet)">
+ <summary>
+ イエローカード管理マスタ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM530BLC.DeleteYCardM(System.Data.DataSet)">
+ <summary>
+ イエローカード管理マスタ削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMM540BLC">
+ <summary>
+ LMM540BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMM540BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM540BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ 棟マスタ更新対象データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM540BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 棟マスタ更新対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM540BLC.CheckExistTouM(System.Data.DataSet)">
+ <summary>
+ 棟マスタ存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM540BLC.CheckHaitaTouM(System.Data.DataSet)">
+ <summary>
+ 棟マスタ排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM540BLC.InsertSaveAction(System.Data.DataSet)">
+ <summary>
+ 棟マスタ新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM540BLC.InsertData(System.Data.DataSet)">
+ <summary>
+ 新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM540BLC.UpdateSaveAction(System.Data.DataSet)">
+ <summary>
+ 更新登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM540BLC.UpdateData(System.Data.DataSet)">
+ <summary>
+ 更新登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM540BLC.SelectListDataSum(System.Data.DataSet)">
+ <summary>
+ 保管可能データ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM540BLC.HaikaSaveAction(System.Data.DataSet)">
+ <summary>
+ 配下に反映処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM540BLC.HaikaData(System.Data.DataSet)">
+ <summary>
+ 配下に反映処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM540BLC.DeleteAction(System.Data.DataSet)">
+ <summary>
+ 削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM540BLC.DeleteData(System.Data.DataSet)">
+ <summary>
+ 削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM540BLC.ServerChkJudge(System.Data.DataSet,System.String)">
+ <summary>
+ DACでメッセージが設定されているかを判定
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM540BLC.DacAccess(System.Data.DataSet,System.String)">
+ <summary>
+ DACクラスアクセス
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM540BLC.InsertTouData(System.Data.DataSet)">
+ <summary>
+ 棟マスタ 新規
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM540BLC.UpdateTouData(System.Data.DataSet)">
+ <summary>
+ 棟マスタ 更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM540BLC.InsertTouSituShoboData(System.Data.DataSet)">
+ <summary>
+ 棟室マスタ 配下に反映
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM540BLC.InsertZoneShoboData(System.Data.DataSet)">
+ <summary>
+ ゾーンマスタ 配下に反映
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM540BLC.InsertTouSituChkData(System.Data.DataSet)">
+ <summary>
+ 棟室ゾーンチェックマスタ(棟室） 配下に反映
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM540BLC.InsertZoneChkData(System.Data.DataSet)">
+ <summary>
+ 棟室ゾーンチェックマスタ(ゾーン) 配下に反映
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM540BLC.DelTouShoboData(System.Data.DataSet)">
+ <summary>
+ 棟マスタ消防情報 物理削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM540BLC.DelTouChkData(System.Data.DataSet)">
+ <summary>
+ 棟チェックマスタ情報 物理削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM540BLC.DelTouSituShoboData(System.Data.DataSet)">
+ <summary>
+ 棟室マスタ消防情報 物理削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM540BLC.DelZoneShoboData(System.Data.DataSet)">
+ <summary>
+ ゾーンマスタ消防情報 物理削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM540BLC.DelTouSituZoneChkData(System.Data.DataSet)">
+ <summary>
+ 棟室ゾーンチェックマスタ情報 物理削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM540BLC.InsertTouShoboData(System.Data.DataSet)">
+ <summary>
+ 棟マスタ消防情報 新規
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM540BLC.InsertTouChkData(System.Data.DataSet)">
+ <summary>
+ 棟チェックマスタ情報 新規
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM540BLC.UpdateTouSituData(System.Data.DataSet)">
+ <summary>
+ 棟室マスタ 更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM540BLC.UpdateZoneData(System.Data.DataSet)">
+ <summary>
+ ZONEマスタ 更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMM550BLC">
+ <summary>
+ LMM550BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMM550BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM550BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ 支払運賃タリフマスタ更新対象データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM550BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 支払運賃タリフマスタ更新対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM550BLC.ExcelDataMake(System.Data.DataSet)">
+ <summary>
+ 支払運賃タリフマスタExcelデータ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM550BLC.CheckExistShiharaiM(System.Data.DataSet)">
+ <summary>
+ 支払運賃タリフマスタ存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM550BLC.CheckHaitaShiharaiM(System.Data.DataSet)">
+ <summary>
+ 支払運賃タリフマスタ排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM550BLC.CheckExistShiharaiSedai1(System.Data.DataSet)">
+ <summary>
+ 支払タリフコード・2次タリフコード(世代チェック_①)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM550BLC.CheckExistShiharaiSedai2(System.Data.DataSet)">
+ <summary>
+ 支払タリフコード・2次タリフコード(世代チェック_②)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM550BLC.CheckExistShiharaiSeigo(System.Data.DataSet)">
+ <summary>
+ 支払タリフコード・2次タリフコード(整合性チェック)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM550BLC.InsertSaveAction(System.Data.DataSet)">
+ <summary>
+ 支払運賃タリフマスタ新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM550BLC.InsertData(System.Data.DataSet)">
+ <summary>
+ 新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM550BLC.UpdateSaveAction(System.Data.DataSet)">
+ <summary>
+ 更新登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM550BLC.UpdateData(System.Data.DataSet)">
+ <summary>
+ 更新登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM550BLC.DeleteAction(System.Data.DataSet)">
+ <summary>
+ 削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM550BLC.DeleteData(System.Data.DataSet)">
+ <summary>
+ 削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM550BLC.ServerChkJudge(System.Data.DataSet,System.String)">
+ <summary>
+ DACでメッセージが設定されているかを判定
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM550BLC.DacAccess(System.Data.DataSet,System.String)">
+ <summary>
+ DACクラスアクセス
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM550BLC.InsertShiharaiData(System.Data.DataSet)">
+ <summary>
+ 支払運賃タリフ 新規
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM550BLC.UpdateShiharaiData(System.Data.DataSet)">
+ <summary>
+ 支払運賃タリフ 更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMM550BLC.DelShiharaiData(System.Data.DataSet)">
+ <summary>
+ 支払運賃タリフ 物理削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

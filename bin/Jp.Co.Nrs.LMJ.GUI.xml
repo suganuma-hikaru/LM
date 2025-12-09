@@ -1,0 +1,1889 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.LMJ.GUI
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.LM.GUI.LMJ010C">
+ <summary>
+ LMJ010定数定義クラス
+ </summary>
+ <remarks></remarks>
+ <histry>
+ 
+ </histry>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJ010C.ACTION_ID_GET_GETUDATA">
+ <summary>
+ 月末在庫情報取得アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJ010C.ACTION_ID_GET_CREATE_DATA">
+ <summary>
+ 実行時のデータ取得アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJ010C.TABLE_NM_IN">
+ <summary>
+ INテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJ010C.TABLE_NM_OUT">
+ <summary>
+ OUTテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJ010C.TABLE_NM_SYS_DATETIME">
+ <summary>
+ SYS_DATETIMEテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJ010C.TABLE_NM_ERR">
+ <summary>
+ ERRテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJ010C.TABLE_NM_GETU_IN">
+ <summary>
+ GETU_INテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJ010C.TABLE_NM_GETU_OUT">
+ <summary>
+ GETU_OUTテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJ010C.SHORI_MATSU">
+ <summary>
+ 処理内容(末締め)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJ010C.SHORI_SONOTA">
+ <summary>
+ 処理内容 = 指定された荷主のみチェックする
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJ010C.SIME_10">
+ <summary>
+ 締め日基準(10)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJ010C.SIME_20">
+ <summary>
+ 締め日基準(20)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJ010C.SIME_25">
+ <summary>
+ 締め日基準(25)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJ010C.ERR_01">
+ <summary>
+ サーバチェック①
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJ010C.ERR_02">
+ <summary>
+ サーバチェック②
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJ010C.START_DATE">
+ <summary>
+ 初期在庫(区分)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJ010C.LIST_CNT">
+ <summary>
+ コンボに設定するリストの数
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.GUI.LMJ010C.CtlTabIndex">
+ <summary>
+ タブインデックス用列挙体(コントロール)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.GUI.LMJ010C.ActionType">
+ <summary>
+ アクションタイプ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.GUI.LMJ010F">
+ <summary>
+ LMJ010フォームクラス
+ </summary>
+ <remarks></remarks>
+ <histry>
+ 
+ </histry>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJ010F._H">
+ <summary>
+ このフォームを作成したハンドラクラスを格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010F.#ctor(Jp.Co.Nrs.LM.GUI.LMJ010H)">
+ <summary>
+ コンストラクタ
+ </summary>
+ <param name="handlerClass">このフォームを生成したハンドラクラス</param>
+ <remarks>呼び出し元のハンドラクラスをこのフォームに紐付けます。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010F.Function7_Press(System.Object,System.Windows.Forms.KeyEventArgs)">
+ <summary>
+ ファンクション７ボタン押下時およびファンクションキー８押下時のイベントです。
+ </summary>
+ <param name="sender">イベント発生オブジェクト</param>
+ <param name="e">イベント詳細情報</param>
+ <remarks>各イベントに対応するハンドラクラスのメソッドを呼び出してください。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010F.Function10_Press(System.Object,System.Windows.Forms.KeyEventArgs)">
+ <summary>
+ ファンクション１０ボタン押下時およびファンクションキー１０押下時のイベントです。
+ </summary>
+ <param name="sender">イベント発生オブジェクト</param>
+ <param name="e">イベント詳細情報</param>
+ <remarks>各イベントに対応するハンドラクラスのメソッドを呼び出してください。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010F.Function12_Press(System.Object,System.Windows.Forms.KeyEventArgs)">
+ <summary>
+ ファンクション１２ボタン押下時およびファンクションキー１２押下時のイベントです。
+ </summary>
+ <param name="sender">イベント発生オブジェクト</param>
+ <param name="e">イベント詳細情報</param>
+ <remarks>各イベントに対応するハンドラクラスのメソッドを呼び出してください。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010F.Form_FormClosed(System.Object,System.Windows.Forms.FormClosedEventArgs)">
+ <summary>
+ フォームが閉じた後に発生するイベントです。
+ </summary>
+ <param name="sender">イベント発生元オブジェクト</param>
+ <param name="e">イベント詳細</param>
+ <remarks>Navigateクラスのインスタンス管理から登録解除します。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010F.cmbShori_SelectedValueChanged(System.Object,System.EventArgs)">
+ <summary>
+ 処理内容変更時のイベント
+ </summary>
+ <param name="sender">イベント発生元オブジェクト</param>
+ <param name="e">イベント詳細</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010F.cmbSeiqComb_SelectedValueChanged(System.Object,System.EventArgs)">
+ <summary>
+ 請求日付コンボ変更時のイベント
+ </summary>
+ <param name="sender">イベント発生元オブジェクト</param>
+ <param name="e">イベント詳細</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010F.LMJ010F_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+ <summary>
+ キー押下イベント
+ </summary>
+ <param name="sender">イベント発生元オブジェクト</param>
+ <param name="e">イベント詳細</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010F.txtCustCdL_Enter(System.Object,System.EventArgs)">
+ <summary>
+ 荷主コード(大)フォーカスインイベント
+ </summary>
+ <param name="sender">イベント発生元オブジェクト</param>
+ <param name="e">イベント詳細</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010F.txtCustCdL_Leave(System.Object,System.EventArgs)">
+ <summary>
+ 荷主コード(大)フォーカスアウトイベント
+ </summary>
+ <param name="sender">イベント発生元オブジェクト</param>
+ <param name="e">イベント詳細</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010F.txtCustCdM_Enter(System.Object,System.EventArgs)">
+ <summary>
+ 荷主コード(中)フォーカスインイベント
+ </summary>
+ <param name="sender">イベント発生元オブジェクト</param>
+ <param name="e">イベント詳細</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010F.txtCustCdM_Leave(System.Object,System.EventArgs)">
+ <summary>
+ 荷主コード(中)フォーカスアウトイベント
+ </summary>
+ <param name="sender">イベント発生元オブジェクト</param>
+ <param name="e">イベント詳細</param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.GUI.LMJ010G">
+ <summary>
+ LMJ010Gamenクラス
+ </summary>
+ <remarks>画面構築を行う</remarks>
+ <histry>
+ 
+ </histry>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJ010G._Frm">
+ <summary>
+ このクラスが紐付くフォームクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJ010G._LMJconG">
+ <summary>
+ GAMEN共通クラスを格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010G.#ctor(Jp.Co.Nrs.LM.Base.GUI.LMBaseGUIHandler@,Jp.Co.Nrs.LM.GUI.LMJ010F@,Jp.Co.Nrs.LM.GUI.LMJControlG)">
+ <summary>
+ コンストラクタ
+ </summary>
+ <param name="handlerClass">このクラスを生成したハンドラクラス</param>
+ <param name="frm">このクラスが設定するコントロールを持つフォームクラス</param>
+ <remarks>フォームラスとハンドラクラスをこのクラスに紐付けます。編集不可</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010G.SetFunctionKey">
+ <summary>
+ ファンクションキーの設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010G.SetTabIndex">
+ <summary>
+ タブインデックスの設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010G.SetControl">
+ <summary>
+ 画面コントロールの個別設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010G.SetControlsStatus(System.Data.DataSet,System.String)">
+ <summary>
+ コントロールの入力制御
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010G.GetMatsuDate(System.String)">
+ <summary>
+ 末日を取得
+ </summary>
+ <param name="value">値</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010G.SetFoucus">
+ <summary>
+ フォーカスの設定(項目チェック・保存エラー時を除く)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010G.ClearControl">
+ <summary>
+ コントロール値のクリア
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010G.SetInitValue">
+ <summary>
+ 初期値の設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010G.SetInitCustData">
+ <summary>
+ 荷主の初期表示
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010G.SetInitValue(System.String)">
+ <summary>
+ 請求日の初期設定
+ </summary>
+ <param name="nowDate">サーバ日付</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010G.SetZaikoDateControl(System.String)">
+ <summary>
+ 月末在庫コンボ生成処理(サーバ日付から作成)
+ </summary>
+ <param name="nowDate">サーバ日付</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010G.SetZaikoDateControl(System.Data.DataSet)">
+ <summary>
+ 月末在庫コンボ生成処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010G.ComboBoxItemAdd(Jp.Co.Nrs.LM.GUI.Win.InputMan.LMImCombo,System.String)">
+ <summary>
+ コンボに行を追加　
+ </summary>
+ <param name="cmb">コントロール</param>
+ <param name="value">設定値</param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.GUI.LMJ010H">
+ <summary>
+ LMJ010ハンドラクラス
+ </summary>
+ <remarks>
+ </remarks>
+ <histry>
+ </histry>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJ010H._V">
+ <summary>
+ 入力チェックで使用するValidateクラスを格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJ010H._G">
+ <summary>
+ Gamenクラスを格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJ010H._LMJconV">
+ <summary>
+ Validate共通クラスを格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJ010H._LMJconG">
+ <summary>
+ G共通クラスを格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJ010H._LMJconH">
+ <summary>
+ H共通クラスを格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJ010H._PreInputData">
+ <summary>
+ 前回値保持変数
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJ010H._SysDate">
+ <summary>
+ サーバ日付
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJ010H._LoadFlg">
+ <summary>
+ ロードフラグ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJ010H._Ds">
+ <summary>
+ 初期荷主の月末在庫情報を保持
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJ010H._PopupSkipFlg">
+ <summary>
+ PopUp画面表示フラグ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010H.Main(Jp.Co.Nrs.LM.Base.LMFormData)">
+ <summary>
+ ハンドラクラスの初期処理メソッド
+ </summary>
+ <remarks>画面遷移部品よりこのメソッドが呼ばれます。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010H.CreatePrintData(Jp.Co.Nrs.LM.GUI.LMJ010F)">
+ <summary>
+ ファイル作成処理
+ </summary>
+ <param name="frm">フォーム</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010H.OpenMasterPop(Jp.Co.Nrs.LM.GUI.LMJ010F)">
+ <summary>
+ マスタ参照処理
+ </summary>
+ <param name="frm">フォーム</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010H.EnterAction(Jp.Co.Nrs.LM.GUI.LMJ010F,System.Windows.Forms.KeyEventArgs)">
+ <summary>
+ Enter処理
+ </summary>
+ <param name="frm">フォーム</param>
+ <param name="e">イベント詳細</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010H.ChangeShoriComb(Jp.Co.Nrs.LM.GUI.LMJ010F)">
+ <summary>
+ 処理内容の値変更処理
+ </summary>
+ <param name="frm">フォーム</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010H.ChangeSeiqComb(Jp.Co.Nrs.LM.GUI.LMJ010F)">
+ <summary>
+ 請求日付コンボの値変更処理
+ </summary>
+ <param name="frm">フォーム</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010H.LeaveCustData(Jp.Co.Nrs.LM.GUI.LMJ010F,Jp.Co.Nrs.LM.GUI.LMJ010C.ActionType)">
+ <summary>
+ 荷主コードのロスとフォーカスイベント
+ </summary>
+ <param name="frm">フォーム</param>
+ <param name="actionType">アクションタイプ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010H.ShowPopupControl(Jp.Co.Nrs.LM.GUI.LMJ010F,System.String,Jp.Co.Nrs.LM.GUI.LMJ010C.ActionType)">
+ <summary>
+ ポップアップ起動コントロール
+ </summary>
+ <param name="frm">フォーム</param>
+ <param name="objNm">フォーカスコントロール名</param>
+ <param name="actionType">アクションタイプ</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010H.SetReturnCustPop(Jp.Co.Nrs.LM.GUI.LMJ010F,Jp.Co.Nrs.LM.GUI.LMJ010C.ActionType,System.String)">
+ <summary>
+ 荷主Popの戻り値を設定
+ </summary>
+ <param name="frm">フォーム</param>
+ <param name="actionType">アクションタイプ</param>
+ <param name="objNm">フォーカス位置名</param>
+ <returns>True:選択有 False:選択無</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010H.ShowCustPopup(Jp.Co.Nrs.LM.GUI.LMJ010F,Jp.Co.Nrs.LM.GUI.LMJ010C.ActionType)">
+ <summary>
+ 荷主マスタ参照POP起動
+ </summary>
+ <param name="frm">フォーム</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010H.StartAction(Jp.Co.Nrs.LM.GUI.LMJ010F)">
+ <summary>
+ 処理開始アクション
+ </summary>
+ <param name="frm">フォーム</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010H.EndAction(Jp.Co.Nrs.LM.GUI.LMJ010F)">
+ <summary>
+ 終了アクション
+ </summary>
+ <param name="frm">フォーム</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010H.SetZaikoDateControl(Jp.Co.Nrs.LM.GUI.LMJ010F)">
+ <summary>
+ 月末在庫コンボ生成処理
+ </summary>
+ <param name="frm">フォーム</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010H.SelectGetuData(Jp.Co.Nrs.LM.GUI.LMJ010F)">
+ <summary>
+ 月末在庫コンボのデータ取得
+ </summary>
+ <param name="frm">フォーム</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010H.UpdatePreInputData(Jp.Co.Nrs.LM.GUI.LMJ010F,System.String)">
+ <summary>
+ 保持している値を更新(荷主コード)
+ </summary>
+ <param name="frm">フォーム</param>
+ <param name="objNm">フォーカス位置コントロール名</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010H.UpdatePreInputData(System.String)">
+ <summary>
+ 前回値の設定
+ </summary>
+ <param name="value">値</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010H.CreatePrintDataAction(Jp.Co.Nrs.LM.GUI.LMJ010F)">
+ <summary>
+ ファイル作成プログラム起動
+ </summary>
+ <param name="frm">フォーム</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010H.SetSysDate(System.Data.DataSet)">
+ <summary>
+ サーバ日付を保持
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010H.GetSerialFlg(Jp.Co.Nrs.LM.GUI.LMJ010F)">
+ <summary>
+ シリアルの値取得
+ </summary>
+ <param name="frm">フォーム</param>
+ <returns>有にチェックしている場合、"1"　無にチェックしている場合、"0"</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010H.GetSeiqDate(Jp.Co.Nrs.LM.GUI.LMJ010F)">
+ <summary>
+ 請求日付の取得
+ </summary>
+ <param name="frm">フォーム</param>
+ <returns>請求日付</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010H.SetSelectData(Jp.Co.Nrs.LM.GUI.LMJ010F)">
+ <summary>
+ 月末在庫コンボ生成処理
+ </summary>
+ <param name="frm">フォーム</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010H.OutFileData(Jp.Co.Nrs.LM.GUI.LMJ010F,System.Data.DataSet)">
+ <summary>
+ ファイル出力処理
+ </summary>
+ <param name="frm">フォーム</param>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010H.SetFileData(System.String)">
+ <summary>
+ CSVファイル設定前処理
+ </summary>
+ <param name="value">値</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010H.SetCommaEditData(System.String,System.String)">
+ <summary>
+ カンマ編集
+ </summary>
+ <param name="value">値</param>
+ <param name="formatStr">値</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010H.ShowGMessage(Jp.Co.Nrs.LM.GUI.LMJ010F)">
+ <summary>
+ ガイダンスメッセージ表示
+ </summary>
+ <param name="frm">フォーム</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010H.SetInitMessage(Jp.Co.Nrs.LM.GUI.LMJ010F)">
+ <summary>
+ 初期メッセージ
+ </summary>
+ <param name="frm"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010H.FunctionKey7Press(Jp.Co.Nrs.LM.GUI.LMJ010F@,System.Windows.Forms.KeyEventArgs)">
+ <summary>
+ F7押下時処理呼び出し
+ </summary>
+ <param name="frm">フォーム</param>
+ <param name="e">ファンクションキーイベント</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010H.FunctionKey10Press(Jp.Co.Nrs.LM.GUI.LMJ010F@,System.Windows.Forms.KeyEventArgs)">
+ <summary>
+ F10押下時処理呼び出し
+ </summary>
+ <param name="frm">フォーム</param>
+ <param name="e">ファンクションキーイベント</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010H.FunctionKey12Press(Jp.Co.Nrs.LM.GUI.LMJ010F@,System.Windows.Forms.KeyEventArgs)">
+ <summary>
+ F12押下時処理呼び出し(終了処理)
+ </summary>
+ <param name="frm">フォーム</param>
+ <param name="e">ファンクションキーイベント</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010H.cmbShori_SelectedValueChanged(Jp.Co.Nrs.LM.GUI.LMJ010F,System.EventArgs)">
+ <summary>
+ 処理内容変更時のイベント
+ </summary>
+ <param name="frm">フォーム</param>
+ <param name="e">イベント詳細</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010H.cmbSeiqComb_SelectedValueChanged(Jp.Co.Nrs.LM.GUI.LMJ010F,System.EventArgs)">
+ <summary>
+ 請求日付コンボ変更時のイベント
+ </summary>
+ <param name="frm">フォーム</param>
+ <param name="e">イベント詳細</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010H.LMJ010F_KeyDown(Jp.Co.Nrs.LM.GUI.LMJ010F,System.Windows.Forms.KeyEventArgs)">
+ <summary>
+ フォームのキーダウンイベント
+ </summary>
+ <param name="frm">フォーム</param>
+ <param name="e">イベント詳細情報</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010H.txtCustCdL_Enter(Jp.Co.Nrs.LM.GUI.LMJ010F,System.EventArgs)">
+ <summary>
+ 荷主コード(大)のフォーカスインしたときに発生するイベント
+ </summary>
+ <param name="frm">フォーム</param>
+ <param name="e">イベント詳細</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010H.txtCustCdL_Leave(Jp.Co.Nrs.LM.GUI.LMJ010F,System.EventArgs)">
+ <summary>
+ 荷主コード(大)のフォーカスアウトしたときに発生するイベント
+ </summary>
+ <param name="frm">フォーム</param>
+ <param name="e">イベント詳細</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010H.txtCustCdM_Enter(Jp.Co.Nrs.LM.GUI.LMJ010F,System.EventArgs)">
+ <summary>
+ 荷主コード(中)のフォーカスインしたときに発生するイベント
+ </summary>
+ <param name="frm">フォーム</param>
+ <param name="e">イベント詳細</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010H.txtCustCdM_Leave(Jp.Co.Nrs.LM.GUI.LMJ010F,System.EventArgs)">
+ <summary>
+ 荷主コード(中)のフォーカスアウトしたときに発生するイベント
+ </summary>
+ <param name="frm">フォーム</param>
+ <param name="e">イベント詳細</param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.GUI.LMJ010V">
+ <summary>
+ LMJ010Validateクラス
+ </summary>
+ <remarks>入力チェックを行う</remarks>
+ <histry>
+ </histry>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJ010V._Frm">
+ <summary>
+ このValidateクラスが紐付くフォームクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJ010V._Vcon">
+ <summary>
+ Validate共通クラスを格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010V.#ctor(Jp.Co.Nrs.LM.Base.GUI.LMBaseGUIHandler@,Jp.Co.Nrs.LM.GUI.LMJ010F@,Jp.Co.Nrs.LM.GUI.LMJControlV)">
+ <summary>
+ コンストラクタ
+ </summary>
+ <param name="frm">このクラスがチェックするコントロールを持つフォームクラス</param>
+ <param name="handlerClass">このクラスを生成したハンドラクラス</param>
+ <remarks>フォームラスとハンドラクラスをこのクラスに紐付けます。編集不可</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010V.IsInputCheck">
+ <summary>
+ 入力チェックメソッドの雛形です。
+ </summary>
+ <returns>
+ True ：入力エラーなし
+ false：入力エラーあり
+ </returns>
+ <remarks>チェックを行うプロパティをTrueに設定し、チェック用メソッドを呼び出します。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010V.IsHeaderChk">
+ <summary>
+ 単項目チェック
+ </summary>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010V.IsConditionChk">
+ <summary>
+ 関連チェック
+ </summary>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010V.IsDefPrintChk">
+ <summary>
+ デフォルトプリンタの必須チェック
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010V.IsMstExistChk">
+ <summary>
+ マスタ存在チェック
+ </summary>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010V.IsCustExist">
+ <summary>
+ 荷主マスタの存在チェック
+ </summary>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010V.IsDateFromToChk">
+ <summary>
+ 日付の大小チェック
+ </summary>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010V.IsFocusChk(System.String,Jp.Co.Nrs.LM.GUI.LMJ010C.ActionType)">
+ <summary>
+ フォーカス位置チェック
+ </summary>
+ <param name="objNm">フォーカス位置コントロール名</param>
+ <param name="actionType">アクションタイプ</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010V.IsAuthority(Jp.Co.Nrs.LM.GUI.LMJ010C.ActionType)">
+ <summary>
+ 権限チェック
+ </summary>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ010V.TrimSpaceTextValue">
+ <summary>
+ スペース除去
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.GUI.LMJ020C">
+ <summary>
+ LMJ020定数定義クラス
+ </summary>
+ <remarks></remarks>
+ <histry>
+ 
+ </histry>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJ020C.ACTION_ID_KENSAKU">
+ <summary>
+ 月末在庫情報取得アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJ020C.ACTION_ID_JIKKO_ESC">
+ <summary>
+ 実行時のデータ取得アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJ020C.ACTION_ID_JIKKO_MODOSHI">
+ <summary>
+ 実行時のデータ取得アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJ020C.TABLE_NM_IN">
+ <summary>
+ INテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJ020C.TABLE_NM_OUT">
+ <summary>
+ OUTテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJ020C.TABLE_NM_TARGETTBL">
+ <summary>
+ TARGET_TBLテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJ020C.TABLE_NM_SYS_DATETIME">
+ <summary>
+ SYS_DATETIMEテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJ020C.TABLE_NM_ERR">
+ <summary>
+ ERRテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJ020C.TABLE_NM_GETU_IN">
+ <summary>
+ GETU_INテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJ020C.TABLE_NM_GETU_OUT">
+ <summary>
+ GETU_OUTテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.GUI.LMJ020C.CtlTabIndex">
+ <summary>
+ タブインデックス用列挙体(コントロール)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.GUI.LMJ020C.ActionType">
+ <summary>
+ アクションタイプ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.GUI.LMJ020C.SprColumnIndex">
+ <summary>
+ 行インデックス 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.GUI.LMJ020C.TARGET_TABLES_MST">
+ <summary>
+ 移行テーブル（LM_MST)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.GUI.LMJ020C.TARGET_TABLES_TRN">
+ <summary>
+ 移行テーブル（LM_TRN)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.GUI.LMJ020F">
+ <summary>
+ LMJ020フォームクラス
+ </summary>
+ <remarks></remarks>
+ <histry>
+ 
+ </histry>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJ020F._H">
+ <summary>
+ このフォームを作成したハンドラクラスを格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ020F.#ctor(Jp.Co.Nrs.LM.GUI.LMJ020H)">
+ <summary>
+ コンストラクタ
+ </summary>
+ <param name="handlerClass">このフォームを生成したハンドラクラス</param>
+ <remarks>呼び出し元のハンドラクラスをこのフォームに紐付けます。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ020F.Function7_Press(System.Object,System.Windows.Forms.KeyEventArgs)">
+ <summary>
+ ファンクション７ボタン押下時およびファンクションキー８押下時のイベントです。
+ </summary>
+ <param name="sender">イベント発生オブジェクト</param>
+ <param name="e">イベント詳細情報</param>
+ <remarks>各イベントに対応するハンドラクラスのメソッドを呼び出してください。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ020F.Function9_Press(System.Object,System.Windows.Forms.KeyEventArgs)">
+ <summary>
+ ファンクション９ボタン押下時およびファンクションキー８押下時のイベントです。
+ </summary>
+ <param name="sender">イベント発生オブジェクト</param>
+ <param name="e">イベント詳細情報</param>
+ <remarks>各イベントに対応するハンドラクラスのメソッドを呼び出してください。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ020F.Function12_Press(System.Object,System.Windows.Forms.KeyEventArgs)">
+ <summary>
+ ファンクション１２ボタン押下時およびファンクションキー１２押下時のイベントです。
+ </summary>
+ <param name="sender">イベント発生オブジェクト</param>
+ <param name="e">イベント詳細情報</param>
+ <remarks>各イベントに対応するハンドラクラスのメソッドを呼び出してください。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ020F.Form_FormClosed(System.Object,System.Windows.Forms.FormClosedEventArgs)">
+ <summary>
+ フォームが閉じた後に発生するイベントです。
+ </summary>
+ <param name="sender">イベント発生元オブジェクト</param>
+ <param name="e">イベント詳細</param>
+ <remarks>Navigateクラスのインスタンス管理から登録解除します。</remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.GUI.LMJ020G">
+ <summary>
+ LMJ020Gamenクラス
+ </summary>
+ <remarks>画面構築を行う</remarks>
+ <histry>
+ 
+ </histry>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJ020G._Frm">
+ <summary>
+ このクラスが紐付くフォームクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJ020G._LMJconG">
+ <summary>
+ GAMEN共通クラスを格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ020G.#ctor(Jp.Co.Nrs.LM.Base.GUI.LMBaseGUIHandler@,Jp.Co.Nrs.LM.GUI.LMJ020F@,Jp.Co.Nrs.LM.GUI.LMJControlG)">
+ <summary>
+ コンストラクタ
+ </summary>
+ <param name="handlerClass">このクラスを生成したハンドラクラス</param>
+ <param name="frm">このクラスが設定するコントロールを持つフォームクラス</param>
+ <remarks>フォームラスとハンドラクラスをこのクラスに紐付けます。編集不可</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ020G.SetFunctionKey">
+ <summary>
+ ファンクションキーの設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ020G.SetTabIndex">
+ <summary>
+ タブインデックスの設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ020G.SetControl">
+ <summary>
+ 画面コントロールの個別設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ020G.SetControlsStatus(System.Data.DataSet,System.String)">
+ <summary>
+ コントロールの入力制御
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ020G.SetFoucus">
+ <summary>
+ フォーカスの設定(項目チェック・保存エラー時を除く)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ020G.ClearControl">
+ <summary>
+ コントロール値のクリア
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ020G.SetInitValue">
+ <summary>
+ 初期値の設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ020G.UnLockedForm">
+ <summary>
+ ロックを解除する
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.GUI.LMJ020G.sprDetailDef">
+ <summary>
+ スプレッド列定義体
+ </summary>
+ <remarks>SpreadColProperty型のフィールドのみで定義すること</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ020G.InitSpread(System.Boolean)">
+ <summary>
+ スプレッドの初期設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ020G.SetSpreadInitValue">
+ <summary>
+ SPREAD初期値設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ020G.SetSpread(System.Data.DataTable)">
+ <summary>
+ スプレッドにデータを設定(明細)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.GUI.LMJ020H">
+ <summary>
+ LMJ020ハンドラクラス
+ </summary>
+ <remarks>
+ </remarks>
+ <histry>
+ </histry>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJ020H._V">
+ <summary>
+ 入力チェックで使用するValidateクラスを格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJ020H._G">
+ <summary>
+ Gamenクラスを格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJ020H._LMJconV">
+ <summary>
+ Validate共通クラスを格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJ020H._LMJconG">
+ <summary>
+ G共通クラスを格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJ020H._LMJconH">
+ <summary>
+ H共通クラスを格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJ020H._PreInputData">
+ <summary>
+ 前回値保持変数
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJ020H._SysDate">
+ <summary>
+ サーバ日付
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJ020H._LoadFlg">
+ <summary>
+ ロードフラグ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJ020H._Ds">
+ <summary>
+ 初期荷主の月末在庫情報を保持
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJ020H._PopupSkipFlg">
+ <summary>
+ PopUp画面表示フラグ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ020H.Main(Jp.Co.Nrs.LM.Base.LMFormData)">
+ <summary>
+ ハンドラクラスの初期処理メソッド
+ </summary>
+ <remarks>画面遷移部品よりこのメソッドが呼ばれます。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ020H.SelectListEvent(Jp.Co.Nrs.LM.GUI.LMJ020F)">
+ <summary>
+ 検索処理
+ </summary>
+ <param name="frm">このハンドラクラスに紐づくフォーム</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ020H.JikkouEvent(Jp.Co.Nrs.LM.GUI.LMJ020F)">
+ <summary>
+ 実行処理
+ </summary>
+ <param name="frm">このハンドラクラスに紐づくフォーム</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ020H.SetDataSetInData(Jp.Co.Nrs.LM.GUI.LMJ020F,System.Collections.ArrayList)">
+ <summary>
+ データセット設定(検索条件格納)
+ </summary>
+ <param name="frm">このハンドラクラスに紐づくフォーム</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ020H.SetDataSetInSelectData(Jp.Co.Nrs.LM.GUI.LMJ020F,System.Data.DataSet)">
+ <summary>
+ データセット設定(検索条件格納)
+ </summary>
+ <param name="frm">このハンドラクラスに紐づくフォーム</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ020H.SetTargetTables(Jp.Co.Nrs.LM.DSL.LMJ020DS)">
+ <summary>
+ 移動テーブルのセット
+ </summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ020H.StartAction(Jp.Co.Nrs.LM.GUI.LMJ020F)">
+ <summary>
+ 処理開始アクション
+ </summary>
+ <param name="frm">フォーム</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ020H.EndAction(Jp.Co.Nrs.LM.GUI.LMJ020F)">
+ <summary>
+ 終了アクション
+ </summary>
+ <param name="frm">フォーム</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ020H.SelectData(Jp.Co.Nrs.LM.GUI.LMJ020F)">
+ <summary>
+ 検索処理
+ </summary>
+ <param name="frm">このハンドラクラスに紐づくフォーム</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ020H.SuccessSelect(Jp.Co.Nrs.LM.GUI.LMJ020F,System.Data.DataSet)">
+ <summary>
+ 検索成功時共通処理（画面別）
+ </summary>
+ <param name="frm">フォーム</param>
+ <param name="ds">検索結果格納データセット</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ020H.JikkoShori(Jp.Co.Nrs.LM.GUI.LMJ020F,System.Data.DataSet,Jp.Co.Nrs.LM.GUI.LMJ020C.ActionType)">
+ <summary>
+ 実行処理
+ </summary>
+ <param name="frm"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ020H.ShowGMessage(Jp.Co.Nrs.LM.GUI.LMJ020F)">
+ <summary>
+ ガイダンスメッセージ表示
+ </summary>
+ <param name="frm">フォーム</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ020H.SetInitMessage(Jp.Co.Nrs.LM.GUI.LMJ020F)">
+ <summary>
+ 初期メッセージ
+ </summary>
+ <param name="frm"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ020H.ShowStorePrintData(Jp.Co.Nrs.LM.GUI.LMJ020F)">
+ <summary>
+ エラー帳票出力処理
+ </summary>
+ <returns>出力する場合:False　出力しない場合:True</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ020H.FunctionKey7Press(Jp.Co.Nrs.LM.GUI.LMJ020F@,System.Windows.Forms.KeyEventArgs)">
+ <summary>
+ F7押下時処理呼び出し
+ </summary>
+ <param name="frm">フォーム</param>
+ <param name="e">ファンクションキーイベント</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ020H.FunctionKey9Press(Jp.Co.Nrs.LM.GUI.LMJ020F@,System.Windows.Forms.KeyEventArgs)">
+ <summary>
+ F9押下時処理呼び出し
+ </summary>
+ <param name="frm">フォーム</param>
+ <param name="e">ファンクションキーイベント</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ020H.FunctionKey12Press(Jp.Co.Nrs.LM.GUI.LMJ020F@,System.Windows.Forms.KeyEventArgs)">
+ <summary>
+ F12押下時処理呼び出し(終了処理)
+ </summary>
+ <param name="frm">フォーム</param>
+ <param name="e">ファンクションキーイベント</param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.GUI.LMJ020V">
+ <summary>
+ LMJ020Validateクラス
+ </summary>
+ <remarks>入力チェックを行う</remarks>
+ <histry>
+ </histry>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJ020V._Frm">
+ <summary>
+ このValidateクラスが紐付くフォームクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJ020V._Vcon">
+ <summary>
+ Validate共通クラスを格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ020V.#ctor(Jp.Co.Nrs.LM.Base.GUI.LMBaseGUIHandler@,Jp.Co.Nrs.LM.GUI.LMJ020F@,Jp.Co.Nrs.LM.GUI.LMJControlV)">
+ <summary>
+ コンストラクタ
+ </summary>
+ <param name="frm">このクラスがチェックするコントロールを持つフォームクラス</param>
+ <param name="handlerClass">このクラスを生成したハンドラクラス</param>
+ <remarks>フォームラスとハンドラクラスをこのクラスに紐付けます。編集不可</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ020V.IsAuthorityChk(Jp.Co.Nrs.LM.GUI.LMJ020C.ActionType)">
+ <summary>
+ 権限チェック
+ </summary>
+ <param name="eventShubetsu">権限チェックを行うイベント</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ020V.IsKensakuSingleCheck">
+ <summary>
+ 検索時入力チェック（単項目チェック）
+ </summary>
+ <returns>
+ True ：入力エラーなし
+ false：入力エラーあり
+ </returns>
+ <remarks>チェックを行うプロパティをTrueに設定し、チェック用メソッドを呼び出します。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ020V.IsJikkouEscapeSingleCheck">
+ <summary>
+ 退避実行時入力チェック（単項目チェック）
+ </summary>
+ <returns>
+ True ：入力エラーなし
+ false：入力エラーあり
+ </returns>
+ <remarks>チェックを行うプロパティをTrueに設定し、チェック用メソッドを呼び出します。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJ020V.IsJikkouModoshiSingleCheck">
+ <summary>
+ 戻し実行時入力チェック（単項目チェック）
+ </summary>
+ <returns>
+ True ：入力エラーなし
+ false：入力エラーあり
+ </returns>
+ <remarks>チェックを行うプロパティをTrueに設定し、チェック用メソッドを呼び出します。</remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.GUI.LMJControlC">
+ <summary>
+ LMIControl定数定義クラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.GUI.LMJControlC.CustMsgType">
+ <summary>
+ 荷主M存在チェック(置換文字)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJControlC.FLG_OFF">
+ <summary>
+ フラグ(無)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJControlC.FLG_ON">
+ <summary>
+ フラグ(有)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJControlC.FUNCTION_CREATE">
+ <summary>
+ 実　行
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJControlC.FUNCTION_SEARCH">
+ <summary>
+ 検　索
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJControlC.FUNCTION_POP">
+ <summary>
+ マスタ参照
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJControlC.FUNCTION_CLOSE">
+ <summary>
+ 閉じる
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJControlC.MASTEROPEN">
+ <summary>
+ マスタ参照ボタンイベント
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJControlC.ENTER">
+ <summary>
+ Enterイベント
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJControlC.MES_AREA">
+ <summary>
+ lblMsgAria
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJControlC.BLF">
+ <summary>
+ BLF
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJControlC.DATE_YYYYMMDD">
+ <summary>
+ yyyyMMdd
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJControlC.DATE_SLASH_YYYYMMDD">
+ <summary>
+ yyyy/MM/dd
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJControlC.ZENKAKU_SPACE">
+ <summary>
+ "　"
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.GUI.LMJControlC.CLERA_DATA">
+ <summary>
+ クリア処理対象コントロール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.GUI.LMJControlG">
+ <summary>
+ LMJControl画面クラス
+ </summary>
+ <remarks></remarks>
+ <histry>
+ 2011/07/10 ito
+ </histry>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJControlG.#ctor(System.Windows.Forms.Form)">
+ <summary>
+ コンストラクタ
+ </summary>
+ <param name="frm">フォームクラス</param>
+ <remarks>フォームラスとハンドラクラスをこのクラスに紐付けます。編集不可</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJControlG.SetLockInputMan(Jp.Co.Nrs.LM.GUI.Win.Interface.ILMEditableControl,System.Boolean,System.Boolean)">
+ <summary>
+ ロック切り替え処理
+ </summary>
+ <param name="ctl">コントロール(InputManのみ)</param>
+ <param name="lock">ロックフラグ　True:ロック　False:ロック解除</param>
+ <param name="clearFlg">クリアフラグ 初期値 = True</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJControlG.ComboBoxItemAdd(Jp.Co.Nrs.LM.GUI.Win.InputMan.LMImCombo,System.String,System.String)">
+ <summary>
+ コンボに行を追加　
+ </summary>
+ <param name="cmb">コントロール</param>
+ <param name="cd">Value値</param>
+ <param name="item">Text値</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJControlG.SetDateFormat(Jp.Co.Nrs.LM.GUI.Win.InputMan.LMImDate,System.Boolean)">
+ <summary>
+ 日付コントロールの書式設定
+ </summary>
+ <param name="ctl">コントロール</param>
+ <param name="holidayFlg">休日マスタ反映フラグ 初期値 = True</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJControlG.EditConcatData(System.String,System.String,System.String)">
+ <summary>
+ 2つの値を連結して設定
+ </summary>
+ <param name="value1">値1</param>
+ <param name="value2">値2</param>
+ <returns>編集後の値</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJControlG.SelectKbnListDataRow(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 区分マスタ(キャッシュテーブル)からデータを抽出する条件を取得
+ </summary>
+ <param name="kbnCd">区分コード</param>
+ <param name="groupCd">区分グループコード</param>
+ <param name="kbnNm1">区分名1</param>
+ <param name="kbnNm2">区分名2</param>
+ <param name="kbnNm3">区分名3</param>
+ <param name="kbnNm4">区分名4</param>
+ <param name="kbnNm5">区分名5</param>
+ <returns>データロウ配列</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJControlG.SelectKbnString(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 区分マスタ(キャッシュテーブル)からデータを抽出する条件を取得
+ </summary>
+ <param name="kbnCd">区分コード</param>
+ <param name="groupCd">区分グループコード</param>
+ <param name="kbnNm1">区分名1</param>
+ <param name="kbnNm2">区分名2</param>
+ <param name="kbnNm3">区分名3</param>
+ <param name="kbnNm4">区分名4</param>
+ <param name="kbnNm5">区分名5</param>
+ <returns>検索条件</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJControlG.SelectCustListDataRow(System.String,System.String,System.String,System.String)">
+ <summary>
+ 荷主マスタ(キャッシュテーブル)からデータを抽出する条件を取得
+ </summary>
+ <param name="custLCd">荷主(大)コード</param>
+ <param name="custMCd">荷主(中)コード</param>
+ <param name="custSCd">荷主(小)コード</param>
+ <param name="custSSCd">荷主(極小)コード</param>
+ <returns>データロウ配列</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJControlG.SelectCustString(System.String,System.String,System.String,System.String)">
+ <summary>
+ 荷主マスタ(キャッシュテーブル)からデータを抽出する条件を取得
+ </summary>
+ <param name="custLCd">荷主(大)コード</param>
+ <param name="custMCd">荷主(中)コード</param>
+ <param name="custSCd">荷主(小)コード</param>
+ <param name="custSSCd">荷主(極小)コード</param>
+ <returns>検索条件</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJControlG.SelectTCustListDataRow(System.String)">
+ <summary>
+ 担当者別荷主マスタ(キャッシュテーブル)からデータを抽出する条件を取得
+ </summary>
+ <param name="userId">ユーザID</param>
+ <returns>データロウ配列</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJControlG.SelectTcustString(System.String)">
+ <summary>
+ 担当者別荷主マスタ(キャッシュテーブル)からデータを抽出する条件を取得
+ </summary>
+ <param name="userId">ユーザID</param>
+ <returns>検索条件</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.GUI.LMJControlH">
+ <summary>
+ LMJControlハンドラクラス
+ </summary>
+ <remarks></remarks>
+ <histry>
+ 2011/07/10 ito
+ </histry>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJControlH._ControlV">
+ <summary>
+ 共通クラス(V)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJControlH._ControlG">
+ <summary>
+ 共通クラス(G)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJControlH._Pgid">
+ <summary>
+ PGID
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJControlH.#ctor(System.Windows.Forms.Form,System.String,Jp.Co.Nrs.LM.Base.GUI.LMBaseGUIHandler)">
+ <summary>
+ コンストラクタ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJControlH.StartAction(System.Windows.Forms.Form)">
+ <summary>
+ 処理開始アクション
+ </summary>
+ <param name="frm">フォーム</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJControlH.EndAction(System.Windows.Forms.Form,System.String)">
+ <summary>
+ 終了アクション
+ </summary>
+ <param name="frm">フォーム</param>
+ <param name="id">ガイダンスメッセージID</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJControlH.FailureSelect(System.Windows.Forms.Form)">
+ <summary>
+ 検索失敗時共通処理
+ </summary>
+ <param name="frm">フォーム</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJControlH.ConfirmMsg(System.Windows.Forms.Form,System.String,System.String)">
+ <summary>
+ 処理続行確認
+ </summary>
+ <param name="frm">フォーム</param>
+ <param name="msg">メッセージ置換文字列(処理名)</param>
+ <param name="cntSelect">検索結果件数</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJControlH.CallWSAAction(System.Windows.Forms.Form,System.String,System.String,System.Data.DataSet,System.Int32,System.Int32)">
+ <summary>
+ WSAクラス呼出
+ </summary>
+ <param name="frm">フォーム</param>
+ <param name="blf">BLFファイル名</param>
+ <param name="actionId">メソッド名</param>
+ <param name="rtDs">データセット</param>
+ <param name="mc">ワーニング件数の閾値</param>
+ <param name="rc">表示最大件数の閾値</param>
+ <returns>WSA呼出後のデータセット</returns>
+ <returns2>取得エラー時=Nothing。取得成功時=rtnDSを設定。取得0件の時もrtnDSを設定しているのは、呼び元画面にてSpreadクリアの判定に使用するため。</returns2>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJControlH.GetCheckList(FarPoint.Win.Spread.SheetView,System.Int32)">
+ <summary>
+ スプレッド明細行のチェックリスト(RowIndex)取得
+ </summary>
+ <param name="activeSheet">スプレッドシート</param>
+ <param name="defNo">レコードチェックボックスのカラム№</param>
+ <returns>チェックリスト</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJControlH.SetGMessage(System.Windows.Forms.Form,System.String)">
+ <summary>
+ ガイダンスメッセージを表示
+ </summary>
+ <param name="frm">フォーム</param>
+ <param name="id">メッセージID</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJControlH.SetMessageC001(System.Windows.Forms.Form,System.String)">
+ <summary>
+ 確認メッセージの表示
+ </summary>
+ <param name="frm">フォーム</param>
+ <param name="msg">置換文字</param>
+ <returns>OKの場合:True　Cancelの場合:False</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJControlH.SetMessageG002(System.Windows.Forms.Form,System.String,System.String)">
+ <summary>
+ 処理終了メッセージを表示
+ </summary>
+ <param name="frm">フォーム</param>
+ <param name="msg1">置換文字1</param>
+ <param name="msg2">置換文字2</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJControlH.NextFocusedControl(System.Windows.Forms.Form,System.Boolean)">
+ <summary>
+ 次コントロールにフォーカス移動
+ </summary>
+ <param name="frm">フォーム</param>
+ <param name="eventFlg">Enterボタンの場合、True</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJControlH.FormShow(System.Data.DataSet,System.String,System.String,System.Boolean)">
+ <summary>
+ 別PG起動処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="id">画面ID</param>
+ <param name="recType">レコードタイプ 初期値 = ""</param>
+ <param name="skipFlg">画面表示フラグ 初期値 = False</param>
+ <returns>パラメータクラス</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJControlH.ServerAccess(System.Data.DataSet,System.String)">
+ <summary>
+ サーバアクセス
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">メソッド名</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.GUI.LMJControlV">
+ <summary>
+ LMJControlValidateクラス
+ </summary>
+ <remarks>入力チェックを行う</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMJControlV._G">
+ <summary>
+ Gamenクラスを格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJControlV.#ctor(Jp.Co.Nrs.LM.Base.GUI.LMBaseGUIHandler@,System.Windows.Forms.Form@)">
+ <summary>
+ コンストラクタ
+ </summary>
+ <param name="frm">フォームクラス</param>
+ <param name="handlerClass">このクラスを生成したハンドラクラス</param>
+ <remarks>フォームラスとハンドラクラスをこのクラスに紐付けます。編集不可</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJControlV.#ctor(Jp.Co.Nrs.LM.Base.GUI.LMBaseGUIHandler@,System.Windows.Forms.Form@,Jp.Co.Nrs.LM.GUI.LMJControlG)">
+ <summary>
+ コンストラクタ
+ </summary>
+ <param name="frm">フォームクラス</param>
+ <param name="handlerClass">このクラスを生成したハンドラクラス</param>
+ <remarks>フォームラスとハンドラクラスをこのクラスに紐付けます。編集不可</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJControlV.IsAuthorityChk(System.Boolean)">
+ <summary>
+ 権限チェックのエラーメッセージ設定
+ </summary>
+ <param name="kengenFlg">チェック結果</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJControlV.IsFocusChk(System.String,Jp.Co.Nrs.LM.GUI.Win.InputMan.LMImTextBox[],System.String[],System.Windows.Forms.Control[])">
+ <summary>
+ フォーカス位置チェック
+ </summary>
+ <param name="actionType">アクションタイプ</param>
+ <param name="ctl">コントロール配列</param>
+ <param name="msg">置換文字配列</param>
+ <param name="lblCtl">ラベルコントロール配列</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJControlV.IsFoucsReadOnlyChk(Jp.Co.Nrs.LM.GUI.Win.InputMan.LMImTextBox[],System.Int32)">
+ <summary>
+ フォーカス位置が参照可能判定
+ </summary>
+ <param name="ctl">コントロール</param>
+ <param name="max">ループ変数</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks>メインのコントロールでの判定</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJControlV.IsFoucsForbiddenWordsChk(Jp.Co.Nrs.LM.GUI.Win.InputMan.LMImTextBox[],System.String[],System.Int32)">
+ <summary>
+ フォーカス位置の禁止文字チェック
+ </summary>
+ <param name="ctl">コントロール配列</param>
+ <param name="msg">置換文字配列</param>
+ <param name="max">ループ変数</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJControlV.IsFoucsForbiddenWordsChk(Jp.Co.Nrs.LM.GUI.Win.InputMan.LMImTextBox,System.String)">
+ <summary>
+ フォーカス位置の禁止文字チェック
+ </summary>
+ <param name="ctl">コントロール</param>
+ <param name="msg">置換文字</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJControlV.IsFoucsValueChk(Jp.Co.Nrs.LM.GUI.Win.InputMan.LMImTextBox[],System.Int32,System.Windows.Forms.Control[],System.Boolean)">
+ <summary>
+ 値が入っているかを判定
+ </summary>
+ <param name="ctl">コントロール配列</param>
+ <param name="max">ループ変数</param>
+ <param name="lblCtl">ラベルコントロール配列</param>
+ <param name="rtnFLg">Enterの場合：False　マスタ参照の場合：True</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJControlV.IsFoucsValueChk(Jp.Co.Nrs.LM.GUI.Win.InputMan.LMImTextBox)">
+ <summary>
+ 値が入っているかを判定
+ </summary>
+ <param name="ctl">コントロール</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJControlV.IsInputDateFullByteChk(Jp.Co.Nrs.LM.GUI.Win.InputMan.LMImDate,System.String)">
+ <summary>
+ 日付のフルバイトチェック
+ </summary>
+ <param name="ctl">コントロール</param>
+ <param name="str">置換文字</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJControlV.SelectCustListDataRow(System.Data.DataRow[]@,System.String,System.String,System.String,System.String,Jp.Co.Nrs.LM.GUI.LMJControlC.CustMsgType)">
+ <summary>
+ 荷主マスタ(キャッシュテーブル)からデータを抽出する条件を取得
+ </summary>
+ <param name="custDrs">データロウ配列</param>
+ <param name="custLCd">荷主(大)コード</param>
+ <param name="custMCd">荷主(中)コード　初期値 = ""</param>
+ <param name="custSCd">荷主(小)コード　初期値 = ""</param>
+ <param name="custSSCd">荷主(極小)コード　初期値 = ""</param>
+ <param name="msgType">置換文字タイプ</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJControlV.SetCustMsg(System.String,System.String,System.String,System.String,Jp.Co.Nrs.LM.GUI.LMJControlC.CustMsgType)">
+ <summary>
+ 荷主M存在チェックの置換文字
+ </summary>
+ <param name="custLCd">荷主(大)コード</param>
+ <param name="custMCd">荷主(中)コード　初期値 = ""</param>
+ <param name="custSCd">荷主(小)コード　初期値 = ""</param>
+ <param name="custSSCd">荷主(極小)コード　初期値 = ""</param>
+ <param name="msgType">置換文字タイプ</param>
+ <returns>置換文字</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJControlV.SetErrMessage(System.String)">
+ <summary>
+ メッセージ設定
+ </summary>
+ <param name="id">メッセージID</param>
+ <returns>False</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJControlV.SetErrMessage(System.String,System.String[])">
+ <summary>
+ メッセージ設定
+ </summary>
+ <param name="id">メッセージID</param>
+ <param name="msg">置換文字</param>
+ <returns>False</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJControlV.SetMstErrMessage(System.String,System.String)">
+ <summary>
+ マスタ存在チェックエラーのメッセージ設定
+ </summary>
+ <param name="value1">置換文字1</param>
+ <param name="value2">置換文字2</param>
+ <returns>False</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJControlV.SetFocusErrMessage(System.Boolean)">
+ <summary>
+ フォーカス位置エラーのメッセージ設定
+ </summary>
+ <param name="chk">判定フラグ</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJControlV.SetFocusErrMessage">
+ <summary>
+ フォーカス位置エラーのメッセージ設定
+ </summary>
+ <returns>False</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJControlV.SetErrorControl(System.Windows.Forms.Control,Jp.Co.Nrs.LM.GUI.Win.LMTab,System.Windows.Forms.TabPage)">
+ <summary>
+ エラー項目の背景色とフォーカスを設定する
+ </summary>
+ <param name="ctl">エラーコントロール</param>
+ <param name="tab">タブ　初期値 = Nothing</param>
+ <param name="tabPage">タブページ　初期値 = Nothing</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJControlV.GetCellValue(FarPoint.Win.Spread.Cell)">
+ <summary>
+ セルから値を取得
+ </summary>
+ <param name="aCell">セル</param>
+ <returns>取得した値</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJControlV.GetCellValueNotTrim(FarPoint.Win.Spread.Cell)">
+ <summary>
+ セルから値を取得
+ </summary>
+ <param name="aCell">セル</param>
+ <returns>取得した値</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJControlV.changeBooleanCheckBox(System.String)">
+ <summary>
+ チェックボックスの値をString型からBoolean型に変換する
+ </summary>
+ <param name="textValue">obj.text(0:チェック無し,1:チェック有り)</param>
+ <returns>True:チェック有り,False:チェック無し</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJControlV.SetRepMsgData(System.String)">
+ <summary>
+ vbCrLf,"　"を空文字に変換
+ </summary>
+ <param name="value">値</param>
+ <returns>値</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMJControlV.ClearControl(System.Windows.Forms.Control)">
+ <summary>
+ 値クリア
+ </summary>
+ <param name="ctl">コントロール</param>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

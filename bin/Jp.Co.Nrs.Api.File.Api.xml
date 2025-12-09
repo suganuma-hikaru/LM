@@ -1,0 +1,165 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.Api.File.Api
+</name>
+</assembly>
+<members>
+<member name="M:Jp.Co.Nrs.Api.File.Api.Controllers.BatchController.Post(Jp.Co.Nrs.Api.File.Api.FileModel)">
+ <summary>
+ バッチ実行
+ </summary>
+ <param name="model"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.Api.File.Api.Controllers.FileListCommaController.Post(Jp.Co.Nrs.Api.File.Api.FolderModel)">
+ <summary>
+ ファイル名一覧取得(カンマ繋ぎで戻す）
+ </summary>
+ <param name="model"></param>
+ <returns>2022.11.24 マスタ連携WEB化対応</returns>
+</member>
+<member name="M:Jp.Co.Nrs.Api.File.Api.Controllers.FileListController.Post(Jp.Co.Nrs.Api.File.Api.FolderModel)">
+ <summary>
+ ファイル名一覧取得
+ </summary>
+ <param name="model"></param>
+ <returns>2022.11.07 マスタ連携WEB化対応：受け取り側でエラーになるため使用不可</returns>
+</member>
+<member name="M:Jp.Co.Nrs.Api.File.Api.Controllers.FileMoveController.Post(Jp.Co.Nrs.Api.File.Api.FileModel)">
+ <summary>
+ ファイル移動
+ </summary>
+ <param name="model"></param>
+ <remarks>2022.11.07 マスタ連携WEB化対応</remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Api.File.Api.FolderController">
+ <summary>
+ フォルダコントローラ
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.Api.File.Api.FolderController.Put(Jp.Co.Nrs.Api.File.Api.FolderModel)">
+ <summary>
+ フォルダ出力
+ </summary>
+ <param name="model"></param>
+ <returns></returns>
+</member>
+<member name="T:Jp.Co.Nrs.Api.File.Api.FolderModel">
+ <summary>
+ フォルダモデル
+ </summary>
+</member>
+<member name="P:Jp.Co.Nrs.Api.File.Api.FolderModel.FolderPath">
+ <summary>
+ フォルダパス
+ </summary>
+ <returns></returns>
+</member>
+<member name="T:Jp.Co.Nrs.Api.File.Api.FolderWorkerService">
+ <summary>
+ フォルダワーカサービス
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.Api.File.Api.FolderWorkerService.CreateFolder(Jp.Co.Nrs.Api.File.Api.FolderModel)">
+ <summary>
+ フォルダ作成
+ </summary>
+ <param name="model"></param>
+ <returns></returns>
+</member>
+<member name="T:Jp.Co.Nrs.Api.File.Api.FileWorkerService">
+ <summary>
+ ファイルIOワーカサービス
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.Api.File.Api.FileWorkerService.ReadFile(Jp.Co.Nrs.Api.File.Api.FileModel)">
+ <summary>
+ ファイル読み込み
+ </summary>
+ <param name="model"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.Api.File.Api.FileWorkerService.WriteFile(Jp.Co.Nrs.Api.File.Api.FileModel)">
+ <summary>
+ ファイル書き込み
+ </summary>
+ <param name="model"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.Api.File.Api.FileWorkerService.ExecuteFile(Jp.Co.Nrs.Api.File.Api.FileModel)">
+ <summary>
+ ファイル実行
+ </summary>
+ <param name="model"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.Api.File.Api.FileWorkerService.MoveFile(Jp.Co.Nrs.Api.File.Api.FileModel)">
+ <summary>
+ ファイル移動
+ </summary>
+ <param name="model"></param>
+ <remarks>2022.11.07 マスタ連携WEB化対応</remarks>
+ 
+</member>
+<member name="M:Jp.Co.Nrs.Api.File.Api.FileWorkerService.GetFileNameList(Jp.Co.Nrs.Api.File.Api.FolderModel)">
+ <summary>
+ ファイル名一覧取得
+ </summary>
+ <param name="model"></param>
+ <returns></returns>
+ <remarks>2022.11.07 マスタ連携WEB化対応</remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Api.File.Api.FileController">
+ <summary>
+ ファイルIOコントローラ
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.Api.File.Api.FileController.Get(System.String)">
+ <summary>
+ ファイル取得
+ </summary>
+ <param name="path">ファイルパス</param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.Api.File.Api.FileController.Post(Jp.Co.Nrs.Api.File.Api.FileModel)">
+ <summary>
+ ファイル出力
+ </summary>
+ <param name="model"></param>
+ <returns></returns>
+</member>
+<member name="T:Jp.Co.Nrs.Api.File.Api.FileModel">
+ <summary>
+ ファイルIOモデル
+ </summary>
+</member>
+<member name="P:Jp.Co.Nrs.Api.File.Api.FileModel.FilePath">
+ <summary>
+ ファイルパス
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.Api.File.Api.FileModel.RawData">
+ <summary>
+ RAWデータ
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.Api.File.Api.FileModel.OrgFilePath">
+ <summary>
+ 移動元ファイルパス
+ </summary>
+ <returns></returns>
+ <remarks>2022.11.07 マスタ連携WEB化対応</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Api.File.Api.FileModel.DestFilePath">
+ <summary>
+ 移動先ファイルパス
+ </summary>
+ <returns></returns>
+ <remarks>2022.11.07 マスタ連携WEB化対応</remarks>
+</member>
+</members>
+</doc>

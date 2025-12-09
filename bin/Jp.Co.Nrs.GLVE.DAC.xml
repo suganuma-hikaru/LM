@@ -1,0 +1,1829 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.GLVE.DAC
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.GL.DAC.My.Resources.Resources">
+<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.GL.DAC.My.Resources.Resources.ResourceManager">
+<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.GL.DAC.My.Resources.Resources.Culture">
+<summary>
+  すべてについて、現在のスレッドの CurrentUICulture プロパティをオーバーライドします
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVE0110DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVE0110DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVE0110DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0110DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0110DAC.SetSQLSelectWhereOfficeArrange(System.Data.DataSet)">
+ <summary>
+ 条件文・パラメータ設定(所属Office)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0110DAC.UpdateBasisSystemInfo(System.Data.DataSet)">
+ <summary>
+ 排他用Basis更新
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0110DAC.UpdateArgBillDate(System.Data.DataSet)">
+ <summary>
+ 請求日(手配先)更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>請求日(手配先)更新処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0110DAC.SetContNoFormat(System.String)">
+ <summary>
+ 検索条件コンテナ番号フォーマット変換
+ </summary>
+ <param name="contNo"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0110DAC.SelectCostData(System.Data.DataSet)">
+ <summary>
+ Cost情報取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>Cost情報取得SQLの構築・発行</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVE0210DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVE0210DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVE0210DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.SelectBasisData(System.Data.DataSet)">
+ <summary>
+ C_BASIS取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>C_BASIS取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.SelectContData(System.Data.DataSet)">
+ <summary>
+ C_CONT取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>C_CONT取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.SelectContCargoData(System.Data.DataSet)">
+ <summary>
+ C_CONT_CARGO取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>C_CONT_CARGO取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.SelectContLegData(System.Data.DataSet)">
+ <summary>
+ C_CONT_LEG取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>C_CONT_LEG取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.SelectRevData(System.Data.DataSet)">
+ <summary>
+ C_REV取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>C_COST取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.SelectCostData(System.Data.DataSet)">
+ <summary>
+ C_COST取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>C_COST取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.SelectCoverData(System.Data.DataSet)">
+ <summary>
+ C_COVER取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>C_COVER取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.SelectHouseData(System.Data.DataSet)">
+ <summary>
+ C_HOUSE取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>C_HOUSE取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.SelectImpData(System.Data.DataSet)">
+ <summary>
+ C_IMP取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>C_IMP取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.SelectExpData(System.Data.DataSet)">
+ <summary>
+ C_EXP取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>C_EXP取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.SelectBkgMaxSeqData(System.Data.DataSet)">
+ <summary>
+ C_MAX_SEQ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>C_MAX_SEQ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.SelectMGoodsDtlInitData(System.Data.DataSet)">
+ <summary>
+ M_GOODS_DTL取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>商品明細マスタデータ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.SetSQLSelectBCargoDtlInitWhere">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.SelectDelArgItemData(System.Data.DataSet)">
+ <summary>
+ 削除手配内容取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>削除手配内容取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.SetParameter(System.Data.DataRow)">
+ <summary>
+ JOB NO設定共通パラメータ設定
+ </summary>
+ <param name="conditionRow">C_KEYのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.SetParameterCont(System.Data.DataRow,System.String)">
+ <summary>
+ JOB NO設定共通パラメータ設定
+ </summary>
+ <param name="conditionRow">C_KEYのDataRow</param>
+ <param name="contSeq">CONT_SEQ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.SetParameterContDtl(System.Data.DataRow,System.String,System.String,System.String)">
+ <summary>
+ JOB NO設定共通パラメータ設定
+ </summary>
+ <param name="conditionRow">C_KEYのDataRow</param>
+ <param name="contSeq">CONT_SEQ</param>
+ <param name="origDestKbn">ORIG_DEST_KBN</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.SetParameterContLeg(System.Data.DataRow,System.String,System.String,System.String,System.String)">
+ <summary>
+ JOB NO設定共通パラメータ設定
+ </summary>
+ <param name="conditionRow">C_KEYのDataRow</param>
+ <param name="contSeq">CONT_SEQ</param>
+ <param name="origDestKbn">ORIG_DEST_KBN</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.SetParameterCost(System.Data.DataRow,System.String,System.String,System.String,System.String)">
+ <summary>
+ JOB NO設定共通パラメータ設定
+ </summary>
+ <param name="conditionRow">C_KEYのDataRow</param>
+ <param name="origDestKbn">ORIG_DEST_KBN</param>
+ <param name="arrgCd">ARRG_CD</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.SetParameterJobNo(System.Data.DataRow)">
+ <summary>
+ JOB NO設定共通パラメータ設定
+ </summary>
+ <param name="conditionRow">C_KEYのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.SetSQLSelectIGaisanWhere(System.Data.DataSet)">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.SetParameterLog(System.Data.DataRow)">
+ <summary>
+ JOB NO設定共通パラメータ設定
+ </summary>
+ <param name="conditionRow">C_KEYのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.SetParameterContLog(System.Data.DataRow,System.String)">
+ <summary>
+ JOB NO設定共通パラメータ設定
+ </summary>
+ <param name="conditionRow">C_KEYのDataRow</param>
+ <param name="contSeq">CONT_SEQ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.SetParameterContDtlLog(System.Data.DataRow,System.String,System.String,System.String)">
+ <summary>
+ JOB NO設定共通パラメータ設定
+ </summary>
+ <param name="conditionRow">C_KEYのDataRow</param>
+ <param name="contSeq">CONT_SEQ</param>
+ <param name="origDestKbn">ORIG_DEST_KBN</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.SetParameterContLegLog(System.Data.DataRow,System.String,System.String,System.String,System.String)">
+ <summary>
+ JOB NO設定共通パラメータ設定
+ </summary>
+ <param name="conditionRow">C_KEYのDataRow</param>
+ <param name="contSeq">CONT_SEQ</param>
+ <param name="origDestKbn">ORIG_DEST_KBN</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.SetParameterJobNoLog(System.Data.DataRow)">
+ <summary>
+ JOB NO設定共通パラメータ設定
+ </summary>
+ <param name="conditionRow">C_KEYのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.SetBkgDataInsertParameter(System.Data.DataSet)">
+ <summary>
+ Bookingデータ新規登録時の共通パラメータ設定
+ </summary>
+ <param name="ds">データセット</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.SetBkgDataUpdateParameter(System.Data.DataSet)">
+ <summary>
+ Bookingデータ更新時の共通パラメータ設定
+ </summary>
+ <param name="ds">データセット</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.SetBkgDataUpdDelFlgParameter(System.Data.DataSet)">
+ <summary>
+ Bookingデータ削除フラグ更新時の共通パラメータ設定
+ </summary>
+ <param name="ds">データセット</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.SetCoverDataUpdateChagneParameter(System.Data.DataSet)">
+ <summary>
+ C_COVER更新時のパラメータ設定
+ </summary>
+ <param name="ds">データセット</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.SetBasisDataUpdateChangeParameter(System.Data.DataSet)">
+ <summary>
+ C_BASIS更新時のパラメータ設定
+ </summary>
+ <param name="ds">データセット</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.SetBasisDataUpdateParameter(System.Data.DataSet)">
+ <summary>
+ C_BASIS更新時のパラメータ設定
+ </summary>
+ <param name="ds">データセット</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.SetContDataUpdateParameter(System.Data.DataSet)">
+ <summary>
+ C_CONT更新時のパラメータ設定
+ </summary>
+ <param name="ds">データセット</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.SetContLegDataUpdateParameter(System.Data.DataSet)">
+ <summary>
+ C_CONT_LEG更新時のパラメータ設定
+ </summary>
+ <param name="ds">データセット</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.SetBkgRevDataParameter(System.Data.DataRow)">
+ <summary>
+ C_REV共通パラメータ設定
+ </summary>
+ <param name="drow">データセット</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.SetBkgCostDataParameter(System.Data.DataRow)">
+ <summary>
+ C_COST共通パラメータ設定
+ </summary>
+ <param name="drow">データセット</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.SetCostArgCompleteFlgKbnDataUpdateParameter(System.Data.DataRow)">
+ <summary>
+ C_COST更新時のパラメータ設定(COSTデータ 手配完了フラグ更新)
+ </summary>
+ <param name="drow">データセット</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.SetCoverDataUpdateParameter(System.Data.DataSet)">
+ <summary>
+ C_COVER更新時のパラメータ設定
+ </summary>
+ <param name="ds">データセット</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.InsertBkgRev(System.Data.DataSet)">
+ <summary>
+ C_REV登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>C_REV登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.InsertBkgCost(System.Data.DataSet)">
+ <summary>
+ C_COST登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>C_COST登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.UpdateSearchTextBkgRev(System.Data.DataSet)">
+ <summary>
+ C_REV更新処理(SEARCH_TEXT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>C_REV更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.UpdateBkgCostArgCompleteFlgKbn(System.Data.DataSet)">
+ <summary>
+ C_COST更新処理(COSTデータ 手配完了フラグ更新)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>C_COST更新処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.UpdateArgBillDate(System.Data.DataSet)">
+ <summary>
+ 請求日(手配先)更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>請求日(手配先)更新処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.UpdateDeleteBkgCostSeqDelFlg(System.Data.DataSet)">
+ <summary>
+ C_COST論理削除処理(該当SEQのみ)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>C_COST論理削除SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.SelectChangeMailData(System.Data.DataSet)">
+ <summary>
+ 変更メール送信対象取得
+ </summary>
+ <param name="ds">取得条件</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.SelectChangeMailArrgCdData(System.Data.DataSet)">
+ <summary>
+ 変更メール送信対象(手配コード)取得
+ </summary>
+ <param name="ds">取得条件</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.SelectChangeMailArrgData(System.Data.DataSet)">
+ <summary>
+ 変更メール送信対象(手配)取得
+ </summary>
+ <param name="ds">取得条件</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.SetChangeMailParameter(System.Data.DataRow)">
+ <summary>
+ 変更メール送信対象パラメータ設定
+ </summary>
+ <param name="conditionRow">C_KEYのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.SelectTukanCoverSeq(System.Data.DataSet)">
+ <summary>
+ Cover Seq(通関)取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>Cover Seq(通関)取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.SelectChangeMailToTukanInfo(System.Data.DataSet)">
+ <summary>
+ 変更メール(通関担当者向け)メール文面置換情報取得処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.SelectCcEmpNm(System.Data.DataSet)">
+ <summary>
+ 通関担当者名取得処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.SelectChangeMailToTukanAdd(System.Data.DataSet)">
+ <summary>
+ 変更メール(通関担当者向け)To宛先取得処理
+ </summary>
+ <param name="ds">取得条件</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.SelectChangeMailToTukanCcAdd(System.Data.DataSet)">
+ <summary>
+ 変更メール(通関担当者向け)Cc宛先取得処理
+ </summary>
+ <param name="ds">取得条件</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.SelectTukanCoverStage(System.Data.DataSet)">
+ <summary>
+ 変更メール送信対象取得
+ </summary>
+ <param name="ds">取得条件</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.InsertFileDataCoverDoc(System.Data.DataSet)">
+ <summary>
+ 必要書類リスト添付ファイル登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.UpdateCoverDocListFileNo(System.Data.DataSet)">
+ <summary>
+ 必要書類リストカバーFILE_NO更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0210DAC.DeleteCoverDocData(System.Data.DataSet)">
+ <summary>
+ 必要書類削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>更新SQLの構築・発行</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVE0700DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVE0700DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVE0700DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0700DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0700DAC.UpdateArgDate(System.Data.DataSet)">
+ <summary>
+ 手配日時更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0700DAC.UpdateSendUserInfo(System.Data.DataSet)">
+ <summary>
+ 送信ユーザ更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0700DAC.SetSQLSelectWhereOffice(System.Data.DataSet)">
+ <summary>
+ 条件文・パラメータ設定(所属Office)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0700DAC.SetContNoFormat(System.String)">
+ <summary>
+ 検索条件コンテナ番号フォーマット変換
+ </summary>
+ <param name="contNo"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0700DAC.UpdateLegInfoArrange(System.Data.DataSet)">
+ <summary>
+ 運送情報更新
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0700DAC.UpdateLegInfoArrangeReject(System.Data.DataSet)">
+ <summary>
+ 運送情報更新（差戻）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVE0800DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVE0800DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVE0800DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0800DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0800DAC.SelectMGoodsDtlInitData(System.Data.DataSet)">
+ <summary>
+ M_GOODS_DTL取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>商品明細マスタデータ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0800DAC.SetSQLSelectBCargoDtlInitWhere">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0800DAC.UpdateCoverChangeFlg(System.Data.DataSet)">
+ <summary>
+ 変更確認フラグ更新
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0800DAC.UpdateLegInfoChangeConfirm(System.Data.DataSet)">
+ <summary>
+ 運送情報更新
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0800DAC.UpdateBasisSystemInfo(System.Data.DataSet)">
+ <summary>
+ 排他用Basis更新
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0800DAC.UpdateArgDate(System.Data.DataSet)">
+ <summary>
+ 手配日時更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0800DAC.UpdateSendUserInfo(System.Data.DataSet)">
+ <summary>
+ 送信ユーザ更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0800DAC.InsertFileDataCoverDoc(System.Data.DataSet)">
+ <summary>
+ 必要書類リスト添付ファイル登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0800DAC.UpdateCoverDocListFileNo(System.Data.DataSet)">
+ <summary>
+ 必要書類リストカバーFILE_NO更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0800DAC.DeleteCoverDocData(System.Data.DataSet)">
+ <summary>
+ 必要書類削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0800DAC.UpdateCoverChangeFlgReject(System.Data.DataSet)">
+ <summary>
+ 変更確認フラグ更新（差戻）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0800DAC.UpdateLegInfoReject(System.Data.DataSet)">
+ <summary>
+ 運送情報更新（差戻）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0800DAC.SelectChangeConfirmRejectMailInfo(System.Data.DataSet)">
+ <summary>
+ 変更確認／差戻メール情報取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0800DAC.UpdateLegInfoFixClear(System.Data.DataSet)">
+ <summary>
+ 運送情報更新（クリア）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0800DAC.SelectCustomsClearanceArrangementInfo(System.Data.DataSet)">
+ <summary>
+ 通関手配情報取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVE0900DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVE0900DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVE0900DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0900DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0900DAC.SelectSearchPrintData(System.Data.DataSet)">
+ <summary>
+ Search(出力ファイル情報)
+ </summary>
+ <param name="ds"></param>
+ <remarks>検索実行時</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0900DAC.SetContNoFormat(System.String)">
+ <summary>
+ 検索条件コンテナ番号フォーマット変換
+ </summary>
+ <param name="contNo"></param>
+ <returns></returns>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVE5030DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVE5030DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVE5030DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE5030DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE5030DAC.SearchDepotInOrderForKCT(System.Data.DataSet)">
+ <summary>
+ 帳票出力データ取得(搬入)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>帳票出力データ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE5030DAC.SearchDepotOutOrderForKCT(System.Data.DataSet)">
+ <summary>
+ 帳票出力データ取得(搬出)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>帳票出力データ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE5030DAC.SetSQLSelectWhereIn(System.Data.DataSet)">
+ <summary>
+ 条件文・パラメータ設定(搬入)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE5030DAC.SetSQLSelectWhereOut(System.Data.DataSet)">
+ <summary>
+ 条件文・パラメータ設定(搬出)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVE5020DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVE5020DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVE5020DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE5020DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE5020DAC.SelectBody(System.Data.DataSet)">
+ <summary>
+ HEADER取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE5020DAC.SetSQLSelectBodyWhere(System.Data.DataTable)">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVE0500DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVE0500DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVE0500DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0500DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0500DAC.CheckResultEventCount(System.Data.DataSet)">
+ <summary>
+ 取得行数チェック(カレンダーイベント）
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0500DAC.SelectSearchEventData(System.Data.DataSet)">
+ <summary>
+ 検索結果取得処理 (カレンダーイベント）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>検索結果取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0500DAC.CheckResultDetailCount(System.Data.DataSet)">
+ <summary>
+ 取得行数チェック(詳細情報 ）
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0500DAC.SelectSearchDetailData(System.Data.DataSet)">
+ <summary>
+ 検索結果取得処理 (詳細情報 ）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>検索結果取得SQLの構築・発行</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVE0100DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVE0100DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVE0100DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0100DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0100DAC.SelectSearchData(System.Data.DataSet)">
+ <summary>
+ 検索結果取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>検索結果取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0100DAC.CheckResultPrintReqCount(System.Data.DataSet)">
+ <summary>
+ 取得行数チェック(依頼書一括)
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0100DAC.CheckResultPrintMultiCount(System.Data.DataSet)">
+ <summary>
+ 取得行数チェック(運送書類一括)
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0100DAC.SelectSearchPrintReqItemData(System.Data.DataSet)">
+ <summary>
+ 検索結果取得処理(依頼書一括)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>検索結果取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0100DAC.SelectSearchPrintMultiItemData(System.Data.DataSet)">
+ <summary>
+ 検索結果取得処理(運送書類一括)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>検索結果取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0100DAC.SelectSearchPrintMultiLegItemData(System.Data.DataSet)">
+ <summary>
+ 検索結果取得処理(運送書類一括(運送単位))
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>検索結果取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0100DAC.SelectSearchPrintVansideProductNameLabelItemData(System.Data.DataSet)">
+ <summary>
+ 検索結果取得処理(バンサイド / 品名ラベル)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>検索結果取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0100DAC.SearchPrintTempFileData(System.Data.DataSet)">
+ <summary>
+ Search(出力ファイル情報)
+ </summary>
+ <param name="ds"></param>
+ <remarks>検索実行時</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0100DAC.SearchPrintTempOtherFileData(System.Data.DataSet)">
+ <summary>
+ Search(出力ファイル情報(その他))
+ </summary>
+ <param name="ds"></param>
+ <remarks>検索実行時</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0100DAC.CreateSearchKeyConditions(System.Text.StringBuilder@,System.String,System.Boolean@,System.Boolean@)">
+ <summary>
+ SEARCH_KEYの条件生成
+ </summary>
+ <param name="strAnd"></param>
+ <param name="index"></param>
+ <param name="skipFlg2"></param>
+ <param name="skipFlg3"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0100DAC.CreateSearchKeyOrConditions(System.String,System.String)">
+ <summary>
+ 同一SEARCH_KEYのOR条件生成
+ </summary>
+ <param name="key"></param>
+ <param name="index"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0100DAC.CreateSearchPrintConditions(System.Data.DataSet,System.String)">
+ <summary>
+ 検索条件作成(依頼書一括・運送書類一括)
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="printType">印刷種類</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0100DAC.UpdateCostDataArgCompleteFlgKbn(System.Data.DataSet)">
+ <summary>
+ C_COST更新処理(COSTデータ 手配完了フラグ更新)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>C_COST更新処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0100DAC.UpdateArgBillDate(System.Data.DataSet)">
+ <summary>
+ 請求日(手配先)更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>請求日(手配先)更新処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0100DAC.SetContNoFormat(System.String)">
+ <summary>
+ 検索条件コンテナ番号フォーマット変換
+ </summary>
+ <param name="contNo"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0100DAC.SelectCostData(System.Data.DataSet)">
+ <summary>
+ Cost情報取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>Cost情報取得SQLの構築・発行</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVE0200DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVE0200DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVE0200DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SelectBasisData(System.Data.DataSet)">
+ <summary>
+ C_BASIS取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>C_BASIS取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SelectContData(System.Data.DataSet)">
+ <summary>
+ C_CONT取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>C_CONT取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SelectContCargoData(System.Data.DataSet)">
+ <summary>
+ C_CONT_CARGO取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>C_CONT_CARGO取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SelectContDtlData(System.Data.DataSet)">
+ <summary>
+ C_CONT_DTL取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>C_CONT_DTL取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SelectContLegData(System.Data.DataSet)">
+ <summary>
+ C_CONT_LEG取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>C_CONT_LEG取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SelectRevData(System.Data.DataSet)">
+ <summary>
+ C_REV取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>C_COST取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SelectCostData(System.Data.DataSet)">
+ <summary>
+ C_COST取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>C_COST取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SelectCoverData(System.Data.DataSet)">
+ <summary>
+ C_COVER取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>C_COVER取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SelectHouseData(System.Data.DataSet)">
+ <summary>
+ C_HOUSE取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>C_HOUSE取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SelectImpData(System.Data.DataSet)">
+ <summary>
+ C_IMP取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>C_IMP取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SelectExpData(System.Data.DataSet)">
+ <summary>
+ C_EXP取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>C_EXP取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SelectShipData(System.Data.DataSet)">
+ <summary>
+ C_SHIP取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>C_SHIP取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SelectBkgMaxSeqData(System.Data.DataSet)">
+ <summary>
+ C_MAX_SEQ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>C_MAX_SEQ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SelectMGoodsDtlInitData(System.Data.DataSet)">
+ <summary>
+ M_GOODS_DTL取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>商品明細マスタデータ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SetSQLSelectBCargoDtlInitWhere">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SelectMfileDataYellowCardMsds(System.Data.DataSet)">
+ <summary>
+ Yellow Card / Msds 取得処理 (M_FILE) 
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>Yellow Card / Msds 取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SelectDelArgItemData(System.Data.DataSet)">
+ <summary>
+ 削除手配内容取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>削除手配内容取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SelectBasisLogData(System.Data.DataSet)">
+ <summary>
+ C_BASIS_LOG取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>C_BASIS取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SelectContLogData(System.Data.DataSet)">
+ <summary>
+ C_CONT_LOG取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>C_CONT取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SelectContCargoLogData(System.Data.DataSet)">
+ <summary>
+ C_CONT_CARGO_LOG取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>C_CONT_CARGO取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SelectContDtlLogData(System.Data.DataSet)">
+ <summary>
+ C_CONT_DTL_LOG取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>C_CONT_DTL取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SelectContLegLogData(System.Data.DataSet)">
+ <summary>
+ C_CONT_LEG_LOG取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>C_CONT_LEG取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SelectHouseLogData(System.Data.DataSet)">
+ <summary>
+ C_HOUSE_LOG取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>C_HOUSE取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SelectImpLogData(System.Data.DataSet)">
+ <summary>
+ C_IMP_LOG取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>C_IMP取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SelectExpLogData(System.Data.DataSet)">
+ <summary>
+ C_EXP_LOG取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>C_EXP取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SelectShipLogData(System.Data.DataSet)">
+ <summary>
+ C_SHIP_LOG取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>C_SHIP取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SetParameter(System.Data.DataRow)">
+ <summary>
+ JOB NO設定共通パラメータ設定
+ </summary>
+ <param name="conditionRow">C_KEYのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SetParameterCont(System.Data.DataRow,System.String)">
+ <summary>
+ JOB NO設定共通パラメータ設定
+ </summary>
+ <param name="conditionRow">C_KEYのDataRow</param>
+ <param name="contSeq">CONT_SEQ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SetParameterContDtl(System.Data.DataRow,System.String,System.String,System.String)">
+ <summary>
+ JOB NO設定共通パラメータ設定
+ </summary>
+ <param name="conditionRow">C_KEYのDataRow</param>
+ <param name="contSeq">CONT_SEQ</param>
+ <param name="origDestKbn">ORIG_DEST_KBN</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SetParameterContLeg(System.Data.DataRow,System.String,System.String,System.String,System.String)">
+ <summary>
+ JOB NO設定共通パラメータ設定
+ </summary>
+ <param name="conditionRow">C_KEYのDataRow</param>
+ <param name="contSeq">CONT_SEQ</param>
+ <param name="origDestKbn">ORIG_DEST_KBN</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SetParameterCost(System.Data.DataRow,System.String,System.String,System.String,System.String)">
+ <summary>
+ JOB NO設定共通パラメータ設定
+ </summary>
+ <param name="conditionRow">C_KEYのDataRow</param>
+ <param name="origDestKbn">ORIG_DEST_KBN</param>
+ <param name="arrgCd">ARRG_CD</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SetParameterJobNo(System.Data.DataRow)">
+ <summary>
+ JOB NO設定共通パラメータ設定
+ </summary>
+ <param name="conditionRow">C_KEYのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SetSQLSelectIGaisanWhere(System.Data.DataSet)">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SetParameterLog(System.Data.DataRow)">
+ <summary>
+ JOB NO設定共通パラメータ設定
+ </summary>
+ <param name="conditionRow">C_KEYのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SetParameterContLog(System.Data.DataRow,System.String)">
+ <summary>
+ JOB NO設定共通パラメータ設定
+ </summary>
+ <param name="conditionRow">C_KEYのDataRow</param>
+ <param name="contSeq">CONT_SEQ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SetParameterContDtlLog(System.Data.DataRow,System.String,System.String,System.String)">
+ <summary>
+ JOB NO設定共通パラメータ設定
+ </summary>
+ <param name="conditionRow">C_KEYのDataRow</param>
+ <param name="contSeq">CONT_SEQ</param>
+ <param name="origDestKbn">ORIG_DEST_KBN</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SetParameterContLegLog(System.Data.DataRow,System.String,System.String,System.String,System.String)">
+ <summary>
+ JOB NO設定共通パラメータ設定
+ </summary>
+ <param name="conditionRow">C_KEYのDataRow</param>
+ <param name="contSeq">CONT_SEQ</param>
+ <param name="origDestKbn">ORIG_DEST_KBN</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SetParameterJobNoLog(System.Data.DataRow)">
+ <summary>
+ JOB NO設定共通パラメータ設定
+ </summary>
+ <param name="conditionRow">C_KEYのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SetBkgDataInsertParameter(System.Data.DataSet)">
+ <summary>
+ Bookingデータ新規登録時の共通パラメータ設定
+ </summary>
+ <param name="ds">データセット</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SetBkgDataUpdateParameter(System.Data.DataSet)">
+ <summary>
+ Bookingデータ更新時の共通パラメータ設定
+ </summary>
+ <param name="ds">データセット</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SetBkgDataUpdDelFlgParameter(System.Data.DataSet)">
+ <summary>
+ Bookingデータ削除フラグ更新時の共通パラメータ設定
+ </summary>
+ <param name="ds">データセット</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SetCoverDataUpdateChagneParameter(System.Data.DataSet)">
+ <summary>
+ C_COVER更新時のパラメータ設定
+ </summary>
+ <param name="ds">データセット</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SetBasisDataUpdateChangeParameter(System.Data.DataSet)">
+ <summary>
+ C_BASIS更新時のパラメータ設定
+ </summary>
+ <param name="ds">データセット</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SetBasisDataUpdateParameter(System.Data.DataSet)">
+ <summary>
+ C_BASIS更新時のパラメータ設定
+ </summary>
+ <param name="ds">データセット</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SetContDataUpdateParameter(System.Data.DataSet)">
+ <summary>
+ C_CONT更新時のパラメータ設定
+ </summary>
+ <param name="ds">データセット</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SetContLegDataUpdateParameter(System.Data.DataSet)">
+ <summary>
+ C_CONT_LEG更新時のパラメータ設定
+ </summary>
+ <param name="ds">データセット</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SetBkgRevDataParameter(System.Data.DataRow)">
+ <summary>
+ C_REV共通パラメータ設定
+ </summary>
+ <param name="drow">データセット</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SetBkgCostDataParameter(System.Data.DataRow)">
+ <summary>
+ C_COST共通パラメータ設定
+ </summary>
+ <param name="drow">データセット</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SetCostArgCompleteFlgKbnDataUpdateParameter(System.Data.DataRow)">
+ <summary>
+ C_COST更新時のパラメータ設定(COSTデータ 手配完了フラグ更新)
+ </summary>
+ <param name="drow">データセット</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SetCoverDataUpdateParameter(System.Data.DataSet)">
+ <summary>
+ C_COVER更新時のパラメータ設定
+ </summary>
+ <param name="ds">データセット</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SetContDtlDataUpdateParameter(System.Data.DataSet)">
+ <summary>
+ C_CONT_DTL更新時のパラメータ設定
+ </summary>
+ <param name="ds">データセット</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.InsertBkgRev(System.Data.DataSet)">
+ <summary>
+ C_REV登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>C_REV登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.InsertBkgCost(System.Data.DataSet)">
+ <summary>
+ C_COST登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>C_COST登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.UpdateSearchTextBkgRev(System.Data.DataSet)">
+ <summary>
+ C_REV更新処理(SEARCH_TEXT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>C_REV更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.UpdateBkgCostArgCompleteFlgKbn(System.Data.DataSet)">
+ <summary>
+ C_COST更新処理(COSTデータ 手配完了フラグ更新)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>C_COST更新処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.UpdateEstUpBasis(System.Data.DataSet)">
+ <summary>
+ B_BASIS更新(EST UP)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_BASIS更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.UpdateSearchTextEstCont(System.Data.DataSet)">
+ <summary>
+ B_CONT更新処理(SEARCH_TEXT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_CONT更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.UpdateArgBillDate(System.Data.DataSet)">
+ <summary>
+ 請求日(手配先)更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>請求日(手配先)更新処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.UpdateDeleteBkgCostSeqDelFlg(System.Data.DataSet)">
+ <summary>
+ C_COST論理削除処理(該当SEQのみ)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>C_COST論理削除SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SelectChangeMailData(System.Data.DataSet)">
+ <summary>
+ 変更メール送信対象取得
+ </summary>
+ <param name="ds">取得条件</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SelectChangeMailArrgCdData(System.Data.DataSet)">
+ <summary>
+ 変更メール送信対象(手配コード)取得
+ </summary>
+ <param name="ds">取得条件</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SelectChangeMailArrgData(System.Data.DataSet)">
+ <summary>
+ 変更メール送信対象(手配)取得
+ </summary>
+ <param name="ds">取得条件</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SetChangeMailParameter(System.Data.DataRow)">
+ <summary>
+ 変更メール送信対象パラメータ設定
+ </summary>
+ <param name="conditionRow">C_KEYのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SelectTukanCoverSeq(System.Data.DataSet)">
+ <summary>
+ Cover Seq(通関)取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>Cover Seq(通関)取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SelectChangeMailToTukanInfo(System.Data.DataSet)">
+ <summary>
+ 変更メール(通関担当者向け)メール文面置換情報取得処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SelectCcEmpNm(System.Data.DataSet)">
+ <summary>
+ 通関担当者名取得処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SelectChangeMailToTukanAdd(System.Data.DataSet)">
+ <summary>
+ 変更メール(通関担当者向け)To宛先取得処理
+ </summary>
+ <param name="ds">取得条件</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SelectChangeMailToTukanCcAdd(System.Data.DataSet)">
+ <summary>
+ 変更メール(通関担当者向け)Cc宛先取得処理
+ </summary>
+ <param name="ds">取得条件</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SelectTukanCoverStage(System.Data.DataSet)">
+ <summary>
+ 変更メール送信対象取得
+ </summary>
+ <param name="ds">取得条件</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.InsertMFileYellowCardMsds(System.Data.DataSet)">
+ <summary>
+ YellowCard/Msdsファイルアップロード処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>M_FILE登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SetComMFileDataParameter(System.Data.DataRow)">
+ <summary>
+ M_FILE共通パラメータ設定
+ </summary>
+ <param name="drow">データテーブル</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SetDataInsertComDbParameter">
+ <summary>
+ 新規登録時の共通パラメータ設定(COM_DB)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.UpdateDeleteMFileYellowCardMsds(System.Data.DataSet)">
+ <summary>
+ YellowCard/Msds ファイル削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>M_FILE論理削除SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0200DAC.SetDataUpdDelFlgComDbParameter">
+ <summary>
+ 削除フラグ更新時の共通パラメータ設定(COM_DB)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVE0600DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVE0600DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVE0600DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0600DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0600DAC.SearchResultListComp(System.Data.DataSet)">
+ <summary>
+ 受領済データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>取得処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0600DAC.SearchResultListUnComp(System.Data.DataSet)">
+ <summary>
+ 未受領データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>取得処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0600DAC.SetSQLSelectWhereSetComp(System.Data.DataSet)">
+ <summary>
+ 条件文・パラメータ設定(受領済)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0600DAC.SetSQLSelectWhereSetUnComp(System.Data.DataSet)">
+ <summary>
+ 条件文・パラメータ設定(未受領)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0600DAC.SetSQLSelectWhereDirectComp(System.Data.DataSet)">
+ <summary>
+ 条件文・パラメータ設定(ダイレクト(受領済))
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0600DAC.SetSQLSelectWhereDirectUnComp(System.Data.DataSet)">
+ <summary>
+ 条件文・パラメータ設定(ダイレクト(未受領))
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0600DAC.SetSQLSelectWhere(System.Data.DataSet)">
+ <summary>
+ 条件文・パラメータ設定(共通)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0600DAC.SetSQLSelectWhereComp(System.Data.DataSet)">
+ <summary>
+ 条件文・パラメータ設定(受領済)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE0600DAC.SetSQLSelectWhereUnComp(System.Data.DataSet)">
+ <summary>
+ 条件文・パラメータ設定(未受領)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVE5010DAC.SQL_SELECT_HEAD_DATA">
+ <summary>
+ 取得項目
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE5010DAC.PrintContFreCostChkList(System.Data.DataSet)">
+ <summary>
+ 帳票出力データ取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>帳票出力データ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE5010DAC.SetSQLSelectBodyWhere">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVE5040DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVE5040DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVE5040DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE5040DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVE5040DAC.SearchCoverColChgLog(System.Data.DataSet)">
+ <summary>
+ 変更項目データ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>帳票出力データ取得SQLの構築・発行</remarks>
+</member>
+</members>
+</doc>

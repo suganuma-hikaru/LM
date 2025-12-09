@@ -1,0 +1,2051 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.GLVK.DAC
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.GL.DAC.My.Resources.Resources">
+<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.GL.DAC.My.Resources.Resources.ResourceManager">
+<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.GL.DAC.My.Resources.Resources.Culture">
+<summary>
+  すべてについて、現在のスレッドの CurrentUICulture プロパティをオーバーライドします
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK5150DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK5150DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK5150DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5150DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5150DAC.PrintLoadContItinerary(System.Data.DataSet)">
+ <summary>
+ データ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>データ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5150DAC.PrintLoadContPart(System.Data.DataSet)">
+ <summary>
+ データ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>データ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5150DAC.SetSQLSelectWhere(System.Data.DataSet,System.String,System.String)">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5150DAC.SetAddContPartLine(System.Text.StringBuilder@,System.String)">
+ <summary>
+ 依頼種別設定
+ </summary>
+ <param name="andstr"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5150DAC.SetSQLSelectPartWhere(System.Data.DataSet,System.String)">
+ <summary>
+ 条件文設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5150DAC.SetSQLSelectPartParam(System.Data.DataSet)">
+ <summary>
+ パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK0900DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK0900DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK0900DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0900DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0900DAC.SearchDailyTaskList(System.Data.DataSet)">
+ <summary>
+ データ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>データ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0900DAC.SearchPartTaskList(System.Data.DataSet)">
+ <summary>
+ データ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>データ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0900DAC.SetSQLSelectWhere(System.Data.DataSet)">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0900DAC.SetAddContPartLine(System.Text.StringBuilder@,System.String)">
+ <summary>
+ 依頼種別設定
+ </summary>
+ <param name="andstr"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0900DAC.SetSQLSelectPartWhere(System.Data.DataSet,System.String)">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0900DAC.SetSQLSelectPartParam(System.Data.DataSet)">
+ <summary>
+ パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK0800DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK0800DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK0800DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0800DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0800DAC.SearchHazardousList(System.Data.DataSet)">
+ <summary>
+ データ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>データ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0800DAC.SetSQLSelectWhere(System.Data.DataSet)">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK0600DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK0600DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK0600DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0600DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0600DAC.SearchInvListStorage(System.Data.DataSet)">
+ <summary>
+ 請求データ（保管）取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0600DAC.SearchInvListHeat(System.Data.DataSet)">
+ <summary>
+ 請求データ（加温）取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0600DAC.SearchInvListLiquid(System.Data.DataSet)">
+ <summary>
+ 請求データ（移液）取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0600DAC.SearchInvListChisso(System.Data.DataSet)">
+ <summary>
+ 請求データ（窒素）取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0600DAC.SearchInvListSample(System.Data.DataSet)">
+ <summary>
+ 請求データ（サンプリング）取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0600DAC.SearchInvListLift(System.Data.DataSet)">
+ <summary>
+ 請求データ（リフト）取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0600DAC.SearchInvListShiftHeat(System.Data.DataSet)">
+ <summary>
+ 請求データ（加温シフト）取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0600DAC.SearchInvListShiftLiquid(System.Data.DataSet)">
+ <summary>
+ 請求データ（移液シフト）取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0600DAC.SearchInvListShiftChisso(System.Data.DataSet)">
+ <summary>
+ 請求データ（窒素シフト）取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0600DAC.SetRequiredParameter">
+ <summary>
+ 必須パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0600DAC.SetSQLSelectGroupWhere">
+ <summary>
+ 集約内条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0600DAC.SetSQLSelectWhere">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK3000DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK3000DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK3000DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK3000DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK3000DAC.CheckResultCount(System.Data.DataSet)">
+ <summary>
+ 取得行数チェック
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK3000DAC.SearchGLVK3000BasisList(System.Data.DataSet)">
+ <summary>
+ 加温実績取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>加温実績取得取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK3000DAC.SetSQLSelectWhere">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK0400DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK0400DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK0400DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0400DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0400DAC.SelectVkBasis(System.Data.DataSet)">
+ <summary>
+ VK_BASIS取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>移液依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0400DAC.SelectVkIeki(System.Data.DataSet)">
+ <summary>
+ VK_IEKI取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>移液依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0400DAC.SelectVkIekiDtl(System.Data.DataSet)">
+ <summary>
+ VK_IEKI_DTL取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>移液依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0400DAC.SelectVkIekiDtlCnt(System.Data.DataSet)">
+ <summary>
+ VK_IEKI_DTL(移液回数)取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>移液依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0400DAC.SelectVkLogComment(System.Data.DataSet)">
+ <summary>
+ VK_LOG_COMMENT取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>移液依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0400DAC.SelectVkMaxSeq(System.Data.DataSet)">
+ <summary>
+ VK_MAX_SEQ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>移液依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0400DAC.InsertVkIeki(System.Data.DataSet)">
+ <summary>
+ VK_IEKI登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>移液依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0400DAC.InsertVkIekiDtl(System.Data.DataSet)">
+ <summary>
+ VK_IEKI_DTL登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>移液依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0400DAC.InsertVkLogComment(System.Data.DataSet)">
+ <summary>
+ VK_LOG_COMMENT登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>移液依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0400DAC.UpdateVkIeki(System.Data.DataSet)">
+ <summary>
+ VK_IEKI更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>移液依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0400DAC.UpdateVkIekiWorkCom(System.Data.DataSet)">
+ <summary>
+ VK_IEKI更新処理(DEPOT側作業ボタン押下時更新用）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>移液依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0400DAC.UpdateVkIekiDtl(System.Data.DataSet)">
+ <summary>
+ VK_IEKI_DTL更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>移液依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0400DAC.UpdateVkLogComment(System.Data.DataSet)">
+ <summary>
+ VK_LOG_COMMENT更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>移液依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0400DAC.UpdateVkIekiSearchText(System.Data.DataSet)">
+ <summary>
+ VK_IEKI更新処理(SEARCH_TEXT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>搬出入依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0400DAC.UpdateVkIekiDtlSearchText(System.Data.DataSet)">
+ <summary>
+ VK_IEKI_DTL更新処理(SEARCH_TEXT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>移液依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0400DAC.UpdateVkLogCommentSearchText(System.Data.DataSet)">
+ <summary>
+ VK_LOG_COMMENT更新処理(SEARCH_TEXT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>移液依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0400DAC.DeleteIeki(System.Data.DataSet)">
+ <summary>
+ 削除処理（ヘッダーイベント）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>移液依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0400DAC.UpdateVkLogCommentDelFlg(System.Data.DataSet)">
+ <summary>
+ VK_LOG_COMMENT削除フラグ更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>移液依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0400DAC.isEditableIeki(System.Data.DataSet)">
+ <summary>
+ VK_IEKI排他制御
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>移液依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0400DAC.isEditableBasis(System.Data.DataSet)">
+ <summary>
+ VK_BASIS排他制御
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>移液依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0400DAC.isDeleteBasis(System.Data.DataSet)">
+ <summary>
+ 依頼削除チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>移液依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0400DAC.isCompleteOut(System.Data.DataSet)">
+ <summary>
+ 依頼完了チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>移液依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0400DAC.isNotCompleteIn(System.Data.DataSet)">
+ <summary>
+ 搬入未完了チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>移液依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0400DAC.SetOrdNoParameter(System.Data.DataRow)">
+ <summary>
+ 搬出入取得時の共通パラメータ設定
+ </summary>
+ <param name="conditionRow">VK_BASISのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0400DAC.SetIekiOrdNoParameter(System.Data.DataRow)">
+ <summary>
+ 移液情報取得時の共通パラメータ設定
+ </summary>
+ <param name="conditionRow">VK_BASISのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0400DAC.SetSeqParameter(System.Data.DataRow)">
+ <summary>
+ シーケンス共通パラメータ設定
+ </summary>
+ <param name="conditionRow">VK_BASISのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0400DAC.SetIekiDataInsUpdParameter(System.Data.DataRow)">
+ <summary>
+ VK_IEKI登録・更新共通パラメータ
+ </summary>
+ <param name="conditionRow">VK_IEKIのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0400DAC.SetIekiDtlDataInsUpdParameter(System.Data.DataRow)">
+ <summary>
+ VK_IEKI_DTL登録・更新共通パラメータ
+ </summary>
+ <param name="conditionRow">VK_IEKI_DTLのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0400DAC.SetLogCommentDataInsUpdParameter(System.Data.DataRow)">
+ <summary>
+ VK_LOG_COMMENT登録・更新共通パラメータ
+ </summary>
+ <param name="conditionRow">VK_LOG_COMMENTのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0400DAC.SetSysCommonParameter">
+ <summary>
+ システム共通共通パラメータ(削除フラグを除く）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0400DAC.SetSysDelFlgOnParameter">
+ <summary>
+ 削除フラグ オン パラメータ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0400DAC.SetSysDelFlgOffParameter">
+ <summary>
+ 削除フラグ オフ パラメータ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK0100DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK0100DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK0100DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0100DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0100DAC.CheckResultCount(System.Data.DataSet)">
+ <summary>
+ 取得行数チェック
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0100DAC.SearchBasisList(System.Data.DataSet)">
+ <summary>
+ 加温実績取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>加温実績取得取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0100DAC.SetSQLSelectWhere">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK0200DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK0200DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK0200DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.SelectVkBasis(System.Data.DataSet)">
+ <summary>
+ VK_BASIS取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>搬出入依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.SelectVkBasisDtl(System.Data.DataSet)">
+ <summary>
+ VK_BASIS_DTL取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>搬出入依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.SelectVkGoods(System.Data.DataSet)">
+ <summary>
+ VK_GOODS取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>搬出入依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.SelectVkCommnet(System.Data.DataSet)">
+ <summary>
+ VK_COMMENT取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>搬出入依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.SelectVkHeating(System.Data.DataSet)">
+ <summary>
+ VK_HEATING取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>搬出入依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.SelectVkHeatingEdit(System.Data.DataSet)">
+ <summary>
+ VK_HEATING_EDIT取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>搬出入依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.SelectVkChisso(System.Data.DataSet)">
+ <summary>
+ VK_CHISSO取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>搬出入依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.SelectVkIeki(System.Data.DataSet)">
+ <summary>
+ VK_IKEI取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>搬出入依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.SelectVkMeasure(System.Data.DataSet)">
+ <summary>
+ VK_MEASURE取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>搬出入依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.SelectVkLogComment(System.Data.DataSet)">
+ <summary>
+ VK_LOG_COMMENT取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>搬出入依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.SelectVkMaxSeq(System.Data.DataSet)">
+ <summary>
+ VK_MAX_SEQ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>搬出入依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.SelectZSystem(System.Data.DataSet)">
+ <summary>
+ Z_SYSTEM取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>搬出入依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.InitDisplayGlData(System.Data.DataSet)">
+ <summary>
+ GL_CONT_OUT取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>搬出入依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.SelectBkgContDepotData(System.Data.DataSet)">
+ <summary>
+ C_CONT_DEPOT取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>C_CONT_DEPOT取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.SelectGlMGoodsDtlData(System.Data.DataSet)">
+ <summary>
+ M_GOODS_DTL取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>M_GOODS_DTL取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.InsertVkBasis(System.Data.DataSet)">
+ <summary>
+ VK_BASIS登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>搬出入依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.InsertVkBasisDtl(System.Data.DataSet)">
+ <summary>
+ VK_BASIS_DTL登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>搬出入依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.InsertVkGoods(System.Data.DataSet)">
+ <summary>
+ VK_GOODS登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>搬出入依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.InsertVkComment(System.Data.DataSet)">
+ <summary>
+ VK_COMMENT登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>搬出入依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.InsertVkHeatingEdit(System.Data.DataSet)">
+ <summary>
+ VK_HEATING_EDIT登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>搬出入依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.InsertVkChisso(System.Data.DataSet)">
+ <summary>
+ VK_CHISSO登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>搬出入依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.InsertVkMeasure(System.Data.DataSet)">
+ <summary>
+ VK_MEASURE登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>搬出入依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.InsertVkLogComment(System.Data.DataSet)">
+ <summary>
+ VK_LOG_COMMENT登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>搬出入依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.UpdateVkBasis(System.Data.DataSet)">
+ <summary>
+ VK_BASIS更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>搬出入依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.UpdateVkBasisSysCom(System.Data.DataSet)">
+ <summary>
+ VK_BASIS更新処理(システム共通)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>搬出入依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.UpdateVkBasisDtl(System.Data.DataSet)">
+ <summary>
+ VK_BASIS_DTL更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>搬出入依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.UpdateVkBasisDtlWorkCom(System.Data.DataSet)">
+ <summary>
+ VK_BASIS_DTL更新処理(DEPOT側作業ボタン押下時更新用)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>搬出入依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.UpdateVkGoods(System.Data.DataSet)">
+ <summary>
+ VK_GOODS更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>搬出入依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.UpdateVkComment(System.Data.DataSet)">
+ <summary>
+ VK_COMMENT更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>搬出入依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.UpdateVkHeatingEdit(System.Data.DataSet)">
+ <summary>
+ VK_HEATING_EDIT更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>搬出入依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.UpdateVkChisso(System.Data.DataSet)">
+ <summary>
+ VK_CHISSO更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>搬出入依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.UpdateVkMeasure(System.Data.DataSet)">
+ <summary>
+ VK_MEASURE更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>搬出入依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.UpdateVkLogComment(System.Data.DataSet)">
+ <summary>
+ VK_LOG_COMMENT更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>搬出入依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.UpdateVkBasisSearchText(System.Data.DataSet)">
+ <summary>
+ VK_BASIS更新処理(SEARCH_TEXT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>搬出入依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.UpdateVkBasisDtlSearchText(System.Data.DataSet)">
+ <summary>
+ VK_BASIS_DTL更新処理(SEARCH_TEXT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>搬出入依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.UpdateVkGoodsSearchText(System.Data.DataSet)">
+ <summary>
+ VK_GOODS更新処理(SEARCH_TEXT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>搬出入依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.UpdateVkCommentSearchText(System.Data.DataSet)">
+ <summary>
+ VK_COMMENT更新処理(SEARCH_TEXT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>搬出入依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.UpdateVkHeatingEditSearchText(System.Data.DataSet)">
+ <summary>
+ VK_HEATING_EDIT更新処理(SEARCH_TEXT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>搬出入依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.UpdateVkChissoSearchText(System.Data.DataSet)">
+ <summary>
+ VK_CHISSO更新処理(SEARCH_TEXT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>搬出入依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.UpdateVkMeasureSearchText(System.Data.DataSet)">
+ <summary>
+ VK_MEASURE更新処理(SEARCH_TEXT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>搬出入依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.UpdateVkLogCommentSearchText(System.Data.DataSet)">
+ <summary>
+ VK_LOG_COMMENT更新処理(SEARCH_TEXT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>搬出入依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.UpdateCContDepotWorkCom(System.Data.DataSet)">
+ <summary>
+  C_CONT_DEPOT更新(搬出完了)処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>C_CONT_DEPOT更新(搬出完了)</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.DeleteBasis(System.Data.DataSet)">
+ <summary>
+ 削除処理(ヘッダーボタンイベント)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>搬出入依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.UpdateVkCommentDelFlg(System.Data.DataSet)">
+ <summary>
+ VK_COMMENT削除フラグ更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>搬出入依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.UpdateVkHeatingEditDelFlg(System.Data.DataSet)">
+ <summary>
+ VK_HEATING_EDIT削除フラグ更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>搬出入依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.UpdateVkChissoDelFlg(System.Data.DataSet)">
+ <summary>
+ VK_CHISSO削除フラグ更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>搬出入依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.UpdateVkMeasureDelFlg(System.Data.DataSet)">
+ <summary>
+ VK_MEASURE削除フラグ更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>搬出入依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.UpdateVkLogCommentDelFlg(System.Data.DataSet)">
+ <summary>
+ VK_LOG_COMMENT削除フラグ更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>搬出入依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.SelectReiOrderMailSendUserList(System.Data.DataSet)">
+ <summary>
+ タイNKCT Orderメール送信対象取得処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.SetOrdNoParameter(System.Data.DataRow)">
+ <summary>
+ 搬出入取得時の共通パラメータ設定
+ </summary>
+ <param name="conditionRow">VK_BASISのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.SetSeqParameter(System.Data.DataRow)">
+ <summary>
+ シーケンス共通パラメータ設定
+ </summary>
+ <param name="conditionRow">VK_BASISのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.SetBasisDataInsUpdParameter(System.Data.DataRow)">
+ <summary>
+ VK_BASIS登録・更新共通パラメータ
+ </summary>
+ <param name="conditionRow">VK_BASISのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.SetBasisDtlDataInsUpdParameter(System.Data.DataRow)">
+ <summary>
+ VK_BASIS_DTL登録・更新共通パラメータ
+ </summary>
+ <param name="conditionRow">VK_BASIS_DTLのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.SetGoodsDataInsUpdParameter(System.Data.DataRow)">
+ <summary>
+ VK_GOODS登録・更新共通パラメータ
+ </summary>
+ <param name="conditionRow">VK_GOODSのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.SetCommentDataInsUpdParameter(System.Data.DataRow)">
+ <summary>
+ VK_COMMENT登録・更新共通パラメータ
+ </summary>
+ <param name="conditionRow">VK_COMMENTのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.SetHeatingEditDataInsUpdParameter(System.Data.DataRow)">
+ <summary>
+ VK_HEATING_EDIT登録・更新共通パラメータ
+ </summary>
+ <param name="conditionRow">VK_HEATING_EDITのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.SetChissoDataInsUpdParameter(System.Data.DataRow)">
+ <summary>
+ VK_CHISSO登録・更新共通パラメータ
+ </summary>
+ <param name="conditionRow">VK_CHISSOのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.SetMeasureDataInsUpdParameter(System.Data.DataRow)">
+ <summary>
+ VK_MEASURE登録・更新共通パラメータ
+ </summary>
+ <param name="conditionRow">VK_MEASUREのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.SetLogCommentDataInsUpdParameter(System.Data.DataRow)">
+ <summary>
+ VK_LOG_COMMENT登録・更新共通パラメータ
+ </summary>
+ <param name="conditionRow">VK_LOG_COMMENTのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.SetSysCommonParameter">
+ <summary>
+ システム共通共通パラメータ(削除フラグを除く）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.SetSysDelFlgOnParameter">
+ <summary>
+ 削除フラグ オン パラメータ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.SetSysDelFlgOffParameter">
+ <summary>
+ 削除フラグ オフ パラメータ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.SetDuplicateHeatLaneParameter(System.Data.DataSet)">
+ <summary>
+ 加温レーン重複チェック用パラメータ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.SetDuplicateContNoParameter(System.Data.DataRow)">
+ <summary>
+ コンテナ番号重複チェック用パラメータ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.SetInitDisplayGlParameter(System.Data.DataRow)">
+ <summary>
+ GL_CONT_OUT取得パラメータ設定
+ </summary>
+ <param name="conditionRow">GL_CONT_INのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.SetBkgContDepotDataParameter(System.Data.DataRow)">
+ <summary>
+ C_CONT_DEPOT_OUT取得パラメータ設定
+ </summary>
+ <param name="conditionRow">C_CONT_DEPOT_INのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0200DAC.SetCContDepotDataUpdParameter(System.Data.DataSet)">
+ <summary>
+ C_CONT_DEPOT更新パラメータ設定
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK0500DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK0500DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK0500DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0500DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0500DAC.SearchHeatCalendarAssignnedList(System.Data.DataSet)">
+ <summary>
+ 加温カレンダー(割当)情報取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>加温カレンダー(割当)情報取得取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0500DAC.SearchHeatCalendarUnassignedList(System.Data.DataSet)">
+ <summary>
+ 加温カレンダー(未割当)情報取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>加温カレンダー(未割当)情報取得取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0500DAC.UpdateBasisData(System.Data.DataSet)">
+ <summary>
+ 加温カレンダー情報(VK_BASIS) 更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>加温カレンダー情報(VK_BASIS) 更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0500DAC.UpdateBasisDtlData(System.Data.DataSet)">
+ <summary>
+ 加温カレンダー情報(VK_BASIS_DTL) 更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>加温カレンダー情報(VK_BASIS_DTL) 更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0500DAC.SetSQLSelectWhere">
+ <summary>
+ 条件文・パラメータ設定モジュール(加温カレンダー(割当・未割当)共通)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0500DAC.SetSQLSelectAssignnedWhere">
+ <summary>
+ 条件文・パラメータ設定モジュール(加温カレンダー(割当)用)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0500DAC.SetSQLCheckHeatDuplicated(System.Data.DataRow,System.Collections.ArrayList)">
+ <summary>
+ 条件文・パラメータ設定モジュール(加温カレンダー更新時日付重複件数取得用)
+ </summary>
+ <param name="dr">DataRow</param>
+ <param name="prmList">パラメータ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0500DAC.SetSQLBasisUpdateWhere(System.Data.DataRow,System.Collections.ArrayList)">
+ <summary>
+ 条件文・パラメータ設定モジュール(加温カレンダー更新(VK_BASIS))
+ </summary>
+ <param name="dr">DataRow</param>
+ <param name="prmList">パラメータ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0500DAC.SetSQLBasisDtlUpdateWhere(System.Data.DataRow,System.Collections.ArrayList)">
+ <summary>
+ 条件文・パラメータ設定モジュール(加温カレンダー更新(VK_BASIS_DTL))
+ </summary>
+ <param name="dr">DataRow</param>
+ <param name="prmList">パラメータ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0500DAC.SetUpdParameter(System.Collections.ArrayList)">
+ <summary>
+ 最終更新パラメータ設定
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0500DAC.SetSQLBasisUpdDateTimeWhere">
+ <summary>
+ 条件文・パラメータ設定モジュール(加温カレンダー更新排他確認用)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0500DAC.ChkHaita(System.Data.DataSet)">
+ <summary>
+ 加温カレンダー情報 更新日・更新時刻の取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>加温カレンダー情報 更新日・更新時刻取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0500DAC.CheckHeatDuplicated(System.Data.DataSet)">
+ <summary>
+ 加温カレンダー更新時日付重複チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>加温カレンダー更新時日付重複件数取得SQLの構築・発行</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK0300DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK0300DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK0300DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0300DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0300DAC.CheckResultCount(System.Data.DataSet)">
+ <summary>
+ 取得行数チェック
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0300DAC.SearchIekiList(System.Data.DataSet)">
+ <summary>
+ 移液依頼情報取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>移液依頼情報取得取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0300DAC.SetSQLSelectWhere">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK3200DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK3200DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK3200DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK3200DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK3200DAC.SelectBkgContDepotData(System.Data.DataSet)">
+ <summary>
+ C_CONT_DEPOT取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>C_CONT_DEPOT取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK3200DAC.SetBkgContDepotDataParameter(System.Data.DataRow)">
+ <summary>
+ C_CONT_DEPOT_OUT取得パラメータ設定
+ </summary>
+ <param name="conditionRow">C_CONT_DEPOT_INのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK5130DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK5130DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK5130DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5130DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5130DAC.PrintHeatingList(System.Data.DataSet)">
+ <summary>
+ 加温予定一覧取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>加温予定一覧取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5130DAC.SetSQLSelectWhere">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK5050DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK5050DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK5050DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5050DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5050DAC.SearchChissoRequestForm(System.Data.DataSet)">
+ <summary>
+ 窒素置換依頼書取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>窒素置換依頼書取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5050DAC.SetSQLSelectWhere">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK5040DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK5040DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK5040DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5040DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5040DAC.SearchHeatingDataRecord(System.Data.DataSet)">
+ <summary>
+ 加温データ記録(日報)取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>加温データ記録(日報)取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5040DAC.SetSQLSelectWhere">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK5030DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK5030DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK5030DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5030DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5030DAC.SearchHeatingRequestForm(System.Data.DataSet)">
+ <summary>
+ 加温依頼書取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>加温依頼書取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5030DAC.SetSQLSelectWhere">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK5020DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK5020DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK5020DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5020DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5020DAC.SearchContainerStickerSeal(System.Data.DataSet)">
+ <summary>
+ コンテナ貼付シール取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>コンテナ貼付シール取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5020DAC.SetSQLSelectWhere">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK5010DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK5010DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK5010DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5010DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5010DAC.SearchBasisRequestForm(System.Data.DataSet)">
+ <summary>
+ 搬出入依頼書取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>搬出入依頼書取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5010DAC.SetSQLSelectWhere">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK5080DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK5080DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK5080DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5080DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5080DAC.SelectIekiCheckList(System.Data.DataSet)">
+ <summary>
+ 移液作業チェック表取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>移液作業チェック表取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5080DAC.SetSQLSelectWhere">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK5120DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK5120DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK5120DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5120DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5120DAC.SelectTodayScheduleList01(System.Data.DataSet)">
+ <summary>
+ 今日の予定(実入り搬入)取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>今日の予定(実入り搬入)取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5120DAC.SelectTodayScheduleList02(System.Data.DataSet)">
+ <summary>
+ 今日の予定(実入り搬出)取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>今日の予定(実入り搬出)取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5120DAC.SelectTodayScheduleList03(System.Data.DataSet)">
+ <summary>
+ 今日の予定(加温あり搬入)取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>今日の予定(加温あり搬入)取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5120DAC.SelectTodayScheduleList04(System.Data.DataSet)">
+ <summary>
+ 今日の予定(加温あり搬出)取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>今日の予定(加温あり搬出)取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5120DAC.SelectTodayScheduleList05(System.Data.DataSet)">
+ <summary>
+ 今日の予定(空搬入)取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>今日の予定(空搬入)取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5120DAC.SelectTodayScheduleList06(System.Data.DataSet)">
+ <summary>
+ 今日の予定(空搬出)取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>今日の予定(空搬出)取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5120DAC.SelectTodayScheduleList07(System.Data.DataSet)">
+ <summary>
+ 今日の予定(移液)取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>今日の予定(移液)取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5120DAC.SelectTodayScheduleList08(System.Data.DataSet)">
+ <summary>
+ 今日の予定(窒素置換)取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>今日の予定(窒素置換)取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5120DAC.SelectTodayScheduleList09(System.Data.DataSet)">
+ <summary>
+ 今日の予定(サンプリング)取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>今日の予定(サンプリング)取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5120DAC.SetSQLSelectBasisInWhere(System.String,System.String)">
+ <summary>
+ 今日の予定(実入り、加温あり、空搬入) 条件文・パラメータ設定モジュール
+ </summary>
+ <param name="inEmptyKbn">搬入時空 区分</param>
+ <param name="workFlg">作業フラグ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5120DAC.SetSQLSelectBasisOutWhere(System.String,System.String)">
+ <summary>
+ 今日の予定(実入り、加温あり、空搬出) 条件文・パラメータ設定モジュール
+ </summary>
+ <param name="inEmptyKbn">搬入時空 区分</param>
+ <param name="workFlg">作業フラグ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5120DAC.SetSQLSelectIekiWhere">
+ <summary>
+ 今日の予定(移液) 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5120DAC.SetSQLSelectChissoWhere">
+ <summary>
+ 今日の予定(窒素置換) 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5120DAC.SetSQLSelectSamplingWhere">
+ <summary>
+ 今日の予定(サンプリング) 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK5060DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK5060DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK5060DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5060DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5060DAC.SelectRotenReportData(System.Data.DataSet)">
+ <summary>
+ 露点作業日報取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>露点作業日報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5060DAC.SetSQLSelectWhere">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK5000DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK5000DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK5000DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5000DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5000DAC.SearchBasisList(System.Data.DataSet)">
+ <summary>
+ 搬出入依頼一覧取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>搬出入依頼一覧取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5000DAC.SetSQLSelectWhere">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK5070DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK5070DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK5070DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5070DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5070DAC.SelectIekiIraiData(System.Data.DataSet)">
+ <summary>
+ 移液依頼書取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>移液依頼書取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5070DAC.SetSQLSelectWhere">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK5110DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK5110DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK5110DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5110DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5110DAC.SelectHeatingList(System.Data.DataSet)">
+ <summary>
+ 加温実績一覧取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>加温実績取得取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5110DAC.SetSQLSelectWhere">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK0700DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK0700DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK0700DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0700DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0700DAC.CheckResultCount(System.Data.DataSet)">
+ <summary>
+ 取得行数チェック
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0700DAC.SearchHeatingList(System.Data.DataSet)">
+ <summary>
+ 加温実績取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>加温実績取得取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK0700DAC.SetSQLSelectWhere">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK5140DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK5140DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVK5140DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5140DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5140DAC.SearchStorageList(System.Data.DataSet)">
+ <summary>
+ TANK REPORT（保管明細）処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>TANK REPORT（保管明細）取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVK5140DAC.SetSQLSelectWhere">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

@@ -1,0 +1,637 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.WebApi.Library
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.WebApi.My.Resources.Resources">
+<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.WebApi.My.Resources.Resources.ResourceManager">
+<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.WebApi.My.Resources.Resources.Culture">
+<summary>
+  すべてについて、現在のスレッドの CurrentUICulture プロパティをオーバーライドします
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.WebApi.Base.BaseController">
+ <summary>
+ コントローラーの親クラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.WebApi.Base.BaseController.logger">
+ <summary>
+ メッセージクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.WebApi.Base.BaseController.CreateResponse(System.Object,System.Net.HttpStatusCode)">
+ <summary>
+ リクエストをもとにレスポンスを生成する
+ </summary>
+ <param name="obj"></param>
+ <param name="statusCode"></param>
+ <returns></returns>
+</member>
+<member name="T:Jp.Co.Nrs.WebApi.Base.BaseModel">
+ <summary>
+ モデルの親クラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.WebApi.Base.BaseModel.GetPropertyName``1(System.Linq.Expressions.Expression{System.Func{``0}})">
+ <summary>
+ ラムダ式を利用してプロパティ名を取得します
+ </summary>
+ <typeparam name="T">型パラメーター</typeparam>
+ <param name="expression">ラムダ式</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.WebApi.Base.BaseApiUtil.GetPropertyName``1(System.Linq.Expressions.Expression{System.Func{``0}})">
+ <summary>
+ ラムダ式を利用してプロパティ名を取得します
+ </summary>
+ <typeparam name="T">型パラメーター</typeparam>
+ <param name="expression">ラムダ式</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.WebApi.Base.BaseWorkerService">
+ <summary>
+ ワーカーサービスクラスの親クラス
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.WebApi.Base.BaseWorkerService._IPAdress">
+ <summary>
+ 実行環境のIPアドレスを格納するフィールド
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.WebApi.Base.BaseWorkerService._TerminalID">
+ <summary>
+ 実行環境の端末名を格納するフィールド
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.WebApi.Base.BaseWorkerService._PGID">
+ <summary>
+ このインスタンスのPGIDを格納するフィールド
+ </summary>
+</member>
+<member name="P:Jp.Co.Nrs.WebApi.Base.BaseWorkerService.CreatedTime">
+ <summary>
+ このクラスのインスタンスが生成された時間を取得・設定するプロパティ
+ </summary>
+ <returns>このクラスのインスタンスが生成された時間</returns>
+</member>
+<member name="P:Jp.Co.Nrs.WebApi.Base.BaseWorkerService.MessageDataEntity">
+ <summary>
+ 出力用メッセージの格納されたデータセットを取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.WebApi.Base.BaseWorkerService.Init">
+ <summary>
+ 初期化メソッド。
+ </summary>
+ <remarks>このクラスでは端末名およびIPアドレスの取得を行う</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.WebApi.Base.BaseWorkerService.CreateServiceData">
+ <summary>
+ サーバーとの送受信に使用するServiceDataクラスを生成します。
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.WebApi.Base.BaseWorkerService.SetRequestParam(Jp.Co.Nrs.Com.Base.ServiceData,System.Data.DataSet)">
+ <summary>
+ ServiceDataに送信する値を転記する。
+ </summary>
+ <param name="sd"></param>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.WebApi.Base.BaseWorkerService.GetReturnParam(Jp.Co.Nrs.Com.Base.ServiceData)">
+ <summary>
+  ServiceDataから受信した値を転記する。
+ </summary>
+ <param name="sd"></param>
+</member>
+<member name="M:Jp.Co.Nrs.WebApi.Base.BaseWorkerService.GetTerminalID">
+ <summary>
+ ログインユーザーのログイン端末名を取得する
+ </summary>
+ <returns>ログインユーザーのログイン端末名</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.WebApi.Base.BaseWorkerService.IPAdress">
+ <summary>
+ 現在ServiceDataに登録されているログインユーザーのIPアドレスを取得する。
+ </summary>
+ <returns>ログインユーザーのIPアドレス</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.WebApi.Base.BaseWorkerService.GetPGID">
+ <summary>
+ PGIDを取得する。
+ </summary>
+ <returns>PGID</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.WebApi.Base.BaseWorkerService.SetPGID(System.String)">
+ <summary>
+ PGIDを設定する
+ </summary>
+ <param name="value">PGID</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.WebApi.Base.BaseWorkerService.GetMessageValue(System.Data.DataSet,System.String)">
+ <summary>
+ 指定した項目のデータをキャッシュから取得します。(Public ⇒ Private)
+ </summary>
+ <param name="ds"></param>
+ <param name="column"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.WebApi.Base.BaseWorkerService.CreateMessageFromCache(System.String,System.String[])">
+ <summary>
+ メッセージ文言を構築するメソッド  ※[MessageManagerから移動後、コメント化。ServiceManagerに同名あります。]
+ </summary>
+ <param name="messageID">メッセージID</param>
+ <param name="messageParams"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.WebApi.Base.BaseWorkerService.ReplaceMessageString(System.Data.DataRow,System.String[])">
+ <summary>
+ 置換済みのメッセージデータが格納されたDataRowを取得する。
+ </summary>
+ <param name="msgDataRow">メッセージデータの格納されたDataRow</param>
+ <param name="messageParams"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.WebApi.Base.BaseWorkerService.ClearMessageData">
+ <summary>
+ 出力メッセージ情報をクリアする。
+ </summary>
+ <remarks>メッセージ表示後はメッセージ情報は必要なくなるのでクリアする。キャッシュしているメッセージ一覧の情報を削除するのではないことに注意すること。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.WebApi.Base.BaseWorkerService.CacheSystemData">
+ <summary>
+ システムデータをキャッシュを行う。
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.WebApi.Base.BaseWorkerService.CacheSystemData(System.String)">
+ <summary>
+ システムデータをキャッシュを行う。（多言語対応）
+ </summary>
+ <param name="lang_ISO639_1">言語(ISO-639-1基準)</param>
+</member>
+<member name="M:Jp.Co.Nrs.WebApi.Base.BaseWorkerService.CacheMasterData">
+ <summary>
+ 指定されたマスターデータのキャッシュを行う。
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.WebApi.Base.BaseWorkerService.GetSystemDate">
+ <summary>
+ 現在ServiceDataに登録されているシステム日付(YYYYMMDD)を取得する。
+ </summary>
+ <returns></returns>
+ <remarks>引数無しのメソッドはここで一旦隠蔽する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.WebApi.Base.BaseWorkerService.GetSystemTime">
+ <summary>
+ 現在ServiceDataに登録されているシステム時刻(HHMMSSmmm)を取得する。
+ </summary>
+ <returns></returns>
+ <remarks>引数無しのメソッドはここで一旦隠蔽する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.WebApi.Base.BaseWorkerService.GetSystemDateTime">
+ <summary>
+ システム日付(YYYYMMDD)とシステム時刻(HHMMSSsss)を取得する。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.WebApi.Base.BaseWorkerService.OutPutException(System.Exception)">
+ <summary>
+ 例外を出力します
+ </summary>
+ <param name="ex">出力する例外</param>
+</member>
+<member name="M:Jp.Co.Nrs.WebApi.Base.BaseWorkerService.SetSystemErrorMessage(System.String)">
+ <summary>
+ システムエラー発生時用のメッセージを登録します。
+ </summary>
+ <param name="msg"></param>
+</member>
+<member name="M:Jp.Co.Nrs.WebApi.Base.BaseWorkerService.IsInformationMessageExist">
+ <summary>
+ 通知メッセージの有無を判定して返却する
+ </summary>
+ <returns>通知メッセージの有無</returns>
+</member>
+<member name="M:Jp.Co.Nrs.WebApi.Base.BaseWorkerService.IsQuestionMessageExist">
+ <summary>
+ 確認メッセージの有無を判定して返却する
+ </summary>
+ <returns>確認メッセージの有無</returns>
+</member>
+<member name="M:Jp.Co.Nrs.WebApi.Base.BaseWorkerService.IsWarningMessageExist">
+ <summary>
+ ワーニングメッセージの有無を判定して返却する
+ </summary>
+ <returns>ワーニングメッセージの有無</returns>
+</member>
+<member name="M:Jp.Co.Nrs.WebApi.Base.BaseWorkerService.IsErrorMessageExist">
+ <summary>
+ エラーメッセージの有無を判定して返却する
+ </summary>
+ <returns>エラーメッセージの有無</returns>
+</member>
+<member name="M:Jp.Co.Nrs.WebApi.Base.BaseWorkerService.IsSystemErrorMessageExist">
+ <summary>
+ システムエラーメッセージの有無を判定して返却する
+ </summary>
+ <returns>システムエラーメッセージの有無</returns>
+</member>
+<member name="M:Jp.Co.Nrs.WebApi.Base.BaseWorkerService.CreateSystemErrorMessage(System.String)">
+ <summary>
+ システムエラー発生時用のメッセージを作成します。
+ </summary>
+ <param name="msg"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.WebApi.Base.BaseWorkerService.SetMessage(System.String,System.String[])">
+ <summary>
+ メッセージ情報を設定する。
+ </summary>
+ <param name="messageID">メッセージID</param>
+ <param name="replaceMessages">置換対象文字列の配列</param>
+ <remarks>引数のメッセージＩＤを元にメッセージ文言を作成し、ServiceDataクラスにメッセージ情報を設定する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.WebApi.Base.BaseWorkerService.GetPropertyName``1(System.Linq.Expressions.Expression{System.Func{``0}})">
+ <summary>
+ ラムダ式を利用してプロパティ名を取得します
+ </summary>
+ <typeparam name="T">型パラメーター</typeparam>
+ <param name="expression">ラムダ式</param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.WebApi.Base.BaseWorkerService.CallWSA(System.String,System.String,System.Data.DataSet)">
+ <summary>
+ WEBサービスを呼び出します（QueName,SetTargetFacadeNameの設定必須）
+ </summary>
+ <param name="facadeName"></param>
+ <param name="methodName"></param>
+ <param name="ds">WEBサービス送信データ</param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.WebApi.Base.BaseWorkerService.CallNextService(System.String,System.String,System.Data.DataSet)">
+ <summary>
+ 引数に指定されたWSAクラスから、WSA層の処理の基点となるメソッドをメソッドを呼び出す。
+ </summary>
+ <param name="facadeName"></param>
+ <param name="methodName">呼び出すメソッド名</param>
+ <param name="ds">画面情報を格納したDataSet</param>
+ <returns>呼び出すメソッドが返す画面出力用情報</returns>
+</member>
+<member name="T:Jp.Co.Nrs.WebApi.Base.ConfigManager">
+ <summary>
+ システム情報制御クラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.WebApi.Base.ConfigManager.SYSTEM_NAME">
+ <summary>
+ Config項目定数（システム名）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.WebApi.Base.ConfigManager.CreateConfigDataSet(System.String)">
+ <summary>
+ システム情報ファイルを読み込み、システム情報データを作成します。
+ </summary>
+ <param name="configFilePath"></param>
+ <returns>システム情報ファイルの内容を格納したDataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.WebApi.Base.ConfigManager.GetConfigValue(System.String)">
+ <summary>
+ 指定した項目のデータをキャッシュから取得します。
+ </summary>
+ <param name="column"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.WebApi.Base.ConfigMGR">
+ <summary>
+ web.configに定義された情報を取得します。
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.WebApi.Base.ConfigMGR.GetAppSettingsValue(System.String)">
+ <summary>
+ web.configのappSettingsセクションより、引数に指定されたキーの値を取得します。
+ </summary>
+ <param name="key">検索キー</param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.WebApi.Base.ConfigMGR.GetAccessControlAllowOrigins">
+ <summary>
+ web.configのappSettingsセクションからAccessControlAllowOriginsの値を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="T:Jp.Co.Nrs.WebApi.Base.MessageManager">
+ <summary>
+ メッセージ管理クラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.WebApi.Base.MessageManager.POPUP_ON">
+ <summary>
+ ポップアップ定数（ポップアップ）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.WebApi.Base.MessageManager.POPUP_OFF">
+ <summary>
+ ポップアップ定数（ポップアップ以外）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.WebApi.Base.MessageManager.MESSAGE_LEVEL_S">
+ <summary>
+ Config項目定数（システムエラーレベル）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.WebApi.Base.MessageManager.MESSAGE_LEVEL_E">
+ <summary>
+ Config項目定数（エラーレベル）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.WebApi.Base.MessageManager.MESSAGE_LEVEL_W">
+ <summary>
+ Config項目定数（警告ーレベル）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.WebApi.Base.MessageManager.MESSAGE_LEVEL_Q">
+ <summary>
+ Config項目定数（確認レベル）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.WebApi.Base.MessageManager.MESSAGE_LEVEL_I">
+ <summary>
+ Config項目定数（通知レベル）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.WebApi.Base.MessageManager.MESSAGE_TITLE_S">
+ <summary>
+ Config項目定数（システムエラー時タイトル）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.WebApi.Base.MessageManager.MESSAGE_TITLE_E">
+ <summary>
+ Config項目定数（エラー時タイトル）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.WebApi.Base.MessageManager.MESSAGE_TITLE_W">
+ <summary>
+ Config項目定数（警告時タイトル）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.WebApi.Base.MessageManager.MESSAGE_TITLE_Q">
+ <summary>
+ Config項目定数（確認時タイトル）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.WebApi.Base.MessageManager.MESSAGE_TITLE_I">
+ <summary>
+ Config項目定数（通知時タイトル）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.WebApi.Base.MessageManager.MessageDataTable">
+ <summary>
+ メッセージキャッシュテーブル定数
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.WebApi.Base.MessageManager.MessageDataTable.MESSAGE_ID">
+ <summary>
+ メッセージID
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.WebApi.Base.MessageManager.MessageDataTable.MESSAGE_LEVEL">
+ <summary>
+ メッセージレベル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.WebApi.Base.MessageManager.MessageDataTable.MESSAGE_LANG">
+ <summary>
+ メッセージ言語
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.WebApi.Base.MessageManager.MessageDataTable.MESSAGE_STRING">
+ <summary>
+ メッセージ内容(JP)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.WebApi.Base.MessageManager.MessageDataTable.MESSAGE_STRING_EN">
+ <summary>
+ メッセージ内容(EN)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.WebApi.Base.MessageManager.MessageDataTable.MESSAGE_STRING_KO">
+ <summary>
+ メッセージ内容(KO)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.WebApi.Base.MessageManager.MessageDataTable.MESSAGE_STRING_CN">
+ <summary>
+ メッセージ内容(CN)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.WebApi.Base.MessageManager.MessageDataTable.MESSAGE_DISP_FLG">
+ <summary>
+ メッセージボックス表示フラグ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.WebApi.Base.MessageManager.MessageDataTable.BUTTON_CNT">
+ <summary>
+ ボタン数
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.WebApi.Base.MessageManager.MessageDataTable.MESSAGE_AREA">
+ <summary>
+ メッセージエリア
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.WebApi.Base.MessageManager.MessageDataTable.NAVI_AREA">
+ <summary>
+ ナビエリア
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.WebApi.Base.MessageManager._MsgLanguage">
+ <summary>
+ メッセージ言語区分を格納します。
+ </summary>
+ <remarks>
+ 0:日本語
+ 1:英語
+ </remarks>
+</member>
+<member name="P:Jp.Co.Nrs.WebApi.Base.MessageManager.MessageLanguage">
+ <summary>
+ メッセージ言語区分を取得、格納します
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.WebApi.Base.MessageManager.CreateMessageFromCache(System.Data.DataSet,System.String,System.String[])">
+ <summary>
+ メッセージ文言を構築するメソッド
+ </summary>
+ <param name="ds"></param>
+ <param name="messageID">メッセージID</param>
+ <param name="messageParams"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.WebApi.Base.MessageManager.ReplaceMessageString(System.Data.DataRow,System.String[])">
+ <summary>
+ 置換済みのメッセージデータが格納されたDataRowを取得する。
+ </summary>
+ <param name="msgDataRow">メッセージデータの格納されたDataRow</param>
+ <param name="messageParams"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.WebApi.Base.MessageManager.ShowMessage(System.String,System.String,System.String,System.String)">
+ <summary>
+ メッセージを表示する
+ </summary>
+ <param name="buttonCount">ボタンの数</param>
+ <param name="messageID">メッセージID</param>
+ <param name="messageLevel">メッセージレベル</param>
+ <param name="messageString">メッセージ文言</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.WebApi.Base.MessageManager.GetMsgBoxStyle(System.String,System.String)">
+ <summary>
+ メッセージウィンドウのスタイルを取得します。
+ </summary>
+ <param name="buttonCount"></param>
+ <param name="level"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.WebApi.Base.MessageManager.GetMsgButton(System.String)">
+ <summary>
+ メッセージウィンドウのボタンを取得します。
+ </summary>
+ <param name="buttonCount"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.WebApi.Base.MessageManager.GetMsgIcon(Microsoft.VisualBasic.MsgBoxStyle,System.String)">
+ <summary>
+ メッセージウィンドウのアイコンを取得します。
+ </summary>
+ <param name="buttonStyle"></param>
+ <param name="level"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.WebApi.Base.MessageManager.GetMsgTitle(System.String)">
+ <summary>
+ メッセージウィンドウのタイトルを取得します。
+ </summary>
+ <param name="level"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.WebApi.Base.MessageManager.GetMessageValue(System.Data.DataSet,System.String)">
+ <summary>
+ 指定した項目のデータをキャッシュから取得します。
+ </summary>
+ <param name="ds"></param>
+ <param name="column"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.WebApi.Base.ApiWSA.GetWebServiceURL">
+ <summary>
+ Web.configよりWebサービスのURLを取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.WebApi.Filters.WebApiActionFilterAttribute.OnActionExecuting(System.Web.Http.Controllers.HttpActionContext)">
+ <summary>
+ 処理開始イベント
+ </summary>
+ <param name="filterContext"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.WebApi.Filters.WebApiActionFilterAttribute.OnActionExecuted(System.Web.Http.Filters.HttpActionExecutedContext)">
+ <summary>
+ 処理終了イベント
+ </summary>
+ <param name="filterContext"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.WebApi.Filters.WebApiExceptionFilterAttribute.OnException(System.Web.Http.Filters.HttpActionExecutedContext)">
+ <summary>
+ 例外発生時イベント
+ </summary>
+ <param name="filterContext"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.WebApi.Filters.WebApiExceptionFilterAttribute.ExceptionHandler(System.Web.Http.Filters.HttpActionExecutedContext)">
+ <summary>
+ 各個別コントローラーで必要な例外処理を記述してください
+ </summary>
+ <param name="filterContext">System.Web.Mvc.HandleErrorAttributeクラスを使用するためのコンテキスト</param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.WebApi.Utility.ModelFormatterUtility">
+ <summary>
+ Model用ユーティリティクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.WebApi.Utility.ModelFormatterUtility.DeepCopy``1(``0)">
+ <summary>
+ BaseModelを(値)コピーします
+ </summary>
+ <param name="target">コピー元Model</param>
+ <returns>値コピー後Model</returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

@@ -1,0 +1,793 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.CNS.Library
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.Cns.My.Resources.Resources">
+<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.Cns.My.Resources.Resources.ResourceManager">
+<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.Cns.My.Resources.Resources.Culture">
+<summary>
+  すべてについて、現在のスレッドの CurrentUICulture プロパティをオーバーライドします
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.Cns.Base.BaseBLC">
+ <summary>
+ 拡張BLC層中核クラス
+ </summary>
+</member>
+<member name="P:Jp.Co.Nrs.Cns.Base.BaseBLC.ConfigMGR">
+ <summary>
+ コンフィグマネージャ
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.Cns.Base.BaseBLC.Logger">
+ <summary>
+ ロガー
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.Cns.Base.BaseBLC.Connection">
+ <summary>
+ コネクションオブジェクト
+ </summary>
+ <returns>SqlConnectionオブジェクト</returns>
+</member>
+<member name="M:Jp.Co.Nrs.Cns.Base.BaseBLC.#ctor(Jp.Co.Nrs.Cns.Base.BaseBLF)">
+ <summary>
+ BLCクラスの初期化
+ </summary>
+ <param name="blf">BLFクラス</param>
+ <remarks>ＢＬＦのクラスからコネクションを引き継ぐ</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Cns.Base.BaseBLC.WriteLog(System.Int32,System.String,System.String,System.String)">
+ <summary>
+ ログ出力（ビジネスロジック用）
+ </summary>
+ <param name="logLevel">ログレベル</param>
+ <param name="classNm">クラス名</param>
+ <param name="methodNm">メソッド名</param>
+ <param name="logString">出力文字列</param>
+</member>
+<member name="M:Jp.Co.Nrs.Cns.Base.BaseBLC.GetAbmKbnDataTable(System.String,System.String,System.String)">
+ <summary>
+ ABM_DBの区分マスタデータ取得
+ </summary>
+ <param name="kbnGroupCd"></param>
+ <param name="kbnLang"></param>
+ <param name="kbnCd"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.Cns.Base.BaseBLC.SelectAbmKbnData(System.Data.DataSet)">
+ <summary>
+ ABM_DBの区分マスタデータ取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="T:Jp.Co.Nrs.Cns.Base.BaseBLF">
+ <summary>
+ 拡張BLF層中核クラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Cns.Base.BaseBLF.CONNECTION_SUFFIX">
+ <summary>
+ DB接続文字列 接尾辞
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Cns.Base.BaseBLF.DEFAULT_TIME_OUT">
+ <summary>
+ DB接続タイムアウト
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Cns.Base.BaseBLF._connectionMGR">
+ <summary>
+ コネクションマネージャを格納するフィールド。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Cns.Base.BaseBLF.ConfigMGR">
+ <summary>
+ コンフィグマネージャを定義する
+ </summary>
+ <remarks>
+ </remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Cns.Base.BaseBLF.Logger">
+ <summary>
+ ロガーを定義する
+ </summary>
+ <remarks>
+ </remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Cns.Base.BaseBLF.Connection">
+ <summary>
+ コネクションオブジェクトの取得・設定を行うプロパティ。
+ </summary>
+ <value>SqlConnectionオブジェクト</value>
+ <returns>SqlConnectionオブジェクト</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Cns.Base.BaseBLF.#ctor(Jp.Co.Nrs.Cns.Base.BaseCNS)">
+ <summary>
+ BLFクラスの初期化
+ </summary>
+ <param name="cns"></param>
+ <remarks>
+ コネクションを準備する。
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Cns.Base.BaseBLF.Open">
+ <summary>
+ ＤＢコネクションを接続する。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Cns.Base.BaseBLF.Close">
+ <summary>
+ ＤＢコネクションをクローズする。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Cns.Base.BaseBLF.BeginTransaction(System.Transactions.TransactionScopeOption,System.Transactions.IsolationLevel,System.String)">
+ <summary>
+ TransactionScopeオブジェクトを取得する。
+ </summary>
+ <param name="scopeOption">トランザクションスコープを作成するためのオプション</param>
+ <param name="isolationLevel">タイムアウト値</param>
+ <param name="scopeTimeout">接続のトランザクション ロック動作</param>
+ <returns>TransactionScopeオブジェクト</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Cns.Base.BaseBLF.CommitTransaction(System.Transactions.TransactionScope@)">
+ <summary>
+ トランザクションを確定する。
+ </summary>
+ <param name="tScope">TransactionScopeオブジェクト</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Cns.Base.BaseBLF.GetSqlTarnsactionScope(System.Transactions.TransactionScopeOption,System.Transactions.IsolationLevel,System.String)">
+ <summary>
+ TarnsactionScopeオブジェクトを取得する。
+ </summary>
+ <param name="scopeOption">トランザクションスコープを作成するためのオプション</param>
+ <param name="isolationLevel">接続のトランザクション ロック動作</param>
+ <param name="scopeTimeout">タイムアウト値(100ナノ秒単位)</param>
+ <returns>TarnsactionScopeオブジェクト</returns>
+ <remarks>デフォルトの設定値は
+ 　TransactionScopeOption：Required
+ 　TransactionOptions.IsolationLevel：ReadCommitted
+ 　TransactionOptions.TimeSpan：300000000x100ナノ秒（３０秒）</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Cns.Base.BaseBLF.Finalize">
+ <summary>
+ BLFクラスのファイナライズ
+ </summary>
+ <remarks>コネクションをクローズする。
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Cns.Base.BaseBLF.WriteLog(System.Int32,System.String,System.String,System.String)">
+ <summary>
+ ログ出力（ビジネスロジック用）
+ </summary>
+ <param name="logLevel">ログレベル</param>
+ <param name="classNm">クラス名</param>
+ <param name="methodNm">メソッド名</param>
+ <param name="logString">出力文字列</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Cns.Base.BaseBLF.OnInfoMessage(System.Object,System.Data.SqlClient.SqlInfoMessageEventArgs)">
+ <summary>
+SQLInfoMessageイベント
+ </summary>
+ <param name="sender">イベント発生オブジェクト</param>
+ <param name="args">イベントパラメータ</param>
+ <remarks>発行したＳＱＬ文から出力された標準出力を標準出力する。</remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Cns.Base.BaseDAC">
+ <summary>
+ 拡張DAC層中核クラス
+ </summary>
+</member>
+<member name="P:Jp.Co.Nrs.Cns.Base.BaseDAC.ConfigMGR">
+ <summary>
+ コンフィグマネージャを定義する
+ </summary>
+ <value></value>
+</member>
+<member name="P:Jp.Co.Nrs.Cns.Base.BaseDAC.Logger">
+ <summary>
+ ロガーを定義する
+ </summary>
+ <value></value>
+</member>
+<member name="P:Jp.Co.Nrs.Cns.Base.BaseDAC.Connection">
+ <summary>
+ コネクションオブジェクト
+ </summary>
+ <value>SqlConnectionオブジェクト</value>
+</member>
+<member name="M:Jp.Co.Nrs.Cns.Base.BaseDAC.#ctor(Jp.Co.Nrs.Cns.Base.BaseBLC)">
+ <summary>
+ DACクラスの初期化
+ </summary>
+ <param name="blc">BLCクラス</param>
+ <remarks>ＢＬＣのクラスからコネクションを引き継ぐ</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Cns.Base.BaseDAC.CreateSqlCommand(System.String)">
+ <summary>
+ コネクションオブジェクトに関連付けられたDBサーバーに対して
+ 有効なSqlCommandオブジェクトのインスタンスを取得する。
+ </summary>
+ <param name="strSql">SQL文</param>
+ <returns>SqlCommandオブジェクト</returns>
+</member>
+<member name="M:Jp.Co.Nrs.Cns.Base.BaseDAC.WriteLog(System.Int32,System.String,System.String,System.String)">
+ <summary>
+ ログ出力（ビジネスロジック用）
+ </summary>
+ <param name="logLevel">ログレベル</param>
+ <param name="classNm">クラス名</param>
+ <param name="methodNm">メソッド名</param>
+ <param name="logString">出力文字列</param>
+</member>
+<member name="M:Jp.Co.Nrs.Cns.Base.BaseDAC.WriteSQLLog(System.String,System.String,System.Data.SqlClient.SqlCommand)">
+ <summary>
+ 引数のメッセージをログに出力します
+ </summary>
+ <param name="classNm"></param>
+ <param name="methodNm"></param>
+ <param name="cmd"></param>
+</member>
+<member name="M:Jp.Co.Nrs.Cns.Base.BaseDAC.GetSqlParameter(System.String,System.Object,Jp.Co.Nrs.Cns.Const.DBDataType)">
+ <summary>
+ SQL文のパラメータを置換するためのSqlParameterオブジェクトを生成する。
+ </summary>
+ <param name="paramName">置換対象パラメータ名</param>
+ <param name="paramValue">置換する値</param>
+ <param name="paramType"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.Cns.Base.BaseDAC.GetSelectDataSet(System.Data.DataSet,System.Data.SqlClient.SqlCommand,System.String)">
+ <summary>
+ SQLを実行し、Selectの結果をDataSetで取得する
+ </summary>
+ <param name="ds"></param>
+ <param name="cmd"></param>
+ <param name="tableNm"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.Cns.Base.BaseDAC.SetSelectResultToDataSet(System.Data.DataTable,System.Data.SqlClient.SqlDataReader)">
+ <summary>
+ Selectの結果をDataTableに設定する（カラム名はDataTableから取得）
+ </summary>
+ <param name="dt"></param>
+ <param name="reader"></param>
+</member>
+<member name="M:Jp.Co.Nrs.Cns.Base.BaseDAC.SelectAbmKbnData(System.Data.DataSet)">
+ <summary>
+ ABM_DBの区分マスタデータ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+</member>
+<member name="T:Jp.Co.Nrs.Cns.Base.BaseCNS">
+ <summary>
+ コンソールアプリケーション用拡張GUI層中核クラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Cns.Base.BaseCNS.ConfigMGR">
+ <summary>
+ コンフィグマネージャを定義する
+ </summary>
+ <remarks>
+ </remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Cns.Base.BaseCNS.Logger">
+ <summary>
+ ロガーを定義する
+ </summary>
+ <remarks>
+ </remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Cns.Base.BaseCNS.ClassName">
+ <summary>
+ コンソールアプリケーションのクラス名を定義する
+ </summary>
+ <remarks>コンソールアプリケーションのクラス名を設定する。</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Cns.Base.BaseCNS.MethodName">
+ <summary>
+ コンソールアプリケーションのメソッド名を定義する
+ </summary>
+ <remarks>コンソールアプリケーションのメソッド名を設定する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Cns.Base.BaseCNS.StartCNS">
+ <summary>
+ コンソールアプリケーションのMain処理開始
+ </summary>
+ <remarks>開始メッセージの標準出力</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Cns.Base.BaseCNS.EndCNS">
+ <summary>
+ コンソールアプリケーションのMain処理終了
+ </summary>
+ <remarks>終了メッセージの標準出力</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Cns.Base.BaseCNS.WriteLog(System.String)">
+ <summary>
+ ログ出力
+ </summary>
+ <param name="logString">出力文字列</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Cns.Base.BaseCNS.WriteLog(System.Int32,System.String,System.String,System.String)">
+ <summary>
+ ログ出力（ビジネスロジック用）
+ </summary>
+ <param name="logLevel">ログレベル</param>
+ <param name="classNm">クラス名</param>
+ <param name="methodNm">メソッド名</param>
+ <param name="logString">出力文字列</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Cns.Base.BaseCNS.CreateErrorFile(System.String,System.String,System.String)">
+ <summary>
+ <para>エラーファイルを作成する（コンフィグのCREATE_ERROR_FILEがTrueの場合以外は作成しない）</para>
+ <para>ファイルを出力するフォルダはコンフィグから取得（定義されていない場合は、カレントフォルダに出力）</para>
+ </summary>
+ <param name="fileName">ファイル名</param>
+ <param name="writeData">出力データ</param>
+ <param name="dirName"></param>
+ <remarks>ファイル名、出力データを設定したい場合、このメソッドをオーバーライドし、最後にこのメソッドを呼ぶこと</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Cns.Base.BaseCNS.Application_UnhandledException(System.Object,System.UnhandledExceptionEventArgs)">
+ <summary>
+ 未処理例外をキャッチするイベント・ハンドラ
+ 業務アプリケーションは、エラートラップを極力行わず、本イベントで処理する。 
+ スタックトレースをエラー出力に表示する。
+ </summary>
+ <param name="sender">sender</param>
+ <param name="e">Exception</param>
+</member>
+<member name="T:Jp.Co.Nrs.Cns.Base.ConfigMGR">
+ <summary>
+ システム情報制御クラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Cns.Base.ConfigMGR.SYSTEM_NAME">
+ <summary>
+ Config項目定数（システム名）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Cns.Base.ConfigMGR.ConfigDataSet">
+ <summary>
+ Config情報データセット
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Cns.Base.ConfigMGR.#ctor(System.String)">
+ <summary>
+ コンストラクタ
+ </summary>
+ <param name="configFilePath"></param>
+ <remarks>
+ コンフィグファイルから、データセットを作成し、クラス内部で保持する。
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Cns.Base.ConfigMGR.CreateConfigDataSet(System.String)">
+ <summary>
+ システム情報ファイルを読み込み、システム情報データを作成します。
+ </summary>
+ <param name="configFilePath"></param>
+ <returns>システム情報ファイルの内容を格納したDataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Cns.Base.ConfigMGR.GetConfigValue(System.String)">
+ <summary>
+ 指定した項目のデータをキャッシュから取得します。
+ </summary>
+ <param name="column"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Cns.Base.ConnectionMGR">
+ <summary>
+ データベース接続制御クラス（バッチ用）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Cns.Base.ConnectionMGR.ConfigColumn">
+ <summary>
+ Config項目定数
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Cns.Base.ConnectionMGR.ConfigColumn.DATA_SOURCE">
+ <summary>
+ Config項目定数（DB接続文字列-Data Source）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Cns.Base.ConnectionMGR.ConfigColumn.INITIAL_CATALOG">
+ <summary>
+ Config項目定数（DB接続文字列-Initial Catalog）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Cns.Base.ConnectionMGR.ConfigColumn.PERSIST_SECURITY_INFO">
+ <summary>
+ Config項目定数（DB接続文字列-Security Info）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Cns.Base.ConnectionMGR.ConfigColumn.USER_ID">
+ <summary>
+ Config項目定数（DB接続文字列-User ID）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Cns.Base.ConnectionMGR.ConfigColumn.PASSWORD">
+ <summary>
+ Config項目定数（DB接続文字列-Password）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Cns.Base.ConnectionMGR.ConfigColumn.TIMEOUT">
+ <summary>
+ Config項目定数（DB接続タイムアウト時間）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Cns.Base.ConnectionMGR.ConfigColumn.POOLING">
+ <summary>
+ Config項目定数（DB接続文字列-Pooling）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Cns.Base.ConnectionMGR.ConfigColumn.ENLIST">
+ <summary>
+ Config項目定数（DB接続文字列-Enlist）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Cns.Base.ConnectionMGR.ConnectionPrefix">
+ <summary>
+ DB接続文字列　接頭辞
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Cns.Base.ConnectionMGR.ConnectionPrefix.DATA_SOURCE">
+ <summary>
+ DB接続文字列　接頭辞 （Data Source）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Cns.Base.ConnectionMGR.ConnectionPrefix.INITIAL_CATALOG">
+ <summary>
+ DB接続文字列　接頭辞 （Initial Catalog）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Cns.Base.ConnectionMGR.ConnectionPrefix.PERSIST_SECURITY_INFO">
+ <summary>
+ DB接続文字列　接頭辞 （Security Info）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Cns.Base.ConnectionMGR.ConnectionPrefix.USER_ID">
+ <summary>
+ DB接続文字列　接頭辞 （User ID）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Cns.Base.ConnectionMGR.ConnectionPrefix.PASSWORD">
+ <summary>
+ DB接続文字列　接頭辞 （Password）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Cns.Base.ConnectionMGR.ConnectionPrefix.POOLING">
+ <summary>
+ Oracle接続　接頭辞 （Pooling）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Cns.Base.ConnectionMGR.ConnectionPrefix.ENLIST">
+ <summary>
+ Oracle接続　接頭辞 （Enlist）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Cns.Base.ConnectionMGR.CONNECTION_SUFFIX">
+ <summary>
+ DB接続文字列 接尾辞
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Cns.Base.ConnectionMGR.DEFAULT_TIME_OUT">
+ <summary>
+ DB接続タイムアウト
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Cns.Base.ConnectionMGR.ConnectionDb">
+ <summary>
+ 接続DBの一覧
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Cns.Base.ConnectionMGR.ConnectionDb.NF">
+ <summary>
+ フォワーディングシステム[NF_DB](SQL Server)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Cns.Base.ConnectionMGR.ConnectionDb.DS">
+ <summary>
+ KIDSデポシステム[DS_DB](SQL Server)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Cns.Base.ConnectionMGR.ConnectionDb.GT">
+ <summary>
+ WINSシステム[GT_DB](SQL Server)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Cns.Base.ConnectionMGR.ConnectionDb.JDE">
+ <summary>
+ JDEシステム[JDE](Oracle)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Cns.Base.ConnectionMGR.ConnectionDb.LMS">
+ <summary>
+ 倉庫システム[LMS](SQL Server)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Cns.Base.ConnectionMGR.ConnectionDb.YUSO">
+ <summary>
+ 輸送システム[本番：NRS /テスト：DEMO_NRS](SQL Server)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Cns.Base.ConnectionMGR.ConnectionDb.CHISSO">
+ <summary>
+ チッソ[CHISSO](Oracle)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Cns.Base.ConnectionMGR.ConnectionDb.RE">
+ <summary>
+ TIPSシステム[RE_DB](SQL Server)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Cns.Base.ConnectionMGR.ConnectionDb.RI">
+ <summary>
+ RINGシステム[RI_DB](SQL Server)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Cns.Base.ConnectionMGR.ConnectionDb.SH">
+ <summary>
+ Share シェア[COM_DB](SQL Server)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Cns.Base.ConnectionMGR.ConnectionDb.ADPS">
+ <summary>
+ ADPS(Oracle)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Cns.Base.ConnectionMGR.ConnectionDb.JDECRP">
+ <summary>
+ JDEシステム[JDE](SQL Server)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Cns.Base.ConnectionMGR.ConnectionDbType">
+ <summary>
+ 接続DBの種類一覧
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Cns.Base.ConnectionMGR.ConnectionDbType.SQL">
+ <summary>
+ SQL Server
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Cns.Base.ConnectionMGR.ConnectionDbType.ORACLE">
+ <summary>
+ Oracle Server
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Cns.Base.ConnectionMGR.UNDERBAR">
+ <summary>
+ DB接続文字列
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Cns.Base.ConnectionMGR._configMGR">
+ <summary>
+ コンフィグマネージャクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Cns.Base.ConnectionMGR.#ctor(Jp.Co.Nrs.Cns.Base.ConfigMGR)">
+ <summary>
+ コンストラクタ
+ </summary>
+ <param name="configMGR"></param>
+ <remarks>
+ コネクションマネージャクラスを保持する。
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Cns.Base.ConnectionMGR.GetSqlTarnsactionScope(System.Transactions.TransactionScopeOption,System.Transactions.IsolationLevel,System.String)">
+ <summary>
+ TarnsactionScopeオブジェクトを取得する。
+ </summary>
+ <param name="scopeOption">トランザクションスコープを作成するためのオプション</param>
+ <param name="isolationLevel">接続のトランザクション ロック動作</param>
+ <param name="scopeTimeout">タイムアウト値(100ナノ秒単位)</param>
+ <returns>TarnsactionScopeオブジェクト</returns>
+ <remarks>デフォルトの設定値は
+ 　TransactionScopeOption：Required
+ 　TransactionOptions.IsolationLevel：ReadCommitted
+ 　TransactionOptions.TimeSpan：300000000x100ナノ秒（３０秒）</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Cns.Base.ConnectionMGR.GetSqlConnection(System.String)">
+ <summary>
+ SqlConnectionオブジェクトを生成する。
+ </summary>
+ <param name="connectionString">DB接続文字列</param>
+ <returns>SqlConnectionオブジェクト</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Cns.Base.ConnectionMGR.GetSqlConnection">
+ <summary>
+ システム情報よりDB接続文字列を取得し、SqlConnectionオブジェクトを生成する。
+ </summary>
+ <returns>SqlConnectionオブジェクト</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Cns.Base.ConnectionMGR.OpenSqlConnection(System.Data.SqlClient.SqlConnection@)">
+ <summary>
+ 引数のSqlConnectionオブジェクトをオープンする。
+ </summary>
+ <param name="conn"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Cns.Base.ConnectionMGR.GetConnectionString">
+ <summary>
+ システム情報よりDB接続文字列の値を取得する。
+ </summary>
+ <returns>DB接続文字列</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Cns.Base.ConnectionMGR.GetConnectionString(System.String)">
+ <summary>
+ データソースの値を指定してDB接続文字列の値を取得する。
+ </summary>
+ <param name="dataSourceString"></param>
+ <returns>DB接続文字列</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Cns.Base.ConnectionMGR.GetConnectionString_DirectConnection(Jp.Co.Nrs.Cns.Base.ConnectionMGR.ConnectionDb)">
+ <summary>
+ システム情報よりDB接続文字列の値を取得する。(主接続以外のじか接続用)
+ </summary>
+ <param name="connectDb"></param>
+ <returns>接続文字列</returns>
+ <remarks>主接続以外に必要な場合に使用します。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Cns.Base.ConnectionMGR.GetConnectionString_DirectConnection(System.String,System.String,Jp.Co.Nrs.Cns.Base.ConnectionMGR.ConnectionDbType)">
+ <summary>
+ データソースの値を指定してDB接続文字列の値を取得する。(主接続以外のじか接続用)
+ </summary>
+ <param name="dataSourceString"></param>
+ <param name="dbName"></param>
+ <param name="dbType"></param>
+ <returns>DB接続文字列</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Cns.Base.ConnectionMGR.GetDataSourceString">
+ <summary>
+ システム情報よりデータソースの値を取得する。
+ </summary>
+ <returns>データソースの値</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Cns.Base.ConnectionMGR.GetDataSourceString_DirectConnection(System.String)">
+ <summary>
+ システム情報よりデータソースの値を取得する。(メイン接続以外の直接続用)
+ </summary>
+ <param name="dbName"></param>
+ <returns>データソースの値</returns>
+ <remarks>メイン接続以外に必要な場合に使用します。</remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Cns.ABMZKbnDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.Cns.ABMZKbnDS.Z_KBNDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.Cns.ABMZKbnDS.Z_KBNRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.Cns.ABMZKbnDS.Z_KBNRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.Cns.CsvWriter">
+ <summary>
+ CSV出力
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.Cns.CsvWriter.WriteDataTable(System.String,System.Data.DataTable,System.Boolean,System.String,System.Boolean)">
+ <summary>
+ DataTableを書き込む
+ </summary>
+ <param name="filePath">出力先</param>
+ <param name="writeTable">出力対象</param>
+ <param name="encloseDQuotes">ダブルクォーテーションで囲むか否か（デフォルト：False 囲まない）</param>
+ <param name="delimiter">分割文字（デフォルト：「,」）</param>
+ <param name="outputColumn">カラム名を出力するか否か（デフォルト：False 出力しない）</param>
+</member>
+<member name="M:Jp.Co.Nrs.Cns.CsvWriter.DataTableToCsv(System.Data.DataTable,System.Boolean,System.String,System.Boolean)">
+ <summary>
+ DataTableからCSV形式文字列を生成
+ </summary>
+ <param name="dt"></param>
+ <param name="encloseDQuotes"></param>
+ <param name="delimiter"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.Cns.CsvWriter.DataRowToCsv(System.Data.DataRow,System.Boolean,System.String)">
+ <summary>
+ DataRowからCSV形式文字列を生成
+ </summary>
+ <param name="dr"></param>
+ <param name="delimiter"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.Cns.CsvWriter.MoldCsvValue(System.String,System.Boolean)">
+ <summary>
+ CSVの値を成形する
+ </summary>
+ <param name="str">対象文字列</param>
+ <param name="encloseDQuotes">ダブルクォーテーションで囲むか否か</param>
+ <returns></returns>
+</member>
+</members>
+</doc>

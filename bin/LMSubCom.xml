@@ -1,0 +1,3506 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+LMSubCom
+</name>
+</assembly>
+<members>
+<member name="T:LMSubCom.My.Resources.Resources">
+<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+<member name="P:LMSubCom.My.Resources.Resources.ResourceManager">
+<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member>
+<member name="P:LMSubCom.My.Resources.Resources.Culture">
+<summary>
+  すべてについて、現在のスレッドの CurrentUICulture プロパティをオーバーライドします
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member>
+<member name="T:LMSubCom.Com.Log">
+ <summary>
+ ログ出力クラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Com.Log.terminalID">
+ <summary>
+  端末IDを格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Com.Log.userID">
+ <summary>
+ ユーザIDを格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:LMSubCom.Com.Log.LogET">
+ <summary>
+ ログエンティティクラスを取得・設定します
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:LMSubCom.Com.Log.ConfigLogLevel">
+ <summary>
+ 出力制御ログレベルを取得・設定します
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:LMSubCom.Com.Log.#ctor">
+ <summary>
+ コンストラクタ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:LMSubCom.Com.Log.WriteLog(System.Int32,System.String,System.String,System.String)">
+ <summary>
+ ログ出力
+ </summary>
+ <param name="logLevel">ログレベル</param>
+ <param name="classNm">クラス名</param>
+ <param name="methodNm">メソッド名</param>
+ <param name="logString">出力文字列</param>
+ <remarks></remarks>
+</member>
+<member name="M:LMSubCom.Com.Log.WriteErrorLog(System.String,System.String,System.String,System.Exception)">
+ <summary>
+ エラーログ出力
+ </summary>
+ <param name="classNm">クラス名</param>
+ <param name="methodNm">メソッド名</param>
+ <param name="logString">出力文字列</param>
+ <param name="ex"></param>
+ <remarks></remarks>
+</member>
+<member name="M:LMSubCom.Com.Log.WriteSysLog(System.String,System.String,System.String)">
+ <summary>
+ ログ出力
+ </summary>
+ <param name="classNm">クラス名</param>
+ <param name="methodNm">メソッド名</param>
+ <param name="logString">出力文字列</param>
+ <remarks></remarks>
+</member>
+<member name="M:LMSubCom.Com.Log.StartLog(System.String,System.String,System.String)">
+ <summary>
+ ログ出力
+ </summary>
+ <param name="classNm">クラス名</param>
+ <param name="methodNm">メソッド名</param>
+ <param name="logString">出力文字列(任意)</param>
+ <remarks>Public メソッド開始時に出力する</remarks>
+</member>
+<member name="M:LMSubCom.Com.Log.EndLog(System.String,System.String,System.String)">
+ <summary>
+ ログ出力
+ </summary>
+ <param name="classNm">クラス名</param>
+ <param name="methodNm">メソッド名</param>
+ <param name="logString">出力文字列(任意)</param>
+ <remarks>Public メソッド終了時に出力する</remarks>
+</member>
+<member name="M:LMSubCom.Com.Log.NomalLog(System.String,System.String,System.String)">
+ <summary>
+ ログ出力
+ </summary>
+ <param name="classNm">クラス名</param>
+ <param name="methodNm">メソッド名</param>
+ <param name="logString">出力文字列(任意)</param>
+ <remarks>Public メソッド終了時に出力する</remarks>
+</member>
+<member name="M:LMSubCom.Com.Log.WriteSQLLog(System.String,System.String,System.Data.SqlClient.SqlCommand)">
+ <summary>
+ 引数のメッセージをログに出力します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:LMSubCom.Com.Log.WriteLog(System.String)">
+ <summary>
+ 引数のメッセージをログに出力します
+ </summary>
+ <param name="msg">ログの内容</param>
+ <remarks></remarks>
+</member>
+<member name="T:LMSubCom.Com.LogMGR">
+ <summary>
+ ログ出力制御クラス
+ </summary>
+ <remarks>ログ部品のインスタンスを生成します</remarks>
+</member>
+<member name="F:LMSubCom.Com.LogMGR.LOG_LEVEL">
+ <summary>
+ Config項目定数（ログレベル）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:LMSubCom.Com.LogMGR.GetConfigLogLevel">
+ <summary>
+ 出力制御ログレベル取得を取得する
+ </summary>
+ <returns></returns>
+ <remarks>configファイルで指定された出力ログレベルを取得する</remarks>
+</member>
+<member name="M:LMSubCom.Com.LogMGR.CreateErrorlog(System.Exception)">
+ <summary>
+ 例外を出力します
+ </summary>
+ <param name="ex">出力する例外</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:LMSubCom.Com.SqlClass">
+ <summary>
+ SQLサーバー用クラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:LMSubCom.Com.SqlClass.ConfigColumn">
+ <summary>
+ Config項目定数
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Com.SqlClass.ConfigColumn.DATA_SOURCE">
+ <summary>
+ Config項目定数（DB接続文字列-Data Source）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Com.SqlClass.ConfigColumn.INITIAL_CATALOG">
+ <summary>
+ Config項目定数（DB接続文字列-Initial Catalog）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Com.SqlClass.ConfigColumn.PERSIST_SECURITY_INFO">
+ <summary>
+ Config項目定数（DB接続文字列-Security Info）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Com.SqlClass.ConfigColumn.USER_ID">
+ <summary>
+ Config項目定数（DB接続文字列-User ID）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Com.SqlClass.ConfigColumn.PASSWORD">
+ <summary>
+ Config項目定数（DB接続文字列-Password）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Com.SqlClass.ConfigColumn.TIMEOUT">
+ <summary>
+ Config項目定数（DB接続タイムアウト時間）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Com.SqlClass.ConfigColumn.POOLING">
+ <summary>
+ Config項目定数（DB接続文字列-Pooling）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:LMSubCom.Com.SqlClass.ConnectionPrefix">
+ <summary>
+ DB接続文字列　接頭辞
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Com.SqlClass.ConnectionPrefix.DATA_SOURCE">
+ <summary>
+ DB接続文字列　接頭辞 （Data Source）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Com.SqlClass.ConnectionPrefix.INITIAL_CATALOG">
+ <summary>
+ DB接続文字列　接頭辞 （Initial Catalog）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Com.SqlClass.ConnectionPrefix.PERSIST_SECURITY_INFO">
+ <summary>
+ DB接続文字列　接頭辞 （Security Info）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Com.SqlClass.ConnectionPrefix.USER_ID">
+ <summary>
+ DB接続文字列　接頭辞 （User ID）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Com.SqlClass.ConnectionPrefix.PASSWORD">
+ <summary>
+ DB接続文字列　接頭辞 （Password）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Com.SqlClass.CONNECTION_SUFFIX">
+ <summary>
+ DB接続文字列 接尾辞
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Com.SqlClass.DEFAULT_TIME_OUT">
+ <summary>
+ DB接続タイムアウト
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:LMSubCom.Com.SqlClass.ResultCount">
+ <summary>
+ 処理結果件数を格納するプロパティ
+ </summary>
+ <value>処理結果件数</value>
+ <returns>処理結果件数</returns>
+ <remarks></remarks>
+</member>
+<member name="P:LMSubCom.Com.SqlClass.SystemDate">
+ <summary>
+ システム日付を格納するプロパティ
+ </summary>
+ <value>システム日付</value>
+ <returns>システム日付</returns>
+ <remarks></remarks>
+</member>
+<member name="P:LMSubCom.Com.SqlClass.SystemTime">
+ <summary>
+ システム時間を格納するプロパティ
+ </summary>
+ <value>システム時間</value>
+ <returns>システム時間</returns>
+ <remarks></remarks>
+</member>
+<member name="M:LMSubCom.Com.SqlClass.CreateConfigDataSet">
+ <summary>
+ システム情報ファイルを読み込み、システム情報データを作成します。
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LMSubCom.Com.SqlClass.GetConfigValue(System.String)">
+ <summary>
+ 指定した項目のデータをキャッシュから取得します。
+ </summary>
+ <param name="column"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LMSubCom.Com.SqlClass.GetSqlParameter(System.String,System.Object,LMSubCom.Const.DBDataType)">
+ <summary>
+ SQL文のパラメータを置換するためのSqlParameterオブジェクトを生成する。
+ </summary>
+ <param name="paramName">置換対象パラメータ名</param>
+ <param name="paramValue">置換する値</param>
+ <param name="paramType"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LMSubCom.Com.SqlClass.GetConnectionString">
+ <summary>
+ データソースの値を指定してDB接続文字列の値を取得する。
+ </summary>
+ <returns>DB接続文字列</returns>
+ <remarks></remarks>
+</member>
+<member name="M:LMSubCom.Com.SqlClass.CreateSqlCommand(System.String)">
+ <summary>
+ コネクションオブジェクトに関連付けられたDBサーバーに対して
+ 有効なSqlCommandオブジェクトのインスタンスを取得する。
+ </summary>
+ <param name="strSql">SQL文</param>
+ <returns>SqlCommandオブジェクト</returns>
+ <remarks></remarks>
+</member>
+<member name="M:LMSubCom.Com.SqlClass.OpenSqlConnection(System.Data.SqlClient.SqlConnection@)">
+ <summary>
+ 引数のSqlConnectionオブジェクトをオープンする。
+ </summary>
+ <param name="conn"></param>
+ <remarks></remarks>
+</member>
+<member name="M:LMSubCom.Com.SqlClass.GetSelectResult(System.Data.SqlClient.SqlCommand)">
+ <summary>
+ SELECT文を発行します。
+ </summary>
+ <param name="cmd">SELECT文</param>
+ <returns>SELECTされた行を格納したSqlDataReader オブジェクト</returns>
+ <remarks></remarks>
+</member>
+<member name="M:LMSubCom.Com.SqlClass.GetInsertResult(System.Data.SqlClient.SqlCommand)">
+ <summary>
+ INSRET文を発行します。
+ </summary>
+ <param name="cmd">INSRET文</param>
+ <returns>INSRETした行数</returns>
+ <remarks></remarks>
+</member>
+<member name="M:LMSubCom.Com.SqlClass.GetUpdateResult(System.Data.SqlClient.SqlCommand)">
+ <summary>
+ UPDATE文を発行します。
+ </summary>
+ <param name="cmd">UPDATE文</param>
+ <returns>UPDATEした行数</returns>
+ <remarks></remarks>
+</member>
+<member name="M:LMSubCom.Com.SqlClass.GetDeleteResult(System.Data.SqlClient.SqlCommand)">
+ <summary>
+ DELETE文を発行します。
+ </summary>
+ <param name="cmd">DELETE文</param>
+ <returns>DELETEした行数</returns>
+ <remarks></remarks>
+</member>
+<member name="M:LMSubCom.Com.SqlClass.GetResultCount">
+ <summary>
+ 処理結果件数を取得する。
+ </summary>
+ <returns>処理結果件数</returns>
+</member>
+<member name="M:LMSubCom.Com.SqlClass.SetResultCount(System.Int32)">
+ <summary>
+ 処理結果件数を設定します。
+ </summary>
+ <param name="value">処理結果件数</param>
+</member>
+<member name="M:LMSubCom.Com.SqlClass.GetOutPutParam(System.Data.SqlClient.SqlCommand,System.String)">
+ <summary>
+ 出力パラメータを取得します。
+ </summary>
+ <param name="cmd">ストアドプロシージャー</param>
+ <param name="prm">出力パラメータ名称</param>
+ <returns>出力パラメータ値</returns>
+ <remarks></remarks>
+</member>
+<member name="M:LMSubCom.Com.SqlClass.SetSelectResultToDataSet(System.Collections.Hashtable,System.Data.DataSet,System.Data.SqlClient.SqlDataReader,System.String)">
+ <summary>
+ SELECT文の取得結果をデータセットに設定して返却します。
+ </summary>
+ <param name="map"></param>
+ <param name="ds"></param>
+ <param name="reader"></param>
+ <param name="tableName"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LMSubCom.Com.SqlClass.SetSystemTimeStamp">
+ <summary>
+ DBサーバーの時間を取得する。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:LMSubCom.Com.SqlClass.GetSystemDate">
+ <summary>
+ システム日付(YYYYMMDD)を取得する。
+ </summary>
+ <returns>システム日付</returns>
+ <remarks></remarks>
+</member>
+<member name="M:LMSubCom.Com.SqlClass.GetSystemTime">
+ <summary>
+ システム時刻(HHMMSSmmm)を取得する。
+ </summary>
+ <returns>システム時間</returns>
+ <remarks></remarks>
+</member>
+<member name="M:LMSubCom.Com.SqlClass.GetSystemTimeStamp">
+ <summary>
+ サーバーの時間を取得します。
+ </summary>
+ <returns>
+ １：サーバー日付（YYYYMMDD）
+ ２：サーバー時刻（HHMMSSsss）
+ の配列
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:LMSubCom.Com.SqlClass.GetSqlTarnsactionScope(System.Transactions.TransactionScopeOption,System.Transactions.IsolationLevel,System.String)">
+ <summary>
+ TarnsactionScopeオブジェクトを取得する。
+ </summary>
+ <param name="scopeOption">トランザクションスコープを作成するためのオプション</param>
+ <param name="isolationLevel">接続のトランザクション ロック動作</param>
+ <param name="scopeTimeout">タイムアウト値(100ナノ秒単位)</param>
+ <returns>TarnsactionScopeオブジェクト</returns>
+ <remarks>デフォルトの設定値は
+ 　TransactionScopeOption：Required
+ 　TransactionOptions.IsolationLevel：ReadCommitted
+ 　TransactionOptions.TimeSpan：300000000x100ナノ秒（３０秒）</remarks>
+</member>
+<member name="M:LMSubCom.Com.SqlClass.BeginTransaction(System.Transactions.TransactionScopeOption,System.Transactions.IsolationLevel,System.String)">
+ <summary>
+ TransactionScopeオブジェクトを取得する。
+ </summary>
+ <param name="scopeOption">トランザクションスコープを作成するためのオプション</param>
+ <param name="isolationLevel">タイムアウト値</param>
+ <param name="scopeTimeout">接続のトランザクション ロック動作</param>
+ <returns>TransactionScopeオブジェクト</returns>
+ <remarks></remarks>
+</member>
+<member name="M:LMSubCom.Com.SqlClass.CommitTransaction(System.Transactions.TransactionScope@)">
+ <summary>
+ トランザクションを確定する。
+ </summary>
+ <param name="tScope">TransactionScopeオブジェクト</param>
+ <remarks></remarks>
+</member>
+<member name="T:LMSubCom.Const.DBDataType">
+ <summary>
+ DBデータ型定義クラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.DBDataType.VARCHAR">
+ <summary>
+ VARCHAR型
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.DBDataType.NVARCHAR">
+ <summary>
+ NVARCHAR型
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.DBDataType.CHAR">
+ <summary>
+ CHAR型
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.DBDataType.NUMERIC">
+ <summary>
+ NUMERIC型
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.DBDataType.XML">
+ <summary>
+ XML型
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:LMSubCom.Const.LMKbnConst">
+ <summary>
+ 区分マスタの区分分類コードの定数体
+ </summary>
+ <remarks>区分追加により修正を行うこと</remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_A001">
+ <summary>
+ 赤黒区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_A002">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_A003">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_A004">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_A005">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_A006">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_A007">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_A008">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_A009">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_A010">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_B001">
+ <summary>
+ 番号区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_B002">
+ <summary>
+ 簿外品区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_B003">
+ <summary>
+ 部数区分（請求書）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_B004">
+ <summary>
+ 分析表添付区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_B005">
+ <summary>
+ 分析表添付区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_B006">
+ <summary>
+ BU・経理科目組み合わせ区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_B007">
+ <summary>
+ 部署コード
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_B008">
+ <summary>
+ 棟別部署コード
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_B009">
+ <summary>
+ 分析票ローカルパス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_B010">
+ <summary>
+ 分析票サーバーパス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_B011">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_B012">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_B013">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_B014">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_B015">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_C001">
+ <summary>
+ 中継地点JIS
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_C002">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_C003">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_C004">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_C005">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_C006">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_C007">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_C008">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_C009">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_C010">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_D001">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_D002">
+ <summary>
+ デュポン荷姿
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_D003">
+ <summary>
+ DB参照先
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_D004">
+ <summary>
+ デュポン在庫報告（作成種別）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_D005">
+ <summary>
+ プラント
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_D006">
+ <summary>
+ デュポン荷主
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_D007">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_D008">
+ <summary>
+ 割増運賃データタイプ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_D009">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_D010">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_E001">
+ <summary>
+ データ抽出印刷種別
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_E002">
+ <summary>
+ Excel Template Path
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_E003">
+ <summary>
+ EDI出荷検索日区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_E004">
+ <summary>
+ EDI出荷印刷帳票名（EDI出荷データ検索）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_E005">
+ <summary>
+ EDI出荷再印刷帳票名（EDI出荷データ検索）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_E006">
+ <summary>
+ EDI出荷実行種別名（EDI出荷データ検索）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_E007">
+ <summary>
+ EDI出荷一括変更項目名（EDI出荷データ検索）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_E008">
+ <summary>
+ EDI入荷編集ステータス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_E009">
+ <summary>
+ EDI出荷編集ステータス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_E010">
+ <summary>
+ EDI入荷検索日区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_E011">
+ <summary>
+ EDI保留区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_E012">
+ <summary>
+ EDI入荷実行種別名（EDI入荷データ検索）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_E013">
+ <summary>
+ EDI入荷実行種別名（EDI入荷データ検索）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_E014">
+ <summary>
+ EDI処理種別
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_E015">
+ <summary>
+ EDIワーニング区分（button2）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_E016">
+ <summary>
+ EDIワーニング区分（button3）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_E017">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_E018">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_E019">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_E020">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_F001">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_F002">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_F003">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_F004">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_F005">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_F006">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_F007">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_F008">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_F009">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_F010">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_G001">
+ <summary>
+ 劇毒区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_G002">
+ <summary>
+ ガス管理区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_G003">
+ <summary>
+ 月末在庫
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_G004">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_G005">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_G006">
+ <summary>
+ 蓄積メッセージ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_G007">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_G008">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_G009">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_G010">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_H001">
+ <summary>
+ 保税区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_H002">
+ <summary>
+ 振込サイト区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_H003">
+ <summary>
+ 保留品区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_H004">
+ <summary>
+ 振替区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_H005">
+ <summary>
+ 船積形態区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_H006">
+ <summary>
+ 保税作業進捗
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_H007">
+ <summary>
+ 発注点区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_H008">
+ <summary>
+ 日付初期値
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_H009">
+ <summary>
+ 保管料割り振り区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_H010">
+ <summary>
+ 発行有無フラグ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_H011">
+ <summary>
+ 報告有無フラグ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_H012">
+ <summary>
+ 引当単位区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_H013">
+ <summary>
+ 保管荷役計算実行モード区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_H014">
+ <summary>
+ 日付絞込
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_H015">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_H016">
+ <summary>
+ 配送区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_H017">
+ <summary>
+ 不良品区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_H018">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_H019">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_H020">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_I001">
+ <summary>
+ 入目単位
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_I002">
+ <summary>
+ 移動事由
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_I003">
+ <summary>
+ 移行済区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_I004">
+ <summary>
+ LMC010,LMD020,LME010,LMF010,LMF040,LMM100
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_I005">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_I006">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_I007">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_I008">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_I009">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_I010">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_J001">
+ <summary>
+ 重量単位
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_J002">
+ <summary>
+ 自傭車区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_J003">
+ <summary>
+ 実績処理区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_J004">
+ <summary>
+ 自社他社区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_J005">
+ <summary>
+ 実施フラグ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_J006">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_J007">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_J008">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_J009">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_J010">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_K001">
+ <summary>
+ 混載・貸切区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_K002">
+ <summary>
+ 個数単位
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_K003">
+ <summary>
+ 期割り区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_K004">
+ <summary>
+ 協会品目区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_K005">
+ <summary>
+ 寄託価格単位区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_K006">
+ <summary>
+ 期間単位
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_K007">
+ <summary>
+ 化学物質区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_K008">
+ <summary>
+ 危険品区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_K009">
+ <summary>
+ 管理レベル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_K010">
+ <summary>
+ 権限レベル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_K011">
+ <summary>
+ 鑑名義区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_K012">
+ <summary>
+ 計算コード区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_K013">
+ <summary>
+ 完了区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_K014">
+ <summary>
+ 完了種別
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_K015">
+ <summary>
+ 倉替処理制御区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_K016">
+ <summary>
+ 経理科目コード区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_K017">
+ <summary>
+ 可否区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_K018">
+ <summary>
+ 鑑名義区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_K019">
+ <summary>
+ 鑑作成区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_K020">
+ <summary>
+ 鑑取込状態区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_K021">
+ <summary>
+ 鑑明細作成種別区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_K022">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_K023">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_K024">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_K025">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_K026">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_K027">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_K028">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_K029">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_K030">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_L001">
+ <summary>
+ ＬＭＳ移行
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_L002">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_L003">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_L004">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_L005">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_L006">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_L007">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_L008">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_L009">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_L010">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_M001">
+ <summary>
+ 元着払区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_M002">
+ <summary>
+ 面積単位
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_M003">
+ <summary>
+ まるめ単位
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_M004">
+ <summary>
+ 元データ区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_M005">
+ <summary>
+ 免許区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_M006">
+ <summary>
+ 元請区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_M007">
+ <summary>
+ メニュー区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_M008">
+ <summary>
+ 申し送り区分（BPｶｽﾄﾛｰﾙ専用）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_M009">
+ <summary>
+ まとめ候補条件
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_M010">
+ <summary>
+ 元データ区分（作業）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_M011">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_M012">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_M013">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_M014">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_M015">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_N001">
+ <summary>
+ 荷姿
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_N002">
+ <summary>
+ 長さ単位
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_N003">
+ <summary>
+ 内外貨区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_N004">
+ <summary>
+ 入荷作業進捗
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_N005">
+ <summary>
+ 入庫報告
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_N006">
+ <summary>
+ 入荷データ区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_N007">
+ <summary>
+ 入荷データ種別
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_N008">
+ <summary>
+ 荷主大区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_N009">
+ <summary>
+ 荷主業態事業区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_N010">
+ <summary>
+ 納入予定区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_N011">
+ <summary>
+ 入荷運賃種別
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_N012">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_N013">
+ <summary>
+ 入荷印刷帳票名（入荷データ検索）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_N014">
+ <summary>
+ ナンバー区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_N015">
+ <summary>
+ 入荷印刷種別（入荷データ編集）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_N016">
+ <summary>
+ 入荷印刷種別（入荷印刷指示）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_N017">
+ <summary>
+ 日陸運送会社
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_N018">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_N019">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_N020">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_O001">
+ <summary>
+ 送り状チェックデジットパターン
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_O002">
+ <summary>
+ 温度管理区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_O003">
+ <summary>
+ 温度区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_O004">
+ <summary>
+ 温度管理中フラグ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_O005">
+ <summary>
+ 置場移動区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_O006">
+ <summary>
+ オーダータイプ使用荷主
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_O007">
+ <summary>
+ 送り状文言
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_O008">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_O009">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_O010">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_P001">
+ <summary>
+ ピッキングリスト区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_P002">
+ <summary>
+ PG
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_P003">
+ <summary>
+ 印刷種別（LMF020）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_P004">
+ <summary>
+ 印刷種別（LMF060）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_P005">
+ <summary>
+ 納品書(名古屋_日本合成)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_P006">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_P007">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_P008">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_P009">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_P010">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_Q001">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_Q002">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_Q003">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_Q004">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_Q005">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_Q006">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_Q007">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_Q008">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_Q009">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_Q010">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_R001">
+ <summary>
+ 路線／区域
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_R002">
+ <summary>
+ ロット管理区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_R003">
+ <summary>
+ 路線/区域判別タリフパターン
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_R004">
+ <summary>
+ ＲＤサーバ情報
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_R005">
+ <summary>
+ 帳票CSV出力フォルダ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_R006">
+ <summary>
+ RDフォームファイル格納パス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_R007">
+ <summary>
+ RD営業所ユーザコード
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_R008">
+ <summary>
+ RDプリンタ名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_R009">
+ <summary>
+ JobID
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_R010">
+ <summary>
+ レポートファイル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_R011">
+ <summary>
+ RDプレビューコマンドラインS
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_R012">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_R013">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_R014">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_R015">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_R016">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_R017">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_R018">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_R019">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_R020">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S001">
+ <summary>
+ 請求書帳票パターン
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S002">
+ <summary>
+ 消防等級区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S003">
+ <summary>
+ 消防詳細区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S004">
+ <summary>
+ 消防区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S005">
+ <summary>
+ 商品状態区分（中身）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S006">
+ <summary>
+ 商品状態区分（外観）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S007">
+ <summary>
+ 出荷可能区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S008">
+ <summary>
+ 締め日区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S009">
+ <summary>
+ 切上げ、切捨て、四捨五入区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S010">
+ <summary>
+ 出荷作業進捗
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S011">
+ <summary>
+ 出荷報告
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S012">
+ <summary>
+ 車輌区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S013">
+ <summary>
+ 指定納品書・分析表区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S014">
+ <summary>
+ 出荷データ区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S015">
+ <summary>
+ 倉庫区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S016">
+ <summary>
+ 消火設備区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S017">
+ <summary>
+ 締め日区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S018">
+ <summary>
+ 最低保障摘要単位区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S019">
+ <summary>
+ 送付方法区分（請求書）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S020">
+ <summary>
+ 出荷データ種別
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S021">
+ <summary>
+ 出荷先（国内／輸出）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S022">
+ <summary>
+ 消防種別
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S023">
+ <summary>
+ 車種区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S024">
+ <summary>
+ 請求書項目
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S025">
+ <summary>
+ 請求進捗区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S026">
+ <summary>
+ 請求時税区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S027">
+ <summary>
+ 請求単位
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S028">
+ <summary>
+ ソースコード
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S029">
+ <summary>
+ 請求項目
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S030">
+ <summary>
+ 出荷場所判定区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S031">
+ <summary>
+ ステータス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S032">
+ <summary>
+ SCM荷主
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S033">
+ <summary>
+ SCM荷主紐づけ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S034">
+ <summary>
+ 出荷印刷帳票名（出荷データ検索）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S035">
+ <summary>
+ 先日付区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S036">
+ <summary>
+ SCMBP出荷指示データ保存先パス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S037">
+ <summary>
+ 出荷検索日区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S038">
+ <summary>
+ 出荷実行区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S039">
+ <summary>
+ 出荷印刷帳票名（出荷データ編集）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S040">
+ <summary>
+ 送状印刷荷主
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S041">
+ <summary>
+ 出荷単位
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S042">
+ <summary>
+ 先付け納入日許容範囲
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S043">
+ <summary>
+ SCM出荷報告データ保存先パス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S044">
+ <summary>
+ 出荷印刷帳票名（出荷印刷指示）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S045">
+ <summary>
+ 作業料明細纏め区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S046">
+ <summary>
+ セット区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S047">
+ <summary>
+ 出荷取消区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S048">
+ <summary>
+ 処理区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S049">
+ <summary>
+ 請求金額計算区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S050">
+ <summary>
+ 収支区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S051">
+ <summary>
+ 削除区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S052">
+ <summary>
+ 作業完了区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S053">
+ <summary>
+ 請求確認区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S054">
+ <summary>
+ 閾値
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S055">
+ <summary>
+ SQL禁止文字
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S056">
+ <summary>
+ 請求元データ区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S057">
+ <summary>
+ 修正項目
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S058">
+ <summary>
+ 商品印刷種別
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S059">
+ <summary>
+ 請求在庫・実在庫差異分リスト種別
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S060">
+ <summary>
+ 処理内容
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S061">
+ <summary>
+ 作業印刷種別
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S062">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S063">
+ <summary>
+ 請求印刷帳票名（請求書作成LMG050）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S064">
+ <summary>
+ 請求科目コード・課税区分組合わせ区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S065">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S066">
+ <summary>
+ 請求印刷帳票名（保管荷役料明細LMG020）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S067">
+ <summary>
+ 請求印刷帳票名（保管荷役料明細LMG030）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S068">
+ <summary>
+ 処理状況区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S069">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S070">
+ <summary>
+ 処理タイミング区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S071">
+ <summary>
+ 請求時簿外品取扱区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S072">
+ <summary>
+ 請求時シリアル番号連携対象荷主
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S073">
+ <summary>
+ 出力形式区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S074">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S075">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S076">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S077">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S078">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S079">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_S080">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_T001">
+ <summary>
+ 通行料支払区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_T002">
+ <summary>
+ 特殊取り扱い区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_T003">
+ <summary>
+ 通貨単位
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_T004">
+ <summary>
+ 単価グループ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_T005">
+ <summary>
+ 単価区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_T006">
+ <summary>
+ 地域区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_T007">
+ <summary>
+ 帳票パターン区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_T008">
+ <summary>
+ 帳票出力先区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_T009">
+ <summary>
+ トレーラ区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_T010">
+ <summary>
+ 宅急便サイズ区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_T011">
+ <summary>
+ タリフ種別
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_T012">
+ <summary>
+ 登録区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_T013">
+ <summary>
+ 登録区分（NRC回収）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_T014">
+ <summary>
+ 抽出種別区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_T015">
+ <summary>
+ タリフ分類区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_T016">
+ <summary>
+ 届先参照元区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_T017">
+ <summary>
+ 届先荷主コード
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_T018">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_T019">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_T020">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_T021">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_T022">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_T023">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_T024">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_T025">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_U001">
+ <summary>
+ 運送便区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_U002">
+ <summary>
+ 有無区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_U003">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_U004">
+ <summary>
+ 運送事由区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_U005">
+ <summary>
+ 運送元区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_U006">
+ <summary>
+ 運送温度区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_U007">
+ <summary>
+ 運賃請求〆日区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_U008">
+ <summary>
+ 有料道路区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_U009">
+ <summary>
+ 有無フラグ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_U010">
+ <summary>
+ 運賃タリフデータタイプ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_U011">
+ <summary>
+ 運賃タリフテーブルタイプ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_U012">
+ <summary>
+ 運送会社区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_U013">
+ <summary>
+ 運送会社変更確認荷主
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_U014">
+ <summary>
+ 運賃分割対象荷主
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_U015">
+ <summary>
+ 運賃調整対象荷主
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_U016">
+ <summary>
+ 運送帳票区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_U017">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_U018">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_U019">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_U020">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_U021">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_U022">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_U023">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_U024">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_U025">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_V001">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_V002">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_V003">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_V004">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_V005">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_V006">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_V007">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_V008">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_V009">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_V010">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_W001">
+ <summary>
+ 割当優先区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_W002">
+ <summary>
+ 割増区分(冬季)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_W003">
+ <summary>
+ 割増区分(都市)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_W004">
+ <summary>
+ 割増区分(中継)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_W005">
+ <summary>
+ 割増区分(航送)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_W006">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_W007">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_W008">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_W009">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_W010">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_X001">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_X002">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_X003">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_X004">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_X005">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_X006">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_X007">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_X008">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_X009">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_X010">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_Y001">
+ <summary>
+ 容積単位
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_Y002">
+ <summary>
+ 輸出入区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_Y003">
+ <summary>
+ 輸出許可種別
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_Y004">
+ <summary>
+ 輸入許可種別
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_Y005">
+ <summary>
+ 用途区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_Y006">
+ <summary>
+ 用途区分（届先明細）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_Y007">
+ <summary>
+ 用途区分（商品明細）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_Y008">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_Y009">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_Y010">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_Y011">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_Y012">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_Y013">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_Y014">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_Y015">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_Z001">
+ <summary>
+ 税区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_Z002">
+ <summary>
+ 在庫区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_Z003">
+ <summary>
+ 在庫報告
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_Z004">
+ <summary>
+ 在庫照会
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_Z005">
+ <summary>
+ ＺＯＮＥ区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_Z006">
+ <summary>
+ 税率区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_Z007">
+ <summary>
+ 実空車区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_Z008">
+ <summary>
+ Zoneと棟室の温度管理の関係
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_Z009">
+ <summary>
+ 事業部
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_Z010">
+ <summary>
+ 在庫証明書複数印刷対応
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_Z011">
+ <summary>
+ 実績書込区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_Z012">
+ <summary>
+ 在庫印刷帳票名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_Z013">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_Z014">
+ <summary>
+ 在庫ZERO理由区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_Z015">
+ <summary>
+ 在庫履歴照会印刷種別
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_Z016">
+ <summary>
+ 在庫印刷種別
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_Z017">
+ <summary>
+ 在庫証明書対象外荷主
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_Z018">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_Z019">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_Z020">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_Z021">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_Z022">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_Z023">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_Z024">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LMKbnConst.KBN_Z025">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:LMSubCom.Const.LogLevel">
+ <summary>
+ ログレベル定数定義クラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Const.LogLevel.LOG_LEVEL_DEADLY">
+ <summary>
+ 致命的エラー(SysLog出力)
+ </summary>
+</member>
+<member name="F:LMSubCom.Const.LogLevel.LOG_LEVEL_ERROR">
+ <summary>
+ エラー
+ </summary>
+</member>
+<member name="F:LMSubCom.Const.LogLevel.LOG_LEVEL_WARNING">
+ <summary>
+ 警告
+ </summary>
+</member>
+<member name="F:LMSubCom.Const.LogLevel.LOG_LEVEL_OPERATION">
+ <summary>
+ 運用    [ST、OT]
+ </summary>
+</member>
+<member name="F:LMSubCom.Const.LogLevel.LOG_LEVEL_TRACE">
+ <summary>
+ 確認用  [IT]
+ </summary>
+</member>
+<member name="F:LMSubCom.Const.LogLevel.LOG_LEVEL_DEBUG">
+ <summary>
+ デバッグ[PT]
+ </summary>
+</member>
+<member name="T:LMSubCom.Base.Interface.IConnection">
+ <summary>
+ コネクション格納クラス用インターフェース
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:LMSubCom.Base.Interface.IConnection.Connection">
+ <summary>
+ コネクションを取得・設定します
+ </summary>
+ <value>コネクションオブジェクト</value>
+ <returns>コネクションオブジェクト</returns>
+ <remarks></remarks>
+</member>
+<member name="T:LMSubCom.Utility.NumberMasterUtility">
+ <summary>
+ ナンバーマスタ番号取得部品
+ </summary>
+ <remarks>自動採番を行います</remarks>
+</member>
+<member name="F:LMSubCom.Utility.NumberMasterUtility._Keys">
+ <summary>
+ 番号区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Utility.NumberMasterUtility.SEQUENCE_SELECT">
+ <summary>
+ シーケンス取得用SQL文
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Utility.NumberMasterUtility.KUBUN_SELECT">
+ <summary>
+ 区分マスタ取得SQL文
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:LMSubCom.Utility.NumberMasterUtility.NumberKbn">
+ <summary>
+ ナンバー区分定義体
+ </summary>
+ <remarks>公開用</remarks>
+</member>
+<member name="F:LMSubCom.Utility.NumberMasterUtility.NumberKbn.INKA_NO_L">
+ <summary>
+ 入荷管理番号L[01]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Utility.NumberMasterUtility.NumberKbn.EDI_INKA_NO_L">
+ <summary>
+ EDI入荷管理番号L[02]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Utility.NumberMasterUtility.NumberKbn.OUTKA_NO_L">
+ <summary>
+ 出荷管理番号L[03]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Utility.NumberMasterUtility.NumberKbn.EDI_OUTKA_NO_L">
+ <summary>
+ EDI出荷管理番号L[04]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Utility.NumberMasterUtility.NumberKbn.TRIP_NO_LL">
+ <summary>
+ 運送管理番号LL[05]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Utility.NumberMasterUtility.NumberKbn.UNSO_NO_L">
+ <summary>
+ 運送管理番号L[06]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Utility.NumberMasterUtility.NumberKbn.ZAI_REC_NO">
+ <summary>
+ 在庫レコード番号[07]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Utility.NumberMasterUtility.NumberKbn.IDO_REC_NO">
+ <summary>
+ 在庫移動レコード番号[08]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Utility.NumberMasterUtility.NumberKbn.FURI_CTL_NO">
+ <summary>
+ 在庫振替管理番号[09]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Utility.NumberMasterUtility.NumberKbn.MATSU_ZAI_REC_NO">
+ <summary>
+ 月末在庫データ[10]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Utility.NumberMasterUtility.NumberKbn.SAGYO_CD">
+ <summary>
+ 作業コード番号[11]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Utility.NumberMasterUtility.NumberKbn.SAGYO_REC_NO">
+ <summary>
+ 作業レコード番号[12]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Utility.NumberMasterUtility.NumberKbn.SAGYO_SIJI_NO">
+ <summary>
+ 作業指示書番号[13]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Utility.NumberMasterUtility.NumberKbn.JOB_NO">
+ <summary>
+ 請求元在庫JOB番号[14]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Utility.NumberMasterUtility.NumberKbn.SKYU_NO">
+ <summary>
+ 請求書番号[15]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Utility.NumberMasterUtility.NumberKbn.NRC_REC_NO">
+ <summary>
+ NRC回収[17]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Utility.NumberMasterUtility.NumberKbn.TANKA_REC_NO">
+ <summary>
+ 単価マスタ[18]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Utility.NumberMasterUtility.NumberKbn.GOODS_CD_NRS">
+ <summary>
+ 商品マスタ (日陸)[19]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Utility.NumberMasterUtility.NumberKbn.SCM_CTL_NO_L">
+ <summary>
+ SCM受付番号[20]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Utility.NumberMasterUtility.NumberKbn.JOB_NO_CHK">
+ <summary>
+ 請求元在庫JOB番号(チェック用)[21]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Utility.NumberMasterUtility.NumberKbn.CAR_KEY">
+ <summary>
+ 車輌KEY[22]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Utility.NumberMasterUtility.NumberKbn.MEITETSU_DENP_NO">
+ <summary>
+ 名鉄運輸送り状番号[35]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Utility.NumberMasterUtility.NumberKbn.AUTO_DENP_NO_SEINO_CHIBA">
+ <summary>
+ 西濃自動送り状番号-千葉[36]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LMSubCom.Utility.NumberMasterUtility.NumberKbn.TOLL_DENP_NO">
+ <summary>
+ トール自動送状番号[38]
+ </summary>
+ <remarks>
+ LMSの出荷編集画面・運送編集画面にてデータ保存時に 
+ 自動送状番号設定の運送会社（トール）の場合に送状番号を付与する。 
+ [フォーマット]9999999(数字7桁、桁数以外は名鉄の自動送状番号と同じ)
+ </remarks>
+</member>
+<member name="F:LMSubCom.Utility.NumberMasterUtility.NumberKbn.TOLL_DENP_NO_CYD">
+ <summary>
+ トール自動送状番号_群馬[40]
+ </summary>
+ <remarks>
+ LMSの出荷編集画面・運送編集画面にてデータ保存時に 
+ 自動送状番号設定の運送会社（トール）の場合に送状番号を付与する。 
+ [フォーマット]9999999(数字7桁、桁数以外は名鉄の自動送状番号と同じ)
+ </remarks>
+</member>
+<member name="F:LMSubCom.Utility.NumberMasterUtility.NumberKbn.AUTO_DENP_NO_SEINO_TOKE">
+ <summary>
+ 西濃自動送り状番号-土気
+ </summary>
+</member>
+<member name="F:LMSubCom.Utility.NumberMasterUtility.NumberKbn.JPLOGI_DENP_NO_CHI">
+ <summary>
+ トール自動送状番号_千葉
+ </summary>
+</member>
+<member name="F:LMSubCom.Utility.NumberMasterUtility.NumberKbn.JPLOGI_DENP_NO_TOK">
+ <summary>
+ トール自動送状番号_土気
+ </summary>
+</member>
+<member name="F:LMSubCom.Utility.NumberMasterUtility.NumberKbn.AUTO_DENP_NO_SEINO_SODEGAURA">
+ <summary>
+ 西濃自動送り状番号-袖ヶ浦
+ </summary>
+</member>
+<member name="F:LMSubCom.Utility.NumberMasterUtility.NumberKbn.AUTO_DENP_NO_SEINO_OSAKA">
+ <summary>
+ 西濃自動送り状番号-大阪
+ </summary>
+ <remarks>2025.07.09 追加 Jp.Co.Nrs.LM.Library定数値を合わせている</remarks>
+</member>
+<member name="M:LMSubCom.Utility.NumberMasterUtility.GetAutoCode(LMSubCom.Utility.NumberMasterUtility.NumberKbn,System.String)">
+ <summary>
+ 新規コードを取得します
+ </summary>
+ <param name="noKbn">ナンバー区分</param>
+ <param name="nrsBrCd">営業所コード</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LMSubCom.Utility.NumberMasterUtility.SelectSequence(System.Data.SqlClient.SqlConnection)">
+ <summary>
+ シーケンス読み込み
+ </summary>
+ <param name="conn"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LMSubCom.Utility.NumberMasterUtility.SetSequenceKeysArray(LMSubCom.Utility.NumberMasterUtility.NumberKbn)">
+ <summary>
+ シーケンスのキー設定
+ </summary>
+ <param name="noKbn"></param>
+ <remarks>NumberKbnの先頭に0を付与します</remarks>
+</member>
+<member name="M:LMSubCom.Utility.NumberMasterUtility.EditCode(System.Data.SqlClient.SqlConnection,System.String,System.String)">
+ <summary>
+ 取得ナンバー編集
+ </summary>
+ <param name="conn">DBコネクション</param>
+ <param name="code">取得コード</param>
+ <param name="nrsBrCd">営業所コード</param>
+ <returns>編集したコード</returns>
+ <remarks>先頭に部署記号を付与します</remarks>
+</member>
+<member name="M:LMSubCom.Utility.NumberMasterUtility.GetDeptMark(System.Data.SqlClient.SqlConnection,System.String)">
+ <summary>
+ 営業所記号取得
+ </summary>
+ <param name="conn"></param>
+ <param name="nrsBrCd"></param>
+ <returns>営業所記号</returns>
+ <remarks>営業所区分が区分マスタに存在するか否かチェックします</remarks>
+</member>
+</members>
+</doc>

@@ -1,0 +1,1055 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.LMK.GUI
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.LM.GUI.LMK060C">
+ <summary>
+ LMK060定数定義クラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMK060C.PRINT_SHIHARAI_MEISAI">
+ <summary>
+ 印刷区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMK060C.ACTION_ID_PRINT_MEISAI">
+ <summary>
+ データ検索アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.GUI.LMK060C.CtlTabIndex">
+ <summary>
+ タブインデックス用列挙体(コントロール)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.GUI.LMK060C.EventShubetsu">
+ <summary>
+ イベント種別
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.GUI.LMK060F">
+ <summary>
+ LMK060フォームクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMK060F._Handler">
+ <summary>
+ このフォームを作成したハンドラクラスを格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMK060F.#ctor(Jp.Co.Nrs.LM.GUI.LMK060H)">
+ <summary>
+ コンストラクタ
+ </summary>
+ <param name="handlerClass">このフォームを生成したハンドラクラス</param>
+ <remarks>呼び出し元のハンドラクラスをこのフォームに紐付ける</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMK060F.Function7Press(System.Object,System.Windows.Forms.KeyEventArgs)">
+ <summary>
+ ファンクション７ボタン押下時およびファンクションキー７押下時のイベント
+ </summary>
+ <param name="sender">イベント発生オブジェクト</param>
+ <param name="e">イベント詳細情報</param>
+ <remarks>各イベントに対応するハンドラクラスのメソッドを呼び出す</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMK060F.Function10Press(System.Object,System.Windows.Forms.KeyEventArgs)">
+ <summary>
+ ファンクション１０ボタン押下時およびファンクションキー１０押下時のイベント
+ </summary>
+ <param name="sender">イベント発生オブジェクト</param>
+ <param name="e">イベント詳細情報</param>
+ <remarks>各イベントに対応するハンドラクラスのメソッドを呼び出す</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMK060F.Function12Press(System.Object,System.Windows.Forms.KeyEventArgs)">
+ <summary>
+ ファンクション１２ボタン押下時およびファンクションキー１２押下時のイベント
+ </summary>
+ <param name="sender">イベント発生オブジェクト</param>
+ <param name="e">イベント詳細情報</param>
+ <remarks>各イベントに対応するハンドラクラスのメソッドを呼び出す</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMK060F.Form_Closing(System.Object,System.Windows.Forms.FormClosingEventArgs)">
+ <summary>
+ フォームが閉じる前に発生するイベント
+ </summary>
+ <param name="sender">イベント発生元オブジェクト</param>
+ <param name="e">イベント詳細</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMK060F.Form_FormClosed(System.Object,System.Windows.Forms.FormClosedEventArgs)">
+ <summary>
+ フォームが閉じた後に発生するイベント
+ </summary>
+ <param name="sender">イベント発生元オブジェクト</param>
+ <param name="e">イベント詳細</param>
+ <remarks>Navigateクラスのインスタンス管理から登録解除を行う</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMK060F.cmbPrint_SelectedValueChanged(System.Object,System.EventArgs)">
+ <summary>
+ 印刷コンボボックス変更時のイベントです
+ </summary>
+ <param name="sender">イベント発生元オブジェクト</param>
+ <param name="e">イベント詳細</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMK060F.LMK060F_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+ <summary>
+ キーダウンイベントです
+ </summary>
+ <param name="sender">イベント発生元オブジェクト</param>
+ <param name="e">イベント詳細</param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.GUI.LMK060G">
+ <summary>
+ LMK060Gamenクラス
+ </summary>
+ <remarks>画面構築を行う</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMK060G._Frm">
+ <summary>
+ このクラスが紐付くフォームクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMK060G._LMKconG">
+ <summary>
+ G共通クラスを格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMK060G.#ctor(Jp.Co.Nrs.LM.Base.GUI.LMBaseGUIHandler@,Jp.Co.Nrs.LM.GUI.LMK060F@,Jp.Co.Nrs.LM.GUI.LMKControlG)">
+ <summary>
+ コンストラクタ
+ </summary>
+ <param name="handlerClass">このクラスを生成したハンドラクラス</param>
+ <param name="frm">このクラスが設定するコントロールを持つフォームクラス</param>
+ <remarks>フォームラスとハンドラクラスをこのクラスに紐付ける。編集不可</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMK060G.SetFunctionKey">
+ <summary>
+ ファンクションキーの設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMK060G.SetTabIndex">
+ <summary>
+ タブインデックスの設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMK060G.SetControl(System.String)">
+ <summary>
+ 画面コントロールの個別設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMK060G.ClearControl">
+ <summary>
+ コントロール値のクリア
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMK060G.SetInput(System.String)">
+ <summary>
+営業所、日付の当月の1日目、当月の最終日の設定 
+ </summary>
+ <remarks></remarks> 
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMK060G.SetPrmData(System.Data.DataSet)">
+ <summary>
+荷主・日付の設定 
+ </summary>
+ <remarks></remarks> 
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMK060G.UnLockedForm">
+ <summary>
+ ファンクションキーの設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMK060G.SetFoucus">
+ <summary>
+ フォーカスの設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMK060G.SetControlPrm(System.Data.DataSet,System.String)">
+ <summary>
+ 支払検索から遷移時のみ初期値設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMK060G.Locktairff(Jp.Co.Nrs.LM.GUI.LMK060F)">
+ <summary>
+ 印刷区分値変更のロック制御
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.GUI.LMK060H">
+ <summary>
+ LMK060ハンドラクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMK060H._V">
+ <summary>
+ 入力チェックで使用するValidateクラスを格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMK060H._G">
+ <summary>
+ Gamenクラスを格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMK060H._PrmDs">
+ <summary>
+ パラメータ格納用フィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMK060H._LMKconV">
+ <summary>
+ Validate共通クラスを格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMK060H._LMKconH">
+ <summary>
+ Handler共通クラスを格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMK060H._LMKconG">
+ <summary>
+ G共通クラスを格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMK060H._PopupSkipFlg">
+ <summary>
+ PopUp画面表示フラグ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMK060H.Main(Jp.Co.Nrs.LM.Base.LMFormData)">
+ <summary>
+ ハンドラクラスの初期処理メソッド
+ </summary>
+ <param name="prm">パラメータ</param>
+ <remarks>画面遷移部品よりこのメソッドが呼ばれる</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMK060H.OpenMasterPop(Jp.Co.Nrs.LM.GUI.LMK060F)">
+ <summary>
+ マスタ参照処理
+ </summary>
+ <param name="frm">フォーム</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMK060H.EnterAction(Jp.Co.Nrs.LM.GUI.LMK060F,System.Windows.Forms.KeyEventArgs)">
+ <summary>
+ Enter処理
+ </summary>
+ <param name="frm">フォーム</param>
+ <param name="e">イベント詳細</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMK060H.ShowPopupControl(Jp.Co.Nrs.LM.GUI.LMK060F,System.String,Jp.Co.Nrs.LM.GUI.LMK060C.EventShubetsu)">
+ <summary>
+ ポップアップ起動コントロール
+ </summary>
+ <param name="frm">フォーム</param>
+ <param name="objNm">フォーカスコントロール名</param>
+ <param name="actionType">アクションタイプ</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMK060H.CustPop(Jp.Co.Nrs.LM.GUI.LMK060F,Jp.Co.Nrs.LM.GUI.LMK060C.EventShubetsu)">
+ <summary>
+ 運送会社マスタ照会(LMZ250)参照
+ </summary>
+ <param name="frm">フォーム</param>
+ <returns>True:選択有 False:選択無</returns>
+ <remarks></remarks>
+ 
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMK060H.ShowCustPopup(Jp.Co.Nrs.LM.GUI.LMK060F,Jp.Co.Nrs.LM.GUI.LMK060C.EventShubetsu)">
+ <summary>
+ 運送会社マスタ参照POP起動
+ </summary>
+ <param name="frm">フォーム</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMK060H.SetReturnShiharaitoPop(Jp.Co.Nrs.LM.GUI.LMK060F,Jp.Co.Nrs.LM.GUI.LMK060C.EventShubetsu)">
+ <summary>
+ 支払マスタ照会(LMZ310)参照
+ </summary>
+ <param name="frm">フォーム</param>
+ <returns>True:選択有 False:選択無</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMK060H.ShowShiharaitoPop(Jp.Co.Nrs.LM.GUI.LMK060F,Jp.Co.Nrs.LM.GUI.LMK060C.EventShubetsu)">
+ <summary>
+ 支払マスタ参照POP起動
+ </summary>
+ <param name="frm">フォーム</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMK060H.PopFormShow(Jp.Co.Nrs.LM.Base.LMFormData,System.String)">
+ <summary>
+ Pop起動処理
+ </summary>
+ <param name="prm">パラメータクラス</param>
+ <param name="id">画面ID</param>
+ <returns>パラメータクラス</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMK060H.PrintShutu(Jp.Co.Nrs.LM.GUI.LMK060F)">
+ <summary>
+ 印刷処理
+ </summary>
+ <param name="frm">フォーム</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMK060H.FunctionKey7Press(Jp.Co.Nrs.LM.GUI.LMK060F@,System.Windows.Forms.KeyEventArgs)">
+ <summary>
+ F7押下時処理呼び出し(印刷処理)
+ </summary>
+ <param name="frm">このハンドラクラスに紐づくフォーム</param>
+ <param name="e">ファンクションキーイベント</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMK060H.FunctionKey10Press(Jp.Co.Nrs.LM.GUI.LMK060F@,System.Windows.Forms.KeyEventArgs)">
+ <summary>
+ F10押下時処理呼び出し(マスタ参照処理)
+ </summary>
+ <param name="frm">このハンドラクラスに紐づくフォーム</param>
+ <param name="e">ファンクションキーイベント</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMK060H.FunctionKey12Press(Jp.Co.Nrs.LM.GUI.LMK060F@,System.Windows.Forms.KeyEventArgs)">
+ <summary>
+ F12押下時処理呼び出し(終了処理)
+ </summary>
+ <param name="frm">このハンドラクラスに紐づくフォーム</param>
+ <param name="e">ファンクションキーイベント</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMK060H.ClosingForm(Jp.Co.Nrs.LM.GUI.LMK060F@,System.Windows.Forms.FormClosingEventArgs)">
+ <summary>
+ フォームが閉じる前に発生するイベント
+ </summary>
+ <param name="frm">このハンドラクラスに紐づくフォーム</param>
+ <param name="e">ウィンドウクローズイベント</param>
+ <remarks>F12キーイベント、「閉じる」ボタン押下イベントと共有</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMK060H.Print(Jp.Co.Nrs.LM.GUI.LMK060F,System.EventArgs)">
+ <summary>
+ 印刷コンボボックス変更時
+ </summary>
+ <param name="frm">このハンドラクラスに紐づくフォーム</param>
+ <param name="e">ファンクションキーイベント</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMK060H.KeyDown(Jp.Co.Nrs.LM.GUI.LMK060F,System.Windows.Forms.KeyEventArgs)">
+ <summary>
+ フォームのキーダウンイベント
+ </summary>
+ <param name="frm">フォーム</param>
+ <param name="e">イベント詳細情報</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMK060H.SetDataSetInData(Jp.Co.Nrs.LM.GUI.LMK060F,System.Data.DataSet)">
+ <summary>
+ データセット設定(共通)
+ </summary>
+ <param name="frm">このハンドラクラスに紐づくフォーム</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMK060H.EndAction(Jp.Co.Nrs.LM.GUI.LMK060F)">
+ <summary>
+ 終了アクション
+ </summary>
+ <param name="frm">フォーム</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMK060H.NextFocusedControl(System.Windows.Forms.Form,System.Boolean)">
+ <summary>
+ 次コントロールにフォーカス移動
+ </summary>
+ <param name="frm">フォーム</param>
+ <param name="eventFlg">Enterボタンの場合、True</param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.GUI.LMK060V">
+ <summary>
+ LMK060Validateクラス
+ </summary>
+ <remarks>入力チェックを行う</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMK060V._Frm">
+ <summary>
+ このValidateクラスが紐付くフォームクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMK060V._LMKconV">
+ <summary>
+ Validate共通クラスを格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMK060V._LMKconG">
+ <summary>
+ G共通クラスを格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMK060V.#ctor(Jp.Co.Nrs.LM.Base.GUI.LMBaseGUIHandler@,Jp.Co.Nrs.LM.GUI.LMK060F@,Jp.Co.Nrs.LM.GUI.LMKControlV,Jp.Co.Nrs.LM.GUI.LMKControlG)">
+ <summary>
+ コンストラクタ
+ </summary>
+ <param name="frm">このクラスがチェックするコントロールを持つフォームクラス</param>
+ <param name="handlerClass">このクラスを生成したハンドラクラス</param>
+ <remarks>フォームラスとハンドラクラスをこのクラスに紐付ける。編集不可</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMK060V.IsInputCheck">
+ <summary>
+ 入力チェック
+ </summary>
+ <returns>
+ True ：入力エラーなし
+ false：入力エラーあり
+ </returns>
+ <remarks>チェックを行うプロパティをTrueに設定し、チェック用メソッドを呼び出します。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMK060V.IsPrintCheck(System.String)">
+ <summary>
+ 単項目チェック(共通)
+ </summary>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMK060V.IsPrintSaveCheck">
+ <summary>
+ 印刷時の関連チェック(共通)
+ </summary>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMK060V.IsPrintDateChk">
+ <summary>
+ 印刷時の日付チェック(共通)
+ </summary>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMK060V.TrimSpaceTextValue">
+ <summary>
+ スペース除去
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMK060V.TrimHeaderSpaceTextValue">
+ <summary>
+ ヘッダ項目のスペース除去
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMK060V.IsInputDateFullByteChk(Jp.Co.Nrs.LM.GUI.Win.InputMan.LMImDate,System.String)">
+ <summary>
+ 日付のフルバイトチェック
+ </summary>
+ <param name="ctl">コントロール</param>
+ <param name="str">置換文字</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMK060V.IsLargeSmallChk(System.String,System.String,System.Boolean)">
+ <summary>
+ 大小チェック
+ </summary>
+ <param name="large">大きい方の値</param>
+ <param name="small">小さい方の値</param>
+ <param name="equalFlg">イコールがエラーの場合：True　イコールがエラーではないの場合：False</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMK060V.IsLargeSmallChk(System.Decimal,System.Decimal,System.Boolean)">
+ <summary>
+ 大小チェック
+ </summary>
+ <param name="large">大きい方の値</param>
+ <param name="small">小さい方の値</param>
+ <param name="equalFlg">イコールがエラーの場合：True　イコールがエラーではないの場合：False</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMK060V.IsAuthorityChk(Jp.Co.Nrs.LM.GUI.LMK060C.EventShubetsu)">
+ <summary>
+ 権限チェック
+ </summary>
+ <param name="eventShubetsu">権限チェックを行うイベント</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMK060V.IsFocusChk(System.String,Jp.Co.Nrs.LM.GUI.LMK060C.EventShubetsu)">
+ <summary>
+ フォーカス位置チェック
+ </summary>
+ <param name="objNm">フォーカス位置コントロール名</param>
+ <param name="actionType">アクションタイプ</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMK060V.FormatNumValue(System.String)">
+ <summary>
+ NULLの場合、ゼロを設定
+ </summary>
+ <param name="value">値</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMK060V.SelectUnsocoListDataRow(System.String,System.String,System.String)">
+ <summary>
+ 運送会社マスタ(キャッシュテーブル)からデータを抽出する条件を取得
+ </summary>
+ <param name="unsocoCd">運送会社コード</param>
+ <param name="unsocoBrCd">運送会社支店コード</param>
+ <param name="shiharaiCd">支払先コード</param>
+ <returns>検索条件</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMK060V.SelectUnsocoString(System.String,System.String,System.String)">
+ <summary>
+ 運送会社マスタ(キャッシュテーブル)からデータを抽出する条件を取得
+ </summary>
+ <param name="unsocoCd">運送会社コード</param>
+ <param name="unsocoBrCd">運送会社支店コード</param>
+ <param name="shiharaiCd">支払先コード</param>
+ <returns>検索条件</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMK060V.SelectShiharaiListDataRow(System.String,System.String)">
+ <summary>
+ 支払先マスタ(キャッシュテーブル)からデータを抽出する条件を取得
+ </summary>
+ <param name="brCd">営業所コード</param>
+ <param name="shiharaiCd">支払先コード</param>
+ <returns>データロウ配列</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMK060V.SelectShiharaiString(System.String,System.String)">
+ <summary>
+ 支払先マスタ(キャッシュテーブル)からデータを抽出する条件を取得
+ </summary>
+ <param name="brCd">営業所コード</param>
+ <param name="shiharaiCd">支払先コード</param>
+ <returns>検索条件</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.GUI.LMKControlC">
+ <summary>
+ LMKControl定数定義クラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMKControlC.FUNCTION_SHINKI">
+ <summary>
+ ファンクションキー設定名称
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMKControlC.TABLE_NM_GET_INV_IN">
+ <summary>
+ データセットテーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMKControlC.YN_FLG_NO">
+ <summary>
+ YES/NOフラグ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMKControlC.CRT_TORIKOMI">
+ <summary>
+ 鑑作成区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMKControlC.DETAIL_SAKUSEI_AUTO">
+ <summary>
+ 作成種別
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMKControlC.TAX_KAZEI">
+ <summary>
+ 課税区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.GUI.LMKControlC.GetKanjoKmkInfo">
+ <summary>
+ 勘定科目コード設定時取得項目
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.GUI.LMKControlG">
+ <summary>
+ LMKControl画面クラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMKControlG._Frm">
+ <summary>
+ このクラスが紐付くフォームクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMKControlG.#ctor(System.Windows.Forms.Form)">
+ <summary>
+ コンストラクタ
+ </summary>
+ <param name="frm">フォームクラス</param>
+ <remarks>フォームラスとハンドラクラスをこのクラスに紐付けます。編集不可</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMKControlG.SetEnterEvent(Jp.Co.Nrs.LM.GUI.Win.Spread.LMSpread)">
+ <summary>
+ Enter押下イベントの設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMKControlG.SetCheckBox(Jp.Co.Nrs.LM.GUI.Win.LMCheckBox,System.String)">
+ <summary>
+ YES/NOフラグからチェックボックスを設定
+ </summary>
+ <param name="ctl">チェックボックス</param>
+ <param name="value">YES:01,NO:00</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMKControlG.SetNextControl(Jp.Co.Nrs.LM.GUI.Win.Spread.LMSpread)">
+ <summary>
+ タブ移動処理
+ </summary>
+ <param name="spr">スプレッドコントロール</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMKControlG.SetLockControl(System.Windows.Forms.Control,System.Boolean)">
+ <summary>
+ ロック処理/ロック解除処理を行う
+ </summary>
+ <param name="ctl">制御対象項目</param>
+ <param name="lockFlg">ロック処理を行う場合True</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMKControlG.GetTarget``1(System.Collections.ArrayList,System.Windows.Forms.Control)">
+ <summary>
+ 画面上のコントロールから指定した型のクラスかその継承クラスを取得する
+ </summary>
+ <param name="arr">取得したコントロールを格納するArrayList</param>
+ <param name="ownControl">コントロール取得元となるコントロール</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMKControlG.LockText(Jp.Co.Nrs.LM.GUI.Win.InputMan.LMImTextBox,System.Boolean)">
+ <summary>
+ 引数のコントロールをロックします。
+ </summary>
+ <param name="ctl">設定対象コントロール</param>
+ <param name="lockFlg">ロック処理を行う場合True</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMKControlG.LockComb(Jp.Co.Nrs.LM.GUI.Win.InputMan.LMImCombo,System.Boolean)">
+ <summary>
+ 引数のコントロールをロックします。
+ </summary>
+ <param name="ctl">設定対象コントロール</param>
+ <param name="lockFlg">ロック処理を行う場合True</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMKControlG.LockCombKbn(Jp.Co.Nrs.LM.GUI.Win.InputMan.LMComboKubun,System.Boolean)">
+ <summary>
+ 引数のコントロールをロックします。
+ </summary>
+ <param name="ctl">設定対象コントロール</param>
+ <param name="lockFlg">ロック処理を行う場合True</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMKControlG.LockNumber(Jp.Co.Nrs.LM.GUI.Win.InputMan.LMImNumber,System.Boolean)">
+ <summary>
+ 引数のコントロールをロックします。
+ </summary>
+ <param name="ctl">設定対象コントロール</param>
+ <param name="lockFlg">ロック処理を行う場合True</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMKControlG.LockDate(Jp.Co.Nrs.LM.GUI.Win.InputMan.LMImDate,System.Boolean)">
+ <summary>
+ 引数のコントロールをロックします。
+ </summary>
+ <param name="ctl">設定対象コントロール</param>
+ <param name="lockFlg">ロック処理を行う場合True</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMKControlG.LockMask(Jp.Co.Nrs.LM.GUI.Win.InputMan.LMImMasked,System.Boolean)">
+ <summary>
+ 引数のコントロールをロックします。
+ </summary>
+ <param name="ctl">設定対象コントロール</param>
+ <param name="lockFlg">ロック処理を行う場合True</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMKControlG.LockOptionButton(Jp.Co.Nrs.LM.GUI.Win.LMOptionButton,System.Boolean)">
+ <summary>
+ 引数のコントロールをロックします。
+ </summary>
+ <param name="ctl">設定対象コントロール</param>
+ <param name="lockFlg">ロック処理を行う場合True</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMKControlG.LockButton(Jp.Co.Nrs.LM.GUI.Win.LMButton,System.Boolean)">
+ <summary>
+ 引数のコントロールをロックします。
+ </summary>
+ <param name="ctl">設定対象コントロール</param>
+ <param name="lockFlg">ロック処理を行う場合True</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMKControlG.LockCheckBox(Jp.Co.Nrs.LM.GUI.Win.LMCheckBox,System.Boolean)">
+ <summary>
+ 引数のコントロールをロックします。
+ </summary>
+ <param name="ctl">設定対象コントロール</param>
+ <param name="lockFlg">ロック処理を行う場合True</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMKControlG.LockFunctionKey(Jp.Co.Nrs.LM.GUI.Win.InputMan.LMImFunctionKey,System.Boolean)">
+ <summary>
+ 引数のコントロールをロックします。
+ </summary>
+ <param name="ctl">設定対象コントロール</param>
+ <param name="lockFlg">ロック処理を行う場合True</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMKControlG.LockEditControl(Jp.Co.Nrs.Win.GUI.Win.Interface.IEditableControl,System.Boolean)">
+ <summary>
+ 引数のコントロールをロックします。
+ </summary>
+ <param name="ctl">設定対象コントロール</param>
+ <param name="lockFlg">ロック処理を行う場合True</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMKControlG.SetBackColor(System.Windows.Forms.Control)">
+ <summary>
+ 背景色の初期化
+ </summary>
+ <param name="ctl">制御対象項目</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMKControlG.EditConcatData(System.String,System.String,System.String)">
+ <summary>
+ 2つの値を連結して設定
+ </summary>
+ <param name="value1">値1</param>
+ <param name="value2">値2</param>
+ <returns>編集後の値</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMKControlG.GetCustNm(System.String,System.String,System.String,System.String)">
+ <summary>
+ 荷主名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMKControlG.GetSeqNm(System.String)">
+ <summary>
+ 請求先名称の取得
+ </summary>
+ <param name="sekySaki"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMKControlG.SelectCustString(System.String,System.String,System.String,System.String)">
+ <summary>
+ 荷主マスタ(キャッシュテーブル)からデータを抽出する条件を取得
+ </summary>
+ <param name="custLCd">荷主(大)コード</param>
+ <param name="custMCd">荷主(中)コード</param>
+ <param name="custSCd">荷主(小)コード</param>
+ <param name="custSSCd">荷主(極小)コード</param>
+ <returns>検索条件</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMKControlG.SetControlDate(System.String,System.Int32)">
+ <summary>
+ 年月日付の設定
+ </summary>
+ <param name="strDate">加算対象日付</param>
+ <param name="addCnt">加算月</param>
+ <returns>編集後の値</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.GUI.LMKControlH">
+ <summary>
+ LMDControlハンドラクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMKControlH._ControlV">
+ <summary>
+ 共通クラス(V)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMKControlH._ControlG">
+ <summary>
+ 共通クラス(G)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMKControlH._Pgid">
+ <summary>
+ PGID
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMKControlH.#ctor(System.Windows.Forms.Form@,System.String,Jp.Co.Nrs.LM.GUI.LMKControlV,Jp.Co.Nrs.LM.GUI.LMKControlG)">
+ <summary>
+ コンストラクタ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMKControlH.#ctor(System.String)">
+ <summary>
+ コンストラクタ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMKControlH.SetMessageC001(System.Windows.Forms.Form,System.String)">
+ <summary>
+ 確認メッセージの表示
+ </summary>
+ <param name="frm">フォーム</param>
+ <param name="msg">置換文字</param>
+ <returns>OKの場合:True　Cancelの場合:False</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMKControlH.SetMessageG002(System.Windows.Forms.Form,System.String,System.String)">
+ <summary>
+ 処理終了メッセージを表示
+ </summary>
+ <param name="frm">フォーム</param>
+ <param name="msg1">置換文字1</param>
+ <param name="msg2">置換文字2</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMKControlH.StartAction(System.Windows.Forms.Form)">
+ <summary>
+ 処理開始アクション
+ </summary>
+ <param name="frm">フォーム</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMKControlH.EndAction(System.Windows.Forms.Form)">
+ <summary>
+ 終了アクション
+ </summary>
+ <param name="frm">フォーム</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMKControlH.FailureSelect(System.Windows.Forms.Form)">
+ <summary>
+ 検索失敗時共通処理
+ </summary>
+ <param name="frm">フォーム</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMKControlH.ConfirmMsg(System.Windows.Forms.Form,System.String,System.String)">
+ <summary>
+ 処理続行確認
+ </summary>
+ <param name="frm">フォーム</param>
+ <param name="msg">メッセージ置換文字列(処理名)</param>
+ <param name="cntSelect">検索結果件数</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMKControlH.CallWSAAction(System.Windows.Forms.Form,System.String,System.String,System.Data.DataSet,System.Int32,System.Int32)">
+ <summary>
+ WSAクラス呼出
+ </summary>
+ <param name="frm">フォーム</param>
+ <param name="BLF">BLFファイル名</param>
+ <param name="actionId">メソッド名</param>
+ <param name="rtDs">データセット</param>
+ <param name="mc">ワーニング件数の閾値</param>
+ <param name="rc">表示最大件数の閾値</param>
+ <returns>WSA呼出後のデータセット</returns>
+ <returns2>取得エラー時=Nothing。取得成功時=rtnDSを設定。取得0件の時もrtnDSを設定しているのは、呼び元画面にてSpreadクリアの判定に使用するため。</returns2>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMKControlH.GetCheckList(FarPoint.Win.Spread.SheetView,System.Int32)">
+ <summary>
+ スプレッド明細行のチェックリスト(RowIndex)取得
+ </summary>
+ <param name="activeSheet">スプレッドシート</param>
+ <param name="defNo">レコードチェックボックスのカラム№</param>
+ <returns>チェックリスト</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMKControlH.GetSpredList(FarPoint.Win.Spread.SheetView,System.Int32)">
+ <summary>
+ スプレッド明細行の全量(対象のColum)取得
+ </summary>
+ <param name="activeSheet">スプレッドシート</param>
+ <param name="defNo">レコードチェックボックスのカラム№</param>
+ <returns>チェックリスト</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMKControlH.FormShow(System.Data.DataSet,System.String,System.String)">
+ <summary>
+ 別PG起動処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="id">画面ID</param>
+ <param name="recType">レコードタイプ 初期値 = ""</param>
+ <returns>パラメータクラス</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMKControlH.SetKanjoKmkCd(System.String,System.String)">
+ <summary>
+ 勘定科目コード設定
+ </summary>
+ <param name="busyoCd">部署コード</param>
+ <param name="keiriKb">経理科目コード区分</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMKControlH.GetKanjoKmkCd(System.String,System.String,Jp.Co.Nrs.LM.GUI.LMKControlC.GetKanjoKmkInfo)">
+ <summary>
+ 勘定科目コード取得
+ </summary>
+ <param name="busyoCd">部署コード</param>
+ <param name="keiriKb">経理科目コード区分</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMKControlH.ToHalfAdjust(System.Decimal,System.Int32)">
+ <summary>
+ 四捨五入処理
+ </summary>
+ <param name="amt">四捨五入する値</param>
+ <param name="pos">四捨五入する際の小数点以下有効桁数(設定例…整数のみ有効の場合：0、小数点第1位まで有効の場合：1、など)</param>
+ <returns>四捨五入した結果</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.GUI.LMKControlV">
+ <summary>
+ LMKControlValidateクラス
+ </summary>
+ <remarks>入力チェックを行う</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.GUI.LMKControlV._Frm">
+ <summary>
+ このクラスが紐付くフォームクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMKControlV.#ctor(Jp.Co.Nrs.LM.Base.GUI.LMBaseGUIHandler@,System.Windows.Forms.Form@)">
+ <summary>
+ コンストラクタ
+ </summary>
+ <param name="frm">フォームクラス</param>
+ <param name="handlerClass">このクラスを生成したハンドラクラス</param>
+ <remarks>フォームラスとハンドラクラスをこのクラスに紐付けます。編集不可</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMKControlV.SetErrMessage(System.String)">
+ <summary>
+ メッセージ設定
+ </summary>
+ <param name="id">メッセージID</param>
+ <returns>False</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMKControlV.SetErrMessage(System.String,System.String[])">
+ <summary>
+ メッセージ設定
+ </summary>
+ <param name="id">メッセージID</param>
+ <param name="msg">置換文字</param>
+ <returns>False</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMKControlV.SetFocusErrMessage">
+ <summary>
+ フォーカス位置エラーのメッセージ設定
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMKControlV.SetErrorControl(System.Windows.Forms.Control,Jp.Co.Nrs.LM.GUI.Win.LMTab,System.Windows.Forms.TabPage)">
+ <summary>
+ エラーコントロール設定(ヘッダ用)
+ </summary>
+ <param name="ctl">コントロール</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMKControlV.SetErrorControl(Jp.Co.Nrs.LM.GUI.Win.Spread.LMSpread,System.Int32,System.Int32)">
+ <summary>
+ エラーコントロール設定(明細用)
+ </summary>
+ <param name="spr">スプレッドシート</param>
+ <param name="rowNo">行番号</param>
+ <param name="colNo">列番号</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMKControlV.GetCellValue(FarPoint.Win.Spread.Cell)">
+ <summary>
+ セルから値を取得
+ </summary>
+ <param name="aCell">セル</param>
+ <returns>取得した値</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMKControlV.SelectKbnData(System.String,System.String)">
+ <summary>
+ 区分マスタ(キャッシュテーブル)からデータを抽出する
+ </summary>
+ <param name="kbn">区分コード</param>
+ <param name="groupCd">区分分類コード</param>
+ <returns>区分名１</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMKControlV.SelectKbnListDataRow(System.String,System.String)">
+ <summary>
+ 区分マスタ(キャッシュテーブル)からデータを抽出する条件を取得
+ </summary>
+ <param name="kbn">区分コード</param>
+ <param name="groupCd">区分分類コード</param>
+ <returns>データロウ配列</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.GUI.LMKControlV.SelectKbnString(System.String,System.String)">
+ <summary>
+ 区分マスタ(キャッシュテーブル)からデータを抽出する条件を取得
+ </summary>
+ <param name="kbn">区分コード</param>
+ <param name="groupCd">区分分類コード</param>
+ <returns>検索条件</returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

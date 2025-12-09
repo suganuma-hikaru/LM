@@ -1,0 +1,491 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.Nw.DAC.NWZ
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.Nw.DAC.NWZ.My.Resources.Resources">
+<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.Nw.DAC.NWZ.My.Resources.Resources.ResourceManager">
+<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.Nw.DAC.NWZ.My.Resources.Resources.Culture">
+<summary>
+  すべてについて、現在のスレッドの CurrentUICulture プロパティをオーバーライドします
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ150DAC._Logger">
+ <summary>
+ ロガー
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ150DAC.SQL_SELECT_JDE_DATE_SELECT">
+ <summary>
+ JDEの場の日付 SELECT
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ150DAC.getABM_MBP_AP(System.Data.DataSet)">
+ <summary>
+ 関連会社コード取得用一覧Select(支払)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>関連会社コード取得用一覧Select(支払)</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ150DAC.getABM_MBP_AR(System.Data.DataSet)">
+ <summary>
+ 関連会社コード取得用一覧Select(請求)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>関連会社コード取得用一覧Select(請求)</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ150DAC.getCOM_ZKBN_PARTSEG(System.Data.DataSet)">
+ <summary>
+ パートナーセグメント取得用Select
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>パートナーセグメント取得用Select</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ150DAC.SelectJDEDate(System.Data.DataSet)">
+ <summary>
+ JDEの場の日付取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>JDEの場の日付取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ150DAC.getB_COMPAR(System.Data.DataSet)">
+ <summary>
+ BUより会社番号取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>BUより会社番号SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ150DAC.getB_COMPAP(System.Data.DataSet)">
+ <summary>
+ BUより会社番号取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>BUより会社番号SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ150DAC.getJDEConn(System.Data.DataSet)">
+ <summary>
+ JDE接続文字列の取得
+ </summary>
+ <param name="ds">このハンドラクラスに紐づくデータセット</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ150DAC.SetConditionSelectABM_MBP(System.Data.DataTable)">
+ <summary>
+ M_BP検索用Where句作成
+ </summary>
+ <param name="dt">検索元情報入りのデータテーブル</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ150DAC.SetConditionSelectJDEDateSQL(System.String,System.Collections.ArrayList)">
+ <summary>
+ JDEの場の日付取得用パラメタ設定
+ </summary>
+ <param name="prmList">SQLパラメタ格納配列</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ150DAC.SetJDEAPDateParameter(System.String,System.Collections.ArrayList)">
+ <summary>
+ ＪＤＥの場の日付設定
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ150DAC.CreateSqlCommandJDE(System.String,System.Data.SqlClient.SqlConnection)">
+ <summary>
+ コネクションオブジェクトに関連付けられたDBサーバーに対して
+ 有効なSqlCommandオブジェクトのインスタンスを取得する。
+ </summary>
+ <param name="strSql">SQL文</param>
+ <returns>SqlCommandオブジェクト</returns>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ160DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ160DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ160DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ160DAC._SortKey">
+ <summary>
+ ソートKey
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ160DAC.SelectPitTouchDataCount(System.Data.DataSet)">
+ <summary>
+ 打刻明細(G_EMBOSS_DTL）存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>打刻明細(G_EMBOSS_DTL）取得用SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ160DAC.SelectPitTouchBeforeDayCount(System.Data.DataSet)">
+ <summary>
+ 打刻明細(G_EMBOSS_DTL）前日退勤存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>打刻明細(G_EMBOSS_DTL）取得用SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ160DAC.SelectBussinessTimeCount(System.Data.DataSet)">
+ <summary>
+ 打刻データなしのビジネスタイムの取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>ビジネスタイムの取得用SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ160DAC.SelectCardNoExistCount(System.Data.DataSet)">
+ <summary>
+ カードID(D_CARD_LIST）存在チェック、ユーザNO取得用
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>打刻明細(G_EMBOSS_DTL）取得用SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ160DAC.GetUserIdForWhoRentCardId(System.Data.DataSet)">
+ <summary>
+ 貸出カード所持ユーザID取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>打刻明細(G_EMBOSS_DTL）取得用SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ160DAC.SelectWeekKbnCd(System.Data.DataSet)">
+ <summary>
+ 曜日(コード)取得取得用
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>打刻明細(G_EMBOSS_DTL）取得用SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ160DAC.InsertPitTouchData(System.Data.DataSet)">
+ <summary>
+ 打刻明細(G_EMBOSS_DTL）追加処理（出勤）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>打刻明細(G_EMBOSS_DTL）テーブル追加SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ160DAC.UpdatePitTouchDataStart(System.Data.DataSet)">
+ <summary>
+ 打刻明細(G_EMBOSS_DTL）更新処理（出勤）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>打刻明細(G_EMBOSS_DTL）テーブル更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ160DAC.UpdatePitTouchDataEnd(System.Data.DataSet)">
+ <summary>
+ 打刻明細(G_EMBOSS_DTL）更新処理（退勤）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>打刻明細(G_EMBOSS_DTL）テーブル更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ160DAC.GetMsgFromDb(System.Data.DataSet)">
+ <summary>
+ メッセージ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>打刻明細(G_EMBOSS_DTL）取得用SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ160DAC.SetSaveParameter">
+ <summary>
+ 勤怠明細(G_EMBOSS_DTL)更新パラメータ設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ160DAC.SetInParameter">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ160DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ800DAC.StartJDEUpload(System.Data.DataSet)">
+ <summary>
+ StartJDEUpload（JDEアップロードの始まりコントローラー）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ800DAC.GetJDEConnection(System.Data.DataSet)">
+ <summary>
+ JDE接続文字列取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ800DAC.InsertJDE03Rec(System.Data.DataSet,System.Data.SqlClient.SqlConnection)">
+ <summary>
+ F03B11Z1テーブルINSERT（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>F03B11Z1テーブル新規登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ800DAC.InsertJDE04Rec(System.Data.DataSet,System.Data.SqlClient.SqlConnection)">
+ <summary>
+ F0411Z1テーブルINSERT（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>F0411Z1テーブル新規登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ800DAC.InsertJDE09Rec(System.Data.DataSet,System.Data.SqlClient.SqlConnection)">
+ <summary>
+ F0911Z1テーブルINSERT（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>F0911Z1テーブル新規登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ800DAC.InputCheckF03(System.Data.DataSet,System.Data.SqlClient.SqlConnection)">
+ <summary>
+ データテーブルF03B11Z1入力チェック
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ800DAC.InputCheckF04(System.Data.DataSet,System.Data.SqlClient.SqlConnection)">
+ <summary>
+ データテーブルF0411Z1入力チェック
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ800DAC.InputCheckF09(System.Data.DataSet,System.Data.SqlClient.SqlConnection)">
+ <summary>
+ データテーブルF0911Z1入力チェック
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ800DAC.IsExistCheckF0006(System.Data.DataSet,System.String,System.Data.SqlClient.SqlConnection)">
+ <summary>
+ F0006存在チェック(ＢＵマスタ)
+ </summary>
+ <param name="ds"></param>
+ <param name="aMCU"></param>
+ <param name="conJDE"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ800DAC.IsExistCheckF0101(System.Data.DataSet,System.String,System.Data.SqlClient.SqlConnection)">
+ <summary>
+ F0101存在チェック(住所録マスタ)
+ </summary>
+ <param name="ds"></param>
+ <param name="aAN8"></param>
+ <param name="conJDE"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ800DAC.IsExistCheckF0013(System.Data.DataSet,System.String,System.Data.SqlClient.SqlConnection)">
+ <summary>
+ F0013存在チェック(通貨マスタ)
+ </summary>
+ <param name="ds"></param>
+ <param name="aCVCRCD"></param>
+ <param name="conJDE"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ800DAC.IsExistCheckF0901(System.Data.DataSet,System.String,System.String,System.String,System.Data.SqlClient.SqlConnection)">
+ <summary>
+ F0901存在チェック(勘定科目マスタ)
+ </summary>
+ <param name="ds"></param>
+ <param name="aGMMCU"></param>
+ <param name="aGMOBJ"></param>
+ <param name="aGMSUB"></param>
+ <param name="conJDE"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ800DAC.IsExistCheckF4008(System.Data.DataSet,System.String,System.Data.SqlClient.SqlConnection)">
+ <summary>
+ F4008存在チェック(税マスタ)
+ </summary>
+ <param name="ds"></param>
+ <param name="aTATXA1"></param>
+ <param name="conJDE"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ800DAC.GetBuAcc(System.String,System.String@,System.String@,System.String@)">
+ <summary>
+ 連結されたBU+主科目+補助科目を分割する
+ </summary>
+ <param name="aANI"></param>
+ <param name="aBucd"></param>
+ <param name="aAccObjcd"></param>
+ <param name="aAccSubcd"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ800DAC.IsExistCheckF0006(System.Data.DataSet,System.Data.SqlClient.SqlConnection)">
+ <summary>
+ F0006存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ800DAC.IsExistCheckF0013(System.Data.DataSet,System.Data.SqlClient.SqlConnection)">
+ <summary>
+ F0013存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ800DAC.IsExistCheckF0101(System.Data.DataSet,System.Data.SqlClient.SqlConnection)">
+ <summary>
+ F0101存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ800DAC.IsExistCheckF0901(System.Data.DataSet,System.Data.SqlClient.SqlConnection)">
+ <summary>
+ F0901存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ800DAC.IsExistCheckF4008(System.Data.DataSet,System.Data.SqlClient.SqlConnection)">
+ <summary>
+ F4008存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ800DAC.SetDatatableF03(System.Data.DataSet)">
+ <summary>
+ データテーブルF03B11Z1編集処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ800DAC.SetDatatableF04(System.Data.DataSet)">
+ <summary>
+ データテーブルF0411Z1編集処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ800DAC.SetDatatableF09(System.Data.DataSet)">
+ <summary>
+ データテーブルF0911Z1編集処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ800DAC.EditRpad(System.String,System.Int32)">
+ <summary>
+ CHAR編集（右空白埋め）
+ </summary>
+ <param name="inChar"></param>
+ <param name="inLength"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ800DAC.EditFix(System.String,System.Int32,System.String)">
+ <summary>
+ 固定文字編集（ERP9から追加）
+ </summary>
+ <param name="inChar">入力された文字列</param>
+ <param name="inLength">データベースバイト数</param>
+ <param name="upString">固定文字列</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ800DAC.EditLpad(System.String,System.Int32)">
+ <summary>
+ CHAR編集（左空白埋め）
+ </summary>
+ <param name="inChar"></param>
+ <param name="inLength"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ800DAC.EditNumber(System.Object)">
+ <summary>
+ NUMBER編集
+ </summary>
+ <param name="inNumber"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ800DAC.EditEXA(System.String,System.Int32)">
+ <summary>
+ 説明 - 名称漢字（伝票摘要）編集
+ </summary>
+ <param name="inChar"></param>
+ <param name="inLength"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ800DAC.CutString(System.String,System.Int32)">
+ <summary>
+ バイト超過文字列切り捨て＆右空白埋め
+ </summary>
+ <param name="strTarget">編集対象文字列</param>
+ <param name="intLength">編集後文字列長</param>
+ <returns></returns>
+ <remarks>文字列が設定文字列長より大きい場合は文字列を切り捨て、小さい場合は右空白詰めを行う</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWZ.NWZ800DAC.CreateSqlCommandJDE(System.String,System.Data.SqlClient.SqlConnection)">
+ <summary>
+ コネクションオブジェクトに関連付けられたDBサーバーに対して
+ 有効なSqlCommandオブジェクトのインスタンスを取得する。
+ </summary>
+ <param name="strSql">SQL文</param>
+ <returns>SqlCommandオブジェクト</returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

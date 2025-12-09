@@ -1,0 +1,467 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.CSE.BLC
+</name>
+</assembly>
+<members>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSE010BLC.FUNCTION_NM.SELECT_DATA">
+ <summary>
+ 検索結果データ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSE010BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSE010BLC.SelectResultList(System.Data.DataSet)">
+ <summary>
+ 検索結果情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSE020BLC.FUNCTION_NM.SELECT_DATA">
+ <summary>
+ データ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSE020BLC.FUNCTION_NM.INSPECT">
+ <summary>
+ 検品完了
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSE020BLC.FUNCTION_NM.CANCEL">
+ <summary>
+ 完了キャンセル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSE020BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSE020BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ データ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSE020BLC.Inspect(System.Data.DataSet)">
+ <summary>
+ 検品完了
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSE020BLC.Cancel(System.Data.DataSet)">
+ <summary>
+ 検品
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSE020BLC.SetDsInspectData(System.Data.DataSet)">
+ <summary>
+ 検品データセット作成
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSE020BLC.SetDsCancelData(System.Data.DataSet)">
+ <summary>
+ 完了キャンセルデータセット作成
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSE020BLC.SetDsInOutHead(System.Data.DataSet,System.String)">
+ <summary>
+ データセット作成(E_INOUT_ORD_HEAD)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSE020BLC.SetDsInOutDtl(System.Data.DataSet,System.String)">
+ <summary>
+ データセット作成(E_INOUT_ORD_DTL)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSE020BLC.SetDsTransOrdHead(System.Data.DataSet,System.String)">
+ <summary>
+ 保管移送データセット作成(D_TRANS_ORD_HEAD)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSE020BLC.SetDsLogiHeadShipment(System.Data.DataSet,System.String)">
+ <summary>
+ 製品出荷データセット作成(D_LOGISTICS_ORD)
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="eventType">String</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSE020BLC.SetDsLogiHeadReturn(System.Data.DataSet,System.String)">
+ <summary>
+ 空容器返却データセット作成(D_LOGISTICS_ORD)
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="eventType">String</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSE020BLC.SetDsLogiDtlTrans(System.Data.DataSet,System.String)">
+ <summary>
+ 保管転送データセット作成(D_LOGISTICS_DTL)
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="eventType">String</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSE020BLC.SetDsLogiDtlShipment(System.Data.DataSet,System.String)">
+ <summary>
+ 保管転送データセット作成(D_LOGISTICS_DTL)
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="eventType">String</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSE020BLC.SetDsLogiDtlTest(System.Data.DataSet,System.String)">
+ <summary>
+ 定期検査データセット作成(D_LOGISTICS_DTL)
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="eventType">String</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSE020BLC.SetDsLogiDtlReturn(System.Data.DataSet,System.String)">
+ <summary>
+ 保管転送データセット作成(D_LOGISTICS_DTL)
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="eventType">String</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSE020BLC.SetDsLogiDtlNew(System.Data.DataSet,System.String)">
+ <summary>
+ 新容器データセット作成(D_LOGISTICS_DTL)
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="eventType">String</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSE020BLC.UpdateData(System.Data.DataSet,System.String)">
+ <summary>
+ データ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="eventType">String</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSE020BLC.SelectZSystem(System.Data.DataSet)">
+ <summary>
+ Z_SYSTEM取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSE020BLC.AddRowZSystemCSE020(System.Data.DataSet@,System.String,System.String)">
+ <summary>
+ Z_SYSTEM行追加処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="procKbn">Z_SYSTEM処理区分</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSE510BLC.FUNCTION_NM.SELECT_DATA">
+ <summary>
+ 検索結果データ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSE510BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSE510BLC.SelectResultList(System.Data.DataSet)">
+ <summary>
+ 検索結果情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSE520BLC.FUNCTION_NM.SELECT_DATA">
+ <summary>
+ データ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSE520BLC.FUNCTION_NM.INSPECT">
+ <summary>
+ 検品完了
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSE520BLC.FUNCTION_NM.CANCEL">
+ <summary>
+ 完了キャンセル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSE520BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSE520BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ データ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSE520BLC.Inspect(System.Data.DataSet)">
+ <summary>
+ 検品完了
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSE520BLC.SetDsInspectData(System.Data.DataSet)">
+ <summary>
+ 検品データセット作成
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSE520BLC.SetDsInOutHead(System.Data.DataSet)">
+ <summary>
+ データセット作成(E_INOUT_ORD_HEAD)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSE520BLC.SetDsInOutDtl(System.Data.DataSet)">
+ <summary>
+ データセット作成(E_INOUT_ORD_DTL)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSE520BLC.SetDsTransOrdHead(System.Data.DataSet)">
+ <summary>
+ 保管移送データセット作成(D_TRANS_ORD_HEAD)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSE520BLC.SetDsLogiHeadShipment(System.Data.DataSet)">
+ <summary>
+ 製品出荷データセット作成(D_LOGISTICS_ORD)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSE520BLC.SetDsLogiHeadReturn(System.Data.DataSet)">
+ <summary>
+ 空容器返却データセット作成(D_LOGISTICS_ORD)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSE520BLC.SetDsLogiDtlTrans(System.Data.DataSet)">
+ <summary>
+ 保管転送データセット作成(D_LOGISTICS_DTL)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSE520BLC.SetDsLogiDtlShipment(System.Data.DataSet)">
+ <summary>
+ 保管転送データセット作成(D_LOGISTICS_DTL)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSE520BLC.SetDsLogiDtlTest(System.Data.DataSet)">
+ <summary>
+ 定期検査データセット作成(D_LOGISTICS_DTL)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSE520BLC.SetDsLogiDtlReturn(System.Data.DataSet)">
+ <summary>
+ 保管転送データセット作成(D_LOGISTICS_DTL)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSE520BLC.SetDsLogiDtlNew(System.Data.DataSet)">
+ <summary>
+ 新容器データセット作成(D_LOGISTICS_DTL)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSE520BLC.UpdateData(System.Data.DataSet)">
+ <summary>
+ データ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSE520BLC.SelectZSystem(System.Data.DataSet)">
+ <summary>
+ Z_SYSTEM取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSE520BLC.AddRowZSystemCSE520(System.Data.DataSet@,System.String,System.String)">
+ <summary>
+ Z_SYSTEM行追加処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="procKbn">Z_SYSTEM処理区分</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSE530BLC.FUNCTION_NM.SELECT_DATA">
+ <summary>
+ 初期表示取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSE530BLC.FUNCTION_NM.SAVE_PHOTO">
+ <summary>
+ 写真撮影
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSE530BLC.FUNCTION_NM.SELECT_PHOTO">
+ <summary>
+ 写真取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSE530BLC.FUNCTION_NM.UPDATE_PHOTO">
+ <summary>
+ 写真情報更新
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSE530BLC.FUNCTION_NM.SEND_MAIL">
+ <summary>
+ メール送信
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSE530BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSE530BLC.SelectInitData(System.Data.DataSet)">
+ <summary>
+ 初期表示情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSE530BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ 初期表示データ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSE530BLC.SelectPhotoList(System.Data.DataSet)">
+ <summary>
+ 写真データ一覧取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSE530BLC.SavePhotoData(System.Data.DataSet)">
+ <summary>
+ 写真データ保存
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSE530BLC.InsertPhotoData(System.Data.DataSet)">
+ <summary>
+ 写真データ登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSE530BLC.DeletePhotoData(System.Data.DataSet)">
+ <summary>
+ 写真データ削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSE530BLC.UpdatePhotoData(System.Data.DataSet)">
+ <summary>
+ 写真データ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSE530BLC.SelectPhotoData(System.Data.DataSet)">
+ <summary>
+ 写真データ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSE530BLC.SendMail(System.Data.DataSet)">
+ <summary>
+ 通知メール送信
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSE530BLC.GetMaimTpl(System.String,System.String)">
+ <summary>
+ メールテンプレート取得
+ </summary>
+ <param name="tplCd"></param>
+ <param name="tplKbn"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSE530BLC.CreateEWSToolSendMailDataSet">
+ <summary>
+ EWSTool SendMail用DataSet作成
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSE530BLC.AddRowZSystemCSE530(System.Data.DataSet@,System.String,System.String)">
+ <summary>
+ Z_SYSTEM行追加処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="procKbn">Z_SYSTEM処理区分</param>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

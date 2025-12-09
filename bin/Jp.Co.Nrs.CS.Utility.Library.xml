@@ -1,0 +1,973 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.CS.Utility.Library
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.CS.Const.SequenceConst">
+ <summary>
+ シーケンス関連定数定義クラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.Const.SequenceConst.SequenceKbn">
+ <summary>
+ シーケンス区分
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Const.SequenceConst.SequenceKbn.LOAD_ORD_NO">
+ <summary>
+ 充填依頼管理番号
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Const.SequenceConst.SequenceKbn.TEST_ORD_NO">
+ <summary>
+ 定期検査依頼管理番号
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Const.SequenceConst.SequenceKbn.INOUT_ORD_NO">
+ <summary>
+ 入出荷管理番号
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Const.SequenceConst.SequenceKbn.LOGISTICS_ORD_NO">
+ <summary>
+ 物流依頼管理番号
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Const.SequenceConst.SequenceKbn.TRANS_ORD_NO">
+ <summary>
+ 保管移送管理番号
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Const.SequenceConst.SequenceKbn.QR_CODE">
+ <summary>
+ QRコード番号
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Const.SequenceConst.SequenceKbn.MSG_NO">
+ <summary>
+ メッセージ番号
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Const.SequenceConst.SequenceKbn.CHAT_NO">
+ <summary>
+ チャットNo.
+ </summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.Utility.DateUtility">
+ <summary>
+ 日付変換ユーティリティクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Utility.DateUtility.FormatList">
+ <summary>
+ 日付書式リスト
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.CS.Utility.DateUtility.JST">
+ <summary>
+ 日本標準時(JST)
+ </summary>
+ <returns>TimeZoneInfo</returns>
+ <remarks>Japan Standard Time</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.CS.Utility.DateUtility.UTC">
+ <summary>
+ 協定世界時(UTC)
+ </summary>
+ <returns>TimeZoneInfo</returns>
+ <remarks>Coordinated Universal Time</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Utility.DateUtility.DateParse(System.String,System.String)">
+ <summary>
+ String型の日付文字列をDateTime型に変換します。
+ </summary>
+ <param name="inStr">日付文字列</param>
+ <param name="optStr">日付文字列</param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Utility.DateUtility.DateParse(System.String,System.String,System.TimeZoneInfo,System.TimeZoneInfo)">
+ <summary>
+ String型の日付文字列をDateTime型に変換します。
+ </summary>
+ <param name="inStr">日付文字列</param>
+ <param name="optStr">日付文字列</param>
+ <param name="fromTimeZone">変換元のタイムゾーン</param>
+ <param name="toTimeZone">変換先のタイムゾーン</param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Utility.DateUtility.DateParse(System.String,System.TimeZoneInfo,System.TimeZoneInfo)">
+ <summary>
+ String型の日付文字列をDateTime型に変換します。
+ </summary>
+ <param name="inStr">日付文字列</param>
+ <param name="fromTimeZone">変換元のタイムゾーン</param>
+ <param name="toTimeZone">変換先のタイムゾーン</param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Utility.DateUtility.DBDateFormat(System.Nullable{System.DateTime},Jp.Co.Nrs.CS.Utility.DateUtility.DateFormatType,System.String)">
+ <summary>
+ DateTime型をString型の日付文字列に変換します。区切り記号を含みません。
+ </summary>
+ <param name="inDt"></param>
+ <param name="fmtType"></param>
+ <param name="lang"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Utility.DateUtility.ViewDateFormat(System.Nullable{System.DateTime},Jp.Co.Nrs.CS.Utility.DateUtility.DateFormatType,System.String)">
+ <summary>
+ DateTime型をString型の日付文字列に変換します。区切り記号を含みます。
+ </summary>
+ <param name="inDt">日付</param>
+ <param name="fmtType">日付書式</param>
+ <param name="lang">言語</param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Utility.DateUtility.GetFormatString(System.String,Jp.Co.Nrs.CS.Utility.DateUtility.DateFormatType,System.Boolean)">
+ <summary>
+ キーの値を元に日付書式文字列を取得します。
+ </summary>
+ <param name="lang">言語</param>
+ <param name="fmtType">日付書式</param>
+ <param name="delimiter">True :区切り記号あり | False:区切り記号なし</param>
+ <returns></returns>
+ <remarks>隠蔽する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Utility.DateUtility.AddCoron(System.String)">
+ <summary>
+ 引数の文字列をコロン編集します。（６桁、４桁の場合）
+ </summary>
+ <param name="inStr">日付文字列</param>
+ <remarks>
+ ==============
+ in : HHmmss
+ out: HH:mm:ss
+ ==============
+ in : HHmm
+ out: HH:mm
+ ==============
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Utility.DateUtility.GetGregorianDate(System.String)">
+ <summary>
+ グレゴリオ暦を取得します
+ </summary>
+ <param name="value">「000001」～「199365」の範囲で指定します。</param>
+ <returns>エラー、範囲外の値は空を返します</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Utility.DateUtility.GetJulianDate(System.String)">
+ <summary>
+ ユリウス暦を取得します(日付として妥当な値のみ)
+ </summary>
+ <param name="value">
+ 8桁(yyyyMMdd) or 10桁(yyyy/MM/dd)
+ 1900/01/01～2099/12/31の範囲で指定します。
+ </param>
+ <returns>エラー、範囲外の値は空を返します</returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Utility.DateUtility.ConvertToJAorEN(System.String)">
+ <summary>
+ 引数の言語を日本語または英語に変換します。
+ </summary>
+ <param name="lang"></param>
+ <remarks>
+ "ja"の場合     : "ja" を返却
+ "ja"以外の場合 : "en" を返却
+ </remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.Utility.DateUtility.DateFormatType">
+ <summary>
+ 書式列挙型定義
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Utility.DateUtility.DateFormatType.Date">
+ <summary>
+ 'yyyyMMdd'
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Utility.DateUtility.DateFormatType.Month">
+ <summary>
+ 'yyyyMM'
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Utility.DateUtility.DateFormatType.MonthDate">
+ <summary>
+ 'MMdd'
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Utility.DateUtility.DateFormatType.DateMinute">
+ <summary>
+ 'yyyyMMddHHmm'
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Utility.DateUtility.DateFormatType.DateSecond">
+ <summary>
+ 'yyyyMMddHHmmss'
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Utility.DateUtility.DateFormatType.DateMilliSecond">
+ <summary>
+ 'yyyyMMddHHmmssfff'
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Utility.DateUtility.DateFormatType.Minute">
+ <summary>
+ 'HHmm'
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Utility.DateUtility.DateFormatType.Second">
+ <summary>
+ 'HHmmss'
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Utility.DateUtility.DateFormatType.MilliSecond">
+ <summary>
+ 'HHmmssfff'
+ </summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.Utility.DateUtility.DateFormatInfo">
+ <summary>
+ 日付書式クラス
+ </summary>
+</member>
+<member name="P:Jp.Co.Nrs.CS.Utility.DateUtility.DateFormatInfo.FormatString">
+ <summary>
+ 日付書式の文字列
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.CS.Utility.DateUtility.DateFormatInfo.Language">
+ <summary>
+ 日付書式の言語
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.CS.Utility.DateUtility.DateFormatInfo.FormatType">
+ <summary>
+ 日付書式のタイプ
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.CS.Utility.DateUtility.DateFormatInfo.Delimiter">
+ <summary>
+ 区切り記号
+ </summary>
+ <remarks>
+ True : 区切りあり
+ False: 区切りなし
+ </remarks>
+</member>
+<member name="P:Jp.Co.Nrs.CS.Utility.DateUtility.DateFormatInfo.ParseIngnore">
+ <summary>
+ DateParse関数除外フラグ
+ </summary>
+ <remarks>
+ True : DateParse関数を除外する日付書式
+ False: DateParse関数を除外しない日付書式（省略可）
+ </remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.Utility.CSStrUtility">
+ <summary>
+ 文字列変換ユーティリティクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Utility.CSStrUtility.FormatEmptyToNumericZero(System.String)">
+ <summary>
+ 数値項目に空白が存在していた場合、"0"を設定する。
+ </summary>
+ <param name="value">変換対象文字列</param>
+ <returns>
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Utility.CSStrUtility.DeleteComma(System.String)">
+ <summary>
+ String型のカンマを除去する
+ </summary>
+ <param name="valueStr"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Utility.CSStrUtility.GetCommaStr(System.String,System.Int32)">
+ <summary>
+ カンマ編集および小数点以下表示
+ </summary>
+ <param name="value"></param>
+ <param name="point"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Utility.CSStrUtility.FormatEmptyIsnull(System.String)">
+ <summary>
+ NULLの場合、空白。NULL以外の場合、引数を返却
+ </summary>
+ <param name="value">変換対象文字列</param>
+ <returns>
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Utility.CSStrUtility.FormatEmptyIsZero(System.String)">
+ <summary>
+ "0"の場合、空白。"0"以外の場合、引数を返却
+ </summary>
+ <param name="value">変換対象文字列</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Utility.CSStrUtility.FormatNumValue(System.String)">
+ <summary>
+ 数値項目の設定値変換
+ </summary>
+ <param name="valueStr"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Utility.CSStrUtility.DeleteSlash(System.String)">
+ <summary>
+ String型の/を除去する
+ </summary>
+ <param name="valueStr"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Utility.CSStrUtility.GetSwitchStr(System.String)">
+ <summary>
+ 言語切替をし、文字列で変換する
+ </summary>
+ <param name="key"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Utility.CSStrUtility.GetBooleToString(System.Boolean)">
+ <summary>
+ Trueの場合、"1"。Falseの場合、"0"を返却
+ </summary>
+ <param name="value">変換対象文字列</param>
+ <returns>
+ </returns>
+ <remarks>0:False/1:True</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Utility.CSStrUtility.GetBooleToStringKbn(System.Boolean)">
+ <summary>
+ Trueの場合、"00001"。Falseの場合、"00000"を返却
+ </summary>
+ <param name="value">変換対象文字列</param>
+ <returns>
+ </returns>
+ <remarks>00000:False/00001:True</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Utility.CSStrUtility.GetStringToBoole(System.String)">
+ <summary>
+ "1"の場合、True。"0"の場合、Falseを返却
+ </summary>
+ <param name="value">変換対象文字列</param>
+ <returns>
+ </returns>
+ <remarks>0:False/1:True</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Utility.CSStrUtility.GetStringKbnToBoole(System.String)">
+ <summary>
+ "00001"の場合、True。"00000"の場合、Falseを返却
+ </summary>
+ <param name="value">変換対象文字列</param>
+ <returns>
+ </returns>
+ <remarks>00000:False/00001:True</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Utility.CSStrUtility.ReplaceTagetString(System.String,System.Collections.Generic.List{System.String})">
+ <summary>
+ 対象文字列の置換文字列を置換し、返却する。
+ </summary>
+ <param name="tagetStr">置換対象文字列</param>
+ <param name="replaceParams">置き換え文字</param>
+ <returns></returns>
+ <remarks>置換したい箇所に[%9]を設定し、
+           %後は、1からの連番を設定</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Utility.CSStrUtility.DeleteCarriageReturn_LineFeedCode(System.String)">
+ <summary>
+ 不要な改行コード(Cr or Lf)を削除します(元々のCrLfコードは削除しません)
+ </summary>
+ <param name="value">検索文字列</param>
+ <returns>整形した文字列</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Utility.CSStrUtility.AddZero(System.String,System.Int32)">
+ <summary>
+ 対象文字列に、前ゼロ埋め処理を行い返却
+ </summary>
+ <param name="value">対象文字列</param>
+ <param name="length">桁数</param>
+ <returns>前ゼロつき対象文字列</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Utility.CSStrUtility.SplitByLength(System.String,System.Int32[])">
+ <summary>
+ 文字列を指定された長さの配列順に分割する
+ </summary>
+ <param name="srcStr">対象文字列</param>
+ <param name="lengthArray">分割する長さの配列</param>
+ <returns>分割結果</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Utility.CSStrUtility.GetStringSendDatas(System.String)">
+ <summary>
+ 明細送信データ(String)をString配列に分解
+ </summary>
+ <param name="values">対象データ
+ Stringのフォーマット 項目を"囲み、","で区分、;で改行
+ 1行目         |2行目         |3行目         |
+ "","","","","";"","","","","";"","","","","";
+ </param>
+ <returns>
+ rows(cols())で返却
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.Utility.ExcelCreatorUtility8">
+ <summary>
+ ExcelCreator8.0呼出用ユーティリティクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Utility.ExcelCreatorUtility8._pgID">
+ <summary>
+ プログラムID
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Utility.ExcelCreatorUtility8._userId">
+ <summary>
+ ユーザーID
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Utility.ExcelCreatorUtility8._officeCd">
+ <summary>
+ OFFICEコード
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Utility.ExcelCreatorUtility8._templateFolder">
+ <summary>
+ テンプレートファイルを置くフォルダ名称
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Utility.ExcelCreatorUtility8._templateFile">
+ <summary>
+ テンプレートファイル名称
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Utility.ExcelCreatorUtility8._createFileNm">
+ <summary>
+ 作成ファイル名称
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Utility.ExcelCreatorUtility8._nowDate">
+ <summary>
+ 現在の日時
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Utility.ExcelCreatorUtility8._EcFolder">
+ <summary>
+ ExcelCreatorフォルダ
+ </summary>
+ <remarks>切り換え用</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Utility.ExcelCreatorUtility8.SYS_PAGE_KEY">
+ <summary>
+ 改ページ用の値を設定する列（出力DataTable内の列）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Utility.ExcelCreatorUtility8.CELL_TYPE_LONG">
+ <summary>
+ S_XLSの項目「CELL_TYPE = "L"」の値
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Utility.ExcelCreatorUtility8.CELL_TYPE_DOUBLE">
+ <summary>
+ S_XLSの項目「CELL_TYPE = "D"」の値
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Utility.ExcelCreatorUtility8._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.Utility.ExcelCreatorUtility8.XlsLineStyle">
+ <summary>
+ 罫線の種類一覧
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Utility.ExcelCreatorUtility8.S_XLS.PG_ID">
+ <summary>
+ プログラムID
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Utility.ExcelCreatorUtility8.S_XLS.FIELD_NM">
+ <summary>
+ フィールド名（データセットカラム名）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Utility.ExcelCreatorUtility8.S_XLS.BLOCK_CNT">
+ <summary>
+ １塊明細の塊行数
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Utility.ExcelCreatorUtility8.S_XLS.DATE_FORMAT_KBN">
+ <summary>
+ 日付表示形式
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Utility.ExcelCreatorUtility8.S_XLS.REPEAT_CNT">
+ <summary>
+ 明細の繰返し表示する行数
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Utility.ExcelCreatorUtility8.S_XLS.CELL_TYPE">
+ <summary>
+ セルの型の設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Utility.ExcelCreatorUtility8.S_XLS.CELL_FORMAT">
+ <summary>
+ 整数/実数の表示形式
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Utility.ExcelCreatorUtility8.S_XLS.LINE_POSI">
+ <summary>
+ 罫線を表示する位置
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Utility.ExcelCreatorUtility8.S_XLS.LINE_STYLE">
+ <summary>
+ 罫線の線種
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Utility.ExcelCreatorUtility8.S_XLS.LINE_RANGE">
+ <summary>
+ 罫線を表示する範囲
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Utility.ExcelCreatorUtility8.S_XLS.REMARK">
+ <summary>
+ 開発者　備考
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Utility.ExcelCreatorUtility8.S_XLS.PAGE_NO">
+ <summary>
+ ページ番号
+ </summary>
+ <remarks>
+ 部品内で使用。
+ セル名「PAGE_NO」が存在する場合、ページ番号を表示します。(現在ページ番号 / 総ページ数)
+ </remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Utility.ExcelCreatorUtility8.S_XLS.CONTINUED_OVER">
+ <summary>
+ 次ページがある場合に表示する文言
+ </summary>
+ <remarks>
+ 部品内で使用。
+ 次ページが存在する場合、セル名「CONTINUED_OVER」に文字を埋め込みます。
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Utility.ExcelCreatorUtility8.PrintXls(Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC,System.String,System.String,System.Data.DataTable,System.String,System.Boolean,System.String)">
+ <summary>
+ Excelファイルを出力します
+ </summary>
+ <param name="obj">引数に指定されたメソッドを持つBLC層のクラス</param>
+ <param name="pgid">プログラムID</param>
+ <param name="officeCd">所属オフィスコード</param>
+ <param name="dt">編集済の出力DataTable</param>
+ <param name="tmpltFilePath">テンプレートファイルパス</param>
+ <param name="isPdf">PDF出力か否か</param>
+ <param name="outputFileName">出力ファイル名（指定時の出力ファイル名は、outputFileName +「_yyyyMMddHHmmssfff.xxx」）</param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Utility.ExcelCreatorUtility8.PrintXls(System.String,System.String,System.Data.DataTable,System.String,System.Boolean,System.String)">
+ <summary>
+ Excelファイルを出力します
+ </summary>
+ <param name="pgid">プログラムID</param>
+ <param name="officeCd">所属オフィスコード</param>
+ <param name="dt">編集済の出力DataTable</param>
+ <param name="tmpltFilePath">テンプレートファイルパス</param>
+ <param name="isPdf">PDF出力か否か</param>
+ <param name="outputFileName">出力ファイル名</param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Utility.ExcelCreatorUtility8.GetXlsLayout(System.Boolean)">
+ <summary>
+ Excelレイアウトテーブルのデータを取得します。
+ </summary>
+ <param name="repeat">
+ True  : 明細項目(繰返し出力)の場合
+ False : 単項目の出力
+ </param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Utility.ExcelCreatorUtility8.GetExcelCreatorPath">
+ <summary>
+ 言語別から区分マスタデータを取得します。
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Utility.ExcelCreatorUtility8.SetHeaderData(System.Data.DataTable,System.Data.DataTable)">
+ <summary>
+ 単項目(繰り返しのない項目)の設定
+ </summary>
+ <param name="layoutDt">ExcelレイアウトDataTable</param>
+ <param name="dt">編集済の出力DataTable</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Utility.ExcelCreatorUtility8.SetAttrLine(System.String,System.Int32,System.String,System.String)">
+ <summary>
+ 罫線の設定を行います。
+ </summary>
+ <param name="range">セル範囲</param>
+ <param name="offset"></param>
+ <param name="posi">罫線の位置</param>
+ <param name="style">線種</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Utility.ExcelCreatorUtility8.IsExistColName(System.Data.DataTable,System.String)">
+ <summary>
+ Datatableに指定列名が存在するかチェックします。
+ </summary>
+ <param name="dt">出力データを含むDataTable</param>
+ <param name="colNm">検索列名</param>
+ <returns>
+ True  : 列名あり
+ False : なし
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Utility.ExcelCreatorUtility8.SetCellValue(System.Data.DataTable,System.String,System.Int32,System.Int32,System.Int32,System.Data.DataTable,System.Int32)">
+ <summary>
+ セルに値や表示形式を設定します。
+ </summary>
+ <param name="dt">編集済の出力用DataTable</param>
+ <param name="colNm">Excel名前定義の値</param>
+ <param name="editDtRow">ヘッダー項目の行番号</param>
+ <param name="cx">colNmセルからの左または右への移動量</param>
+ <param name="cy">colNmセルからの上または下への移動量</param>
+ <param name="meiLayouDt">明細データテーブル</param>
+ <param name="meiLayouDtRow">明細項目の行番号</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Utility.ExcelCreatorUtility8.GetPageTotal(System.Data.DataTable@,System.Int32)">
+ <summary>
+ 総ページ数を計算します
+ </summary>
+ <param name="dt"></param>
+ <param name="repeat"></param>
+ <returns></returns>
+ <remarks>
+ 行(10)
+ 繰返(5)
+ 改個数(0)
+ P2------------------
+ 行(10)
+ 繰返(5)
+ 改個数(2(1, 9))
+ P3------------------
+ 行(10)
+ 繰返(5)
+ 改個数(2(5, 5))
+ P2------------------
+ 行(10)
+ 繰返(5)
+ 改個数(3(3, 3, 4))
+ P3------------------
+ 行(10)
+ 繰返(5)
+ 改個数(3(1, 2, 7))
+ P4------------------
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Utility.ExcelCreatorUtility8.GetTimeStamp">
+ <summary>
+ サーバー時刻を取得します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.Utility.ReportDesignerUtility">
+ <summary>
+ Report Designerユーティリティクラス
+ </summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.Utility.ReportDesignerUtility.KBN_R02001">
+ <summary>
+ RD情報の定数体
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Utility.ReportDesignerUtility.KBN_R02001.KBNCD_00010">
+ <summary>
+ RDサーバ情報
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Utility.ReportDesignerUtility.KBN_R02001.KBNCD_00020">
+ <summary>
+ 帳票CSV出力フォルダ
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Utility.ReportDesignerUtility.KBN_R02001.KBNCD_00030">
+ <summary>
+ RDフォームファイル格納パス
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Utility.ReportDesignerUtility.KBN_R02001.KBNCD_00040">
+ <summary>
+ レポートファイル名
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Utility.ReportDesignerUtility.KBN_R02001.KBNCD_00050">
+ <summary>
+ RDプレビューコマンドライン
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Utility.ReportDesignerUtility.KBN_R02001.KBNCD_00060">
+ <summary>
+ BIフォルダパス
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Utility.ReportDesignerUtility.SUBPAGE_FLG">
+ <summary>
+ サブページの合図となる文字列
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Utility.ReportDesignerUtility.outPutCsvPath">
+ <summary>
+ 出力するファイルの場所(local)
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Utility.ReportDesignerUtility.outPutPdfPath">
+ <summary>
+ 出力するファイルの場所(local)
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Utility.ReportDesignerUtility.outPutFileName">
+ <summary>
+ 出力するPDFファイルの完全パス(local)
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Utility.ReportDesignerUtility.nowDate">
+ <summary>
+ 出力ファイルに付加する年月日時分秒ミリ秒
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Utility.ReportDesignerUtility.kbnDt">
+ <summary>
+ 区分マスタデータテーブル
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Utility.ReportDesignerUtility.rdHost">
+ <summary>
+ Job Manager がインストールされているサーバのホスト名、またはIP アドレス
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Utility.ReportDesignerUtility.rdPort">
+ <summary>
+ Job Manager のサービスポート番号
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Utility.ReportDesignerUtility.csvFolderPath">
+ <summary>
+ 帳票CSV出力フォルダ
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Utility.ReportDesignerUtility.rdBaseFolder">
+ <summary>
+ RDベースフォルダ
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Utility.ReportDesignerUtility.rdFormFolder">
+ <summary>
+ RDフォームフォルダ
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Utility.ReportDesignerUtility.encoding">
+ <summary>
+ 帳票を要求するCSV ファイルの文字エンコーディング情報
+ </summary>
+ <remarks>
+ Encoding文字列は Java でサポートするcharset であり、
+ 次のような値を指定することができます。
+ “Shift_JIS”、“UTF-8”、“UTF-16LE”、“UTF-16BE” など
+ </remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Utility.ReportDesignerUtility.jobID">
+ <summary>
+ JobManager に登録されたJob の固有なID
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Utility.ReportDesignerUtility.csvFileName">
+ <summary>
+ 帳票の出力を要求するCSV ファイル名
+ </summary>
+ <remarks>
+ CSV ファイルはヘッダ部分とフッタ部分で構成されていなければなりません。
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Utility.ReportDesignerUtility.StartPrint(Jp.Co.Nrs.Com.Base.BaseBLC,System.String,System.String,System.Data.DataTable,System.Data.DataTable,System.String,System.Int32,System.String,System.String)">
+ <summary>
+ RD印刷処理を行います。
+ </summary>
+ <param name="blc">BLCクラス</param>
+ <param name="rptId">レポートファイル名</param>
+ <param name="printerKbn">プリンタ区分</param>
+ <param name="outDataTable">出力DataTable</param>
+ <param name="prevDataTable">プレビューDataTable</param>
+ <param name="outputKbn">出力区分(CSConst.OutPutKbn)</param>
+ <param name="copies">印刷部数(未使用)</param>
+ <param name="officeCd"></param>
+ <param name="letterKbn">CSConst.LetterKbn</param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Utility.ReportDesignerUtility.PrintRD(Jp.Co.Nrs.Com.Base.BaseBLC,System.String,System.String,System.Data.DataTable,System.Data.DataTable,System.String,System.String,System.String)">
+ <summary>
+ 印刷処理
+ </summary>
+ <param name="blc">BLCクラス</param>
+ <param name="rptId">レポートファイル名</param>
+ <param name="printerKbn">プリンタ区分</param>
+ <param name="outDataTable">出力DataTable</param>
+ <param name="prevDataTable">プレビューDataTable</param>
+ <param name="outputKbn">出力区分</param>
+ <param name="officeCd"></param>
+ <param name="letterKbn"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Utility.ReportDesignerUtility.GetHeaderTab(System.String,System.String,System.String)">
+ <summary>
+ ヘッダメタデータ作成
+ </summary>
+ <param name="rptId"></param>
+ <param name="outPutKbn"></param>
+ <param name="userId"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Utility.ReportDesignerUtility.CreateCSVForRD(System.String,System.String,System.String)">
+ <summary>
+ CSVファイルを出力します。
+ </summary>
+ <param name="prtString"></param>
+ <param name="rptId"></param>
+ <param name="userId"></param>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Utility.ReportDesignerUtility.SurroundWithDoubleQuotation(System.String)">
+ <summary>
+ ダブルクォーテーションで囲み返却します。
+ </summary>
+ <param name="para"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Utility.ReportDesignerUtility.SetTimeStamp">
+ <summary>
+ サーバー時刻を設定します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Utility.ReportDesignerUtility.SetKbnMasterData(Jp.Co.Nrs.Com.Base.Interface.IConnection,System.String)">
+ <summary>
+ 区分マスタデータの取得を行います。
+ </summary>
+ <param name="obj"></param>
+ <param name="lang"></param>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Utility.ReportDesignerUtility.SetRDServerInfo">
+ <summary>
+ 区分マスタからRD Server情報を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Utility.ReportDesignerUtility.SetOutputFolderPath">
+ <summary>
+ 出力先フォルダのパスを取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Utility.ReportDesignerUtility.SetRDBaseFormInfo">
+ <summary>
+ RD Base/Form Folder を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Utility.ReportDesignerUtility.GetUserId(Jp.Co.Nrs.Com.Base.BaseBLC)">
+ <summary>
+ ServiceDataからユーザIDを取得します。
+ </summary>
+ <param name="obj"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Utility.ReportDesignerUtility.SetRptId(System.String@,System.String,System.String)">
+ <summary>
+ レポートファイル名にレター区分・OFFICEコードを付与します。
+ </summary>
+ <param name="rptId"></param>
+ <param name="officdCd"></param>
+ <param name="letterKbn"></param>
+ <returns></returns>
+</member>
+<member name="T:Jp.Co.Nrs.CS.Utility.SequenceUtility">
+ <summary>
+ シーケンス関連ユーティリティ
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Utility.SequenceUtility.SEQUENCE_SELECT">
+ <summary>
+ シーケンス取得用SQL文
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Utility.SequenceUtility.GetAutoCode(Jp.Co.Nrs.CS.Const.SequenceConst.SequenceKbn,Jp.Co.Nrs.Com.Base.Interface.IConnection,System.String)">
+ <summary>
+ 自動採番されたコードを取得
+ </summary>
+ <param name="seqKbn">シーケンス区分</param>
+ <param name="obj">BLFクラス</param>
+ <param name="optionCd">オプション(未使用)</param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Utility.SequenceUtility.SelectSequence(System.Data.SqlClient.SqlConnection,System.String)">
+ <summary>
+ シーケンス読み込み
+ </summary>
+ <param name="conn"></param>
+ <param name="seqName"></param>
+ <returns></returns>
+</member>
+</members>
+</doc>

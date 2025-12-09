@@ -1,0 +1,606 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.GLVS.BLC
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.GL.BLC.My.Resources.Resources">
+<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.GL.BLC.My.Resources.Resources.ResourceManager">
+<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.GL.BLC.My.Resources.Resources.Culture">
+<summary>
+  すべてについて、現在のスレッドの CurrentUICulture プロパティをオーバーライドします
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVS0200BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0200BLC.SelectInitDispData(System.Data.DataSet)">
+ <summary>
+ 初期表示用データの取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0200BLC.UpdateSaveData(System.Data.DataSet)">
+ <summary>
+ Save
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0200BLC.AddContainer(System.Data.DataSet)">
+ <summary>
+ AddContainer
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0200BLC.isLastJobHaitaChk(System.Data.DataSet)">
+ <summary>
+ 排他チェック(C_BASIS)前回Job
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0200BLC.InsertBkgCont(System.Data.DataSet)">
+ <summary>
+ C_CONT登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0200BLC.UpdateBkgContFromTankMaster(System.Data.DataSet)">
+ <summary>
+ C_CONT更新(コンテナ追加時)(新規登録コンテナを対象としてタンクマスタの値で更新)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0200BLC.UpdateLastJobBkgContDataContAddOffHireRef(System.Data.DataSet)">
+ <summary>
+ C_CONT更新(コンテナ追加時)(前回JOBコンテナのOFF_HIRE_REFで更新)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0200BLC.UpdateBkgBasisLastDepotDate(System.Data.DataSet)">
+ <summary>
+ C_BASIS更新(LAST_DEPOT_DATEをJOBに紐づくコンテナの最大DEPOT_OUT_DATEで更新)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0200BLC.UpdateLastJobBkgItemDataContAdd(System.Data.DataSet)">
+ <summary>
+ C_CONT更新(コンテナ追加時)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0200BLC.UpdateLastBkgBasisSysCom(System.Data.DataSet)">
+ <summary>
+ C_BASIS更新(前回JOBシステム共通項目)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0200BLC.UpdateLastJobBkgContDataContAdd(System.Data.DataSet)">
+ <summary>
+ C_CONT更新(コンテナ追加時)(前回JOBコンテナ)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0200BLC.InsertBkgCargo(System.Data.DataSet)">
+ <summary>
+ C_CARGO登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0200BLC.InsertBkgContCargo(System.Data.DataSet)">
+ <summary>
+ C_CONT_CARGO登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0200BLC.Replace(System.Data.DataSet)">
+ <summary>
+ Replace
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0200BLC.ResetContainer(System.Data.DataSet)">
+ <summary>
+ ResetContainer
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0200BLC.UpdateDepotOutDate(System.Data.DataSet)">
+ <summary>
+ Depot Out Date Update
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0200BLC.UpdateDepotOutPDate(System.Data.DataSet)">
+ <summary>
+ Depot Out PDate Update
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0200BLC.KidsUserIdCheck(System.Data.DataSet)">
+ <summary>
+ ログインユーザIDのKIDSユーザマスタ存在チェック
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0200BLC.ConfirmRem(System.Data.DataSet)">
+ <summary>
+ ConfirmRem
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0200BLC.SelectBkgBasisData(System.Data.DataSet)">
+ <summary>
+ C_BASIS取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0200BLC.SelectBkgCoverData(System.Data.DataSet)">
+ <summary>
+ C_COVER取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0200BLC.SelectBkgHouseData(System.Data.DataSet)">
+ <summary>
+ C_HOUSE取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0200BLC.SelectBkgContAllcData(System.Data.DataSet)">
+ <summary>
+ C_CONT_ALLC取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0200BLC.SelectBkgContData(System.Data.DataSet)">
+ <summary>
+ C_CONT取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0200BLC.SelectBkgMaxSeqData(System.Data.DataSet)">
+ <summary>
+ C_MAX_SEQ取得処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0200BLC.SelectBkgRemData(System.Data.DataSet)">
+ <summary>
+ C_REM取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0200BLC.SelectBkgDescrData(System.Data.DataSet)">
+ <summary>
+ C_DESCR取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0200BLC.UpdateBookingBasisData(System.Data.DataSet)">
+ <summary>
+ C_BASIS
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0200BLC.UpdateContAllcData(System.Data.DataSet)">
+ <summary>
+ C_CONT_ALLC
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0200BLC.UpdateEstimateBasisData(System.Data.DataSet)">
+ <summary>
+ B_BASIS
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0200BLC.UpdateEstimateContAllcData(System.Data.DataSet,System.Data.DataSet)">
+ <summary>
+ B_CONT_ALLC
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0200BLC.UpdateRemData(System.Data.DataSet)">
+ <summary>
+ C_REM
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0200BLC.UpdateDescrData(System.Data.DataSet)">
+ <summary>
+ C_DESCR
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0200BLC.isHaitaChkBooking(System.Data.DataSet)">
+ <summary>
+ C_BASISによる排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0200BLC.SelectZSystem(System.Data.DataSet)">
+ <summary>
+ Z_SYSTEM取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0200BLC.setGLZ8900INDS(System.Data.DataSet@,System.String,System.String)">
+ <summary>
+ GLZ8900INの設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0200BLC.SetEstBKey(System.Data.DataSet,System.Data.DataSet)">
+ <summary>
+ Estimate 取得キーの設定(B_KEY)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0200BLC.CallDacSelectedData(System.Data.DataSet,System.String,System.String,System.String,System.String)">
+ <summary>
+ 指定条件でデータを抽出し、DACを呼び出す
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="tblNm">データ抽出テーブル名</param>
+ <param name="sql">データ抽出条件</param>
+ <param name="sortKey">データ抽出時のソートキー</param>
+ <param name="dacMethodNm">呼び出すDACメソッド名</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVS0300BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0300BLC.SelectInitDispData(System.Data.DataSet)">
+ <summary>
+ 初期表示用データの取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0300BLC.UpdateSaveData(System.Data.DataSet)">
+ <summary>
+ Save
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0300BLC.EstimateUpdate(System.Data.DataSet)">
+ <summary>
+ EstUp
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0300BLC.SelectBkgBasisData(System.Data.DataSet)">
+ <summary>
+ C_BASIS取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0300BLC.SelectBkgCoverData(System.Data.DataSet)">
+ <summary>
+ C_COVER取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0300BLC.SelectBkgHouseData(System.Data.DataSet)">
+ <summary>
+ C_HOUSE取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0300BLC.SelectBkgContData(System.Data.DataSet)">
+ <summary>
+ C_CONT取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0300BLC.SelectBkgDescrData(System.Data.DataSet)">
+ <summary>
+ C_DESCR取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0300BLC.UpdateBookingBasisData(System.Data.DataSet)">
+ <summary>
+ C_BASIS
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0300BLC.UpdateContData(System.Data.DataSet)">
+ <summary>
+ C_CONT
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0300BLC.UpdateDescrData(System.Data.DataSet)">
+ <summary>
+ C_DESCR
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0300BLC.UpdateEstimateBasisData(System.Data.DataSet)">
+ <summary>
+ B_BASIS
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0300BLC.UpdateEstUpContDepotCDescr(System.Data.DataSet,System.Data.DataSet)">
+ <summary>
+ B_CONT_DEPOT(C_DESCR)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0300BLC.isHaitaChkBooking(System.Data.DataSet)">
+ <summary>
+ C_BASISによる排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0300BLC.isHaitaChkEstimate(System.Data.DataSet)">
+ <summary>
+ B_BASISによる排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0300BLC.KidsUserIdCheck(System.Data.DataSet)">
+ <summary>
+ ログインユーザIDのKIDSユーザマスタ存在チェック
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0300BLC.SelectZSystem(System.Data.DataSet)">
+ <summary>
+ Z_SYSTEM取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0300BLC.setGLZ8900INDS(System.Data.DataSet@,System.String,System.String)">
+ <summary>
+ GLZ8900INの設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0300BLC.SetEstBKey(System.Data.DataSet,System.Data.DataSet)">
+ <summary>
+ Estimate 取得キーの設定(B_KEY)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVS0100BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0100BLC.Search(System.Data.DataSet)">
+ <summary>
+ 検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0100BLC.UpdateRemark(System.Data.DataSet)">
+ <summary>
+ UpdateRemark
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0100BLC.SelectContSeq(System.Data.DataSet)">
+ <summary>
+ コンテナSEQ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0100BLC.SelectContSeqKidsOrder(System.Data.DataSet)">
+ <summary>
+ コンテナSEQ取得処理（Kids Order用）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0100BLC.DepotOutPDateUpdate(System.Data.DataSet)">
+ <summary>
+ Depot Out PDate Update
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0100BLC.UpdateBkgBasisSysInfo(System.Data.DataSet)">
+ <summary>
+ C_BASIS更新(共通)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0100BLC.InsertBkgCont(System.Data.DataSet)">
+ <summary>
+ C_CONT登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0100BLC.InsertBkgCargo(System.Data.DataSet)">
+ <summary>
+ C_CARGO登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0100BLC.InsertBkgContCargo(System.Data.DataSet)">
+ <summary>
+ C_CONT_CARGO登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0100BLC.UpdateLastJobBkgItemDataContAdd(System.Data.DataSet)">
+ <summary>
+ C_CONT更新(コンテナ追加時)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0100BLC.UpdateBkgContFromTankMaster(System.Data.DataSet)">
+ <summary>
+ C_CONT更新(コンテナ追加時)(新規登録コンテナを対象としてタンクマスタの値で更新)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0100BLC.UpdateLastJobBkgContDataContAddOffHireRef(System.Data.DataSet)">
+ <summary>
+ C_CONT更新(コンテナ追加時)(前回JOBコンテナのOFF_HIRE_REFで更新)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0100BLC.UpdateLastBkgBasisSysCom(System.Data.DataSet)">
+ <summary>
+ C_BASIS更新(前回JOBシステム共通項目)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0100BLC.UpdateBkgBasisLastDepotDate(System.Data.DataSet)">
+ <summary>
+ C_BASIS更新(LAST_DEPOT_DATEをJOBに紐づくコンテナの最大DEPOT_OUT_DATEで更新)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0100BLC.UpdateLastJobBkgContDataContAdd(System.Data.DataSet)">
+ <summary>
+ C_CONT更新(コンテナ追加時)(前回JOBコンテナ)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0100BLC.isHaitaChkSingleRow(System.Data.DataSet)">
+ <summary>
+ 排他チェック(C_BASIS)単行
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0100BLC.isHaitaChkMultipleRows(System.Data.DataSet)">
+ <summary>
+ 排他チェック(C_BASIS)複数行
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0100BLC.isLastJobHaitaChk(System.Data.DataSet)">
+ <summary>
+ 排他チェック(C_BASIS)前回Job
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0100BLC.KidsUserIdCheck(System.Data.DataSet)">
+ <summary>
+ ログインユーザIDのKIDSユーザマスタ存在チェック
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0100BLC.setGLZ8900INDS(System.Data.DataSet@,System.String,System.String)">
+ <summary>
+ GLZ8900INの設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0100BLC.CallDacSelectedData(System.Data.DataSet,System.String,System.String,System.String,System.String)">
+ <summary>
+ 指定条件でデータを抽出し、DACを呼び出す
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="tblNm">データ抽出テーブル名</param>
+ <param name="sql">データ抽出条件</param>
+ <param name="sortKey">データ抽出時のソートキー</param>
+ <param name="dacMethodNm">呼び出すDACメソッド名</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0100BLC.GetContDataAutoAllocate(System.Data.DataSet)">
+ <summary>
+ C_CONT取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVS0100BLC.AutoAllocate(System.Data.DataSet)">
+ <summary>
+ AutoAllocate
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

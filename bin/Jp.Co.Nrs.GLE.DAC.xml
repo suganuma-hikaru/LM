@@ -1,0 +1,1698 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.GLE.DAC
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.GL.DAC.My.Resources.Resources">
+<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.GL.DAC.My.Resources.Resources.ResourceManager">
+<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.GL.DAC.My.Resources.Resources.Culture">
+<summary>
+  すべてについて、現在のスレッドの CurrentUICulture プロパティをオーバーライドします
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLE0100DAC.SQL_WHERE_RECTYPE_001">
+ <summary>
+ RECTYPEの条件
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLE0100DAC.SQL_WHERE_RECTYPE_002">
+ <summary>
+ RECTYPEの条件
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLE0100DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLE0100DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLE0100DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0100DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0100DAC.CheckResultCount(System.Data.DataSet)">
+ <summary>
+ 取得行数チェック
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0100DAC.SearchUnInvoiceList(System.Data.DataSet)">
+ <summary>
+ 未確定請求データ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>未確定請求データ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0100DAC.isNaccsChk(System.Data.DataSet)">
+ <summary>
+ Naccsチェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>Naccsチェック</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0100DAC.isImpNaccsChk(System.Data.DataSet)">
+ <summary>
+ 輸入申告Naccsチェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>輸入申告Naccsチェック</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0100DAC.SetSQLSelectWhere(System.Data.DataSet)">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0100DAC.SetContNoFormat(System.String)">
+ <summary>
+ 検索条件コンテナ番号フォーマット変換
+ </summary>
+ <param name="contNo"></param>
+ <returns></returns>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLE0220DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLE0220DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLE0220DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0220DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0220DAC.SearchInvoiceList(System.Data.DataSet)">
+ <summary>
+ データ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>データ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0220DAC.SetSQLSelectWhere(System.Data.DataSet)">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLE5170DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLE5170DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLE5170DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE5170DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE5170DAC.SelectBody(System.Data.DataSet)">
+ <summary>
+ HEADER取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE5170DAC.SetSQLSelectBodyWhere">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE5180DAC.SelectHead(System.Data.DataSet)">
+ <summary>
+ データ取得(HEAD)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>データ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE5180DAC.SelectRev(System.Data.DataSet)">
+ <summary>
+ データ取得(REV)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>データ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE5180DAC.SelectCost(System.Data.DataSet)">
+ <summary>
+ データ取得(COST)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>データ取得SQLの構築・発行</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLE5500DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLE5500DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLE5500DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE5500DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE5500DAC.SearchInvoiceList(System.Data.DataSet)">
+ <summary>
+ 取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE5500DAC.InsertSeikyuTukan(System.Data.DataSet)">
+ <summary>
+ HEADER登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE5500DAC.SetSQLSelectWhere(System.Data.DataSet)">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE5500DAC.SetSQLSelectReDsWhere(System.Data.DataSet,System.String)">
+ <summary>
+ 条件文・パラメータ設定モジュール(RE DE)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE5500DAC.SetHeaderUpdParameter(System.Data.DataRow)">
+ <summary>
+ HEADER更新パラメータ
+ </summary>
+ <param name="conditionRow">HEADERのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE5500DAC.SetBasisUpdParameter(System.Data.DataRow)">
+ <summary>
+ BASIS更新パラメータ
+ </summary>
+ <param name="conditionRow">HEADERのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE5500DAC.SetSysCommonParameter">
+ <summary>
+ システム共通共通パラメータ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE5500DAC.SetSeikyuTukanUpdParameter(System.Data.DataRow,System.String)">
+ <summary>
+ WK_SEIKYU_TUKAN更新パラメータ
+ </summary>
+ <param name="conditionRow">COSTのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE5500DAC.isHaitaChkPrint(System.Data.DataSet)">
+ <summary>
+ 排他チェック処理（E_REV_HEADER）
+ </summary>
+ <param name="ds">DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE5500DAC.SetContNoFormat(System.String)">
+ <summary>
+ 検索条件コンテナ番号フォーマット変換
+ </summary>
+ <param name="contNo"></param>
+ <returns></returns>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLE0210DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLE0210DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLE0210DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0210DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0210DAC.CheckResultCount(System.Data.DataSet)">
+ <summary>
+ 取得行数チェック
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0210DAC.SearchInvoiceList(System.Data.DataSet)">
+ <summary>
+ カバーマスタデータ取得処理(NVOCC)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>カバーマスタデータ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0210DAC.SelectRev(System.Data.DataSet)">
+ <summary>
+ C_REV取得処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0210DAC.SelectCost(System.Data.DataSet)">
+ <summary>
+ C_COST取得処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0210DAC.UpdateHeader(System.Data.DataSet)">
+ <summary>
+ HEADER更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0210DAC.UpdateBasis(System.Data.DataSet)">
+ <summary>
+ BASIS更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0210DAC.UpdateRev(System.Data.DataSet)">
+ <summary>
+ REV更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0210DAC.UpdateCost(System.Data.DataSet)">
+ <summary>
+ COST更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0210DAC.UpdateHeaderSearchText(System.Data.DataSet)">
+ <summary>
+ HEADER更新処理(SEARCH_TEXT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0210DAC.SetSQLSelectWhere(System.Data.DataSet)">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0210DAC.SetHeaderUpdParameter(System.Data.DataRow)">
+ <summary>
+ HEADER更新パラメータ
+ </summary>
+ <param name="conditionRow">HEADERのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0210DAC.SetBasisUpdParameter(System.Data.DataRow)">
+ <summary>
+ BASIS更新パラメータ
+ </summary>
+ <param name="conditionRow">HEADERのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0210DAC.SetRevUpdParameter(System.Data.DataRow)">
+ <summary>
+ REV更新パラメータ
+ </summary>
+ <param name="conditionRow">REVのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0210DAC.SetCostUpdParameter(System.Data.DataRow)">
+ <summary>
+ COST更新パラメータ
+ </summary>
+ <param name="conditionRow">COSTのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0210DAC.SetSysCommonParameter">
+ <summary>
+ システム共通共通パラメータ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0210DAC.isHaitaChkHeader(System.Data.DataSet)">
+ <summary>
+ 排他チェック処理（E_REV_HEADER）
+ </summary>
+ <param name="ds">DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0210DAC.isHaitaChkBasis(System.Data.DataSet)">
+ <summary>
+ 排他チェック処理（C_BASIS）
+ </summary>
+ <param name="ds">DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0210DAC.isHaitaChkCost(System.Data.DataSet)">
+ <summary>
+ 排他チェック処理（C_COST）
+ </summary>
+ <param name="ds">DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLE0200DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLE0200DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLE0200DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0200DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0200DAC.CheckResultCount(System.Data.DataSet)">
+ <summary>
+ 取得行数チェック
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0200DAC.SearchInvoiceList(System.Data.DataSet)">
+ <summary>
+ カバーマスタデータ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>カバーマスタデータ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0200DAC.SelectRev(System.Data.DataSet)">
+ <summary>
+ C_REV取得処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0200DAC.SelectCost(System.Data.DataSet)">
+ <summary>
+ C_COST取得処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0200DAC.UpdateHeader(System.Data.DataSet)">
+ <summary>
+ HEADER更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0200DAC.UpdateBasis(System.Data.DataSet)">
+ <summary>
+ BASIS更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0200DAC.UpdateRev(System.Data.DataSet)">
+ <summary>
+ REV更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0200DAC.UpdateCost(System.Data.DataSet)">
+ <summary>
+ COST更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0200DAC.UpdateHeaderSearchText(System.Data.DataSet)">
+ <summary>
+ HEADER更新処理(SEARCH_TEXT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0200DAC.SetSQLSelectWhere(System.Data.DataSet)">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0200DAC.SetHeaderUpdParameter(System.Data.DataRow)">
+ <summary>
+ HEADER更新パラメータ
+ </summary>
+ <param name="conditionRow">HEADERのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0200DAC.SetBasisUpdParameter(System.Data.DataRow)">
+ <summary>
+ BASIS更新パラメータ
+ </summary>
+ <param name="conditionRow">HEADERのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0200DAC.SetRevUpdParameter(System.Data.DataRow)">
+ <summary>
+ REV更新パラメータ
+ </summary>
+ <param name="conditionRow">REVのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0200DAC.SetCostUpdParameter(System.Data.DataRow)">
+ <summary>
+ COST更新パラメータ
+ </summary>
+ <param name="conditionRow">COSTのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0200DAC.SetSysCommonParameter">
+ <summary>
+ システム共通共通パラメータ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0200DAC.isHaitaChkHeader(System.Data.DataSet)">
+ <summary>
+ 排他チェック処理（E_REV_HEADER）
+ </summary>
+ <param name="ds">DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0200DAC.isHaitaChkBasis(System.Data.DataSet)">
+ <summary>
+ 排他チェック処理（C_BASIS）
+ </summary>
+ <param name="ds">DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0200DAC.isHaitaChkCost(System.Data.DataSet)">
+ <summary>
+ 排他チェック処理（C_COST）
+ </summary>
+ <param name="ds">DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0200DAC.SetContNoFormat(System.String)">
+ <summary>
+ 検索条件コンテナ番号フォーマット変換
+ </summary>
+ <param name="contNo"></param>
+ <returns></returns>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLE0300DAC.SQL_SELECT_F0101_EXIST_JDE_CD">
+ <summary>
+ JDE_CD存在チェック用(SELECT)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLE0300DAC.SQL_SELECT_F0101_EXIST_JDE_CD_WHERE">
+ <summary>
+ JDE_CD存在チェック用(WHERE)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLE0300DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLE0300DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLE0300DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.SelectHeader(System.Data.DataSet)">
+ <summary>
+ HEADER取得処理(初期表示)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.SelectHeaderNewNvo(System.Data.DataSet)">
+ <summary>
+ HEADER取得処理(新規・NVO)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.SelectHeaderNewFwd(System.Data.DataSet)">
+ <summary>
+ HEADER取得処理(新規・FWD)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.SelectHeaderNewOther(System.Data.DataSet)">
+ <summary>
+ HEADER取得処理(新規・OTHER)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.SelectRev(System.Data.DataSet)">
+ <summary>
+ REV取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>移液依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.SelectRevNew(System.Data.DataSet)">
+ <summary>
+ REV取得処理(New)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>移液依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.SelectContNoNew(System.Data.DataSet)">
+ <summary>
+ ContNo取得処理(New)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.SelectCargoNmNew(System.Data.DataSet)">
+ <summary>
+ CargoName取得処理(New)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.SelectCost(System.Data.DataSet)">
+ <summary>
+ COST取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>移液依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.SelectCostNew(System.Data.DataSet)">
+ <summary>
+ COST取得処理(New)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>移液依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.SearchHeaderMaxSeq(System.Data.DataSet)">
+ <summary>
+ 最大SEQ取得処理(HEAD)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.SearchRevMaxSeq(System.Data.DataSet)">
+ <summary>
+ 最大SEQ取得処理(REV)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.SearchCostMaxSeq(System.Data.DataSet)">
+ <summary>
+ 最大SEQ取得処理(COST)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.SearchMBank(System.Data.DataSet)">
+ <summary>
+ M_BANK取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.SearchCDoc(System.Data.DataSet)">
+ <summary>
+ C_DOC取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.SearchCCont(System.Data.DataSet)">
+ <summary>
+ C_CONT取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.SearchDCustoms(System.Data.DataSet)">
+ <summary>
+ D_CUSTOMS取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.SetSQLSelectRevWhere">
+ <summary>
+ REV 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.SetSQLSelectRevNewWhere(System.Data.DataTable@)">
+ <summary>
+ REV 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.SetSQLSelectContNoPerBlWhere(System.Data.DataTable@)">
+ <summary>
+ コンテナ番号 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.SetSQLSelectRevCargoNewWhere(System.Data.DataTable@)">
+ <summary>
+ REV Cargo 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.SetSQLSelectCostWhere">
+ <summary>
+ COST 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.SetSQLSelectCostNewWhere(System.Data.DataTable@)">
+ <summary>
+ COST 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.SetSelectHeaderMaxSeqWhere">
+ <summary>
+ HEADER_MAX_SEQ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.SetSelectRevMaxSeqWhere">
+ <summary>
+ REV_MAX_SEQ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.SetSelectCostMaxSeqWhere">
+ <summary>
+ COST_MAX_SEQ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.SetSelectCContDtlWhere">
+ <summary>
+ C_CONT_DTL 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.SetSelectCDocWhere">
+ <summary>
+ C_DOC 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.SetSQLSelectIGaisanWhere(System.Data.DataSet)">
+ <summary>
+ I_GAISAN 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.SetSysDelFlgOnParameter">
+ <summary>
+ 削除フラグ オン パラメータ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.SetSysDelFlgOffParameter">
+ <summary>
+ 削除フラグ オフ パラメータ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.SetHeaderParameter(System.Data.DataRow)">
+ <summary>
+ HEADER取得時の共通パラメータ設定
+ </summary>
+ <param name="conditionRow">VK_BASISのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.SetSysCommonParameter">
+ <summary>
+ システム共通共通パラメータ(削除フラグを除く）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.SetHeaderDataInsUpdParameter(System.Data.DataRow)">
+ <summary>
+ HEADER登録・更新共通パラメータ
+ </summary>
+ <param name="conditionRow">HEADERのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.SetBasisDataInsUpdParameter(System.Data.DataRow)">
+ <summary>
+ BASIS登録・更新共通パラメータ
+ </summary>
+ <param name="conditionRow">HEADERのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.SetRevDataInsUpdParameter(System.Data.DataRow)">
+ <summary>
+ REV登録・更新共通パラメータ
+ </summary>
+ <param name="conditionRow">REVのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.SetCostDataInsUpdParameter(System.Data.DataRow)">
+ <summary>
+ COST登録・更新共通パラメータ
+ </summary>
+ <param name="conditionRow">COSTのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.SetHeaderDataApprovalParameter(System.Data.DataRow)">
+ <summary>
+ HEADER Approvalパラメータ
+ </summary>
+ <param name="conditionRow">HEADERのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.SetRevDataApprovalParameter(System.Data.DataRow)">
+ <summary>
+ REV Approvalパラメータ
+ </summary>
+ <param name="conditionRow">REVのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.SetHeaderDataRejectParameter(System.Data.DataRow)">
+ <summary>
+ HEADER Rejectパラメータ
+ </summary>
+ <param name="conditionRow">HEADERのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.SetRevDataRejectParameter(System.Data.DataRow)">
+ <summary>
+ REV Rejectパラメータ
+ </summary>
+ <param name="conditionRow">REVのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.SetHeaderSearchTextParameter(System.Data.DataRow)">
+ <summary>
+ HEADER(SearchText)更新時の共通パラメータ設定
+ </summary>
+ <param name="conditionRow">DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.SetRevSearchTextParameter(System.Data.DataRow)">
+ <summary>
+ REV(SearchText)更新時の共通パラメータ設定
+ </summary>
+ <param name="conditionRow">DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.SetCostSearchTextParameter(System.Data.DataRow)">
+ <summary>
+ COST(SearchText)更新時の共通パラメータ設定
+ </summary>
+ <param name="conditionRow">DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.SetUpdateBasisOrigParameter(System.Data.DataRow)">
+ <summary>
+ BASIS Origデマレージ支払情報更新時の共通パラメータ設定
+ </summary>
+ <param name="conditionRow">DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.SetUpdateBasisDestParameter(System.Data.DataRow)">
+ <summary>
+ BASIS Destデマレージ支払情報更新時の共通パラメータ設定
+ </summary>
+ <param name="conditionRow">DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.isHaitaChkHeader(System.Data.DataSet)">
+ <summary>
+ 排他チェック処理（E_REV_HEADER）
+ </summary>
+ <param name="ds">DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.isHaitaChkHeaderAfterCanR(System.Data.DataSet)">
+ <summary>
+ 排他チェック処理（E_REV_HEADER）(キャンセル＆再請求処理後の保存処理)
+ </summary>
+ <param name="ds">DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.isHaitaChkBasis(System.Data.DataSet)">
+ <summary>
+ 排他チェック処理（C_BASIS）
+ </summary>
+ <param name="ds">DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.isHaitaChkBasisAfterCanR(System.Data.DataSet)">
+ <summary>
+ 排他チェック処理（C_BASIS）(キャンセル＆再請求処理後の保存処理)
+ </summary>
+ <param name="ds">DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.isHaitaChkCost(System.Data.DataSet)">
+ <summary>
+ 排他チェック処理（C_COST）
+ </summary>
+ <param name="ds">DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.isHaitaChkEstBasis(System.Data.DataSet)">
+ <summary>
+ 排他チェック処理（B_BASIS）
+ </summary>
+ <param name="ds">DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.isCancelChk(System.Data.DataSet)">
+ <summary>
+ 再請求チェック処理
+ </summary>
+ <param name="ds">DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.InsertHeader(System.Data.DataSet)">
+ <summary>
+ HEADER登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.InsertRev(System.Data.DataSet)">
+ <summary>
+ REV登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.InsertCost(System.Data.DataSet)">
+ <summary>
+ COST登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.UpdateHeader(System.Data.DataSet)">
+ <summary>
+ HEADER更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.UpdateHeaderCrApproval(System.Data.DataSet)">
+ <summary>
+ HEADER更新処理（CR_APPROVAL）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.UpdateHeaderCrReject(System.Data.DataSet)">
+ <summary>
+ HEADER更新処理（CR Reject）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.UpdateMotoHeader(System.Data.DataSet)">
+ <summary>
+ 元Invoice(HEADER)更新処理(キャンセル＆再請求処理後の保存処理)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.UpdateBasis(System.Data.DataSet)">
+ <summary>
+ BASIS更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.UpdateRev(System.Data.DataSet)">
+ <summary>
+ REV更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.UpdateCost(System.Data.DataSet)">
+ <summary>
+ COST更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.UpdateMotoRev(System.Data.DataSet)">
+ <summary>
+ 元Invoice(HEADER)に紐づくREV更新(キャンセル＆再請求処理後の保存処理)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.UpdateEstimategBasisOrig(System.Data.DataSet)">
+ <summary>
+ Estimate Basis更新(Origデマレージ支払情報更新処理)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.UpdateEstimategBasisDest(System.Data.DataSet)">
+ <summary>
+ Estimate Basis更新(Destデマレージ支払情報更新処理)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.UpdateBookingBasisOrig(System.Data.DataSet)">
+ <summary>
+ Booking Basis更新(Origデマレージ支払情報更新処理)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.UpdateBookingBasisDest(System.Data.DataSet)">
+ <summary>
+ Estimate Basis更新(Destデマレージ支払情報更新処理)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.UpdateHeaderSearchText(System.Data.DataSet)">
+ <summary>
+ HEADER更新処理(SEARCH_TEXT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.UpdateMotoHeaderSearchText(System.Data.DataSet)">
+ <summary>
+ 元Invoice(HEADER)(SEARCH_TEXT)更新処理(キャンセル＆再請求処理後の保存処理)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.DeleteHeader(System.Data.DataSet)">
+ <summary>
+ HEADER DELETE処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.DeleteRev(System.Data.DataSet)">
+ <summary>
+ REV DELETE処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.DeleteCost(System.Data.DataSet)">
+ <summary>
+ COST DELETE処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.UpdateDeleteRev(System.Data.DataSet)">
+ <summary>
+ Rev削除処理(保存時に画面から削除された明細を論理削除)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.UpdateDeleteCost(System.Data.DataSet)">
+ <summary>
+ Cost削除処理(保存時に画面から削除された明細を論理削除)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.GetRedVoucherCnt(System.Data.DataSet)">
+ <summary>
+ 赤伝件数取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.IsExistJdeCd(System.Data.DataSet)">
+ <summary>
+ JDE_CD存在チェック
+ </summary>
+ <param name="ds">DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.CreateSqlCommandJDE(System.String,System.Data.SqlClient.SqlConnection)">
+ <summary>
+ コネクションオブジェクトに関連付けられたDBサーバーに対して
+ 有効なSqlCommandオブジェクトのインスタンスを取得する。
+ </summary>
+ <param name="strSql">SQL文</param>
+ <returns>SqlCommandオブジェクト</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.SelectCanRFinalApprovalRequesterMailInfo(System.Data.DataSet)">
+ <summary>
+ HEADER取得処理(初期表示)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.SelectMJdeAccount(System.Data.DataSet)">
+ <summary>
+ M_JDE_ACCOUNT取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.GetNewNrsSgJobNo(System.Data.DataSet)">
+ <summary>
+ NRS SG 枝番号情報処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.GetNewNrsSgEdaNo(System.Data.DataSet)">
+ <summary>
+ NRS SG 枝番号情報処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.SelectIWriteOffData(System.Data.DataSet)">
+ <summary>
+ I_WRITEOFF登録用データ取得(Write Off)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>I_WRITEOFF登録用データ取得(Write Off)SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.DeleteBkgIWriteOff(System.Data.DataSet)">
+ <summary>
+ I_WRITEOFF物理削除(Write Off)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>I_WRITEOFF物理削除(Write Off)SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.InsertBkgIWriteOff(System.Data.DataSet)">
+ <summary>
+ I_WRITEOFF登録(Write Off)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>I_WRITEOFF登録(Write Off)SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.UpdateBkgCostWriteOff(System.Data.DataSet)">
+ <summary>
+ C_COST更新(Write Off)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>C_COST更新(Write Off)SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.SetBkgSelectIWriteOffDataParameter(System.Data.DataSet)">
+ <summary>
+ (GLC1400)I_WRITEOFF登録用データ取得パラメータ設定
+ </summary>
+ <param name="ds">データセット</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.SetBkgDeleteWriteOffParameter(System.Data.DataRow)">
+ <summary>
+ (GLC1400)I_WRITEOFFデータ物理削除時の共通パラメータ設定
+ </summary>
+ <param name="drow">データRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.SetBkgInsertWriteOffParameter(System.Data.DataRow)">
+ <summary>
+ (GLC1400)I_WRITEOFFデータ登録時の共通パラメータ設定
+ </summary>
+ <param name="drow">データRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.SetBkgWriteOffCostDataUpdateParameter(System.Data.DataRow)">
+ <summary>
+ (GLC1400)Write Offデータ更新時の共通パラメータ設定
+ </summary>
+ <param name="drow">データRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.UpdateBkgCostRevive(System.Data.DataSet)">
+ <summary>
+ C_COST更新(Revive)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>C_COST更新(Booking Rewind Depot Out)SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE0300DAC.SetBkgReviveCostDataUpdateParameter(System.Data.DataRow)">
+ <summary>
+ Reviveデータ更新時の共通パラメータ設定
+ </summary>
+ <param name="drow">データRow</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLE5120DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLE5120DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLE5120DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE5120DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE5120DAC.SelectInvoiceData(System.Data.DataSet)">
+ <summary>
+ HEADER取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE5120DAC.SetSQLSelectBodyWhere">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLE5162DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLE5162DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLE5162DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE5162DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE5162DAC.SelectBody(System.Data.DataSet)">
+ <summary>
+ 請求データEXPORT(ダイキン)データ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLE5161DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLE5161DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLE5161DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE5161DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE5161DAC.SelectBody(System.Data.DataSet)">
+ <summary>
+ HEADER取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE5161DAC.SetSQLSelectBodyWhere">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLE5160DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLE5160DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLE5160DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE5160DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE5160DAC.SelectBody(System.Data.DataSet)">
+ <summary>
+ HEADER取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE5160DAC.SetSQLSelectBodyWhere">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLE5110DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLE5110DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLE5110DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE5110DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE5110DAC.SelectBody(System.Data.DataSet)">
+ <summary>
+ HEADER取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE5110DAC.SelectCRevInfo(System.Data.DataSet)">
+ <summary>
+ 明細情報取得処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE5110DAC.SelectPrintInvMirrArrgData(System.Data.DataSet)">
+ <summary>
+ 請求書鑑(手配)情報取得処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE5110DAC.SetSQLSelectBodyGLE5100Where(System.Data.DataTable,System.String)">
+ <summary>
+ 条件文・パラメータ設定モジュール(GLE5100)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE5110DAC.SetSQLSelectBodyGLE5110Where(System.Data.DataTable,System.String)">
+ <summary>
+ 条件文・パラメータ設定モジュール(GLE5110)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE5110DAC.SetSelectPrintInvMirrArrgWhere(System.Data.DataTable)">
+ <summary>
+ 条件文・パラメータ設定モジュール(手配)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLE5040DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLE5040DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLE5040DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE5040DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE5040DAC.SelectBody(System.Data.DataSet)">
+ <summary>
+ HEADER取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE5040DAC.SelectMAcc(System.Data.DataSet)">
+ <summary>
+ (ABM_DB)M_ACC取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE5040DAC.SetSQLSelectBodyWhere">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE5040DAC.SelectTipsBody(System.Data.DataSet)">
+ <summary>
+ HEADER取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE5040DAC.SelectKidsBody(System.Data.DataSet)">
+ <summary>
+ HEADER取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLE5010DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLE5010DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLE5010DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE5010DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE5010DAC.SelectBody(System.Data.DataSet)">
+ <summary>
+ HEADER取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE5010DAC.DryNvoLangSet(System.Data.DataSet)">
+ <summary>
+ DRY NVO 言語定義体分け
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE5010DAC.SetSQLSelectBodyWhere">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLE5163DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLE5163DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLE5163DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE5163DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLE5163DAC.SelectBody(System.Data.DataSet)">
+ <summary>
+ 請求データEXPORT(ハネウェル)データ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

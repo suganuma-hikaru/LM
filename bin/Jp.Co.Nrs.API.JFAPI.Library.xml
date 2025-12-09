@@ -1,0 +1,119 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.API.JFAPI.Library
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.API.JFAPI.My.Resources.Resources">
+<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.API.JFAPI.My.Resources.Resources.ResourceManager">
+<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.API.JFAPI.My.Resources.Resources.Culture">
+<summary>
+  すべてについて、現在のスレッドの CurrentUICulture プロパティをオーバーライドします
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.API.JFAPI.JFAPIBaseController">
+ <summary>
+ JFAPIの基本コントローラクラス
+ </summary>
+</member>
+<member name="T:Jp.Co.Nrs.API.JFAPI.JFAPIBaseModel">
+ <summary>
+ JFAPIの基本モデルクラス
+ </summary>
+</member>
+<member name="P:Jp.Co.Nrs.API.JFAPI.JFAPIBaseModel.Message">
+ <summary>
+ メッセージ
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.API.JFAPI.JFAPIBaseModel.HasError">
+ <summary>
+ メッセージがエラーか
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.API.JFAPI.JFAPIBaseModel.HasWarning">
+ <summary>
+ メッセージがワーニングか
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.API.JFAPI.JFAPIBaseModel.HasGuide">
+ <summary>
+ メッセージがガイドか
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.API.JFAPI.JFAPIBaseModel.IsErrorMessageExist">
+ <summary>
+ エラーメッセージの有無を判定して返却する
+ </summary>
+ <returns>エラーメッセージの有無</returns>
+</member>
+<member name="M:Jp.Co.Nrs.API.JFAPI.JFAPIBaseModel.IsMessageExist">
+ <summary>
+ メッセージの有無を判定して返却する（BL）
+ </summary>
+ <returns>
+ true：メッセージが存在する
+ false：メッセージが存在しない</returns>
+</member>
+<member name="M:Jp.Co.Nrs.API.JFAPI.JFAPIBaseModel.GetMessageLevel">
+ <summary>
+ メッセージレベルを取得する。
+ </summary>
+ <returns>メッセージレベル</returns>
+</member>
+<member name="T:Jp.Co.Nrs.API.JFAPI.JFAPIBaseWorkerService">
+ <summary>
+ JFAPIの基本ワーカサービスクラス
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.API.JFAPI.JFAPIBaseWorkerService.Init">
+ <summary>
+ 初期処理
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.API.JFAPI.JFAPIBaseWorkerService.SetMessage(Jp.Co.Nrs.API.JFAPI.JFAPIBaseModel,System.String,System.String[])">
+ <summary>
+ メッセージをJFAPIBaseModelに設定する
+ </summary>
+ <param name="outMdl"></param>
+ <param name="msgId"></param>
+ <param name="replaceMessages"></param>
+</member>
+<member name="M:Jp.Co.Nrs.API.JFAPI.JFAPIBaseWorkerService.SetMessage(Jp.Co.Nrs.API.JFAPI.JFAPIBaseModel)">
+ <summary>
+ メッセージをJFAPIBaseModelに設定する
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.API.JFAPI.JFAPIBaseWorkerService.GetMessage(System.String,System.String[])">
+ <summary>
+ 引数に指定されたIDのメッセージを取得
+ </summary>
+ <param name="msgID"></param>
+ <param name="replaceMessages"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.API.JFAPI.JFAPIBaseWorkerService.GetMessage">
+ <summary>
+ MessageDataEntityからメッセージを取得
+ </summary>
+ <returns></returns>
+</member>
+</members>
+</doc>

@@ -1,0 +1,1173 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.CSF.BLC
+</name>
+</assembly>
+<members>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSF010BLC.FUNCTION_NM.SELECT_DATA">
+ <summary>
+ 検索結果データ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSF010BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF010BLC.SelectResultList(System.Data.DataSet)">
+ <summary>
+ 検索結果情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSF030BLC.FUNCTION_NM.SELECT_DATA">
+ <summary>
+ 検索結果データ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSF030BLC.FUNCTION_NM.ARRANGE_TEST">
+ <summary>
+ 検査手配
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSF030BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF030BLC.SelectResultList(System.Data.DataSet)">
+ <summary>
+ 検索結果情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF030BLC.ArrangeTest(System.Data.DataSet)">
+ <summary>
+ 更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF030BLC.SetArrangeTestDataSet(System.Data.DataSet)">
+ <summary>
+ データセット設定
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF030BLC.SetFTestOrdDtl(System.Data.DataSet)">
+ <summary>
+ 定検明細データセット
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF030BLC.SetDLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 物流明細データセット
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF030BLC.SetInsertLogiDtl(System.Data.DataSet,System.Data.DataRow)">
+ <summary>
+ 物流明細データセット(登録)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF030BLC.SetUpdateOldLogiDtl(System.Data.DataSet,System.Data.DataRow)">
+ <summary>
+ 物流明細データセット(過去化)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF030BLC.SetInOutOrdHeadOut(System.Data.DataSet)">
+ <summary>
+ 入出荷検品ヘッダ(出荷)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF030BLC.SetInOutOrdHeadIn(System.Data.DataSet)">
+ <summary>
+ 入出荷検品ヘッダ(入荷)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF030BLC.SetInOutOrdDtlOut(System.Data.DataSet)">
+ <summary>
+ 入出荷検品明細(出荷)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF030BLC.SetInOutOrdDtlIn(System.Data.DataSet)">
+ <summary>
+ 入出荷検品明細(入荷)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF030BLC.ArrangeTestData(System.Data.DataSet)">
+ <summary>
+ 更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF030BLC.UpdateFTestOrdHead(System.Data.DataSet)">
+ <summary>
+ 定検ヘッダ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF030BLC.UpdateFTestOrdDtl(System.Data.DataSet)">
+ <summary>
+ 定検明細更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF030BLC.InsertEInOutOrdHead(System.Data.DataSet)">
+ <summary>
+ 入出荷検品ヘッダ登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF030BLC.InsertEInOutOrdDtl(System.Data.DataSet)">
+ <summary>
+ 入出荷検品明細登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF030BLC.InsertDLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 物流明細登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF030BLC.UpdateDLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 物流明細更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF030BLC.AddRowZSystemCSF030(System.Data.DataSet@,System.String,System.String)">
+ <summary>
+ Z_SYSTEM行追加処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="procKbn">Z_SYSTEM処理区分</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSF020BLC.FUNCTION_NM.SELECT_DATA">
+ <summary>
+ データ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSF020BLC.FUNCTION_NM.SELECT_TANK_DATA">
+ <summary>
+ データ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSF020BLC.FUNCTION_NM.INSERT_SAVE_DATA">
+ <summary>
+ 保存(新規)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSF020BLC.FUNCTION_NM.UPDATE_SAVE_DATA">
+ <summary>
+ 保存(新規)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSF020BLC.FUNCTION_NM.DELETE_DATA">
+ <summary>
+ 削除
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSF020BLC.FUNCTION_NM.ORDER_DATA">
+ <summary>
+ 検査指示
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSF020BLC.FUNCTION_NM.CONFIRM_DATA">
+ <summary>
+ 日程確定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSF020BLC.FUNCTION_NM.RESCHEDULE_DEL">
+ <summary>
+ 日程変更
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSF020BLC.FUNCTION_NM.RESCHEDULE">
+ <summary>
+ 日程変更
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSF020BLC.FUNCTION_NM.ROLLBACK_DATA">
+ <summary>
+ 取戻
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSF020BLC.FUNCTION_NM.HAITA_CHK">
+ <summary>
+ 排他制御
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSF020BLC.FUNCTION_NM.SELECT_M_FILE_DATA">
+ <summary>
+ DLデータ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSF020BLC.FUNCTION_NM.SEND_MAIL">
+ <summary>
+ メール送信
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSF020BLC.FUNCTION_NM.SEND_MAIL_FOR_CONFIRM_DATA">
+ <summary>
+ メール送信（日程確定）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.BLC.CSF020BLC.TABLE_NM">
+ <summary>
+ メール送信用テーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.BLC.CSF020BLC.PROC_NM">
+ <summary>
+ 呼び出し処理名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSF020BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ データ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.SelectTankData(System.Data.DataSet)">
+ <summary>
+ データ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.SelectMFileData(System.Data.DataSet)">
+ <summary>
+ データ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.InsertSaveData(System.Data.DataSet)">
+ <summary>
+ 保存(新規)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.UpdateSaveData(System.Data.DataSet)">
+ <summary>
+ 保存(更新)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.SaveLogiDtl(System.Data.DataSet)">
+ <summary>
+ 保存(更新)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.DeleteData(System.Data.DataSet)">
+ <summary>
+ 削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.RollBackData(System.Data.DataSet)">
+ <summary>
+ 取戻
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.OrderData(System.Data.DataSet)">
+ <summary>
+ 検査指示
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.ConfirmData(System.Data.DataSet)">
+ <summary>
+ 日程確定
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.Reschedule(System.Data.DataSet)">
+ <summary>
+ 日程変更
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.RescheduleLogiDtl(System.Data.DataSet)">
+ <summary>
+ 日程確定物流明細更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.ConfirmLogiDtl(System.Data.DataSet)">
+ <summary>
+ 日程確定物流明細更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.SendMailForConfirmData(System.Data.DataSet)">
+ <summary>
+ メール送信（日程確定）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.CreateMailDataForConfirmData(System.Data.DataSet)">
+ <summary>
+ メール送信用データセット作成（日程確定）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.IsHaitaChk(System.Data.DataSet)">
+ <summary>
+ 排他制御
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.InsertFTestOrdHead(System.Data.DataSet)">
+ <summary>
+ 定検ヘッダ登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.SaveFTestOrdHead(System.Data.DataSet)">
+ <summary>
+ 定検ヘッダ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.OrderFTestOrdHead(System.Data.DataSet)">
+ <summary>
+ 定検ヘッダ更新(依頼)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.ConfirmFTestOrdHead(System.Data.DataSet)">
+ <summary>
+ 定検ヘッダ更新(日程確定)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.RescheduleFTestOrdHead(System.Data.DataSet)">
+ <summary>
+ 定検ヘッダ更新(日程変更)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.RollBackFTestOrdHead(System.Data.DataSet)">
+ <summary>
+ 定検ヘッダ更新(取戻)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.DeleteFTestOrdHead(System.Data.DataSet)">
+ <summary>
+ 定検ヘッダ削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.UpdateFTestOrdDtlMain(System.Data.DataSet)">
+ <summary>
+ 定検明細更新(メイン)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.InsertFTestOrdDtl(System.Data.DataSet)">
+ <summary>
+ 定検明細登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.UpdateFTestOrdDtl(System.Data.DataSet)">
+ <summary>
+ 定検明細更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.UpdateFTestOrdDtlNewToOld(System.Data.DataSet)">
+ <summary>
+ 定検明細更新(過去化)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.UpdateFTestOrdDtlOldToNew(System.Data.DataSet)">
+ <summary>
+ 定検明細更新(最新化)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.DeleteFTestOrdDtl(System.Data.DataSet)">
+ <summary>
+ 定検明細削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.UpdateEInOutOrdHead(System.Data.DataSet)">
+ <summary>
+ 入出荷検品ヘッダ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.InsertEInOutOrdHead(System.Data.DataSet)">
+ <summary>
+ 入出荷検品ヘッダ登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.DeleteEInOutOrdHead(System.Data.DataSet)">
+ <summary>
+ 入出荷検品ヘッダ削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.UpdateEInOutOrdDtl(System.Data.DataSet)">
+ <summary>
+ 入出荷検品明細更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.InsertEInOutOrdDtl(System.Data.DataSet)">
+ <summary>
+ 入出荷検品明細登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.DeleteEInOutOrdDtl(System.Data.DataSet)">
+ <summary>
+ 入出荷検品明細削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.InsertDLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 物流明細登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.UpdateDLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 物流明細更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.DeleteDLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 物流明細削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.RollBackDLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 物流明細更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.SetSaveData(System.Data.DataSet)">
+ <summary>
+ 保存データセット
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.SetSaveFTestOrdHead(System.Data.DataSet)">
+ <summary>
+ 定検ヘッダデータセット
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.SetSaveFTestOrdDtl(System.Data.DataSet)">
+ <summary>
+ 定検明細データセット
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.SetDeleteData(System.Data.DataSet)">
+ <summary>
+ 削除データセット(メイン)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.SetDeleteFTestOrdHead(System.Data.DataSet)">
+ <summary>
+ 定検移送ヘッダデータセット
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.SetDeleteFTestOrdDtl(System.Data.DataSet)">
+ <summary>
+ 定検明細データセット
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.SetRollBackData(System.Data.DataSet)">
+ <summary>
+ 取戻データセット
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.SetRollBackFTestOrdHead(System.Data.DataSet)">
+ <summary>
+ 定検ヘッダデータセット
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.SetRollBackFTestOrdDtl(System.Data.DataSet)">
+ <summary>
+ 定検ヘッダデータセット
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.SetRollBackLogiDtl(System.Data.DataSet)">
+ <summary>
+ 物流明細データセット
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.SetDeleteEInOutOrdHead(System.Data.DataSet)">
+ <summary>
+ 入出荷検品ヘッダデータセット(削除)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.SetDeleteEInOutOrdDtl(System.Data.DataSet)">
+ <summary>
+ 入出荷検品明細データセット(削除)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.SetOrderData(System.Data.DataSet)">
+ <summary>
+ 検査指示データセット
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.SetOrderFTestOrdHead(System.Data.DataSet)">
+ <summary>
+ 定検ヘッダデータセット
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.SetOrderFTestOrdDtl(System.Data.DataSet)">
+ <summary>
+ 定検明細データセット
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.SetConfirmData(System.Data.DataSet)">
+ <summary>
+ 日程確定データセット
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.SetFTestOrdHead(System.Data.DataSet,System.String)">
+ <summary>
+ 定検ヘッダデータセット
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="proc">呼び出し処理</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.SetFTestOrdDtl(System.Data.DataSet,System.String)">
+ <summary>
+ 定検明細データセット
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="proc">呼び出し処理</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.SetConfirmLogiDtl(System.Data.DataSet)">
+ <summary>
+ 物流明細データセット
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.SetConfirmEInOutOrdHead(System.Data.DataSet)">
+ <summary>
+ 入出荷検品ヘッダデータセット
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.SetConfirmEInOutOrdDtl(System.Data.DataSet)">
+ <summary>
+ 入出荷検品明細データセット
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.SetRescheduleData(System.Data.DataSet)">
+ <summary>
+ 日程変更データセット
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.SetRescheduleLogiDtl(System.Data.DataSet)">
+ <summary>
+ 物流明細データセット
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.SetRescheduleEInOutOrdHead(System.Data.DataSet)">
+ <summary>
+ 入荷検品ヘッダデータセット
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.SetRescheduleEInOutOrdDtl(System.Data.DataSet)">
+ <summary>
+ 入荷検品明細データセット
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.SetInsertLogiDtl(System.Data.DataSet,System.Data.DataRow,System.String)">
+ <summary>
+ 物流明細データセット(登録)
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="proc">呼び出し処理</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.SetDeleteLogiDtl(System.Data.DataSet,System.Data.DataRow)">
+ <summary>
+ 物流明細データセット(削除)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.SetUpdateOldLogiDtl(System.Data.DataSet,System.Data.DataRow)">
+ <summary>
+ 物流明細データセット(過去化)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.SetUpdateLatestLogiDtl(System.Data.DataSet,System.Data.DataRow)">
+ <summary>
+ 物流明細データセット(最新化)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.SetInOutOrdHeadOut(System.Data.DataSet,System.String)">
+ <summary>
+ 入出荷検品ヘッダ(出荷)
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="proc">呼び出し処理</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.SetInOutOrdHeadIn(System.Data.DataSet,System.String)">
+ <summary>
+ 入出荷検品ヘッダ(入荷)
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="proc">呼び出し処理</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.SetInOutOrdDtlOut(System.Data.DataSet,System.String)">
+ <summary>
+ 入出荷検品明細(出荷)
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="proc">呼び出し処理</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.SetInOutOrdDtlIn(System.Data.DataSet,System.String)">
+ <summary>
+ 入出荷検品明細(入荷)
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="proc">呼び出し処理</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.SetRescheduleDeleteEInOutOrdHead(System.Data.DataSet)">
+ <summary>
+ 入出荷検品ヘッダデータセット(削除)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.SetRescheduleDeleteEInOutOrdDtl(System.Data.DataSet)">
+ <summary>
+ 入出荷検品明細データセット(削除)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.SelectZSystem(System.Data.DataSet)">
+ <summary>
+ Z_SYSTEM取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.AddRowZSystemCSF020(System.Data.DataSet@,System.String,System.String)">
+ <summary>
+ Z_SYSTEM行追加処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="procKbn">Z_SYSTEM処理区分</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.IsRollBackErrorCheck(System.Data.DataSet)">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.IsErrCheckedInOutData(System.String,System.String)">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.IsSaveErrorCheck(System.Data.DataSet)">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.SendMail(System.Data.DataSet)">
+ <summary>
+ メール送信
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.SetSendMailData(System.Data.DataSet)">
+ <summary>
+ メールデータ差悪性
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.SendMailProc(System.Data.DataSet)">
+ <summary>
+ メール送信処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.CreateMakeMailDs">
+ <summary>
+ メール送信用DataSet作成
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.GetMaimTpl(System.String,System.String)">
+ <summary>
+ メールテンプレート取得
+ </summary>
+ <param name="tplCd"></param>
+ <param name="tplKbn"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.CreateEWSToolSendMailDataSet">
+ <summary>
+ EWSTool SendMail用DataSet作成
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.IsEditTank(System.Data.DataRowView)">
+ <summary>
+ 搬入日、作業開始日、返却日のどれかが変更されていた場合、Trueを返却
+ </summary>
+ <param name="row">DataRowView(CSF020OUT_DTL)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF020BLC.IsEditTank(System.Data.DataRow)">
+ <summary>
+ 搬入日、作業開始日、返却日のどれかが変更されていた場合、Trueを返却
+ </summary>
+ <param name="row">DataRow(CSF020OUT_DTL)</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSF040BLC.FUNCTION_NM.SELECT_DATA">
+ <summary>
+ データ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSF040BLC.FUNCTION_NM.SAVE_DATA">
+ <summary>
+ 保存
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSF040BLC.FUNCTION_NM.RESULT_DATA">
+ <summary>
+ 結果報告
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSF040BLC.FUNCTION_NM.ROLLBACK_DATA">
+ <summary>
+ 取戻
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSF040BLC.FUNCTION_NM.HAITA_CHK">
+ <summary>
+ 排他制御
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSF040BLC.FUNCTION_NM.SEND_MAIL">
+ <summary>
+ 通知メール送信
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSF040BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF040BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ データ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF040BLC.IsUpdateFTestOrdHead(System.Data.DataSet)">
+ <summary>
+ 定検ヘッダ更新要否判定
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF040BLC.IsRollBackFTestOrdHead(System.Data.DataSet)">
+ <summary>
+ 定検ヘッダ更新要否判定
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF040BLC.SelectInCompleteCount(System.Data.DataSet)">
+ <summary>
+ 未完了件数取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF040BLC.SelectFTestOrdHeadCount(System.Data.DataSet)">
+ <summary>
+ 定検ヘッダ有無取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF040BLC.SaveData(System.Data.DataSet)">
+ <summary>
+ 保存
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF040BLC.ResultData(System.Data.DataSet)">
+ <summary>
+ 結果報告
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF040BLC.SetResultData(System.Data.DataSet)">
+ <summary>
+ 結果報告
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF040BLC.SetResultFTestOrdHead(System.Data.DataSet)">
+ <summary>
+ 定検ヘッダデータセット
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF040BLC.SetResultFTestOrdDtl(System.Data.DataSet)">
+ <summary>
+ 定検明細データセット
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF040BLC.SetResultDLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 物流明細データセット
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF040BLC.ResultFTestOrdData(System.Data.DataSet)">
+ <summary>
+ 結果報告
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF040BLC.ResultFTestOrdHead(System.Data.DataSet)">
+ <summary>
+ 定検明細更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF040BLC.ResultFTestOrdDtl(System.Data.DataSet)">
+ <summary>
+ 定検明細更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF040BLC.ResultDLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 物流明細更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF040BLC.RollBackData(System.Data.DataSet)">
+ <summary>
+ 取戻
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF040BLC.SetRollBackData(System.Data.DataSet)">
+ <summary>
+ 結果報告
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF040BLC.SetRollBackFTestOrdHead(System.Data.DataSet)">
+ <summary>
+ 定検ヘッダデータセット
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF040BLC.SetRollBackFTestOrdDtl(System.Data.DataSet)">
+ <summary>
+ 定検明細データセット
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF040BLC.SetRollBackDLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 物流明細データセット
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF040BLC.RollBackFTestOrdData(System.Data.DataSet)">
+ <summary>
+ 結果報告
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF040BLC.RollBackFTestOrdHead(System.Data.DataSet)">
+ <summary>
+ 定検ヘッダロールバック
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF040BLC.RollBackFTestOrdDtl(System.Data.DataSet)">
+ <summary>
+ 定検明細ロールバック
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF040BLC.RollBackDLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 物流明細ロールバック
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF040BLC.IsHaitaChk(System.Data.DataSet)">
+ <summary>
+ 排他制御
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF040BLC.SelectZSystem(System.Data.DataSet)">
+ <summary>
+ Z_SYSTEM取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF040BLC.AddRowZSystemCSF040(System.Data.DataSet@,System.String,System.String)">
+ <summary>
+ Z_SYSTEM行追加処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="procKbn">Z_SYSTEM処理区分</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF040BLC.IsErrNextProccesData(System.Data.DataSet)">
+ <summary>
+ 次工程チェック
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF040BLC.IsErrCheckedInOutData(System.Data.DataSet)">
+ <summary>
+ 未来日の入出荷データチェック
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF040BLC.SendMail(System.Data.DataSet)">
+ <summary>
+ 通知メール送信
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF040BLC.SelectMailInfoTestResultData(System.Data.DataSet)">
+ <summary>
+ 通知メール送信情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF040BLC.GetMaimTpl(System.String,System.String)">
+ <summary>
+ メールテンプレート取得
+ </summary>
+ <param name="tplCd"></param>
+ <param name="tplKbn"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSF040BLC.CreateEWSToolSendMailDataSet">
+ <summary>
+ EWSTool SendMail用DataSet作成
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

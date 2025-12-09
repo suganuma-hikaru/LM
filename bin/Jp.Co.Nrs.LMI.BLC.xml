@@ -1,0 +1,4858 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.LMI.BLC
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI511BLC">
+ <summary>
+ LMH030BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI511BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI511BLC.BoMstSelect(System.Data.DataSet)">
+ <summary>
+ ＪＮＣ営業所マスタ：取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI511BLC.OldDataChkSelect(System.Data.DataSet)">
+ <summary>
+ 編集中に旧データになっていないかチェック：取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI511BLC.OutkaSaveSelectEdiL(System.Data.DataSet)">
+ <summary>
+ 出荷登録処理：取得：ＥＤＩ出荷データＬ
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI511BLC.OutkaSaveSelectHed(System.Data.DataSet)">
+ <summary>
+ 出荷登録処理：取得：ＪＮＣＥＤＩ受信データ(ヘッダー)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI511BLC.OutkaSaveSelectDtl(System.Data.DataSet)">
+ <summary>
+ 出荷登録処理：取得：ＪＮＣＥＤＩ受信データ(明細)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI511BLC.OutkaSaveInsertEdiL(System.Data.DataSet)">
+ <summary>
+ 出荷登録処理：登録：ＥＤＩ出荷データＬ
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI511BLC.OutkaSaveInsertEdiM(System.Data.DataSet)">
+ <summary>
+ 出荷登録処理：登録：ＥＤＩ出荷データＭ
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI511BLC.OutkaSaveUpdateHed(System.Data.DataSet)">
+ <summary>
+ 出荷登録処理：更新：ＪＮＣＥＤＩ受信データ(ヘッダー)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI511BLC.MtmSaveExitHed(System.Data.DataSet)">
+ <summary>
+ まとめ指示処理：排他：ＪＮＣＥＤＩ受信データ(ヘッダー)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI511BLC.MtmSaveUpdateHed(System.Data.DataSet)">
+ <summary>
+ まとめ指示処理：更新：ＪＮＣＥＤＩ受信データ(ヘッダー)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI511BLC.MtmCancelExitHed(System.Data.DataSet)">
+ <summary>
+ まとめ解除処理：排他：ＪＮＣＥＤＩ受信データ(ヘッダー)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI511BLC.MtmCancelUpdateHed(System.Data.DataSet)">
+ <summary>
+ まとめ解除処理：更新：ＪＮＣＥＤＩ受信データ(ヘッダー)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI511BLC.SndReqExitHed(System.Data.DataSet)">
+ <summary>
+ 送信要求処理：排他：ＪＮＣＥＤＩ受信データ(ヘッダー)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI511BLC.SndReqUpdateHed(System.Data.DataSet)">
+ <summary>
+ 送信要求処理：更新：ＪＮＣＥＤＩ受信データ(ヘッダー)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI511BLC.SndReqUpdateHedUnso(System.Data.DataSet)">
+ <summary>
+ 送信要求処理：更新：ＪＮＣＥＤＩ受信データ(ヘッダー運送)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI511BLC.SndCancelExitHed(System.Data.DataSet)">
+ <summary>
+ 送信取消処理：排他：ＪＮＣＥＤＩ受信データ(ヘッダー)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI511BLC.SndCancelUpdateHed(System.Data.DataSet)">
+ <summary>
+ 送信取消処理：更新：ＪＮＣＥＤＩ受信データ(ヘッダー)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI511BLC.MtmSearchCount(System.Data.DataSet)">
+ <summary>
+ まとめ候補検索処理：件数
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI511BLC.MtmSearchSelect(System.Data.DataSet)">
+ <summary>
+ まとめ候補検索処理：取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI511BLC.SearchCount(System.Data.DataSet)">
+ <summary>
+ 検索処理：件数
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI511BLC.SearchSelect(System.Data.DataSet)">
+ <summary>
+ 検索処理：取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI511BLC.SaveEditExitHed(System.Data.DataSet)">
+ <summary>
+ 保存処理(編集)：排他：ＪＮＣＥＤＩ受信データ(ヘッダー)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI511BLC.SaveEditUpdateHed(System.Data.DataSet)">
+ <summary>
+ 保存処理(編集)：更新：ＪＮＣＥＤＩ受信データ(ヘッダー)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI511BLC.SaveEditExitDtl(System.Data.DataSet)">
+ <summary>
+ 保存処理(編集)：排他：ＪＮＣＥＤＩ受信データ(明細)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI511BLC.SaveEditUpdateDtl(System.Data.DataSet)">
+ <summary>
+ 保存処理(編集)：更新：ＪＮＣＥＤＩ受信データ(明細)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI511BLC.SaveRevisionExitHed(System.Data.DataSet)">
+ <summary>
+ 保存処理(訂正)：排他：ＪＮＣＥＤＩ受信データ(ヘッダー)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI511BLC.SaveRevisionUpdateHed(System.Data.DataSet)">
+ <summary>
+ 保存処理(訂正)：更新：ＪＮＣＥＤＩ受信データ(ヘッダー)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI511BLC.SaveRevisionSelectHed(System.Data.DataSet)">
+ <summary>
+ 保存処理(訂正)：取得：ＪＮＣＥＤＩ受信データ(ヘッダー)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI511BLC.SaveRevisionInsertHed(System.Data.DataSet)">
+ <summary>
+ 保存処理(訂正)：登録：ＪＮＣＥＤＩ受信データ(ヘッダー)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI511BLC.SaveRevisionSelectDtl(System.Data.DataSet)">
+ <summary>
+ 保存処理(訂正)：取得：ＪＮＣＥＤＩ受信データ(明細)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI511BLC.SaveRevisionInsertDtl(System.Data.DataSet)">
+ <summary>
+ 保存処理(訂正)：登録：ＪＮＣＥＤＩ受信データ(明細)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI512BLC">
+ <summary>
+ LMI512BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI512BLC.TABLE_NM">
+ <summary>
+ データセットテーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI512BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI512BLC.DoPrint(System.Data.DataSet)">
+ <summary>
+ 印刷処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI512BLC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+　帳票パターン取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI512BLC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 印刷データ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI512BLC.UpdatePrtFlg(System.Data.DataSet)">
+ <summary>
+ プリントフラグ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI517BLC">
+ <summary>
+ LMI517BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI517BLC.TABLE_NM">
+ <summary>
+ データセットテーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI517BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI517BLC.DoPrint(System.Data.DataSet)">
+ <summary>
+ 印刷処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI517BLC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+　帳票パターン取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI517BLC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 印刷データ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI517BLC.UpdatePrtFlg(System.Data.DataSet)">
+ <summary>
+ プリントフラグ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI517BLC.GetWeekString(System.DayOfWeek)">
+ <summary>
+ 曜日文字列を返す
+ </summary>
+ <param name="d">DayOfWeek</param>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI516BLC">
+ <summary>
+ LMI516BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI516BLC.TABLE_NM">
+ <summary>
+ データセットテーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI516BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI516BLC.DoPrint(System.Data.DataSet)">
+ <summary>
+ 印刷処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI516BLC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+　帳票パターン取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI516BLC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 印刷データ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI516BLC.UpdatePrtFlg(System.Data.DataSet)">
+ <summary>
+ プリントフラグ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI515BLC">
+ <summary>
+ LMI515BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI515BLC.TABLE_NM">
+ <summary>
+ データセットテーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI515BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI515BLC.DoPrint(System.Data.DataSet)">
+ <summary>
+ 印刷処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI515BLC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+　帳票パターン取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI515BLC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 印刷データ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI515BLC.UpdatePrtFlg(System.Data.DataSet)">
+ <summary>
+ プリントフラグ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI514BLC">
+ <summary>
+ LMI514BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI514BLC.TABLE_NM">
+ <summary>
+ データセットテーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI514BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI514BLC.DoPrint(System.Data.DataSet)">
+ <summary>
+ 印刷処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI514BLC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+　帳票パターン取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI514BLC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 印刷データ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI514BLC.UpdatePrtFlg(System.Data.DataSet)">
+ <summary>
+ プリントフラグ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI514BLC.GetWeekString(System.DayOfWeek)">
+ <summary>
+ 曜日文字列を返す
+ </summary>
+ <param name="d">DayOfWeek</param>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI020BLC">
+ <summary>
+ LMI020BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI020BLC.TABLE_NM_GETU_IN">
+ <summary>
+ GETU_INテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI020BLC.TABLE_NM_GETU_OUT">
+ <summary>
+ GETU_OUTテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI020BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI020BLC.SelectLoadData(System.Data.DataSet)">
+ <summary>
+ コンボ用のデータ取得(初期表示用)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI020BLC.SelectGetuData(System.Data.DataSet)">
+ <summary>
+ コンボ用のデータ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI020BLC.DacAccess(System.Data.DataSet,System.String)">
+ <summary>
+ DACクラスアクセス
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI030BLC">
+ <summary>
+ LMI030BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI030BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI030BLC.MakeData(System.Data.DataSet)">
+ <summary>
+ 作成処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI030BLC.UpdateSekyGL(System.Data.DataSet)">
+ <summary>
+ デュポン請求GLマスタの更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI030BLC.MakeInterFaceData(System.Data.DataSet,System.String)">
+ <summary>
+ デュポン請求ファイル、デュポン請求GLマスタの更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI030BLC.InsUpdSekyGL(System.Data.DataSet)">
+ <summary>
+ デュポン請求GLマスタの更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI030BLC.SelectExcel(System.Data.DataSet)">
+ <summary>
+ EXCEL出力データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks>DACのSelectExcelメソッド呼出</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI030BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI030BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks>DACのSelectListDataメソッド呼出</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI030BLC.SelectCustDetails(System.Data.DataSet)">
+ <summary>
+ 荷主明細件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI040BLC">
+ <summary>
+ LMI040BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI040BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI040BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI040BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks>DACのSelectListDataメソッド呼出</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI040BLC.SelectInsertData(System.Data.DataSet)">
+ <summary>
+ データ重複検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI040BLC.SelectCopyData(System.Data.DataSet)">
+ <summary>
+ 複写時の合算処理判定のための検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI040BLC.SelectCsvListData(System.Data.DataSet)">
+ <summary>
+ CSVデータ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI040BLC.InsertSaveAction(System.Data.DataSet)">
+ <summary>
+ 新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI040BLC.UpdateSaveAction(System.Data.DataSet)">
+ <summary>
+ 編集登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI040BLC.GassanSaveAction(System.Data.DataSet)">
+ <summary>
+ 合算更新登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI040BLC.DeleteSaveAction(System.Data.DataSet)">
+ <summary>
+ 削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI040BLC.ServerChkJudge(System.Data.DataSet,System.String)">
+ <summary>
+ DACでメッセージが設定されているかを判定
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI040BLC.DacAccess(System.Data.DataSet,System.String)">
+ <summary>
+ DACクラスアクセス
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI050BLC">
+ <summary>
+ LMI050BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI050BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI050BLC.SelectMonthlySnz(System.Data.DataSet)">
+ <summary>
+ 篠崎運送専用の月末在庫テーブルからデータ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI050BLC.SelectZaiZanSnz(System.Data.DataSet)">
+ <summary>
+ 月末在庫データの検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI050BLC.DeleteDataSNZ(System.Data.DataSet)">
+ <summary>
+ 篠崎運送専用の月末在庫テーブル削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI050BLC.InsertDataSNZ(System.Data.DataSet)">
+ <summary>
+ 篠崎運送専用の月末在庫テーブル作成処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI060BLC">
+ <summary>
+ LMI060BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI060BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI060BLC.SelectUnchinRecastData(System.Data.DataSet)">
+ <summary>
+ データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks>DACのSelectUnchinRecastDataメソッド呼出</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI060BLC.MakeDataCHK(System.Data.DataSet)">
+ <summary>
+ 作成処理時、既存データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks>DACのMakeDataCHKメソッド呼出</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI060BLC.DeleteSaveAction(System.Data.DataSet)">
+ <summary>
+ 削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI060BLC.SelectMakeData(System.Data.DataSet)">
+ <summary>
+ 作成対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks>DACのSelectMakeDataメソッド呼出</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI060BLC.MakeData(System.Data.DataSet)">
+ <summary>
+ 作成処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI060BLC.MakeDataDAC(System.Data.DataSet)">
+ <summary>
+ 作成処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI060BLC.ServerChkJudge(System.Data.DataSet,System.String)">
+ <summary>
+ DACでメッセージが設定されているかを判定
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI060BLC.DacAccess(System.Data.DataSet,System.String)">
+ <summary>
+ DACクラスアクセス
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI060BLC.matomeShori(System.Data.DataSet)">
+ <summary>
+ まとめ処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI060BLC.upKbnClear(System.Data.DataSet)">
+ <summary>
+ 更新区分のクリア
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI060BLC.dokuShori(System.Data.DataSet)">
+ <summary>
+ データ再設定処理(毒劇、消防)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI060BLC.toukiShori(System.Data.DataSet)">
+ <summary>
+ データ再設定処理(冬期)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI060BLC.roundKeisan(System.Decimal,System.Data.DataRow)">
+ <summary>
+ 計算処理
+ </summary>
+ <param name="value">Decimal</param>
+ <returns>Decimal</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI070BLC">
+ <summary>
+ LMI070BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI070BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI070BLC._MakeFlg">
+ <summary>
+ データ作成判定フラグ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI070BLC.MakeData(System.Data.DataSet)">
+ <summary>
+ 作成処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI070BLC.MakeHokanNiyaku(System.Data.DataSet)">
+ <summary>
+ 保管料・荷役料の場合の作成
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI070BLC.MakeSagyo(System.Data.DataSet)">
+ <summary>
+ 作業料の場合の作成
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI070BLC.MakeUnchin(System.Data.DataSet)">
+ <summary>
+ 運賃の場合の作成
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI070BLC.unchinOutka(System.Data.DataSet)">
+ <summary>
+ ダウケミ請求明細作成前の編集
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI070BLC.unchinInka(System.Data.DataSet)">
+ <summary>
+ ダウケミ請求明細作成前の編集
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI070BLC.unchinUnchin(System.Data.DataSet)">
+ <summary>
+ ダウケミ請求明細作成前の編集
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI110BLC">
+ <summary>
+ LMI110BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI110BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI110BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ 日医工製品マスタ検索処理(件数取得)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI110BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+日医工製品マスタ検索処理(データ取得)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI110BLC.ExistGoodsM(System.Data.DataSet)">
+ <summary>
+ 商品マスタ重複チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI110BLC.InsertData(System.Data.DataSet)">
+ <summary>
+ 商品マスタ/明細 新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI110BLC.UpdateSaveData(System.Data.DataSet)">
+ <summary>
+ 商品マスタ/明細 更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI110BLC.UpdateSehinM(System.Data.DataSet)">
+ <summary>
+ 製品マスタ（日医工） 更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI120BLC">
+ <summary>
+ LMI120BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI120BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI120BLC._MakeFlg">
+ <summary>
+ データ作成判定フラグ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI130BLC">
+ <summary>
+ LMI130BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI130BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI130BLC._MakeFlg">
+ <summary>
+ データ作成判定フラグ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI130BLC.SelectAddData(System.Data.DataSet)">
+ <summary>
+ 追加対象データの検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI130BLC.SelectSagyoData(System.Data.DataSet)">
+ <summary>
+ 作業マスタの検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI130BLC.SelectCustData(System.Data.DataSet)">
+ <summary>
+ 荷主マスタの検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI130BLC.SelectSagyoCord(System.Data.DataSet)">
+ <summary>
+ 区分マスタから本特殊荷主用作業レコードを取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI130BLC.InsertSagyoRecord(System.Data.DataSet)">
+ <summary>
+ 作業レコードへの登録
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI130BLC.SetInSagyoData(System.Data.DataSet@)">
+ <summary>
+ 作業レコードへの登録用DataSet
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI140BLC">
+ <summary>
+ LMI140BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI140BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI140BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI140BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks>DACのSelectListDataメソッド呼出</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI140BLC.JissekiSakusei(System.Data.DataSet)">
+ <summary>
+ 実績作成処理
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI150BLC">
+ <summary>
+ LMI150BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI150BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI150BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI150BLC.SelectNrsProcNo(System.Data.DataSet)">
+ <summary>
+ NRS処理番号の最大値を取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI150BLC.InsertData(System.Data.DataSet)">
+ <summary>
+ データ登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI150BLC.UpdateData(System.Data.DataSet)">
+ <summary>
+ データ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI180BLC">
+ <summary>
+ LMI180BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI180BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI180BLC.SelectOutkaData(System.Data.DataSet)">
+ <summary>
+ 出荷データ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI180BLC.TorikomiData(System.Data.DataSet)">
+ <summary>
+ 取込データ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI180BLC.SelectMaxEdaNo(System.Data.DataSet)">
+ <summary>
+ 枝番号の最大値を取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI180BLC.ShukkaCheckData(System.Data.DataSet)">
+ <summary>
+ NRC回収データ取得処理(保存時の入力チェック処理)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI180BLC.InsertNrcShukkaData(System.Data.DataSet)">
+ <summary>
+ 保存処理(出荷の場合)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI180BLC.InsertNrcKaishuData(System.Data.DataSet)">
+ <summary>
+ 保存処理(回収の追加の場合)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI180BLC.UpdateNrcKaishuData(System.Data.DataSet)">
+ <summary>
+ 保存処理(回収の更新の場合)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI180BLC.UpdateNrcTorikeshiData(System.Data.DataSet)">
+ <summary>
+ 保存処理(取消の場合)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI180BLC.GetNrcRecNo(System.Data.DataSet)">
+ <summary>
+ NRC_RE_NOを取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>OutkaNoL</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI190BLC">
+ <summary>
+ LMI190BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI190BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI190BLC.SelectCustDetailsData(System.Data.DataSet)">
+ <summary>
+ 荷主明細データ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI190BLC.SelectDeleteData(System.Data.DataSet)">
+ <summary>
+ 削除対象データ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI190BLC.SelectInkaData(System.Data.DataSet)">
+ <summary>
+ 入荷データ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI190BLC.SelectOutkaData(System.Data.DataSet)">
+ <summary>
+ 出荷データ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI190BLC.DeleteContTrackData2(System.Data.DataSet)">
+ <summary>
+ 取得した削除対象データを元に削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI190BLC.DeleteContTrackInkaData2(System.Data.DataSet)">
+ <summary>
+ 取得した入荷データを元に削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI190BLC.DeleteContTrackOutkaData2(System.Data.DataSet)">
+ <summary>
+ 取得した出荷データを元に削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI190BLC.InsertContTrackInkaData2(System.Data.DataSet)">
+ <summary>
+ 取得した入荷データを元に追加処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI190BLC.InsertContTrackOutkaData2(System.Data.DataSet)">
+ <summary>
+ 取得した出荷データを元に追加処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI190BLC.DeleteContTrackData(System.Data.DataSet)">
+ <summary>
+ 取得した削除対象データを元に削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI190BLC.DeleteContTrackInkaData(System.Data.DataSet)">
+ <summary>
+ 取得した入荷データを元に削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI190BLC.DeleteContTrackOutkaData(System.Data.DataSet)">
+ <summary>
+ 取得した出荷データを元に削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI190BLC.InsertContTrackInkaData(System.Data.DataSet)">
+ <summary>
+ 取得した入荷データを元に追加処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI190BLC.InsertContTrackOutkaData(System.Data.DataSet)">
+ <summary>
+ 取得した出荷データを元に追加処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI190BLC.InsertLogData(System.Data.DataSet)">
+ <summary>
+ ハネウェル用データ管理取得ログ作成処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI190BLC.SelectCylinder(System.Data.DataSet)">
+ <summary>
+ シリンダタイプコンボの値を取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI190BLC.SelectToFromNm(System.Data.DataSet)">
+ <summary>
+ 在庫場所コンボの値を取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI190BLC.SelectKensakuCountZaiko(System.Data.DataSet)">
+ <summary>
+ 在庫検索データ件数取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI190BLC.SelectKensakuZaikoData(System.Data.DataSet)">
+ <summary>
+ 在庫検索データ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI190BLC.SelectKensakuCountRireki(System.Data.DataSet)">
+ <summary>
+ 履歴検索データ件数取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI190BLC.SelectKensakuRirekiData(System.Data.DataSet)">
+ <summary>
+ 履歴検索データ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI190BLC.SelectKensakuCountHaiki(System.Data.DataSet)">
+ <summary>
+ 廃棄済検索データ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI190BLC.SelectKensakuHaikiData(System.Data.DataSet)">
+ <summary>
+ 廃棄済検索データ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI190BLC.UpdateHaikiData(System.Data.DataSet)">
+ <summary>
+ 廃棄処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI190BLC.UpdateHaikiKaijoData(System.Data.DataSet)">
+ <summary>
+ 廃棄解除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI190BLC.UpdateHozonData(System.Data.DataSet)">
+ <summary>
+ 保存処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI190BLC.ImportN40Code(System.Data.DataSet)">
+ <summary>
+ N40コード取込処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI210BLC">
+ <summary>
+ LMI210BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI210BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI210BLC.SelectKensakuInkaData(System.Data.DataSet)">
+ <summary>
+ 検索データ取得処理（入荷）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI210BLC.SelectKensakuOutkaData(System.Data.DataSet)">
+ <summary>
+ '検索データ取得処理（出荷）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI220BLC">
+ <summary>
+ LMI220BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI220BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI220BLC.HaitaData(System.Data.DataSet)">
+ <summary>
+ 排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI220BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 検索データ取得処理 
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI220BLC.IsDataExistChk(System.Data.DataSet)">
+ <summary>
+ データ存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI220BLC.InsertData(System.Data.DataSet)">
+ <summary>
+ 保存（新規登録）処理 
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI220BLC.UpdateData(System.Data.DataSet)">
+ <summary>
+ 保存（更新）処理 
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI220BLC.DeleteData(System.Data.DataSet)">
+ <summary>
+ 削除処理 
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI220BLC.ReviveData(System.Data.DataSet)">
+ <summary>
+ 復活処理 
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI220BLC.ImportData(System.Data.DataSet)">
+ <summary>
+ 取込更新処理 
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI260BLC">
+ <summary>
+ LMI260BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI260BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI260BLC.HaitaChk(System.Data.DataSet)">
+ <summary>
+ 編集時排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI260BLC.DeleteData(System.Data.DataSet)">
+ <summary>
+ 削除・復活処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI260BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI260BLC.SelectInsertData(System.Data.DataSet)">
+ <summary>
+ 保存時存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI260BLC.InsertData(System.Data.DataSet)">
+ <summary>
+ 新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI260BLC.UpdateData(System.Data.DataSet)">
+ <summary>
+ 編集登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI320BLC">
+ <summary>
+ LMI320BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI320BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI320BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI320BLC.DoMake(System.Data.DataSet)">
+ <summary>
+ 作成処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI320BLC.EditDataSet(System.Data.DataSet)">
+ <summary>
+ データセット編集
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI330BLC">
+ <summary>
+ LMI330BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI330BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI330BLC.HaitaChk(System.Data.DataSet)">
+ <summary>
+ 編集時排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI330BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ 閾値件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI330BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI330BLC.SelectExistData(System.Data.DataSet)">
+ <summary>
+ 存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI330BLC.UpdateData(System.Data.DataSet)">
+ <summary>
+ 編集登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI360BLC">
+ <summary>
+ LMI360BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI360BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI360BLC._ErrFlg">
+ <summary>
+ データ作成判定フラグ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI360BLC.MakeData(System.Data.DataSet)">
+ <summary>
+ 作成処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI360BLC.MakeDataEdit(System.Data.DataSet)">
+ <summary>
+ 浮間横持運賃データテーブル追加前の編集
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI400BLC">
+ <summary>
+ LMI400BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI400BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI400BLC.HaitaChk(System.Data.DataSet)">
+ <summary>
+ 編集時排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI400BLC.DeleteData(System.Data.DataSet)">
+ <summary>
+ 削除・復活処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI400BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI400BLC.ExistChk(System.Data.DataSet)">
+ <summary>
+ 存在チェック(商品)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI400BLC.SelectInsertData(System.Data.DataSet)">
+ <summary>
+ 保存時存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI400BLC.InsertData(System.Data.DataSet)">
+ <summary>
+ 新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI400BLC.DelInsData(System.Data.DataSet)">
+ <summary>
+ 編集登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI410BLC">
+ <summary>
+ LMI410BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI410BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI410BLC.OutkaHokoku(System.Data.DataSet)">
+ <summary>
+ 報告対象データ取得処理メイン
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks>DACのSelectOutkaHokokuメソッド呼出</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI410BLC.SelectOutkaHokoku(System.Data.DataSet)">
+ <summary>
+ データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks>DACのSelectMeitetuCsvメソッド呼出</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI410BLC.InsertSendOutBykAgtData(System.Data.DataSet)">
+ <summary>
+ BYK出荷実績TBL(代理店用)追加処理（BYK出荷報告作成時）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI410BLC.UpdateOutkaData(System.Data.DataSet)">
+ <summary>
+ 出荷データ(大)更新（BYK出荷報告作成時）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI410BLC.CheckSendOutBykAgtData(System.Data.DataSet)">
+ <summary>
+ 出荷報告したレコードと対象のC_OUTKA_Mの数に差異が無いかを検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI410BLC.InkaHokoku(System.Data.DataSet)">
+ <summary>
+ BYK入荷報告対象データ取得処理メイン
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks>DACのSelectOutkaHokokuメソッド呼出</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI410BLC.SelectInkaHokoku(System.Data.DataSet)">
+ <summary>
+ BYK入荷報告データ抽出
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks>DACのSelectMeitetuCsvメソッド呼出</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI410BLC.InsertSendInOutBykData(System.Data.DataSet)">
+ <summary>
+ BYK入荷実績TBL追加処理（BYK入荷報告作成時）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI410BLC.UpdateInkaEdiLData(System.Data.DataSet)">
+ <summary>
+ EDI入荷データ(大)更新（BYK入荷報告作成時）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI410BLC.UpdateInkaEdiMData(System.Data.DataSet)">
+ <summary>
+ EDI入荷データ(中)更新（BYK入荷報告作成時）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI410BLC.UpdateInkaEdiDtlBykData(System.Data.DataSet)">
+ <summary>
+ BYK入荷EDI受信データ(明細)更新（BYK入荷報告作成時）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI410BLC.UpdateInkaData(System.Data.DataSet)">
+ <summary>
+ 入荷データ(大)更新（BYK入荷報告作成時）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI410BLC.IdoHokoku(System.Data.DataSet)">
+ <summary>
+ BYK移動報告対象データ取得処理メイン
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks>DACのSelectIdoHokokuメソッド呼出</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI410BLC.SelectIdoHokoku(System.Data.DataSet)">
+ <summary>
+ BYK移動報告データ抽出
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks>DACのSelectIdoHokokuメソッド呼出</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI410BLC.UpdateIdoEdiDtlBykData(System.Data.DataSet)">
+ <summary>
+ BYK移動EDI受信データ(明細)更新（BYK移動(入荷)報告作成時）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI410BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ BYK取込データ検索処理(件数取得)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI410BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+BYK取込データ検索処理(データ取得)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI410BLC.InsertIdoEdiData(System.Data.DataSet)">
+ <summary>
+ BYK入荷報告データ抽出
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks>DACのInsertIdoEdiDataメソッド呼出</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI410BLC.UpdateIkkatuIdoData(System.Data.DataSet)">
+ <summary>
+ BYK移動EDI受信データ(明細)更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI410BLC.Convert18Digit(System.String)">
+ <summary>
+ 18桁処理の対応
+ </summary>
+ <param name="str"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI410BLC.ServerChkJudge(System.Data.DataSet,System.String)">
+ <summary>
+ DACでメッセージが設定されているかを判定
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI410BLC.DacAccess(System.Data.DataSet,System.String)">
+ <summary>
+ DACクラスアクセス
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI420BLC">
+ <summary>
+ LMI420BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI420BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI420BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI420BLC.DeleteRec(System.Data.DataSet)">
+ <summary>
+ ワークテーブル削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI420BLC.InsertRec(System.Data.DataSet)">
+ <summary>
+ ワークデータ登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI420BLC.UpdateRec(System.Data.DataSet)">
+ <summary>
+ ワークデータ突合せ処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI430BLC">
+ <summary>
+ LMI430BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI430BLC.TABLE_NAME">
+ <summary>
+ データセットテーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI430BLC.TABLE_NAME.INPUT">
+ <summary>
+ 入力テーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI430BLC.TABLE_NAME.OUTPUT">
+ <summary>
+ 出力テーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI430BLC.TABLE_NAME.IN_CYLINDER">
+ <summary>
+ 入力テーブル(シリンダー)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI430BLC.TABLE_NAME.OUT_INSPECTION_DATA">
+ <summary>
+ 出力テーブル(検品データ)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI430BLC.IN_CYL_COLUMN_NM">
+ <summary>
+ 入力テーブル(シリンダー)カラム名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI430BLC.INPUT_COLUMN_NM">
+ <summary>
+ 入力テーブルカラム名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI430BLC.FUNCTION_NAME">
+ <summary>
+ 関数名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI430BLC.FUNCTION_NAME.SelectLoadedInkaCylFileList">
+ <summary>
+ 取込ファイル一覧取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI430BLC.FUNCTION_NAME.SelectLoadedInkaCylFileListCount">
+ <summary>
+ 取込ファイル一覧件数取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI430BLC.FUNCTION_NAME.SelectInspectionData">
+ <summary>
+ 検品データ検索
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI430BLC.FUNCTION_NAME.InsertCylinderData">
+ <summary>
+ シリンダー登録
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI430BLC.FUNCTION_NAME.DeleteCylinderData">
+ <summary>
+ シリンダー削除
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI430BLC.FUNCTION_NAME.SoftDeleteInkaCylinderL">
+ <summary>
+ 論理削除(InkaCylinderL)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI430BLC.FUNCTION_NAME.SoftDeleteInkaCylinderM">
+ <summary>
+ 論理削除(InkaCylinderM)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI430BLC.FUNCTION_NAME.SelectReadResulData">
+ <summary>
+ 読取データ検索
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI430BLC.GUIDANCE_ID">
+ <summary>
+ ガイダンスID
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI430BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI430BLC.SelectLoadedInkaCylFileListCount(System.Data.DataSet)">
+ <summary>
+ 取込ファイル一覧を取得する
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI430BLC.SelectLoadedInkaCylFileList(System.Data.DataSet)">
+ <summary>
+ 取込ファイル一覧を取得する
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI430BLC.SelectInspectionData(System.Data.DataSet)">
+ <summary>
+ 検品データを取得する
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI430BLC.InsertCylinderData(System.Data.DataSet)">
+ <summary>
+ 入荷シリンダーデータを追加する
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI430BLC.DeleteCylinderData(System.Data.DataSet)">
+ <summary>
+ 入荷シリンダーデータを削除する
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI430BLC.SoftDeleteInkaCylinderL(System.Data.DataSet)">
+ <summary>
+ 論理削除(InkaCylinderL)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI430BLC.SoftDeleteInkaCylinderM(System.Data.DataSet)">
+ <summary>
+ 論理削除(InkaCylinderM)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI430BLC.SetInkaCylFileNo(System.Data.DataSet)">
+ <summary>
+ 入荷シリンダーファイル番号設定
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI430BLC.CreateInkaCylFileNo(System.String)">
+ <summary>
+ 入荷シリンダーファイル番号生成
+ </summary>
+ <param name="nrsBrCd">営業所コード</param>
+ <returns>入荷シリンダーファイル番号</returns>
+ <remarks>
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI430BLC.SelectReadResulData(System.Data.DataSet)">
+ <summary>
+ 読取データを取得する
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI440BLC">
+ <summary>
+ LMI440BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI440BLC.TABLE_NAME">
+ <summary>
+ データセットテーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI440BLC.TABLE_NAME.INPUT">
+ <summary>
+ 入力テーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI440BLC.TABLE_NAME.OUTPUT">
+ <summary>
+ 出力テーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI440BLC.TABLE_NAME.IN_TRANSPORT">
+ <summary>
+ 入力テーブル(輸送データ)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI440BLC.FUNCTION_NAME">
+ <summary>
+ 関数名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI440BLC.FUNCTION_NAME.SelectData">
+ <summary>
+ 検品データ検索
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI440BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI450BLC">
+ <summary>
+ LMI450BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI450BLC.TABLE_NAME">
+ <summary>
+ データセットテーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI450BLC.TABLE_NAME.INPUT">
+ <summary>
+ 入力テーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI450BLC.TABLE_NAME.ADDR">
+ <summary>
+ 都道府県テーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI450BLC.TABLE_NAME.GOODS">
+ <summary>
+ 商品テーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI450BLC.TABLE_NAME.EDI">
+ <summary>
+ 出力テーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI450BLC.TABLE_NAME.EXCEL">
+ <summary>
+ 入力テーブル(輸送データ)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI450BLC.FUNCTION_NAME">
+ <summary>
+ 関数名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI450BLC.FUNCTION_NAME.GetEdiData">
+ <summary>
+ EDIデータ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI450BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI450BLC.GetEdiData(System.Data.DataSet)">
+ <summary>
+ EDIデータ成型処理
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI460BLC">
+ <summary>
+ LMI460BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI460BLC.UpdDataUnchin(System.Data.DataSet)">
+ <summary>
+ 運賃データ更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI470BLC">
+ <summary>
+ LMI470BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI470BLC.Butsuryuhi_Rtn(System.Data.DataSet)">
+ <summary>
+ 物流費チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI470BLC.MakeData(System.Data.DataSet)">
+ <summary>
+ 物流費データ作成・設定（1データ575バイト）
+ </summary>
+ <param name="prmDs">DataSet</param>
+ <remarks>DACのMakeCsvメソッド呼出</remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI480BLC">
+ <summary>
+ LMI480BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI480BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI480BLC.SELECT_KB_01_DICG">
+ <summary>
+ 抽出区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI480BLC.TABLE_NM_M_RPT">
+ <summary>
+ 帳票パターン取得テーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI480BLC.ACTION_ID_SELECT_MPRT">
+ <summary>
+ 帳票パターンアクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI480BLC.ACTION_ID_SELECT_PRT_DATA">
+ <summary>
+ 印刷データ取得アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI480BLC.TABLE_NM_IN">
+ <summary>
+ INテーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI480BLC.TABLE_NM_OUT012">
+ <summary>
+ OUTテーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI480BLC.TABLE_NM_OUT013">
+ <summary>
+ OUTテーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI480BLC.TABLE_NM_OUT014">
+ <summary>
+ OUTテーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI480BLC.NRS_BR_CD">
+ <summary>
+ RPTテーブルのカラム名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI480BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ 検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI480BLC.DoPrint(System.Data.DataSet)">
+ <summary>
+ 印刷処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI480BLC.EditPrintDataSet(System.String,System.Data.DataSet)">
+ <summary>
+ データセットの編集を行う。
+ </summary>
+ <param name="rptId"></param>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI480BLC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+　出力対象帳票パターン取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI480BLC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 印刷データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI490BLC">
+ <summary>
+ LMI490BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI490BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI490BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ 検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI500BLC">
+ <summary>
+ LMI500BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI500BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI500BLC.TABLE_NM_IN">
+ <summary>
+ INテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI500BLC.TABLE_NM_COUNT">
+ <summary>
+ COUNTテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI500BLC.START_DATE">
+ <summary>
+ 初期在庫
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI500BLC.END_DATE">
+ <summary>
+ 直近在庫
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI500BLC.TABLE_NM_LMI500SET">
+ <summary>
+ LMI500SETテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI500BLC.TABLE_NM_LMI501SET">
+ <summary>
+ LMI501SETテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI500BLC.TABLE_NM_LMI502SET">
+ <summary>
+ LMI502SETテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI500BLC.GRAM_NRS_BR_CD">
+ <summary>
+ グラム対応特殊プラントコード
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI500BLC.GRAM_CUST_CD_L">
+ <summary>
+ グラム対応特殊プラントコード
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI500BLC.GRAM_CUST_CD_M">
+ <summary>
+ グラム対応特殊プラントコード
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI500BLC.GRAM_PLANT_CD">
+ <summary>
+ グラム対応特殊プラントコード
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI500BLC.SelectNitijiData(System.Data.DataSet)">
+ <summary>
+ 日次在庫報告用データ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI500BLC.SelectZaiData(System.Data.DataSet)">
+ <summary>
+ 在庫証明書作成データ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI500BLC.SelectSftpData(System.Data.DataSet)">
+ <summary>
+ SFTPデータ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI500BLC.EditSelectDataSet(System.Data.DataSet)">
+ <summary>
+ DataSet編集処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI500BLC.SelectGetuData(System.Data.DataSet)">
+ <summary>
+ 履歴データの存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI500BLC.SelectRirekiCount(System.Data.DataSet)">
+ <summary>
+ 月末在庫履歴データのチェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI500BLC.ChkZaiRirekiData(System.String)">
+ <summary>
+ 在庫履歴データの件数チェック
+ </summary>
+ <param name="value">値</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI500BLC.CountChk(System.String,System.String)">
+ <summary>
+ 取得できている場合、エラー
+ </summary>
+ <param name="value">値</param>
+ <param name="msg">置換文字</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI500BLC.DacAccess(System.Data.DataSet,System.String)">
+ <summary>
+ DACクラスアクセス
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI500BLC.ChkSelectData(System.Data.DataSet,System.String)">
+ <summary>
+ 取得件数チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="tblNm">テーブル名</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI510BLC">
+ <summary>
+ LMI510BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI510BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI510BLC.DoPrint(System.Data.DataSet)">
+ <summary>
+ 印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI510BLC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+　出力対象帳票パターン取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI510BLC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 印刷データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI513BLC">
+ <summary>
+ LMI513BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI513BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI513BLC.DoPrint(System.Data.DataSet)">
+ <summary>
+ 印刷処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI513BLC.ExcelMake(System.Data.DataSet)">
+ <summary>
+ Excel出力データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI520BLC">
+ <summary>
+ LMI520BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI520BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI520BLC.DoPrint(System.Data.DataSet)">
+ <summary>
+ 印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI520BLC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+　出力対象帳票パターン取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI520BLC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 印刷データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI530BLC">
+ <summary>
+ LMI530BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI530BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI530BLC.SelectInitData(System.Data.DataSet)">
+ <summary>
+ 初期表示用データ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI530BLC.UpdateData(System.Data.DataSet)">
+ <summary>
+ 更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI540BLC">
+ <summary>
+ LMI540BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI540BLC.GUIDANCE_KBN">
+ <summary>
+ ガイダンス区分(00)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI540BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI540BLC.EXCEL_COLTITLE">
+ <summary>
+ EXCEL用COLUMタイトル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI540BLC.TorikomiChk(System.Data.DataSet)">
+ <summary>
+ 取込前チェック
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI540BLC.TorikomiValChk(System.Data.DataRow)">
+ <summary>
+ 値・日付チェック
+ </summary>
+ <param name="dr"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI540BLC.IsHalfSize(System.String,System.Int32)">
+ <summary>
+ 文字列が全て半角であるかをチェックし、文字列長をチェックする
+ </summary>
+ <param name="targetString">対象文字列</param>
+ <param name="length">比較文字列長</param>
+ <returns>True=条件を満たしている False=条件を満たしていない</returns>
+ <remarks>文字列長はイコール比較を行う</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI540BLC.IsHalfSize(System.String)">
+ <summary>
+ 文字列が全て半角であるかをチェックする
+ </summary>
+ <param name="targetString">対象文字列</param>
+ <returns>True = 全て半角 False = 全角混在</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI540BLC.IsHalfSize(System.String,System.Int32,System.Boolean)">
+ <summary>
+ 文字列が全て半角であるかをチェックし、文字列長をチェックする
+ </summary>
+ <param name="targetString">対象文字列</param>
+ <param name="length">比較文字列長</param>
+ <param name="EqualOrMax">True=イコール比較 False=最大値比較 </param>
+ <returns>True=条件を満たしている False=条件を満たしていない</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI540BLC.IsConvertDbl(System.String)">
+ <summary>
+ 文字列が数値（Double型）に変換出来るかチェックする
+ </summary>
+ <param name="targetString">対象文字列</param>
+ <returns>True=変換できる　False=変換できない</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI540BLC.LenB(System.String)">
+ <summary>
+ 文字列長（Shift_JIS 換算のバイト数）を求める
+ </summary>
+ <param name="targetString">対象文字列</param>
+ <returns>対象文字列のバイト数</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI540BLC.SearchCount(System.Data.DataSet)">
+ <summary>
+ 検索処理：件数
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI540BLC.SearchSelect(System.Data.DataSet)">
+ <summary>
+ 検索処理：取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI540BLC.UpdatePrtFlg(System.Data.DataSet)">
+ <summary>
+ プリントフラグ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI541BLC">
+ <summary>
+ LMI541BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI541BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI541BLC.DoPrint(System.Data.DataSet)">
+ <summary>
+ 印刷処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI541BLC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+　帳票パターン取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI541BLC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 印刷データ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI541BLC.EditPrintData(System.Data.DataSet)">
+ <summary>
+ 印刷対象データ取得後の加工
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI541BLC.LenB(System.String)">
+ <summary>
+ 文字列長（Shift_JIS 換算のバイト数）を求める
+ </summary>
+ <param name="targetString">対象文字列</param>
+ <returns>対象文字列のバイト数</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI541BLC.LeftB(System.String,System.Int32)">
+ <summary>Left関数のバイト版。文字数をバイト数で指定して文字列を切捨て。</summary>
+ <param name="str">対象の文字列</param>
+ <param name="Length">切り抜く文字列のバイト数</param>
+ <returns>切捨てられた文字列</returns>
+ <remarks>最後の１バイトが全角文字の半分になる場合、その１バイトは無視される。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI541BLC.MidB(System.String,System.Int32,System.Int32)">
+ <summary>Mid関数のバイト版。文字数と位置をバイト数で指定して文字列を切り抜く。</summary>
+ <param name="str">対象の文字列</param>
+ <param name="Start">切り抜き開始位置。全角文字を分割するよう位置が指定された場合、戻り値の文字列の先頭は意味不明の半角文字となる。</param>
+ <param name="Length">切り抜く文字列のバイト数</param>
+ <returns>切り抜かれた文字列</returns>
+ <remarks>最後の１バイトが全角文字の半分になる場合、その１バイトは無視される。</remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI550BLC">
+ <summary>
+ LMI550BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI550BLC.GUIDANCE_KBN">
+ <summary>
+ ガイダンス区分(00)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI550BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI550BLC.SearchCount(System.Data.DataSet)">
+ <summary>
+ 検索処理：件数
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI550BLC.SearchSelect(System.Data.DataSet)">
+ <summary>
+ 検索処理：取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI550BLC.UpdateZaiTsmc(System.Data.DataSet)">
+ <summary>
+ 更新処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI560BLC">
+ <summary>
+ LMI560BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI560BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI560BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ 検索処理(件数取得)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI560BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 検索処理(データ取得)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI560BLC.SelectOldInfo(System.Data.DataSet)">
+ <summary>
+ 前々回情報の取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI560BLC.CancelCalc(System.Data.DataSet)">
+ <summary>
+ 前回計算取消
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI560BLC.SelectJobNo(System.Data.DataSet)">
+ <summary>
+ JOB番号の取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI560BLC.SeikyuCalc(System.Data.DataSet)">
+ <summary>
+ 請求データ計算
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI570BLC">
+ <summary>
+ LMI570BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI570BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI570BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 検索処理(データ取得)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI570BLC.SelectSeiq(System.Data.DataSet)">
+ <summary>
+ 請求存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI580BLC">
+ <summary>
+ LMI580BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI580BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI580BLC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 印刷データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI590BLC">
+ <summary>
+ LMI590BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI590BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI590BLC.TABLE_NM_M_RPT">
+ <summary>
+ 帳票パターン取得テーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI590BLC.TABLE_NM_IN">
+ <summary>
+ INテーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI590BLC.TABLE_NM_OUT">
+ <summary>
+ OUTテーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI590BLC.ACTION_ID_SELECT_MPRT">
+ <summary>
+ 帳票パターンアクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI590BLC.ACTION_ID_SELECT_PRT_DATA">
+ <summary>
+ 印刷データ取得アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI590BLC.NRS_BR_CD">
+ <summary>
+ RPTテーブルのカラム名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI590BLC.DoPrint(System.Data.DataSet)">
+ <summary>
+ 印刷処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI590BLC.EditPrintDataSet(System.String,System.Data.DataSet)">
+ <summary>
+ データセットの編集を行う。
+ </summary>
+ <param name="rptId"></param>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI590BLC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+　出力対象帳票パターン取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI590BLC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 印刷データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI591BLC">
+ <summary>
+ LMI591BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI591BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI591BLC.TABLE_NM_M_RPT">
+ <summary>
+ 帳票パターン取得テーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI591BLC.TABLE_NM_IN">
+ <summary>
+ INテーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI591BLC.TABLE_NM_OUT">
+ <summary>
+ OUTテーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI591BLC.ACTION_ID_SELECT_MPRT">
+ <summary>
+ 帳票パターンアクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI591BLC.ACTION_ID_SELECT_PRT_DATA">
+ <summary>
+ 印刷データ取得アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI591BLC.NRS_BR_CD">
+ <summary>
+ RPTテーブルのカラム名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI591BLC.DoPrint(System.Data.DataSet)">
+ <summary>
+ 印刷処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI591BLC.EditPrintDataSet(System.String,System.Data.DataSet)">
+ <summary>
+ データセットの編集を行う。
+ </summary>
+ <param name="rptId"></param>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI591BLC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+　出力対象帳票パターン取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI591BLC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 印刷データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI592BLC">
+ <summary>
+ LMI592BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI592BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI592BLC.TABLE_NM_M_RPT">
+ <summary>
+ 帳票パターン取得テーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI592BLC.TABLE_NM_IN">
+ <summary>
+ INテーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI592BLC.TABLE_NM_OUT">
+ <summary>
+ OUTテーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI592BLC.ACTION_ID_SELECT_MPRT">
+ <summary>
+ 帳票パターンアクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI592BLC.ACTION_ID_SELECT_PRT_DATA">
+ <summary>
+ 印刷データ取得アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI592BLC.NRS_BR_CD">
+ <summary>
+ RPTテーブルのカラム名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI592BLC.DoPrint(System.Data.DataSet)">
+ <summary>
+ 印刷処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI592BLC.EditPrintDataSet(System.String,System.Data.DataSet)">
+ <summary>
+ データセットの編集を行う。
+ </summary>
+ <param name="rptId"></param>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI592BLC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+　出力対象帳票パターン取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI592BLC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 印刷データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI600BLC">
+ <summary>
+ LMI600BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI600BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI600BLC.DoPrint(System.Data.DataSet)">
+ <summary>
+ 印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI600BLC.EditPrintDataSet(System.String,System.Data.DataSet)">
+ <summary>
+ データセットの編集を行う。
+ </summary>
+ <param name="prtId"></param>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI600BLC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+　出力対象帳票パターン取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI600BLC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 印刷データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI601BLC">
+ <summary>
+ LMI601BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI601BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI601BLC.DoPrint(System.Data.DataSet)">
+ <summary>
+ 印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI601BLC.EditPrintDataSet(System.String,System.Data.DataSet)">
+ <summary>
+ データセットの編集を行う。
+ </summary>
+ <param name="prtId"></param>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI601BLC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+　出力対象帳票パターン取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI601BLC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 印刷データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI610BLC">
+ <summary>
+ LMI610BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI610BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI610BLC.DoPrint(System.Data.DataSet)">
+ <summary>
+ 印刷処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI610BLC.SerialCheck(System.Data.DataSet)">
+ <summary>
+ シリアル番号のチェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI610BLC.CheckDigit(System.Data.DataRow)">
+ <summary>
+　チェックデジット処理
+ </summary>
+ <param name="dr">DataRow</param>
+ <returns>str(9桁目の整数)</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI610BLC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+　出力対象帳票パターン取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI610BLC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 印刷データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI620BLC">
+ <summary>
+ LMI620BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI620BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI620BLC.TABLE_NM_M_RPT">
+ <summary>
+ 帳票パターン取得テーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI620BLC.TABLE_NM_IN">
+ <summary>
+ INテーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI620BLC.TABLE_NM_OUT">
+ <summary>
+ OUTテーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI620BLC.ACTION_ID_SELECT_MPRT">
+ <summary>
+ 帳票パターンアクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI620BLC.ACTION_ID_SELECT_PRT_DATA">
+ <summary>
+ 印刷データ取得アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI620BLC.NRS_BR_CD">
+ <summary>
+ RPTテーブルのカラム名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI620BLC.DoPrint(System.Data.DataSet)">
+ <summary>
+ 印刷処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI620BLC.EditPrintDataSet(System.String,System.Data.DataSet)">
+ <summary>
+ データセットの編集を行う。
+ </summary>
+ <param name="rptId"></param>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI620BLC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+　出力対象帳票パターン取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI620BLC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 印刷データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI630BLC">
+ <summary>
+ LMI630BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI630BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI630BLC.DoPrint(System.Data.DataSet)">
+ <summary>
+ 印刷処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI640BLC">
+ <summary>
+ LMI640BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI640BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI640BLC.DoPrint(System.Data.DataSet)">
+ <summary>
+ 印刷処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI650BLC">
+ <summary>
+ LMI650BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI650BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI650BLC.DoPrint(System.Data.DataSet)">
+ <summary>
+ 印刷処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI650BLC.EditPrintDataSet(System.String,System.Data.DataSet)">
+ <summary>
+ データセットの編集を行う。
+ </summary>
+ <param name="rptId"></param>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI660BLC">
+ <summary>
+ LMI660BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI660BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI660BLC.DoPrint(System.Data.DataSet)">
+ <summary>
+ 印刷処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI660BLC.EditPrintDataSet(System.String,System.Data.DataSet)">
+ <summary>
+ データセットの編集を行う。
+ </summary>
+ <param name="rptId"></param>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI661BLC">
+ <summary>
+ LMI661BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI661BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI661BLC.DoPrint(System.Data.DataSet)">
+ <summary>
+ 印刷処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI661BLC.EditPrintDataSet(System.String,System.Data.DataSet)">
+ <summary>
+ データセットの編集を行う。
+ </summary>
+ <param name="rptId"></param>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI662BLC">
+ <summary>
+ LMI662BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI662BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI662BLC.DoPrint(System.Data.DataSet)">
+ <summary>
+ 印刷処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI662BLC.EditPrintDataSet(System.String,System.Data.DataSet)">
+ <summary>
+ データセットの編集を行う。
+ </summary>
+ <param name="rptId"></param>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI670BLC">
+ <summary>
+ LMI670BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI670BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI670BLC.DoPrint(System.Data.DataSet)">
+ <summary>
+ 印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI670BLC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+　出力対象帳票パターン取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI670BLC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 印刷データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI671BLC">
+ <summary>
+ LMI670BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI671BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI671BLC.DoPrint(System.Data.DataSet)">
+ <summary>
+ 印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI671BLC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+　出力対象帳票パターン取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI671BLC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 印刷データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI672BLC">
+ <summary>
+ LMI670BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI672BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI672BLC.DoPrint(System.Data.DataSet)">
+ <summary>
+ 印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI672BLC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+　出力対象帳票パターン取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI672BLC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 印刷データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI675BLC">
+ <summary>
+ LMI675BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI675BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI675BLC.DoPrint(System.Data.DataSet)">
+ <summary>
+ 印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI675BLC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+　出力対象帳票パターン取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI675BLC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 印刷データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI680BLC">
+ <summary>
+ LMI680BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI680BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI680BLC.DoPrint(System.Data.DataSet)">
+ <summary>
+ 印刷処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI690BLC">
+ <summary>
+ LMI690BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI690BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI690BLC.TABLE_NM_M_RPT">
+ <summary>
+ 帳票パターン取得テーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI690BLC.TABLE_NM_IN">
+ <summary>
+ INテーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI690BLC.TABLE_NM_OUT">
+ <summary>
+ OUTテーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI690BLC.ACTION_ID_SELECT_MPRT">
+ <summary>
+ 帳票パターンアクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI690BLC.ACTION_ID_SELECT_PRT_DATA">
+ <summary>
+ 印刷データ取得アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI690BLC.NRS_BR_CD">
+ <summary>
+ RPTテーブルのカラム名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI690BLC.DoPrint(System.Data.DataSet)">
+ <summary>
+ 印刷処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI690BLC.EditPrintDataSet(System.String,System.Data.DataSet)">
+ <summary>
+ データセットの編集を行う。
+ </summary>
+ <param name="rptId"></param>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI690BLC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+　出力対象帳票パターン取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI690BLC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 印刷データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI730BLC">
+ <summary>
+ LMI730BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI730BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI730BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ 運賃検索対象データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI730BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 運賃検索対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI730BLC.InsertBackupUnchin(System.Data.DataSet)">
+ <summary>
+ 運賃バックアップデータの登録
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI730BLC.UpdateBackupUnchin(System.Data.DataSet)">
+ <summary>
+ 運賃バックアップデータの更新
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI730BLC.DacAccess(System.Data.DataSet,System.String)">
+ <summary>
+ DACクラスアクセス
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI730BLC.SetSelectErrMes(System.Int32)">
+ <summary>
+ 検索処理のエラーメッセージを設定
+ </summary>
+ <param name="count">件数</param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI820BLC">
+ <summary>
+ LMI820BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI820BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI820BLC.SelectTXT(System.Data.DataSet)">
+ <summary>
+ TXT出力データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks>DACのSelectTXTメソッド呼出</remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI850BLC">
+ <summary>
+ LMI850BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI850BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI850BLC.SelectCSV(System.Data.DataSet)">
+ <summary>
+ CSV出力データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks>DACのSelectCSVメソッド呼出</remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI880BLC">
+ <summary>
+ LMI880BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI880BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI880BLC.SelectCSV(System.Data.DataSet)">
+ <summary>
+ CSV出力データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks>DACのSelectCSVメソッド呼出</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI880BLC.UpdateCSV(System.Data.DataSet)">
+ <summary>
+ CSV出力データ更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI890BLC">
+ <summary>
+ LMI890BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI890BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI890BLC.SelectExcel(System.Data.DataSet)">
+ <summary>
+ Excel出力データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks>DACのSelectCSVメソッド呼出</remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI930BLC">
+ <summary>
+ LMI930BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI930BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI930BLC.SelectTXT(System.Data.DataSet)">
+ <summary>
+ TXT出力データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks>DACのSelectTXTメソッド呼出</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI930BLC.updateTargetFlg(System.Data.DataSet)">
+ <summary>
+ DBフラグ更新(EDI出荷・受信TBL)処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks>DACのupdateTargetFlgメソッド呼出</remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI950BLC">
+ <summary>
+ LMI950BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI950BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI950BLC.TABLE_NM_SENDUNCHIN_TARGET">
+ <summary>
+ 実績作成対象テーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI950BLC.TABLE_NM_PROC_CTRL_DATA">
+ <summary>
+ 処理制御データテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI950BLC.TABLE_NM_SENDUNCHIN_DATA">
+ <summary>
+ 運賃明細送信データ元データテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI950BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ 対象データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI950BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI950BLC.InsertSendUnchin(System.Data.DataSet)">
+ <summary>
+ 日産物流運賃明細送信データの登録
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI950BLC.DacAccess(System.Data.DataSet,System.String)">
+ <summary>
+ DACクラスアクセス
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI950BLC.SetSelectErrMes(System.Int32)">
+ <summary>
+ 検索処理のエラーメッセージを設定
+ </summary>
+ <param name="count">件数</param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI960BLC">
+ <summary>
+ LMI960BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI960BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI960BLC.TABLE_NM_SAKUSEI_TARGET">
+ <summary>
+ 実績作成対象データ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI960BLC.TABLE_NM_PROC_CTRL">
+ <summary>
+ 処理制御データ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI960BLC.TABLE_NM_JISSEKI_DATA">
+ <summary>
+ ハネウェルＥＤＩ送信(出荷ピック)データ元データ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI960BLC.TABLE_NM_IN">
+ <summary>
+ INテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI960BLC.WARNING_ID_FMT">
+ <summary>
+ ワーニングIDフォーマット
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI960BLC.WARNING_ID_FMT.MST_FLG.START_IDX">
+ <summary>
+ マスタフラグ開始位置
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI960BLC.WARNING_ID_FMT.MST_FLG.LEN">
+ <summary>
+ マスタフラグ文字長
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI960BLC.WARNING_ID_FMT.MST_FLG.NONE">
+ <summary>
+ 指定なし
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI960BLC.WARNING_ID_FMT.MST_FLG.M_GOODS">
+ <summary>
+ 商品マスタ
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI960BLC.WARNING_ID_FMT.MST_FLG.M_DEST">
+ <summary>
+ 届先マスタ
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI960BLC.WARNING_ID_FMT.UNIT_OF_WARNING.START_IDX">
+ <summary>
+ 単位フラグ開始位置
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI960BLC.WARNING_ID_FMT.UNIT_OF_WARNING.LEN">
+ <summary>
+ 単位フラグ文字長
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI960BLC.WARNING_ID_FMT.UNIT_OF_WARNING.L">
+ <summary>
+ 出荷L単位
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI960BLC.WARNING_ID_FMT.UNIT_OF_WARNING.M">
+ <summary>
+ 出荷M単位
+ </summary>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI960BLC.WARNING_ID">
+ <summary>
+ ワーニングID
+ </summary>
+ <remarks>
+ 桁数     意味
+ -----    ----------
+ 1-3      荷主ごとに一意な値。流用元(LMH030BLC)での付番ルールは不明。ハネウェル専用なので"###"とする
+ 4        常に"_"
+ 5-6      不明。流用元(LMH030BLC)では常に"OT"
+ 7        常に"_"
+ 8        マスタフラグ。WARNING_ID_FMTを参照
+ 9        常に"_"
+ 10       L:出荷Lレベル    M:出荷Mレベル
+ 11-13    1-3および10桁目が同一なものごとに001からの連番
+ </remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI960BLC.WARNING_ID.M_DEST_NOT_FOUND">
+ <summary>
+ 届先マスタ未登録
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI960BLC.WARNING_ID.M_DEST_NOT_FOUND_UNSO_ORIG">
+ <summary>
+ 届先マスタ未登録（運送発地）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI960BLC.WARNING_ID.M_DEST_NOT_FOUND_UNSO_DEST">
+ <summary>
+ 届先マスタ未登録（運送届先）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI960BLC.WARNING_ID.M_DEST_NOT_FOUND_BUYID">
+ <summary>
+ 届先マスタ未登録（売上先）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI960BLC.WARNING_ID.GOODS_NOT_IDENTIFIED">
+ <summary>
+ 商品を一意に特定できない
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI960BLC.WARNING_ID.GOODS_NOT_FOUND">
+ <summary>
+ 商品マスタ未登録
+ </summary>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI960BLC.ShinchokuKbJuchu">
+ <summary>
+ 進捗区分(受注ステータス)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI960BLC.CmbBashoKbItems">
+ <summary>
+ 場所区分(cmbBashoKb選択肢)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI960BLC.NrsBrCd">
+ <summary>
+ 営業所コード
+ </summary>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI960BLC.WH_TAB_STATUS">
+ <summary>
+ 現場作業指示ステータス
+ </summary>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI960BLC.WH_TAB_YN">
+ <summary>
+ 現場作業指示ステータス
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI960BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ 対象データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI960BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI960BLC.InsertSendOutEdi(System.Data.DataSet)">
+ <summary>
+ ハネウェルＥＤＩ送信(出荷ピック)データの登録
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI960BLC.InsertSendOutEdiJuchu(System.Data.DataSet)">
+ <summary>
+ ハネウェルＥＤＩ送信(受注可否)データの登録
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI960BLC.InsertSendOutEdiDelay(System.Data.DataSet)">
+ <summary>
+ ハネウェルＥＤＩ送信(遅延理由)データの登録
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI960BLC.UpdateCustAuto(System.Data.DataSet)">
+ <summary>
+ 荷主自動振り分け
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI960BLC.UpdateCustManual(System.Data.DataSet)">
+ <summary>
+ 荷主手動振り分け
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI960BLC.ShukkaTouroku(System.Data.DataSet)">
+ <summary>
+ 出荷登録
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI960BLC.SetComWarningM(System.String,System.String[],System.String,System.Data.DataSet,System.String,System.String,System.String,System.String)">
+ <summary>
+ ワーニング設定
+ </summary>
+ <param name="msgId">メッセージID</param>
+ <param name="msgArray">メッセージパラメータ</param>
+ <param name="warningId">ワーニングID</param>
+ <param name="ds">データセット</param>
+ <param name="fieldName">項目名</param>
+ <param name="ediValue">項目値</param>
+ <param name="mstValue">マスタ値</param>
+ <param name="addtionalFieldValue">追加項目値</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI960BLC.NyukaTouroku(System.Data.DataSet)">
+ <summary>
+ 入荷登録
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI960BLC.UnsoTouroku(System.Data.DataSet)">
+ <summary>
+ 運送登録
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI960BLC.GetTariffSetCd(System.Data.DataRow,System.String)">
+ <summary>
+ タリフコードを取得
+ </summary>
+ <param name="dr">DataRow</param>
+ <param name="tariffKbn">タリフ分類区分</param>
+ <returns>タリフコード</returns>
+ <remarks>LMF020Gより移植</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI960BLC.GetUnsoKonpoData(System.Decimal,System.Decimal,System.Decimal)">
+ <summary>
+ 運送梱包数の計算
+ </summary>
+ <param name="kosu">運送個数</param>
+ <param name="hasu">端数</param>
+ <param name="konp">梱包個数</param>
+ <returns>運送梱包数</returns>
+ <remarks>LMFControlHより移植</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI960BLC.GetJuryoCalcData(System.String,System.String,System.String,System.Decimal,System.Decimal,System.Decimal,System.Decimal,System.Decimal,System.String,System.Data.DataSet)">
+ <summary>
+ 運送重量を取得(実計算)
+ </summary>
+ <param name="calcFlg">風袋加算フラグ(商品)</param>
+ <param name="unsoCalcFlg">風袋加算フラグ(運送会社)</param>
+ <param name="suryoTani">数量単位</param>
+ <param name="irime">入目</param>
+ <param name="kosu">個数</param>
+ <param name="stdIrime">標準入目</param>
+ <param name="stdWt">標準重量</param>
+ <param name="suryo">数量</param>
+ <returns>運送重量(行単位)</returns>
+ <remarks>LMFControlHより移植(一部改変)</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI960BLC.MakeInputDataForUpdBooking(System.Data.DataSet)">
+ <summary>
+ GLIS受注更新処理の入力データ作成処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI960BLC.MakeInputDataForDelBooking(System.Data.DataSet)">
+ <summary>
+ GLIS受注削除処理の入力データ作成処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI960BLC.ImportCylinder(System.Data.DataSet)">
+ <summary>
+ シリンダー取込処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI960BLC.IkkatsuChange(System.Data.DataSet)">
+ <summary>
+ 一括変更処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI960BLC.RollbackJuchuStatus(System.Data.DataSet)">
+ <summary>
+ 受注ステータス戻し処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI960BLC.ModJobNo(System.Data.DataSet)">
+ <summary>
+ JOB NO変更処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI960BLC.EdiTorikeshi(System.Data.DataSet)">
+ <summary>
+ 未処理⇔EDI取消処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI960BLC.DacAccess(System.Data.DataSet,System.String)">
+ <summary>
+ DACクラスアクセス
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI960BLC.SetSelectErrMes(System.Int32)">
+ <summary>
+ 検索処理のエラーメッセージを設定
+ </summary>
+ <param name="count">件数</param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI961BLC">
+ <summary>
+ LMI961BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI961BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI961BLC.TABLE_NM_KENSAKU_IN">
+ <summary>
+ INテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI961BLC.TABLE_NM_GAMEN_IN">
+ <summary>
+ INテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI961BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI961BLC.JuchuSakusei(System.Data.DataSet)">
+ <summary>
+ 受注作成検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI961BLC.DacAccess(System.Data.DataSet,System.String)">
+ <summary>
+ DACクラスアクセス
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI961BLC.SetSelectErrMes(System.Int32)">
+ <summary>
+ 検索処理のエラーメッセージを設定
+ </summary>
+ <param name="count">件数</param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI970BLC">
+ <summary>
+ LMI970BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI970BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI970BLC.TABLE_NM_SENDUNCHIN_TARGET">
+ <summary>
+ 実績作成対象テーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI970BLC.TABLE_NM_PROC_CTRL">
+ <summary>
+ 処理制御データテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI970BLC.TABLE_NM_SENDUNCHIN_DATA">
+ <summary>
+ 運賃明細送信データ元データテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI970BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ 対象データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI970BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI970BLC.UpdateYusoIraiTanka(System.Data.DataSet)">
+ <summary>
+ 日産物流輸送依頼ＥＤＩ受信データ単価一括更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI970BLC.UpdateYusoIrai(System.Data.DataSet)">
+ <summary>
+ 日産物流輸送依頼ＥＤＩ受信データ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI970BLC.InsertSendUnchin(System.Data.DataSet)">
+ <summary>
+ 日産物流運賃明細送信データの登録
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI970BLC.UpdateIraishoPrintFlg(System.Data.DataSet)">
+ <summary>
+ 日産物流輸送依頼ＥＤＩ受信データ運送依頼書印刷フラグ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI970BLC.DacAccess(System.Data.DataSet,System.String)">
+ <summary>
+ DACクラスアクセス
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI970BLC.SetSelectErrMes(System.Int32)">
+ <summary>
+ 検索処理のエラーメッセージを設定
+ </summary>
+ <param name="count">件数</param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI980BLC">
+ <summary>
+ LMI980BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI980BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI980BLC.DoPrint(System.Data.DataSet)">
+ <summary>
+ 印刷処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI980BLC.EditPrintDataSet(System.String,System.Data.DataSet)">
+ <summary>
+ データセットの編集を行う。
+ </summary>
+ <param name="rptId"></param>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMI991BLC">
+ <summary>
+ LMI991BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMI991BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMI991BLC.DoPrint(System.Data.DataSet)">
+ <summary>
+ 印刷処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

@@ -1,0 +1,184 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.LMU.DAC
+</name>
+</assembly>
+<members>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMU010DAC.SelectDataCount(System.Data.DataSet)">
+ ====================================================================
+ <summary>データ一覧検索件数取得（DAC）</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>データ一覧検索件数取得SQLの構築・発行</remarks>
+ ====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMU010DAC.SelectDataList(System.Data.DataSet)">
+ ====================================================================
+ <summary>データ一覧検索結果取得（DAC）</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>データ一覧検索結果取得SQLの構築・発行</remarks>
+ ====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMU010DAC.SelectListDataSysID(System.Data.DataSet)">
+ <summary>
+ コンボ作成データ(システムID)取得　2015/1/6 大野ｱﾙﾍﾞ対応
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMU010DAC.SelectListDataKanriType(System.Data.DataSet)">
+ <summary>
+ コンボ作成データ(管理タイプ)取得　2015/1/6 大野ｱﾙﾍﾞ対応
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMU010DAC.SelectListDataFileType(System.Data.DataSet)">
+ <summary>
+ コンボ作成データ(ファイルタイプ)取得　2015/1/6 大野ｱﾙﾍﾞ対応
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMU010DAC.SelectDataListForChkHaita(System.Data.DataSet)">
+ ====================================================================
+ <summary>排他チェック用データ情報検索結果取得（DAC）</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>排他チェック用データ情報検索結果取得SQLの構築・発行</remarks>
+ ====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMU010DAC.SetConditionDataList(System.Data.DataRow,System.Text.StringBuilder,System.Collections.ArrayList)">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <param name="conditionRow">条件設定行</param>
+ <param name="editSql">編集SQL格納変数</param>
+ <param name="prmList">SQLパラメータ格納配列</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMU010DAC.InsertData(System.Data.DataSet)">
+ ====================================================================
+ <summary>新規登録処理（DAC）</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>新規登録処理SQLの構築・発行</remarks>
+ ====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMU010DAC.UpdateData(System.Data.DataSet)">
+ ====================================================================
+ <summary>更新処理（DAC）</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>更新処理SQLの構築・発行</remarks>
+ ====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMU010DAC.UpdateWebData(System.Data.DataSet)">
+ ====================================================================
+ <summary>更新処理（DAC）</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>更新処理SQLの構築・発行</remarks>
+ ====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMU010DAC.DeleteData(System.Data.DataSet)">
+ ====================================================================
+ <summary>論理削除処理（DAC）</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>論理削除SQLの構築・発行</remarks>
+ ====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMU010DAC.SetSchemaNm(System.String,System.String,System.Boolean)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <param name="sql">SQL</param>
+ <param name="brCd">営業所</param>
+ <param name="sverFlg">サーバー切り替え有無フラグTrue:有り</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMU020DAC.SelectDataCount(System.Data.DataSet)">
+ ====================================================================
+ <summary>データ一覧検索件数取得（DAC）</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>データ一覧検索件数取得SQLの構築・発行</remarks>
+ ====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMU020DAC.SelectDataList(System.Data.DataSet)">
+ ====================================================================
+ <summary>データ一覧検索結果取得（DAC）</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>データ一覧検索結果取得SQLの構築・発行</remarks>
+ ====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMU020DAC.SelectDataListForChkHaita(System.Data.DataSet)">
+ ====================================================================
+ <summary>排他チェック用データ情報検索結果取得（DAC）</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>排他チェック用データ情報検索結果取得SQLの構築・発行</remarks>
+ ====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMU020DAC.SetConditionDataList(System.Data.DataRow,System.Text.StringBuilder,System.Collections.ArrayList)">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <param name="conditionRow">条件設定行</param>
+ <param name="editSql">編集SQL格納変数</param>
+ <param name="prmList">SQLパラメータ格納配列</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMU020DAC.InsertData(System.Data.DataSet)">
+ ====================================================================
+ <summary>新規登録処理（DAC）</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>新規登録処理SQLの構築・発行</remarks>
+ ====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMU020DAC.UpdateData(System.Data.DataSet)">
+ ====================================================================
+ <summary>更新処理（DAC）</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>更新処理SQLの構築・発行</remarks>
+ ====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMU020DAC.UpdateWebData(System.Data.DataSet)">
+ ====================================================================
+ <summary>更新処理（DAC）</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>更新処理SQLの構築・発行</remarks>
+ ====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMU020DAC.DeleteData(System.Data.DataSet)">
+ ====================================================================
+ <summary>論理削除処理（DAC）</summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>論理削除SQLの構築・発行</remarks>
+ ====================================================================
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMU020DAC.SetSchemaNm(System.String,System.String,System.Boolean)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <param name="sql">SQL</param>
+ <param name="brCd">営業所</param>
+ <param name="sverFlg">サーバー切り替え有無フラグTrue:有り</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

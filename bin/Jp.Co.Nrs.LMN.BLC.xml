@@ -1,0 +1,575 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.LMN.BLC
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMN010BLC">
+ <summary>
+ LMN010BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMN010BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN010BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ 出荷EDIデータ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN010BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 出荷EDIデータ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN010BLC.KensakuGetLMSDate(System.Data.DataSet)">
+ <summary>
+ LMS側日付取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN010BLC.CheckExistN_OUTKASCM_L(System.Data.DataSet)">
+ <summary>
+ 出荷EDIデータL存在チェック(N_OUTKASCM_L)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN010BLC.CheckHaitaN_OUTKASCM_L(System.Data.DataSet)">
+ <summary>
+ 出荷EDIデータL排他チェック(N_OUTKASCM_L)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN010BLC.CheckHaitaN_OUTKASCM_HED_BP(System.Data.DataSet)">
+ <summary>
+ BP出荷EDI受信ヘッダデータ排他チェック(N_OUTKASCM_HED_BP)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN010BLC.SetteiInsertN_OUTKASCM_L(System.Data.DataSet)">
+ <summary>
+ 出荷EDIデータL新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN010BLC.SetteiInsertN_OUTKASCM_M(System.Data.DataSet)">
+ <summary>
+ 出荷EDIデータM新規登録
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN010BLC.SetteiUpdateN_OUTKASCM_L(System.Data.DataSet)">
+ <summary>
+ 出荷EDIデータL更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN010BLC.SetteiUpdateN_OUTKASCM_HED_BP(System.Data.DataSet)">
+ <summary>
+ BP出荷EDI受信ヘッダデータ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN010BLC.SetteiSelectN_OUTKASCM_DTL_BP(System.Data.DataSet)">
+ <summary>
+ BP出荷EDI受信明細データ抽出
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN010BLC.SetteiUpdateN_OUTKASCM_DTL_BP(System.Data.DataSet)">
+ <summary>
+ BP出荷EDI受信明細データ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN010BLC.SoushinShijiCheckHaitaN_OUTKASCM_L(System.Data.DataSet)">
+ <summary>
+ 出荷EDIデータL排他チェック(N_OUTKASCM_L)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN010BLC.SoushinShijiSelectN_OUTKASCM_HED_BP(System.Data.DataSet)">
+ <summary>
+ 送信指示データ取得(N_OUTKASCM_HED_BP)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN010BLC.SoushinShijiSelectN_OTUKASCM_DTL_BP(System.Data.DataSet)">
+ <summary>
+ 送信指示データ取得(N_OUTKASCM_DTL_BP)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN010BLC.SoushinShijiUpdateN_OUTKASCM_L(System.Data.DataSet)">
+ <summary>
+ 出荷EDIデータL更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN010BLC.CheckExistN_SEND_BP(System.Data.DataSet)">
+ <summary>
+ BP入出庫報告EDI送信データ存在チェック(N_SEND_BP)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN010BLC.JissekiTorikomiSelectN_SEND_BP(System.Data.DataSet)">
+ <summary>
+ (LMS)実績取込データ取得(N_SEND_BP)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN010BLC.JissekiTorikomiSelectN_OUTKASCM_DTL_BP(System.Data.DataSet)">
+ <summary>
+ 実績取込データ取得(N_OUTKASCM_DTL_BP)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN010BLC.JissekiTorikomiInsertN_SEND_BP(System.Data.DataSet)">
+ <summary>
+ 実績取込データ新規登録(N_SEND_BP)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN010BLC.JissekiTorikomiUpdateN_OUTKASCM_DTL_BP(System.Data.DataSet)">
+ <summary>
+ 出荷EDI受信明細データ更新(N_OUTKASCM_DTL_BP)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN010BLC.JissekiTorikomiUpdateN_OUTKASCM_M(System.Data.DataSet)">
+ <summary>
+ 出荷EDIデータM更新
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN010BLC.JissekiSoushinSelectN_SEND_BP(System.Data.DataSet)">
+ <summary>
+ 実績送信データ取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN010BLC.JissekiSoushinCheckSCMDate(System.Data.DataSet)">
+ <summary>
+ SCM側出荷日、納入日を取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN010BLC.JissekiSoushinCheckLMSDate(System.Data.DataSet)">
+ <summary>
+ LMS側出荷日、納入日を取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN010BLC.JissekiSoushinUpdateN_SEND_BP(System.Data.DataSet)">
+ <summary>
+ BP入出庫報告EDI送信データ（N_SEND_BP）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN010BLC.JissekiSoushinUpdateN_OUTKASCM_DTL_BP(System.Data.DataSet)">
+ <summary>
+ BP出荷EDI受信明細データ（N_OUTKASCM_DTL_BP）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN010BLC.JissekiSoushinUpdateN_OUTKASCM_M(System.Data.DataSet)">
+ <summary>
+ 出荷EDIデータM(N_OUTKASCM_M)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN010BLC.JissekiSoushinUpdateN_OUTKASCM_L(System.Data.DataSet)">
+ <summary>
+ 出荷EDIデータL(N_OUTKASCM_L)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN010BLC.JissekiSoushinGetDBName(System.Data.DataSet)">
+ <summary>
+ 接続データベース名取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN010BLC.JissekiSoushinUpdateH_OUTKAEDI_DTL_BP(System.Data.DataSet)">
+ <summary>
+ (LMS)BP出荷EDI受信ヘッダデータ(H_OUTKAEDI_DTL_BP)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN010BLC.JissekiSoushinUpdateH_SENDEDI_BP(System.Data.DataSet)">
+ <summary>
+ (LMS)BP入出庫報告EDI送信データ(H_SENDEDI_BP)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN010BLC.UpdKeppinJoutaiSelectN_OUTKASCM_M(System.Data.DataSet)">
+ <summary>
+ 荷主商品コード取得(N_OUTKASCM_M)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN010BLC.CheckNotExistN_OUTKASCM_L(System.Data.DataSet)">
+ <summary>
+ 出荷EDIデータL存在チェック(N_OUTKASCM_L)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN010BLC.CheckNotExistN_OUTKASCM_HED_BP(System.Data.DataSet)">
+ <summary>
+ 出荷EDIデータL存在チェック(N_OUTKASCM_L)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMN020BLC">
+ <summary>
+ LMN020BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMN020BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN020BLC.SelectListData(System.Data.DataSet)">
+ <summary>
+  初期表示データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN020BLC.SelectZaikoData(System.Data.DataSet)">
+ <summary>
+  在庫データテーブル検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN020BLC.CheckHaitaShukkaDataInsFlgOff(System.Data.DataSet)">
+ <summary>
+ 出荷データ詳細削除時排他チェック(INSERT_FLG = '0'時)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN020BLC.CheckHaitaShukkaDataInsFlgOn(System.Data.DataSet)">
+ <summary>
+ 出荷データ詳細削除時排他チェック(INSERT_FLG = '1'時)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN020BLC.CheckHOutkaEdiL(System.Data.DataSet)">
+ <summary>
+ 倉庫側DBの対象データの削除状態チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN020BLC.CheckHaitaInitShukkaData(System.Data.DataSet)">
+ <summary>
+ 出荷データ詳細初期化時排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN020BLC.DeleteShukkaDataInsFlgOff(System.Data.DataSet)">
+ <summary>
+ 出荷データ詳細削除(INSERT_FLG = '0'/ステータス「00:未設定」「01:設定済み」時)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN020BLC.DeleteShukkaDataInsFlgOn(System.Data.DataSet)">
+ <summary>
+ 出荷データ詳細削除(INSERT_FLG = '1'時)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN020BLC.InitShukkaData(System.Data.DataSet)">
+ <summary>
+ 出荷データ詳細初期化処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMN060BLC">
+ <summary>
+ LMN060BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMN060BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN060BLC.SelectDetail(System.Data.DataSet)">
+ <summary>
+  検索処理を行う
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN060BLC.GetZaikoDB(System.Data.DataTable)">
+ <summary>
+  在庫データテーブル接続先
+ </summary>
+ <param name="dt">DataTable</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN060BLC.UpdZaikoNissu(System.Data.DataSet)">
+ <summary>
+ 在庫日数算出、更新処理を行う
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN060BLC.GetMonthOutkaNbDB(System.Data.DataTable)">
+ <summary>
+  出荷データテーブル接続先
+ </summary>
+ <param name="dt">DataTable</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMN080BLC">
+ <summary>
+ LMN060BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMN080BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN080BLC.GetSOKO_CD_LIST(System.Data.DataSet)">
+ <summary>
+  対象倉庫コード、今回引当出荷オーダー数取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN080BLC.GetPLAN_HINMOKU_NB(System.Data.DataSet)">
+ <summary>
+  出荷予定品目数取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN080BLC.GetLMN080OUT_M(System.Data.DataSet)">
+ <summary>
+  明細データ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN080BLC.CheckPreKeppin(System.Data.DataSet)">
+ <summary>
+  欠品危惧チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMN520BLC">
+ <summary>
+ LMN520BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMN520BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN520BLC.DoPrint(System.Data.DataSet)">
+ <summary>
+ 印刷処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN520BLC.SetZaikoNb(System.Data.DataSet)">
+ <summary>
+ 在庫数算出・設定
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN520BLC.SetFromDate(System.Data.DataSet)">
+ <summary>
+ 出力開始日付以降のデータ取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN520BLC.EditPrintDataSet(System.String,System.Data.DataSet)">
+ <summary>
+ データセットの編集を行う。
+ </summary>
+ <param name="rptId"></param>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN520BLC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+　出力対象帳票パターン取得処理(直接指定)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN520BLC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 印刷データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMN800BLC">
+ <summary>
+ LMN800BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMN800BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN800BLC.ExecuteSoushinShiji(System.Data.DataSet)">
+ <summary>
+ 出荷報告データ送信
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMN810BLC">
+ <summary>
+ LMN810BLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMN810BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMN810BLC.ChkKeppin(System.Data.DataSet)">
+ <summary>
+ 欠品数取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

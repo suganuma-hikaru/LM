@@ -1,0 +1,1723 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.GLC.BLF
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.GL.BLF.My.Resources.Resources">
+<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.GL.BLF.My.Resources.Resources.ResourceManager">
+<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.GL.BLF.My.Resources.Resources.Culture">
+<summary>
+  すべてについて、現在のスレッドの CurrentUICulture プロパティをオーバーライドします
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC0110BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0110BLF.SearchResultList(System.Data.DataSet)">
+ <summary>
+ Booking情報(NVO)取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0110BLF.UpdateWorkUser(System.Data.DataSet)">
+ <summary>
+ 作業者更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC2000BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC2000BLF.CreateProvisionalBookingData(System.Data.DataSet)">
+ <summary>
+ データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC2000BLF.isHaitaChk(System.Data.DataSet)">
+ <summary>
+ 排他制御
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC2000BLF.BkgCancel(System.Data.DataSet)">
+ <summary>
+ Booking Cancel 処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC2000BLF.UpdateCover(System.Data.DataSet)">
+ <summary>
+ カバー更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC2000BLF.UpdateCoverStageArrg(System.Data.DataSet)">
+ <summary>
+ カバーステージ更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC2000BLF.UpdateCoverStageArrgCancel(System.Data.DataSet)">
+ <summary>
+ カバーステージ更新処理（運送手配キャンセル）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC2000BLF.GetNewJobNoBasis(System.Data.DataSet)">
+ <summary>
+ 新規Job No採番処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC2000BLF.GetGoodsInfo(System.Data.DataSet)">
+ <summary>
+ 商品明細（適用法規）取得処理
+ </summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC2000BLF.SelectEstimateOldData(System.Data.DataSet)">
+ <summary>
+ 変更元Estimate情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC2000BLF.InsertFileDataCoverDoc(System.Data.DataSet)">
+ <summary>
+ (GLC2000)必要書類リスト添付ファイル登録＆カバーステージ更新処理（必要書類リスト）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC2000BLF.UpdateCoverStageDocList(System.Data.DataSet)">
+ <summary>
+ (GLC2000)カバーステージ更新処理（必要書類リスト）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC2100BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC2100BLF.SelectBkgInitData(System.Data.DataSet)">
+ <summary>
+ 初期表示
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC2100BLF.isHaitaChk(System.Data.DataSet)">
+ <summary>
+ 排他制御
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC2100BLF.UpdateCoverStageArrg(System.Data.DataSet)">
+ <summary>
+ カバーステージ更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC2200BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC2200BLF.SelectSearchCountData(System.Data.DataSet)">
+ <summary>
+ 初期表示件数取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC2200BLF.SelectSearchData(System.Data.DataSet)">
+ <summary>
+ 検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC2300BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC2300BLF.SelectData(System.Data.DataSet)">
+ <summary>
+ 初期表示処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC2300BLF.isHaitaChk(System.Data.DataSet)">
+ <summary>
+ 排他処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC2300BLF.UpdateCoverStageDocList(System.Data.DataSet)">
+ <summary>
+ カバーステージ更新処理（必要書類リスト）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC2300BLF.InsertFileDataCoverDoc(System.Data.DataSet)">
+ <summary>
+ 必要書類リスト添付ファイル登録＆カバーステージ更新処理（必要書類リスト）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC2300BLF.InsertCustDocData(System.Data.DataSet)">
+ <summary>
+ 顧客受領書類登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC2300BLF.UpdateCustDocData(System.Data.DataSet)">
+ <summary>
+ 顧客受領書類更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC2300BLF.DeleteCustDocData(System.Data.DataSet)">
+ <summary>
+ 顧客受領書類削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC2300BLF.InsertDlLogData(System.Data.DataSet)">
+ <summary>
+ 添付ファイルダウンロードログ登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC4000BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC4000BLF.SearchDataList(System.Data.DataSet)">
+ <summary>
+ 検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC3900BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC3900BLF.SelectCoverListData(System.Data.DataSet)">
+ <summary>
+ データ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC3900BLF.InsertRemData(System.Data.DataSet)">
+ <summary>
+ REM追加処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC3900BLF.DeleteCoverData(System.Data.DataSet)">
+ <summary>
+ 削除処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC3600BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC3600BLF.SearchDataList(System.Data.DataSet)">
+ <summary>
+ 過去データ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5031BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5031BLF.PrintBLTermsAndConditions(System.Data.DataSet)">
+ <summary>
+ B／L_TANK印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5032BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5032BLF.PrintBLTank(System.Data.DataSet)">
+ <summary>
+ B／L_TANK印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5255BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5255BLF.PrintFileHeaderExportDry(System.Data.DataSet)">
+ <summary>
+ ファイルヘッダー輸出（Export DRY）印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5800BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5800BLF.PrintFileHeaderImport2Door(System.Data.DataSet)">
+ <summary>
+ ファイルヘッダー輸入②（Door Delivery）印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5700BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5700BLF.PrintBasisList(System.Data.DataSet)">
+ <summary>
+ Additional Lines印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5600BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5600BLF.PrintBasisList(System.Data.DataSet)">
+ <summary>
+ Delivery Order
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5510BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5510BLF.PrintBasisList(System.Data.DataSet)">
+ <summary>
+ コンテナ詰貨物証明書
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5041BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5041BLF.PrintBasisList(System.Data.DataSet)">
+ <summary>
+ ARRIVAL NOTICE NRS DRY印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5071BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5071BLF.PrintDepotOutOrderList(System.Data.DataSet)">
+ <summary>
+ EXCEL帳票出力データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5091BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5091BLF.PrintShippingInstructionNrsDry(System.Data.DataSet)">
+ <summary>
+ SHIPPING INSTRUCTION NRS DRY印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5142BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5142BLF.PrintContTransportIMP(System.Data.DataSet)">
+ <summary>
+ EXCEL帳票出力データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5152BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5152BLF.PrintContTransportEXP(System.Data.DataSet)">
+ <summary>
+ EXCEL帳票出力データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5500BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5500BLF.PrintRequestFormForTemporaryStorage(System.Data.DataSet)">
+ <summary>
+ 仮貯蔵申請依頼書
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5460BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5460BLF.PrintHikitorisyoForm(System.Data.DataSet)">
+ <summary>
+ 引取書印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5250BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5250BLF.PrintFileHeaderExport(System.Data.DataSet)">
+ <summary>
+ ファイルヘッダー輸出印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC0200BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.CreateBookingData(System.Data.DataSet)">
+ <summary>
+ 初期表示用データの取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.CreateBookingCustOrdData(System.Data.DataSet)">
+ <summary>
+ 初期表示用データの取得処理(受注基盤)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.IfCreateBookingCustOrdData(System.Data.DataSet)">
+ <summary>
+ 初期表示用データの取得処理(IF受注基盤)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.CreateBookingDataForProv(System.Data.DataSet)">
+ <summary>
+ 初期表示用データの取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.SelectBkgItemData(System.Data.DataSet)">
+ <summary>
+ 初期表示用データの取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.SelectBkgItemCustOrdData(System.Data.DataSet)">
+ <summary>
+ 初期表示用データの取得処理(受注基盤)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.SelectBkgCancelItemDataCustOrder(System.Data.DataSet)">
+ <summary>
+ 初期表示用データの取得処理（受注基盤からBookingキャンセル時）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.SelectBkgItemIfCustOrdData(System.Data.DataSet)">
+ <summary>
+ 初期表示用データの取得処理(IF受注基盤)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.InsertBkgData(System.Data.DataSet)">
+ <summary>
+ 登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.UpdateBkgData(System.Data.DataSet)">
+ <summary>
+ 更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.isHaitaChk(System.Data.DataSet)">
+ <summary>
+ 排他制御
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.CancelReturn(System.Data.DataSet)">
+ <summary>
+ Cancel Return 処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.CancelReturnRollBack(System.Data.DataSet)">
+ <summary>
+ Cancel Return Roll Back 処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.BkgCancel(System.Data.DataSet)">
+ <summary>
+ Booking Cancel 処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.BkgCancelDry(System.Data.DataSet)">
+ <summary>
+ Booking Cancel 処理(Dry)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.BkgCancelRollBack(System.Data.DataSet)">
+ <summary>
+ Booking Cancel Roll Back 処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.EstUp(System.Data.DataSet)">
+ <summary>
+ Est Up 処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.GetNewJobNo(System.Data.DataSet)">
+ <summary>
+ 新規Job No採番処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.GetLastOutJobNo(System.Data.DataSet)">
+ <summary>
+ LAST_OUT_JOB_NO取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.UpdateCover(System.Data.DataSet)">
+ <summary>
+ カバー更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.BkgRewindDepotOut(System.Data.DataSet)">
+ <summary>
+ Booking Rewind Depot Out 処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.SelectOffHireCheckBkgContData(System.Data.DataSet)">
+ <summary>
+ (GLC1000)OFF HIRE インベントリステータス相関チェック対象コンテナデータ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.BkgContOffHire(System.Data.DataSet)">
+ <summary>
+ (GLC1000)OFF HIRE処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.GetGoodsInfo(System.Data.DataSet)">
+ <summary>
+ 商品明細・MSDSファイル取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.GetUnInfo(System.Data.DataSet)">
+ <summary>
+ UN情報再取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.isExistNkctDataDeleteChk(System.Data.DataSet)">
+ <summary>
+ NKCTデータ存在チェック(削除時)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.isExistNkctDataRefChk(System.Data.DataSet)">
+ <summary>
+ NKCTデータ存在チェック(依頼参照時)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.isDuplicationNkctDataChk(System.Data.DataSet)">
+ <summary>
+ NKCTデータ重複チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.isExisKidsUserDataChk(System.Data.DataSet)">
+ <summary>
+ KIDS ユーザー存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.GetNkctData(System.Data.DataSet)">
+ <summary>
+ NKCTデータ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.GetGaisanCount(System.Data.DataSet)">
+ <summary>
+ 概算レコード数チェック 処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.CreateBookingEstChangeData(System.Data.DataSet)">
+ <summary>
+ Est Change用データの取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.CreateBookingEstChangeDescrData(System.Data.DataSet)">
+ <summary>
+ Est Change用データの取得処理(DESCR)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.CreateBookingEstChangeCoverData(System.Data.DataSet)">
+ <summary>
+ Est Change用データの取得処理(COVER)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.GetDeadLineDate(System.Data.DataSet)">
+ <summary>
+ 期限日計算処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.SelectBaseDateShipItemData(System.Data.DataSet)">
+ <summary>
+ 期限日変更チェック処理(C_SHIP)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.SelectBaseDateContLegItemData(System.Data.DataSet)">
+ <summary>
+ 期限日変更チェック処理(C_CONT_LEG)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.SelectBaseDateContItemData(System.Data.DataSet)">
+ <summary>
+ 期限日変更チェック処理(C_CONT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.UpdateCoverStageArrg(System.Data.DataSet)">
+ <summary>
+ カバーステージ更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.UpdateCoverStageTruckArrgCancel(System.Data.DataSet)">
+ <summary>
+ カバーステージ更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.CheckExistMUserArrg(System.Data.DataSet)">
+ <summary>
+ M_USER_ARRG存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.SelectBookingEstRefEstData(System.Data.DataSet)">
+ <summary>
+ Est情報取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.GetEstBasisData(System.Data.DataSet)">
+ <summary>
+ Est Basis情報取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.PropContReminderMailSend(System.Data.DataSet)">
+ <summary>
+ ContReminderメール送信処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.SetDataInGLZ8500DS(System.Data.DataSet,System.Data.DataSet@)">
+ <summary>
+ データセット:GLZ8500INに値を設定
+ </summary>
+ <param name="ds">コンテナ情報抽出用DS</param>
+ <param name="reminderMailDs">リマインダーメール送信用DS</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.UpdateNvoFwdLink(System.Data.DataSet)">
+ <summary>
+ NVO FWD 紐付け情報更新処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.UpdateNvoFwdUnLink(System.Data.DataSet)">
+ <summary>
+ NVO FWD 紐付け解除情報更新処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.UpdateWriteOffData(System.Data.DataSet)">
+ <summary>
+ Write Off更新処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.UpdateUnsetDrayageData(System.Data.DataSet)">
+ <summary>
+ 運送確定解除更新処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.GetEstCostRevSeq(System.Data.DataSet)">
+ <summary>
+ (GLC1100)EstCostRevSeq取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.IsHazardPrintDataChk(System.Data.DataSet)">
+ <summary>
+ 危険物印刷チェック処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.PropChangeCoverMainSend(System.Data.DataSet)">
+ <summary>
+ 変更通知メール送信処理
+ </summary>
+ <param name="ds">Data Set</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.PropChangeCoverMailSendTransport(System.Data.DataSet)">
+ <summary>
+ 変更通知メール(運送向け)送信処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.PropChangeFwdUserMailSendShipData(System.Data.DataSet)">
+ <summary>
+ FWD担当者変更通知メール送信処理（本船情報）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.UpdateAfrKbn(System.Data.DataSet)">
+ <summary>
+ C_BASIS.AFR_KBN更新
+   依頼No.007867 Alert AFR Filling</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.CheckDeleteLegDepotInOutData(System.Data.DataSet)">
+ <summary>
+ 搬入／搬出ドレージ削除チェック
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.GetContDepotInStorageOnly(System.Data.DataSet)">
+ <summary>
+ コンテナ削除時、搬入のみのC_CONT_DEPOTを取得する
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.GetOtherJobDepotIn(System.Data.DataSet)">
+ <summary>
+ 他JOBで搬入のみを取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.SelectItemDataOldDocument(System.Data.DataSet)">
+ <summary>
+ ドキュメント過去データ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.GetCoverMstDataDry(System.Data.DataSet)">
+ <summary>
+ DRY用M_COVER取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.UpdateCoverStageAllComp(System.Data.DataSet)">
+ <summary>
+ カバーステージ更新処理(選択行全コンプリート)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.GetContSeePreviousHistory(System.Data.DataSet)">
+ <summary>
+ 前歴参照（C_CONT）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.GetCarrierBkgNoData(System.Data.DataSet)">
+ <summary>
+ Carrier Booking No 重複チェック
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.SelectInPlaceCd(System.Data.DataSet)">
+ <summary>
+ (GLC1100)搬出 Place Cd 設定処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.UpdateReviveData(System.Data.DataSet)">
+ <summary>
+ Revive更新処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.ReviveMainSend(System.Data.DataSet)">
+ <summary>
+ Reviveメール通知処理
+ </summary>
+ <param name="ds">Data Set</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.GetCompSubCount(System.Data.DataSet)">
+ <summary>
+ 会社コードサブ情報取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.ConfirmOrigCyCutOff(System.Data.DataSet)">
+ <summary>
+ ConfirmOrigCyCutOff
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.CancelOrigCyCutOff(System.Data.DataSet)">
+ <summary>
+ CancelOrigCyCutOff
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.UpdateCoverStageDocList(System.Data.DataSet)">
+ <summary>
+ (GLC0300)カバーステージ更新処理（必要書類リスト）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.InsertFileDataCoverDoc(System.Data.DataSet)">
+ <summary>
+ (GLC0300)必要書類リスト添付ファイル登録＆カバーステージ更新処理（必要書類リスト）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.UpdateLastDepotInData(System.Data.DataSet)">
+ <summary>
+ Last Depot In更新処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.SelectFileRequestItem(System.Data.DataSet)">
+ <summary>
+ 添付ファイルマスタ
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.SelectMaxSeqItem(System.Data.DataSet)">
+ <summary>
+ MAX_SEQの取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.SelectIcBasisFwdCustOrderData(System.Data.DataSet)">
+ <summary>
+ IF受注基盤よりFWD受注基盤のオーダー情報取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.InsertMFileRequestData(System.Data.DataSet)">
+ <summary>
+ 添付ファイルマスタ新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.InsertCCustFileData(System.Data.DataSet)">
+ <summary>
+ 顧客受領ファイルテーブル新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.UpdateContRollback(System.Data.DataSet)">
+ <summary>
+ 確定コンテナ→仮コンテナ処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.UpdateContRestore(System.Data.DataSet)">
+ <summary>
+ 削除コンテナ→仮コンテナ（コンテナ復元）処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.SelectMsdsFileTempSysEntDateNew(System.Data.DataSet)">
+ <summary>
+ (GLC3200)MSDSファイル最新添付日付取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0200BLF.SelectCheckMsdsFile(System.Data.DataSet)">
+ <summary>
+ (GLC0200)MSDSファイルチェック処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC0100BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0100BLF.SearchResultListNvo(System.Data.DataSet)">
+ <summary>
+ Booking情報(NVO)取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0100BLF.SearchResultListFwd(System.Data.DataSet)">
+ <summary>
+ Booking情報(FWD)取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0100BLF.SearchResultListArg(System.Data.DataSet)">
+ <summary>
+ Booking情報(Arrange)取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0100BLF.SearchResultListDrayage(System.Data.DataSet)">
+ <summary>
+ Booking情報(Drayage)取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC0100BLF.GetBulkUpdateCheckDate(System.Data.DataSet)">
+ <summary>
+ Bulk Update 各日付整合性チェックデータ取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5010BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5010BLF.PrintSA(System.Data.DataSet)">
+ <summary>
+ S/A 印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5070BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5070BLF.PrintDepotOutOrder(System.Data.DataSet)">
+ <summary>
+ EXCEL帳票出力データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5100BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5100BLF.SelectImportKarakonData(System.Data.DataSet)">
+ <summary>
+ 空コンテナ搬出依頼書（輸入）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5110BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5110BLF.SelectExportKarakonData(System.Data.DataSet)">
+ <summary>
+ 空コンテナ船積業務依頼書(輸出)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5130BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5130BLF.SelectExpTankTukanData(System.Data.DataSet)">
+ <summary>
+ 通関依頼書(輸出TANK)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5120BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5120BLF.SelectImpTankTukanData(System.Data.DataSet)">
+ <summary>
+ 通関依頼書(輸入TANK)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5141BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5141BLF.PrintContTransportIMP(System.Data.DataSet)">
+ <summary>
+ EXCEL帳票出力データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5150BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5150BLF.SelectContUnsouIraiData(System.Data.DataSet)">
+ <summary>
+ コンテナ運送依頼（輸出TANK）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5151BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5151BLF.PrintContTransportEXP(System.Data.DataSet)">
+ <summary>
+ EXCEL帳票出力データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5160BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5160BLF.SelectContUntinData(System.Data.DataSet)">
+ <summary>
+ コンテナ運送依頼（国内）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5180BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5180BLF.SelectSyobouKeibiData(System.Data.DataSet)">
+ <summary>
+ EXCEL帳票出力データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5190BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5190BLF.PrintAdvanceNotificationOfDangerousGoods(System.Data.DataSet)">
+ <summary>
+ 危険物事前連絡表印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5030BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5030BLF.PrintBLTank(System.Data.DataSet)">
+ <summary>
+ B／L_TANK印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5240BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5240BLF.PrintReleaseRequest(System.Data.DataSet)">
+ <summary>
+ ARRIVAL NOTICE TANK印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5060BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5060BLF.PrintDepotInOrder(System.Data.DataSet)">
+ <summary>
+ EXCEL帳票出力データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5080BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5080BLF.PrintSurveyRequest(System.Data.DataSet)">
+ <summary>
+ EXCEL帳票出力データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5090BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5090BLF.PrintShippingInstructionTank(System.Data.DataSet)">
+ <summary>
+ SHIPPING INSTRUCTION TANK印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5040BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5040BLF.PrintBasisList(System.Data.DataSet)">
+ <summary>
+ ARRIVAL NOTICE TANK印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5050BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5050BLF.PrintAdminChangeRequest(System.Data.DataSet)">
+ <summary>
+ EXCEL帳票出力データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5140BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5140BLF.SelectContUnsouIraiData(System.Data.DataSet)">
+ <summary>
+ コンテナ運送依頼（輸入TANK）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5170BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5170BLF.PrintNohinsyoForm(System.Data.DataSet)">
+ <summary>
+ 納品書／受領書印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5210BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5210BLF.PrintDangerousGoodsDclaration(System.Data.DataSet)">
+ <summary>
+ EXCEL帳票出力データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5220BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5220BLF.PrintBasisList(System.Data.DataSet)">
+ <summary>
+ BOOKING CONFIRMATION FOR CUSTOMER 印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5230BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5230BLF.PrintBasisList(System.Data.DataSet)">
+ <summary>
+ BOOKING CONFIRMATION FOR CARRIER 印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5260BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5260BLF.PrintFileHeaderImport(System.Data.DataSet)">
+ <summary>
+ ファイルヘッダー輸入印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5270BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5270BLF.PrintBasisRequestForm(System.Data.DataSet)">
+ <summary>
+ コンテナ貨物搬入票印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC3500BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC3500BLF.SearchDataListNeed(System.Data.DataSet)">
+ <summary>
+ 戻りタンク情報(Need)取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC3500BLF.SearchDataListNoNeed(System.Data.DataSet)">
+ <summary>
+ 戻りタンク情報(No need)取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5280BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5280BLF.PrintBasisRequestFormNagoya(System.Data.DataSet)">
+ <summary>
+ コンテナ貨物搬入票(名古屋港向け)印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5290BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5290BLF.PrintBasisList(System.Data.DataSet)">
+ <summary>
+ 搬入依頼書(RAIL BILLING ORDER)印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5300BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5300BLF.PrintBasisList(System.Data.DataSet)">
+ <summary>
+ 加温指示書(HEATING REQUEST) 印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5310BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5310BLF.PrintBasisList(System.Data.DataSet)">
+ <summary>
+ T-1Docs依頼書(保税運送指示書) 印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5320BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5320BLF.PrintContTransportEXP(System.Data.DataSet)">
+ <summary>
+ EXCEL帳票出力データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5350BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5350BLF.PrintCoverData(System.Data.DataSet)">
+ <summary>
+ カバー印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5360BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5360BLF.PrintFileHeaderImport2(System.Data.DataSet)">
+ <summary>
+ ファイルヘッダー輸入②印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5370BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5370BLF.PrintBasisList(System.Data.DataSet)">
+ <summary>
+ ARRIVAL NOTICE DRY 印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5380BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5380BLF.PrintDangerousGoodsDclarationDry(System.Data.DataSet)">
+ <summary>
+ EXCEL帳票出力データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5390BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5390BLF.PrintContTransportEXP(System.Data.DataSet)">
+ <summary>
+ EXCEL帳票出力データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5400BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5400BLF.PrintBasisList(System.Data.DataSet)">
+ <summary>
+ 通関依頼書(輸入TANK)海外版 印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5410BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5410BLF.PrintBasisList(System.Data.DataSet)">
+ <summary>
+ 通関依頼書(輸出TANK)海外版 印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5420BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5420BLF.PrintBasisList(System.Data.DataSet)">
+ <summary>
+ トラック運送依頼書(輸出DRY)海外用 印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5430BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5430BLF.PrintBasisList(System.Data.DataSet)">
+ <summary>
+ トラック運送依頼書(輸入DRY)海外用 印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5450BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5450BLF.PrintSI_DRY(System.Data.DataSet)">
+ <summary>
+ EXCEL帳票出力データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5200BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5200BLF.PrintDeclarationOfDangerousGoods(System.Data.DataSet)">
+ <summary>
+ 危険物明細書印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5490BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5490BLF.PrintDepotInOrder(System.Data.DataSet)">
+ <summary>
+ EXCEL帳票出力データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5491BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5491BLF.PrintDepotOutOrder(System.Data.DataSet)">
+ <summary>
+ EXCEL帳票出力データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLC5900BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLC5900BLF.PrintBasisList(System.Data.DataSet)">
+ <summary>
+ Abholschein 印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

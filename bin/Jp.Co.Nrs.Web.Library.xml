@@ -1,0 +1,2655 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.Web.Library
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.Web.My.Resources.Resources">
+<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.Web.My.Resources.Resources.ResourceManager">
+<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.Web.My.Resources.Resources.Culture">
+<summary>
+  すべてについて、現在のスレッドの CurrentUICulture プロパティをオーバーライドします
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Base.BaseForm._MyMaster">
+ <summary>
+ 各画面のマスターページ
+ </summary>
+ <remarks>マスターページを使用していない画面の場合、Nothing</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Base.BaseForm._FormId">
+ <summary>
+画面IDを格納するフィールド 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Base.BaseForm._PreviousFormId">
+ <summary>
+前画面IDを格納するフィールド 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Base.BaseForm._PreviousPageViewID">
+ <summary>
+前画面IDを格納するフィールド 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Base.BaseForm._ActiveView">
+ <summary>
+ アクティブなViewIDを格納するフィールド 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Base.BaseForm._MessageStore">
+ <summary>
+ 登録されているメッセージを格納するフィールド 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Base.BaseForm._QueryParameter">
+ <summary>
+ クエリーパラメーターを格納するフィールド 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Base.BaseForm._Logger">
+ <summary>
+ ログ出力クラスを格納するフィールド 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Base.BaseForm.valids">
+ <summary>
+ バリデーションコントロールのIDのリストです。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Base.BaseForm.validTargets">
+ <summary>
+ バリデーション対象コントロールのIDのリストです。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Web.Base.BaseForm.FormId">
+ <summary>
+ 画面IDの取得・設定を行います。
+ </summary>
+ <value>画面ID</value>
+ <returns>画面ID</returns>
+ <remarks>
+ <para>各画面では値の取得のみ可能です。</para>
+ </remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Web.Base.BaseForm.PreviousFormId">
+ <summary>
+ 前画面IDの取得・設定を行います。
+ </summary>
+ <value>前画面ID</value>
+ <returns>前画面ID</returns>
+ <remarks>
+ <para>各画面では値の取得のみ可能です。</para>
+ </remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Web.Base.BaseForm.PreviousPageViewID">
+ <summary>
+ 遷移元画面の遷移直前に表示されていたViewのViewID
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Web.Base.BaseForm.ActiveViewID">
+ <summary>
+ アクティブなViewIDの取得・設定を行います。
+ </summary>
+ <value>アクティブなViewID</value>
+ <returns>アクティブなViewID</returns>
+ <remarks>
+ <para>各画面では値の取得のみ可能です。</para>
+ </remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Web.Base.BaseForm.MessageStore">
+ <summary>
+ 登録されているメッセージの取得・設定を行います。
+ </summary>
+ <value>登録されているメッセージ</value>
+ <returns>登録されているメッセージ</returns>
+ <remarks>
+ <para>各画面では値の取得のみ可能です。</para>
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseForm.Page_PreInit(System.Object,System.EventArgs)">
+ <summary>
+ Init処理開始前に発生するイベント。
+ </summary>
+ <param name="sender">イベントのソース</param>
+ <param name="e">イベントデータを格納しているEventArgs</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseForm.Page_PreLoad(System.Object,System.EventArgs)">
+ <summary>
+ Load処理開始前に発生するイベント。
+ </summary>
+ <param name="sender">イベントのソース</param>
+ <param name="e">イベントデータを格納しているEventArgs</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseForm.PageLoad(System.Object,System.EventArgs)">
+ <summary>
+ 画面ロード時の処理を行います。
+ </summary>
+ <param name="sender">イベントのソース</param>
+ <param name="e">イベントデータを格納しているEventArgs</param>
+ <remarks>クリックイベントはこのイベントの後に発生します。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseForm.Page_LoadComplete(System.Object,System.EventArgs)">
+ <summary>
+ Load処理終了後に発生するイベント。
+ </summary>
+ <param name="sender">イベントのソース</param>
+ <param name="e">イベントデータを格納しているEventArgs</param>
+ <remarks>クリックイベントはこのイベントの前に発生します。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseForm.Page_PreRender(System.Object,System.EventArgs)">
+ <summary>
+ 画面要素構築前に発生するイベント。
+ </summary>
+ <param name="sender">イベントのソース</param>
+ <param name="e">イベントデータを格納しているEventArgs</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseForm.PagePreRenderComplete(System.Object,System.EventArgs)">
+ <summary>
+ 画面要素構築後に呼ばれるメソッドです。
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseForm.Page_SaveStateComplete(System.Object,System.EventArgs)">
+ <summary>
+ ビューステート構築後に発生するイベント。
+ </summary>
+ <param name="sender">イベントのソース</param>
+ <param name="e">イベントデータを格納しているEventArgs</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseForm.LoadAlways(System.Object,System.EventArgs)">
+ <summary>
+ <para>初回表示時・ポストバック時共通で行う処理を実装してください。</para>　
+ </summary>
+ <param name="sender">イベントの発生したPageオブジェクト</param>
+ <param name="e">イベントデータのインスタンス</param>
+ <remarks>
+ <para>各画面aspxの中で、LoadAlwaysが一番最初に発生するイベントです。</para>
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseForm.LoadFirst(System.Object,System.EventArgs)">
+ <summary>
+ <para>初回表示時にのみ行う処理を実装してください。</para>　
+ </summary>
+ <param name="sender">イベントの発生したPageオブジェクト</param>
+ <param name="e">イベントデータのインスタンス</param>
+ <remarks>
+ <para>『LoadAlways』イベントの次に発生するイベントです。</para>
+ <para>『LoadPostBack』とは排他的に発生します。</para>
+ <para>『LoadFirst』とは排他的に発生します（同一のLoadイベントの中で</para>
+ <para>『LoadFirst』と『LoadPostBack』が同時に発生することはありません）</para>
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseForm.LoadPostBack(System.Object,System.EventArgs)">
+ <summary>
+ <para>ポストバック時にのみ行う処理を実装してください。</para>　
+ </summary>
+ <param name="sender">イベントの発生したPageオブジェクト</param>
+ <param name="e">イベントデータのインスタンス</param>
+ <remarks>
+ <para>『LoadAlways』イベントの次に発生するイベントです。</para>
+ <para>『LoadFirst』とは排他的に発生します（同一のLoadイベントの中で</para>
+ <para>『LoadFirst』と『LoadPostBack』が同時に発生することはありません）</para>
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseForm.LoadAfter(System.Object,System.EventArgs)">
+ <summary>
+ <para>初回表示時にのみ行う処理、又はポストバック時にのみ行う処理を行った後、
+ 共通で行う処理を実装してください。</para>　
+ </summary>
+ <param name="sender">イベントの発生したPageオブジェクト</param>
+ <param name="e">イベントデータのインスタンス</param>
+ <remarks>
+ <para> Load時の一番最後に発生するイベントです。</para>
+ <para>『LoadFirst』又は『LoadPostBack』イベントの次に発生するイベントです。</para>
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseForm.LoadDialogPostBack(System.Object,System.EventArgs)">
+ <summary>
+ <para>ダイアログ表示後のポアストバックにのみ行う処理を実装してください。</para>　
+ </summary>
+ <param name="sender">イベントの発生したPageオブジェクト</param>
+ <param name="e">イベントデータのインスタンス</param>
+ <remarks>
+ <para>ダイアログ表示後に『LoadAfter』イベントの次に発生するイベントです。</para>
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseForm.InitControls">
+ <summary>
+ 画面上のコントロールの初期化を行います
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseForm.GetAllControls(System.Collections.ArrayList,System.Web.UI.Control)">
+ <summary>
+ 引数のコントロールが所持しているコントロールを引数のコントロールも含めて取得します。
+ </summary>
+ <param name="arr"></param>
+ <param name="control"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseForm.SetSessionKobetuItem(Jp.Co.Nrs.Web.Base.BaseParam)">
+ <summary>
+ セッションに個別セション項目クラスを格納します。
+ </summary>
+ <param name="param">個別セション項目格納用クラス</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseForm.RemoveSessionKobetuItem(System.String)">
+ <summary>
+ セッションから引数で渡された個別セション項目格納用クラスを削除します。
+ </summary>
+ <param name="key">個別セション項目格納用クラス</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseForm.SetSessionUserInfo(Jp.Co.Nrs.Web.Base.UserData)">
+ <summary>
+ セッションへユーザー情報格納用クラスを格納します。
+ </summary>
+ <param name="data"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseForm.RemoveSessionUserInfo">
+ <summary>
+ セッションからユーザー情報格納用クラスを削除します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseForm.RemoveSessionAllItem">
+ <summary>
+ セッションから全ての項目を削除します。
+ </summary>
+ <remarks>
+ セッション自体の削除は行いません。
+ セッションキーが『Mnt』で始まる項目を削除します。
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseForm.SetMessage(System.String,System.String[],System.Boolean)">
+ <summary>
+ メッセージ情報を設定する。
+ </summary>
+ <param name="messageID">メッセージID</param>
+ <param name="replaceMessages">置換対象文字列の配列</param>
+ <param name="appendFlg">メッセージを追加して登録するか指定するフラグ（デフォルト＝追加しない）</param>
+ <remarks>引数のメッセージＩＤを元にメッセージ文言を作成し、
+ ServiceDataクラスにメッセージ情報を設定する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseForm.GetMessage(System.String,System.String[])">
+ <summary>
+ メッセージを取得します。
+ </summary>
+ <param name="messageID"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseForm.ReplaceMessageString(System.String,System.String[])">
+ <summary>
+ 置換済みのメッセージを取得する。
+ </summary>
+ <param name="msg">置換済みのメッセージ</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseForm.AddValidators(System.Web.UI.WebControls.BaseValidator,System.Web.UI.WebControls.WebControl)">
+ <summary> 
+ バリデーションコントロールとターゲットのペアを登録します。 
+ </summary> 
+ <param name="valid"></param> 
+ <param name="target"></param> 
+ <remarks></remarks> 
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseForm.CreateScript">
+ <summary>
+ バリデーションコントロールにターゲットを登録するスクリプトを構築します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseForm.SetActiveView(System.Web.UI.WebControls.MultiView,System.String)">
+ <summary>
+ アクティブなViewを切り替えます
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseForm.GetQueryParameter">
+ <summary>
+ <para>クエリーパラメーターを取得します。</para>　
+ </summary>
+ <remarks>
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseForm.GetQueryParameter(System.String)">
+ <summary>
+ <para>クエリーパラメーターを取得します。</para>　
+ </summary>
+ <remarks>
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseForm.GetDialogSubmitID">
+ <summary>
+ ダイアログ表示時に設定したサブミットIDを取得します。
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseForm.GetEncodeString(System.String)">
+ <summary>
+ 文字列をBase64形式にエンコードします
+ </summary>
+ <param name="encodeString">変換する文字列</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseForm.GetDecodeString(System.String)">
+ <summary>
+ Base64形式のデータをデコードします
+ </summary>
+ <param name="decodeString"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Base.BaseHandler._Form">
+ <summary>
+ フォームのインスタンスを格納するフィールド 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Base.BaseHandler._TempResultCount">
+ <summary>
+ 処理結果件数を格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Base.BaseHandler._TargetFacadeName">
+ <summary>
+ 呼び出すBLF名を一時的に格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Base.BaseHandler._QueName">
+ <summary>
+ 処理識別文字列を一時的に格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Base.BaseHandler._TempLimitCount">
+ <summary>
+ しきい値を格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Base.BaseHandler._TempForceOparation">
+ <summary>
+ 強制処理フラグを格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseHandler.CallNextService(System.String,System.String,System.Data.DataSet)">
+ <summary>
+ 引数に指定されたWSAクラスから、WSA層の処理の基点となるメソッドをメソッドを呼び出す。
+ </summary>
+ <param name="methodName">呼び出すメソッド名</param>
+ <param name="ds">画面情報を格納したDataSet</param>
+ <returns>呼び出すメソッドが返す画面出力用情報</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseHandler.CreateServiceData">
+ <summary>
+ サーバーとの送受信に使用するServiceDataクラスを生成します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseHandler.SetRequestParam(Jp.Co.Nrs.Com.Base.ServiceData,System.Data.DataSet)">
+ <summary>
+ ServiceDataに送信する値を転記する。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseHandler.GetReturnParam(Jp.Co.Nrs.Com.Base.ServiceData)">
+ <summary>
+ ServiceDataから受信した値を転記する。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseHandler.GetResultCount">
+ <summary>
+ 処理結果件数を取得する。
+ </summary>
+ <returns>処理結果件数</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseHandler.IsErrorMessageExist">
+ <summary>
+ エラーメッセージの有無を判定して返却する（GUI）
+ </summary>
+ <returns>エラーメッセージの有無</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseHandler.GetSystemTime">
+ <summary>
+ 現在ServiceDataに登録されているシステム時刻(HHMMSSmmm)を取得する。
+ </summary>
+ <returns></returns>
+ <remarks>引数無しのメソッドはここで一旦隠蔽する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseHandler.CallWSA(System.String,System.String,System.Data.DataSet)">
+ <summary>
+ WEBサービスを呼び出します（QueName,SetTargetFacadeNameの設定必須）
+ </summary>
+ <param name="ds">WEBサービス送信データ</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseHandler.Navigate(Jp.Co.Nrs.Web.Base.BaseForm,System.String,System.Collections.Specialized.NameValueCollection)">
+ <summary>
+ 画面遷移処理を行います（クエリーパラメーター有）
+ </summary>
+ <param name="queryStringCollection">クエリー文字列</param>
+ <remarks>
+ <para>引数の画面IDは画面情報XMLの『GamenId』の値と一致させる必要があります。</para>
+ <para>画面遷移にクエリーパラメーターが必要な場合にのみ使用してください。</para>
+ <para>このメソッドの呼び出しを記述した後にその他の処理を記述しないで下さい。</para>
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseHandler.GetBusinessEntity">
+ <summary>
+ 画面情報DataSetを取得する。
+ </summary>
+ <returns>画面情報DataSet</returns>
+ <remarks>隠蔽する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseHandler.SetBusinessEntity(System.Data.DataSet)">
+ <summary>
+ 画面情報DataSetをセットする。
+ </summary>
+ <param name="ds">画面情報DataSet</param>
+ <remarks>隠蔽する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseHandler.SetShowDialogOnLoad(System.String,System.String,System.String,System.String[],System.Boolean,System.String,System.String)">
+ <summary>
+ ダイアログを呼び出すためのスクリプトをボタンに埋め込みます。
+ </summary>
+ <param name="eventID">イベントID</param>
+ <param name="submitID">サブミットID</param>
+ <param name="messageID">メッセージID</param>
+ <param name="replaceMessages">メッセージ置換文字列</param>
+ <param name="doPostBack">ポストバック制御フラグ（デフォルト：ポストバックしない）</param>
+ <param name="preScript">前処理個別Javascript関数</param>
+ <param name="postScript">後処理前処理個別Javascript関数</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseHandler.GetPopReturnValue">
+ <summary>
+ ポップアップ画面からの戻り値を取得します。
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseHandler.GetDialogReturnValue">
+ <summary>
+ ダイアログ画面からの戻り値を取得します。
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseHandler.SetPageCloseScript">
+ <summary> 
+ ブラウザを閉じます。 
+ </summary> 
+ <remarks></remarks> 
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseHandler.SetPageOpenToCloseScript">
+ <summary>
+ 次画面に遷移後、呼出元画面を閉じます。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseMaster.InitializeMasterPage">
+ <summary>
+ <para>
+ マスターページ上のコントロールに対して、タブインデックスを設定します。</para>
+ </summary>
+ <remarks>
+ <para>抽象メソッドです。</para>
+ <para>このクラスを継承した各マスターページで処理を実装してください。</para>
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseMaster.SetTabIndex">
+ <summary>
+ <para>
+ マスターページ上のコントロールに対して、タブインデックスを設定します。</para>
+ </summary>
+ <remarks>
+ <para>抽象メソッドです。</para>
+ <para>このクラスを継承した各マスターページで処理を実装してください。</para>
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseMaster.ResistActionEvent">
+ <summary>
+ <para>
+ マスターページ上のイベントを、各aspx.vbファイルで取得できるようにします。</para>
+ </summary>
+ <remarks>
+ <para>抽象メソッドです。</para>
+ <para>このクラスを継承した各マスターページで処理を実装してください。</para>
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseMaster.RegistScript">
+ <summary>
+ <para>
+ マスターページで使用するスクリプトを登録します。</para>
+ </summary>
+ <remarks>
+ <para>抽象メソッドです。</para>
+ <para>このクラスを継承した各マスターページで処理を実装してください。</para>
+ </remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Base.BaseValidate._Form">
+ <summary>
+ フォームのインスタンスを格納するフィールド 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseValidate.IsValidateCheck(Jp.Co.Nrs.Web.GUI.Interface.IEditableControl)">
+ <summary>
+ 各種チェックを行うメソッド
+ </summary>
+ <param name="item">チェック対象コントロール</param>
+ <returns>
+ True：エラーなし
+ False：エラーあり
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseValidate.GetCheckResultEachItem(System.Object,System.String)">
+ <summary>
+ 項目ごとに各チェックを行い、結果を返します。
+ </summary>
+ <param name="item">チェック対象コントロール</param>
+ <param name="value">チェック値</param>
+ <returns>
+ True：エラーなし
+ False：エラーあり
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseValidate.IsHissuCheck(System.Object,System.String)">
+ <summary>
+ 必須チェック
+ </summary>
+ <param name="item">チェック対象コントロール</param>
+ <param name="value">チェック値</param>
+ <returns>
+ True：エラーなし
+ False：エラーあり
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseValidate.IsZenkauCheck(System.Object,System.String)">
+ <summary>
+ 全角チェック
+ </summary>
+ <param name="item">チェック対象コントロール</param>
+ <param name="value">チェック値</param>
+ <returns>
+ True：エラーなし
+ False：エラーあり
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseValidate.IsHankakuCheck(System.Object,System.String)">
+ <summary>
+ 半角チェック
+ </summary>
+ <param name="item">チェック対象コントロール</param>
+ <param name="value">チェック値</param>
+ <returns>
+ True：エラーなし
+ False：エラーあり
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseValidate.IsForbiddenWordsCheck(System.Object,System.String)">
+ <summary>
+ 禁止文字チェック
+ </summary>
+ <param name="item">チェック対象コントロール</param>
+ <param name="value">チェック値</param>
+ <returns>
+ True：エラーなし
+ False：エラーあり
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseValidate.IsEisuCheck(System.Object,System.String)">
+ <summary>
+ 英数字チェック
+ </summary>
+ <param name="item">チェック対象コントロール</param>
+ <param name="value">チェック値</param>
+ <returns>
+ True：エラーなし
+ False：エラーあり
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseValidate.IsSujiCheck(System.Object,System.String)">
+ <summary>
+ 数字チェック
+ </summary>
+ <param name="item">チェック対象コントロール</param>
+ <param name="value">チェック値</param>
+ <returns>
+ True：エラーなし
+ False：エラーあり
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseValidate.IsNumericCheck(System.Object,System.String)">
+ <summary>
+ 数値チェック
+ </summary>
+ <param name="item">チェック対象コントロール</param>
+ <param name="value">チェック値</param>
+ <returns>
+ True：エラーなし
+ False：エラーあり
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseValidate.IsFullByteCheck(System.Object,System.String)">
+ <summary>
+ フルバイトチェック
+ </summary>
+ <param name="item">チェック対象コントロール</param>
+ <param name="value">チェック値</param>
+ <returns>
+ True：エラーなし
+ False：エラーあり
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseValidate.IsByteCheck(System.Object,System.String)">
+ <summary>
+ バイト数チェック
+ </summary>
+ <param name="item">チェック対象コントロール</param>
+ <param name="value">チェック値</param>
+ <returns>
+ True：エラーなし
+ False：エラーあり
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseValidate.IsMiddleSpaceCheck(System.Object,System.String)">
+ <summary>
+ 中間スペースチェック
+ </summary>
+ <param name="item">チェック対象コントロール</param>
+ <param name="value">チェック値</param>
+ <returns>
+ True：エラーなし
+ False：エラーあり
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseValidate.GetHissuErrMsg(System.Object)">
+ <summary>
+ 必須チェックエラー時のメッセージを取得するメソッド。
+ </summary>
+ <returns>チェックエラー時のメッセージ</returns>
+ <remarks>キーにメッセージコード、値に置換文字列を格納すること</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseValidate.GetZenkauErrMsg(System.Object)">
+ <summary>
+ 全角チェックエラー時のメッセージを取得するメソッド。
+ </summary>
+ <returns>チェックエラー時のメッセージ</returns>
+ <remarks>キーにメッセージコード、値に置換文字列を格納すること</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseValidate.GetHankakuErrMsg(System.Object)">
+ <summary>
+ 半角チェックエラー時のメッセージを取得するメソッド。
+ </summary>
+ <returns>チェックエラー時のメッセージ</returns>
+ <remarks>キーにメッセージコード、値に置換文字列を格納すること</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseValidate.GetForbiddenWordsErrMsg(System.Object)">
+ <summary>
+ 禁止文字チェックエラー時のメッセージを取得するメソッド。
+ </summary>
+ <returns>チェックエラー時のメッセージ</returns>
+ <remarks>キーにメッセージコード、値に置換文字列を格納すること</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseValidate.GetKanaErrMsg(System.Object)">
+ <summary>
+ カナチェックエラー時のメッセージを取得するメソッド。
+ </summary>
+ <returns>チェックエラー時のメッセージ</returns>
+ <remarks>キーにメッセージコード、値に置換文字列を格納すること</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseValidate.GetDakutenErrMsg(System.Object)">
+ <summary>
+ 濁点チェックエラー時のメッセージを取得するメソッド。
+ </summary>
+ <returns>チェックエラー時のメッセージ</returns>
+ <remarks>キーにメッセージコード、値に置換文字列を格納すること</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseValidate.GetEisuErrMsg(System.Object)">
+ <summary>
+ 英数字チェックエラー時のメッセージを取得するメソッド。
+ </summary>
+ <returns>チェックエラー時のメッセージ</returns>
+ <remarks>キーにメッセージコード、値に置換文字列を格納すること</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseValidate.GetSujiErrMsg(System.Object)">
+ <summary>
+ 数字チェックエラー時のメッセージを取得するメソッド。
+ </summary>
+ <returns>チェックエラー時のメッセージ</returns>
+ <remarks>キーにメッセージコード、値に置換文字列を格納すること</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseValidate.GetNumericErrMsg(System.Object)">
+ <summary>
+ 数値チェックエラー時のメッセージを取得するメソッド。
+ </summary>
+ <returns>チェックエラー時のメッセージ</returns>
+ <remarks>キーにメッセージコード、値に置換文字列を格納すること</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseValidate.GetFullByteErrMsg(System.Object)">
+ <summary>
+ フルバイトチェックエラー時のメッセージを取得するメソッド。
+ </summary>
+ <returns>チェックエラー時のメッセージ</returns>
+ <remarks>キーにメッセージコード、値に置換文字列を格納すること</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseValidate.GetByteErrMsg(System.Object)">
+ <summary>
+ バイト数チェックエラー時のメッセージを取得するメソッド。
+ </summary>
+ <returns>チェックエラー時のメッセージ</returns>
+ <remarks>キーにメッセージコード、値に置換文字列を格納すること</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseValidate.GetCalendarErrMsg(System.Object)">
+ <summary>
+ 暦上日チェックエラー時のメッセージを取得するメソッド。
+ </summary>
+ <returns>チェックエラー時のメッセージ</returns>
+ <remarks>キーにメッセージコード、値に置換文字列を格納すること</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseValidate.GetAfterDateErrMsg(System.Object)">
+ <summary>
+ 未来日チェックエラー時のメッセージを取得するメソッド。
+ </summary>
+ <returns>チェックエラー時のメッセージ</returns>
+ <remarks>キーにメッセージコード、値に置換文字列を格納すること</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseValidate.GetBeforeDateErrMsg(System.Object)">
+ <summary>
+ 過去日チェックエラー時のメッセージを取得するメソッド。
+ </summary>
+ <returns>チェックエラー時のメッセージ</returns>
+ <remarks>キーにメッセージコード、値に置換文字列を格納すること</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseValidate.GetRangeErrMsg(System.Object)">
+ <summary>
+ 範囲チェックエラー時のメッセージを取得するメソッド。
+ </summary>
+ <returns>チェックエラー時のメッセージ</returns>
+ <remarks>キーにメッセージコード、値に置換文字列を格納すること</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseValidate.GetMiddleSpaceErrMsg(System.Object)">
+ <summary>
+ 中間スペースエラー時のメッセージを取得するメソッド。
+ </summary>
+ <returns>チェックエラー時のメッセージ</returns>
+ <remarks>キーにメッセージコード、値に置換文字列を格納すること</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseValidate.GetValueForValidate(Jp.Co.Nrs.Web.GUI.Interface.IEditableControl)">
+ <summary>
+ チェックする値を取得するメソッド
+ </summary>
+ <param name="item"></param>
+ <returns>チェックする値</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.BaseValidate.SetMessage(System.Collections.Hashtable)">
+ <summary>
+ エラーメッセージを表示するメソッド
+ </summary>
+ <remarks>フレームワークのみ使用する</remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Web.Base.FormData">
+ <summary>
+ 画面間データ格納クラス
+ </summary>
+ <remarks></remarks>
+ <histry>
+ 2006/07/21      須藤      新規
+ </histry>
+</member>
+<member name="P:Jp.Co.Nrs.Web.Base.FormData.PreviousFormID">
+ <summary>
+ 遷移元画面ID
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Web.Base.FormData.PreviousPageViewID">
+ <summary>
+ 遷移元画面の遷移直前に表示されていたViewのViewID
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Web.Base.FormData.EventID">
+ <summary>
+ イベントID
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Web.Base.FormData.IsFirstLoading">
+ <summary>
+ 初回表示処理中かをあらわすフラグ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Web.Base.FormData.Token">
+ <summary>
+ トークン
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Web.Base.FormMGR">
+ <summary>
+ 画面情報XMLの内容を取得・返却するクラスです。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Web.Base.FormMGR.SessionCheck">
+ <summary>
+ <para>SekApFormInfoConst内のEnumクラスです。</para>
+ <para>セッションタイムアウト</para>
+ <para>【注意】</para>
+ <para>業務アプリでは使用しないでください。</para>
+ </summary>
+ <remarks>
+ <para>【注意】</para>
+ <para>業務アプリでは使用しないでください。</para>
+ </remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Base.FormMGR.SessionCheck.NoCheck">
+ <summary>
+ セッションタイムアウト区分(常にチェックしない場合)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Base.FormMGR.SessionCheck.CheckAlways">
+ <summary>
+ セッションタイムアウト区分(常にチェックする場合)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Web.Base.FormMGR.IllgalAccessCheck">
+ <summary>
+ <para>SekApFormInfoConst内のEnumクラスです。</para>
+ <para>セッションタイムアウト</para>
+ <para>【注意】</para>
+ <para>業務アプリでは使用しないでください。</para>
+ </summary>
+ <remarks>
+ <para>【注意】</para>
+ <para>業務アプリでは使用しないでください。</para>
+ </remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Base.FormMGR.IllgalAccessCheck.NoCheck">
+ <summary>
+ 不正画面遷移(常にチェックしない場合)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Base.FormMGR.IllgalAccessCheck.CheckAlways">
+ <summary>
+ 不正画面遷移(常にチェックする場合)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Web.Base.FormMGR.PrmPattern">
+ <summary>
+ <para>SekApFormInfoConst内のEnumクラスです。</para>
+ <para>パラメータ方式</para>
+ <para>【注意】</para>
+ <para>業務アプリでは使用しないでください。</para>
+ </summary>
+ <remarks>
+ <para>【注意】</para>
+ <para>業務アプリでは使用しないでください。</para>
+ </remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Base.FormMGR.PrmPattern.Session">
+ <summary>
+ パラメータ方式(Session)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Base.FormMGR.PrmPattern.Query">
+ <summary>
+ パラメータ方式(クエリ文字列)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Web.Base.FormMGR.NavigatePattern">
+ <summary>
+ <para>SekApFormInfoConst内のEnumクラスです。</para>
+ <para>画面遷移フラグ</para>
+ <para>【注意】</para>
+ <para>業務アプリでは使用しないでください。</para>
+ </summary>
+ <remarks>
+ <para>【注意】</para>
+ <para>業務アプリでは使用しないでください。</para>
+ </remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Base.FormMGR.NavigatePattern.NotDialog">
+ <summary>
+ 画面遷移フラグ(Response.Redirect形式)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Base.FormMGR.NavigatePattern.Dialog">
+ <summary>
+ 画面遷移フラグ(showModalDialog形式)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Base.FormMGR.NavigatePattern.DownLoad">
+ <summary>
+ 画面遷移フラグ(ファイルダウンロード形式)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.FormMGR.GetAccessPath(System.String)">
+ <summary>
+ キャッシュの画面情報から特定画面のファイルパス(ディレクトリ名＋ファイル名)を取得します。
+ </summary>
+ <param name="formId">フォームID</param>
+ <returns>引数で渡された画面IDのディレクトリ名＋ファイル名を返却</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.FormMGR.GetSessionCheck(System.String)">
+ <summary>
+ キャッシュの画面情報からセッションタイムアウト判定フラグを取得します。
+ </summary>
+ <param name="formId">フォームID</param>
+ <returns>セッションタイムアウト判定フラグを返却</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.FormMGR.GetIllgalAccessCheck(System.String)">
+ <summary>
+ キャッシュの画面情報からセッションタイムアウト判定フラグを取得します。
+ </summary>
+ <param name="formId">フォームID</param>
+ <returns>セッションタイムアウト判定フラグを返却</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.FormMGR.GetNavigatePattern(System.String)">
+ <summary>
+ キャッシュの画面情報から特定画面の画面遷移パターンを取得します。
+ </summary>
+ <param name="formId">フォームID</param>
+ <returns>遷移先画面の画面遷移パターンを返却</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.FormMGR.GetParameterPattern(System.String)">
+ <summary>
+ キャッシュの画面情報から特定画面のパラメータ方式を取得します。
+ </summary>
+ <param name="formId">フォームID</param>
+ <returns>遷移先画面のパラメータ方式を返却</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.FormMGR.GetFormName(System.String)">
+ <summary>
+ キャッシュの画面情報から特定画面のパラメータ方式を取得します。
+ </summary>
+ <param name="formId">フォームID</param>
+ <returns>遷移先画面のパラメータ方式を返却</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.FormMGR.GetFormSizeH(System.String)">
+ <summary>
+ キャッシュの画面情報から特定画面のパラメータ方式を取得します。
+ </summary>
+ <param name="formId">フォームサイズ高さ</param>
+ <returns>遷移先画面のパラメータ方式を返却</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.FormMGR.GetFormSizeW(System.String)">
+ <summary>
+ キャッシュの画面情報から特定画面のパラメータ方式を取得します。
+ </summary>
+ <param name="formId">フォームサイズ幅</param>
+ <returns>遷移先画面のパラメータ方式を返却</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.FormMGR.GetFormInfo(System.String)">
+ <summary>
+ キャッシュの画面情報から特定画面の情報を取得します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.FormMGR.GetNextPath(System.String,System.String)">
+ <summary>
+ キャッシュの遷移情報から次画面のファイル名を取得します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.FormMGR.GetNextFormID(System.String,System.String)">
+ <summary>
+ キャッシュの遷移情報から次画面のファイル名を取得します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.FormMGR.ReadXML(System.Data.DataSet,System.String)">
+ <summary>
+ App_Dataフォルダ内の指定されたXMLファイルをデータセットに読み込みます
+ </summary>
+ <param name="ds">XMLファイルの内容を読み込むデータセット</param>
+ <param name="xmlFilePath">読み込むXMLファイルの物理パス</param>
+ <remarks>
+ XMLファイルは以下の書式であること
+ 
+ ＜データセット名＞
+ 　＜データテーブル名＞
+ 　　＜列名１＞値＜/列名１＞
+ 　　・
+ 　　・
+ 　　＜列名Ｘ＞値＜/列名Ｘ＞
+ 　＜/データテーブル名＞
+ 　＜データテーブル名＞
+ 　　＜列名１＞値＜/列名１＞
+ 　　・
+ 　　・
+ 　　＜列名Ｘ＞値＜/列名Ｘ＞
+ 　＜/データテーブル名＞
+ ＜/データセット名＞
+ 
+ </remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Base.FormNavigate.QueryStringQuestion">
+ <summary>
+ クエリ文字列に使用する文字「？」
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Base.FormNavigate.QueryStringEqual">
+ <summary>
+ クエリ文字列に用する文字「=」
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Base.FormNavigate.QueryStringAnd">
+ <summary>
+ クエリ文字列に使用する文字「＆」
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Base.FormNavigate.Startup">
+ <summary>
+ 起動スクリプト登録キー
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Base.FormNavigate.ClassName">
+ <summary>
+ SekApExceptionクラスの引数(クラス名[日本語])
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Base.FormNavigate.ExceptionMessage">
+ <summary>
+ SekApExceptionクラスの引数(出力メッセージ)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.FormNavigate.Navigate(Jp.Co.Nrs.Web.Base.BaseForm,System.String,System.Collections.Specialized.NameValueCollection)">
+ <summary>
+ 画面遷移処理を行います。
+ </summary>
+ <param name="frm">遷移元画面インスタンス</param>
+ <param name="eventID">イベントID</param>
+ <param name="queryStringCollection">クエリー文字列</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.FormNavigate.GetPopUpScript(Jp.Co.Nrs.Web.Base.BaseForm,System.String,System.Collections.Specialized.NameValueCollection)">
+ <summary>
+ ポップアップ呼び出し用スクリプトを生成して返却します
+ </summary>
+ <param name="frm">画面インスタンス</param>
+ <param name="eventID">イベントID</param>
+ <param name="queryStringCollection">クエリーパラメータ</param>
+ <returns>ポップアップ呼び出し用スクリプト</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.FormNavigate.GetDialogScript(Jp.Co.Nrs.Web.Base.BaseForm,System.String,System.Collections.Specialized.NameValueCollection)">
+ <summary>
+ ダイアログ呼び出し用スクリプトを生成して返却します
+ </summary>
+ <param name="frm">画面インスタンス</param>
+ <param name="eventID">イベントID</param>
+ <param name="queryStringCollection">クエリーパラメータ</param>
+ <returns>ダイアログ呼び出し用スクリプト</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.FormNavigate.CheckQueryParam(Jp.Co.Nrs.Web.Base.FormMGR.PrmPattern,System.Collections.Specialized.NameValueCollection)">
+ <summary>
+ クエリパラメータチェックを行います。
+ </summary>
+ <param name="parameterPattern">パラメータ方式</param>
+ <param name="queryStringCollection">クエリー文字列</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.FormNavigate.CreateURL(System.String,System.Collections.Specialized.NameValueCollection)">
+ <summary>
+ 遷移先画面のURLを構築し、返却します。
+ </summary>
+ <param name="filePath">遷移先画面のディレクトリ名＋ファイル名</param>
+ <param name="queryStringCollection">クエリ文字列</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Web.Base.BaseParam">
+ <summary>
+ 個別セション項目格納用クラスの親クラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Web.Base.BaseParam.PreviousGamenID">
+ <summary>
+ 遷移元画面ID
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Web.Base.BaseParam.PreviousPageViewID">
+ <summary>
+ 遷移元画面の遷移直前に表示されていたViewのViewID
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Web.Base.BaseParam.NextPageViewID">
+ <summary>
+ 遷移先画面にて表示したいViewのViewID
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Web.Base.ConfigMGR">
+ <summary>
+ web.configに定義された情報を取得します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.ConfigMGR.GetAppSettingsValue(System.String)">
+ <summary>
+ web.configのappSettingsセクションより、引数に指定されたキーの値を取得します。
+ </summary>
+ <param name="key">検索キー</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Web.Base.SessionMGR">
+ <summary>
+ セッション用ユーティリティクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.SessionMGR.IsSessionTimeOut">
+ <summary>
+ セッションタイムアウトが発生したかどうかを判定します。
+ </summary>
+ <returns>False：発生していない　True：発生している</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.SessionMGR.Remove(System.String)">
+ <summary>
+ 引数で渡されたsessionKeyのオブジェクトをSessionから削除します。
+ </summary>
+ <param name="sessionKey">削除するオブジェクトのSessionキー名</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.SessionMGR.RemoveAllItem">
+ <summary>
+ 作成した全てのSession項目を削除します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.SessionMGR.GetKeys">
+ <summary>
+ システムで格納したセッションキーを取得します
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.SessionMGR.RemoveWorkSession(System.String)">
+ <summary>
+ 各画面の作業用Sessionの削除を行います。
+ </summary>
+ <param name="pGamenID">画面ID</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.SessionMGR.SaveSessionItem(System.String,System.Object)">
+ <summary>
+ データをSessionに格納します。
+ </summary>
+ <param name="clientParam">データを格納したオブジェクト</param>
+ <param name="sessionKey">sessionのキー名</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.SessionMGR.LoadSessionItem(System.String)">
+ <summary>
+ Sessionに格納したデータを取得します。
+ </summary>
+ <param name="sessionKey">sessionのキー名</param>
+ <returns>Sessionから取得したオブジェクトを返却します</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.SessionMGR.CopyObject(System.Object)">
+ <summary>
+ セッション格納用にオブジェクトをコピーします
+ </summary>
+ <param name="pSource"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Web.Base.CacheMGR">
+ <summary>
+ キャッシュ用ユーティリティクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.CacheMGR.GetDsKbnMasterDataCache">
+ <summary>
+ [DS]区分マスターデータのキャッシュを取得します。
+ </summary>
+ <remarks>iwa2010(for DS)</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.CacheMGR.GetDsTaxMasterDataCache">
+ <summary>
+ [DS]税率マスターデータのキャッシュを取得します。
+ </summary>
+ <remarks>iwa2010(for DS)</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.CacheMGR.GetDsChargeItemMasterDataCache">
+ <summary>
+ [DS]諸料金アイテムマスターデータのキャッシュを取得します。
+ </summary>
+ <remarks>iwa2010(for DS)</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.CacheMGR.GetMessageDataCache">
+ <summary>
+ メッセージデータのキャッシュを取得します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.CacheMGR.GetConfigDataCache(Jp.Co.Nrs.Web.Base.BaseForm)">
+ <summary>
+ コンフィグデータのキャッシュを取得します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.CacheMGR.SetConfigDataCache(System.Data.DataSet)">
+ <summary>
+ メッセージデータのキャッシュを格納します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.CacheMGR.Remove(System.String)">
+ <summary>
+ 引数で渡されたCacheKeyのオブジェクトをCacheから削除します。
+ </summary>
+ <param name="CacheKey">削除するオブジェクトのCacheキー名</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.CacheMGR.RemoveAllItem">
+ <summary>
+ 作成した全てのCache項目を削除します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.CacheMGR.GetKeys">
+ <summary>
+ システムで格納したキャッシュキーを取得します
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.CacheMGR.SaveCacheItem(System.String,System.Object)">
+ <summary>
+ データをCacheに格納します。
+ </summary>
+ <param name="clientParam">データを格納したオブジェクト</param>
+ <param name="CacheKey">Cacheのキー名</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.CacheMGR.LoadCacheItem(System.String)">
+ <summary>
+ Cacheに格納したデータを取得します。
+ </summary>
+ <param name="CacheKey">Cacheのキー名</param>
+ <returns>Cacheから取得したオブジェクトを返却します</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.CacheMGR.RefreshCacheDS">
+ <summary>
+ Cacheデータを再取得します。
+ </summary>
+ <remarks>iwa2010(for DS)</remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Web.Base.UserData">
+ <summary>
+ 画面間データ格納クラス
+ </summary>
+ <remarks></remarks>
+ <histry>
+ 2006/07/21      須藤      新規
+ </histry>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Base.UserData._UserID">
+ <summary>
+ ログインユーザIDを格納します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Base.UserData._UserName">
+ <summary>
+ ログインユーザ名を格納します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Base.UserData._MsgLanguage">
+ <summary>
+ メッセージ言語区分を格納します。
+ </summary>
+ <remarks>
+ 0:日本語
+ 1:英語
+ </remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Web.Base.UserData.UserID">
+ <summary>
+ ユーザーID
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Web.Base.UserData.UserName">
+ <summary>
+ ユーザー名
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Web.Base.UserData.MessageLanguage">
+ <summary>
+ メッセージ言語区分を取得、格納します
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.Base.WebWSA.GetWebServiceURL">
+ <summary>
+ Web.configよりWebサービスのURLを取得します。
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Web.FormInfoDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.Web.FormInfoDS.FormInfoTblDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.Web.FormInfoDS.FormInfoTblRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.Web.FormInfoDS.FormInfoTblRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.Web.NavigateInfoDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.Web.NavigateInfoDS.NavigateInfoTblDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.Web.NavigateInfoDS.NavigateInfoTblRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.Web.NavigateInfoDS.NavigateInfoTblRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.Web.Const.CacheDS">
+ <summary>
+ キャッシュデータセット用定数クラス
+ </summary>
+ <remarks></remarks>
+ <histry>
+ 2010/04/13      岩本      新規
+ </histry>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Const.CacheDS.DsCacheTBL.KBN">
+ <summary>
+ 区分マスタキャッシュデータセット
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Const.CacheDS.DsCacheTBL.TAX">
+ <summary>
+ 税金マスタキャッシュデータセット
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Const.CacheDS.DsCacheTBL.CHARGEITEM">
+ <summary>
+ 諸料金アイテムマスタキャッシュデータセット
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Web.Const.GUIConst">
+ <summary>
+ 画面項目用定数クラス
+ </summary>
+ <remarks></remarks>
+ <histry>
+ 2008/04/25      NRS      新規
+ </histry>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Const.GUIConst.COMMON_SYSTEM_PREFIX">
+ <summary>
+ セッションのシステム接頭辞
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Const.GUIConst.CATEGORY_NAME">
+ <summary>
+ GUIエディター用のプロパティカテゴリ文言
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Const.GUIConst.SYSTEM_QUERY_KEY0">
+ <summary>
+ GUIエディター用のプロパティカテゴリ文言
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Const.GUIConst.HIDDEN_ID_POP_RETURN">
+ <summary>
+ ポップアップ画面戻り値格納用隠しフィールドID
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Const.GUIConst.HIDDEN_ID_DIALOG_SUBMIT_ID">
+ <summary>
+ ダイアログ画面戻り値格納用隠しフィールドID
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Const.GUIConst.HIDDEN_ID_DIALOG_RETURN">
+ <summary>
+ ダイアログ画面戻り値格納用隠しフィールドID
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Const.GUIConst.HIDDEN_ID_POP_QUERY_PARAM">
+ <summary>
+ ポップアップクエリーパラメー格納用隠しフィールドID
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Web.Const.GUIConst.BrowserSetting">
+ <summary>
+ ブラウザ設定 定数
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Const.GUIConst.BrowserSetting.ViewMax_QueryString">
+ <summary>
+ ページ最大化表示のクエリ文字列
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Const.GUIConst.BrowserSetting.Continue_True">
+ <summary>
+ 処理続行を表すクエリ文字列
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Const.GUIConst.BrowserSetting.PageSizeMax">
+ <summary>
+ 最大化表示
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Const.GUIConst.BrowserSetting.RequestName">
+ <summary>
+ Request名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Const.GUIConst.BrowserSetting.csNmMaxPageSize">
+ <summary>
+ クライアントスクリプト名　[MaxPageSize]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Const.GUIConst.BrowserSetting.csNmPopUpPageSize">
+ <summary>
+ クライアントスクリプト名　[PopUpPageSize]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Const.GUIConst.BrowserSetting.csNmOpen">
+ <summary>
+ クライアントスクリプト名　[PageOpen]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Const.GUIConst.BrowserSetting.csNmClose">
+ <summary>
+ クライアントスクリプト名　[PageClose]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Const.GUIConst.BrowserSetting.SpreadDoubleCliskScript">
+ <summary>
+ スプレッドのダブルクリックイベント ClientScript名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Const.GUIConst.BrowserSetting.MainPageContentPlaceHolder">
+ <summary>
+ メインページのContentPlaceHolder名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Const.GUIConst.BrowserSetting.PopPageContentPlaceHolder">
+ <summary>
+ PopUpページのContentPlaceHolder名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Const.GUIConst.BrowserSetting.HtmlNewLine">
+ <summary>
+ HTML改行タグ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Web.Const.GUIConst.ImExpression">
+ <summary>
+ InputMan用ValidatorのCharacterSetプロパティ 定数
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Const.GUIConst.ImExpression.HANKAKU">
+ <summary>
+ 半角
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Const.GUIConst.ImExpression.EISU">
+ <summary>
+ 英数字
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Const.GUIConst.FONT_DEF_TYPE">
+ <summary>
+ フォント種類
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Const.GUIConst.FONT_DEF_SIZE">
+ <summary>
+ フォントサイズ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Const.GUIConst.FONT_DEF_CHARSET">
+ <summary>
+ フォントセット
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Const.GUIConst.FORE_COLOR_SYSTEM_RED">
+ <summary>
+ システム前景色（R）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Const.GUIConst.FORE_COLOR_SYSTEM_GREEN">
+ <summary>
+ システム前景色（G）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Const.GUIConst.FORE_COLOR_SYSTEM_BLUE">
+ <summary>
+ システム前景色（B）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Const.GUIConst.BACK_COLOR_SYSTEM_RED">
+ <summary>
+ システム背景色（R）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Const.GUIConst.BACK_COLOR_SYSTEM_GREEN">
+ <summary>
+ システム背景色（G）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Const.GUIConst.BACK_COLOR_SYSTEM_BLUE">
+ <summary>
+ システム背景色（B）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Const.GUIConst.FORE_COLOR_ATTENTION_RED">
+ <summary>
+ システム警告色（R）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Const.GUIConst.FORE_COLOR_ATTENTION_GREEN">
+ <summary>
+ システム警告色（G）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Const.GUIConst.FORE_COLOR_ATTENTION_BLUE">
+ <summary>
+ システム警告色（B）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Const.GUIConst.BACK_COLOR_ATTENTION_RED">
+ <summary>
+ システム警告背景色（R）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Const.GUIConst.BACK_COLOR_ATTENTION_GREEN">
+ <summary>
+ システム警告背景色（G）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Const.GUIConst.BACK_COLOR_ATTENTION_BLUE">
+ <summary>
+ システム警告背景色（B）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Const.GUIConst.SYSTEM_COLOR_BULUE_RED">
+ <summary>
+ システム新規色（R）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Const.GUIConst.SYSTEM_COLOR_BULUE_GREEN">
+ <summary>
+ システム新規色（G）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Const.GUIConst.SYSTEM_COLOR_BULUE_BLUE">
+ <summary>
+ システム前景色（B）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Const.GUIConst.BACK_COLOR_INPUT_RED">
+ <summary>
+ 入力項目背景色（R）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Const.GUIConst.BACK_COLOR_INPUT_GREEN">
+ <summary>
+ 入力項目背景色（G）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Const.GUIConst.BACK_COLOR_INPUT_BLUE">
+ <summary>
+ 入力項目背景色（B）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Const.GUIConst.SPREAD_COLOR_INPUT_BACK_RED">
+ <summary>
+ スプレッド入力項目背景色（R）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Const.GUIConst.SPREAD_COLOR_INPUT_BACK_GREEN">
+ <summary>
+ スプレッド入力項目背景色（G）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Const.GUIConst.SPREAD_COLOR_INPUT_BACK_BLUE">
+ <summary>
+ スプレッド入力項目背景色（B）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Const.GUIConst.SPREAD_COLOR_SELECT_FORE_RED">
+ <summary>
+ スプレッド選択時前景色（R）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Const.GUIConst.SPREAD_COLOR_SELECT_FORE_GREEN">
+ <summary>
+ スプレッド選択時前景色（G）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Const.GUIConst.SPREAD_COLOR_SELECT_FORE_BLUE">
+ <summary>
+ スプレッド選択時前景色（B）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Const.GUIConst.SPREAD_COLOR_SELECT_BACK_RED">
+ <summary>
+ スプレッド選択時背景色（R）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Const.GUIConst.SPREAD_COLOR_SELECT_BACK_GREEN">
+ <summary>
+ スプレッド選択時背景色（G）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.Const.GUIConst.SPREAD_COLOR_SELECT_BACK_BLUE">
+ <summary>
+ スプレッド選択時背景色（B）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Web.GUI.BaseRadioButtonList.EnableStatus">
+ <summary>
+ このコントロールのEnable値を取得・設定します。
+ </summary>
+ <value>このコントロールのEnable値</value>
+ <returns>このコントロールのEnable値</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Web.GUI.BaseSituationLabel">
+ <summary>
+ 状況表示ラベル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.GUI.BaseSituationLabel._DataStatus">
+ <summary>
+ データステータス(レコードステータス)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.GUI.BaseSituationLabel._DisplayMode">
+ <summary>
+ ディスプレイモード
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.GUI.BaseSituationLabel._Visible">
+ <summary>
+ ラベルの表示・非表示
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.GUI.BaseSituationLabel.lblRecStat">
+ <summary>
+ レコードステータス用ラベルコントロール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.GUI.BaseSituationLabel.lblDispMode">
+ <summary>
+ ディスプレイモード用ラベルコントロール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.GUI.BaseSituationLabel.lblSpace">
+ <summary>
+ ラベルとラベルの間のラベルコントロール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.GUI.BaseSituationLabel.DISP_NOMAL">
+ <summary>
+ 表示文言（正常）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.GUI.BaseSituationLabel.DISP_DELETE">
+ <summary>
+ 表示文言（削除）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.GUI.BaseSituationLabel.DISP_NEW">
+ <summary>
+ 表示文言（新規）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.GUI.BaseSituationLabel.DISP_VIEW">
+ <summary>
+ 表示文言（参照）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.GUI.BaseSituationLabel.DISP_EDIT">
+ <summary>
+ 表示文言（編集）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Web.GUI.BaseSituationLabel.DISP_COPY">
+ <summary>
+ 表示文言（複写）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Web.GUI.BaseSituationLabel.Visible">
+ <summary>
+ 表示・非表示の取得・設定
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Web.GUI.BaseSituationLabel.RecordStatus">
+ <summary>
+ レコードステータスの取得・設定
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Web.GUI.BaseSituationLabel.DisplayMode">
+ <summary>
+ ディスプレイモード
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.BaseSituationLabel.#ctor">
+ <summary>
+ コンストラクタ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.BaseSituationLabel.DefaultStyle">
+ <summary>
+ ツールボックスから貼り付け時のスタイル設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.BaseSituationLabel.SetSituation(System.String,System.String,System.Boolean)">
+ <summary>
+ シチュエーションラベルを設定します
+ </summary>
+ <param name="RecordStatus">レコードステータス</param>
+ <param name="DisplayMode">ディスプレイモード</param>
+ <param name="LabelVisible">表示・非表示</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.BaseSituationLabel.CreateViewState">
+ <summary>
+ ビューステートに値を設定・保存します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Web.GUI.Interface.IAfterDateCheck">
+ <summary>
+ 未来日チェック用インターフェース
+ </summary>
+ <remarks></remarks>
+ <histry>
+ 2006/07/21      須藤      新規
+ </histry>
+</member>
+<member name="T:Jp.Co.Nrs.Web.GUI.Interface.IBeforeDateCheck">
+ <summary>
+ 過去日チェック用インターフェース
+ </summary>
+ <remarks></remarks>
+ <histry>
+ 2006/07/21      須藤      新規
+ </histry>
+</member>
+<member name="T:Jp.Co.Nrs.Web.GUI.Interface.IByteCheck">
+ <summary>
+ バイトチェック用インターフェース
+ </summary>
+ <remarks></remarks>
+ <histry>
+ 2006/07/21      須藤      新規
+ </histry>
+</member>
+<member name="T:Jp.Co.Nrs.Web.GUI.Interface.ICalendarCheck">
+ <summary>
+ 暦上日チェック用インターフェース
+ </summary>
+ <remarks></remarks>
+ <histry>
+ 2006/07/21      須藤      新規
+ </histry>
+</member>
+<member name="T:Jp.Co.Nrs.Web.GUI.Interface.IControl">
+ <summary>
+ 画面部品共通インターフェース
+ </summary>
+ <remarks></remarks>
+ <histry>
+ 2006/07/21      須藤      新規
+ </histry>
+</member>
+<member name="P:Jp.Co.Nrs.Web.GUI.Interface.IControl.BackColorDef">
+ <summary>
+ 背景色を取得・設定します
+ </summary>
+ <value>背景</value>
+ <returns>背景</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Web.GUI.Interface.IControl.BorderStyleDef">
+ <summary>
+ 罫線定義を取得・設定します
+ </summary>
+ <value>罫線定義</value>
+ <returns>罫線定義</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Web.GUI.Interface.IControl.EnableStatus">
+ <summary>
+ このコントロールのEnable値を取得・設定します。
+ </summary>
+ <value>このコントロールのEnable値</value>
+ <returns>このコントロールのEnable値</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Web.GUI.Interface.IControl.ForeColorDef">
+ <summary>
+ 前景色を取得・設定します
+ </summary>
+ <value>前景色</value>
+ <returns>前景色</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Web.GUI.Interface.IControl.TextValue">
+ <summary>
+ テキストの値を取得・設定します
+ </summary>
+ <value>テキスト</value>
+ <returns>テキスト</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.Interface.IControl.InitializeForMakingForm">
+ <summary>
+ フォーム構築時の初期化処理を記述します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.Interface.IControl.InitBackColor">
+ <summary>
+ 初期化時に背景色を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.Interface.IControl.InitBorder">
+ <summary>
+ 初期化時に罫線定義を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.Interface.IControl.InitFont">
+ <summary>
+ 初期化時にフォント定義を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.Interface.IControl.InitForeColor">
+ <summary>
+ 初期化時に前景色を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.Interface.IControl.InitHeight">
+ <summary>
+ 初期化時に高さ設定を取得・設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.Interface.IControl.InitTextValue">
+ <summary>
+ 初期化時にテキストの値を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.Interface.IControl.InitWidth">
+ <summary>
+ 初期化時に幅を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.Interface.IControl.InitExtraSetting">
+ <summary>
+ 初期化時に各コントロール固有の項目を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Web.GUI.Interface.IDakutenCheck">
+ <summary>
+ 濁点チェック用インターフェース
+ </summary>
+ <remarks></remarks>
+ <histry>
+ 2006/07/21      須藤      新規
+ </histry>
+</member>
+<member name="T:Jp.Co.Nrs.Web.GUI.Interface.IEditableControl">
+ <summary>
+ 画面入力部品共通インターフェース
+ </summary>
+ <remarks></remarks>
+ <histry>
+ 2006/07/21      須藤      新規
+ 2006/10/13      須藤      修正　・入力チェックの後処理を行うためのメソッドを追加
+ </histry>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.Interface.IEditableControl.SetDefault">
+ <summary>
+ 入力チェック正常時の処理を実行します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.Interface.IEditableControl.SetAttention">
+ <summary>
+ 入力チェックエラー時の処理を実行します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.Interface.IEditableControl.FinishCheck">
+ <summary>
+ 入力チェックの後処理を行います。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.Interface.IEditableControl.GetValueForValidate">
+ <summary>
+ 入力チェック用に値を取得します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Web.GUI.Interface.IEditableControl.ReadOnlyStatus">
+ <summary>
+ このコントロールのReadOnly値を取得・設定します。
+ </summary>
+ <value>このコントロールのReadOnly値</value>
+ <returns>このコントロールのReadOnly値</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Web.GUI.Interface.IEditableControl.ItemName">
+ <summary>
+ コントロールの項目名を取得・設定します。
+ </summary>
+ <value>コントロールの項目名</value>
+ <returns>コントロールの項目名</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Web.GUI.Interface.IEisuCheck">
+ <summary>
+ 英数字チェック用インターフェース
+ </summary>
+ <remarks></remarks>
+ <histry>
+ 2006/07/21      須藤      新規
+ </histry>
+</member>
+<member name="P:Jp.Co.Nrs.Web.GUI.Interface.IEisuCheck.IsEisuCheck">
+ <summary>
+ 英数字チェック有無を設定するプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Web.GUI.Interface.IForbiddenWordsCheck">
+ <summary>
+ 禁止文字チェック用インターフェース
+ </summary>
+ <remarks></remarks>
+ <histry>
+ 2006/07/21      須藤      新規
+ </histry>
+</member>
+<member name="T:Jp.Co.Nrs.Web.GUI.Interface.IFullByteCheck">
+ <summary>
+ フルバイトチェック用インターフェース
+ </summary>
+ <remarks></remarks>
+ <histry>
+ 2006/07/21      須藤      新規
+ </histry>
+</member>
+<member name="T:Jp.Co.Nrs.Web.GUI.Interface.IHankakuCheck">
+ <summary>
+ 半角チェック用インターフェース
+ </summary>
+ <remarks></remarks>
+ <histry>
+ 2006/07/21      須藤      新規
+ </histry>
+</member>
+<member name="T:Jp.Co.Nrs.Web.GUI.Interface.IHissuCheck">
+ <summary>
+ 必須チェック用インターフェース
+ </summary>
+ <remarks></remarks>
+ <histry>
+ 2006/07/21      須藤      新規
+ </histry>
+</member>
+<member name="T:Jp.Co.Nrs.Web.GUI.Interface.IKanaCheck">
+ <summary>
+ カナチェック用インターフェース
+ </summary>
+ <remarks></remarks>
+ <histry>
+ 2006/07/21      須藤      新規
+ </histry>
+</member>
+<member name="T:Jp.Co.Nrs.Web.GUI.Interface.IMiddleSpaceCheck">
+ <summary>
+ 中間スペースチェック用インターフェース
+ </summary>
+ <remarks></remarks>
+ <histry>
+ 2006/07/21      須藤      新規
+ </histry>
+</member>
+<member name="T:Jp.Co.Nrs.Web.GUI.Interface.INFForm">
+ <summary>
+ NFForm系共通インターフェース
+ </summary>
+ <remarks></remarks>
+ <histry>
+ 2006/07/21      須藤      新規
+ </histry>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.Interface.INFForm.SetMsgAriaText(System.String)">
+ <summary>
+ メッセージエリアに引数の文字列を表示します。
+ </summary>
+ <param name="msg">表示する文字列</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.Interface.INFForm.SetMsgAriaForeColor(System.Drawing.Color)">
+ <summary>
+ メッセージエリアの背景色を変更します。
+ </summary>
+ <param name="color">変更する色</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.Interface.INFForm.SetStatusDbNm(System.String)">
+ <summary>
+ ステータスバーのサーバー名を設定します
+ </summary>
+ <param name="value"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.Interface.INFForm.SetStatusUserNm(System.String)">
+ <summary>
+ ステータスバーのユーザー名を設定します
+ </summary>
+ <param name="value"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.Interface.INFForm.SetStatusDateTime(System.String)">
+ <summary>
+ ステータスバーの時間を設定します
+ </summary>
+ <param name="value"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.Interface.INFForm.SetWindowTitle(System.String)">
+ <summary>
+ ウィンドウのタイトルを設定します
+ </summary>
+ <param name="value"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.Interface.INFForm.SetSituationRecStatus(System.String)">
+ <summary>
+ シチュエーションラベルののレコードステータスを設定します
+ </summary>
+ <param name="value"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.Interface.INFForm.SetSituationDispMode(System.String)">
+ <summary>
+ シチュエーションラベルののディスプレイモ－ドを設定します
+ </summary>
+ <param name="value"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.Interface.INFForm.SetSituationLabelVisible(System.Boolean)">
+ <summary>
+ シチュエーションラベルのの表示・非表示を設定します
+ </summary>
+ <param name="value"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.Interface.INFForm.SetStartTime(System.String)">
+ <summary>
+ 隠しフィールド。開始時刻を設定します
+ </summary>
+ <param name="value"></param>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Web.GUI.Interface.INFForm.StartTime">
+ <summary>
+ 隠しフィールド。開始時刻を取得します
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Web.GUI.Interface.INumericCheck">
+ <summary>
+ 数値チェック用インターフェース
+ </summary>
+ <remarks></remarks>
+ <histry>
+ 2006/07/21      須藤      新規
+ </histry>
+</member>
+<member name="T:Jp.Co.Nrs.Web.GUI.Interface.IRadioBtnControl">
+ <summary>
+ 画面部品共通インターフェース
+ </summary>
+ <remarks></remarks>
+ <histry>
+ 2007/12/13      岩本      新規
+ </histry>
+</member>
+<member name="P:Jp.Co.Nrs.Web.GUI.Interface.IRadioBtnControl.EnableStatus">
+ <summary>
+ このコントロールのEnable値を取得・設定します。
+ </summary>
+ <value>このコントロールのEnable値</value>
+ <returns>このコントロールのEnable値</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Web.GUI.Interface.IRangeCheck">
+ <summary>
+ 範囲チェック用インターフェース
+ </summary>
+ <remarks></remarks>
+ <histry>
+ 2006/07/21      須藤      新規
+ </histry>
+</member>
+<member name="T:Jp.Co.Nrs.Web.GUI.Interface.ISpreadControl">
+ <summary>
+ 画面部品共通インターフェース
+ </summary>
+ <remarks></remarks>
+ <histry>
+ 2006/07/21      須藤      新規
+ </histry>
+</member>
+<member name="P:Jp.Co.Nrs.Web.GUI.Interface.ISpreadControl.BorderStyleDef">
+ <summary>
+ 罫線定義を取得・設定します
+ </summary>
+ <value>罫線定義</value>
+ <returns>罫線定義</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Web.GUI.Interface.ISpreadControl.EnableStatus">
+ <summary>
+ このコントロールのEnable値を取得・設定します。
+ </summary>
+ <value>このコントロールのEnable値</value>
+ <returns>このコントロールのEnable値</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Web.GUI.Interface.ISpreadControl.TextValue">
+ <summary>
+ テキストの値を取得・設定します
+ </summary>
+ <value>テキスト</value>
+ <returns>テキスト</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.Interface.ISpreadControl.InitializeForMakingForm">
+ <summary>
+ フォーム構築時の初期化処理を記述します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.Interface.ISpreadControl.InitBorder">
+ <summary>
+ 初期化時に罫線定義を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.Interface.ISpreadControl.InitFont">
+ <summary>
+ 初期化時にフォント定義を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.Interface.ISpreadControl.InitHeight">
+ <summary>
+ 初期化時に高さ設定を取得・設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.Interface.ISpreadControl.InitTextValue">
+ <summary>
+ 初期化時にテキストの値を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.Interface.ISpreadControl.InitWidth">
+ <summary>
+ 初期化時に幅を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.Interface.ISpreadControl.InitExtraSetting">
+ <summary>
+ 初期化時に各コントロール固有の項目を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Web.GUI.Interface.ISujiCheck">
+ <summary>
+ 数字チェック用インターフェース
+ </summary>
+ <remarks></remarks>
+ <histry>
+ 2006/07/21      須藤      新規
+ </histry>
+</member>
+<member name="T:Jp.Co.Nrs.Web.GUI.Interface.IZenkakuCheck">
+ <summary>
+ 全角チェック用インターフェース
+ </summary>
+ <remarks></remarks>
+ <histry>
+ 2006/07/21      須藤      新規
+ </histry>
+</member>
+<member name="T:Jp.Co.Nrs.Web.GUI.Utility.WebUtility">
+ <summary>
+ 拡張画面部品用ユーティリティクラス
+ </summary>
+ <remarks></remarks>
+ <histry>
+ 2006/07/21      須藤      新規
+ </histry>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.Utility.WebUtility.CopyObject(System.Object)">
+ <summary>
+ キャッシュ格納用にオブジェクトをコピーします
+ </summary>
+ <param name="pSource"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.Utility.WebUtility.GetDefaultFont(System.Boolean)">
+ <summary>
+ システムデフォルトのフォントを取得します。
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.Utility.WebUtility.GetSystemForeColor">
+ <summary>
+ システムデフォルトの前景色を取得します。
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.Utility.WebUtility.GetSystemBackColor">
+ <summary>
+ システムデフォルトの背景色を取得します。
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.Utility.WebUtility.GetSystemInputBackColor">
+ <summary>
+ システムデフォルトの入力項目背景色を取得します。
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.Utility.WebUtility.GetReadOnlyBackColor">
+ <summary>
+ システムデフォルトの読み取り専用色を取得します。
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.Utility.WebUtility.GetAttentionForeColor">
+ <summary>
+ システムデフォルトの注意を促す前景色を取得します。
+ </summary>
+ <returns></returns>
+ <remarks>必須マーク・マイナス金額値など</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.Utility.WebUtility.GetAttentionBackColor">
+ <summary>
+ システムデフォルトの注意を促す背景色を取得します。
+ </summary>
+ <returns></returns>
+ <remarks>必須マーク・マイナス金額値など</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.Utility.WebUtility.GetSpreadInputBackColor">
+ <summary>
+ スプレッドの入力行の色を取得します。
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.Utility.WebUtility.GetSpreadSelectForeColor">
+ <summary>
+ スプレッドの選択セルの前景色を取得します。
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.Utility.WebUtility.GetSpreadSelectBackColor">
+ <summary>
+ スプレッドの選択セルの背景色を取得します。
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.Utility.WebUtility.CreatePageSessionName(System.Web.UI.MasterPage,System.String)">
+ <summary>
+ ページセッション名を作成します
+ </summary>
+ <param name="mstPage">マスターページ</param>
+ <param name="datasetName">作成するデータセット名</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.Utility.WebUtility.SetSLabelRecStatus(System.Web.UI.MasterPage,System.String)">
+ <summary>
+ シチュエーションラベルのレコードステータスを設定します
+ </summary>
+ <param name="mstPage"></param>
+ <remarks>レコードステータスのみ設定します</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.Utility.WebUtility.SetSLabelDispMode(System.Web.UI.MasterPage,System.String)">
+ <summary>
+ シチュエーションラベルのディスプレイモードを設定します
+ </summary>
+ <param name="mstPage"></param>
+ <remarks>ディスプレイモードのみ設定します</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.Utility.WebUtility.SetPageSize(System.Type,System.Web.UI.ClientScriptManager,System.String)">
+ <summary>
+ ブラウザ表示サイズを最大に設定します。
+ </summary>
+ <param name="cstype">ClientScriptタイプ</param>
+ <param name="cs">ClientScript</param>
+ <param name="csname">ClientScript名</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.Utility.WebUtility.SetPopUpPageSize(System.Type,System.Web.UI.ClientScriptManager,System.String)">
+ <summary>
+ ポップアップブラウザ表示サイズを設定します。
+ </summary>
+ <param name="cstype">ClientScriptタイプ</param>
+ <param name="cs">ClientScript</param>
+ <param name="csname">ClientScript名</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.Utility.WebUtility.SetLoginPageSize(System.Type,System.Web.UI.ClientScriptManager,System.String)">
+ <summary>
+ ログインブラウザ表示サイズを設定します。
+ </summary>
+ <param name="cstype">ClientScriptタイプ</param>
+ <param name="cs">ClientScript</param>
+ <param name="csname">ClientScript名</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.Utility.WebUtility.SetSpreadDoubleClickEvent(System.Web.UI.Page,System.Type,System.Web.UI.MasterPage,System.String,System.String)">
+ <summary>
+ スプレッドのダブルクリックイベントを設定します。
+ </summary>
+ <param name="PageName">イベントを設定するSpreadが配置されているページ</param>
+ <param name="ClientScriptType">登録するクライアントスクリプトの型</param>
+ <param name="MasterPage">使用するMasterPageクラス</param>
+ <param name="SpreadName">イベントを設定するSpread名称</param>
+ <param name="SpreadHiddenColumnName">編集項目に展開する値を保存してあるSpread非表示列名称</param>
+ <remarks>クライアントコールバック処理</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.Utility.WebUtility.SetPageOpenEvent(System.Type,System.Web.UI.ClientScriptManager,System.String,System.String)">
+ <summary>
+ 新規ブラウザを開きます。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.Validator.BaseMsCompareValidator.ControlPropertiesValid">
+ <summary>
+ 概要:検証対象のプロパティが有効かどうかを調べます。
+ </summary>
+ <returns>戻り値:検証対象のコントロール プロパティが有効な場合は true。それ以外の場合は false。</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.Validator.BaseMsCustomValidator.ControlPropertiesValid">
+ <summary>
+ 概要:検証対象のプロパティが有効かどうかを調べます。
+ </summary>
+ <returns>戻り値:検証対象のコントロール プロパティが有効な場合は true。それ以外の場合は false。</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.Validator.BaseMsRangeValidator.ControlPropertiesValid">
+ <summary>
+ 概要:検証対象のプロパティが有効かどうかを調べます。
+ </summary>
+ <returns>戻り値:検証対象のコントロール プロパティが有効な場合は true。それ以外の場合は false。</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.Validator.BaseMsRegularExpressionValidator.ControlPropertiesValid">
+ <summary>
+ 概要:検証対象のプロパティが有効かどうかを調べます。
+ </summary>
+ <returns>戻り値:検証対象のコントロール プロパティが有効な場合は true。それ以外の場合は false。</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Web.GUI.Validator.BaseMsRequiredFieldValidator.ControlPropertiesValid">
+ <summary>
+ 概要:検証対象のプロパティが有効かどうかを調べます。
+ </summary>
+ <returns>戻り値:検証対象のコントロール プロパティが有効な場合は true。それ以外の場合は false。</returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

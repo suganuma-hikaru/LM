@@ -1,0 +1,6775 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.Win.Library
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.Win.My.Resources.Resources">
+<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.Win.My.Resources.Resources.ResourceManager">
+<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.Win.My.Resources.Resources.Culture">
+<summary>
+  すべてについて、現在のスレッドの CurrentUICulture プロパティをオーバーライドします
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.Win.Base.FormData">
+ <summary>
+ 画面間データ格納クラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.Base.ConfigManager">
+ <summary>
+ システム情報制御クラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Base.ConfigManager.SYSTEM_NAME">
+ <summary>
+ Config項目定数（システム名）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.ConfigManager.CreateConfigDataSet(System.String)">
+ <summary>
+ システム情報ファイルを読み込み、システム情報データを作成します。
+ </summary>
+ <param name="configFilePath"></param>
+ <returns>システム情報ファイルの内容を格納したDataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.ConfigManager.GetConfigValue(System.String)">
+ <summary>
+ 指定した項目のデータをキャッシュから取得します。
+ </summary>
+ <param name="column"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.Base.ConnectionManager">
+ <summary>
+ データベース接続制御クラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.Base.ConnectionManager.ConfigColumn">
+ <summary>
+ Config項目定数
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Base.ConnectionManager.ConfigColumn.DATA_SOURCE">
+ <summary>
+ Config項目定数（DB接続文字列-Data Source）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Base.ConnectionManager.ConfigColumn.INITIAL_CATALOG">
+ <summary>
+ Config項目定数（DB接続文字列-Initial Catalog）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Base.ConnectionManager.ConfigColumn.PERSIST_SECURITY_INFO">
+ <summary>
+ Config項目定数（DB接続文字列-Security Info）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Base.ConnectionManager.ConfigColumn.USER_ID">
+ <summary>
+ Config項目定数（DB接続文字列-User ID）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Base.ConnectionManager.ConfigColumn.PASSWORD">
+ <summary>
+ Config項目定数（DB接続文字列-Password）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Base.ConnectionManager.ConfigColumn.TIMEOUT">
+ <summary>
+ Config項目定数（DB接続タイムアウト時間）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.Base.ConnectionManager.ConnectionPrefix">
+ <summary>
+ DB接続文字列　接頭辞
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Base.ConnectionManager.ConnectionPrefix.DATA_SOURCE">
+ <summary>
+ DB接続文字列　接頭辞 （Data Source）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Base.ConnectionManager.ConnectionPrefix.INITIAL_CATALOG">
+ <summary>
+ DB接続文字列　接頭辞 （Initial Catalog）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Base.ConnectionManager.ConnectionPrefix.PERSIST_SECURITY_INFO">
+ <summary>
+ DB接続文字列　接頭辞 （Security Info）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Base.ConnectionManager.ConnectionPrefix.USER_ID">
+ <summary>
+ DB接続文字列　接頭辞 （User ID）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Base.ConnectionManager.ConnectionPrefix.PASSWORD">
+ <summary>
+ DB接続文字列　接頭辞 （Password）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Base.ConnectionManager.CONNECTION_SUFFIX">
+ <summary>
+ DB接続文字列 接尾辞
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Base.ConnectionManager.DEFAULT_TIME_OUT">
+ <summary>
+ DB接続タイムアウト
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.ConnectionManager.GetSqlTarnsactionScope(System.Transactions.TransactionScopeOption,System.Transactions.IsolationLevel,System.String)">
+ <summary>
+ TarnsactionScopeオブジェクトを取得する。
+ </summary>
+ <param name="scopeOption">トランザクションスコープを作成するためのオプション</param>
+ <param name="isolationLevel">接続のトランザクション ロック動作</param>
+ <param name="scopeTimeout">タイムアウト値(100ナノ秒単位)</param>
+ <returns>TarnsactionScopeオブジェクト</returns>
+ <remarks>デフォルトの設定値は
+ 　TransactionScopeOption：Required
+ 　TransactionOptions.IsolationLevel：ReadCommitted
+ 　TransactionOptions.TimeSpan：300000000x100ナノ秒（３０秒）</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.ConnectionManager.GetSqlConnection(System.String)">
+ <summary>
+ SqlConnectionオブジェクトを生成する。
+ </summary>
+ <param name="connectionString">DB接続文字列</param>
+ <returns>SqlConnectionオブジェクト</returns>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.ConnectionManager.GetSqlConnection(System.Boolean)">
+ <summary>
+ システム情報よりDB接続文字列を取得し、SqlConnectionオブジェクトを生成する。
+ </summary>
+ <param name="isReadOnly"></param>
+ <returns>SqlConnectionオブジェクト</returns>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.ConnectionManager.OpenSqlConnection(System.Data.SqlClient.SqlConnection@)">
+ <summary>
+ 引数のSqlConnectionオブジェクトをオープンする。
+ </summary>
+ <param name="conn"></param>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.ConnectionManager.GetConnectionString(System.Boolean)">
+ <summary>
+ システム情報よりDB接続文字列の値を取得する。
+ </summary>
+ <param name="isReadOnly"></param>
+ <returns>DB接続文字列</returns>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.ConnectionManager.GetConnectionString(System.String,System.Boolean)">
+ <summary>
+ データソースの値を指定してDB接続文字列の値を取得する。
+ </summary>
+ <param name="dataSourceString"></param>
+ <param name="isReadOnly"></param>
+ <returns>DB接続文字列</returns>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.ConnectionManager.GetDataSourceString">
+ <summary>
+ システム情報よりデータソースの値を取得する。
+ </summary>
+ <returns>データソースの値</returns>
+</member>
+<member name="T:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler">
+ <summary>
+ GUI層中核クラス
+ </summary>
+ <remarks>クライアント処理用のメソッドを提供する</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler._LockedControls">
+ <summary>
+ 現在ロック中のコントロールを格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler._IPAdress">
+ <summary>
+ クライアントのIPアドレスを格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler._TerminalID">
+ <summary>
+ クライアントの端末名を格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler._PGID">
+ <summary>
+ このインスタンスの画面IDを格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler._TempResultCount">
+ <summary>
+ 処理結果件数を格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler._TempMessageDataEntity">
+ <summary>
+ 出力メッセージを格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler._TargetFacadeName">
+ <summary>
+ 呼び出すBLF名を一時的に格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler._QueName">
+ <summary>
+ 処理識別文字列を一時的に格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler._SysId">
+ <summary>
+ System IDを格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.CreatedTime">
+ <summary>
+ このクラスのインスタンスが生成された時間を取得・設定するプロパティ
+ </summary>
+ <value>このクラスのインスタンスが生成された時間</value>
+ <returns>このクラスのインスタンスが生成された時間</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.MessageDataEntity">
+ <summary>
+ 出力用メッセージの格納されたデータセットを取得します。
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.CachedUserInfoDataSet">
+ <summary>
+ 現在ログインしているユーザー情報の取得・設定を行うプロパティ
+ </summary>
+ <value>現在ログインしているユーザー情報</value>
+ <returns>現在ログインしているユーザー情報のコピー</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.NFCachedMenuMasterDataSet">
+ <summary>
+ メニューマスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for NF)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.NFCachedKbnMasterDataSet">
+ <summary>
+ 区分マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for NF)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.NFCachedCommentMasterDataSet">
+ <summary>
+ コメントマスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for NF)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.NFCachedLawMasterDataSet">
+ <summary>
+ 適用法規マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for NF)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.NFCachedCompMasterDataSet">
+ <summary>
+ 会社マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for NF)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.NFCachedCompPayMasterDataSet">
+ <summary>
+ 会社支払方法マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for NF)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.NFCachedYocUnchinTariffMasterDataSet">
+ <summary>
+ 横浜ドレー運賃マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for NF)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.NFCachedGroupCompMasterDataSet">
+ <summary>
+ 会社コードコンバートマスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for NF)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.NFCachedImdgMasterDataSet">
+ <summary>
+ 積載品マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for NF)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.NFCachedGoodsMasterDataSet">
+ <summary>
+ 商品マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for NF)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.NFCachedGuidelineMasterDataSet">
+ <summary>
+ 取扱指針マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for NF)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.NFCachedKmkMasterDataSet">
+ <summary>
+ 科目マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for NF)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.NFCachedTaxMasterDataSet">
+ <summary>
+ 税率マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for NF)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.NFCachedBankMasterDataSet">
+ <summary>
+ 銀行マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for NF)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.NFCachedCityMasterDataSet">
+ <summary>
+ 都市マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for NF)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.NFCachedChargeMasterDataSet">
+ <summary>
+ 諸料金マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for NF)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.NFCachedJdeKmkMasterDataSet">
+ <summary>
+ JDE科目マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for NF)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.NFCachedUserMasterDataSet">
+ <summary>
+ ユーザーマスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for NF)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.NFCachedJdeKmkBillInfoMasterDataSet">
+ <summary>
+ 諸料金/JDE科目/区分マスタ情報【売上】マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for NF)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.NFCachedJdeKmkPayInfoMasterDataSet">
+ <summary>
+ 諸料金/JDE科目/区分マスタ情報【支払】マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for NF)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.NFCachedEdiMasterDataSet">
+ <summary>
+ EDIコードコンバートマスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for NF)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.NFCachedCoverMasterDataSet">
+ <summary>
+ カバーマスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for NF)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.KDCachedMenuMasterDataSet">
+ <summary>
+ メニューマスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for KD)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.KDCachedKbnMasterDataSet">
+ <summary>
+ 区分マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for KD)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.KDCachedTaxMasterDataSet">
+ <summary>
+ 税率マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for KD)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.KDCachedKmkMasterDataSet">
+ <summary>
+ 科目マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for KD)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.KDCachedUserMasterDataSet">
+ <summary>
+ ユーザーマスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for KD)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.KDCachedBankMasterDataSet">
+ <summary>
+ 銀行マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for KD)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.KDCachedCompMasterDataSet">
+ <summary>
+ 会社マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for KD)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.KDCachedChargeMasterDataSet">
+ <summary>
+ 諸料金マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for KD)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.KDCachedChargeItemMasterDataSet">
+ <summary>
+ 諸料金アイテムマスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for KD)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.KDCachedMatMasterDataSet">
+ <summary>
+ 部材マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for KD)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.KDCachedMSetHeadMasterDataSet">
+ <summary>
+ 見積セットヘッダーマスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for KD)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.KDCachedSGroupCompMasterDataSet">
+ <summary>
+ 会社コードコンバートマスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for KD)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.KDCachedNumberMasterDataSet">
+ <summary>
+ 番号マスターマスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for KD)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.KDCachedAuthMasterDataSet">
+ <summary>
+ 承認者マスターマスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for KD)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.JFCachedMenuMasterDataSet">
+ <summary>
+ メニューマスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for JF)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.JFCachedKbnMasterDataSet">
+ <summary>
+ 区分マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for JF)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.JFCachedUserMasterDataSet">
+ <summary>
+ ユーザーマスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for JF)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.JFCachedCompMasterDataSet">
+ <summary>
+ 会社マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for JF)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.JFCachedNumberMasterDataSet">
+ <summary>
+ 番号マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for JF)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.JFCachedAccMasterDataSet">
+ <summary>
+ 勘定科目マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for JF)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.JFCachedBuMasterDataSet">
+ <summary>
+ BUマスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for JF)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.JFCachedBrMasterDataSet">
+ <summary>
+ 営業所マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for JF)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.JFCachedTaxMasterDataSet">
+ <summary>
+ 消費税マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for JF)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.JFCachedAccCnvMasterDataSet">
+ <summary>
+ JDE科目変換マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for JF)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.JFCachedExchMasterDataSet">
+ <summary>
+ 為替レートマスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for JF)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.JFCachedF0101MasterDataSet">
+ <summary>
+ JDE住所録マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for JF)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.JFCachedCalcuratorDataSet">
+ <summary>
+ 電卓キャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for JF)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.GTCachedMessageMasterDataSet">
+ <summary>
+ メッセージマスタキャッシュデータの取得を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for GT)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.GTCachedCompMasterDataSet">
+ <summary>
+ 会社マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for GT)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.GTCachedBankMasterDataSet">
+ <summary>
+ 銀行マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for GT)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.GTCachedCityMasterDataSet">
+ <summary>
+ 都市マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for GT)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.GTCachedCurrMasterDataSet">
+ <summary>
+ 通貨マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for GT)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.GTCachedTankMasterDataSet">
+ <summary>
+ タンクマスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for GT)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.GTCachedTaxMasterDataSet">
+ <summary>
+ 税率マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for GT)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.GTCachedTestMasterDataSet">
+ <summary>
+ 定期検査マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for GT)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.GTCachedImdgMasterDataSet">
+ <summary>
+ 積載品(IMDG)マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for GT)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.GTCachedRegionMasterDataSet">
+ <summary>
+ 地域マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for GT)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.GTCachedUserMasterDataSet">
+ <summary>
+ ユーザーマスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for GT)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.GTCachedKbnMasterDataSet">
+ <summary>
+ 区分マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for GT)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.GTCachedCommentMasterDataSet">
+ <summary>
+ コメントマスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for GT)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.GTCachedCostMasterDataSet">
+ <summary>
+ コストマスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for GT)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.GTCachedContCostMasterDataSet">
+ <summary>
+ コンテナコストマスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for GT)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.GTCachedJdeCdMasterDataSet">
+ <summary>
+ JDEコードマスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for GT)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.GTCachedNumberMasterDataSet">
+ <summary>
+ 番号ママスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for GT)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.GTCachedMenuMasterDataSet">
+ <summary>
+ メニューママスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for GT)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedMessageMasterDataSet">
+ <summary>
+ メッセージマスタキャッシュデータの取得を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedKbnMasterDataSet">
+ <summary>
+ 区分マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedUserMasterDataSet">
+ <summary>
+ ユーザー情報キャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedMenuMasterDataSet">
+ <summary>
+ メニューマスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedNrsBrMasterDataSet">
+ <summary>
+ 営業所情報キャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedSokoMasterDataSet">
+ <summary>
+ 倉庫情報キャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedTouSituDataSet">
+ <summary>
+ 棟・室情報キャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedTouSituZoneDataSet">
+ <summary>
+ 棟・室・ゾーン情報キャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedTouSituShoboGrpDataSet">
+ <summary>
+ 棟室情報および棟室マスタ消防情報キャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedSeiqToMasterDataSet">
+ <summary>
+ 請求先マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedCustMasterDataSet">
+ <summary>
+ 荷主マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedTankaMasterDataSet">
+ <summary>
+ 単価マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedTankaGroupMasterDataSet">
+ <summary>
+ 単価マスタ(Group)キャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedHolidayMasterDataSet">
+ <summary>
+ 休日マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedJisMasterDataSet">
+ <summary>
+ JISマスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedKenMasterDataSet">
+ <summary>
+ 県マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedKyoriMasterDataSet">
+ <summary>
+ 距離マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedKyoriGroupMasterDataSet">
+ <summary>
+ 距離マスタ(Group)キャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedCoaMasterDataSet">
+ <summary>
+ 分析票管理マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedSagyoMasterDataSet">
+ <summary>
+ 作業項目マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedShoboMasterDataSet">
+ <summary>
+ 消防マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedTaxMasterDataSet">
+ <summary>
+ 税率マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedOkurijoMasterDataSet">
+ <summary>
+ 送り状パタンマスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedRptMasterDataSet">
+ <summary>
+ 帳票パタンマスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedCustFuriInfoMasterDataSet">
+ <summary>
+ 荷主振替情報マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedCustGoodsFuriMasterDataSet">
+ <summary>
+ 荷主商品振替マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedCustCondMasterDataSet">
+ <summary>
+ 荷主別商品状態区分マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedNrsBankMasterDataSet">
+ <summary>
+ 名義・銀行マスタ情報キャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedSeiqKmkMasterDataSet">
+ <summary>
+ 請求項目マスタ情報キャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedTCustMasterDataSet">
+ <summary>
+ 初期荷主情報(担当者別荷主情報)キャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedDestGoodsMasterDataSet">
+ <summary>
+ 届先商品名マスタ情報キャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedFuriGoodsMasterDataSet">
+ <summary>
+ 振替対象商品マスタ情報キャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedTouSituShoboDataSet">
+ <summary>
+ 棟室消防情報キャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedKamokuMasterDataSet">
+ <summary>
+ 倉庫経理科目コードマスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedAreaMasterDataSet">
+ <summary>
+ 配送区域マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedAreaGroupMasterDataSet">
+ <summary>
+ 配送区域マスタ(Group)キャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedDriverMasterDataSet">
+ <summary>
+ 乗務員マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedUnsocoMasterDataSet">
+ <summary>
+ 運送会社マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedVcleMasterDataSet">
+ <summary>
+ 車輌マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedRemarkMasterDataSet">
+ <summary>
+ 個人・用途別注意書テーブルキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedIntEdiMasterDataSet">
+ <summary>
+ 社内ＥＤＩ通信設定ファイルキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedExtcUnchinMasterDataSet">
+ <summary>
+ 割増運賃マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedSyuhaiSetMasterDataSet">
+ <summary>
+ 集配料設定マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedUnchinRecastMasterDataSet">
+ <summary>
+ 運賃再計算方法設定マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedUnchinTariffMasterDataSet">
+ <summary>
+ 運賃タリフマスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedUnchinTariffRDataSet">
+ <summary>
+ 運賃タリフ-Ｒマスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedUnchinTariffSetMasterDataSet">
+ <summary>
+ 運賃タリフセットマスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedUnchinTariffSetGroupMasterDataSet">
+ <summary>
+ 運賃タリフセット(Group)マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedYokoTariffHdMasterDataSet">
+ <summary>
+ 横持タリフヘッダマスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedYokoTariffDtlMasterDataSet">
+ <summary>
+ 横持タリフ明細マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedAreaJisDataSet">
+ <summary>
+ エリア(JIS)情報キャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedEdiCustDataSet">
+ <summary>
+ EDI対象荷主情報キャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedCustRptDataSet">
+ <summary>
+ 荷主別帳票情報キャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedUnsoCustRptDataSet">
+ <summary>
+ 運送会社荷主別送り状情報キャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedGoodsDetailsDataSet">
+ <summary>
+ 商品明細情報キャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedDestDetailsDataSet">
+ <summary>
+ 届先明細情報キャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedCustDetailsDataSet">
+ <summary>
+ 荷主明細情報キャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedSemiEdiInfoStateDataSet">
+ <summary>
+ セミＥＤＩ設定情報キャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedShiharaiTariffGroupDataSet">
+ <summary>
+ 支払運賃タリフ(Group)情報キャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedShiharaiTariffDataSet">
+ <summary>
+ 支払運賃タリフ情報キャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedExtcShiharaiDataSet">
+ <summary>
+ 支払割増運賃情報キャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedYokoTariffHdShiharaiDataSet">
+ <summary>
+ 支払横持ちタリフヘッダ情報キャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedYokoTariffDtlShiharaiDataSet">
+ <summary>
+ 支払横持ちタリフ明細情報キャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedShiharaitoDataSet">
+ <summary>
+ 支払先情報キャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedUnchinTariffSetUnsocoDataSet">
+ <summary>
+ 運賃タリフセットマスタ(荷主・運送会社)キャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedHandyMenuMasterDataSet">
+ <summary>
+ ハンディ用メニューマスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCachedGamenMasterDataSet">
+ <summary>
+ 画面切り替えマスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.RECachedCompMasterDataSet">
+ <summary>
+ 会社マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for RE)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.RECachedCurrMasterDataSet">
+ <summary>
+ 通貨マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for RE)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.RECachedTaxMasterDataSet">
+ <summary>
+ 税マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for RE)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.RECachedUserMasterDataSet">
+ <summary>
+ ユーザーマスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for RE)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.RECachedKbnMasterDataSet">
+ <summary>
+ 区分マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for RE)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.RECachedCostMasterDataSet">
+ <summary>
+ コストマスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for RE)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.RECachedActSet1MasterDataSet">
+ <summary>
+ アクションセットマスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for RE)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.RECachedActSet2MasterDataSet">
+ <summary>
+ アクションセット明細マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for RE)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.RECachedActSet3MasterDataSet">
+ <summary>
+ アクションセット請求マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for RE)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.RECachedAgrInfoMasterDataSet">
+ <summary>
+ 契約書項目マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for RE)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.RECachedInvYmMasterDataSet">
+ <summary>
+ 請求書年月マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for RE)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.RECachedRegionMasterDataSet">
+ <summary>
+ 地域マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for RE)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.RECachedBankMasterDataSet">
+ <summary>
+ 銀行マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for RE)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.RECachedMenuMasterDataSet">
+ <summary>
+ メニューマスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for RE)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.RECachedNumberMasterDataSet">
+ <summary>
+ 番号マスターマスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for RE)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.RECachedJFCompMasterDataSet">
+ <summary>
+ 伝(JF)会社マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for RE)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.RECachedJFBuMasterDataSet">
+ <summary>
+ 伝(JF)BUマスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for RE)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.RECachedJFBrMasterDataSet">
+ <summary>
+ 伝(JF)営業所マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for RE)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.RECachedDSChargeItemMasterDataSet">
+ <summary>
+ KIDS(DS)諸料金アイテムマスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for RE)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.RECachedJdeCdMasterDataSet">
+ <summary>
+ JDEコードマスタ情報キャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for RE)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.SHCachedMenuMasterDataSet">
+ <summary>
+ メニューマスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for SH)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.SHCachedUserMasterDataSet">
+ <summary>
+ ユーザーマスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for SH)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.SHCachedKbnMasterDataSet">
+ <summary>
+ 区分マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for SH)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.SHCachedJFCompMasterDataSet">
+ <summary>
+ 伝(JF)会社マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for SH)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.SHCachedJFBrMasterDataSet">
+ <summary>
+ 伝(JF)営業所マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for SH)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.SHCachedBankMasterDataSet">
+ <summary>
+ 銀行マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for SH)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.SHCachedCurrMasterDataSet">
+ <summary>
+ 通貨マスタキャッシュデータの取得・設定を行うプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>(for SH)</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.ConnectionString">
+ <summary>
+ DB接続文字列の取得・設定を行うプロパティ
+ </summary>
+ <value>全メッセージデータ</value>
+ <returns>全メッセージデータのコピー</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.RootPGID">
+ <summary>
+ このインスタンスの呼び出し元PGIDを取得・設定するプロパティ
+ </summary>
+ <value>このインスタンスの呼び出し元PGID</value>
+ <returns>このインスタンスの呼び出し元PGID</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.Init">
+ <summary>
+ 初期化メソッド。
+ </summary>
+ <remarks>このクラスでは端末名およびIPアドレスの取得を行う</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.StartGUI(Jp.Co.Nrs.Win.Base.FormData)">
+ <summary>
+ GUI層のクラスにおいて、処理の起点となるメソッド。
+ このインスタンスに定義されているメソッド群から引数に渡されたメソッドを呼び出す。
+ </summary>
+ <param name="prm"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.CallNextService(Jp.Co.Nrs.Com.Base.BaseWSA,System.String,System.Data.DataSet)">
+ <summary>
+ 引数に指定されたWSAクラスから、WSA層の処理の基点となるメソッドをメソッドを呼び出す。
+ </summary>
+ <param name="bWSA">WSA層に存在するクラス</param>
+ <param name="methodName">呼び出すメソッド名</param>
+ <param name="ds">画面情報を格納したDataSet</param>
+ <returns>呼び出すメソッドが返す画面出力用情報</returns>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.CallNextService(Jp.Co.Nrs.Com.Base.BaseWSA,System.String,System.Data.DataSet,System.Boolean)">
+ <summary>
+ 引数に指定されたWSAクラスから、WSA層の処理の基点となるメソッドをメソッドを呼び出す。
+ </summary>
+ <param name="bWSA">WSA層に存在するクラス</param>
+ <param name="methodName">呼び出すメソッド名</param>
+ <param name="ds">画面情報を格納したDataSet</param>
+ <param name="isReadOnly"></param>
+ <returns>呼び出すメソッドが返す画面出力用情報</returns>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.CreateServiceData">
+ <summary>
+ サーバーとの送受信に使用するServiceDataクラスを生成します。
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.SetRequestParam(Jp.Co.Nrs.Com.Base.ServiceData,System.Data.DataSet)">
+ <summary>
+ ServiceDataに送信する値を転記する。
+ </summary>
+ <param name="sd"></param>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.GetReturnParam(Jp.Co.Nrs.Com.Base.ServiceData)">
+ <summary>
+ ServiceDataから受信した値を転記する。
+ </summary>
+ <param name="sd"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.GetNFReturnParam(Jp.Co.Nrs.Com.Base.ServiceData)">
+ <summary>
+ ServiceDataから受信した値を転記する。(for NF)
+ </summary>
+ <param name="sd"></param>
+ <remarks>(for NF)</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.GetKDReturnParam(Jp.Co.Nrs.Com.Base.ServiceData)">
+ <summary>
+ ServiceDataから受信した値を転記する。(for KD)
+ </summary>
+ <param name="sd"></param>
+ <remarks>(for KD)</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.GetJFReturnParam(Jp.Co.Nrs.Com.Base.ServiceData)">
+ <summary>
+ ServiceDataから受信した値を転記する。(for JF)
+ </summary>
+ <param name="sd"></param>
+ <remarks>(for JF)</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.GetGTReturnParam(Jp.Co.Nrs.Com.Base.ServiceData)">
+ <summary>
+ ServiceDataから受信した値を転記する。(for GT)
+ </summary>
+ <param name="sd"></param>
+ <remarks>(for GT)</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.GetLMReturnParam(Jp.Co.Nrs.Com.Base.ServiceData)">
+ <summary>
+ ServiceDataから受信した値を転記する。(for LM)
+ </summary>
+ <param name="sd"></param>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.GetREReturnParam(Jp.Co.Nrs.Com.Base.ServiceData)">
+ <summary>
+ ServiceDataから受信した値を転記する。(for RE)
+ </summary>
+ <param name="sd"></param>
+ <remarks>(for RE)</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.GetSHReturnParam(Jp.Co.Nrs.Com.Base.ServiceData)">
+ <summary>
+ ServiceDataから受信した値を転記する。(for RE)
+ </summary>
+ <param name="sd"></param>
+ <remarks>(for SH)</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.InitControl(System.Windows.Forms.Form)">
+ <summary>
+ フォームのコントロールの値を初期化します。
+ </summary>
+ <param name="frm">このハンドラクラスに紐づくフォーム</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LockedControls(System.Windows.Forms.Form)">
+ <summary>
+ フォームのコントロールをロックします。
+ </summary>
+ <param name="frm">このハンドラクラスに紐づくフォーム</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.UnLockedControls(System.Windows.Forms.Form)">
+ <summary>
+ フォームのコントロールをロック解除します。
+ </summary>
+ <param name="frm">このハンドラクラスに紐づくフォーム</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.GetAllControls(System.Windows.Forms.Control)">
+ <summary>
+ 引数のコントロールが所持しているコントロールを引数のコントロールも含めて取得します。
+ </summary>
+ <param name="item"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.GetTerminalID">
+ <summary>
+ ログインユーザーのログイン端末名を取得する
+ </summary>
+ <returns>ログインユーザーのログイン端末名</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.IPAdress">
+ <summary>
+ 現在ServiceDataに登録されているログインユーザーのIPアドレスを取得する。
+ </summary>
+ <returns>ログインユーザーのIPアドレス</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.GetUserID">
+ <summary>
+ ログインユーザーのユーザーIDを取得する。
+ </summary>
+ <returns>ログインユーザーのユーザーID</returns>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.GetPGID">
+ <summary>
+ PGIDを取得する。
+ </summary>
+ <returns>PGID</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.SetPGID(System.String)">
+ <summary>
+ PGIDを設定する
+ </summary>
+ <param name="value">PGID</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.GetResultCount">
+ <summary>
+ 処理結果件数を取得する。
+ </summary>
+ <returns>処理結果件数</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.SetTargetFacadeName(System.String)">
+ <summary>
+ 呼び出すBLF名をセットします。
+ </summary>
+ <param name="value">処理識別文字列</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.SetQueName(System.String)">
+ <summary>
+ QuqNameをセットします。
+ </summary>
+ <param name="value">処理識別文字列</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.GetSysID">
+ <summary>
+ SysIDを取得する。
+ </summary>
+ <returns>SysID</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.SetSysID(System.String)">
+ <summary>
+ SysIDを設定する
+ </summary>
+ <param name="value">SysID</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.ShowMessage">
+ <summary>
+ メッセージを表示します。
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.ShowPopUpMessage">
+ <summary>
+ メッセージをポップアップ表示する。
+ </summary>
+ <returns>メッセージ文言（日本語）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.ShowPopUpMessage(System.String)">
+ <summary>
+ メッセージをポップアップ表示する。
+ </summary>
+ <param name="messageLanguageType"></param>
+ <returns>
+ 0:日本語
+ 1:英語
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.ShowNonPopUpMessage">
+ <summary>
+ ポップアップ以外の方法でメッセージ表示する。
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.ShowMessage(System.String,System.String,System.String,System.String)">
+ <summary>
+ メッセージを表示する(Public ⇒ Private)
+ </summary>
+ <param name="buttonCount">ボタンの数</param>
+ <param name="messageID">メッセージID</param>
+ <param name="messageLevel">メッセージレベル</param>
+ <param name="messageString">メッセージ文言</param>
+ <returns></returns>
+ <remarks>MessageManagerから移動（仮）</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.GetMessageValue(System.Data.DataSet,System.String)">
+ <summary>
+ 指定した項目のデータをキャッシュから取得します。(Public ⇒ Private)
+ </summary>
+ <param name="ds"></param>
+ <param name="column"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.GetMsgBoxStyle(System.String,System.String)">
+ <summary>
+ メッセージウィンドウのスタイルを取得します。
+ </summary>
+ <param name="buttonCount"></param>
+ <param name="level"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.GetMsgButton(System.String)">
+ <summary>
+ メッセージウィンドウのボタンを取得します。
+ </summary>
+ <param name="buttonCount"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.GetMsgIcon(Microsoft.VisualBasic.MsgBoxStyle,System.String)">
+ <summary>
+ メッセージウィンドウのアイコンを取得します。
+ </summary>
+ <param name="buttonStyle"></param>
+ <param name="level"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.GetMsgTitle(System.String)">
+ <summary>
+ メッセージウィンドウのタイトルを取得します。
+ </summary>
+ <param name="level"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.CreateMessageFromCache(System.Data.DataSet,System.String,System.String[])">
+ <summary>
+ メッセージ文言を構築するメソッド  ※[MessageManagerから移動後、コメント化。ServiceManagerに同名あります。]
+ </summary>
+ <param name="ds"></param>
+ <param name="messageID">メッセージID</param>
+ <param name="messageParams"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.ReplaceMessageString(System.Data.DataRow,System.String[])">
+ <summary>
+ 置換済みのメッセージデータが格納されたDataRowを取得する。
+ </summary>
+ <param name="msgDataRow">メッセージデータの格納されたDataRow</param>
+ <param name="messageParams"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.ClearMessageData">
+ <summary>
+ 出力メッセージ情報をクリアする。
+ </summary>
+ <remarks>メッセージ表示後はメッセージ情報は必要なくなるのでクリアする。キャッシュしているメッセージ一覧の情報を削除するのではないことに注意すること。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.CacheSystemData">
+ <summary>
+ システムデータをキャッシュを行う。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.CacheMasterData">
+ <summary>
+ 指定されたマスターデータのキャッシュを行う。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.KDCacheMasterDataForExtPG">
+ <summary>
+ KIDS(KD/DS)マスターデータのキャッシュを行う。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.GTCacheMasterDataForExtPG">
+ <summary>
+ WINS(GT)マスターデータのキャッシュを行う。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.NFCacheMasterData(System.String)">
+ <summary>
+ [NF]指定されたマスターデータのキャッシュを行う。
+ </summary>
+ <param name="tableName">キャッシュしたいマスタデータ名</param>
+ <remarks>(for NF)</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.KDCacheMasterData(System.String)">
+ <summary>
+ [KD]指定されたマスターデータのキャッシュを行う。
+ </summary>
+ <param name="tableName">キャッシュしたいマスタデータ名</param>
+ <remarks>(for KD)</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.JFCacheMasterData(System.String)">
+ <summary>
+ [JF]指定されたマスターデータのキャッシュを行う。
+ </summary>
+ <param name="tableName">キャッシュしたいマスタデータ名</param>
+ <remarks>(for JF)</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.GTCacheMasterData(System.String)">
+ <summary>
+ [GT]指定されたマスターデータのキャッシュを行う。
+ </summary>
+ <param name="tableName">キャッシュしたいマスタデータ名</param>
+ <remarks>(for GT)</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.LMCacheMasterData(System.String)">
+ <summary>
+ [LM]指定されたマスターデータのキャッシュを行う。
+ </summary>
+ <param name="tableName">キャッシュしたいマスタデータ名</param>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.RECacheMasterData(System.String)">
+ <summary>
+ [RE]指定されたマスターデータのキャッシュを行う。
+ </summary>
+ <param name="tableName">キャッシュしたいマスタデータ名</param>
+ <remarks>(for RE)</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.SHCacheMasterData(System.String)">
+ <summary>
+ [SH]指定されたマスターデータのキャッシュを行う。
+ </summary>
+ <param name="tableName">キャッシュしたいマスタデータ名</param>
+ <remarks>(for SH)</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.Login(System.Data.DataSet)">
+ <summary>
+ ログイン認証を行う
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.GetSystemDate">
+ <summary>
+ 現在ServiceDataに登録されているシステム日付(YYYYMMDD)を取得する。
+ </summary>
+ <returns></returns>
+ <remarks>引数無しのメソッドはここで一旦隠蔽する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.GetSystemTime">
+ <summary>
+ 現在ServiceDataに登録されているシステム時刻(HHMMSSmmm)を取得する。
+ </summary>
+ <returns></returns>
+ <remarks>引数無しのメソッドはここで一旦隠蔽する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.GetSystemDateTime">
+ <summary>
+ システム日付(YYYYMMDD)とシステム時刻(HHMMSSsss)を取得する。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.OnThreadException(System.Object,System.Threading.ThreadExceptionEventArgs)">
+ <summary>
+ 例外トラップ
+ </summary>
+ <param name="sender"></param>
+ <param name="t"></param>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.OutPutException(System.Exception)">
+ <summary>
+ 例外を出力します
+ </summary>
+ <param name="ex">出力する例外</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.SetSystemErrorMessage(System.String)">
+ <summary>
+ システムエラー発生時用のメッセージを登録します。
+ </summary>
+ <param name="msg"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.IsWarningMessageExist">
+ <summary>
+ ワーニングメッセージの有無を判定して返却する
+ </summary>
+ <returns>ワーニングメッセージの有無</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.IsErrorMessageExist">
+ <summary>
+ エラーメッセージの有無を判定して返却する
+ </summary>
+ <returns>エラーメッセージの有無</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.IsSystemErrorMessageExist">
+ <summary>
+ システムエラーメッセージの有無を判定して返却する
+ </summary>
+ <returns>システムエラーメッセージの有無</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.CreateSystemErrorMessage(System.String)">
+ <summary>
+ システムエラー発生時用のメッセージを作成します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.GetMessagePopUpType">
+ <summary>
+ メッセージのポップアップフラグを取得する。
+ </summary>
+ <returns>True：ポップアップ表示</returns>
+ <remarks>_ServiceDataオブジェクトに格納されているポップアップフラグを取得する。取得値がNullでなければ値をデバッグする。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.GetMessageButtonCount">
+ <summary>
+ メッセージのボタン数を取得する。
+ </summary>
+ <returns>メッセージのボタン数</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.SetMessage(System.String,System.String[])">
+ <summary>
+ メッセージ情報を設定する。
+ </summary>
+ <param name="messageID">メッセージID</param>
+ <param name="replaceMessages">置換対象文字列の配列</param>
+ <remarks>引数のメッセージＩＤを元にメッセージ文言を作成し、ServiceDataクラスにメッセージ情報を設定する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.CallWSA(System.String,System.String,System.Data.DataSet)">
+ <summary>
+ WEBサービスを呼び出します（QueName,SetTargetFacadeNameの設定必須）
+ </summary>
+ <param name="facadeName"></param>
+ <param name="methodName"></param>
+ <param name="ds">WEBサービス送信データ</param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.CallWSA(System.String,System.String,System.Data.DataSet,System.Boolean)">
+ <summary>
+ WEBサービスを呼び出します（QueName,SetTargetFacadeNameの設定必須）
+ </summary>
+ <param name="facadeName"></param>
+ <param name="methodName"></param>
+ <param name="ds">WEBサービス送信データ</param>
+ <param name="isReadOnly"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.CallNextService(System.String,System.String,System.Data.DataSet)">
+ <summary>
+ 引数に指定されたWSAクラスから、WSA層の処理の基点となるメソッドをメソッドを呼び出す。
+ </summary>
+ <param name="facadeName"></param>
+ <param name="methodName">呼び出すメソッド名</param>
+ <param name="ds">画面情報を格納したDataSet</param>
+ <returns>呼び出すメソッドが返す画面出力用情報</returns>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler.CallNextService(System.String,System.String,System.Data.DataSet,System.Boolean)">
+ <summary>
+ 引数に指定されたWSAクラスから、WSA層の処理の基点となるメソッドをメソッドを呼び出す。
+ </summary>
+ <param name="facadeName"></param>
+ <param name="methodName">呼び出すメソッド名</param>
+ <param name="ds">画面情報を格納したDataSet</param>
+ <param name="isReadOnly"></param>
+ <returns>呼び出すメソッドが返す画面出力用情報</returns>
+</member>
+<member name="T:Jp.Co.Nrs.Win.Base.GUI.BaseGUIValidate">
+ <summary>
+ 画面入力値チェッククラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.GUI.BaseGUIValidate.MyHandler">
+ <summary>
+ このValidateクラスへハンドラクラスを紐付けるプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIValidate.GetCachedMasterDataSet">
+ <summary>
+ キャッシュデータの格納されたデータセットを取得します。
+ </summary>
+ <returns>キャッシュデータの格納されたデータセット</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIValidate.GetNFCachedDataTable(System.String)">
+ <summary>
+ [NF]キャッシュデータの格納されたデータセットを取得します。
+ </summary>
+ <param name="tableName"></param>
+ <returns>キャッシュデータの格納されたデータセット</returns>
+ <remarks>(for NF)</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIValidate.GetKDCachedDataTable(System.String)">
+ <summary>
+ [KD]キャッシュデータの格納されたデータセットを取得します。
+ </summary>
+ <param name="tableName"></param>
+ <returns>キャッシュデータの格納されたデータセット</returns>
+ <remarks>(for KD)</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIValidate.GetJFCachedDataTable(System.String)">
+ <summary>
+ [JF]キャッシュデータの格納されたデータセットを取得します。
+ </summary>
+ <param name="tableName"></param>
+ <returns>キャッシュデータの格納されたデータセット</returns>
+ <remarks>(for JF)</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIValidate.GetGTCachedDataTable(System.String)">
+ <summary>
+ [GT]キャッシュデータの格納されたデータセットを取得します。
+ </summary>
+ <param name="tableName"></param>
+ <returns>キャッシュデータの格納されたデータセット</returns>
+ <remarks>(for GT)</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIValidate.GetLMCachedDataTable(System.String)">
+ <summary>
+ [LM]キャッシュデータの格納されたデータセットを取得します。
+ </summary>
+ <param name="tableName"></param>
+ <returns>キャッシュデータの格納されたデータセット</returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIValidate.GetRECachedDataTable(System.String)">
+ <summary>
+ [RE]キャッシュデータの格納されたデータセットを取得します。
+ </summary>
+ <param name="tableName"></param>
+ <returns>キャッシュデータの格納されたデータセット</returns>
+ <remarks>(for RE)</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIValidate.GetSHCachedDataTable(System.String)">
+ <summary>
+ [SH]キャッシュデータの格納されたデータセットを取得します。
+ </summary>
+ <param name="tableName"></param>
+ <returns>キャッシュデータの格納されたデータセット</returns>
+ <remarks>(for SH)</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIValidate.IsValidateCheck(Jp.Co.Nrs.Win.GUI.Win.Interface.IEditableControl)">
+ <summary>
+ 各種チェックを行うメソッド
+ </summary>
+ <param name="item">チェック対象コントロール</param>
+ <returns>
+ True：エラーなし
+ False：エラーあり
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIValidate.GetCheckResultEachItem(System.Object,System.String)">
+ <summary>
+ 項目ごとに各チェックを行い、結果を返します。
+ </summary>
+ <param name="item">チェック対象コントロール</param>
+ <param name="value">チェック値</param>
+ <returns>
+ True：エラーなし
+ False：エラーあり
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIValidate.IsHissuCheck(System.Object,System.String)">
+ <summary>
+ 必須チェック
+ </summary>
+ <param name="item">チェック対象コントロール</param>
+ <param name="value">チェック値</param>
+ <returns>
+ True：エラーなし
+ False：エラーあり
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIValidate.IsZenkauCheck(System.Object,System.String)">
+ <summary>
+ 全角チェック
+ </summary>
+ <param name="item">チェック対象コントロール</param>
+ <param name="value">チェック値</param>
+ <returns>
+ True：エラーなし
+ False：エラーあり
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIValidate.IsHankakuCheck(System.Object,System.String)">
+ <summary>
+ 半角チェック
+ </summary>
+ <param name="item">チェック対象コントロール</param>
+ <param name="value">チェック値</param>
+ <returns>
+ True：エラーなし
+ False：エラーあり
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIValidate.IsForbiddenWordsCheck(System.Object,System.String)">
+ <summary>
+ 禁止文字チェック
+ </summary>
+ <param name="item">チェック対象コントロール</param>
+ <param name="value">チェック値</param>
+ <returns>
+ True：エラーなし
+ False：エラーあり
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIValidate.IsEisuCheck(System.Object,System.String)">
+ <summary>
+ 英数字チェック
+ </summary>
+ <param name="item">チェック対象コントロール</param>
+ <param name="value">チェック値</param>
+ <returns>
+ True：エラーなし
+ False：エラーあり
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIValidate.IsSujiCheck(System.Object,System.String)">
+ <summary>
+ 数字チェック
+ </summary>
+ <param name="item">チェック対象コントロール</param>
+ <param name="value">チェック値</param>
+ <returns>
+ True：エラーなし
+ False：エラーあり
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIValidate.IsNumericCheck(System.Object,System.String)">
+ <summary>
+ 数値チェック
+ </summary>
+ <param name="item">チェック対象コントロール</param>
+ <param name="value">チェック値</param>
+ <returns>
+ True：エラーなし
+ False：エラーあり
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIValidate.IsFullByteCheck(System.Object,System.String)">
+ <summary>
+ フルバイトチェック
+ </summary>
+ <param name="item">チェック対象コントロール</param>
+ <param name="value">チェック値</param>
+ <returns>
+ True：エラーなし
+ False：エラーあり
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIValidate.IsByteCheck(System.Object,System.String)">
+ <summary>
+ バイト数チェック
+ </summary>
+ <param name="item">チェック対象コントロール</param>
+ <param name="value">チェック値</param>
+ <returns>
+ True：エラーなし
+ False：エラーあり
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIValidate.IsMojisuCheck(System.Object,System.String)">
+ <summary>
+ 文字数チェック
+ </summary>
+ <param name="item">チェック対象コントロール</param>
+ <param name="value">チェック値</param>
+ <returns>
+ True：エラーなし
+ False：エラーあり
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIValidate.IsBeforeDateCheck(System.Object,System.String)">
+ <summary>
+ 過去日チェック
+ </summary>
+ <param name="item">チェック対象コントロール</param>
+ <param name="value">チェック値</param>
+ <returns>
+ True：エラーなし
+ False：エラーあり
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIValidate.IsMiddleSpaceCheck(System.Object,System.String)">
+ <summary>
+ 中間スペースチェック
+ </summary>
+ <param name="item">チェック対象コントロール</param>
+ <param name="value">チェック値</param>
+ <returns>
+ True：エラーなし
+ False：エラーあり
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIValidate.GetHissuErrMsg(System.Object)">
+ <summary>
+ 必須チェックエラー時のメッセージを取得するメソッド。
+ </summary>
+ <param name="item"></param>
+ <returns>チェックエラー時のメッセージ</returns>
+ <remarks>キーにメッセージコード、値に置換文字列を格納すること</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIValidate.GetZenkauErrMsg(System.Object)">
+ <summary>
+ 全角チェックエラー時のメッセージを取得するメソッド。
+ </summary>
+ <param name="item"></param>
+ <returns>チェックエラー時のメッセージ</returns>
+ <remarks>キーにメッセージコード、値に置換文字列を格納すること</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIValidate.GetHankakuErrMsg(System.Object)">
+ <summary>
+ 半角チェックエラー時のメッセージを取得するメソッド。
+ </summary>
+ <param name="item"></param>
+ <returns>チェックエラー時のメッセージ</returns>
+ <remarks>キーにメッセージコード、値に置換文字列を格納すること</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIValidate.GetForbiddenWordsErrMsg(System.Object)">
+ <summary>
+ 禁止文字チェックエラー時のメッセージを取得するメソッド。
+ </summary>
+ <param name="item"></param>
+ <returns>チェックエラー時のメッセージ</returns>
+ <remarks>キーにメッセージコード、値に置換文字列を格納すること</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIValidate.GetKanaErrMsg(System.Object)">
+ <summary>
+ カナチェックエラー時のメッセージを取得するメソッド。
+ </summary>
+ <param name="item"></param>
+ <returns>チェックエラー時のメッセージ</returns>
+ <remarks>キーにメッセージコード、値に置換文字列を格納すること</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIValidate.GetDakutenErrMsg(System.Object)">
+ <summary>
+ 濁点チェックエラー時のメッセージを取得するメソッド。
+ </summary>
+ <param name="item"></param>
+ <returns>チェックエラー時のメッセージ</returns>
+ <remarks>キーにメッセージコード、値に置換文字列を格納すること</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIValidate.GetEisuErrMsg(System.Object)">
+ <summary>
+ 英数字チェックエラー時のメッセージを取得するメソッド。
+ </summary>
+ <param name="item"></param>
+ <returns>チェックエラー時のメッセージ</returns>
+ <remarks>キーにメッセージコード、値に置換文字列を格納すること</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIValidate.GetSujiErrMsg(System.Object)">
+ <summary>
+ 数字チェックエラー時のメッセージを取得するメソッド。
+ </summary>
+ <param name="item"></param>
+ <returns>チェックエラー時のメッセージ</returns>
+ <remarks>キーにメッセージコード、値に置換文字列を格納すること</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIValidate.GetNumericErrMsg(System.Object)">
+ <summary>
+ 数値チェックエラー時のメッセージを取得するメソッド。
+ </summary>
+ <param name="item"></param>
+ <returns>チェックエラー時のメッセージ</returns>
+ <remarks>キーにメッセージコード、値に置換文字列を格納すること</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIValidate.GetFullByteErrMsg(System.Object)">
+ <summary>
+ フルバイトチェックエラー時のメッセージを取得するメソッド。
+ </summary>
+ <param name="item"></param>
+ <returns>チェックエラー時のメッセージ</returns>
+ <remarks>キーにメッセージコード、値に置換文字列を格納すること</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIValidate.GetByteErrMsg(System.Object)">
+ <summary>
+ バイト数チェックエラー時のメッセージを取得するメソッド。
+ </summary>
+ <param name="item"></param>
+ <returns>チェックエラー時のメッセージ</returns>
+ <remarks>キーにメッセージコード、値に置換文字列を格納すること</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIValidate.GetMojisuErrMsg(System.Object)">
+ <summary>
+ 文字数チェックエラー時のメッセージを取得するメソッド。
+ </summary>
+ <param name="item"></param>
+ <returns>チェックエラー時のメッセージ</returns>
+ <remarks>キーにメッセージコード、値に置換文字列を格納すること</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIValidate.GetCalendarErrMsg(System.Object)">
+ <summary>
+ 暦上日チェックエラー時のメッセージを取得するメソッド。
+ </summary>
+ <param name="item"></param>
+ <returns>チェックエラー時のメッセージ</returns>
+ <remarks>キーにメッセージコード、値に置換文字列を格納すること</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIValidate.GetAfterDateErrMsg(System.Object)">
+ <summary>
+ 未来日チェックエラー時のメッセージを取得するメソッド。
+ </summary>
+ <param name="item"></param>
+ <returns>チェックエラー時のメッセージ</returns>
+ <remarks>キーにメッセージコード、値に置換文字列を格納すること</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIValidate.GetBeforeDateErrMsg(System.Object)">
+ <summary>
+ 過去日チェックエラー時のメッセージを取得するメソッド。
+ </summary>
+ <param name="item"></param>
+ <returns>チェックエラー時のメッセージ</returns>
+ <remarks>キーにメッセージコード、値に置換文字列を格納すること</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIValidate.GetRangeErrMsg(System.Object)">
+ <summary>
+ 範囲チェックエラー時のメッセージを取得するメソッド。
+ </summary>
+ <param name="item"></param>
+ <returns>チェックエラー時のメッセージ</returns>
+ <remarks>キーにメッセージコード、値に置換文字列を格納すること</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIValidate.GetMiddleSpaceErrMsg(System.Object)">
+ <summary>
+ 中間スペースエラー時のメッセージを取得するメソッド。
+ </summary>
+ <param name="item"></param>
+ <returns>チェックエラー時のメッセージ</returns>
+ <remarks>キーにメッセージコード、値に置換文字列を格納すること</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIValidate.GetDateRangeErrMsg(System.Object)">
+ <summary>
+ 日付範囲エラー時のメッセージを取得するメソッド。
+ </summary>
+ <param name="item"></param>
+ <returns>チェックエラー時のメッセージ</returns>
+ <remarks>キーにメッセージコード、値に置換文字列を格納すること</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIValidate.GetValueForValidate(Jp.Co.Nrs.Win.GUI.Win.Interface.IEditableControl)">
+ <summary>
+ チェックする値を取得するメソッド
+ </summary>
+ <param name="item"></param>
+ <returns>チェックする値</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIValidate.ShowMessage(System.String,System.String[])">
+ <summary>
+ エラーメッセージを表示するメソッド
+ </summary>
+ <param name="messageID"></param>
+ <param name="replaceMessages"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIValidate.ShowMessage(System.String)">
+ <summary>
+ エラーメッセージを表示するメソッド(置換文字列なし)
+ </summary>
+ <param name="messageID"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIValidate.DisplayMessage(System.Collections.Hashtable)">
+ <summary>
+ エラーメッセージを表示するメソッド
+ </summary>
+ <param name="errMessage"></param>
+ <returns></returns>
+ <remarks>フレームワークのみ使用する</remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.Base.GUI.BaseGUIGamen">
+ <summary>
+ 画面構築クラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIGamen.GetCachedMasterDataSet">
+ <summary>
+ キャッシュデータの格納されたデータセットを取得します。
+ </summary>
+ <returns>キャッシュデータの格納されたデータセット</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIGamen.GetNFCachedDataTable(System.String)">
+ <summary>
+ [NF]キャッシュデータの格納されたデータセットを取得します。
+ </summary>
+ <param name="tableName"></param>
+ <returns>キャッシュデータの格納されたデータセット</returns>
+ <remarks>(for NF)</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIGamen.GetKDCachedDataTable(System.String)">
+ <summary>
+ [KD]キャッシュデータの格納されたデータセットを取得します。
+ </summary>
+ <param name="tableName"></param>
+ <returns>キャッシュデータの格納されたデータセット</returns>
+ <remarks>(for KD)</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIGamen.GetJFCachedDataTable(System.String)">
+ <summary>
+ [JF]キャッシュデータの格納されたデータセットを取得します。
+ </summary>
+ <param name="tableName"></param>
+ <returns>キャッシュデータの格納されたデータセット</returns>
+ <remarks>(for JF)</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIGamen.GetGTCachedDataTable(System.String)">
+ <summary>
+ [GT]キャッシュデータの格納されたデータセットを取得します。
+ </summary>
+ <param name="tableName"></param>
+ <returns>キャッシュデータの格納されたデータセット</returns>
+ <remarks>(for GT)</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIGamen.GetLMCachedDataTable(System.String)">
+ <summary>
+ [LM]キャッシュデータの格納されたデータセットを取得します。
+ </summary>
+ <param name="tableName"></param>
+ <returns>キャッシュデータの格納されたデータセット</returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIGamen.GetRECachedDataTable(System.String)">
+ <summary>
+ [RE]キャッシュデータの格納されたデータセットを取得します。
+ </summary>
+ <param name="tableName"></param>
+ <returns>キャッシュデータの格納されたデータセット</returns>
+ <remarks>(for RE)</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIGamen.GetSHCachedDataTable(System.String)">
+ <summary>
+ [SH]キャッシュデータの格納されたデータセットを取得します。
+ </summary>
+ <param name="tableName"></param>
+ <returns>キャッシュデータの格納されたデータセット</returns>
+ <remarks>(for SH)</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.GUI.BaseGUIGamen.GetSysID">
+ <summary>
+ SysIDを取得する。
+ </summary>
+ <returns>SysID</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.Base.MessageManager">
+ <summary>
+ メッセージ管理クラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Base.MessageManager.POPUP_ON">
+ <summary>
+ ポップアップ定数（ポップアップ）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Base.MessageManager.POPUP_OFF">
+ <summary>
+ ポップアップ定数（ポップアップ以外）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Base.MessageManager.MESSAGE_LEVEL_S">
+ <summary>
+ Config項目定数（システムエラーレベル）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Base.MessageManager.MESSAGE_LEVEL_E">
+ <summary>
+ Config項目定数（エラーレベル）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Base.MessageManager.MESSAGE_LEVEL_W">
+ <summary>
+ Config項目定数（警告ーレベル）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Base.MessageManager.MESSAGE_LEVEL_Q">
+ <summary>
+ Config項目定数（確認レベル）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Base.MessageManager.MESSAGE_LEVEL_I">
+ <summary>
+ Config項目定数（通知レベル）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Base.MessageManager.MESSAGE_TITLE_S">
+ <summary>
+ Config項目定数（システムエラー時タイトル）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Base.MessageManager.MESSAGE_TITLE_E">
+ <summary>
+ Config項目定数（エラー時タイトル）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Base.MessageManager.MESSAGE_TITLE_W">
+ <summary>
+ Config項目定数（警告時タイトル）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Base.MessageManager.MESSAGE_TITLE_Q">
+ <summary>
+ Config項目定数（確認時タイトル）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Base.MessageManager.MESSAGE_TITLE_I">
+ <summary>
+ Config項目定数（通知時タイトル）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Base.MessageManager.MESSAGE_TYPE">
+ <summary>
+ Config項目タイトルの日本語/英語　振り分け
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.Base.MessageManager.MessageDataTable">
+ <summary>
+ メッセージキャッシュテーブル定数
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Base.MessageManager.MessageDataTable.MESSAGE_ID">
+ <summary>
+ メッセージID
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Base.MessageManager.MessageDataTable.MESSAGE_LEVEL">
+ <summary>
+ メッセージレベル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Base.MessageManager.MessageDataTable.MESSAGE_STRING">
+ <summary>
+ メッセージ内容(JP)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Base.MessageManager.MessageDataTable.MESSAGE_DISP_FLG">
+ <summary>
+ メッセージボックス表示フラグ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Base.MessageManager.MessageDataTable.BUTTON_CNT">
+ <summary>
+ ボタン数
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Base.MessageManager.LEVEL_SYSTEM_ERROR">
+ <summary>
+ システムエラー（業務続は不可能）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Base.MessageManager.LEVEL_ERROR">
+ <summary>
+ 通常エラー（業務続行可能）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Base.MessageManager.LEVEL_WARNING">
+ <summary>
+ 警告レベル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Base.MessageManager.LEVEL_QUESTION">
+ <summary>
+ 確認レベル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Base.MessageManager.LEVEL_INFORMATION">
+ <summary>
+ 通知レベル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Base.MessageManager._MsgLanguage">
+ <summary>
+ メッセージ言語区分を格納します。
+ </summary>
+ <remarks>
+ 0:日本語
+ 1:英語
+ </remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Base.MessageManager.MessageLanguage">
+ <summary>
+ メッセージ言語区分を取得、格納します
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.TripleDesManager.Decript(System.String,System.String@)">
+ <summary>
+ 復号化ロジック
+ </summary>
+ <param name="strInput">string</param>
+ <param name="keyVal"></param>
+ <returns>string</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.Base.UserInfoManager">
+ <summary>
+ ユーザー情報制御クラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Base.UserInfoManager.USERINFO_USER_ID">
+ <summary>
+ Config項目定数（ユーザーID）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Base.UserInfoManager.USERINFO_USER_NAME">
+ <summary>
+ Config項目定数（ユーザー名）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.UserInfoManager.GetUserID">
+ <summary>
+ ユーザーIDを取得します。
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.UserInfoManager.GetUserName">
+ <summary>
+ ユーザー名を取得します。
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.UserInfoManager.GetUserInfoValue(System.String)">
+ <summary>
+ 指定した項目のデータをキャッシュから取得します。
+ </summary>
+ <param name="column"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.Base.FormNavigate">
+ <summary>
+ 画面遷移制御クラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Base.FormNavigate.handlersTable">
+ <summary>
+ 現在立ち上がっているハンドラクラスのテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.FormNavigate.NextFormNavigate(Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler,System.String,Jp.Co.Nrs.Win.Base.FormData)">
+ <summary>
+ 引数に指定されたPGIDへ遷移します。
+ </summary>
+ <param name="handler">呼び出しもとのハンドラクラス</param>
+ <param name="pgId">次画面の画面ID</param>
+ <param name="prm">次画面へ渡すデータ</param>
+ <returns>遷移先画面のハンドラ管理テーブル登録キー</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.FormNavigate.NextFormNavigate(Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler,System.String,Jp.Co.Nrs.Win.Base.FormData,System.String)">
+ <summary>
+ 引数に指定されたPGIDへ遷移します。
+ </summary>
+ <param name="handler">呼び出しもとのハンドラクラス</param>
+ <param name="pgId">次画面の画面ID</param>
+ <param name="prm">次画面へ渡すデータ</param>
+ <param name="assemblyName"></param>
+ <returns>遷移先画面のハンドラ管理テーブル登録キー</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.FormNavigate.InvokeWithParam(System.Object,System.Reflection.MethodInfo[],System.Object)">
+ <summary>
+ セッションクラスが必要な初期処理メソッドを呼び出します。
+ </summary>
+ <param name="nextHandler"></param>
+ <param name="methods"></param>
+ <param name="session"></param>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.FormNavigate.IsLimitOver(System.Int32,Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler,System.String)">
+ <summary>
+ 画面が引数で指定された枚数以上立ち上がっているかを判定します。
+ </summary>
+ <param name="limitCount"></param>
+ <param name="handler"></param>
+ <param name="pgId"></param>
+ <returns>
+ True：画面数は引数以上
+ False：画面数は引数に満たない
+ </returns>
+ <remarks>３画面まで許可するなら４を指定すること</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.FormNavigate.Revoke(Jp.Co.Nrs.Win.Base.GUI.BaseGUIHandler)">
+ <summary>
+ 引数に指定されたハンドラクラスをハンドラ管理テーブルから削除します。
+ </summary>
+ <param name="handler"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.FormNavigate.Revoke(System.String)">
+ <summary>
+ 引数に指定されたキーを持つハンドラクラスをハンドラ管理テーブルから削除します。
+ </summary>
+ <param name="handlersTableKey">ハンドラ管理テーブルから削除したいハンドラクラスのキー</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Base.FormNavigate.IsStandAlone">
+ <summary>
+ ハンドラ管理テーブルに２つ以上登録されていないかを判定して返却します。
+ </summary>
+ <returns>
+ True：画面数は1枚
+ False：画面数は２枚以上
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.WinWSA.GetWebServiceURL">
+ <summary>
+ App.configよりWebサービスのURLを取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="T:Jp.Co.Nrs.Win.Const.GUIConst">
+ <summary>
+ 画面部品用定数定義クラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.Const.MessageLevel">
+ <summary>
+ メッセージレベル定数
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Const.MessageLevel.LEVEL_INFORMATION">
+ <summary>
+ 通知メッセージレベル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Const.MessageLevel.LEVEL_QUESTION">
+ <summary>
+ 確認メッセージレベル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Const.MessageLevel.LEVEL_WARNING">
+ <summary>
+ 警告メッセージレベル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Const.MessageLevel.LEVEL_ERROR">
+ <summary>
+ エラーメッセージレベル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Const.MessageLevel.LEVEL_SYSTEM_ERROR">
+ <summary>
+ システムエラーメッセージレベル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.GUI.Win.BaseButton">
+ <summary>
+ カスタムボタンクラス
+ </summary>
+ <remarks>
+ </remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.BaseButton.EnableStatus">
+ <summary>
+ このコントロールのEnable値を取得・設定します。
+ </summary>
+ <value>このコントロールのEnable値</value>
+ <returns>このコントロールのEnable値</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.BaseButton.BackColorDef">
+ <summary>
+ 背景色を取得・設定します
+ </summary>
+ <value>背景色</value>
+ <returns>背景色</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.BaseButton.BorderStyleDef">
+ <summary>
+ 罫線定義を取得・設定します
+ </summary>
+ <value>罫線定義</value>
+ <returns>罫線定義</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.BaseButton.FontDef">
+ <summary>
+ フォント定義を取得・設定します
+ </summary>
+ <value>フォント定義</value>
+ <returns>フォント定義</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.BaseButton.ForeColorDef">
+ <summary>
+ 前景色を取得・設定します
+ </summary>
+ <value>前景色</value>
+ <returns>前景色</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.BaseButton.HeightDef">
+ <summary>
+ コントロールの高さを取得・設定します
+ </summary>
+ <value>高さ設定</value>
+ <returns>高さ設定</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.BaseButton.TextValue">
+ <summary>
+ テキストの値を取得・設定します
+ </summary>
+ <value>テキスト</value>
+ <returns>テキスト</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.BaseButton.WidthDef">
+ <summary>
+ コントロールの幅を取得・設定します
+ </summary>
+ <value>幅</value>
+ <returns>幅</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.BaseButton.TabStopSetting">
+ <summary>
+ タブストップの可否を取得・設定します。
+ </summary>
+ <value>タブストップの可否</value>
+ <returns>タブストップ可否</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.BaseButton.InitializeForMakingForm">
+ <summary>
+ フォーム構築時の初期化処理を記述します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.BaseButton.InitBackColor">
+ <summary>
+ 初期化時に背景色を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.BaseButton.InitBorder">
+ <summary>
+ 初期化時に罫線定義を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.BaseButton.InitFont">
+ <summary>
+ 初期化時にフォント定義を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.BaseButton.InitForeColor">
+ <summary>
+ 初期化時に前景色を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.BaseButton.InitHeight">
+ <summary>
+ 初期化時に高さ設定を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.BaseButton.InitTextValue">
+ <summary>
+ 初期化時にテキストの値を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.BaseButton.InitWidth">
+ <summary>
+ 初期化時に幅を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.BaseButton.InitExtraSetting">
+ <summary>
+ 初期化時に固有の項目を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.GUI.Win.BaseErrorProvider">
+ <summary>
+ カスタムErrorProviderクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.GUI.Win.BaseForm">
+ <summary>
+ カスタムフォームクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImDateTime">
+ <summary>
+ カスタム日付入力
+ </summary>
+ <remarks>
+ </remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImDateTime._HissuCheck">
+ <summary>
+ 必須チェックの有無を格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImDateTime._AfterDateCheck">
+ <summary>
+ 過去日チェックの有無を格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImDateTime._BeforeDateCheck">
+ <summary>
+ 未来日チェックの有無を格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImDateTime.InitializeCollections">
+ <summary>
+ フィールドなどを初期化します。
+ </summary>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImDateTime.EnableStatus">
+ <summary>
+ このコントロールのEnable値を取得・設定します。
+ </summary>
+ <value>このコントロールのEnable値</value>
+ <returns>このコントロールのEnable値</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImDateTime.ReadOnlyStatus">
+ <summary>
+ このコントロールのReadOnly値を取得・設定します。
+ </summary>
+ <value>このコントロールのReadOnly値</value>
+ <returns>このコントロールのReadOnly値</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImDateTime.BackColorDef">
+ <summary>
+ 背景色を取得・設定します
+ </summary>
+ <value>背景色</value>
+ <returns>背景色</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImDateTime.BorderStyleDef">
+ <summary>
+ 罫線定義を取得・設定します
+ </summary>
+ <value>罫線定義</value>
+ <returns>罫線定義</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImDateTime.FontDef">
+ <summary>
+ フォント定義を取得・設定します
+ </summary>
+ <value>フォント定義</value>
+ <returns>フォント定義</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImDateTime.ForeColorDef">
+ <summary>
+ 前景色を取得・設定します
+ </summary>
+ <value>前景色</value>
+ <returns>前景色</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImDateTime.HeightDef">
+ <summary>
+ コントロールの高さを取得・設定します
+ </summary>
+ <value>高さ設定</value>
+ <returns>高さ設定</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImDateTime.TextValue">
+ <summary>
+ テキストの値を取得・設定します
+ </summary>
+ <value>テキスト</value>
+ <returns>テキスト</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImDateTime.WidthDef">
+ <summary>
+ コントロールの幅を取得・設定します
+ </summary>
+ <value>幅</value>
+ <returns>幅</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImDateTime.TabStopSetting">
+ <summary>
+ タブストップの可否を取得・設定します。
+ </summary>
+ <value>タブストップの可否</value>
+ <returns>タブストップ可否</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImDateTime.GetValueForValidate">
+ <summary>
+ 入力チェック用に値を取得します。
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImDateTime.SetAttention">
+ <summary>
+ 入力チェックエラー時の処理を実行します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImDateTime.SetDefault">
+ <summary>
+ 入力チェック正常時の処理を実行します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImDateTime.FinishCheck">
+ <summary>
+ 入力チェックの後処理を行います。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImDateTime.InitializeForMakingForm">
+ <summary>
+ フォーム構築時の初期化処理を記述します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImDateTime.InitBackColor">
+ <summary>
+ 初期化時に背景色を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImDateTime.InitBorder">
+ <summary>
+ 初期化時に罫線定義を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImDateTime.InitFont">
+ <summary>
+ 初期化時にフォント定義を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImDateTime.InitForeColor">
+ <summary>
+ 初期化時に前景色を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImDateTime.InitHeight">
+ <summary>
+ 初期化時に高さ設定を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImDateTime.InitTextValue">
+ <summary>
+ 初期化時にテキストの値を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImDateTime.InitWidth">
+ <summary>
+ 初期化時に幅を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImDateTime.InitExtraSetting">
+ <summary>
+ 初期化時に固有の項目を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImCombo">
+ <summary>
+ カスタムコンボボックス
+ </summary>
+ <remarks>
+ </remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImCombo._HissuCheck">
+ <summary>
+ 必須チェックの有無を格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImCombo._ForbiddenWordsCheck">
+ <summary>
+ 禁止文字チェックの有無を格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImCombo.EnableStatus">
+ <summary>
+ このコントロールのEnable値を取得・設定します。
+ </summary>
+ <value>このコントロールのEnable値</value>
+ <returns>このコントロールのEnable値</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImCombo.BackColorDef">
+ <summary>
+ 背景色を取得・設定します
+ </summary>
+ <value>背景色</value>
+ <returns>背景色</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImCombo.BorderStyleDef">
+ <summary>
+ 罫線定義を取得・設定します
+ </summary>
+ <value>罫線定義</value>
+ <returns>罫線定義</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImCombo.FontDef">
+ <summary>
+ フォント定義を取得・設定します
+ </summary>
+ <value>フォント定義</value>
+ <returns>フォント定義</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImCombo.ForeColorDef">
+ <summary>
+ 前景色を取得・設定します
+ </summary>
+ <value>前景色</value>
+ <returns>前景色</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImCombo.HeightDef">
+ <summary>
+ コントロールの高さを取得・設定します
+ </summary>
+ <value>高さ設定</value>
+ <returns>高さ設定</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImCombo.TextValue">
+ <summary>
+ テキストの値を取得・設定します
+ </summary>
+ <value>テキスト</value>
+ <returns>テキスト</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImCombo.WidthDef">
+ <summary>
+ コントロールの幅を取得・設定します
+ </summary>
+ <value>幅</value>
+ <returns>幅</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImCombo.GetCachedMasterDataSet">
+ <summary>
+ キャッシュデータを取得します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImCombo.GetCachedMasterDataTable">
+ <summary>
+ 個別DataSetテーブルデータ取得
+ 【DsTableNameプロパティの設定が必須です】
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImCombo.InitializeForMakingForm">
+ <summary>
+ フォーム構築時の初期化処理を記述します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImCombo.InitBackColor">
+ <summary>
+ 初期化時に背景色を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImCombo.InitBorder">
+ <summary>
+ 初期化時に罫線定義を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImCombo.InitFont">
+ <summary>
+ 初期化時にフォント定義を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImCombo.InitForeColor">
+ <summary>
+ 初期化時に前景色を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImCombo.InitHeight">
+ <summary>
+ 初期化時に高さ設定を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImCombo.InitTextValue">
+ <summary>
+ 初期化時にテキストの値を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImCombo.InitWidth">
+ <summary>
+ 初期化時に幅を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImCombo.InitExtraSetting">
+ <summary>
+ 初期化時に固有の項目を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImDate">
+ <summary>
+ カスタム日付入力
+ </summary>
+ <remarks>
+ </remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImDate._HissuCheck">
+ <summary>
+ 必須チェックの有無を格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImDate._AfterDateCheck">
+ <summary>
+ 過去日チェックの有無を格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImDate._BeforeDateCheck">
+ <summary>
+ 未来日チェックの有無を格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImDate.InitializeCollections">
+ <summary>
+ フィールドなどを初期化します。
+ </summary>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImDate.EnableStatus">
+ <summary>
+ このコントロールのEnable値を取得・設定します。
+ </summary>
+ <value>このコントロールのEnable値</value>
+ <returns>このコントロールのEnable値</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImDate.ReadOnlyStatus">
+ <summary>
+ このコントロールのReadOnly値を取得・設定します。
+ </summary>
+ <value>このコントロールのReadOnly値</value>
+ <returns>このコントロールのReadOnly値</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImDate.BackColorDef">
+ <summary>
+ 背景色を取得・設定します
+ </summary>
+ <value>背景色</value>
+ <returns>背景色</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImDate.BorderStyleDef">
+ <summary>
+ 罫線定義を取得・設定します
+ </summary>
+ <value>罫線定義</value>
+ <returns>罫線定義</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImDate.FontDef">
+ <summary>
+ フォント定義を取得・設定します
+ </summary>
+ <value>フォント定義</value>
+ <returns>フォント定義</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImDate.ForeColorDef">
+ <summary>
+ 前景色を取得・設定します
+ </summary>
+ <value>前景色</value>
+ <returns>前景色</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImDate.HeightDef">
+ <summary>
+ コントロールの高さを取得・設定します
+ </summary>
+ <value>高さ設定</value>
+ <returns>高さ設定</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImDate.TextValue">
+ <summary>
+ テキストの値を取得・設定します
+ </summary>
+ <value>テキスト</value>
+ <returns>テキスト</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImDate.WidthDef">
+ <summary>
+ コントロールの幅を取得・設定します
+ </summary>
+ <value>幅</value>
+ <returns>幅</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImDate.TabStopSetting">
+ <summary>
+ タブストップの可否を取得・設定します。
+ </summary>
+ <value>タブストップの可否</value>
+ <returns>タブストップ可否</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImDate.GetValueForValidate">
+ <summary>
+ 入力チェック用に値を取得します。
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImDate.SetAttention">
+ <summary>
+ 入力チェックエラー時の処理を実行します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImDate.SetDefault">
+ <summary>
+ 入力チェック正常時の処理を実行します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImDate.FinishCheck">
+ <summary>
+ 入力チェックの後処理を行います。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImDate.InitializeForMakingForm">
+ <summary>
+ フォーム構築時の初期化処理を記述します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImDate.InitBackColor">
+ <summary>
+ 初期化時に背景色を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImDate.InitBorder">
+ <summary>
+ 初期化時に罫線定義を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImDate.InitFont">
+ <summary>
+ 初期化時にフォント定義を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImDate.InitForeColor">
+ <summary>
+ 初期化時に前景色を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImDate.InitHeight">
+ <summary>
+ 初期化時に高さ設定を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImDate.InitTextValue">
+ <summary>
+ 初期化時にテキストの値を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImDate.InitWidth">
+ <summary>
+ 初期化時に幅を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImDate.InitExtraSetting">
+ <summary>
+ 初期化時に固有の項目を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey">
+ <summary>
+ カスタムファンクションキークラス
+ </summary>
+ <remarks>
+ </remarks>
+ <histry>
+ 2006/07/21      須藤      新規
+ </histry>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.EnableStatus">
+ <summary>
+ このコントロールのEnable値を取得・設定します。
+ </summary>
+ <value>このコントロールのEnable値</value>
+ <returns>このコントロールのEnable値</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.BackColorDef">
+ <summary>
+ 背景色を取得・設定します
+ </summary>
+ <value>背景色</value>
+ <returns>背景色</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.BorderStyleDef">
+ <summary>
+ 罫線定義を取得・設定します
+ </summary>
+ <value>罫線定義</value>
+ <returns>罫線定義</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.FontDef">
+ <summary>
+ フォント定義を取得・設定します
+ </summary>
+ <value>フォント定義</value>
+ <returns>フォント定義</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.ForeColorDef">
+ <summary>
+ 前景色を取得・設定します
+ </summary>
+ <value>前景色</value>
+ <returns>前景色</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.HeightDef">
+ <summary>
+ コントロールの高さを取得・設定します
+ </summary>
+ <value>高さ設定</value>
+ <returns>高さ設定</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.TextValue">
+ <summary>
+ テキストの値を取得・設定します
+ </summary>
+ <value>テキスト</value>
+ <returns>テキスト</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.WidthDef">
+ <summary>
+ コントロールの幅を取得・設定します
+ </summary>
+ <value>幅</value>
+ <returns>幅</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.F1ButtonName">
+ <summary>
+ Ｆ１ボタン名を取得・設定するプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.F2ButtonName">
+ <summary>
+ Ｆ２ボタン名を取得・設定するプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.F3ButtonName">
+ <summary>
+ Ｆ３ボタン名を取得・設定するプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.F4ButtonName">
+ <summary>
+ Ｆ４ボタン名を取得・設定するプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.F5ButtonName">
+ <summary>
+ Ｆ５ボタン名を取得・設定するプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.F6ButtonName">
+ <summary>
+ Ｆ６ボタン名を取得・設定するプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.F7ButtonName">
+ <summary>
+ Ｆ７ボタン名を取得・設定するプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.F8ButtonName">
+ <summary>
+ Ｆ８ボタン名を取得・設定するプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.F9ButtonName">
+ <summary>
+ Ｆ９ボタン名を取得・設定するプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.F10ButtonName">
+ <summary>
+ Ｆ１０ボタン名を取得・設定するプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.F11ButtonName">
+ <summary>
+ Ｆ１１ボタン名を取得・設定するプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.F12ButtonName">
+ <summary>
+ Ｆ１２ボタン名を取得・設定するプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.F1ButtonEnabled">
+ <summary>
+ Ｆ１ボタンの有効・無効を取得・設定するプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.F2ButtonEnabled">
+ <summary>
+ Ｆ２ボタンの有効・無効を取得・設定するプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.F3ButtonEnabled">
+ <summary>
+ Ｆ３ボタンの有効・無効を取得・設定するプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.F4ButtonEnabled">
+ <summary>
+ Ｆ４ボタンの有効・無効を取得・設定するプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.F5ButtonEnabled">
+ <summary>
+ Ｆ５ボタンの有効・無効を取得・設定するプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.F6ButtonEnabled">
+ <summary>
+ Ｆ６ボタンの有効・無効を取得・設定するプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.F7ButtonEnabled">
+ <summary>
+ Ｆ７ボタンの有効・無効を取得・設定するプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.F8ButtonEnabled">
+ <summary>
+ Ｆ８ボタンの有効・無効を取得・設定するプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.F9ButtonEnabled">
+ <summary>
+ Ｆ９ボタンの有効・無効を取得・設定するプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.F10ButtonEnabled">
+ <summary>
+ Ｆ１０ボタンの有効・無効を取得・設定するプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.F11ButtonEnabled">
+ <summary>
+ Ｆ１１ボタンの有効・無効を取得・設定するプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.F12ButtonEnabled">
+ <summary>
+ Ｆ１２ボタンの有効・無効を取得・設定するプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.FunctionKey_FormKeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+ <summary>
+ Functionボタンイベントで発生
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks>
+ Grape FunctionButton F10
+ Windows Vistaで{F10}キーを押下しても、
+ ファンクションキーのFKeyPressイベントが発生しない
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.FunctionKey_FunctionKeyPress(System.Object,System.Windows.Forms.KeyEventArgs)">
+ <summary>
+ ファンクションキー押下時のイベント
+ </summary>
+ <param name="sender">イベント発生オブジェクト</param>
+ <param name="e">イベント詳細情報</param>
+ <remarks>F1～F12まで対応</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.SetFunctionKey(System.String)">
+ <summary>
+ ボタンのショートカットキーを設定します
+ </summary>
+ <param name="keyName"></param>
+ <returns></returns>
+ <remarks>F1～F12まで対応</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.SetButtonName(System.Int32,System.String,System.String)">
+ <summary>
+ 各ボタン名設定
+ </summary>
+ <param name="keyIndex">ボタンインデックス</param>
+ <param name="keyHeader">ファンクションボタンタイトル</param>
+ <param name="buttonName">ファンクションボタン名</param>
+ <remarks>ボタンインデックスは0から開始です</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.GetButtonName(System.Int32)">
+ <summary>
+ 各ボタン名取得
+ </summary>
+ <param name="keyIndex">ボタンインデックス</param>
+ <returns>各ボタン名</returns>
+ <remarks>ボタンインデックスは0から開始です</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.SetButtonEnabled(System.Int32,System.Boolean)">
+ <summary>
+ 各FKey制御設定
+ </summary>
+ <param name="keyIndex">FKeyIndex</param>
+ <param name="enable">True:有効 , Flase:無効</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.GetButtonEnabled(System.Int32)">
+ <summary>
+ 各FKey制御取得
+ </summary>
+ <param name="keyIndex">FKeyIndex</param>
+ <returns>True:有効 , Flase:無効</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.InitializeForMakingForm">
+ <summary>
+ フォーム構築時の初期化処理を記述します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.InitBackColor">
+ <summary>
+ 初期化時に背景色を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.InitBorder">
+ <summary>
+ 初期化時に罫線定義を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.InitFont">
+ <summary>
+ 初期化時にフォント定義を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.InitForeColor">
+ <summary>
+ 初期化時に前景色を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.InitHeight">
+ <summary>
+ 初期化時に高さ設定を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.InitTextValue">
+ <summary>
+ 初期化時にテキストの値を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.InitWidth">
+ <summary>
+ 初期化時に幅を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.InitExtraSetting">
+ <summary>
+ 初期化時に固有の項目を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="E:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.F1PressEvent">
+ <summary>
+ F1ボタンに紐づくイベント
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="E:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.F2PressEvent">
+ <summary>
+ F2ボタンに紐づくイベント
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="E:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.F3PressEvent">
+ <summary>
+ F3ボタンに紐づくイベント
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="E:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.F4PressEvent">
+ <summary>
+ F4ボタンに紐づくイベント
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="E:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.F5PressEvent">
+ <summary>
+ F5ボタンに紐づくイベント
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="E:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.F6PressEvent">
+ <summary>
+ F6ボタンに紐づくイベント
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="E:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.F7PressEvent">
+ <summary>
+ F7ボタンに紐づくイベント
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="E:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.F8PressEvent">
+ <summary>
+ F8ボタンに紐づくイベント
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="E:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.F9PressEvent">
+ <summary>
+ F9ボタンに紐づくイベント
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="E:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.F10PressEvent">
+ <summary>
+ F10ボタンに紐づくイベント
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="E:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.F11PressEvent">
+ <summary>
+ F11ボタンに紐づくイベント
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="E:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImFunctionKey.F12PressEvent">
+ <summary>
+ F12ボタンに紐づくイベント
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImMasked">
+ <summary>
+ カスタムマスクドテキストボックスクラス
+ </summary>
+ <remarks>
+ </remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImMasked._HissuCheck">
+ <summary>
+ 必須チェックの有無を格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImMasked._ForbiddenWordsCheck">
+ <summary>
+ 禁止文字チェックの有無を格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImMasked.EnableStatus">
+ <summary>
+ このコントロールのEnable値を取得・設定します。
+ </summary>
+ <value>このコントロールのEnable値</value>
+ <returns>このコントロールのEnable値</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImMasked.ReadOnlyStatus">
+ <summary>
+ このコントロールのReadOnly値を取得・設定します。
+ </summary>
+ <value>このコントロールのReadOnly値</value>
+ <returns>このコントロールのReadOnly値</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImMasked.BackColorDef">
+ <summary>
+ 背景色を取得・設定します
+ </summary>
+ <value>背景色</value>
+ <returns>背景色</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImMasked.BorderStyleDef">
+ <summary>
+ 罫線定義を取得・設定します
+ </summary>
+ <value>罫線定義</value>
+ <returns>罫線定義</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImMasked.FontDef">
+ <summary>
+ フォント定義を取得・設定します
+ </summary>
+ <value>フォント定義</value>
+ <returns>フォント定義</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImMasked.ForeColorDef">
+ <summary>
+ 前景色を取得・設定します
+ </summary>
+ <value>前景色</value>
+ <returns>前景色</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImMasked.HeightDef">
+ <summary>
+ コントロールの高さを取得・設定します
+ </summary>
+ <value>高さ設定</value>
+ <returns>高さ設定</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImMasked.TextValue">
+ <summary>
+ テキストの値を取得・設定します
+ </summary>
+ <value>テキスト</value>
+ <returns>テキスト</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImMasked.WidthDef">
+ <summary>
+ コントロールの幅を取得・設定します
+ </summary>
+ <value>幅</value>
+ <returns>幅</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImMasked.TabStopSetting">
+ <summary>
+ タブストップの可否を取得・設定します。
+ </summary>
+ <value>タブストップの可否</value>
+ <returns>タブストップ可否</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImMasked.GetValueForValidate">
+ <summary>
+ 入力チェック用に値を取得します。
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImMasked.SetAttention">
+ <summary>
+ 入力チェックエラー時の処理を実行します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImMasked.SetDefault">
+ <summary>
+ 入力チェック正常時の処理を実行します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImMasked.FinishCheck">
+ <summary>
+ 入力チェックの後処理を行います。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImMasked.InitializeForMakingForm">
+ <summary>
+ フォーム構築時の初期化処理を記述します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImMasked.InitBackColor">
+ <summary>
+ 初期化時に背景色を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImMasked.InitBorder">
+ <summary>
+ 初期化時に罫線定義を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImMasked.InitFont">
+ <summary>
+ 初期化時にフォント定義を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImMasked.InitForeColor">
+ <summary>
+ 初期化時に前景色を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImMasked.InitHeight">
+ <summary>
+ 初期化時に高さ設定を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImMasked.InitTextValue">
+ <summary>
+ 初期化時にテキストの値を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImMasked.InitWidth">
+ <summary>
+ 初期化時に幅を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImMasked.InitExtraSetting">
+ <summary>
+ 初期化時に固有の項目を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImNumber">
+ <summary>
+ カスタム数字入力用クラス
+ </summary>
+ <remarks>
+ </remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImNumber._HissuCheck">
+ <summary>
+ 必須チェックの有無を格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImNumber._RangeCheck">
+ <summary>
+ 範囲チェックの有無を格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImNumber.EnableStatus">
+ <summary>
+ このコントロールのEnable値を取得・設定します。
+ </summary>
+ <value>このコントロールのEnable値</value>
+ <returns>このコントロールのEnable値</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImNumber.ReadOnlyStatus">
+ <summary>
+ このコントロールのReadOnly値を取得・設定します。
+ </summary>
+ <value>このコントロールのReadOnly値</value>
+ <returns>このコントロールのReadOnly値</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImNumber.BackColorDef">
+ <summary>
+ 背景色を取得・設定します
+ </summary>
+ <value>背景色</value>
+ <returns>背景色</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImNumber.BorderStyleDef">
+ <summary>
+ 罫線定義を取得・設定します
+ </summary>
+ <value>罫線定義</value>
+ <returns>罫線定義</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImNumber.FontDef">
+ <summary>
+ フォント定義を取得・設定します
+ </summary>
+ <value>フォント定義</value>
+ <returns>フォント定義</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImNumber.ForeColorDef">
+ <summary>
+ 前景色を取得・設定します
+ </summary>
+ <value>前景色</value>
+ <returns>前景色</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImNumber.HeightDef">
+ <summary>
+ コントロールの高さを取得・設定します
+ </summary>
+ <value>高さ設定</value>
+ <returns>高さ設定</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImNumber.TextValue">
+ <summary>
+ テキストの値を取得・設定します
+ </summary>
+ <value>テキスト</value>
+ <returns>テキスト</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImNumber.WidthDef">
+ <summary>
+ コントロールの幅を取得・設定します
+ </summary>
+ <value>幅</value>
+ <returns>幅</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImNumber.TabStopSetting">
+ <summary>
+ タブストップの可否を取得・設定します。
+ </summary>
+ <value>タブストップの可否</value>
+ <returns>タブストップ可否</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImNumber.GetValueForValidate">
+ <summary>
+ 入力チェック用に値を取得します。
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImNumber.SetAttention">
+ <summary>
+ 入力チェックエラー時の処理を実行します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImNumber.SetDefault">
+ <summary>
+ 入力チェック正常時の処理を実行します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImNumber.FinishCheck">
+ <summary>
+ 入力チェックの後処理を行います。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImNumber.InitializeForMakingForm">
+ <summary>
+ フォーム構築時の初期化処理を記述します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImNumber.InitBackColor">
+ <summary>
+ 初期化時に背景色を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImNumber.InitBorder">
+ <summary>
+ 初期化時に罫線定義を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImNumber.InitFont">
+ <summary>
+ 初期化時にフォント定義を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImNumber.InitForeColor">
+ <summary>
+ 初期化時に前景色を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImNumber.InitHeight">
+ <summary>
+ 初期化時に高さ設定を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImNumber.InitTextValue">
+ <summary>
+ 初期化時にテキストの値を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImNumber.InitWidth">
+ <summary>
+ 初期化時に幅を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImNumber.InitExtraSetting">
+ <summary>
+ 初期化時に固有の項目を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImTextBox">
+ <summary>
+ カスタムテキストボックスクラス
+ </summary>
+ <remarks>
+ </remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImTextBox._HissuCheck">
+ <summary>
+ 必須チェックの有無を格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImTextBox._ZenkakuCheck">
+ <summary>
+ 全角チェックの有無を格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImTextBox._HankakuCheck">
+ <summary>
+ 半角チェックの有無を格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImTextBox._ForbiddenWordsCheck">
+ <summary>
+ 禁止文字チェックの有無を格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImTextBox._KanaCheck">
+ <summary>
+ カナチェックの有無を格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImTextBox._DakutenCheck">
+ <summary>
+ 濁点チェックの有無を格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImTextBox._EisuCheck">
+ <summary>
+ 英数字チェックの有無を格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImTextBox._SujiCheck">
+ <summary>
+ 数字チェックの有無を格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImTextBox._ByteCheck">
+ <summary>
+ バイト数チェックの有無を格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImTextBox._MojisuCheck">
+ <summary>
+ 文字数チェックの有無を格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImTextBox._FullByteCheck">
+ <summary>
+ フルバイト数チェックの有無を格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImTextBox._NumericCheck">
+ <summary>
+ 数値チェックの有無を格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImTextBox._CalendarCheck">
+ <summary>
+ 暦上日チェックの有無を格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImTextBox._MiddleSpace">
+ <summary>
+ 中間スペースチェックの有無を格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImTextBox.EnableStatus">
+ <summary>
+ このコントロールのEnable値を取得・設定します。
+ </summary>
+ <value>このコントロールのEnable値</value>
+ <returns>このコントロールのEnable値</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImTextBox.ReadOnlyStatus">
+ <summary>
+ このコントロールのReadOnly値を取得・設定します。
+ </summary>
+ <value>このコントロールのReadOnly値</value>
+ <returns>このコントロールのReadOnly値</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImTextBox.BackColorDef">
+ <summary>
+ 背景色を取得・設定します
+ </summary>
+ <value>背景色</value>
+ <returns>背景色</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImTextBox.BorderStyleDef">
+ <summary>
+ 罫線定義を取得・設定します
+ </summary>
+ <value>罫線定義</value>
+ <returns>罫線定義</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImTextBox.FontDef">
+ <summary>
+ フォント定義を取得・設定します
+ </summary>
+ <value>フォント定義</value>
+ <returns>フォント定義</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImTextBox.ForeColorDef">
+ <summary>
+ 前景色を取得・設定します
+ </summary>
+ <value>前景色</value>
+ <returns>前景色</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImTextBox.HeightDef">
+ <summary>
+ コントロールの高さを取得・設定します
+ </summary>
+ <value>高さ設定</value>
+ <returns>高さ設定</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImTextBox.TextValue">
+ <summary>
+ テキストの値を取得・設定します
+ </summary>
+ <value>テキスト</value>
+ <returns>テキスト</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImTextBox.WidthDef">
+ <summary>
+ コントロールの幅を取得・設定します
+ </summary>
+ <value>幅</value>
+ <returns>幅</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImTextBox.TabStopSetting">
+ <summary>
+ タブストップの可否を取得・設定します。
+ </summary>
+ <value>タブストップの可否</value>
+ <returns>タブストップ可否</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImTextBox.GetValueForValidate">
+ <summary>
+ 入力チェック用に値を取得します。
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImTextBox.SetAttention">
+ <summary>
+ 入力チェックエラー時の処理を実行します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImTextBox.SetDefault">
+ <summary>
+ 入力チェック正常時の処理を実行します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImTextBox.FinishCheck">
+ <summary>
+ 入力チェックの後処理を行います。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImTextBox.ShowToolTip(Jp.Co.Nrs.Win.GUI.Win.BaseToolTip)">
+ <summary>
+ ツールチップを表示します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImTextBox.InitializeForMakingForm">
+ <summary>
+ フォーム構築時の初期化処理を記述します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImTextBox.InitBackColor">
+ <summary>
+ 初期化時に背景色を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImTextBox.InitBorder">
+ <summary>
+ 初期化時に罫線定義を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImTextBox.InitFont">
+ <summary>
+ 初期化時にフォント定義を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImTextBox.InitForeColor">
+ <summary>
+ 初期化時に前景色を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImTextBox.InitHeight">
+ <summary>
+ 初期化時に高さ設定を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImTextBox.InitTextValue">
+ <summary>
+ 初期化時にテキストの値を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImTextBox.InitWidth">
+ <summary>
+ 初期化時に幅を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImTextBox.InitExtraSetting">
+ <summary>
+ 初期化時に固有の項目を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.InputMan.BaseImTextBox.BaseImTextBox_TextChanging(System.Object,GrapeCity.Win.Editors.TextChangingEventArgs)">
+ <summary>
+ コピー＆ペーストで改行コードが入力されないようにします。
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.GUI.Win.Interface.IAfterDateCheck">
+ <summary>
+ 未来日チェック用インターフェース
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.GUI.Win.Interface.IBeforeDateCheck">
+ <summary>
+ 過去日チェック用インターフェース
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.GUI.Win.Interface.IByteCheck">
+ <summary>
+ バイトチェック用インターフェース
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.GUI.Win.Interface.ICalendarCheck">
+ <summary>
+ 暦上日チェック用インターフェース
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.GUI.Win.Interface.IDakutenCheck">
+ <summary>
+ 濁点チェック用インターフェース
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.GUI.Win.Interface.IEisuCheck">
+ <summary>
+ 英数字チェック用インターフェース
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.Interface.IEisuCheck.IsEisuCheck">
+ <summary>
+ 英数字チェック有無を設定するプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.GUI.Win.Interface.IForbiddenWordsCheck">
+ <summary>
+ 禁止文字チェック用インターフェース
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.GUI.Win.Interface.IFullByteCheck">
+ <summary>
+ フルバイトチェック用インターフェース
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.GUI.Win.Interface.IHankakuCheck">
+ <summary>
+ 半角チェック用インターフェース
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.GUI.Win.Interface.IHissuCheck">
+ <summary>
+ 必須チェック用インターフェース
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.GUI.Win.Interface.IKanaCheck">
+ <summary>
+ カナチェック用インターフェース
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.GUI.Win.Interface.IMinDateCheck">
+ <summary>
+ 最小日付チェック用インターフェース
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.GUI.Win.Interface.IMojisuCheck">
+ <summary>
+ 文字数チェック用インターフェース
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.GUI.Win.Interface.INumericCheck">
+ <summary>
+ 数値チェック用インターフェース
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.GUI.Win.Interface.IRangeCheck">
+ <summary>
+ 範囲チェック用インターフェース
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.GUI.Win.Interface.ISujiCheck">
+ <summary>
+ 数字チェック用インターフェース
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.GUI.Win.Interface.IZenkakuCheck">
+ <summary>
+ 全角チェック用インターフェース
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.GUI.Win.Interface.IMiddleSpaceCheck">
+ <summary>
+ 中間スペースチェック用インターフェース
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.GUI.Win.Interface.IControl">
+ <summary>
+ 画面部品共通インターフェース
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.Interface.IControl.BackColorDef">
+ <summary>
+ 背景色を取得・設定します
+ </summary>
+ <value>背景</value>
+ <returns>背景</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.Interface.IControl.BorderStyleDef">
+ <summary>
+ 罫線定義を取得・設定します
+ </summary>
+ <value>罫線定義</value>
+ <returns>罫線定義</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.Interface.IControl.EnableStatus">
+ <summary>
+ このコントロールのEnable値を取得・設定します。
+ </summary>
+ <value>このコントロールのEnable値</value>
+ <returns>このコントロールのEnable値</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.Interface.IControl.FontDef">
+ <summary>
+ フォント定義を取得・設定します
+ </summary>
+ <value>フォント定義</value>
+ <returns>フォント定義</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.Interface.IControl.ForeColorDef">
+ <summary>
+ 前景色を取得・設定します
+ </summary>
+ <value>前景色</value>
+ <returns>前景色</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.Interface.IControl.HeightDef">
+ <summary>
+ 高さ設定を取得・設定します
+ </summary>
+ <value>高さ設定</value>
+ <returns>高さ設定</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.Interface.IControl.TextValue">
+ <summary>
+ テキストの値を取得・設定します
+ </summary>
+ <value>テキスト</value>
+ <returns>テキスト</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.Interface.IControl.WidthDef">
+ <summary>
+ 幅設定
+ </summary>
+ <value>幅</value>
+ <returns>幅</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.Interface.IControl.InitializeForMakingForm">
+ <summary>
+ フォーム構築時の初期化処理を記述します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.Interface.IControl.InitBackColor">
+ <summary>
+ 初期化時に背景色を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.Interface.IControl.InitBorder">
+ <summary>
+ 初期化時に罫線定義を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.Interface.IControl.InitFont">
+ <summary>
+ 初期化時にフォント定義を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.Interface.IControl.InitForeColor">
+ <summary>
+ 初期化時に前景色を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.Interface.IControl.InitHeight">
+ <summary>
+ 初期化時に高さ設定を取得・設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.Interface.IControl.InitTextValue">
+ <summary>
+ 初期化時にテキストの値を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.Interface.IControl.InitWidth">
+ <summary>
+ 初期化時に幅を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.Interface.IControl.InitExtraSetting">
+ <summary>
+ 初期化時に各コントロール固有の項目を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.GUI.Win.Interface.IEditableControl">
+ <summary>
+ 画面入力部品共通インターフェース
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.Interface.IEditableControl.SetDefault">
+ <summary>
+ 入力チェック正常時の処理を実行します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.Interface.IEditableControl.SetAttention">
+ <summary>
+ 入力チェックエラー時の処理を実行します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.Interface.IEditableControl.FinishCheck">
+ <summary>
+ 入力チェックの後処理を行います。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.Interface.IEditableControl.GetValueForValidate">
+ <summary>
+ 入力チェック用に値を取得します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.Interface.IEditableControl.ReadOnlyStatus">
+ <summary>
+ このコントロールのReadOnly値を取得・設定します。
+ </summary>
+ <value>このコントロールのReadOnly値</value>
+ <returns>このコントロールのReadOnly値</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.Interface.IEditableControl.TabStopSetting">
+ <summary>
+ タブストップの可否を取得・設定します。
+ </summary>
+ <value>タブストップの可否</value>
+ <returns>タブストップの可否</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.GUI.Win.Spread.BaseSpread">
+ <summary>
+ カスタムスプレッドクラス
+ </summary>
+ <remarks>
+ </remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.GUI.Win.Spread.BaseSpread._Locked">
+ <summary>
+ ロック状態を保持するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.GUI.Win.Spread.BaseSpread._LockedCells">
+ <summary>
+ ロック中のセルを格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.Spread.BaseSpread.Locked">
+ <summary>
+ このコントロールのEnable値を取得・設定します。
+ </summary>
+ <value>このコントロールのEnable値</value>
+ <returns>このコントロールのEnable値</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.Spread.BaseSpread.SortColumn">
+ <summary>
+ 列ソートを行うかどうかのEnable値を取得・設定します。
+ </summary>
+ <value>このコントロールのEnable値</value>
+ <returns>このコントロールのEnable値</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.Spread.BaseSpread.BackColorDef">
+ <summary>
+ 背景色を取得・設定します
+ </summary>
+ <value>背景色</value>
+ <returns>背景色</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.Spread.BaseSpread.BorderStyleDef">
+ <summary>
+ 罫線定義を取得・設定します
+ </summary>
+ <value>罫線定義</value>
+ <returns>罫線定義</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.Spread.BaseSpread.FontDef">
+ <summary>
+ フォント定義を取得・設定します
+ </summary>
+ <value>フォント定義</value>
+ <returns>フォント定義</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.Spread.BaseSpread.ForeColorDef">
+ <summary>
+ 前景色を取得・設定します
+ </summary>
+ <value>前景色</value>
+ <returns>前景色</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.Spread.BaseSpread.HeightDef">
+ <summary>
+ コントロールの高さを取得・設定します
+ </summary>
+ <value>高さ設定</value>
+ <returns>高さ設定</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.Spread.BaseSpread.TextValue">
+ <summary>
+ テキストの値を取得・設定します
+ </summary>
+ <value>テキスト</value>
+ <returns>テキスト</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.Spread.BaseSpread.WidthDef">
+ <summary>
+ コントロールの幅を取得・設定します
+ </summary>
+ <value>幅</value>
+ <returns>幅</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.Spread.BaseSpread.InitializeForMakingForm">
+ <summary>
+ フォーム構築時の初期化処理を記述します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.Spread.BaseSpread.InitBackColor">
+ <summary>
+ 初期化時に背景色を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.Spread.BaseSpread.InitBorder">
+ <summary>
+ 初期化時に罫線定義を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.Spread.BaseSpread.InitFont">
+ <summary>
+ 初期化時にフォント定義を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.Spread.BaseSpread.InitForeColor">
+ <summary>
+ 初期化時に前景色を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.Spread.BaseSpread.InitHeight">
+ <summary>
+ 初期化時に高さ設定を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.Spread.BaseSpread.InitTextValue">
+ <summary>
+ 初期化時にテキストの値を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.Spread.BaseSpread.InitWidth">
+ <summary>
+ 初期化時に幅を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.Spread.BaseSpread.InitExtraSetting">
+ <summary>
+ 初期化時に固有の項目を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.Spread.BaseSpread.AllLock">
+ <summary>
+ スプレッドの全セルをロックします
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.Spread.BaseSpread.AllUnLock">
+ <summary>
+ スプレッドの全セルをロック解除します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.Spread.BaseSpread.SetLockedColor(FarPoint.Win.Spread.Cell@)">
+ <summary>
+ セルロック時の背景色を設定します
+ </summary>
+ <param name="cell">背景色を設定するセル</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.Spread.BaseSpread.SetUnLockedColor(FarPoint.Win.Spread.Cell@)">
+ <summary>
+ セルロック解除時の背景色を設定します
+ </summary>
+ <param name="cell">背景色を設定するセル</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.Spread.BaseSpread.SortSpread(FarPoint.Win.Spread.SheetView@,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+ <summary>
+ ソート処理
+ </summary>
+ <param name="spreadSheet">ソートを行うスプレッドシート</param>
+ <param name="sortCol">ソート基準列</param>
+ <param name="startRow">ソート開始行</param>
+ <param name="startCol">ソート開始列</param>
+ <param name="endRow">ソート終端行</param>
+ <param name="endCol">ソート終端列</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.Spread.BaseSpread.Sort(FarPoint.Win.Spread.SheetView@,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)">
+ <summary>
+ ソート処理
+ </summary>
+ <param name="spreadSheet">ソートを行うスプレッドシート</param>
+ <param name="sortCol">ソート基準列</param>
+ <param name="startRow">ソート開始行</param>
+ <param name="startCol">ソート開始列</param>
+ <param name="endRow">ソート終端行</param>
+ <param name="endCol">ソート終端列</param>
+ <param name="ascending">True:昇順　False：降順</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.Spread.BaseSpread.SetColProperty(System.Object)">
+ <summary>
+ 列のプロパティを定義したクラスを読み込み設定します。
+ </summary>
+ <param name="def">列のプロパティを定義したクラス</param>
+ <remarks>列のプロパティ定義は必ずSpreadColPropertyクラスを用いること</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.Spread.BaseSpread.BaseSpread_ColumnDragMove(System.Object,FarPoint.Win.Spread.DragMoveEventArgs)">
+ <summary>
+ 列を移動するためにドラッグしたときに発生するイベント
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks>
+ VS2010 Tips
+ spread列移動
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.Spread.BaseSpread.BaseSpread_ComboSelChange(System.Object,FarPoint.Win.Spread.EditorNotifyEventArgs)">
+ <summary>
+ Grape バグ対応
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks>
+ 文書番号：31825
+ コンボボックス型セルのアイテムに含めた空文字を選択できない
+ SPREAD for Windows Forms 5.0J
+ </remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.GUI.Win.BaseLabel">
+ <summary>
+ カスタムラベルクラス
+ </summary>
+ <remarks>
+ </remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.BaseLabel.AutoSizeDef">
+ <summary>
+ このコントロールのEnable値を取得・設定します。
+ </summary>
+ <value>このコントロールのEnable値</value>
+ <returns>このコントロールのEnable値</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.BaseLabel.EnableStatus">
+ <summary>
+ このコントロールのEnable値を取得・設定します。
+ </summary>
+ <value>このコントロールのEnable値</value>
+ <returns>このコントロールのEnable値</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.BaseLabel.BackColorDef">
+ <summary>
+ 背景色を取得・設定します
+ </summary>
+ <value>背景色</value>
+ <returns>背景色</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.BaseLabel.BorderStyleDef">
+ <summary>
+ 罫線定義を取得・設定します
+ </summary>
+ <value>罫線定義</value>
+ <returns>罫線定義</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.BaseLabel.FontDef">
+ <summary>
+ フォント定義を取得・設定します
+ </summary>
+ <value>フォント定義</value>
+ <returns>フォント定義</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.BaseLabel.ForeColorDef">
+ <summary>
+ 前景色を取得・設定します
+ </summary>
+ <value>前景色</value>
+ <returns>前景色</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.BaseLabel.HeightDef">
+ <summary>
+ コントロールの高さを取得・設定します
+ </summary>
+ <value>高さ設定</value>
+ <returns>高さ設定</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.BaseLabel.TextValue">
+ <summary>
+ テキストの値を取得・設定します
+ </summary>
+ <value>テキスト</value>
+ <returns>テキスト</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.BaseLabel.WidthDef">
+ <summary>
+ コントロールの幅を取得・設定します
+ </summary>
+ <value>幅</value>
+ <returns>幅</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.BaseLabel.InitializeForMakingForm">
+ <summary>
+ フォーム構築時の初期化処理を記述します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.BaseLabel.InitBackColor">
+ <summary>
+ 初期化時に背景色を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.BaseLabel.InitBorder">
+ <summary>
+ 初期化時に罫線定義を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.BaseLabel.InitFont">
+ <summary>
+ 初期化時にフォント定義を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.BaseLabel.InitForeColor">
+ <summary>
+ 初期化時に前景色を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.BaseLabel.InitHeight">
+ <summary>
+ 初期化時に高さ設定を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.BaseLabel.InitTextValue">
+ <summary>
+ 初期化時にテキストの値を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.BaseLabel.InitWidth">
+ <summary>
+ 初期化時に幅を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.BaseLabel.InitExtraSetting">
+ <summary>
+ 初期化時に固有の項目を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.GUI.Win.BaseOptionButton">
+ <summary>
+ カスタムオプションボタンクラス
+ </summary>
+ <remarks>
+ </remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.BaseOptionButton.EnableStatus">
+ <summary>
+ このコントロールのEnable値を取得・設定します。
+ </summary>
+ <value>このコントロールのEnable値</value>
+ <returns>このコントロールのEnable値</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.BaseOptionButton.BackColorDef">
+ <summary>
+ 背景色を取得・設定します
+ </summary>
+ <value>背景色</value>
+ <returns>背景色</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.BaseOptionButton.BorderStyleDef">
+ <summary>
+ 罫線定義を取得・設定します
+ </summary>
+ <value>罫線定義</value>
+ <returns>罫線定義</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.BaseOptionButton.FontDef">
+ <summary>
+ フォント定義を取得・設定します
+ </summary>
+ <value>フォント定義</value>
+ <returns>フォント定義</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.BaseOptionButton.ForeColorDef">
+ <summary>
+ 前景色を取得・設定します
+ </summary>
+ <value>前景色</value>
+ <returns>前景色</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.BaseOptionButton.HeightDef">
+ <summary>
+ コントロールの高さを取得・設定します
+ </summary>
+ <value>高さ設定</value>
+ <returns>高さ設定</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.BaseOptionButton.TextValue">
+ <summary>
+ テキストの値を取得・設定します
+ </summary>
+ <value>テキスト</value>
+ <returns>テキスト</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.BaseOptionButton.WidthDef">
+ <summary>
+ コントロールの幅を取得・設定します
+ </summary>
+ <value>幅</value>
+ <returns>幅</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.BaseOptionButton.TabStopSetting">
+ <summary>
+ タブストップの可否を取得・設定します。
+ </summary>
+ <value>タブストップの可否</value>
+ <returns>タブストップ可否</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.BaseOptionButton.InitializeForMakingForm">
+ <summary>
+ フォーム構築時の初期化処理を記述します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.BaseOptionButton.InitBackColor">
+ <summary>
+ 初期化時に背景色を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.BaseOptionButton.InitBorder">
+ <summary>
+ 初期化時に罫線定義を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.BaseOptionButton.InitFont">
+ <summary>
+ 初期化時にフォント定義を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.BaseOptionButton.InitForeColor">
+ <summary>
+ 初期化時に前景色を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.BaseOptionButton.InitHeight">
+ <summary>
+ 初期化時に高さ設定を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.BaseOptionButton.InitTextValue">
+ <summary>
+ 初期化時にテキストの値を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.BaseOptionButton.InitWidth">
+ <summary>
+ 初期化時に幅を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.BaseOptionButton.InitExtraSetting">
+ <summary>
+ 初期化時に固有の項目を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.GUI.Win.BaseCheckBox">
+ <summary>
+ カスタムチェックボックスクラス
+ </summary>
+ <remarks>
+ </remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.BaseCheckBox.EnableStatus">
+ <summary>
+ このコントロールのEnable値を取得・設定します。
+ </summary>
+ <value>このコントロールのEnable値</value>
+ <returns>このコントロールのEnable値</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.BaseCheckBox.BackColorDef">
+ <summary>
+ 背景色を取得・設定します
+ </summary>
+ <value>背景色</value>
+ <returns>背景色</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.BaseCheckBox.BorderStyleDef">
+ <summary>
+ 罫線定義を取得・設定します
+ </summary>
+ <value>罫線定義</value>
+ <returns>罫線定義</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.BaseCheckBox.FontDef">
+ <summary>
+ フォント定義を取得・設定します
+ </summary>
+ <value>フォント定義</value>
+ <returns>フォント定義</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.BaseCheckBox.ForeColorDef">
+ <summary>
+ 前景色を取得・設定します
+ </summary>
+ <value>前景色</value>
+ <returns>前景色</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.BaseCheckBox.HeightDef">
+ <summary>
+ コントロールの高さを取得・設定します
+ </summary>
+ <value>高さ設定</value>
+ <returns>高さ設定</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.BaseCheckBox.TextValue">
+ <summary>
+ テキストの値を取得・設定します
+ </summary>
+ <value>テキスト</value>
+ <returns>テキスト</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.BaseCheckBox.WidthDef">
+ <summary>
+ コントロールの幅を取得・設定します
+ </summary>
+ <value>幅</value>
+ <returns>幅</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.BaseCheckBox.TabStopSetting">
+ <summary>
+ タブストップの可否を取得・設定します。
+ </summary>
+ <value>タブストップの可否</value>
+ <returns>タブストップ可否</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.BaseCheckBox.InitializeForMakingForm">
+ <summary>
+ フォーム構築時の初期化処理を記述します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.BaseCheckBox.InitBackColor">
+ <summary>
+ 初期化時に背景色を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.BaseCheckBox.InitBorder">
+ <summary>
+ 初期化時に罫線定義を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.BaseCheckBox.InitFont">
+ <summary>
+ 初期化時にフォント定義を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.BaseCheckBox.InitForeColor">
+ <summary>
+ 初期化時に前景色を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.BaseCheckBox.InitHeight">
+ <summary>
+ 初期化時に高さ設定を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.BaseCheckBox.InitTextValue">
+ <summary>
+ 初期化時にテキストの値を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.BaseCheckBox.InitWidth">
+ <summary>
+ 初期化時に幅を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.BaseCheckBox.InitExtraSetting">
+ <summary>
+ 初期化時に固有の項目を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.GUI.Win.BaseTab">
+ <summary>
+ カスタムタブクラス
+ </summary>
+ <remarks>
+ </remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.BaseTab.EnableStatus">
+ <summary>
+ このコントロールのEnable値を取得・設定します。
+ </summary>
+ <value>このコントロールのEnable値</value>
+ <returns>このコントロールのEnable値</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.BaseTab.BackColorDef">
+ <summary>
+ 背景色を取得・設定します
+ </summary>
+ <value>背景色</value>
+ <returns>背景色</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.BaseTab.BorderStyleDef">
+ <summary>
+ 罫線定義を取得・設定します
+ </summary>
+ <value>罫線定義</value>
+ <returns>罫線定義</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.BaseTab.FontDef">
+ <summary>
+ フォント定義を取得・設定します
+ </summary>
+ <value>フォント定義</value>
+ <returns>フォント定義</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.BaseTab.ForeColorDef">
+ <summary>
+ 前景色を取得・設定します
+ </summary>
+ <value>前景色</value>
+ <returns>前景色</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.BaseTab.HeightDef">
+ <summary>
+ コントロールの高さを取得・設定します
+ </summary>
+ <value>高さ設定</value>
+ <returns>高さ設定</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.BaseTab.TextValue">
+ <summary>
+ テキストの値を取得・設定します
+ </summary>
+ <value>テキスト</value>
+ <returns>テキスト</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.BaseTab.WidthDef">
+ <summary>
+ コントロールの幅を取得・設定します
+ </summary>
+ <value>幅</value>
+ <returns>幅</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.BaseTab.TabStopSetting">
+ <summary>
+ タブストップの可否を取得・設定します。
+ </summary>
+ <value>タブストップの可否</value>
+ <returns>タブストップ可否</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.BaseTab.InitializeForMakingForm">
+ <summary>
+ フォーム構築時の初期化処理を記述します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.BaseTab.InitBackColor">
+ <summary>
+ 初期化時に背景色を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.BaseTab.InitBorder">
+ <summary>
+ 初期化時に罫線定義を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.BaseTab.InitFont">
+ <summary>
+ 初期化時にフォント定義を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.BaseTab.InitForeColor">
+ <summary>
+ 初期化時に前景色を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.BaseTab.InitHeight">
+ <summary>
+ 初期化時に高さ設定を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.BaseTab.InitTextValue">
+ <summary>
+ 初期化時にテキストの値を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.BaseTab.InitWidth">
+ <summary>
+ 初期化時に幅を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.BaseTab.InitExtraSetting">
+ <summary>
+ 初期化時に固有の項目を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.GUI.Win.BaseGroupBox">
+ <summary>
+ カスタムグループボックスクラス
+ </summary>
+ <remarks>
+ </remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.BaseGroupBox.EnableStatus">
+ <summary>
+ このコントロールのEnable値を取得・設定します。
+ </summary>
+ <value>このコントロールのEnable値</value>
+ <returns>このコントロールのEnable値</returns>
+ <remarks>未実装</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.BaseGroupBox.BackColorDef">
+ <summary>
+ 背景色を取得・設定します
+ </summary>
+ <value>背景色</value>
+ <returns>背景色</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.BaseGroupBox.BorderStyleDef">
+ <summary>
+ 罫線定義を取得・設定します
+ </summary>
+ <value>罫線定義</value>
+ <returns>罫線定義</returns>
+ <remarks>未実装</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.BaseGroupBox.FontDef">
+ <summary>
+ フォント定義を取得・設定します
+ </summary>
+ <value>フォント定義</value>
+ <returns>フォント定義</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.BaseGroupBox.ForeColorDef">
+ <summary>
+ 前景色を取得・設定します
+ </summary>
+ <value>前景色</value>
+ <returns>前景色</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.BaseGroupBox.HeightDef">
+ <summary>
+ コントロールの高さを取得・設定します
+ </summary>
+ <value>高さ設定</value>
+ <returns>高さ設定</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.BaseGroupBox.TextValue">
+ <summary>
+ テキストの値を取得・設定します
+ </summary>
+ <value>テキスト</value>
+ <returns>テキスト</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.GUI.Win.BaseGroupBox.WidthDef">
+ <summary>
+ コントロールの幅を取得・設定します
+ </summary>
+ <value>幅</value>
+ <returns>幅</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.BaseGroupBox.InitializeForMakingForm">
+ <summary>
+ フォーム構築時の初期化処理を記述します。
+ </summary>
+ <remarks>未実装</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.BaseGroupBox.InitBackColor">
+ <summary>
+ 初期化時に背景色を設定します
+ </summary>
+ <remarks>未実装</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.BaseGroupBox.InitBorder">
+ <summary>
+ 初期化時に罫線定義を設定します
+ </summary>
+ <remarks>未実装</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.BaseGroupBox.InitFont">
+ <summary>
+ 初期化時にフォント定義を設定します
+ </summary>
+ <remarks>未実装</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.BaseGroupBox.InitForeColor">
+ <summary>
+ 初期化時に前景色を設定します
+ </summary>
+ <remarks>未実装</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.BaseGroupBox.InitHeight">
+ <summary>
+ 初期化時に高さ設定を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.BaseGroupBox.InitTextValue">
+ <summary>
+ 初期化時にテキストの値を設定します
+ </summary>
+ <remarks>未実装</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.BaseGroupBox.InitWidth">
+ <summary>
+ 初期化時に幅を設定します
+ </summary>
+ <remarks>未実装</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.GUI.Win.BaseGroupBox.InitExtraSetting">
+ <summary>
+ 初期化時に固有の項目を設定します
+ </summary>
+ <remarks>未実装</remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.GUI.Win.BaseToolTip">
+ <summary>
+ カスタムツールチップクラス
+ </summary>
+ <remarks>
+ </remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.Utility.DateFunction">
+ <summary>
+ 日付取得ユーティリティクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.Utility.DateFunction.MonthAdd">
+ <summary>
+ 取得月定義体
+ </summary>
+ <remarks>公開用</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Utility.DateFunction.MonthAdd.ZEN_GETU">
+ <summary>
+ 前月
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Utility.DateFunction.MonthAdd.TOU_GETU">
+ <summary>
+ 当月
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Utility.DateFunction.MonthAdd.YOKU_GETU">
+ <summary>
+ 翌月
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Utility.DateFunction.GetLastDay(System.String,Jp.Co.Nrs.Win.Utility.DateFunction.MonthAdd)">
+ <summary>
+ 引数の文字から月末日付を取得します（数字8桁or6桁の場合のみ）
+ </summary>
+ <param name="value">年月日または年月(yyyyMMdd or yyyyMM)</param>
+ <param name="month">取得月(当月、翌月など)</param>
+ <returns>yyyyMMdd　※取得できない場合は空を返します。</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.Utility.MSExcelUtility">
+ <summary>
+ Microsoft Excel関連ユーティリティ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.Utility.MSExcelUtility.CSV_TBL">
+ <summary>
+ CSV作成関連
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Utility.MSExcelUtility.CSV_TBL.DEFAULT_FILE_NM">
+ <summary>
+ CSVファイル名
+ </summary>
+ <remarks>＠は年月日時分秒</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Utility.MSExcelUtility.CSV_TBL.CONECTION_STRING">
+ <summary>
+ Connection String
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Utility.MSExcelUtility.CSV_TBL.SQL_STRING">
+ <summary>
+ SQL＠Select
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Utility.MSExcelUtility.CSV_TBL.DelimiterForm">
+ <summary>
+ 最初のくくり文字
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Utility.MSExcelUtility.CSV_TBL.C_DelimiterMid">
+ <summary>
+ 項目間のくくり
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Utility.MSExcelUtility.CSV_TBL.C_DelimiterHed">
+ <summary>
+ ヘッダ項目間のくくり
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Utility.MSExcelUtility.CSV_TBL.S_Quotation">
+ <summary>
+ シングルコーテーション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Utility.MSExcelUtility.Download(System.Data.DataTable,System.String,System.Boolean)">
+ <summary>
+ CSV書き出しを行います。
+ </summary>
+ <param name="dt">CSV出力用DataTable</param>
+ <param name="filePath">出力ファイルパス</param>
+ <param name="colTitle">
+ CSV出力用DataTableのカラム名を列タイトル名として
+ True ：書出す
+ False：書出さない
+ </param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Utility.MSExcelUtility.CsvEdith(System.Data.DataTable,System.Collections.Generic.List{System.String})">
+ <summary>
+ CSV出力用DataTableのカラム名を列タイトル名として設定します
+ </summary>
+ <param name="dt"></param>
+ <param name="csvRec"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Utility.MSExcelUtility.CsvEdit(System.Data.DataTable,System.Collections.Generic.List{System.String})">
+ <summary>
+ CSVデータの加工
+ </summary>
+ <param name="dt"></param>
+ <param name="csvRec"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Utility.MSExcelUtility.CreateFolder(System.String)">
+ <summary>
+ フォルダを作成します。
+ </summary>
+ <param name="path"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Utility.MSExcelUtility.GetCsvFileName(System.String)">
+ <summary>
+ CSVファイル名取得
+ </summary>
+ <param name="strType"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Utility.MSExcelUtility.EexcXls(System.String)">
+ <summary>
+ Excel起動(既存のファイルを開く)
+ </summary>
+ <param name="xlsFile"></param>
+ <remarks>
+ 参照設定=COM→Microsoft Excel *.* ObjectLibrary
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Utility.MSExcelUtility.MRComObject(Microsoft.Office.Interop.Excel.Application@)">
+ <summary>
+ COMオブジェクトへの参照を解放する
+ </summary>
+ <param name="objCom"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Utility.MSExcelUtility.CheckProcessCount">
+ <summary>
+ エクセルの残コレクション数をカウントする。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.Utility.Spread.SpreadUtility">
+ <summary>
+ スプレッド用ユーティリティクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Utility.Spread.SpreadUtility.GetCachedMasterDataSet">
+ <summary>
+ キャッシュデータを取得します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Utility.Spread.SpreadUtility.GetNFCachedDataTable(System.String)">
+ <summary>
+ [NF]指定テーブルのマスタキャッシュデータを取得します。
+ </summary>
+ <param name="tableName"></param>
+ <returns></returns>
+ <remarks>(for NF)</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Utility.Spread.SpreadUtility.GetKDCachedDataTable(System.String)">
+ <summary>
+ [KD]指定テーブルのマスタキャッシュデータを取得します
+ </summary>
+ <param name="tableName"></param>
+ <returns></returns>
+ <remarks>(for KD)</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Utility.Spread.SpreadUtility.GetJFCachedDataTable(System.String)">
+ <summary>
+ [JF]指定テーブルのマスタキャッシュデータを取得します。
+ </summary>
+ <param name="tableName"></param>
+ <returns></returns>
+ <remarks>(for JF)</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Utility.Spread.SpreadUtility.GetGTCachedDataTable(System.String)">
+ <summary>
+ [GT]指定テーブルのマスタキャッシュデータを取得します。
+ </summary>
+ <param name="tableName"></param>
+ <returns></returns>
+ <remarks>(for GT)</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Utility.Spread.SpreadUtility.GetLMCachedDataTable(System.String)">
+ <summary>
+ [LM]指定テーブルのマスタキャッシュデータを取得します。
+ </summary>
+ <param name="tableName"></param>
+ <returns></returns>
+ <remarks>(for LM)</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Utility.Spread.SpreadUtility.GetRECachedDataTable(System.String)">
+ <summary>
+ [RE]指定テーブルのマスタキャッシュデータを取得します
+ </summary>
+ <param name="tableName"></param>
+ <returns></returns>
+ <remarks>(for RE)</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Utility.Spread.SpreadUtility.GetSHCachedDataTable(System.String)">
+ <summary>
+ [SH]指定テーブルのマスタキャッシュデータを取得します
+ </summary>
+ <param name="tableName"></param>
+ <returns></returns>
+ <remarks>(for SH)</remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.Utility.Spread.ValidatableCells">
+ <summary>
+ スプレッド入力チェック用ユーティリティクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Utility.Spread.ValidatableCells._Spread">
+ <summary>
+ 入力チェックを行うセルを格納します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Utility.Spread.ValidatableCells._Cell">
+ <summary>
+ 入力チェックを行うセルを格納します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Utility.Spread.ValidatableCells._Row">
+ <summary>
+ 入力チェックを行うセルの行番号を格納します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Utility.Spread.ValidatableCells._Col">
+ <summary>
+ 入力チェックを行うセルの列番号を格納します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Utility.Spread.ValidatableCells._AttentionForeColor">
+ <summary>
+ 入力エラー時の前景色を格納します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Utility.Spread.ValidatableCells._AttentionBackColor">
+ <summary>
+ 入力エラー時の背景色を格納します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Utility.Spread.ValidatableCells._DefaultForeColor">
+ <summary>
+ 通常入力時の前景色を格納します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Utility.Spread.ValidatableCells._DefaultBackColor">
+ <summary>
+ 通常入力時の背景色を格納します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Utility.Spread.ValidatableCells.IsAfterDateCheck">
+ <summary>
+ 未来日チェックの有無を取得・設定します。
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Utility.Spread.ValidatableCells.IsBeforeDateCheck">
+ <summary>
+ 過去日チェックの有無を取得・設定します。
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Utility.Spread.ValidatableCells.IsByteCheck">
+ <summary>
+ バイト数チェックの有無を取得・設定します。
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Utility.Spread.ValidatableCells.IsMojisuCheck">
+ <summary>
+ 文字数チェックの有無
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Utility.Spread.ValidatableCells.IsCalendarCheck">
+ <summary>
+ 暦上日チェックの有無を取得・設定します。
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Utility.Spread.ValidatableCells.IsDakutenCheck">
+ <summary>
+ 濁点チェックの有無を取得・設定します。
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Utility.Spread.ValidatableCells.IsEisuCheck">
+ <summary>
+ 英数字チェックの有無を取得・設定します。
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Utility.Spread.ValidatableCells.IsForbiddenWordsCheck">
+ <summary>
+ 禁止文字チェックの有無を取得・設定します。
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Utility.Spread.ValidatableCells.IsFullByteCheck">
+ <summary>
+ フルバイト数チェックの有無を取得・設定します。
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Utility.Spread.ValidatableCells.IsHissuCheck">
+ <summary>
+ 必須チェックの有無を取得・設定します。
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Utility.Spread.ValidatableCells.IsHankakuCheck">
+ <summary>
+ 半角チェックの有無を取得・設定します。
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Utility.Spread.ValidatableCells.IsKanaCheck">
+ <summary>
+ カナチェックの有無を取得・設定します。
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Utility.Spread.ValidatableCells.IsNumericCheck">
+ <summary>
+ 数値チェックの有無を取得・設定します。
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Utility.Spread.ValidatableCells.IsRangeCheck">
+ <summary>
+ 範囲チェック（単項目）の有無を取得・設定します。
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Utility.Spread.ValidatableCells.IsSujiCheck">
+ <summary>
+ 数字チェックの有無を取得・設定します。
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Utility.Spread.ValidatableCells.IsZenkakuCheck">
+ <summary>
+ 全角チェックの有無を取得・設定します。
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Utility.Spread.ValidatableCells.IsMiddleSpace">
+ <summary>
+ 中間スペースチェックの有無を取得・設定します。
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Utility.Spread.ValidatableCells.EnableStatus">
+ <summary>
+ 入力不可を取得・設定します
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Utility.Spread.ValidatableCells.ReadOnlyStatus">
+ <summary>
+ 入力不可を取得・設定します
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Utility.Spread.ValidatableCells.BackColorDef">
+ <summary>
+ 背景色を取得・設定します
+ </summary>
+ <value>背景</value>
+ <returns>背景</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Utility.Spread.ValidatableCells.BorderStyleDef">
+ <summary>
+ 罫線定義を取得・設定します
+ </summary>
+ <value>罫線定義</value>
+ <returns>罫線定義</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Utility.Spread.ValidatableCells.FontDef">
+ <summary>
+ フォント定義を取得・設定します
+ </summary>
+ <value>フォント定義</value>
+ <returns>フォント定義</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Utility.Spread.ValidatableCells.ForeColorDef">
+ <summary>
+ 前景色を取得・設定します
+ </summary>
+ <value>前景色</value>
+ <returns>前景色</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Utility.Spread.ValidatableCells.HeightDef">
+ <summary>
+ 高さ設定を取得・設定します
+ </summary>
+ <value>高さ設定</value>
+ <returns>高さ設定</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Utility.Spread.ValidatableCells.TextValue">
+ <summary>
+ テキストの値を取得・設定します
+ </summary>
+ <value>テキスト</value>
+ <returns>テキスト</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Utility.Spread.ValidatableCells.WidthDef">
+ <summary>
+ 幅設定
+ </summary>
+ <value>幅</value>
+ <returns>幅</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Utility.Spread.ValidatableCells.TabStopSetting">
+ <summary>
+ タブストップの可否を取得・設定します。
+ </summary>
+ <value>タブストップの可否</value>
+ <returns>タブストップ可否</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Utility.Spread.ValidatableCells.SetValidateCell(System.Int32,System.Int32)">
+ <summary>
+ 入力チェック対象のセルを設定します。
+ </summary>
+ <param name="row"></param>
+ <param name="col"></param>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Utility.Spread.ValidatableCells.InitValues">
+ <summary>
+ 色とチェックフラグ以外のフィールドの初期化を行います。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Utility.Spread.ValidatableCells.InitColor">
+ <summary>
+ セルの色設定を初期化します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Utility.Spread.ValidatableCells.GetValueForValidate">
+ <summary>
+ 入力チェック用の値を取得します。
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Utility.Spread.ValidatableCells.SetDefault">
+ <summary>
+ 入力チェック正常時の処理を実行します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Utility.Spread.ValidatableCells.SetDefaultColor">
+ <summary>
+ 入力チェック正常時の色設定を適用します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Utility.Spread.ValidatableCells.SetAttention">
+ <summary>
+ 入力チェックエラー時にセルに対して色を設定し、アクティブにします。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Utility.Spread.ValidatableCells.SetAttentionColor">
+ <summary>
+ 入力チェックエラー時の色設定を適用します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Utility.Spread.ValidatableCells.FinishCheck">
+ <summary>
+ 入力チェックの後処理を行います。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Utility.Spread.ValidatableCells.ResetCheckFlg">
+ <summary>
+ 入力チェック後にチェック用フラグを初期化します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Utility.Spread.ValidatableCells.InitializeForMakingForm">
+ <summary>
+ フォーム構築時の初期化処理を記述します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Utility.Spread.ValidatableCells.InitBackColor">
+ <summary>
+ 初期化時に背景色を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Utility.Spread.ValidatableCells.InitBorder">
+ <summary>
+ 初期化時に罫線定義を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Utility.Spread.ValidatableCells.InitFont">
+ <summary>
+ 初期化時にフォント定義を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Utility.Spread.ValidatableCells.InitForeColor">
+ <summary>
+ 初期化時に前景色を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Utility.Spread.ValidatableCells.InitHeight">
+ <summary>
+ 初期化時に高さ設定を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Utility.Spread.ValidatableCells.InitTextValue">
+ <summary>
+ 初期化時にテキストの値を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Utility.Spread.ValidatableCells.InitWidth">
+ <summary>
+ 初期化時に幅を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Utility.Spread.ValidatableCells.InitExtraSetting">
+ <summary>
+ 初期化時に固有の項目を設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.Utility.Spread.SpreadColProperty">
+ <summary>
+ スプレッド列定義用ユーティリティクラス
+ </summary>
+ <remarks>
+ 「列順」「列名」「列幅」「列の表示・非表示」を定義できます。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Utility.Spread.SpreadColProperty.#ctor(System.Int32,System.String,System.Int32,System.Boolean)">
+ <summary>
+ コンストラクタです
+ </summary>
+ <param name="colNo">列順</param>
+ <param name="colName">列名</param>
+ <param name="colWidth">列幅</param>
+ <param name="visible">列の表示・非表示</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Utility.Spread.SpreadColProperty.#ctor(System.Int32,System.String,System.String,System.Int32,System.Boolean)">
+ <summary>
+ コンストラクタです
+ </summary>
+ <param name="colNo">列順</param>
+ <param name="colNameJa">列名(日本語)</param>
+ <param name="colNameEn">列名(英語)</param>
+ <param name="colWidth">列幅</param>
+ <param name="visible">列の表示・非表示</param>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Utility.Spread.SpreadColProperty.ColNo">
+ <summary>
+ 列順を取得・設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Utility.Spread.SpreadColProperty.ColName">
+ <summary>
+ 列名を取得・設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Utility.Spread.SpreadColProperty.ColWidth">
+ <summary>
+ 列幅を取得・設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.Win.Utility.Spread.SpreadColProperty.Visible">
+ <summary>
+ 表示・非表示フラグを取得・設定します
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.Utility.StrUtility">
+ <summary>
+ 文字列操作用ユーティリティクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Utility.StrUtility.SINGLE_QUOTATION">
+ <summary>
+ シングルコーテーション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Utility.StrUtility.FIX_SINGLE_QUOTATION">
+ <summary>
+ 整形後のシングルコーテーション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Utility.StrUtility.FixStringForDT(System.String)">
+ <summary>
+ データテーブルへの検索文字列に対して、文字列を整形します
+ </summary>
+ <param name="sql">データテーブルへの検索文字列</param>
+ <returns>整形した文字列</returns>
+ <remarks>
+ 【対応文字】 
+ ① '
+ </remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.Utility.ValidateUtility">
+ <summary>
+ 入力チェック用ユーティリティクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Utility.ValidateUtility.NUMBERS">
+ <summary>
+ 数字チェック用定数
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Utility.ValidateUtility.ALPHABETS">
+ <summary>
+ 英字チェック用定数
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Win.Utility.ValidateUtility.FORBIDDEN_WORDS">
+ <summary>
+ 禁止文字チェック用定数
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Utility.ValidateUtility.IsHissuCheckErr(System.String)">
+ <summary>
+ 必須チェック
+ </summary>
+ <param name="value">チェック対象文字列</param>
+ <returns>
+ True：エラーあり
+ Falase：エラーなし
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Utility.ValidateUtility.IsZenkauCheckErr(System.String)">
+ <summary>
+ 全角チェック
+ </summary>
+ <param name="value">チェック対象文字列</param>
+ <returns>
+ True：エラーあり
+ Falase：エラーなし
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Utility.ValidateUtility.IsHankakuCheckErr(System.String)">
+ <summary>
+ 半角チェック
+ </summary>
+ <param name="value">チェック対象文字列</param>
+ <returns>
+ True：エラーあり
+ Falase：エラーなし
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Utility.ValidateUtility.IsForbiddenWordsCheckErr(System.String,System.String)">
+ <summary>
+ 禁止文字チェック
+ </summary>
+ <param name="value">チェック対象文字列</param>
+ <param name="exCharacters">チェック除外文字列</param>
+ <returns>
+ True：エラーあり
+ Falase：エラーなし
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Utility.ValidateUtility.IsEisuCheckErr(System.String,System.String)">
+ <summary>
+ 英数字チェック
+ </summary>
+ <param name="value">チェック対象文字列</param>
+ <param name="exCharacters">チェック対象外文字列</param>
+ <returns>
+ True：エラーあり
+ Falase：エラーなし
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Utility.ValidateUtility.IsSujiCheckErr(System.String)">
+ <summary>
+ 数字チェック
+ </summary>
+ <param name="value">チェック対象文字列</param>
+ <returns>
+ True：エラーあり
+ Falase：エラーなし
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Utility.ValidateUtility.IsNumericCheckErr(System.String)">
+ <summary>
+ 数値チェック
+ </summary>
+ <param name="value">チェック対象文字列</param>
+ <returns>
+ True：エラーあり
+ Falase：エラーなし
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Utility.ValidateUtility.IsMiddleSpaceCheckErr(System.String)">
+ <summary>
+ 中間スペースチェック
+ </summary>
+ <param name="value">チェック対象文字列</param>
+ <returns>
+ True：エラーあり
+ Falase：エラーなし
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Utility.ValidateUtility.IsByteCheckErr(System.String,System.Int32)">
+ <summary>
+ バイトチェック
+ </summary>
+ <param name="value">チェック対象文字列</param>
+ <param name="maxLen"></param>
+ <returns>
+ True：エラーあり
+ Falase：エラーなし
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Utility.ValidateUtility.IsFullByteCheckErr(System.String,System.Int32)">
+ <summary>
+ フルバイトチェック
+ </summary>
+ <param name="value">チェック対象文字列</param>
+ <param name="maxLen"></param>
+ <returns>
+ True：エラーあり
+ Falase：エラーなし
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Utility.ValidateUtility.IsMojisuCheckErr(System.String,System.Int32)">
+ <summary>
+ 文字数チェック
+ </summary>
+ <param name="value">チェック対象文字列</param>
+ <param name="maxLen"></param>
+ <returns>
+ True：エラーあり
+ Falase：エラーなし
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Utility.ValidateUtility.IsBeforeDateCheckErr(System.String,System.String)">
+ <summary>
+ 過去日チェック
+ </summary>
+ <param name="value">チェック対象文字列</param>
+ <param name="minDate"></param>
+ <returns>
+ True：エラーあり
+ Falase：エラーなし
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.Utility.XMLManager">
+ <summary>
+ XMLファイル読み書き用ユーティリティクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Utility.XMLManager.ReadXMLByPath(System.String)">
+ <summary>
+ 指定された場所にあるXMLファイルを読み込みます。
+ </summary>
+ <param name="xmlFilePathFull"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Win.Utility.DateFormatUtility">
+ <summary>
+ 日付用ユーティリティクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Utility.DateFormatUtility.EditSlash(System.String)">
+ <summary>
+ 引数の文字列をスラッシュ編集します（数字8桁or6桁の場合のみ）
+ </summary>
+ <param name="value">編集対象の文字列</param>
+ <returns>スラッシュ編集された文字列</returns>
+ <remarks>
+ ObsoleteAttribute("参照先をCom.LibraryのDateFormatUtilityに変更して下さい。")> _
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Win.Utility.DateFormatUtility.DeleteSlash(System.String)">
+ <summary>
+ 引数の文字列からスラッシュを取り除きます(日付として妥当な値のみ)
+ </summary>
+ <param name="value">編集対象の文字列</param>
+ <returns>スラッシュを取り除いた文字列</returns>
+ <remarks>
+ ObsoleteAttribute("参照先をCom.LibraryのDateFormatUtilityに変更して下さい。")> _
+ </remarks>
+</member>
+</members>
+</doc>

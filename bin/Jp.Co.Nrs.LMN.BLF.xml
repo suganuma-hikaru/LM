@@ -1,0 +1,265 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.LMN.BLF
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMN010BLF">
+ <summary>
+ LMN010BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMN010BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMN010BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 出荷EDIデータ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMN010BLF.SetteiData(System.Data.DataSet)">
+ <summary>
+ 設定処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMN010BLF.SetteiInsertData(System.Data.DataSet)">
+ <summary>
+ 新規登録処理
+ </summary>
+ <param name="ds">DataSet(登録用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMN010BLF.SetteiUpdateData(System.Data.DataSet)">
+ <summary>
+ 更新処理
+ </summary>
+ <param name="ds">DataSet(更新用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMN010BLF.SoushinShijiSelect(System.Data.DataSet)">
+ <summary>
+ 送信指示データ取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMN010BLF.CreateSettingHedData(System.Data.DataRow,Jp.Co.Nrs.LM.DSL.LMH800DS)">
+ <summary>
+ LMH800DSのヘッダ部設定
+ </summary>
+ <param name="lmn010dr"></param>
+ <param name="lmh800Ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMN010BLF.CreateSettingDtlData(System.Data.DataRow,Jp.Co.Nrs.LM.DSL.LMH800DS)">
+ <summary>
+ LMH800DSの明細部設定
+ </summary>
+ <param name="lmn010dr"></param>
+ <param name="lmh800Ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMN010BLF.JissekiTorikomi(System.Data.DataSet)">
+ <summary>
+ 実績取込データ取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMN010BLF.UpdateJissekiTorikomiData(System.Data.DataSet)">
+ <summary>
+ 更新処理
+ </summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMN010BLF.CheckJissekiSoushin(System.Data.DataSet)">
+ <summary>
+ 出荷、納入日チェック
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMN010BLF.JissekiSoushin(System.Data.DataSet)">
+ <summary>
+ 実績送信
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMN010BLF.CreateSettingSendData(System.Data.DataSet,Jp.Co.Nrs.LM.DSL.LMN800DS)">
+ <summary>
+ LMH800DSのヘッダ部設定
+ </summary>
+ <param name="lmn010ds"></param>
+ <param name="lmn800Ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMN010BLF.UpdateJissekiSoushinData(System.Data.DataSet)">
+ <summary>
+ 実績送信更新処理
+ </summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMN010BLF.UpdKeppinJoutai(System.Data.DataSet)">
+ <summary>
+ 欠品状態更新処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMN020BLF">
+ <summary>
+ LMN020BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMN020BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMN020BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 初期表示データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMN020BLF.DeleteDataInsFlgOff(System.Data.DataSet)">
+ <summary>
+ 出荷データ詳細削除処理(INSERT_FLG = '0'/ステータス「00:未設定」「01:設定済み」時)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMN020BLF.DeleteDataInsFlgOffSoko(System.Data.DataSet)">
+ <summary>
+ 出荷データ詳細削除処理(INSERT_FLG = '0'/ステータス「02:倉庫指示済み」時)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMN020BLF.DeleteDataInsFlgOn(System.Data.DataSet)">
+ <summary>
+ 出荷データ詳細削除処理(INSERT_FLG = '1'時)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMN020BLF.InitData(System.Data.DataSet)">
+ <summary>
+ 出荷データ詳細初期化処理(ステータス「00:未設定」「01:設定済み」時)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMN020BLF.InitDataSokoChk(System.Data.DataSet)">
+ <summary>
+ 出荷データ詳細初期化処理(ステータス「02:倉庫指示済み」時)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMN060BLF">
+ <summary>
+ LMN060BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMN060BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMN060BLF.SelectDetail(System.Data.DataSet)">
+ <summary>
+ 検索処理を行う
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMN060BLF.UpdZaikoNissu(System.Data.DataSet)">
+ <summary>
+ 在庫日数算出、更新処理を行う
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMN060BLF.LMN520Preview(System.Data.DataSet)">
+ <summary>
+ 商品別過去実績推移プレビュー表示を行う
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMN080BLF">
+ <summary>
+ LMN060BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMN080BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMN080BLF.Kensaku(System.Data.DataSet)">
+ <summary>
+ 検索処理を行う
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMN080BLF.GetKEPPIN_NB(System.Data.DataSet)">
+ <summary>
+ 欠品品目数、欠品危惧品目数取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMN080BLF.GetHIKIATE_NB(System.Data.DataSet)">
+ <summary>
+ 今回引当数取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

@@ -1,0 +1,1361 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.CSC.BLC
+</name>
+</assembly>
+<members>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC010BLC.FUNCTION_NM.SELECT_DATA">
+ <summary>
+ 検索結果データ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC010BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC010BLC.SelectResultList(System.Data.DataSet)">
+ <summary>
+ 検索結果情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC020BLC.FUNCTION_NM.SELECT_DATA">
+ <summary>
+ 検索結果データ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC020BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC020BLC.SelectResultList(System.Data.DataSet)">
+ <summary>
+ 検索結果情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC030BLC.FUNCTION_NM.SELECT_DATA">
+ <summary>
+ 検索結果データ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC030BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC030BLC.SelectResultList(System.Data.DataSet)">
+ <summary>
+ 検索結果情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC260BLC.FUNCTION_NM.SELECT_DATA">
+ <summary>
+ 初期表示取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC260BLC.FUNCTION_NM.SAVE_UPD">
+ <summary>
+ 保存(更新)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC260BLC.FUNCTION_NM.LOAD_COMPLETE">
+ <summary>
+ 充填完了
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC260BLC.FUNCTION_NM.COMPLETE_CANCEL">
+ <summary>
+ 完了キャンセル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC260BLC.FUNCTION_NM.HAITA_CHK">
+ <summary>
+ 排他チェック
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC260BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC260BLC.SelectInitData(System.Data.DataSet)">
+ <summary>
+ 初期表示情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC260BLC.SelectLoadResultData(System.Data.DataSet)">
+ <summary>
+ 充填内容ータ取得処理取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC260BLC.SelectZSystem(System.Data.DataSet)">
+ <summary>
+ Z_SYSTEM取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC260BLC.UpdateLoadResultSaveData(System.Data.DataSet)">
+ <summary>
+ 保存（更新）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC260BLC.UpdateSaveLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 保存（D_LOGISTICS_DTL）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC260BLC.UpdateLoadCompleteData(System.Data.DataSet)">
+ <summary>
+ 充填完了
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC260BLC.UpdateLoadCompleteLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 充填完了（D_LOGISTICS_DTL）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC260BLC.UpdateLoadCompleteNextLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 充填完了（D_LOGISTICS_DTL：未来分）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC260BLC.SetLoadCompleteDataSet(System.Data.DataSet)">
+ <summary>
+ 充填完了データセット更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC260BLC.UpdateLoadCompleteCancelData(System.Data.DataSet)">
+ <summary>
+ 完了キャンセル
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC260BLC.UpdateLoadCompleteCancelLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 充填完了（D_LOGISTICS_DTL）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC260BLC.UpdateLoadCompleteCancelNextLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 充填完了（D_LOGISTICS_DTL：未来分）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC260BLC.SetLoadCompleteCancelDataSet(System.Data.DataSet)">
+ <summary>
+ 充填完了データセット更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC260BLC.IsHaitaChk(System.Data.DataSet)">
+ <summary>
+ 排他制御
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC260BLC.AddRowZSystemCSC260(System.Data.DataSet@,System.String,System.String)">
+ <summary>
+ Z_SYSTEM行追加処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="procKbn">Z_SYSTEM処理区分</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC260BLC.AddRowZSystemDtlCSC260(System.Data.DataSet@,System.String,System.String)">
+ <summary>
+ Z_SYSTEM行追加処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="procKbn">Z_SYSTEM処理区分</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC250BLC.FUNCTION_NM.SELECT_DATA">
+ <summary>
+ 初期表示取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC250BLC.FUNCTION_NM.SAVE_INS">
+ <summary>
+ 保存(登録)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC250BLC.FUNCTION_NM.SAVE_UPD">
+ <summary>
+ 保存(更新)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC250BLC.FUNCTION_NM.DEL">
+ <summary>
+ 削除
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC250BLC.FUNCTION_NM.LOAD_ORDER">
+ <summary>
+ 充填依頼
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC250BLC.FUNCTION_NM.ROLLBACK">
+ <summary>
+ ロールバック
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC250BLC.FUNCTION_NM.HAITA_CHK">
+ <summary>
+ 排他チェック
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC250BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC250BLC.SelectInitData(System.Data.DataSet)">
+ <summary>
+ 初期表示情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC250BLC.SelectLoadOrdHeadData(System.Data.DataSet)">
+ <summary>
+ CSC250OUT取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC250BLC.SelectLoadOrdDtlData(System.Data.DataSet)">
+ <summary>
+ CSC250OUT_DTL取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC250BLC.SelectZSystem(System.Data.DataSet)">
+ <summary>
+ Z_SYSTEM取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC250BLC.InsertLoadOrderSaveData(System.Data.DataSet)">
+ <summary>
+ 保存（登録）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC250BLC.UpdateLoadOrderSaveData(System.Data.DataSet)">
+ <summary>
+ 保存（更新）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC250BLC.SetNewLoadOrderNo(System.Data.DataSet@)">
+ <summary>
+ 充填依頼番号新規採番
+ 新規登録時時設定項目
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC250BLC.SetDataSetSave(System.Data.DataSet@)">
+ <summary>
+ 保存時データセット書き換え
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC250BLC.InsertSaveLoadOrdHead(System.Data.DataSet)">
+ <summary>
+ 充填依頼ヘッダ登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC250BLC.UpdateSaveLoadOrdHead(System.Data.DataSet)">
+ <summary>
+ 充填依頼ヘッダ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC250BLC.UpdateSaveLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 物流明細更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC250BLC.DeleteLoadOrderData(System.Data.DataSet)">
+ <summary>
+ 削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC250BLC.SetDataSetDelete(System.Data.DataSet@)">
+ <summary>
+ 削除時データセット書き換え
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC250BLC.UpdateDeleteLoadOrdHead(System.Data.DataSet)">
+ <summary>
+ 充填依頼ヘッダ削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC250BLC.UpdateDeleteLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 物流明細更新（充填依頼番号を初期化）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC250BLC.LoadOrderRequestData(System.Data.DataSet)">
+ <summary>
+ 充填依頼
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC250BLC.SetDataSetLoadOrder(System.Data.DataSet@)">
+ <summary>
+ 充填依頼データセット書き換え
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC250BLC.UpdateLoadOrdRequestHead(System.Data.DataSet)">
+ <summary>
+ 充填依頼ヘッダ更新(充填依頼)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC250BLC.UpdateLoadOrdRequestLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 物流明細更新（容器ステータス区分更新）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC250BLC.LoadOrderRollBackData(System.Data.DataSet)">
+ <summary>
+ ロールバック依頼
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC250BLC.SetDataSetRollBack(System.Data.DataSet@)">
+ <summary>
+ ロールバックデータセット書き換え
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC250BLC.UpdateRollBackHead(System.Data.DataSet)">
+ <summary>
+ 充填依頼ヘッダ更新(ロールバック)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC250BLC.UpdateRollBackLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 物流明細更新（ロールバック）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC250BLC.IsHaitaChk(System.Data.DataSet)">
+ <summary>
+ 排他制御
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC250BLC.AddRowZSystemCSC250(System.Data.DataSet@,System.String,System.String)">
+ <summary>
+ Z_SYSTEM行追加処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="procKbn">Z_SYSTEM処理区分</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC250BLC.CallDacSelectedData(System.Data.DataSet,System.String,System.String,System.String,System.String)">
+ <summary>
+ 指定条件でデータを抽出し、DACを呼び出す。
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="tblNm">データ抽出テーブル名</param>
+ <param name="sql">データ抽出条件</param>
+ <param name="sortKey">データ抽出時のソートキー</param>
+ <param name="dacMethodNm">呼び出すDACメソッド名</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC050BLC.FUNCTION_NM.SELECT_DATA">
+ <summary>
+ 初期表示取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC050BLC.FUNCTION_NM.SAVE_UPD">
+ <summary>
+ 保存(更新)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC050BLC.FUNCTION_NM.OUT_COMP">
+ <summary>
+ 外観チェック完了
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC050BLC.FUNCTION_NM.REPAIR_COMP">
+ <summary>
+ 修理完了
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC050BLC.FUNCTION_NM.REPAIR_IMPOSSIBLE">
+ <summary>
+ 修理不可
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC050BLC.FUNCTION_NM.ROLLBACK">
+ <summary>
+ ロールバック
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC050BLC.FUNCTION_NM.SURVEY_INSTRUCT">
+ <summary>
+ 調査指示
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC050BLC.FUNCTION_NM.SURVEY_UNNECESSARY">
+ <summary>
+ 調査不要
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC050BLC.FUNCTION_NM.MAIL_SEND_CUST">
+ <summary>
+ 顧客メール送信
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC050BLC.FUNCTION_NM.CUST_CONF_COMP">
+ <summary>
+ 顧客確認完了
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC050BLC.FUNCTION_NM.RES_CONF_COMP">
+ <summary>
+ 調査結果確認完了
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC050BLC.FUNCTION_NM.HAITA_CHK">
+ <summary>
+ 排他チェック
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC050BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC050BLC.SelectInitData(System.Data.DataSet)">
+ <summary>
+ 初期表示情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC050BLC.SelectOutsideCheckData(System.Data.DataSet)">
+ <summary>
+ 外観チェック・修理データ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC050BLC.SelectCheckLogisticsOrdOutShipmentData(System.Data.DataSet)">
+ <summary>
+ （入力チェック項目）物流依頼ヘッダ取得(出荷前)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC050BLC.SelectCheckTransOrdOutShipmentData(System.Data.DataSet)">
+ <summary>
+ （入力チェック項目）保管場所依頼ヘッダ取得(移動)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC050BLC.SelectCheckInOutOrdDtlSumiCntData(System.Data.DataSet)">
+ <summary>
+ （入力チェック項目）入出荷済レコード数取得（移動、出荷前）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC050BLC.SelectZSystem(System.Data.DataSet)">
+ <summary>
+ Z_SYSTEM取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC050BLC.UpdateSaveOutsideCheckData(System.Data.DataSet)">
+ <summary>
+ 保存（更新）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC050BLC.UpdateSaveLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 保存（D_LOGISTICS_DTL）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC050BLC.UpdateSaveDmgOrder(System.Data.DataSet)">
+ <summary>
+ 保存（B_DMG_ORD）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC050BLC.UpdateOutsideCheckCompleteData(System.Data.DataSet)">
+ <summary>
+ 外観チェック完了
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC050BLC.UpdateOutSideCompleteLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 外観チェック完了（D_LOGISTICS_DTL）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC050BLC.InsertOutSideCompleteDmgOrder(System.Data.DataSet)">
+ <summary>
+ 外観チェック完了（B_DMG_ORD）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC050BLC.SetOutSideCompleteDataSet(System.Data.DataSet)">
+ <summary>
+ 外観チェック完了データセット更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC050BLC.IsHaitaStaChk(System.Data.DataSet)">
+ <summary>
+ 外観チェック完了ステータス排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC050BLC.UpdateRepairCompleteData(System.Data.DataSet)">
+ <summary>
+ 修理完了
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC050BLC.UpdateRepairCompleteLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 修理完了（D_LOGISTICS_DTL）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC050BLC.SetRepairCompleteDataSet(System.Data.DataSet)">
+ <summary>
+ 修理完了データセット更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC050BLC.UpdateRepairImpossibleData(System.Data.DataSet)">
+ <summary>
+ 修理不可
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC050BLC.UpdateRepairImpossibleLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 修理完了（D_LOGISTICS_DTL）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC050BLC.SetRepairImpossibleDataSet(System.Data.DataSet)">
+ <summary>
+ 修理完了データセット更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC050BLC.UpdateRollBackData(System.Data.DataSet)">
+ <summary>
+ ロールバック
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC050BLC.UpdateRollBackLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ ロールバック（D_LOGISTICS_DTL）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC050BLC.DeleteRollBackDmgOrder(System.Data.DataSet)">
+ <summary>
+ ロールバック（B_DMG_ORD）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC050BLC.SetRollBackDataSet(System.Data.DataSet)">
+ <summary>
+ ロールバックデータセット更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC050BLC.UpdateSurveyInstructData(System.Data.DataSet)">
+ <summary>
+ 調査指示
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC050BLC.UpdateSurveyInstructDmgOrder(System.Data.DataSet)">
+ <summary>
+ 調査指示（B_DMG_ORD）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC050BLC.SetSurveyInstructDataSet(System.Data.DataSet)">
+ <summary>
+ 調査指示データセット更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC050BLC.UpdateSurveyUnnecessaryData(System.Data.DataSet)">
+ <summary>
+ 調査不要
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC050BLC.UpdateSurveyUnnecessaryDmgOrder(System.Data.DataSet)">
+ <summary>
+ 調査不要（B_DMG_ORD）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC050BLC.SetSurveyUnnecessaryDataSet(System.Data.DataSet)">
+ <summary>
+ 調査不要データセット更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC050BLC.UpdateMailSendCustData(System.Data.DataSet)">
+ <summary>
+ 顧客メール送信
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC050BLC.SetMailSendCustDataSet(System.Data.DataSet)">
+ <summary>
+ 顧客メール送信データセット更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC050BLC.UpdateMailSendCustDmgOrder(System.Data.DataSet)">
+ <summary>
+ 顧客メール送信（B_DMG_ORD）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC050BLC.InsertSJobMsgData(System.Data.DataSet)">
+ <summary>
+ 顧客メール送信（S_JOB_MSG）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC050BLC.InsertSJobMsgDtlData(System.Data.DataSet)">
+ <summary>
+ 顧客メール送信（S_JOB_MSG_DTL）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC050BLC.UpdateCustConfirmCompleteData(System.Data.DataSet)">
+ <summary>
+ 顧客確認完了
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC050BLC.UpdateCustConfirmCompleteDmgOrder(System.Data.DataSet)">
+ <summary>
+ 顧客確認完了（B_DMG_ORD）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC050BLC.SetCustConfirmCompleteDataSet(System.Data.DataSet)">
+ <summary>
+ 顧客確認完了データセット更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC050BLC.UpdateResultConfirmCompleteData(System.Data.DataSet)">
+ <summary>
+ 顧客確認完了
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC050BLC.UpdateResultConfirmCompletDmgOrder(System.Data.DataSet)">
+ <summary>
+ 調査結果確認完了（B_DMG_ORD）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC050BLC.SetResultConfirmCompletDataSet(System.Data.DataSet)">
+ <summary>
+ 調査結果確認完了データセット更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC050BLC.UpdateLogisticsDtlSysCom(System.Data.DataSet)">
+ <summary>
+ システム共通項目更新（D_LOGISTICS_DTL）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC050BLC.IsHaitaChk(System.Data.DataSet)">
+ <summary>
+ 排他制御
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC050BLC.SendMailProc(System.Data.DataSet)">
+ <summary>
+メッセージ送信処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC050BLC.CreateEWSToolSendMailDataSet">
+ <summary>
+ EWSTool SendMail用DataSet作成
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC050BLC.IsNeedDmgOrder(System.Data.DataSet)">
+ <summary>
+ 外損調査レコード要否チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks>修理区分：00001(該当)の場合、外損調査レコードが存在する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC050BLC.AddRowZSystemCSC050(System.Data.DataSet@,System.String,System.String)">
+ <summary>
+ Z_SYSTEM行追加処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="procKbn">Z_SYSTEM処理区分</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC110BLC.FUNCTION_NM.SELECT_DATA">
+ <summary>
+ 検索結果データ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC110BLC.FUNCTION_NM.UPD_DONE">
+ <summary>
+ 更新(完了)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC110BLC.FUNCTION_NM.UPD_DONE_REPAIR">
+ <summary>
+ 更新(完了（外部修理：要）)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC110BLC.FUNCTION_NM.UPD_CANCEL">
+ <summary>
+ 更新(キャンセル)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC110BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC110BLC.SelectResultList(System.Data.DataSet)">
+ <summary>
+ 検索結果情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC110BLC.UpdateTankStaKbnForWashDone(System.Data.DataSet)">
+ <summary>
+ 更新（洗浄作業:完了）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC110BLC.UpdateTankStaKbnForWashDoneRepair(System.Data.DataSet)">
+ <summary>
+ 更新（洗浄作業:完了（外部修理：要））
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC110BLC.UpdateTankStaKbnForWashCancel(System.Data.DataSet)">
+ <summary>
+ 更新（洗浄作業:ロールバック）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC110BLC.SetWashCompleteDataSet(System.Data.DataSet)">
+ <summary>
+ 洗浄完了データセット更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC110BLC.SetWashCompleteRepairDataSet(System.Data.DataSet)">
+ <summary>
+ 洗浄完了（外部修理：要）データセット更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC110BLC.SetWashCancelDataSet(System.Data.DataSet)">
+ <summary>
+ 洗浄キャンセルデータセット更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC110BLC.UpdateTankStaKbnForWash(System.Data.DataSet)">
+ <summary>
+ D_LOGISTICS_DTL更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC110BLC.AddRowZSystemCSC110(System.Data.DataSet@,System.String,System.String)">
+ <summary>
+ Z_SYSTEM行追加処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="procKbn">Z_SYSTEM処理区分</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC210BLC.FUNCTION_NM.SELECT_DATA">
+ <summary>
+ 検索結果データ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC210BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC210BLC.SelectResultList(System.Data.DataSet)">
+ <summary>
+ 検索結果情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC220BLC.FUNCTION_NM.SELECT_DATA">
+ <summary>
+ 検索結果データ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC220BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC220BLC.SelectResultList(System.Data.DataSet)">
+ <summary>
+ 検索結果情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC310BLC.FUNCTION_NM.SELECT_DATA">
+ <summary>
+ 検索結果データ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC310BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC310BLC.SelectResultList(System.Data.DataSet)">
+ <summary>
+ 検索結果情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC320BLC.FUNCTION_NM.SELECT_DATA">
+ <summary>
+ 初期表示取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC320BLC.FUNCTION_NM.UPDATE_SAVE">
+ <summary>
+ 保存
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC320BLC.FUNCTION_NM.UPDATE_COMPLETE">
+ <summary>
+ チェック完了
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC320BLC.FUNCTION_NM.UPDATE_ROLLBACK">
+ <summary>
+ ロールバック
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC320BLC.FUNCTION_NM.HAITA_CHK">
+ <summary>
+ 排他チェック
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC320BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC320BLC.SelectInitData(System.Data.DataSet)">
+ <summary>
+ 初期表示情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC320BLC.UpdateSave(System.Data.DataSet)">
+ <summary>
+ 保存
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC320BLC.UpdateComplete(System.Data.DataSet)">
+ <summary>
+ チェック完了
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC320BLC.UpdateRollback(System.Data.DataSet)">
+ <summary>
+ ロールバック
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC320BLC.IsHaitaChk(System.Data.DataSet)">
+ <summary>
+ 排他制御
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC320BLC.InsertZSystem(System.Data.DataSet@,System.String)">
+ <summary>
+ Z_SYSTEM登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="procKbn">Z_SYSTEM処理区分</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC510BLC.FUNCTION_NM.SELECT_DATA">
+ <summary>
+ 検索結果データ取得
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC510BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC510BLC.SelectResultList(System.Data.DataSet)">
+ <summary>
+ 検索結果情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC520BLC.FUNCTION_NM.SELECT_DATA">
+ <summary>
+ 検索結果データ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC520BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC520BLC.SelectResultList(System.Data.DataSet)">
+ <summary>
+ 検索結果情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC540BLC.FUNCTION_NM.SELECT_DATA">
+ <summary>
+ 検索結果データ取得
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC540BLC.FUNCTION_NM.COMPLETE">
+ <summary>
+ 洗浄完了
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC540BLC.FUNCTION_NM.COMPLETE_REPAIR">
+ <summary>
+ 洗浄完了（外部修理：要）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC540BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC540BLC.SelectResultList(System.Data.DataSet)">
+ <summary>
+ 検索結果情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC540BLC.CompleteDLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 洗浄完了
+ </summary>
+ <param name="ds">DataSet</param>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC540BLC.CompleteRepairDLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 洗浄完了（外部修理：要）
+ </summary>
+ <param name="ds">DataSet</param>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC540BLC.InsertZSystemCSC540(System.Data.DataSet@,System.String)">
+ <summary>
+ Z_SYSTEM登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="procKbn">Z_SYSTEM処理区分</param>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC550BLC.FUNCTION_NM.SELECT_DATA">
+ <summary>
+ 初期表示取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC550BLC.FUNCTION_NM.OUT_COMP">
+ <summary>
+ 外観チェック完了
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC550BLC.FUNCTION_NM.REPAIR_COMP">
+ <summary>
+ 修理完了
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC550BLC.FUNCTION_NM.REPAIR_IMPOSSIBLE">
+ <summary>
+ 修理不可
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC550BLC.FUNCTION_NM.SAVE_PHOTO">
+ <summary>
+ 写真撮影
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC550BLC.FUNCTION_NM.SELECT_PHOTO">
+ <summary>
+ 写真取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSC550BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC550BLC.SelectInitData(System.Data.DataSet)">
+ <summary>
+ 初期表示情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC550BLC.SelectOutsideCheckData(System.Data.DataSet)">
+ <summary>
+ 外観チェック・修理データ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC550BLC.SelectCheckLogisticsOrdOutShipmentData(System.Data.DataSet)">
+ <summary>
+ （入力チェック項目）物流依頼ヘッダ取得(出荷前)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC550BLC.SelectCheckTransOrdOutShipmentData(System.Data.DataSet)">
+ <summary>
+ （入力チェック項目）保管場所依頼ヘッダ取得(移動)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC550BLC.UpdateOutsideCheckCompleteData(System.Data.DataSet)">
+ <summary>
+ 外観チェック完了
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC550BLC.UpdateOutSideCompleteLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 外観チェック完了（D_LOGISTICS_DTL）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC550BLC.InsertOutSideCompleteDmgOrder(System.Data.DataSet)">
+ <summary>
+ 外観チェック完了（B_DMG_ORD）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC550BLC.SetOutSideCompleteDataSet(System.Data.DataSet)">
+ <summary>
+ 外観チェック完了データセット更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC550BLC.UpdateRepairCompleteData(System.Data.DataSet)">
+ <summary>
+ 修理完了
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC550BLC.UpdateRepairCompleteLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 修理完了（D_LOGISTICS_DTL）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC550BLC.SetRepairCompleteDataSet(System.Data.DataSet)">
+ <summary>
+ 修理完了データセット更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC550BLC.UpdateRepairImpossibleData(System.Data.DataSet)">
+ <summary>
+ 修理不可
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC550BLC.UpdateRepairImpossibleLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 修理不可（D_LOGISTICS_DTL）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC550BLC.SetRepairImpossibleDataSet(System.Data.DataSet)">
+ <summary>
+ 修理不可データセット更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC550BLC.SelectPhotoList(System.Data.DataSet)">
+ <summary>
+ 写真データ一覧取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC550BLC.SavePhotoData(System.Data.DataSet)">
+ <summary>
+ 写真データ保存
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC550BLC.InsertPhotoData(System.Data.DataSet)">
+ <summary>
+ 写真データ登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC550BLC.DeletePhotoData(System.Data.DataSet)">
+ <summary>
+ 写真データ削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC550BLC.SelectPhotoData(System.Data.DataSet)">
+ <summary>
+ 写真データ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC550BLC.IsNeedDmgOrder(System.Data.DataSet)">
+ <summary>
+ 外損調査レコード要否チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks>修理区分：00001(該当)の場合、外損調査レコードが存在する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSC550BLC.AddRowZSystemCSC550(System.Data.DataSet@,System.String,System.String)">
+ <summary>
+ Z_SYSTEM行追加処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="procKbn">Z_SYSTEM処理区分</param>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

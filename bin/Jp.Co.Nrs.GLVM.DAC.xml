@@ -1,0 +1,676 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.GLVM.DAC
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.GL.DAC.My.Resources.Resources">
+<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.GL.DAC.My.Resources.Resources.ResourceManager">
+<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.GL.DAC.My.Resources.Resources.Culture">
+<summary>
+  すべてについて、現在のスレッドの CurrentUICulture プロパティをオーバーライドします
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVM1000DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVM1000DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVM1000DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1000DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1000DAC.SearchCheckCnt(System.Data.DataSet)">
+ <summary>
+ 検索処理 件数チェック
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1000DAC.SetSQLSelectWhere(System.Data.DataSet)">
+ <summary>
+ 検索条件設定
+ </summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1000DAC.Search(System.Data.DataSet)">
+ <summary>
+ 検索処理
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1000DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVM1010DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVM1010DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVM1010DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1010DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1010DAC.SearchUser(System.Data.DataSet)">
+ <summary>
+ 外部用WEBユーザマスタ
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1010DAC.SearchUserDetails(System.Data.DataSet)">
+ <summary>
+ 外部用WEBユーザマスタ明細
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1010DAC.SearchUserCompDetails(System.Data.DataSet)">
+ <summary>
+ 外部用WEBユーザマスタ会社明細
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1010DAC.isHaitaChk(System.Data.DataSet)">
+ <summary>
+ 排他制御
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1010DAC.DeleteUser(System.Data.DataSet)">
+ <summary>
+ 削除処理（外部用ユーザマスタ）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1010DAC.DeleteUserDetails(System.Data.DataSet)">
+ <summary>
+ 削除処理（外部用ユーザマスタ明細）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1010DAC.DeleteUserCompDetails(System.Data.DataSet)">
+ <summary>
+ 削除処理（外部用ユーザマスタ会社明細）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1010DAC.SaveInsertUser(System.Data.DataSet)">
+ <summary>
+ 登録処理（外部用ユーザマスタ）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1010DAC.SaveUpdateUser(System.Data.DataSet)">
+ <summary>
+ 更新処理（外部用ユーザマスタ）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1010DAC.SaveDeleteUser(System.Data.DataSet)">
+ <summary>
+ 削除処理（外部用ユーザマスタ）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1010DAC.SaveInsertUserDetailsWeb(System.Data.DataSet)">
+ <summary>
+ 登録処理（外部用ユーザマスタ明細）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1010DAC.SaveInsertUserDetailsTank(System.Data.DataSet)">
+ <summary>
+ 登録処理（外部用ユーザマスタ明細）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1010DAC.SaveUpdateUserDetailsWeb(System.Data.DataSet)">
+ <summary>
+ 更新処理（外部用ユーザマスタ明細）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1010DAC.SaveUpdateUserDetailsTank(System.Data.DataSet)">
+ <summary>
+ 更新処理（外部用ユーザマスタ明細）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1010DAC.SaveDeleteUserDetails(System.Data.DataSet)">
+ <summary>
+ 削除処理（外部用ユーザマスタ明細）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1010DAC.SaveUpdateSurviveUserDetailsWeb(System.Data.DataSet)">
+ <summary>
+ 更新処理（外部用ユーザマスタ明細）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1010DAC.SaveUpdateSurviveUserDetailsTank(System.Data.DataSet)">
+ <summary>
+ 更新処理（外部用ユーザマスタ明細）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1010DAC.SaveInsertUserCompDetails(System.Data.DataSet)">
+ <summary>
+ 登録処理（外部用ユーザマスタ会社明細）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1010DAC.SaveUpdateUserCompDetails(System.Data.DataSet)">
+ <summary>
+ 更新処理（外部用ユーザマスタ会社明細）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1010DAC.SaveDeleteUserCompDetails(System.Data.DataSet)">
+ <summary>
+ 削除処理（外部用ユーザマスタ会社明細）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1010DAC.SaveUpdateSurviveUserCompDetails(System.Data.DataSet)">
+ <summary>
+ 更新処理（外部用ユーザマスタ会社明細）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1010DAC.isMailChk(System.Data.DataSet)">
+ <summary>
+ E-mail存在チェック
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1010DAC.isWebOutUserDetailsChk(System.Data.DataSet)">
+ <summary>
+ 外部用ユーザマスタ明細存在チェック
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1010DAC.isWebOutUserCompDetailsChk(System.Data.DataSet)">
+ <summary>
+ 外部用ユーザマスタ会社明細存在チェック
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1010DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVM1100DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVM1100DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVM1100DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1100DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1100DAC.CheckResultCount(System.Data.DataSet)">
+ <summary>
+ 取得行数チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>納品先マスタ取得取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1100DAC.SearchDeliveryMaster(System.Data.DataSet)">
+ <summary>
+ 納品先マスタ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>納品先マスタ取得取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1100DAC.SetSQLSelectWhere">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1100DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVM1110DAC.INSERT_M_DEST_DETAILS">
+ <summary>
+ M_DEST_DETAILS登録
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVM1110DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVM1110DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVM1110DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1110DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1110DAC.SelectDeliveryMaster(System.Data.DataSet)">
+ <summary>
+ データ取得処理取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>移液依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1110DAC.InsertDestMaster(System.Data.DataSet)">
+ <summary>
+ M_ARRG登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>商品マスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1110DAC.UpdateDestMaster(System.Data.DataSet)">
+ <summary>
+ M_DEST更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>商品マスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1110DAC.DeleteDestMaster(System.Data.DataSet)">
+ <summary>
+ M_DEST削除処理(ヘッダーボタンイベント)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>納入先マスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1110DAC.ResetDestMaster(System.Data.DataSet)">
+ <summary>
+ M_DEST復活処理(ヘッダーボタンイベント)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>納入先マスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1110DAC.SetParameter(System.Data.DataRow)">
+ <summary>
+ パラメータ設定
+ </summary>
+ <param name="conditionRow">VK_BASISのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1110DAC.SetParameterJis(System.Data.DataRow)">
+ <summary>
+ GetZipToJisパラメータ設定
+ </summary>
+ <param name="conditionRow">VK_BASISのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1110DAC.SetDestMasterDataInsUpdParameter(System.Data.DataRow)">
+ <summary>
+ M_ARRG登録・更新共通パラメータ
+ </summary>
+ <param name="conditionRow">M_ARRGのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1110DAC.SetSysCommonParameter">
+ <summary>
+ システム共通共通パラメータ(削除フラグを除く）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1110DAC.SetSysDelFlgOnParameter">
+ <summary>
+ 削除フラグ オン パラメータ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1110DAC.SetSysDelFlgOffParameter">
+ <summary>
+ 削除フラグ オフ パラメータ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1110DAC.InsertDestDetails(System.Data.DataSet)">
+ <summary>
+ M_DEST_DETAILS登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>M_DEST_DETAILS登録処理</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1110DAC.SetDestDetailsParameter(System.Data.DataRow)">
+ <summary>
+ M_DEST_DETAILS登録パラメータ
+ </summary>
+ <param name="conditionRow">M_DEST_DETAILSのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1110DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVM1200DAC.TABLE_NM.GLVM1200IN">
+ <summary>
+ 入力テーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVM1200DAC.TABLE_NM.GLVM1200OUT">
+ <summary>
+ 出力テーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVM1200DAC.FUNCTION_NM.SEARCH">
+ <summary>
+ 検索
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVM1200DAC.SQL_SELECT_DATA_PREFIX">
+ <summary>
+ Prefix
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVM1200DAC.SQL_SELECT_DATA">
+ <summary>
+ 荷主マスタ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVM1200DAC.SQL_SELECT_DATA_ORDER_BY">
+ <summary>
+ ソート順
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVM1200DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVM1200DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1200DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1200DAC.Search(System.Data.DataSet)">
+ <summary>
+ 荷主マスタ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1200DAC.SetSQLSelectWhere(System.Data.DataTable)">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVM1210DAC.SQL_SELECT_DATA_PREFIX">
+ <summary>
+ PREFIX
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVM1210DAC.SQL_SELECT_DATA">
+ <summary>
+ 荷主マスタ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVM1210DAC.SQL_HAITA_CHECK">
+ <summary>
+ 排他
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVM1210DAC.UPDATE_M_DEST">
+ <summary>
+ 更新
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.GL.DAC.GLVM1210DAC.TABLE_NM">
+ <summary>
+ テーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVM1210DAC.TABLE_NM.GLVM1210IN">
+ <summary>
+ INテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVM1210DAC.TABLE_NM.GLVM1210OUT">
+ <summary>
+ OUTテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.GL.DAC.GLVM1210DAC.FUNCTION_NM">
+ <summary>
+ テーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVM1210DAC.FUNCTION_NM.SELECT_WEB_CUST_MST">
+ <summary>
+ 荷主マスタ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVM1210DAC.FUNCTION_NM.UPDATE_WEB_CUST_MST">
+ <summary>
+ 荷主マスタ更新
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVM1210DAC.FUNCTION_NM.HAITA_CHECK">
+ <summary>
+ 排他チェック
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVM1210DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVM1210DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLVM1210DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1210DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1210DAC.SelectWebCustMst(System.Data.DataSet)">
+ <summary>
+ データ取得処理取得処理
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1210DAC.IsHaitaChk(System.Data.DataSet)">
+ <summary>
+ 排他チェック
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1210DAC.UpdateWebCustMst(System.Data.DataSet)">
+ <summary>
+ 更新処理
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1210DAC.SetParameter(System.Data.DataRow)">
+ <summary>
+ パラメータ設定
+ </summary>
+ <param name="conditionRow">VK_BASISのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1210DAC.SetParameterHaitaCheck(System.Data.DataRow)">
+ <summary>
+ パラメータ設定（排他用追加分）
+ </summary>
+ <param name="conditionRow">VK_BASISのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLVM1210DAC.SetParameterUpdate(System.Data.DataRow)">
+ <summary>
+ パラメータ設定(更新用)
+ </summary>
+ <param name="conditionRow">M_ARRGのDataRow</param>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

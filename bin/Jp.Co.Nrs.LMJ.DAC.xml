@@ -1,0 +1,589 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.LMJ.DAC
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.LM.DAC.LMJ010DAC">
+ <summary>
+ LMJ010DACクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMJ010DAC.SHORI_SONOTA">
+ <summary>
+ 処理内容 = 指定された荷主のみチェックする
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMJ010DAC.TABLE_NM_IN">
+ <summary>
+ LMJ010INテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMJ010DAC.TABLE_NM_GETU_IN">
+ <summary>
+ GETU_INテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMJ010DAC.TABLE_NM_GETU_OUT">
+ <summary>
+ GETU_OUTテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMJ010DAC.TABLE_NM_ZAIK_ZAN">
+ <summary>
+ ZAIK_ZANテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMJ010DAC.CLASS_NM">
+ <summary>
+ DAC名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMJ010DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMJ010DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMJ010DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMJ010DAC.SelectGetuData(System.Data.DataSet)">
+ <summary>
+ 月末在庫コンボのデータを取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMJ010DAC.SelectShimeCust(System.Data.DataSet)">
+ <summary>
+ 締め荷主の取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMJ010DAC.SelectSeiqZaikoCount(System.Data.DataSet)">
+ <summary>
+ 請求在庫データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMJ010DAC.SelectSeiqZaikoData(System.Data.DataSet)">
+ <summary>
+ 請求在庫データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMJ010DAC.SelectGetsuZaikoCount(System.Data.DataSet)">
+ <summary>
+ 月末在庫データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMJ010DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名取得
+ </summary>
+ <param name="sql">SQL</param>
+ <param name="brCd">営業所コード</param>
+ <returns>SQL</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMJ010DAC.SetConditionMasterSQL(System.Collections.ArrayList,System.Data.DataRow)">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <param name="dr">DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMJ010DAC.SetConditionShimeCustSQL(System.Text.StringBuilder,System.Collections.ArrayList,System.Data.DataRow)">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <param name="sql">SQL</param>
+ <param name="prmList">パラメータ</param>
+ <param name="dr">DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.DAC.LMJ020DAC">
+ <summary>
+ LMJ020DACクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMJ020DAC.SQL_SELECT_COUNT">
+ <summary>
+ カウント用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMJ020DAC.SQL_WHERE">
+ <summary>
+ データ抽出用WHERE句
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMJ020DAC.SQL_ORDER_BY">
+ <summary>
+ ORDER BY
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMJ020DAC.SQL_UPDATE_J_DATA_ESC_LOG_HEAD">
+ <summary>
+ UPDATE（J_DATA_ESC_LOG_HEAD）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMJ020DAC.SQL_UPDATE_M_CUST">
+ <summary>
+ UPDATE（M_CUST）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.DAC.LMJ020DAC.TARGET_TABLES">
+ <summary>
+ 移行テーブル（LM_TABLES)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMJ020DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMJ020DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMJ020DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMJ020DAC.SelectData(System.Data.DataSet)">
+ <summary>
+ 荷主マスタ検索対象データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>荷主マスタLテーブル更新対象データ検索件数取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMJ020DAC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 荷主マスタ対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>荷主マスタ対象データ一覧検索結果取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMJ020DAC.SetConditionMasterSQL(System.Boolean)">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMJ020DAC.InputCheckCUST(System.Data.DataSet)">
+ <summary>
+ 入力チェック（荷主が移行可能かどうか）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMJ020DAC.SelectCountCheckCust(System.Data.DataSet)">
+ <summary>
+ 荷主整合性チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>荷主マスタLテーブル更新対象データ検索件数取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMJ020DAC.InputCheckZAIKO(System.Data.DataSet)">
+ <summary>
+ 入力チェック（在庫が存在するか）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMJ020DAC.SelectCountCheckZAIKO(System.Data.DataSet)">
+ <summary>
+ 在庫数チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>荷主マスタLテーブル更新対象データ検索件数取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMJ020DAC.DeletePreData(System.Data.DataSet)">
+ <summary>
+ 無駄無駄データ削除SQL
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMJ020DAC.DeletePreCheckSQLCreate(System.Data.DataSet,Jp.Co.Nrs.LM.DAC.LMJ020DAC.TARGET_TABLES)">
+ <summary>
+ 無駄無駄データ削除SQL
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>各種テーブル削除SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMJ020DAC.EscapeData(System.Data.DataSet)">
+ <summary>
+ データ退避処理（退避先への登録）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMJ020DAC.InsertEscapeData(System.Data.DataSet,Jp.Co.Nrs.LM.DAC.LMJ020DAC.TARGET_TABLES)">
+ <summary>
+ 退避データのINSERT
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>各種テーブル新規登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMJ020DAC.GetInsertSQL(Jp.Co.Nrs.LM.DAC.LMJ020DAC.TARGET_TABLES)">
+ <summary>
+ InsertSQL取得
+ </summary>
+ <param name="tbtTbl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMJ020DAC.GetDelecteCheckSQL(Jp.Co.Nrs.LM.DAC.LMJ020DAC.TARGET_TABLES,Jp.Co.Nrs.LM.DAC.LMJ020DAC.DeleteCheckMode)">
+ <summary>
+ SelectSQL取得
+ </summary>
+ <param name="tbtTbl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMJ020DAC.GetDelecteSQL(Jp.Co.Nrs.LM.DAC.LMJ020DAC.TARGET_TABLES)">
+ <summary>
+ DeleteSQL取得
+ </summary>
+ <param name="tbtTbl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMJ020DAC.GetTableNM(System.String)">
+ <summary>
+ 対象テーブル
+ </summary>
+ <param name="tableNM"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMJ020DAC.DeleteDataCheck(System.Data.DataSet)">
+ <summary>
+ データ退避処理（元データ削除チェック）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMJ020DAC.DeleteCheckSQLCreate(System.Data.DataSet,Jp.Co.Nrs.LM.DAC.LMJ020DAC.TARGET_TABLES)">
+ <summary>
+ 削除可能チェックSQL
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>各種テーブル新規登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMJ020DAC.DeleteData(System.Data.DataSet)">
+ <summary>
+ データ退避処理（元データの削除）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMJ020DAC.DeleteSQLCreate(System.Data.DataSet,Jp.Co.Nrs.LM.DAC.LMJ020DAC.TARGET_TABLES)">
+ <summary>
+ 削除SQL
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>各種テーブル新規登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMJ020DAC.ModoshiData(System.Data.DataSet)">
+ <summary>
+ データ戻し処理（本DBへの登録）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMJ020DAC.InsertModoshiData(System.Data.DataSet,Jp.Co.Nrs.LM.DAC.LMJ020DAC.TARGET_TABLES)">
+ <summary>
+ 退避データのINSERT
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>各種テーブル新規登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMJ020DAC.DeleteModoshiData(System.Data.DataSet)">
+ <summary>
+ データ退避処理（元データの削除）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMJ020DAC.DeleteModoshiData(System.Data.DataSet,Jp.Co.Nrs.LM.DAC.LMJ020DAC.TARGET_TABLES)">
+ <summary>
+ 削除SQL
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>各種テーブル新規登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMJ020DAC.UpdateM_CUST(System.Data.DataSet)">
+ <summary>
+ 荷主マスタ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>ログテーブルの更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMJ020DAC.SetMCUSTParameter(System.Data.DataRow,System.Collections.ArrayList)">
+ <summary>
+ 荷主マスタ更新パラメータ設定
+ </summary>
+ <param name="conditionRow">DataRow</param>
+ <param name="prmList">パラメータ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMJ020DAC.StartInputLog(System.Data.DataSet)">
+ <summary>
+ データ退避ログテーブルヘッダ新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>ログテーブル新規登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMJ020DAC.EndInputLog(System.Data.DataSet)">
+ <summary>
+ データ退避ログテーブルヘッダ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>ログテーブルの更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMJ020DAC.SetLogHeadComParameter(System.Data.DataRow,System.Collections.ArrayList)">
+ <summary>
+ データ退避ログテーブルヘッダの更新パラメータ設定
+ </summary>
+ <param name="conditionRow">DataRow</param>
+ <param name="prmList">パラメータ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMJ020DAC.StartInputDetailLog(System.Data.DataSet,System.String)">
+ <summary>
+ データ退避ログテーブルヘッダ新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>ログテーブル新規登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMJ020DAC.SetLogDtlComParameter(System.Data.DataRow,System.Data.DataRow,System.String,System.Collections.ArrayList)">
+ <summary>
+ データ退避明細ログテーブルヘッダの更新パラメータ設定
+ </summary>
+ <param name="conditionRow">DataRow</param>
+ <param name="prmList">パラメータ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMJ020DAC.SetDataInsertParameter(System.Collections.ArrayList,System.String)">
+ <summary>
+ 新規登録の共通パラメータ設定
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMJ020DAC.SetSysdataParameter(System.Collections.ArrayList,System.String)">
+ <summary>
+ 更新時の共通パラメータ設定
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMJ020DAC.SetSysdataTimeParameter(System.Collections.ArrayList,System.String)">
+ <summary>
+ 更新時の共通パラメータ設定
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMJ020DAC.SetTablesComParameter(System.Data.DataRow,System.Collections.ArrayList,Jp.Co.Nrs.LM.DAC.LMJ020DAC.TARGET_TABLES)">
+ <summary>
+ 各種テーブルのの更新パラメータ設定
+ </summary>
+ <param name="conditionRow">DataRow</param>
+ <param name="prmList">パラメータ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMJ020DAC.SetDtlLog(System.Data.DataSet,System.String)">
+ <summary>
+ ログの初期値
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMJ020DAC.SetMSGStore(System.String,System.String[],System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="errCd"></param>
+ <param name="msgPara"></param>
+ <param name="custCd"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMJ020DAC.SetSchemaNm(System.String,System.String,System.Boolean)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMJ020DAC.SetSchemaNmEscapeForDelete(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMJ020DAC.SetSchemaNmModoshiForDelete(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMJ020DAC.SetSchemaNmModoshiForInsert(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMJ020DAC.MaeCoverData(System.String,System.String,System.Int32)">
+ <summary>
+ 前埋め設定
+ </summary>
+ <param name="value">値</param>
+ <param name="value2">前埋めする文字</param>
+ <param name="keta">桁数</param>
+ <returns>前埋めした値</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMJ020DAC.GetRecNo(System.Int32)">
+ <summary>
+ 0埋めで返却
+ </summary>
+ <param name="cnt"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.DAC.LMJ800DAC">
+ <summary>
+ LMJ800DACクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMJ800DAC.TABLE_NM_IN">
+ <summary>
+ LMJ010INテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMJ800DAC.TABLE_NM_OUT">
+ <summary>
+ LMJ800OUTテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMJ800DAC.CLASS_NM">
+ <summary>
+ DAC名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMJ800DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMJ800DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMJ800DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMJ800DAC.SelectListData(System.Data.DataSet)">
+ <summary>
+ データ抽出
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMJ800DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名取得
+ </summary>
+ <param name="sql">SQL</param>
+ <param name="brCd">営業所コード</param>
+ <returns>SQL</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMJ800DAC.SetConditionMasterSQL(System.Collections.ArrayList,System.Data.DataRow)">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <param name="dr">DataRow</param>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

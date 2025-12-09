@@ -1,0 +1,138 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.FileIOService.BL
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.FileIOService.My.Resources.Resources">
+<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.FileIOService.My.Resources.Resources.ResourceManager">
+<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.FileIOService.My.Resources.Resources.Culture">
+<summary>
+  すべてについて、現在のスレッドの CurrentUICulture プロパティをオーバーライドします
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.FileIOService.BLC.FileIOServiceBLC">
+ <summary>
+ 拡張BLC層中核クラス
+ </summary>
+</member>
+<member name="P:Jp.Co.Nrs.FileIOService.BLC.FileIOServiceBLC.Connection">
+ <summary>
+ コネクションオブジェクトの取得・設定を行うプロパティ。
+ </summary>
+ <value>SqlConnectionオブジェクト</value>
+ <returns>SqlConnectionオブジェクト</returns>
+</member>
+<member name="M:Jp.Co.Nrs.FileIOService.BLC.FileIOServiceBLC.SetMessage(System.String)">
+ <summary>
+ メッセージＩＤ・メッセージレベル・メッセージ文言をServiceDataに設定する。
+ </summary>
+ <param name="messageID">メッセージID</param>
+ <remarks>引数のメッセージＩＤを元にメッセージ文言を作成し、ServiceDataクラスにメッセージＩＤ・メッセージレベル・メッセージ文言を設定する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.FileIOService.BLC.FileIOServiceBLC.SetMessage(System.String,System.String[])">
+ <summary>
+ メッセージ情報をServiceDataに設定する。
+ </summary>
+ <param name="messageID">メッセージID</param>
+ <param name="replaceMessages">置換対象文字列の配列</param>
+ <remarks>引数のメッセージＩＤを元にメッセージ文言を作成し、ServiceDataクラスにメッセージ情報を設定する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.FileIOService.BLC.FileIOServiceBLC.SetMessage(System.String,System.String[],System.String,System.String)">
+ <summary>
+ メッセージ情報をServiceDataに設定する。
+ </summary>
+ <param name="messageID">メッセージID</param>
+ <param name="replaceMessages">置換対象文字列の配列</param>
+ <param name="messageArea">メッセージエリア名</param>
+ <param name="naviArea">ナビエリア名</param>
+ <remarks>引数のメッセージＩＤを元にメッセージ文言を作成し、ServiceDataクラスにメッセージ情報を設定する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.FileIOService.BLC.FileIOServiceBLC.ReadFile(System.Data.DataSet)">
+ <summary>
+ ファイル読み込み
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.FileIOService.BLC.FileIOServiceBLC.WriteFile(System.Data.DataSet)">
+ <summary>
+ ファイル書き込み
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.FileIOService.BLC.FileIOServiceBLC.ExecuteFile(System.Data.DataSet)">
+ <summary>
+ ファイル実行
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.FileIOService.BLC.FileIOServiceBLC.MoveFile(System.Data.DataSet)">
+ <summary>
+ ファイル移動
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.FileIOService.BLC.FileIOServiceBLC.GetFileNameList(System.Data.DataSet)">
+ <summary>
+ ファイル名リスト取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="T:Jp.Co.Nrs.FileIOService.BLF.FileIOServiceBLF">
+ <summary>
+ 拡張BLF層中核クラス
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.FileIOService.BLF.FileIOServiceBLF.ReadFile(System.Data.DataSet)">
+ <summary>
+ ファイル読み込み
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.FileIOService.BLF.FileIOServiceBLF.WriteFile(System.Data.DataSet)">
+ <summary>
+ ファイル書き込み
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.FileIOService.BLF.FileIOServiceBLF.ExecuteFile(System.Data.DataSet)">
+ <summary>
+ ファイル書き込み
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.FileIOService.BLF.FileIOServiceBLF.MoveFile(System.Data.DataSet)">
+ <summary>
+ ファイル移動
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.FileIOService.BLF.FileIOServiceBLF.GetFileNameList(System.Data.DataSet)">
+ <summary>
+ ファイル名リスト取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+</members>
+</doc>

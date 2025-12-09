@@ -1,0 +1,361 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.GLA.DAC
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.GL.DAC.My.Resources.Resources">
+<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.GL.DAC.My.Resources.Resources.ResourceManager">
+<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.GL.DAC.My.Resources.Resources.Culture">
+<summary>
+  すべてについて、現在のスレッドの CurrentUICulture プロパティをオーバーライドします
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLA0200DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLA0200DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLA0200DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLA0200DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLA0200DAC.GetContDepotInMonthGraph(System.Data.DataSet)">
+ <summary>
+ 搬入月別グラフデータ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>搬入月別グラフデータ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLA0200DAC.GetContDepotOutMonthGraph(System.Data.DataSet)">
+ <summary>
+ 搬出月別グラフデータ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>搬入月別グラフデータ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLA0200DAC.GetConfPrincipal(System.Data.DataSet)">
+ <summary>
+ Principalデータ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>ETD月別グラフデータ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLA0200DAC.GetContDocCutMonthGraph(System.Data.DataSet)">
+ <summary>
+ DOC CUT月別グラフデータ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>DOC CUT・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLA0200DAC.GetContEtdMonthGraph(System.Data.DataSet)">
+ <summary>
+ ETD月別グラフデータ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>ETD月別グラフデータ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLA0200DAC.GetContDepotTodayPlan(System.Data.DataSet)">
+ <summary>
+ 今日の予定データ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>今日の予定データ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLA0200DAC.GetContDepotIraiCntForDepot(System.Data.DataSet)">
+ <summary>
+ 依頼件数(Depot用)取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>依頼件数(Depot用)取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLA0200DAC.GetContDepotIraiForDepot(System.Data.DataSet)">
+ <summary>
+ 依頼(Depot用)取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>依頼(Depot用)取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLA0200DAC.GetContDepotIraiCntForPrincipal1(System.Data.DataSet)">
+ <summary>
+ 依頼件数(Principal/Draft用)取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>依頼件数(Principal/Draft用)取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLA0200DAC.GetContDepotIraiForPrincipal1(System.Data.DataSet)">
+ <summary>
+ 依頼(Principal/Draft用)取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>依頼(Principal/Draft用)取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLA0200DAC.GetContDepotIraiCntForPrincipal2(System.Data.DataSet)">
+ <summary>
+ 依頼件数(Principal/Untreated,Reject用)取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>依頼件数(Principal/Untreated,Reject用)取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLA0200DAC.GetContDepotIraiForPrincipal2(System.Data.DataSet)">
+ <summary>
+ 依頼(Principal/Untreated,Reject用)取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>依頼(Principal/Untreated,Reject用)取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLA0200DAC.GetEstimateDataForPrincipal(System.Data.DataSet)">
+ <summary>
+ (元請ユーザ用)Estimateデータ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>(元請ユーザ用)Estimateデータ取得処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLA0200DAC.GetBookingDataForPrincipal(System.Data.DataSet)">
+ <summary>
+ (元請ユーザ用)Bookingデータ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>(元請ユーザ用)Bookingデータ取得処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLA0200DAC.GetInvoiceDataForPrincipal(System.Data.DataSet)">
+ <summary>
+ (元請ユーザ用)Invoiceデータ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>(元請ユーザ用)Invoiceデータ取得処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLA0200DAC.GetPaymentDataForPrincipal(System.Data.DataSet)">
+ <summary>
+ (元請ユーザ用)Paymentデータ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>(元請ユーザ用)Paymentデータ取得処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLA0200DAC.GetArrangeCoverData(System.Data.DataSet)">
+ <summary>
+ Cover(Arrange)データ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>Cover(Arrange)データ取得処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLA0200DAC.GetArrangeCoverCntData(System.Data.DataSet)">
+ <summary>
+ Cover(Arrange)データ件数取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>Cover(Arrange)データ取得処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLA0200DAC.GetFwdCoverLimitData(System.Data.DataSet)">
+ <summary>
+ Cover(FWD)期限管理データ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>Cover(FWD)データ取得処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLA0200DAC.GetFwdCoverStatusData(System.Data.DataSet)">
+ <summary>
+ Cover(FWD)手配状況データ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>Cover(FWD)データ取得処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLA0200DAC.GetCoverDataForArrange(System.Data.DataSet)">
+ <summary>
+ (手配先ユーザ用)カバーデータ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>(手配先ユーザ用)カバーデータ取得処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLA0200DAC.GetMenueMessageData(System.Data.DataSet)">
+ <summary>
+ (元請/手配先ユーザ用)メッセージデータ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>(手配先ユーザ用)メッセージデータ取得処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLA0200DAC.GetGLA0207TodayPlanMenu(System.Data.DataSet)">
+ <summary>
+ 残件数・当日件数(Bookingメモ用Dashboard表示ユーザー用)取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLA0200DAC.SetSQLSelectWhereOffice(System.Data.DataSet)">
+ <summary>
+ 条件文・パラメータ設定(所属Office)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLA0200DAC.GetAgentOfficeParameter(System.Data.DataSet,System.Collections.Generic.List{System.String})">
+ <summary>
+ ログイン情報に紐づくOfficeを検索条件へ設定する
+ </summary>
+ <param name="ds"></param>
+ <param name="agentConditionLst"></param>
+ <returns>whereStr</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLA0200DAC.GetAgentOfficeParameterCreate(System.Data.DataSet,System.Collections.Generic.List{System.String})">
+ <summary>
+ ログイン情報に紐づくOfficeを検索条件へ設定する
+ </summary>
+ <param name="ds"></param>
+ <param name="agentConditionLst"></param>
+ <returns>whereOffice</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLA0200DAC.GetGLA0208TodayPlanMenu(System.Data.DataSet)">
+ <summary>
+ 残件数・当日件数(Bookingメモ用Dashboard表示ユーザー2用)取得（アロケート）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLA0200DAC.SetContDepotMonthGraphParameter(System.Data.DataRow)">
+ <summary>
+ 搬入出共通パラメータ
+ </summary>
+ <param name="row">DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLA0200DAC.SetContDryNvoMonthGraphParameter(System.Data.DataRow,System.Data.DataRow)">
+ <summary>
+ DRY NVO共通パラメータ
+ </summary>
+ <param name="row">DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLA0200DAC.SetContDepotTodayPlanParameter(System.Data.DataRow)">
+ <summary>
+ 今日の予定共通パラメータ
+ </summary>
+ <param name="row">DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLA0200DAC.SetContDepotIraiForDepotParameter(System.Data.DataRow)">
+ <summary>
+ 依頼出力(Depot用)共通パラメータ
+ </summary>
+ <param name="row">DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLA0200DAC.SetContDepotIraiForPrincipalParameter(System.Data.DataRow)">
+ <summary>
+ 依頼出力(Principal用)共通パラメータ
+ </summary>
+ <param name="row">DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLA0200DAC.SetSearchDataForPrincipalParameter(System.Data.DataTable)">
+ <summary>
+ (元請ユーザ用)データ取得パラメータ設定
+ </summary>
+ <param name="inTbl">DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLA0200DAC.SetSearchArrangeCoverDataParameter(System.Data.DataTable,System.String)">
+ <summary>
+ Cover(Arrange)データ取得パラメータ設定
+ </summary>
+ <param name="inTbl">DataRow</param>
+ <param name="searchType">検索種類</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLA0200DAC.SetSearchArrangeCoverDataParameter2(System.Data.DataTable)">
+ <summary>
+ Cover(Arrange)データ取得パラメータ設定2
+ </summary>
+ <param name="inTbl">DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLA0200DAC.SetSearchCoverDataForArrgParameter(System.Data.DataTable)">
+ <summary>
+ (手配先ユーザ用)カバーデータ取得パラメータ設定
+ </summary>
+ <param name="inTbl">DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLA0200DAC.SetSearchMessageDataParameter(System.Data.DataTable)">
+ <summary>
+ '(元請/手配先ユーザ用)メッセージデータ取得WHERE句 パラメータ設定
+ </summary>
+ <param name="inTbl">DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLA0200DAC.DeletePanelSort(System.Data.DataSet)">
+ <summary>
+ パネルソート削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLA0200DAC.InsertPanelSort(System.Data.DataSet)">
+ <summary>
+ パネルソート登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLA0200DAC.GetPanelSort(System.Data.DataSet)">
+ <summary>
+ パネルソート取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

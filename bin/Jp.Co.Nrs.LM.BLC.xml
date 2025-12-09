@@ -1,0 +1,97 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.LM.BLC
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMCOMBLC">
+ <summary>
+ LMCOMBLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLC.LMCOMBLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMCOMBLC.SelectGoodsDetailsData(System.Data.DataSet)">
+ <summary>
+ 商品明細マスタデータ処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLC.LMCOMPRT">
+ <summary>
+ LMBPRTBLCクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMCOMPRT.CallDataSet(System.Data.DataSet,System.String,System.String,System.String)">
+ <summary>
+ 該当レイアウトの帳票を抽出
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="PrtId">PrtId</param>
+ <param name="outPutTblName">outPutTblName</param>
+ <returns>DataSet</returns>
+ <remarks>同一レイアウトの新しいデータセットを返します</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMCOMPRT.DoPrint(System.String,System.String,System.String,System.String,System.String,System.Data.DataSet,System.String@)">
+ <summary>
+ 印刷
+ </summary>
+ <param name="brCd">brCd</param>
+ <param name="ptnId">ptnId</param>
+ <param name="ptnCd">ptnCd</param>
+ <param name="rptId">rptId</param>
+ <param name="printTblName">printTblName</param>
+ <param name="ds">ds</param>
+ <remarks>同一レイアウトの新しいデータセットを返します</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMCOMPRT.SetQuot(System.String)">
+ <summary>
+ ダブルクォーテーションで囲み返却
+ </summary>
+ <param name="para"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMCOMPRT.SetHeaderTab(System.String,System.String,System.String,System.String)">
+ <summary>
+ ヘッダメタデータ作成
+ </summary>
+ <param name="brCd"></param>
+ <param name="ptnId"></param>
+ <param name="ptnCd"></param>
+ <param name="rptId"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMCOMPRT.CreateCSV(System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ テストDS出力
+ </summary>
+ <param name="brCd">brCd</param>
+ <param name="ptnId">ptnId</param>
+ <param name="ptnCd">ptnCd</param>
+ <param name="rptId">rptId</param>
+ <param name="prtString"></param>
+ <returns>出力ファイル名</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLC.LMCOMPRT.CallRdAPI(System.String)">
+ <summary>
+ ReportDesignerAPI実行
+ </summary>
+ <param name="fileNm"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

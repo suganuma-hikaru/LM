@@ -1,0 +1,6443 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.LMF.DAC
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.LM.DAC.LMF010DAC">
+ <summary>
+ LMF010DACクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF010DAC.TABLE_NM_IN">
+ <summary>
+ INテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF010DAC.TABLE_NM_OUT">
+ <summary>
+ OUTテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF010DAC.TABLE_NM_ITEM">
+ <summary>
+ ITEMテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF010DAC.TABLE_NM_UNSO_L">
+ <summary>
+ UNSO_Lテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF010DAC.TABLE_NM_G_HED">
+ <summary>
+ G_HEDテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF010DAC.TABLE_NM_UNCHIN">
+ <summary>
+ UNCHINテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF010DAC.TABLE_NM_UNSOCO">
+ <summary>
+ UNSOCOマスタ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF010DAC.TABLE_NM_G_HED_CHK">
+ <summary>
+ G_HED_CHKテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF010DAC.TABLE_NM_CMB">
+ <summary>
+ CMBテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF010DAC.TABLE_NM_KBN">
+ <summary>
+ 区分テーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF010DAC.CLASS_NM">
+ <summary>
+ DAC名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF010DAC.TABLE_NM_SHIHARAI_UNCHIN">
+ <summary>
+ F_SHIHARAIテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.DAC.LMF010DAC.ConditionPattern">
+ <summary>
+ 条件設定
+ </summary>
+ <remarks>
+ PRE  ：前方一致
+ ALL  ：部分一致
+ OTHER：その他
+ </remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF010DAC.DATE_KBN_NONYU">
+ <summary>
+ 日付絞込(納入日)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF010DAC.DATE_KBN_SHUKKA">
+ <summary>
+ 日付絞込(出荷日)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF010DAC.DATE_KBN_LL">
+ <summary>
+ 日付絞込(運行日)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF010DAC.DATE_KBN_ENT">
+ <summary>
+ 日付絞込(作成日)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF010DAC.SHUSEI_TRIP">
+ <summary>
+ 修正項目(運行番号)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF010DAC.SHUSEI_BIN">
+ <summary>
+ 修正項目(便区分)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF010DAC.SHUSEI_UNSOCO">
+ <summary>
+ 修正項目(運送会社)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF010DAC.SHUSEI_CHUKEI">
+ <summary>
+ 修正項目(中継配送)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF010DAC.TYUKEI_HAISO_FLG_ON">
+ <summary>
+ 中継配送有
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF010DAC.GUIDANCE_KBN">
+ <summary>
+ ガイダンス区分(00)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF010DAC.SEIQ_TARIFF_BUNRUI_KB_YOKOMOCHI">
+ <summary>
+ 請求タリフ分類区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF010DAC.SQL_INSERT_SHIHARAI">
+ <summary>
+ SHIHARAI INSERT用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF010DAC.DeleteShiharaiData(System.Data.DataSet)">
+ <summary>
+ (支払)運賃テーブルの物理削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>支払運賃テーブル削除SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF010DAC.DeleteComData(System.Data.DataSet,System.String)">
+ <summary>
+ 物理削除共通処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="sql">SQL</param>
+ <returns>DataSet</returns>
+ <remarks>運送(中)テーブル更新SQLの構築・発行</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF010DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF010DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF010DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF010DAC.SelectData(System.Data.DataSet)">
+ <summary>
+ 運送(大)検索対象データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運送(大)件数取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF010DAC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 運送(大)検索対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運送(大)対象データ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF010DAC.SelectHaitaData(System.Data.DataSet)">
+ <summary>
+ 更新日付を入れた検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>データ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF010DAC.SelectCancelData(System.Data.DataSet)">
+ <summary>
+ 対象データキャンセルチェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>データ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF010DAC.SelectLLCountData(System.Data.DataSet)">
+ <summary>
+ 運送(特大)検索対象データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運送(特大)件数取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF010DAC.SelectUnchinData(System.Data.DataSet)">
+ <summary>
+ 運賃テーブル取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF010DAC.UnsoLShiharaiEdit(System.Data.DataSet)">
+ <summary>
+ 運送会社マスタ支払運賃タリフの取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF010DAC.SelectUncodataTariff(System.Data.DataSet)">
+ <summary>
+ 運行データの支払運賃タリフコード取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF010DAC.SelectGheaderData(System.Data.DataSet)">
+ <summary>
+ 最終請求日を取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF010DAC.SelectCombData(System.Data.DataSet)">
+ <summary>
+ コンボ用のデータ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF010DAC.SelectKbnData(System.Data.DataSet,System.String)">
+ <summary>
+ 区分マスタ取得
+ </summary>
+ <param name="kbnGrpCd">String</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF010DAC.SaveAction(System.Data.DataSet)">
+ <summary>
+ 登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF010DAC.RemovedAction(System.Data.DataSet)">
+ <summary>
+ 解除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF010DAC.UpdateUnsoLLData(System.Data.DataSet)">
+ <summary>
+ 運送(特大)テーブル更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運送(特大)テーブル更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF010DAC.InsertShiharaiData(System.Data.DataSet)">
+ <summary>
+ (支払)運賃テーブル新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運賃新規登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF010DAC.SetSelectParam(System.Collections.ArrayList,System.Data.DataRow)">
+ <summary>
+ パラメータ設定モジュール(検索)
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <param name="dr">DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF010DAC.UpdateShiharaiData(System.Data.DataSet)">
+ <summary>
+ (支払)運賃テーブル更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運賃更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF010DAC.NewKuroExistChk(System.Data.DataSet)">
+ <summary>
+ 新黒存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF010DAC.InSkyuDateChk(System.Data.DataSet)">
+ <summary>
+ '請求期間内チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF010DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名取得
+ </summary>
+ <param name="sql">SQL</param>
+ <param name="brCd">営業所コード</param>
+ <returns>SQL</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF010DAC.UpdateResultChk(System.Data.SqlClient.SqlCommand)">
+ <summary>
+ Update文の発行
+ </summary>
+ <param name="cmd">SQLコマンド</param>
+ <returns>True:エラーなし,OK False:排他エラー(E011)</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF010DAC.UpdateResultChk(System.Int32,System.Boolean)">
+ <summary>
+ 排他チェック
+ </summary>
+ <param name="setFlg">セットフラグ　False:通常のメッセージセット　True:一括更新のメッセージセット</param>
+ <param name="cnt">カウント</param>
+ <returns>True:エラーなし,OK False:排他エラー(E011)</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF010DAC.CancelResultChk(System.Int32,System.Boolean)">
+ <summary>
+ キャンセルチェック
+ </summary>
+ <param name="setFlg">セットフラグ　False:通常のメッセージセット　True:一括更新のメッセージセット</param>
+ <param name="cnt">カウント</param>
+ <returns>True:エラーなし,OK False:排他エラー(E011)</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF010DAC.GetUnsoLLSchema(System.Data.DataSet)">
+ <summary>
+ 運行データの営業所またぎ対応
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF010DAC.SetGuiSysdataTimeParameter(System.Collections.ArrayList,System.Data.DataRow)">
+ <summary>
+ 排他の共通パラメータ設定
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <param name="dr">dr</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF010DAC.SetUnsoPkParameter(System.Collections.ArrayList,System.Data.DataRow)">
+ <summary>
+ PKのパラメータ設定
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <param name="dr">dr</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF010DAC.SetUnsoEditParameter(System.Collections.ArrayList,System.Data.DataRow)">
+ <summary>
+ 運送会社コードパラメータ設定
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <param name="dr">dr</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF010DAC.SetUncoParameter(System.Collections.ArrayList,System.Data.DataRow)">
+ <summary>
+ 運行レコードパラメータ設定
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <param name="dr">dr</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF010DAC.SetSysdataParameter(System.Collections.ArrayList)">
+ <summary>
+ 更新時の共通パラメータ設定
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF010DAC.SetDataInsertParameter(System.Collections.ArrayList)">
+ <summary>
+ 新規登録の共通パラメータ設定
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF010DAC.SetInsSysdataParameter(System.Collections.ArrayList)">
+ <summary>
+ 更新時の共通パラメータ設定
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF010DAC.SetUnsoStariffParameter(System.Collections.ArrayList,System.Data.DataRow)">
+ <summary>
+ 運行レコードパラメータ設定
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <param name="dr">dr</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF010DAC.SetUpdateData(System.Collections.ArrayList,System.Data.DataSet,System.Text.StringBuilder)">
+ <summary>
+ 登録処理時のSQL構築
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <param name="ds">DataSet</param>
+ <param name="sql">SQL</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF010DAC.SetShiharaiComParameter(System.Collections.ArrayList,System.Data.DataRow)">
+ <summary>
+ 支払運賃の更新パラメータ
+ </summary>
+ <param name="conditionRow">DataRow</param>
+ <param name="prmList">パラメータ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF010DAC.SetConditionMasterSQL(System.Collections.ArrayList,System.Data.DataRow,System.Text.StringBuilder)">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <param name="dr">DataRow</param>
+ <param name="sql">SQL</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF010DAC.SetConditionDateSQL(System.Collections.ArrayList,System.Data.DataRow,System.Text.StringBuilder)">
+ <summary>
+ 条件文・パラメータ設定モジュール(日付絞込)
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <param name="dr">DataRow</param>
+ <param name="sql">SQL</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF010DAC.SetWhereData(System.String,Jp.Co.Nrs.LM.DAC.LMF010DAC.ConditionPattern)">
+ <summary>
+ 抽出条件設定
+ </summary>
+ <param name="whereStr">条件の文字</param>
+ <param name="ptn">抽出パターン</param>
+ <returns>文字</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF010DAC.SetHaishoWhereData(System.Collections.ArrayList,System.Data.DataRow,System.Text.StringBuilder)">
+ <summary>
+ 条件文・パラメータ設定モジュール(中継配送有 Or 無)
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <param name="dr">DataRow</param>
+ <param name="sql">SQL</param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.DAC.LMF020DAC">
+ <summary>
+ LMF020DACクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.DAC.LMF020DAC.SelectCondition">
+ <summary>
+ 検索パターン
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF020DAC.TABLE_NM_IN">
+ <summary>
+ INテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF020DAC.TABLE_NM_UNSO_L">
+ <summary>
+ F_UNSO_Lテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF020DAC.TABLE_NM_UNSO_M">
+ <summary>
+ F_UNSO_Mテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF020DAC.TABLE_NM_UNCHIN">
+ <summary>
+ F_UNCHINテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF020DAC.TABLE_NM_SHIHARAI_UNCHIN">
+ <summary>
+ F_SHIHARAIテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF020DAC.TABLE_NM_INFO">
+ <summary>
+ UNCHIN_INFOテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF020DAC.TABLE_NM_SHIHARAI">
+ <summary>
+ SHIHARAI_INFOテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF020DAC.TABLE_NM_G_HED">
+ <summary>
+ G_HEDテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF020DAC.TABLE_NM_G_HED_CHK">
+ <summary>
+ G_HED_CHKテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF020DAC.CLASS_NM">
+ <summary>
+ DAC名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF020DAC.PRINT_NOUHIN">
+ <summary>
+ 納品書
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF020DAC.PRINT_OKURI">
+ <summary>
+ 送状
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF020DAC.PRINT_NIFUDA">
+ <summary>
+ 荷札
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF020DAC.FLG_ON">
+ <summary>
+ フラグ(ON)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF020DAC.SEIQ_TARIFF_BUNRUI_KB_YOKOMOCHI">
+ <summary>
+ 請求タリフ分類区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF020DAC.SQL_INSERT_SHIHARAI">
+ <summary>
+ SHIHARAI INSERT用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF020DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF020DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF020DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF020DAC.SelectNewUnsoLData(System.Data.DataSet)">
+ <summary>
+ 運送(大)のデータ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>初期表示時の入荷(大)のデータ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF020DAC.SelectUnsoLInitData(System.Data.DataSet)">
+ <summary>
+ 運送(大)のデータ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>初期表示時の入荷(大)のデータ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF020DAC.SelectUnsoLData(System.Data.DataSet,System.String,Jp.Co.Nrs.LM.DAC.LMF020DAC.SelectCondition)">
+ <summary>
+ 運送(大)のデータ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="sql">SQL</param>
+ <param name="ptn">検索パターン</param>
+ <returns>DataSet</returns>
+ <remarks>初期表示時の入荷(大)のデータ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF020DAC.SelectUnsoMData(System.Data.DataSet)">
+ <summary>
+ 運送(中)のデータ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>初期表示時の入荷(大)のデータ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF020DAC.SelectUnchinData(System.Data.DataSet)">
+ <summary>
+ 運賃のデータ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>初期表示時の運賃のデータ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF020DAC.SelectUnchinInfoData(System.Data.DataSet)">
+ <summary>
+ 料金情報のデータ取得(請求)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>初期表示時の入荷(大)のデータ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF020DAC.SelectShiharaiInfoData(System.Data.DataSet)">
+ <summary>
+ 料金情報のデータ取得(支払)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>初期表示時の支払データ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF020DAC.SelectHaitaData(System.Data.DataSet)">
+ <summary>
+ 更新日付を入れた検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>データ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF020DAC.SelectGheaderData(System.Data.DataSet)">
+ <summary>
+ 最終請求日を取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF020DAC.NewKuroExistChk(System.Data.DataSet)">
+ <summary>
+ 新黒存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF020DAC.InSkyuDateChk(System.Data.DataSet)">
+ <summary>
+ '請求期間内チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF020DAC.InsertUnsoLData(System.Data.DataSet)">
+ <summary>
+ 運送(大)テーブル新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運送(大)テーブル新規登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF020DAC.InsertUnsoMData(System.Data.DataSet)">
+ <summary>
+ 運送(中)テーブル新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運送(中)テーブル新規登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF020DAC.InsertUnchinData(System.Data.DataSet)">
+ <summary>
+ (請求)運賃テーブル新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運賃新規登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF020DAC.InsertShiharaiData(System.Data.DataSet)">
+ <summary>
+ (支払)運賃テーブル新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運賃新規登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF020DAC.UpdateUnsoLData(System.Data.DataSet)">
+ <summary>
+ 運送(大)テーブル更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運送(大)テーブル更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF020DAC.UpdateUnchinData(System.Data.DataSet)">
+ <summary>
+ 運賃テーブル更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運賃テーブル更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF020DAC.UpdatePayUnchinData(System.Data.DataSet)">
+ <summary>
+ 支払運賃テーブル更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>支払運賃テーブル更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF020DAC.UpdateDestMasterData(System.Data.DataSet)">
+ <summary>
+ 届先マスタ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF020DAC.UpdateComData(System.Data.DataSet,System.String,Jp.Co.Nrs.LM.DAC.LMF020DAC.SelectCondition)">
+ <summary>
+ テーブル更新(システム日付)
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="sql">SQL</param>
+ <param name="ptn">抽出パターン</param>
+ <returns>DataSet</returns>
+ <remarks>テーブル更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF020DAC.DeleteUnsoLData(System.Data.DataSet)">
+ <summary>
+ 運送(大)の論理削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF020DAC.DeleteUnsoMData(System.Data.DataSet)">
+ <summary>
+ 運送(中)テーブルの物理削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運送(中)テーブル更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF020DAC.DeleteUnchinData(System.Data.DataSet)">
+ <summary>
+ (請求)運賃テーブルの物理削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運送(中)テーブル更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF020DAC.DeleteShiharaiData(System.Data.DataSet)">
+ <summary>
+ (支払)運賃テーブルの物理削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>支払運賃テーブル削除SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF020DAC.DeletePayUnchinData(System.Data.DataSet)">
+ <summary>
+ 支払運賃テーブルの物理削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運送(中)テーブル更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF020DAC.DeleteComData(System.Data.DataSet,System.String)">
+ <summary>
+ 物理削除共通処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="sql">SQL</param>
+ <returns>DataSet</returns>
+ <remarks>運送(中)テーブル更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF020DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名を設定
+ </summary>
+ <param name="sql">SQL</param>
+ <param name="brCd">営業所コード</param>
+ <returns>SQL</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF020DAC.SelectListData(System.Data.DataSet,System.String,System.String,Jp.Co.Nrs.LM.DAC.LMF020DAC.SelectCondition,System.String[])">
+ <summary>
+ データ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>データ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF020DAC.UpdateResultChk(System.Data.SqlClient.SqlCommand)">
+ <summary>
+ Update文の発行
+ </summary>
+ <param name="cmd">SQLコマンド</param>
+ <returns>True:エラーなし,OK False:排他エラー(E011)</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF020DAC.UpdateResultChk(System.Int32)">
+ <summary>
+ 排他チェック
+ </summary>
+ <param name="cnt">カウント</param>
+ <returns>True:エラーなし,OK False:排他エラー(E011)</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF020DAC.SetSelectParam(System.Collections.ArrayList,System.Data.DataRow,Jp.Co.Nrs.LM.DAC.LMF020DAC.SelectCondition)">
+ <summary>
+ パラメータ設定モジュール(検索)
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <param name="dr">DataRow</param>
+ <param name="ptn">取得条件の切り替え</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF020DAC.SetDataInsertParameter(System.Collections.ArrayList)">
+ <summary>
+ 新規登録の共通パラメータ設定
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF020DAC.SetSysdataParameter(System.Collections.ArrayList)">
+ <summary>
+ 更新時の共通パラメータ設定
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF020DAC.SetUpdateDelFlgParameter(System.Collections.ArrayList)">
+ <summary>
+ 論理削除時の共通パラメータ設定
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF020DAC.SetGuiSysdataTimeParameter(System.Collections.ArrayList,System.Data.DataRow,System.String,System.String)">
+ <summary>
+ 排他の共通パラメータ設定
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <param name="dr">dr</param>
+ <param name="update">更新日の列名</param>
+ <param name="uptime">更新時間の列名</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF020DAC.SetUnsoLComParameter(System.Collections.ArrayList,System.Data.DataRow)">
+ <summary>
+ 運送(大)の更新パラメータ設定
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <param name="conditionRow">DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF020DAC.SetUnsoMComParameter(System.Collections.ArrayList,System.Data.DataRow)">
+ <summary>
+ 運送(中)の更新パラメータ設定
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <param name="conditionRow">DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF020DAC.SetUnchinComParameter(System.Collections.ArrayList,System.Data.DataRow)">
+ <summary>
+ (請求)運賃の更新パラメータ設定
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <param name="conditionRow">DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF020DAC.SetShiharaiComParameter(System.Collections.ArrayList,System.Data.DataRow)">
+ <summary>
+ 支払運賃の更新パラメータ
+ </summary>
+ <param name="conditionRow">DataRow</param>
+ <param name="prmList">パラメータ</param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.DAC.LMF030DAC">
+ <summary>
+ LMF030DACクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF030DAC.TABLE_NM_IN">
+ <summary>
+ INテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF030DAC.TABLE_NM_IN_CAR">
+ <summary>
+ INテーブル車輌マスタ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF030DAC.TABLE_NM_OUT_CAR">
+ <summary>
+ OUTテーブル車輌マスタ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF030DAC.TABLE_NM_UNSO_LL">
+ <summary>
+ F_UNSO_LLテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF030DAC.TABLE_NM_UNSO_L">
+ <summary>
+ F_UNSO_Lテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF030DAC.TABLE_NM_SHIHARAI">
+ <summary>
+ F_SHIHARAI_TRSテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF030DAC.TABLE_NM_IN_KEISAN">
+ <summary>
+ IN_KEISANテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF030DAC.CLASS_NM">
+ <summary>
+ DAC名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF030DAC.NORMAL">
+ <summary>
+ F_UNSO_LL(配送区分)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.DAC.LMF030DAC.SelectCondition">
+ <summary>
+ 検索パターン
+ </summary>
+ <remarks>
+ パターン1：通常検索
+ パターン2：新規(運行)
+ パターン3：新規(運送)⇒パラメータ設定無し
+ パターン4：乗務員取得(運行)
+ </remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF030DAC.SQL_SELECT_TASYA_WH_NM_OUTKA_L1">
+ <summary>
+ 他社倉庫名称の取得（出荷）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF030DAC.SQL_SELECT_TASYA_WH_NM_INKA_L1">
+ <summary>
+ 他社倉庫名称の取得（入荷）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF030DAC.SQL_SELECT_SHIHARAI">
+ <summary>
+ 支払運賃データの検索 SQL SELECT句
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF030DAC.SQL_SELECT_FROM_SHIHARAI">
+ <summary>
+ 支払運賃データの検索 SQL FROM句
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF030DAC.SQL_SELECT_WHERE_SHIHARAI">
+ <summary>
+ 支払運賃データの検索 SQL WHERE句
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF030DAC.SQL_SELECT_ORDER_SHIHARAI">
+ <summary>
+ 支払運賃データの検索 SQL ORDER句
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF030DAC.SQL_SELECT_FROM_SHIHARAI2">
+ <summary>
+ 支払運賃データの検索 SQL FROM句
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF030DAC.SQL_SELECT_WHERE_SHIHARAI2">
+ <summary>
+ 支払運賃データの検索 SQL WHERE句
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF030DAC.SQL_UPDATE_SHIHARAI_HOZON">
+ <summary>
+ F_SHIHARAI_TRS（支払先）更新
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF030DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF030DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF030DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF030DAC.SelectInitUnsoLLData(System.Data.DataSet)">
+ <summary>
+ 運送(特大)のデータ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>初期表示時の運送(特大)のデータ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF030DAC.SelectNewUnsoLLData(System.Data.DataSet)">
+ <summary>
+ 運送(特大)のデータ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>初期表示時の運送(特大)のデータ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF030DAC.SelectDriverUnsoLLData(System.Data.DataSet)">
+ <summary>
+ 運送(特大)のデータ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>初期表示時の運送(特大)のデータ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF030DAC.SelectShiharaiData(System.Data.DataSet)">
+ <summary>
+ 支払データ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>登録時の支払データ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF030DAC.SelectUnsoLLData(System.Data.DataSet,System.String,Jp.Co.Nrs.LM.DAC.LMF030DAC.SelectCondition)">
+ <summary>
+ 運送(特大)のデータ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="sql">SQL</param>
+ <param name="ptn">検索パターン</param>
+ <returns>DataSet</returns>
+ <remarks>初期表示時の運送(特大)のデータ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF030DAC.SelectUnsoLInitData(System.Data.DataSet)">
+ <summary>
+ 運送(大)のデータ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>初期表示時の運送(大)のデータ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF030DAC.SelectNewUnsoLData(System.Data.DataSet)">
+ <summary>
+ 運送(大)のデータ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>初期表示時の運送(大)のデータ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF030DAC.SelectUnsoLData(System.Data.DataSet,System.String,Jp.Co.Nrs.LM.DAC.LMF030DAC.SelectCondition,System.String)">
+ <summary>
+ 運送(大)のデータ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="sql">SQL</param>
+ <param name="ptn">検索パターン</param>
+ <param name="upKbn">UP_KBN</param>
+ <returns>DataSet</returns>
+ <remarks>初期表示時の入荷(大)のデータ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF030DAC.SelectUnsoLData(System.Data.DataSet)">
+ <summary>
+ 運送(大)レコード存在チェック用検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF030DAC.SelectShiharaiInitData(System.Data.DataSet)">
+ <summary>
+ 支払運賃の検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF030DAC.SelectHaitaUnsoLLData(System.Data.DataSet)">
+ <summary>
+ 運送(特大)の排他検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF030DAC.SelectHaitaUnsoLData(System.Data.DataSet)">
+ <summary>
+ 運送(大)の排他検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF030DAC.SelectHaitaData(System.Data.DataSet,System.String)">
+ <summary>
+ 排他検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="tblNm">テーブル名</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF030DAC.SelectKbnData(System.Data.DataSet,System.String)">
+ <summary>
+ 区分マスタ取得
+ </summary>
+ <param name="kbnGrpCd">String</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF030DAC.SelectCarData(System.Data.DataSet)">
+ <summary>
+ 車輌マスタ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF030DAC.InsertUnsoLLData(System.Data.DataSet)">
+ <summary>
+ 運送(特大)テーブル新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運送(特大)テーブル新規登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF030DAC.UpdateUnsoLLData(System.Data.DataSet)">
+ <summary>
+ 運送(特大)テーブル更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運送(特大)テーブル更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF030DAC.UpdateUnsoLDefaultData(System.Data.DataSet)">
+ <summary>
+ 運送(大)テーブル更新(該当区分運行番号初期値更新)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運送(大)テーブル更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF030DAC.UpdateUnsoLData(System.Data.DataSet)">
+ <summary>
+ 運送(大)テーブル更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運送(大)テーブル更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF030DAC.UpdateShiharai(System.Data.DataSet)">
+ <summary>
+ 支払運賃テーブルの更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF030DAC.ShiharaisakiSaveAction(System.Data.DataSet)">
+ <summary>
+ 支払先更新
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF030DAC.UpdateUnsoLKeisan(System.Data.DataSet)">
+ <summary>
+ 運送(大)テーブルの更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF030DAC.UpdateShiharaiKeisan(System.Data.DataSet)">
+ <summary>
+ 支払運賃テーブルの更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF030DAC.UpdateUnsoLLKeisan(System.Data.DataSet)">
+ <summary>
+ 運送(特大)テーブルの更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF030DAC.DeleteUnsoLData(System.Data.DataSet)">
+ <summary>
+ 運送(特大)の論理削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF030DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名を設定
+ </summary>
+ <param name="sql">SQL</param>
+ <param name="brCd">営業所コード</param>
+ <returns>SQL</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF030DAC.SelectListData(System.Data.DataSet,System.String,System.String,Jp.Co.Nrs.LM.DAC.LMF030DAC.SelectCondition,System.String[],System.String)">
+ <summary>
+ データ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="tblNm">テーブル名</param>
+ <param name="sql">SQL</param>
+ <param name="ptn">抽出パターン</param>
+ <param name="str">列名配列</param>
+ <param name="upKbn">UP_KBN</param>
+ <returns>DataSet</returns>
+ <remarks>データ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF030DAC.SelectTasyaWhNm(System.Data.DataSet)">
+ <summary>
+ 他社倉庫名称の設定
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF030DAC.UpdateResultChk(System.Data.SqlClient.SqlCommand)">
+ <summary>
+ Update文の発行
+ </summary>
+ <param name="cmd">SQLコマンド</param>
+ <returns>True:エラーなし,OK False:排他エラー(E011)</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF030DAC.UpdateResultChk(System.Int32)">
+ <summary>
+ 排他チェック
+ </summary>
+ <param name="cnt">カウント</param>
+ <returns>True:エラーなし,OK False:排他エラー(E011)</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF030DAC.GetSchemaBr(System.Data.DataRow,Jp.Co.Nrs.LM.DAC.LMF030DAC.SelectCondition)">
+ <summary>
+ スキーマ用営業所取得
+ </summary>
+ <param name="dr"></param>
+ <param name="ptn"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF030DAC.GetUnsoLSchema(System.Data.DataSet,System.String)">
+ <summary>
+ 運行データの営業所またぎ対応
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF030DAC.SetSelectParam(System.Collections.ArrayList,System.Data.DataRow,Jp.Co.Nrs.LM.DAC.LMF030DAC.SelectCondition)">
+ <summary>
+ パラメータ設定モジュール(検索)
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <param name="dr">DataRow</param>
+ <param name="ptn">取得条件の切り替え</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF030DAC.SetDataInsertParameter(System.Collections.ArrayList)">
+ <summary>
+ 新規登録の共通パラメータ設定
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF030DAC.SetSysdataParameter(System.Collections.ArrayList)">
+ <summary>
+ 更新時の共通パラメータ設定
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF030DAC.SetUpdateDelFlgParameter(System.Collections.ArrayList)">
+ <summary>
+ 論理削除時の共通パラメータ設定
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF030DAC.SetGuiSysdataTimeParameter(System.Collections.ArrayList,System.Data.DataRow)">
+ <summary>
+ 排他の共通パラメータ設定
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <param name="dr">dr</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF030DAC.SetUnsoLLComParameter(System.Collections.ArrayList,System.Data.DataRow)">
+ <summary>
+ 運送(特大)の更新パラメータ設定
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <param name="conditionRow">DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF030DAC.SetUnsoLComParameter(System.Collections.ArrayList,System.Data.DataRow)">
+ <summary>
+ 運送(大)の更新パラメータ設定
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <param name="conditionRow">DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF030DAC.SetSelectShiharaiParam(System.Data.DataRow)">
+ <summary>
+ 支払運賃の検索パラメータ設定
+ </summary>
+ <param name="dr">DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF030DAC.SetUpdUnsoLKeisanParam(System.Data.DataRow)">
+ <summary>
+ 運送(大)の検索パラメータ設定(計算時)
+ </summary>
+ <param name="dr">DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF030DAC.SetUpdShiharaiKeisanParam(System.Data.DataRow)">
+ <summary>
+ 支払運賃の検索パラメータ設定(計算時)
+ </summary>
+ <param name="dr">DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF030DAC.SetUpdUnsoLLKeisanParam(System.Data.DataRow)">
+ <summary>
+ 運送(特大)の検索パラメータ設定(計算時)
+ </summary>
+ <param name="dr">DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF030DAC.SetUpdShiharaiParam(System.Data.DataRow)">
+ <summary>
+ 支払運賃の検索パラメータ設定(保存時)
+ </summary>
+ <param name="dr">DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.DAC.LMF040DAC">
+ <summary>
+ LMF040DACクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF040DAC.TABLE_NM_IN">
+ <summary>
+ INテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF040DAC.TABLE_NM_OUT">
+ <summary>
+ OUTテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF040DAC.TABLE_NM_G_HED">
+ <summary>
+ G_HEDテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF040DAC.TABLE_NM_UNCHIN">
+ <summary>
+ UNCHINテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF040DAC.TABLE_NM_KBN">
+ <summary>
+ 区分テーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF040DAC.TABLE_NM_G_HED_CHK">
+ <summary>
+ G_HED_CHKテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF040DAC.CLASS_NM">
+ <summary>
+ DAC名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.DAC.LMF040DAC.ConditionPattern">
+ <summary>
+ 条件設定
+ </summary>
+ <remarks>
+ PRE  ：前方一致
+ ALL  ：部分一致
+ OTHER：その他
+ </remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF040DAC.DATE_KBN_NONYU">
+ <summary>
+ 日付絞込(納入日)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF040DAC.DATE_KBN_SHUKKA">
+ <summary>
+ 日付絞込(出荷日)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF040DAC.TARIFF_KURUMA">
+ <summary>
+ タリフ区分(車扱い)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF040DAC.ORDER_BY_CUSTTRIP">
+ <summary>
+ 並び順(荷主 , 運行番号)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF040DAC.ORDER_BY_DEST">
+ <summary>
+ 並び順(届先コード)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF040DAC.ORDER_BY_DESTJIS">
+ <summary>
+ 並び順(届先JIS)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF040DAC.ORDER_BY_DIC">
+ <summary>
+ 並び順(日立物流用)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF040DAC.FIX_ACTION">
+ <summary>
+ 確定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF040DAC.FIX_CANCELL_ACTION">
+ <summary>
+ 確定解除
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF040DAC.GROUP_ACTION">
+ <summary>
+ まとめ指示
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF040DAC.GROUP_CANCELL_ACTION">
+ <summary>
+ まとめ解除
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF040DAC.SHUSEI_SEIQTO">
+ <summary>
+ 修正項目(請求先)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF040DAC.SHUSEI_TARIFF">
+ <summary>
+ 修正項目(タリフ)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF040DAC.SHUSEI_YOKO">
+ <summary>
+ 修正項目(横持ち)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF040DAC.SHUSEI_CUST">
+ <summary>
+ 修正項目(荷主)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF040DAC.SHUSEI_ETARIFF">
+ <summary>
+ 修正項目(割増タリフ)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF040DAC.SHUSEI_ZBUKACD">
+ <summary>
+ 修正項目(在庫部課)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF040DAC.SHUSEI_ABUKACD">
+ <summary>
+ 修正項目(扱い部課)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF040DAC.SHUSEI_KYORI">
+ <summary>
+ 修正項目(扱い部課)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF040DAC.GUIDANCE_KBN">
+ <summary>
+ ガイダンス区分(00)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF040DAC.SEIQ_TARIFF_BUNRUI_KB_YOKOMOCHI">
+ <summary>
+ 請求タリフ分類区分
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF040DAC.SQL_SELECT_COUNT_SAIKEISAN">
+ <summary>
+ F_UNSO_L(再計算時) SQL SELECT句
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF040DAC.SQL_UPDATE_UNCHIN_SAIKEISAN">
+ <summary>
+ F_UNCHIN_TRS(再計算時) SQL UPDATE句
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF040DAC.SQL_SELECT_CHK_APPROVAL">
+ <summary>
+ 運賃タリフ承認チェック
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF040DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF040DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF040DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF040DAC.SelectData(System.Data.DataSet)">
+ <summary>
+ 運送(大)検索対象データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運送(大)件数取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF040DAC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 運送(大)検索対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運送(大)対象データ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF040DAC.SelectGheaderData(System.Data.DataSet)">
+ <summary>
+ 最終請求日を取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF040DAC.NewKuroExistChk(System.Data.DataSet)">
+ <summary>
+ 新黒存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF040DAC.InSkyuDateChk(System.Data.DataSet)">
+ <summary>
+ '請求期間内チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF040DAC.SelectInitUnchinData(System.Data.DataSet)">
+ <summary>
+ 運賃情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF040DAC.SelectUnchinData(System.Data.DataSet)">
+ <summary>
+ 運賃情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF040DAC.SelectChkApproval(System.Data.DataSet)">
+ <summary>
+ 運賃タリフ承認チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF040DAC.UpdateUnsoLSysData(System.Data.DataSet)">
+ <summary>
+ 運送(大)テーブル更新(システム項目)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運送(大)テーブル更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF040DAC.UpdateUnsoM(System.Data.DataSet)">
+ <summary>
+ 運送(中)テーブル更新(システム項目)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運送(大)テーブル更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF040DAC.UpdateUnchinData(System.Data.DataSet)">
+ <summary>
+ 運賃テーブル更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運賃テーブル更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF040DAC.SelectDataSaikeisan(System.Data.DataSet)">
+ <summary>
+ 運送(大)データ件数検索(再計算時の排他用)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運送(大)件数取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF040DAC.UpdUnchinData(System.Data.DataSet)">
+ <summary>
+ 運賃更新処理(再計算時)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF040DAC.SetConditionMasterSQL(System.Collections.ArrayList,System.Data.DataRow,System.Text.StringBuilder)">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <param name="dr">DataRow</param>
+ <param name="sql">SQL</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF040DAC.SetConditionDateSQL(System.Collections.ArrayList,System.Data.DataRow,System.Text.StringBuilder)">
+ <summary>
+ 条件文・パラメータ設定モジュール(日付絞込)
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <param name="dr">DataRow</param>
+ <param name="sql">SQL</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF040DAC.SetGroupData(System.Text.StringBuilder,System.String,System.Collections.ArrayList,System.Int32)">
+ <summary>
+ まとめ条件の設定
+ </summary>
+ <param name="sql">SQL</param>
+ <param name="value">追加する文</param>
+ <param name="arr">リスト</param>
+ <param name="max">リストの件数</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF040DAC.SetOrderBySQL(System.Collections.ArrayList,System.Data.DataRow,System.Text.StringBuilder)">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <param name="dr">DataRow</param>
+ <param name="sql">SQL</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF040DAC.SetWhereData(System.String,Jp.Co.Nrs.LM.DAC.LMF040DAC.ConditionPattern)">
+ <summary>
+ 抽出条件設定
+ </summary>
+ <param name="whereStr">条件の文字</param>
+ <param name="ptn">抽出パターン</param>
+ <returns>文字</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF040DAC.SelectKbnData(System.Data.DataSet,System.String)">
+ <summary>
+ 区分マスタ取得
+ </summary>
+ <param name="kbnGrpCd">String</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF040DAC.GetUnsoLLSchema(System.Data.DataSet)">
+ <summary>
+ 運行データの営業所またぎ対応
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF040DAC.SetGuiSysdataTimeParameter(System.Collections.ArrayList,System.Data.DataRow)">
+ <summary>
+ 排他の共通パラメータ設定
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <param name="dr">dr</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF040DAC.SetUnsoLPkParameter(System.Data.DataRow,System.Collections.ArrayList)">
+ <summary>
+ 運送(大)PK
+ </summary>
+ <param name="conditionRow">DataRow</param>
+ <param name="prmList">パラメータ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF040DAC.SetSysdataParameter(System.Collections.ArrayList)">
+ <summary>
+ 更新時の共通パラメータ設定
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF040DAC.SetSysdataHenkoParameter(System.Collections.ArrayList)">
+ <summary>
+ 更新時の共通パラメータ設定(一括変更時)
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF040DAC.SetUnsoLTariffParameter(System.Data.DataRow,System.Collections.ArrayList)">
+ <summary>
+ 運送(大)タリフコード
+ </summary>
+ <param name="conditionRow">DataRow</param>
+ <param name="prmList">パラメータ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF040DAC.SetUnsoMzbukaCdParameter(System.Data.DataRow,System.Collections.ArrayList)">
+ <summary>
+ 運送(中)在庫部課
+ </summary>
+ <param name="conditionRow">DataRow</param>
+ <param name="prmList">パラメータ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF040DAC.SetUnsoMabukaCdParameter(System.Data.DataRow,System.Collections.ArrayList)">
+ <summary>
+ 運送(中)扱い部課
+ </summary>
+ <param name="conditionRow">DataRow</param>
+ <param name="prmList">パラメータ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF040DAC.SetSelectUnsoLParameter(System.Data.DataRow,System.Collections.ArrayList)">
+ <summary>
+ 運賃更新処理(再計算時)
+ </summary>
+ <param name="conditionRow">DataRow</param>
+ <param name="prmList">パラメータ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF040DAC.SetUpdUnchinParameter(System.Data.DataRow,System.Collections.ArrayList)">
+ <summary>
+ 運賃更新処理(再計算時)
+ </summary>
+ <param name="conditionRow">DataRow</param>
+ <param name="prmList">パラメータ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF040DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名取得
+ </summary>
+ <param name="sql">SQL</param>
+ <param name="brCd">営業所コード</param>
+ <returns>SQL</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF040DAC.UpdateResultChk(System.Data.SqlClient.SqlCommand,System.Boolean)">
+ <summary>
+ Update文の発行
+ </summary>
+ <param name="cmd">SQLコマンド</param>
+ <param name="setFlg">エラーセットフラグ　True:通常のメッセージセット　False:一括更新のメッセージセット</param>
+ <returns>True:エラーなし,OK False:排他エラー(E011)</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF040DAC.UpdateResultChk(System.Int32,System.Boolean)">
+ <summary>
+ 排他チェック
+ </summary>
+ <param name="cnt">カウント</param>
+ <param name="setFlg">エラーセットフラグ　True:通常のメッセージセット　False:一括更新のメッセージセット</param>
+ <returns>True:エラーなし,OK False:排他エラー(E011)</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF040DAC.SetUpdateUnchinSQL(System.Collections.ArrayList,System.Data.DataRow,System.Text.StringBuilder)">
+ <summary>
+ 運賃更新のSQL構築
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <param name="dr">DataRow</param>
+ <param name="sql">SQL</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF040DAC.SetUpdateKingakuSQL(System.Collections.ArrayList,System.Data.DataRow,System.Text.StringBuilder)">
+ <summary>
+ 数値系の設定
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <param name="dr">DataRow</param>
+ <param name="sql">SQL</param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.DAC.LMF050DAC">
+ <summary>
+ LMF050DACクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF050DAC.SQL_SELECT_COUNT">
+ <summary>
+ カウント用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF050DAC.SQL_SELECT_DATA">
+ <summary>
+ F_UNCHIN_TRSデータ抽出用
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF050DAC.SQL_UPDATE">
+ <summary>
+ 更新SQL(保存)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF050DAC.SQL_UPDATE_KAKUTEI">
+ <summary>
+ 更新SQL(確定)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF050DAC.SQL_UPDATE_KAKUTEIKAIJO">
+ <summary>
+ 更新SQL(確定解除)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF050DAC.SQL_UPDATE_KYOUTU">
+ <summary>
+ 更新SQL(共通)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF050DAC.SQL_ORDER_BY">
+ <summary>
+ ORDER BY
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF050DAC.SQL_EXIT_SEIQTO">
+ <summary>
+ 運送番号L存在チェック用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF050DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF050DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF050DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF050DAC.SelectData(System.Data.DataSet)">
+ <summary>
+ 運賃マスタ更新対象データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>請求先マスタ更新対象データ検索件数取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF050DAC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 運賃マスタ更新対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>請求先マスタ更新対象データ一覧検索結果取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF050DAC.SetConditionMasterSQL">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF050DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF050DAC.SelectUnchinM(System.Data.DataSet)">
+ <summary>
+ 運賃マスタ排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運賃テーブル検索結果取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF050DAC.UpdateUnchinM(System.Data.DataSet)">
+ <summary>
+ 運賃テーブル更新(保存)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運賃テーブル更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF050DAC.UpdateUnchinKakuteiM(System.Data.DataSet)">
+ <summary>
+ 運賃テーブル更新(確定)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運賃テーブル更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF050DAC.UpdateUnchinKakuteiKijoM(System.Data.DataSet)">
+ <summary>
+ 運賃テーブル更新(確定解除)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運賃テーブル更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF050DAC.UpdateUnsoM(System.Data.DataSet)">
+ <summary>
+ 運送テーブル更新(共通)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運賃テーブル更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF050DAC.SelectSeiChek(System.Data.DataSet)">
+ <summary>
+ 請求鏡ヘッダチェック用
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>請求先マスタ更新対象データ一覧検索結果取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF050DAC.NewKuroExistChk(System.Data.DataSet)">
+ <summary>
+ 新黒存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF050DAC.InSkyuDateChk(System.Data.DataSet)">
+ <summary>
+ '請求期間内チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF050DAC.IsExistNewKuroKagamiUnchin(System.Data.DataSet)">
+ <summary>
+ 新黒鑑情報に運賃情報が紐づいているかのチェック
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF050DAC.SetParamExistChk">
+ <summary>
+ パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF050DAC.SetParamHaitaChk">
+ <summary>
+ パラメータ設定モジュール(排他チェック)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF050DAC.SetParamCommonSystemUpd(System.String,System.String)">
+ <summary>
+ パラメータ設定モジュール(システム共通項目(更新時))
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF050DAC.SetComParam">
+ <summary>
+ パラメータ設定モジュール(更新登録用)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF050DAC.SetParamUpdate(System.String,System.String)">
+ <summary>
+ パラメータ設定モジュール(更新登録用)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF050DAC.SetSeiParam">
+ <summary>
+ パラメータ設定モジュール(請求鏡ヘッダ)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF050DAC.UpdateResultChk(System.Data.SqlClient.SqlCommand)">
+ <summary>
+ Update文の発行
+ </summary>
+ <param name="cmd">SQLコマンド</param>
+ <returns>True:エラーなし,OK False:排他エラー(E011)</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF050DAC.UpdateResultChk(System.Int32)">
+ <summary>
+ 排他チェック
+ </summary>
+ <param name="cnt">カウント</param>
+ <returns>True:エラーなし,OK False:排他エラー(E011)</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.DAC.LMF060DAC">
+ <summary>
+ LMF060DACクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF060DAC.SQL_SELECT_DATA">
+ <summary>
+ F_UNSO_Lデータ抽出用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF060DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF060DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF060DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF060DAC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 運送Lテーブル更新対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運送Lテーブル更新対象データ一覧検索結果取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF060DAC.SetConditionMasterSQL">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF060DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF060DAC.SetParamExistChk">
+ <summary>
+ パラメータ設定モジュール(運送Lテーブル存在チェック)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.DAC.LMF070DAC">
+ <summary>
+ LMF070DACクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF070DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF070DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF070DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF070DAC.SQL_SELECT_DATA">
+ <summary>
+ F_UNCHIN_TRSデータ抽出用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF070DAC.SQL_FROM_DATA">
+ <summary>
+ F_UNCHIN_TRSデータ抽出用 FROM句
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF070DAC.SQL_ORDER_BY">
+ <summary>
+ ORDER BY
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF070DAC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 運賃マスタ更新対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>請求先マスタ更新対象データ一覧検索結果取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF070DAC.SetConditionMasterSQL">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF070DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.DAC.LMF080DAC">
+ <summary>
+ LMF080DACクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF080DAC.TABLE_NM_IN">
+ <summary>
+ INテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF080DAC.TABLE_NM_OUT">
+ <summary>
+ OUTテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF080DAC.TABLE_NM_G_HED">
+ <summary>
+ G_HEDテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF080DAC.TABLE_NM_UNCHIN">
+ <summary>
+ UNCHINテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF080DAC.TABLE_NM_OUT_ANBUN">
+ <summary>
+ OUT_ANBUNテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF080DAC.CLASS_NM">
+ <summary>
+ DAC名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.DAC.LMF080DAC.ConditionPattern">
+ <summary>
+ 条件設定
+ </summary>
+ <remarks>
+ PRE  ：前方一致
+ ALL  ：部分一致
+ OTHER：その他
+ </remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF080DAC.DATE_KBN_NONYU">
+ <summary>
+ 日付絞込(納入日)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF080DAC.DATE_KBN_SHUKKA">
+ <summary>
+ 日付絞込(出荷日)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF080DAC.TARIFF_KURUMA">
+ <summary>
+ タリフ区分(車扱い)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF080DAC.ORDER_BY_CUSTTRIP">
+ <summary>
+ 並び順(荷主 , 運行番号)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF080DAC.ORDER_BY_DEST">
+ <summary>
+ 並び順(届先コード)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF080DAC.ORDER_BY_DESTJIS">
+ <summary>
+ 並び順(届先JIS)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF080DAC.FIX_ACTION">
+ <summary>
+ 確定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF080DAC.FIX_CANCELL_ACTION">
+ <summary>
+ 確定解除
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF080DAC.GROUP_ACTION">
+ <summary>
+ まとめ指示
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF080DAC.GROUP_CANCELL_ACTION">
+ <summary>
+ まとめ解除
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF080DAC.SHUSEI_SHIHARAI">
+ <summary>
+ 修正項目(支払先)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF080DAC.SHUSEI_TARIFF">
+ <summary>
+ 修正項目(支払先タリフ)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF080DAC.SHUSEI_YOKO">
+ <summary>
+ 修正項目(支払先横持ち)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF080DAC.SHUSEI_ETARIFF">
+ <summary>
+ 修正項目(割増タリフ)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF080DAC.GUIDANCE_KBN">
+ <summary>
+ ガイダンス区分(00)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF080DAC.SQL_SELECT_COUNT_SAIKEISAN">
+ <summary>
+ F_UNSO_L(再計算時) SQL SELECT句
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF080DAC.SQL_UPDATE_UNCHIN_SAIKEISAN">
+ <summary>
+ F_SHIHARAI_TRS(再計算時) SQL UPDATE句
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF080DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF080DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF080DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF080DAC.SelectData(System.Data.DataSet)">
+ <summary>
+ 運送(大)検索対象データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運送(大)件数取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF080DAC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 運送(大)検索対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運送(大)対象データ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF080DAC.SelectInitUnchinData(System.Data.DataSet)">
+ <summary>
+ 運賃情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF080DAC.SelectUnchinDataCnt(System.Data.DataSet)">
+ <summary>
+ 運賃情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF080DAC.SelectUnchinData(System.Data.DataSet)">
+ <summary>
+ 運賃情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF080DAC.SelectAnbunData(System.Data.DataSet)">
+ <summary>
+ 按分対象データ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF080DAC.UpdateUnsoLSysData(System.Data.DataSet)">
+ <summary>
+ 運送(大)テーブル更新(システム項目)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運送(大)テーブル更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF080DAC.UpdateUnchinData(System.Data.DataSet)">
+ <summary>
+ 運賃テーブル更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運賃テーブル更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF080DAC.SelectDataSaikeisan(System.Data.DataSet)">
+ <summary>
+ 運送(大)データ件数検索(再計算時の排他用)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運送(大)件数取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF080DAC.UpdUnchinData(System.Data.DataSet)">
+ <summary>
+ 運賃更新処理(再計算時)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF080DAC.SetConditionMasterSQL(System.Collections.ArrayList,System.Data.DataRow,System.Text.StringBuilder)">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <param name="dr">DataRow</param>
+ <param name="sql">SQL</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF080DAC.SetConditionDateSQL(System.Collections.ArrayList,System.Data.DataRow,System.Text.StringBuilder)">
+ <summary>
+ 条件文・パラメータ設定モジュール(日付絞込)
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <param name="dr">DataRow</param>
+ <param name="sql">SQL</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF080DAC.SetGroupData(System.Text.StringBuilder,System.String,System.Collections.ArrayList,System.Int32)">
+ <summary>
+ まとめ条件の設定
+ </summary>
+ <param name="sql">SQL</param>
+ <param name="value">追加する文</param>
+ <param name="arr">リスト</param>
+ <param name="max">リストの件数</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF080DAC.SetOrderBySQL(System.Collections.ArrayList,System.Data.DataRow,System.Text.StringBuilder)">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <param name="dr">DataRow</param>
+ <param name="sql">SQL</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF080DAC.SetWhereData(System.String,Jp.Co.Nrs.LM.DAC.LMF080DAC.ConditionPattern)">
+ <summary>
+ 抽出条件設定
+ </summary>
+ <param name="whereStr">条件の文字</param>
+ <param name="ptn">抽出パターン</param>
+ <returns>文字</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF080DAC.SetGuiSysdataTimeParameter(System.Collections.ArrayList,System.Data.DataRow)">
+ <summary>
+ 排他の共通パラメータ設定
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <param name="dr">dr</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF080DAC.SetUnsoLPkParameter(System.Data.DataRow,System.Collections.ArrayList)">
+ <summary>
+ 運送(大)PK
+ </summary>
+ <param name="conditionRow">DataRow</param>
+ <param name="prmList">パラメータ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF080DAC.SetSysdataParameter(System.Collections.ArrayList)">
+ <summary>
+ 更新時の共通パラメータ設定
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF080DAC.SetSysdataHenkoParameter(System.Collections.ArrayList)">
+ <summary>
+ 更新時の共通パラメータ設定(一括変更時)
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF080DAC.SetUnsoLTariffParameter(System.Data.DataRow,System.Collections.ArrayList)">
+ <summary>
+ 運送(大)タリフコード
+ </summary>
+ <param name="conditionRow">DataRow</param>
+ <param name="prmList">パラメータ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF080DAC.SetSelectUnsoLParameter(System.Data.DataRow,System.Collections.ArrayList)">
+ <summary>
+ 運賃更新処理(再計算時)
+ </summary>
+ <param name="conditionRow">DataRow</param>
+ <param name="prmList">パラメータ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF080DAC.SetUpdUnchinParameter(System.Data.DataRow,System.Collections.ArrayList)">
+ <summary>
+ 運賃更新処理(再計算時)
+ </summary>
+ <param name="conditionRow">DataRow</param>
+ <param name="prmList">パラメータ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF080DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名取得
+ </summary>
+ <param name="sql">SQL</param>
+ <param name="brCd">営業所コード</param>
+ <returns>SQL</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF080DAC.UpdateResultChk(System.Data.SqlClient.SqlCommand,System.Boolean)">
+ <summary>
+ Update文の発行
+ </summary>
+ <param name="cmd">SQLコマンド</param>
+ <param name="setFlg">エラーセットフラグ　True:通常のメッセージセット　False:一括更新のメッセージセット</param>
+ <returns>True:エラーなし,OK False:排他エラー(E011)</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF080DAC.UpdateResultChk(System.Int32,System.Boolean)">
+ <summary>
+ 排他チェック
+ </summary>
+ <param name="cnt">カウント</param>
+ <param name="setFlg">エラーセットフラグ　True:通常のメッセージセット　False:一括更新のメッセージセット</param>
+ <returns>True:エラーなし,OK False:排他エラー(E011)</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF080DAC.SetUpdateUnchinSQL(System.Collections.ArrayList,System.Data.DataRow,System.Text.StringBuilder)">
+ <summary>
+ 運賃更新のSQL構築
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <param name="dr">DataRow</param>
+ <param name="sql">SQL</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF080DAC.SetUpdateKingakuSQL(System.Collections.ArrayList,System.Data.DataRow,System.Text.StringBuilder)">
+ <summary>
+ 数値系の設定
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <param name="dr">DataRow</param>
+ <param name="sql">SQL</param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.DAC.LMF090DAC">
+ <summary>
+ LMF090DACクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF090DAC.SQL_SELECT_COUNT">
+ <summary>
+ カウント用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF090DAC.SQL_SELECT_DATA">
+ <summary>
+ F_SHIHARAI_TRSデータ抽出用
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF090DAC.SQL_UPDATE">
+ <summary>
+ 更新SQL(保存)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF090DAC.SQL_UPDATE_KAKUTEI">
+ <summary>
+ 更新SQL(確定)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF090DAC.SQL_UPDATE_KAKUTEI_ANBUN">
+ <summary>
+ 更新SQL(按分時の確定)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF090DAC.SQL_UPDATE_KAKUTEIKAIJO">
+ <summary>
+ 更新SQL(確定解除)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF090DAC.SQL_UPDATE_KYOUTU">
+ <summary>
+ 更新SQL(共通)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF090DAC.SQL_ORDER_BY">
+ <summary>
+ ORDER BY
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF090DAC.SQL_EXIT_SEIQTO">
+ <summary>
+ 運送番号L存在チェック用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF090DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF090DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF090DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF090DAC.SelectData(System.Data.DataSet)">
+ <summary>
+ 運賃マスタ更新対象データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>請求先マスタ更新対象データ検索件数取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF090DAC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 運賃マスタ更新対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>請求先マスタ更新対象データ一覧検索結果取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF090DAC.SelectAnbunData(System.Data.DataSet)">
+ <summary>
+ 按分対象データ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF090DAC.SetConditionMasterSQL">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF090DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF090DAC.SelectUnchinM(System.Data.DataSet)">
+ <summary>
+ 運賃マスタ排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運賃テーブル検索結果取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF090DAC.UpdateUnchinM(System.Data.DataSet)">
+ <summary>
+ 運賃テーブル更新(保存)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運賃テーブル更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF090DAC.UpdateUnchinKakuteiM(System.Data.DataSet)">
+ <summary>
+ 運賃テーブル更新(確定)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運賃テーブル更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF090DAC.UpdateUnchinKakuteiAnbun(System.Data.DataSet)">
+ <summary>
+ 運賃テーブル更新(按分時の確定)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運賃テーブル更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF090DAC.UpdateUnchinKakuteiKijoM(System.Data.DataSet)">
+ <summary>
+ 運賃テーブル更新(確定解除)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運賃テーブル更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF090DAC.UpdateUnchinKakuteiKijoAnbun(System.Data.DataSet)">
+ <summary>
+ 運賃テーブル更新(確定解除)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運賃テーブル更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF090DAC.UpdateUnsoM(System.Data.DataSet,System.String)">
+ <summary>
+ 運送テーブル更新(共通)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運賃テーブル更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF090DAC.SelectSeiChek(System.Data.DataSet)">
+ <summary>
+ 請求鏡ヘッダチェック用
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>請求先マスタ更新対象データ一覧検索結果取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF090DAC.SetParamExistChk">
+ <summary>
+ パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF090DAC.SetParamHaitaChk">
+ <summary>
+ パラメータ設定モジュール(排他チェック)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF090DAC.SetParamCommonSystemUpd(System.String,System.String)">
+ <summary>
+ パラメータ設定モジュール(システム共通項目(更新時))
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF090DAC.SetComParam">
+ <summary>
+ パラメータ設定モジュール(更新登録用)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF090DAC.SetParamUpdate(System.String,System.String)">
+ <summary>
+ パラメータ設定モジュール(更新登録用)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF090DAC.SetSeiParam">
+ <summary>
+ パラメータ設定モジュール(請求鏡ヘッダ)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF090DAC.UpdateResultChk(System.Data.SqlClient.SqlCommand)">
+ <summary>
+ Update文の発行
+ </summary>
+ <param name="cmd">SQLコマンド</param>
+ <returns>True:エラーなし,OK False:排他エラー(E011)</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF090DAC.UpdateResultChk(System.Int32)">
+ <summary>
+ 排他チェック
+ </summary>
+ <param name="cnt">カウント</param>
+ <returns>True:エラーなし,OK False:排他エラー(E011)</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.DAC.LMF100DAC">
+ <summary>
+ LMF100DACクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF100DAC.SQL_SELECT_KEN">
+ <summary>
+ 都道府県名データ抽出用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF100DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF100DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF100DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF100DAC.ComboData(System.Data.DataSet)">
+ <summary>
+ 都道府県名データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>都道府県名データ検索取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF100DAC.UpdateResultChk(System.Data.SqlClient.SqlCommand)">
+ <summary>
+ 更新時排他チェック
+ </summary>
+ <param name="cmd">更新SQL</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF100DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.DAC.LMF200DAC">
+ <summary>
+ LMF200DACクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF200DAC.SQL_SELECT_COUNT">
+ <summary>
+ カウント用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF200DAC.SQL_SELECT_DATA">
+ <summary>
+ F_UNSO_Lデータ抽出用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF200DAC.SQL_GROUP_BY">
+ <summary>
+ GROUP BY
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF200DAC.SQL_GROUP_BY_COUNT">
+ <summary>
+ GROUP BY
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF200DAC.SQL_ORDER_BY">
+ <summary>
+ ORDER BY
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF200DAC.SQL_SELECT_TASYA_WH_NM_OUTKA">
+ <summary>
+ 他社倉庫名称の取得（出荷）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF200DAC.SQL_SELECT_TASYA_WH_NM_INKA">
+ <summary>
+ 他社倉庫名称の取得（入荷）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF200DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF200DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF200DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF200DAC.SelectData(System.Data.DataSet)">
+ <summary>
+ 運送Lテーブル更新対象データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運送Lテーブル更新対象データ検索件数取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF200DAC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 運送Lテーブル更新対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運送Lテーブル更新対象データ一覧検索結果取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF200DAC.SelectTasyaWhNm(System.Data.DataSet)">
+ <summary>
+ 他社倉庫名称の設定
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF200DAC.SetConditionMasterSQL">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF200DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF200DAC.SetParamExistChk">
+ <summary>
+ パラメータ設定モジュール(運送Lテーブル存在チェック)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF200DAC.SetConditionBkgContSql(System.Data.DataTable)">
+ <summary>
+ 条件文・パラメータ設定
+ </summary>
+ <param name="dt">データテーブル</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF200DAC.SetLastJobContData(System.Data.DataRow,System.String)">
+ <summary>
+ 前回Jobの条件設定
+ </summary>
+ <param name="dr">データロウ</param>
+ <param name="str1">パラメータ文字1</param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.DAC.LMF210DAC">
+ <summary>
+ LMF210DACクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF210DAC.SQL_SELECT_COUNT">
+ <summary>
+カウント用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF210DAC.SQL_SELECT">
+ <summary>
+カウント用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF210DAC.SQL_SELECT_DATA">
+ <summary>
+ F_UNCHIN_TRSデータ抽出用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF210DAC.SQL_GROUP_BY_B">
+ <summary>
+ GROUP BY
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF210DAC.SQL_GROUP_BY">
+ <summary>
+ GROUP BY
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF210DAC.SQL_ORDER_BY">
+ <summary>
+ ORDER BY
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF210DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF210DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF210DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF210DAC.SelectData(System.Data.DataSet)">
+ <summary>
+ 運賃マスタ更新対象データ件数検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>請求先マスタ更新対象データ検索件数取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF210DAC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 運賃マスタ更新対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>請求先マスタ更新対象データ一覧検索結果取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF210DAC.SetConditionMasterSQL">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF210DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF210DAC.SetParamExistChk">
+ <summary>
+ パラメータ設定モジュール(請求先マスタ存在チェック)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.DAC.LMF510DAC">
+ <summary>
+ LMF510DACクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF510DAC.SQL_SELECT_MPrt">
+ <summary>
+ 帳票種別取得用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF510DAC.SQL_SELECT_DATA">
+ <summary>
+ 印刷データ抽出用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF510DAC.SQL_SELECT_DATA523">
+ <summary>
+ 印刷データ抽出用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF510DAC.SQL_SELECT_DATA_LMF514">
+ <summary>
+ 印刷データ抽出用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF510DAC.SQL_SELECT_DATA_LMF515">
+ <summary>
+ 印刷データ抽出用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF510DAC.SQL_SELECT_DATA_LMF516">
+ <summary>
+ 印刷データ抽出用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF510DAC.SQL_SELECT_DATA_LMF522">
+ <summary>
+ 印刷データ抽出用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF510DAC.SQL_ORDER_BY">
+ <summary>
+ ORDER BY
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF510DAC.SQL_ORDER_BY523">
+ <summary>
+ ORDER BY LMF523用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF510DAC.SQL_ORDER_BY_LMF513">
+ <summary>
+ ORDER BY LMF513用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF510DAC.SQL_ORDER_BY_LMF509">
+ <summary>
+ ORDER BY
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF510DAC.SQL_ORDER_BY_LMF514">
+ <summary>
+ ORDER BY
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF510DAC.SQL_ORDER_BY_LMF515">
+ <summary>
+ ORDER BY
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF510DAC.SQL_ORDER_BY_LMF507">
+ <summary>
+ ORDER BY
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF510DAC.SQL_ORDER_BY_LMF516">
+ <summary>
+ ORDER BY
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF510DAC.SQL_ORDER_BY_LMF517">
+ <summary>
+ ORDER BY
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF510DAC.SQL_ORDER_BY_LMF506">
+ <summary>
+ ORDER BY
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF510DAC.SQL_ORDER_BY_LMF522">
+ <summary>
+ ORDER BY LMF522
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF510DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF510DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF510DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF510DAC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+出力対象帳票パターン取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>出力対象帳票パターン取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF510DAC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 運賃テーブル対象データ
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>入荷データLテーブル更新対象データ一覧検索結果取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF510DAC.SetConditionMasterSQL">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF510DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.DAC.LMF520DAC">
+ <summary>
+ LMF520DACクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF520DAC.SQL_SELECT_MPrt">
+ <summary>
+ 帳票種別取得用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF520DAC.SQL_SELECT_DATA">
+ <summary>
+ 印刷データ抽出用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF520DAC.SQL_ORDER_BY">
+ <summary>
+ ORDER BY
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF520DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF520DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF520DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF520DAC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+出力対象帳票パターン取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>出力対象帳票パターン取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF520DAC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 運賃テーブル対象データ
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>入荷データLテーブル更新対象データ一覧検索結果取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF520DAC.SetConditionMasterSQL">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF520DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.DAC.LMF530DAC">
+ <summary>
+ LMF530DACクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF530DAC.SQL_SELECT_MPrt">
+ <summary>
+ 帳票種別取得用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF530DAC.SQL_SELECT_DATA">
+ <summary>
+ 印刷データ抽出用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF530DAC.SQL_SELECT_DATA_LMF535">
+ <summary>
+ 印刷データ抽出用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF530DAC.SQL_FROM_LMF535">
+ <summary>
+ LMF535用のFROM区
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF530DAC.SQL_GROUP_BY_LMF535">
+ <summary>
+ LMF535用の GROUP BY 区
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF530DAC.SQL_ORDER_BY">
+ <summary>
+ ORDER BY
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF530DAC.SQL_ORDER_BY2">
+ <summary>
+ ORDER BY
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF530DAC.SQL_ORDER_BY_LMF532">
+ <summary>
+ ORDER BY
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF530DAC.SQL_ORDER_BY_LMF532_2">
+ <summary>
+ ORDER BY
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF530DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF530DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF530DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF530DAC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+出力対象帳票パターン取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>出力対象帳票パターン取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF530DAC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 運賃テーブル対象データ
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>入荷データLテーブル更新対象データ一覧検索結果取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF530DAC.SetConditionMasterSQL(System.Int32)">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF530DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.DAC.LMF534DAC">
+ <summary>
+ LMF534DACクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF534DAC.SQL_SELECT_MPrt">
+ <summary>
+ 帳票種別取得用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF534DAC.SQL_SELECT_DATA">
+ <summary>
+ 印刷データ抽出用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF534DAC.SQL_ORDER_BY">
+ <summary>
+ ORDER BY
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF534DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF534DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF534DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF534DAC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+出力対象帳票パターン取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>出力対象帳票パターン取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF534DAC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 運行情報データ
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運行データ検索結果取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF534DAC.SetConditionMasterSQL">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF534DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.DAC.LMF540DAC">
+ <summary>
+ LMF540DACクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF540DAC.SQL_SELECT_MPrt">
+ <summary>
+ 帳票種別取得用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF540DAC.SQL_SELECT_DATA_0">
+ <summary>
+ データタイプ０のデータ抽出用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF540DAC.SQL_SELECT_DATA_01">
+ <summary>
+ データタイプ０のデータ抽出用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF540DAC.SQL_SELECT_DATA_WARIMASI">
+ <summary>
+ データタイプ０のデータ抽出用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF540DAC.SQL_FROM_WARIMASI">
+ <summary>
+ 割増運賃情報データ抽出用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF540DAC.SQL_FROM_WARIMASI_CHANGED">
+ <summary>
+ 割増運賃情報データ抽出用(JISコードを切り替えた場合)'Notes1826 2013/02/07 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF540DAC.SQL_ORDER_BY">
+ <summary>
+ ORDER BY
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF540DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF540DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF540DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF540DAC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+出力対象帳票パターン取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>出力対象帳票パターン取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF540DAC.GetTariffKyori(System.Data.DataSet)">
+ <summary>
+ 運賃タリフ (距離の取得)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>適用運賃レコードを特定する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF540DAC.GetTariffJuryou(System.Data.DataSet)">
+ <summary>
+ 運賃タリフ (金額、重量の取得)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>適用運賃レコードを特定する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF540DAC.GetWarimasi(System.Data.DataSet)">
+ <summary>
+割増区分の取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>出力対象帳票パターン取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF540DAC.GetNm(System.Data.DataSet)">
+ <summary>
+名称の取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>出力対象帳票パターン取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF540DAC.SetConditionMasterSQL">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF540DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF540DAC.SetTariffResult">
+ <summary>
+ タリフ情報の結果を格納
+ </summary>
+ <returns>HashTable</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.DAC.LMF550DAC">
+ <summary>
+ LMF550DACクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF550DAC.SQL_MPrt_SELECT">
+ <summary>
+ 帳票種別取得用 SELECT句
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF550DAC.SQL_SELECT">
+ <summary>
+ 印刷データ抽出用 SELECT句
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF550DAC.SQL_FROM">
+ <summary>
+ 帳票種別取得用 FROM句
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF550DAC.SQL_ORDER_BY">
+ <summary>                             
+ 印刷データ抽出用 ORDER BY句           
+ </summary>                            
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF550DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF550DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF550DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF550DAC.ZERO_FLG">
+ <summary>
+ ゼロフラグ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF550DAC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+帳票パターンマスタ データ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>帳票パターンマスタデータ取得 SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF550DAC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 物品引取書対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>物品引取書対象データ一覧検索結果取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF550DAC.SetConditionMasterSQL">
+ <summary>
+ 帳票出力 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF550DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.DAC.LMF560DAC">
+ <summary>
+ LMF560DACクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF560DAC.SQL_SELECT_MPrt">
+ <summary>
+ 帳票種別取得用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF560DAC.SQL_ORDER_DATA">
+ <summary>
+ 検索対象データの検索 SQL ORDER BY句
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF560DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF560DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF560DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF560DAC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+出力対象帳票パターン取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>出力対象帳票パターン取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF560DAC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 印刷対象データの検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF560DAC.SetSQLWhereDATA(System.Data.DataRow)">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF560DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.DAC.LMF570DAC">
+ <summary>
+ LMF570DACクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF570DAC.SQL_SELECT_MPrt">
+ <summary>
+ 帳票種別取得用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF570DAC.SQL_SELECT_DATA">
+ <summary>
+ 印刷データ抽出用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF570DAC.SQL_GROUP_BY">
+ <summary>
+ GROUP BY
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF570DAC.SQL_ORDER_BY">
+ <summary>
+ ORDER BY
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF570DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF570DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF570DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF570DAC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+出力対象帳票パターン取得処理(仮)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>出力対象帳票パターン取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF570DAC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 運送テーブル対象データ
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運送データLテーブル更新対象データ一覧検索結果取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF570DAC.SetConditionMasterSQL">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF570DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.DAC.LMF580DAC">
+ <summary>
+ LMF580DACクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF580DAC.SQL_SELECT_MPrt">
+ <summary>
+ 帳票種別取得用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF580DAC.SQL_SELECT_DATA">
+ <summary>
+ 印刷データ抽出用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF580DAC.SQL_GROUP_BY">
+ <summary>
+ GROUP BY
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF580DAC.SQL_ORDER_BY">
+ <summary>
+ ORDER BY
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF580DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF580DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF580DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF580DAC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+出力対象帳票パターン取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>出力対象帳票パターン取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF580DAC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 運賃テーブル対象データ
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>入荷データLテーブル更新対象データ一覧検索結果取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF580DAC.SetConditionMasterSQL">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF580DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.DAC.LMF581DAC">
+ <summary>
+ LMF581DACクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF581DAC.DATE_KBN_NONYU">
+ <summary>
+ 日付絞込(納入日)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF581DAC.DATE_KBN_SHUKKA">
+ <summary>
+ 日付絞込(出荷日)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF581DAC.DATE_KBN_LL">
+ <summary>
+ 日付絞込(運行日)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF581DAC.DATE_KBN_ENT">
+ <summary>
+ 日付絞込(作成日)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF581DAC.TYUKEI_HAISO_FLG_ON">
+ <summary>
+ 中継配送有
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF581DAC.SQL_SELECT_MPrt">
+ <summary>
+ 帳票種別取得用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF581DAC.SQL_SELECT_DATA">
+ <summary>
+ 印刷データ抽出用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF581DAC.SQL_GROUP_BY">
+ <summary>
+ GROUP BY
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF581DAC.SQL_ORDER_BY">
+ <summary>
+ ORDER BY
+ </summary>
+ <remarks></remarks> 
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF581DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF581DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF581DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF581DAC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+出力対象帳票パターン取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>出力対象帳票パターン取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF581DAC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 運賃テーブル対象データ
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>入荷データLテーブル更新対象データ一覧検索結果取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF581DAC.SetConditionMasterSQL">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF581DAC.SetConditionDateSQL(System.Collections.ArrayList,System.Data.DataRow,System.Text.StringBuilder)">
+ <summary>
+ 条件文・パラメータ設定モジュール(日付絞込)
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <param name="dr">DataRow</param>
+ <param name="sql">SQL</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF581DAC.SetHaishoWhereData(System.Collections.ArrayList,System.Data.DataRow,System.Text.StringBuilder)">
+ <summary>
+ 条件文・パラメータ設定モジュール(中継配送有 Or 無)
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <param name="dr">DataRow</param>
+ <param name="sql">SQL</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF581DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.DAC.LMF590DAC">
+ <summary>
+ LMF590DACクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF590DAC.SQL_SELECT_MPrt">
+ <summary>
+ 帳票種別取得用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF590DAC.SQL_SELECT_DATA">
+ <summary>
+ 印刷データ抽出用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF590DAC.SQL_WHERE">
+ <summary>
+ WHERE
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF590DAC.SQL_ORDER_BY">
+ <summary>
+ ORDER BY
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF590DAC.SQL_ORDER_BY_LMF591">
+ <summary>
+ ORDER BY
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF590DAC.SQL_ORDER_BY_LMF592">
+ <summary>
+ ORDER BY
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF590DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF590DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF590DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF590DAC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+出力対象帳票パターン取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>出力対象帳票パターン取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF590DAC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 運賃テーブル対象データ
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>入荷データLテーブル更新対象データ一覧検索結果取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF590DAC.SetConditionMasterSQL">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF590DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.DAC.LMF600DAC">
+ <summary>
+ LMF600DACクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF600DAC.SQL_SELECT_MPrt">
+ <summary>
+ 帳票種別取得用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF600DAC.SQL_SELECT_DATA">
+ <summary>
+ 印刷データ抽出用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF600DAC.SQL_ORDER_BY">
+ <summary>
+ ORDER BY
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF600DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF600DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF600DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF600DAC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+出力対象帳票パターン取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>出力対象帳票パターン取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF600DAC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 支払運賃テーブル対象データ
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>入荷データLテーブル更新対象データ一覧検索結果取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF600DAC.SetConditionMasterSQL">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF600DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.DAC.LMF610DAC">
+ <summary>
+ LMF610DACクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF610DAC.SQL_SELECT_MPrt">
+ <summary>
+ 帳票種別取得用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF610DAC.SQL_SELECT_DATA">
+ <summary>
+ 印刷データ抽出用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF610DAC.SQL_ORDER_BY">
+ <summary>
+ ORDER BY
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF610DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF610DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF610DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF610DAC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+出力対象帳票パターン取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>出力対象帳票パターン取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF610DAC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 支払運賃テーブル対象データ
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>入荷データLテーブル更新対象データ一覧検索結果取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF610DAC.SetConditionMasterSQL(System.Int32)">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF610DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.DAC.LMF620DAC">
+ <summary>
+ LMF620DACクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF620DAC.SQL_SELECT_MPrt">
+ <summary>
+ 帳票種別取得用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF620DAC.SQL_SELECT_DATA">
+ <summary>
+ 印刷データ抽出用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF620DAC.SQL_GROUP_BY">
+ <summary>
+ GROUP BY
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF620DAC.SQL_ORDER_BY">
+ <summary>
+ ORDER BY
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF620DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF620DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF620DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF620DAC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+出力対象帳票パターン取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>出力対象帳票パターン取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF620DAC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 運行情報データ
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運行データ検索結果取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF620DAC.SetConditionMasterSQL">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF620DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.DAC.LMF630DAC">
+ <summary>
+ LMF630DACクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF630DAC.SQL_SELECT_MPrt">
+ <summary>
+ 帳票種別取得用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF630DAC.SQL_SELECT_DATA">
+ <summary>
+ 印刷データ抽出用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF630DAC.SQL_ORDER_BY">
+ <summary>
+ ORDER BY
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF630DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF630DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF630DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF630DAC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+出力対象帳票パターン取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>出力対象帳票パターン取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF630DAC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 運賃テーブル対象データ
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>入荷データLテーブル更新対象データ一覧検索結果取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF630DAC.SetConditionMasterSQL">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF630DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.DAC.LMF650DAC">
+ <summary>
+ LMF650DACクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF650DAC.SQL_SELECT_MPrt">
+ <summary>
+ 帳票種別取得用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF650DAC.SQL_SELECT_DATA">
+ <summary>
+ 印刷データ抽出用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF650DAC.SQL_WHERE">
+ <summary>
+ WHERE
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF650DAC.SQL_ORDER_BY">
+ <summary>
+ ORDER BY
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF650DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF650DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF650DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF650DAC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+出力対象帳票パターン取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>出力対象帳票パターン取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF650DAC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 運賃テーブル対象データ
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>入荷データLテーブル更新対象データ一覧検索結果取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF650DAC.SetConditionMasterSQL">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF650DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.DAC.LMF670DAC">
+ <summary>
+ LMF670DACクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF670DAC.SQL_SELECT_MPrt">
+ <summary>
+ 帳票種別取得用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF670DAC.SQL_SELECT_DATA">
+ <summary>
+ 印刷データ抽出用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF670DAC.SQL_GROUP_BY">
+ <summary>
+ GROUP BY
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF670DAC.SQL_ORDER_BY">
+ <summary>
+ ORDER BY
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF670DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF670DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF670DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF670DAC.SelectPrintCount(System.Data.DataSet)">
+ <summary>
+ 出力枚数の取得処理(区分マスタ)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF670DAC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+出力対象帳票パターン取得処理(仮)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>出力対象帳票パターン取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF670DAC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 運送テーブル対象データ
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運送データLテーブル更新対象データ一覧検索結果取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF670DAC.SetConditionMasterSQL">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF670DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.DAC.LMF680DAC">
+ <summary>
+ LMF680DACクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF680DAC.SQL_SELECT_MPrt">
+ <summary>
+ 帳票種別取得用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF680DAC.SQL_SELECT_DATA">
+ <summary>
+ 印刷データ抽出用SELECT区
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF680DAC.SQL_FROM">
+ <summary>
+ 印刷データ抽出用FROM句
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF680DAC.SQL_ORDER_BY">
+ <summary>
+ ORDER BY
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF680DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF680DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF680DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF680DAC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+出力対象帳票パターン取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>出力対象帳票パターン取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF680DAC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 出荷指示書出力対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>出荷指示書出力対象データ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF680DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.DAC.LMF690DAC">
+ <summary>
+ LMF690DACクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF690DAC.SQL_SELECT_MPrt_OUTKA">
+ <summary>
+ 帳票種別取得用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF690DAC.SQL_SELECT_DATA_OUTKA">
+ <summary>
+ 印刷データ抽出用SELECT区
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF690DAC.SQL_FROM_OUTKA">
+ <summary>
+ 印刷データ抽出用FROM句
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF690DAC.SQL_ORDER_BY_OUTKA">
+ <summary>
+ ORDER BY（①営業所コード、②管理番号L、、③管理番号M）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF690DAC.SQL_SELECT_DATA_INKA">
+ <summary>
+ 印刷データ抽出用SELECT区
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF690DAC.SQL_SELECT_MPrt_INKA">
+ <summary>
+ 帳票種別取得用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF690DAC.SQL_FROM_INKA">
+ <summary>
+ 印刷データ抽出用FROM句
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF690DAC.SQL_ORDER_BY_INKA">
+ <summary>
+ ORDER BY（①営業所コード、②管理番号L、、③管理番号M）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF690DAC.SQL_SELECT_DATA_UNSO">
+ <summary>
+ 印刷データ抽出用SELECT区
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF690DAC.SQL_FROM_UNSO">
+ <summary>
+ 印刷データ抽出用FROM句
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF690DAC.SQL_SELECT_MPrt_UNSO">
+ <summary>
+ 帳票種別取得用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF690DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF690DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF690DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF690DAC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+出力対象帳票パターン取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>出力対象帳票パターン取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF690DAC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 出荷指示書出力対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>出荷指示書出力対象データ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF690DAC.setIndataParameterOUTKA(System.Data.DataRow)">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF690DAC.SetDataInsertParameter(System.Collections.ArrayList)">
+ <summary>
+ 新規登録の共通パラメータ設定
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF690DAC.SetSysdataParameter(System.Collections.ArrayList)">
+ <summary>
+ 更新時の共通パラメータ設定
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF690DAC.SetUnsohHokanComParameter(System.Collections.ArrayList,System.Data.DataRow)">
+ <summary>
+ 運送保険の更新パラメータ設定
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <param name="conditionRow">DataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF690DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF690DAC.DeleteUnsoHoken(System.Data.DataSet)">
+ <summary>
+ 運送保険削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運送保険削除QLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF690DAC.InsrtUnsoHoken(System.Data.DataSet)">
+ <summary>
+ 運送保険テーブル新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運送保険テーブル新規登録SQLの構築・発行</remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.DAC.LMF700DAC">
+ <summary>
+ LMF700DACクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF700DAC.SQL_SELECT_MPRT">
+ <summary>
+ 帳票パターン検索
+ </summary>
+ <remarks>LMF710:立合書（運送）でも利用</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF700DAC.SQL_SELECT_PRINT_DATA">
+ <summary>
+ 出力対象データ検索
+ </summary>
+ <remarks>LMF710:立合書（運送）でも利用</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF700DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF700DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF700DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF700DAC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+帳票パターン検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF700DAC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 出力対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>出荷指示書出力対象データ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF700DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.DAC.LMF710DAC">
+ <summary>
+ LMF710DACクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF710DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF710DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF710DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF710DAC.SelectMPrt(System.Data.DataSet)">
+ <summary>
+帳票パターン検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF710DAC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 出力対象データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>出荷指示書出力対象データ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF710DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.DAC.LMF800DAC">
+ <summary>
+ LMF800DACクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF800DAC.SQL_GET_UNSOL">
+ <summary>
+ [F_UNSO_L]運送Ｌ 情報取得用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF800DAC.SQL_GET_UNSOM_ALL">
+ <summary>
+ [F_UNSO_M]運送Ｍ 情報取得用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF800DAC.SQL_GET_UNSOM_GROUP">
+ <summary>
+ [F_UNSO_M]運送Ｍ 集約情報取得用(運送単位)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF800DAC.SQL_GET_UNSOM_TAKKYU_GROUP">
+ <summary>
+ [F_UNSO_M]運送Ｍ 集約情報取得用(宅急便サイズ単位)
+ </summary>
+ <remarks>宅急便サイズの昇順でソートを行う。後続処理において、この順序で運賃テーブルを生成する。</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF800DAC.SQL_GET_GROUP_REC_COUNT">
+ <summary>
+ [F_UNCHIN_TRS]請求グループ番号設定レコード件数取得用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF800DAC.SQL_GET_GOODS_CUST">
+ <summary>
+ [M_GOODS, M_CUST]商品・荷主関連 情報取得用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF800DAC.SQL_GET_GOODS_CUST2">
+ <summary>
+ [M_CUST]商品・荷主関連 情報取得用②
+ </summary>
+ <remarks>
+ 2014/5/16s.kobayashi NotesNo.2183 検索条件を荷主コード→運送番号に変更。よってBaseTableをM_CUSTからF_UNSO_Lに変更
+ </remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF800DAC.SQL_GET_KYORI_DEST_MST">
+ <summary>
+ [M_DEST]距離 情報取得用（From 届先Ｍ）
+ </summary>
+ <remarks>必ず１行抽出するため "GET_FLG" を追加している。</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF800DAC.SQL_GET_NYUKA_JIS">
+ <summary>
+ [M_DEST, M_SOKO]ＪＩＳ 情報取得用（入荷）
+ </summary>
+ <remarks>届先は倉庫</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF800DAC.SQL_GET_SHUKA_JIS">
+ <summary>
+ [M_DEST, M_SOKO]ＪＩＳ 情報取得用（出荷）
+ </summary>
+ <remarks>発地は倉庫</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF800DAC.SQL_GET_UNSOU_JIS">
+ <summary>
+ [M_DEST]ＪＩＳ 情報取得用（運送）
+ </summary>
+ <remarks>2013/06/10 要望管理2052 ZZZZZ対応により複数件取得可能性があるので、'ZZZZZ'を条件に追加</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF800DAC.SQL_GET_KYORI_MST_HDR">
+ <summary>
+ [M_DEST]距離 情報取得用－ヘッダ（From 距離Ｍ）
+ </summary>
+ <remarks>2013/06/10 要望管理2052 ZZZZZ対応により複数件取得可能性があるので、TOP1を追加</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF800DAC.SQL_GET_KYORI_MST_DTL">
+ <summary>
+ [M_DEST]距離 情報取得用－明細　（From 距離Ｍ）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF800DAC.SQL_GET_KYORI_MST_ORDER">
+ <summary>
+ [M_DEST]距離 ORDER BY(元データが運送の場合のみ）
+ </summary>
+ <remarks>2013/06/10 要望管理2052 ZZZZZ対応により複数件取得可能性があるので、ソートを設定</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF800DAC.SQL_GET_TABLE_TYPE">
+ <summary>
+ [M_UNCHIN_TARIFF]テーブルタイプ 取得用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF800DAC.SQL_GET_YOKO_HD">
+ <summary>
+ [M_YOKO_TARIFF_HD]横持ち運賃タリフヘッダ 取得用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF800DAC.SQL_GET_SPECIFIC_CUST">
+ <summary>
+ [Z_KBN]特定荷主判断
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF800DAC.SQL_GET_REV_UNIT">
+ <summary>
+ [F_UNSO_M]貨物情報集約（請求先単位）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF800DAC.SQL_MST_DEST_JIS">
+ <summary>
+ [M_DEST]届先JIS 情報取得用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF800DAC.SQL_TARIFF_BASE">
+ <summary>
+ [M_UNCHIN_TARIFF]運賃タリフ 適用・距離情報取得用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF800DAC.SQL_TARIFF_WEIGHT">
+ <summary>
+ [M_UNCHIN_TARIFF]運賃タリフ 重量情報取得用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF800DAC.SQL_EXTC_SHUHAI">
+ <summary>
+ [M_SYUHAI_SET]集配料設定ファイル 情報取得用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF800DAC.SQL_EXTC_UNCHIN">
+ <summary>
+ [M_EXTC_UNCHIN]割増運賃マスタ 情報取得用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF800DAC.SQL_YOKO_HD">
+ <summary>
+ [M_YOKO_TARIFF_HD]横持ちタリフヘッダ 取得用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF800DAC.SQL_YOKO_DTL">
+ <summary>
+ [M_YOKO_TARIFF_DTL]横持ちタリフ明細 取得用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF800DAC.SQL_GET_ADJUST_CUST">
+ <summary>
+ [Z_KBN]端数調整特別荷主判断
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF800DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF800DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF800DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF800DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名を設定
+ </summary>
+ <param name="sql">SQL</param>
+ <param name="brCd">営業所コード</param>
+ <returns>SQL</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF800DAC.GetUnsoL(System.Data.DataSet)">
+ <summary>
+ 運送Ｌ 情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運送Ｌ情報を取得する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF800DAC.GetUnsoM(System.Data.DataSet)">
+ <summary>
+ 運送Ｍ 情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運送Ｍ情報を取得する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF800DAC.GetBpUNsoWt(System.Data.DataSet)">
+ <summary>
+ 運送重量の再取得(BPのみ)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>受信TBLの重量合計をセット</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF800DAC.GetAlctd_Kb(System.Data.DataSet)">
+ <summary>
+ 引当個数単位区分 情報取得(NOTES1911追加)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>出荷個数単位区分値を取得する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF800DAC.GET_HOKENRYO(System.Data.DataSet)">
+ <summary>
+ 運送保険料 情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運送保険料を取得する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF800DAC.GetUnsoMGroup(System.Data.DataSet)">
+ <summary>
+ 運送Ｍ 集約情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運送Ｍ集約情報を取得する（運送番号Ｌで集約）</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF800DAC.GetSeiqGroupCount(System.Data.DataSet)">
+ <summary>
+ まとめ運賃レコード数取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>まとめ運賃レコード件数を取得する（運送番号Ｌで集約）</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF800DAC.GetGoodsCustInfo(System.Data.DataSet)">
+ <summary>
+ 商品／荷主関連 情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>商品／荷主関連情報を取得する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF800DAC.GetGoodsCustInfoSecond(System.Data.DataSet)">
+ <summary>
+ 商品／荷主関連 情報取得②
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>商品／荷主関連情報を取得する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF800DAC.GetKyoriDestMst(System.Data.DataSet)">
+ <summary>
+ 距離（届先Ｍ） 情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>届先Ｍ情報を取得する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF800DAC.GetKyoriKyoriMst(System.Data.DataSet)">
+ <summary>
+ 距離（距離Ｍ） 情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>距離Ｍ情報を取得する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF800DAC.GetTableType(System.Data.DataSet)">
+ <summary>
+ テーブルタイプ 情報取得（最新タリフ参照）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>距離Ｍ情報を取得する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF800DAC.GetYokoTariffHd(System.Data.DataSet)">
+ <summary>
+ 横持ち運賃タリフヘッダ 情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>横持ち運賃タリフヘッダ情報を取得する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF800DAC.GetSpecificCustCount(System.Data.DataSet)">
+ <summary>
+ 特定荷主判断
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>対象顧客が運賃レコード複数作成用の "特定荷主" であるか判断</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF800DAC.GetUnsoMRevUnit(System.Data.DataSet)">
+ <summary>
+ 貨物情報集約（請求先単位）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>貨物情報を参照し、請求先単位に情報（重量・荷姿個数）を集約する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF800DAC.CreateSqlForRefKyoriMst">
+ <summary>
+ SQL文構築 [距離情報取得 M_KYORI]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF800DAC.SetParamRcvBp(System.Data.DataSet)">
+ <summary>
+ パラメータ設定 [H_INKAEDI_DTL_BP, H_OUTKAEDI_DTL_BP]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF800DAC.SetParamGoodsCust(System.Data.DataSet)">
+ <summary>
+ パラメータ設定 [M_GOODS, M_CUST]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF800DAC.SetParamGoodsCustSecond(System.Data.DataSet)">
+ <summary>
+ パラメータ設定② [M_GOODS, M_CUST]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF800DAC.SetParamDestMst">
+ <summary>
+ パラメータ設定 [距離情報取得 M_DEST]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF800DAC.SetParamKyoriMst(System.Data.DataSet)">
+ <summary>
+ パラメータ設定 [距離情報取得 M_KYORI]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF800DAC.SetParamTableType">
+ <summary>
+ パラメータ設定 [テーブルタイプ取得 M_UNCHIN_TARIFF]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF800DAC.SetParamYokoHd">
+ <summary>
+ パラメータ設定 [横持ちタリフヘッダ取得 M_YOKO_TARIFF_HD]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF800DAC.SetParamSpecificCust">
+ <summary>
+ パラメータ設定 [特定荷主判断]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF800DAC.GetDestJis(System.Data.DataSet)">
+ <summary>
+ 届先JIS 情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>届先JIS情報を取得する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF800DAC.GetTariffBase(System.Data.DataSet)">
+ <summary>
+ 運賃タリフ 基本情報取得（適用運賃特定処理）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>適用運賃レコードを特定する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF800DAC.GetTariffWeight(System.Data.DataSet)">
+ <summary>
+ 運賃タリフ 重量情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運賃格納タリフ情報を取得する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF800DAC.GetExtcShuhai(System.Data.DataSet)">
+ <summary>
+ 集配料設定ファイル 情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>集配料設定ファイル情報を取得する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF800DAC.GetExtcUnchin(System.Data.DataSet)">
+ <summary>
+ 割増運賃マスタ 情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>割増運賃マスタ情報を取得する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF800DAC.GetYokoTariffHead(System.Data.DataSet)">
+ <summary>
+ 横持ち運賃タリフヘッダデータ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>横持ち運賃タリフヘッダのデータ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF800DAC.GetYokoTariffDetail(System.Data.DataSet)">
+ <summary>
+ 横持ち運賃タリフ明細データ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>横持ち運賃タリフ明細のデータ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF800DAC.GetAdjustCust(System.Data.DataSet)">
+ <summary>
+ 端数調整特別荷主判断
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>対象顧客が運賃レコード複数作成用の "特定荷主" であるか判断</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF800DAC.SetParamMstDestJis">
+ <summary>
+ パラメータ設定 [M_DEST]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF800DAC.SetParamTariffBase">
+ <summary>
+ パラメータ設定 [M_UNCHIN_TARIFF] to Kyori
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF800DAC.SetParamTariffWeight(System.Data.DataSet)">
+ <summary>
+ パラメータ設定 [M_UNCHIN_TARIFF] To Weight
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF800DAC.SetParamExtcShuhai">
+ <summary>
+ パラメータ設定 [M_SYUHAI_SET]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF800DAC.SetParamExtcUnchin">
+ <summary>
+ パラメータ設定 [M_EXTC_UNCHIN]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF800DAC.SetParamYokoTariffHD">
+ <summary>
+ パラメータ設定 [M_YOKO_TARIFF_HD]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF800DAC.SetParamYokoTariffDTL">
+ <summary>
+ パラメータ設定 [M_YOKO_TARIFF_DTL]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF800DAC.SetParamAdjustCust">
+ <summary>
+ パラメータ設定 [Z_KBN]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF800DAC.SetTariffResult">
+ <summary>
+ タリフ情報の結果を格納
+ </summary>
+ <returns>HashTable</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.DAC.LMF810DAC">
+ <summary>
+ LMF810DACクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF810DAC.SQL_GET_UNSOL">
+ <summary>
+ [F_UNSO_L]運送Ｌ 情報取得用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF810DAC.SQL_GET_UNSOM_ALL">
+ <summary>
+ [F_UNSO_M]運送Ｍ 情報取得用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF810DAC.SQL_GET_UNSOM_GROUP">
+ <summary>
+ [F_UNSO_M]運送Ｍ 集約情報取得用(運送単位)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF810DAC.SQL_GET_UNSOM_TAKKYU_GROUP">
+ <summary>
+ [F_UNSO_M]運送Ｍ 集約情報取得用(宅急便サイズ単位)
+ </summary>
+ <remarks>宅急便サイズの昇順でソートを行う。後続処理において、この順序で運賃テーブルを生成する。</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF810DAC.SQL_GET_GROUP_REC_COUNT">
+ <summary>
+ [F_SHIHARAI_TRS]請求グループ番号設定レコード件数取得用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF810DAC.SQL_GET_GOODS_CUST">
+ <summary>
+ [M_GOODS, M_CUST]商品・荷主関連 情報取得用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF810DAC.SQL_GET_GOODS_CUST2">
+ <summary>
+ [M_CUST]商品・荷主関連 情報取得用②
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF810DAC.SQL_GET_KYORI_DEST_MST">
+ <summary>
+ [M_DEST]距離 情報取得用（From 届先Ｍ）
+ </summary>
+ <remarks>必ず１行抽出するため "GET_FLG" を追加している。</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF810DAC.SQL_GET_NYUKA_JIS">
+ <summary>
+ [M_DEST, M_SOKO]ＪＩＳ 情報取得用（入荷）
+ </summary>
+ <remarks>届先は倉庫</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF810DAC.SQL_GET_SHUKA_JIS">
+ <summary>
+ [M_DEST, M_SOKO]ＪＩＳ 情報取得用（出荷）
+ </summary>
+ <remarks>発地は倉庫</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF810DAC.SQL_GET_UNSOU_JIS">
+ <summary>
+ [M_DEST]ＪＩＳ 情報取得用（運送）
+ </summary>
+ <remarks>2013/06/10 要望管理2052 ZZZZZ対応により複数件取得可能性があるので、'ZZZZZ'を条件に追加</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF810DAC.SQL_GET_KYORI_MST_HDR">
+ <summary>
+ [M_DEST]距離 情報取得用－ヘッダ（From 距離Ｍ）
+ </summary>
+ <remarks>2013/06/10 要望管理2052 ZZZZZ対応により複数件取得可能性があるので、TOP1を追加</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF810DAC.SQL_GET_KYORI_MST_DTL">
+ <summary>
+ [M_DEST]距離 情報取得用－明細　（From 距離Ｍ）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF810DAC.SQL_GET_KYORI_MST_ORDER">
+ <summary>
+ [M_DEST]距離 ORDER BY(元データが運送の場合のみ）
+ </summary>
+ <remarks>2013/06/10 要望管理2052 ZZZZZ対応により複数件取得可能性があるので、ソートを設定</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF810DAC.SQL_GET_TABLE_TYPE">
+ <summary>
+ [M_SHIHARAI_TARIFF]テーブルタイプ 取得用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF810DAC.SQL_GET_YOKO_HD">
+ <summary>
+ [M_YOKO_TARIFF_HD_SHIHARAI]横持ち運賃タリフヘッダ 取得用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF810DAC.SQL_GET_REV_UNIT">
+ <summary>
+ [F_UNSO_M]貨物情報集約（請求先単位）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF810DAC.SQL_MST_DEST_JIS">
+ <summary>
+ [M_DEST]届先JIS 情報取得用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF810DAC.SQL_TARIFF_BASE">
+ <summary>
+ [M_SHIHARAI_TARIFF]運賃タリフ 適用・距離情報取得用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF810DAC.SQL_TARIFF_WEIGHT">
+ <summary>
+ [M_SHIHARAI_TARIFF]運賃タリフ 重量情報取得用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF810DAC.SQL_EXTC_SHUHAI">
+ <summary>
+ [M_SYUHAI_SET_SHIHARAI]集配料設定ファイル 情報取得用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF810DAC.SQL_EXTC_SHIHARAI">
+ <summary>
+ [M_EXTC_SHIHARAI]割増運賃マスタ 情報取得用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF810DAC.SQL_YOKO_HD">
+ <summary>
+ [M_YOKO_TARIFF_HD_SHIHARAI]横持ちタリフヘッダ 取得用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF810DAC.SQL_YOKO_DTL">
+ <summary>
+ [M_YOKO_TARIFF_DTL]横持ちタリフ明細 取得用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF810DAC.SQL_GET_ADJUST_CUST">
+ <summary>
+ [Z_KBN]端数調整特別荷主判断
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF810DAC.SQL_GET_SHIHARAI_TARIFF_COUNT">
+ <summary>
+ 支払タリフ件数取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF810DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF810DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF810DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF810DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名を設定
+ </summary>
+ <param name="sql">SQL</param>
+ <param name="brCd">営業所コード</param>
+ <returns>SQL</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF810DAC.GetUnsoL(System.Data.DataSet)">
+ <summary>
+ 運送Ｌ 情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運送Ｌ情報を取得する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF810DAC.GetUnsoM(System.Data.DataSet)">
+ <summary>
+ 運送Ｍ 情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運送Ｍ情報を取得する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF810DAC.GetBpUNsoWt(System.Data.DataSet)">
+ <summary>
+ 運送重量の再取得(BPのみ)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>受信TBLの重量合計をセット</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF810DAC.GetAlctd_Kb(System.Data.DataSet)">
+ <summary>
+ 引当個数単位区分 情報取得 (NOTES1911追加)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>出荷個数単位区分値を取得する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF810DAC.GetUnsoMGroup(System.Data.DataSet)">
+ <summary>
+ 運送Ｍ 集約情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運送Ｍ集約情報を取得する（運送番号Ｌで集約）</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF810DAC.GetSeiqGroupCount(System.Data.DataSet)">
+ <summary>
+ まとめ運賃レコード数取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>まとめ運賃レコード件数を取得する（運送番号Ｌで集約）</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF810DAC.GetGoodsCustInfo(System.Data.DataSet)">
+ <summary>
+ 商品／荷主関連 情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>商品／荷主関連情報を取得する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF810DAC.GetGoodsCustInfoSecond(System.Data.DataSet)">
+ <summary>
+ 商品／荷主関連 情報取得②
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>商品／荷主関連情報を取得する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF810DAC.GetKyoriDestMst(System.Data.DataSet)">
+ <summary>
+ 距離（届先Ｍ） 情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>届先Ｍ情報を取得する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF810DAC.GetKyoriKyoriMst(System.Data.DataSet)">
+ <summary>
+ 距離（距離Ｍ） 情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>距離Ｍ情報を取得する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF810DAC.GetTableType(System.Data.DataSet)">
+ <summary>
+ テーブルタイプ 情報取得（最新タリフ参照）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>距離Ｍ情報を取得する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF810DAC.GetYokoTariffHd(System.Data.DataSet)">
+ <summary>
+ 横持ち運賃タリフヘッダ 情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>横持ち運賃タリフヘッダ情報を取得する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF810DAC.GetUnsoMRevUnit(System.Data.DataSet)">
+ <summary>
+ 貨物情報集約（請求先単位）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>貨物情報を参照し、請求先単位に情報（重量・荷姿個数）を集約する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF810DAC.CreateSqlForRefKyoriMst">
+ <summary>
+ SQL文構築 [距離情報取得 M_KYORI]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF810DAC.SetParamRcvBp(System.Data.DataSet)">
+ <summary>
+ パラメータ設定 [H_INKAEDI_DTL_BP, H_OUTKAEDI_DTL_BP]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF810DAC.SetParamGoodsCust(System.Data.DataSet)">
+ <summary>
+ パラメータ設定 [M_GOODS, M_CUST]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF810DAC.SetParamGoodsCustSecond">
+ <summary>
+ パラメータ設定② [M_GOODS, M_CUST]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF810DAC.SetParamDestMst">
+ <summary>
+ パラメータ設定 [距離情報取得 M_DEST]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF810DAC.SetParamKyoriMst(System.Data.DataSet)">
+ <summary>
+ パラメータ設定 [距離情報取得 M_KYORI]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF810DAC.SetParamTableType">
+ <summary>
+ パラメータ設定 [テーブルタイプ取得 M_SHIHARAI_TARIFF]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF810DAC.SetParamYokoHd">
+ <summary>
+ パラメータ設定 [横持ちタリフヘッダ取得 M_YOKO_TARIFF_HD_SHIHARAI]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF810DAC.GetDestJis(System.Data.DataSet)">
+ <summary>
+ 届先JIS 情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>届先JIS情報を取得する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF810DAC.GetTariffBase(System.Data.DataSet)">
+ <summary>
+ 運賃タリフ 基本情報取得（適用運賃特定処理）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>適用運賃レコードを特定する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF810DAC.GetTariffWeight(System.Data.DataSet)">
+ <summary>
+ 運賃タリフ 重量情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運賃格納タリフ情報を取得する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF810DAC.GetExtcShuhai(System.Data.DataSet)">
+ <summary>
+ 集配料設定ファイル 情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>集配料設定ファイル情報を取得する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF810DAC.GetExtcShiharai(System.Data.DataSet)">
+ <summary>
+ 割増運賃マスタ 情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>割増運賃マスタ情報を取得する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF810DAC.GetYokoTariffHead(System.Data.DataSet)">
+ <summary>
+ 横持ち運賃タリフヘッダデータ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>横持ち運賃タリフヘッダのデータ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF810DAC.GetYokoTariffDetail(System.Data.DataSet)">
+ <summary>
+ 横持ち運賃タリフ明細データ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>横持ち運賃タリフ明細のデータ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF810DAC.GetAdjustCust(System.Data.DataSet)">
+ <summary>
+ 端数調整特別荷主判断
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>対象顧客が運賃レコード複数作成用の "特別荷主" であるか判断</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF810DAC.GetShiharaiTariffCountByNrsBrCd(System.Data.DataSet)">
+ <summary>
+ 支払タリフマスタ設定件数取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF810DAC.SetParamMstDestJis">
+ <summary>
+ パラメータ設定 [M_DEST]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF810DAC.SetParamTariffBase">
+ <summary>
+ パラメータ設定 [M_SHIHARAI_TARIFF] to Kyori
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF810DAC.SetParamTariffWeight(System.Data.DataSet)">
+ <summary>
+ パラメータ設定 [M_SHIHARAI_TARIFF] To Weight
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF810DAC.SetParamExtcShuhai">
+ <summary>
+ パラメータ設定 [M_SYUHAI_SET_SHIHARAI]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF810DAC.SetParamExtcShiharai">
+ <summary>
+ パラメータ設定 [M_EXTC_SHIHARAI]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF810DAC.SetParamYokoTariffHD">
+ <summary>
+ パラメータ設定 [M_YOKO_TARIFF_HD_SHIHARAI]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF810DAC.SetParamYokoTariffDTL">
+ <summary>
+ パラメータ設定 [M_YOKO_TARIFF_DTL]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF810DAC.SetParamAdjustCust">
+ <summary>
+ パラメータ設定 [Z_KBN]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF810DAC.SetParamShiharaiInData">
+ <summary>
+ パラメータ設定[支払運賃IN]
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF810DAC.SetTariffResult">
+ <summary>
+ タリフ情報の結果を格納
+ </summary>
+ <returns>HashTable</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.DAC.LMF820DAC">
+ <summary>
+ LMF820DACクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF820DAC.SQL_SELECT_DATA">
+ <summary>
+ 車載受注渡しデータ抽出用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF820DAC.SQL_GROUP_BY">
+ <summary>
+ GROUP BY
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF820DAC.SQL_ORDER_BY">
+ <summary>
+ ORDER BY
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF820DAC.SQL_INSERT">
+ <summary>
+ 車載受注渡しデータ追加処理
+ </summary>
+ <remarks>車載システム側へINSERT</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF820DAC.SQL_DELETE">
+ <summary>
+ 車載受注渡しデータ削除処理
+ </summary>
+ <remarks>車載システム側 DELETE</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF820DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF820DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF820DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF820DAC.SelectSyasaiWatashi(System.Data.DataSet)">
+ <summary>
+ 車載受注渡し対象データ
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF820DAC.SetConditionMasterSQL">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF820DAC.SyasaiJutyuWatashi(System.Data.DataSet)">
+ <summary>
+ 車載受注渡しデータ更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>車載受注渡しデータ更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF820DAC.DeleteSyasaiWatashi(System.Data.DataSet,System.Data.SqlClient.SqlConnection)">
+ <summary>
+ 車載受注渡しデータ削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>車載受注渡しデータ削除SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF820DAC.SetConditionMasterDEL_SQL">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF820DAC.InsertSyasaiWatashi(System.Data.DataSet,System.Data.SqlClient.SqlConnection)">
+ <summary>
+ 車載受注渡しデータ更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>車載受注渡しデータを車載システムや新規追加する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF820DAC.SetSyasaiJutyuSokoParam(System.Data.DataRow,System.Collections.ArrayList)">
+ <summary>
+ パラメータ設定モジュール(車載受注倉庫テーブル)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF820DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.DAC.LMF830DAC">
+ <summary>
+ LMF830DACクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF830DAC.SQL_SELECT_SENDUNSOEDI_LM">
+ <summary>
+ 手配指示作成データ抽出用(LMデータ)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF830DAC.SQL_SELECT_PRE_SENDUNSOEDI_LM">
+ <summary>
+ 手配指示作成データ抽出用(LMデータ)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF830DAC.SQL_TEHAIINFO_TBL">
+ <summary>
+ 手配情報テーブル件数抽出用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF830DAC.SQL_SELECT_XNG_ROJITYPE">
+ <summary>
+ 手配指示作成データ抽出用(Lデータ)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF830DAC.SQL_GROUP_BY">
+ <summary>
+ GROUP BY
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF830DAC.SQL_ORDER_BY_L">
+ <summary>
+ ORDER BY_L
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF830DAC.SQL_PRE_ORDER_BY">
+ <summary>
+ ORDER BY_PRE
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF830DAC.SQL_ORDER_BY_M">
+ <summary>
+ ORDER BY_M
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF830DAC.SQL_INSERT_H_SENDUNSOEDI_LM">
+ <summary>
+  運送会社用EDI送信データLM追加処理
+ </summary>
+ <remarks>運送会社用EDI送信データLMへINSERT</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF830DAC.SQL_INSERT_H_SENDUNSOEDI_L">
+ <summary>
+  運送会社用EDI送信データL追加処理
+ </summary>
+ <remarks>運送会社用EDI送信データLへINSERT</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF830DAC.SQL_INSERT_H_SENDUNSOEDI_M">
+ <summary>
+  運送会社用EDI送信データM追加処理
+ </summary>
+ <remarks>運送会社用EDI送信データMへINSERT</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF830DAC.SQL_INSERT_H_TEHAIINFO_TBL">
+ <summary>
+  手配情報TBL追加処理
+ </summary>
+ <remarks>手配情報TBLへINSERT</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF830DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF830DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF830DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF830DAC.SelectSendUnsoEdiLMInitData(System.Data.DataSet)">
+ <summary>
+ 手配指示作成対象データ(L+M)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF830DAC.SelectPreSendUnsoEdiLMInitData(System.Data.DataSet)">
+ <summary>
+ 手配指示作成過去対象データ(L+M)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF830DAC.SelectTehaiInfoTblData(System.Data.DataSet)">
+ <summary>
+ 手配情報TBL抽出件数
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF830DAC.SetConditionInputSQL">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF830DAC.SetParameterInputSQL">
+ <summary>
+ パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF830DAC.SelectXngRojiInitData(System.Data.DataSet)">
+ <summary>
+ 運送会社:エクシング,荷主:ロジスティック用データ抽出
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF830DAC.InsertSendUnsoEdiLMData(System.Data.DataSet)">
+ <summary>
+ 運送会社用EDI送信データ(LM)追加処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運送会社用EDI送信データ(LM)を新規追加する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF830DAC.InsertDelFlgSendUnsoEdiLMData(System.Data.DataSet)">
+ <summary>
+ 運送会社用EDI送信データ(LM)追加処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運送会社用EDI送信データ(LM)を新規追加する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF830DAC.InsertSendUnsoEdiLData(System.Data.DataSet)">
+ <summary>
+ 運送会社用EDI送信データ(L)追加処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運送会社用EDI送信データ(L)を新規追加する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF830DAC.InsertSendUnsoEdiMData(System.Data.DataSet)">
+ <summary>
+ 運送会社用EDI送信データ(M)追加処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>運送会社用EDI送信データ(M)を新規追加する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF830DAC.InsertTehaiInfoTblData(System.Data.DataSet)">
+ <summary>
+ 手配情報TBL追加処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>手配情報TBLを新規追加する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF830DAC.SetSendUnsoEdiLParam(System.Data.DataRow,System.Collections.ArrayList)">
+ <summary>
+ パラメータ設定モジュール(運送会社用EDI送信データ(L))
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF830DAC.SetSendUnsoEdiMParam(System.Data.DataRow,System.Collections.ArrayList)">
+ <summary>
+ パラメータ設定モジュール(運送会社用EDI送信データ(M))
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF830DAC.SetTehaiInfoParam(System.Data.DataRow,System.Collections.ArrayList)">
+ <summary>
+ パラメータ設定モジュール(手配情報TBL)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF830DAC.SetDataInsertParameter(System.Collections.ArrayList)">
+ <summary>
+ 新規登録の共通パラメータ設定
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF830DAC.SetInsSysdataParameter(System.Collections.ArrayList)">
+ <summary>
+ 更新時の共通パラメータ設定
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF830DAC.SetDataUpdatePreParameter(System.Data.DataRow,System.Collections.ArrayList)">
+ <summary>
+ パラメータ設定モジュール(運送会社用EDI送信(L+M)過去分)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF830DAC.UpdatePreSendUnsoEdiLMData(System.Data.DataSet)">
+ <summary>
+ 運送会社用EDI送信のデータ(L+M)過去分の更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF830DAC.UpdateTehaiInfoTblData(System.Data.DataSet)">
+ <summary>
+ 手配情報テーブルの更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF830DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF830DAC.UpdateResultChk(System.Data.SqlClient.SqlCommand)">
+ <summary>
+ Update文の発行
+ </summary>
+ <param name="cmd">SQLコマンド</param>
+ <returns>True:エラーなし,OK False:排他エラー(E011)</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF830DAC.UpdateResultChk(System.Int32)">
+ <summary>
+ 排他チェック
+ </summary>
+ <param name="cnt">カウント</param>
+ <returns>True:エラーなし,OK False:排他エラー(E011)</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.DAC.LMF850DAC">
+ <summary>
+ LMF850DACクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF850DAC.SQL_SELECT_Okaken_CSV_UNSO">
+ <summary>
+ 岡山貨物CSV作成データ検索用SQL(運送データ) SELECT部
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF850DAC.SQL_SELECT_Okaken_CSV_UNSO_FROM">
+ <summary>
+ 岡山貨物CSV作成データ検索用SQL(運送データ) FROM・WHERE部
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF850DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF850DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF850DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF850DAC.SelectOkakenCsv(System.Data.DataSet)">
+ <summary>
+ 岡山貨物CSV作成対象検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>岡山貨物CSV作成対象データ検索件数取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF850DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF850DAC.setSQLSelect">
+ <summary>
+  パラメータ設定モジュール（出荷検索）
+ </summary>
+ <remarks>出荷マスタ検索用SQLの構築</remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.DAC.LMF860DAC">
+ <summary>
+ LMF860DACクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF860DAC.SQL_SELECT_MEITETU_CSV">
+ <summary>
+ 名鉄CSV作成データ検索用SQL SELECT部
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF860DAC.SQL_SELECT_MEITETU_CSV_FROM">
+ <summary>
+ 名鉄CSV作成データ検索用SQL FROM・WHERE部
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF860DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF860DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.DAC.LMF860DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF860DAC.SelectMeitetuCsv(System.Data.DataSet)">
+ <summary>
+ 名鉄CSV作成対象検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>名鉄CSV作成対象データ検索件数取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF860DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.DAC.LMF860DAC.setSQLSelect">
+ <summary>
+  パラメータ設定モジュール（出荷検索）
+ </summary>
+ <remarks>出荷マスタ検索用SQLの構築</remarks>
+</member>
+</members>
+</doc>

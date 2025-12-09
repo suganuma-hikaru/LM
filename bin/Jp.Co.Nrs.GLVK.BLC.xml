@@ -1,0 +1,1513 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.GLVK.BLC
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.GL.BLC.My.Resources.Resources">
+<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.GL.BLC.My.Resources.Resources.ResourceManager">
+<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.GL.BLC.My.Resources.Resources.Culture">
+<summary>
+  すべてについて、現在のスレッドの CurrentUICulture プロパティをオーバーライドします
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVK0900BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0900BLC.SearchDailyTaskList(System.Data.DataSet)">
+ <summary>
+ データ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0900BLC.SearchActivate(System.Data.DataSet,System.String,System.String)">
+ <summary>
+ 検索実行
+ </summary>
+ <param name="ds"></param>
+ <param name="tableNm"></param>
+ <param name="navId"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0900BLC.CreateInitData(System.Data.DataSet,System.String)">
+ <summary>
+ 検索前初期値設定
+ </summary>
+ <param name="ds"></param>
+ <param name="tableNm"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0900BLC.SetExitData(System.Data.DataSet,System.String,System.Int32,System.String,System.String)">
+ <summary>
+ 件数カウントテーブル編集・メッセージ設定
+ </summary>
+ <param name="ds"></param>
+ <param name="tableNm"></param>
+ <param name="allCnt"></param>
+ <param name="areaId"></param>
+ <param name="navId"></param>
+ <returns></returns>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVK0800BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0800BLC.SearchHazardousList(System.Data.DataSet)">
+ <summary>
+ データ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVK0600BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0600BLC.SearchInvList(System.Data.DataSet)">
+ <summary>
+ 請求情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0600BLC.meargeMainTbl(System.Data.DataSet,System.String)">
+ <summary>
+ データテーブルマージ処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="tblName">String</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVK3000BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK3000BLC.SearchGLVK3000BasisList(System.Data.DataSet)">
+ <summary>
+ 搬出入情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVK0400BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0400BLC.InitDisplayData(System.Data.DataSet)">
+ <summary>
+ 初期表示情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0400BLC.SelectVkIeki(System.Data.DataSet)">
+ <summary>
+ VK_IEKI取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0400BLC.SelectVkIekiDtl(System.Data.DataSet)">
+ <summary>
+ VK_IEKI_DTL取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0400BLC.SelectVkBasis(System.Data.DataSet)">
+ <summary>
+ VK_BASIS取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0400BLC.SelectVkLogComment(System.Data.DataSet)">
+ <summary>
+ VK_LOG_COMMENT取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0400BLC.SelectVkMaxSeq(System.Data.DataSet)">
+ <summary>
+ VK_MAX_SEQ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0400BLC.SelectZSystem(System.Data.DataSet)">
+ <summary>
+ Z_SYSTEM取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0400BLC.InsertSaveIeki(System.Data.DataSet)">
+ <summary>
+ 保存処理（INSERT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0400BLC.UpdateSaveIeki(System.Data.DataSet)">
+ <summary>
+ 保存処理（UPDATE)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0400BLC.InsertArrangeIeki(System.Data.DataSet)">
+ <summary>
+ 手配処理（INSERT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0400BLC.UpdateArrangeIeki(System.Data.DataSet)">
+ <summary>
+ 手配処理（UPDATE)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0400BLC.DeleteIeki(System.Data.DataSet)">
+ <summary>
+ 削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0400BLC.ReceiveIeki(System.Data.DataSet)">
+ <summary>
+ 受付処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0400BLC.RejectIeki(System.Data.DataSet)">
+ <summary>
+ 差し戻し処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0400BLC.CompleteIeki(System.Data.DataSet)">
+ <summary>
+ 完了処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0400BLC.RollBackIeki(System.Data.DataSet)">
+ <summary>
+ RollBack処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0400BLC.InsertVkIeki(System.Data.DataSet)">
+ <summary>
+ VK_IEKI登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0400BLC.InsertVkIekiDtl(System.Data.DataSet)">
+ <summary>
+ VK_IEKI_DTK登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0400BLC.InsertVkLogComment(System.Data.DataSet)">
+ <summary>
+ VK_LOG_COMMENT登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0400BLC.UpdateVkIeki(System.Data.DataSet)">
+ <summary>
+ VK_IEKI更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0400BLC.UpdateVkIekiWorkCom(System.Data.DataSet)">
+ <summary>
+ VK_IEKI更新(DEPOT側作業ボタン押下時更新用)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0400BLC.UpdateVkIekiDtl(System.Data.DataSet)">
+ <summary>
+ VK_IEKI_DTL更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0400BLC.UpdateVkLogComment(System.Data.DataSet)">
+ <summary>
+ VK_LOG_COMMENT更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0400BLC.isEditable(System.Data.DataSet)">
+ <summary>
+ 排他制御
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0400BLC.isEditableIeki(System.Data.DataSet)">
+ <summary>
+ 排他制御(VK_IEKI)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0400BLC.isEditableBasis(System.Data.DataSet)">
+ <summary>
+ 排他制御(VK_BASIS)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0400BLC.isDeleteBasis(System.Data.DataSet)">
+ <summary>
+ 依頼削除チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0400BLC.isCompleteOut(System.Data.DataSet)">
+ <summary>
+ 搬出完了チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0400BLC.isNotCompleteIn(System.Data.DataSet)">
+ <summary>
+ 搬入未完了チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0400BLC.CallDacSelectedData(System.Data.DataSet,System.String,System.String,System.String,System.String)">
+ <summary>
+ 指定条件でデータを抽出し、DACを呼び出す。
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="tblNm">データ抽出テーブル名</param>
+ <param name="sql">データ抽出条件</param>
+ <param name="sortKey">データ抽出時のソートキー</param>
+ <param name="dacMethodNm">呼び出すDACメソッド名</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0400BLC.setOrdNoDataSet(System.Data.DataSet@)">
+ <summary>
+ 搬出入依頼番号を設定する
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0400BLC.AddRowVkLogComment(System.String,System.String,System.Data.DataSet)">
+ <summary>
+ VK_LOG_COMMENT追加処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0400BLC.GetNewIekiNo(System.Data.DataSet)">
+ <summary>
+ 新規VK_IEKI依頼番号を採番
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0400BLC.GetChangeInputIeki(System.Data.DataSet,System.Data.DataSet)">
+ <summary>
+ 移液作業変更箇所を取得する。
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVK0100BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0100BLC.SearchBasisList(System.Data.DataSet)">
+ <summary>
+ 搬出入情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVK0200BLC._GLVK5010BLC">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVK0200BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.InitDisplayData(System.Data.DataSet)">
+ <summary>
+ 初期表示取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.SelectVkBasis(System.Data.DataSet)">
+ <summary>
+ VK_BASIS取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.SelectVkBasisDtl(System.Data.DataSet)">
+ <summary>
+ VK_BASIS_DTL取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.SelectVkGoods(System.Data.DataSet)">
+ <summary>
+ VK_GOODS取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.SelectVkCommnet(System.Data.DataSet)">
+ <summary>
+ VK_COMMENT取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.SelectVkHeating(System.Data.DataSet)">
+ <summary>
+ VK_HEATING取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.SelectVkHeatingEdit(System.Data.DataSet)">
+ <summary>
+ VK_HEATING_EDIT取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.SelectVkChisso(System.Data.DataSet)">
+ <summary>
+ VK_CHISSO取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.SelectVkIeki(System.Data.DataSet)">
+ <summary>
+ VK_IEKI取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.SelectVkMeasure(System.Data.DataSet)">
+ <summary>
+ VK_MEASURE取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.SelectVkLogComment(System.Data.DataSet)">
+ <summary>
+ VK_LOG_COMMENT取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.SelectVkMaxSeq(System.Data.DataSet)">
+ <summary>
+ VK_MAX_SEQ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.SelectZSystem(System.Data.DataSet)">
+ <summary>
+ Z_SYSTEM取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.InitDisplayGlData(System.Data.DataSet)">
+ <summary>
+ GL_CONT_DEPOT_OUT取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.InsertSaveBasis(System.Data.DataSet)">
+ <summary>
+ 保存（登録）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.UpdateSaveBasis(System.Data.DataSet)">
+ <summary>
+ 保存（更新）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.InsertArrangeBasis(System.Data.DataSet)">
+ <summary>
+ 手配（登録）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.UpdateArrangeBasis(System.Data.DataSet)">
+ <summary>
+ 手配（更新）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.SendReiOrderMail(System.Data.DataSet)">
+ <summary>
+ 手配（メール送信）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.DeleteFncBasis(System.Data.DataSet)">
+ <summary>
+ 削除処理(Delete)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.ReceiveBasisDtl(System.Data.DataSet)">
+ <summary>
+ 受付処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.RejectBasisDtl(System.Data.DataSet)">
+ <summary>
+ 差し戻し処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.CompleteBasisDtl(System.Data.DataSet)">
+ <summary>
+ 完了処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.RollBackBasisDtl(System.Data.DataSet)">
+ <summary>
+ RollBack処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.isEditableBasis(System.Data.DataSet)">
+ <summary>
+ 排他制御
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.InsertVkBasis(System.Data.DataSet)">
+ <summary>
+ VK_BASIS登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.InsertVkBasisDtl(System.Data.DataSet)">
+ <summary>
+ VK_BASIS_DTL登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.InsertVkGoods(System.Data.DataSet)">
+ <summary>
+ VK_GOODS登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.InsertVkComment(System.Data.DataSet)">
+ <summary>
+ VK_COMMENT登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.InsertVkHeatingEdit(System.Data.DataSet)">
+ <summary>
+ VK_HEATING_EDIT登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.InsertVkChisso(System.Data.DataSet)">
+ <summary>
+ VK_CHISSO登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.InsertVkMeasure(System.Data.DataSet)">
+ <summary>
+ VK_MEASURE登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.InsertVkLogComment(System.Data.DataSet)">
+ <summary>
+ VK_LOG_COMMENT登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.UpdateVkBasis(System.Data.DataSet)">
+ <summary>
+ VK_BASIS更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.UpdateVkBasisSysCom(System.Data.DataSet)">
+ <summary>
+ VK_BASIS更新(システム共通)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.UpdateVkBasisDtl(System.Data.DataSet)">
+ <summary>
+ VK_BASIS_DTL更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.UpdateVkBasisDtlWorkCom(System.Data.DataSet)">
+ <summary>
+ VK_BASIS_DTL更新(DEPOT側作業ボタン押下時更新用)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.UpdateVkGoods(System.Data.DataSet)">
+ <summary>
+ VK_GOODS更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.UpdateVkComment(System.Data.DataSet)">
+ <summary>
+ VK_COMMENT更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.UpdateVkHeatingEdit(System.Data.DataSet)">
+ <summary>
+ VK_HEATING_EDIT更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.UpdateVkChisso(System.Data.DataSet)">
+ <summary>
+ VK_CHISSO更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.UpdateVkMeasure(System.Data.DataSet)">
+ <summary>
+ VK_MEASURE更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.UpdateVkLogComment(System.Data.DataSet)">
+ <summary>
+ VK_LOG_COMMENT更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.UpdateCContDepotWorkCom(System.Data.DataSet)">
+ <summary>
+ C_CONT_DEPOT更新(搬出完了)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.DeleteBasis(System.Data.DataSet)">
+ <summary>
+ 依頼削除処理（ヘッダーイベント）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.IsExistIeki(System.Data.DataSet)">
+ <summary>
+ 移液存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.IsNotCompletedIeki(System.Data.DataSet)">
+ <summary>
+ 移液未完了チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.IsCompletedIeki(System.Data.DataSet)">
+ <summary>
+ 移液完了チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.GetNewBssNo(System.Data.DataSet)">
+ <summary>
+ 新規VK_BASIS依頼番号を採番
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.AddRowVkLogComment(System.String,System.String,System.Data.DataSet)">
+ <summary>
+ VK_LOG_COMMENT追加処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.setDispDateDepotIn(System.Data.DataSet)">
+ <summary>
+ 搬入日（加温カレンダー日付）処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.isValidHeatDay(System.Data.DataSet)">
+ <summary>
+ 加温日チェック処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.resetHeatLane(System.Data.DataSet)">
+ <summary>
+ 加温レーン割り当てリセット処理(ステータス戻し)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.isResetHeatLane(System.Data.DataSet,System.Data.DataSet)">
+ <summary>
+ 加温レーン割り当てリセット判定
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks>
+ 搬入日、搬出日変更時
+ 搬入・搬出キャンセル時
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.isDuplicateLane(System.Data.DataSet)">
+ <summary>
+ 加温サブレーン重複チェック処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks>
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.setHeatSubLane(System.Data.DataSet)">
+ <summary>
+ 加温サブレーン割り当て処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks>
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.GetAutoSubLane(System.Collections.Generic.List{System.String})">
+ <summary>
+ サブレーンの自動割当
+ </summary>
+ <param name="assignLaneList">List</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.GetChangeInputDepotIn(System.Data.DataSet,System.Data.DataSet)">
+ <summary>
+ 搬入作業変更箇所を取得する。
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.GetChangeInputHeat(System.Data.DataSet,System.Data.DataSet)">
+ <summary>
+ 加温作業変更箇所を取得する。
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.GetChangeInputChisso(System.Data.DataSet,System.Data.DataSet)">
+ <summary>
+ 窒素置換作業変更箇所を取得する。
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.GetChangeInputSample(System.Data.DataSet,System.Data.DataSet)">
+ <summary>
+ サンプリング作業変更箇所を取得する。
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.GetChangeInputDepotOut(System.Data.DataSet,System.Data.DataSet)">
+ <summary>
+ 搬出作業変更箇所を取得する。
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.CallDacSelectedData(System.Data.DataSet,System.String,System.String,System.String,System.String)">
+ <summary>
+ 指定条件でデータを抽出し、DACを呼び出す。
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="tblNm">データ抽出テーブル名</param>
+ <param name="sql">データ抽出条件</param>
+ <param name="sortKey">データ抽出時のソートキー</param>
+ <param name="dacMethodNm">呼び出すDACメソッド名</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.SelectReiOrderMailSendUserList(System.Data.DataSet)">
+ <summary>
+ タイNKCT Orderメール送信対象取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.SendReiOrderMailProc(System.Data.DataSet,System.String)">
+ <summary>
+ メール送信処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="tplCd">メールテンプレート</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.GetMailTpl(System.String,System.String)">
+ <summary>
+ メールテンプレート取得
+ </summary>
+ <param name="tplCd"></param>
+ <param name="tplKbn"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.CreateEWSToolSendMailDataSet">
+ <summary>
+ EWSTool SendMail用DataSet作成
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.SetMailSubject(System.String,System.String,System.Data.DataSet)">
+ <summary>
+ メール件名置き換え処理
+ </summary>
+ <param name="tplCd">テンプレートコード</param>
+ <param name="subject">件名</param>
+ <param name="ds">DataSet</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.SetMailMain(System.String,System.String,System.Data.DataSet)">
+ <summary>
+ メール本文置き換え処理
+ </summary>
+ <param name="tplCd">テンプレートコード</param>
+ <param name="main">本文</param>
+ <param name="ds">DataSet</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.GetDepotInoutDate(System.Data.DataSet,System.Boolean)">
+ <summary>
+ Depot In/Depot Out 日付変換処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="newLineFlg">改行有無</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.CreateAttachmentsFiles(System.Data.DataSet)">
+ <summary>
+ 添付ファイル作成処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.SelectBkgContDepotData(System.Data.DataSet)">
+ <summary>
+ C_CONT_DEPOT取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0200BLC.SelectGlMGoodsDtlData(System.Data.DataSet)">
+ <summary>
+ M_GOODS_DTL取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVK0500BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0500BLC.SearchHeatCalendarAssignnedList(System.Data.DataSet)">
+ <summary>
+ 加温カレンダー情報(割当)取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0500BLC.SearchHeatCalendarUnassignedList(System.Data.DataSet)">
+ <summary>
+ 加温カレンダー情報(未割当)取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0500BLC.CheckHeatDuplicated(System.Data.DataSet)">
+ <summary>
+ 加温カレンダー情報更新時日付重複チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0500BLC.UpdateBasisData(System.Data.DataSet)">
+ <summary>
+ 加温カレンダー情報(VK_BASIS)更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0500BLC.UpdateBasisDtlData(System.Data.DataSet)">
+ <summary>
+ 加温カレンダー情報(VK_BASIS_DTL)更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0500BLC.ChkHeatCalendarData(System.Data.DataSet)">
+ <summary>
+ 加温カレンダー情報排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0500BLC.ChkHaita(System.Data.DataSet)">
+ <summary>
+ 排他チェック
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>データセット</returns>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVK0300BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0300BLC.SearchIekiList(System.Data.DataSet)">
+ <summary>
+ 移液依頼情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVK3200BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK3200BLC.SelectBkgContDepotData(System.Data.DataSet)">
+ <summary>
+ C_CONT_DEPOT取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVK5130BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK5130BLC.PrintHeatingList(System.Data.DataSet)">
+ <summary>
+ 加温予定一覧印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK5130BLC.EditExcelData(System.Data.DataSet)">
+ <summary>
+ Excel用データテーブル編集処理
+ </summary>
+ <param name="ds">Dataset</param>
+ <returns>Dataset</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK5130BLC.getRepeatCount(System.String,System.String)">
+ <summary>
+ 最大繰り返し数を取得する
+ </summary>
+ <param name="prtId">String</param>
+ <param name="fieldName">String</param>
+ <returns>Dataset</returns>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVK5050BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK5050BLC.PrintChissoRequestForm(System.Data.DataSet)">
+ <summary>
+ 窒素置換依頼書印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK5050BLC.IsErrDataChk(System.Data.DataSet)">
+ <summary>
+ 帳票出力時のチェック
+ </summary>
+ <param name="ds">Dataset</param>
+ <returns>Dataset</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK5050BLC.EditCsvData(System.Data.DataSet)">
+ <summary>
+ csv用データテーブル編集処理
+ </summary>
+ <param name="ds">Dataset</param>
+ <returns>Dataset</returns>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVK5040BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK5040BLC.PrintHeatingDataRecord(System.Data.DataSet)">
+ <summary>
+ 加温データ記録(日報)印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK5040BLC.IsErrDataChk(System.Data.DataSet)">
+ <summary>
+ 帳票出力時のチェック
+ </summary>
+ <param name="ds">Dataset</param>
+ <returns>Dataset</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK5040BLC.EditCsvData(System.Data.DataSet)">
+ <summary>
+ csv用データテーブル編集処理
+ </summary>
+ <param name="ds">Dataset</param>
+ <returns>Dataset</returns>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVK5030BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK5030BLC.PrintHeatingRequestForm(System.Data.DataSet)">
+ <summary>
+ 加温依頼書印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK5030BLC.IsErrDataChk(System.Data.DataSet)">
+ <summary>
+ 帳票出力時のチェック
+ </summary>
+ <param name="ds">Dataset</param>
+ <returns>Dataset</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK5030BLC.EditCsvData(System.Data.DataSet)">
+ <summary>
+ csv用データテーブル編集処理
+ </summary>
+ <param name="ds">Dataset</param>
+ <returns>Dataset</returns>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVK5020BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK5020BLC.PrintContainerStickerSeal(System.Data.DataSet)">
+ <summary>
+ コンテナ貼付シール印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK5020BLC.IsErrDataChk(System.Data.DataSet)">
+ <summary>
+ 帳票出力時のチェック
+ </summary>
+ <param name="ds">Dataset</param>
+ <returns>Dataset</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK5020BLC.EditCsvData(System.Data.DataSet)">
+ <summary>
+ csv用データテーブル編集処理
+ </summary>
+ <param name="ds">Dataset</param>
+ <returns>Dataset</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK5020BLC.GetPrintType(System.Data.DataSet)">
+ <summary>
+ 定義体種別取得処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVK5010BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK5010BLC.PrintBasisRequestForm(System.Data.DataSet)">
+ <summary>
+ 搬出入依頼書印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK5010BLC.IsErrDataChk(System.Data.DataSet)">
+ <summary>
+ 帳票出力時のチェック
+ </summary>
+ <param name="ds">Dataset</param>
+ <returns>Dataset</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK5010BLC.EditCsvData(System.Data.DataSet,System.String)">
+ <summary>
+ csv用データテーブル編集処理
+ </summary>
+ <param name="ds">Dataset</param>
+ <param name="printType">定義体種別</param>
+ <returns>Dataset</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK5010BLC.GetPrintType(System.Data.DataSet)">
+ <summary>
+ 定義体種別取得処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVK5080BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK5080BLC.PrintIekiCheckList(System.Data.DataSet)">
+ <summary>
+ 移液作業チェック表印刷処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK5080BLC.IsErrDataChk(System.Data.DataSet)">
+ <summary>
+ 帳票出力時のチェック
+ </summary>
+ <param name="ds">Dataset</param>
+ <returns>Dataset</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK5080BLC.EditExcelData(System.Data.DataSet)">
+ <summary>
+ Excel用データテーブル編集処理
+ </summary>
+ <param name="ds">Dataset</param>
+ <returns>Dataset</returns>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVK5120BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK5120BLC.SelectTodayScheduleList01(System.Data.DataSet)">
+ <summary>
+ 今日の予定検索(実入り搬入)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK5120BLC.SelectTodayScheduleList02(System.Data.DataSet)">
+ <summary>
+ 今日の予定検索(実入り搬出)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK5120BLC.SelectTodayScheduleList03(System.Data.DataSet)">
+ <summary>
+ 今日の予定検索(加温あり搬入)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK5120BLC.SelectTodayScheduleList04(System.Data.DataSet)">
+ <summary>
+ 今日の予定検索(加温あり搬出)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK5120BLC.SelectTodayScheduleList05(System.Data.DataSet)">
+ <summary>
+ 今日の予定検索(空搬入)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK5120BLC.SelectTodayScheduleList06(System.Data.DataSet)">
+ <summary>
+ 今日の予定検索(空搬出)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK5120BLC.SelectTodayScheduleList07(System.Data.DataSet)">
+ <summary>
+ 今日の予定検索(移液)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK5120BLC.SelectTodayScheduleList08(System.Data.DataSet)">
+ <summary>
+ 今日の予定検索(窒素置換)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK5120BLC.SelectTodayScheduleList09(System.Data.DataSet)">
+ <summary>
+ 今日の予定検索(サンプリング)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK5120BLC.PrintTodayScheduleList(System.Data.DataSet)">
+ <summary>
+ 今日の予定印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK5120BLC.EditExcelData(System.Data.DataSet,System.Int32@,System.String)">
+ <summary>
+ Excel用データテーブル編集処理
+ </summary>
+ <param name="ds"></param>
+ <param name="resultCount"></param>
+ <param name="printType"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK5120BLC.GetPrintType(System.Data.DataSet)">
+ <summary>
+ 定義体種別取得処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVK5060BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK5060BLC.PrintRotenReport(System.Data.DataSet)">
+ <summary>
+ 露点作業日報印刷処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK5060BLC.IsErrDataChk(System.Data.DataSet)">
+ <summary>
+ 帳票出力時のチェック
+ </summary>
+ <param name="ds">Dataset</param>
+ <returns>Dataset</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK5060BLC.EditCsvData(System.Data.DataSet)">
+ <summary>
+ csv用データテーブル編集処理
+ </summary>
+ <param name="ds">Dataset</param>
+ <returns>Dataset</returns>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVK5000BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK5000BLC.PrintBasisList(System.Data.DataSet)">
+ <summary>
+ 搬出入依頼一覧印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK5000BLC.EditExcelData(System.Data.DataSet)">
+ <summary>
+ Excel用データテーブル編集処理
+ </summary>
+ <param name="ds">Dataset</param>
+ <returns>Dataset</returns>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVK5070BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK5070BLC.PrintIekiIrai(System.Data.DataSet)">
+ <summary>
+ 移液依頼書印刷処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK5070BLC.IsErrDataChk(System.Data.DataSet)">
+ <summary>
+ 帳票出力時のチェック
+ </summary>
+ <param name="ds">Dataset</param>
+ <returns>Dataset</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK5070BLC.EditCsvData(System.Data.DataSet)">
+ <summary>
+ csv用データテーブル編集処理
+ </summary>
+ <param name="ds">Dataset</param>
+ <returns>Dataset</returns>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVK5110BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK5110BLC.PrintHeatingList(System.Data.DataSet)">
+ <summary>
+ 加温実績一覧印刷処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK5110BLC.EditExcelData(System.Data.DataSet)">
+ <summary>
+ Excel用データテーブル編集処理
+ </summary>
+ <param name="ds">Dataset</param>
+ <returns>Dataset</returns>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVK0700BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK0700BLC.SearchHeatingList(System.Data.DataSet)">
+ <summary>
+ 加温実績取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVK5150BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK5150BLC.PrintLoadContItinerary(System.Data.DataSet)">
+ <summary>
+ TANK REPORT（保管明細）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK5150BLC.EditExcelData(System.Data.DataSet)">
+ <summary>
+ Excel用データテーブル編集処理
+ </summary>
+ <param name="ds">Dataset</param>
+ <returns>Dataset</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK5150BLC.SumCount(System.Data.DataSet,System.Data.DataRow@)">
+ <summary>
+ カウント情報計算
+ </summary>
+ <param name="ds"></param>
+ <param name="outRow"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK5150BLC.GetWeekString(System.DateTime)">
+ <summary>
+ 曜日変換(省略形日本語)
+ </summary>
+ <param name="trgDate"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK5150BLC.GetLawsString(System.String)">
+ <summary>
+ 消防法記号取得(省略形日本語)
+ </summary>
+ <param name="lawsStr"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK5150BLC.SetDateData(System.Data.DataRow@,System.String,System.String)">
+ <summary>
+ 日付設定
+ </summary>
+ <param name="row"></param>
+ <param name="dateStr"></param>
+ <param name="setStr"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK5150BLC.GetLawsNum(System.String,Jp.Co.Nrs.GL.BLC.GLVK5150BLC.CountModels@)">
+ <summary>
+ 消防法カウント
+ </summary>
+ <param name="lawsStr"></param>
+</member>
+<member name="T:Jp.Co.Nrs.GL.BLC.GLVK5150BLC.CountModels">
+ <summary>
+ カウントクラス
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLC.GLVK5140BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK5140BLC.PrintStorageList(System.Data.DataSet)">
+ <summary>
+ TANK REPORT（保管明細）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLC.GLVK5140BLC.EditExcelData(System.Data.DataSet)">
+ <summary>
+ Excel用データテーブル編集処理
+ </summary>
+ <param name="ds">Dataset</param>
+ <returns>Dataset</returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

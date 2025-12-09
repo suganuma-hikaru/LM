@@ -1,0 +1,224 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.CSG.GUI
+</name>
+</assembly>
+<members>
+<member name="M:Jp.Co.Nrs.CS.GUI.Controllers.CSG510Controller.#ctor">
+ <summary>
+ 通常用コンストラクタ
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.Controllers.CSG510Controller.SetListJson(Jp.Co.Nrs.CS.GUI.CSG510Models)">
+ <summary>
+ pqGridを使用する配列のJson化・初期化設定
+ </summary>
+ <param name="outMdl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.Controllers.CSG510Controller.SetJsonList(Jp.Co.Nrs.CS.GUI.CSG510Models)">
+ <summary>
+ pqGrid Jsonを配列に戻す設定
+ </summary>
+ <param name="outMdl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.Controllers.CSG010Controller.#ctor">
+ <summary>
+ 通常用コンストラクタ
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.Controllers.CSG010Controller.SetListJson(Jp.Co.Nrs.CS.GUI.CSG010Models)">
+ <summary>
+ pqGridを使用する配列のJson化・初期化設定
+ </summary>
+ <param name="outMdl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.Controllers.CSG010Controller.SetJsonList(Jp.Co.Nrs.CS.GUI.CSG010Models)">
+ <summary>
+ pqGrid Jsonを配列に戻す設定
+ </summary>
+ <param name="outMdl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSG010WS.#ctor(Jp.Co.Nrs.CS.GUI.Controllers.CSG010Controller)">
+ <summary>
+ 指定された区分名を格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSG010WS.SetDatasetSearchCondition(Jp.Co.Nrs.CS.GUI.CSG010Models,System.Data.DataSet@)">
+ <summary>
+ データセットに検索条件項目をセットする
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSG010WS.SetDatasetPrintCondition(Jp.Co.Nrs.CS.GUI.CSG010Models,System.Data.DataSet@,System.String,System.Boolean,System.String)">
+ <summary>
+ 印刷条件をデータセットに設定
+ </summary>
+ <param name="inMdl">Model</param>
+ <param name="ds">Dataset</param>
+ <param name="printDtNm"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSG010WS.SetDataToOutModel(Jp.Co.Nrs.CS.GUI.CSG010Models@,System.Data.DataSet@,System.Int32,System.Int32)">
+ <summary>
+ 検索結果モデル設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSG010WS.SetInitControl(Jp.Co.Nrs.CS.GUI.CSG010Models@)">
+ <summary>
+ コントロール設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSG010WS.SetMsgListToOutModel(Jp.Co.Nrs.CS.GUI.CSG010Models@)">
+ <summary>
+ 使用メッセージリストをoutMdlに設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSG010WS.SetInitData(Jp.Co.Nrs.CS.GUI.CSG010Models@)">
+ <summary>
+ 初期値設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSG010WS.SetTempMdlKey(Jp.Co.Nrs.CS.GUI.CSG010Models@)">
+ <summary>
+ テンポラリーキー設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSG010WS.CreateViewModelCSG010(Jp.Co.Nrs.CS.GUI.CSG010Models)">
+ <summary>
+ ビューの作成
+ </summary>
+ <param name="mdl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSG010WS.SetInitCommon(Jp.Co.Nrs.CS.GUI.CSG010Models@)">
+ <summary>
+ 初期共通設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSG010WS.InToOut(Jp.Co.Nrs.CS.GUI.CSG010Models@,Jp.Co.Nrs.CS.GUI.CSG010Models@)">
+ <summary>
+ 入力項目を出力項目へ設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSG010WS.IsErrSearchSingleCheck(Jp.Co.Nrs.CS.GUI.CSG010Models@,Jp.Co.Nrs.CS.GUI.CSG010Models)">
+ <summary>
+ 単項目チェック 検索時
+ </summary>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSG010WS.IsErrPrintSingleCheck(Jp.Co.Nrs.CS.GUI.CSG010Models@,Jp.Co.Nrs.CS.GUI.CSG010Models)">
+ <summary>
+ 単項目チェック 印刷時
+ </summary>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSG010WS.CheckAuthAbility(Jp.Co.Nrs.CS.GUI.CSG010Models)">
+ <summary>
+ 機能マスタによる権限制御
+ </summary>
+ <param name="inMdl">システム利用会社コード</param>
+ <remarks>
+ 更新対象が複数レコードあるため、共通処理をラップ
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSG510WS.#ctor(Jp.Co.Nrs.CS.GUI.Controllers.CSG510Controller)">
+ <summary>
+ 指定された区分名を格納するフィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSG510WS.SetDatasetSearchCondition(Jp.Co.Nrs.CS.GUI.CSG510Models,System.Data.DataSet@)">
+ <summary>
+ データセットに検索条件項目をセットする
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSG510WS.SetDataToOutModel(Jp.Co.Nrs.CS.GUI.CSG510Models@,System.Data.DataSet@,System.Int32,System.Int32)">
+ <summary>
+ 検索結果モデル設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSG510WS.SetDataSetEntry(Jp.Co.Nrs.CS.GUI.CSG510Models,System.Data.DataSet@)">
+ <summary>
+ データセットに検索条件、登録項目を設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSG510WS.SetInitControl(Jp.Co.Nrs.CS.GUI.CSG510Models@)">
+ <summary>
+ コントロール設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSG510WS.SetMsgListToOutModel(Jp.Co.Nrs.CS.GUI.CSG510Models@)">
+ <summary>
+ 使用メッセージリストをoutMdlに設定
+ </summary>
+ <param name="outMdl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSG510WS.SetInitData(Jp.Co.Nrs.CS.GUI.CSG510Models@)">
+ <summary>
+ 初期値設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSG510WS.SetTempMdlKey(Jp.Co.Nrs.CS.GUI.CSG510Models@)">
+ <summary>
+ テンポラリーキー設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSG510WS.CreateViewModelCSG510(Jp.Co.Nrs.CS.GUI.CSG510Models)">
+ <summary>
+ ビューの作成
+ </summary>
+ <param name="mdl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSG510WS.SetInitCommon(Jp.Co.Nrs.CS.GUI.CSG510Models@)">
+ <summary>
+ 初期共通設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSG510WS.IsErrSearchSingleCheck(Jp.Co.Nrs.CS.GUI.CSG510Models@,Jp.Co.Nrs.CS.GUI.CSG510Models)">
+ <summary>
+ 単項目チェック 検索時
+ </summary>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.GUI.CSG510WS.IsErrSingleCheck(Jp.Co.Nrs.CS.GUI.CSG510Models@,Jp.Co.Nrs.CS.GUI.CSG510Models)">
+ <summary>
+ 単項目チェック QRコード割当時
+ </summary>
+ <returns>rtnFlg： true/エラーあり False/エラーなし</returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

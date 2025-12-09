@@ -1,0 +1,1382 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.Nw.DAC.NWD
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.Nw.DAC.NWD.My.Resources.Resources">
+<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.Nw.DAC.NWD.My.Resources.Resources.ResourceManager">
+<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.Nw.DAC.NWD.My.Resources.Resources.Culture">
+<summary>
+  すべてについて、現在のスレッドの CurrentUICulture プロパティをオーバーライドします
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD010DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD010DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD010DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD010DAC._SortKey">
+ <summary>
+ ソートKey
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD010DAC.C_LIST_LOT">
+ <summary>
+ 表示単位
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD010DAC.SQL_SELECT_DATA">
+ <summary>
+ B_INKA_Lデータ抽出用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD010DAC.SQL_SELECT_CNT">
+ <summary>
+ B_INKA_Lデータ　件数カウント用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD010DAC.SQL_SELECT_TAIL_LOT_DATA">
+ <summary>
+ B_INKA_Lデータ抽出（ロットレベル）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD010DAC.SQL_SELECT_TAIL_GOODS_DATA">
+ <summary>
+ B_INKA_Lデータ抽出（入荷レベル）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD010DAC.SQL_FROM_LOT">
+ <summary>
+ データ抽出用FROM句（ロットレベル）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD010DAC.SQL_FROM_GOODS">
+ <summary>
+ データ抽出用FROM句（入荷レベル）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD010DAC.SQL_TAIL">
+ <summary>
+ データ抽出用WHERE句（ページング、SEQ No.順ソート）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD010DAC.SQL_TAIL_CNT">
+ <summary>
+ データ抽出用カウント用最後（ページング、SEQ No.順ソートなし）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD010DAC.SQL_SELECT_M_CUST_DETAILS">
+ <summary>
+ 荷主明細取得抽出用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD010DAC.SelectInkaData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>入荷情報取得</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD010DAC.SelectInkaCount(System.Data.DataSet)">
+ ==========================================================================
+ <summary>データ件数カウント</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD010DAC.SelectCustDetauls(System.Data.DataSet)">
+ <summary>入荷情報取得</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD010DAC.SetConditionMasterSQL">
+ <summary>
+ 条件文・パラメータ設定モジュール(LOTレベル用)  *LIST_LEVEL=01*
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD010DAC.SetConditionMasterSQL2">
+ <summary>
+ 条件文・パラメータ設定モジュール(入荷レベル用)  *LIST_LEVEL=02*
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD010DAC.SetConditionCustDetails">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD010DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD010DAC.GetOrderBySQL">
+ <summary>
+ ソート順設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD010DAC.SetPageValue(System.String,System.Data.DataRow)">
+ <summary>
+ ページ設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD020DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD020DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD020DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD020DAC._SortKey">
+ <summary>
+ ソートKey
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD020DAC.C_LIST_LOT">
+ <summary>
+ 表示単位
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD020DAC.SQL_SELECT_ISDISP">
+ <summary>
+ 実績表示要否抽出
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD020DAC.SQL_SELECT_DATA_OUT">
+ <summary>
+ C_OUTKA_Lデータ(出荷単位）抽出用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD020DAC.SQL_SELECT_DATA_CNT">
+ <summary>
+ C_OUTKA_Lデータ  件数カウント用　*2015/11/24*　2015/12/18 tsunehira add
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD020DAC.SQL_SELECT_DATA_OUT_MRC">
+ <summary>
+ C_OUTKA_Lデータ(出荷単位）抽出用 ＜MRCデュポン専用＞
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD020DAC.SQL_SELECT_DATA_LOT">
+ <summary>
+ C_OUTKA_Lデータ(LOT単位）抽出用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD020DAC.SQL_SELECT_DATA_LOT_MRC">
+ <summary>
+ C_OUTKA_Lデータ(LOT単位）抽出用 ＜MRCデュポン専用＞
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD020DAC.SQL_SELECT_DATA_LOT_JISSEKI">
+ <summary>
+ C_OUTKA_Lデータ(LOT単位）抽出用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD020DAC.SQL_SELECT_SUB_JISSEKI">
+ <summary>
+ SQL部品（SUB サブクエリ）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD020DAC.SQL_SELECT_SUB_TAIL">
+ <summary>
+ SQL部品（SUB サブクエリ）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD020DAC.SQL_SELECT_MAIN_TAIL">
+ <summary>
+ SQL部品（MAIN PAGE絞込み・並び順）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD020DAC.SQL_TAIL_CNT">
+ <summary>
+ データ抽出用カウント用最後（ページング、SEQ No.順ソートなし）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD020DAC.IsDisp(System.Data.DataSet)">
+ ==========================================================================
+ <summary>実績表示要否を確認</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD020DAC.SelectOutkaData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>出荷情報取得</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD020DAC.SelectOutkaCount(System.Data.DataSet)">
+ ==========================================================================
+ <summary>データ件数カウント</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD020DAC.SetConditionMasterSQL">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD020DAC.SetConditionMainSQL">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD020DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD020DAC.GetOrderBySQL">
+ <summary>
+ ソート順設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD020DAC.SetPageValue(System.String,System.Data.DataRow)">
+ <summary>
+ ページ設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD020DAC.ReplaceConditionSQL">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD020DAC.SelectMaxCount(System.Data.DataSet)">
+ ==========================================================================
+ <summary>閾値取得</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD030DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD030DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD030DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD030DAC._SortKey">
+ <summary>
+ ソートKey
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Nw.DAC.NWD.NWD030DAC.CtlSortKey">
+ <summary>
+ ソートKey
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Nw.DAC.NWD.NWD030DAC.CtlSortOrder">
+ <summary>
+ ソート順
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD030DAC.ZERO_FLG">
+ <summary>
+ ゼロフラグ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD030DAC.SQL_SELECT_DATA_MAIN">
+ <summary>
+ SELECT句(商品名 + ロット + 入目 + 入荷日)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD030DAC.SQL_SELECT_DATA_GROUP">
+ <summary>
+ GROUP BY句
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD030DAC.SQL_DATA_TAIL">
+ <summary>
+ データ抽出用カウント用最後（ページング、SEQ No.順ソート）     2015/12/21 yk
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD030DAC.SQL_SELECT_CNT">
+ <summary>
+ (商品名 + ロット + 入目 + 入荷日)　TOP 件数カウント用 　　　　2015/12/18 tsunehira add
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD030DAC.SQL_TAIL_CNT">
+ <summary>
+ 件数カウント用最後（ページング、SEQ No.順ソートなし） 　　　　2015/12/21 yk
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD030DAC.SelectListData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>在庫情報取得</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD030DAC.SelectListCount(System.Data.DataSet)">
+ ==========================================================================
+ <summary>データ件数カウント</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD030DAC.SetConditionMasterSQL">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD030DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD030DAC.SetOUTData">
+ <summary>
+ 詳細データ設定処理
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD030DAC.GetOrderBySQL">
+ <summary>
+ ソート順設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD030DAC.SetPageValue(System.String,System.Data.DataRow)">
+ <summary>
+ ページ設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD040DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD040DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD040DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD040DAC.SQL_SELECT_DATA_RIREKI1">
+ <summary>
+ 入出荷履歴（入荷ごと）タブ選択時セレクト文１
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD040DAC.SQL_SELECT_DATA_RIREKI4">
+ <summary>
+ 入出荷履歴（入荷ごと）タブ選択時セレクト文４
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD040DAC.SQL_SELECT_DATA_RIREKI5">
+ <summary>
+ 入出荷履歴（入荷ごと）タブ選択時セレクト文５
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD040DAC.SQL_SELECT_DATA_RIREKI6">
+ <summary>
+ 入出荷履歴（入荷ごと）タブ選択時セレクト文６
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD040DAC.SQL_SELECT_DATA_RIREKI7">
+ <summary>
+ 入出荷履歴（入荷ごと）タブ選択時セレクト文７
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD040DAC.SQL_ORDERBY_DATA_RIREKI">
+ <summary>
+ 入出荷履歴（入荷ごと）タブ選択時ORDERBY句
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD040DAC.SQL_SELECT_CNT">
+ <summary>
+ 件数カウント用　2015/12/18 tsunehira add
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD040DAC.SelectListDataInka(System.Data.DataSet)">
+ <summary>
+ 入出荷履歴（入荷ごと(画面)）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD040DAC.SelectListDataInkaSet(System.Data.DataSet,System.String[])">
+ ==========================================================================
+ <summary>在庫入出荷履歴</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD040DAC.SelectListDataInkaCount(System.Data.DataSet,System.String[])">
+ ==========================================================================
+ <summary>データ件数カウント</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD040DAC.SetConditionSQLInka6">
+ <summary>
+ 条件文・パラメータ設定モジュール（RIREKI用）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD040DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD050DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD050DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD050DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Nw.DAC.NWD.NWD050DAC.CtlSortKey">
+ <summary>
+ ソートKey
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD050DAC.SQL_SELECT_CYLINDER_SET">
+ <summary>
+ シリンダー検索SET句
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD050DAC.SQL_SELECT_CYLINDER_DATA">
+ <summary>
+ シリンダー検索SELECT句
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD050DAC.SQL_SELECT_FROM_ZAIKO">
+ <summary>
+ シリンダー検索FROM句
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD050DAC.SQL_SELECT_WHERE_ZAIKO">
+ <summary>
+ シリンダー検索WHERE句
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD050DAC.SQL_SELECT_GROUP_ZAIKO">
+ <summary>
+ シリンダー検索GROUPBY句
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD050DAC.SQL_SELECT_ORDER_MAIN_JOIN">
+ <summary>
+ シリンダー検索 MAIN SQL JOIN句
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD050DAC.SQL_DATA_TAIL">
+ <summary>
+ 在シリンダー検索 データ抽出用カウント用最後（ページング、SEQ No.順ソート）    2015/12/21 yk
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD050DAC.SQL_SELECT_CNT">
+ <summary>
+ 件数カウント用　                                             2015/12/18 tsunehira add
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD050DAC.SQL_TAIL_CNT">
+ <summary>
+ 件数カウント用最後（ページング、SEQ No.順ソートなし） 　　　 2015/12/21 yk
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD050DAC.SelectListCylinder(System.Data.DataSet)">
+ ==========================================================================
+ <summary>シリンダー検索</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD050DAC.SelectListCylinderCount(System.Data.DataSet)">
+ ==========================================================================
+ <summary>データ件数カウント</summary>   
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD050DAC.SetConditionMasterSQL">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD050DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD050DAC.GetOrderBySQL">
+ <summary>
+ ソート順設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD050DAC.SetPageValue(System.String,System.Data.DataRow)">
+ <summary>
+ ページ設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD051DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD051DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD051DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.Nw.DAC.NWD.NWD051DAC.CtlSortKey">
+ <summary>
+ ソートKey
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD051DAC.SQL_SELECT_CYLINDER_DATA">
+ <summary>
+ シリンダー検索SELECT句
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD051DAC.SQL_SELECT_FROM_ZAIKO">
+ <summary>
+ シリンダー検索FROM句
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD051DAC.SQL_SELECT_FROM_ZAIKO_GOODS">
+ <summary>
+ シリンダー検索FROM句2
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD051DAC.SQL_SELECT_WHERE_ZAIKO">
+ <summary>
+ シリンダー検索WHERE句
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD051DAC.SQL_SELECT_GROUP_ZAIKO">
+ <summary>
+ シリンダー検索GROUPBY句
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD051DAC.SQL_SELECT_ORDER_MAIN_JOIN">
+ <summary>
+ シリンダー検索 MAIN SQL JOIN句
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD051DAC.SQL_DATA_TAIL">
+ <summary>
+ 在シリンダー検索 データ抽出用カウント用最後（ページング、SEQ No.順ソート）  2015/12/25 yk
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD051DAC.SQL_SELECT_CNT">
+ <summary>
+ 件数カウント用　                                             2015/12/25 yk
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD051DAC.SQL_TAIL_CNT">
+ <summary>
+ 件数カウント用最後（ページング、SEQ No.順ソートなし） 　　　 2015/12/25 yk
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD051DAC.SelectListCylinder(System.Data.DataSet)">
+ ==========================================================================
+ <summary>シリンダー検索</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD051DAC.SelectListCylinderCount(System.Data.DataSet)">
+ ==========================================================================
+ <summary>データ件数カウント</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD051DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD051DAC.GetOrderBySQL">
+ <summary>
+ ソート順設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD051DAC.SetPageValue(System.String,System.Data.DataRow)">
+ <summary>
+ ページ設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD060DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD060DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD060DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD060DAC.SQL_SELECT_DATA_RIREKI1">
+ <summary>
+ シリンダー履歴
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD060DAC.SQL_SELECT_DATA_RIREKI7">
+ <summary>
+ 入出荷履歴（入荷ごと）タブ選択時セレクト文７
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD060DAC.SQL_ORDERBY_DATA_RIREKI">
+ <summary>
+ 入出荷履歴（入荷ごと）タブ選択時ORDERBY句
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD060DAC.SelectListDataCylinderHistory(System.Data.DataSet)">
+ ==========================================================================
+ <summary>シリンダー履歴</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD060DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD080DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD080DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD080DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD080DAC._SortKey">
+ <summary>
+ ソートKey
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD080DAC.SQL_SELECT_MAIN_DATA_OUT">
+ <summary>
+ 一覧画面表示用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD080DAC.SQL_SELECT_SUB_DATA_OUT">
+ <summary>
+ C_OUTKA_Lデータ(出荷単位）抽出用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD080DAC.SQL_SELECT_SUB_TAIL">
+ <summary>
+ SQL部品（SUB サブクエリ）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD080DAC.SQL_SELECT_MAIN_TAIL">
+ <summary>
+ SQL部品（MAIN PAGE絞込み・並び順）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD080DAC.SQL_EXISTS_WK_WEB_ORDER_HED">
+ <summary>
+ WEBオーダーヘッダー(WK_WEB_ORDER_HED）存在チェック用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD080DAC.SQL_SELECT_CNT">
+ <summary>
+ 件数カウント用                                                2015/12/18 tsunehira add
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD080DAC.SQL_TAIL_CNT">
+ <summary>
+ 件数カウント用最後（ページング、SEQ No.順ソートなし） 　　　　2015/12/21 yk
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD080DAC.SQL_INSERT_WK_WEB_ORDER_HED">
+ <summary>
+ WEBオーダーヘッダー(WK_WEB_ORDER_HED）追加SQL
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD080DAC.SQL_UPDATE_WK_WEB_ORDER_HED">
+ <summary>
+ WEBオーダーヘッダー(WK_WEB_ORDER_HED）追加SQL
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD080DAC.SelectOutkaData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>出荷情報取得</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD080DAC.SelectOutkaDataCount(System.Data.DataSet)">
+ ==========================================================================
+ <summary>データ件数カウント</summary>      2015/12/22 tunehira
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD080DAC.SelectWebOrderHedCnt(System.Data.DataSet)">
+ <summary>
+ WEBオーダーヘッダー(WK_WEB_ORDER_HED）存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>WEBオーダーヘッダー(WK_WEB_ORDER_HED）取得用SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD080DAC.InsertCheckData(System.Data.DataSet)">
+ <summary>
+ WEBオーダーヘッダー(WK_WEB_ORDER_HED）追加処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>WEBオーダーヘッダー(WK_WEB_ORDER_HED）テーブル追加SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD080DAC.UpdateCheckData(System.Data.DataSet)">
+ <summary>
+ WEBオーダーヘッダー(WK_WEB_ORDER_HED）更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>WEBオーダーヘッダー(WK_WEB_ORDER_HED）テーブル更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD080DAC.SetInsertUpdateCheckParameter">
+ <summary>
+ WEBオーダーヘッダー(WK_WEB_ORDER_HED)追加パラメータ設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD080DAC.SetConditionMasterSQL">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD080DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD080DAC.GetOrderBySQL">
+ <summary>
+ ソート順設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD080DAC.SetPageValue(System.String,System.Data.DataRow)">
+ <summary>
+ ページ設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD110DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD110DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD110DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD110DAC._SortKey">
+ <summary>
+ ソートKey
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD110DAC.SQL_SELECT_INIT_DATA_OUT">
+ <summary>
+ 詳細画面初期表示用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD110DAC.SQL_EXIST_WK_WEB_ORDER_HED">
+ <summary>
+ WEBオーダーヘッダー(WK_WEB_ORDER_HED）排他チェック用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD110DAC.SQL_EXISTS_WK_WEB_ORDER_DTL">
+ <summary>
+ WEBオーダー明細(WK_WEB_ORDER_DTL）存在チェック用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD110DAC.SQL_EXIST_C_OUTKA_L">
+ <summary>
+ 出荷(大)(C_OUTKA_L）排他チェック用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD110DAC.SQL_INSERT_WK_WEB_ORDER_HED">
+ <summary>
+ WEBオーダーヘッダー(WK_WEB_ORDER_HED）追加SQL
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD110DAC.SQL_INSERT_WK_WEB_ORDER_DTL">
+ <summary>
+ WEBオーダー明細(WK_WEB_ORDER_DTL）追加SQL
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD110DAC.SQL_UPDATE_WK_WEB_ORDER_HED_CONFIRM">
+ <summary>
+ WEBオーダーヘッダー(WK_WEB_ORDER_HED）確定SQL PROCESS_ID=2:CONFIRM
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD110DAC.SQL_UPDATE_WK_WEB_ORDER_HED_CHANGE">
+ <summary>
+ WEBオーダーヘッダー(WK_WEB_ORDER_HED）変更SQL PROCESS_ID=3:CHANGE
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD110DAC.SQL_UPDATE_WK_WEB_ORDER_DTL">
+ <summary>
+ WEBオーダー明細(WK_WEB_ORDER_DTL）確定SQL PROCESS_ID=2:CONFIRM
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD110DAC.SQL_UPDATE_C_OUTKA_M">
+ <summary>
+ 出荷(中)(C_OUTKA_M）追加・確定SQL PROCESS_ID=2:CONFIRM   2015.08.25追加
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD110DAC.SQL_UPDATE_C_OUTKA_L">
+ <summary>
+ 出荷(大)(C_OUTKA_L）追加SQL PROCESS_ID=2:CONFIRM
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD110DAC.SelectInitData(System.Data.DataSet)">
+ ==========================================================================
+ <summary>出荷/オーダー情報取得</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD110DAC.WebOrderHedDataCount(System.Data.DataSet)">
+ <summary>
+ WEBオーダーヘッダー(WK_WEB_ORDER_HED）存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>WEBオーダーヘッダー(WK_WEB_ORDER_HED）取得用SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD110DAC.OutkaLDataCount(System.Data.DataSet)">
+ <summary>
+ 出荷(大)(C_OUTKA_L）存在チェック   2015.8.04追加
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>出荷(大)(C_OUTKA_L）取得用SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD110DAC.ExistsWebOrderDtlData(System.Data.DataSet)">
+ <summary>
+ WEBオーダー明細(WK_WEB_ORDER_DTL）存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>WEBオーダー明細(WK_WEB_ORDER_DTL）取得用SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD110DAC.InsertWebHedData(System.Data.DataSet)">
+ <summary>
+ WEBオーダーヘッダー(WK_WEB_ORDER_HED）追加処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>WEBオーダーヘッダー(WK_WEB_ORDER_HED）テーブル追加SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD110DAC.UpdateWebHedData(System.Data.DataSet)">
+ <summary>
+ WEBオーダーヘッダー(WK_WEB_ORDER_HED）更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>WEBオーダーヘッダー(WK_WEB_ORDER_HED）テーブル更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD110DAC.InsertWebDtlData(System.Data.DataSet)">
+ <summary>
+ WEBオーダー明細(WK_WEB_ORDER_DTL）追加処理(INSERT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>WEBオーダー明細(WK_WEB_ORDER_DTL）テーブル追加SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD110DAC.UpdateOutkaMData(System.Data.DataSet)">
+ <summary>
+ 出荷(中)(C_OUTKA_M）更新処理　　2015.08.26追加
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>出荷(中)(C_OUTKA_M）テーブル更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD110DAC.UpdateOutkaLData(System.Data.DataSet)">
+ <summary>
+ 出荷(大)(C_OUTKA_L）更新処理　　2015.8.04追加
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>出荷(大)(C_OUTKA_L）テーブル更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD110DAC.SetSaveParameter">
+ <summary>
+ WEBオーダーヘッダー・明細更新パラメータ設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD110DAC.SetInParameter">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD110DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD120DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD120DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD120DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD120DAC._SortKey">
+ <summary>
+ ソートKey
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD120DAC.SQL_SELECT_FILE_DATA_OUT">
+ <summary>
+ ファイルパス・名取得用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD120DAC.SQL_SELECT_KEY_DATA">
+ <summary>
+ 区分マスタ(KBN_GROUP_CD='K024'）KEY_CODEの取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD120DAC.SQL_EXISTS_F_HAISO_COMP">
+ <summary>
+ 配送データ(C_HAISO_COMP）存在チェック用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD120DAC.SQL_INSERT_F_HAISO_COMP">
+ <summary>
+ 配送データ(C_HAISO_COMP）追加SQL
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD120DAC.SQL_UPDATE_F_HAISO_COMP">
+ <summary>
+ 配送データ(C_HAISO_COMP）更新SQL
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD120DAC.SearchHaisoPass(System.Data.DataSet)">
+ ==========================================================================
+ <summary>配送データ庭先情報(PDF)ファイルパス・ファイル名取得</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD120DAC.SearchKeyCode(System.Data.DataSet)">
+ ==========================================================================
+ <summary>キーコードの取得</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD120DAC.HaisoKanryoData(System.Data.DataSet)">
+ <summary>
+ 配送完了データ(C_HAISO_COMP）存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>配送完了データ(C_HAISO_COMP）取得用SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD120DAC.InsertHaisoData(System.Data.DataSet)">
+ <summary>
+ 配送完了データ(C_HAISO_COMP）追加処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>配送完了データ(C_HAISO_COMP）テーブル追加SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD120DAC.UpdateHaisoData(System.Data.DataSet)">
+ <summary>
+ 配送完了データ(C_HAISO_COMP）更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>配送完了データ(C_HAISO_COMP）テーブル更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD120DAC.SetInParameter">
+ <summary>
+ 画面INデータ(NWD120IN)パラメータ設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD120DAC.SetInsertUpdateCheckParameter">
+ <summary>
+ 配送完了データ(C_HAISO_COMP)追加パラメータ設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD120DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD140DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD140DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD140DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD140DAC._SortKey">
+ <summary>
+ ソートKey
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD140DAC.SQL_SELECT_FILE_DATA_OUT">
+ <summary>
+ ファイルパス・名取得用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD140DAC.DeliveryStatus(System.Data.DataSet)">
+ ==========================================================================
+ <summary>配送状況表示</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD140DAC.SetInParameter">
+ <summary>
+ 画面INデータ(NWD140IN)パラメータ設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD140DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD130DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD130DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD130DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD130DAC._SortKey">
+ <summary>
+ ソートKey
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD130DAC.SQL_SELECT_FILE_DATA_OUT">
+ <summary>
+ ファイルパス・名取得用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD130DAC.SearchOutkaInfo(System.Data.DataSet)">
+ ==========================================================================
+ <summary>再保管出荷指示データ取得</summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+ ==========================================================================
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD130DAC.SetInParameter">
+ <summary>
+ 画面INデータ(NWD130IN)パラメータ設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD130DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD500DAC._Row">
+ <summary>
+ 検索条件設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD500DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.Nw.DAC.NWD.NWD500DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD500DAC.SelectPrintData(System.Data.DataSet)">
+ <summary>
+ 印刷対象データの検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD500DAC.setIndataParameter(System.Data.DataRow)">
+ <summary>
+ 条件文設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.Nw.DAC.NWD.NWD500DAC.SetSchemaNm(System.String,System.String)">
+ <summary>
+ スキーマ名称設定
+ </summary>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

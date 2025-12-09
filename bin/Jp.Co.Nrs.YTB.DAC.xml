@@ -1,0 +1,315 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.YTB.DAC
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.YT.DAC.YTB0100DAC.TABLE_NM">
+ <summary>
+ テーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.YT.DAC.YTB0100DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.YT.DAC.YTB0100DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.YT.DAC.YTB0100DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.DAC.YTB0100DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.DAC.YTB0100DAC.SetDataQrParameter">
+ <summary>
+ QR読込データ登録用パラメータ設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.DAC.YTB0100DAC.SetDataInsertParameter">
+ <summary>
+ データ登録用パラメータ設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.YT.DAC.YTB0600DAC.TABLE_NM">
+ <summary>
+ テーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.YT.DAC.YTB0600DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.YT.DAC.YTB0600DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.YT.DAC.YTB0600DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.YT.DAC.YTB0600DAC._PrmChk">
+ <summary>
+ パラメータチェック用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.DAC.YTB0600DAC.SelectSainData(System.Data.DataSet)">
+ <summary>
+ 受領サイン情報取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.DAC.YTB0600DAC.SelectEgsMailData(System.Data.DataSet)">
+ <summary>
+ M_TAB_EGS_MAIL取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>M_TAB_EGS_MAIL取得処理取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.DAC.YTB0600DAC.InsertSainData(System.Data.DataSet)">
+ <summary>
+ T_TAB_JYR_SAIN登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>T_TAB_JYR_SAIN登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.DAC.YTB0600DAC.UpdateSaniData(System.Data.DataSet)">
+ <summary>
+ T_TAB_JYR_SAIN更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>T_TAB_JYR_SAIN更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.DAC.YTB0600DAC.SetEgsCdParameter">
+ <summary>
+ 営業所メール取得用パラメータ設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.DAC.YTB0600DAC.SetDataInsertParameter">
+ <summary>
+ データ登録用パラメータ設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.DAC.YTB0600DAC.SetDataUpdateParameter">
+ <summary>
+ データ更新用パラメータ設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.DAC.YTB0600DAC.SetSainKeyDataParameter">
+ <summary>
+ 受領サイン情報キー関連パラメータ設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.DAC.YTB0600DAC.SetSainDataParameter">
+ <summary>
+ 受領サイン情報関連パラメータ設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.YT.DAC.YTB0200DAC.TABLE_NM">
+ <summary>
+ テーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.YT.DAC.YTB0200DAC.FUNCTION_NM.SELECT_MEASURE">
+ <summary>
+ 計量証明データ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.YT.DAC.YTB0200DAC.FUNCTION_NM.SELECT_MEASURE_FILE">
+ <summary>
+ 計量証明画像データ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.YT.DAC.YTB0200DAC.FUNCTION_NM.SELECT_EGS_MAIL">
+ <summary>
+ 営業所メールデータ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.YT.DAC.YTB0200DAC.FUNCTION_NM.INSERT_MEASURE">
+ <summary>
+ 計量証明データ登録
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.YT.DAC.YTB0200DAC.FUNCTION_NM.INSERT_MEASURE_FILE">
+ <summary>
+ 計量証明画像データ登録
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.YT.DAC.YTB0200DAC.FUNCTION_NM.UPDATE_MEASURE">
+ <summary>
+ 計量証明データ更新
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.YT.DAC.YTB0200DAC.FUNCTION_NM.UPDATE_DEL_MEASURE_FILE">
+ <summary>
+ 計量証明画像データ削除(論理)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.YT.DAC.YTB0200DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.YT.DAC.YTB0200DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.YT.DAC.YTB0200DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.YT.DAC.YTB0200DAC._PrmChk">
+ <summary>
+ パラメータチェック用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.DAC.YTB0200DAC.SelectMeasureData(System.Data.DataSet)">
+ <summary>
+ T_TAB_MEASURE取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>T_TAB_MEASURE取得処理取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.DAC.YTB0200DAC.SelectMeasureFileData(System.Data.DataSet)">
+ <summary>
+ T_TAB_MEASURE_FILE取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>T_TAB_MEASURE取得処理取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.DAC.YTB0200DAC.SelectEgsMailData(System.Data.DataSet)">
+ <summary>
+ M_TAB_EGS_MAIL取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>M_TAB_EGS_MAIL取得処理取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.DAC.YTB0200DAC.InsertMeasureData(System.Data.DataSet)">
+ <summary>
+ T_TAB_MEASURE登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>T_TAB_MEASURE登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.DAC.YTB0200DAC.InsertMeasureFileData(System.Data.DataSet)">
+ <summary>
+ T_TAB_MEASURE_FILE登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>T_TAB_MEASURE_FILE登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.DAC.YTB0200DAC.UpdateMeasureData(System.Data.DataSet)">
+ <summary>
+ T_TAB_MEASURE登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>T_TAB_MEASURE更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.DAC.YTB0200DAC.UpdateDelMeasureFileData(System.Data.DataSet)">
+ <summary>
+ T_TAB_MEASURE_FILE削除(論理)処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>T_TAB_MEASURE_FILE削除(論理)SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.DAC.YTB0200DAC.SetSgyNoParameter">
+ <summary>
+ 初期表示用パラメータ設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.DAC.YTB0200DAC.SetEgsCdParameter">
+ <summary>
+ 営業所メール取得用パラメータ設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.DAC.YTB0200DAC.SetDataInsertParameter">
+ <summary>
+ データ登録用パラメータ設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.DAC.YTB0200DAC.SetDataUpdateParameter">
+ <summary>
+ データ更新用パラメータ設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.DAC.YTB0200DAC.SetDataUpdateDelParameter">
+ <summary>
+ データ削除(論理)用パラメータ設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.DAC.YTB0200DAC.SetMeasureDataParameter">
+ <summary>
+ T_TAB_MEASURE用パラメータ設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.YT.DAC.YTB0200DAC.SetMeasureFileDataParameter">
+ <summary>
+ T_TAB_MEASURE_FILE用パラメータ設定
+ </summary>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

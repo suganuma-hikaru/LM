@@ -1,0 +1,3240 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.CSD.BLC
+</name>
+</assembly>
+<members>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD010BLC.FUNCTION_NM.SELECT_DATA">
+ <summary>
+ 検索結果データ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD010BLC.FUNCTION_NM.HAITA_CHK">
+ <summary>
+ 排他チェック
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD010BLC.FUNCTION_NM.HAITA_CHK_MAIL">
+ <summary>
+ 排他チェック
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD010BLC.FUNCTION_NM.MAIL_SEND_CHECK_REMINDER">
+ <summary>
+ 確認催促指示メール送信
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD010BLC.FUNCTION_NM.MAIL_SEND_CONF_RETURN">
+ <summary>
+ 返却可否確認メール送信
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD010BLC.FUNCTION_NM.SAVE_UPD">
+ <summary>
+ 返却可否更新
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD010BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD010BLC.SelectZSystem(System.Data.DataSet)">
+ <summary>
+ Z_SYSTEM取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD010BLC.SelectResultList(System.Data.DataSet)">
+ <summary>
+ 検索結果情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD010BLC.UpdateReturnOkNg(System.Data.DataSet)">
+ <summary>
+ 返却可否更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD010BLC.UpdateSaveLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 返却可否更新（D_LOGISTICS_DTL）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD010BLC.IsHaitaChk(System.Data.DataSet)">
+ <summary>
+ 排他制御
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD010BLC.IsHaitaChkMail(System.Data.DataSet)">
+ <summary>
+ 排他制御（メール用）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD010BLC.UpdateMailSendCheckReminderData(System.Data.DataSet)">
+ <summary>
+ 確認催促指示メール送信
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD010BLC.SetMailSendCheckReminderDataSet(System.Data.DataSet)">
+ <summary>
+ 確認催促指示メール送信データセット更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD010BLC.InsertSJobMsgData(System.Data.DataSet)">
+ <summary>
+ 確認催促指示メール送信（S_JOB_MSG）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD010BLC.InsertSJobMsgDtlData(System.Data.DataSet)">
+ <summary>
+ 確認催促指示メール送信（S_JOB_MSG_DTL）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD010BLC.UpdateMailSendConfReturnData(System.Data.DataSet)">
+ <summary>
+ 返却可否確認メール送信
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD010BLC.SetMailSendConfReturnDataSet(System.Data.DataSet)">
+ <summary>
+ 返却可否確認メール送信データセット更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD010BLC.UpdateLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 返却可否確認メール送信（D_LOGISTICS_DTL）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD010BLC.SendMailProc(System.Data.DataSet)">
+ <summary>
+メッセージ送信処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD010BLC.CreateEWSToolSendMailDataSet">
+ <summary>
+ EWSTool SendMail用DataSet作成
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD010BLC.AddRowZSystemCSD010(System.Data.DataSet@,System.String,System.String)">
+ <summary>
+ Z_SYSTEM行追加処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="procKbn">Z_SYSTEM処理区分</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD040BLC.FUNCTION_NM.GET_DATA.BASIC">
+ <summary>
+ 基本情報取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD040BLC.FUNCTION_NM.GET_DATA.ALL">
+ <summary>
+ 全関連情報取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD040BLC.FUNCTION_NM.GET_DATA.ORD">
+ <summary>
+ 依頼ヘッダ情報取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD040BLC.FUNCTION_NM.GET_DATA.TANK">
+ <summary>
+ 割当容器情報取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD040BLC.FUNCTION_NM.GET_DATA.OUTKA">
+ <summary>
+ 入出荷情報情報取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD040BLC.FUNCTION_NM.GET_DATA.CHAT">
+ <summary>
+ チャット情報取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.BLC.CSD040BLC.FUNCTION_NM.SAVE.D_LOGISTICS_ORD">
+ <summary>
+ 物流依頼ヘッダ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.BLC.CSD040BLC.FUNCTION_NM.SAVE.D_LOGISTICS_DTL">
+ <summary>
+ 物流依頼明細
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.BLC.CSD040BLC.FUNCTION_NM.UPSTAGE.D_LOGISTICS_ORD">
+ <summary>
+ 物流依頼ヘッダ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.BLC.CSD040BLC.FUNCTION_NM.UPSTAGE.E_INOUT_ORD_HEAD">
+ <summary>
+ 入出荷検品ヘッダ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.BLC.CSD040BLC.FUNCTION_NM.UPSTAGE.E_INOUT_ORD_DTL">
+ <summary>
+ 入出荷検品明細
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.BLC.CSD040BLC.FUNCTION_NM.UPSTAGE.E_INOUT_ORD">
+ <summary>
+ 入出荷検品データ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.BLC.CSD040BLC.FUNCTION_NM.UPSTAGE.SEND_MAIL">
+ <summary>
+ メール送信
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.BLC.CSD040BLC.FUNCTION_NM.ROLLBACK.D_LOGISTICS_ORD">
+ <summary>
+ 物流依頼ヘッダ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.BLC.CSD040BLC.FUNCTION_NM.ROLLBACK.E_INOUT_ORD_HEAD">
+ <summary>
+ 入出荷検品ヘッダ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.BLC.CSD040BLC.FUNCTION_NM.ROLLBACK.E_INOUT_ORD_DTL">
+ <summary>
+ 入出荷検品明細
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD040BLC.OTHER_BLC.CSZ999.Z_SYSTEM_KEY.LOGISTICS_ORD_NO">
+ <summary>
+ 物流依頼管理番号
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD040BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD040BLC._CSZ050DAC">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD040BLC.GetBasicData(System.Data.DataSet)">
+ <summary>
+ 基本情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD040BLC.GetAllData(System.Data.DataSet)">
+ <summary>
+ 全関連情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD040BLC.OrdData(System.Data.DataSet)">
+ <summary>
+ 依頼情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD040BLC.TankData(System.Data.DataSet)">
+ <summary>
+ 容器情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD040BLC.ContData(System.Data.DataSet)">
+ <summary>
+ コンテナ情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD040BLC.OutkaData(System.Data.DataSet)">
+ <summary>
+ 入出荷検品情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD040BLC.ChatData(System.Data.DataSet)">
+ <summary>
+ チャット情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD040BLC.SetChatSelectData(System.Data.DataSet)">
+ <summary>
+ チャットIN情報設定
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD040BLC.SetNewInData(System.Data.DataSet)">
+ <summary>
+ 新規INデータ設定
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD040BLC.SaveList(System.Data.DataSet)">
+ <summary>
+ 保存処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD040BLC.SaveEditList(System.Data.DataSet)">
+ <summary>
+ データ編集処理(保存処理)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD040BLC.SaveInLogisticsOrd(System.Data.DataSet)">
+ <summary>
+ 物流依頼ヘッダ登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD040BLC.SaveUpLogisticsOrd(System.Data.DataSet)">
+ <summary>
+ 物流依頼ヘッダ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD040BLC.SaveInLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 物流明細登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD040BLC.SaveUpLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 物流明細更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD040BLC.SaveInLogisticsCont(System.Data.DataSet)">
+ <summary>
+ コンテナ細登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD040BLC.SaveUpLogisticsCont(System.Data.DataSet)">
+ <summary>
+ コンテナ細更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD040BLC.SaveCreateLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 物流明細設定
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD040BLC.SaveCreateLogisticsCont(System.Data.DataSet)">
+ <summary>
+ コンテナ明細設定
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD040BLC.UpStageList(System.Data.DataSet)">
+ <summary>
+ ステージ更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD040BLC.UpStageEditList(System.Data.DataSet)">
+ <summary>
+ ステージ更新編集処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD040BLC.SendMail(System.Data.DataSet)">
+ <summary>
+ メール送信処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD040BLC.UpStageUpLogisticsOrd(System.Data.DataSet)">
+ <summary>
+ 物流依頼ヘッダ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD040BLC.UpStageUpLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 物流依頼明細更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD040BLC.UpStageInInoutOrdHead(System.Data.DataSet)">
+ <summary>
+ 入出荷検品ヘッダ登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD040BLC.UpStageUpInoutOrdHead(System.Data.DataSet)">
+ <summary>
+ 入出荷検品ヘッダ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD040BLC.UpStageInInoutOrdDtl(System.Data.DataSet)">
+ <summary>
+ 入出荷検品明細登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD040BLC.UpStageNextLogisticsOrd(System.Data.DataSet)">
+ <summary>
+ ステージUP処理(＆システム情報)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD040BLC.UpStageNextChkCondition(System.Data.DataSet)">
+ <summary>
+ ステージUP処理(検品対象条件)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD040BLC.UpStageEditLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 物流明細設定(検品対象条件)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD040BLC.UpStageCreateInoutOrd(System.Data.DataSet)">
+ <summary>
+ 入出荷検品データ作成
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD040BLC.UpStageEditInoutOrdHead(System.Data.DataSet)">
+ <summary>
+ 入出荷検品ヘッドデータ編集
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD040BLC.SetSendMailData(System.Data.DataSet)">
+ <summary>
+ メール送信処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD040BLC.GetMaimTpl(System.String,System.String)">
+ <summary>
+ メールテンプレート取得
+ </summary>
+ <param name="tplCd"></param>
+ <param name="tplKbn"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD040BLC.RollbackList(System.Data.DataSet)">
+ <summary>
+ 物流依頼ヘッダ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD040BLC.RollbackEditList(System.Data.DataSet)">
+ <summary>
+ ロールバック編集処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD040BLC.RollbackUpLogisticsOrd(System.Data.DataSet)">
+ <summary>
+ 物流依頼ヘッダ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD040BLC.RollbackUpLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 物流依頼明細更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD040BLC.RollbackUpInoutOrdHead(System.Data.DataSet)">
+ <summary>
+ 入出荷検品ヘッダ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD040BLC.RollbackUpInoutOrdDtl(System.Data.DataSet)">
+ <summary>
+ 入出荷検品明細更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD040BLC.RollbackDownLogisticsOrd(System.Data.DataSet)">
+ <summary>
+ ステージBACK処理(＆システム情報)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD040BLC.RollbackNextChkCondition(System.Data.DataSet)">
+ <summary>
+ ステージBACK処理(検品対象条件)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD040BLC.RollbackEditLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 物流明細設定(検品対象条件)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD040BLC.IsHaitaChkLogisticsOrd(System.Data.DataSet)">
+ <summary>
+ 物流依頼排他制御
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD040BLC.IsHaitaChkLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 物流依頼明細排他制御
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD040BLC.IsHaitaChkLogisticsCont(System.Data.DataSet)">
+ <summary>
+ コンテナ明細排他制御
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD040BLC.IsHaitaChkInoutOrdHead(System.Data.DataSet)">
+ <summary>
+ 入出荷検品ヘッダ排他制御
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD040BLC.IsHaitaChkTankSta(System.Data.DataSet)">
+ <summary>
+ 物流依頼明細(排他 容器ステータス別)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD040BLC.SetLogisticsOrdNo(System.Data.DataSet)">
+ <summary>
+ 物流新規蝶番(＆システム情報設定)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD040BLC.SetInoutOrdNo(System.Data.DataSet)">
+ <summary>
+ 入出荷新規蝶番
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD040BLC.IsMasterChk(System.Data.DataSet)">
+ <summary>
+ マスタチェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD040BLC.IsMasterChkReStorage(System.Data.DataSet)">
+ <summary>
+ 返却保管場所チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD040BLC.SendMailProc(System.Data.DataSet)">
+ <summary>
+メッセージ送信処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD040BLC.CreateEWSToolSendMailDataSet">
+ <summary>
+ EWSTool SendMail用DataSet作成
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD040BLC.SetZSystem(System.Data.DataSet,System.String,System.Boolean)">
+ <summary>
+ Z_SYSTEM設定
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD040BLC.SelectZSystem(System.Data.DataSet)">
+ <summary>
+ Z_SYSTEM取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD130BLC.FUNCTION_NM.GET_DATA.BASIC">
+ <summary>
+ 基本情報取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD130BLC.FUNCTION_NM.GET_DATA.ALL">
+ <summary>
+ 全関連情報取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD130BLC.FUNCTION_NM.GET_DATA.ORD">
+ <summary>
+ 依頼ヘッダ情報取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD130BLC.FUNCTION_NM.GET_DATA.TANK">
+ <summary>
+ 割当容器情報取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD130BLC.FUNCTION_NM.GET_DATA.OUTKA_ORD">
+ <summary>
+ 入出荷依頼情報情報取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD130BLC.FUNCTION_NM.GET_DATA.OUTKA">
+ <summary>
+ 入出荷情報情報取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD130BLC.FUNCTION_NM.GET_DATA.CHAT">
+ <summary>
+ チャット情報取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.BLC.CSD130BLC.FUNCTION_NM.SAVE.D_LOGISTICS_ORD">
+ <summary>
+ 物流依頼ヘッダ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.BLC.CSD130BLC.FUNCTION_NM.SAVE.D_LOGISTICS_DTL">
+ <summary>
+ 物流依頼明細
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.BLC.CSD130BLC.FUNCTION_NM.SAVE.E_INOUT_ORD_HEAD">
+ <summary>
+ 入出荷検品ヘッダ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.BLC.CSD130BLC.FUNCTION_NM.UPSTAGE.D_LOGISTICS_ORD">
+ <summary>
+ 物流依頼ヘッダ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.BLC.CSD130BLC.FUNCTION_NM.UPSTAGE.E_INOUT_ORD_HEAD">
+ <summary>
+ 入出荷検品ヘッダ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.BLC.CSD130BLC.FUNCTION_NM.UPSTAGE.E_INOUT_ORD_DTL">
+ <summary>
+ 入出荷検品明細
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.BLC.CSD130BLC.FUNCTION_NM.UPSTAGE.E_INOUT_ORD">
+ <summary>
+ 入出荷検品データ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.BLC.CSD130BLC.FUNCTION_NM.UPSTAGE.SEND_MAIL">
+ <summary>
+ メール送信
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.BLC.CSD130BLC.FUNCTION_NM.STAGE_INFO.D_LOGISTICS_ORD">
+ <summary>
+ 物流依頼ヘッダ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.BLC.CSD130BLC.FUNCTION_NM.ROLLBACK.D_LOGISTICS_ORD">
+ <summary>
+ 物流依頼ヘッダ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.BLC.CSD130BLC.FUNCTION_NM.ROLLBACK.E_INOUT_ORD_HEAD">
+ <summary>
+ 入出荷検品ヘッダ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.BLC.CSD130BLC.FUNCTION_NM.ROLLBACK.E_INOUT_ORD_DTL">
+ <summary>
+ 入出荷検品明細
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD130BLC.OTHER_BLC.CSZ999.Z_SYSTEM_KEY.LOGISTICS_ORD_NO">
+ <summary>
+ 物流依頼管理番号
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD130BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD130BLC._CSZ050DAC">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.GetBasicData(System.Data.DataSet)">
+ <summary>
+ 基本情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.GetAllData(System.Data.DataSet)">
+ <summary>
+ 全関連情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.OrdData(System.Data.DataSet)">
+ <summary>
+ 依頼情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.TankData(System.Data.DataSet)">
+ <summary>
+ 容器情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.OutkaOrdData(System.Data.DataSet)">
+ <summary>
+ 入出荷検品依頼情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.ContData(System.Data.DataSet)">
+ <summary>
+ コンテナ情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.OutkaData(System.Data.DataSet)">
+ <summary>
+ 入出荷検品情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.ChatData(System.Data.DataSet)">
+ <summary>
+ チャット情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.SetChatSelectData(System.Data.DataSet)">
+ <summary>
+ チャットIN情報設定
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.SetNewInData(System.Data.DataSet)">
+ <summary>
+ 新規INデータ設定
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.SaveList(System.Data.DataSet)">
+ <summary>
+ 保存処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.SaveEditList(System.Data.DataSet)">
+ <summary>
+ データ編集処理(保存処理)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.SaveInLogisticsOrd(System.Data.DataSet)">
+ <summary>
+ 物流依頼ヘッダ登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.SaveUpLogisticsOrd(System.Data.DataSet)">
+ <summary>
+ 物流依頼ヘッダ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.SaveInLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 物流明細登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.SaveUpLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 物流明細更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.SaveInLogisticsCont(System.Data.DataSet)">
+ <summary>
+ コンテナ細登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.SaveUpLogisticsCont(System.Data.DataSet)">
+ <summary>
+ コンテナ細更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.SaveUpInoutOrdHead(System.Data.DataSet)">
+ <summary>
+ 入出荷検品ヘッダ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.SaveCreateLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 物流明細設定
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.SaveCreateLogisticsCont(System.Data.DataSet)">
+ <summary>
+ コンテナ明細設定
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.SaveCreateInoutHead(System.Data.DataSet)">
+ <summary>
+ 入出荷設定
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.SaveEditInoutOrdHead(System.Data.DataSet)">
+ <summary>
+ 入出荷検品ヘッドデータ(バンニング)編集
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.UpStageList(System.Data.DataSet)">
+ <summary>
+ ステージ更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.UpStageEditList(System.Data.DataSet)">
+ <summary>
+ ステージ更新編集処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.SendMail(System.Data.DataSet)">
+ <summary>
+ メール送信処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.UpStageUpLogisticsOrd(System.Data.DataSet)">
+ <summary>
+ 物流依頼ヘッダ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.UpStageUpLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 物流明細更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.UpStageInInoutOrdHead(System.Data.DataSet)">
+ <summary>
+ 入出荷検品ヘッダ登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.UpStageInInoutOrdDtl(System.Data.DataSet)">
+ <summary>
+ 入出荷検品明細登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.UpStageUpInoutOrdHead(System.Data.DataSet)">
+ <summary>
+ 入出荷検品ヘッダ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.UpStageNextLogisticsOrd(System.Data.DataSet)">
+ <summary>
+ ステージUP処理(＆システム情報)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.UpStageNextChkCondition(System.Data.DataSet)">
+ <summary>
+ ステージUP処理(検品対象条件)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.UpStageEditLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 物流明細設定
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.UpStageCreateInoutOrd(System.Data.DataSet)">
+ <summary>
+ 入出荷検品データ作成
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.UpStageEditInoutOrdHead(System.Data.DataSet)">
+ <summary>
+ 入出荷検品ヘッドデータ編集
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.SetSendMailData(System.Data.DataSet)">
+ <summary>
+ メール送信処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.GetMaimTpl(System.String,System.String)">
+ <summary>
+ メールテンプレート取得
+ </summary>
+ <param name="tplCd"></param>
+ <param name="tplKbn"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.UpInfoList(System.Data.DataSet)">
+ <summary>
+ ステージ更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.UpInfoEditList(System.Data.DataSet)">
+ <summary>
+ ステージ【情報】更新編集処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.UpInfoUpLogisticsOrd(System.Data.DataSet)">
+ <summary>
+ 物流依頼ヘッダ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.UpInfoLogisticsOrd(System.Data.DataSet)">
+ <summary>
+ 更新情報設定(＆システム情報)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.RollbackList(System.Data.DataSet)">
+ <summary>
+ 物流依頼ヘッダ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.RollbackEditList(System.Data.DataSet)">
+ <summary>
+ ロールバック編集処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.RollbackUpLogisticsOrd(System.Data.DataSet)">
+ <summary>
+ 物流依頼ヘッダ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.RollbackUpInoutOrdHead(System.Data.DataSet)">
+ <summary>
+ 入出荷検品ヘッダ更新(削除)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.RollbackDelInoutOrdDtl(System.Data.DataSet)">
+ <summary>
+ 入出荷検品明細更新(削除)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.RollbackDownLogisticsOrd(System.Data.DataSet)">
+ <summary>
+ ステージBACK処理(＆システム情報)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.RollbackDownChkCondition(System.Data.DataSet)">
+ <summary>
+ ステージBACK処理(検品対象条件)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.RollbackEditInoutOrdHead(System.Data.DataSet,System.Boolean)">
+ <summary>
+ 入出荷検品ヘッドデータ編集(検品対象条件)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.RollbackEditHaitaLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 物流依頼明細(排他 容器ステータス別)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.CommonUpInoutOrdHead(System.Data.DataSet)">
+ <summary>
+ 入出荷検品ヘッダ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.IsHaitaChkLogisticsOrd(System.Data.DataSet)">
+ <summary>
+ 物流依頼排他制御
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.IsHaitaChkLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 物流依頼明細排他制御
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.IsHaitaChkLogisticsCont(System.Data.DataSet)">
+ <summary>
+ コンテナ明細排他制御
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.IsHaitaChkInoutOrdHead(System.Data.DataSet)">
+ <summary>
+ 入出荷検品ヘッダ排他制御
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.IsHaitaChkInoutOrdDtl(System.Data.DataSet)">
+ <summary>
+ 入出荷検品明細排他制御(ステータス別)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.IsHaitaChkMFile(System.Data.DataSet)">
+ <summary>
+ 添付ファイル排他制御(ステータス別)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.IsHaitaChkTankSta(System.Data.DataSet)">
+ <summary>
+ 物流依頼明細(排他 容器ステータス別)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.IsHaitaSetChkDs(System.Data.DataSet,System.String,System.String)">
+ <summary>
+ ステータス別チェックDS作成・値設定
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.SetLogisticsOrdNo(System.Data.DataSet)">
+ <summary>
+ 物流新規蝶番(＆システム情報設定)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.SetInoutOrdNo(System.Data.DataSet)">
+ <summary>
+ 入出荷新規蝶番
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.IsMasterChk(System.Data.DataSet)">
+ <summary>
+ マスタチェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.IsMasterChkDest(System.Data.DataSet)">
+ <summary>
+ 納品先チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.SendMailProc(System.Data.DataSet)">
+ <summary>
+メッセージ送信処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.CreateEWSToolSendMailDataSet">
+ <summary>
+ EWSTool SendMail用DataSet作成
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.CreateMakeMailDs">
+ <summary>
+ メール送信用DataSet作成
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.CreatExclusionChkDs">
+ <summary>
+ 排他用チェック値DataSet作成
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.SetZSystem(System.Data.DataSet,System.String,System.Boolean)">
+ <summary>
+ Z_SYSTEM設定
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD130BLC.SelectZSystem(System.Data.DataSet)">
+ <summary>
+ Z_SYSTEM取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD120BLC.FUNCTION_NM.GET_DATA.BASIC">
+ <summary>
+ 基本情報取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD120BLC.FUNCTION_NM.GET_DATA.ALL">
+ <summary>
+ 全関連情報取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD120BLC.FUNCTION_NM.GET_DATA.ORD">
+ <summary>
+ 依頼ヘッダ情報取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD120BLC.FUNCTION_NM.GET_DATA.TANK">
+ <summary>
+ 割当容器情報取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD120BLC.FUNCTION_NM.GET_DATA.OUTKA_ORD">
+ <summary>
+ 入出荷依頼情報情報取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD120BLC.FUNCTION_NM.GET_DATA.OUTKA">
+ <summary>
+ 入出荷情報情報取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD120BLC.FUNCTION_NM.GET_DATA.CHAT">
+ <summary>
+ チャット情報取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.BLC.CSD120BLC.FUNCTION_NM.SAVE.D_LOGISTICS_ORD">
+ <summary>
+ 物流依頼ヘッダ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.BLC.CSD120BLC.FUNCTION_NM.SAVE.D_LOGISTICS_DTL">
+ <summary>
+ 物流依頼明細
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.BLC.CSD120BLC.FUNCTION_NM.SAVE.E_INOUT_ORD_HEAD">
+ <summary>
+ 入出荷検品ヘッダ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.BLC.CSD120BLC.FUNCTION_NM.UPSTAGE.D_LOGISTICS_ORD">
+ <summary>
+ 物流依頼ヘッダ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.BLC.CSD120BLC.FUNCTION_NM.UPSTAGE.E_INOUT_ORD_HEAD">
+ <summary>
+ 入出荷検品ヘッダ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.BLC.CSD120BLC.FUNCTION_NM.UPSTAGE.E_INOUT_ORD_DTL">
+ <summary>
+ 入出荷検品明細
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.BLC.CSD120BLC.FUNCTION_NM.UPSTAGE.E_INOUT_ORD">
+ <summary>
+ 入出荷検品データ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.BLC.CSD120BLC.FUNCTION_NM.UPSTAGE.SEND_MAIL">
+ <summary>
+ メール送信
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.BLC.CSD120BLC.FUNCTION_NM.STAGE_INFO.D_LOGISTICS_ORD">
+ <summary>
+ 物流依頼ヘッダ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.BLC.CSD120BLC.FUNCTION_NM.ROLLBACK.D_LOGISTICS_ORD">
+ <summary>
+ 物流依頼ヘッダ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.BLC.CSD120BLC.FUNCTION_NM.ROLLBACK.E_INOUT_ORD_HEAD">
+ <summary>
+ 入出荷検品ヘッダ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.BLC.CSD120BLC.FUNCTION_NM.ROLLBACK.E_INOUT_ORD_DTL">
+ <summary>
+ 入出荷検品明細
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD120BLC.OTHER_BLC.CSZ999.Z_SYSTEM_KEY.LOGISTICS_ORD_NO">
+ <summary>
+ 物流依頼管理番号
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD120BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD120BLC._CSZ050DAC">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.GetBasicData(System.Data.DataSet)">
+ <summary>
+ 基本情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.GetAllData(System.Data.DataSet)">
+ <summary>
+ 全関連情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.OrdData(System.Data.DataSet)">
+ <summary>
+ 依頼情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.TankData(System.Data.DataSet)">
+ <summary>
+ 容器情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.OutkaOrdData(System.Data.DataSet)">
+ <summary>
+ 入出荷検品依頼情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.ContData(System.Data.DataSet)">
+ <summary>
+ コンテナ情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.OutkaData(System.Data.DataSet)">
+ <summary>
+ 入出荷検品情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.ChatData(System.Data.DataSet)">
+ <summary>
+ チャット情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.SetChatSelectData(System.Data.DataSet)">
+ <summary>
+ チャットIN情報設定
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.SetNewInData(System.Data.DataSet)">
+ <summary>
+ 新規INデータ設定
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.SaveList(System.Data.DataSet)">
+ <summary>
+ 保存処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.SaveEditList(System.Data.DataSet)">
+ <summary>
+ データ編集処理(保存処理)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.SaveInLogisticsOrd(System.Data.DataSet)">
+ <summary>
+ 物流依頼ヘッダ登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.SaveUpLogisticsOrd(System.Data.DataSet)">
+ <summary>
+ 物流依頼ヘッダ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.SaveInLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 物流明細登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.SaveUpLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 物流明細更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.SaveInLogisticsCont(System.Data.DataSet)">
+ <summary>
+ コンテナ細登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.SaveUpLogisticsCont(System.Data.DataSet)">
+ <summary>
+ コンテナ細更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.SaveUpInoutOrdHead(System.Data.DataSet)">
+ <summary>
+ 入出荷検品ヘッダ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.SaveCreateLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 物流明細設定
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.SaveCreateLogisticsCont(System.Data.DataSet)">
+ <summary>
+ コンテナ明細設定
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.SaveCreateInoutHead(System.Data.DataSet)">
+ <summary>
+ 入出荷設定
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.SaveEditInoutOrdHead(System.Data.DataSet)">
+ <summary>
+ 入出荷検品ヘッドデータ(バンニング)編集
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.UpStageList(System.Data.DataSet)">
+ <summary>
+ ステージ更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.UpStageEditList(System.Data.DataSet)">
+ <summary>
+ ステージ更新編集処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.SendMail(System.Data.DataSet)">
+ <summary>
+ メール送信処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.UpStageUpLogisticsOrd(System.Data.DataSet)">
+ <summary>
+ 物流依頼ヘッダ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.UpStageUpLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 物流明細更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.UpStageInInoutOrdHead(System.Data.DataSet)">
+ <summary>
+ 入出荷検品ヘッダ登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.UpStageInInoutOrdDtl(System.Data.DataSet)">
+ <summary>
+ 入出荷検品明細登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.UpStageUpInoutOrdHead(System.Data.DataSet)">
+ <summary>
+ 入出荷検品ヘッダ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.UpStageNextLogisticsOrd(System.Data.DataSet)">
+ <summary>
+ ステージUP処理(＆システム情報)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.UpStageNextChkCondition(System.Data.DataSet)">
+ <summary>
+ ステージUP処理(検品対象条件)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.UpStageEditLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 物流明細設定
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.UpStageCreateInoutOrd(System.Data.DataSet)">
+ <summary>
+ 入出荷検品データ作成
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.UpStageEditInoutOrdHead(System.Data.DataSet)">
+ <summary>
+ 入出荷検品ヘッドデータ編集
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.SetSendMailData(System.Data.DataSet)">
+ <summary>
+ メール送信処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.GetMaimTpl(System.String,System.String)">
+ <summary>
+ メールテンプレート取得
+ </summary>
+ <param name="tplCd"></param>
+ <param name="tplKbn"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.UpInfoList(System.Data.DataSet)">
+ <summary>
+ ステージ更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.UpInfoEditList(System.Data.DataSet)">
+ <summary>
+ ステージ【情報】更新編集処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.UpInfoUpLogisticsOrd(System.Data.DataSet)">
+ <summary>
+ 物流依頼ヘッダ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.UpInfoLogisticsOrd(System.Data.DataSet)">
+ <summary>
+ 更新情報設定(＆システム情報)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.RollbackList(System.Data.DataSet)">
+ <summary>
+ 物流依頼ヘッダ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.RollbackEditList(System.Data.DataSet)">
+ <summary>
+ ロールバック編集処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.RollbackUpLogisticsOrd(System.Data.DataSet)">
+ <summary>
+ 物流依頼ヘッダ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.RollbackUpInoutOrdHead(System.Data.DataSet)">
+ <summary>
+ 入出荷検品ヘッダ更新(削除)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.RollbackDelInoutOrdDtl(System.Data.DataSet)">
+ <summary>
+ 入出荷検品明細更新(削除)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.RollbackDownLogisticsOrd(System.Data.DataSet)">
+ <summary>
+ ステージBACK処理(＆システム情報)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.RollbackDownChkCondition(System.Data.DataSet)">
+ <summary>
+ ステージBACK処理(検品対象条件)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.RollbackEditInoutOrdHead(System.Data.DataSet,System.Boolean)">
+ <summary>
+ 入出荷検品ヘッドデータ編集(検品対象条件)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.RollbackEditHaitaLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 物流依頼明細(排他 容器ステータス別)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.CommonUpInoutOrdHead(System.Data.DataSet)">
+ <summary>
+ 入出荷検品ヘッダ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.IsHaitaChkLogisticsOrd(System.Data.DataSet)">
+ <summary>
+ 物流依頼排他制御
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.IsHaitaChkLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 物流依頼明細排他制御
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.IsHaitaChkLogisticsCont(System.Data.DataSet)">
+ <summary>
+ コンテナ明細排他制御
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.IsHaitaChkInoutOrdHead(System.Data.DataSet)">
+ <summary>
+ 入出荷検品ヘッダ排他制御
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.IsHaitaChkInoutOrdDtl(System.Data.DataSet)">
+ <summary>
+ 入出荷検品明細排他制御(ステータス別)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.IsHaitaChkMFile(System.Data.DataSet)">
+ <summary>
+ 添付ファイル排他制御(ステータス別)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.IsHaitaChkTankSta(System.Data.DataSet)">
+ <summary>
+ 物流依頼明細(排他 容器ステータス別)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.IsHaitaSetChkDs(System.Data.DataSet,System.String,System.String)">
+ <summary>
+ ステータス別チェックDS作成・値設定
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.SetLogisticsOrdNo(System.Data.DataSet)">
+ <summary>
+ 物流新規蝶番(＆システム情報設定)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.SetInoutOrdNo(System.Data.DataSet)">
+ <summary>
+ 入出荷新規蝶番
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.IsMasterChk(System.Data.DataSet)">
+ <summary>
+ マスタチェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.IsMasterChkDest(System.Data.DataSet)">
+ <summary>
+ 納品先チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.BookingCancel(System.Data.DataSet)">
+ <summary>
+ ブッキングキャンセル処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.RollbackBookingCancel(System.Data.DataSet)">
+ <summary>
+ ブッキングキャンセル(ロールバック)処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.SetBookingCancelData(System.Data.DataSet)">
+ <summary>
+ データセット作成
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.SetBookingCancelLogiOrdData(System.Data.DataSet)">
+ <summary>
+ 物流ヘッダ
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.SetBookingCancelLogiDtlData(System.Data.DataSet)">
+ <summary>
+ データセット作成
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.SetBookingCancelInOutData(System.Data.DataSet)">
+ <summary>
+ データセット作成
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.NoChkInOutData(System.Data.DataSet)">
+ <summary>
+ データセット作成
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.SetOldInOutData(System.Data.DataSet)">
+ <summary>
+ データセット作成
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.SetRbBookingCancelData(System.Data.DataSet)">
+ <summary>
+ データセット作成
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.SetRbBookingCancelLogiOrdData(System.Data.DataSet)">
+ <summary>
+ 物流ヘッダ
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.SetRbBookingCancelLogiDtlData(System.Data.DataSet)">
+ <summary>
+ データセット作成
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.SetRbBookingCancelInOutData(System.Data.DataSet)">
+ <summary>
+ データセット作成
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.SetRbOldInOutData(System.Data.DataSet)">
+ <summary>
+ データセット作成
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.UpdateBookingCancel(System.Data.DataSet)">
+ <summary>
+ データ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.UpdateRbBookingCancel(System.Data.DataSet)">
+ <summary>
+ ロールバック
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.UpdateBCLogiOrd(System.Data.DataSet)">
+ <summary>
+ データ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.UpdateBCLogiDtl(System.Data.DataSet)">
+ <summary>
+ 物流明細更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.DeleteBCInOutOrdHead(System.Data.DataSet)">
+ <summary>
+ 入出荷検品ヘッダ削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.DeleteBCInOutOrdDtl(System.Data.DataSet)">
+ <summary>
+ 入出荷検品明細削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.UpdateInOutOrdHead(System.Data.DataSet)">
+ <summary>
+ 入出荷検品明細更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.UpdateInOutOrdDtl(System.Data.DataSet)">
+ <summary>
+ 入出荷検品明細更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.SendMailProc(System.Data.DataSet)">
+ <summary>
+メッセージ送信処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.CreateEWSToolSendMailDataSet">
+ <summary>
+ EWSTool SendMail用DataSet作成
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.CreateMakeMailDs">
+ <summary>
+ メール送信用DataSet作成
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.CreatExclusionChkDs">
+ <summary>
+ 排他用チェック値DataSet作成
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.SetZSystem(System.Data.DataSet,System.String,System.Boolean)">
+ <summary>
+ Z_SYSTEM設定
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD120BLC.SelectZSystem(System.Data.DataSet)">
+ <summary>
+ Z_SYSTEM取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD020BLC.FUNCTION_NM.GET_DATA.BASIC">
+ <summary>
+ 基本情報取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD020BLC.FUNCTION_NM.GET_DATA.ALL">
+ <summary>
+ 全関連情報取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD020BLC.FUNCTION_NM.GET_DATA.ORD">
+ <summary>
+ 依頼ヘッダ情報取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD020BLC.FUNCTION_NM.GET_DATA.TANK">
+ <summary>
+ 割当容器情報取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD020BLC.FUNCTION_NM.GET_DATA.OUTKA">
+ <summary>
+ 入出荷情報情報取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD020BLC.FUNCTION_NM.GET_DATA.CHAT">
+ <summary>
+ チャット情報取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.BLC.CSD020BLC.FUNCTION_NM.SAVE.D_LOGISTICS_ORD">
+ <summary>
+ 物流依頼ヘッダ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.BLC.CSD020BLC.FUNCTION_NM.SAVE.D_LOGISTICS_DTL">
+ <summary>
+ 物流依頼明細
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.BLC.CSD020BLC.FUNCTION_NM.UPSTAGE.D_LOGISTICS_ORD">
+ <summary>
+ 物流依頼ヘッダ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.BLC.CSD020BLC.FUNCTION_NM.UPSTAGE.E_INOUT_ORD_HEAD">
+ <summary>
+ 入出荷検品ヘッダ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.BLC.CSD020BLC.FUNCTION_NM.UPSTAGE.E_INOUT_ORD_DTL">
+ <summary>
+ 入出荷検品明細
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.BLC.CSD020BLC.FUNCTION_NM.UPSTAGE.E_INOUT_ORD">
+ <summary>
+ 入出荷検品データ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.BLC.CSD020BLC.FUNCTION_NM.UPSTAGE.SEND_MAIL">
+ <summary>
+ メール送信
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.BLC.CSD020BLC.FUNCTION_NM.ROLLBACK.D_LOGISTICS_ORD">
+ <summary>
+ 物流依頼ヘッダ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.BLC.CSD020BLC.FUNCTION_NM.ROLLBACK.E_INOUT_ORD_HEAD">
+ <summary>
+ 入出荷検品ヘッダ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.BLC.CSD020BLC.FUNCTION_NM.ROLLBACK.E_INOUT_ORD_DTL">
+ <summary>
+ 入出荷検品明細
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD020BLC.OTHER_BLC.CSZ999.Z_SYSTEM_KEY.LOGISTICS_ORD_NO">
+ <summary>
+ 物流依頼管理番号
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD020BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD020BLC._CSZ050DAC">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD020BLC.GetBasicData(System.Data.DataSet)">
+ <summary>
+ 基本情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD020BLC.GetAllData(System.Data.DataSet)">
+ <summary>
+ 全関連情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD020BLC.OrdData(System.Data.DataSet)">
+ <summary>
+ 依頼情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD020BLC.TankData(System.Data.DataSet)">
+ <summary>
+ 容器情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD020BLC.ContData(System.Data.DataSet)">
+ <summary>
+ コンテナ情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD020BLC.OutkaData(System.Data.DataSet)">
+ <summary>
+ 入出荷検品情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD020BLC.ChatData(System.Data.DataSet)">
+ <summary>
+ チャット情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD020BLC.SetChatSelectData(System.Data.DataSet)">
+ <summary>
+ チャットIN情報設定
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD020BLC.SetNewInData(System.Data.DataSet)">
+ <summary>
+ 新規INデータ設定
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD020BLC.SaveList(System.Data.DataSet)">
+ <summary>
+ 保存処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD020BLC.SaveEditList(System.Data.DataSet)">
+ <summary>
+ データ編集処理(保存処理)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD020BLC.SaveInLogisticsOrd(System.Data.DataSet)">
+ <summary>
+ 物流依頼ヘッダ登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD020BLC.SaveUpLogisticsOrd(System.Data.DataSet)">
+ <summary>
+ 物流依頼ヘッダ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD020BLC.SaveInLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 物流明細登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD020BLC.SaveUpLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 物流明細更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD020BLC.SaveInLogisticsCont(System.Data.DataSet)">
+ <summary>
+ コンテナ細登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD020BLC.SaveUpLogisticsCont(System.Data.DataSet)">
+ <summary>
+ コンテナ細更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD020BLC.SaveCreateLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 物流明細設定
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD020BLC.SaveCreateLogisticsCont(System.Data.DataSet)">
+ <summary>
+ コンテナ明細設定
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD020BLC.UpStageList(System.Data.DataSet)">
+ <summary>
+ ステージ更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD020BLC.UpStageEditList(System.Data.DataSet)">
+ <summary>
+ ステージ更新編集処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD020BLC.SendMail(System.Data.DataSet)">
+ <summary>
+ メール送信処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD020BLC.UpStageUpLogisticsOrd(System.Data.DataSet)">
+ <summary>
+ 物流依頼ヘッダ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD020BLC.UpStageInInoutOrdHead(System.Data.DataSet)">
+ <summary>
+ 入出荷検品ヘッダ登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD020BLC.UpStageUpInoutOrdHead(System.Data.DataSet)">
+ <summary>
+ 入出荷検品ヘッダ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD020BLC.UpStageInInoutOrdDtl(System.Data.DataSet)">
+ <summary>
+ 入出荷検品明細登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD020BLC.UpStageNextLogisticsOrd(System.Data.DataSet)">
+ <summary>
+ ステージUP処理(＆システム情報)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD020BLC.UpStageCreateInoutOrd(System.Data.DataSet)">
+ <summary>
+ 入出荷検品データ作成
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD020BLC.UpStageEditInoutOrdHead(System.Data.DataSet)">
+ <summary>
+ 入出荷検品ヘッドデータ編集
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD020BLC.SetSendMailData(System.Data.DataSet)">
+ <summary>
+ メール送信処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD020BLC.GetMaimTpl(System.String,System.String)">
+ <summary>
+ メールテンプレート取得
+ </summary>
+ <param name="tplCd"></param>
+ <param name="tplKbn"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD020BLC.RollbackList(System.Data.DataSet)">
+ <summary>
+ 物流依頼ヘッダ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD020BLC.RollbackEditList(System.Data.DataSet)">
+ <summary>
+ ロールバック編集処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD020BLC.RollbackUpLogisticsOrd(System.Data.DataSet)">
+ <summary>
+ 物流依頼ヘッダ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD020BLC.RollbackUpInoutOrdHead(System.Data.DataSet)">
+ <summary>
+ 入出荷検品ヘッダ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD020BLC.RollbackUpInoutOrdDtl(System.Data.DataSet)">
+ <summary>
+ 入出荷検品明細更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD020BLC.RollbackDownLogisticsOrd(System.Data.DataSet)">
+ <summary>
+ ステージBACK処理(＆システム情報)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD020BLC.IsHaitaChkLogisticsOrd(System.Data.DataSet)">
+ <summary>
+ 物流依頼排他制御
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD020BLC.IsHaitaChkLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 物流依頼明細排他制御
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD020BLC.IsHaitaChkLogisticsCont(System.Data.DataSet)">
+ <summary>
+ コンテナ明細排他制御
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD020BLC.IsHaitaChkInoutOrdHead(System.Data.DataSet)">
+ <summary>
+ 入出荷検品ヘッダ排他制御
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD020BLC.SetLogisticsOrdNo(System.Data.DataSet)">
+ <summary>
+ 物流新規蝶番(＆システム情報設定)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD020BLC.SetInoutOrdNo(System.Data.DataSet)">
+ <summary>
+ 入出荷新規蝶番
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD020BLC.IsMasterChk(System.Data.DataSet)">
+ <summary>
+ マスタチェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD020BLC.IsMasterChkReStorage(System.Data.DataSet)">
+ <summary>
+ 返却保管場所チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD020BLC.SendMailProc(System.Data.DataSet)">
+ <summary>
+メッセージ送信処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD020BLC.CreateEWSToolSendMailDataSet">
+ <summary>
+ EWSTool SendMail用DataSet作成
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD020BLC.SetZSystem(System.Data.DataSet,System.String,System.Boolean)">
+ <summary>
+ Z_SYSTEM設定
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD020BLC.SelectZSystem(System.Data.DataSet)">
+ <summary>
+ Z_SYSTEM取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD030BLC.FUNCTION_NM.SELECT_DATA">
+ <summary>
+ 検索結果データ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD030BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD030BLC.SelectResultList(System.Data.DataSet)">
+ <summary>
+ 検索結果情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD110BLC.FUNCTION_NM.SELECT_DATA">
+ <summary>
+ 検索結果データ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD110BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD110BLC.SelectResultList(System.Data.DataSet)">
+ <summary>
+ 検索結果情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD210BLC.FUNCTION_NM.SELECT_DATA">
+ <summary>
+ 検索結果データ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD210BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD210BLC.SelectResultList(System.Data.DataSet)">
+ <summary>
+ 検索結果情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD220BLC.FUNCTION_NM.SELECT_DATA">
+ <summary>
+ データ取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD220BLC.FUNCTION_NM.INSERT_SAVE_DATA">
+ <summary>
+ 保存(新規)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD220BLC.FUNCTION_NM.UPDATE_SAVE_DATA">
+ <summary>
+ 保存(新規)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD220BLC.FUNCTION_NM.DELETE_DATA">
+ <summary>
+ 削除
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD220BLC.FUNCTION_NM.ORDER_DATA">
+ <summary>
+ 依頼
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD220BLC.FUNCTION_NM.RECIEVE_DATA">
+ <summary>
+ 受諾
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD220BLC.FUNCTION_NM.NO_RECIEVE_DATA">
+ <summary>
+ 不可
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD220BLC.FUNCTION_NM.ROLLBACK_DATA">
+ <summary>
+ 取戻
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD220BLC.FUNCTION_NM.HAITA_CHK">
+ <summary>
+ 排他制御
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD220BLC.FUNCTION_NM.SEND_MAIL">
+ <summary>
+ メール送信
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.BLC.CSD220BLC.TABLE_NM">
+ <summary>
+ メール送信用テーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD220BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.SelectData(System.Data.DataSet)">
+ <summary>
+ データ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.InsertSaveData(System.Data.DataSet)">
+ <summary>
+ 保存(新規)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.UpdateSaveData(System.Data.DataSet)">
+ <summary>
+ 保存(更新)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.SelectCountBDmgOrd(System.Data.DataSet)">
+ <summary>
+ 外損調査データ件数取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.DeleteData(System.Data.DataSet)">
+ <summary>
+ 削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.RollBackData(System.Data.DataSet)">
+ <summary>
+ 削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.OrderData(System.Data.DataSet)">
+ <summary>
+ 依頼
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.RecieveData(System.Data.DataSet)">
+ <summary>
+ 受諾
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.SetInOutOrdData(System.Data.DataSet)">
+ <summary>
+ 入出荷検品データ作成
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.RecieveLogiDtl(System.Data.DataSet)">
+ <summary>
+ 受諾時物流明細更新メイン
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.NoRecieveData(System.Data.DataSet)">
+ <summary>
+ 不可
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.IsHaitaChk(System.Data.DataSet)">
+ <summary>
+ 排他制御
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.InsertDTransOrdHead(System.Data.DataSet)">
+ <summary>
+ 保管移送ヘッダ登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.InsertDTransOrdDtl(System.Data.DataSet)">
+ <summary>
+ 保管移送明細登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.InsertEInOutOrdHead(System.Data.DataSet)">
+ <summary>
+ 入出荷検品ヘッダ登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.InsertEInOutOrdDtl(System.Data.DataSet)">
+ <summary>
+ 入出荷検品明細登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.InsertDLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 物流明細登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.InsertBDmgOrd(System.Data.DataSet)">
+ <summary>
+ 外損調査登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.UpdateDTransOrdHead(System.Data.DataSet)">
+ <summary>
+ 保管移送ヘッダ更新(保存)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.OrderDTransOrdHead(System.Data.DataSet)">
+ <summary>
+ 保管移送ヘッダ更新(依頼)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.RecieveDTransOrdHead(System.Data.DataSet)">
+ <summary>
+ 保管移送ヘッダ更新(受諾)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.NoRecieveDTransOrdHead(System.Data.DataSet)">
+ <summary>
+ 保管移送ヘッダ更新(不可)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.RollBackDTransOrdHead(System.Data.DataSet)">
+ <summary>
+ 保管移送ヘッダ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.UpdateDTransOrdDtl(System.Data.DataSet)">
+ <summary>
+ 保管移送明細更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.UpdateDLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 物流明細更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.RollBackDLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 物流明細更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.UpdateBDmgOrd(System.Data.DataSet)">
+ <summary>
+ 外損調査更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.DeleteDTransOrdHead(System.Data.DataSet)">
+ <summary>
+ 保管移送ヘッダ削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.DeleteDTransOrdDtl(System.Data.DataSet)">
+ <summary>
+ 保管移送明細削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.DeleteEInOutOrdHead(System.Data.DataSet)">
+ <summary>
+ 入出荷検品ヘッダ削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.DeleteEInOutOrdDtl(System.Data.DataSet)">
+ <summary>
+ 入出荷検品明細削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.DeleteDLogisticsDtl(System.Data.DataSet)">
+ <summary>
+ 物流明細削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.SendMail(System.Data.DataSet)">
+ <summary>
+ 保管移送ヘッダ登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.SetSendMailData(System.Data.DataSet)">
+ <summary>
+ メールデータ差悪性
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.SendMailProc(System.Data.DataSet)">
+ <summary>
+ メール送信処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.CreateMakeMailDs">
+ <summary>
+ メール送信用DataSet作成
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.GetMaimTpl(System.String,System.String)">
+ <summary>
+ メールテンプレート取得
+ </summary>
+ <param name="tplCd"></param>
+ <param name="tplKbn"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.CreateEWSToolSendMailDataSet">
+ <summary>
+ EWSTool SendMail用DataSet作成
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.SetSaveData(System.Data.DataSet)">
+ <summary>
+ 保存データセット(新規)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.SetSaveDTransOrdHead(System.Data.DataSet)">
+ <summary>
+ 保管移送ヘッダデータセット
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.SetSaveDTransOrdDtl(System.Data.DataSet)">
+ <summary>
+ 保管移送明細データセット
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.SetSaveLogiDtl(System.Data.DataSet)">
+ <summary>
+ 物流明細データセット
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.SetInsertLogiDtl(System.Data.DataSet,System.Data.DataRow)">
+ <summary>
+ 物流明細データセット(新規)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.SetUpdateLogiDtl(System.Data.DataSet,System.Data.DataRow)">
+ <summary>
+ 物流明細データセット(最新・過去)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.SetDeleteLogiDtl(System.Data.DataSet,System.Data.DataRow)">
+ <summary>
+ 物流明細データセット(削除)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.SetSaveBDmgOrd(System.Data.DataSet)">
+ <summary>
+ 外損調査Tデータセット
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.SetDeleteData(System.Data.DataSet)">
+ <summary>
+ 削除データセット
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.SetDeleteDTransOrdHead(System.Data.DataSet)">
+ <summary>
+ 保管移送ヘッダデータセット
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.SetDeleteDTransOrdDtl(System.Data.DataSet)">
+ <summary>
+ 保管移送明細データセット
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.SetDeleteLogiDtl(System.Data.DataSet)">
+ <summary>
+ 物流明細データセット
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.SetRollBackData(System.Data.DataSet)">
+ <summary>
+ 取戻データセット
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.SetRollBackDTransOrdHead(System.Data.DataSet)">
+ <summary>
+ 保管移送ヘッダデータセット
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.SetRollBackLogiDtl(System.Data.DataSet)">
+ <summary>
+ 物流明細データセット
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.SetRollBackEInOutOrdHead(System.Data.DataSet)">
+ <summary>
+ 入出荷検品ヘッダデータセット
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.SetRollBackEInOutOrdDtl(System.Data.DataSet)">
+ <summary>
+ 入出荷検品明細データセット
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.SetOrderData(System.Data.DataSet)">
+ <summary>
+ 依頼データセット
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.SetOrderDTransOrdHead(System.Data.DataSet)">
+ <summary>
+ 保管移送ヘッダデータセット
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.SetRecieveData(System.Data.DataSet)">
+ <summary>
+ 受諾データセット
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.SetRecieveDTransOrdHead(System.Data.DataSet)">
+ <summary>
+ 保管移送ヘッダデータセット
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.SetRecieveDTransOrdDtl(System.Data.DataSet)">
+ <summary>
+ 保管移送明細データセット
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.SetRecieveLogiDtl(System.Data.DataSet)">
+ <summary>
+ 物流明細データセット
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.SetDsInOutOrdHeadOut(System.Data.DataSet)">
+ <summary>
+ 入出荷検品ヘッダ(出荷)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.SetDsInOutOrdHeadIn(System.Data.DataSet)">
+ <summary>
+ 入出荷検品ヘッダ(入荷)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.SetDsInOutOrdDtlOut(System.Data.DataSet)">
+ <summary>
+ 入出荷検品明細(出荷)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.SetDsInOutOrdDtlIn(System.Data.DataSet)">
+ <summary>
+ 入出荷検品明細(入荷)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.SetNoRecieveData(System.Data.DataSet)">
+ <summary>
+ 不可データセット
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.SetNoRecieveOrdHead(System.Data.DataSet)">
+ <summary>
+ 保管移送ヘッダデータセット
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.GetLastCheckDate(System.String,System.String,System.String,System.String)">
+ <summary>
+ 前回検品日取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.SelectZSystem(System.Data.DataSet)">
+ <summary>
+ Z_SYSTEM取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD220BLC.AddRowZSystemCSD220(System.Data.DataSet@,System.String,System.String)">
+ <summary>
+ Z_SYSTEM行追加処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="procKbn">Z_SYSTEM処理区分</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD710BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD710BLC.PrintProductList(System.Data.DataSet)">
+ <summary>
+ Product List印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD710BLC.EditExcelData(System.Data.DataSet)">
+ <summary>
+ Excel用データテーブル編集処理
+ </summary>
+ <param name="ds">Dataset</param>
+ <returns>Dataset</returns>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD720BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD720BLC.PrintInvoice(System.Data.DataSet)">
+ <summary>
+ Invoice印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD720BLC.EditExcelData(System.Data.DataSet)">
+ <summary>
+ Excel用データテーブル編集処理
+ </summary>
+ <param name="ds">Dataset</param>
+ <returns>Dataset</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD720BLC.EditExcelDataLabelWt(System.Data.DataSet)">
+ <summary>
+ Excel用データテーブル編集処理(ラベル数量集計)
+ </summary>
+ <param name="ds">Dataset</param>
+ <returns>Dataset</returns>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD730BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD730BLC.PrintPackingList(System.Data.DataSet)">
+ <summary>
+ Packing List印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD730BLC.EditExcelData(System.Data.DataSet)">
+ <summary>
+ Excel用データテーブル編集処理
+ </summary>
+ <param name="ds">Dataset</param>
+ <returns>Dataset</returns>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.BLC.CSD740BLC._Dac">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD740BLC.PrintTankList(System.Data.DataSet)">
+ <summary>
+ Tank List印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.BLC.CSD740BLC.EditExcelData(System.Data.DataSet)">
+ <summary>
+ Excel用データテーブル編集処理
+ </summary>
+ <param name="ds">Dataset</param>
+ <returns>Dataset</returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

@@ -1,0 +1,1373 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.LMH.BLF
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMH010BLF">
+ <summary>
+ LMH010BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMH010BLF.TABLE_NM_IN">
+ <summary>
+ INテーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMH010BLF.TABLE_NM_OUTPUTIN">
+ <summary>
+ INテーブル名(出力ボタン押下時)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMH010BLF.TABLE_NM_JUDGE_IN">
+ <summary>
+ INテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMH010BLF.GUIDANCE_KBN">
+ <summary>
+ ガイダンス区分(00)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMH010BLF._UnchinBlc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMH010BLF._Print500">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMH010BLF._ShiharaiBlc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMH010BLF._Print502">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMH010BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH010BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 初期検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH010BLF.InkaToroku(System.Data.DataSet)">
+ <summary>
+ 入荷登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH010BLF.JissekiTorikesi(System.Data.DataSet)">
+ <summary>
+ 実績取消処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH010BLF.SakuseizumiJissekimi(System.Data.DataSet)">
+ <summary>
+ 実行処理(実績作成済⇒実績未)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH010BLF.SousinSousinmi(System.Data.DataSet)">
+ <summary>
+ 実行処理(実績送信済⇒送信待)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH010BLF.SousinzumiJissekimi(System.Data.DataSet)">
+ <summary>
+ 実行処理(実績送信済⇒実績未)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH010BLF.Mitouroku(System.Data.DataSet)">
+ <summary>
+ 実行処理(入荷取消⇒未登録)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH010BLF.PrintData(System.Data.DataSet)">
+ <summary>
+ 印刷処理
+ </summary>
+ <param name="ds">DataSet(更新用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH010BLF.SetDataEDI_L(System.Data.DataSet)">
+ <summary>
+ 一括変更
+ </summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH010BLF.PrintLMH500(System.Data.DataRow)">
+ <summary>
+ EDI入荷チェックリスト
+ </summary>
+ <param name="dr"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH010BLF.PrintLMH502(System.Data.DataRow)">
+ <summary>
+ EDI入荷チェックリスト(アクサルタ用)
+ </summary>
+ <param name="dr"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH010BLF.PrintLMH503(System.Data.DataSet)">
+ <summary>
+ 現品票（FFEM大分）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH010BLF.SetDsPrtData(System.Data.DataSet)">
+ <summary>
+ 出力処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH010BLF.PrintLMH560(System.Data.DataRow)">
+ <summary>
+  入荷ＥＤＩ受信帳票(LMH560IN)
+ </summary>
+ <param name="dr"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH010BLF.PrintLMH561(System.Data.DataRow)">
+ <summary>
+  立会い伝票(LMH561IN)
+ </summary>
+ <param name="dr"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH010BLF.PrintLMH563(System.Data.DataRow)">
+ <summary>
+  入荷ＥＤＩ受信帳票(LMH563IN)
+ </summary>
+ <param name="dr"></param>
+ <returns></returns>s
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH010BLF.PrintLMH572(System.Data.DataTable)">
+ <summary>
+  受信一覧表(LMH572IN)
+ </summary>
+ <param name="dt"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH010BLF.PrintBlcFunc(Jp.Co.Nrs.Com.Base.BaseBLC[],System.Data.DataSet[],System.Data.DataSet)">
+ <summary>
+  プレビューデータセット設定
+ </summary>
+ <param name="prtBlc"></param>
+ <param name="setDs"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH010BLF.SetUnchinInDataSet(System.Data.DataSet)">
+ <summary>
+ 運賃INの値を設定
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH010BLF.SetShiharaiInDataSet(System.Data.DataSet)">
+ <summary>
+ 支払運賃INの値を設定
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH010BLF.getBlcInkaToroku(System.Int32)">
+ <summary>
+ BLC設定処理(入荷登録)
+ </summary>
+ <param name="ediIndex"></param>
+ <returns></returns>
+ <remarks>荷主ごとにBLCを選択する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH010BLF.getBlcJisseki(System.Int32)">
+ <summary>
+ BLC設定処理(実績作成)
+ </summary>
+ <param name="ediIndex"></param>
+ <returns></returns>
+ <remarks>荷主ごとにBLCを選択する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH010BLF.getBlcEditorikesi(System.Int32)">
+ <summary>
+ BLC設定処理(EDI取消)
+ </summary>
+ <param name="ediIndex"></param>
+ <returns></returns>
+ <remarks>荷主ごとにBLCを選択する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH010BLF.getBlcSemiEdiTorikomi(System.Int32)">
+ <summary>
+ BLC設定処理(取込)
+ </summary>
+ <param name="ediIndex"></param>
+ <returns></returns>
+ <remarks>荷主ごとにBLCを選択する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH010BLF.getBlcJissekiTorikesi(System.Int32)">
+ <summary>
+ BLC設定処理(実績取消)
+ </summary>
+ <param name="ediIndex"></param>
+ <returns></returns>
+ <remarks>荷主ごとにBLCを選択する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH010BLF.getBlcTorikesiMitouroku(System.Int32)">
+ <summary>
+ BLC設定処理(EDI取消⇒未登録)
+ </summary>
+ <param name="ediIndex"></param>
+ <returns></returns>
+ <remarks>荷主ごとにBLCを選択する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH010BLF.getBlcSousinSousinmi(System.Int32)">
+ <summary>
+ BLC設定処理(実績送信済⇒送信待)
+ </summary>
+ <param name="ediIndex"></param>
+ <returns></returns>
+ <remarks>荷主ごとにBLCを選択する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH010BLF.getBlcSakuseizumiJissekimi(System.Int32)">
+ <summary>
+ BLC設定処理(実績作成済⇒実績未)
+ </summary>
+ <param name="ediIndex"></param>
+ <returns></returns>
+ <remarks>荷主ごとにBLCを選択する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH010BLF.getBlcSousinzumiJissekimi(System.Int32)">
+ <summary>
+ BLC設定処理(実績送信済⇒実績未)
+ </summary>
+ <param name="ediIndex"></param>
+ <returns></returns>
+ <remarks>荷主ごとにBLCを選択する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH010BLF.getBlcMitouroku(System.Int32)">
+ <summary>
+ BLC設定処理(入荷取消⇒未登録)
+ </summary>
+ <param name="ediIndex"></param>
+ <returns></returns>
+ <remarks>荷主ごとにBLCを選択する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH010BLF.getBlcTransferItemM(System.Int32)">
+ <summary>
+ BLC設定処理(M品振替出荷)
+ </summary>
+ <param name="ediIndex"></param>
+ <returns></returns>
+ <remarks>荷主ごとにBLCを選択する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH010BLF.SetDataTorikesiMitouroku(System.Data.DataRow,System.Data.DataSet,System.String,System.Int32)">
+ <summary>
+ 入荷取消⇒未登録データセット
+ </summary>
+ <param name="prmDr"></param>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH010BLF.TransferCondM(System.Data.DataSet)">
+ <summary>
+ 実行(M品振替出荷処理)
+ </summary>
+ <param name="ds"></param>
+ <returns>
+ </returns>
+ <remarks>
+ </remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMH020BLF">
+ <summary>
+ LMF020BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMH020BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMH020BLF.TABLE_NM_IN">
+ <summary>
+ INテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMH020BLF.TABLE_NM_L">
+ <summary>
+ INKAEDI_Lテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH020BLF.SelectData(System.Data.DataSet)">
+ <summary>
+ 初期検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH020BLF.SaveItemData(System.Data.DataSet)">
+ <summary>
+ 更新登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH020BLF.SelectEditData(System.Data.DataSet)">
+ <summary>
+ 編集処理のチェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH020BLF.ScopeStartEnd(System.Data.DataSet,System.String,System.Boolean,System.Boolean)">
+ <summary>
+ トランザクション
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">メソッド名</param>
+ <param name="selectFlg">再検索フラグ</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH020BLF.BlcAccess(System.Data.DataSet,System.String)">
+ <summary>
+ BLCクラスアクセス
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMH030BLF">
+ <summary>
+ LMH030BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMH030BLF.TABLE_NM_IN">
+ <summary>
+ INテーブル名
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMH030BLF.TABLE_NM_OUTPUTIN">
+ <summary>
+ INテーブル名(出力ボタン押下時)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMH030BLF.OUTPUT_SHUBETU">
+ <summary>
+ 出力種別
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMH030BLF.OUTPUT_SHUBETU.EDI_INVOICE_BP_NIPPON_EXPRESS">
+ <summary>
+ EDI送り状_BPカストロール(日通)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMH030BLF.OUTPUT_SHUBETU.EDI_DELIVERY_NOTE_NICHIGO">
+ <summary>
+ EDI納品書_日本合成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMH030BLF._UnchinBlc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMH030BLF._Print510">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMH030BLF._Print540">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMH030BLF._ShiharaiBlc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 初期検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.OutkaToroku(System.Data.DataSet)">
+ <summary>
+ 出荷登録,運送登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.SetDsWarningData(System.Data.DataSet,System.Data.DataSet)">
+ <summary>
+ 出荷登録,運送登録処理(ワーニング設定)
+ </summary>
+ <param name="ds"></param>
+ <param name="setDs"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.SelectUnsoByWgtAndDestList(System.Data.DataSet)">
+ <summary>
+ 運送重量,届先別の運送会社一覧を取得する
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.MergeTakeOverTables(System.Int32,System.Data.DataSet,System.Data.DataSet)">
+ <summary>
+ 全出荷データの処理内で引継ぎするテーブルをマージする
+ </summary>
+ <param name="ediIndex"></param>
+ <param name="ds"></param>
+ <param name="setDs"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.MergeTakeOverResult(System.Int32,System.Data.DataSet,System.Data.DataSet)">
+ <summary>
+ 全出荷データの処理内で引継ぎする処理結果をマージする
+ </summary>
+ <param name="ediIndex"></param>
+ <param name="ds"></param>
+ <param name="setDs"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.MergeTakeOverTablesBp(System.Data.DataSet,System.Data.DataSet)">
+ <summary>
+ 全出荷データの処理内で引継ぎする処理をマージする(BPカストロール用)
+ </summary>
+ <param name="ds"></param>
+ <param name="setDs"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.MergeTakeOverResultBp(System.Data.DataSet)">
+ <summary>
+ 全出荷データの処理内で引継ぎする処理結果をマージする(BPカストロール用)
+ </summary>
+ <param name="setDs"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.JissekiSakusei(System.Data.DataSet)">
+ <summary>
+ 実績作成処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.JissekiTorikesi(System.Data.DataSet)">
+ <summary>
+ 実績取消処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.JissekiSakuseiJissekimi(System.Data.DataSet)">
+ <summary>
+ 実行処理(実績作成済⇒実績未)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.SousinSousinmi(System.Data.DataSet)">
+ <summary>
+ 実行処理(実績送信済⇒送信待)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.JissekiSousinJissekimi(System.Data.DataSet)">
+ <summary>
+ 実行処理(実績作成済⇒実績未)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.Mitouroku(System.Data.DataSet)">
+ <summary>
+ 実行処理(出荷取消⇒未登録)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.UnsoMitouroku(System.Data.DataSet)">
+ <summary>
+ 実行処理(運送取消⇒未登録)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.UpdateHenko(System.Data.DataSet)">
+ <summary>
+ 一括変更処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.PrintData(System.Data.DataSet)">
+ <summary>
+ 印刷処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.PrintLMH510(System.Data.DataRow)">
+ <summary>
+ EDI出荷チェックリスト
+ </summary>
+ <param name="dr"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.SetDsPrtData(System.Data.DataSet)">
+ <summary>
+ 出力処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.PrintCountaSet(System.Data.DataSet,System.Data.DataSet,System.String)">
+ <summary>
+ データセットの編集を行う。
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.PrintLMH540(System.Data.DataTable)">
+ <summary>
+  EDI出荷取消チェックリスト(LMH540IN)
+ </summary>
+ <param name="dt"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.PrintLMH550(System.Data.DataRow)">
+ <summary>
+  出荷伝票(LMH550IN)
+ </summary>
+ <param name="dr"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.PrintLMH551(System.Data.DataRow)">
+ <summary>
+  出荷伝票(LMH551IN)
+ </summary>
+ <param name="dr"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.PrintLMH552(System.Data.DataRow)">
+ <summary>
+  出荷伝票(LMH552IN)
+ </summary>
+ <param name="dr"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.PrintLMH560(System.Data.DataRow)">
+ <summary>
+  出荷ＥＤＩ受信帳票(LMH560IN)
+ </summary>
+ <param name="dr"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.PrintLMH561(System.Data.DataRow)">
+ <summary>
+  立会い伝票(LMH561IN)
+ </summary>
+ <param name="dr"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.PrintLMH562(System.Data.DataRow)">
+ <summary>
+  出荷ＥＤＩ受信帳票(LMH562IN)
+ </summary>
+ <param name="dr"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.PrintLMH564(System.Data.DataRow)">
+ <summary>
+  出荷ＥＤＩ受信帳票(LMH564IN)
+ </summary>
+ <param name="dr"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.PrintLMH570(System.Data.DataTable)">
+ <summary>
+  受信一覧表(LMH570IN)
+ </summary>
+ <param name="dt"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.PrintLMH571(System.Data.DataTable)">
+ <summary>
+  受信一覧表(LMH571IN)
+ </summary>
+ <param name="dt"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.PrintLMH573(System.Data.DataTable)">
+ <summary>
+  受信一覧表(LMH573IN)
+ </summary>
+ <param name="dt"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.PrintLMH580(System.Data.DataTable)">
+ <summary>
+ EDI納品送状(LMH580IN)
+ </summary>
+ <param name="dt"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.PrintLMH581(System.Data.DataTable)">
+ <summary>
+ EDI納品書(LMH581IN)
+ </summary>
+ <param name="dt"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.PrintLMH582(System.Data.DataTable)">
+ <summary>
+ EDI納品書((LMH582IN)
+ </summary>
+ <param name="dt"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.PrintLMH583(System.Data.DataTable)">
+ <summary>
+  EDI納品書(LMH583IN)
+ </summary>
+ <param name="dt"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.PrintLMH584(System.Data.DataTable)">
+ <summary>
+  受信一覧表(LMH584IN)
+ </summary>
+ <param name="dt"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.PrintLMH585(System.Data.DataTable)">
+ <summary>
+ EDI納品書(LMH585IN)
+ </summary>
+ <param name="dt"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.PrintLMH587(System.Data.DataTable)">
+ <summary>
+ EDI納品送状(LMH587IN)
+ </summary>
+ <param name="dt"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.PrintLMH588(System.Data.DataTable)">
+ <summary>
+  受信一覧表(LMH588IN)
+ </summary>
+ <param name="dt"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.PrintLMH590(System.Data.DataTable)">
+ <summary>
+  EDI荷札_東レ・ダウ(LMH590IN)
+ </summary>
+ <param name="dt"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.PrintLMH600(System.Data.DataTable)">
+ <summary>
+  EDI送り状印刷(日通BP)
+ </summary>
+ <param name="dt"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.PrintLMH589(System.Data.DataTable)">
+ <summary>
+  EDI納品書印刷(日本合成)
+ </summary>
+ <param name="dt"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.PrintBlcFunc(Jp.Co.Nrs.Com.Base.BaseBLC[],System.Data.DataSet[],System.Data.DataSet,Jp.Co.Nrs.LM.Base.BLC.LMBaseBLC)">
+ <summary>
+  プレビューデータセット設定
+ </summary>
+ <param name="prtBlc"></param>
+ <param name="setDs"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.SetUnchinInDataSet(System.Data.DataSet,System.Int32)">
+ <summary>
+ 運賃INの値を設定
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="x"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.SetShiharaiInDataSet(System.Data.DataSet,System.Int32)">
+ <summary>
+ 支払運賃INの値を設定
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.SetUnchinInDataSetMHM(System.Data.DataSet,System.Data.DataSet,System.Int32)">
+ <summary>
+ 運賃INの値を設定
+ </summary>
+ <param name="unchinDs">DataSet</param>
+ <param name="setDs">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.getBLC(System.Int32)">
+ <summary>
+ BLC設定処理(一括変更,CSV作成,他)
+ </summary>
+ <param name="ediIndex"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.getBlcOutkaToroku(System.Int32)">
+ <summary>
+ BLC設定処理(出荷登録,運送登録)
+ </summary>
+ <param name="ediIndex"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.getBlcJisseki(System.Int32)">
+ <summary>
+ BLC設定処理(実績作成)
+ </summary>
+ <param name="ediIndex"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.getBlcJissekiTorikesi(System.Int32)">
+ <summary>
+ BLC設定処理(実績取消)
+ </summary>
+ <param name="ediIndex"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.getBlcJissekiSakuseiJissekimi(System.Int32)">
+ <summary>
+ BLC設定処理(実績作成済⇒実績未)
+ </summary>
+ <param name="ediIndex"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.getBlcSousinSousinmi(System.Int32)">
+ <summary>
+ BLC設定処理(実績送信済⇒送信待)
+ </summary>
+ <param name="ediIndex"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.getBlcSousinJissekimi(System.Int32)">
+ <summary>
+ BLC設定処理(実績送信済⇒実績未)
+ </summary>
+ <param name="ediIndex"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.getBlcMitouroku(System.Int32)">
+ <summary>
+ BLC設定処理(出荷取消⇒未登録)
+ </summary>
+ <param name="ediIndex"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.getBlcUnsoMitouroku(System.Int32)">
+ <summary>
+ BLC設定処理(運送取消⇒未登録)
+ </summary>
+ <param name="ediIndex"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.getBlcEdiTorikesi(System.Int32)">
+ <summary>
+ BLC設定処理(EDI取消)
+ </summary>
+ <param name="ediIndex"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.getBlcTorikesiMitouroku(System.Int32)">
+ <summary>
+ BLC設定処理(EDI取消⇒未登録)
+ </summary>
+ <param name="ediIndex"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.getBlcSemiEdiTorikomi(System.Int32)">
+ <summary>
+ BLC設定処理(セミEDI(画面取込))
+ </summary>
+ <param name="ediIndex"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.SetDataJissekiSakusei(System.Data.DataRow,System.Data.DataSet,System.String,System.Int32)">
+ <summary>
+ 実績作成データセット
+ </summary>
+ <param name="prmDr"></param>
+ <param name="setDs"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.SetDataTorikesiMitouroku(System.Data.DataRow,System.Data.DataSet,System.String,System.Int32)">
+ <summary>
+ 出荷取消⇒未登録データセット
+ </summary>
+ <param name="prmDr"></param>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH030BLF.SetDsCsvData(System.Data.DataSet)">
+ <summary>
+ 出荷依頼送信データ作成処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMH040BLF">
+ <summary>
+ LMH040BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMH040BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH040BLF.ChkHaitaData(System.Data.DataSet)">
+ <summary>
+ 排他検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH040BLF.HaitaCheckForEdit(System.Data.DataSet)">
+ <summary>
+ 排他チェック（編集時）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH040BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH040BLF.SaveAction(System.Data.DataSet)">
+ <summary>
+ 保存
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH040BLF.TorikomiCheckAction(System.Data.DataSet)">
+ <summary>
+ 取込日付チェック用データ取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH040BLF.ScopeStartEnd(System.Data.DataSet,System.String,System.Boolean)">
+ <summary>
+ トランザクション
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionStr">メソッド名</param>
+ <param name="selectFlg">再検索フラグ</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH040BLF.BlcAccess(System.Data.DataSet,System.String)">
+ <summary>
+ BLCクラスアクセス
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMH050BLF">
+ <summary>
+ LMH050BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMH050BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH050BLF.GetSMessage(System.Data.DataSet)">
+ <summary>
+ 仮置き
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMH060BLF">
+ <summary>
+ LMH060BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMH060BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH060BLF.SelectKensakuData(System.Data.DataSet)">
+ <summary>
+ 検索対象データの検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks>BLCのSelectDataメソッドに飛ぶ</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH060BLF.UpdateNinushiSet(System.Data.DataSet)">
+ <summary>
+ 荷主セット処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks>BLCのSelectDataメソッドに飛ぶ</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH060BLF.UpdateCancel(System.Data.DataSet)">
+ <summary>
+ キャンセル処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks>BLCのSelectDataメソッドに飛ぶ</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH060BLF.UpdateHozon(System.Data.DataSet)">
+ <summary>
+ 登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks>BLCのSelectDataメソッドに飛ぶ</remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMH070BLF">
+ <summary>
+ LMH070BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMH070BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH070BLF.SelectEdi(System.Data.DataSet)">
+ <summary>
+ 初期検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH070BLF.SelectInOutka(System.Data.DataSet)">
+ <summary>
+ 検索処理(入出荷)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH070BLF.getBLC(System.Int32,System.String)">
+ <summary>
+ BLC設定処理
+ </summary>
+ <param name="ediIndex"></param>
+ <returns></returns>
+ <remarks>荷主ごとにBLCを選択する</remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMH080BLF">
+ <summary>
+ LMH080BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMH080BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH080BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 初期検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH080BLF.UpdateDelUTI(System.Data.DataSet)">
+ <summary>
+ 削除変更処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMH090BLF">
+ <summary>
+ LMH090BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMH090BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH090BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 印刷対象データ検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH090BLF.PrintData(System.Data.DataSet)">
+ <summary>
+ 印刷処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMH810BLF">
+ <summary>
+ LMH810BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH810BLF.CoaTouroku(System.Data.DataSet)">
+ <summary>
+ 出力処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH810BLF.IsFileSizeZero(System.String)">
+ <summary>
+ ファイルサイズチェック
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH810BLF.ServerValidateChk(System.Data.DataSet,System.String)">
+ <summary>
+  (M080)分析票取込マスタのファイル名バイト数チェック
+ </summary>
+ <param name="coaConfigDs"></param>
+ <param name="filePath"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH810BLF.SetCoaRow(System.Data.DataRow,System.Data.DataRow,System.String,System.String,System.Data.DataSet)">
+ <summary>
+  分析票レコードセット
+ </summary>
+ <param name="dr"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH810BLF.CopyAndDelete(System.String,System.String)">
+ <summary>
+  処理正常時ファイルコピー
+ </summary>
+ <param name="tgtFile"></param>
+ <param name="CopyTOFolder"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMH820BLF">
+ <summary>
+ LMH820BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMH820BLF._prePreDataKbn">
+ <summary>
+データ区分格納フィールド
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMH820BLF.GUIDANCE_KBN">
+ <summary>
+ ガイダンス区分(00)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMH820BLF.EXCEL_COLTITLE_DELI">
+ <summary>
+ EXCEL用COLUMタイトル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH820BLF.InkaConfTouroku(System.Data.DataSet)">
+ <summary>
+ 出力処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH820BLF.IsCorrectDataLength(System.Data.DataTable,System.String,System.String,System.Int32,System.String)">
+ <summary>
+ レコード長チェック
+ </summary>
+ <param name="ds"></param>
+ <param name="dataKbn"></param>
+ <param name="line"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH820BLF.ReadEDIFile(System.String,System.Data.DataSet,System.String)">
+ <summary>
+ ファイル読込み
+ </summary>
+ <param name="filePath"></param>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH820BLF.CreateExcelDataTable">
+ <summary>
+ 取込ファイル用データテーブルの作成
+ </summary>
+ <returns>DataTable</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH820BLF.SetHeaderRow(System.Data.DataTable,System.Data.DataTable,System.Data.DataRow,System.Int32,System.String,System.String)">
+ <summary>
+ ヘッダーレコード値セット
+ </summary>
+ <param name="dtRcvhed"></param>
+ <param name="arrData"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH820BLF.SetDetailRow(System.Data.DataTable,System.Data.DataTable,System.Data.DataRow,System.Int32,System.String,System.Int32,System.String)">
+ <summary>
+ 明細レコード値セット
+ </summary>
+ <param name="dtRcvDtl"></param>
+ <param name="arrData"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH820BLF.CreateErrorDataTable">
+ <summary>
+ エラーファイル用データテーブルの作成
+ </summary>
+ <returns>DataTable</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH820BLF.CreateImportDataTable">
+ <summary>
+ Import用データテーブルの作成
+ </summary>
+ <returns>DataTable</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH820BLF.SubStringOfByte(System.String,System.Int32,System.Int32)">
+ <summary>
+ バイト単位で文字列を抜き取る
+ </summary>
+ <param name="para"></param>
+ <param name="startIndex"></param>
+ <param name="length"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH820BLF.SubStringOfByteNotTrim(System.String,System.Int32,System.Int32)">
+ <summary>
+ バイト単位で文字列を抜き取る
+ </summary>
+ <param name="para"></param>
+ <param name="startIndex"></param>
+ <param name="length"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH820BLF.ExlString(System.String,System.Int32)">
+ <summary>
+ 空文字に対しては常に空文字を返す
+ </summary>
+ <param name="para"></param>
+ <param name="length"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMH830BLF">
+ <summary>
+ LMH830BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMH830BLF.GUIDANCE_KBN">
+ <summary>
+ ガイダンス区分(00)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMH830BLF.EXCEL_COLTITLE_DELI">
+ <summary>
+ EXCEL用COLUMタイトル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH830BLF.OutputMisoutyakuFile(System.Data.DataSet)">
+ <summary>
+ 出力処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMH830BLF.CopyAndDelete(System.String,System.String,System.Data.DataSet)">
+ <summary>
+  処理正常時ファイルコピー
+ </summary>
+ <param name="tgtFile"></param>
+ <param name="CopyTOFolder"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

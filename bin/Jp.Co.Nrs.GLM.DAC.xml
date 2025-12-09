@@ -1,0 +1,2595 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.GLM.DAC
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.GL.DAC.My.Resources.Resources">
+<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.GL.DAC.My.Resources.Resources.ResourceManager">
+<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.GL.DAC.My.Resources.Resources.Culture">
+<summary>
+  すべてについて、現在のスレッドの CurrentUICulture プロパティをオーバーライドします
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM0100DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM0100DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM0100DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0100DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0100DAC.SearchUserMaster(System.Data.DataSet)">
+ <summary>
+ ユーザーマスタ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>ユーザーマスタ取得取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0100DAC.SetSQLSelectWhere">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM0200DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM0200DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM0200DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0200DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0200DAC.SelectSUser(System.Data.DataSet)">
+ <summary>
+ S_USER取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>移液依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0200DAC.SelectMUserArrg(System.Data.DataSet)">
+ <summary>
+ M_USER_ARRG取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>移液依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0200DAC.SelectMUserOffice(System.Data.DataSet)">
+ <summary>
+ M_USER_OFFICE取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>移液依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0200DAC.SelectMUserNotify(System.Data.DataSet)">
+ <summary>
+ M_USER_NOTIFY取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>移液依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0200DAC.SearchMUserMaxSeq(System.Data.DataSet)">
+ <summary>
+ 最大SEQ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>
+ 手配マスタ、
+ オフィスマスタ、
+ ユーザ通知先マスタ
+ 最大SEQ取得取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0200DAC.SetSQLSelectSUserWhere">
+ <summary>
+ S_USER 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0200DAC.SetSelectMUserArrgWhere">
+ <summary>
+ M_USER_ARRG 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0200DAC.SetSelectMUserOfficeWhere">
+ <summary>
+ M_USER_OFFICE 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0200DAC.SetSelectMUserNotifyWhere">
+ <summary>
+ M_USER_NOTIFY 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0200DAC.SetUserIdParameter(System.Data.DataRow)">
+ <summary>
+ ユーザマスタ取得時の共通パラメータ設定
+ </summary>
+ <param name="conditionRow">VK_BASISのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0200DAC.SetSysCommonParameter">
+ <summary>
+ システム共通共通パラメータ(削除フラグを除く）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0200DAC.SetSysDelFlgOnParameter">
+ <summary>
+ 削除フラグ オン パラメータ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0200DAC.SetSysDelFlgOffParameter">
+ <summary>
+ 削除フラグ オフ パラメータ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0200DAC.SetMUserArrgDataInsUpdParameter(System.Data.DataRow)">
+ <summary>
+ M_USER_ARRG登録・更新共通パラメータ
+ </summary>
+ <param name="conditionRow">M_USER_ARRGのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0200DAC.SetMUserOfficeDataInsUpdParameter(System.Data.DataRow)">
+ <summary>
+ M_USER_OFFICE登録・更新共通パラメータ
+ </summary>
+ <param name="conditionRow">M_USER_OFFICEのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0200DAC.SetMUserNotifyDataInsUpdParameter(System.Data.DataRow)">
+ <summary>
+ M_USER_NOTIFY登録・更新共通パラメータ
+ </summary>
+ <param name="conditionRow">M_USER_NOTIFYのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0200DAC.SetSUserDataInsUpdParameter(System.Data.DataRow)">
+ <summary>
+ S_USER登録・更新共通パラメータ
+ </summary>
+ <param name="conditionRow">S_USERのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0200DAC.InsertMUserArrg(System.Data.DataSet)">
+ <summary>
+ M_USER_ARRG登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>ユーザマスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0200DAC.InsertMUserOffice(System.Data.DataSet)">
+ <summary>
+ M_USER_OFFICE登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>ユーザマスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0200DAC.InsertMUserNotify(System.Data.DataSet)">
+ <summary>
+ M_USER_NOTIFY登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>ユーザ通知マスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0200DAC.InsertSUser(System.Data.DataSet)">
+ <summary>
+ S_USER登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>ユーザマスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0200DAC.UpdateMUserArrg(System.Data.DataSet)">
+ <summary>
+ M_USER_ARRG更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>ユーザマスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0200DAC.UpdateMUserOffice(System.Data.DataSet)">
+ <summary>
+ M_USER_OFFICE更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>ユーザマスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0200DAC.UpdateMUserNotify(System.Data.DataSet)">
+ <summary>
+ M_USER_NOTIFY更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>ユーザマスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0200DAC.UpdateSUser(System.Data.DataSet)">
+ <summary>
+ S_USER更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>ユーザマスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0200DAC.UpdateSUserSearchText(System.Data.DataSet)">
+ <summary>
+ S_USER更新処理(SEARCH_TEXT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>商品マスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0200DAC.DeleteUserMaster(System.Data.DataSet)">
+ <summary>
+ S_USER削除処理(ヘッダーボタンイベント)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>ユーザマスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0200DAC.DeleteUserNotifyMaster(System.Data.DataSet)">
+ <summary>
+ M_USER_NOTIFY削除処理(ヘッダーボタンイベント)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>通知先ユーザマスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0200DAC.UpdateDeleteMUserArrg(System.Data.DataSet)">
+ <summary>
+ M_USER_ARRG削除処理(保存時に画面から削除された明細を論理削除)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>手配マスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0200DAC.UpdateDeleteMUserOffice(System.Data.DataSet)">
+ <summary>
+ M_USER_ARRG削除処理(保存時に画面から削除された明細を論理削除)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>手配マスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0200DAC.UpdateDeleteMUserNotify(System.Data.DataSet)">
+ <summary>
+ M_USER_NOTIFY削除処理(保存時に画面から削除された明細を論理削除)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>ユーザ通知マスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0200DAC.ResetUserMaster(System.Data.DataSet)">
+ <summary>
+ S_USER復活処理(ヘッダーボタンイベント)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>ユーザマスタ編集</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM0300DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM0300DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM0300DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0300DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0300DAC.CheckResultCount(System.Data.DataSet)">
+ <summary>
+ 取得行数チェック
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0300DAC.SearchCompMaster(System.Data.DataSet)">
+ <summary>
+ 会社マスタ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>会社マスタ取得取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0300DAC.SetSQLSelectWhere">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM0500DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM0500DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM0500DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0500DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0500DAC.CheckResultCount(System.Data.DataSet)">
+ <summary>
+ 取得行数チェック
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0500DAC.SearchGoodsMaster(System.Data.DataSet)">
+ <summary>
+ 商品マスタ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>商品マスタ取得取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0500DAC.SetSQLSelectWhere">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM0400DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM0400DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM0400DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0400DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0400DAC.SearchCompMaster(System.Data.DataSet)">
+ <summary>
+ 会社マスタ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>会社マスタ取得取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0400DAC.SearchCompDtlMaster(System.Data.DataSet)">
+ <summary>
+ 会社明細マスタ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>会社明細マスタ取得取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0400DAC.SearchCompSubMaster(System.Data.DataSet)">
+ <summary>
+ 会社サブコードマスタ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>会社サブコードマスタ取得取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0400DAC.InsertCompMaster(System.Data.DataSet)">
+ <summary>
+ M_COMP登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>会社マスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0400DAC.InsertCompDtlMaster(System.Data.DataSet)">
+ <summary>
+ M_COMP_DTL登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>M_COMP_DTL登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0400DAC.InsertCompSubMaster(System.Data.DataSet)">
+ <summary>
+ M_COMP_SUB登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>M_COMP_SUB登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0400DAC.UpdateCompMaster(System.Data.DataSet)">
+ <summary>
+ M_COMP更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>会社マスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0400DAC.UpdateCompDtlMaster(System.Data.DataSet)">
+ <summary>
+ M_COMP_DTL更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>M_COMP_DTL更新処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0400DAC.UpdateDeletCompDtlMasterDelFlg(System.Data.DataSet)">
+ <summary>
+ M_COMP_DTL更新処理(論理削除)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>M_COMP_DTL更新処理(論理削除)SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0400DAC.UpdateCompSubMaster(System.Data.DataSet)">
+ <summary>
+ M_COMP_SUB更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>M_COMP_SUB更新処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0400DAC.UpdateDeletCompSubMasterDelFlg(System.Data.DataSet)">
+ <summary>
+ M_COMP_SUB更新処理(論理削除)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>M_COMP_SUB更新処理(論理削除)SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0400DAC.UpdateCompMasterSearchText(System.Data.DataSet)">
+ <summary>
+ M_COMP更新処理(SEARCH_TEXT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>会社マスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0400DAC.UpdateCompMasterDtlSearchText(System.Data.DataSet)">
+ <summary>
+ M_COMP_DTL更新処理(SEARCH_TEXT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>会社明細マスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0400DAC.DeleteCompMaster(System.Data.DataSet)">
+ <summary>
+ M_COMP削除処理(ヘッダーボタンイベント)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>会社マスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0400DAC.ResetCompMaster(System.Data.DataSet)">
+ <summary>
+ M_COMP復活処理(ヘッダーボタンイベント)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>会社マスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0400DAC.SelectMOffice(System.Data.DataSet)">
+ <summary>
+ M_OFFICE DRY_NVO_KBN 取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>会社明細マスタ取得取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0400DAC.SelectCodeCount(System.Data.DataSet)">
+ <summary>
+ 会社コード(ABM)採番情報取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>会社コード(ABM)採番情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0400DAC.SetCompCdParameter(System.Data.DataRow)">
+ <summary>
+ 会社マスタ取得時の共通パラメータ設定
+ </summary>
+ <param name="conditionRow">VK_BASISのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0400DAC.SetCompMasterDataInsUpdParameter(System.Data.DataRow)">
+ <summary>
+ M_COMP登録・更新共通パラメータ
+ </summary>
+ <param name="conditionRow">M_COMPのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0400DAC.SetCompDtlMasterDataInsUpdParameter(System.Data.DataRow)">
+ <summary>
+ M_COMP_DTL登録・更新共通パラメータ
+ </summary>
+ <param name="conditionRow">M_COMPのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0400DAC.SetCompSubMasterDataInsUpdParameter(System.Data.DataRow)">
+ <summary>
+ M_COMP_SUB登録・更新共通パラメータ
+ </summary>
+ <param name="conditionRow">M_COMPのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0400DAC.SetSysCommonParameter">
+ <summary>
+ システム共通共通パラメータ(削除フラグを除く）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0400DAC.SetSysDelFlgOnParameter">
+ <summary>
+ 削除フラグ オン パラメータ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0400DAC.SetSysDelFlgOffParameter">
+ <summary>
+ 削除フラグ オフ パラメータ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0400DAC.getCompTypeKbnFlgConv(System.String)">
+ <summary>
+ 会社タイプ区分をフラグ区分に変換し取得
+ </summary>
+ <param name="compTypeKbn">会社タイプ区分</param>
+ <returns>変換後のフラグ区分</returns>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM0600DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM0600DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM0600DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0600DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0600DAC.SearchGoodsMaster(System.Data.DataSet)">
+ <summary>
+ 商品マスタ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>商品マスタ取得取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0600DAC.SearchGoodsMasterDtl(System.Data.DataSet)">
+ <summary>
+ 商品マスタ明細取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>商品マスタ明細取得取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0600DAC.SearchGoodsMasterMaxSeq(System.Data.DataSet)">
+ <summary>
+ 商品マスタ明細最大SEQ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>商品マスタ明細最大SEQ取得取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0600DAC.InsertGoodsMaster(System.Data.DataSet)">
+ <summary>
+ M_GOODS登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>商品マスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0600DAC.InsertGoodsMasterDtl(System.Data.DataSet)">
+ <summary>
+ M_GOODS_DTL登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>商品マスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0600DAC.UpdateGoodsMaster(System.Data.DataSet)">
+ <summary>
+ M_GOODS更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>商品マスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0600DAC.UpdateGoodsMasterDtl(System.Data.DataSet)">
+ <summary>
+ M_GOODS_DTL更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>商品マスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0600DAC.UpdateGoodsMasterSearchText(System.Data.DataSet)">
+ <summary>
+ M_GOODS更新処理(SEARCH_TEXT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>商品マスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0600DAC.DeleteGoodsMaster(System.Data.DataSet)">
+ <summary>
+ M_GOODS削除処理(ヘッダーボタンイベント)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>商品マスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0600DAC.UpdateDeleteGoodsMasterDtl(System.Data.DataSet)">
+ <summary>
+ M_GOODS_DTL削除処理(保存時に画面から削除された明細を論理削除)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>商品マスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0600DAC.ResetGoodsMaster(System.Data.DataSet)">
+ <summary>
+ M_GOODS復活処理(ヘッダーボタンイベント)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>商品マスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0600DAC.SetGoodsCdParameter(System.Data.DataRow)">
+ <summary>
+ 商品マスタ取得時の共通パラメータ設定
+ </summary>
+ <param name="conditionRow">VK_BASISのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0600DAC.SetSeqParameter(System.Data.DataRow)">
+ <summary>
+ シーケンス共通パラメータ設定
+ </summary>
+ <param name="conditionRow">M_GOODS_DTLのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0600DAC.SetGoodsMasterDataInsUpdParameter(System.Data.DataRow)">
+ <summary>
+ M_GOODS登録・更新共通パラメータ
+ </summary>
+ <param name="conditionRow">M_GOODSのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0600DAC.SetGoodsMasterDtlDataInsUpdParameter(System.Data.DataRow)">
+ <summary>
+ M_GOODS_DTL登録・更新共通パラメータ
+ </summary>
+ <param name="conditionRow">M_GOODS_DTLのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0600DAC.SetSysCommonParameter">
+ <summary>
+ システム共通共通パラメータ(削除フラグを除く）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0600DAC.SetSysDelFlgOnParameter">
+ <summary>
+ 削除フラグ オン パラメータ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0600DAC.SetSysDelFlgOffParameter">
+ <summary>
+ 削除フラグ オフ パラメータ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM0700DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM0700DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM0700DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0700DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0700DAC.CheckResultCount(System.Data.DataSet)">
+ <summary>
+ 取得行数チェック
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0700DAC.Search(System.Data.DataSet)">
+ <summary>
+ 検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>Locationマスタ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0700DAC.SetSQLSelectWhere">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0700DAC.SetSQLSelectSubWhere">
+ <summary>
+ SUB条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0700DAC.OppUpdate(System.Data.DataSet)">
+ <summary>
+ OPP Update処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0700DAC.UpdateCityMasterOppSearchText(System.Data.DataSet)">
+ <summary>
+ OPP M_CITY_SUB更新処理(SEARCH_TEXT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>Locationマスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0700DAC.OppUpdateCity(System.Data.DataSet)">
+ <summary>
+ OPP Update処理（M_CITY）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0700DAC.UpdateCityMasterDppSearchText(System.Data.DataSet)">
+ <summary>
+ DPP M_CITY_SUB更新処理(SEARCH_TEXT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>Locationマスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0700DAC.DppUpdate(System.Data.DataSet)">
+ <summary>
+ DPP Update処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0700DAC.DppUpdateCity(System.Data.DataSet)">
+ <summary>
+ DPP Update処理（M_CITY）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0700DAC.MCityUpdate(System.Data.DataRow)">
+ <summary>
+ M_CITY更新（共通）
+ </summary>
+ <param name="row"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0700DAC.isHaitaChk(System.Data.DataSet)">
+ <summary>
+ 排他制御
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM0800DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM0800DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM0800DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0800DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0800DAC.Search_M_CITY(System.Data.DataSet)">
+ <summary>
+ M_CITY取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>Locationマスタ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0800DAC.Search_M_CITY_SUB(System.Data.DataSet)">
+ <summary>
+ M_CITY_SUB取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>Locationマスタ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0800DAC.InsertMCity(System.Data.DataSet)">
+ <summary>
+ M_CITY登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0800DAC.InsertMCitySub(System.Data.DataSet)">
+ <summary>
+ M_CITY_SUB登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0800DAC.UpdateMCity(System.Data.DataSet)">
+ <summary>
+ M_CITY更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0800DAC.DeleteInsertMCitySub(System.Data.DataSet)">
+ <summary>
+ M_CITY_SUB削除処理（DELETE/INSERT用）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0800DAC.UpdateCityMasterSearchText(System.Data.DataSet)">
+ <summary>
+ M_CITY更新処理(SEARCH_TEXT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>Locationマスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0800DAC.UpdateCitySubMasterSearchText(System.Data.DataSet)">
+ <summary>
+ M_CITY_SUB更新処理(SEARCH_TEXT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>Locationマスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0800DAC.DeleteReset(System.Data.DataSet)">
+ <summary>
+ M_CITY_SUB削除・復活処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0800DAC.SetSysCommonInsertParameter">
+ <summary>
+ システム共通共通パラメータ(削除フラグを除く）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0800DAC.SetSysCommonUpdateParameter">
+ <summary>
+ システム共通共通パラメータ(削除フラグを除く）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0800DAC.SetSysDelFlgOnParameter(System.String)">
+ <summary>
+ 削除フラグパラメータ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0800DAC.isHaitaChk(System.Data.DataSet)">
+ <summary>
+ 排他制御
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM1000DAC.SQL_INSERT_CONT_STND">
+ <summary>
+ M_CONT_STND(INSERT)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM1000DAC.SQL_DELETE_CONT_STNDK">
+ <summary>
+ M_CONT_STND(DELETE)  CERT_KBN IN ('04','06') を無条件で削除する
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM1000DAC.SQL_UPDATE_TANK_KAKO">
+ <summary>
+ タンクマスタ過去データ更新
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM1000DAC.SQL_SELECT_TEST_NO">
+ <summary>
+ M_TESTの抽出用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM1000DAC.SQL_UPDATE_C_CONT_FROM_M_TANK">
+ <summary>
+ タンクマスタの値でC_CONTデータ更新
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1000DAC.CheckTankExistData(System.Data.DataSet)">
+ <summary>
+ タンクマスタ　存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>タンク・シリーズマスタ共通取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1000DAC.SelectInitDataTank(System.Data.DataSet)">
+ <summary>
+ タンクマスタ　初期値取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>タンクマスタ共通取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1000DAC.InsertDataTank(System.Data.DataSet)">
+ <summary>
+ タンクマスタ新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>タンクマスタ新規登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1000DAC.InsertDataTest(System.Data.DataSet)">
+ <summary>
+ 定期検査マスタ新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>定期検査マスタ新規登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1000DAC.UpdateDataTank(System.Data.DataSet)">
+ <summary>
+ タンクマスタ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>タンク・シリーズマスタ更更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1000DAC.UpdateBkgContFromTankMaster(System.Data.DataSet)">
+ <summary>
+ タンクマスタの値でC_CONTデータ更新(C_CONT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1000DAC.setTankParamList(System.Data.DataRow,System.Collections.ArrayList,System.Boolean)">
+ <summary>
+ タンクマスタ　パラメータの設定
+ </summary>
+ <param name="_row">DataRow</param>
+ <param name="SqlPrmList">ArrayList</param>
+ <param name="newFlg">Boolean</param>
+ <remarks>パラメータの設定</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1000DAC.setTestParamList(System.Data.DataRow,System.Collections.ArrayList,System.Boolean)">
+ <summary>
+ 定期検査マスタ　パラメータの設定
+ </summary>
+ <param name="_row">DataRow</param>
+ <param name="SqlPrmList">ArrayList</param>
+ <param name="newFlg">Boolean</param>
+ <remarks>パラメータの設定</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1000DAC.SetConditionSQL(System.Data.DataRow,System.Text.StringBuilder,System.Collections.ArrayList)">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <param name="conditionRow">条件設定行</param>
+ <param name="editSql">編集SQL格納変数</param>
+ <param name="prmList">SQLパラメータ格納配列</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1000DAC.DeleteContStndData(System.Data.DataSet)">
+ <summary>
+ コンテナ取得法規マスタ削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1000DAC.InsertTankContStndData(System.Data.DataSet)">
+ <summary>
+ コンテナ取得法規マスタ新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1000DAC.SetTankDataInsertParameter(System.Collections.ArrayList)">
+ <summary>
+ 新規登録時の共通パラメータ設定
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1000DAC.SetTankDataSysdataParameter(System.Collections.ArrayList)">
+ <summary>
+ 登録時の共通パラメータ設定
+ </summary>
+ <param name="prmList">パラメータ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1000DAC.SetConditionMasterSQL(System.Data.DataRow,System.Text.StringBuilder,System.Collections.ArrayList)">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <param name="conditionRow">条件設定行</param>
+ <param name="editSql">編集SQL格納変数</param>
+ <param name="prmList">SQLパラメータ格納配列</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1000DAC.SetContStndDataParameter(System.Data.DataRow,System.Collections.ArrayList)">
+ <summary>
+ コンテナ取得法規マスタのパラメータ設定
+ </summary>
+ <param name="row">データロウ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1000DAC.SetUpdateBkgContFromTankMasterParameter(System.Data.DataRow,System.Collections.ArrayList)">
+ <summary>
+ コンテナ取得法規マスタのパラメータ設定
+ </summary>
+ <param name="row">データロウ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1000DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1000DAC.TankVersionUpItemData(System.Data.DataSet)">
+ <summary>
+ バージョンアップ処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1000DAC.UpdateTankItemKakoData(System.Data.DataSet)">
+ <summary>
+ タンクマスタ過去データ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1000DAC.SelectCgoCode(System.Data.DataSet)">
+ <summary>
+ C_JOB 積載品コード(CGO_CD)の取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>区分マスタ(C208)取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1000DAC.DelInsertMContStand(System.Data.DataSet)">
+ <summary>
+ コンテナ取得法規マスタ　更新・削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>コンテナ取得法規マスタ更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1000DAC.SetConditionTankMasterSQL(System.Data.DataRow,System.Collections.ArrayList)">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <param name="conditionRow">条件設定行</param>
+ <param name="prmList">SQLパラメータ格納配列</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1000DAC.SelectInitData(System.Data.DataSet)">
+ <summary>
+ タンクマスタ　初期値取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>タンクマスタ共通取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1000DAC.SelectMRemData(System.Data.DataSet)">
+ <summary>
+ M_REM取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>M_REM取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1000DAC.SelectMRemMaxSeqData(System.Data.DataSet)">
+ <summary>
+ M_REM Rem Seq 最大値取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>M_REM Rem Seq 最大値取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1000DAC.UpdateRemark(System.Data.DataSet)">
+ <summary>
+ M_REM更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>M_REM更新処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1000DAC.UpdateDeletRemarkDelFlg(System.Data.DataSet)">
+ <summary>
+ M_REM論理削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>M_REM論理削除処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1000DAC.InsertRemark(System.Data.DataSet)">
+ <summary>
+ M_REM新規登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>M_REM新規登録処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1000DAC.InsertDataTankLog(System.Data.DataSet)">
+ <summary>
+ タンクマスタLog登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>タンクマスタ新規登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1000DAC.InsertDataTankKakoLog(System.Data.DataSet)">
+ <summary>
+ タンクマスタLog登録(過去データ)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>タンクマスタ新規登録SQLの構築・発行</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM0900DAC.SQL_SELECT_HISTORY_EN_DATA">
+ <summary>
+ 取得項目
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM0900DAC.SQL_SELECT_HISTORY_JA_DATA">
+ <summary>
+ 取得項目
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM0900DAC.SQL_SELECT_COUNT">
+ <summary>
+ カウント項目
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM0900DAC.SQL_SELECT_FROM">
+ <summary>
+ 検索ボタン時のSQL
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM0900DAC.SQL_SELECT_HISTORY_FROM">
+ <summary>
+ HISTORYデータ表示用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM0900DAC.SQL_ORDERBY">
+ <summary>
+ 並び順
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0900DAC.SelectListCount(System.Data.DataSet)">
+ <summary>
+ タンクマスタ一覧件数取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>タンクマスタ件数取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0900DAC.CheckResultCount(System.Data.DataSet)">
+ <summary>
+ 取得行数チェック
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0900DAC.SearchTankMaster(System.Data.DataSet)">
+ <summary>
+ タンクマスタ一覧検索結果取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>タンクマスタ検索結果取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0900DAC.SelectHistoryListCount(System.Data.DataSet)">
+ <summary>
+ タンクマスタ一覧件数取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>タンクマスタ件数取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0900DAC.SelectHistoryListData(System.Data.DataSet)">
+ <summary>
+ タンクマスタ一覧検索結果取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>タンクマスタ検索結果取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0900DAC.bulkUpdate(System.Data.DataSet)">
+ <summary>
+ 定期検査マスタ排他チェック（一括更新）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>タンク・シリーズマスタ共通取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0900DAC.UpdateDataTank(System.Data.DataRow)">
+ <summary>
+ タンクマスタ更新(一括更新)
+ </summary>
+ <param name="_row">DataTable</param>
+ <remarks>タンクマスタ更新(一括更新)</remarks>
+ 
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0900DAC.UpdateDataTest(System.Data.DataRow)">
+ <summary>
+ 定期検査マスタ更新(一括更新)
+ </summary>
+ <param name="_row">DataTable</param>
+ <remarks>定期検査マスタ更新(一括更新)</remarks>
+ 
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0900DAC.SetConditionMasterSQL(System.Data.DataRow,System.Text.StringBuilder,System.Collections.ArrayList)">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <param name="conditionRow">条件設定行</param>
+ <param name="editSql">編集SQL格納変数</param>
+ <param name="prmList">SQLパラメータ格納配列</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0900DAC.SetConditionMasterSQL2(System.Data.DataRow,System.Text.StringBuilder,System.Collections.ArrayList)">
+ <summary>
+ 条件文・パラメータ設定モジュール2
+ </summary>
+ <param name="conditionRow">条件設定行</param>
+ <param name="editSql">編集SQL格納変数</param>
+ <param name="prmList">SQLパラメータ格納配列</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0900DAC.SetConditionHistoryMasterSQL(System.Data.DataRow,System.Text.StringBuilder,System.Collections.ArrayList)">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <param name="conditionRow">条件設定行</param>
+ <param name="editSql">編集SQL格納変数</param>
+ <param name="prmList">SQLパラメータ格納配列</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM0900DAC.SetContNoFormat(System.String)">
+ <summary>
+ 検索条件コンテナ番号フォーマット変換
+ </summary>
+ <param name="contNo"></param>
+ <returns></returns>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM1300DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM1300DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM1300DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1300DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1300DAC.CheckResultCount(System.Data.DataSet)">
+ <summary>
+ 取得行数チェック
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1300DAC.SearchCurr(System.Data.DataSet)">
+ <summary>
+ 通貨マスタ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>通貨マスタ取得処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1300DAC.SelectSBatCtrJdeImport(System.Data.DataSet)">
+ <summary>
+ S_BAT_CTR取得処理
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1300DAC.UpdateSBatCtrBeforeJDEImport(System.Data.DataSet)">
+ <summary>
+ S_BAT_CTR更新処理(取り込み前)
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1300DAC.SelectNewCurr(System.Data.DataSet)">
+ <summary>
+ 通貨マスタ取得処理(全Currの最新レート)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1300DAC.SelectNewCurrJDE(System.Data.DataSet)">
+ <summary>
+ 通貨マスタ（JDE管理）取得処理(全Currの最新レート)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1300DAC.InsertMCurr(System.Data.DataSet)">
+ <summary>
+ M_CURR登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>M_CURR登録処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1300DAC.UpdateMCurr(System.Data.DataSet)">
+ <summary>
+ M_CURR更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>M_CURR更新処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1300DAC.UpdateMCurrSearchText(System.Data.DataSet)">
+ <summary>
+ M_CURR更新処理(SEARCH_TEXT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>M_CURR更新処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1300DAC.UpdateSBatCtrAfterJDEImport(System.Data.DataSet)">
+ <summary>
+ S_BAT_CTR更新処理(取り込み後)
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1300DAC.SetSQLSelectWhere">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1300DAC.SetSQLSelectWhereNewCurr">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1300DAC.SetCurrDataUpdateParameter(System.Data.DataRow)">
+ <summary>
+ M_CURRデータの共通パラメータ設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1300DAC.SetSBatCtrAfterDataUpdateParameter(System.Data.DataRow)">
+ <summary>
+ S_BAT_CTRデータのパラメータ設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1300DAC.SetDataInsertParameter">
+ <summary>
+ データ登録時の共通パラメータ設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1300DAC.SetDataUpdateParameter">
+ <summary>
+ データ更新時の共通パラメータ設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1300DAC.CreateSqlCommandJDE(System.String,System.Data.SqlClient.SqlConnection)">
+ <summary>
+ コネクションオブジェクトに関連付けられたDBサーバーに対して
+ 有効なSqlCommandオブジェクトのインスタンスを取得する。
+ </summary>
+ <param name="strSql">SQL文</param>
+ <returns>SqlCommandオブジェクト</returns>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM1100DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM1100DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM1100DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1100DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1100DAC.CheckResultCount(System.Data.DataSet)">
+ <summary>
+ 取得行数チェック
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1100DAC.SearchJDEAccount(System.Data.DataSet)">
+ <summary>
+ ユーザマスタ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>ユーザマスタ取得処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1100DAC.SetSQLSelectWhere">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM1400DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM1400DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM1400DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1400DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1400DAC.CheckResultCount(System.Data.DataSet)">
+ <summary>
+ 取得行数チェック
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1400DAC.SearchChargeList(System.Data.DataSet)">
+ <summary>
+ 諸料金マスタデータ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>諸料金マスタデータ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1400DAC.SetSQLSelectWhere">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM1600DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM1600DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM1600DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1600DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1600DAC.CheckResultCount(System.Data.DataSet)">
+ <summary>
+ 取得行数チェック
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1600DAC.SearchCommentMaster(System.Data.DataSet)">
+ <summary>
+ コメントマスタ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>コメントマスタ取得取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1600DAC.SetSQLSelectWhere">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM1700DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM1700DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM1700DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1700DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1700DAC.SearchCommentMaster(System.Data.DataSet)">
+ <summary>
+ コメントマスタ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>コメントマスタ取得取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1700DAC.InsertCommentMaster(System.Data.DataSet)">
+ <summary>
+ M_COMMENT登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>コメントマスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1700DAC.UpdateCommentMaster(System.Data.DataSet)">
+ <summary>
+ M_COMMENT更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>コメントマスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1700DAC.UpdateCommentMasterSearchText(System.Data.DataSet)">
+ <summary>
+ M_COMMENT更新処理(SEARCH_TEXT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>コメントマスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1700DAC.DeleteCommentMaster(System.Data.DataSet)">
+ <summary>
+ M_COMMENT削除処理(ヘッダーボタンイベント)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>コメントマスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1700DAC.ResetCommentMaster(System.Data.DataSet)">
+ <summary>
+ M_COMMENT復活処理(ヘッダーボタンイベント)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>コメントマスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1700DAC.SetCommentSeqParameter(System.Data.DataRow)">
+ <summary>
+ コメントマスタ取得時の共通パラメータ設定
+ </summary>
+ <param name="conditionRow">VK_BASISのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1700DAC.SetCommentMasterDataInsUpdParameter(System.Data.DataRow)">
+ <summary>
+ M_COMMENT登録・更新共通パラメータ
+ </summary>
+ <param name="conditionRow">M_COMMENTのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1700DAC.SetSysCommonParameter">
+ <summary>
+ システム共通共通パラメータ(削除フラグを除く）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1700DAC.SetSysUpdCommonParameter">
+ <summary>
+ システム共通共通パラメータ(削除フラグを除く）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1700DAC.SetSysDelFlgOnParameter">
+ <summary>
+ 削除フラグ オン パラメータ
+ </summary>
+ <remarks></remarks>
+ 
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1700DAC.SetSysDelFlgOffParameter">
+ <summary>
+ 削除フラグ オフ パラメータ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM1800DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM1800DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM1800DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1800DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1800DAC.CheckResultCount(System.Data.DataSet)">
+ <summary>
+ 取得行数チェック
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1800DAC.SearchArrgList(System.Data.DataSet)">
+ <summary>
+ 手配マスタデータ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>手配マスタデータ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1800DAC.SetSQLSelectWhere">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM1900DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM1900DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM1900DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1900DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1900DAC.SelectArrgMaster(System.Data.DataSet)">
+ <summary>
+ データ取得処理取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>移液依頼編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1900DAC.SearchArrgDtlMaster(System.Data.DataSet)">
+ <summary>
+ 手配明細マスタ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>手配明細マスタ取得取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1900DAC.SearchArrgPayDtlMaster(System.Data.DataSet)">
+ <summary>
+ 手配支払先明細マスタ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>手配請求明細マスタ取得取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1900DAC.InsertArrgMaster(System.Data.DataSet)">
+ <summary>
+ M_ARRG登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>商品マスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1900DAC.UpdateArrgMasterSearchText(System.Data.DataSet)">
+ <summary>
+ M_ARRG更新処理(SEARCH_TEXT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>商品マスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1900DAC.UpdateArrgMasterDtlSearchText(System.Data.DataSet)">
+ <summary>
+ M_ARRG_DTL更新処理(SEARCH_TEXT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>手配明細マスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1900DAC.InsertArrgDtlMaster(System.Data.DataSet)">
+ <summary>
+ M_ARRG_DTL登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>M_ARRG_DTL登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1900DAC.InsertArrgPayDtlMaster(System.Data.DataSet)">
+ <summary>
+ M_ARRG_PAY_DTL登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>M_ARRG_PAY_DTL登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1900DAC.UpdateArrgMaster(System.Data.DataSet)">
+ <summary>
+ M_ARRG更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>商品マスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1900DAC.UpdateArrgDtlMaster(System.Data.DataSet)">
+ <summary>
+ M_ARRG_DTL更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>M_ARRG_DTL更新処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1900DAC.UpdateDeletArrgDtlMasterDelFlg(System.Data.DataSet)">
+ <summary>
+ M_ARRG_DTL更新処理(論理削除)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>M_ARRG_DTL更新処理(論理削除)SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1900DAC.UpdateArrgPayDtlMaster(System.Data.DataSet)">
+ <summary>
+ M_ARRG_PAY_DTL更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>M_ARRG_PAY_DTL更新処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1900DAC.UpdateDeletArrgPayDtlMasterDelFlg(System.Data.DataSet)">
+ <summary>
+ M_ARRG_PAY_DTL更新処理(論理削除)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>M_ARRG_PAY_DTL更新処理(論理削除)SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1900DAC.DeleteArrgMaster(System.Data.DataSet)">
+ <summary>
+ M_ARRG削除処理(ヘッダーボタンイベント)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>商品マスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1900DAC.ResetArrgMaster(System.Data.DataSet)">
+ <summary>
+ M_ARRG復活処理(ヘッダーボタンイベント)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>商品マスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1900DAC.SetParameter(System.Data.DataRow)">
+ <summary>
+ パラメータ設定
+ </summary>
+ <param name="conditionRow">VK_BASISのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1900DAC.SetArrgMasterDataInsUpdParameter(System.Data.DataRow)">
+ <summary>
+ M_ARRG登録・更新共通パラメータ
+ </summary>
+ <param name="conditionRow">M_ARRGのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1900DAC.SetArrgDtlMasterDataInsUpdParameter(System.Data.DataRow)">
+ <summary>
+ M_ARRG_DTL登録・更新共通パラメータ
+ </summary>
+ <param name="conditionRow">M_ARRGのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1900DAC.SetArrgPayDtlMasterDataInsUpdParameter(System.Data.DataRow)">
+ <summary>
+ M_ARRG_PAY_DTL登録・更新共通パラメータ
+ </summary>
+ <param name="conditionRow">M_ARRGのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1900DAC.SetSysCommonParameter">
+ <summary>
+ システム共通共通パラメータ(削除フラグを除く）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1900DAC.SetSysDelFlgOnParameter">
+ <summary>
+ 削除フラグ オン パラメータ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1900DAC.SetSysDelFlgOffParameter">
+ <summary>
+ 削除フラグ オフ パラメータ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM2000DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM2000DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM2000DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM2000DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM2000DAC.CheckResultCount(System.Data.DataSet)">
+ <summary>
+ 取得行数チェック
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM2000DAC.SearchCoverMasterList(System.Data.DataSet)">
+ <summary>
+ カバーマスタデータ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>カバーマスタデータ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM2000DAC.SetSQLSelectWhere(System.Data.DataSet)">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM1200DAC.SQL_SELECT_JDE_DEBTOR">
+ <summary>
+ Debtor用Import処理Select句
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM1200DAC.SQL_SELECT_JDE_DEBTOR_WHERE">
+ <summary>
+ Debtor用Import処理Where句
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM1200DAC.SQL_SELECT_JDE_VENDOR">
+ <summary>
+ Vendor用Import処理Select句
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM1200DAC.SQL_SELECT_JDE_VENDOR_WHERE">
+ <summary>
+ Vendor用Import処理Where句
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM1200DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM1200DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM1200DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1200DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1200DAC.SetParametar(System.Data.DataTable)">
+ <summary>
+ SQL関連 設定値変更
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1200DAC.SetParametarDtl(System.Data.DataTable)">
+ <summary>
+ SQL関連 設定値変更
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1200DAC.SetParametarDtlDelete(System.Data.DataTable)">
+ <summary>
+ SQL関連 設定値変更
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1200DAC.SetSysCommonParameterUpdate">
+ <summary>
+ システム共通共通パラメータ(削除フラグを除く）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1200DAC.InsertSave(System.Data.DataSet)">
+ <summary>
+ 請求支払マスタ編集更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>請求支払マスタ編集新規SQLの発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1200DAC.GetBpEda(System.Data.DataSet)">
+ <summary>
+ BP Code Eda 最大値取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>BP Code Eda 最大値取得処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1200DAC.DeleteJDEAccount(System.Data.DataSet)">
+ <summary>
+ 請求支払マスタ編集更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>請求支払マスタ編集更新SQLの発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1200DAC.ResetJDEAccount(System.Data.DataSet)">
+ <summary>
+ 請求支払マスタ編集更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>請求支払マスタ編集更新SQLの発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1200DAC.UpdateSave(System.Data.DataSet)">
+ <summary>
+ 請求支払マスタ編集更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>請求支払マスタ編集更新SQLの発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1200DAC.UpdateSearchText(System.Data.DataSet)">
+ <summary>
+ S_USER更新処理(SEARCH_TEXT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>商品マスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1200DAC.InsertSaveDtl(System.Data.DataSet)">
+ <summary>
+ 請求支払明細マスタ編集更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>請求支払明細マスタ編集新規SQLの発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1200DAC.UpdateSaveDtl(System.Data.DataSet)">
+ <summary>
+ 請求支払明細マスタ編集更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>請求支払明細マスタ編集更新SQLの発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1200DAC.DeleteSaveDtl(System.Data.DataSet)">
+ <summary>
+ 請求支払明細マスタ編集更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>請求支払マスタ編集削除SQLの発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1200DAC.InitDisplayData(System.Data.DataSet)">
+ <summary>
+ 請求支払マスタ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>請求支払マスタ取得処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1200DAC.InitDisplayDataDtl(System.Data.DataSet)">
+ <summary>
+ 請求支払明細マスタ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>請求支払明細マスタ取得処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1200DAC.InitDisplayDataDtlMaxSeq(System.Data.DataSet)">
+ <summary>
+ 請求支払明細マスタ取得処理（最大SEQ）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>請求支払明細マスタ取得処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1200DAC.SetSQLSelectWhere">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1200DAC.SetSysCommonParameter">
+ <summary>
+ システム共通共通パラメータ(削除フラグを除く）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1200DAC.SetSysDelFlgOnParameter">
+ <summary>
+ 削除フラグ オン パラメータ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1200DAC.SetSysDelFlgOffParameter">
+ <summary>
+ 削除フラグ オフ パラメータ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1200DAC.CreateSqlCommandJDE(System.String,System.Data.SqlClient.SqlConnection)">
+ <summary>
+ コネクションオブジェクトに関連付けられたDBサーバーに対して
+ 有効なSqlCommandオブジェクトのインスタンスを取得する。
+ </summary>
+ <param name="strSql">SQL文</param>
+ <returns>SqlCommandオブジェクト</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1200DAC.GetJdeString">
+ <summary>
+ JDE接続文字列の取得
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1200DAC.SelectMBp(System.Data.DataSet)">
+ <summary>
+ BP CD存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM1500DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM1500DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM1500DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1500DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1500DAC.SelectChargeMaster(System.Data.DataSet)">
+ <summary>
+ 諸料金マスタ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>諸料金マスタ取得取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1500DAC.isHaitaChk(System.Data.DataSet)">
+ <summary>
+ 排他制御
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>諸料金マスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1500DAC.InsertChargeMaster(System.Data.DataSet)">
+ <summary>
+ M_CHARGE登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>諸料金マスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1500DAC.UpdateChargeMaster(System.Data.DataSet)">
+ <summary>
+ M_CHARGE更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>諸料金マスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1500DAC.UpdateChargeMasterSearchText(System.Data.DataSet)">
+ <summary>
+ M_CHARGE更新処理(SEARCH_TEXT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>諸料金マスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1500DAC.DeleteChargeMaster(System.Data.DataSet)">
+ <summary>
+ M_CHARGE削除処理(ヘッダーボタンイベント)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>諸料金マスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1500DAC.ResetChargeMaster(System.Data.DataSet)">
+ <summary>
+ M_CHARGE復活処理(ヘッダーボタンイベント)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>諸料金マスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1500DAC.SetChargeCdParameter(System.Data.DataRow)">
+ <summary>
+ 諸料金マスタ取得時の共通パラメータ設定
+ </summary>
+ <param name="dr"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1500DAC.SetChargeMasterDataInsUpdParameter(System.Data.DataRow)">
+ <summary>
+ M_CHARGE登録・更新共通パラメータ
+ </summary>
+ <param name="conditionRow">M_CHARGEのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1500DAC.SetSysCommonParameter">
+ <summary>
+ システム共通共通パラメータ(削除フラグを除く）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1500DAC.SetSysDelFlgOnParameter">
+ <summary>
+ 削除フラグ オン パラメータ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM1500DAC.SetSysDelFlgOffParameter">
+ <summary>
+ 削除フラグ オフ パラメータ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM2100DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM2100DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM2100DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM2100DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM2100DAC.SelectCoverMaster(System.Data.DataSet)">
+ <summary>
+ カバーマスタ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>カバーマスタ取得取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM2100DAC.isHaitaChk(System.Data.DataSet)">
+ <summary>
+ 排他制御
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>カバーマスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM2100DAC.InsertCoverMaster(System.Data.DataSet)">
+ <summary>
+ M_COVER登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>カバーマスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM2100DAC.UpdateCoverMaster(System.Data.DataSet)">
+ <summary>
+ M_COVER更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>カバーマスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM2100DAC.UpdateCoverMasterSearchText(System.Data.DataSet)">
+ <summary>
+ M_COVER更新処理(SEARCH_TEXT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>カバーマスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM2100DAC.DeleteCoverMaster(System.Data.DataSet)">
+ <summary>
+ M_COVER削除処理(ヘッダーボタンイベント)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>カバーマスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM2100DAC.ResetCoverMaster(System.Data.DataSet)">
+ <summary>
+ M_COVER復活処理(ヘッダーボタンイベント)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>カバーマスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM2100DAC.SetCoverCdParameter(System.Data.DataRow)">
+ <summary>
+ カバーマスタ取得時の共通パラメータ設定
+ </summary>
+ <param name="dr"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM2100DAC.SetCoverMasterDataInsUpdParameter(System.Data.DataRow)">
+ <summary>
+ M_COVER登録・更新共通パラメータ
+ </summary>
+ <param name="conditionRow">M_COVERのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM2100DAC.SetSysCommonParameter">
+ <summary>
+ システム共通共通パラメータ(削除フラグを除く）
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM2100DAC.SetSysDelFlgOnParameter">
+ <summary>
+ 削除フラグ オン パラメータ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM2100DAC.SetSysDelFlgOffParameter">
+ <summary>
+ 削除フラグ オフ パラメータ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM2400DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM2400DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLM2400DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM2400DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM2400DAC.SelectMCompNrsData(System.Data.DataSet)">
+ <summary>
+ 検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>検索処理SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM2400DAC.UpdateSaveMCompNrsData(System.Data.DataSet)">
+ <summary>
+ S_USER更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>ユーザマスタ編集</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLM2400DAC.SetSysCommonParameter">
+ <summary>
+ システム共通共通パラメータ(削除フラグを除く）
+ </summary>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

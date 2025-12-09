@@ -1,0 +1,2368 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.LMM.BLF
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMM010BLF">
+ <summary>
+ LMM010BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMM010BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM010BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ ユーザーマスタ更新対象データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM010BLF.InsertData(System.Data.DataSet)">
+ <summary>
+ 新規登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM010BLF.UpdateData(System.Data.DataSet)">
+ <summary>
+ 更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM010BLF.DeleteData(System.Data.DataSet)">
+ <summary>
+ 削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM010BLF.HaitaData(System.Data.DataSet)">
+ <summary>
+ ユーザーマスタ排他処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM010BLF.ScopeStartEnd(System.Data.DataSet,System.String,System.Boolean)">
+ <summary>
+ トランザクション
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionStr">メソッド名</param>
+ <param name="selectFlg">再検索フラグ</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM010BLF.BlcAccess(System.Data.DataSet,System.String)">
+ <summary>
+ BLCクラスアクセス
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMM020BLF">
+ <summary>
+ LMM020BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMM020BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMM020BLF.TABLE_NM_SYS_DATETIME">
+ <summary>
+ データセットテーブル名(SYS_DATETIMEテーブル)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM020BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 分析票管理マスタ更新対象データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM020BLF.InsertData(System.Data.DataSet)">
+ <summary>
+ 分析票管理マスタ新規登録処理
+ </summary>
+ <param name="ds">DataSet(登録用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM020BLF.UpdateData(System.Data.DataSet)">
+ <summary>
+ 分析票管理マスタ更新処理
+ </summary>
+ <param name="ds">DataSet(更新用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM020BLF.HaitaData(System.Data.DataSet)">
+ <summary>
+ 分析票管理マスタ排他処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM020BLF.DeleteData(System.Data.DataSet)">
+ <summary>
+ 分析票管理マスタ削除・復活処理
+ </summary>
+ <param name="ds">DataSet(削除・復活用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM020BLF.SetSysDateTime(System.Data.DataSet)">
+ <summary>
+ システム日時を設定
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMM030BLF">
+ <summary>
+ LMM030BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMM030BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM030BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 作業項目マスタ更新対象データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM030BLF.SelectSagyoSub(System.Data.DataSet)">
+ <summary>
+ 協力会社作業の名称取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM030BLF.SelectExistSagyoSub(System.Data.DataSet)">
+ <summary>
+ 協力会社作業の重複チェック
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM030BLF.SelectItemCurrCd(System.Data.DataSet)">
+ <summary>
+ 契約通貨初期値取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM030BLF.InsertData(System.Data.DataSet)">
+ <summary>
+ 作業項目マスタ新規登録処理
+ </summary>
+ <param name="ds">DataSet(登録用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM030BLF.UpdateData(System.Data.DataSet)">
+ <summary>
+ 作業項目マスタ更新処理
+ </summary>
+ <param name="ds">DataSet(更新用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM030BLF.HaitaData(System.Data.DataSet)">
+ <summary>
+ 作業項目マスタ排他処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM030BLF.DeleteData(System.Data.DataSet)">
+ <summary>
+ 作業項目マスタ削除・復活処理
+ </summary>
+ <param name="ds">DataSet(削除・復活用)</param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMM040BLF">
+ <summary>
+ LMM040BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMM040BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMM040BLF._Ds">
+ <summary>
+ 値の保持
+ </summary>
+ <remarks></remarks>    
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMM040BLF.zipCdI">
+ <summary>
+ 画面のZIP
+ </summary>
+ <remarks></remarks>    
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMM040BLF.jisCdI">
+ <summary>
+ 画面のJISコード
+ </summary>
+ <remarks></remarks>    
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMM040BLF.Ad1I">
+ <summary>
+ 画面の住所1
+ </summary>
+ <remarks></remarks>    
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMM040BLF.Ad2I">
+ <summary>
+ 画面の住所2
+ </summary>
+ <remarks></remarks>    
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMM040BLF.Ad3I">
+ <summary>
+ 画面の住所3
+ </summary>
+ <remarks></remarks>    
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMM040BLF.jisCdO">
+ <summary>
+ 郵便番号ＭのJISコード
+ </summary>
+ <remarks></remarks>    
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMM040BLF.Ad1O">
+ <summary>
+ 郵便番号Ｍの住所1
+ </summary>
+ <remarks></remarks>    
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMM040BLF.Ad2O">
+ <summary>
+ 郵便番号Ｍの住所2
+ </summary>
+ <remarks></remarks>    
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMM040BLF.Ad3O">
+ <summary>
+ 郵便番号Ｍの住所3
+ </summary>
+ <remarks></remarks>    
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMM040BLF.TABLE_NM_IN">
+ <summary>
+ INテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMM040BLF.TABLE_NM_OUT">
+ <summary>
+ OUTテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMM040BLF.TABLE_NM_INOUT">
+ <summary>
+ INOUTテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMM040BLF.ZIP">
+ <summary>
+ 郵便番号(メッセージ用の名称)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMM040BLF.JIS">
+ <summary>
+ JISコード(メッセージ用の名称)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM040BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 届先マスタ更新対象データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM040BLF.SelectZipJisData(System.Data.DataSet)">
+ <summary>
+ 郵便番号マスタ情報取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM040BLF.InsertData(System.Data.DataSet)">
+ <summary>
+ 新規登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM040BLF.UpdateData(System.Data.DataSet)">
+ <summary>
+ 更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM040BLF.DeleteData(System.Data.DataSet)">
+ <summary>
+ 削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM040BLF.HaitaData(System.Data.DataSet)">
+ <summary>
+ 届先マスタ排他処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM040BLF.PrintData(System.Data.DataSet)">
+ <summary>
+ 印刷処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM040BLF.Import(System.Data.DataSet)">
+ <summary>
+ 一括登録処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM040BLF.ScopeStartEnd(System.Data.DataSet,System.String,System.Boolean)">
+ <summary>
+ トランザクション
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionStr">メソッド名</param>
+ <param name="accessFlg">アクセスフラグ</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM040BLF.BlcAccess(System.Data.DataSet,System.String)">
+ <summary>
+ BLCクラスアクセス
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM040BLF.SetAdJisIn(System.Data.DataSet)">
+ <summary>
+ 画面の郵便番号・住所1～2・JISコードの設定
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM040BLF.SetAdJisOut(System.Data.DataSet)">
+ <summary>
+ 郵便番号マスタから取得した住所1～2の設定
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM040BLF.LeftB(System.String,System.Int32)">
+ <summary>Left関数のバイト版。文字数をバイト数で指定して文字列を切捨て。</summary>
+ <param name="str">対象の文字列</param>
+ <param name="Length">切り抜く文字列のバイト数</param>
+ <returns>切捨てられた文字列</returns>
+ <remarks>最後の１バイトが全角文字の半分になる場合、その１バイトは無視される。</remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMM050BLF">
+ <summary>
+ LMM050BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMM050BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM050BLF.SelectBusyo(System.Data.DataSet)">
+ <summary>
+ JDE非必須ユーザ確認
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM050BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 請求先マスタ更新対象データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM050BLF.SelectVarStrage(System.Data.DataSet)">
+ <summary>
+ 変動保管料関連チェック用検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM050BLF.InsertData(System.Data.DataSet)">
+ <summary>
+ 請求先マスタ新規登録処理
+ </summary>
+ <param name="ds">DataSet(登録用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM050BLF.UpdateData(System.Data.DataSet)">
+ <summary>
+ 請求先マスタ更新処理
+ </summary>
+ <param name="ds">DataSet(更新用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM050BLF.HaitaData(System.Data.DataSet)">
+ <summary>
+ 請求先マスタ排他処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM050BLF.DeleteData(System.Data.DataSet)">
+ <summary>
+ 請求先マスタ削除・復活処理
+ </summary>
+ <param name="ds">DataSet(削除・復活用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM050BLF.SelectComboSeiqCurrCd(System.Data.DataSet)">
+ <summary>
+ 契約通貨コンボ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMM060BLF">
+ <summary>
+ LMM060BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMM060BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM060BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 運賃タリフマスタ更新対象データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM060BLF.ExcelDataMake(System.Data.DataSet)">
+ <summary>
+ 運賃タリフマスタExcelデータ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM060BLF.InsertData(System.Data.DataSet)">
+ <summary>
+ 新規登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM060BLF.UpdateData(System.Data.DataSet)">
+ <summary>
+ 更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM060BLF.DeleteData(System.Data.DataSet)">
+ <summary>
+ 削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM060BLF.HaitaData(System.Data.DataSet)">
+ <summary>
+ 運賃タリフマスタ排他処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM060BLF.ApprovalData(System.Data.DataSet)">
+ <summary>
+ 承認処理（申請、承認、差し戻し）
+ </summary>
+ <param name="ds">DataSet(削除・復活用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM060BLF.ScopeStartEnd(System.Data.DataSet,System.String,System.Boolean)">
+ <summary>
+ トランザクション
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionStr">メソッド名</param>
+ <param name="selectFlg">再検索フラグ</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM060BLF.BlcAccess(System.Data.DataSet,System.String)">
+ <summary>
+ BLCクラスアクセス
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMM070BLF">
+ <summary>
+ LMM070BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMM070BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM070BLF.ComboData(System.Data.DataSet)">
+ <summary>
+ 都道府県名データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM070BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 割増運賃マスタ更新対象データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM070BLF.InsertData(System.Data.DataSet)">
+ <summary>
+ 割増運賃マスタ新規登録処理
+ </summary>
+ <param name="ds">DataSet(登録用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM070BLF.UpdateData(System.Data.DataSet)">
+ <summary>
+ 割増運賃マスタ更新処理
+ </summary>
+ <param name="ds">DataSet(更新用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM070BLF.HaitaData(System.Data.DataSet)">
+ <summary>
+ 割増運賃マスタ排他処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM070BLF.DeleteData(System.Data.DataSet)">
+ <summary>
+ 割増運賃マスタ削除処理
+ </summary>
+ <param name="ds">DataSet(削除用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM070BLF.RevivalData(System.Data.DataSet)">
+ <summary>
+ 割増運賃マスタ復活処理
+ </summary>
+ <param name="ds">DataSet(復活用)</param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMM080BLF">
+ <summary>
+ LMM080BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMM080BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMM080BLF.TABLE_NM_DATE">
+ <summary>
+ データセットテーブル名(SYS_DATETIMEテーブル)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM080BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 運送会社マスタ更新対象データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM080BLF.InsertData(System.Data.DataSet)">
+ <summary>
+ 新規登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM080BLF.UpdateData(System.Data.DataSet)">
+ <summary>
+ 更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM080BLF.DeleteData(System.Data.DataSet)">
+ <summary>
+ 削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM080BLF.HaitaData(System.Data.DataSet)">
+ <summary>
+ 運送会社マスタ排他処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM080BLF.ScopeStartEnd(System.Data.DataSet,System.String,System.Boolean)">
+ <summary>
+ トランザクション
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionStr">メソッド名</param>
+ <param name="selectFlg">再検索フラグ</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM080BLF.BlcAccess(System.Data.DataSet,System.String)">
+ <summary>
+ BLCクラスアクセス
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM080BLF.SetSysDateTime(System.Data.DataSet)">
+ <summary>
+ システム日時を設定
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMM090BLF">
+ <summary>
+ LMM090BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMM090BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM090BLF.EditChk(System.Data.DataSet)">
+ <summary>
+編集時チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM090BLF.DeleteData(System.Data.DataSet)">
+ <summary>
+ 削除・復活処理
+ </summary>
+ <param name="ds">DataSet(削除・復活用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM090BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 荷主マスタ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM090BLF.SelectVarStrage(System.Data.DataSet)">
+ <summary>
+ 変動保管料関連チェック用検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM090BLF.InsertData(System.Data.DataSet)">
+ <summary>
+ 新規登録処理(荷主マスタ、運賃タリフセットマスタ、荷主別帳票マスタ、荷主明細マスタ)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM090BLF.UpdateData(System.Data.DataSet)">
+ <summary>
+ 更新処理(荷主マスタ、運賃タリフセットマスタ、荷主別帳票マスタ、荷主明細マスタ)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM090BLF.SetCustCd(System.Data.DataSet)">
+ <summary>
+ 新規登録処理の場合、荷主コードを採番する
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM090BLF.SelectComboItemCurrCd(System.Data.DataSet)">
+ <summary>
+ 契約通貨コンボ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM090BLF.SelectComboSeihin(System.Data.DataSet)">
+ <summary>
+ 製品セグメント取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks>コンボボックスの選択肢として利用</remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMM100BLF">
+ <summary>
+ LMM100BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMM100BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM100BLF.EditChk(System.Data.DataSet)">
+ <summary>
+商品マスタ編集時チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM100BLF.DeleteData(System.Data.DataSet)">
+ <summary>
+ 商品マスタ削除・復活処理
+ </summary>
+ <param name="ds">DataSet(削除・復活用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM100BLF.UpdateIkkatu(System.Data.DataSet)">
+ <summary>
+ 単価一括変更処理(商品マスタ更新)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM100BLF.UpdateNinushi(System.Data.DataSet)">
+ <summary>
+ 荷主一括変更処理(商品マスタ更新)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM100BLF.InsertTaninusi(System.Data.DataSet)">
+ <summary>
+ 他荷主処理(商品マスタ新規追加・振替対象商品マスタ新規追加)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM100BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 商品マスタ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM100BLF.SaveData(System.Data.DataSet)">
+ <summary>
+ 保存処理(商品マスタ、商品明細マスタ新規登録/更新)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM100BLF.SetGoodsKeyNo(System.Data.DataSet,System.String)">
+ <summary>
+ 新規登録処理の場合、商品KEYを採番する
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>TRUE:新規登録、FALSE:更新登録</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM100BLF.ChkInsertData(System.Data.DataSet)">
+ <summary>
+ 新規登録時チェック処理
+ </summary>
+ <param name="ds"></param>
+ <returns>True:エラーなし、False:エラー有り</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM100BLF.ChkGoodsCustData(System.Data.DataSet)">
+ <summary>
+ 荷主商品コード、入数Save前チェック処理
+ </summary>
+ <param name="ds"></param>
+ <returns>True:エラーなし、False:エラー有り</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM100BLF.GET_GOODSM_CUST(System.Data.DataSet)">
+ <summary>
+ 新規登録時チェック(荷主商品コード)処理
+ </summary>
+ <param name="ds"></param>
+ <returns>True:エラーなし、False:エラー有り</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM100BLF.ChkUpdateData(System.Data.DataSet)">
+ <summary>
+ 更新時チェック処理
+ </summary>
+ <param name="ds"></param>
+ <returns>True:エラーなし、False:エラー有り</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM100BLF.ChkSaveCommon(System.Data.DataSet)">
+ <summary>
+ 保存時共通チェック
+ </summary>
+ <param name="ds"></param>
+ <returns>True:エラーなし、False:エラー有り</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM100BLF.PrintData(System.Data.DataSet)">
+ <summary>
+ 印刷処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM100BLF.getBLC(System.String)">
+ <summary>
+ BLC設定処理
+ </summary>
+ <param name="rptId"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM100BLF.ConfirmKikenGoods(System.Data.DataSet)">
+ <summary>
+ 危険品確認処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM100BLF.UpdateGoodsVolume(System.Data.DataSet)">
+ <summary>
+ 容積一括更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM100BLF.XTrackChk_SKU(System.Data.DataSet)">
+ <summary>
+ X-Track用存在チェック（SKU）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM100BLF.XTrackChk_Gensan(System.Data.DataSet)">
+ <summary>
+ X-Track用存在チェック（原産国）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMM110BLF">
+ <summary>
+ LMM110BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMM110BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM110BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 休日マスタ更新対象データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM110BLF.ExistData(System.Data.DataSet)">
+ <summary>
+ 存在チェック(編集押下時)
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM110BLF.InsertData(System.Data.DataSet)">
+ <summary>
+ 休日マスタ新規登録処理
+ </summary>
+ <param name="ds">DataSet(登録用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM110BLF.UpdateData(System.Data.DataSet)">
+ <summary>
+ 休日マスタ更新処理
+ </summary>
+ <param name="ds">DataSet(更新用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM110BLF.CopyData(System.Data.DataSet)">
+ <summary>
+ 休日マスタ日付複写処理
+ </summary>
+ <param name="ds">DataSet(複写用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM110BLF.DeleteData(System.Data.DataSet)">
+ <summary>
+ 休日マスタ削除・復活処理
+ </summary>
+ <param name="ds">DataSet(削除・復活用)</param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMM120BLF">
+ <summary>
+ LMM120BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMM120BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM120BLF.EditChk(System.Data.DataSet)">
+ <summary>
+編集時チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM120BLF.DeleteData(System.Data.DataSet)">
+ <summary>
+ 削除・復活処理
+ </summary>
+ <param name="ds">DataSet(削除・復活用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM120BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 単価マスタ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM120BLF.CheckTankaM_UP_GP_CD_1(System.Data.DataSet)">
+ <summary>
+　単価マスタコードチェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM120BLF.SaveData(System.Data.DataSet)">
+ <summary>
+ 保存処理(単価マスタ新規登録/更新)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM120BLF.SetRecNo(System.Data.DataSet)">
+ <summary>
+ 新規登録処理の場合、レコードNoを採番する
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>TRUE:新規登録、FALSE:更新登録</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM120BLF.ChkInsertData(System.Data.DataSet)">
+ <summary>
+ 新規登録時チェック処理
+ </summary>
+ <param name="ds"></param>
+ <returns>True:エラーなし、False:エラー有り</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM120BLF.ApprovalData(System.Data.DataSet)">
+ <summary>
+ 承認処理（申請、承認、差し戻し）
+ </summary>
+ <param name="ds">DataSet(削除・復活用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM120BLF.SelectComboSeihin(System.Data.DataSet)">
+ <summary>
+ 製品セグメント取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks>コンボボックスの選択肢として利用</remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMM130BLF">
+ <summary>
+ LMM130BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMM130BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM130BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 棟室マスタ更新対象データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM130BLF.SelectListData3(System.Data.DataSet)">
+ <summary>
+ 申請外の商品保管許可ルール検索処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM130BLF.SelectSokoJT(System.Data.DataSet)">
+ <summary>
+ 倉庫自社他社判定用データ取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM130BLF.InsertData(System.Data.DataSet)">
+ <summary>
+ 新規登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM130BLF.UpdateData(System.Data.DataSet)">
+ <summary>
+ 更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM130BLF.DeleteData(System.Data.DataSet)">
+ <summary>
+ 削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM130BLF.IkkatuTourokuExpData(System.Data.DataSet)">
+ <summary>
+ 一括登録処理（申請外の商品保管ルール）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM130BLF.HaitaData(System.Data.DataSet)">
+ <summary>
+ 棟室マスタ排他処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM130BLF.ScopeStartEnd(System.Data.DataSet,System.String,System.Boolean)">
+ <summary>
+ トランザクション
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionStr">メソッド名</param>
+ <param name="selectFlg">再検索フラグ</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM130BLF.BlcAccess(System.Data.DataSet,System.String)">
+ <summary>
+ BLCクラスアクセス
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMM140BLF">
+ <summary>
+ LMM140BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMM140BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM140BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ ZONEマスタ更新対象データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM140BLF.InsertData(System.Data.DataSet)">
+ <summary>
+ ZONEマスタ新規登録処理
+ </summary>
+ <param name="ds">DataSet(登録用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM140BLF.UpdateData(System.Data.DataSet)">
+ <summary>
+ ZONEマスタ更新処理
+ </summary>
+ <param name="ds">DataSet(更新用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM140BLF.DeleteData(System.Data.DataSet)">
+ <summary>
+ ZONEマスタ削除・復活処理
+ </summary>
+ <param name="ds">DataSet(削除・復活用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM140BLF.HaitaData(System.Data.DataSet)">
+ <summary>
+ ZONEマスタ排他処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM140BLF.ScopeStartEnd(System.Data.DataSet,System.String,System.String)">
+ <summary>
+ トランザクション
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">メソッド名</param>
+ <param name="chkActionId">チェックメソッド名</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMM150BLF">
+ <summary>
+ LMM150BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMM150BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM150BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 倉庫マスタ更新対象データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM150BLF.InsertData(System.Data.DataSet)">
+ <summary>
+ 倉庫マスタ新規登録処理
+ </summary>
+ <param name="ds">DataSet(登録用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM150BLF.UpdateData(System.Data.DataSet)">
+ <summary>
+ 倉庫マスタ更新処理
+ </summary>
+ <param name="ds">DataSet(更新用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM150BLF.SaveCheck(System.Data.DataSet)">
+ <summary>
+ 保存時郵便番号チェック
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM150BLF.HaitaData(System.Data.DataSet)">
+ <summary>
+ 倉庫マスタ排他処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM150BLF.DeleteData(System.Data.DataSet)">
+ <summary>
+ 倉庫マスタ削除・復活処理
+ </summary>
+ <param name="ds">DataSet(削除・復活用)</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMM160BLF">
+ <summary>
+ LMM160BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMM160BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM160BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ マスタ更新対象データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM160BLF.InsertData(System.Data.DataSet)">
+ <summary>
+ 届先商品マスタ新規登録処理
+ </summary>
+ <param name="ds">DataSet(登録用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM160BLF.UpdateData(System.Data.DataSet)">
+ <summary>
+ 届先商品マスタ更新処理
+ </summary>
+ <param name="ds">DataSet(更新用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM160BLF.HaitaData(System.Data.DataSet)">
+ <summary>
+ 届先商品マスタ排他処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM160BLF.DeleteData(System.Data.DataSet)">
+ <summary>
+ 届先商品マスタ削除・復活処理
+ </summary>
+ <param name="ds">DataSet(削除・復活用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM160BLF.ScopeStartEnd(System.Data.DataSet,System.String,System.String)">
+ <summary>
+ トランザクション
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">メソッド名</param>
+ <param name="chkActionId">チェックメソッド名</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMM170BLF">
+ <summary>
+ LMM170BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMM170BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM170BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 郵便番号マスタ更新対象データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM170BLF.ComboData(System.Data.DataSet)">
+ <summary>
+ 都道府県名データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM170BLF.InsertData(System.Data.DataSet)">
+ <summary>
+ 郵便番号マスタ新規登録処理
+ </summary>
+ <param name="ds">DataSet(登録用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM170BLF.UpdateData(System.Data.DataSet)">
+ <summary>
+ 郵便番号マスタ更新処理
+ </summary>
+ <param name="ds">DataSet(更新用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM170BLF.HaitaData(System.Data.DataSet)">
+ <summary>
+ 郵便番号マスタ排他処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM170BLF.DeleteData(System.Data.DataSet)">
+ <summary>
+ 郵便番号マスタ削除・復活処理
+ </summary>
+ <param name="ds">DataSet(削除・復活用)</param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMM180BLF">
+ <summary>
+ LMM180BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMM180BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM180BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ JISマスタ更新対象データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM180BLF.ComboData(System.Data.DataSet)">
+ <summary>
+ 都道府県名データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM180BLF.InsertData(System.Data.DataSet)">
+ <summary>
+ JISマスタ新規登録処理
+ </summary>
+ <param name="ds">DataSet(登録用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM180BLF.UpdateData(System.Data.DataSet)">
+ <summary>
+ JISマスタ更新処理
+ </summary>
+ <param name="ds">DataSet(更新用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM180BLF.HaitaData(System.Data.DataSet)">
+ <summary>
+ JISマスタ排他処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM180BLF.DeleteData(System.Data.DataSet)">
+ <summary>
+ JISマスタ削除・復活処理
+ </summary>
+ <param name="ds">DataSet(削除・復活用)</param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMM190BLF">
+ <summary>
+ LMM190BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMM190BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM190BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 距離程マスタ更新対象データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM190BLF.InsertData(System.Data.DataSet)">
+ <summary>
+ 距離程マスタ新規登録処理
+ </summary>
+ <param name="ds">DataSet(登録用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM190BLF.UpdateData(System.Data.DataSet)">
+ <summary>
+ 距離程マスタ更新処理
+ </summary>
+ <param name="ds">DataSet(更新用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM190BLF.HaitaData(System.Data.DataSet)">
+ <summary>
+ 距離程マスタ排他処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM190BLF.DeleteData(System.Data.DataSet)">
+ <summary>
+ 距離程マスタ削除・復活処理
+ </summary>
+ <param name="ds">DataSet(削除・復活用)</param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMM200BLF">
+ <summary>
+ LMM200BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMM200BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM200BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 車輌マスタ更新対象データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM200BLF.InsertData(System.Data.DataSet)">
+ <summary>
+ 車輌マスタ新規登録処理
+ </summary>
+ <param name="ds">DataSet(登録用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM200BLF.UpdateData(System.Data.DataSet)">
+ <summary>
+ 車輌マスタ更新処理
+ </summary>
+ <param name="ds">DataSet(更新用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM200BLF.HaitaData(System.Data.DataSet)">
+ <summary>
+ 車輌マスタ排他処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM200BLF.DeleteData(System.Data.DataSet)">
+ <summary>
+ 車輌マスタ削除・復活処理
+ </summary>
+ <param name="ds">DataSet(削除・復活用)</param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMM210BLF">
+ <summary>
+ LMM210BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMM210BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM210BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 乗務員マスタ更新対象データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM210BLF.InsertData(System.Data.DataSet)">
+ <summary>
+ 乗務員マスタ新規登録処理
+ </summary>
+ <param name="ds">DataSet(登録用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM210BLF.UpdateData(System.Data.DataSet)">
+ <summary>
+ 乗務員マスタ更新処理
+ </summary>
+ <param name="ds">DataSet(更新用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM210BLF.HaitaData(System.Data.DataSet)">
+ <summary>
+ 乗務員マスタ排他処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM210BLF.DeleteData(System.Data.DataSet)">
+ <summary>
+ 乗務員マスタ削除・復活処理
+ </summary>
+ <param name="ds">DataSet(削除・復活用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM210BLF.ScopeStartEnd(System.Data.DataSet,System.String,System.String)">
+ <summary>
+ トランザクション
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">メソッド名</param>
+ <param name="chkActionId">チェックメソッド名</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMM220BLF">
+ <summary>
+ LMM220BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMM220BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM220BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 商品状態区分マスタ更新対象データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM220BLF.InsertData(System.Data.DataSet)">
+ <summary>
+ 商品状態区分マスタ新規登録処理
+ </summary>
+ <param name="ds">DataSet(登録用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM220BLF.UpdateData(System.Data.DataSet)">
+ <summary>
+ 商品状態区分マスタ更新処理
+ </summary>
+ <param name="ds">DataSet(更新用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM220BLF.HaitaData(System.Data.DataSet)">
+ <summary>
+ 商品状態区分マスタ排他処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM220BLF.DeleteData(System.Data.DataSet)">
+ <summary>
+ 商品状態区分マスタ削除・復活処理
+ </summary>
+ <param name="ds">DataSet(削除・復活用)</param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMM230BLF">
+ <summary>
+ LMM230BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMM230BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM230BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ ユーザーマスタ更新対象データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM230BLF.InsertData(System.Data.DataSet)">
+ <summary>
+ 新規登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM230BLF.UpdateData(System.Data.DataSet)">
+ <summary>
+ 更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM230BLF.DeleteData(System.Data.DataSet)">
+ <summary>
+ 削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM230BLF.HaitaData(System.Data.DataSet)">
+ <summary>
+ ユーザーマスタ排他処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM230BLF.ScopeStartEnd(System.Data.DataSet,System.String,System.Boolean)">
+ <summary>
+ トランザクション
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionStr">メソッド名</param>
+ <param name="selectFlg">再検索フラグ</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM230BLF.BlcAccess(System.Data.DataSet,System.String)">
+ <summary>
+ BLCクラスアクセス
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMM240BLF">
+ <summary>
+ LMM240BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMM240BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM240BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 帳票パターンマスタ更新対象データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM240BLF.InsertData(System.Data.DataSet)">
+ <summary>
+ 帳票パターンマスタ新規登録処理
+ </summary>
+ <param name="ds">DataSet(登録用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM240BLF.UpdateData(System.Data.DataSet)">
+ <summary>
+ 帳票パターンマスタ更新処理
+ </summary>
+ <param name="ds">DataSet(更新用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM240BLF.HaitaData(System.Data.DataSet)">
+ <summary>
+ 帳票パターンマスタ排他処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM240BLF.DeleteData(System.Data.DataSet)">
+ <summary>
+ 帳票パターンマスタ削除・復活処理
+ </summary>
+ <param name="ds">DataSet(削除・復活用)</param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMM260BLF">
+ <summary>
+ LMM260BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMM260BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM260BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 注意書マスタ更新対象データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM260BLF.InsertData(System.Data.DataSet)">
+ <summary>
+ 注意書マスタ新規登録処理
+ </summary>
+ <param name="ds">DataSet(登録用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM260BLF.UpdateData(System.Data.DataSet)">
+ <summary>
+ 注意書マスタ更新処理
+ </summary>
+ <param name="ds">DataSet(更新用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM260BLF.HaitaData(System.Data.DataSet)">
+ <summary>
+ 注意書マスタ排他処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM260BLF.DeleteData(System.Data.DataSet)">
+ <summary>
+ 注意書マスタ削除・復活処理
+ </summary>
+ <param name="ds">DataSet(削除・復活用)</param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMM280BLF">
+ <summary>
+ LMM280BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMM280BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM280BLF.EditChk(System.Data.DataSet)">
+ <summary>
+編集時チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM280BLF.DeleteData(System.Data.DataSet)">
+ <summary>
+ 削除・復活処理
+ </summary>
+ <param name="ds">DataSet(削除・復活用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM280BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 横持ちタリフマスタ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM280BLF.InsertData(System.Data.DataSet)">
+ <summary>
+ 新規登録処理(横持ちタリフヘッダマスタ、横持ちタリフ明細マスタ)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM280BLF.UpdateData(System.Data.DataSet)">
+ <summary>
+ 更新処理(横持ちタリフヘッダマスタ、横持ちタリフ明細マスタ)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMM290BLF">
+ <summary>
+ LMM290BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMM290BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM290BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 振替対象商品マスタメンテ更新対象データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM290BLF.InsertData(System.Data.DataSet)">
+ <summary>
+ 振替対象商品マスタメンテ新規登録処理
+ </summary>
+ <param name="ds">DataSet(登録用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM290BLF.HaitaData(System.Data.DataSet)">
+ <summary>
+ 振替対象商品マスタメンテ排他処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM290BLF.DeleteData(System.Data.DataSet)">
+ <summary>
+ 振替対象商品マスタメンテ削除・復活処理
+ </summary>
+ <param name="ds">DataSet(削除・復活用)</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMM320BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM320BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 請求先マスタ更新対象データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM320BLF.InsertData(System.Data.DataSet)">
+ <summary>
+ 請求項目マスタ新規登録処理
+ </summary>
+ <param name="ds">DataSet(登録用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM320BLF.UpdateData(System.Data.DataSet)">
+ <summary>
+ 請求項目マスタ更新処理
+ </summary>
+ <param name="ds">DataSet(更新用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM320BLF.HaitaData(System.Data.DataSet)">
+ <summary>
+ 請求項目マスタ排他処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM320BLF.DeleteData(System.Data.DataSet)">
+ <summary>
+ 請求項目マスタ削除・復活処理
+ </summary>
+ <param name="ds">DataSet(削除・復活用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM320BLF.ScopeStartEnd(System.Data.DataSet,System.String,System.String)">
+ <summary>
+ トランザクション
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">メソッド名</param>
+ <param name="chkActionId">チェックメソッド名</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMM350BLF">
+ <summary>
+ LMM350BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMM350BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM350BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 初期出荷マスタ更新対象データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM350BLF.SetteiData(System.Data.DataSet)">
+ <summary>
+ 初期出荷マスタ設定処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM350BLF.InsertData(System.Data.DataSet)">
+ <summary>
+ 初期出荷マスタ新規登録処理
+ </summary>
+ <param name="ds">DataSet(登録用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM350BLF.UpdateData(System.Data.DataSet)">
+ <summary>
+ 初期出荷マスタ更新処理
+ </summary>
+ <param name="ds">DataSet(更新用)</param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMM360BLF">
+ <summary>
+ LMM360BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMM360BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM360BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 請求先テンプレートマスタ更新対象データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM360BLF.InsertData(System.Data.DataSet)">
+ <summary>
+ 請求先テンプレートマスタ新規登録処理
+ </summary>
+ <param name="ds">DataSet(登録用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM360BLF.UpdateData(System.Data.DataSet)">
+ <summary>
+ 請求先テンプレートマスタ更新処理
+ </summary>
+ <param name="ds">DataSet(更新用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM360BLF.HaitaData(System.Data.DataSet)">
+ <summary>
+ 請求先テンプレートマスタ排他処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM360BLF.CHK_SeiqtoCd(System.Data.DataSet)">
+ <summary>
+ 請求先テンプレート請求先チェック処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM360BLF.DeleteData(System.Data.DataSet)">
+ <summary>
+ 請求先テンプレートマスタ削除・復活処理
+ </summary>
+ <param name="ds">DataSet(削除・復活用)</param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMM400BLF">
+ <summary>
+ LMM400BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMM400BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM400BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 西濃マスタ更新対象データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM400BLF.InsertData(System.Data.DataSet)">
+ <summary>
+ 西濃マスタ新規登録処理
+ </summary>
+ <param name="ds">DataSet(登録用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM400BLF.UpdateData(System.Data.DataSet)">
+ <summary>
+ 西濃マスタ更新処理+排他チェック
+ </summary>
+ <param name="ds">DataSet(更新用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM400BLF.HaitaData(System.Data.DataSet)">
+ <summary>
+ 西濃マスタ排他処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM400BLF.DeleteData(System.Data.DataSet)">
+ <summary>
+ 西濃マスタ削除・復活処理
+ </summary>
+ <param name="ds">DataSet(削除・復活用)</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMM530BLF">
+ <summary>
+ LMM530BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMM530BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMM530BLF.TABLE_NM_SYS_DATETIME">
+ <summary>
+ データセットテーブル名(SYS_DATETIMEテーブル)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM530BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ イエローカード管理マスタ更新対象データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM530BLF.InsertData(System.Data.DataSet)">
+ <summary>
+ イエローカード管理マスタ新規登録処理
+ </summary>
+ <param name="ds">DataSet(登録用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM530BLF.UpdateData(System.Data.DataSet)">
+ <summary>
+ イエローカード管理マスタ更新処理
+ </summary>
+ <param name="ds">DataSet(更新用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM530BLF.HaitaData(System.Data.DataSet)">
+ <summary>
+ イエローカード管理マスタ排他処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM530BLF.DeleteData(System.Data.DataSet)">
+ <summary>
+ イエローカード管理マスタ削除・復活処理
+ </summary>
+ <param name="ds">DataSet(削除・復活用)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM530BLF.SetSysDateTime(System.Data.DataSet)">
+ <summary>
+ システム日時を設定
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMM540BLF">
+ <summary>
+ LMM540BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMM540BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM540BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 棟マスタ更新対象データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM540BLF.InsertData(System.Data.DataSet)">
+ <summary>
+ 新規登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM540BLF.UpdateData(System.Data.DataSet)">
+ <summary>
+ 更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM540BLF.SelectListDataSum(System.Data.DataSet)">
+ <summary>
+ 保管可能データ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM540BLF.HaikaData(System.Data.DataSet)">
+ <summary>
+ 配下に反映処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM540BLF.DeleteData(System.Data.DataSet)">
+ <summary>
+ 削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM540BLF.HaitaData(System.Data.DataSet)">
+ <summary>
+ 棟マスタ排他処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM540BLF.ScopeStartEnd(System.Data.DataSet,System.String,System.Boolean)">
+ <summary>
+ トランザクション
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionStr">メソッド名</param>
+ <param name="selectFlg">再検索フラグ</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM540BLF.BlcAccess(System.Data.DataSet,System.String)">
+ <summary>
+ BLCクラスアクセス
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMM550BLF">
+ <summary>
+ LMM550BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMM550BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM550BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 支払運賃タリフマスタ更新対象データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM550BLF.ExcelDataMake(System.Data.DataSet)">
+ <summary>
+ 支払運賃タリフマスタExcelデータ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM550BLF.InsertData(System.Data.DataSet)">
+ <summary>
+ 新規登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM550BLF.UpdateData(System.Data.DataSet)">
+ <summary>
+ 更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM550BLF.DeleteData(System.Data.DataSet)">
+ <summary>
+ 削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM550BLF.HaitaData(System.Data.DataSet)">
+ <summary>
+ 支払運賃タリフマスタ排他処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM550BLF.ScopeStartEnd(System.Data.DataSet,System.String,System.Boolean)">
+ <summary>
+ トランザクション
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionStr">メソッド名</param>
+ <param name="selectFlg">再検索フラグ</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMM550BLF.BlcAccess(System.Data.DataSet,System.String)">
+ <summary>
+ BLCクラスアクセス
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

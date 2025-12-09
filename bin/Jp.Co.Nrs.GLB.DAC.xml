@@ -1,0 +1,1785 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.GLB.DAC
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.GL.DAC.My.Resources.Resources">
+<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.GL.DAC.My.Resources.Resources.ResourceManager">
+<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.GL.DAC.My.Resources.Resources.Culture">
+<summary>
+  すべてについて、現在のスレッドの CurrentUICulture プロパティをオーバーライドします
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLB5700DAC.SQL_SELECT_DATA">
+ <summary>
+ 取得項目
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB5700DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB5700DAC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 帳票出力データ取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>帳票出力データ取得SQLの構築・発行</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLB0110DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLB0110DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLB0110DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0110DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0110DAC.CheckResultCountNvo(System.Data.DataSet)">
+ <summary>
+ 取得行数チェック(NVO)
+ </summary>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0110DAC.SearchEstListNvo(System.Data.DataSet)">
+ <summary>
+ Estimate検索データ取得処理(NVO)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>Estデータ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0110DAC.SetSQLSelectWhereNvo(System.Data.DataTable)">
+ <summary>
+ 条件文・パラメータ設定モジュール(NVO)
+ </summary>
+ <param name="inTbl">DataTable</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0110DAC.SetSQLSelectWhereOffice(System.Data.DataSet)">
+ <summary>
+ 条件文・パラメータ設定(所属Office)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0110DAC.GetAgentOfficeNotNrsParameter(System.Data.DataSet)">
+ <summary>
+ ログイン情報に紐づくOfficeを検索条件へ設定する(NRSグループ以外)
+ </summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0110DAC.GetAgentOfficeParameter(System.Data.DataSet,System.Collections.Generic.List{System.String})">
+ <summary>
+ ログイン情報に紐づくOfficeを検索条件へ設定する
+ </summary>
+ <param name="ds"></param>
+ <param name="agentConditionLst"></param>
+ <returns>whereStr</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0110DAC.GetAgentOfficeParameterCreate(System.Data.DataSet,System.Collections.Generic.List{System.String})">
+ <summary>
+ ログイン情報に紐づくOfficeを検索条件へ設定する
+ </summary>
+ <param name="ds"></param>
+ <param name="agentConditionLst"></param>
+ <returns>whereOffice</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0110DAC.SelectChkCreateBooking(System.Data.DataSet)">
+ <summary>
+ Estimate検索データ取得処理(NVO)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>Create Bookin入力チェックSQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0110DAC.SelectChkCreateBookingCompCnt(System.Data.DataSet)">
+ <summary>
+ 会社マスタ存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>Create Bookin入力チェックSQLの構築・発行</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLB0100DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLB0100DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLB0100DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0100DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0100DAC.SearchEstListNvo(System.Data.DataSet)">
+ <summary>
+ Estimate検索データ取得処理(NVO)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>Estデータ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0100DAC.SearchEstListOther(System.Data.DataSet)">
+ <summary>
+ Estimate検索データ取得処理(NVO以外)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>Estデータ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0100DAC.SetSQLSelectWhereNvo(System.Data.DataTable)">
+ <summary>
+ 条件文・パラメータ設定モジュール(NVO)
+ </summary>
+ <param name="inTbl">DataTable</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0100DAC.SetSQLSelectWhereOther(System.Data.DataTable)">
+ <summary>
+ 条件文・パラメータ設定モジュール(NVO以外)
+ </summary>
+ <param name="inTbl">DataTable</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0100DAC.SetSQLSelectWhereOffice(System.Data.DataSet)">
+ <summary>
+ 条件文・パラメータ設定(所属Office)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0100DAC.GetAgentOfficeNotNrsParameter(System.Data.DataSet)">
+ <summary>
+ ログイン情報に紐づくOfficeを検索条件へ設定する(NRSグループ以外)
+ </summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0100DAC.GetAgentOfficeParameter(System.Data.DataSet,System.Collections.Generic.List{System.String})">
+ <summary>
+ ログイン情報に紐づくOfficeを検索条件へ設定する
+ </summary>
+ <param name="ds"></param>
+ <param name="agentConditionLst"></param>
+ <returns>whereStr</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0100DAC.GetAgentOfficeParameterCreate(System.Data.DataSet,System.Collections.Generic.List{System.String})">
+ <summary>
+ ログイン情報に紐づくOfficeを検索条件へ設定する
+ </summary>
+ <param name="ds"></param>
+ <param name="agentConditionLst"></param>
+ <returns>whereOffice</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0100DAC.SelectChkCreateBooking(System.Data.DataSet)">
+ <summary>
+ Estimate検索データ取得処理(NVO)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>Create Bookin入力チェックSQLの構築・発行</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLB0120DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLB0120DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLB0120DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0120DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0120DAC.SearchEstListNvo(System.Data.DataSet)">
+ <summary>
+ Estimate検索データ取得処理(NVO)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>Estデータ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0120DAC.SetSQLSelectWhereNvo(System.Data.DataTable)">
+ <summary>
+ 条件文・パラメータ設定モジュール(NVO)
+ </summary>
+ <param name="inTbl">DataTable</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0120DAC.SetSQLSelectWhereOffice(System.Data.DataSet)">
+ <summary>
+ 条件文・パラメータ設定(所属Office)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0120DAC.GetAgentOfficeNotNrsParameter(System.Data.DataSet)">
+ <summary>
+ ログイン情報に紐づくOfficeを検索条件へ設定する(NRSグループ以外)
+ </summary>
+ <param name="ds"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0120DAC.GetAgentOfficeParameter(System.Data.DataSet,System.Collections.Generic.List{System.String})">
+ <summary>
+ ログイン情報に紐づくOfficeを検索条件へ設定する
+ </summary>
+ <param name="ds"></param>
+ <param name="agentConditionLst"></param>
+ <returns>whereStr</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0120DAC.GetAgentOfficeParameterCreate(System.Data.DataSet,System.Collections.Generic.List{System.String})">
+ <summary>
+ ログイン情報に紐づくOfficeを検索条件へ設定する
+ </summary>
+ <param name="ds"></param>
+ <param name="agentConditionLst"></param>
+ <returns>whereOffice</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0120DAC.isHaitaEstimate(System.Data.DataSet)">
+ <summary>
+ B_BASISによる排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0120DAC.UpdateActionInfo(System.Data.DataSet)">
+ <summary>
+ Upボタン押下処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0120DAC.SetDataUpdateParameter">
+ <summary>
+ データ更新時の共通パラメータ設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLB0200DAC._Row">
+ <summary>
+ 検索条件設定用
+  </summary>
+ <remarkas></remarkas>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLB0200DAC._StrSql">
+ <summary>
+ 発行SQL作成用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.DAC.GLB0200DAC._SqlPrmList">
+ <summary>
+ パラメータ設定用
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.StartDacAction(System.Data.DataTable)">
+ <summary>
+ SQL関連変数初期化
+ </summary>
+ <param name="inTbl"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SelectEstBasisData(System.Data.DataSet)">
+ <summary>
+ B_BASIS取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_BASIS取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SelectEstCoverData(System.Data.DataSet)">
+ <summary>
+ B_COVER取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_COVER取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SelectEstShipData(System.Data.DataSet)">
+ <summary>
+ B_SHIP取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_SHIP取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SelectEstHouseData(System.Data.DataSet)">
+ <summary>
+ B_HOUSE取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_HOUSE取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SelectEstCargoData(System.Data.DataSet)">
+ <summary>
+ B_CARGO取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_CARGO取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SelectEstExpData(System.Data.DataSet)">
+ <summary>
+ B_EXP取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_EXP取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SelectEstImpData(System.Data.DataSet)">
+ <summary>
+ B_IMP取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_IMP取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SelectEstContAllcData(System.Data.DataSet)">
+ <summary>
+ B_CONT_ALLC取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_CONT_ALLC取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SelectEstContData(System.Data.DataSet)">
+ <summary>
+ B_CONT取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_CONT取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SelectEstContLegData(System.Data.DataSet)">
+ <summary>
+ B_CONT_LEG取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_CONT_LEG取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SelectEstDescrData(System.Data.DataSet)">
+ <summary>
+ B_DESCR取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_DESCR取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SelectEstContDepotData(System.Data.DataSet)">
+ <summary>
+ B_CONT_DEPOT取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_CONT_DEPOT取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SelectEstRevData(System.Data.DataSet)">
+ <summary>
+ B_REV取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_REV取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SelectEstCostData(System.Data.DataSet)">
+ <summary>
+ B_COST取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_COST取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SelectEstMaxSeqData(System.Data.DataSet)">
+ <summary>
+ B_MAX_SEQ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_COST取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SelectMfileDataInit(System.Data.DataSet)">
+ <summary>
+ M_FILE取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>手配マスタデータ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SelectEstIfOrdDocListMaxSeqData(System.Data.DataSet)">
+ <summary>
+ B_MAX_SEQ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_COST取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.InsertEstBasis(System.Data.DataSet)">
+ <summary>
+ B_BASIS登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_BASIS登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.InsertEstCover(System.Data.DataSet)">
+ <summary>
+ B_COVER登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_COVER登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.InsertEstShip(System.Data.DataSet)">
+ <summary>
+ B_SHIP登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_SHIP登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.InsertEstHouse(System.Data.DataSet)">
+ <summary>
+ B_HOUSE登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_HOUSE登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.InsertEstCargo(System.Data.DataSet)">
+ <summary>
+ B_CARGO登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_CARGO登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.InsertEstExp(System.Data.DataSet)">
+ <summary>
+ B_EXP登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_EXP登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.InsertEstImp(System.Data.DataSet)">
+ <summary>
+ B_IMP登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_IMP登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.InsertEstContAllc(System.Data.DataSet)">
+ <summary>
+ B_CONT_ALLC登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_CONT_ALLC登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.InsertEstCont(System.Data.DataSet)">
+ <summary>
+ B_CONT登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_CONT登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.InsertEstContLeg(System.Data.DataSet)">
+ <summary>
+ B_CONT_LEG登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_CONT_LEG登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.InsertEstDescr(System.Data.DataSet)">
+ <summary>
+ B_DESCR登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_DESCR登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.InsertEstContDepot(System.Data.DataSet)">
+ <summary>
+ B_CONT_DEPOT登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_CONT_DEPOT登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.InsertEstRev(System.Data.DataSet)">
+ <summary>
+ B_REV登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_REV登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.InsertEstCost(System.Data.DataSet)">
+ <summary>
+ B_COST登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_COST登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.InsertMFile(System.Data.DataSet)">
+ <summary>
+ M_FILE登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>M_FILE登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.InsertSEstMrgLog(System.Data.DataSet)">
+ <summary>
+ S_EST_MRG_LOG登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_BASIS登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.InsertKeepATRankData(System.Data.DataSet)">
+ <summary>
+ YA_RANK_KEEP登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>YA_RANK_KEEP登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.InsertEstIfOrdDocList(System.Data.DataSet)">
+ <summary>
+ B_IF_ORD_DOC_LIST登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_IF_ORD_DOC_LIST登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateEstBasis(System.Data.DataSet)">
+ <summary>
+ B_BASIS更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_BASIS更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateEstStageBasis(System.Data.DataSet)">
+ <summary>
+ B_BASIS更新処理(ステージ)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_BASIS更新SQL(ステージ)の構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateSysComEstBasis(System.Data.DataSet)">
+ <summary>
+ B_BASIS更新処理(システム共通項目)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_BASIS更新SQL(システム共通項目)の構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateEstDemAvg(System.Data.DataSet)">
+ <summary>
+ B_BASIS更新処理(Dem Avg)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_BASIS更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateExpireDay(System.Data.DataSet)">
+ <summary>
+ B_BASIS更新処理(有効期限)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateEstCover(System.Data.DataSet)">
+ <summary>
+ B_COVER更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_COVER更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateEstShip(System.Data.DataSet)">
+ <summary>
+ B_SHIP更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_SHIP更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateEstHouse(System.Data.DataSet)">
+ <summary>
+ B_HOUSE更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_HOUSE更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateEstCargo(System.Data.DataSet)">
+ <summary>
+ B_CARGO更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_CARGO更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateEstExp(System.Data.DataSet)">
+ <summary>
+ B_EXP更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_EXP更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateEstImp(System.Data.DataSet)">
+ <summary>
+ B_IMP更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_IMP更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateEstContAllc(System.Data.DataSet)">
+ <summary>
+ B_CONT_ALLC更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_CONT_ALLC更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateEstCont(System.Data.DataSet)">
+ <summary>
+ B_CONT更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_CONT更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateEstContLeg(System.Data.DataSet)">
+ <summary>
+ B_CONT_LEG更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_CONT_LEG更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateEstDescr(System.Data.DataSet)">
+ <summary>
+ B_DESCR更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_DESCR更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateEstContDepot(System.Data.DataSet)">
+ <summary>
+ B_CONT_DEPOT更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_CONT_DEPOT更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateEstRev(System.Data.DataSet)">
+ <summary>
+ B_REV更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_REV更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateEstCost(System.Data.DataSet)">
+ <summary>
+ B_COST更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_COST登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateKeepATRankData(System.Data.DataSet)">
+ <summary>
+ YA_RANK_KEEP更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>YA_RANK_KEEP更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateEstIfOrdDocList(System.Data.DataSet)">
+ <summary>
+ B_IF_ORD_DOC_LIST更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_IF_ORD_DOC_LIST更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateSearchTextEstBasis(System.Data.DataSet)">
+ <summary>
+ B_BASIS更新処理(SEARCH_TEXT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_BASIS更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateSearchTextEstCover(System.Data.DataSet)">
+ <summary>
+ B_COVER更新処理(SEARCH_TEXT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_COVER更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateSearchTextEstShip(System.Data.DataSet)">
+ <summary>
+ B_SHIP更新処理(SEARCH_TEXT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_SHIP更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateSearchTextEstHouse(System.Data.DataSet)">
+ <summary>
+ B_HOUSE更新処理(SEARCH_TEXT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_HOUSE更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateSearchTextEstCargo(System.Data.DataSet)">
+ <summary>
+ B_CARGO更新処理(SEARCH_TEXT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_CARGO更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateSearchTextEstExp(System.Data.DataSet)">
+ <summary>
+ B_EXP更新処理(SEARCH_TEXT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_EXP更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateSearchTextEstImp(System.Data.DataSet)">
+ <summary>
+ B_IMP更新処理(SEARCH_TEXT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_IMP更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateSearchTextEstCont(System.Data.DataSet)">
+ <summary>
+ B_CONT更新処理(SEARCH_TEXT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_CONT更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateSearchTextEstContLeg(System.Data.DataSet)">
+ <summary>
+ B_CONT_LEG更新処理(SEARCH_TEXT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_CONT_LEG更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateSearchTextEstDescr(System.Data.DataSet)">
+ <summary>
+ B_DESCR更新処理(SEARCH_TEXT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_DESCR更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateSearchTextEstContDepot(System.Data.DataSet)">
+ <summary>
+ B_CONT_DEPOT更新処理(SEARCH_TEXT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_CONT_DEPOT更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateSearchTextEstRev(System.Data.DataSet)">
+ <summary>
+ B_REV更新処理(SEARCH_TEXT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_REV更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateSearchTextEstCost(System.Data.DataSet)">
+ <summary>
+ B_COST更新処理(SEARCH_TEXT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_COST登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateSearchTextRankKeep(System.Data.DataSet)">
+ <summary>
+ YA_RANK_KEEP更新処理(SEARCH_TEXT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>YA_RANK_KEEP更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateDeleteEstBasis(System.Data.DataSet)">
+ <summary>
+ B_BASIS論理削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_BASIS論理削除SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateDeleteEstCover(System.Data.DataSet)">
+ <summary>
+ B_COVER論理削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_BASIS論理削除SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateDeleteEstCoverSeqDelFlg(System.Data.DataSet)">
+ <summary>
+ B_COVER論理削除処理(該当SEQのみ)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_COVER論理削除SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateDeleteEstShip(System.Data.DataSet)">
+ <summary>
+ B_SHIP論理削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_SHIP論理削除SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateDeleteEstHouse(System.Data.DataSet)">
+ <summary>
+ B_HOUSE論理削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_HOUSE論理削除SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateDeleteEstCargo(System.Data.DataSet)">
+ <summary>
+ B_CARGO論理削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_HOUSE論理削除SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateDeleteEstCargoSeqDelFlg(System.Data.DataSet)">
+ <summary>
+ B_CARGO論理削除処理(該当SEQのみ)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_CARGO論理削除SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateDeleteEstExp(System.Data.DataSet)">
+ <summary>
+ B_EXP論理削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_EXP論理削除SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateDeleteEstImp(System.Data.DataSet)">
+ <summary>
+ B_IMP論理削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_IMP論理削除SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateDeleteEstContAllc(System.Data.DataSet)">
+ <summary>
+ B_CONT_ALLC論理削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_CONT_ALLC論理削除SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateDeleteEstCont(System.Data.DataSet)">
+ <summary>
+ B_CONT論理削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_CONT論理削除SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateDeleteEstContSeqDelFlg(System.Data.DataSet)">
+ <summary>
+ B_CONT論理削除処理(該当SEQのみ)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_CONT論理削除SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateDeleteEstContLeg(System.Data.DataSet)">
+ <summary>
+ B_CONT_LEG論理削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_CONT_LEG論理削除SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateDeleteEstContLegSeqDelFlg(System.Data.DataSet)">
+ <summary>
+ B_CONT_LEG論理削除処理(該当SEQのみ)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_CONT_LEG論理削除SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateDeleteEstDescr(System.Data.DataSet)">
+ <summary>
+ B_DESCR論理削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_DESCR論理削除SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateDeleteEstContDepot(System.Data.DataSet)">
+ <summary>
+ B_CONT_DEPOT論理削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_CONT_DEPOT論理削除SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateDeleteEstRev(System.Data.DataSet)">
+ <summary>
+ B_REV論理削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_REV論理削除SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateDeleteEstRevSeqDelFlg(System.Data.DataSet)">
+ <summary>
+ B_REV論理削除処理(該当SEQのみ)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_REV論理削除SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateDeleteEstCost(System.Data.DataSet)">
+ <summary>
+ B_COST論理削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_COST論理削除SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateDeleteEstCostSeqDelFlg(System.Data.DataSet)">
+ <summary>
+ B_COST論理削除処理(該当SEQのみ)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_COST論理削除SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateDeleteMFileDelFlg(System.Data.DataSet)">
+ <summary>
+ M_FILE論理削除処理(該当SEQのみ)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>M_FILE論理削除SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateDeleteEstContDepotSeqDelFlg(System.Data.DataSet)">
+ <summary>
+ B_CONT_DEPOT論理削除処理(該当SEQのみ)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_CONT_DEPOT論理削除SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateDeleteEstIfOrdDocListSeqDelFlg(System.Data.DataSet)">
+ <summary>
+ B_IF_ORD_DOC_LIST論理削除処理(該当SEQのみ)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_IF_ORD_DOC_LIST論理削除SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SelectMaxEstNoEda(System.Data.DataSet)">
+ <summary>
+ 最大見積枝番取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SelectCopyEstNoEda(System.Data.DataSet)">
+ <summary>
+ コピー元見積枝番取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.GetComparisonInitEstNoEda(System.Data.DataSet)">
+ <summary>
+ Comparison初期値枝番取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SelectEstBasisComparisonData(System.Data.DataSet)">
+ <summary>
+ (GLB1500)NVO Rev/Cost取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SelectMGoodsDtlInitData(System.Data.DataSet)">
+ <summary>
+ M_GOODS_DTL取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>商品明細マスタデータ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SelectMFileData(System.Data.DataSet)">
+ <summary>
+ M_FILE取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>手配マスタデータ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SetSQLSelectBCargoInitWhere">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SetSQLSelectBCargoDtlInitWhere">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SetSQLSelectMfileWhere">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SetSQLSelectMfileInitWhere(System.Data.DataTable)">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SetEstNoParameter(System.Data.DataRow)">
+ <summary>
+ Estimate No設定共通パラメータ設定
+ </summary>
+ <param name="conditionRow">VK_BASISのDataRow</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.RegisterMGoodsMGoods(System.Data.DataSet)">
+ <summary>
+ M_GOODS登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>M_GOODS登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateSearchTextMGoods(System.Data.DataSet)">
+ <summary>
+ M_GOODS更新処理(SEARCH_TEXT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_BASIS更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.RegisterMGoodsComMFile(System.Data.DataSet)">
+ <summary>
+ M_FILE更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>M_FILE更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.RegisterMGoodsBCargo(System.Data.DataSet)">
+ <summary>
+ B_CARGO更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_CARGO更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SelectUnInfoData(System.Data.DataSet)">
+ <summary>
+ UN情報再取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_CARGO取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SelectCoverMstData(System.Data.DataSet)">
+ <summary>
+ (GLB0300)M_COVER取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_COVER取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateGooodsMaster(System.Data.DataSet)">
+ <summary>
+ M_GOODS更新処理(Estimate Merge)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>M_GOODS登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateCompMaster(System.Data.DataSet)">
+ <summary>
+ M_COMP更新処理(Estimate Merge)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>M_GOODS登録SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateSearchTextMComp(System.Data.DataSet)">
+ <summary>
+ M_COMP更新処理(SEARCH_TEXT)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_BASIS更新SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SelectCoverMstDataDry(System.Data.DataSet)">
+ <summary>
+ (GLB0300)DRY用M_COVER取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_COVER取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SetDataInsertParameter">
+ <summary>
+ 新規登録時の共通パラメータ設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SetDataInsertComDbParameter">
+ <summary>
+ 新規登録時の共通パラメータ設定(COM_DB)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SetEstDataInsertParameter(System.Data.DataSet)">
+ <summary>
+ 見積データ新規登録時の共通パラメータ設定
+ </summary>
+ <param name="ds">データセット</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SetDataUpdateParameter(System.Data.DataSet)">
+ <summary>
+ データ更新時の共通パラメータ設定
+ </summary>
+ <param name="ds">データセット</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SetDataUpdateComDdParameter(System.Data.DataSet)">
+ <summary>
+ データ更新時の共通パラメータ設定(COM_DB)
+ </summary>
+ <param name="ds">データセット</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SetEstDataUpdateParameter(System.Data.DataSet)">
+ <summary>
+ 見積データ更新時の共通パラメータ設定
+ </summary>
+ <param name="ds">データセット</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SetDataUpdDelFlgComDbParameter">
+ <summary>
+ 削除フラグ更新時の共通パラメータ設定(COM_DB)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SetEstDataUpdDelFlgParameter(System.Data.DataSet)">
+ <summary>
+ 見積データ削除フラグ更新時の共通パラメータ設定
+ </summary>
+ <param name="ds">データセット</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SetEstDataExpireUpdateParameter">
+ <summary>
+ 見積データ有効期限更新時の共通パラメータ設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SetEstDataSearchPastInParameter(System.Data.DataRow)">
+ <summary>
+ SEAECH_PAST_INパラメータ設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SetEstBasisDataParameter(System.Data.DataRow)">
+ <summary>
+ Basis共通パラメータ設定
+ </summary>
+ <param name="drow">データ行</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SetEstBasisUpdStgDataParameter(System.Data.DataRow)">
+ <summary>
+ Basis共通(ステージ更新)パラメータ設定
+ </summary>
+ <param name="drow">データ行</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SetEstCoverDataParameter(System.Data.DataRow)">
+ <summary>
+ Cover共通パラメータ設定
+ </summary>
+ <param name="drow">データセット</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SetEstShipDataParameter(System.Data.DataRow)">
+ <summary>
+ Ship共通パラメータ設定
+ </summary>
+ <param name="drow">データセット</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SetEstHouseDataParameter(System.Data.DataRow)">
+ <summary>
+ House共通パラメータ設定
+ </summary>
+ <param name="drow">データセット</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SetEstCargoDataParameter(System.Data.DataRow)">
+ <summary>
+ Cargo共通パラメータ設定
+ </summary>
+ <param name="drow">データセット</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SetEstExpDataParameter(System.Data.DataRow)">
+ <summary>
+ Exp共通パラメータ設定
+ </summary>
+ <param name="drow">データセット</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SetEstImpDataParameter(System.Data.DataRow)">
+ <summary>
+ Imp共通パラメータ設定
+ </summary>
+ <param name="drow">データセット</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SetEstContAllcDataParameter(System.Data.DataRow)">
+ <summary>
+ Container Allocate共通パラメータ設定
+ </summary>
+ <param name="drow">データセット</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SetEstContDataParameter(System.Data.DataRow)">
+ <summary>
+ Container共通パラメータ設定
+ </summary>
+ <param name="drow">データセット</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SetEstContLegDataParameter(System.Data.DataRow)">
+ <summary>
+ Container Leg共通パラメータ設定
+ </summary>
+ <param name="drow">データセット</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SetEstDescrDataParameter(System.Data.DataRow)">
+ <summary>
+ Descr共通パラメータ設定
+ </summary>
+ <param name="drow">データセット</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SetEstContDepotDataParameter(System.Data.DataRow)">
+ <summary>
+ Container Depot共通パラメータ設定
+ </summary>
+ <param name="drow">データセット</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SetEstRevDataParameter(System.Data.DataRow)">
+ <summary>
+ Revenue共通パラメータ設定
+ </summary>
+ <param name="drow">データセット</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SetEstCostDataParameter(System.Data.DataRow)">
+ <summary>
+ Cost共通パラメータ設定
+ </summary>
+ <param name="drow">データセット</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SetComMFileDataParameter(System.Data.DataRow)">
+ <summary>
+ M_FILE共通パラメータ設定
+ </summary>
+ <param name="drow">データテーブル</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SetComMFileRegisterGoodsDataParameter(System.Data.DataRow)">
+ <summary>
+ M_FILE共通パラメータ設定(Register Goods)
+ </summary>
+ <param name="drow">データテーブル</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SetGooodsMasterDataParameter(System.Data.DataRow)">
+ <summary>
+ 商品マスタ更新(Estimate Merge)パラメータ設定
+ </summary>
+ <param name="drow">データセット</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SetCompMasterDataParameter(System.Data.DataRow)">
+ <summary>
+ 会社マスタ更新(Estimate Merge)パラメータ設定
+ </summary>
+ <param name="drow">データセット</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SetSEstMrgLogDataInsertParameter">
+ <summary>
+ マージログ情報登録パラメータ設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.CallForecastBatch(System.Data.DataSet)">
+ <summary>
+ (AT)Forecastデータ作成バッチ(GLYF8110)呼出
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SelectChkCreateBooking(System.Data.DataSet)">
+ <summary>
+ Estimate検索データ取得処理(NVO)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>Create Bookin入力チェックSQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SelectChkCreateBookingGoodsSegmentCode(System.Data.DataSet)">
+ <summary>
+ Create Booking入力チェック(製品セグメントコード)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>Create Booking入力チェック(製品セグメントコード)SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateNvoFwdLinkCost(System.Data.DataSet)">
+ <summary>
+ NVO FWD 紐付け更新(Cost)処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.UpdateNvoFwdUnLinkCost(System.Data.DataSet)">
+ <summary>
+ NVO FWD 紐付け解除更新(Cost)処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SetNvoFwdLinkCostUpdateParameter">
+ <summary>
+ NVO FWD 紐付け更新(Cost)パラメータ設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SetNvoFwdLinkCostUpdateWhere(System.Data.DataTable)">
+ <summary>
+ NVO FWD 紐付け更新(Cost)条件追加設定
+ </summary>
+ <param name="keyTbl">更新対象</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SetNvoFwdUnLinkUpdateParameter">
+ <summary>
+ NVO FWD 紐付け解除更新パラメータ設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SetRankKeepDataParameter(System.Data.DataRow)">
+ <summary>
+ YA_RANK_KEEP共通パラメータ設定
+ </summary>
+ <param name="drow">データセット</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SelectInsAddKbnEstInfo(System.Data.DataSet)">
+ <summary>
+ ADD_KBN追加EST情報取得（過去EST以降のEST情報取得）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SelectKeepATRankData(System.Data.DataSet)">
+ <summary>
+ YA_RANK_KEEP情報取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>Rank関連情報の取得</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.chkRankKeepData(System.Data.DataSet)">
+ <summary>
+ YA_RANK_KEEP情報取得処理(レコード存在チェック）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>Rank関連情報の取得</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SelectCheckATRankData(System.Data.DataSet)">
+ <summary>
+ （AT）Rank情報取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>Rank関連情報の取得</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SelectAutoAddRevInfo(System.Data.DataSet)">
+ <summary>
+ 請求デフォルト自動追加情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>請求デフォルト自動追加情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SelectAutoAddCostInfo(System.Data.DataSet)">
+ <summary>
+ 支払デフォルト自動追加情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>支払デフォルト自動追加情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SetWhereAutoAddRevInfo">
+ <summary>
+ 請求デフォルト自動追加情報取得条件追加処理
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SetWhereAutoAddCostInfo">
+ <summary>
+ 支払デフォルト自動追加情報取得条件追加処理
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SelectChkOrdBaseDuplicate(System.Data.DataSet)">
+ <summary>
+ 受注基盤重複チェックデータ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>B_COVER取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB0200DAC.SelectChkIfCustOrderData(System.Data.DataSet)">
+ <summary>
+ IF受注基盤EstimateMergeオーダー情報存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB5030DAC.SelectEstBasisHead(System.Data.DataSet)">
+ <summary>
+ 見積基本のデータ取得(HEAD)（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>見積基本のデータ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB5030DAC.SelectEstBasisBodyOut(System.Data.DataSet)">
+ <summary>
+ 見積基本のデータ取得(BODY_OUT)（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>見積基本のデータ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB5030DAC.SelectEstBasisBodyIn(System.Data.DataSet)">
+ <summary>
+ 見積基本のデータ取得(BODY_IN)（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>見積基本のデータ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB5030DAC.SelectEstBasisBody(System.Data.DataSet,System.String,System.String)">
+ <summary>
+ 見積基本のデータ取得(BODY_OUT)（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="tblNm">テーブル名</param>
+ <param name="sql">SQL</param>
+ <returns>DataSet</returns>
+ <remarks>見積基本のデータ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB5030DAC.SelectEstRev(System.Data.DataSet)">
+ <summary>
+ 見積請求のデータ取得(HEAD)（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>見積請求のデータ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB5030DAC.SelectEstCost(System.Data.DataSet)">
+ <summary>
+ 見積支払のデータ取得(HEAD)（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>見積支払のデータ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB5030DAC.SelectEstInvoice(System.Data.DataSet,System.String,System.String,System.String,System.String)">
+ <summary>
+ 見積請求・支払のデータ取得(HEAD)（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="tblNm">テーブル名</param>
+ <param name="sql1">SQL</param>
+ <param name="sql2">SQL(Order By)</param>
+ <param name="str">文字列</param>
+ <returns>DataSet</returns>
+ <remarks>見積請求・支払のデータ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB5030DAC.SetSelectEstNoParameter(System.Data.DataRow,System.Collections.ArrayList)">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <param name="dr">条件設定行</param>
+ <param name="prmList">SQLパラメータ格納配列</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB5030DAC.SetSelectPrintVisibility(System.Data.DataRow,System.Collections.ArrayList,System.String)">
+ <summary>
+ 条件文
+ </summary>
+ <param name="dr">条件設定行</param>
+ <param name="prmList">SQLパラメータ格納配列</param>
+ <param name="str">文字列</param>
+ <returns>文字列</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB5031DAC.SelectEstBasisHead(System.Data.DataSet)">
+ <summary>
+ 見積基本のデータ取得(HEAD)（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>見積基本のデータ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB5031DAC.SelectEstBasisBodyOut(System.Data.DataSet)">
+ <summary>
+ 見積基本のデータ取得(BODY_OUT)（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>見積基本のデータ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB5031DAC.SelectEstBasisBody(System.Data.DataSet,System.String,System.String)">
+ <summary>
+ 見積基本のデータ取得(BODY_OUT)（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="tblNm">テーブル名</param>
+ <param name="sql">SQL</param>
+ <returns>DataSet</returns>
+ <remarks>見積基本のデータ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB5031DAC.SelectEstRev(System.Data.DataSet)">
+ <summary>
+ 見積請求のデータ取得(HEAD)（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>見積請求のデータ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB5031DAC.SelectEstCost(System.Data.DataSet)">
+ <summary>
+ 見積支払のデータ取得(HEAD)（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>見積支払のデータ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB5031DAC.SelectEstInvoice(System.Data.DataSet,System.String,System.String,System.String,System.String)">
+ <summary>
+ 見積請求・支払のデータ取得(HEAD)（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="tblNm">テーブル名</param>
+ <param name="sql1">SQL</param>
+ <param name="sql2">SQL(Order By)</param>
+ <param name="str">文字列</param>
+ <returns>DataSet</returns>
+ <remarks>見積請求・支払のデータ取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB5031DAC.SetSelectEstNoParameter(System.Data.DataRow,System.Collections.ArrayList)">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <param name="dr">条件設定行</param>
+ <param name="prmList">SQLパラメータ格納配列</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB5031DAC.SetSelectPrintVisibility(System.Data.DataRow,System.Collections.ArrayList,System.String)">
+ <summary>
+ 条件文
+ </summary>
+ <param name="dr">条件設定行</param>
+ <param name="prmList">SQLパラメータ格納配列</param>
+ <param name="str">文字列</param>
+ <returns>文字列</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB5040DAC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 見積書印字情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>見積書印字情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB5040DAC.SelectListDataIfTyo(System.Data.DataSet)">
+ <summary>
+ 見積書印字情報取得(IF TYO)（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>見積書印字情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB5040DAC.SetSelectEstNoParameter(System.Data.DataRow,System.Collections.ArrayList)">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <param name="dr">条件設定行</param>
+ <param name="prmList">SQLパラメータ格納配列</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB5050DAC.SelectListData(System.Data.DataSet)">
+ <summary>
+ 見積書印字情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>見積書印字情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.DAC.GLB5050DAC.EditContSeqConditions(System.Data.DataTable)">
+ <summary>
+ 条件文・パラメータ設定モジュール
+ </summary>
+ <param name="inTbl"></param>
+ <returns>検索条件用EST_NOパラメータ文字列</returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

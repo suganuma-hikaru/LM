@@ -1,0 +1,2678 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.GT.BLF
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.GT.BLF.My.Resources.Resources">
+<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.GT.BLF.My.Resources.Resources.ResourceManager">
+<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.GT.BLF.My.Resources.Resources.Culture">
+<summary>
+  すべてについて、現在のスレッドの CurrentUICulture プロパティをオーバーライドします
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTB010BLF.selectSystemDate(System.Data.DataSet)">
+ <summary>
+ サーバシステム日付取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTB010BLF.SelectEstList(System.Data.DataSet)">
+ <summary>
+ 見積情報一覧検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTB010BLF.chkEstListHaita(System.Data.DataSet)">
+ <summary>
+ 見積排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTB030BLF.SelectEstItemData(System.Data.DataSet)">
+ <summary>
+ 見積データ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTB030BLF.InsertEstItemData(System.Data.DataSet)">
+ <summary>
+ 見積データ新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTB030BLF.UpdateEstItemData(System.Data.DataSet)">
+ <summary>
+ 見積データ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTB030BLF.UpdateEstRejectStage(System.Data.DataSet)">
+ <summary>
+ 見積データ更新(Reject)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTB030BLF.UpdateEstRollBackStage(System.Data.DataSet)">
+ <summary>
+ ステージ更新(RollBack)
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>データセット</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTB030BLF.UpdateEstStage(System.Data.DataSet)">
+ <summary>
+ 見積Stage更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTB030BLF.DeleteEstItemData(System.Data.DataSet)">
+ <summary>
+ 見積データ削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTB030BLF.UpdateDemAveCalc(System.Data.DataSet)">
+ <summary>
+ 見積emurrage average更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTB030BLF.GetNewEstNo(System.Data.DataSet)">
+ <summary>
+ 新規見積番号取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTB030BLF.CheckHaitaEstItemData(System.Data.DataSet)">
+ <summary>
+ 見積排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTB030BLF.CheckExistCopyEstItemData(System.Data.DataSet)">
+ <summary>
+ 見積複写データ存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTB030BLF.GetServerDate(System.Data.DataSet)">
+ <summary>
+ システム日付を取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTB030BLF.GetEstData(System.Data.DataSet)">
+ <summary>
+ 見積情報の取得(DB更新後のデータ再取得)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTB030BLF.CheckCopyCostData(System.Data.DataSet)">
+ <summary>
+ 見積Cost複写データ存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTB030BLF.AddOppDppData(System.Data.DataSet,System.String)">
+ <summary>
+ OPP/DPPレコードの追加
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="costCd">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTB030BLF.UpdateOppDppData(System.Data.DataSet)">
+ <summary>
+ OPP/DPPレコードの更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTB030BLF.GetCurrRate(System.Data.DataSet,System.String)">
+ <summary>
+ CurrRate取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTB030BLF.CalcBasisData(System.Data.DataSet)">
+ <summary>
+ BASIS画面の計算
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTB030BLF.FormatNumValue(System.String)">
+ <summary>
+ NULLの場合、ゼロを設定
+ </summary>
+ <param name="value">値</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTB200BLF.SelectEstListData(System.Data.DataSet)">
+ <summary>
+ 請求・支払一覧検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTB200BLF.EndAction(System.Data.DataSet)">
+ <summary>
+ 終了時の処理
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTB210BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ ファイル一覧検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTB210BLF.EndAction(System.Data.DataSet)">
+ <summary>
+ 終了時の処理
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTB500BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTB510BLF.SelectEstimateInfo(System.Data.DataSet)">
+ <summary>
+ ユーザーマスタ一覧検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC010BLF.SelectBkgList(System.Data.DataSet)">
+ <summary>
+ Booking情報一覧検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC010BLF.chkBkgListHaita(System.Data.DataSet)">
+ <summary>
+ Booking排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC020BLF.SelectBkgList(System.Data.DataSet)">
+ <summary>
+ Booking情報一覧検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC020BLF.chkBkgListHaita(System.Data.DataSet)">
+ <summary>
+ Booking排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.CreateBkgItemData(System.Data.DataSet)">
+ <summary>
+ Bookingデータ作成
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.CreateBkgEstChgData(System.Data.DataSet)">
+ <summary>
+ Bookingデータ作成(Est Change)   ADD 要望番号:436
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.CreateBkgInvoiceDataPerCont(System.Data.DataSet)">
+ <summary>
+ Bookingデータ作成(請求・支払データのPer≠BL)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.addCostData(System.Data.DataSet)">
+ <summary>
+ Bookingデータ作成(追加行)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.CreateBkgInvoiceDataPerBl(System.Data.DataSet)">
+ <summary>
+ Bookingデータ作成(請求・支払データのPer=BL)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.SelectBkgItemData(System.Data.DataSet)">
+ <summary>
+ Bookingデータ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.InsertBkgItemData(System.Data.DataSet)">
+ <summary>
+ Bookingデータ新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.UpdateBkgItemData(System.Data.DataSet)">
+ <summary>
+ Bookingデータ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.UpdateBkgItemDataAgentWeb(System.Data.DataSet)">
+ <summary>
+ Bookingデータ更新(代理店Web用)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.UpdateBkgStageCancel(System.Data.DataSet)">
+ <summary>
+ Bookingキャンセル処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.UpdateBkgDateCancelReturn(System.Data.DataSet)">
+ <summary>
+ 戻りタンクキャンセル処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.EditBkg(System.Data.DataSet)">
+ <summary>
+ Booking編集処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.CheckHaitaBkgItemData(System.Data.DataSet)">
+ <summary>
+ Booking排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.CheckHaitaLastBkgItemData(System.Data.DataSet)">
+ <summary>
+ Booking排他チェック(前回Booking)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.GetI_FILE(System.Data.DataSet)">
+ <summary>
+ I_FILE存在チェック　要望番号:438
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.SelectReminderData(System.Data.DataSet,System.String)">
+ <summary>
+ Reminderデータメール処理（ステージで全て対象）要望番号:623
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.SelectReminderDataCont(System.Data.DataSet)">
+ <summary>
+ Reminderデータメール処理（CONT_NO単位で処理）要望番号:623
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.GetEstData(System.Data.DataSet)">
+ <summary>
+ 見積情報を取得する
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.GetServerDate(System.Data.DataSet)">
+ <summary>
+ システム日付を取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.SetNewJobNo(System.Data.DataSet)">
+ <summary>
+ 新規Job番号取得・設定
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.GetBkgData(System.Data.DataSet)">
+ <summary>
+ Booking情報の取得(DB更新後のデータ再取得)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.GetKidsDataOut(System.Data.DataSet)">
+ <summary>
+(GTC080使用) KIDSデータを取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.GetKidsDataIn(System.Data.DataSet)">
+ <summary>
+(GTC080使用) KIDSデータを取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.GetKidsData(System.Data.DataSet,System.String)">
+ <summary>
+(GTC080使用) KIDSデータを取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="str">文字列</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.ChkUserId(System.Data.DataSet)">
+ <summary>
+(GTC080使用) DS_DBのユーザマスタ存在チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.CheckNextAllocate(System.Data.DataSet)">
+ <summary>
+ 次のAllocate情報を取得する
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.LastDepotOutConfirm(System.Data.DataSet)">
+ <summary>
+ LastDepotOut_Confirm処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.LastDepotOutConfirmBL(System.Data.DataSet)">
+ <summary>
+ LastDepotOut_Confirm,/BL取り込み処理も行う
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.LastDepotOutCancel(System.Data.DataSet)">
+ <summary>
+ LastDepotOut_Cancel処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.ETDConfirmNeed(System.Data.DataSet)">
+ <summary>
+ ETDConfirmNeed処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.ETDConfirmNoNeed(System.Data.DataSet)">
+ <summary>
+ ETDConfirmNeed処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.ETDCancel(System.Data.DataSet)">
+ <summary>
+ ETD_Cancel処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.ETAConfirm(System.Data.DataSet)">
+ <summary>
+ ETA_Confirm処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.ETAConfirmYes(System.Data.DataSet)">
+ <summary>
+ ETA_ConfirmYes処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.ETAConfirmNo(System.Data.DataSet)">
+ <summary>
+ ETA_ConfirmNo処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.ETACancel(System.Data.DataSet)">
+ <summary>
+ ETA_Cancel処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.ETACancelNoNeed(System.Data.DataSet)">
+ <summary>
+ ETA_Cancel処理(NoNeed時)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.CommitEmptyConfirm(System.Data.DataSet)">
+ <summary>
+ CommitEmpty_Confirm処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.CommitEmptyCancel(System.Data.DataSet)">
+ <summary>
+ CommitEmpty_Cancel処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.ConfirmAndCancelAtContGamen(System.Data.DataSet)">
+ <summary>
+ コンテナ画面でのConfirm/Cancel処理(DepotOut, Dest.CY ETA, DepotIn)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.UpdateContainerRewind(System.Data.DataSet)">
+ <summary>
+ Rewind処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.PrintSI(System.Data.DataSet)">
+ <summary>
+ S/I印刷処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.PrintBL(System.Data.DataSet)">
+ <summary>
+ BL印刷処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.PrintAN(System.Data.DataSet)">
+ <summary>
+ AN印刷処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.PrintExportLoadingConfirmation(System.Data.DataSet)">
+ <summary>
+ ExportLoadingConfirmation印刷処理 要望番号:400
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.PrintSA(System.Data.DataSet)">
+ <summary>
+ SA印刷処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.PrintDeptOut(System.Data.DataSet)">
+ <summary>
+ DeptOutOrder印刷処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.PrintDeptIn(System.Data.DataSet)">
+ <summary>
+ DeptInOrder印刷処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.PrintSurveyRequest(System.Data.DataSet)">
+ <summary>
+ SurveyRequest印刷処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.PrintBKGConfirmCustmer(System.Data.DataSet)">
+ <summary>
+ BKGConfirm(Custmer)印刷処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.PrintBKGCONCarrier(System.Data.DataSet)">
+ <summary>
+ BKGConfirm(Carrier)印刷処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.PrintCustoms(System.Data.DataSet)">
+ <summary>
+ CustomsClearance印刷処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.PrintRelease(System.Data.DataSet)">
+ <summary>
+ ReleaseOrder印刷処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.PrintRailBilling(System.Data.DataSet)">
+ <summary>
+ RailBillingOrder印刷処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.PrintT1Docs(System.Data.DataSet)">
+ <summary>
+ T1Docs印刷処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.PrintDangerous(System.Data.DataSet)">
+ <summary>
+ 危険物明細書印刷処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.PrintAtContGamen(System.Data.DataSet)">
+ <summary>
+ コンテナ画面での印刷処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC030BLF.FormatNumValue(System.String)">
+ <summary>
+ NULLの場合、ゼロを設定
+ </summary>
+ <param name="value">値</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC200BLF.GetDocData(System.Data.DataSet)">
+ <summary>
+(GTC200) Documentデータを取得(検索処理)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC200BLF.SelectDocPkData(System.Data.DataSet)">
+ <summary>
+ 行選択時の戻り値の取得
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>データセット</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC200BLF.EndAction(System.Data.DataSet)">
+ <summary>
+ 終了時の処理
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC210BLF.SelectBkgContData(System.Data.DataSet)">
+ <summary>
+ Bookingのコンテナデータ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC500BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 帳票出力データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC510BLF.SelectBLData(System.Data.DataSet)">
+ <summary>
+ Ｂ／Ｌデータ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC510BLF.EndAction(System.Data.DataSet)">
+ <summary>
+ 終了時の処理
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC520BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 帳票出力データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC521BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 帳票出力データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC530BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 帳票出力データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC540BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 帳票出力データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC550BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 帳票出力データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC560BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 帳票出力データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC570BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 帳票出力データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC571BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 帳票出力データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC580BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 帳票出力データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC590BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 帳票出力データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC600BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 帳票出力データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC601BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 帳票出力データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC610BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 帳票出力データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC620BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 帳票出力データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC621BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 帳票出力データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC630BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 帳票出力データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC631BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 帳票出力データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC640BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 帳票出力データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC650BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 帳票出力データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC651BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 帳票出力データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC660BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 帳票出力データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC661BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 帳票出力データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC670BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 帳票出力データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC680BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 帳票出力データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC690BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 帳票出力データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC700BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 帳票出力データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC710BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 帳票出力データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC720BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 帳票出力データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC810BLF.KidsOrderData(System.Data.DataSet)">
+ <summary>
+ Kids書き込み処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC810BLF.ChkKanren(System.Data.DataSet)">
+ <summary>
+関連チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC810BLF.SetKidsData(System.Data.DataSet)">
+ <summary>
+DS_DBへの書き込み 
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC820BLF.CheckReminder(System.Data.DataSet)">
+ <summary>
+ Riminder 指定日メール送信
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC830BLF.CheckReminder(System.Data.DataSet)">
+ <summary>
+ Riminder 指定日メール送信
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC840BLF.CheckETAConfirm(System.Data.DataSet)">
+ <summary>
+ 本船遅延データ確認
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTC850BLF.CheckRtnAlt(System.Data.DataSet)">
+ <summary>
+ タンクの返送手配漏れデータ確認
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTE010BLF.SelectRevListData(System.Data.DataSet)">
+ <summary>
+ 請求一覧検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTE010BLF.ChkRevListHaita(System.Data.DataSet)">
+ <summary>
+ 排他チェック
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>データセット</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTE010BLF.EndAction(System.Data.DataSet)">
+ <summary>
+ 終了時の処理
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTE020BLF.SelectRevListData(System.Data.DataSet)">
+ <summary>
+ 請求一覧検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTE020BLF.ChkJDEOutData(System.Data.DataSet)">
+ <summary>
+ JDE Out処理時のチェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTE020BLF.ChkRevListHaita(System.Data.DataSet)">
+ <summary>
+ 排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTE020BLF.EndAction(System.Data.DataSet)">
+ <summary>
+ 終了時の処理
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTE020BLF.CheckRevHed(System.Data.DataSet)">
+ <summary>
+ 未処理Invoice検索  ADD 2014/02/24 要望番号:530 未処理Invoiceの注意喚起メールの自動送信（Weekly）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTE030BLF.SelectRevHCreData(System.Data.DataSet)">
+ <summary>
+ 請求ヘッダ(Create Invoice)検索取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTE030BLF.SelectRevHEditData(System.Data.DataSet)">
+ <summary>
+ 請求ヘッダ検索取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTE030BLF.ChkListHaita(System.Data.DataSet)">
+ <summary>
+ 排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTE030BLF.InsertSaveDataOther(System.Data.DataSet)">
+ <summary>
+ 新規登録(Save)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTE030BLF.InsertSaveData(System.Data.DataSet)">
+ <summary>
+ 新規登録(Save)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTE030BLF.InsertRegisterDataOther(System.Data.DataSet)">
+ <summary>
+ 新規登録(Register)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTE030BLF.InsertRegisterData(System.Data.DataSet)">
+ <summary>
+ 新規登録(Register)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTE030BLF.UpdateRegisterData(System.Data.DataSet)">
+ <summary>
+ 更新(Register)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTE030BLF.RollBackData(System.Data.DataSet)">
+ <summary>
+ 初期化(RollBack)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTE030BLF.RejectData(System.Data.DataSet)">
+ <summary>
+ 差戻(Reject)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTE030BLF.CancelRData(System.Data.DataSet)">
+ <summary>
+ CAN R
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTE030BLF.PrintedData(System.Data.DataSet)">
+ <summary>
+ 印刷(Printed)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTE030BLF.ApprovalData(System.Data.DataSet)">
+ <summary>
+ 承認(Approval)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTE030BLF.UpdateSaveData(System.Data.DataSet)">
+ <summary>
+ 更新(Save)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTE030BLF.DeleteDataOther(System.Data.DataSet)">
+ <summary>
+ 削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTE030BLF.DeleteData(System.Data.DataSet)">
+ <summary>
+ 削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTE030BLF.GetSysDate(System.Data.DataSet)">
+ <summary>
+ サーバ日付を取得
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>データセット</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTE030BLF.ScopeStartEnd(System.Data.DataSet,System.String,System.Boolean)">
+ <summary>
+ トランザクション
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionStr">メソッド名</param>
+ <param name="selectFlg">検索フラグ Trueの場合、再取得</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTE030BLF.EndAction(System.Data.DataSet)">
+ <summary>
+ 終了時の処理
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTE530BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 請求一覧検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTE530BLF.EndAction(System.Data.DataSet)">
+ <summary>
+ 終了時の処理
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTE530BLF.ScopeStartEnd(System.Data.DataSet,System.String,System.Boolean)">
+ <summary>
+ トランザクション
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionStr">メソッド名</param>
+ <param name="selectFlg">検索フラグ Trueの場合、再取得</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTE599BLF.SelectFrtData(System.Data.DataSet)">
+ <summary>
+ フレートのデータ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTE599BLF.SelectDemData(System.Data.DataSet)">
+ <summary>
+ デマレージのデータ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTE599BLF.SelectOthData(System.Data.DataSet)">
+ <summary>
+ 一般のデータ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTE599BLF.SelectFootDataOnly(System.Data.DataSet,System.String)">
+ <summary>
+ BLCクラス呼び出し
+ </summary>
+ <param name="ds">データセット</param>
+ <param name="actionId">メソッド名</param>
+ <returns>データセット</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTE599BLF.AccessBlc(System.Data.DataSet,System.String)">
+ <summary>
+ BLCクラス呼び出し
+ </summary>
+ <param name="ds">データセット</param>
+ <param name="actionId">メソッド名</param>
+ <returns>データセット</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTE599BLF.EndAction(System.Data.DataSet)">
+ <summary>
+ 終了時の処理
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTE800BLF.CheckRevHed(System.Data.DataSet)">
+ <summary>
+ 未処理Invoice検索  ADD 2014/02/24 要望番号:530 未処理Invoiceの注意喚起メールの自動送信（Weekly）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTF010BLF.SelectCostListData(System.Data.DataSet)">
+ <summary>
+ 支払一覧検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTF010BLF.ChkCostListHaita(System.Data.DataSet)">
+ <summary>
+ 排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTF010BLF.JDEOutHaitaChk(System.Data.DataSet)">
+ <summary>
+ JDEOut処理の排他チェック
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>データセット</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTF010BLF.SelectPrintCountData(System.Data.DataSet)">
+ <summary>
+ 印刷可能データ存在チェック
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTF010BLF.UpdateCancelData(System.Data.DataSet)">
+ <summary>
+ JDE Cancel
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>データセット</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTF010BLF.UpdatePrintData(System.Data.DataSet)">
+ <summary>
+ Print
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>データセット</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTF010BLF.ScopeStartEnd(System.Data.DataSet,System.String)">
+ <summary>
+ トランザクション
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="acionId">メソッド名</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTF010BLF.BlcAccess(System.Data.DataSet,System.String)">
+ <summary>
+ BLCクラスアクセス
+ </summary>
+ <param name="ds">データセット</param>
+ <param name="acionId">メソッド名</param>
+ <returns>データセット</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTF010BLF.EndAction(System.Data.DataSet)">
+ <summary>
+ 終了時の処理
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTF020BLF.SelectCostHEditData(System.Data.DataSet)">
+ <summary>
+ 初期検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTF020BLF.SelectCostHCreData(System.Data.DataSet)">
+ <summary>
+ 初期検索(CreatePayment)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTF020BLF.SelectCostData(System.Data.DataSet)">
+ <summary>
+ 支払一覧検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTF020BLF.SelectUptakeData(System.Data.DataSet)">
+ <summary>
+  BOOKING支払検索処理(Uptake検索)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTF020BLF.ChkCostListHaita(System.Data.DataSet)">
+ <summary>
+ 排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTF020BLF.SelectBasisCount(System.Data.DataSet)">
+ <summary>
+ Booking基本件数取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTF020BLF.InsertRegisterData(System.Data.DataSet)">
+ <summary>
+ InsertRegister
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>データセット</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTF020BLF.InsertSaveData(System.Data.DataSet)">
+ <summary>
+ InsertSaveData
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>データセット</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTF020BLF.UpdateRegisterData(System.Data.DataSet)">
+ <summary>
+ UpdateRegisterData
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>データセット</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTF020BLF.UpdateSaveData(System.Data.DataSet)">
+ <summary>
+ UpdateSaveData
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>データセット</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTF020BLF.ApprovalData(System.Data.DataSet)">
+ <summary>
+ ApprovalData
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>データセット</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTF020BLF.PrintData(System.Data.DataSet)">
+ <summary>
+ PrintData
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>データセット</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTF020BLF.RollbackData(System.Data.DataSet)">
+ <summary>
+ RollbackData
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>データセット</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTF020BLF.RejectData(System.Data.DataSet)">
+ <summary>
+ RejectData
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>データセット</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTF020BLF.DeleteData(System.Data.DataSet)">
+ <summary>
+ DeleteData
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>データセット</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTF020BLF.ScopeStartEnd(System.Data.DataSet,System.String,System.Boolean)">
+ <summary>
+ トランザクション
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">メソッド名</param>
+ <param name="selectFlg">検索フラグ Trueの場合、再取得</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTF020BLF.BlcAccess(System.Data.DataSet,System.String)">
+ <summary>
+ BLCクラスアクセス
+ </summary>
+ <param name="ds">データセット</param>
+ <param name="acionId">メソッド名</param>
+ <returns>データセット</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTF020BLF.EndAction(System.Data.DataSet)">
+ <summary>
+ 終了時の処理
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTF500BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 支払決済表データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTF500BLF.EndAction(System.Data.DataSet)">
+ <summary>
+ 終了時の処理
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTG010BLF.SelectContListData(System.Data.DataSet)">
+ <summary>
+ タンクマスタ一覧検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTG010BLF.SelectContListDataImport(System.Data.DataSet)">
+ <summary>
+ タンクマスタ一覧検索(Import処理用)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTG010BLF.SaveTankItemData(System.Data.DataSet)">
+ <summary>
+ 更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTG010BLF.CheckTankItemData(System.Data.DataSet)">
+ <summary>
+ Reminder処理前チェック処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTG010BLF.SelectReminderDataCont(System.Data.DataSet)">
+ <summary>
+ Reminderデータメール処理（CONT_NO単位で処理）要望番号:623
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTG010BLF.ChkTankListHaita(System.Data.DataSet)">
+ <summary>
+ 排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTG010BLF.EndAction(System.Data.DataSet)">
+ <summary>
+ 終了時の処理
+ </summary>
+ <param name="ds">データセット</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTG020BLF.SelectContData(System.Data.DataSet)">
+ <summary>
+ コンテマスタ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTG020BLF.SelectTankData(System.Data.DataSet)">
+ <summary>
+ タンクマスタ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTG020BLF.SelectTankCountData(System.Data.DataSet)">
+ <summary>
+ タンクマスタ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTG020BLF.ChkContHaita(System.Data.DataSet)">
+ <summary>
+ 排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTG020BLF.InsertOnHire(System.Data.DataSet)">
+ <summary>
+ 新規登録(OnHire)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTG020BLF.InsertOffHire(System.Data.DataSet)">
+ <summary>
+ 新規登録(OffHire)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTG020BLF.InsertSubLease(System.Data.DataSet)">
+ <summary>
+ 新規登録(SubLease)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTG020BLF.UpdateOnHire(System.Data.DataSet)">
+ <summary>
+ 更新(OnHire)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTG020BLF.UpdateOffHire(System.Data.DataSet)">
+ <summary>
+ 更新(OffHire)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTG020BLF.UpdateSubLease(System.Data.DataSet)">
+ <summary>
+ 更新(SubLease)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTG020BLF.UpdateInventryItem(System.Data.DataSet)">
+ <summary>
+ 更新(InventryItem)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTG020BLF.DeleteCostItemData(System.Data.DataSet)">
+ <summary>
+ 削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTG020BLF.Confirm(System.Data.DataSet)">
+ <summary>
+ Confirm
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTG020BLF.Cancel(System.Data.DataSet)">
+ <summary>
+ Confirm
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTG020BLF.Rollback(System.Data.DataSet)">
+ <summary>
+ Roll back
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTG020BLF.ScopeStartEnd(System.Data.DataSet,System.String)">
+ <summary>
+ トランザクション
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTG020BLF.EndAction(System.Data.DataSet)">
+ <summary>
+ 終了時の処理
+ </summary>
+ <param name="ds">データセット</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTG020BLF.GetServerDate(System.Data.DataSet)">
+ <summary>
+ システム日付を取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTG030BLF.SelectContData(System.Data.DataSet)">
+ <summary>
+ タンクインベントリーの検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTG030BLF.EndAction(System.Data.DataSet)">
+ <summary>
+ 終了時の処理
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTG040BLF.SelectGimpListData(System.Data.DataSet)">
+ <summary>
+ 取込データ一覧検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTG040BLF.ChkRowSelectionData(System.Data.DataSet)">
+ <summary>
+ Double Click時のチェック
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>データセット</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTG040BLF.ChkListHaita(System.Data.DataSet)">
+ <summary>
+ 排他チェック
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>データセット</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTG040BLF.DeleteContItemData(System.Data.DataSet)">
+ <summary>
+ 削除フラグ更新処理
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>データセット</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTG040BLF.ImportContItemData(System.Data.DataSet)">
+ <summary>
+ データ取込処理
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>データセット</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTG040BLF.ScopeStartEnd(System.Data.DataSet,System.String)">
+ <summary>
+ トランザクション
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionStr">メソッド名</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTG040BLF.EndAction(System.Data.DataSet)">
+ <summary>
+ 終了時の処理
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTG040BLF.BlcAccess(System.Data.DataSet,System.String)">
+ <summary>
+ BLCクラス呼び出し
+ </summary>
+ <param name="ds">データセット</param>
+ <param name="actionStr">メソッド名</param>
+ <returns>データセット</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTG050BLF.SelectReminderListData(System.Data.DataSet)">
+ <summary>
+ Reminder検索取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTG050BLF.ChkListHaita(System.Data.DataSet)">
+ <summary>
+ 排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTG050BLF.InsertReminderItemData(System.Data.DataSet)">
+ <summary>
+ ユーザーマスタ新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTG050BLF.UpdateReminderItemData(System.Data.DataSet)">
+ <summary>
+ Reminder更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTG050BLF.DeleteReminderItemData(System.Data.DataSet)">
+ <summary>
+ 削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTG050BLF.EndAction(System.Data.DataSet)">
+ <summary>
+ 終了時の処理
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTG500BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 帳票出力データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTH010BLF.SelectTestList(System.Data.DataSet)">
+ <summary>
+ 定期検査検索一覧検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTH010BLF.ChkTestListHaita(System.Data.DataSet)">
+ <summary>
+ 定期検査検索 排他
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTH020BLF.SelectTestData(System.Data.DataSet)">
+ <summary>
+ 定期検査情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTH020BLF.ChkTestHaita(System.Data.DataSet)">
+ <summary>
+ 定期検査排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTH020BLF.InsertTestData(System.Data.DataSet)">
+ <summary>
+ 定期検査情報登録（Insert）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTH020BLF.UpdateTestData(System.Data.DataSet)">
+ <summary>
+ 定期検査情報更新（Update）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTH020BLF.GetServerDate(System.Data.DataSet)">
+ <summary>
+ システム日付を取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTH020BLF.EndAction(System.Data.DataSet)">
+ <summary>
+ 終了時の処理
+ </summary>
+ <param name="ds">データセット</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTI010BLF.SelectIExclusion(System.Data.DataSet)">
+ <summary>
+排他チェック処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTI010BLF.UpdateIExclusion(System.Data.DataSet)">
+ <summary>
+排他設定/終了処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTI030BLF.SelectDataList(System.Data.DataSet)">
+ <summary>
+ データ情報一覧検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTI030BLF.DeleteListData(System.Data.DataSet)">
+ <summary>
+ 削除処理
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>データセット</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTI030BLF.chkDataListHaita(System.Data.DataSet)">
+ <summary>
+ データ排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTI030BLF.SaveDataList(System.Data.DataSet)">
+ <summary>
+ データ新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTI040BLF.SelectImpData(System.Data.DataSet)">
+ <summary>
+外部データヘッダの検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTI040BLF.CheckHaita(System.Data.DataSet)">
+ <summary>
+排他チェックを行う
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTI040BLF.EndAction(System.Data.DataSet)">
+ <summary>
+ 終了時の処理
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTI050BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 外部データ検索処理
+ </summary>
+ <param name="ds">データセット</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTI050BLF.SelectDetlCreateData(System.Data.DataSet)">
+ <summary>
+ 詳細データ再検索処理
+ </summary>
+ <param name="ds">データセット</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTI050BLF.SelectCostData(System.Data.DataSet)">
+ <summary>
+ Booking支払検索
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>データセット</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTI050BLF.ChkEditActionData(System.Data.DataSet)">
+ <summary>
+ Edit時のチェック
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>データセット</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTI050BLF.SaveActionData(System.Data.DataSet)">
+ <summary>
+ Save処理
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>データセット</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTI050BLF.CreateActionData(System.Data.DataSet)">
+ <summary>
+ Create処理
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>データセット</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTI050BLF.DeleteActionData(System.Data.DataSet)">
+ <summary>
+ 削除処理
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>データセット</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTI050BLF.ScopeStartEnd(System.Data.DataSet,System.String,System.Boolean)">
+ <summary>
+ トランザクション
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">メソッド名</param>
+ <param name="selectFlg">検索フラグ Trueの場合、再取得</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTI050BLF.BlcAccess(System.Data.DataSet,System.String)">
+ <summary>
+ BLCクラスアクセス
+ </summary>
+ <param name="ds">データセット</param>
+ <param name="acionId">メソッド名</param>
+ <returns>データセット</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTI050BLF.EndAction(System.Data.DataSet)">
+ <summary>
+ 終了時の処理
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTI060BLF.SelectRevCostData(System.Data.DataSet)">
+ <summary>
+データヘッダの検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTI060BLF.SelectRevCostDTL(System.Data.DataSet)">
+ <summary>
+データ明細の検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTI060BLF.EndAction(System.Data.DataSet)">
+ <summary>
+ 終了時の処理
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTI800BLF.SelectKidsData(System.Data.DataSet)">
+ <summary>
+Kidsデータ抽出処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTI800BLF.UpdateCostData(System.Data.DataSet)">
+ <summary>
+支払データ更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTI810BLF.CreateGaisanJDEData(System.Data.DataSet)">
+ <summary>
+ JDE連携概算データ編集⇒JDE連携
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTI810BLF.EndProcess(System.Data.DataSet)">
+ <summary>
+ 終了処理
+ </summary>
+ <param name="ds">結果データセット</param>
+ <remarks> 終了時処理を行う</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTI820BLF.DeleteUserOperateData(System.Data.DataSet)">
+ <summary>
+ 処理前WKﾃｰﾌﾞﾙﾚｺｰﾄﾞ削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTI820BLF.SelectRevJDEProcessingData(System.Data.DataSet)">
+ <summary>
+ 重複処理チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTI820BLF.CreateRevJDEData(System.Data.DataSet)">
+ <summary>
+ JDE連携請求データ編集⇒JDE連携⇒請求ステージ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTI820BLF.CreateRevJDEData_BKUP20160607(System.Data.DataSet)">
+ <summary>
+ JDE連携請求データ編集⇒JDE連携⇒請求ステージ更新 BKUP2016/06/07
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTI820BLF.EndProcess(System.Data.DataSet)">
+ <summary>
+ 終了処理
+ </summary>
+ <param name="ds">結果データセット</param>
+ <remarks> 終了時処理を行う</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTI830BLF.DeleteUserOperateData(System.Data.DataSet)">
+ <summary>
+ 処理前WKﾃｰﾌﾞﾙﾚｺｰﾄﾞ削除
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTI830BLF.SelectCostJDEProcessingData(System.Data.DataSet)">
+ <summary>
+ 重複処理チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTI830BLF.CreateCostJDEData(System.Data.DataSet)">
+ <summary>
+ JDE連携支払データ編集⇒JDE連携⇒支払ステージ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTI830BLF.CreateCostJDEData_BKUP20160607(System.Data.DataSet)">
+ <summary>
+ JDE連携支払データ編集⇒JDE連携⇒支払ステージ更新  BKUP2016/06/07
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTI830BLF.EndProcess(System.Data.DataSet)">
+ <summary>
+ 終了処理
+ </summary>
+ <param name="ds">結果データセット</param>
+ <remarks> 終了時処理を行う</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTI850BLF.CreateDemurData(System.Data.DataSet)">
+ <summary>
+ デマレージデータ作成
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTI850BLF.ClearParam(System.Data.DataSet)">
+ <summary>
+ パラメタ初期化処理
+ </summary>
+ <param name="ds">結果データセット</param>
+ <remarks>データセットを初期化する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTJ010BLF.SelectBookingData(System.Data.DataSet)">
+ <summary>
+Bookingデータの検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTJ010BLF.EndAction(System.Data.DataSet)">
+ <summary>
+ 終了時の処理
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTJ010BLF.UpdateCompleteAccrual(System.Data.DataSet)">
+ <summary>
+ C_COST更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTK010BLF.SelectOFData(System.Data.DataSet)">
+ <summary>
+ O/Fデータ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTK010BLF.GetServerDate(System.Data.DataSet)">
+ <summary>
+ システム日付を取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTM010BLF.SelectCompData(System.Data.DataSet)">
+ <summary>
+会社マスタデータの検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTM010BLF.EndAction(System.Data.DataSet)">
+ <summary>
+ 終了時の処理
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTM020BLF.SelectInitData(System.Data.DataSet)">
+ <summary>
+初期検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTM020BLF.EditCompM(System.Data.DataSet)">
+ <summary>
+ 会社マスタ編集処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTM020BLF.UpdateCompSysDelData(System.Data.DataSet)">
+ <summary>
+ 会社マスタ更新(削除、復活処理)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTM020BLF.InsertCompData(System.Data.DataSet)">
+ <summary>
+ 会社マスタ新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTM020BLF.UpdateCompData(System.Data.DataSet)">
+ <summary>
+ 会社マスタ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTM020BLF.ImportDebtor(System.Data.DataSet)">
+ <summary>
+Import処理(Debtor)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTM020BLF.ImportVendor(System.Data.DataSet)">
+ <summary>
+Import処理(Vendor)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTM020BLF.EndAction(System.Data.DataSet)">
+ <summary>
+ 終了時の処理
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTM030BLF.SelectUserListData(System.Data.DataSet)">
+ <summary>
+ ユーザーマスタ一覧検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTM030BLF.SelectUserItemData(System.Data.DataSet)">
+ <summary>
+ ユーザーマスタ明細検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTM030BLF.InsertUserItemData(System.Data.DataSet)">
+ <summary>
+ ユーザーマスタ新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTM030BLF.UpdateUserItemData(System.Data.DataSet)">
+ <summary>
+ ユーザーマスタ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTM040BLF.SelectLocationListData(System.Data.DataSet)">
+ <summary>
+ 都市マスタ一覧検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTM040BLF.SelectSaveLocationListData(System.Data.DataSet)">
+ <summary>
+ 都市マスタ一覧検索(保存用)
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTM040BLF.SelectLocationItemData(System.Data.DataSet)">
+ <summary>
+ 都市マスタ明細検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTM040BLF.InsertLocationItemData(System.Data.DataSet)">
+ <summary>
+ 都市マスタ新規登録
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTM040BLF.UpdateLocationItemData(System.Data.DataSet)">
+ <summary>
+ 都市マスタ更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTM040BLF.UpdateLocationItemDataBulk(System.Data.DataSet)">
+ <summary>
+ 都市マスタ一括更新
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTM050BLF.SelectCurrData(System.Data.DataSet)">
+ <summary>
+通貨マスタデータの検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTM050BLF.SelectIExclusion(System.Data.DataSet)">
+ <summary>
+排他チェック処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTM050BLF.UpdateIExclusion(System.Data.DataSet)">
+ <summary>
+排他設定/終了処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTM050BLF.SelectCurr(System.Data.DataSet)">
+ <summary>
+通貨マスタ更新前データ取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTM050BLF.UpdateMCurr(System.Data.DataSet)">
+ <summary>
+通貨マスタ更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTM050BLF.EndAction(System.Data.DataSet)">
+ <summary>
+ 終了時の処理
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTM080BLF.SelectTankListData(System.Data.DataSet)">
+ <summary>
+ タンクマスタ一覧検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTM080BLF.SelectHistoryListData(System.Data.DataSet)">
+ <summary>
+ タンクマスタ一覧検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTM080BLF.chkTankListHaita(System.Data.DataSet)">
+ <summary>
+ 排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTM080BLF.EndAction(System.Data.DataSet)">
+ <summary>
+ 終了時の処理
+ </summary>
+ <param name="ds">データセット</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTM090BLF.SelectTankData(System.Data.DataSet)">
+ <summary>
+ タンクマスタ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTM090BLF.SelectCmentData(System.Data.DataSet)">
+ <summary>
+ コメントマスタ
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTM090BLF.ChkTankHaita(System.Data.DataSet)">
+ <summary>
+ 排他チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTM090BLF.SelectContData(System.Data.DataSet)">
+ <summary>
+ C_CONT検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTM090BLF.InsertTankItemData(System.Data.DataSet)">
+ <summary>
+ 新規登録処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTM090BLF.TankVersionUpItemData(System.Data.DataSet)">
+ <summary>
+ バージョンアップ処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTM090BLF.UpdateTankItemData(System.Data.DataSet)">
+ <summary>
+ 更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTM090BLF.ReSelectTankItemData(System.Data.DataSet)">
+ <summary>
+ 再取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GT.BLF.GTM090BLF.EndAction(System.Data.DataSet)">
+ <summary>
+ 終了時の処理
+ </summary>
+ <param name="ds">データセット</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

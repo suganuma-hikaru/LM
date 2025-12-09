@@ -1,0 +1,1945 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.CS.Library
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC">
+ <summary>
+ 拡張BLC層中核クラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.Connection">
+ <summary>
+ バッチ用コネクションオブジェクトの取得・設定を行うプロパティ。
+ </summary>
+ <value>SqlConnectionオブジェクト</value>
+ <returns>SqlConnectionオブジェクト</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.CachedConfigDataSet">
+ <summary>
+ システム情報キャッシュの取得・設定を行うプロパティ
+ </summary>
+ <value>送受信データ</value>
+ <returns>送受信データのコピー</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.CSServiceData">
+ <summary>
+ 送受信データの取得・設定を行うプロパティ
+ </summary>
+ <value>送受信データ</value>
+ <returns>送受信データ</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.UserTimeZone">
+ <summary>
+ ログインユーザのタイムゾーンを取得するプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.SetMessage(System.String)">
+ <summary>
+ メッセージＩＤ・メッセージレベル・メッセージ文言をServiceDataに設定する。
+ </summary>
+ <param name="messageID">メッセージID</param>
+ <remarks>引数のメッセージＩＤを元にメッセージ文言を作成し、ServiceDataクラスにメッセージＩＤ・メッセージレベル・メッセージ文言を設定する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.SetMessage(System.String,System.String[])">
+ <summary>
+ メッセージ情報をServiceDataに設定する。
+ </summary>
+ <param name="messageID">メッセージID</param>
+ <param name="replaceMessages">置換対象文字列の配列</param>
+ <remarks>引数のメッセージＩＤを元にメッセージ文言を作成し、ServiceDataクラスにメッセージ情報を設定する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.SetMessage(System.String,System.String[],System.String,System.String)">
+ <summary>
+ メッセージ情報をServiceDataに設定する。
+ </summary>
+ <param name="messageID">メッセージID</param>
+ <param name="replaceMessages">置換対象文字列の配列</param>
+ <param name="messageArea">メッセージエリア名</param>
+ <param name="naviArea">ナビエリア名</param>
+ <remarks>引数のメッセージＩＤを元にメッセージ文言を作成し、ServiceDataクラスにメッセージ情報を設定する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.SelectKbnData(System.Data.DataSet)">
+ <summary>
+ 区分マスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.SelectKbnLMData(System.Data.DataSet)">
+ <summary>
+ (LM)区分マスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.SelectMessageData(System.Data.DataSet)">
+ <summary>
+ メッセージマスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.GetSRscData(System.String,System.String,System.String)">
+ <summary>
+ リソース取得（BLC）
+ </summary>
+ <param name="resourceId">RESOURCE_ID</param>
+ <param name="lang">RESOURCE_LANG(未指定の場合はログインユーザの言語を取得)</param>
+ <param name="whereString">未使用</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.SelectSUserData(System.Data.DataSet)">
+ <summary>
+ ユーザマスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.SelectSMailTplData(System.Data.DataSet)">
+ <summary>
+ メール送信文言マスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.SelectMContactIntervalData(System.Data.DataSet)">
+ <summary>
+ 返却連絡日数マスタデータ取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.SelectMCountryData(System.Data.DataSet)">
+ <summary>
+ 国マスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.SelectSUserCompData(System.Data.DataSet)">
+ <summary>
+ ユーザ担当会社情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.SelectMSysCompData(System.Data.DataSet)">
+ <summary>
+ システム利用会社マスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.SelectMAccessData(System.Data.DataSet)">
+ <summary>
+ 権限マスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.SelectMDestData(System.Data.DataSet)">
+ <summary>
+ 
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.SelectMDestChargeData(System.Data.DataSet)">
+ <summary>
+ 
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.SelectMFileData(System.Data.DataSet)">
+ <summary>
+ ファイルマスタデータ取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.SelectMFileCntData(System.Data.DataSet)">
+ <summary>
+ ファイル制御マスタデータ取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.SelectMItemData(System.Data.DataSet)">
+ <summary>
+ 
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.SelectMMailAddressData(System.Data.DataSet)">
+ <summary>
+ メール通知宛先マスタデータ取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.SelectMMenuPanelData(System.Data.DataSet)">
+ <summary>
+ メニューパネルマスタデータ取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.SelectMPortData(System.Data.DataSet)">
+ <summary>
+ 港マスタデータ取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.SelectMShoboData(System.Data.DataSet)">
+ <summary>
+ 
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.SelectMStorageLocData(System.Data.DataSet)">
+ <summary>
+ 
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.SelectMTankData(System.Data.DataSet)">
+ <summary>
+ 
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.SelectMUnitPriceData(System.Data.DataSet)">
+ <summary>
+ 容器価格マスタデータ取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.GetUserInfoDataSet(System.String)">
+ <summary>
+ ユーザーインフォ取得（BLC）
+ </summary>
+ <param name="userId">ユーザID</param>
+ <returns>DataSet</returns>
+ <remarks>
+ 引数のユーザIDに紐づく下記テーブルを持つDataSetを返却する。
+ CS_MST.S_USER_COMP
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.GetKbnDataTable(System.String,System.String,System.String,System.String)">
+ <summary>
+ 区分データテーブル情報取得（BLC）
+ </summary>
+ <param name="grpCode">区分分類コード</param>
+ <param name="code">区分コード</param>
+ <param name="lang">メッセージ言語(未指定の場合はログインユーザの言語を取得)</param>
+ <param name="whereString"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.GetKbnLMDataTable(System.String,System.String,System.String)">
+ <summary>
+ (LM)区分データテーブル情報取得（BLC）
+ </summary>
+ <param name="grpCode">区分分類コード</param>
+ <param name="code">区分コード</param>
+ <param name="whereString"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.GetSUserDataTable(System.String,System.String)">
+ <summary>
+ ユーザデータテーブル取得（BLC）
+ </summary>
+ <param name="userId">ユーザID</param>
+ <param name="whereString"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.GetSMailTplDataTable(System.String,System.Int32,System.String,System.String)">
+ <summary>
+ メール送信文言データテーブル取得（BLC）
+ </summary>
+ <param name="tplCd">テンプレートコード</param>
+ <param name="tplSeq">テンプレートSEQ</param>
+ <param name="tplLang">テンプレート言語</param>
+ <param name="whereString"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.GetMContactIntervalDataTable(System.String,System.String,System.String,System.String)">
+ <summary>
+ 返却連絡日数マスタデータ取得
+ </summary>
+ <param name="sCompCd"></param>
+ <param name="destCd"></param>
+ <param name="itemCd"></param>
+ <param name="whereString"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.GetMCountryDataTable(System.String,System.String)">
+ <summary>
+ 国データテーブル取得（BLC）
+ </summary>
+ <param name="countryCd">国コード</param>
+ <param name="whereString"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.GetSUserCompDataTable(System.String,System.String,System.String)">
+ <summary>
+ ユーザ担当会社データテーブル取得（BLC）
+ </summary>
+ <param name="userId">ユーザID</param>
+ <param name="sCompCd">システム利用会社コード</param>
+ <param name="whereString"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.GetMSysCompDataTable(System.String,System.String)">
+ <summary>
+ システム利用会社データテーブル取得（BLC）
+ </summary>
+ <param name="sCompCd">システム利用会社コード</param>
+ <param name="whereString"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.GetMAccessDataTable(System.String,System.Int32,System.String,System.String,System.String)">
+ <summary>
+ 権限データテーブル取得（BLC）
+ </summary>
+ <param name="sCompCd">システム利用会社コード</param>
+ <param name="userGroupSeq"></param>
+ <param name="pgId"></param>
+ <paramref name="avilityId"/>
+ <param name="whereString"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.GetMDestDataTable(System.String,System.String,System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="sCompCd"></param>
+ <param name="destCd"></param>
+ <param name="whereString"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.GetMDestChargeDataTable(System.String,System.String,System.Int32,System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="sCompCd"></param>
+ <param name="destCd"></param>
+ <param name="destUserSeq"></param>
+ <param name="whereString"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.GetMFileDataTable(System.String,System.Int32,System.String)">
+ <summary>
+ ファイルマスタテーブル取得
+ </summary>
+ <param name="sCompCd"></param>
+ <param name="fileNo"></param>
+ <param name="whereString"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.GetMFileCntDataTable(System.String,System.String)">
+ <summary>
+ ファイル制御マスタテーブル取得
+ </summary>
+ <param name="pgId"></param>
+ <param name="whereString"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.GetMItemDataTable(System.String,System.String,System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="sCompCd"></param>
+ <param name="itemCd"></param>
+ <param name="whereString"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.GetMMailAddressDataTable(System.String,System.String,System.Int32,System.String)">
+ <summary>
+ メール通知宛先マスタデータ取得
+ </summary>
+ <param name="sCompCd"></param>
+ <param name="tplCd"></param>
+ <param name="addressSeq"></param>
+ <param name="whereString"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.GetMMenuPanelDataTable(System.String,System.Int32,System.String,System.Int32,System.Int32,System.String)">
+ <summary>
+ メニューパネルマスタデータ取得
+ </summary>
+ <param name="sCompCd"></param>
+ <param name="userGroupSeq"></param>
+ <param name="terminalType"></param>
+ <param name="panelRow"></param>
+ <param name="panelCol"></param>
+ <param name="whereString"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.GetMPortDataTable(System.String,System.String)">
+ <summary>
+ 港マスタデータ取得
+ </summary>
+ <param name="portCd"></param>
+ <param name="whereString"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.GetMShoboDataTable(System.String,System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="fireCd"></param>
+ <param name="whereString"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.GetMStorageLocDataTable(System.String,System.String,System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="sCompCd"></param>
+ <param name="storageLocCd"></param>
+ <param name="whereString"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.GetMTankDataTable(System.String,System.String,System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="sCompCd"></param>
+ <param name="tankNo"></param>
+ <param name="whereString"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.GetMUnitPriceDataTable(System.String,System.String,System.String,System.String)">
+ <summary>
+ 容器価格マスタデータ取得
+ </summary>
+ <param name="sCompCd"></param>
+ <param name="tankTypeKbn"></param>
+ <param name="manufacturerKbn"></param>
+ <param name="whereString"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.GetUserInfo(System.Data.DataSet)">
+ <summary>
+ ユーザーインフォ取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.GetEcKbnData(System.Data.DataSet)">
+ <summary>
+ 区分マスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.SelectGridColData(System.Data.DataSet)">
+ <summary>
+ グリッドレイアウト情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.SaveGridColData(System.Data.DataSet)">
+ <summary>
+ グリッドレイアウト情報の更新
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.DeleteGridColData(System.Data.DataSet)">
+ <summary>
+ グリッドレイアウト情報の削除
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.InsertZSystemData(System.Data.DataSet)">
+ <summary>
+ システム情報(Z_SYSTEM)登録（BLC）
+ </summary>
+ <param name="ds">DataSet ("Z_SYSTEM"テーブルが存在していること)</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.SelectZSystemData(System.Data.DataSet)">
+ <summary>
+ システム情報(Z_SYSTEM)取得（BLC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.SelectZSystemData(System.Data.DataSet,System.String,System.String,System.String,System.String)">
+ <summary>
+ システム情報(Z_SYSTEM)取得（BLC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="procKey">処理キー</param>
+ <param name="procKeyKbn">処理キー区分</param>
+ <param name="sCompCd"></param>
+ <param name="pgId">プログラムID</param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.AddRowZSystem(System.String,System.String,System.String,System.String,System.String,System.String,System.Data.DataSet)">
+ <summary>
+ システム情報(Z_SYSTEM)行追加（BLC）
+ </summary>
+ <param name="pgId">プログラムID</param>
+ <param name="procKey">処理キー</param>
+ <param name="procKeyKbn">処理キー区分</param>
+ <param name="procKbn">処理区分</param>
+ <param name="actRemark">アクション詳細</param>
+ <param name="ds">DataSet</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.IsMstDataExist(System.Data.DataTable)">
+ <summary>
+ マスタ存在チェック（BLC）
+ </summary>
+ <param name="dt">DataTable</param>
+ <returns>
+ DataTableのレコード有無を判定
+ 存在する   ：True
+ 存在しない ：False
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.GetXlsData(System.Data.DataSet)">
+ <summary>
+ XLS情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.CheckUserInfo(System.Data.DataSet)">
+ <summary>
+ ユーザーチェック（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.ChangePassword(System.Data.DataSet)">
+ <summary>
+ パスワード変更
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.SaveSecretKey(System.Data.DataSet)">
+ <summary>
+ 秘密鍵保存
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.ChangeLocale(System.Data.DataSet)">
+ <summary>
+ ロケール変更
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.RoundOff(System.Double,System.Int32)">
+ <summary>
+ 指定した精度の数値に四捨五入します
+ </summary>
+ <param name="value">丸め対象の倍精度浮動小数点数</param>
+ <param name="digits">戻り値の有効桁数の精度</param>
+ <returns>digits に等しい精度の数値に四捨五入された数値</returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.RoundOff(System.Decimal,System.Int32)">
+ <summary>
+ 指定した精度の数値に四捨五入します
+ </summary>
+ <param name="value">丸め対象の倍精度浮動小数点数</param>
+ <param name="digits">戻り値の有効桁数の精度(0～28の範囲で設定可)</param>
+ <returns>digits に等しい精度の数値に四捨五入された数値</returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.IsRangeCheckErr(System.Decimal,System.Decimal,System.Decimal)">
+ <summary>
+ 数値項目の範囲チェック
+ </summary>
+ <param name="value">チェック対象数値項目</param>
+ <param name="maxData">許容最大値</param>
+ <param name="minData">許容最小値</param>
+ <returns>
+ True：エラーあり
+ Falase：エラーなし
+ </returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.IsEnableEmail(System.String)">
+ <summary>
+ 有効なドメインであるかを判定し、メールアドレスを返却する
+ </summary>
+ <param name="email">メールアドレス</param>
+ <returns>メールアドレス</returns>
+ <remarks>比較対象の既定値はGLConfig.xmlに定義する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.GetLocalDate">
+ <summary>
+ 現在ServiceDataに登録されているシステム日付からローカルの日付(YYYYMMDD)を取得する。
+ </summary>
+ <returns></returns>
+ <remarks>ロケール設定で選択したタイムゾーンを使用する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.GetLocalTime">
+ <summary>
+ 現在ServiceDataに登録されているシステム時刻からローカルの時刻(HHMMSSmmm)を取得する。
+ </summary>
+ <returns></returns>
+ <remarks>ロケール設定で選択したタイムゾーンを使用する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.GetSystemDatetime">
+ <summary>
+ 現在ServiceDataに登録されているシステム日時からDateTimeを取得する。
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.GetMailTpl(System.String,System.String)">
+ <summary>
+ メールテンプレート取得
+ </summary>
+ <param name="tplCd"></param>
+ <param name="tplKbn"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLC.CSBaseBLC.EditConcatData(System.String,System.String,System.String)">
+ <summary>
+ 2つの値を連結して設定
+ </summary>
+ <param name="value1">値1</param>
+ <param name="value2">値2</param>
+ <param name="str"></param>
+ <returns>編集後の値</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.Base.BLF.CSBaseBLF">
+ <summary>
+ 拡張BLF層中核クラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.CS.Base.BLF.CSBaseBLF.CSServiceData">
+ <summary>
+ 送受信データの取得・設定を行うプロパティ
+ </summary>
+ <value>送受信データ</value>
+ <returns>送受信データ</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLF.CSBaseBLF.GetLocalDate">
+ <summary>
+ 現在ServiceDataに登録されているシステム日付からローカルの日付(YYYYMMDD)を取得する。
+ </summary>
+ <returns></returns>
+ <remarks>ロケール設定で選択したタイムゾーンを使用する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLF.CSBaseBLF.GetLocalTime">
+ <summary>
+ 現在ServiceDataに登録されているシステム時刻からローカルの時刻(HHMMSSmmm)を取得する。
+ </summary>
+ <returns></returns>
+ <remarks>ロケール設定で選択したタイムゾーンを使用する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLF.CSBaseBLF.GetSystemDatetime">
+ <summary>
+ 現在ServiceDataに登録されているシステム日時からDateTimeを取得する。
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLF.CSBaseBLF.SetMessage(System.String,System.String[],System.String,System.String)">
+ <summary>
+ メッセージＩＤ・メッセージレベル・メッセージ文言をServiceDataに設定する。
+ </summary>
+ <param name="messageID">メッセージID</param>
+ <remarks>引数のメッセージＩＤを元にメッセージ文言を作成し、
+ ServiceDataクラスにメッセージＩＤ・メッセージレベル・メッセージ文言を設定する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLF.CSBaseBLF.IsErrorMessageExist">
+ <summary>
+ エラーメッセージの有無を判定して返却する
+ </summary>
+ <returns>エラーメッセージの有無</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLF.CSBaseBLF.DeleteSpreadColData(System.Data.DataSet)">
+ <summary>
+ スプレッドレイアウト情報の削除
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLF.CSBaseBLF.SelectKbnData(System.Data.DataSet)">
+ <summary>
+ 区分マスタ情報を取得します。
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLF.CSBaseBLF.SelectKbnLMData(System.Data.DataSet)">
+ <summary>
+ (LM)区分マスタ情報を取得します。
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLF.CSBaseBLF.GetSRscData(System.String,System.String,System.String)">
+ <summary>
+ リソースを取得します。（BLF）
+ </summary>
+ <param name="resourceId">RESOURCE_ID</param>
+ <param name="lang">RESOURCE_LANG(未指定の場合はログインユーザの言語を取得)</param>
+ <param name="whereString">未使用</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLF.CSBaseBLF.SelectSUserData(System.Data.DataSet)">
+ <summary>
+ ユーザマスタ情報を取得します。（BLF）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLF.CSBaseBLF.SelectSMailTplData(System.Data.DataSet)">
+ <summary>
+ メール送信文言マスタ情報を取得します。（BLF）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLF.CSBaseBLF.SelectMContactIntervalData(System.Data.DataSet)">
+ <summary>
+ 返却連絡日数マスタデータ取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLF.CSBaseBLF.SelectMCountryData(System.Data.DataSet)">
+ <summary>
+ 国マスタ情報を取得します。（BLF）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLF.CSBaseBLF.SelectSUserCompData(System.Data.DataSet)">
+ <summary>
+ ユーザ担当会社マスタ情報を取得します。（BLF）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLF.CSBaseBLF.SelectMSysCompData(System.Data.DataSet)">
+ <summary>
+ システム利用会社マスタ情報を取得します。（BLF）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLF.CSBaseBLF.SelectMAccessData(System.Data.DataSet)">
+ <summary>
+ 権限マスタ情報を取得します。（BLF）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLF.CSBaseBLF.SelectMDestData(System.Data.DataSet)">
+ <summary>
+ 
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLF.CSBaseBLF.SelectMDestChargeData(System.Data.DataSet)">
+ <summary>
+ 
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLF.CSBaseBLF.SelectMFileData(System.Data.DataSet)">
+ <summary>
+ ファイルマスタデータ取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLF.CSBaseBLF.SelectMFileCntData(System.Data.DataSet)">
+ <summary>
+ ファイル制御マスタデータ取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLF.CSBaseBLF.SelectMItemData(System.Data.DataSet)">
+ <summary>
+ 
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLF.CSBaseBLF.SelectMMailAddressData(System.Data.DataSet)">
+ <summary>
+ メール通知宛先マスタデータ取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLF.CSBaseBLF.SelectMMenuPanelData(System.Data.DataSet)">
+ <summary>
+ メニューパネルマスタデータ取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLF.CSBaseBLF.SelectMPortData(System.Data.DataSet)">
+ <summary>
+ 港マスタデータ取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLF.CSBaseBLF.SelectMShoboData(System.Data.DataSet)">
+ <summary>
+ 
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLF.CSBaseBLF.SelectMStorageLocData(System.Data.DataSet)">
+ <summary>
+ 
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLF.CSBaseBLF.SelectMTankData(System.Data.DataSet)">
+ <summary>
+ 
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLF.CSBaseBLF.SelectMUnitPriceData(System.Data.DataSet)">
+ <summary>
+ 容器価格マスタデータ取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLF.CSBaseBLF.SelectZSystemData(System.Data.DataSet)">
+ <summary>
+ システムログ情報を取得します。（BLF）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLF.CSBaseBLF.GetKbnDataTable(System.String,System.String,System.String,System.String)">
+ <summary>
+ 区分データテーブル情報を取得します。（BLF）
+ </summary>
+ <param name="grpCode">区分分類コード</param>
+ <param name="code">区分コード</param>
+ <param name="lang">メッセージ言語</param>
+ <param name="whereString"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLF.CSBaseBLF.GetKbnLMDataTable(System.String,System.String,System.String)">
+ <summary>
+ (LM)区分データテーブル情報を取得します。（BLF）
+ </summary>
+ <param name="grpCode">区分分類コード</param>
+ <param name="code">区分コード</param>
+ <param name="whereString"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLF.CSBaseBLF.CacheSystemData(System.Data.DataSet)">
+ <summary>
+ キャッシュされているシステム構成情報を取得する
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>コンフィグデータキャッシュとメッセージデータキャッシュを返却する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLF.CSBaseBLF.GetMessageDataSet">
+ <summary>
+ メッセージデータを取得します。
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLF.CSBaseBLF.GetMasterDataSet(System.Data.DataSet)">
+ <summary>
+ マスタ情報取得（BLF）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLF.CSBaseBLF.GetUserInfo(System.Data.DataSet)">
+ <summary>
+ ユーザーインフォ取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLF.CSBaseBLF.Login(System.Data.DataSet)">
+ <summary>
+ ログイン認証（BLF）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLF.CSBaseBLF.ChangePassword(System.Data.DataSet)">
+ <summary>
+ パスワード変更
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLF.CSBaseBLF.SaveSecretKey(System.Data.DataSet)">
+ <summary>
+ 秘密鍵保存
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLF.CSBaseBLF.ChangeLocale(System.Data.DataSet)">
+ <summary>
+ ロケール変更
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLF.CSBaseBLF.SelectGridColData(System.Data.DataSet)">
+ <summary>
+ グリッドレイアウト情報を取得します。（BLF）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLF.CSBaseBLF.SaveGridColData(System.Data.DataSet)">
+ <summary>
+ グリッドレイアウト情報の更新
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.BLF.CSBaseBLF.DeleteGridColData(System.Data.DataSet)">
+ <summary>
+ グリッドレイアウト情報の削除
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="T:Jp.Co.Nrs.CS.Base.DAC.CSBaseDAC">
+ <summary>
+ 拡張DAC層中核クラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Base.DAC.CSBaseDAC.SELECT_USER_INFO">
+ <summary>
+ ユーザ情報
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Base.DAC.CSBaseDAC.SELECT_USER_COMP_INFO">
+ <summary>
+ ユーザ担当会社情報
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Base.DAC.CSBaseDAC.S_MESSAGE_SELECT">
+ <summary>
+ メッセージマスタ取得用SQL文
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.Base.DAC.CSBaseDAC.LMDBKbn">
+ <summary>
+ LMのDatabase区分定義体
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Base.DAC.CSBaseDAC.LMDBKbn.MST">
+ <summary>
+ マスタ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Base.DAC.CSBaseDAC.LMDBKbn.TRN">
+ <summary>
+ トラン
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.CS.Base.DAC.CSBaseDAC.LMDBKbn.ARC">
+ <summary>
+ アーカイブ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.DAC.CSBaseDAC.SetInsertParameter(System.Data.DataRow,System.Collections.ArrayList)">
+ <summary>
+ 新規登録共通パラメータ設定
+ </summary>
+ <param name="dr">DataRow</param>
+ <param name="prmList">パラメータ</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.DAC.CSBaseDAC.CreateSqlCommand(System.String,System.Data.SqlClient.SqlConnection)">
+ <summary>
+ コネクションオブジェクトに関連付けられたDBサーバーに対して
+ 有効なSqlCommandオブジェクトのインスタンスを取得する。
+ </summary>
+ <param name="strSql">SQL文</param>
+ <param name="con">SQLコネクション</param>
+ <returns>SqlCommandオブジェクト</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.DAC.CSBaseDAC.GetLocalDate">
+ <summary>
+ 現在ServiceDataに登録されているシステム日付からローカルの日付(YYYYMMDD)を取得する。
+ </summary>
+ <returns></returns>
+ <remarks>ロケール設定で選択したタイムゾーンを使用する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.DAC.CSBaseDAC.GetLocalTime">
+ <summary>
+ 現在ServiceDataに登録されているシステム時刻からローカルの時刻(HHMMSSmmm)を取得する。
+ </summary>
+ <returns></returns>
+ <remarks>ロケール設定で選択したタイムゾーンを使用する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.DAC.CSBaseDAC.GetSystemDatetime">
+ <summary>
+ 現在ServiceDataに登録されているシステム日時からDateTimeを取得する。
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.DAC.CSBaseDAC.SetMessage(System.String,System.String[])">
+ <summary>
+ メッセージＩＤ・メッセージレベル・メッセージ文言をServiceDataに設定する。
+ </summary>
+ <param name="messageID">メッセージID</param>
+ <param name="replaceMessages"></param>
+ <remarks>引数のメッセージＩＤを元にメッセージ文言を作成し、ServiceDataクラスにメッセージＩＤ・メッセージレベル・メッセージ文言を設定する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.DAC.CSBaseDAC.SetMessage(System.String,System.String[],System.String,System.String)">
+ <summary>
+ メッセージＩＤ・メッセージレベル・メッセージ文言・メッセージ表示エリア・ナビエリアをServiceDataに設定する。
+ </summary>
+ <param name="messageID">メッセージID</param>
+ <param name="replaceMessages"></param>
+ <param name="messageArea"></param>
+ <param name="naviArea"></param>
+ <remarks>引数のメッセージＩＤを元にメッセージ文言を作成し、
+ ServiceDataクラスにメッセージＩＤ・メッセージレベル・メッセージ文言・メッセージ表示エリア・ナビエリアを設定する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.DAC.CSBaseDAC.SelectKbnData(System.Data.DataSet)">
+ <summary>
+ 区分マスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>区分マスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.DAC.CSBaseDAC.SelectKbnLMData(System.Data.DataSet)">
+ <summary>
+ (LM)区分マスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>区分マスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.DAC.CSBaseDAC.SelectS_MessageData(System.Data.DataSet)">
+ <summary>
+ メッセージマスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>メッセージマスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.DAC.CSBaseDAC.SelectSUserData(System.Data.DataSet)">
+ <summary>
+ ユーザマスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>ユーザマスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.DAC.CSBaseDAC.SelectSMailTplData(System.Data.DataSet)">
+ <summary>
+ メール送信文言マスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>メール送信文言マスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.DAC.CSBaseDAC.SelectMContactIntervalData(System.Data.DataSet)">
+ <summary>
+ 返却連絡日数マスタデータ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.DAC.CSBaseDAC.SelectMCountryData(System.Data.DataSet)">
+ <summary>
+ 国マスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>国マスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.DAC.CSBaseDAC.SelectSUserCompData(System.Data.DataSet)">
+ <summary>
+ ユーザ担当会社マスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>ユーザ担当会社マスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.DAC.CSBaseDAC.SelectMSysCompData(System.Data.DataSet)">
+ <summary>
+ システム利用会社マスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>システム利用会社マスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.DAC.CSBaseDAC.SelectMAccessData(System.Data.DataSet)">
+ <summary>
+ 権限マスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>権限マスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.DAC.CSBaseDAC.SelectMDestData(System.Data.DataSet)">
+ <summary>
+ 
+ </summary>
+ <param name="ds">検索条件</param>
+ <returns>取得データ</returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.DAC.CSBaseDAC.SelectMDestChargeData(System.Data.DataSet)">
+ <summary>
+ 
+ </summary>
+ <param name="ds">検索条件</param>
+ <returns>取得データ</returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.DAC.CSBaseDAC.SelectMFileData(System.Data.DataSet)">
+ <summary>
+ ファイルマスタデータ取得
+ </summary>
+ <param name="ds">検索条件</param>
+ <returns>取得データ</returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.DAC.CSBaseDAC.SelectMFileCntData(System.Data.DataSet)">
+ <summary>
+ ファイル制御マスタデータ取得
+ </summary>
+ <param name="ds">検索条件</param>
+ <returns>取得データ</returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.DAC.CSBaseDAC.SelectMItemData(System.Data.DataSet)">
+ <summary>
+ 
+ </summary>
+ <param name="ds">検索条件</param>
+ <returns>取得データ</returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.DAC.CSBaseDAC.SelectMMailAddressData(System.Data.DataSet)">
+ <summary>
+ メール通知宛先マスタデータ取得
+ </summary>
+ <param name="ds">検索条件</param>
+ <returns>取得データ</returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.DAC.CSBaseDAC.SelectMMenuPanelData(System.Data.DataSet)">
+ <summary>
+ メニューパネルマスタデータ取得
+ </summary>
+ <param name="ds">検索条件</param>
+ <returns>取得データ</returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.DAC.CSBaseDAC.SelectMPortData(System.Data.DataSet)">
+ <summary>
+ 港マスタデータ取得
+ </summary>
+ <param name="ds">検索条件</param>
+ <returns>取得データ</returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.DAC.CSBaseDAC.SelectMShoboData(System.Data.DataSet)">
+ <summary>
+ 
+ </summary>
+ <param name="ds">検索条件</param>
+ <returns>取得データ</returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.DAC.CSBaseDAC.SelectMStorageLocData(System.Data.DataSet)">
+ <summary>
+ 
+ </summary>
+ <param name="ds">検索条件</param>
+ <returns>取得データ</returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.DAC.CSBaseDAC.SelectMTankData(System.Data.DataSet)">
+ <summary>
+ 
+ </summary>
+ <param name="ds">検索条件</param>
+ <returns>取得データ</returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.DAC.CSBaseDAC.SelectMUnitPriceData(System.Data.DataSet)">
+ <summary>
+ 容器価格マスタデータ取得
+ </summary>
+ <param name="ds">検索条件</param>
+ <returns>取得データ</returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.DAC.CSBaseDAC.GetKbnDataTable(System.String,System.String,System.String,System.String)">
+ <summary>
+ 区分データテーブル情報取得（DAC）
+ </summary>
+ <param name="grpCode">区分分類コード</param>
+ <param name="code">区分コード</param>
+ <param name="lang">メッセージ言語</param>
+ <param name="whereString"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.DAC.CSBaseDAC.GetKbnLMDataTable(System.String,System.String,System.String)">
+ <summary>
+ (LM)区分データテーブル情報取得（DAC）(キャッシュから取得)
+ </summary>
+ <param name="grpCode">区分分類コード</param>
+ <param name="code">区分コード</param>
+ <param name="whereString"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.DAC.CSBaseDAC.InsertZSystemData(System.Data.DataSet)">
+ <summary>
+ システム情報(Z_SYSTEM)登録
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>データセット</returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.DAC.CSBaseDAC.SelectZSystemData(System.Data.DataSet)">
+ <summary>
+ システム情報(Z_SYSTEM)取得
+ </summary>
+ <param name="ds">データセット</param>
+ <returns>データセット</returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.DAC.CSBaseDAC.GetXlsData(System.Data.DataSet)">
+ <summary>
+ XLS情報取得（DAC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.DAC.CSBaseDAC.GetUserDataSet(System.Data.DataSet)">
+ <summary>
+ USER_IDでS_USERデータを検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.DAC.CSBaseDAC.UpdateUserInfo(System.Data.DataSet,System.Boolean,System.Boolean,System.Boolean)">
+ <summary>
+ ログイン情報更新
+ </summary>
+ <param name="ds">データセット</param>
+ <param name="isChangePassword">パスワードを変更するか否か</param>
+ <param name="isChangeLocale"></param>
+ <param name="isSaveSecretKey"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.DAC.CSBaseDAC.ChangePassword(System.Data.DataSet)">
+ <summary>
+ パスワード変更
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.DAC.CSBaseDAC.SaveSecretKey(System.Data.DataSet)">
+ <summary>
+ 秘密鍵保存
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.DAC.CSBaseDAC.ChangeLocale(System.Data.DataSet)">
+ <summary>
+ ロケール変更
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.DAC.CSBaseDAC.SelectGridColData(System.Data.DataSet)">
+ <summary>
+ グリッドレイアウト情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.DAC.CSBaseDAC.SaveGridColData(System.Data.DataSet)">
+ <summary>
+ グリッドレイアウト情報の更新
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.CS.Base.DAC.CSBaseDAC.DeleteGridColData(System.Data.DataSet)">
+ <summary>
+ グリッドレイアウト情報の削除
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="T:Jp.Co.Nrs.CS.Base.CSServiceData">
+ <summary>
+ 拡張されたクライアント⇔サーバー間で授受する全データを格納したクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.CS.Base.CSServiceData.TerminalID">
+ <summary>
+ 端末IDを格納するプロパティ
+ </summary>
+ <value>端末ID</value>
+ <returns>端末ID</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.CS.Base.CSServiceData.UserID">
+ <summary>
+ ユーザーIDを格納するプロパティ
+ </summary>
+ <value>ユーザーID</value>
+ <returns>ユーザーID</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Jp.Co.Nrs.CS.Base.CSServiceData.LogOperationMode">
+ <summary>
+ ログモードを格納するプロパティ
+ </summary>
+ <value>ユーザーID</value>
+ <returns>ユーザーID</returns>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MAccessDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MAccessDS.M_ACCESSDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MAccessDS.M_ACCESSRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MAccessDS.M_ACCESSRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MContactIntervalDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MContactIntervalDS.M_CONTACT_INTERVALDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MContactIntervalDS.M_CONTACT_INTERVALRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MContactIntervalDS.M_CONTACT_INTERVALRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MCountryDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MCountryDS.M_COUNTRYDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MCountryDS.M_COUNTRYRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MCountryDS.M_COUNTRYRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MDestChargeDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MDestChargeDS.M_DEST_CHARGEDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MDestChargeDS.M_DEST_CHARGERow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MDestChargeDS.M_DEST_CHARGERowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MDestDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MDestDS.M_DESTDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MDestDS.M_DESTRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MDestDS.M_DESTRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MFileCntDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MFileCntDS.M_FILE_CNTDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MFileCntDS.M_FILE_CNTRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MFileCntDS.M_FILE_CNTRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MFileDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MFileDS.M_FILEDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MFileDS.M_FILERow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MFileDS.M_FILERowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MItemDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MItemDS.M_ITEMDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MItemDS.M_ITEMRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MItemDS.M_ITEMRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MMailAddressDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MMailAddressDS.M_MAIL_ADDRESSDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MMailAddressDS.M_MAIL_ADDRESSRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MMailAddressDS.M_MAIL_ADDRESSRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MMenuPanelDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MMenuPanelDS.M_MENU_PANELDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MMenuPanelDS.M_MENU_PANELRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MMenuPanelDS.M_MENU_PANELRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MPortDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MPortDS.M_PORTDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MPortDS.M_PORTRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MPortDS.M_PORTRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MShoboDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MShoboDS.M_SHOBODataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MShoboDS.M_SHOBORow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MShoboDS.M_SHOBORowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MStorageLocDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MStorageLocDS.M_STORAGE_LOCDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MStorageLocDS.M_STORAGE_LOCRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MStorageLocDS.M_STORAGE_LOCRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MSysCompDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MSysCompDS.M_SYS_COMPDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MSysCompDS.M_SYS_COMPRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MSysCompDS.M_SYS_COMPRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MTankDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MTankDS.M_TANKDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MTankDS.M_TANKRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MTankDS.M_TANKRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MUnitPriceDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MUnitPriceDS.M_UNIT_PRICEDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MUnitPriceDS.M_UNIT_PRICERow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.MUnitPriceDS.M_UNIT_PRICERowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.RdPrevInfoDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.RdPrevInfoDS.PREV_INFODataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.RdPrevInfoDS.PREV_INFORow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.RdPrevInfoDS.PREV_INFORowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.SGridDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.SGridDS.S_GRIDDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.SGridDS.S_GRIDRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.SGridDS.S_GRIDRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.SMailTplDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.SMailTplDS.S_MAIL_TPLDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.SMailTplDS.S_MAIL_TPLRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.SMailTplDS.S_MAIL_TPLRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.SUserCompDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.SUserCompDS.S_USER_COMPDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.SUserCompDS.S_USER_COMPRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.SUserCompDS.S_USER_COMPRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.SUserDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.SUserDS.S_USERDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.SUserDS.S_USERRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.SUserDS.S_USERRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.SXlsDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.SXlsDS.S_XLSDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.SXlsDS.RTN_INFODataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.SXlsDS.S_XLSRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.SXlsDS.RTN_INFORow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.SXlsDS.S_XLSRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.SXlsDS.RTN_INFORowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.UserInfoDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.UserInfoDS.USER_INFODataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.UserInfoDS.USER_COMP_INFODataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.UserInfoDS.LOGIN_INFODataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.UserInfoDS.USER_INFORow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.UserInfoDS.USER_COMP_INFORow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.UserInfoDS.LOGIN_INFORow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.UserInfoDS.USER_INFORowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.UserInfoDS.USER_COMP_INFORowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.UserInfoDS.LOGIN_INFORowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.ZKbnDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.ZKbnDS.Z_KBNDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.ZKbnDS.Z_KBN_LMDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.ZKbnDS.Z_KBNRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.ZKbnDS.Z_KBN_LMRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.ZKbnDS.Z_KBNRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.ZKbnDS.Z_KBN_LMRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.ZSystemDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.ZSystemDS.Z_SYSTEMDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.ZSystemDS.Z_SYSTEMRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.ZSystemDS.Z_SYSTEMRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.CS.SessionTimeoutException">
+ <summary>
+ セッションタイムアウト
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.SessionTimeoutException.#ctor">
+ <summary>
+ コンストラクタ
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.CS.SessionTimeoutException.#ctor(System.String)">
+ <summary>
+ コンストラクタ
+ </summary>
+ <param name="message"></param>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

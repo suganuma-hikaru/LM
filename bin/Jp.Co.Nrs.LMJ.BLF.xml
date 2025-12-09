@@ -1,0 +1,397 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.LMJ.BLF
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMJ010BLF">
+ <summary>
+ LMJ010BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMJ010BLF._Blc">
+ <summary>
+ 使用するDACクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMJ010BLF.TABLE_NM_IN">
+ <summary>
+ LMJ010INテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMJ010BLF.TABLE_NM_OUT">
+ <summary>
+ LMJ010OUTテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMJ010BLF.TABLE_NM_800">
+ <summary>
+ LMJ800OUTテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMJ010BLF.TABLE_NM_ZAIK_ZAN">
+ <summary>
+ ZAIK_ZANテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMJ010BLF.TABLE_NM_SYS_DATETIME">
+ <summary>
+ SYS_DATETIMEテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMJ010BLF.TABLE_NM_ERR">
+ <summary>
+ ERRテーブル
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMJ010BLF.ACTION_ID_SELECT_SHIME_CUST">
+ <summary>
+ 締め荷主取得アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMJ010BLF.ACTION_ID_SELECT_SEIQ_CUST">
+ <summary>
+ 請求在庫の荷主取得アクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMJ010BLF.ACTION_ID_SELECT_CREATE_DATA">
+ <summary>
+ バッチ呼び出しアクション
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMJ010BLF.SHORI_SONOTA">
+ <summary>
+ 処理内容 = 指定された荷主のみチェックする
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMJ010BLF.ERR_SEIQ_DATA">
+ <summary>
+ 請求在庫存在エラー
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMJ010BLF.ERR_GETSU_DATA">
+ <summary>
+ 月末在庫存在エラー
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMJ010BLF.SelectGetuData(System.Data.DataSet)">
+ <summary>
+ コンボ用のデータ取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMJ010BLF.SelectCreateData(System.Data.DataSet)">
+ <summary>
+ 帳票出力データの作成
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMJ010BLF.SelectCustData(System.Data.DataSet)">
+ <summary>
+ 指定荷主処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMJ010BLF.SelectAllCustData(System.Data.DataSet)">
+ <summary>
+ 全荷主に対しての処理
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMJ010BLF.ChkSelectCountData(System.Data.DataSet)">
+ <summary>
+ 件数チェック
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMJ010BLF.SetFileData(System.Data.DataSet,System.Data.DataSet,System.Data.DataRow,Jp.Co.Nrs.LM.BLC.LMJ800BLC)">
+ <summary>
+ バッチ処理の反映
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="selectDs">DataSet</param>
+ <param name="selectDr">DataRow</param>
+ <param name="blc">LMJ800BLC</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMJ010BLF.GetCustCd(System.Data.DataRow)">
+ <summary>
+ 荷主コードを連結して返却
+ </summary>
+ <param name="dr">DataRow</param>
+ <returns>文字</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMJ010BLF.GetSeiqZaikoKosu(System.Data.DataRow,System.Boolean)">
+ <summary>
+ 請求在庫個数の設定
+ </summary>
+ <param name="dr">DataRow</param>
+ <param name="cntFlg">請求在庫存在フラグ　True:請求在庫有　False:請求在庫無</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMJ010BLF.GetSeiqZaikoSuryo(System.Data.DataRow,System.Boolean)">
+ <summary>
+ 請求在庫数量の設定
+ </summary>
+ <param name="dr">DataRow</param>
+ <param name="flg">アンマッチ判定フラグ</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMJ010BLF.GetJitsuZaikoSuryo(System.Data.DataRow,System.Boolean)">
+ <summary>
+ 実在個数量の設定
+ </summary>
+ <param name="dr">DataRow</param>
+ <param name="flg">アンマッチ判定フラグ</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMJ010BLF.GetUnMatchData(System.Boolean)">
+ <summary>
+ 数量不一致の設定
+ </summary>
+ <param name="flg">アンマッチ判定フラグ</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMJ010BLF.ChkSuryoData(System.Data.DataRow)">
+ <summary>
+ アンマッチチェック
+ </summary>
+ <param name="dr">DataRow</param>
+ <returns>True:正常　False:アンマッチ</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMJ010BLF.BlcAccess(System.Data.DataSet,System.String)">
+ <summary>
+ BLCクラスアクセス
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="actionId">アクションID</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMJ010BLF.SetSysDateTime(System.Data.DataSet)">
+ <summary>
+ システム日時を設定
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMJ010BLF.JugErrData(System.Data.DataSet)">
+ <summary>
+ エラー判定
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>True:エラーなし,OK False:エラーあり</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMJ010BLF.SetErrData(System.Data.DataSet,System.Data.DataSet,System.Data.DataRow)">
+ <summary>
+ 存在チェックエラー設定
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="selectDs">DataSet</param>
+ <param name="selectDr">締め荷主情報のDataRow</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMJ010BLF.SetInitDataRow(System.Data.DataRow,System.Data.DataRow)">
+ <summary>
+ 戻り値の初期設定
+ </summary>
+ <param name="setDr">締め荷主情報のDataRow</param>
+ <param name="dr">設定先DataRow</param>
+ <returns>DataRow</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMJ010BLF.ErrDataMerge(System.Data.DataSet,System.Data.DataSet)">
+ <summary>
+ エラー行のマージ
+ </summary>
+ <param name="ds">DataSet</param>
+ <param name="rtnDs">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMJ010BLF.EditConcatData(System.String,System.String,System.String)">
+ <summary>
+ 2つの値を連結して設定
+ </summary>
+ <param name="value1">値1</param>
+ <param name="value2">値2</param>
+ <returns>編集後の値</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMJ010BLF.FormatNumValue(System.String)">
+ <summary>
+ NULLの場合、ゼロを設定
+ </summary>
+ <param name="value">値</param>
+ <remarks></remarks>
+</member>
+<member name="T:Jp.Co.Nrs.LM.BLF.LMJ020BLF">
+ <summary>
+ LMJ020BLFクラス
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.LM.BLF.LMJ020BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMJ020BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ 初期出荷マスタ更新対象データ検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMJ020BLF.ProcessDataEscape(System.Data.DataSet)">
+ <summary>
+ データ退避処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMJ020BLF.EndCustProcess(System.Data.DataSet@,System.Data.DataSet)">
+ <summary>
+ 大元のDSにCustDsの内容を移す
+ </summary>
+ <param name="ds"></param>
+ <param name="custDs"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMJ020BLF.DeleteDataCheck(System.Data.DataSet)">
+ <summary>
+ データ削除チェック
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMJ020BLF.DeleteData(System.Data.DataSet)">
+ <summary>
+ データ削除
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMJ020BLF.CopyDsForDelete(System.Data.DataSet,System.Data.DataSet@)">
+ <summary>
+ TargetTablesを抽出し設定
+ </summary>
+ <param name="motoDs"></param>
+ <param name="sakiDs"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMJ020BLF.CopyDsLogForDelete(System.Data.DataSet,System.Data.DataSet@)">
+ <summary>
+ ログデータの反映
+ </summary>
+ <param name="motoDs"></param>
+ <param name="sakiDs"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMJ020BLF.StartInputLog(System.Data.DataSet)">
+ <summary>
+ スタートログ
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMJ020BLF.SetStartLogDataset(System.Data.DataSet)">
+ <summary>
+ スタートログの書き込み
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMJ020BLF.ProcessInputLog(System.Data.DataSet,System.String)">
+ <summary>
+ 経過ログ
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMJ020BLF.SetProcessLogDataset(System.Data.DataSet@,System.String)">
+ <summary>
+ 経過ログの書き込み
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMJ020BLF.SetEndLogDataset(System.Data.DataSet@)">
+ <summary>
+ 終了ログの書き込み
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMJ020BLF.ProcessDataModoshi(System.Data.DataSet)">
+ <summary>
+ データ戻し
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet（プロキシ）</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMJ020BLF.DeleteModoshiDataCheck(System.Data.DataSet)">
+ <summary>
+ データ削除チェック
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.LM.BLF.LMJ020BLF.DeleteModoshiData(System.Data.DataSet)">
+ <summary>
+ データ削除
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

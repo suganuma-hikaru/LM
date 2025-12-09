@@ -1,0 +1,616 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.GLVE.BLF
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.GL.BLF.My.Resources.Resources">
+<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.GL.BLF.My.Resources.Resources.ResourceManager">
+<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member>
+<member name="P:Jp.Co.Nrs.GL.BLF.My.Resources.Resources.Culture">
+<summary>
+  すべてについて、現在のスレッドの CurrentUICulture プロパティをオーバーライドします
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLVE0110BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0110BLF.SelectSearchCountData(System.Data.DataSet)">
+ <summary>
+ 初期表示件数取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0110BLF.SelectSearchData(System.Data.DataSet)">
+ <summary>
+ 検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0110BLF.UpdateChangeFlg(System.Data.DataSet)">
+ <summary>
+ 変更フラグ更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0110BLF.SelectTempFileInfo(System.Data.DataSet)">
+ <summary>
+ 持参書類取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0110BLF.UpdateArgBillDate(System.Data.DataSet)">
+ <summary>
+ 請求日(手配先)更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0110BLF.SelectCostData(System.Data.DataSet)">
+ <summary>
+ Cost情報取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLVE0210BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0210BLF.SelectItemData(System.Data.DataSet)">
+ <summary>
+ 初期表示用データの取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0210BLF.UpdateSaveData(System.Data.DataSet)">
+ <summary>
+ 更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0210BLF.UpdatePendingKbn(System.Data.DataSet)">
+ <summary>
+ 更新処理(Pending Kbn)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0210BLF.UpdatePendingKbnReject(System.Data.DataSet)">
+ <summary>
+ 更新処理(Pending Kbn Reject)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0210BLF.UpdateCostArgCompleteFlgKbn(System.Data.DataSet)">
+ <summary>
+ 更新処理(COSTデータ 手配完了フラグ更新)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0210BLF.UpdateReceiveCommentData(System.Data.DataSet)">
+ <summary>
+ 更新処理（受付コメント）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0210BLF.UpdateArgBillDate(System.Data.DataSet)">
+ <summary>
+ 請求日(手配先)更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0210BLF.isHaitaChk(System.Data.DataSet)">
+ <summary>
+ 排他制御
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0210BLF.GetGaisanCount(System.Data.DataSet)">
+ <summary>
+ 概算レコード数チェック 処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0210BLF.SendChangeMail(System.Data.DataSet)">
+ <summary>
+ 変更メール送信
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0210BLF.SendChangeMailToTukan(System.Data.DataSet)">
+ <summary>
+ 変更メール送信(通関担当者向け)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0210BLF.SelectTukanCoverStage(System.Data.DataSet)">
+ <summary>
+ 通関Coverステージ情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0210BLF.UpdateCoverStageDocList(System.Data.DataSet)">
+ <summary>
+ カバーステージ更新処理（必要書類リスト）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0210BLF.InsertFileDataCoverDoc(System.Data.DataSet)">
+ <summary>
+ 必要書類リスト添付ファイル登録＆カバーステージ更新処理（必要書類リスト）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLVE0700BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0700BLF.SelectSearchCountData(System.Data.DataSet)">
+ <summary>
+ 初期表示件数取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0700BLF.SelectSearchData(System.Data.DataSet)">
+ <summary>
+ 検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0700BLF.UpdateCoverStageArrg(System.Data.DataSet)">
+ <summary>
+ カバーステージ更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0700BLF.SelectSearchDetailData(System.Data.DataSet)">
+ <summary>
+ 詳細検索処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLVE0800BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0800BLF.SelectItemData(System.Data.DataSet)">
+ <summary>
+ 初期表示処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0800BLF.UpdateCoverChangeConfirm(System.Data.DataSet)">
+ <summary>
+ 変更確認（変更確認POP GLZ4300）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0800BLF.UpdateCoverStageArrg(System.Data.DataSet)">
+ <summary>
+ カバーステージ更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0800BLF.isHaitaChk(System.Data.DataSet)">
+ <summary>
+ 排他処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0800BLF.UpdateCoverStageDocList(System.Data.DataSet)">
+ <summary>
+ カバーステージ更新処理（必要書類リスト）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0800BLF.UpdateCoverStageCoverList(System.Data.DataSet)">
+ <summary>
+ カバーステージ更新処理（カバーリスト）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0800BLF.InsertFileDataCoverDoc(System.Data.DataSet)">
+ <summary>
+ 必要書類リスト添付ファイル登録＆カバーステージ更新処理（必要書類リスト）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0800BLF.UpdateCoverChangeReject(System.Data.DataSet)">
+ <summary>
+ 変更差戻（変更確認POP GLZ4300）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLVE0900BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0900BLF.SelectSearchItemData(System.Data.DataSet)">
+ <summary>
+ 検索結果データの取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0900BLF.SelectSearchItemDataFirst(System.Data.DataSet)">
+ <summary>
+ 検索結果データの取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0900BLF.SelectSearchPrintData(System.Data.DataSet)">
+ <summary>
+ 検索結果データの取得処理(印刷)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0900BLF.isHaitaChk(System.Data.DataSet)">
+ <summary>
+ 排他制御
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLVE5030BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE5030BLF.PrintDepotInOutOrderForKCT(System.Data.DataSet)">
+ <summary>
+ KCT用搬出入一覧表印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLVE5020BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE5020BLF.SelectListData(System.Data.DataSet)">
+ <summary>
+ データ検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLVE0500BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0500BLF.SelectSearchEventData(System.Data.DataSet)">
+ <summary>
+ 検索結果データの取得処理(カレンダーイベント)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0500BLF.SelectSearchDetailData(System.Data.DataSet)">
+ <summary>
+ 検索結果データの取得処理(詳細)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLVE0100BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0100BLF.SelectSearchItemData(System.Data.DataSet)">
+ <summary>
+ 検索結果データの取得処理(単一帳票)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0100BLF.SelectSearchRequestFormItemData(System.Data.DataSet)">
+ <summary>
+ 検索結果データの取得処理(依頼書一括)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0100BLF.SelectSearchMultiItemData(System.Data.DataSet)">
+ <summary>
+ 検索結果データの取得処理(運送書類一括)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0100BLF.SelectSearchMultiLegItemData(System.Data.DataSet)">
+ <summary>
+ 検索結果データの取得処理(運送書類一括(運送単位))
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0100BLF.SearchPrintTempFileData(System.Data.DataSet)">
+ <summary>
+ 検索結果データの取得処理(運送書類一括(添付書類))
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0100BLF.SearchPrintTempOtherFileData(System.Data.DataSet)">
+ <summary>
+ 検索結果データの取得処理(運送書類一括(添付書類(その他)))
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0100BLF.SelectSearchVansideProductNameLabelItemData(System.Data.DataSet)">
+ <summary>
+ 検索結果データの取得処理(バンサイド / 品名ラベル)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0100BLF.UpdateChangeFlg(System.Data.DataSet)">
+ <summary>
+ 変更フラグ更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0100BLF.UpdateCoverInfo(System.Data.DataSet)">
+ <summary>
+ Cover情報更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0100BLF.UpdateReceiveComment(System.Data.DataSet)">
+ <summary>
+ 受付コメント更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0100BLF.UpdateCostArgCompleteFlgKbn(System.Data.DataSet)">
+ <summary>
+ 更新処理(COSTデータ 手配完了フラグ更新)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0100BLF.UpdateArgBillDate(System.Data.DataSet)">
+ <summary>
+ 請求日(手配先)更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0100BLF.isHaitaChk(System.Data.DataSet)">
+ <summary>
+ 排他制御
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0100BLF.SelectCostData(System.Data.DataSet)">
+ <summary>
+ Cost情報取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLVE0200BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0200BLF.SelectItemData(System.Data.DataSet)">
+ <summary>
+ 初期表示用データの取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0200BLF.UpdateSaveData(System.Data.DataSet)">
+ <summary>
+ 更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0200BLF.UpdatePendingKbn(System.Data.DataSet)">
+ <summary>
+ 更新処理(Pending Kbn)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0200BLF.UpdatePendingKbnReject(System.Data.DataSet)">
+ <summary>
+ 更新処理(Pending Kbn Reject)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0200BLF.UpdateCostArgCompleteFlgKbn(System.Data.DataSet)">
+ <summary>
+ 更新処理(COSTデータ 手配完了フラグ更新)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0200BLF.UpdateReceiveCommentData(System.Data.DataSet)">
+ <summary>
+ 更新処理（受付コメント）
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0200BLF.UpdateArgBillDate(System.Data.DataSet)">
+ <summary>
+ 請求日(手配先)更新処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0200BLF.isHaitaChk(System.Data.DataSet)">
+ <summary>
+ 排他制御
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0200BLF.GetGaisanCount(System.Data.DataSet)">
+ <summary>
+ 概算レコード数チェック 処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0200BLF.SendChangeMail(System.Data.DataSet)">
+ <summary>
+ 変更メール送信
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0200BLF.SendChangeMailToTukan(System.Data.DataSet)">
+ <summary>
+ 変更メール送信(通関担当者向け)
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0200BLF.SelectTukanCoverStage(System.Data.DataSet)">
+ <summary>
+ 通関Coverステージ情報取得
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0200BLF.EstUp(System.Data.DataSet)">
+ <summary>
+ Est Up 処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0200BLF.UploadYellowCardMsdsFile(System.Data.DataSet)">
+ <summary>
+ YellowCard/Msdsアタッチ処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0200BLF.GetYellowCardMsdsFile(System.Data.DataSet)">
+ <summary>
+ 商品明細・MSDSファイル取得処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0200BLF.DeleteYellowCardMsdsFile(System.Data.DataSet)">
+ <summary>
+ YellowCard/Msds削除処理
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLVE0600BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE0600BLF.SelectSearchDataMain(System.Data.DataSet)">
+ <summary>
+ 検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLVE5010BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE5010BLF.PrintContFreCostChkList(System.Data.DataSet)">
+ <summary>
+ コンテナ運賃支払チェックリスト印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+<member name="F:Jp.Co.Nrs.GL.BLF.GLVE5040BLF._Blc">
+ <summary>
+ 使用するBLCクラスの生成
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Jp.Co.Nrs.GL.BLF.GLVE5040BLF.PrintCoverColChgLog(System.Data.DataSet)">
+ <summary>
+ 変更項目印刷
+ </summary>
+ <param name="ds">DataSet</param>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

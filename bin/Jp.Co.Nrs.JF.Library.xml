@@ -1,0 +1,6870 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Jp.Co.Nrs.JF.Library
+</name>
+</assembly>
+<members>
+<member name="T:Jp.Co.Nrs.JF.Base.BLC.JFBaseBLC">
+ <summary>
+ 拡張BLC層中核クラス
+ </summary>
+</member>
+<member name="P:Jp.Co.Nrs.JF.Base.BLC.JFBaseBLC.JFServiceData">
+ <summary>
+ 送受信データの取得・設定を行うプロパティ
+ </summary>
+ <value>送受信データ</value>
+ <returns>送受信データ</returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.BLC.JFBaseBLC.SetMessage(System.String)">
+ <summary>
+ メッセージＩＤ・メッセージレベル・メッセージ文言をServiceDataに設定する。
+ </summary>
+ <param name="messageID">メッセージID</param>
+ <remarks>引数のメッセージＩＤを元にメッセージ文言を作成し、ServiceDataクラスにメッセージＩＤ・メッセージレベル・メッセージ文言を設定する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.BLC.JFBaseBLC.SetMessage(System.String,System.String[])">
+ <summary>
+ メッセージ情報をServiceDataに設定する。
+ </summary>
+ <param name="messageID">メッセージID</param>
+ <param name="replaceMessages">置換対象文字列の配列</param>
+ <remarks>引数のメッセージＩＤを元にメッセージ文言を作成し、ServiceDataクラスにメッセージ情報を設定する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.BLC.JFBaseBLC.SetMessageStore(System.String,System.String,System.String[],System.String,System.String,System.String)">
+ <summary>
+ メッセージＩＤ・メッセージレベル・メッセージ文言をServiceDataに蓄積します。
+ </summary>
+ <param name="guidanceID">ガイダンスID[KBN_GROUP_CD=G006]</param>
+ <param name="messageID">メッセージID</param>
+ <param name="replaceMessages">置換対象文字列の配列</param>
+ <param name="rowNo">処理行番号</param>
+ <param name="variableColTitle">可変項目列名</param>
+ <param name="variableColvalue">可変項目内容</param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.BLC.JFBaseBLC.SelectMessageData(System.Data.DataSet)">
+ <summary>
+ メッセージマスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.BLC.JFBaseBLC.SelectAccData(System.Data.DataSet)">
+ <summary>
+ 勘定科目マスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.BLC.JFBaseBLC.SelectCompData(System.Data.DataSet)">
+ <summary>
+ 会社マスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.BLC.JFBaseBLC.SelectBuData(System.Data.DataSet)">
+ <summary>
+ BUマスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.BLC.JFBaseBLC.SelectBrData(System.Data.DataSet)">
+ <summary>
+ 営業所マスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.BLC.JFBaseBLC.SelectTaxData(System.Data.DataSet)">
+ <summary>
+ 消費税マスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.BLC.JFBaseBLC.SelectAccCnvData(System.Data.DataSet)">
+ <summary>
+ JD科目変換マスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.BLC.JFBaseBLC.SelectExchData(System.Data.DataSet)">
+ <summary>
+ 為替レートマスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.BLC.JFBaseBLC.SelectUserData(System.Data.DataSet)">
+ <summary>
+ ユーザーマスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.BLC.JFBaseBLC.SelectNumbreData(System.Data.DataSet)">
+ <summary>
+ ナンバーマスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.BLC.JFBaseBLC.SelectMenuData(System.Data.DataSet)">
+ <summary>
+ メニューマスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.BLC.JFBaseBLC.SelectKbnData(System.Data.DataSet)">
+ <summary>
+ 区分マスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.BLC.JFBaseBLC.SelectF0101Data(System.Data.DataSet)">
+ <summary>
+ JDE住所録マスタ情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.BLC.JFBaseBLC.SelectSpreadColData(System.Data.DataSet)">
+ <summary>
+ スプレッドレイアウト情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.BLC.JFBaseBLC.GetSpreadColData(System.Data.DataSet)">
+ <summary>
+ スプレッドレイアウト情報取得（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.BLC.JFBaseBLC.SaveSpreadColData(System.Data.DataSet)">
+ <summary>
+ スプレッドレイアウト情報の更新
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.BLC.JFBaseBLC.DeleteSpreadColData(System.Data.DataSet)">
+ <summary>
+ スプレッドレイアウト情報の削除
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.BLC.JFBaseBLC.SelectCurrData(System.Data.DataSet)">
+ <summary>
+ 通貨情報取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.BLC.JFBaseBLC.GetUserDataSet(System.Data.DataSet)">
+ <summary>
+ AD USER_IDでS_USERデータを検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.BLC.JFBaseBLC.CheckUserInfo(System.Data.DataSet)">
+ <summary>
+ ユーザーチェック（BLC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="T:Jp.Co.Nrs.JF.Base.BLF.JFBaseBLF">
+ <summary>
+ 拡張BLF層中核クラス
+ </summary>
+</member>
+<member name="P:Jp.Co.Nrs.JF.Base.BLF.JFBaseBLF.JFServiceData">
+ <summary>
+ 送受信データの取得・設定を行うプロパティ
+ </summary>
+ <value>送受信データ</value>
+ <returns>送受信データ</returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.BLF.JFBaseBLF.SetMessage(System.String,System.String[])">
+ <summary>
+ メッセージＩＤ・メッセージレベル・メッセージ文言をServiceDataに設定する。
+ </summary>
+ <param name="messageID">メッセージID</param>
+ <param name="replaceMessages"></param>
+ <remarks>引数のメッセージＩＤを元にメッセージ文言を作成し、ServiceDataクラスにメッセージＩＤ・メッセージレベル・メッセージ文言を設定する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.BLF.JFBaseBLF.GetMessageDataSet">
+ <summary>
+ メッセージデータを取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.BLF.JFBaseBLF.GetDeptKbn">
+ <summary>
+ 所属部署区分を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.BLF.JFBaseBLF.GetMasterDataSet(System.Data.DataSet)">
+ <summary>
+ マスタ情報取得（BLF）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.BLF.JFBaseBLF.GetSpreadColData(System.Data.DataSet)">
+ <summary>
+ スプレッドレイアウト情報を取得します。
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.BLF.JFBaseBLF.SaveSpreadColData(System.Data.DataSet)">
+ <summary>
+ スプレッドレイアウト情報の更新
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.BLF.JFBaseBLF.DeleteSpreadColData(System.Data.DataSet)">
+ <summary>
+ スプレッドレイアウト情報の削除
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.BLF.JFBaseBLF.Login(System.Data.DataSet)">
+ <summary>
+ ログイン認証（BLF）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.BLF.JFBaseBLF.CacheSystemData(System.Data.DataSet)">
+ <summary>
+ キャッシュされているシステム構成情報を取得する
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>コンフィグデータキャッシュとメッセージデータキャッシュを返却する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.BLF.JFBaseBLF.CreateCalcuratorTableRows(System.Data.DataSet)">
+ <summary>
+ 電卓画面データを保持します
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.BLF.JFBaseBLF.IsErrorMessageExist">
+ <summary>
+ エラーメッセージの有無を判定して返却する
+ </summary>
+ <returns>エラーメッセージの有無</returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.BLF.JFBaseBLF.GetUserDataSet(System.Data.DataSet)">
+ <summary>
+ AD USER_IDでS_USERデータを検索
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.BLF.JFBaseBLF.SetMessageStore(System.String,System.String,System.String[],System.String,System.String,System.String)">
+ <summary>
+ メッセージＩＤ・メッセージレベル・メッセージ文言をServiceDataに蓄積します。
+ </summary>
+ <param name="guidanceID">ガイダンスID[KBN_GROUP_CD=G006]</param>
+ <param name="messageID">メッセージID</param>
+ <param name="replaceMessages">置換対象文字列の配列</param>
+ <param name="rowNo">処理行番号</param>
+ <param name="variableColTitle">可変項目列名</param>
+ <param name="variableColvalue">可変項目内容</param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.BLF.JFBaseBLF.ClearMessageStoreData(System.Data.DataSet)">
+ <summary>
+ メッセージ蓄積データをクリア
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="T:Jp.Co.Nrs.JF.Base.DAC.JFBaseDAC">
+ <summary>
+ 拡張DAC層中核クラス
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.DAC.JFBaseDAC.M_ACC_SELECT">
+ <summary>
+ 勘定科目マスタ
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.DAC.JFBaseDAC.M_COMP_SELECT">
+ <summary>
+ 会社マスタ
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.DAC.JFBaseDAC.M_BU_SELECT">
+ <summary>
+ BUマスタ
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.DAC.JFBaseDAC.M_BR_SELECT">
+ <summary>
+ 営業所マスタ
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.DAC.JFBaseDAC.M_TAX_SELECT">
+ <summary>
+ 消費税マスタ
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.DAC.JFBaseDAC.M_ACCCNV_SELECT">
+ <summary>
+ JDE科目変換マスタ
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.DAC.JFBaseDAC.M_EXCH_SELECT">
+ <summary>
+ 為替レートマスタ
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.DAC.JFBaseDAC.S_USER_SELECT">
+ <summary>
+ ユーザーマスタ
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.DAC.JFBaseDAC.S_NUMBER_SELECT">
+ <summary>
+ ナンバーマスタ
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.DAC.JFBaseDAC.S_MESSAGE_SELECT">
+ <summary>
+ メッセージマスタ取得用SQL文
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.DAC.JFBaseDAC.S_MENU_SELECT">
+ <summary>
+ メニューマスタ
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.DAC.JFBaseDAC.S_SPREAD_SELECT">
+ <summary>
+ スプレッドレイアウト取得用SQL文
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.DAC.JFBaseDAC.Z_KBN_SELECT">
+ <summary>
+ 区分マスタ
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.DAC.JFBaseDAC.M_F0101_SELECT">
+ <summary>
+ JDE住所録マスタ
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.DAC.JFBaseDAC.M_CURR_SELECT">
+ <summary>
+ 通貨マスタ取得
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.DAC.JFBaseDAC.SetMessage(System.String,System.String[])">
+ <summary>
+ メッセージＩＤ・メッセージレベル・メッセージ文言をServiceDataに設定する。
+ </summary>
+ <param name="messageID">メッセージID</param>
+ <param name="replaceMessages"></param>
+ <remarks>引数のメッセージＩＤを元にメッセージ文言を作成し、ServiceDataクラスにメッセージＩＤ・メッセージレベル・メッセージ文言を設定する。</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.DAC.JFBaseDAC.SetMessageStore(System.String,System.String,System.String[],System.String,System.String,System.String)">
+ <summary>
+ メッセージＩＤ・メッセージレベル・メッセージ文言をServiceDataに蓄積します。
+ </summary>
+ <param name="guidanceID">ガイダンスID[KBN_GROUP_CD=G006]</param>
+ <param name="messageID">メッセージID</param>
+ <param name="replaceMessages">置換対象文字列の配列</param>
+ <param name="rowNo">処理行番号</param>
+ <param name="variableColTitle">可変項目列名</param>
+ <param name="variableColvalue">可変項目内容</param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.DAC.JFBaseDAC.SelectS_MessageData(System.Data.DataSet)">
+ <summary>
+ メッセージマスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>メッセージマスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.DAC.JFBaseDAC.SelectMenuData(System.Data.DataSet)">
+ <summary>
+ メニューマスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>メニューマスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.DAC.JFBaseDAC.SelectKbnData(System.Data.DataSet)">
+ <summary>
+ 区分マスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>区分マスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.DAC.JFBaseDAC.SelectUserData(System.Data.DataSet)">
+ <summary>
+ ユーザーマスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>ユーザーマスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.DAC.JFBaseDAC.SelectCompData(System.Data.DataSet)">
+ <summary>
+ 会社マスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>会社マスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.DAC.JFBaseDAC.SelectNumbreData(System.Data.DataSet)">
+ <summary>
+ ナンバーマスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>ナンバーマスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.DAC.JFBaseDAC.SelectAccData(System.Data.DataSet)">
+ <summary>
+ 勘定科目マスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>勘定科目マスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.DAC.JFBaseDAC.SelectBuData(System.Data.DataSet)">
+ <summary>
+ BUマスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>BUマスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.DAC.JFBaseDAC.SelectBrData(System.Data.DataSet)">
+ <summary>
+ 営業所マスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>営業所マスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.DAC.JFBaseDAC.SelectTaxData(System.Data.DataSet)">
+ <summary>
+ 消費税マスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>消費税マスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.DAC.JFBaseDAC.SelectAccCnvData(System.Data.DataSet)">
+ <summary>
+ JD科目変換マスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>JD科目変換マスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.DAC.JFBaseDAC.SelectExchData(System.Data.DataSet)">
+ <summary>
+ 為替レートマスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>為替レートマスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.DAC.JFBaseDAC.SelectF0101Data(System.Data.DataSet)">
+ <summary>
+ JDE住所録マスタ情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>JDE住所録マスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.DAC.JFBaseDAC.SelectLoginUserInfo(System.Data.DataSet)">
+ <summary>
+ ログインユーザー情報取得（DAC）
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+ <remarks>ユーザーIDによる単一抽出　UserInfoDS格納用</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.DAC.JFBaseDAC.SelectSpreadColData(System.Data.DataSet)">
+ <summary>
+ スプレッドレイアウト情報取得（DAC）
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>スプレッドレイアウト情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.DAC.JFBaseDAC.SaveSpreadColData(System.Data.DataSet)">
+ <summary>
+ スプレッドレイアウト情報の更新
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.DAC.JFBaseDAC.DeleteSpreadColData(System.Data.DataSet)">
+ <summary>
+ スプレッドレイアウト情報の削除
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.DAC.JFBaseDAC.GetUserDataSet(System.Data.DataSet)">
+ <summary>
+ AD USER_IDでS_USERデータを検索
+ </summary>
+ <param name="ds">DataSet</param>
+ <returns>DataSet</returns>
+ <remarks>ユーザーマスタ情報取得SQLの構築・発行</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.DAC.JFBaseDAC.SelectCurrData(System.Data.DataSet)">
+ <summary>
+ M_CURRから取得
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="T:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIGamen">
+ <summary>
+ 拡張画面構築クラス
+ </summary>
+</member>
+<member name="P:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIGamen.MyHandler">
+ <summary>
+ このValidateクラスへハンドラクラスを紐付けるプロパティ
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIGamen.MyForm">
+ <summary>
+ このValidateクラスへハンドラクラスを紐付けるプロパティ
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIGamen.GetJFCachedDataTable(System.String)">
+ <summary>
+ [JF]キャッシュデータの格納されたデータセットを取得します。
+ </summary>
+ <param name="tableName"></param>
+ <returns>キャッシュデータの格納されたデータセット</returns>
+ <remarks>(for JF)</remarks>
+</member>
+<member name="T:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIHandler">
+ <summary>
+ 拡張GUI層中核クラス
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIHandler.JFCachedCurrMasterDataSet">
+ <summary>
+ 通貨マスタデータキャッシュ
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIHandler.WSA_SERVICE">
+ <summary>
+ WSAクラスの共通サービス名
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIHandler._TempLimitCount">
+ <summary>
+ しきい値を格納するフィールド
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIHandler._TempForceOparation">
+ <summary>
+ 強制処理フラグを格納するフィールド
+ </summary>
+</member>
+<member name="P:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIHandler.JFServiceData">
+ <summary>
+ 送受信データの取得・設定を行うプロパティ
+ </summary>
+ <value>送受信データ</value>
+ <returns>送受信データ</returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIHandler.CallWSA(Jp.Co.Nrs.Com.Base.BaseWSA,System.String,System.Data.DataSet)">
+ <summary>
+ WEBサービスを呼び出します
+ </summary>
+ <param name="bWSA">WSAクラス</param>
+ <param name="methodName">呼出メソッド</param>
+ <param name="ds">WEBサービス送信データ</param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIHandler.CallWSA(Jp.Co.Nrs.Com.Base.BaseWSA,System.Data.DataSet)">
+ <summary>
+ WEBサービスを呼び出します（QueName,SetTargetFacadeNameの設定必須）
+ </summary>
+ <param name="bWSA">WSAクラス</param>
+ <param name="ds">WEBサービス送信データ</param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIHandler.GetPGName">
+ <summary>
+ PGIDに対応する画面名を取得します
+ </summary>
+ <returns>キャッシュデータの格納されたデータセット</returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIHandler.GetSubSystemID">
+ <summary>
+ PGIDに対応するサブシステムIDを取得します
+ </summary>
+ <returns>キャッシュデータの格納されたデータセット</returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIHandler.GetMenuDispFlg">
+ <summary>
+ PGIDに対応するメニュー表示フラグを取得します
+ </summary>
+ <returns>キャッシュデータの格納されたデータセット</returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIHandler.GetMultiCtlFlg">
+ <summary>
+ PGIDに対応するマルチコントロールフラグを取得します
+ </summary>
+ <returns>キャッシュデータの格納されたデータセット</returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIHandler.GetPreViewFlg">
+ <summary>
+ PGIDに対応するプレビューフラグを取得します
+ </summary>
+ <returns>キャッシュデータの格納されたデータセット</returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIHandler.GetMenuMasterValue(System.String)">
+ <summary>
+ 指定したフィールドのキャッシュされたメニューマスターの値を取得します
+ </summary>
+ <param name="field"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIHandler.GetCachedMasterDataSet">
+ <summary>
+ キャッシュデータの格納されたデータセットを取得します。
+ </summary>
+ <returns>キャッシュデータの格納されたデータセット</returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIHandler.JFCacheMasterData(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="tableName"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIHandler.GetJFCachedDataTable(System.String)">
+ <summary>
+ [JF]キャッシュデータの格納されたデータセットを取得します。
+ </summary>
+ <param name="tableName"></param>
+ <returns>キャッシュデータの格納されたデータセット</returns>
+ <remarks>for JF</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIHandler.GetCachedCalcuratorDatatable">
+ <summary>
+ 電卓画面データ情報を保持するキャッシュテーブルデータを取得します。
+ </summary>
+ <returns>DataTable</returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIHandler.SetLimitCount(System.Int32)">
+ <summary>
+ しきい値をセットします。
+ </summary>
+ <param name="value">しきい値</param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIHandler.SetForceOparation(System.Boolean)">
+ <summary>
+ 強制処理フラグを設定します。
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIHandler.CreateServiceData">
+ <summary>
+ サーバーとの送受信に使用するServiceDataクラスを生成します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIHandler.SetRequestParam(Jp.Co.Nrs.Com.Base.ServiceData,System.Data.DataSet)">
+ <summary>
+ ServiceDataに送信する値を設定します。
+ </summary>
+ <param name="sd"></param>
+ <param name="ds"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIHandler.GetReturnParam(Jp.Co.Nrs.Com.Base.ServiceData)">
+ <summary>
+ ServiceDataから受信した値を取得します。
+ </summary>
+ <param name="sd"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIHandler.InitControl(System.Windows.Forms.Form)">
+ <summary>
+ フォームの初期化を行います
+ </summary>
+ <param name="frm">このハンドラクラスに紐づくフォーム</param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIHandler.ShowMessage(System.Windows.Forms.Form)">
+ <summary>
+ メッセージを表示します。
+ </summary>
+ <param name="frm"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIHandler.ShowNonPopUpMessage(System.Windows.Forms.Form)">
+ <summary>
+ ポップアップ以外の方法でメッセージ表示する。
+ </summary>
+ <param name="frm"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIHandler.ShowMessage(System.Windows.Forms.Form,System.String,System.String[])">
+ <summary>
+ 引数に指定されたIDのメッセージを表示します。
+ </summary>
+ <param name="frm"></param>
+ <param name="messageID"></param>
+ <param name="replaceMessages"></param>
+ <returns></returns>
+ <remarks>GUIValidateも使用するのでFriend</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIHandler.ClearMessageAria(Jp.Co.Nrs.JF.GUI.Win.Interface.IJFForm)">
+ <summary>
+ フォームのメッセージエリアをクリアします。
+ </summary>
+ <param name="frm">メッセージエリアをクリアしたいフォーム</param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIHandler.CreateSystemErrorMessage(System.String)">
+ <summary>
+ システムエラー発生時用のメッセージを作成します。
+ </summary>
+ <param name="msg"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIHandler.MessageStoreDownload(System.Boolean)">
+ <summary>
+ メッセージ蓄積データからCSVファイルを作成します。
+ </summary>
+ <param name="opensFile">作成したCSVファイルを開くか否か</param>
+ <returns>実行結果</returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIHandler.SetMessageStore(System.String,System.String,System.String[],System.String,System.String,System.String)">
+ <summary>
+ メッセージＩＤ・メッセージレベル・メッセージ文言をServiceDataに蓄積します。
+ </summary>
+ <param name="guidanceID">ガイダンスID[KBN_GROUP_CD=G006]</param>
+ <param name="messageID">メッセージID</param>
+ <param name="replaceMessages">置換対象文字列の配列</param>
+ <param name="rowNo">処理行番号</param>
+ <param name="variableColTitle">可変項目列名</param>
+ <param name="variableColvalue">可変項目内容</param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIHandler.ClearMessageStoreData">
+ <summary>
+ メッセージ蓄積データをクリアします。
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIHandler.SHfromJFNextFormNavigate(System.String,Jp.Co.Nrs.Win.Base.FormData@)">
+ <summary>
+ JFからSH画面(Share)呼び出し
+ </summary>
+ <param name="nextPgId"></param>
+ <param name="prm"></param>
+ <remarks>
+ JF⇒SH
+ ※※※※※　SHになる(SHを呼ぶ)　※※※※※
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIHandler.GetSHPram(System.String,Jp.Co.Nrs.Win.Base.FormData)">
+ <summary>
+ SH画面(Share)呼び出し時のパラメータDataSetを作成します。
+ </summary>
+ <param name="nextPgId"></param>
+ <param name="prm"></param>
+ <returns></returns>
+ <remarks>
+ JF⇒SH
+ ※※※※※　SHになる(SHを呼ぶ)　※※※※※
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIHandler.GetBusinessEntity">
+ <summary>
+ 画面情報DataSetを取得する。
+ </summary>
+ <returns>画面情報DataSet</returns>
+ <remarks>隠蔽する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIHandler.SetBusinessEntity(System.Data.DataSet)">
+ <summary>
+ 画面情報DataSetをセットする。
+ </summary>
+ <param name="ds">画面情報DataSet</param>
+ <remarks>隠蔽する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIHandler.Login(System.Data.DataSet)">
+ <summary>
+ ログイン処理
+ </summary>
+ <param name="ds">UserInfoDataSet</param>
+ <remarks>隠蔽する</remarks>
+</member>
+<member name="T:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIValidate">
+ <summary>
+ 拡張画面入力値チェッククラス
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIValidate._myHandler">
+ <summary>
+ このValidateクラスが紐付くハンドラクラス
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIValidate.ERROR_CODE_HISSU">
+ <summary>
+ 必須チェックエラー時のエラーコード
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIValidate.ERROR_CODE_HANKAKU">
+ <summary>
+ 半角チェックエラー時のエラーコード
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIValidate.ERROR_CODE_FORBIDDEN">
+ <summary>
+ 禁止文字必須チェックエラー時のエラーコード
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIValidate.ERROR_CODE_SUJI">
+ <summary>
+ 数字チェックエラー時のエラーコード
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIValidate.ERROR_CODE_NUMERIC">
+ <summary>
+ 数値のみチェックエラー時のエラーコード
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIValidate.ERROR_CODE_MIDDLESPACE">
+ <summary>
+ 中間スペースチェックエラー時のエラーコード
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIValidate.ERROR_CODE_FULLBYTE">
+ <summary>
+ フルバイトチェックエラー時のエラーコード
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIValidate.ERROR_CODE_BYTE">
+ <summary>
+ バイト数チェックエラー時のエラーコード
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIValidate.ERROR_CODE_MOJISU">
+ <summary>
+ 文字数チェックエラー時のエラーコード
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIValidate.ERROR_CODE_DATEBEFORE">
+ <summary>
+ 過去日チェックエラー時のエラーコード
+ </summary>
+</member>
+<member name="P:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIValidate.MyHandler">
+ <summary>
+ このValidateクラスへハンドラクラスを紐付けるプロパティ
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIValidate.MyForm">
+ <summary>
+ このValidateクラスへハンドラクラスを紐付けるプロパティ
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIValidate.GetCheckResultEachItem(System.Object,System.String)">
+ <summary>
+ 項目ごとに各チェックを行い、結果を返します。
+ </summary>
+ <param name="item">チェック対象コントロール</param>
+ <param name="value">チェック値</param>
+ <returns>
+ True：エラーなし
+ False：エラーあり
+ </returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIValidate.IsForbiddenWordsCheck(System.Object,System.String)">
+ <summary>
+ 禁止文字チェック
+ </summary>
+ <param name="item">チェック対象コントロール</param>
+ <param name="value">チェック値</param>
+ <returns>
+ True：エラーなし
+ False：エラーあり
+ </returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIValidate.GetHissuErrMsg(System.Object)">
+ <summary>
+ 必須チェックエラー時のメッセージを取得するメソッド。
+ </summary>
+ <param name="item"></param>
+ <returns>チェックエラー時のメッセージ</returns>
+ <remarks>キーにメッセージコード、値に置換文字列を格納すること</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIValidate.GetHankakuErrMsg(System.Object)">
+ <summary>
+ 半角チェックエラー時のメッセージを取得するメソッド。
+ </summary>
+ <param name="item"></param>
+ <returns>チェックエラー時のメッセージ</returns>
+ <remarks>キーにメッセージコード、値に置換文字列を格納すること</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIValidate.GetForbiddenWordsErrMsg(System.Object)">
+ <summary>
+ 禁止文字チェックエラー時のメッセージを取得するメソッド。
+ </summary>
+ <param name="item"></param>
+ <returns>チェックエラー時のメッセージ</returns>
+ <remarks>キーにメッセージコード、値に置換文字列を格納すること</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIValidate.GetSujiErrMsg(System.Object)">
+ <summary>
+ 数字チェックエラー時のメッセージを取得するメソッド。
+ </summary>
+ <param name="item"></param>
+ <returns>チェックエラー時のメッセージ</returns>
+ <remarks>キーにメッセージコード、値に置換文字列を格納すること</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIValidate.GetNumericErrMsg(System.Object)">
+ <summary>
+ 数値チェックエラー時のメッセージを取得するメソッド。
+ </summary>
+ <param name="item"></param>
+ <returns>チェックエラー時のメッセージ</returns>
+ <remarks>キーにメッセージコード、値に置換文字列を格納すること</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIValidate.GetMiddleSpaceErrMsg(System.Object)">
+ <summary>
+ 中間スペースエラー時のメッセージを取得するメソッド。
+ </summary>
+ <param name="item"></param>
+ <returns>チェックエラー時のメッセージ</returns>
+ <remarks>キーにメッセージコード、値に置換文字列を格納すること</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIValidate.GetFullByteErrMsg(System.Object)">
+ <summary>
+ フルバイトチェックエラー時のメッセージを取得するメソッド。
+ </summary>
+ <param name="item"></param>
+ <returns>チェックエラー時のメッセージ</returns>
+ <remarks>キーにメッセージコード、値に置換文字列を格納すること</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIValidate.GetByteErrMsg(System.Object)">
+ <summary>
+ バイト数チェックエラー時のメッセージを取得するメソッド。
+ </summary>
+ <returns>チェックエラー時のメッセージ</returns>
+ <remarks>キーにメッセージコード、値に置換文字列を格納すること</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIValidate.GetMojisuErrMsg(System.Object)">
+ <summary>
+ 文字数チェックエラー時のメッセージを取得するメソッド。
+ </summary>
+ <param name="item"></param>
+ <returns>チェックエラー時のメッセージ</returns>
+ <remarks>キーにメッセージコード、値に置換文字列を格納すること</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIValidate.GetBeforeDateErrMsg(System.Object)">
+ <summary>
+ 過去日エラー時のメッセージを取得するメソッド。
+ </summary>
+ <param name="item"></param>
+ <returns>チェックエラー時のメッセージ</returns>
+ <remarks>キーにメッセージコード、値に置換文字列を格納すること</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIValidate.ShowMessage(System.String,System.String[])">
+ <summary>
+ エラーメッセージを表示するメソッド
+ </summary>
+ <param name="messageID"></param>
+ <param name="replaceMessages"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIValidate.DisplayMessage(System.Collections.Hashtable)">
+ <summary>
+ エラーメッセージを設定するメソッド
+ </summary>
+ <param name="errMessage"></param>
+ <returns></returns>
+ <remarks>フレームワークのみで使用する</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIValidate.GetJFCachedDataTable(System.String)">
+ <summary>
+ [JF]キャッシュデータの格納されたデータセットを取得します。
+ </summary>
+ <param name="tableName"></param>
+ <returns>キャッシュデータの格納されたデータセット</returns>
+ <remarks>(for JF)</remarks>
+</member>
+<member name="T:Jp.Co.Nrs.JF.Base.JFConfigMGR">
+ <summary>
+ JFConfig.xml内容の取得・設定クラス
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFConfigMGR.ChangeLmsConfigValue(System.String,Jp.Co.Nrs.Com.Base.Interface.IConnection)">
+ <summary>
+ JFConfig.xmlの倉庫接続情報フィールドを更新します。
+ </summary>
+ <param name="kbnCd">区分マスタの区分コード(営業所コード)</param>
+ <param name="iConn"></param>
+</member>
+<member name="T:Jp.Co.Nrs.JF.Base.JFFormData">
+ <summary>
+ 拡張画面間データ格納クラス
+ </summary>
+</member>
+<member name="P:Jp.Co.Nrs.JF.Base.JFFormData.ParamDataSet">
+ <summary>
+ 画面間データを取得・設定するプロパティ
+ </summary>
+ <returns>画面間データ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.Base.JFFormData.FormID">
+ <summary>
+ 各画面のインスタンスに対して一意識別が可能となる文字列を取得・設定するプロパティ
+ </summary>
+ <returns>各画面のインスタンスに対して一意識別が可能となる文字列</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.Base.JFFormData.RecStatus">
+ <summary>
+ レコードステータスを取得・設定するプロパティ
+ </summary>
+ <returns>レコードステータス</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.Base.JFFormData.ReturnFlg">
+ <summary>
+ リターンフラグ
+ </summary>
+ <returns>リターンフラグ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.Base.JFFormData.SkipFlg">
+ <summary>
+ 画面表示フラグ
+ </summary>
+ <returns>画面表示フラグ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.Base.JFFormData.MultiSelection">
+ <summary>
+ 複数選択可否フラグ
+ </summary>
+ <returns>複数選択可否フラグ</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.Base.JFFormData.AppVersion">
+ <summary>
+ アプリケーションVersionを格納するフィールド
+ </summary>
+ <returns>Version</returns>
+</member>
+<member name="T:Jp.Co.Nrs.JF.Base.JFFormNavigate">
+ <summary>
+ 拡張画面遷移制御クラス
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFFormNavigate.NextFormNavigate(Jp.Co.Nrs.JF.Base.GUI.JFBaseGUIHandler,System.String,Jp.Co.Nrs.Win.Base.FormData)">
+ <summary>
+ 引数に指定されたPGIDへ遷移します。
+ </summary>
+ <param name="handler">呼び出しもとのハンドラクラス</param>
+ <param name="pgId">次画面の画面ID</param>
+ <param name="prm">次画面へ渡すデータ</param>
+</member>
+<member name="T:Jp.Co.Nrs.JF.Base.JFServiceData">
+ <summary>
+ 拡張されたクライアント⇔サーバー間で授受する全データを格納したクラス
+ </summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.Base.JFUserInfoManager">
+ <summary>
+ 拡張ユーザー情報制御クラス
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_USER_ENM">
+ <summary>
+ UserInfoDS項目定数（ユーザー英名）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_PASSWORD">
+ <summary>
+ UserInfoDS項目定数（パスワード）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_EMAIL">
+ <summary>
+ UserInfoDS項目定数（メールアドレス）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_DEPOT_KBN">
+ <summary>
+ UserInfoDS項目定数（部門区分）DS
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_DEPOT_KBN_NM">
+ <summary>
+ UserInfoDS項目定数（部門区分名称）DS
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_NF_DEPT_KBN">
+ <summary>
+ UserInfoDS項目定数（ＮＦ所属部署区分）JF/NF
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_JF_DEPT_KBN">
+ <summary>
+ UserInfoDS項目定数（ＪＦ所属部署区分）JF/NF
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_NF_DEPT_NM">
+ <summary>
+ UserInfoDS項目定数（ＮＦ所属部署区分名称）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_JF_DEPT_NM">
+ <summary>
+ UserInfoDS項目定数（ＪＦ所属部署区分名称）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_NF_BOSS_ID">
+ <summary>
+ UserInfoDS項目定数（ＮＦボスユーザID / 所属上司ＩＤ）COM
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_JF_BOSS_ID">
+ <summary>
+ UserInfoDS項目定数（ＪＦボスユーザID / 所属上司ＩＤ）COM
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_GT_BOSS_ID">
+ <summary>
+ UserInfoDS項目定数（ＧＴボスユーザID / 所属上司ＩＤ）COM
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_NF_BOSS_NM">
+ <summary>
+ UserInfoDS項目定数（ＮＦボスユーザ名称 / 所属上司名称）COM
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_JF_BOSS_NM">
+ <summary>
+ UserInfoDS項目定数（ＪＦボスユーザ名称 / 所属上司名称）COM
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_GT_BOSS_NM">
+ <summary>
+ UserInfoDS項目定数（ＧＴボスユーザ名称 / 所属上司名称）COM
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_HO_USER_ID">
+ <summary>
+ UserInfoDS項目定数（本部ユーザID）COM
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_HO_USER_NM">
+ <summary>
+ UserInfoDS項目定数（本部ユーザNM）COM
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_OFFICE_CD">
+ <summary>
+ UserInfoDS項目定数（事務所コード）COM
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_OFFICE_NM">
+ <summary>
+ UserInfoDS項目定数（事務所コードNM）COM
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_AUTHO_LEVEL">
+ <summary>
+ UserInfoDS項目定数（権限レベル区分）COM
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_AUTHO_LEVEL_NM">
+ <summary>
+ UserInfoDS項目定数（権限レベル区分NM）COM
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_ACNT_FLG">
+ <summary>
+ UserInfoDS項目定数（経理処理権限フラグ）COM
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_ACNT_FLG_NM">
+ <summary>
+ UserInfoDS項目定数（経理処理権限フラグNM）COM
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_HO_APPROVAL_FLG">
+ <summary>
+ UserInfoDS項目定数（本部承認可能フラグ）COM
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_HO_APPROVAL_FLG_NM">
+ <summary>
+ UserInfoDS項目定数（本部承認可能フラグNM）COM
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_AUTHORITY_KBN">
+ <summary>
+ UserInfoDS項目定数（アクセス権限区分）DS
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_AUTHORITY_KBN_NM">
+ <summary>
+ UserInfoDS項目定数（アクセス権限区分NM）DS
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_AUTH_FLG">
+ <summary>
+ UserInfoDS項目定数（権限レベル）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_AUTH_NM">
+ <summary>
+ UserInfoDS項目定数（権限レベル名称）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_AUTHO_LV">
+ <summary>
+ UserInfoDS項目定数（権限レベル）LM
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_POST">
+ <summary>
+ UserInfoDS項目定数（役職）DS
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_APP_UMU">
+ <summary>
+ UserInfoDS項目定数（承認権限区分）DS
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_APP_UMU_NM">
+ <summary>
+ UserInfoDS項目定数（承認権限区分NM）DS
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_U_COMP">
+ <summary>
+ UserInfoDS項目定数（会社コード）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_U_COMP_NM">
+ <summary>
+ UserInfoDS項目定数（会社名称）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_U_BU">
+ <summary>
+ UserInfoDS項目定数（ビジネスユニットコード）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_U_BU_NM">
+ <summary>
+ UserInfoDS項目定数（ビジネスユニット名称）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_U_BR">
+ <summary>
+ UserInfoDS項目定数（所属営業所コード）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_U_BR_NM">
+ <summary>
+ UserInfoDS項目定数（所属営業所名称）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_U_TEL">
+ <summary>
+ UserInfoDS項目定数（電話番号）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_U_FAX">
+ <summary>
+ UserInfoDS項目定数（FAX番号）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_MANAGE_FLG">
+ <summary>
+ UserInfoDS項目定数（経営情報アクセスフラグ）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_MANAGE_NM">
+ <summary>
+ UserInfoDS項目定数（経営情報アクセスフラグ名称）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_AD_NM">
+ <summary>
+ UserInfoDS項目定数（アクティブディレクトリエイリアス名）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_JDE_ID">
+ <summary>
+ UserInfoDS項目定数（JDEユーザーID）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_EST_FINAL_MGR_ID">
+ <summary>
+ UserInfoDS項目定数（見積予定最終決裁者ＩＤ）NF
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_EST_FINAL_MGR_NM">
+ <summary>
+ UserInfoDS項目定数（見積予定最終決裁者NM）NF
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_EST_BILL_MGR_ID">
+ <summary>
+ UserInfoDS項目定数（見積予定請求決裁者ＩＤ）NF
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_EST_BILL_MGR_NM">
+ <summary>
+ UserInfoDS項目定数（見積予定請求決裁者NM）NF
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_EST_PAY_MGR_ID">
+ <summary>
+ UserInfoDS項目定数（見積予定下払決裁者ＩＤ）NF
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_EST_PAY_MGR_NM">
+ <summary>
+ UserInfoDS項目定数（見積予定下払決裁者NM）NF
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_EST_BILL_FLG">
+ <summary>
+ UserInfoDS項目定数（見積請求承認フラグ）NF
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_EST_PAY_FLG">
+ <summary>
+ UserInfoDS項目定数（見積下払承認フラグ）NF
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_EST_ADMIN_FLG">
+ <summary>
+ UserInfoDS項目定数（見積全体承認フラグ）NF
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_AUTH_AGR_FLG">
+ <summary>
+ UserInfoDS項目定数（成約承認権限フラグ）NF
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_AUTH_BILL_FLG">
+ <summary>
+ UserInfoDS項目定数（請求承認権限フラグ）NF
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_AUTH_PAY_FLG">
+ <summary>
+ UserInfoDS項目定数（下払承認権限フラグ）NF
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_PRV_ADMIN_KBN">
+ <summary>
+ UserInfoDS項目定数（全般アクセス権限区分）NF
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_PRV_MANAGEMENT_KBN">
+ <summary>
+ UserInfoDS項目定数（経営情報アクセス権限区分）NF
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_PRV_AGR_KBN">
+ <summary>
+ UserInfoDS項目定数（成約アクセス権限区分）NF
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_PRV_MST_KBN">
+ <summary>
+ UserInfoDS項目定数（マスタアクセス権限区分）NF
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_PRINTER_IMPACT_NM">
+ <summary>
+ UserInfoDS項目定数（使用ドットプリンタ名）NF
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_PRINTER_LASER_NM">
+ <summary>
+ UserInfoDS項目定数（使用レーザープリンタ名）NF
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_TEMPLATE_SAVE">
+ <summary>
+ UserInfoDS項目定数（テンプレート格納先）NF
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_MAIL_CHECK_TIME">
+ <summary>
+ UserInfoDS項目定数（メール問合せ時間）NF
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_SEARCH_KBN">
+ <summary>
+ UserInfoDS項目定数（検索コントロール区分）NF
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_NRS_BR_CD">
+ <summary>
+ UserInfoDS項目定数（営業所コード）LM
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_WH_CD">
+ <summary>
+ UserInfoDS項目定数（倉庫コード）LM
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_BUSYO_CD">
+ <summary>
+ UserInfoDS項目定数（部署コード）LM
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_INKA_DATE_INIT">
+ <summary>
+ UserInfoDS項目定数（入荷の日付初期値）LM
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_OUTKA_DATE_INIT">
+ <summary>
+ UserInfoDS項目定数（出荷の日付初期値）LM
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_DEF_PRT1">
+ <summary>
+ UserInfoDS項目定数（デフォルトプリンタ1）LM
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_DEF_PRT2">
+ <summary>
+ UserInfoDS項目定数（デフォルトプリンタ2）LM
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_DEF_PRT3">
+ <summary>
+ UserInfoDS項目定数（デフォルトプリンタ3）LM
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_DEF_PRT4">
+ <summary>
+ UserInfoDS項目定数（デフォルトプリンタ4）LM
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_DEF_PRT5">
+ <summary>
+ UserInfoDS項目定数（デフォルトプリンタ5）LM
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_DEF_PRT6">
+ <summary>
+ UserInfoDS項目定数（デフォルトプリンタ6）LM
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_DEF_PRT7">
+ <summary>
+ UserInfoDS項目定数（デフォルトプリンタ7）LM
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_COA_PRT">
+ <summary>
+ UserInfoDS項目定数（分析票用プリンタ）LM
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_CACHE_ALL">
+ <summary>
+ UserInfoDS項目定数（マスタキャッシュフラグ）LM
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_SYS_ENT_DATE">
+ <summary>
+ UserInfoDS項目定数（SYS_ENT_DATE）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_SYS_ENT_TIME">
+ <summary>
+ UserInfoDS項目定数（SYS_ENT_TIME）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_SYS_ENT_PGID">
+ <summary>
+ UserInfoDS項目定数（SYS_ENT_PGID）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_SYS_ENT_USER">
+ <summary>
+ UserInfoDS項目定数（SYS_ENT_USER）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_SYS_UPD_DATE">
+ <summary>
+ UserInfoDS項目定数（SYS_UPD_DATE）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_SYS_UPD_TIME">
+ <summary>
+ UserInfoDS項目定数（SYS_UPD_TIME）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_SYS_UPD_PGID">
+ <summary>
+ UserInfoDS項目定数（SYS_UPD_PGID）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_SYS_UPD_USER">
+ <summary>
+ UserInfoDS項目定数（SYS_UPD_USER）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_SYS_DEL_FLG">
+ <summary>
+ UserInfoDS項目定数（SYS_DEL_FLG）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_COMP_NM">
+ <summary>
+UserInfoDS項目定数（会社名[日本語]＠会社マスタ）
+ </summary>
+ <remarks>from 会社マスタ</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_COMP_SNM">
+ <summary>
+UserInfoDS項目定数（会社略名[日本語]＠会社マスタ）
+ </summary>
+ <remarks>from 会社マスタ</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_COMP_DEPT_NM">
+ <summary>
+UserInfoDS項目定数（部署名[日本語]＠会社マスタ）
+ </summary>
+ <remarks>from 会社マスタ</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_COMP_DEPT_DISP_NM">
+ <summary>
+UserInfoDS項目定数（部署表示名[日本語]＠会社マスタ）
+ </summary>
+ <remarks>from 会社マスタ</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_COMP_EMP_NM">
+ <summary>
+UserInfoDS項目定数（担当者名[日本語]＠会社マスタ）
+ </summary>
+ <remarks>from 会社マスタ</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_COMP_ZIP">
+ <summary>
+UserInfoDS項目定数（郵便番号[日本語]＠会社マスタ）
+ </summary>
+ <remarks>from 会社マスタ</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_COMP_ADD1">
+ <summary>
+UserInfoDS項目定数（住所1[日本語]＠会社マスタ）
+ </summary>
+ <remarks>from 会社マスタ</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_COMP_ADD2">
+ <summary>
+UserInfoDS項目定数（住所2[日本語]＠会社マスタ）
+ </summary>
+ <remarks>from 会社マスタ</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_COMP_COMP_ENM">
+ <summary>
+UserInfoDS項目定数（会社名[英語]＠会社マスタ）
+ </summary>
+ <remarks>from 会社マスタ</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_COMP_COMP_SENM">
+ <summary>
+UserInfoDS項目定数（会社略名[英語]＠会社マスタ）
+ </summary>
+ <remarks>from 会社マスタ</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_COMP_DEPT_ENM">
+ <summary>
+UserInfoDS項目定数（部署名[英語]＠会社マスタ）
+ </summary>
+ <remarks>from 会社マスタ</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_COMP_EMP_ENM">
+ <summary>
+UserInfoDS項目定数（担当者名[英語]＠会社マスタ）
+ </summary>
+ <remarks>from 会社マスタ</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_COMP_EADD1">
+ <summary>
+UserInfoDS項目定数（住所1[英語]＠会社マスタ）
+ </summary>
+ <remarks>from 会社マスタ</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_COMP_EADD2">
+ <summary>
+UserInfoDS項目定数（住所2[英語]＠会社マスタ）
+ </summary>
+ <remarks>from 会社マスタ</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_COMP_EADD3">
+ <summary>
+UserInfoDS項目定数（住所3[英語]＠会社マスタ）
+ </summary>
+ <remarks>from 会社マスタ</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_COMP_TEL">
+ <summary>
+UserInfoDS項目定数（電話番号＠会社マスタ）
+ </summary>
+ <remarks>from 会社マスタ</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Base.JFUserInfoManager.USERINFO_COMP_FAX">
+ <summary>
+UserInfoDS項目定数（FAX番号＠会社マスタ）
+ </summary>
+ <remarks>from 会社マスタ</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetUserEnm">
+ <summary>
+ ユーザー英名を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetPassword">
+ <summary>
+ パスワードを取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetEmail">
+ <summary>
+ メールアドレスを取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetDepotKbn">
+ <summary>
+ 部門区分を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetDepotKbnNm">
+ <summary>
+ 部門区分名称を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetNFDeptKbn">
+ <summary>
+ ＮＦ所属部署区分を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetJFDeptKbn">
+ <summary>
+ ＪＦ所属部署区分を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetNFDeptNm">
+ <summary>
+ ＮＦ所属部署区分名称を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetJFDeptNm">
+ <summary>
+ ＪＦ所属部署区分名称を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetNFBossId">
+ <summary>
+ ＮＦボスユーザID / 所属上司ＩＤを取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetJFBossId">
+ <summary>
+ ＪＦボスユーザID / 所属上司ＩＤを取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetGTBossId">
+ <summary>
+ ＧＴボスユーザID / 所属上司ＩＤを取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetNFBossNm">
+ <summary>
+ ＮＦボスユーザ名称 / 所属上司名称を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetJFBossNm">
+ <summary>
+ ＪＦボスユーザ名称 / 所属上司名称を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetGTBossNm">
+ <summary>
+ ＧＴボスユーザ名称 / 所属上司名称を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetHoUserId">
+ <summary>
+ 本部ユーザIDを取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetHoUserNm">
+ <summary>
+ 本部ユーザNMを取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetOfficeCd">
+ <summary>
+ 事務所コードを取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetOfficeNm">
+ <summary>
+ 事務所名称を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetAuthoLevel">
+ <summary>
+ 権限レベル区分を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetAuthoLevelNm">
+ <summary>
+ 権限レベル名称を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetAcntFlg">
+ <summary>
+ 経理処理権限フラグを取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetAcntFlgNm">
+ <summary>
+ 経理処理権限フラグ名称を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetHoApprovalFlg">
+ <summary>
+ 本部承認可能フラグを取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetHoApprovalFlgNm">
+ <summary>
+ 本部承認可能フラグ名称を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetAuthorityKbn">
+ <summary>
+ アクセス権限区分を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetAuthorityKbnNm">
+ <summary>
+ アクセス権限区分名称を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetAuthFlg">
+ <summary>
+ 権限レベルを取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetAuthNm">
+ <summary>
+ 権限レベル名称を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetAuthoLv">
+ <summary>
+ 権限レベルを取得します。(LM)
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetPost">
+ <summary>
+ 役職を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetAppUmu">
+ <summary>
+ 承認権限区分を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetAppUmuNm">
+ <summary>
+ 承認権限区分名称を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetUcompCd">
+ <summary>
+ 会社コードを取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetUcompNm">
+ <summary>
+ 会社名称を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetUbuCd">
+ <summary>
+ ビジネスユニットコードを取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetUbuNm">
+ <summary>
+ ビジネスユニット名称を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetUbrCd">
+ <summary>
+ 所属営業所コードを取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetUbrNm">
+ <summary>
+ 所属営業所名称を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetUtelNo">
+ <summary>
+ 電話番号を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetUfaxNo">
+ <summary>
+ FAX番号を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetManageFlg">
+ <summary>
+ 経営情報アクセスフラグを取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetManageNm">
+ <summary>
+ 経営情報アクセスフラグ名称を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetAdNm">
+ <summary>
+ アクティブディレクトリエイリアス名称を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetJdeId">
+ <summary>
+ JDEユーザーIDを取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetEstFinalMgrId">
+ <summary>
+ 見積予定最終決裁者ＩＤを取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetEstFinalMgrNm">
+ <summary>
+ 見積予定最終決裁者名称を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetEstBillMgrId">
+ <summary>
+ 見積予定請求決裁者ＩＤを取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetEstBillMgrNm">
+ <summary>
+ 見積予定請求決裁者名称を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetEstPayMgrId">
+ <summary>
+ 見積予定下払決裁者ＩＤを取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetEstPayMgrNm">
+ <summary>
+ 見積予定下払決裁者名称を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetEstBillFlg">
+ <summary>
+ 見積請求承認フラグを取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetEstPayFlg">
+ <summary>
+ 見積下払承認フラグを取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetEstAdminFlg">
+ <summary>
+ 見積全体承認フラグを取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetAuthAgrFlg">
+ <summary>
+ 成約承認権限フラグを取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetAuthBillFlg">
+ <summary>
+ 請求承認権限フラグを取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetAuthPayFlg">
+ <summary>
+ 下払承認権限フラグを取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetPrvAdminKbn">
+ <summary>
+ 全般アクセス権限区分を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetPrvManagementKbn">
+ <summary>
+ 経営情報アクセス権限区分を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetPrvAgrKbn">
+ <summary>
+ 成約アクセス権限区分を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetPrvMstKbn">
+ <summary>
+ マスタアクセス権限区分を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetPrinterImpactNm">
+ <summary>
+ 使用ドットプリンタ名を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetPrinterLaserNm">
+ <summary>
+ 使用レーザープリンタ名を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetTemplateSave">
+ <summary>
+ テンプレート格納先を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetMailCheckTime">
+ <summary>
+ メール問合せ時間を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetSearchKbn">
+ <summary>
+ 検索コントロール区分を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetNrsBrCd">
+ <summary>
+ 営業所コードを取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetWhCd">
+ <summary>
+ 倉庫コードを取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetBusyoCd">
+ <summary>
+ 部署コードを取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetInkaDateInit">
+ <summary>
+ 入荷の日付初期値を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetOutkaDateInit">
+ <summary>
+ 出荷の日付初期値を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetDefPrt1">
+ <summary>
+ デフォルトプリンタ1を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetDefPrt2">
+ <summary>
+ デフォルトプリンタ2を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetDefPrt3">
+ <summary>
+ デフォルトプリンタ3を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetDefPrt4">
+ <summary>
+ デフォルトプリンタ4を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetDefPrt5">
+ <summary>
+ デフォルトプリンタ5を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetDefPrt6">
+ <summary>
+ デフォルトプリンタ6を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetDefPrt7">
+ <summary>
+ デフォルトプリンタ7を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetCoaPrt">
+ <summary>
+ 分析票用プリンタを取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetCacheAll">
+ <summary>
+ マスタキャッシュフラグを取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetSysEntDate">
+ <summary>
+ SYS_ENT_DATEを取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetSysEntTime">
+ <summary>
+ SYS_ENT_TIMEを取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetSysEntPgid">
+ <summary>
+ SYS_ENT_PGIDを取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetSysEntUser">
+ <summary>
+ SYS_ENT_USERを取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetSysUpdDate">
+ <summary>
+ SYS_UPD_DATEを取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetSysUpdTime">
+ <summary>
+ SYS_UPD_TIMEを取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetSysUpdPgid">
+ <summary>
+ SYS_UPD_PGIDを取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetSysUpdUser">
+ <summary>
+ SYS_UPD_USERを取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetSysDelFlg">
+ <summary>
+ SYS_DEL_FLGを取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetCompNm">
+ <summary>
+ 会社名[日本語]＠会社マスタを取得します。
+ </summary>
+ <returns></returns>
+ <remarks>from 会社マスタ</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetCompSnm">
+ <summary>
+ 会社略名[日本語]＠会社マスタを取得します。
+ </summary>
+ <returns></returns>
+ <remarks>from 会社マスタ</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetCompDeptNm">
+ <summary>
+ 部署名[日本語]＠会社マスタを取得します。
+ </summary>
+ <returns></returns>
+ <remarks>from 会社マスタ</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetCompDeptDispNm">
+ <summary>
+ 部署表示名[日本語]＠会社マスタを取得します。
+ </summary>
+ <returns></returns>
+ <remarks>from 会社マスタ</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetCompEmpNm">
+ <summary>
+ 担当者名[日本語]＠会社マスタを取得します。
+ </summary>
+ <returns></returns>
+ <remarks>from 会社マスタ</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetCompZip">
+ <summary>
+ 郵便番号[日本語]＠会社マスタを取得します。
+ </summary>
+ <returns></returns>
+ <remarks>from 会社マスタ</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetCompAdd1">
+ <summary>
+ 住所1[日本語]＠会社マスタを取得します。
+ </summary>
+ <returns></returns>
+ <remarks>from 会社マスタ</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetCompAdd2">
+ <summary>
+ 住所2[日本語]＠会社マスタを取得します。
+ </summary>
+ <returns></returns>
+ <remarks>from 会社マスタ</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetCompCompEnm">
+ <summary>
+ 会社名[英語]＠会社マスタを取得します。
+ </summary>
+ <returns></returns>
+ <remarks>from 会社マスタ</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetCompCompSenm">
+ <summary>
+ 会社略名[英語]＠会社マスタを取得します。
+ </summary>
+ <returns></returns>
+ <remarks>from 会社マスタ</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetCompDeptEnm">
+ <summary>
+ 部署名[英語]＠会社マスタを取得します。
+ </summary>
+ <returns></returns>
+ <remarks>from 会社マスタ</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetCompEmpEnm">
+ <summary>
+ 担当者名[英語]＠会社マスタを取得します。
+ </summary>
+ <returns></returns>
+ <remarks>from 会社マスタ</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetCompEadd1">
+ <summary>
+ 住所1[英語]＠会社マスタを取得します。
+ </summary>
+ <returns></returns>
+ <remarks>from 会社マスタ</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetCompEadd2">
+ <summary>
+ 住所2[英語]＠会社マスタを取得します。
+ </summary>
+ <returns></returns>
+ <remarks>from 会社マスタ</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetCompEadd3">
+ <summary>
+ 住所3[英語]＠会社マスタを取得します。
+ </summary>
+ <returns></returns>
+ <remarks>from 会社マスタ</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetCompTel">
+ <summary>
+ 電話番号＠会社マスタを取得します。
+ </summary>
+ <returns></returns>
+ <remarks>from 会社マスタ</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Base.JFUserInfoManager.GetCompFax">
+ <summary>
+ FAX番号＠会社マスタを取得します。
+ </summary>
+ <returns></returns>
+ <remarks>from 会社マスタ</remarks>
+</member>
+<member name="T:Jp.Co.Nrs.JF.CalcuratorDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.CalcuratorDS.CALCURATORDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.CalcuratorDS.CALCURATORRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.CalcuratorDS.CALCURATORRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.MAccCnvDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.MAccCnvDS.M_ACCCNVDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.MAccCnvDS.M_ACCCNVRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.MAccCnvDS.M_ACCCNVRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.MAccDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.MAccDS.M_ACCDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.MAccDS.M_ACCRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.MAccDS.M_ACCRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.MBrDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.MBrDS.M_BRDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.MBrDS.M_BRRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.MBrDS.M_BRRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.MBuDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.MBuDS.M_BUDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.MBuDS.M_BURow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.MBuDS.M_BURowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.MCompDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.MCompDS.M_COMPDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.MCompDS.M_COMPRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.MCompDS.M_COMPRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.MCurrDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.MCurrDS.M_CURRDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.MCurrDS.M_CURRRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.MCurrDS.M_CURRRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.MExchDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.MExchDS.M_EXCHDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.MExchDS.M_EXCHRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.MExchDS.M_EXCHRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.MF0101DS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.MF0101DS.M_F0101DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.MF0101DS.M_F0101Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.MF0101DS.M_F0101RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.MTaxDs">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.MTaxDs.M_TAXDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.MTaxDs.M_TAXRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.MTaxDs.M_TAXRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.SMenuDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.SMenuDS.S_MENUDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.SMenuDS.S_MENURow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.SMenuDS.S_MENURowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.SNumberDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.SNumberDS.S_NUMBERDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.SNumberDS.S_NUMBERRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.SNumberDS.S_NUMBERRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.SSpreadDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.SSpreadDS.S_SPREADDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.SSpreadDS.S_SPREADRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.SSpreadDS.S_SPREADRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.SUserDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.SUserDS.S_USERDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.SUserDS.S_USERRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.SUserDS.S_USERRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.UserInfoDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.UserInfoDS.S_USERDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.UserInfoDS.S_USERRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.UserInfoDS.S_USERRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.ZKbnDS">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.ZKbnDS.Z_KBNDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.ZKbnDS.Z_KBNRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.ZKbnDS.Z_KBNRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.Const.JFConst">
+ <summary>
+ 拡張共通定数定義クラス
+ </summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.Const.JFConst.CacheTBL">
+ <summary>
+ キャッシュテーブル名定数
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFConst.CacheTBL.CURR">
+ <summary>
+ 通貨マスタ
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFConst.COM_DB">
+ <summary>
+ COM_DB接続用の接頭辞
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFConst.JF_DB">
+ <summary>
+ JF_DB接続用の接頭辞
+ </summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.Const.JFConst.JFCachedDataSet">
+ <summary>
+ キャッシュデータセット
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFConst.JFCachedDataSet.M_CURR">
+ <summary>
+ 通貨マスタ
+ </summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.Const.JFGUIConst">
+ <summary>
+ 拡張画面項目用定数クラス
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFGUIConst.CATEGORY_NAME">
+ <summary>
+ GUIエディター用のプロパティカテゴリ文言
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFGUIConst.FONT_DEF_TYPE">
+ <summary>
+ フォント種類
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFGUIConst.FONT_DEF_SIZE">
+ <summary>
+ フォントサイズ
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFGUIConst.FONT_DEF_CHARSET">
+ <summary>
+ フォントセット
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFGUIConst.FORE_COLOR_SYSTEM_RED">
+ <summary>
+ システム前景色（R）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFGUIConst.FORE_COLOR_SYSTEM_GREEN">
+ <summary>
+ システム前景色（G）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFGUIConst.FORE_COLOR_SYSTEM_BLUE">
+ <summary>
+ システム前景色（B）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFGUIConst.BACK_COLOR_SYSTEM_RED">
+ <summary>
+ システム背景色（R）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFGUIConst.BACK_COLOR_SYSTEM_GREEN">
+ <summary>
+ システム背景色（G）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFGUIConst.BACK_COLOR_SYSTEM_BLUE">
+ <summary>
+ システム背景色（B）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFGUIConst.FORE_COLOR_ATTENTION_RED">
+ <summary>
+ システム警告色（R）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFGUIConst.FORE_COLOR_ATTENTION_GREEN">
+ <summary>
+ システム警告色（G）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFGUIConst.FORE_COLOR_ATTENTION_BLUE">
+ <summary>
+ システム警告色（B）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFGUIConst.BACK_COLOR_ATTENTION_RED">
+ <summary>
+ システム警告背景色（R）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFGUIConst.BACK_COLOR_ATTENTION_GREEN">
+ <summary>
+ システム警告背景色（G）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFGUIConst.BACK_COLOR_ATTENTION_BLUE">
+ <summary>
+ システム警告背景色（B）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFGUIConst.SYSTEM_COLOR_BULUE_RED">
+ <summary>
+ システム新規色（R）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFGUIConst.SYSTEM_COLOR_BULUE_GREEN">
+ <summary>
+ システム新規色（G）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFGUIConst.SYSTEM_COLOR_BULUE_BLUE">
+ <summary>
+ システム前景色（B）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFGUIConst.BACK_COLOR_INPUT_RED">
+ <summary>
+ 入力項目背景色（R）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFGUIConst.BACK_COLOR_INPUT_GREEN">
+ <summary>
+ 入力項目背景色（G）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFGUIConst.BACK_COLOR_INPUT_BLUE">
+ <summary>
+ 入力項目背景色（B）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFGUIConst.SPREAD_COLOR_INPUT_BACK_RED">
+ <summary>
+ スプレッド入力項目背景色（R）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFGUIConst.SPREAD_COLOR_INPUT_BACK_GREEN">
+ <summary>
+ スプレッド入力項目背景色（G）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFGUIConst.SPREAD_COLOR_INPUT_BACK_BLUE">
+ <summary>
+ スプレッド入力項目背景色（B）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFGUIConst.SPREAD_COLOR_SELECT_FORE_RED">
+ <summary>
+ スプレッド選択時前景色（R）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFGUIConst.SPREAD_COLOR_SELECT_FORE_GREEN">
+ <summary>
+ スプレッド選択時前景色（G）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFGUIConst.SPREAD_COLOR_SELECT_FORE_BLUE">
+ <summary>
+ スプレッド選択時前景色（B）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFGUIConst.SPREAD_COLOR_SELECT_BACK_RED">
+ <summary>
+ スプレッド選択時背景色（R）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFGUIConst.SPREAD_COLOR_SELECT_BACK_GREEN">
+ <summary>
+ スプレッド選択時背景色（G）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFGUIConst.SPREAD_COLOR_SELECT_BACK_BLUE">
+ <summary>
+ スプレッド選択時背景色（B）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFGUIConst.GRID_LINE_COLOR_RED">
+ <summary>
+ グリッドライン色（R）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFGUIConst.GRID_LINE_COLOR_GREEN">
+ <summary>
+ グリッドライン色（G）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFGUIConst.GRID_LINE_COLOR_BLUE">
+ <summary>
+ グリッドライン色（B）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFGUIConst.FKEY_STYLE_DEFAULT">
+ <summary>
+ ファンクションキースタイル　デフォルト定数
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFGUIConst.FKEY_SETS_12">
+ <summary>
+ ファンクションキーセット　１２個タイプ定数
+ </summary>
+ <remarks>部品内のみ参照可能</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFGUIConst.FKEY_SETS_8">
+ <summary>
+ ファンクションキーセット　８個タイプ定数
+ </summary>
+ <remarks>部品内のみ参照可能</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFGUIConst.FKEY_SETS_4">
+ <summary>
+ ファンクションキーセット　４つタイプ定数
+ </summary>
+ <remarks>部品内のみ参照可能</remarks>
+</member>
+<member name="T:Jp.Co.Nrs.JF.Const.JFKbnConst">
+ <summary>
+ 区分マスタの区分分類コードの定数体
+ </summary>
+ <remarks>区分追加により修正を行うこと</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_A001">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_A002">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_A003">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_B001">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_B002">
+ <summary>
+ ＢＵ指定
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_B003">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_C001">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_C002">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_C003">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_D001">
+ <summary>
+ 伝票タイプ
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_D002">
+ <summary>
+ KIDS部署区分
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_D003">
+ <summary>
+ データ区分
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_D004">
+ <summary>
+ 伝票金額バランスフラグ
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_D005">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_E001">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_E002">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_E003">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_F001">
+ <summary>
+ ファイル取得場所
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_F002">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_F003">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_G001">
+ <summary>
+ 該当非該当フラグ
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_G002">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_G003">
+ <summary>
+ 月末指定フラグ
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_G004">
+ <summary>
+ 元利金引落区分
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_G005">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_G008">
+ <summary>
+ 蓄積メッセージタイトル
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_H001">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_H002">
+ <summary>
+ 返済サイクル
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_H003">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_I001">
+ <summary>
+ 入払区分
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_I002">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_I003">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_J001">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_J002">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_J003">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_K001">
+ <summary>
+ 権限レベル区分
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_K002">
+ <summary>
+ 科目タイプ
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_K003">
+ <summary>
+ 口座区分
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_K004">
+ <summary>
+ 給与区分
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_K005">
+ <summary>
+ 繰越区分
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_K006">
+ <summary>
+ 金額表示方法
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_K007">
+ <summary>
+ 借入先区分
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_K008">
+ <summary>
+ 休日処理区分
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_K009">
+ <summary>
+ 借入台帳ステージ
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_K010">
+ <summary>
+ 借入伝票ステージ
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_K011">
+ <summary>
+ 返済時決済銀行区分
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_K012">
+ <summary>
+ 借入データ区分
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_K013">
+ <summary>
+ 科目
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_K014">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_K015">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_L001">
+ <summary>
+ リンクサーバ接続情報
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_L002">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_L003">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_M001">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_M002">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_M003">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_N001">
+ <summary>
+ ナンバー区分
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_N002">
+ <summary>
+ 並び替え区分
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_N003">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_N004">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_N005">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_O001">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_O002">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_O003">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_P001">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_P002">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_P003">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_Q001">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_Q002">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_Q003">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_R001">
+ <summary>
+ レコードタイプ
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_R002">
+ <summary>
+ レコードタイプ2
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_R003">
+ <summary>
+ 利息支払方法
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_R004">
+ <summary>
+ 利息科目区分
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_R005">
+ <summary>
+ 利息部署区分
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_S001">
+ <summary>
+ 削除フラグ
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_S002">
+ <summary>
+ 作業ステージ
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_S003">
+ <summary>
+ 部門区分
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_S004">
+ <summary>
+ 使途区分
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_S005">
+ <summary>
+ デポ作業ステータス区分
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_S006">
+ <summary>
+ 収支集計区分
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_S007">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_S008">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_S009">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_S010">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_T001">
+ <summary>
+ 貸借区分
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_T002">
+ <summary>
+ 転記編集コード
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_T003">
+ <summary>
+ 通帳・証書区分
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_T004">
+ <summary>
+ 取引区分
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_T005">
+ <summary>
+ 手形・小切手区分
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_T006">
+ <summary>
+ 定数区分
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_T007">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_T008">
+ <summary>s
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_T009">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_T010">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_U001">
+ <summary>
+ 有無フラグ
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_U002">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_U003">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_Y001">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_Y002">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_Y003">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_Z001">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_Z002">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Const.JFKbnConst.KBN_Z003">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.GUI.Win.ActiveReports.ARViewer">
+ <summary>
+ ActiveRepotsプレビューフォーム
+ </summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFComboKubun">
+ <summary>
+ 区分表示用コンボボックス
+ </summary>
+ <remarks>
+ </remarks>
+</member>
+<member name="T:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFComboKubun.DISP_MEMBERS">
+ <summary>
+ 表示する区分名の列挙体
+ </summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFComboKubun.VALUE_EXTRACT_PATTERN">
+ <summary>
+ Value1～3の抽出パターンの列挙体
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFComboKubun.VALUE_EXTRACT_PATTERN.NONE">
+ <summary>
+ Value１～３による抽出は行いません
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFComboKubun.VALUE_EXTRACT_PATTERN.V1">
+ <summary>
+ Value１のみが設定された条件と一致する
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFComboKubun.VALUE_EXTRACT_PATTERN.V2">
+ <summary>
+ Value２のみが設定された条件と一致する
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFComboKubun.VALUE_EXTRACT_PATTERN.V3">
+ <summary>
+ Value３のみが設定された条件と一致する
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFComboKubun.VALUE_EXTRACT_PATTERN.V1orV2orV3">
+ <summary>
+ Value１～３のいずれかがそれぞれが設定された条件と一致する
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFComboKubun._DataCode">
+ <summary>
+ 区分分類コードを格納するフィールド
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFComboKubun._DispMember">
+ <summary>
+ 区分名を格納するフィールド
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFComboKubun._DISP_MEMBER">
+ <summary>
+ 指定された区分名を格納するフィールド
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFComboKubun._Value1">
+ <summary>
+ Value1の抽出値を格納するフィールド
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFComboKubun._Value2">
+ <summary>
+ Value2の抽出値を格納するフィールド
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFComboKubun._Value3">
+ <summary>
+ Value1の抽出値を格納するフィールド
+ </summary>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFComboKubun.DataCode">
+ <summary>
+ 区分分類コードを取得・設定します
+ </summary>
+ <value></value>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFComboKubun.KubunNmColumn">
+ <summary>
+ 表示する区分名を取得・設定します
+ </summary>
+ <value></value>
+ <returns>表示する区分名</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFComboKubun.Value1">
+ <summary>
+ Value1の条件と条件値を設定します。
+ </summary>
+ <value></value>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFComboKubun.Value2">
+ <summary>
+ Value2の条件と条件値を設定します。
+ </summary>
+ <value></value>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFComboKubun.Value3">
+ <summary>
+ Value3の条件と条件値を設定します。
+ </summary>
+ <value></value>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFComboKubun.ValueExtractPattern">
+ <summary>
+ Value1～3の抽出パターンを取得・設定します
+ </summary>
+ <value></value>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFComboKubun.SetComboData">
+ <summary>
+ 区分データを設定します。
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFComboKubun.GetValueCondition(System.Text.StringBuilder)">
+ <summary>
+ Value１～３に対する抽出条件を作成します
+ </summary>
+ <param name="strB"></param>
+</member>
+<member name="T:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo">
+ <summary>
+ 拡張カスタムコンボボックス
+ </summary>
+ <remarks>
+ </remarks>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo._HissuCheck">
+ <summary>
+ 必須チェックの有無を格納するフィールド
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo._ItemName">
+ <summary>
+ コントロールの項目名を格納するフィールド
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo._HissuLabelVisible">
+ <summary>
+ 必須ラベルの表示・非表示フラグ
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo._SelectedIndex">
+ <summary>
+ 選択されたインデックス
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo._SelectedValue">
+ <summary>
+ 選択された値
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo._SelectedText">
+ <summary>
+ 選択されたテキスト
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo._SelectedItem">
+ <summary>
+ 選択されたアイテム
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo._IsLoaded">
+ <summary>
+ リストの構築状態を格納するフィールド
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo._DisplayMember">
+ <summary>
+ 表示用列名を格納するフィールド
+ </summary>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.BackColorDef">
+ <summary>
+ 背景色を取得・設定します
+ </summary>
+ <value>背景色</value>
+ <returns>背景色</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.HissuLabelBackColor">
+ <summary>
+ 必須ラベルの背景色を取得・設定します
+ </summary>
+ <value>入力欄の背景色</value>
+ <returns>入力欄の背景色</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.BorderStyleDef">
+ <summary>
+ 罫線定義を取得・設定します
+ </summary>
+ <value>罫線定義</value>
+ <returns>罫線定義</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.FontDef">
+ <summary>
+ フォント定義を取得・設定します
+ </summary>
+ <value>フォント定義</value>
+ <returns>フォント定義</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.ForeColorDef">
+ <summary>
+ 前景色を取得・設定します
+ </summary>
+ <value>前景色</value>
+ <returns>前景色</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.HeightDef">
+ <summary>
+ コントロールの高さを取得・設定します
+ </summary>
+ <value>高さ設定</value>
+ <returns>高さ設定</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.TextValue">
+ <summary>
+ テキストの値を取得・設定します
+ </summary>
+ <value>テキスト</value>
+ <returns>テキスト</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.WidthDef">
+ <summary>
+ コントロールの幅を取得・設定します
+ </summary>
+ <value>幅</value>
+ <returns>幅</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.InputWidth">
+ <summary>
+ 入力部分の幅を表示します
+ </summary>
+ <value>幅</value>
+ <returns>幅</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.EnableStatus">
+ <summary>
+ このコントロールのEnable値を取得・設定します。
+ </summary>
+ <value>このコントロールのEnable値</value>
+ <returns>このコントロールのEnable値</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.ReadOnly">
+ <summary>
+ このコントロールのReadOnly値を取得・設定します。
+ </summary>
+ <value>このコントロールのReadOnly値</value>
+ <returns>このコントロールのReadOnly値</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.ItemName">
+ <summary>
+ コントロールの項目名を取得・設定します。
+ </summary>
+ <value>コントロールの項目名</value>
+ <returns>コントロールの項目名</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.HissuLabelVisible">
+ <summary>
+ 必須マークの表示・非表示を設定します。
+ </summary>
+ <value>必須マークの表示・非表示</value>
+ <returns>必須マークの表示・非表示</returns>
+ <remarks>
+ True：表示
+ Flase：非表示
+ </remarks>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.ContentAlignment">
+ <summary>
+ コントロール内に表示するテキストの配置を取得または設定します。
+ </summary>
+ <value>水平・垂直方向の配置</value>
+ <returns>水平・垂直方向の配置</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.DataSource">
+ <summary>
+ コンボボックスのDataSourceを取得または設定します。
+ </summary>
+ <value>DataSource</value>
+ <returns>DataSource</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.ValueMember">
+ <summary>
+ コンボボックスのValueMemberを取得または設定します。
+ </summary>
+ <value>ValueMember</value>
+ <returns>ValueMember</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.DisplayMember">
+ <summary>
+ コンボボックスのDisplayMemberを取得または設定します。
+ </summary>
+ <value>DisplayMember</value>
+ <returns>DisplayMember</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.TabStopSetting">
+ <summary>
+ 入力欄のタブストップの可否を取得・設定します。
+ </summary>
+ <value>タブストップの可否</value>
+ <returns>タブストップ可否</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.InsertWildCard">
+ <summary>
+ 空行追加メソッド用プロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.IsHissuCheck">
+ <summary>
+ 必須チェックの有無
+ </summary>
+ <value></value>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.IsForbiddenWordsCheck">
+ <summary>
+ 禁止文字チェックの有無
+ </summary>
+ <value></value>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.SelectedIndex">
+ <summary>
+ 現在選択されている項目を示すインデックスを取得または設定します。
+ </summary>
+ <value></value>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.SelectedItem">
+ <summary>
+ 現在選択されている項目を取得または設定します。
+ </summary>
+ <value></value>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.SelectedText">
+ <summary>
+ 選択されているテキストの文字列を取得または設定します。 
+ </summary>
+ <value></value>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.SelectedValue">
+ <summary>
+ 選択されているValueMemberプロパティで指定したメンバプロパティの値を取得または設定します
+ </summary>
+ <value></value>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.IsLoaded">
+ <summary>
+ リストの構築状態を格納するプロパティ（True：リスト構築済み）
+ </summary>
+ <value></value>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.Items">
+ <summary>
+ リストアイテムを取得するプロパティ
+ </summary>
+ <value></value>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.InitializeForMakingForm">
+ <summary>
+ フォーム構築時の初期化処理を記述します。
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.InitBackColor">
+ <summary>
+ 初期化時に背景色を設定します
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.InitBorder">
+ <summary>
+ 初期化時に罫線定義を設定します
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.InitFont">
+ <summary>
+ 初期化時にフォント定義を設定します
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.InitForeColor">
+ <summary>
+ 初期化時に前景色を設定します
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.InitHeight">
+ <summary>
+ 初期化時に高さ設定を設定します
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.InitTextValue">
+ <summary>
+ 初期化時にテキストの値を設定します
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.InitWidth">
+ <summary>
+ 初期化時に幅を設定します
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.InitExtraSetting">
+ <summary>
+ 初期化時に固有の項目を設定します
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.InsertWildCardRow(System.Data.DataTable,System.String,System.String)">
+ <summary>
+ 空行追加メソッド
+ </summary>
+ <param name="dt"></param>
+ <param name="valueMember"></param>
+ <param name="dispMember"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.SetComboData">
+ <summary>
+ コンボボックスにデータを設定します。
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.CreateComboBoxData">
+ <summary>
+ コンボボックスにValueMember・DisplayMember・DataSourceを元にデータを設定します。
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.ComboBoxStyleSetting">
+ <summary>
+ ComboBoxスタイルの設定を行います。
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.GetValueForValidate">
+ <summary>
+ 入力チェック用に値を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.SetDefault">
+ <summary>
+ 入力チェック正常時の処理を実行します。
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.SetDefaultColor">
+ <summary>
+ 入力チェック正常時の色設定を適用します。
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.SetAttention">
+ <summary>
+ 入力チェックエラー時の処理を実行します。
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.SetAttentionColor">
+ <summary>
+ 入力チェックエラー時の色設定を適用します。
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.FinishCheck">
+ <summary>
+ 入力チェック後の共通処理を行います。
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.ResetCheckFlg">
+ <summary>
+ 入力チェック後にチェック用フラグを初期化します。
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.JFImTextBox_BackColorChanged(System.Object,System.EventArgs)">
+ <summary>
+ このコントロールのBackColor変更を受け取って入力部品のBackColorを変更します。
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.JFImTextBox_StyleChanged(System.Object,System.EventArgs)">
+ <summary>
+ このコントロールのStyle変更を受け取って入力部品のStyleを変更します。
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.JFImTextBox_FontChanged(System.Object,System.EventArgs)">
+ <summary>
+ このコントロールのFont変更を受け取って入力部品のFontを変更します。
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.JFImTextBox_ForeColorChanged(System.Object,System.EventArgs)">
+ <summary>
+ このコントロールのForeColor変更を受け取って入力部品のForeColorを変更します。
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.InputBox_EnabledChanged(System.Object,System.EventArgs)">
+ <summary>
+ このコントロールのEnable値変更を受け取って入力部品のEnable値を変更します。
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.InputBox_Enter(System.Object,System.EventArgs)">
+ <summary>
+ このコントロールがフォーカスを受け取ったときの動作です。
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.JFImCombo_Load(System.Object,System.EventArgs)">
+ <summary>
+ コントロールが始めて描画されるときのイベントです
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.InputBox_SelectedIndexChanged(System.Object,System.EventArgs)">
+ <summary>
+ SelectedIndexが変更されたときに発生するイベントです
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.InputBox_SelectedValueChanged(System.Object,System.EventArgs)">
+ <summary>
+ SelectedValueが変更されたときに発生するイベントです
+ </summary>
+</member>
+<member name="E:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.SelectedIndexChanged">
+ <summary>
+ SelectedIndexが変更されたときに発生させるイベントです
+ </summary>
+</member>
+<member name="E:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImCombo.SelectedValueChanged">
+ <summary>
+ SelectedValueChangedが変更されたときに発生させるイベントです
+ </summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImDate">
+ <summary>
+ 拡張カスタム日付入力用クラス
+ </summary>
+ <remarks>
+ </remarks>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImDate._HissuCheck">
+ <summary>
+ 必須チェックの有無を格納するフィールド
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImDate._MaxDateCheck">
+ <summary>
+ 最大日付の初期値を格納するフィールド
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImDate._rangeValue">
+ <summary>
+ 検証アイテムを格納するフィールド
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImDate._processValue">
+ <summary>
+ 検証アクションを格納するフィールド
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImDate._invalidValue">
+ <summary>
+ コントロールに入力された値が日付として有効かどうかを検証します
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImDate._HissuLabelVisible">
+ <summary>
+ 必須ラベルの表示・非表示フラグ
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImDate._TempPattern">
+ <summary>
+ 読み取り専用時用に一時的にフォーマットを格納するフィールド
+ </summary>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImDate.BackColorDef">
+ <summary>
+ 背景色を取得・設定します
+ </summary>
+ <value>背景色</value>
+ <returns>背景色</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImDate.HissuLabelBackColor">
+ <summary>
+ 必須ラベルの背景色を取得・設定します
+ </summary>
+ <value>入力欄の背景色</value>
+ <returns>入力欄の背景色</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImDate.BorderStyleDef">
+ <summary>
+ 罫線定義を取得・設定します
+ </summary>
+ <value>罫線定義</value>
+ <returns>罫線定義</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImDate.FontDef">
+ <summary>
+ フォント定義を取得・設定します
+ </summary>
+ <value>フォント定義</value>
+ <returns>フォント定義</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImDate.ForeColorDef">
+ <summary>
+ 前景色を取得・設定します
+ </summary>
+ <value>前景色</value>
+ <returns>前景色</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImDate.HeightDef">
+ <summary>
+ コントロールの高さを取得・設定します
+ </summary>
+ <value>高さ設定</value>
+ <returns>高さ設定</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImDate.TextValue">
+ <summary>
+ テキストの値を取得・設定します
+ </summary>
+ <value>テキスト</value>
+ <returns>テキスト</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImDate.WidthDef">
+ <summary>
+ コントロールの幅を取得・設定します
+ </summary>
+ <value>幅</value>
+ <returns>幅</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImDate.InputWidth">
+ <summary>
+ 入力部分の幅を表示します
+ </summary>
+ <value>幅</value>
+ <returns>幅</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImDate.IsHissuCheck">
+ <summary>
+ 必須チェックの有無
+ </summary>
+ <value></value>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImDate.IsAfterDateCheck">
+ <summary>
+ 未来日チェックの有無
+ </summary>
+ <value></value>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImDate.IsBeforeDateCheck">
+ <summary>
+ 過去日チェックの有無
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>
+ </remarks>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImDate.IsMinDateCheck">
+ <summary>
+ 最小日付の設定(デフォルトは、1900/01/01です。)
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>
+ </remarks>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImDate.EnableStatus">
+ <summary>
+ このコントロールのEnable値を取得・設定します。
+ </summary>
+ <value>このコントロールのEnable値</value>
+ <returns>このコントロールのEnable値</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImDate.ReadOnly">
+ <summary>
+ このコントロールのReadOnly値を取得・設定します。
+ </summary>
+ <value>このコントロールのReadOnly値</value>
+ <returns>このコントロールのReadOnly値</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImDate.ItemName">
+ <summary>
+ コントロールの項目名を取得・設定します。
+ </summary>
+ <value>コントロールの項目名</value>
+ <returns>コントロールの項目名</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImDate.HissuLabelVisible">
+ <summary>
+ 必須マークの表示・非表示を設定します。
+ </summary>
+ <value>必須マークの表示・非表示</value>
+ <returns>必須マークの表示・非表示</returns>
+ <remarks>
+ True：表示
+ Flase：非表示
+ </remarks>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImDate.Number">
+ <summary>
+ Numberの値を取得・設定します。
+ </summary>
+ <value>Number</value>
+ <returns>Number</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImDate.Value">
+ <summary>
+ Valueの値を取得・設定します。
+ </summary>
+ <value>Value</value>
+ <returns>Value</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImDate.ContentAlignment">
+ <summary>
+ コントロール内に表示するテキストの配置を取得または設定します。
+ </summary>
+ <value>水平・垂直方向の配置</value>
+ <returns>水平・垂直方向の配置</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImDate.DisplayFormat">
+ <summary>
+ 表示用の数値書式を示すNumberFormatオブジェクトを取得または設定します。
+ </summary>
+ <value>表示用の数値書式</value>
+ <returns>表示用の数値書式</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImDate.Format">
+ <summary>
+ 入力用の文字列書式を示すMaskFormatオブジェクトを取得または設定します。
+ </summary>
+ <value>入力用の文字列書式</value>
+ <returns>入力用の文字列書式</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImDate.TabStopSetting">
+ <summary>
+ 入力欄のタブストップの可否を取得・設定します。
+ </summary>
+ <value>タブストップの可否</value>
+ <returns>タブストップ可否</returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImDate.InitializeForMakingForm">
+ <summary>
+ フォーム構築時の初期化処理を記述します。
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImDate.InitBackColor">
+ <summary>
+ 初期化時に背景色を設定します
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImDate.InitBorder">
+ <summary>
+ 初期化時に罫線定義を設定します
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImDate.InitFont">
+ <summary>
+ 初期化時にフォント定義を設定します
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImDate.InitForeColor">
+ <summary>
+ 初期化時に前景色を設定します
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImDate.InitHeight">
+ <summary>
+ 初期化時に高さ設定を設定します
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImDate.InitTextValue">
+ <summary>
+ 初期化時にテキストの値を設定します
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImDate.InitWidth">
+ <summary>
+ 初期化時に幅を設定します
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImDate.InitExtraSetting">
+ <summary>
+ 初期化時に固有の項目を設定します
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImDate.SetTorikumiCalender(System.String)">
+ <summary>
+ 取組日の入力用 日付コントロールの設定
+ </summary>
+ <param name="value"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImDate.IsDateFullByteCheck(System.Int32)">
+ <summary>
+ 日付型のフルバイト数チェックを行います
+ </summary>
+ <param name="length">フルバイト数</param>
+ <returns>True:エラー無し False:エラー有り</returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImDate.GetValueForValidate">
+ <summary>
+ 入力チェック用に値を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImDate.SetDefault">
+ <summary>
+ 入力チェック正常時の処理を実行します。
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImDate.SetDefaultColor">
+ <summary>
+ 入力チェック正常時の色設定を適用します。
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImDate.SetAttention">
+ <summary>
+ 入力チェックエラー時の処理を実行します。
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImDate.SetAttentionColor">
+ <summary>
+ 入力チェックエラー時の色設定を適用します。
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImDate.FinishCheck">
+ <summary>
+ 入力チェックの後処理を行います。
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImDate.ResetCheckFlg">
+ <summary>
+ 入力チェック後にチェック用フラグを初期化します。
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImDate.IsExistCheckDateControls">
+ <summary>
+ フォーム上のコントロールからエラーを保持しているものを取得します
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImDate.JFImTextBox_BackColorChanged(System.Object,System.EventArgs)">
+ <summary>
+ このコントロールのBackColor変更を受け取って入力部品のBackColorを変更します。
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImDate.JFImTextBox_StyleChanged(System.Object,System.EventArgs)">
+ <summary>
+ このコントロールのStyle変更を受け取って入力部品のStyleを変更します。
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImDate.JFImTextBox_FontChanged(System.Object,System.EventArgs)">
+ <summary>
+ このコントロールのFont変更を受け取って入力部品のFontを変更します。
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImDate.JFImTextBox_ForeColorChanged(System.Object,System.EventArgs)">
+ <summary>
+ このコントロールのForeColor変更を受け取って入力部品のForeColorを変更します。
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImDate.InputBox_EnabledChanged(System.Object,System.EventArgs)">
+ <summary>
+ このコントロールのEnable値変更を受け取って入力部品のEnable値を変更します。
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImDate.InputBox_Enter(System.Object,System.EventArgs)">
+ <summary>
+ このコントロールがフォーカスを受け取ったときの動作です。
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="T:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImFunctionKey">
+ <summary>
+ 拡張カスタムファンクションキークラス
+ </summary>
+ <remarks>
+ </remarks>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImFunctionKey.FKEY_STYLE_DEFAULT">
+ <summary>
+ ファンクションキースタイル　デフォルト定数
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImFunctionKey.FKEY_SETS_12">
+ <summary>
+ ファンクションキーセット　１２個タイプ定数
+ </summary>
+ <remarks>部品内のみ参照可能</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImFunctionKey.FKEY_SETS_8">
+ <summary>
+ ファンクションキーセット　８つタイプ定数
+ </summary>
+ <remarks>部品内のみ参照可能</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImFunctionKey.FKEY_SETS_4">
+ <summary>
+ ファンクションキーセット　４つタイプ定数
+ </summary>
+ <remarks>部品内のみ参照可能</remarks>
+</member>
+<member name="T:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImFunctionKey.FkeyTypes">
+ <summary>
+ ファンクションキーボタン名タイプ定数
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImFunctionKey.FkeyTypes.ALL_SPACE_4">
+ <summary>
+ ファンクションキーボタン名タイプ定数（すべて空白 4個用）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImFunctionKey.FkeyTypes.ALL_SPACE_12">
+ <summary>
+ ファンクションキーボタン名タイプ定数（すべて空白 12個用）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImFunctionKey.FkeyTypes.MASTER">
+ <summary>
+ ファンクションキーボタン名タイプ定数（マスタ画面用）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImFunctionKey.FkeyTypes.MENU">
+ <summary>
+ ファンクションキータイプ定数（メニュー画面用）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImFunctionKey.FkeyTypes.LIST">
+ <summary>
+ ファンクションキータイプ定数（一覧系画面用）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImFunctionKey.FkeyTypes.DETAIL">
+ <summary>
+ ファンクションキータイプ定数（詳細系画面用）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImFunctionKey.FkeyTypes.POP_L">
+ <summary>
+ ファンクションキータイプ定数（POP-L画面用）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImFunctionKey.FkeyTypes.POP_M">
+ <summary>
+ ファンクションキータイプ定数（POP-M画面用）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImFunctionKey.FkeyTypes.POP_S">
+ <summary>
+ ファンクションキータイプ定数（POP-S画面用）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImFunctionKey.FkeyTypes.POP_SS">
+ <summary>
+ ファンクションキータイプ定数（POP-SS画面用）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImFunctionKey.FkeyTypes.POP_L_8B">
+ <summary>
+ ファンクションキータイプ定数（POP-L-8Button画面用）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImFunctionKey.FKeyButtonNmDefault12">
+ <summary>
+ ファンクションキーボタン名格納配列(12個)
+ </summary>
+ <remarks>FKEY_TYPE_DEFAULTに対するボタン名(F1～F12)</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImFunctionKey.FKeyButtonNmDefault4">
+ <summary>
+ ファンクションキーボタン名格納配列(4個)
+ </summary>
+ <remarks>FKEY_TYPE_DEFAULTに対するボタン名(F9～F12)</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImFunctionKey.FKeyButtonNmMaster">
+ <summary>
+ ファンクションキーボタン名格納配列
+ </summary>
+ <remarks>FKEY_TYPE_MASTERに対するボタン名</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImFunctionKey.FKeyButtonNmMenu">
+ <summary>
+ ファンクションキーボタン名格納配列
+ </summary>
+ <remarks>FKEY_TYPE_MENUに対するボタン名</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImFunctionKey.FKeyButtonNmList">
+ <summary>
+ ファンクションキーボタン名格納配列
+ </summary>
+ <remarks>FKEY_TYPE_LISTに対するボタン名</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImFunctionKey.FKeyButtonNmDetail">
+ <summary>
+ ファンクションキーボタン名格納配列
+ </summary>
+ <remarks>FKEY_TYPE_DETAILに対するボタン名</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImFunctionKey.FKeyButtonNmPopL">
+ <summary>
+ ファンクションキーボタン名格納配列
+ </summary>
+ <remarks>FKEY_TYPE_POP_Lに対するボタン名</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImFunctionKey.FKeyButtonNmPopM">
+ <summary>
+ ファンクションキーボタン名格納配列
+ </summary>
+ <remarks>FKEY_TYPE_POP_Mに対するボタン名</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImFunctionKey.FKeyButtonNmPopS">
+ <summary>
+ ファンクションキーボタン名格納配列
+ </summary>
+ <remarks>FKEY_TYPE_POP_Sに対するボタン名</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImFunctionKey.FKeyButtonNmPopL_8B">
+ <summary>
+ ファンクションキーボタン名格納配列
+ </summary>
+ <remarks>FKEY_TYPE_POP_L_8Buttonに対するボタン名</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImFunctionKey.FKeyButtonIndex12">
+ <summary>
+ ボタン配置インデックス(F1～F12)用　
+ </summary>
+ <remarks>表示しない場合(-1)</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImFunctionKey.FKeyButtonIndex8">
+ <summary>
+ ボタン配置インデックス(F5～F12)用　
+ </summary>
+ <remarks>表示しない場合(-1)</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImFunctionKey.FKeyButtonIndex4">
+ <summary>
+ ボタン配置インデックス(F9～F12)用　
+ </summary>
+ <remarks>表示しない場合(-1)</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImFunctionKey.SetFKeysType(Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImFunctionKey.FkeyTypes)">
+ <summary>
+ 各タイプに応じボタン名を設定
+ </summary>
+ <param name="fKeyButtonNMType">ボタン名タイプ定数</param>
+ <remarks>指定したタイプによりボタン名を設定します</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImFunctionKey.SetFKeysButtonIndex(System.String)">
+ <summary>
+ ButtonIndexを設定
+ </summary>
+ <param name="keySetsType">キーセットタイプ</param>
+ <remarks>ButtonIndexならびに、ボタンの表示・非表示を設定(BaseのFormで使用)</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImFunctionKey.GetButtonIndexArray(System.String)">
+ <summary>
+ ボタン配置インデックスの取得
+ </summary>
+ <param name="keySetsType">キーセットタイプ</param>
+ <remarks>JFGUIConstに登録されたボタン配置を取得します</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImFunctionKey.GetButtonNmArray(Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImFunctionKey.FkeyTypes)">
+ <summary>
+ ボタン名の配列取得
+ </summary>
+ <param name="fKeyButtonNMType">ボタン名タイプ定数</param>
+ <returns>ボタン名配列</returns>
+ <remarks>JFGUIConstに登録されたボタン名を取得します</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImFunctionKey.FKeyButtonSetting(System.Int32,System.Int32)">
+ <summary>
+ ボタン配置インデックスを元にボタンを設定します。
+ </summary>
+ <param name="index"></param>
+ <param name="btnIndex"></param>
+ <returns></returns>
+</member>
+<member name="T:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImMasked">
+ <summary>
+ 拡張カスタムマスクドテキストボックスクラス
+ </summary>
+ <remarks>
+ </remarks>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImMasked._HissuCheck">
+ <summary>
+ 必須チェックの有無を格納するフィールド
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImMasked._HissuLabelVisible">
+ <summary>
+ 必須ラベルの表示・非表示フラグ
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImMasked._patternField">
+ <summary>
+ パターンフィールドオブジェクトを格納するフィールド
+ </summary>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImMasked.BackColorDef">
+ <summary>
+ 背景色を取得・設定します
+ </summary>
+ <value>背景色</value>
+ <returns>背景色</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImMasked.HissuLabelBackColor">
+ <summary>
+ 必須ラベルの背景色を取得・設定します
+ </summary>
+ <value>入力欄の背景色</value>
+ <returns>入力欄の背景色</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImMasked.BorderStyleDef">
+ <summary>
+ 罫線定義を取得・設定します
+ </summary>
+ <value>罫線定義</value>
+ <returns>罫線定義</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImMasked.FontDef">
+ <summary>
+ フォント定義を取得・設定します
+ </summary>
+ <value>フォント定義</value>
+ <returns>フォント定義</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImMasked.ForeColorDef">
+ <summary>
+ 前景色を取得・設定します
+ </summary>
+ <value>前景色</value>
+ <returns>前景色</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImMasked.HeightDef">
+ <summary>
+ コントロールの高さを取得・設定します
+ </summary>
+ <value>高さ設定</value>
+ <returns>高さ設定</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImMasked.TextValue">
+ <summary>
+ テキストの値を取得・設定します
+ </summary>
+ <value>テキスト</value>
+ <returns>テキスト</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImMasked.WidthDef">
+ <summary>
+ コントロールの幅を取得・設定します
+ </summary>
+ <value>幅</value>
+ <returns>幅</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImMasked.InputWidth">
+ <summary>
+ 入力部分の幅を表示します
+ </summary>
+ <value>幅</value>
+ <returns>幅</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImMasked.Value">
+ <summary>
+ コントロール内の入力文字のみ（リテラル文字列以外）を取得または設定します。
+ </summary>
+ <value>入力用の文字列書式</value>
+ <returns>入力用の文字列書式</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImMasked.IsHissuCheck">
+ <summary>
+ 必須チェックの有無
+ </summary>
+ <value></value>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImMasked.IsForbiddenWordsCheck">
+ <summary>
+ 禁止文字チェックの有無
+ </summary>
+ <value></value>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImMasked.EnableStatus">
+ <summary>
+ このコントロールのEnable値を取得・設定します。
+ </summary>
+ <value>このコントロールのEnable値</value>
+ <returns>このコントロールのEnable値</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImMasked.ReadOnly">
+ <summary>
+ このコントロールのReadOnly値を取得・設定します。
+ </summary>
+ <value>このコントロールのReadOnly値</value>
+ <returns>このコントロールのReadOnly値</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImMasked.ItemName">
+ <summary>
+ コントロールの項目名を取得・設定します。
+ </summary>
+ <value>コントロールの項目名</value>
+ <returns>コントロールの項目名</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImMasked.HissuLabelVisible">
+ <summary>
+ 必須マークの表示・非表示を設定します。
+ </summary>
+ <value>必須マークの表示・非表示</value>
+ <returns>必須マークの表示・非表示</returns>
+ <remarks>
+ True：表示
+ Flase：非表示
+ </remarks>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImMasked.ContentAlignment">
+ <summary>
+ コントロール内に表示するテキストの配置を取得または設定します。
+ </summary>
+ <value>水平・垂直方向の配置</value>
+ <returns>水平・垂直方向の配置</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImMasked.TabStopSetting">
+ <summary>
+ 入力欄のタブストップの可否を取得・設定します。
+ </summary>
+ <value>タブストップの可否</value>
+ <returns>タブストップ可否</returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImMasked.InitializeForMakingForm">
+ <summary>
+ フォーム構築時の初期化処理を記述します。
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImMasked.InitBackColor">
+ <summary>
+ 初期化時に背景色を設定します
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImMasked.InitBorder">
+ <summary>
+ 初期化時に罫線定義を設定します
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImMasked.InitFont">
+ <summary>
+ 初期化時にフォント定義を設定します
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImMasked.InitForeColor">
+ <summary>
+ 初期化時に前景色を設定します
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImMasked.InitHeight">
+ <summary>
+ 初期化時に高さ設定を設定します
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImMasked.InitTextValue">
+ <summary>
+ 初期化時にテキストの値を設定します
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImMasked.InitWidth">
+ <summary>
+ 初期化時に幅を設定します
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImMasked.InitExtraSetting">
+ <summary>
+ 初期化時に固有の項目を設定します
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImMasked.GetValueForValidate">
+ <summary>
+ 入力チェック用に値を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImMasked.SetDefault">
+ <summary>
+ 入力チェック正常時の処理を実行します。
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImMasked.SetDefaultColor">
+ <summary>
+ 入力チェック正常時の色設定を適用します。
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImMasked.SetAttention">
+ <summary>
+ 入力チェックエラー時の処理を実行します。
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImMasked.SetAttentionColor">
+ <summary>
+ 入力チェックエラー時の色設定を適用します。
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImMasked.FinishCheck">
+ <summary>
+ 入力チェックの後処理を行います。
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImMasked.ResetCheckFlg">
+ <summary>
+ 入力チェック後にチェック用フラグを初期化します。
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImMasked.JFImTextBox_BackColorChanged(System.Object,System.EventArgs)">
+ <summary>
+ このコントロールのBackColor変更を受け取って入力部品のBackColorを変更します。
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImMasked.JFImTextBox_StyleChanged(System.Object,System.EventArgs)">
+ <summary>
+ このコントロールのStyle変更を受け取って入力部品のStyleを変更します。
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImMasked.JFImTextBox_FontChanged(System.Object,System.EventArgs)">
+ <summary>
+ このコントロールのFont変更を受け取って入力部品のFontを変更します。
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImMasked.JFImTextBox_ForeColorChanged(System.Object,System.EventArgs)">
+ <summary>
+ このコントロールのForeColor変更を受け取って入力部品のForeColorを変更します。
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImMasked.InputBox_EnabledChanged(System.Object,System.EventArgs)">
+ <summary>
+ このコントロールのEnable値変更を受け取って入力部品のEnable値を変更します。
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImMasked.InputBox_Enter(System.Object,System.EventArgs)">
+ <summary>
+ このコントロールがフォーカスを受け取ったときの動作です。
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImMasked.InputBox_Leave(System.Object,System.EventArgs)">
+ <summary>
+ このコントロールからフォーカスが外れたときの動作です。
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="T:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImNumber">
+ <summary>
+ 拡張カスタム数字入力用クラス
+ </summary>
+ <remarks>
+ </remarks>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImNumber._HissuCheck">
+ <summary>
+ 必須チェックの有無を格納するフィールド
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImNumber._rangeValue">
+ <summary>
+ 検証アイテムを格納するフィールド
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImNumber._processValue">
+ <summary>
+ 検証アクションを格納するフィールド
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImNumber._HissuLabelVisible">
+ <summary>
+ 必須ラベルの表示・非表示フラグ
+ </summary>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImNumber.BackColorDef">
+ <summary>
+ 背景色を取得・設定します
+ </summary>
+ <value>背景色</value>
+ <returns>背景色</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImNumber.HissuLabelBackColor">
+ <summary>
+ 必須ラベルの背景色を取得・設定します
+ </summary>
+ <value>入力欄の背景色</value>
+ <returns>入力欄の背景色</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImNumber.BorderStyleDef">
+ <summary>
+ 罫線定義を取得・設定します
+ </summary>
+ <value>罫線定義</value>
+ <returns>罫線定義</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImNumber.FontDef">
+ <summary>
+ フォント定義を取得・設定します
+ </summary>
+ <value>フォント定義</value>
+ <returns>フォント定義</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImNumber.ForeColorDef">
+ <summary>
+ 前景色を取得・設定します
+ </summary>
+ <value>前景色</value>
+ <returns>前景色</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImNumber.HeightDef">
+ <summary>
+ コントロールの高さを取得・設定します
+ </summary>
+ <value>高さ設定</value>
+ <returns>高さ設定</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImNumber.TextValue">
+ <summary>
+ テキストの値を取得・設定します
+ </summary>
+ <value>テキスト</value>
+ <returns>テキスト</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImNumber.WidthDef">
+ <summary>
+ コントロールの幅を取得・設定します
+ </summary>
+ <value>幅</value>
+ <returns>幅</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImNumber.InputWidth">
+ <summary>
+ 入力部分の幅を表示します
+ </summary>
+ <value>幅</value>
+ <returns>幅</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImNumber.IsHissuCheck">
+ <summary>
+ 必須チェックの有無
+ </summary>
+ <value></value>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImNumber.IsRangeCheck">
+ <summary>
+ 範囲チェック（単項目）の有無
+ </summary>
+ <value></value>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImNumber.EnableStatus">
+ <summary>
+ このコントロールのEnable値を取得・設定します。
+ </summary>
+ <value>このコントロールのEnable値</value>
+ <returns>このコントロールのEnable値</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImNumber.ReadOnly">
+ <summary>
+ このコントロールのReadOnly値を取得・設定します。
+ </summary>
+ <value>このコントロールのReadOnly値</value>
+ <returns>このコントロールのReadOnly値</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImNumber.ItemName">
+ <summary>
+ コントロールの項目名を取得・設定します。
+ </summary>
+ <value>コントロールの項目名</value>
+ <returns>コントロールの項目名</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImNumber.HissuLabelVisible">
+ <summary>
+ 必須マークの表示・非表示を設定します。
+ </summary>
+ <value>必須マークの表示・非表示</value>
+ <returns>必須マークの表示・非表示</returns>
+ <remarks>
+ True：表示
+ Flase：非表示
+ </remarks>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImNumber.Value">
+ <summary>
+ Valueの値を取得・設定します。
+ </summary>
+ <value>Value</value>
+ <returns>Value</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImNumber.ContentAlignment">
+ <summary>
+ コントロール内に表示するテキストの配置を取得または設定します。
+ </summary>
+ <value>水平・垂直方向の配置</value>
+ <returns>水平・垂直方向の配置</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImNumber.TabStopSetting">
+ <summary>
+ 入力欄のタブストップの可否を取得・設定します。
+ </summary>
+ <value>タブストップの可否</value>
+ <returns>タブストップ可否</returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImNumber.InitializeForMakingForm">
+ <summary>
+ フォーム構築時の初期化処理を記述します。
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImNumber.InitBackColor">
+ <summary>
+ 初期化時に背景色を設定します
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImNumber.InitBorder">
+ <summary>
+ 初期化時に罫線定義を設定します
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImNumber.InitFont">
+ <summary>
+ 初期化時にフォント定義を設定します
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImNumber.InitForeColor">
+ <summary>
+ 初期化時に前景色を設定します
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImNumber.InitHeight">
+ <summary>
+ 初期化時に高さ設定を設定します
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImNumber.InitTextValue">
+ <summary>
+ 初期化時にテキストの値を設定します
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImNumber.InitWidth">
+ <summary>
+ 初期化時に幅を設定します
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImNumber.InitExtraSetting">
+ <summary>
+ 初期化時に固有の項目を設定します
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImNumber.SetInputFields(System.String,System.String,System.Int32,System.Int32,System.String,System.Int32,System.Int32,System.String,System.Decimal,System.Decimal,System.String,System.String,System.String,System.String)">
+ <summary>
+ 入力書式の設定を行います。
+ </summary>
+ <param name="pattern">数値書式を表すString値。</param>
+ <param name="integerPartSeparator">整数部の桁区切り記号として表示する文字を取得または設定します。</param>
+ <param name="integerPartMaxDigits">整数部の最大桁数を取得または設定します。</param>
+ <param name="integerPartMinDigits">整数部の最小桁数を取得または設定します。</param>
+ <param name="decimalSeparatorSeparator">小数点記号を取得または設定します。</param>
+ <param name="decimalPartMaxDigits">小数部の最大桁数を取得または設定します。</param>
+ <param name="decimalPartMinDigits">小数部の最小桁数を取得または設定します。</param>
+ <param name="validatorMessage">検証結果が「無効」であることをユーザに通知するメッセージを取得または設定します。</param>
+ <param name="validatorMaxValue">検証コントロールの最大値を取得または設定します。</param>
+ <param name="validatorMinValue">検証コントロールの最小値を取得または設定します。</param>
+ <param name="positivePrefix">正数値の接頭語を表すString値。</param>
+ <param name="positiveSuffix">正数値の接尾語を表すString値。</param>
+ <param name="negativePrefix">負数値の接頭語を表すString値。</param>
+ <param name="negativeSuffix">負数値の接尾語を表すString値。</param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImNumber.SetDisplayFields(System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 表示書式の設定を行います。
+ </summary>
+ <param name="pattern">数値書式を表すString値。</param>
+ <param name="positivePrefix">正数値の接頭語を表すString値。</param>
+ <param name="positiveSuffix">正数値の接尾語を表すString値。</param>
+ <param name="negativePrefix">負数値の接頭語を表すString値。</param>
+ <param name="negativeSuffix">負数値の接尾語を表すString値。</param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImNumber.JFImTextBox_BackColorChanged(System.Object,System.EventArgs)">
+ <summary>
+ このコントロールのBackColor変更を受け取って入力部品のBackColorを変更します。
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImNumber.JFImTextBox_StyleChanged(System.Object,System.EventArgs)">
+ <summary>
+ このコントロールのStyle変更を受け取って入力部品のStyleを変更します。
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImNumber.JFImTextBox_FontChanged(System.Object,System.EventArgs)">
+ <summary>
+ このコントロールのFont変更を受け取って入力部品のFontを変更します。
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImNumber.JFImTextBox_ForeColorChanged(System.Object,System.EventArgs)">
+ <summary>
+ このコントロールのForeColor変更を受け取って入力部品のForeColorを変更します。
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImNumber.InputBox_EnabledChanged(System.Object,System.EventArgs)">
+ <summary>
+ このコントロールのEnable値変更を受け取って入力部品のEnable値を変更します。
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImNumber.InputBox_Enter(System.Object,System.EventArgs)">
+ <summary>
+ このコントロールがフォーカスを受け取ったときの動作です。
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImNumber.InputBox_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+ <summary>
+ 入力欄でキーが押された時に発生するイベントです。
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImNumber.InputBox_TextChanged(System.Object,System.EventArgs)">
+ <summary>
+ 入力欄でテキストが変更された時に発生するイベントです。
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImNumber.InputBox_TextChanging(System.Object,GrapeCity.Win.Editors.TextChangingEventArgs)">
+ <summary>
+ 入力欄のTextプロパティの値が変更される前に発生します。
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks>数値コントロールで指定した範囲(MaxValue・MinValue)外の値を入力させない</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImNumber.GetValueForValidate">
+ <summary>
+ 入力チェック用に値を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImNumber.SetDefault">
+ <summary>
+ 入力チェック正常時の処理を実行します。
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImNumber.SetDefaultColor">
+ <summary>
+ 入力チェック正常時の色設定を適用します。
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImNumber.SetAttention">
+ <summary>
+ 入力チェックエラー時の処理を実行します。
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImNumber.SetAttentionColor">
+ <summary>
+ 入力チェックエラー時の色設定を適用します。
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImNumber.FinishCheck">
+ <summary>
+ 入力チェックの後処理を行います。
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImNumber.ResetCheckFlg">
+ <summary>
+ 入力チェック後にチェック用フラグを初期化します。
+ </summary>
+</member>
+<member name="E:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImNumber.InputBoxKeyPress">
+ <summary>
+ 入力欄でキーが押された時に発生させるイベントです。
+ </summary>
+</member>
+<member name="E:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImNumber.InputBoxTextChange">
+ <summary>
+ 入力欄でテキストが変更された時に発生させるイベントです。
+ </summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox">
+ <summary>
+ 拡張カスタムテキストボックスクラス
+ </summary>
+ <remarks>
+ </remarks>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox._HissuCheck">
+ <summary>
+ 必須チェックの有無を格納するフィールド
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox._HissuLabelVisible">
+ <summary>
+ 必須ラベルの表示・非表示フラグ
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox._InputType">
+ <summary>
+ 入力制御格納フィールド
+ </summary>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.HissuLabelBackColor">
+ <summary>
+ 必須ラベルの背景色を取得・設定します
+ </summary>
+ <value>入力欄の背景色</value>
+ <returns>入力欄の背景色</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.BorderStyleDef">
+ <summary>
+ 罫線定義を取得・設定します
+ </summary>
+ <value>罫線定義</value>
+ <returns>罫線定義</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.FontDef">
+ <summary>
+ フォント定義を取得・設定します
+ </summary>
+ <value>フォント定義</value>
+ <returns>フォント定義</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.ForeColorDef">
+ <summary>
+ 前景色を取得・設定します
+ </summary>
+ <value>前景色</value>
+ <returns>前景色</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.HeightDef">
+ <summary>
+ コントロールの高さを取得・設定します
+ </summary>
+ <value>高さ設定</value>
+ <returns>高さ設定</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.TextValue">
+ <summary>
+ テキストの値を取得・設定します
+ </summary>
+ <value>テキスト</value>
+ <returns>テキスト</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.WidthDef">
+ <summary>
+ コントロールの幅を取得・設定します
+ </summary>
+ <value>幅</value>
+ <returns>幅</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.InputWidth">
+ <summary>
+ 入力部分の幅を表示します
+ </summary>
+ <value>幅</value>
+ <returns>幅</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.UseSystemPasswordChar">
+ <summary>
+ パスワード表示文字にシステムのパスワード文字を使用するかどうか示す値を取得または設定します
+ </summary>
+ <value>
+ True ：パスワード表示文字にシステムのパスワード文字を使用します。 
+ False：パスワード表示文字にシステムのパスワード文字を使用しません。 
+ </value>
+ <returns>パスワード表示文字にシステムのパスワード文字を使用するかどうか示す値</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.ScrollBarMode">
+ <summary>
+ スクロールバーの表示方法を取得または設定します。
+ </summary>
+ <value>
+ 0 - Fixed スクロールバーを常に表示します。 
+ 1 - Automatic テキストが表示領域を超えた場合にのみスクロールバーを表示します。 
+ </value>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.ScrollBars">
+ <summary>
+ コントロールに表示するスクロールバーの種類を取得または設定します。 
+ </summary>
+ <value>
+ 0 - None スクロールバーを表示しません。 
+ 1 - Horizontal 水平スクロールバーを表示します。 
+ 2 - Vertical 垂直スクロールバーを表示します。 
+ 3 - Both 水平と垂直の両方のスクロールバーを表示します。 
+ </value>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.IsHissuCheck">
+ <summary>
+ 必須チェックの有無
+ </summary>
+ <value></value>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.IsZenkakuCheck">
+ <summary>
+ 全角チェックの有無
+ </summary>
+ <value></value>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.IsHankakuCheck">
+ <summary>
+ 半角チェックの有無
+ </summary>
+ <value></value>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.IsForbiddenWordsCheck">
+ <summary>
+ 禁止文字チェックの有無
+ </summary>
+ <value></value>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.IsKanaCheck">
+ <summary>
+ カナチェックの有無
+ </summary>
+ <value></value>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.IsDakutenCheck">
+ <summary>
+ 濁点チェックの有無
+ </summary>
+ <value></value>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.IsEisuCheck">
+ <summary>
+ 英数字チェックの有無
+ </summary>
+ <value></value>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.IsSujiCheck">
+ <summary>
+ 数字チェックの有無
+ </summary>
+ <value></value>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.IsByteCheck">
+ <summary>
+ バイト数チェックの有無
+ </summary>
+ <value></value>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.IsFullByteCheck">
+ <summary>
+ フルバイト数チェックの有無
+ </summary>
+ <value></value>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.IsMojisuCheck">
+ <summary>
+ 文字数チェックの有無
+ </summary>
+ <value></value>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.IsNumericCheck">
+ <summary>
+ 数値チェックの有無
+ </summary>
+ <value></value>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.IsCalendarCheck">
+ <summary>
+ 暦上日チェックの有無
+ </summary>
+ <value></value>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.IsMiddleSpace">
+ <summary>
+ 中間スペースチェックの有無
+ </summary>
+ <value></value>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.EnableStatus">
+ <summary>
+ このコントロールのEnable値を取得・設定します。
+ </summary>
+ <value>このコントロールのEnable値</value>
+ <returns>このコントロールのEnable値</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.ReadOnly">
+ <summary>
+ このコントロールのReadOnly値を取得・設定します。
+ </summary>
+ <value>このコントロールのReadOnly値</value>
+ <returns>このコントロールのReadOnly値</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.ItemName">
+ <summary>
+ コントロールの項目名を取得・設定します。
+ </summary>
+ <value>コントロールの項目名</value>
+ <returns>コントロールの項目名</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.HissuLabelVisible">
+ <summary>
+ 必須マークの表示・非表示を設定します。
+ </summary>
+ <value>必須マークの表示・非表示</value>
+ <returns>必須マークの表示・非表示</returns>
+ <remarks>
+ True：表示
+ Flase：非表示
+ </remarks>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.ContentAlignment">
+ <summary>
+ コントロール内に表示するテキストの配置を取得または設定します。
+ </summary>
+ <value>水平・垂直方向の配置</value>
+ <returns>水平・垂直方向の配置</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.DisplayAlignment">
+ <summary>
+ 均等割り付けする形式を設定します。
+ </summary>
+ <value></value>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.Multiline">
+ <summary>
+ 入力欄がマルチラインであるかを取得または設定します。
+ </summary>
+ <value>マルチライン状態</value>
+ <returns>マルチライン状態</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.TabStopSetting">
+ <summary>
+ 入力欄のタブストップの可否を取得・設定します。
+ </summary>
+ <value>タブストップの可否</value>
+ <returns>タブストップ可否</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.MaxLength">
+ <summary>
+ 入力文字数を取得・設定します。
+ </summary>
+ <value>入力文字数</value>
+ <returns>入力文字数</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.MaxLengthUnit">
+ <summary>
+ コントロールに設定可能な最大文字数のカウント方法を取得または設定します。
+ </summary>
+ <value></value>
+ <returns>文字数のカウント方法</returns>
+ <remarks>文字数のカウント方法</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.CountWrappedLine">
+ <summary>
+ 入力可能な行数を設定するときに、自動的に折り返した改行を含めるかどうかを示す値を取得または設定します。
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>MultilineプロパティがTrueに設定され、かつWrapModeプロパティがCharWrap又はWordWrapに設定されている場合に有効となります。</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.MaxLineCount">
+ <summary>
+ テキストコントロールに入力できる最大行数を取得または設定します。
+ </summary>
+ <value></value>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.WrapMode">
+ <summary>
+ 行の折り返し方法を指定します。
+ </summary>
+ <value></value>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.GridLine">
+ <summary>
+ 行間に表示する罫線のスタイルを表すLineオブジェクトを取得または設定します。
+ </summary>
+ <value></value>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.LineSpace">
+ <summary>
+ 隣接する2行間の余白をピクセル単で指定します。
+ </summary>
+ <value></value>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.InputType">
+ <summary>
+ 入力可能な文字種を指定します。
+ </summary>
+ <value>入力可能な文字種</value>
+ <returns>入力可能な文字種</returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.InitializeForMakingForm">
+ <summary>
+ フォーム構築時の初期化処理を記述します。
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.InitBackColor">
+ <summary>
+ 初期化時に背景色を設定します
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.InitBorder">
+ <summary>
+ 初期化時に罫線定義を設定します
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.InitFont">
+ <summary>
+ 初期化時にフォント定義を設定します
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.InitForeColor">
+ <summary>
+ 初期化時に前景色を設定します
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.InitHeight">
+ <summary>
+ 初期化時に高さ設定を設定します
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.InitTextValue">
+ <summary>
+ 初期化時にテキストの値を設定します
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.InitWidth">
+ <summary>
+ 初期化時に幅を設定します
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.InitExtraSetting">
+ <summary>
+ 初期化時に固有の項目を設定します
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.JFImTextBox_BackColorChanged(System.Object,System.EventArgs)">
+ <summary>
+ このコントロールのBackColor変更を受け取って入力部品のBackColorを変更します。
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.JFImTextBox_StyleChanged(System.Object,System.EventArgs)">
+ <summary>
+ このコントロールのStyle変更を受け取って入力部品のStyleを変更します。
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.JFImTextBox_FontChanged(System.Object,System.EventArgs)">
+ <summary>
+ このコントロールのFont変更を受け取って入力部品のFontを変更します。
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.JFImTextBox_ForeColorChanged(System.Object,System.EventArgs)">
+ <summary>
+ このコントロールのForeColor変更を受け取って入力部品のForeColorを変更します。
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.InputBox_EnabledChanged(System.Object,System.EventArgs)">
+ <summary>
+ このコントロールのEnable値変更を受け取って入力部品のEnable値を変更します。
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.InputBox_Enter(System.Object,System.EventArgs)">
+ <summary>
+ このコントロールがフォーカスを受け取ったときの動作です。
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.InputBox_Leave(System.Object,System.EventArgs)">
+ <summary>
+ このコントロールからフォーカスが外れたときの動作です。
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.InputBox_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+ <summary>
+ 入力欄でキーが押された時に発生するイベントです。
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.InputBox_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+ <summary>
+ 入力欄でキーが押された時に発生するイベントです。
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.InputBox_TextChanged(System.Object,System.EventArgs)">
+ <summary>
+ 入力欄でテキストが変更された時に発生するイベントです。
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.InputBox_MouseHover(System.Object,System.EventArgs)">
+ <summary>
+ マウスオーバー時に取得するイベントです。
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.GetValueForValidate">
+ <summary>
+ 入力チェック用に値を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.SetDefault">
+ <summary>
+ 入力チェック正常時の処理を実行します。
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.SetDefaultColor">
+ <summary>
+ 入力チェック正常時の色設定を適用します。
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.SetAttention">
+ <summary>
+ 入力チェックエラー時の処理を実行します。
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.SetAttentionColor">
+ <summary>
+ 入力チェックエラー時の色設定を適用します。
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.FinishCheck">
+ <summary>
+ 入力チェックの後処理を行います。
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.ResetCheckFlg">
+ <summary>
+ 入力チェック後にチェック用フラグを初期化します。
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.ShowToolTip(Jp.Co.Nrs.JF.GUI.Win.JFToolTip)">
+ <summary>
+ ツールチップを表示します。
+ </summary>
+</member>
+<member name="E:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.MouseOver">
+ <summary>
+ マウスオーバー時に発生させるイベントです。
+ </summary>
+</member>
+<member name="E:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.InputBoxKeyPress">
+ <summary>
+ 入力欄でキーが押された時に発生させるイベントです。
+ </summary>
+</member>
+<member name="E:Jp.Co.Nrs.JF.GUI.Win.InputMan.JFImTextBox.InputBoxTextChange">
+ <summary>
+ 入力欄でテキストが変更された時に発生させるイベントです。
+ </summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.GUI.Win.Interface.IJFEditableControl">
+ <summary>
+ 拡張画面入力部品共通インターフェース
+ </summary>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.Interface.IJFEditableControl.ItemName">
+ <summary>
+ コントロールの項目名を取得・設定します。
+ </summary>
+ <value>コントロールの項目名</value>
+ <returns>コントロールの項目名</returns>
+</member>
+<member name="T:Jp.Co.Nrs.JF.GUI.Win.Interface.IJFForm">
+ <summary>
+ JFForm系共通インターフェース
+ </summary>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.Interface.IJFForm.FocusedControlName">
+ <summary>
+ フォーカスを取得したコントロールの名前を取得・設定します。
+ </summary>
+ <value></value>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.Interface.IJFForm.SetMsgAriaText(System.String)">
+ <summary>
+ メッセージエリアに引数の文字列を表示します。
+ </summary>
+ <param name="msg">表示する文字列</param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.Interface.IJFForm.SetMsgAriaForeColor(System.Drawing.Color)">
+ <summary>
+ メッセージエリアの背景色を変更します。
+ </summary>
+ <param name="color">変更する色</param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.Interface.IJFForm.SetStatusDateTime(System.String)">
+ <summary>
+ ステータスバーの時間を設定します
+ </summary>
+ <param name="value"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.Interface.IJFForm.SetStatusDbNm(System.String)">
+ <summary>
+ ステータスバーのサーバー名を設定します
+ </summary>
+ <param name="value"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.Interface.IJFForm.SetStatusUserNm(System.String)">
+ <summary>
+ ステータスバーのユーザー名を設定します
+ </summary>
+ <param name="value"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.Interface.IJFForm.SetWindowTitle(System.String)">
+ <summary>
+ ウィンドウのタイトルを設定します
+ </summary>
+ <param name="value"></param>
+</member>
+<member name="T:Jp.Co.Nrs.JF.GUI.Win.JFBaseForm">
+ <summary>
+ 拡張JFフォームの基本クラス
+ </summary>
+ <remarks>全画面で共通する項目を保有します。各画面パターンの雛形になります。</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.JFBaseForm.FocusedControlName">
+ <summary>
+ フォーカスを取得したコントロールの名前を取得・設定します。
+ </summary>
+ <value></value>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.JFBaseForm.SetMsgAriaText(System.String)">
+ <summary>
+ メッセージエリアに引数の文字列を表示します。
+ </summary>
+ <param name="msg">表示する文字列</param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.JFBaseForm.SetMsgAriaForeColor(System.Drawing.Color)">
+ <summary>
+ メッセージエリアの背景色を変更します。
+ </summary>
+ <param name="color">変更する色</param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.JFBaseForm.SetStatusDateTime(System.String)">
+ <summary>
+ ステータスバーの時間を設定します
+ </summary>
+ <param name="value"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.JFBaseForm.SetStatusDbNm(System.String)">
+ <summary>
+ ステータスバーのサーバー名を設定します
+ </summary>
+ <param name="value"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.JFBaseForm.SetStatusUserNm(System.String)">
+ <summary>
+ ステータスバーのユーザー名を設定します
+ </summary>
+ <param name="value"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.JFBaseForm.SetWindowTitle(System.String)">
+ <summary>
+ ウィンドウのタイトルを設定します
+ </summary>
+ <param name="value"></param>
+</member>
+<member name="T:Jp.Co.Nrs.JF.GUI.Win.JFButton">
+ <summary>
+ 拡張ボタンコントロール
+ </summary>
+ <remarks>
+ </remarks>
+</member>
+<member name="T:Jp.Co.Nrs.JF.GUI.Win.JFCheckBox">
+ <summary>
+ 拡張チェックボックスクラス
+ </summary>
+ <remarks>
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.JFCheckBox.GetBinaryValue">
+ <summary>
+ チェックされているかを真偽２値で取得します
+ </summary>
+ <returns>
+ 0：チェックされていない
+ 1：チェックされている
+ </returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.JFCheckBox.SetBinaryValue(System.String)">
+ <summary>
+ チェック状態を真偽２値で設定します
+ </summary>
+ <param name="value">
+ 0：チェックしない
+ 1：チェックする
+ </param>
+</member>
+<member name="T:Jp.Co.Nrs.JF.GUI.Win.JFForm">
+ <summary>
+ NF系基本フォーム
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.JFForm.Show">
+ <summary>
+ 描画速度の向上のため、オーバーロードする
+ </summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.GUI.Win.JFFormPopL">
+ <summary>
+ ポップ画面（L)
+ </summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.GUI.Win.JFFormPopL8B">
+ <summary>
+ ポップ画面（L)
+ </summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.GUI.Win.JFFormPopM">
+ <summary>
+ ポップ画面（M)
+ </summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.GUI.Win.JFFormPopS">
+ <summary>
+ ポップ画面（S)
+ </summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.GUI.Win.JFGroupBox">
+ <summary>
+ 拡張グループボックスクラス
+ </summary>
+ <remarks>
+ </remarks>
+</member>
+<member name="T:Jp.Co.Nrs.JF.GUI.Win.JFMenuForm">
+ <summary>
+ ログイン画面
+ </summary>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.JFMenuForm.FocusedControlName">
+ <summary>
+ フォーカスを取得したコントロールの名前を取得・設定します。
+ </summary>
+ <value></value>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.JFMenuForm.SetMsgAriaText(System.String)">
+ <summary>
+ メッセージエリアに引数の文字列を表示します。
+ </summary>
+ <param name="msg">表示する文字列</param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.JFMenuForm.SetMsgAriaForeColor(System.Drawing.Color)">
+ <summary>
+ メッセージエリアの背景色を変更します。
+ </summary>
+ <param name="color">変更する色</param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.JFMenuForm.SetStatusDateTime(System.String)">
+ <summary>
+ ステータスバーの時間を設定します
+ </summary>
+ <param name="value"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.JFMenuForm.SetStatusDbNm(System.String)">
+ <summary>
+ ステータスバーのサーバー名を設定します
+ </summary>
+ <param name="value"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.JFMenuForm.SetStatusUserNm(System.String)">
+ <summary>
+ ステータスバーのユーザー名を設定します
+ </summary>
+ <param name="value"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.JFMenuForm.SetWindowTitle(System.String)">
+ <summary>
+ ウィンドウのタイトルを設定します
+ </summary>
+ <param name="value"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.JFMenuStrip.CreaateMenuList(System.String,System.String,System.String[],System.String[])">
+ <summary>
+ メニューを作成します
+ </summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.GUI.Win.JFOptionButton">
+ <summary>
+ 拡張オプションボタン部品
+ </summary>
+ <remarks>
+ </remarks>
+</member>
+<member name="T:Jp.Co.Nrs.JF.GUI.Win.JFSituationLabel">
+ <summary>
+ 状況表示用ラベル
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.JFSituationLabel._DataStatus">
+ <summary>
+ データステータス
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.JFSituationLabel._DispMode">
+ <summary>
+ ディスプレイモード
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.JFSituationLabel.DISP_NOMAL">
+ <summary>
+ 表示文言（正常）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.JFSituationLabel.DISP_DELETE">
+ <summary>
+ 表示文言（削除）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.JFSituationLabel.DISP_NEW">
+ <summary>
+ 表示文言（新規）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.JFSituationLabel.DISP_VIEW">
+ <summary>
+ 表示文言（参照）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.JFSituationLabel.DISP_EDIT">
+ <summary>
+ 表示文言（編集）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.JFSituationLabel.DISP_COPY">
+ <summary>
+ 表示文言（複写）
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.JFSituationLabel.SITUATION_LABEL_HEIGHT">
+ <summary>
+ このコントロールの高さ
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.JFSituationLabel.SITUATION_LABEL_WIDTH">
+ <summary>
+ このコントロールの幅
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.JFSituationLabel.LABEL_WIDTH">
+ <summary>
+ データステータス・ディスプレイモード両ラベルの幅
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.JFSituationLabel.LABEL_SPACE_WIDTH">
+ <summary>
+ 中間ラベルの幅
+ </summary>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.JFSituationLabel.DispMode">
+ <summary>
+ ディスプレイモードの取得・設定
+ </summary>
+ <value>ディスプレイモード</value>
+ <returns>ディスプレイモード</returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.JFSituationLabel.RecordStatus">
+ <summary>
+ ステータスの取得・設定
+ </summary>
+ <value>ステータス</value>
+ <returns>ステータス</returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.JFSituationLabel.GetModeFont(System.Boolean)">
+ <summary>
+ フォントを取得します。
+ </summary>
+ <param name="fontStyleBold"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.JFSituationLabel.GetEditForeColor">
+ <summary>
+ 編集モード時の前景色を取得します。
+ </summary>
+ <returns>編集モード時の前景色</returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.JFSituationLabel.GetShinkiForeColor">
+ <summary>
+ 新規モード時の前景色を取得します。
+ </summary>
+ <returns>新規モード時の前景色</returns>
+ <remarks>編集モード時と同一の色とする</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.JFSituationLabel.InitBackColor">
+ <summary>
+ 初期化時に背景色を設定します
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.JFSituationLabel.InitBorder">
+ <summary>
+ 初期化時に罫線定義を設定します
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.JFSituationLabel.InitExtraSetting">
+ <summary>
+ 初期化時に固有の項目を設定します
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.JFSituationLabel.InitFont">
+ <summary>
+ 初期化時にフォント定義を設定します
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.JFSituationLabel.InitForeColor">
+ <summary>
+ 初期化時に前景色を設定します
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.JFSituationLabel.InitHeight">
+ <summary>
+ 初期化時に高さ設定を設定します
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.JFSituationLabel.InitializeForMakingForm">
+ <summary>
+ フォーム構築時の初期化処理を記述します。
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.JFSituationLabel.InitTextValue">
+ <summary>
+ 初期化時にテキストの値を設定します
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.JFSituationLabel.InitWidth">
+ <summary>
+ 初期化時に幅を設定します
+ </summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.GUI.Win.JFTab">
+ <summary>
+ 拡張タブ部品
+ </summary>
+ <remarks>
+ </remarks>
+</member>
+<member name="T:Jp.Co.Nrs.JF.GUI.Win.JFTitleLabel">
+ <summary>
+ 拡張ラベル部品
+ </summary>
+ <remarks>
+ </remarks>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.JFTitleLabel.TextAlign">
+ <summary>
+ コントロール内に表示するテキストの水平方向の配置を取得または設定します。
+ </summary>
+ <value>水平方向の配置</value>
+ <returns>水平方向の配置</returns>
+</member>
+<member name="T:Jp.Co.Nrs.JF.GUI.Win.JFToolTip">
+ <summary>
+ 拡張ツールチップ部品
+ </summary>
+ <remarks>
+ </remarks>
+</member>
+<member name="T:Jp.Co.Nrs.JF.GUI.Win.Spread.JFSpread">
+ <summary>
+ 拡張カスタムスプレッドクラス
+ </summary>
+ <remarks>
+ </remarks>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.Spread.JFSpread.doubleClickEvent">
+ <summary>
+ ダブルクリック時のイベントデータを登録します。
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.Spread.JFSpread._AllowColumnMove">
+ <summary>
+ 列の移動を許可するかどうかを保持するフィールド
+ </summary>
+ <remarks>spread列記憶</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.Spread.JFSpread._sprDt">
+ <summary>
+ スプレッド列定義(S_SPREADテーブル)を保持するフィールド
+ </summary>
+ <remarks>spread列記憶</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.JF.GUI.Win.Spread.JFSpread._sprDef">
+ <summary>
+ スプレッド名称と列定義体(Gクラスで宣言)を保持するフィールド
+ </summary>
+ <remarks>spread列記憶</remarks>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.Spread.JFSpread.CheckToCheckBox">
+ <summary>
+ 行選択時チェックボックスにチェックをいれるかどうか設定します。
+ </summary>
+ <value></value>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.Spread.JFSpread.SpreadDoubleClicked">
+ <summary>
+ ダブルクリックイベントが発生したかどうか設定します。
+ </summary>
+ <value></value>
+ <returns></returns>
+</member>
+<member name="P:Jp.Co.Nrs.JF.GUI.Win.Spread.JFSpread.CellClickEventArgs">
+ <summary>
+ CellClick イベントおよび CellDoubleClick イベントのイベントデータを設定します。
+ </summary>
+ <value></value>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.Spread.JFSpread.InitializeForMakingForm">
+ <summary>
+ フォーム構築時の初期化処理を記述します。
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.Spread.JFSpread.CrearSpread(System.Int32)">
+ <summary>
+ スプレッドの行をクリアします。
+ </summary>
+ <param name="protectRow">クリアせずに保持する行数</param>
+ <remarks>同時に昇順・降順インジケーターもクリアします</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.Spread.JFSpread.CrearSpread">
+ <summary>
+ スプレッドの行をクリアします。
+ </summary>
+ <remarks>同時に昇順・降順インジケーターもクリアします</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.Spread.JFSpread.JFSpread_MouseUp(System.Object,System.Windows.Forms.MouseEventArgs)">
+ <summary>
+ マウスボタンが解放されたときに発生するイベントです。
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.Spread.JFSpread.JFSpread_CellDoubleClick(System.Object,FarPoint.Win.Spread.CellClickEventArgs)">
+ <summary>
+ ダブルクリック時の処理
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.Spread.JFSpread.ChangeColerSelectCel(System.Int32,System.Int32)">
+ <summary>
+ 選択したセルのセル色を変更します。
+ </summary>
+ <param name="row">選択行色（黄色）にするセルのROW番号</param>
+ <param name="col">選択行色（黄色）にするセルのCOL番号</param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.Spread.JFSpread.JFSpread_CellClick(System.Object,FarPoint.Win.Spread.CellClickEventArgs)">
+ <summary>
+ クリック時の処理
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks>チェックボックスの場合、強制的にON－OFFします</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.Spread.JFSpread.SetLockedColor(FarPoint.Win.Spread.Cell@)">
+ <summary>
+ セルロック時の背景色を設定します
+ </summary>
+ <param name="cell">背景色を設定するセル</param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.Spread.JFSpread.SetUnLockedColor(FarPoint.Win.Spread.Cell@)">
+ <summary>
+ セルロック解除時の背景色を設定します
+ </summary>
+ <param name="cell">背景色を設定するセル</param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.Spread.JFSpread.JFSpread_EnterCell(System.Object,FarPoint.Win.Spread.EnterCellEventArgs)">
+ <summary>
+ セル選択時、選択セルの色も変更する。
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.Spread.JFSpread.JFSpread_LeaveCell(System.Object,FarPoint.Win.Spread.LeaveCellEventArgs)">
+ <summary>
+ セルを離れる際の処理
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.Spread.JFSpread.ControlIME(System.Object,FarPoint.Win.Spread.LeaveCellEventArgs)">
+ <summary>
+ IME制御ルーチン
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.Spread.JFSpread.SetCellStyle(System.Int32,System.Int32,FarPoint.Win.Spread.StyleInfo)">
+ <summary>
+ セルの書式設定
+ </summary>
+ <param name="row">設定開始行</param>
+ <param name="col">設定列</param>
+ <param name="cellStyle">セルスタイル</param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.Spread.JFSpread.SetCellValue(System.Int32,System.Int32,System.String)">
+ <summary>
+ セルの値設定
+ </summary>
+ <param name="row"></param>
+ <param name="col"></param>
+ <param name="value"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.Spread.JFSpread.JFSpread_Enter(System.Object,System.EventArgs)">
+ <summary>
+ このコントロールがフォーカスを受け取ったときの動作です。
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.Spread.JFSpread.JFSpread_Leave(System.Object,System.EventArgs)">
+ <summary>
+ このコントロールからフォーカスが外れたときの動作です。
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.Spread.JFSpread.ClearSpreadRow(System.Int32)">
+ <summary>
+ スプレッド行クリア（入力エリアをクリアします）
+ </summary>
+ <remarks>ボタンは除く</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.Spread.JFSpread.JFSpread_EditModeOn(System.Object,System.EventArgs)">
+ <summary>
+ 編集モード開始時のイベント
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.Spread.JFSpread.JFSpread_ColumnDragMoveCompleted(System.Object,FarPoint.Win.Spread.DragMoveCompletedEventArgs)">
+ <summary>
+ 列のドラッグ移動を完了したときに発生するイベント
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks>spread列記憶</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.Spread.JFSpread.JFSpread_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+ <summary>
+ キーダウン時のイベント
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks>
+ ①spread列記憶
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.Spread.JFSpread.SetColProperty(System.Object@,System.Boolean)">
+ <summary>
+ [列移動] 列のプロパティを定義したクラスを読み込み設定します。
+ </summary>
+ <param name="def">列のプロパティを定義したクラス</param>
+ <param name="columnMove">
+ True  : 移動する
+ False : 移動しない
+ </param>
+ <remarks>列のプロパティ定義は必ずSpreadColPropertyクラスを用いること</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.Spread.JFSpread.JFSpread_ColumnWidthChanged(System.Object,FarPoint.Win.Spread.ColumnWidthChangedEventArgs)">
+ <summary>
+ 列の幅が変更されたときに発生するイベント
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks>
+ 幅の最小 = 5
+ 幅の最大 = 500
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.Spread.JFSpread.GetSpreadColData">
+ <summary>
+ スプレッドレイアウト情報の取得
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.Spread.JFSpread.SaveSpreadColData(System.Data.DataTable)">
+ <summary>
+ スプレッドレイアウト情報の更新
+ </summary>
+ <param name="dt"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.Spread.JFSpread.DeleteSpreadColData(System.Data.DataTable)">
+ <summary>
+ スプレッドレイアウト情報の削除
+ </summary>
+ <param name="dt"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.Spread.JFSpread.GetEveryUserFilter">
+ <summary>
+ 抽出条件文字列を取得します。
+ </summary>
+ <returns></returns>
+ <remarks>
+ pgid    ：プログラムID
+ userid  ：ユーザーID
+ spreadnm：スプレッド名
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.Spread.JFSpread.GetColFilter(System.String)">
+ <summary>
+ 抽出条件文字列を取得します。
+ </summary>
+ <param name="colnm">スプレッド列名</param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.Spread.JFSpread.GetDataView(System.Data.DataTable,System.String,System.String)">
+ <summary>
+ データテーブルを取得します。
+ </summary>
+ <param name="dt">S_SPREADデータ</param>
+ <param name="filter">抽出条件</param>
+ <param name="sort">並び替え</param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.Spread.JFSpread.CheckColNameAndCount(System.Data.DataTable)">
+ <summary>
+ スプレッド定義体・キャッシュデータの列数と名称チェックを行い、相違ある場合は再作成します。
+ </summary>
+ <param name="dt">S_SPREADとう</param>
+</member>
+<member name="E:Jp.Co.Nrs.JF.GUI.Win.Spread.JFSpread.SpreadDoubleClick">
+ <summary>
+ スプレッドがダブルクリックされたときに発生するイベントです。
+ </summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.GUI.Win.Spread.JFSpreadSearch">
+ <summary>
+ 検索用カスタムスプレッド
+ </summary>
+ <remarks>
+ </remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.Spread.JFSpreadSearch.CrearSpread">
+ <summary>
+ 検索条件行を除いてスプレッドの行をクリアします。
+ </summary>
+ <remarks>同時に昇順・降順インジケーターもクリアします</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.Spread.JFSpreadSearch.JFSpread_CellDoubleClick(System.Object,FarPoint.Win.Spread.CellClickEventArgs)">
+ <summary>
+ ダブルクリック時の処理
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.Spread.JFSpreadSearch.JFSpread_EnterCell(System.Object,FarPoint.Win.Spread.EnterCellEventArgs)">
+ <summary>
+ セル選択時、選択セルの色も変更する。
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.Spread.JFSpreadSearch.JFSpread_LeaveCell(System.Object,FarPoint.Win.Spread.LeaveCellEventArgs)">
+ <summary>
+ 選択セルの色を選択前の色に戻す。
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.Spread.JFSpreadSearch.SetLockedColor(FarPoint.Win.Spread.Cell@)">
+ <summary>
+ セルロック時の背景色を設定します
+ </summary>
+ <param name="cell">背景色を設定するセル</param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.Spread.JFSpreadSearch.SetUnLockedColor(FarPoint.Win.Spread.Cell@)">
+ <summary>
+ セルロック解除時の背景色を設定します
+ </summary>
+ <param name="cell">背景色を設定するセル</param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.Spread.JFSpreadSearch.ChangeColorSelectLeave(FarPoint.Win.Spread.LeaveCellEventArgs)">
+ <summary>
+  移動されたセル色を変更します。Leave★
+ </summary>
+ <param name="e"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.Spread.JFSpreadSearch.ChangeColorDefaultLeave(FarPoint.Win.Spread.LeaveCellEventArgs)">
+ <summary>
+ 移動されたセル色を元に戻しますLeave
+ </summary>
+ <param name="e"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.Spread.JFSpreadSearch.ChangeColorSelect(FarPoint.Win.Spread.CellClickEventArgs)">
+ <summary>
+ クリックされた色を変更します。★
+ </summary>
+ <param name="e"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.GUI.Win.Spread.JFSpreadSearch.ChangeColorDefault(FarPoint.Win.Spread.CellClickEventArgs)">
+ <summary>
+ クリックされた色をデフォルトカラーに戻します。
+ </summary>
+ <param name="e"></param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Utility.ActiveDirectoryUtility.GetActiveDirectoryData">
+ <summary>
+ ADに存在するかチェックします。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Utility.ActiveDirectoryUtility.CheckUser(Jp.Co.Nrs.JF.UserInfoDS)">
+ <summary>
+ ADとユーザーマスタに存在するかチェックします。
+ </summary>
+ <param name="ds"></param>
+ <returns></returns>
+</member>
+<member name="T:Jp.Co.Nrs.JF.Utility.JFGUIUtility">
+ <summary>
+ 拡張画面部品用ユーティリティクラス
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Utility.JFGUIUtility.GetDefaultFont(System.Boolean)">
+ <summary>
+ システムデフォルトのフォントを取得します。
+ </summary>
+ <param name="fontStyleBold"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Utility.JFGUIUtility.GetSystemForeColor">
+ <summary>
+ システムデフォルトの前景色を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Utility.JFGUIUtility.GetSystemBackColor">
+ <summary>
+ システムデフォルトの背景色を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Utility.JFGUIUtility.GetSystemInputBackColor">
+ <summary>
+ システムデフォルトの入力項目背景色を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Utility.JFGUIUtility.GetReadOnlyBackColor">
+ <summary>
+ システムデフォルトの読み取り専用色を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Utility.JFGUIUtility.GetAttentionForeColor">
+ <summary>
+ システムデフォルトの注意を促す前景色を取得します。
+ </summary>
+ <returns></returns>
+ <remarks>必須マーク・マイナス金額値など</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Utility.JFGUIUtility.GetAttentionBackColor">
+ <summary>
+ システムデフォルトの注意を促す背景色を取得します。
+ </summary>
+ <returns></returns>
+ <remarks>必須マーク・マイナス金額値など</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Utility.JFGUIUtility.GetSpreadInputBackColor">
+ <summary>
+ スプレッドの入力行の色を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Utility.JFGUIUtility.GetSpreadSelectForeColor">
+ <summary>
+ スプレッドの選択セルの前景色を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Utility.JFGUIUtility.GetSpreadSelectBackColor">
+ <summary>
+ スプレッドの選択セルの背景色を取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Utility.JFGUIUtility.GetLoginFormSize">
+ <summary>
+ ログイン画面のサイズを取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Utility.JFGUIUtility.GetMenuFormSize">
+ <summary>
+ メニュー画面のサイズを取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Utility.JFGUIUtility.GetMainFormSize">
+ <summary>
+ 一覧・明細画面のサイズを取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Utility.JFGUIUtility.GetPopLFormSize">
+ <summary>
+ ポップ画面（Ｌ）のサイズを取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Utility.JFGUIUtility.GetPopMFormSize">
+ <summary>
+ ポップ画面（Ｍ）のサイズを取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Utility.JFGUIUtility.GetPopSFormSize">
+ <summary>
+ ポップ画面（Ｓ）のサイズを取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Utility.JFGUIUtility.GetPopSSFormSize">
+ <summary>
+ ポップ画面（ＳＳ）のサイズを取得します。
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Utility.JFStrUtility.DeleteCarriageReturn_LineFeedCode(System.String)">
+ <summary>
+ 不要な改行コード(Cr or Lf)を削除します(元々のCrLfコードは削除しません)
+ </summary>
+ <param name="value">検索文字列</param>
+ <returns>整形した文字列</returns>
+</member>
+<member name="T:Jp.Co.Nrs.JF.Utility.JFValidateUtility">
+ <summary>
+ 拡張入力チェック用ユーティリティクラス
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Utility.JFValidateUtility.JF_EXCLUSION_WORDS">
+ <summary>
+ 禁止文字チェック除外用定数
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Utility.JFValidateUtility.IsForbiddenWordsCheckErr(System.String,System.String)">
+ <summary>
+ 禁止文字チェック
+ </summary>
+ <param name="value">チェック対象文字列</param>
+ <param name="exCharacters">チェック除外文字列</param>
+ <returns>
+ True：エラーあり
+ Falase：エラーなし
+ </returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Utility.JulianDateUtility.GetGregorianDate(System.String)">
+ <summary>
+ グレゴリオ暦を取得します
+ </summary>
+ <param name="value">「000001」～「199365」の範囲で指定します。</param>
+ <returns>エラー、範囲外の値は空を返します</returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Utility.JulianDateUtility.GetJulianDate(System.String)">
+ <summary>
+ ユリウス暦を取得します(日付として妥当な値のみ)
+ </summary>
+ <param name="value">
+ 8桁(yyyyMMdd) or 10桁(yyyy/MM/dd)
+ 1900/01/01～2099/12/31の範囲で指定します。
+ </param>
+ <returns>エラー、範囲外の値は空を返します</returns>
+</member>
+<member name="T:Jp.Co.Nrs.JF.Utility.NumberMasterUtility">
+ <summary>
+ ナンバーマスタ番号取得部品
+ </summary>
+ <remarks>自動採番を行います</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Utility.NumberMasterUtility.NUMBER_SELECT">
+ <summary>
+ ナンバーマスタ取得用SQL文
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Utility.NumberMasterUtility.NUMBER_UPDATE">
+ <summary>
+ ナンバーマスタ更新SQL文
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Utility.NumberMasterUtility.KUBUN_SELECT">
+ <summary>
+ 区分マスタ取得SQL文
+ </summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.Utility.NumberMasterUtility.NumberKbn">
+ <summary>
+ ナンバー区分定義体
+ </summary>
+ <remarks>公開用</remarks>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Utility.NumberMasterUtility.NumberKbn.REC_NO">
+ <summary>
+ 伝票番号
+ </summary>
+</member>
+<member name="F:Jp.Co.Nrs.JF.Utility.NumberMasterUtility.NumberKbn.KARIIRE_RECNO">
+ <summary>
+ 借入レコード番号
+ </summary>
+ <remarks>公開用</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Utility.NumberMasterUtility.GetAutoCode(Jp.Co.Nrs.JF.Utility.NumberMasterUtility.NumberKbn,Jp.Co.Nrs.Com.Base.Interface.IConnection)">
+ <summary>
+ 新規コードを取得します
+ </summary>
+ <param name="noKbn">ナンバー区分</param>
+ <param name="obj">BLFクラス</param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Utility.NumberMasterUtility.SelectNumberMaster(System.Data.SqlClient.SqlConnection)">
+ <summary>
+ ナンバーマスタ読み込み
+ </summary>
+ <param name="conn"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Utility.NumberMasterUtility.UpdateNumberMaster(System.Data.SqlClient.SqlConnection,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ ナンバーマスタ更新
+ </summary>
+ <param name="conn"></param>
+ <param name="now_val"></param>
+ <param name="sysDate"></param>
+ <param name="sysTime"></param>
+ <param name="pgId"></param>
+ <param name="userId"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Utility.NumberMasterUtility.SetNumberMKeysArray(Jp.Co.Nrs.JF.Utility.NumberMasterUtility.NumberKbn)">
+ <summary>
+ ナンバーマスタのキー設定
+ </summary>
+ <param name="noKbn"></param>
+ <remarks>NumberKbnの先頭に0を付与します</remarks>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Utility.NumberMasterUtility.EditCode(System.Data.SqlClient.SqlConnection,System.String)">
+ <summary>
+ 取得ナンバー編集
+ </summary>
+ <param name="conn">DBコネクション</param>
+ <param name="code">取得コード</param>
+ <returns>編集したコード</returns>
+ <remarks>先頭に部署記号を付与します</remarks>
+</member>
+<member name="T:Jp.Co.Nrs.JF.Utility.Spread.JFSpreadUtility">
+ <summary>
+ 拡張スプレッド用ユーティリティクラス
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Utility.Spread.JFSpreadUtility.GetTextCell(FarPoint.Win.Spread.FpSpread,Jp.Co.Nrs.Com.Const.InputControl,System.Int32,System.Boolean)">
+ <summary>
+ テキスト型のセルスタイルを取得します。
+ </summary>
+ <param name="spread">対象スプレッド</param>
+ <param name="value">入力制御</param>
+ <param name="maxLen">最大文字数</param>
+ <param name="locked">編集の可不可 True：不可 False：可</param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Utility.Spread.JFSpreadUtility.GetLabelCell(FarPoint.Win.Spread.FpSpread,FarPoint.Win.Spread.CellHorizontalAlignment,System.Int32,System.String)">
+ <summary>
+ ラベル型のセルスタイルを取得します
+ </summary>
+ <param name="spread">対象スプレッド</param>
+ <param name="alignment">セル内容の水平配置</param>
+ <param name="maxLen">最大入力可能文字数</param>
+ <param name="format"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Utility.Spread.JFSpreadUtility.GetMaskCell(FarPoint.Win.Spread.FpSpread,System.String,System.Boolean,System.String,FarPoint.Win.Spread.CellHorizontalAlignment)">
+ <summary>
+ マスク型セルスタイルを取得します。
+ </summary>
+ <param name="spread">対象スプレッド</param>
+ <param name="format"></param>
+ <param name="locked">編集の可不可 True：不可 False：可</param>
+ <param name="maskCahr"></param>
+ <param name="alignment"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Utility.Spread.JFSpreadUtility.CreateMaskCell(System.String,System.Boolean,System.String)">
+ <summary>
+ マスク型セルを取得します。
+ </summary>
+ <param name="format"></param>
+ <param name="locked"></param>
+ <param name="maskCahr"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Utility.Spread.JFSpreadUtility.CreateTextCell(System.Windows.Forms.CharacterCasing,FarPoint.Win.Spread.CellType.CharacterSet,System.Int32)">
+ <summary>
+ テキスト型のセルを取得します。
+ </summary>
+ <param name="charaCase"></param>
+ <param name="charaSet"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Utility.Spread.JFSpreadUtility.GetDateTimeCell(FarPoint.Win.Spread.FpSpread,System.Boolean,System.String,FarPoint.Win.Spread.CellType.DateTimeFormat)">
+ <summary>
+ 日付型のセルスタイルを取得します。
+ </summary>
+ <param name="spread">対象スプレッド</param>
+ <param name="locked">編集の可不可 True：不可 False：可</param>
+ <param name="formation">カスタム日付フォーマット</param>
+ <param name="format">日付フォーマット</param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Utility.Spread.JFSpreadUtility.GetDateTimeFormatCell(FarPoint.Win.Spread.FpSpread,System.Boolean,System.String)">
+ <summary>
+ 日付型セルスタイルを取得します(カスタム日付フォーマット指定用)
+ </summary>
+ <param name="spread">対象スプレッド</param>
+ <param name="locked">編集の可不可 True：不可 False：可</param>
+ <param name="formation">カスタム日付フォーマット</param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Utility.Spread.JFSpreadUtility.GetDateTimeCell(FarPoint.Win.Spread.FpSpread,System.Boolean,FarPoint.Win.Spread.CellType.DateTimeFormat)">
+ <summary>
+ 日付型セルスタイルを取得します。
+ </summary>
+ <param name="spread">対象スプレッド</param>
+ <param name="locked">編集の可不可 True：不可 False：可</param>
+ <param name="format">日付フォーマット</param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Utility.Spread.JFSpreadUtility.GetNumberCell(FarPoint.Win.Spread.FpSpread,System.Double,System.Double,System.Boolean,System.Int32,System.Boolean,System.String)">
+ <summary>
+ ナンバー型セルスタイルを取得します。
+ </summary>
+ <param name="spread"></param>
+ <param name="min">最小値</param>
+ <param name="max">最大値</param>
+ <param name="locked">編集の可不可 True：不可 False：可</param>
+ <param name="decimalPlaces">小数点以下の桁数</param>
+ <param name="NegativeRed">値が負の場合、文字を赤くするかどうか</param>
+ <param name="separator">三桁ごとの区切り文字（デフォルト空文字）</param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Utility.Spread.JFSpreadUtility.GetCheckBoxCell(FarPoint.Win.Spread.FpSpread,System.Boolean)">
+ <summary>
+ チェックボックス型セルスタイルを取得します。
+ </summary>
+ <param name="spread">対象スプレッド</param>
+ <param name="locked">編集の可不可 True：不可 False：可</param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Utility.Spread.JFSpreadUtility.GetComboCellKbn(FarPoint.Win.Spread.FpSpread,System.String,System.Boolean)">
+ <summary>
+ 区分コンボ用セルスタイルを取得します。
+ </summary>
+ <param name="spread">対象スプレッド</param>
+ <param name="kubunGroupCode">区分分類コード</param>
+ <param name="locked">編集の可不可 True：不可 False：可</param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Utility.Spread.JFSpreadUtility.GetComboCellMaster(FarPoint.Win.Spread.FpSpread,System.String,System.String,System.String,System.Boolean,System.String,System.String)">
+ <summary>
+ 各マスタコンボ用セルスタイルを取得します。
+ </summary>
+ <param name="spread">対象スプレッド</param>
+ <param name="master">対象マスタテーブル名</param>
+ <param name="keyfield">Key項目物理フィールド名</param>
+ <param name="dispfield">表示項目物理フィールド名</param>
+ <param name="locked">編集の可不可 True：不可 False：可</param>
+ <param name="conditionfield">抽出条件項目の列名</param>
+ <param name="conditioncode">抽出条件項目の値</param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Utility.Spread.JFSpreadUtility.GetComboCellMaster(FarPoint.Win.Spread.FpSpread,System.String,System.String,System.String,System.Boolean,System.String[],System.String[])">
+ <summary>
+ 各マスタコンボ用セルスタイルを取得します。
+ </summary>
+ <param name="spread">対象スプレッド</param>
+ <param name="master">対象マスタテーブル名</param>
+ <param name="keyfield">Key項目物理フィールド名</param>
+ <param name="dispfield">表示項目物理フィールド名</param>
+ <param name="locked"></param>
+ <param name="conditionFields">抽出条件項目の列名の配列</param>
+ <param name="conditionCodes">抽出条件項目の値の配列</param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Utility.Spread.JFSpreadUtility.GetComboCell(FarPoint.Win.Spread.FpSpread,System.Data.DataView,System.String,System.String,System.Boolean,System.Boolean)">
+ <summary>
+ フリーデータのコンボ用セルスタイルを取得します。
+ </summary>
+ <param name="spread">対象スプレッド</param>
+ <param name="dView">データビュー</param>
+ <param name="keyfield">Key項目物理フィールド名</param>
+ <param name="dispfield">表示項目物理フィールド名</param>
+ <param name="locked">編集の可不可 True：不可 False：可</param>
+ <param name="insertEmptyRow">空行の自動挿入 True：挿入する False：挿入しない</param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Utility.Spread.JFSpreadUtility.GetStyleInfo(FarPoint.Win.Spread.FpSpread,System.String,FarPoint.Win.Spread.CellType.BaseCellType,System.Boolean)">
+ <summary>
+ 引数のセルタイプを格納したスタイルオブジェクトを取得します。
+ </summary>
+ <param name="spread"></param>
+ <param name="styleName"></param>
+ <param name="cellT"></param>
+ <param name="locked"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Utility.Spread.JFSpreadUtility.GetCombDispList(System.Data.DataView,System.String,System.Boolean)">
+ <summary>
+ コンボセルに表示するリストを取得します。
+ </summary>
+ <param name="dv"></param>
+ <param name="dispMember"></param>
+ <param name="insertEmptyRow"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Utility.Spread.JFSpreadUtility.GetCombValueList(System.Data.DataView,System.String,System.Boolean)">
+ <summary>
+ コンボセルに格納するコードリストを取得します。
+ </summary>
+ <param name="dv"></param>
+ <param name="valueMember"></param>
+ <param name="insertEmptyRow"></param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Utility.Spread.JFSpreadUtility.CreateStyleName(System.String)">
+ <summary>
+ セルスタイルのスタイル名を生成します。
+ </summary>
+ <param name="styleName">生成するセルの内容に応じた一意となる文字列</param>
+ <returns></returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Utility.Spread.JFSpreadUtility.GetJFCachedDataTable(System.String)">
+ <summary>
+ [JF]指定テーブルのマスタキャッシュデータを取得します。
+ </summary>
+ <param name="tableName"></param>
+ <returns></returns>
+ <remarks>(for JF)</remarks>
+</member>
+<member name="T:Jp.Co.Nrs.JF.Utility.Spread.JFValidatableCells">
+ <summary>
+ 拡張スプレッド入力値チェック用ユーティリティクラス
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Utility.Spread.JFValidatableCells.InitValues">
+ <summary>
+ 色以外のフィールドの初期化を行います。
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.Utility.Spread.JFValidatableCells.InitColor">
+ <summary>
+ スプレッドの各色設定を行います。
+ </summary>
+</member>
+<member name="T:Jp.Co.Nrs.JF.JFMsExcelUtility">
+ <summary>
+ JF用Excel関連ユーティリティクラス
+ </summary>
+</member>
+<member name="M:Jp.Co.Nrs.JF.JFMsExcelUtility.OutputCsvFile(System.String,System.String,System.Data.DataTable,System.String,System.Boolean,System.Boolean)">
+ <summary>
+ CSVファイル出力
+ </summary>
+ <param name="pgId">PGID</param>
+ <param name="pgNm">PG名</param>
+ <param name="dt">CSV出力元DataTable</param>
+ <param name="dirPath">出力先フォルダパス</param>
+ <param name="usesColumnName">CSV出力用DataTableのカラム名を列タイトル名として書き出すか否か</param>
+ <param name="opensFile">出力したファイルを開くか否か</param>
+ <returns>実行結果</returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.JFMsExcelUtility.CreateFolder(System.String)">
+ <summary>
+ フォルダ作成
+ </summary>
+ <param name="path">フォルダパス</param>
+ <returns>実行結果</returns>
+</member>
+<member name="M:Jp.Co.Nrs.JF.JFMsExcelUtility.AddCsvTitle(System.String,System.String,System.String,System.Text.StringBuilder)">
+ <summary>
+ CSVのタイトル部を追加
+ </summary>
+ <param name="pgId">PGID</param>
+ <param name="pgNm">PG名</param>
+ <param name="title">タイトル</param>
+ <param name="csvData">CSV出力データ</param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.JFMsExcelUtility.AddCsvHeader(System.Data.DataTable,System.Text.StringBuilder)">
+ <summary>
+ CSV出力用DataTableのカラム名を列タイトル名として追加
+ </summary>
+ <param name="dt">出力元データテーブル</param>
+ <param name="csvData">CSV出力データ</param>
+</member>
+<member name="M:Jp.Co.Nrs.JF.JFMsExcelUtility.AddCsvData(System.Data.DataTable,System.Text.StringBuilder)">
+ <summary>
+ CSV出力用DataTableのデータをCSVデータに追加
+ </summary>
+ <param name="dt">出力元データテーブル</param>
+ <param name="csvData">CSV出力データ</param>
+</member>
+</members>
+</doc>
