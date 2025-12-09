@@ -46,15 +46,15 @@ jobs:
           New-Item -Path ${{ runner.temp }}\scanner -ItemType Directory -Force
           dotnet tool update dotnet-sonarscanner --tool-path ${{ runner.temp }}\scanner
 
-      # ← ここから追加
       - name: Copy external DLLs
         shell: pwsh
         run: |
-          $sourceDir = "${{ github.workspace }}\LM\bin"
-          $targetDir = "${{ github.workspace }}\LMDVP"
+          $sourceDir = "${{ github.workspace }}\..\bin"
+          $targetDir = "${{ github.workspace }}\LMDVP\Jp.Co.Nrs.LMI.DAC\bin\Release"
+
           if (!(Test-Path $targetDir)) { New-Item -ItemType Directory -Force -Path $targetDir }
+
           Copy-Item -Path "$sourceDir\*.dll" -Destination $targetDir -Force
-      # ← ここまで追加
 
       - name: Build and analyze
         shell: pwsh
